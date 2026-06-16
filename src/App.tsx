@@ -85,10 +85,10 @@ function App() {
   const filteredQuestions = MOCK_QUESTIONS.filter(q => q.category === quizCategory);
 
   return (
-    <div className="min-h-screen flex bg-white font-sans text-[#4b4b4b]">
+    <div className="min-h-screen flex bg-white text-[#4b4b4b]">
       {/* Sidebar - Desktop */}
       <aside className="hidden lg:flex flex-col w-64 border-r-2 border-[#e5e5e5] p-4 fixed h-full bg-white z-50">
-        <div className="mb-12 px-4 pt-6">
+        <div className="mb-10 px-4 pt-4">
           <h1 className="text-3xl font-black text-[#58cc02] tracking-tighter uppercase italic leading-none">lingomaster</h1>
         </div>
         
@@ -97,7 +97,7 @@ function App() {
             onClick={() => setMode('home')}
             className={`sidebar-item w-full ${mode === 'home' ? 'active' : ''}`}
           >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
             </svg>
             LEARN
@@ -106,7 +106,7 @@ function App() {
             onClick={() => setMode('review')}
             className={`sidebar-item w-full ${mode === 'review' ? 'active' : ''}`}
           >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
             </svg>
             CARDS
@@ -115,7 +115,7 @@ function App() {
             onClick={() => setMode('quiz')}
             className={`sidebar-item w-full ${mode === 'quiz' ? 'active' : ''}`}
           >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
             QUESTS
@@ -124,174 +124,144 @@ function App() {
             onClick={() => setMode('listening')}
             className={`sidebar-item w-full ${mode === 'listening' ? 'active' : ''}`}
           >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
             </svg>
             AUDIO
           </button>
         </nav>
-
-        <div className="mt-auto p-6 bg-[#f7f7f7] rounded-[2rem] border-2 border-[#e5e5e5] relative overflow-hidden group">
-          <div className="absolute top-0 right-0 w-16 h-16 bg-[#58cc02]/10 rounded-bl-[2rem] -mr-4 -mt-4 transition-all group-hover:scale-110"></div>
-          <p className="text-[10px] font-black text-[#777] uppercase tracking-[0.2em] mb-3">Daily Progress</p>
-          <div className="lingo-progress mb-3">
-             <div className="lingo-progress-inner bg-[#58cc02]" style={{ width: '65%' }}></div>
-          </div>
-          <p className="text-xs font-black text-[#4b4b4b]">65% COMPLETED</p>
-        </div>
       </aside>
 
       {/* Main Content */}
-      <main className="flex-1 lg:ml-64 p-4 md:p-10 max-w-4xl mx-auto w-full min-h-screen">
+      <main className="flex-1 lg:ml-64 p-6 md:p-12 max-w-4xl mx-auto w-full min-h-screen">
         {mode === 'home' && (
           <div className="space-y-12 pb-24 animate-in fade-in duration-700">
-            {/* Top Status Bar */}
-            <div className="flex items-center justify-between py-2 border-b-2 border-[#e5e5e5]">
+            {/* Top Bar - Unified Scaling */}
+            <div className="flex items-center justify-between pb-6 border-b-2 border-[#e5e5e5]">
               <div className="flex items-center gap-6">
-                <div className="flex items-center gap-2 hover:scale-110 transition-transform cursor-help">
+                <div className="flex items-center gap-2">
                   <span className="text-2xl">🔥</span>
-                  <span className="font-black text-[#ff9600] text-lg">3</span>
+                  <span className="font-black text-[#ff9600] text-lg leading-none">3</span>
                 </div>
-                <div className="flex items-center gap-2 hover:scale-110 transition-transform cursor-help">
+                <div className="flex items-center gap-2">
                   <span className="text-2xl">💎</span>
-                  <span className="font-black text-[#1cb0f6] text-lg">120</span>
+                  <span className="font-black text-[#1cb0f6] text-lg leading-none">120</span>
                 </div>
-                <div className="flex items-center gap-2 hover:scale-110 transition-transform cursor-help">
+                <div className="flex items-center gap-2">
                   <span className="text-2xl">❤️</span>
-                  <span className="font-black text-[#ff4b4b] text-lg">5</span>
+                  <span className="font-black text-[#ff4b4b] text-lg leading-none">5</span>
                 </div>
               </div>
-              <div className="flex items-center gap-3">
-                 <div className="text-right hidden sm:block">
-                  <p className="text-[10px] font-black text-[#afafaf] uppercase tracking-widest">Active Level</p>
-                  <p className="text-sm font-black text-[#4b4b4b]">INTERMEDIATE</p>
-                </div>
-                <div className="w-12 h-12 rounded-full border-2 border-[#e5e5e5] p-0.5 bg-white shadow-sm overflow-hidden hover:border-[#1cb0f6] transition-colors cursor-pointer">
-                  <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix" alt="User" className="rounded-full" />
-                </div>
+              <div className="w-10 h-10 rounded-full border-2 border-[#e5e5e5] overflow-hidden">
+                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix" alt="User" />
               </div>
             </div>
 
-            {/* Path Journey */}
-            <div className="path-container max-w-lg mx-auto">
-              {/* Unit Banner */}
-              <div className="unit-banner w-full text-center sm:text-left relative">
-                 <div className="absolute top-4 right-4 text-4xl opacity-20 floating">✨</div>
-                 <h4 className="text-[10px] font-black uppercase tracking-[0.3em] opacity-80 mb-2">Section 1</h4>
-                 <h2 className="text-3xl font-black mb-1">Vocabulary Master</h2>
-                 <p className="font-bold text-white/90">Essential business & life foundation</p>
+            {/* Learning Journey - Unified Component Scales */}
+            <div className="flex flex-col items-center gap-12 max-w-sm mx-auto">
+              {/* Unit Header */}
+              <div className="w-full bg-[#58cc02] rounded-2xl p-6 text-white shadow-[0_6px_0_0_#46a302] mb-8">
+                <h4 className="text-[10px] font-black uppercase tracking-[0.2em] opacity-80 mb-2">Unit 1</h4>
+                <h2 className="text-2xl font-black leading-tight">Vocabulary Master</h2>
+                <p className="font-bold text-white/90 text-sm mt-1">Foundational English & Japanese</p>
               </div>
 
-              {/* Zig-Zag Learning Path */}
+              {/* Path Steps - FIXED SIZES (w-20 h-20) */}
               <div className="flex flex-col items-center gap-12 w-full relative">
-                {/* Connecting Lines (Absolute behind) */}
-                <div className="absolute top-20 bottom-0 left-1/2 -translate-x-1/2 w-3 bg-[#e5e5e5] rounded-full z-0 opacity-50"></div>
+                <div className="absolute top-10 bottom-10 left-1/2 -translate-x-1/2 w-3 bg-[#e5e5e5] rounded-full z-0 opacity-50"></div>
 
-                {/* Level 1: Flashcards (Center) */}
+                {/* Step 1: Center */}
                 <div className="z-10 relative">
-                   <div className="absolute -top-14 left-1/2 -translate-x-1/2 bg-[#58cc02] text-white px-5 py-2 rounded-2xl font-black text-xs shadow-[0_4px_0_0_#46a302] whitespace-nowrap animate-bounce">
-                    START HERE!
+                  <div className="absolute -top-12 left-1/2 -translate-x-1/2 bg-[#58cc02] text-white px-4 py-1.5 rounded-xl font-black text-[10px] shadow-[0_4px_0_0_#46a302] whitespace-nowrap animate-bounce">
+                    START HERE
                   </div>
                   <button 
                     onClick={() => setMode('review')}
-                    className="w-28 h-28 rounded-full btn-3d btn-green text-6xl shadow-2xl flex items-center justify-center relative overflow-visible"
+                    className="w-20 h-20 rounded-full btn-3d btn-green text-4xl shadow-lg flex items-center justify-center p-0"
                   >
-                    <span className="mt-[-8px]">🗂️</span>
-                    {/* Ring indicator */}
-                    <div className="absolute inset-0 border-8 border-white/20 rounded-full animate-pulse"></div>
+                    <span className="mt-[-4px]">🗂️</span>
                   </button>
-                  <div className="mt-4 text-center font-black text-[#777] uppercase tracking-widest text-[11px]">Daily Review</div>
                 </div>
 
-                {/* Level 2: TOEIC (Left) */}
-                <div className="z-10 -ml-32">
+                {/* Step 2: Left Zig-Zag */}
+                <div className="z-10 -ml-24 flex flex-col items-center">
                   <button 
                     onClick={() => { setQuizCategory('toeic'); setMode('quiz'); }}
-                    className="w-24 h-24 rounded-full btn-3d btn-blue text-5xl shadow-2xl flex items-center justify-center"
+                    className="w-20 h-20 rounded-full btn-3d btn-blue text-4xl shadow-lg flex items-center justify-center p-0"
                   >
-                    <span className="mt-[-6px]">🇬🇧</span>
+                    <span className="mt-[-4px]">🇬🇧</span>
                   </button>
-                  <div className="mt-4 text-center font-black text-[#777] uppercase tracking-widest text-[11px]">TOEIC 700+</div>
+                  <span className="mt-2 text-[10px] font-black text-[#afafaf] uppercase tracking-widest">TOEIC</span>
                 </div>
 
-                {/* Level 3: JLPT N2 (Right) */}
-                <div className="z-10 -mr-32">
+                {/* Step 3: Right Zig-Zag */}
+                <div className="z-10 -mr-24 flex flex-col items-center">
                   <button 
                     onClick={() => { setQuizCategory('n2'); setMode('quiz'); }}
-                    className="w-24 h-24 rounded-full btn-3d btn-red text-5xl shadow-2xl flex items-center justify-center"
+                    className="w-20 h-20 rounded-full btn-3d btn-red text-4xl shadow-lg flex items-center justify-center p-0"
                   >
-                    <span className="mt-[-6px]">🇯🇵</span>
+                    <span className="mt-[-4px]">🇯🇵</span>
                   </button>
-                  <div className="mt-4 text-center font-black text-[#777] uppercase tracking-widest text-[11px]">JLPT N2</div>
+                  <span className="mt-2 text-[10px] font-black text-[#afafaf] uppercase tracking-widest">JLPT N2</span>
                 </div>
 
-                {/* Level 4: Listening (Center) */}
-                <div className="z-10">
+                {/* Step 4: Center */}
+                <div className="z-10 flex flex-col items-center">
                   <button 
                     onClick={() => setMode('listening')}
-                    className="w-28 h-28 rounded-full btn-3d btn-purple text-6xl shadow-2xl flex items-center justify-center"
+                    className="w-20 h-20 rounded-full btn-3d btn-purple text-4xl shadow-lg flex items-center justify-center p-0"
                   >
-                    <span className="mt-[-8px]">🎧</span>
+                    <span className="mt-[-4px]">🎧</span>
                   </button>
-                  <div className="mt-4 text-center font-black text-[#777] uppercase tracking-widest text-[11px]">Deep Audio</div>
+                  <span className="mt-2 text-[10px] font-black text-[#afafaf] uppercase tracking-widest">AUDIO</span>
                 </div>
 
-                {/* Level 5: Add New (Left) */}
-                <div className="z-10 -ml-32 opacity-80 hover:opacity-100 transition-opacity">
+                {/* Step 5: Left Zig-Zag */}
+                <div className="z-10 -ml-24 flex flex-col items-center opacity-70 hover:opacity-100">
                   <button 
                     onClick={() => setMode('add')}
-                    className="w-24 h-24 rounded-full btn-3d btn-outline text-5xl shadow-2xl flex items-center justify-center"
+                    className="w-20 h-20 rounded-full btn-3d btn-outline text-4xl shadow-lg flex items-center justify-center p-0"
                   >
-                    <span className="mt-[-6px]">➕</span>
+                    <span className="mt-[-4px]">➕</span>
                   </button>
-                  <div className="mt-4 text-center font-black text-[#777] uppercase tracking-widest text-[11px]">New Word</div>
+                  <span className="mt-2 text-[10px] font-black text-[#afafaf] uppercase tracking-widest">ADD</span>
                 </div>
               </div>
             </div>
           </div>
         )}
 
-        {/* Dynamic Action Screens */}
+        {/* Action Screens - Consistent Max Width & Spacing */}
         <div className="max-w-2xl mx-auto w-full">
-           {mode === 'add' && (
-             <div className="animate-in slide-in-from-bottom-12 duration-500">
-                <div className="mb-10">
-                  <button onClick={() => setMode('home')} className="w-12 h-12 flex items-center justify-center rounded-2xl hover:bg-[#f7f7f7] text-[#afafaf] transition-colors">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={4} d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                  </button>
-                </div>
-                <AddFlashcard onAdd={handleAddCard} />
+           {mode !== 'home' && (
+             <div className="mb-8">
+                <button onClick={() => setMode('home')} className="w-10 h-10 flex items-center justify-center rounded-xl hover:bg-[#f7f7f7] text-[#afafaf] transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={4} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
              </div>
            )}
 
+           {mode === 'add' && <AddFlashcard onAdd={handleAddCard} />}
+           
            {mode === 'review' && (
-             <div className="animate-in fade-in duration-500">
-               <div className="w-full flex items-center gap-6 mb-12">
-                  <button onClick={() => setMode('home')} className="text-[#afafaf] hover:text-[#777] transition-colors">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={4} d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                  </button>
-                  <div className="flex-1 lingo-progress">
-                    <div 
-                      className="lingo-progress-inner bg-[#58cc02]"
-                      style={{ width: `${reviewQueue.length > 0 ? ((currentCardIndex + 1) / reviewQueue.length) * 100 : 0}%` }}
-                    ></div>
-                  </div>
-                  <span className="text-sm font-black text-[#afafaf] tabular-nums">{currentCardIndex + 1}/{reviewQueue.length}</span>
+             <div className="space-y-12">
+                <div className="w-full lingo-progress">
+                  <div 
+                    className="lingo-progress-inner bg-[#58cc02]"
+                    style={{ width: `${reviewQueue.length > 0 ? ((currentCardIndex + 1) / reviewQueue.length) * 100 : 0}%` }}
+                  ></div>
                 </div>
-
                 {reviewQueue.length > 0 ? (
                   <FlashcardView card={reviewQueue[currentCardIndex]} onRate={handleRateCard} />
                 ) : (
-                  <div className="text-center py-24 lingo-card p-12 w-full max-w-lg mx-auto">
-                    <div className="text-8xl mb-8 floating">🏆</div>
-                    <h3 className="text-4xl font-black text-[#4b4b4b] mb-4 uppercase tracking-tight">Lesson Mastered!</h3>
-                    <p className="text-lg font-bold text-[#777] mb-12">You've cleared your queue. Come back later for more review!</p>
-                    <button onClick={() => setMode('home')} className="w-full btn-3d btn-blue text-xl py-6 rounded-2xl shadow-blue-100">
-                      RETURN TO PATH
+                  <div className="lingo-card text-center space-y-6">
+                    <div className="text-7xl floating">🏆</div>
+                    <h3 className="text-3xl font-black uppercase">Lesson Mastered!</h3>
+                    <p className="text-[#777] font-bold">You've cleared all your cards for today.</p>
+                    <button onClick={() => setMode('home')} className="w-full btn-3d btn-blue py-5 text-lg">
+                      CONTINUE JOURNEY
                     </button>
                   </div>
                 )}
@@ -299,58 +269,32 @@ function App() {
            )}
 
            {mode === 'quiz' && (
-             <div className="animate-in zoom-in-95 duration-500">
-                <div className="mb-10">
-                  <button onClick={() => setMode('home')} className="w-12 h-12 flex items-center justify-center rounded-2xl hover:bg-[#f7f7f7] text-[#afafaf] transition-colors">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={4} d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                  </button>
-                </div>
-                <QuizView 
-                  questions={filteredQuestions} 
-                  category={quizCategory} 
-                  onComplete={handleCompleteQuiz} 
-                  onCancel={() => setMode('home')} 
-                />
-             </div>
+             <QuizView 
+               questions={filteredQuestions} 
+               category={quizCategory} 
+               onComplete={handleCompleteQuiz} 
+               onCancel={() => setMode('home')} 
+             />
            )}
 
            {mode === 'listening' && (
-             <div className="space-y-10 animate-in slide-in-from-bottom-12 duration-500">
+             <div className="space-y-8">
                 {!selectedLesson ? (
-                   <div className="space-y-10">
-                      <div className="flex items-center gap-6">
-                        <button onClick={() => setMode('home')} className="w-12 h-12 flex items-center justify-center rounded-2xl hover:bg-[#f7f7f7] text-[#afafaf] transition-colors">
-                          <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={4} d="M6 18L18 6M6 6l12 12" />
-                          </svg>
-                        </button>
-                        <h2 className="text-4xl font-black text-[#4b4b4b] uppercase tracking-tight">Audio Journey</h2>
-                      </div>
-                      
-                      <div className="grid grid-cols-1 gap-6">
+                   <div className="space-y-6">
+                      <h2 className="text-3xl font-black uppercase tracking-tight">Audio Journey</h2>
+                      <div className="grid grid-cols-1 gap-4">
                         {MOCK_LISTENING_LESSONS.map((lesson) => (
                           <div 
                             key={lesson.id}
                             onClick={() => setSelectedLesson(lesson)}
-                            className="lingo-card p-8 cursor-pointer group flex items-center gap-8 hover:scale-[1.02] active:scale-95 transition-all"
+                            className="lingo-card flex items-center gap-6 p-6 cursor-pointer hover:scale-[1.01] active:scale-[0.99] transition-all"
                           >
-                            <div className={`w-20 h-20 rounded-2xl flex-shrink-0 flex items-center justify-center text-white font-black text-2xl shadow-lg ${lesson.category === 'toeic' ? 'bg-[#1cb0f6]' : 'bg-[#ff4b4b]'}`}>
+                            <div className={`w-16 h-16 rounded-xl flex-shrink-0 flex items-center justify-center text-white font-black text-xl shadow-lg ${lesson.category === 'toeic' ? 'bg-[#1cb0f6]' : 'bg-[#ff4b4b]'}`}>
                               {lesson.category.toUpperCase().charAt(0)}
                             </div>
                             <div className="flex-1">
-                              <p className="text-[10px] font-black text-[#afafaf] uppercase tracking-widest mb-1">{lesson.category} SESSION</p>
-                              <h6 className="font-black text-2xl text-[#4b4b4b] mb-1 group-hover:text-[#1cb0f6] transition-colors">{lesson.title}</h6>
-                              <div className="flex items-center gap-2 mt-2">
-                                 <span className="w-2 h-2 rounded-full bg-[#58cc02]"></span>
-                                 <span className="text-xs font-bold text-[#777]">AVAILABLE NOW</span>
-                              </div>
-                            </div>
-                            <div className="text-[#afafaf] group-hover:text-[#58cc02] group-hover:translate-x-2 transition-all">
-                              <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={4} d="M9 5l7 7-7 7" />
-                              </svg>
+                              <h6 className="font-black text-xl">{lesson.title}</h6>
+                              <p className="text-xs font-bold text-[#afafaf] uppercase tracking-widest mt-1">Tap to listen</p>
                             </div>
                           </div>
                         ))}
