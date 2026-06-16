@@ -85,280 +85,225 @@ function App() {
   const filteredQuestions = MOCK_QUESTIONS.filter(q => q.category === quizCategory);
 
   return (
-    <div className="min-h-screen bg-mesh font-sans antialiased text-slate-900 pb-20">
-      {/* Dynamic Background Decoration */}
-      <div className="fixed inset-0 pointer-events-none -z-10 overflow-hidden">
-        <div className="absolute -top-[10%] -left-[10%] w-[40%] h-[40%] bg-indigo-200/20 rounded-full blur-[120px] animate-float"></div>
-        <div className="absolute top-[40%] -right-[5%] w-[30%] h-[30%] bg-purple-200/20 rounded-full blur-[100px]" style={{ animationDelay: '2s' }}></div>
-      </div>
+    <div className="min-h-screen flex bg-white">
+      {/* Sidebar - Desktop */}
+      <aside className="hidden lg:flex flex-col w-64 border-r-2 border-gray-100 p-4 fixed h-full bg-white">
+        <div className="mb-10 px-4">
+          <h1 className="text-3xl font-black text-[#58cc02] tracking-tighter">lingomaster</h1>
+        </div>
+        
+        <nav className="flex-1 space-y-2">
+          <button 
+            onClick={() => setMode('home')}
+            className={`sidebar-item w-full ${mode === 'home' ? 'active' : ''}`}
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+            </svg>
+            LEARN
+          </button>
+          <button 
+            onClick={() => setMode('review')}
+            className={`sidebar-item w-full ${mode === 'review' ? 'active' : ''}`}
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+            </svg>
+            FLASHCARDS
+          </button>
+          <button 
+            onClick={() => setMode('quiz')}
+            className={`sidebar-item w-full ${mode === 'quiz' ? 'active' : ''}`}
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            QUESTS
+          </button>
+        </nav>
+      </aside>
 
-      <div className="max-w-7xl mx-auto px-6 pt-12">
-        {/* Modern Header */}
-        <header className="flex flex-col md:flex-row items-center justify-between gap-8 mb-16">
-          <div className="text-center md:text-left">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 border border-indigo-100 mb-4">
-              <span className="w-2 h-2 rounded-full bg-indigo-500 animate-pulse"></span>
-              <span className="text-[10px] font-black uppercase tracking-[0.2em] text-indigo-600">Premium Learning Platform</span>
+      {/* Main Content */}
+      <main className="flex-1 lg:ml-64 p-4 md:p-10 max-w-4xl mx-auto w-full">
+        {mode === 'home' && (
+          <div className="space-y-12">
+            {/* Top Stats Bar */}
+            <div className="flex items-center justify-center lg:justify-end gap-6 pb-6 border-b-2 border-gray-100">
+              <div className="flex items-center gap-2">
+                <span className="text-2xl">🔥</span>
+                <span className="font-black text-[#ff9600]">3</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="text-2xl">💎</span>
+                <span className="font-black text-[#1cb0f6]">120</span>
+              </div>
+              <div className="flex items-center gap-2 text-[#ff4b4b]">
+                <span className="text-2xl">❤️</span>
+                <span className="font-black">5</span>
+              </div>
             </div>
-            <h1 className="text-5xl md:text-6xl font-black tracking-tight leading-none mb-3">
-              Lingo<span className="text-gradient">Master</span>
-            </h1>
-            <p className="text-slate-500 font-medium text-lg">Xây dựng lộ trình TOEIC 700 & JLPT N2 của riêng bạn</p>
-          </div>
-          
-          <div className="flex items-center gap-4">
-            {mode !== 'home' && (
-              <button 
-                onClick={() => setMode('home')}
-                className="group flex items-center gap-2 px-6 py-3 bg-white hover:bg-slate-900 hover:text-white rounded-2xl font-bold text-slate-600 transition-all duration-300 shadow-xl shadow-slate-200/50"
-              >
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 group-hover:-translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+
+            {/* Course Selector - Placeholder Look */}
+            <div className="bg-[#58cc02] rounded-2xl p-6 text-white flex items-center justify-between shadow-[0_4px_0_0_#46a302]">
+              <div>
+                <h2 className="text-xs font-black uppercase tracking-widest opacity-80 mb-1">Current Course</h2>
+                <h3 className="text-2xl font-black">TOEIC 700 & JLPT N2</h3>
+              </div>
+              <div className="bg-white/20 p-3 rounded-xl border-2 border-white/20">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M4 6h16M4 12h16m-7 6h7" />
                 </svg>
-                Quay lại Dashboard
-              </button>
-            )}
+              </div>
+            </div>
+
+            {/* Learning Path - The "Circles" */}
+            <div className="flex flex-col items-center gap-8 py-10">
+              {/* Unit 1 */}
+              <div className="w-full">
+                <div className="bg-[#58cc02] rounded-2xl p-5 text-white mb-10 shadow-[0_4px_0_0_#46a302]">
+                  <h4 className="text-xl font-black">Unit 1: Vocabulary Foundation</h4>
+                  <p className="font-bold opacity-80 text-sm">Essential words for everyday business & life</p>
+                </div>
+
+                <div className="flex flex-col items-center gap-6 relative">
+                  {/* Skill 1: Flashcards */}
+                  <div className="relative group">
+                    <div className="absolute -top-12 left-1/2 -translate-x-1/2 bg-[#58cc02] text-white px-4 py-2 rounded-xl font-black text-sm shadow-lg whitespace-nowrap animate-bounce">
+                      START REVIEW
+                    </div>
+                    <button 
+                      onClick={() => setMode('review')}
+                      className={`w-24 h-24 rounded-full btn-3d btn-green text-4xl shadow-lg ${reviewQueue.length === 0 ? 'opacity-50 grayscale cursor-not-allowed' : ''}`}
+                    >
+                      <span className="mt-[-4px]">🗂️</span>
+                    </button>
+                    <div className="text-center mt-3 font-black text-gray-500 uppercase tracking-widest text-xs">Vocabulary</div>
+                  </div>
+
+                  {/* Connecting Line */}
+                  <div className="w-2 h-12 bg-gray-100 rounded-full"></div>
+
+                  {/* Skill 2: TOEIC Quiz */}
+                  <div className="flex gap-20">
+                    <div className="text-center flex flex-col items-center group">
+                      <button 
+                        onClick={() => { setQuizCategory('toeic'); setMode('quiz'); }}
+                        className="w-20 h-20 rounded-full btn-3d btn-blue text-3xl"
+                      >
+                        <span className="mt-[-4px]">🇬🇧</span>
+                      </button>
+                      <div className="mt-3 font-black text-gray-500 uppercase tracking-widest text-[10px]">TOEIC 700</div>
+                    </div>
+
+                    <div className="text-center flex flex-col items-center group">
+                      <button 
+                        onClick={() => { setQuizCategory('n2'); setMode('quiz'); }}
+                        className="w-20 h-20 rounded-full btn-3d btn-red text-3xl"
+                      >
+                        <span className="mt-[-4px]">🇯🇵</span>
+                      </button>
+                      <div className="mt-3 font-black text-gray-500 uppercase tracking-widest text-[10px]">JLPT N2</div>
+                    </div>
+                  </div>
+
+                  {/* Connecting Line */}
+                  <div className="w-2 h-12 bg-gray-100 rounded-full"></div>
+
+                  {/* Skill 3: Listening */}
+                  <div className="text-center flex flex-col items-center">
+                    <button 
+                      onClick={() => setMode('listening')}
+                      className="w-24 h-24 rounded-full btn-3d btn-purple text-4xl"
+                    >
+                      <span className="mt-[-4px]">🎧</span>
+                    </button>
+                    <div className="mt-3 font-black text-gray-500 uppercase tracking-widest text-xs">Listening</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Floating Action Button - Mobile Add */}
             <button 
               onClick={() => setMode('add')}
-              className="px-6 py-3 bg-slate-900 text-white rounded-2xl font-bold hover:bg-indigo-600 transition-all duration-300 shadow-xl shadow-slate-900/10 flex items-center gap-2"
+              className="lg:hidden fixed bottom-6 right-6 w-16 h-16 rounded-full btn-3d btn-blue text-3xl shadow-2xl z-50"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
-              </svg>
-              Thêm từ mới
+              +
             </button>
           </div>
-        </header>
+        )}
 
-        {mode === 'home' && (
-          <div className="grid grid-cols-1 xl:grid-cols-12 gap-10">
-            {/* Left Content Area */}
-            <div className="xl:col-span-8 space-y-10">
-              
-              {/* Main Hero Review Action */}
-              <div className="relative group overflow-hidden bg-slate-900 rounded-[2.5rem] p-10 md:p-12 text-white shadow-2xl shadow-indigo-200/50">
-                <div className="relative z-10 grid md:grid-cols-2 items-center gap-10">
-                  <div className="space-y-6">
-                    <h2 className="text-4xl md:text-5xl font-black leading-tight">Mục tiêu hôm nay của bạn</h2>
-                    <p className="text-slate-400 text-lg leading-relaxed">
-                      Bạn có <span className="text-white font-bold">{reviewQueue.length} từ vựng</span> đang đợi được ôn tập để đưa vào trí nhớ dài hạn.
-                    </p>
-                    <button 
-                      disabled={reviewQueue.length === 0}
-                      onClick={() => { setMode('review'); setCurrentCardIndex(0); }}
-                      className={`group relative px-10 py-5 rounded-[1.5rem] font-black text-xl transition-all duration-300 overflow-hidden ${
-                        reviewQueue.length > 0 
-                        ? 'bg-indigo-600 hover:bg-indigo-500 hover:scale-105 active:scale-95 shadow-xl shadow-indigo-600/30' 
-                        : 'bg-slate-800 text-slate-600 cursor-not-allowed'
-                      }`}
-                    >
-                      <span className="relative z-10 flex items-center gap-3">
-                        HỌC NGAY BÂY GIỜ
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                        </svg>
-                      </span>
-                    </button>
-                  </div>
-                  <div className="hidden md:flex justify-center">
-                    <div className="relative w-48 h-48">
-                      <div className="absolute inset-0 bg-indigo-500 rounded-full animate-ping opacity-20"></div>
-                      <div className="absolute inset-4 bg-indigo-500/20 rounded-full flex items-center justify-center border-2 border-indigo-500/30">
-                        <span className="text-6xl font-black">{reviewQueue.length}</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                {/* Visual accents */}
-                <div className="absolute top-0 right-0 w-80 h-80 bg-indigo-600/20 rounded-full -mr-32 -mt-32 blur-[80px]"></div>
-                <div className="absolute -bottom-10 -left-10 w-40 h-40 bg-purple-600/10 rounded-full blur-[60px]"></div>
-              </div>
-
-              {/* Pathway Cards Section */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="glass-card rounded-[2rem] p-8 group hover:-translate-y-2 transition-all duration-500">
-                  <div className="flex justify-between items-start mb-10">
-                    <div className="w-16 h-16 bg-blue-500 rounded-2xl flex items-center justify-center shadow-lg shadow-blue-200 text-white">
-                      <span className="font-black text-2xl tracking-tighter">EN</span>
-                    </div>
-                    <span className="text-xs font-black uppercase tracking-widest text-slate-400 bg-slate-50 px-3 py-1 rounded-full border border-slate-100">TOEIC 700 Goal</span>
-                  </div>
-                  <h3 className="text-2xl font-black text-slate-800 mb-2">English Path</h3>
-                  <p className="text-slate-500 text-sm mb-8 leading-relaxed">Tập trung vào từ vựng kinh doanh và cấu trúc Reading Part 5/6.</p>
-                  <div className="flex items-end justify-between">
-                    <div>
-                      <div className="text-xs font-bold text-slate-400 uppercase mb-1">Vocab count</div>
-                      <div className="text-3xl font-black text-blue-500">{cards.filter(c => c.language === 'english').length}</div>
-                    </div>
-                    <button 
-                      onClick={() => { setQuizCategory('toeic'); setMode('quiz'); }}
-                      className="bg-slate-900 text-white px-8 py-3 rounded-xl font-bold hover:bg-blue-600 transition-colors shadow-lg shadow-slate-200"
-                    >
-                      Thi thử đề thật
-                    </button>
-                  </div>
-                </div>
-
-                <div className="glass-card rounded-[2rem] p-8 group hover:-translate-y-2 transition-all duration-500">
-                  <div className="flex justify-between items-start mb-10">
-                    <div className="w-16 h-16 bg-rose-500 rounded-2xl flex items-center justify-center shadow-lg shadow-rose-200 text-white">
-                      <span className="font-black text-2xl tracking-tighter">JP</span>
-                    </div>
-                    <span className="text-xs font-black uppercase tracking-widest text-slate-400 bg-slate-50 px-3 py-1 rounded-full border border-slate-100">JLPT N2 Goal</span>
-                  </div>
-                  <h3 className="text-2xl font-black text-slate-800 mb-2">Japanese Path</h3>
-                  <p className="text-slate-500 text-sm mb-8 leading-relaxed">Nắm vững 1000 Kanji và cấu trúc ngữ pháp trung cấp N2.</p>
-                  <div className="flex items-end justify-between">
-                    <div>
-                      <div className="text-xs font-bold text-slate-400 uppercase mb-1">Vocab count</div>
-                      <div className="text-3xl font-black text-rose-500">{cards.filter(c => c.language === 'japanese').length}</div>
-                    </div>
-                    <button 
-                      onClick={() => { setQuizCategory('n2'); setMode('quiz'); }}
-                      className="bg-slate-900 text-white px-8 py-3 rounded-xl font-bold hover:bg-rose-600 transition-colors shadow-lg shadow-slate-200"
-                    >
-                      Thi thử đề thật
-                    </button>
-                  </div>
+        {/* Action Screens (Full Screen Layouts) */}
+        <div className="max-w-2xl mx-auto">
+          {mode === 'add' && <AddFlashcard onAdd={handleAddCard} />}
+          
+          {mode === 'review' && reviewQueue.length > 0 && (
+            <div className="flex flex-col items-center animate-in fade-in duration-500">
+              <div className="w-full flex items-center gap-4 mb-10">
+                <button onClick={() => setMode('home')} className="text-gray-400 hover:text-gray-600">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+                <div className="flex-1 bg-gray-100 h-4 rounded-full overflow-hidden border-2 border-gray-100 shadow-inner">
+                  <div 
+                    className="bg-[#58cc02] h-full transition-all duration-700 shadow-[inset_0_-4px_0_rgba(0,0,0,0.2)]"
+                    style={{ width: `${((currentCardIndex + 1) / reviewQueue.length) * 100}%` }}
+                  ></div>
                 </div>
               </div>
-
-              {/* Listening Section with refined list */}
-              <div className="space-y-6">
-                <div className="flex items-center justify-between px-2">
-                  <h3 className="text-2xl font-black text-slate-800">Listening Hub</h3>
-                  <span className="text-indigo-600 text-sm font-bold hover:underline cursor-pointer">Xem tất cả bài nghe</span>
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  {MOCK_LISTENING_LESSONS.map((lesson) => (
-                    <div 
-                      key={lesson.id}
-                      onClick={() => { setSelectedLesson(lesson); setMode('listening'); }}
-                      className="group glass-card rounded-3xl p-6 cursor-pointer hover:border-indigo-400 transition-all duration-300"
-                    >
-                      <div className="flex items-center gap-5">
-                        <div className={`w-14 h-14 rounded-2xl flex items-center justify-center transition-all group-hover:rotate-12 ${lesson.category === 'toeic' ? 'bg-blue-50 text-blue-500' : 'bg-rose-50 text-rose-500'}`}>
-                          <svg xmlns="http://www.w3.org/2000/svg" className="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-                          </svg>
-                        </div>
-                        <div className="flex-1">
-                          <h4 className="font-bold text-slate-800 mb-1 group-hover:text-indigo-600 transition-colors leading-tight">{lesson.title}</h4>
-                          <div className="flex items-center gap-2">
-                            <span className="text-[10px] font-black uppercase tracking-widest text-slate-400">{lesson.category}</span>
-                            <span className="w-1 h-1 rounded-full bg-slate-200"></span>
-                            <span className="text-[10px] font-bold text-slate-400">Audio ready</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
+              <FlashcardView card={reviewQueue[currentCardIndex]} onRate={handleRateCard} />
             </div>
+          )}
 
-            {/* Sidebar with Depth */}
-            <div className="xl:col-span-4 space-y-10">
-              {/* Exam Results Card */}
-              <div className="bg-white rounded-[2rem] p-8 shadow-xl shadow-slate-200/50 border border-slate-100">
-                <h3 className="text-lg font-black text-slate-800 mb-8 flex items-center gap-3">
-                  <div className="w-8 h-8 bg-indigo-50 rounded-lg flex items-center justify-center text-indigo-500">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                      <path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z" />
-                    </svg>
-                  </div>
-                  Recent Results
-                </h3>
+          {mode === 'quiz' && (
+            <div className="animate-in slide-in-from-bottom-10 duration-500">
+              <div className="mb-8 flex items-center justify-between">
+                <button onClick={() => setMode('home')} className="text-gray-300 hover:text-gray-500">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+              <QuizView 
+                questions={filteredQuestions} 
+                category={quizCategory} 
+                onComplete={handleCompleteQuiz} 
+                onCancel={() => setMode('home')} 
+              />
+            </div>
+          )}
+
+          {mode === 'listening' && (
+            <div className="space-y-6">
+              {!selectedLesson ? (
                 <div className="space-y-6">
-                  {examResults.length === 0 ? (
-                    <div className="text-center py-10 space-y-3">
-                      <p className="text-slate-400 text-sm font-medium italic">Chưa có lịch sử làm bài thi.</p>
-                    </div>
-                  ) : (
-                    examResults.slice(0, 5).map((res) => (
-                      <div key={res.id} className="flex justify-between items-center group">
-                        <div className="space-y-1">
-                          <div className="text-[10px] font-black text-indigo-500 uppercase tracking-widest">{res.category} Mock Exam</div>
-                          <div className="text-sm font-bold text-slate-400">{new Date(res.date).toLocaleDateString('vi-VN')}</div>
+                  <h2 className="text-3xl font-black text-gray-800">Select Lesson</h2>
+                  <div className="grid grid-cols-1 gap-4">
+                    {MOCK_LISTENING_LESSONS.map((lesson) => (
+                      <div 
+                        key={lesson.id}
+                        onClick={() => setSelectedLesson(lesson)}
+                        className="lingo-card p-6 bg-white cursor-pointer hover:bg-gray-50 transition flex items-center gap-6"
+                      >
+                        <div className={`w-12 h-12 rounded-xl flex items-center justify-center text-white font-black ${lesson.category === 'toeic' ? 'bg-blue-400' : 'bg-red-400'}`}>
+                          {lesson.category.toUpperCase()}
                         </div>
-                        <div className="text-xl font-black text-slate-800 bg-slate-50 px-4 py-2 rounded-2xl group-hover:bg-slate-900 group-hover:text-white transition-all">
-                          {res.score}<span className="text-xs text-slate-400 group-hover:text-slate-500">/{res.totalQuestions}</span>
-                        </div>
+                        <span className="font-bold text-lg text-gray-700">{lesson.title}</span>
                       </div>
-                    ))
-                  )}
-                </div>
-              </div>
-
-              {/* Motivational Sidebar Block */}
-              <div className="bg-indigo-600 rounded-[2rem] p-8 text-white relative overflow-hidden">
-                <div className="relative z-10">
-                  <h3 className="text-xl font-bold mb-4">Mẹo luyện thi N2</h3>
-                  <p className="text-indigo-100 text-sm leading-relaxed mb-6 opacity-80">
-                    Đối với đề N2, hãy chú trọng vào việc hiểu rõ sắc thái của các mẫu ngữ pháp tương đồng. Đừng chỉ nhớ nghĩa tiếng Việt!
-                  </p>
-                  <div className="w-full bg-indigo-500/50 rounded-full h-1.5 mb-2">
-                    <div className="bg-white h-full rounded-full w-[65%] shadow-[0_0_10px_rgba(255,255,255,0.5)]"></div>
+                    ))}
                   </div>
-                  <div className="text-[10px] font-black uppercase tracking-widest opacity-60">Current Progress: 65%</div>
                 </div>
-                <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-16 -mt-16 blur-3xl"></div>
-              </div>
-
-              {/* Social/Community Link Placeholder */}
-              <div className="bg-white rounded-[2rem] p-6 border-2 border-dashed border-slate-200 text-center">
-                <p className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">Coming Soon</p>
-                <p className="text-sm font-bold text-slate-600">Bảng xếp hạng cộng đồng</p>
-              </div>
+              ) : (
+                <ListeningView 
+                  lesson={selectedLesson} 
+                  onBack={() => setSelectedLesson(null)} 
+                />
+              )}
             </div>
-          </div>
-        )}
-
-        {/* Action Screens */}
-        {mode === 'add' && (
-          <div className="max-w-2xl mx-auto py-12 animate-in zoom-in-95 duration-500">
-            <AddFlashcard onAdd={handleAddCard} />
-          </div>
-        )}
-
-        {mode === 'review' && reviewQueue.length > 0 && (
-          <div className="max-w-3xl mx-auto py-12 flex flex-col items-center animate-in fade-in duration-500">
-            <div className="w-full mb-16 space-y-3">
-              <div className="flex justify-between text-xs font-black uppercase tracking-widest text-slate-400">
-                <span>Ôn tập từ vựng</span>
-                <span>{currentCardIndex + 1} / {reviewQueue.length}</span>
-              </div>
-              <div className="w-full bg-slate-100 h-2 rounded-full overflow-hidden">
-                <div 
-                  className="bg-indigo-600 h-full transition-all duration-700 shadow-[0_0_15px_rgba(79,70,229,0.5)]"
-                  style={{ width: `${((currentCardIndex + 1) / reviewQueue.length) * 100}%` }}
-                ></div>
-              </div>
-            </div>
-            <FlashcardView card={reviewQueue[currentCardIndex]} onRate={handleRateCard} />
-          </div>
-        )}
-
-        {mode === 'quiz' && (
-          <div className="max-w-5xl mx-auto py-12 flex flex-col items-center animate-in slide-in-from-bottom-10 duration-500">
-            <QuizView 
-              questions={filteredQuestions} 
-              category={quizCategory} 
-              onComplete={handleCompleteQuiz} 
-              onCancel={() => setMode('home')} 
-            />
-          </div>
-        )}
-
-        {mode === 'listening' && selectedLesson && (
-          <div className="max-w-5xl mx-auto py-12 flex flex-col items-center animate-in fade-in duration-500">
-            <ListeningView 
-              lesson={selectedLesson} 
-              onBack={() => { setMode('home'); setSelectedLesson(null); }} 
-            />
-          </div>
-        )}
-      </div>
+          )}
+        </div>
+      </main>
     </div>
   );
 }
