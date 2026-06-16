@@ -125,12 +125,12 @@ function App() {
             {/* Top Bar */}
             <div className="flex items-center justify-between pb-6 border-b-2 border-[#e5e5e5]">
               <div className="flex items-center gap-4 sm:gap-6">
-                <div className="flex items-center gap-1.5"><span className="text-xl">🔥</span><span className="font-black text-[#ff9600] text-base">3</span></div>
-                <div className="flex items-center gap-1.5"><span className="text-xl">💎</span><span className="font-black text-[#1cb0f6] text-base">120</span></div>
-                <div className="flex items-center gap-1.5"><span className="text-xl">❤️</span><span className="font-black text-[#ff4b4b] text-base">5</span></div>
+                <div className="flex items-center gap-1.5"><span className="text-xl">🔥</span><span className="font-black text-[#ff9600] text-base leading-none">3</span></div>
+                <div className="flex items-center gap-1.5"><span className="text-xl">💎</span><span className="font-black text-[#1cb0f6] text-base leading-none">120</span></div>
+                <div className="flex items-center gap-1.5"><span className="text-xl">❤️</span><span className="font-black text-[#ff4b4b] text-base leading-none">5</span></div>
               </div>
-              <div className="w-9 h-9 rounded-full border-2 border-[#e5e5e5] overflow-hidden bg-[#f7f7f7] shadow-sm">
-                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix" alt="User" className="w-full h-full object-cover" />
+              <div className="w-9 h-9 rounded-full border-2 border-[#e5e5e5] bg-[#f7f7f7] flex items-center justify-center text-lg shadow-sm">
+                👤
               </div>
             </div>
 
