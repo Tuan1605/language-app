@@ -68,13 +68,18 @@ body {
 .sidebar-item {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 10px 16px;
-  border-radius: 12px;
+  gap: 14px;
+  padding: 12px 20px;
+  border-radius: 14px;
   font-weight: 600;
   color: var(--slate-500);
   transition: all 0.2s;
   border: 1px solid transparent;
+}
+
+.sidebar-item svg {
+  width: 22px;
+  height: 22px;
 }
 
 .sidebar-item:hover {

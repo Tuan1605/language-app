@@ -100,7 +100,7 @@ function App() {
             onClick={() => setMode('home')}
             className={`sidebar-item w-full ${mode === 'home' ? 'active' : ''}`}
           >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
             </svg>
             Dashboard
@@ -109,7 +109,7 @@ function App() {
             onClick={() => setMode('review')}
             className={`sidebar-item w-full ${mode === 'review' ? 'active' : ''}`}
           >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
             </svg>
             Flashcards
@@ -118,7 +118,7 @@ function App() {
             onClick={() => setMode('quiz')}
             className={`sidebar-item w-full ${mode === 'quiz' ? 'active' : ''}`}
           >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
             Mock Exams
@@ -127,7 +127,7 @@ function App() {
             onClick={() => setMode('listening')}
             className={`sidebar-item w-full ${mode === 'listening' ? 'active' : ''}`}
           >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
             </svg>
             Listening
@@ -203,7 +203,7 @@ function App() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
                     </svg>
                   </div>
-                  <h5 className="text-xl font-black text-slate-800 mb-1">Vocabulary</h5>
+                  <h5 className="text-lg font-black text-slate-800 mb-1">Vocabulary</h5>
                   <p className="text-slate-500 font-medium text-sm mb-6">Review your flashcards using Spaced Repetition.</p>
                   <div className="mt-auto flex items-center justify-between text-slate-400">
                     <span className="text-xs font-bold uppercase tracking-widest">{reviewQueue.length} items due</span>
@@ -219,7 +219,7 @@ function App() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                   </div>
-                  <h5 className="text-xl font-black text-slate-800 mb-1">TOEIC Practice</h5>
+                  <h5 className="text-lg font-black text-slate-800 mb-1">TOEIC Practice</h5>
                   <p className="text-slate-500 font-medium text-sm mb-6">Master business English with targeted mock exams.</p>
                   <div className="mt-auto flex items-center justify-between text-slate-400">
                     <span className="text-xs font-bold uppercase tracking-widest">Level 700+</span>
@@ -235,7 +235,7 @@ function App() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
                     </svg>
                   </div>
-                  <h5 className="text-xl font-black text-slate-800 mb-1">JLPT N2 Mock</h5>
+                  <h5 className="text-lg font-black text-slate-800 mb-1">JLPT N2 Mock</h5>
                   <p className="text-slate-500 font-medium text-sm mb-6">Advanced Japanese grammar and vocabulary.</p>
                   <div className="mt-auto flex items-center justify-between text-slate-400">
                     <span className="text-xs font-bold uppercase tracking-widest">Advanced Level</span>
