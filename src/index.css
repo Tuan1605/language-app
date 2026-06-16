@@ -5,113 +5,207 @@
 }
 
 :root {
-  --font-sans: 'Inter', 'Plus Jakarta Sans', system-ui, sans-serif;
-  --primary: #4f46e5;
-  --primary-dark: #4338ca;
-  --primary-light: #eef2ff;
-  --slate-50: #f8fafc;
-  --slate-100: #f1f5f9;
-  --slate-200: #e2e8f0;
-  --slate-300: #cbd5e1;
-  --slate-400: #94a3b8;
-  --slate-500: #64748b;
-  --slate-600: #475569;
-  --slate-700: #334155;
-  --slate-800: #1e293b;
-  --slate-900: #0f172a;
+  --font-sans: 'DIN Round', 'Plus Jakarta Sans', system-ui, sans-serif;
+  --lingo-green: #58cc02;
+  --lingo-green-dark: #46a302;
+  --lingo-blue: #1cb0f6;
+  --lingo-blue-dark: #1899d6;
+  --lingo-purple: #ce82ff;
+  --lingo-purple-dark: #af69ef;
+  --lingo-red: #ff4b4b;
+  --lingo-red-dark: #d33131;
+  --lingo-orange: #ff9600;
+  --lingo-orange-dark: #e38600;
+  --lingo-gray: #afafaf;
+  --lingo-gray-light: #e5e5e5;
+  --lingo-gray-dark: #777777;
+  --lingo-border: #e5e5e5;
 }
 
 body {
   background-color: #ffffff;
-  color: var(--slate-600);
+  color: #4b4b4b;
   font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: -0.01em;
 }
 
-/* Modern Button Base */
-.btn-modern {
+/* Advanced 3D Button System */
+.btn-3d {
+  position: relative;
+  transition: all 0.1s ease;
+  border-bottom-width: 4px;
+  cursor: pointer;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.75rem 1.5rem;
-  border-radius: 0.75rem;
-  font-weight: 600;
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border-radius: 16px;
+  user-select: none;
+  overflow: hidden;
 }
 
-.btn-modern:active {
-  transform: scale(0.98);
+.btn-3d:hover {
+  filter: brightness(1.05);
 }
 
-.btn-primary {
-  background-color: var(--primary);
+.btn-3d:active {
+  transform: translateY(2px);
+  border-bottom-width: 0;
+  margin-bottom: 4px;
+}
+
+.btn-green {
+  background-color: var(--lingo-green);
+  border-color: var(--lingo-green-dark);
   color: white;
-  box-shadow: 0 4px 6px -1px rgba(79, 70, 229, 0.1), 0 2px 4px -1px rgba(79, 70, 229, 0.06);
+}
+.btn-blue {
+  background-color: var(--lingo-blue);
+  border-color: var(--lingo-blue-dark);
+  color: white;
+}
+.btn-purple {
+  background-color: var(--lingo-purple);
+  border-color: var(--lingo-purple-dark);
+  color: white;
+}
+.btn-red {
+  background-color: var(--lingo-red);
+  border-color: var(--lingo-red-dark);
+  color: white;
+}
+.btn-orange {
+  background-color: var(--lingo-orange);
+  border-color: var(--lingo-orange-dark);
+  color: white;
+}
+.btn-outline {
+  background-color: white;
+  border: 2px solid var(--lingo-gray-light);
+  border-bottom-width: 4px;
+  color: var(--lingo-gray-dark);
 }
 
-.btn-primary:hover {
-  background-color: var(--primary-dark);
-  box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.2);
-}
-
-.btn-ghost {
-  background-color: transparent;
-  color: var(--slate-500);
-}
-
-.btn-ghost:hover {
-  background-color: var(--slate-50);
-  color: var(--slate-900);
-}
-
-/* Sidebar Styling */
+/* Sidebar Refinement */
 .sidebar-item {
   display: flex;
   align-items: center;
-  gap: 14px;
-  padding: 12px 20px;
-  border-radius: 14px;
-  font-weight: 600;
-  color: var(--slate-500);
+  gap: 16px;
+  padding: 14px 20px;
+  border-radius: 16px;
+  font-weight: 800;
+  color: var(--lingo-gray-dark);
   transition: all 0.2s;
-  border: 1px solid transparent;
-}
-
-.sidebar-item svg {
-  width: 22px;
-  height: 22px;
+  border: 2px solid transparent;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.85rem;
 }
 
 .sidebar-item:hover {
-  background-color: var(--slate-50);
-  color: var(--slate-900);
+  background-color: #f7f7f7;
+  color: #4b4b4b;
 }
 
 .sidebar-item.active {
-  background-color: var(--primary-light);
-  color: var(--primary);
+  background-color: #ddf4ff;
+  color: var(--lingo-blue);
+  border-color: #84d8ff;
 }
 
-/* Card Styling */
-.modern-card {
+/* Premium Card Style */
+.lingo-card {
   background: white;
-  border: 1px solid var(--slate-100);
-  border-radius: 1.25rem;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
-  transition: all 0.3s ease;
+  border: 2px solid var(--lingo-border);
+  border-bottom-width: 6px;
+  border-radius: 24px;
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.modern-card:hover {
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+.lingo-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--lingo-blue);
 }
 
-/* Transitions */
-.fade-enter {
-  opacity: 0;
-  transform: translateY(10px);
+/* Custom Progress Bar */
+.lingo-progress {
+  height: 18px;
+  background-color: var(--lingo-gray-light);
+  border-radius: 999px;
+  overflow: hidden;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+  position: relative;
 }
-.fade-enter-active {
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity 300ms, transform 300ms;
+
+.lingo-progress-inner {
+  height: 100%;
+  border-radius: 999px;
+  box-shadow: inset 0 -4px 0 rgba(0,0,0,0.15);
+  transition: width 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+  position: relative;
 }
+
+.lingo-progress-inner::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 6px;
+  right: 6px;
+  height: 3px;
+  background: rgba(255,255,255,0.3);
+  border-radius: 999px;
+}
+
+/* Learning Path Zig-Zag & Decorations */
+.path-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 40px 0;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Unit Design */
+.unit-banner {
+  background-color: var(--lingo-green);
+  border-radius: 24px;
+  padding: 28px;
+  color: white;
+  box-shadow: 0 8px 0 var(--lingo-green-dark);
+  margin-bottom: 48px;
+  position: relative;
+  overflow: hidden;
+}
+
+.unit-banner::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 100px;
+  height: 100px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 50%;
+}
+
+/* Animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.floating {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Flashcard Flip Refinement */
+.perspective-1000 { perspective: 1000px; }
+.backface-hidden { backface-visibility: hidden; }
+.rotate-y-180 { transform: rotateY(180deg); }
+.transform-style-3d { transform-style: preserve-3d; }
