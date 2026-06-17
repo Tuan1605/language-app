@@ -17,12 +17,23 @@ export function FlashcardView({ card, onRate }: FlashcardViewProps) {
       >
         {/* Front Side */}
         <div className="absolute inset-0 w-full h-full lingo-card flex flex-col items-center justify-center text-center backface-hidden bg-white">
-          <span className="absolute top-6 text-[10px] font-black text-[#1cb0f6] uppercase tracking-[0.2em] bg-[#ddf4ff] px-4 py-1.5 rounded-full">
+          <span className="absolute top-6 text-[10px] font-black text-[#1cb0f6] uppercase tracking-[0.2em] bg-[#ddf4ff] px-4 py-1.5 rounded-full z-10">
             Question
           </span>
-          <h2 className="text-4xl font-black text-[#4b4b4b] leading-tight px-6 break-words">
-            {card.word}
-          </h2>
+          {card.imageUrl ? (
+            <div className="flex flex-col items-center gap-4 w-full px-6">
+              <div className="w-full h-40 rounded-2xl overflow-hidden border-2 border-[var(--border-main)] shadow-inner">
+                <img src={card.imageUrl} alt={card.word} className="w-full h-full object-cover" />
+              </div>
+              <h2 className="text-3xl font-black text-[#4b4b4b] leading-tight break-words">
+                {card.word}
+              </h2>
+            </div>
+          ) : (
+            <h2 className="text-4xl font-black text-[#4b4b4b] leading-tight px-6 break-words">
+              {card.word}
+            </h2>
+          )}
           <div className="absolute bottom-6 flex items-center gap-2 text-[#afafaf] font-black text-[10px] uppercase tracking-widest animate-pulse">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />

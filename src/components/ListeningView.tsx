@@ -4,9 +4,10 @@ import type { ListeningLesson } from '../types';
 interface ListeningViewProps {
   lesson: ListeningLesson;
   onBack: () => void;
+  hideBackButton?: boolean;
 }
 
-export function ListeningView({ lesson, onBack }: ListeningViewProps) {
+export function ListeningView({ lesson, onBack, hideBackButton }: ListeningViewProps) {
   const [currentTime, setCurrentTime] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
@@ -29,15 +30,29 @@ export function ListeningView({ lesson, onBack }: ListeningViewProps) {
   };
 
   return (
-    <div className="bg-white p-8 rounded-2xl shadow-xl max-w-2xl w-full">
-      <div className="flex justify-between items-center mb-6">
-        <button onClick={onBack} className="text-indigo-600 font-medium">← Quay lại</button>
-        <span className="text-sm font-bold text-gray-400 uppercase tracking-widest">{lesson.category.toUpperCase()} Listening</span>
+    <div className="bg-[var(--bg-card)] lingo-card p-10 max-w-3xl mx-auto w-full animate-in slide-in-from-bottom-8 duration-500">
+      <div className="flex justify-between items-center mb-10">
+        {!hideBackButton ? (
+          <button onClick={onBack} className="text-[var(--text-muted)] hover:text-[var(--text-main)] transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+        ) : <div className="w-10"></div>}
+        <div className="flex items-center gap-3">
+          <div className={`w-3 h-3 rounded-full ${lesson.category === 'toeic' ? 'bg-[#1cb0f6]' : 'bg-[#ff4b4b]'}`}></div>
+          <span className="text-[10px] font-black text-[var(--text-muted)] uppercase tracking-[0.2em]">{lesson.category} Audio Lesson</span>
+        </div>
+        {!hideBackButton ? <div className="w-10"></div> : (
+          <button onClick={onBack} className="btn-3d btn-green py-2 px-4 text-[10px]">
+            DONE
+          </button>
+        )}
       </div>
 
-      <h2 className="text-2xl font-bold text-gray-800 mb-6">{lesson.title}</h2>
+      <h2 className="text-3xl font-black text-[var(--text-main)] mb-10 text-center leading-tight">{lesson.title}</h2>
 
-      <div className="bg-gray-50 p-6 rounded-xl mb-8">
+      <div className="bg-[var(--bg-hover)] p-8 rounded-[2rem] border-2 border-[var(--border-main)] mb-12 shadow-inner">
         <audio 
           ref={audioRef}
           src={lesson.audioUrl}
@@ -46,55 +61,50 @@ export function ListeningView({ lesson, onBack }: ListeningViewProps) {
           className="hidden"
         />
         
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center gap-6">
           <button 
             onClick={togglePlay}
-            className="bg-indigo-600 text-white p-4 rounded-full hover:bg-indigo-700 transition shadow-md"
+            className={`w-16 h-16 rounded-full flex items-center justify-center text-white shadow-xl transition-all active:scale-95 ${isPlaying ? 'bg-[#ff4b4b]' : 'bg-[#58cc02]'}`}
           >
             {isPlaying ? (
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
             ) : (
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132A1 1 0 0010 11.5v-0.664z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
             )}
           </button>
           
-          <div className="flex-1 h-2 bg-gray-200 rounded-full overflow-hidden">
+          <div className="flex-1 h-3 bg-[var(--border-main)] rounded-full overflow-hidden">
             <div 
-              className="h-full bg-indigo-500 transition-all duration-100" 
+              className="h-full bg-[#58cc02] transition-all duration-300" 
               style={{ width: `${(currentTime / (audioRef.current?.duration || 1)) * 100}%` }}
             />
           </div>
           
-          <span className="text-xs font-mono text-gray-500 w-12 text-right">
+          <span className="text-xs font-black text-[var(--text-muted)] w-10 text-right tabular-nums">
             {Math.floor(currentTime)}s
           </span>
         </div>
       </div>
 
-      <div className="space-y-6 max-h-96 overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-gray-200">
-        <h3 className="text-sm font-bold text-gray-400 uppercase tracking-wider mb-2">Transcript</h3>
+      <div className="space-y-6 max-h-[500px] overflow-y-auto pr-4 custom-scrollbar">
+        <p className="text-[10px] font-black text-[var(--text-muted)] uppercase tracking-[0.2em] mb-4">Transcript & Translation</p>
         {lesson.transcript.map((item, index) => {
           const isActive = currentTime >= item.time && (index === lesson.transcript.length - 1 || currentTime < lesson.transcript[index + 1].time);
           
           return (
             <div 
               key={index}
-              className={`p-4 rounded-lg transition border-l-4 ${
+              className={`p-6 rounded-2xl transition-all border-2 ${
                 isActive 
-                ? 'bg-indigo-50 border-indigo-500 shadow-sm' 
-                : 'bg-white border-transparent'
+                ? 'bg-[var(--bg-card)] border-[#1cb0f6] shadow-md scale-[1.02]' 
+                : 'bg-transparent border-transparent opacity-50'
               }`}
             >
-              <p className={`text-lg leading-relaxed ${isActive ? 'text-indigo-900 font-medium' : 'text-gray-600'}`}>
+              <p className={`text-xl leading-relaxed font-bold ${isActive ? 'text-[var(--text-main)]' : 'text-[var(--text-muted)]'}`}>
                 {item.text}
               </p>
               {item.translation && (
-                <p className="text-sm text-gray-400 mt-2 italic">{item.translation}</p>
+                <p className="text-sm text-[var(--text-muted)] mt-3 italic font-medium">{item.translation}</p>
               )}
             </div>
           );

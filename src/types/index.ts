@@ -1,17 +1,21 @@
+export type Difficulty = 'beginner' | 'intermediate' | 'advanced';
+
 export interface Flashcard {
   id: string;
   user_id: string;
   word: string;
   definition: string;
   example?: string;
+  imageUrl?: string;
   language: 'english' | 'japanese';
   category: 'toeic' | 'n2';
+  difficulty: Difficulty;
   
   // SM-2 Algorithm fields
-  repetition: number; // n
-  interval: number;   // I
-  easiness: number;   // EF
-  next_review: string; // ISO date string
+  repetition: number;
+  interval: number;
+  easiness: number;
+  next_review: string;
   created_at: string;
 }
 
@@ -21,10 +25,12 @@ export interface Question {
   id: string;
   text: string;
   options: string[];
-  correctAnswer: number; // Index of the correct option
+  correctAnswer: number;
   explanation?: string;
+  imageUrl?: string;
   category: 'toeic' | 'n2';
-  subCategory?: string; // e.g., 'Part 5', 'Grammar'
+  difficulty: Difficulty;
+  subCategory?: string;
 }
 
 export interface ExamResult {
@@ -33,6 +39,7 @@ export interface ExamResult {
   score: number;
   totalQuestions: number;
   category: 'toeic' | 'n2';
+  difficulty: Difficulty;
 }
 
 export interface ListeningLesson {
@@ -40,9 +47,28 @@ export interface ListeningLesson {
   title: string;
   audioUrl: string;
   category: 'toeic' | 'n2';
+  difficulty: Difficulty;
   transcript: {
-    time: number; // seconds
+    time: number;
     text: string;
     translation?: string;
   }[];
+}
+
+export interface SpeakingLesson {
+  id: string;
+  category: 'toeic' | 'n2';
+  difficulty: Difficulty;
+  targetSentence: string;
+  translation: string;
+  phonetic?: string;
+}
+
+export interface DictationLesson {
+  id: string;
+  category: 'toeic' | 'n2';
+  difficulty: Difficulty;
+  audioUrl: string;
+  targetText: string;
+  translation: string;
 }

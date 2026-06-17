@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import type { Question, ExamResult } from '../types';
 
 interface QuizViewProps {
@@ -6,24 +6,64 @@ interface QuizViewProps {
   category: 'toeic' | 'n2';
   onComplete: (result: ExamResult) => void;
   onCancel: () => void;
+  hideSummary?: boolean;
 }
 
-export function QuizView({ questions, category, onComplete, onCancel }: QuizViewProps) {
+export function QuizView({ questions, category, onComplete, onCancel, hideSummary }: QuizViewProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState<(number | null)[]>(new Array(questions.length).fill(null));
   const [isFinished, setIsFinished] = useState(false);
+  
+  // --- TIMER STATE ---
+  const [timeLeft, setTimeLeft] = useState(15);
+  const timerRef = useRef<any>(null);
+
+  useEffect(() => {
+    if (isFinished) return;
+    
+    setTimeLeft(15);
+    if (timerRef.current) clearInterval(timerRef.current);
+    
+    timerRef.current = setInterval(() => {
+      setTimeLeft(prev => {
+        if (prev <= 1) {
+          clearInterval(timerRef.current);
+          handleNext(); // Auto-skip if time runs out
+          return 0;
+        }
+        return prev - 1;
+      });
+    }, 1000);
+
+    return () => clearInterval(timerRef.current);
+  }, [currentIndex, isFinished]);
 
   const handleSelect = (optionIndex: number) => {
+    if (selectedAnswers[currentIndex] !== null) return; // Prevent changing answer
     const newAnswers = [...selectedAnswers];
     newAnswers[currentIndex] = optionIndex;
     setSelectedAnswers(newAnswers);
+    // Clear timer when answer is selected for better UX
+    if (timerRef.current) clearInterval(timerRef.current);
   };
 
   const handleNext = () => {
     if (currentIndex < questions.length - 1) {
       setCurrentIndex(currentIndex + 1);
     } else {
-      setIsFinished(true);
+      const finalScore = calculateScore();
+      if (hideSummary) {
+        onComplete({
+          id: crypto.randomUUID(),
+          date: new Date().toISOString(),
+          score: finalScore,
+          totalQuestions: questions.length,
+          category,
+          difficulty: questions[0].difficulty
+        });
+      } else {
+        setIsFinished(true);
+      }
     }
   };
 
@@ -68,7 +108,8 @@ export function QuizView({ questions, category, onComplete, onCancel }: QuizView
             date: new Date().toISOString(),
             score: finalScore,
             totalQuestions: questions.length,
-            category
+            category,
+            difficulty: questions[0].difficulty
           })}
           className="w-full btn-3d btn-blue h-14"
         >
@@ -81,16 +122,37 @@ export function QuizView({ questions, category, onComplete, onCancel }: QuizView
   const currentQuestion = questions[currentIndex];
 
   return (
-    <div className="bg-white lingo-card max-w-3xl w-full mx-auto">
-      <div className="flex justify-between items-center mb-10">
+    <div className="bg-[var(--bg-card)] lingo-card max-w-3xl w-full mx-auto relative overflow-hidden">
+      {/* Visual Timer Bar */}
+      {!isFinished && (
+        <div className="absolute top-0 left-0 right-0 h-1.5 bg-[var(--bg-hover)] overflow-hidden">
+          <div 
+            className={`h-full transition-all duration-1000 ease-linear ${timeLeft <= 5 ? 'bg-[#ff4b4b] animate-pulse' : 'bg-[#1cb0f6]'}`}
+            style={{ width: `${(timeLeft / 15) * 100}%` }}
+          ></div>
+        </div>
+      )}
+
+      <div className="flex justify-between items-center mb-10 mt-2">
         <div className="flex items-center gap-3">
           <div className={`w-3 h-3 rounded-full ${category === 'toeic' ? 'bg-[#1cb0f6]' : 'bg-[#ff4b4b]'}`}></div>
-          <span className="text-[10px] font-black text-[#afafaf] uppercase tracking-[0.2em]">{category} Mock Exam</span>
+          <span className="text-[10px] font-black text-[var(--text-muted)] uppercase tracking-[0.2em]">{category} Mock Exam</span>
+          {!isFinished && (
+            <span className={`text-[10px] font-black uppercase px-2 py-0.5 rounded-md border-2 ${timeLeft <= 5 ? 'text-[#ff4b4b] border-[#ff4b4b] animate-pulse' : 'text-[#1cb0f6] border-[#1cb0f6]'}`}>
+              {timeLeft}s
+            </span>
+          )}
         </div>
-        <div className="bg-[#f7f7f7] px-4 py-1.5 rounded-xl text-[9px] font-black text-[#777] uppercase tracking-widest border-2 border-[#e5e5e5]">
+        <div className="bg-[var(--bg-hover)] px-4 py-1.5 rounded-xl text-[9px] font-black text-[var(--text-muted)] uppercase tracking-widest border-2 border-[var(--border-main)]">
           Question {currentIndex + 1} of {questions.length}
         </div>
       </div>
+
+      {currentQuestion.imageUrl && (
+        <div className="w-full mb-8 rounded-2xl overflow-hidden border-2 border-[var(--border-main)] shadow-sm max-h-[300px]">
+          <img src={currentQuestion.imageUrl} alt="Question illustration" className="w-full h-full object-cover" />
+        </div>
+      )}
 
       <div className="mb-10">
         <h3 className="text-2xl font-black text-[#4b4b4b] leading-tight">
