@@ -129,16 +129,16 @@ body {
   z-index: 10;
   position: relative;
   font-size: 32px;
-  /* Thick Duolingo style */
-  background-color: var(--green);
-  box-shadow: 0 8px 0 var(--green-shadow);
+  /* Dynamic styling with fallback */
+  background-color: var(--node-bg, var(--green));
+  box-shadow: 0 8px 0 var(--node-shadow, var(--green-shadow));
   transition: transform 0.1s, box-shadow 0.1s;
   cursor: pointer;
 }
 
 .duo-node:active:not(.locked) {
   transform: translateY(8px) scale(0.95);
-  box-shadow: 0 0 0 var(--green-shadow);
+  box-shadow: 0 0 0 var(--node-shadow, var(--green-shadow));
 }
 
 .duo-node.locked {
@@ -150,12 +150,12 @@ body {
 
 .duo-node.current {
   /* The active glowing crown effect */
-  box-shadow: 0 8px 0 var(--green-shadow), 0 0 0 8px var(--green-light);
+  box-shadow: 0 8px 0 var(--node-shadow, var(--green-shadow)), 0 0 0 8px rgba(255, 255, 255, 0.5);
   animation: bounce-subtle 2s infinite ease-in-out;
 }
 
 .duo-node.current:active {
-  box-shadow: 0 0 0 var(--green-shadow), 0 0 0 8px var(--green-light);
+  box-shadow: 0 0 0 var(--node-shadow, var(--green-shadow)), 0 0 0 8px rgba(255, 255, 255, 0.5);
   transform: translateY(8px);
 }
 

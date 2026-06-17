@@ -72,3 +72,18 @@ export interface DictationLesson {
   targetText: string;
   translation: string;
 }
+
+export type SessionTask = 
+  | { type: 'vocab-quiz'; data: Flashcard }
+  | { type: 'quiz'; data: Question }
+  | { type: 'listening'; data: ListeningLesson }
+  | { type: 'speaking'; data: SpeakingLesson }
+  | { type: 'dictation'; data: DictationLesson };
+
+export interface FullExam {
+  id: string;
+  title: string;
+  year: number;
+  category: 'toeic' | 'n2';
+  tasks: SessionTask[];
+}

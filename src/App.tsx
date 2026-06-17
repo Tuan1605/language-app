@@ -8,9 +8,10 @@ import { DictationView } from './components/DictationView';
 import { VocabQuizView } from './components/VocabQuizView';
 import { CollectionView } from './components/CollectionView';
 import { AnalyticsView } from './components/AnalyticsView';
-import type { Flashcard, ExamResult, ListeningLesson, SpeakingLesson, Question, Difficulty, DictationLesson, ReviewGrade } from './types';
+import { CreateExamView } from './components/CreateExamView';
+import type { Flashcard, ExamResult, ListeningLesson, SpeakingLesson, Question, Difficulty, DictationLesson, ReviewGrade, SessionTask, FullExam } from './types';
 import { calculateSM2, getNextReviewDate } from './utils/sm2';
-import { MOCK_QUESTIONS, MOCK_LISTENING_LESSONS, MOCK_CARDS, MOCK_SPEAKING_LESSONS, MOCK_DICTATION_LESSONS } from './utils/mockData';
+import { MOCK_QUESTIONS, MOCK_LISTENING_LESSONS, MOCK_CARDS, MOCK_SPEAKING_LESSONS, MOCK_DICTATION_LESSONS, MOCK_FULL_EXAMS } from './utils/mockData';
 
 // --- GAMIFIED CURRICULUMS ---
 const TOEIC_CURRICULUM = [
@@ -23,25 +24,20 @@ const TOEIC_CURRICULUM = [
 const N2_CURRICULUM = [
   { id: 1, title: 'Hiragana & N5', desc: 'Basic Literacy', nodes: 10, difficulty: 'beginner', color: '#58cc02', shadow: '#58a700', text: 'text-white' },
   { id: 2, title: 'Tokyo Trip', desc: 'Daily Fluency N4', nodes: 15, difficulty: 'intermediate', color: '#ff4b4b', shadow: '#ea2b2b', text: 'text-white' },
-  { id: 3, title: 'Newspaper', desc: 'Academic Reading N3', nodes: 20, difficulty: 'advanced', color: '#1cb0f6', shadow: '#1899d6', text: 'text-white' },
+  { id: 3, 'title': 'Newspaper', desc: 'Academic Reading N3', nodes: 20, difficulty: 'advanced', color: '#1cb0f6', shadow: '#1899d6', text: 'text-white' },
   { id: 4, title: 'N2 Master!', desc: 'The Final Boss', nodes: 35, difficulty: 'advanced', color: '#ffc800', shadow: '#cda000', text: 'text-[#4b4b4b]' },
 ];
 
-type SessionTask = 
-  | { type: 'vocab-quiz'; data: Flashcard }
-  | { type: 'quiz'; data: Question }
-  | { type: 'listening'; data: ListeningLesson }
-  | { type: 'speaking'; data: SpeakingLesson }
-  | { type: 'dictation'; data: DictationLesson };
-
 function App() {
+// --- GAMIFIED CURRICULUMS ---
   const [cards, setCards] = useState<Flashcard[]>(MOCK_CARDS);
   const [examResults, setExamResults] = useState<ExamResult[]>([]);
-  const [mode, setMode] = useState<'path' | 'practice' | 'session' | 'add' | 'collection' | 'analytics' | 'review'>('path');
+  const [mode, setMode] = useState<'path' | 'practice' | 'session' | 'add' | 'collection' | 'analytics' | 'review' | 'create-exam'>('path');
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
   const [activeTrack, setActiveTrack] = useState<'english' | 'japanese'>('english');
   const [unlockedEn, setUnlockedEn] = useState(0);
   const [unlockedJa, setUnlockedJa] = useState(0);
+  const [customExams, setCustomExams] = useState<FullExam[]>([]);
 
   const [sessionTasks, setSessionTasks] = useState<SessionTask[]>([]);
   const [currentTaskIndex, setCurrentTaskIndex] = useState(0);
@@ -59,6 +55,8 @@ function App() {
     if (progressJa) setUnlockedJa(parseInt(progressJa));
     const savedTheme = localStorage.getItem('language-theme') as 'light' | 'dark';
     if (savedTheme) { setTheme(savedTheme); document.documentElement.setAttribute('data-theme', savedTheme); }
+    const savedCustomExams = localStorage.getItem('custom-exams');
+    if (savedCustomExams) setCustomExams(JSON.parse(savedCustomExams));
     
     // Force rounded font across the app for Duolingo feel
     document.body.style.fontFamily = "'Nunito', 'Quicksand', sans-serif";
@@ -68,6 +66,7 @@ function App() {
   useEffect(() => { localStorage.setItem('language-exam-results', JSON.stringify(examResults)); }, [examResults]);
   useEffect(() => { localStorage.setItem('unlocked-en', unlockedEn.toString()); }, [unlockedEn]);
   useEffect(() => { localStorage.setItem('unlocked-ja', unlockedJa.toString()); }, [unlockedJa]);
+  useEffect(() => { localStorage.setItem('custom-exams', JSON.stringify(customExams)); }, [customExams]);
 
   const toggleTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
@@ -115,6 +114,13 @@ function App() {
     setCurrentTaskIndex(0); setIsSessionFinished(false); setMode('session');
   };
 
+  const startFullExam = (exam: FullExam) => {
+    setSessionTasks(exam.tasks);
+    setCurrentTaskIndex(0);
+    setIsSessionFinished(false);
+    setMode('session');
+  };
+
   const handleRateCard = (grade: ReviewGrade) => {
     const reviewQueue = cards.filter(c => c.language === activeTrack);
     const card = reviewQueue[currentReviewIndex];
@@ -136,6 +142,11 @@ function App() {
        else setUnlockedJa(prev => prev + 1);
     }
     setMode('path');
+  };
+
+  const handleSaveExam = (exam: FullExam) => {
+    setCustomExams([...customExams, exam]);
+    setMode('practice');
   };
 
   const handleAddCard = (data: { word: string; definition: string; language: 'english' | 'japanese' }) => {
@@ -194,10 +205,16 @@ function App() {
       globalNodeIndex += unit.nodes;
 
       return (
-        <section key={unit.id} className="w-full flex flex-col items-center mb-16 relative">
+        <section 
+          key={unit.id} 
+          className="w-full flex flex-col items-center mb-16 relative"
+        >
           
           {/* Colorful Gamified Unit Header */}
-          <div className={`w-full max-w-xl p-8 rounded-3xl ${unit.color} ${unit.text} mb-12 flex flex-col justify-center relative overflow-hidden z-20 shadow-[0_8px_0_rgba(0,0,0,0.15)]`}>
+          <div 
+            className={`w-full max-w-xl p-8 rounded-3xl ${unit.text} mb-12 flex flex-col justify-center relative overflow-hidden z-20`}
+            style={{ backgroundColor: unit.color, boxShadow: `0 8px 0 ${unit.shadow}`, border: `2px solid ${unit.shadow}` }}
+          >
              <div className="flex justify-between items-center z-10 relative">
                <div className="space-y-1">
                  <h2 className="text-3xl font-black uppercase tracking-tight">Unit {unit.id}</h2>
@@ -215,17 +232,17 @@ function App() {
             {/* The SVG Road underneath */}
             <div className="absolute inset-0 w-full h-full pointer-events-none z-0">
                <svg width="100%" height="100%" viewBox={`0 0 ${VIEWBOX_WIDTH} ${sectionHeight}`} preserveAspectRatio="none" className="overflow-visible">
-                  {/* Nền xám chưa học - Làm thanh mảnh lại */}
+                  {/* Nền xám chưa học */}
                   <path d={fullPathD} fill="none" stroke="#cbd5e1" strokeWidth="28" strokeLinecap="round" strokeLinejoin="round" transform="translate(0, 8)" />
                   <path d={fullPathD} fill="none" stroke="#e2e8f0" strokeWidth="28" strokeLinecap="round" strokeLinejoin="round" />
                   
-                  {/* Nền vàng đã học */}
-                  {activePathD && <path d={activePathD} fill="none" stroke="var(--gold-shadow)" strokeWidth="28" strokeLinecap="round" strokeLinejoin="round" transform="translate(0, 8)" />}
-                  {activePathD && <path d={activePathD} fill="none" stroke="var(--gold)" strokeWidth="28" strokeLinecap="round" strokeLinejoin="round" />}
+                  {/* Nền màu theo Unit đã học */}
+                  {activePathD && <path d={activePathD} fill="none" stroke={unit.shadow} strokeWidth="28" strokeLinecap="round" strokeLinejoin="round" transform="translate(0, 8)" />}
+                  {activePathD && <path d={activePathD} fill="none" stroke={unit.color} strokeWidth="28" strokeLinecap="round" strokeLinejoin="round" />}
                   
-                  {/* Vạch đứt nét ở giữa - Tinh tế hơn */}
-                  <path d={fullPathD} fill="none" stroke="#ffffff" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" strokeDasharray="1 16" opacity="0.6" />
-                  {activePathD && <path d={activePathD} fill="none" stroke="#ffffff" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" strokeDasharray="1 16" opacity="1" />}
+                  {/* Vạch đứt nét ở giữa */}
+                  <path d={fullPathD} fill="none" stroke={unit.shadow} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" strokeDasharray="1 16" opacity="0.4" />
+                  {activePathD && <path d={activePathD} fill="none" stroke={unit.shadow} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" strokeDasharray="1 16" opacity="0.4" />}
                </svg>
             </div>
 
@@ -252,7 +269,7 @@ function App() {
                   
                   {/* Current Node Tooltip */}
                   {isCurrent && (
-                    <div className="absolute -top-16 bg-white text-[var(--green)] px-4 py-2 rounded-2xl font-black text-xs shadow-[0_4px_0_#e5e5e5] animate-bounce z-20 uppercase tracking-widest border-2 border-[var(--gray-path)] whitespace-nowrap">
+                    <div className="absolute -top-16 bg-white text-[var(--text-main)] px-4 py-2 rounded-2xl font-black text-xs shadow-[0_4px_0_#e5e5e5] animate-bounce z-20 uppercase tracking-widest border-2 border-[var(--gray-path)] whitespace-nowrap">
                       START
                       {/* Tooltip triangle */}
                       <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-white border-b-2 border-r-2 border-[var(--gray-path)] rotate-45"></div>
@@ -263,7 +280,10 @@ function App() {
                     disabled={isLocked}
                     onClick={() => startSession(idx, unit.difficulty as Difficulty)}
                     className={`duo-node ${isLocked ? 'locked' : ''} ${isCurrent ? 'current' : ''}`}
-                    style={!isLocked && !isCurrent ? { backgroundColor: isCrown ? 'var(--gold)' : 'var(--green)', boxShadow: `0 8px 0 ${isCrown ? 'var(--gold-shadow)' : 'var(--green-shadow)'}` } : {}}
+                    style={!isLocked ? { 
+                      '--node-bg': isCrown ? 'var(--gold)' : unit.color, 
+                      '--node-shadow': isCrown ? 'var(--gold-shadow)' : unit.shadow 
+                    } as React.CSSProperties : {}}
                   >
                     {isLocked ? (
                        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-[var(--gray-path-dark)]/50" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}><path strokeLinecap="round" strokeLinejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
@@ -339,8 +359,29 @@ function App() {
                   <div><h3 className="text-2xl font-black">Mock Exam</h3><p className="text-sm font-bold text-[var(--text-muted)]">Full test pressure</p></div>
                   <button onClick={() => startDrill('quiz')} className="btn-duo btn-blue h-14 mt-4 w-full">START TEST</button>
                </div>
+
+               {/* Create Exam Button */}
+               <div className="w-full">
+                 <button onClick={() => setMode('create-exam')} className="w-full btn-duo btn-purple h-14 text-base">
+                   ✨ Create Your Own Exam
+                 </button>
+               </div>
                
-               <div className="grid grid-cols-2 gap-6 w-full">
+               {/* Full Exams Section */}
+               <div className="w-full flex flex-col gap-4 mt-2">
+                 <h3 className="text-2xl font-black px-2">Full Official Exams</h3>
+                 {[...MOCK_FULL_EXAMS, ...customExams].filter(exam => exam.category === (activeTrack === 'english' ? 'toeic' : 'n2')).map(exam => (
+                   <div key={exam.id} className="w-full flex items-center justify-between gap-4 p-6 rounded-[1.5rem] border-2 border-[var(--gray-path)] bg-[var(--gray-bg)]">
+                     <div>
+                       <h4 className="font-black text-lg">{exam.title}</h4>
+                       <p className="text-sm font-bold text-[var(--text-muted)]">{exam.year} - {exam.tasks.length} tasks</p>
+                     </div>
+                     <button onClick={() => startFullExam(exam)} className="btn-duo btn-green h-12 w-32 text-xs">START</button>
+                   </div>
+                 ))}
+               </div>
+               
+               <div className="grid grid-cols-2 gap-6 w-full mt-6">
                  <div className="flex flex-col gap-4 p-6 rounded-[2rem] border-2 border-[var(--gray-path)] bg-[var(--gray-bg)]">
                     <div className="text-4xl">🧩</div>
                     <h4 className="font-black text-lg">Vocab</h4>
@@ -387,6 +428,16 @@ function App() {
           {mode === 'collection' && <CollectionView cards={cards} activeTrack={activeTrack} onDelete={handleRemoveCard} />}
           {mode === 'analytics' && <AnalyticsView results={examResults} activeTrack={activeTrack} />}
           {mode === 'review' && <div className="w-full max-w-xl mt-10"><FlashcardView card={cards.filter(c => c.language === activeTrack)[currentReviewIndex]} onRate={handleRateCard} /></div>}
+          {mode === 'create-exam' && (
+            <CreateExamView
+              onSave={handleSaveExam}
+              onCancel={() => setMode('practice')}
+              allQuestions={MOCK_QUESTIONS}
+              allListening={MOCK_LISTENING_LESSONS}
+              allSpeaking={MOCK_SPEAKING_LESSONS}
+              allDictation={MOCK_DICTATION_LESSONS}
+            />
+          )}
 
         </div>
       </main>
