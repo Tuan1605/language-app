@@ -14,17 +14,17 @@ import { MOCK_QUESTIONS, MOCK_LISTENING_LESSONS, MOCK_CARDS, MOCK_SPEAKING_LESSO
 
 // --- GAMIFIED CURRICULUMS ---
 const TOEIC_CURRICULUM = [
-  { id: 1, title: 'First Words!', desc: 'Basic Business Words', nodes: 8, difficulty: 'beginner', color: 'bg-[#58cc02]', text: 'text-white' },
-  { id: 2, title: 'At the Office', desc: 'Office Survival 300', nodes: 12, difficulty: 'intermediate', color: 'bg-[#1cb0f6]', text: 'text-white' },
-  { id: 3, title: 'Big Meetings', desc: 'Professional Meetings', nodes: 18, difficulty: 'advanced', color: 'bg-[#ce82ff]', text: 'text-white' },
-  { id: 4, title: 'The Boss', desc: 'Executive Mastery', nodes: 30, difficulty: 'advanced', color: 'bg-[#ffc800]', text: 'text-[#4b4b4b]' },
+  { id: 1, title: 'First Words!', desc: 'Basic Business Words', nodes: 8, difficulty: 'beginner', color: '#58cc02', shadow: '#58a700', text: 'text-white' },
+  { id: 2, title: 'At the Office', desc: 'Office Survival 300', nodes: 12, difficulty: 'intermediate', color: '#1cb0f6', shadow: '#1899d6', text: 'text-white' },
+  { id: 3, title: 'Big Meetings', desc: 'Professional Meetings', nodes: 18, difficulty: 'advanced', color: '#ce82ff', shadow: '#a561cf', text: 'text-white' },
+  { id: 4, title: 'The Boss', desc: 'Executive Mastery', nodes: 30, difficulty: 'advanced', color: '#ff4b4b', shadow: '#ea2b2b', text: 'text-white' },
 ];
 
 const N2_CURRICULUM = [
-  { id: 1, title: 'Hiragana & N5', desc: 'Basic Literacy', nodes: 10, difficulty: 'beginner', color: 'bg-[#58cc02]', text: 'text-white' },
-  { id: 2, title: 'Tokyo Trip', desc: 'Daily Fluency N4', nodes: 15, difficulty: 'intermediate', color: 'bg-[#ff4b4b]', text: 'text-white' },
-  { id: 3, title: 'Newspaper', desc: 'Academic Reading N3', nodes: 20, difficulty: 'advanced', color: 'bg-[#1cb0f6]', text: 'text-white' },
-  { id: 4, title: 'N2 Master!', desc: 'The Final Boss', nodes: 35, difficulty: 'advanced', color: 'bg-[#ffc800]', text: 'text-[#4b4b4b]' },
+  { id: 1, title: 'Hiragana & N5', desc: 'Basic Literacy', nodes: 10, difficulty: 'beginner', color: '#58cc02', shadow: '#58a700', text: 'text-white' },
+  { id: 2, title: 'Tokyo Trip', desc: 'Daily Fluency N4', nodes: 15, difficulty: 'intermediate', color: '#ff4b4b', shadow: '#ea2b2b', text: 'text-white' },
+  { id: 3, title: 'Newspaper', desc: 'Academic Reading N3', nodes: 20, difficulty: 'advanced', color: '#1cb0f6', shadow: '#1899d6', text: 'text-white' },
+  { id: 4, title: 'N2 Master!', desc: 'The Final Boss', nodes: 35, difficulty: 'advanced', color: '#ffc800', shadow: '#cda000', text: 'text-[#4b4b4b]' },
 ];
 
 type SessionTask = 
@@ -154,10 +154,10 @@ function App() {
     let globalNodeIndex = 0;
     const VIEWBOX_WIDTH = 400;
     const CENTER_X = 200;
-    const NODE_Y_SPACING = 130;
-    const START_Y = 60;
-    // Duolingo-style custom offsets for a highly organic, playful curve
-    const organicOffsets = [0, 45, 80, 95, 80, 45, 0, -45, -80, -95, -80, -45];
+    const NODE_Y_SPACING = 180; // Tăng khoảng cách theo chiều dọc để thoáng hơn
+    const START_Y = 80;
+    // Tăng biên độ lắc ngang để tương xứng với chiều cao mới
+    const organicOffsets = [0, 50, 85, 100, 85, 50, 0, -50, -85, -100, -85, -50];
 
     return currentCurriculum.map((unit) => {
       // 1. Calculate absolute coordinates for every node in this unit
@@ -169,9 +169,9 @@ function App() {
         return { idx, svgX, svgY };
       });
 
-      const sectionHeight = START_Y + (unit.nodes - 1) * NODE_Y_SPACING + 130;
+      const sectionHeight = START_Y + (unit.nodes - 1) * NODE_Y_SPACING + 160;
 
-      // 2. Generate perfect Bezier curves that intersect the exact center of each node
+      // 2. Generate perfect Bezier curves
       let fullPathD = '';
       let activePathD = '';
 
@@ -181,10 +181,9 @@ function App() {
           if (node.idx <= currentUnlocked) activePathD += `M ${node.svgX} ${node.svgY} `;
         } else {
           const prev = unitNodes[i - 1];
-          // Softer tension (0.45/0.55) makes the road flow beautifully like a real winding dirt path
-          const cp1Y = prev.svgY + (node.svgY - prev.svgY) * 0.45;
-          const cp2Y = prev.svgY + (node.svgY - prev.svgY) * 0.55;
-          const curve = `C ${prev.svgX} ${cp1Y}, ${node.svgX} ${cp2Y}, ${node.svgX} ${node.svgY} `;
+          // Thuật toán Bezier mềm mượt tuyệt đối: Lấy đúng điểm giữa Y làm Control Point cho cả 2
+          const midY = (prev.svgY + node.svgY) / 2;
+          const curve = `C ${prev.svgX} ${midY}, ${node.svgX} ${midY}, ${node.svgX} ${node.svgY} `;
           fullPathD += curve;
           if (node.idx <= currentUnlocked) {
             activePathD += curve;
@@ -198,7 +197,7 @@ function App() {
         <section key={unit.id} className="w-full flex flex-col items-center mb-16 relative">
           
           {/* Colorful Gamified Unit Header */}
-          <div className={`w-full max-w-xl p-8 rounded-3xl ${unit.color} ${unit.text} mb-8 flex flex-col justify-center relative overflow-hidden z-20 shadow-[0_8px_0_rgba(0,0,0,0.15)]`}>
+          <div className={`w-full max-w-xl p-8 rounded-3xl ${unit.color} ${unit.text} mb-12 flex flex-col justify-center relative overflow-hidden z-20 shadow-[0_8px_0_rgba(0,0,0,0.15)]`}>
              <div className="flex justify-between items-center z-10 relative">
                <div className="space-y-1">
                  <h2 className="text-3xl font-black uppercase tracking-tight">Unit {unit.id}</h2>
@@ -216,19 +215,17 @@ function App() {
             {/* The SVG Road underneath */}
             <div className="absolute inset-0 w-full h-full pointer-events-none z-0">
                <svg width="100%" height="100%" viewBox={`0 0 ${VIEWBOX_WIDTH} ${sectionHeight}`} preserveAspectRatio="none" className="overflow-visible">
-                  {/* Inactive Path Shadow */}
-                  <path d={fullPathD} fill="none" stroke="#cbd5e1" strokeWidth="50" strokeLinecap="round" strokeLinejoin="round" transform="translate(0, 10)" />
-                  {/* Inactive Path Base */}
-                  <path d={fullPathD} fill="none" stroke="#e2e8f0" strokeWidth="50" strokeLinecap="round" strokeLinejoin="round" />
+                  {/* Nền xám chưa học - Làm thanh mảnh lại */}
+                  <path d={fullPathD} fill="none" stroke="#cbd5e1" strokeWidth="28" strokeLinecap="round" strokeLinejoin="round" transform="translate(0, 8)" />
+                  <path d={fullPathD} fill="none" stroke="#e2e8f0" strokeWidth="28" strokeLinecap="round" strokeLinejoin="round" />
                   
-                  {/* Active Path Shadow */}
-                  {activePathD && <path d={activePathD} fill="none" stroke="var(--gold-shadow)" strokeWidth="50" strokeLinecap="round" strokeLinejoin="round" transform="translate(0, 10)" />}
-                  {/* Active Path Base */}
-                  {activePathD && <path d={activePathD} fill="none" stroke="var(--gold)" strokeWidth="50" strokeLinecap="round" strokeLinejoin="round" />}
+                  {/* Nền vàng đã học */}
+                  {activePathD && <path d={activePathD} fill="none" stroke="var(--gold-shadow)" strokeWidth="28" strokeLinecap="round" strokeLinejoin="round" transform="translate(0, 8)" />}
+                  {activePathD && <path d={activePathD} fill="none" stroke="var(--gold)" strokeWidth="28" strokeLinecap="round" strokeLinejoin="round" />}
                   
-                  {/* Map Trail (Dashed Center Line for Gamified Aesthetic) */}
-                  <path d={fullPathD} fill="none" stroke="#ffffff" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" strokeDasharray="1 24" opacity="0.7" />
-                  {activePathD && <path d={activePathD} fill="none" stroke="#ffffff" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" strokeDasharray="1 24" opacity="1" />}
+                  {/* Vạch đứt nét ở giữa - Tinh tế hơn */}
+                  <path d={fullPathD} fill="none" stroke="#ffffff" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" strokeDasharray="1 16" opacity="0.6" />
+                  {activePathD && <path d={activePathD} fill="none" stroke="#ffffff" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" strokeDasharray="1 16" opacity="1" />}
                </svg>
             </div>
 
