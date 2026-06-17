@@ -5,31 +5,30 @@ import { QuizView } from './components/QuizView';
 import { ListeningView } from './components/ListeningView';
 import { SpeakingView } from './components/SpeakingView';
 import { DictationView } from './components/DictationView';
+import { VocabQuizView } from './components/VocabQuizView';
 import { CollectionView } from './components/CollectionView';
 import { AnalyticsView } from './components/AnalyticsView';
-import type { Flashcard, ExamResult, ListeningLesson, SpeakingLesson, Question, Difficulty, DictationLesson } from './types';
+import type { Flashcard, ExamResult, ListeningLesson, SpeakingLesson, Question, Difficulty, DictationLesson, ReviewGrade } from './types';
+import { calculateSM2, getNextReviewDate } from './utils/sm2';
 import { MOCK_QUESTIONS, MOCK_LISTENING_LESSONS, MOCK_CARDS, MOCK_SPEAKING_LESSONS, MOCK_DICTATION_LESSONS } from './utils/mockData';
 
-// --- SESSION TASK TYPE ---
-
+// --- GAMIFIED CURRICULUMS ---
 const TOEIC_CURRICULUM = [
-  { id: 1, title: 'Basic Business Words', nodes: 8, difficulty: 'beginner', color: 'green' },
-  { id: 2, title: 'Office Survival', nodes: 12, difficulty: 'intermediate', color: 'blue' },
-  { id: 3, title: 'Professional Meetings', nodes: 15, difficulty: 'intermediate', color: 'purple' },
-  { id: 4, title: 'Advanced Strategy', nodes: 20, difficulty: 'advanced', color: 'orange' },
-  { id: 5, title: 'Infinity Mastery', nodes: 50, difficulty: 'advanced', color: 'black' },
+  { id: 1, title: 'First Words!', desc: 'Basic Business Words', nodes: 8, difficulty: 'beginner', color: 'bg-[#58cc02]', text: 'text-white' },
+  { id: 2, title: 'At the Office', desc: 'Office Survival 300', nodes: 12, difficulty: 'intermediate', color: 'bg-[#1cb0f6]', text: 'text-white' },
+  { id: 3, title: 'Big Meetings', desc: 'Professional Meetings', nodes: 18, difficulty: 'advanced', color: 'bg-[#ce82ff]', text: 'text-white' },
+  { id: 4, title: 'The Boss', desc: 'Executive Mastery', nodes: 30, difficulty: 'advanced', color: 'bg-[#ffc800]', text: 'text-[#4b4b4b]' },
 ];
 
 const N2_CURRICULUM = [
-  { id: 1, title: 'Bảng chữ cái & N5', nodes: 10, difficulty: 'beginner', color: 'green' },
-  { id: 2, title: 'Giao tiếp N4', nodes: 15, difficulty: 'intermediate', color: 'blue' },
-  { id: 3, title: 'Trung cấp N3', nodes: 18, difficulty: 'intermediate', color: 'purple' },
-  { id: 4, title: 'Mastering N2', nodes: 25, difficulty: 'advanced', color: 'red' },
-  { id: 5, title: 'Infinity Mastery', nodes: 50, difficulty: 'advanced', color: 'black' },
+  { id: 1, title: 'Hiragana & N5', desc: 'Basic Literacy', nodes: 10, difficulty: 'beginner', color: 'bg-[#58cc02]', text: 'text-white' },
+  { id: 2, title: 'Tokyo Trip', desc: 'Daily Fluency N4', nodes: 15, difficulty: 'intermediate', color: 'bg-[#ff4b4b]', text: 'text-white' },
+  { id: 3, title: 'Newspaper', desc: 'Academic Reading N3', nodes: 20, difficulty: 'advanced', color: 'bg-[#1cb0f6]', text: 'text-white' },
+  { id: 4, title: 'N2 Master!', desc: 'The Final Boss', nodes: 35, difficulty: 'advanced', color: 'bg-[#ffc800]', text: 'text-[#4b4b4b]' },
 ];
 
 type SessionTask = 
-  | { type: 'flashcard'; data: Flashcard }
+  | { type: 'vocab-quiz'; data: Flashcard }
   | { type: 'quiz'; data: Question }
   | { type: 'listening'; data: ListeningLesson }
   | { type: 'speaking'; data: SpeakingLesson }
@@ -38,18 +37,16 @@ type SessionTask =
 function App() {
   const [cards, setCards] = useState<Flashcard[]>(MOCK_CARDS);
   const [examResults, setExamResults] = useState<ExamResult[]>([]);
-  const [mode, setMode] = useState<'path' | 'practice' | 'session' | 'add' | 'collection' | 'analytics'>('path');
+  const [mode, setMode] = useState<'path' | 'practice' | 'session' | 'add' | 'collection' | 'analytics' | 'review'>('path');
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
-  
   const [activeTrack, setActiveTrack] = useState<'english' | 'japanese'>('english');
   const [unlockedEn, setUnlockedEn] = useState(0);
   const [unlockedJa, setUnlockedJa] = useState(0);
 
   const [sessionTasks, setSessionTasks] = useState<SessionTask[]>([]);
   const [currentTaskIndex, setCurrentTaskIndex] = useState(0);
-  const [sessionCorrect, setSessionCorrect] = useState(0);
-  const [sessionIncorrect, setSessionIncorrect] = useState(0);
   const [isSessionFinished, setIsSessionFinished] = useState(false);
+  const [currentReviewIndex, setCurrentReviewIndex] = useState(0);
 
   useEffect(() => {
     const savedCards = localStorage.getItem('language-cards');
@@ -62,6 +59,9 @@ function App() {
     if (progressJa) setUnlockedJa(parseInt(progressJa));
     const savedTheme = localStorage.getItem('language-theme') as 'light' | 'dark';
     if (savedTheme) { setTheme(savedTheme); document.documentElement.setAttribute('data-theme', savedTheme); }
+    
+    // Force rounded font across the app for Duolingo feel
+    document.body.style.fontFamily = "'Nunito', 'Quicksand', sans-serif";
   }, []);
 
   useEffect(() => { localStorage.setItem('language-cards', JSON.stringify(cards)); }, [cards]);
@@ -76,9 +76,7 @@ function App() {
     document.documentElement.setAttribute('data-theme', newTheme);
   };
 
-  const handleRemoveCard = (id: string) => {
-    setCards(cards.filter(c => c.id !== id));
-  };
+  const handleRemoveCard = (id: string) => { setCards(cards.filter(c => c.id !== id)); };
 
   const startSession = (nodeIdx: number, unitDifficulty: Difficulty) => {
     const filteredVocab = cards.filter(c => c.language === activeTrack && c.difficulty === unitDifficulty);
@@ -94,47 +92,46 @@ function App() {
     const dList = filteredDict.length > 0 ? filteredDict : MOCK_DICTATION_LESSONS.filter(d => (activeTrack === 'english' ? d.category === 'toeic' : d.category === 'n2'));
 
     const newTasks: SessionTask[] = [
-      { type: 'flashcard', data: vList[nodeIdx % vList.length] },
+      { type: 'vocab-quiz', data: vList[nodeIdx % vList.length] },
       { type: 'quiz', data: qList[nodeIdx % qList.length] },
       { type: 'listening', data: lList[nodeIdx % lList.length] },
       { type: 'dictation', data: dList[nodeIdx % dList.length] },
       { type: 'speaking', data: sList[nodeIdx % sList.length] },
-      { type: 'quiz', data: qList[(nodeIdx + 1) % qList.length] },
     ];
 
     setSessionTasks(newTasks);
-    setCurrentTaskIndex(0);
-    setSessionCorrect(0);
-    setSessionIncorrect(0);
-    setIsSessionFinished(false);
-    setMode('session');
+    setCurrentTaskIndex(0); setIsSessionFinished(false); setMode('session');
   };
 
-  const startDrill = (type: SessionTask['type']) => {
-    const filtered = (type === 'flashcard') ? cards.filter(c => c.language === activeTrack) :
+  const startDrill = (type: SessionTask['type'] | 'review') => {
+    if (type === 'review') { setCurrentReviewIndex(0); setMode('review'); return; }
+    const filtered = (type === 'vocab-quiz') ? cards.filter(c => c.language === activeTrack) :
                      (type === 'quiz') ? MOCK_QUESTIONS.filter(q => (activeTrack === 'english' ? q.category === 'toeic' : q.category === 'n2')) :
                      (type === 'listening') ? MOCK_LISTENING_LESSONS.filter(l => (activeTrack === 'english' ? l.category === 'toeic' : l.category === 'n2')) :
                      (type === 'speaking') ? MOCK_SPEAKING_LESSONS.filter(s => (activeTrack === 'english' ? s.category === 'toeic' : s.category === 'n2')) :
                      MOCK_DICTATION_LESSONS.filter(d => (activeTrack === 'english' ? d.category === 'toeic' : d.category === 'n2'));
-    
     const newTasks: SessionTask[] = filtered.slice(0, 10).map(item => ({ type, data: item } as any));
     setSessionTasks(newTasks);
-    setCurrentTaskIndex(0);
-    setSessionCorrect(0);
-    setSessionIncorrect(0);
-    setIsSessionFinished(false);
-    setMode('session');
+    setCurrentTaskIndex(0); setIsSessionFinished(false); setMode('session');
   };
 
-  const nextTask = (isCorrect: boolean) => {
-    if (isCorrect) setSessionCorrect(prev => prev + 1);
-    else setSessionIncorrect(prev => prev + 1);
+  const handleRateCard = (grade: ReviewGrade) => {
+    const reviewQueue = cards.filter(c => c.language === activeTrack);
+    const card = reviewQueue[currentReviewIndex];
+    const { repetition, interval, easiness } = calculateSM2(grade, card.repetition, card.interval, card.easiness);
+    const updatedCard = { ...card, repetition, interval, easiness, next_review: getNextReviewDate(interval) };
+    setCards(cards.map((c) => (c.id === card.id ? updatedCard : c)));
+    if (currentReviewIndex < reviewQueue.length - 1) setCurrentReviewIndex(prev => prev + 1);
+    else setMode('path');
+  };
+
+  const nextTask = () => {
     if (currentTaskIndex < sessionTasks.length - 1) setCurrentTaskIndex(prev => prev + 1);
     else setIsSessionFinished(true);
   };
 
   const finalizeSession = () => {
-    if (mode === 'session' && sessionTasks.length > 5) { // Only unlock for path lessons
+    if (mode === 'session' && sessionTasks.length > 5) {
        if (activeTrack === 'english') setUnlockedEn(prev => prev + 1);
        else setUnlockedJa(prev => prev + 1);
     }
@@ -147,8 +144,7 @@ function App() {
       category: data.language === 'english' ? 'toeic' : 'n2', difficulty: 'beginner', repetition: 0, interval: 0, easiness: 2.5,
       next_review: new Date().toISOString(), created_at: new Date().toISOString(),
     };
-    setCards([...cards, newCard]);
-    setMode('path');
+    setCards([...cards, newCard]); setMode('path');
   };
 
   const currentCurriculum = activeTrack === 'english' ? TOEIC_CURRICULUM : N2_CURRICULUM;
@@ -156,200 +152,253 @@ function App() {
 
   const renderPath = () => {
     let globalNodeIndex = 0;
-    return currentCurriculum.map((unit) => (
-      <section key={unit.id} className="w-full flex flex-col items-center mb-24">
-        <div className={`w-full max-w-md p-6 rounded-3xl text-white shadow-xl mb-12 flex flex-col items-center text-center
-          ${unit.color === 'green' ? 'bg-[#58cc02]' : unit.color === 'blue' ? 'bg-[#1cb0f6]' : unit.color === 'purple' ? 'bg-[#ce82ff]' : unit.color === 'orange' ? 'bg-[#ff9600]' : unit.color === 'red' ? 'bg-[#ff4b4b]' : 'bg-[#4b4b4b]'}`}>
-          <span className="text-[10px] font-black uppercase tracking-[0.3em] opacity-80 mb-1">Unit {unit.id}</span>
-          <h2 className="text-2xl font-black uppercase tracking-tight">{unit.title}</h2>
-        </div>
-        <div className="flex flex-col items-center gap-10 w-full relative">
-          <div className="absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-4 bg-[var(--border-main)] rounded-full z-0 opacity-40"></div>
-          {Array.from({ length: unit.nodes }).map((_) => {
-            const nodeIdx = globalNodeIndex++;
-            const offset = (nodeIdx % 4 === 0) ? '0px' : (nodeIdx % 2 === 0 ? '60px' : '-60px');
-            const isLocked = nodeIdx > currentUnlocked;
-            const isCurrent = nodeIdx === currentUnlocked;
-            return (
-              <div key={nodeIdx} className="z-10 relative flex flex-col items-center transition-all" style={{ marginLeft: offset }}>
-                {isCurrent && <div className="absolute -top-12 bg-slate-900 text-white px-4 py-1.5 rounded-xl font-black text-[10px] shadow-lg animate-bounce z-20 uppercase">Start</div>}
-                <button disabled={isLocked} onClick={() => startSession(nodeIdx, unit.difficulty as Difficulty)} className={`w-20 h-20 rounded-full btn-3d flex items-center justify-center text-4xl shadow-2xl transition-all ${isLocked ? 'bg-[var(--bg-hover)] opacity-50' : (unit.color === 'green' ? 'btn-green' : unit.color === 'blue' ? 'btn-blue' : unit.color === 'purple' ? 'btn-purple' : unit.color === 'orange' ? 'btn-orange' : 'btn-red')} ${isCurrent ? 'scale-110 ring-4 ring-slate-900/10' : ''}`}>
-                  {isLocked ? '🔒' : (activeTrack === 'english' ? '🇺🇸' : '🇯🇵')}
-                </button>
-              </div>
-            );
-          })}
-        </div>
-      </section>
-    ));
+    const VIEWBOX_WIDTH = 400;
+    const CENTER_X = 200;
+    const NODE_Y_SPACING = 130;
+    const START_Y = 60;
+    // Duolingo-style custom offsets for a highly organic, playful curve
+    const organicOffsets = [0, 45, 80, 95, 80, 45, 0, -45, -80, -95, -80, -45];
+
+    return currentCurriculum.map((unit) => {
+      // 1. Calculate absolute coordinates for every node in this unit
+      const unitNodes = Array.from({ length: unit.nodes }).map((_, i) => {
+        const idx = globalNodeIndex + i;
+        const xOffset = organicOffsets[idx % organicOffsets.length];
+        const svgX = CENTER_X + xOffset;
+        const svgY = START_Y + i * NODE_Y_SPACING;
+        return { idx, svgX, svgY };
+      });
+
+      const sectionHeight = START_Y + (unit.nodes - 1) * NODE_Y_SPACING + 130;
+
+      // 2. Generate perfect Bezier curves that intersect the exact center of each node
+      let fullPathD = '';
+      let activePathD = '';
+
+      unitNodes.forEach((node, i) => {
+        if (i === 0) {
+          fullPathD += `M ${node.svgX} ${node.svgY} `;
+          if (node.idx <= currentUnlocked) activePathD += `M ${node.svgX} ${node.svgY} `;
+        } else {
+          const prev = unitNodes[i - 1];
+          // Softer tension (0.45/0.55) makes the road flow beautifully like a real winding dirt path
+          const cp1Y = prev.svgY + (node.svgY - prev.svgY) * 0.45;
+          const cp2Y = prev.svgY + (node.svgY - prev.svgY) * 0.55;
+          const curve = `C ${prev.svgX} ${cp1Y}, ${node.svgX} ${cp2Y}, ${node.svgX} ${node.svgY} `;
+          fullPathD += curve;
+          if (node.idx <= currentUnlocked) {
+            activePathD += curve;
+          }
+        }
+      });
+
+      globalNodeIndex += unit.nodes;
+
+      return (
+        <section key={unit.id} className="w-full flex flex-col items-center mb-16 relative">
+          
+          {/* Colorful Gamified Unit Header */}
+          <div className={`w-full max-w-xl p-8 rounded-3xl ${unit.color} ${unit.text} mb-8 flex flex-col justify-center relative overflow-hidden z-20 shadow-[0_8px_0_rgba(0,0,0,0.15)]`}>
+             <div className="flex justify-between items-center z-10 relative">
+               <div className="space-y-1">
+                 <h2 className="text-3xl font-black uppercase tracking-tight">Unit {unit.id}</h2>
+                 <p className="text-sm font-bold opacity-90">{unit.title} • {unit.desc}</p>
+               </div>
+               <div className="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center text-4xl shadow-inner">
+                 {unit.id === 1 ? '🌟' : unit.id === 2 ? '🚀' : unit.id === 3 ? '👑' : '🏆'}
+               </div>
+             </div>
+          </div>
+
+          {/* ABSOLUTE ALIGNED MAP CONTAINER */}
+          <div className="relative w-full max-w-[500px]" style={{ height: `${sectionHeight}px` }}>
+            
+            {/* The SVG Road underneath */}
+            <div className="absolute inset-0 w-full h-full pointer-events-none z-0">
+               <svg width="100%" height="100%" viewBox={`0 0 ${VIEWBOX_WIDTH} ${sectionHeight}`} preserveAspectRatio="none" className="overflow-visible">
+                  {/* Inactive Path Shadow */}
+                  <path d={fullPathD} fill="none" stroke="#cbd5e1" strokeWidth="50" strokeLinecap="round" strokeLinejoin="round" transform="translate(0, 10)" />
+                  {/* Inactive Path Base */}
+                  <path d={fullPathD} fill="none" stroke="#e2e8f0" strokeWidth="50" strokeLinecap="round" strokeLinejoin="round" />
+                  
+                  {/* Active Path Shadow */}
+                  {activePathD && <path d={activePathD} fill="none" stroke="var(--gold-shadow)" strokeWidth="50" strokeLinecap="round" strokeLinejoin="round" transform="translate(0, 10)" />}
+                  {/* Active Path Base */}
+                  {activePathD && <path d={activePathD} fill="none" stroke="var(--gold)" strokeWidth="50" strokeLinecap="round" strokeLinejoin="round" />}
+                  
+                  {/* Map Trail (Dashed Center Line for Gamified Aesthetic) */}
+                  <path d={fullPathD} fill="none" stroke="#ffffff" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" strokeDasharray="1 24" opacity="0.7" />
+                  {activePathD && <path d={activePathD} fill="none" stroke="#ffffff" strokeWidth="6" strokeLinecap="round" strokeLinejoin="round" strokeDasharray="1 24" opacity="1" />}
+               </svg>
+            </div>
+
+            {/* The Nodes (Perfectly aligned with SVG centers) */}
+            {unitNodes.map((node) => {
+              const { idx, svgX, svgY } = node;
+              const isLocked = idx > currentUnlocked;
+              const isCurrent = idx === currentUnlocked;
+              const isCrown = (idx + 1) % 5 === 0;
+
+              // Convert SVG X coordinate to CSS percentage for flawless responsive horizontal alignment
+              const leftPercent = (svgX / VIEWBOX_WIDTH) * 100;
+
+              return (
+                <div 
+                  key={idx} 
+                  className="absolute z-10 flex flex-col items-center" 
+                  style={{ 
+                    left: `${leftPercent}%`, 
+                    top: `${svgY}px`,
+                    transform: 'translate(-50%, -50%)' 
+                  }}
+                >
+                  
+                  {/* Current Node Tooltip */}
+                  {isCurrent && (
+                    <div className="absolute -top-16 bg-white text-[var(--green)] px-4 py-2 rounded-2xl font-black text-xs shadow-[0_4px_0_#e5e5e5] animate-bounce z-20 uppercase tracking-widest border-2 border-[var(--gray-path)] whitespace-nowrap">
+                      START
+                      {/* Tooltip triangle */}
+                      <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 w-4 h-4 bg-white border-b-2 border-r-2 border-[var(--gray-path)] rotate-45"></div>
+                    </div>
+                  )}
+                  
+                  <button 
+                    disabled={isLocked}
+                    onClick={() => startSession(idx, unit.difficulty as Difficulty)}
+                    className={`duo-node ${isLocked ? 'locked' : ''} ${isCurrent ? 'current' : ''}`}
+                    style={!isLocked && !isCurrent ? { backgroundColor: isCrown ? 'var(--gold)' : 'var(--green)', boxShadow: `0 8px 0 ${isCrown ? 'var(--gold-shadow)' : 'var(--green-shadow)'}` } : {}}
+                  >
+                    {isLocked ? (
+                       <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-[var(--gray-path-dark)]/50" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={3}><path strokeLinecap="round" strokeLinejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
+                    ) : isCrown ? (
+                      '👑'
+                    ) : (
+                      '⭐️'
+                    )}
+                  </button>
+                </div>
+              );
+            })}
+          </div>
+        </section>
+      );
+    });
   };
 
   return (
-    <div className="min-h-screen w-full bg-[var(--bg-main)] text-[var(--text-main)] flex flex-col items-center font-sans overflow-x-hidden transition-colors duration-300">
+    <div className="min-h-screen w-full bg-[var(--bg-main)] text-[var(--text-main)] flex flex-col items-center font-sans overflow-x-hidden transition-all duration-300">
       
-      {/* Sidebar Navigation */}
-      <aside className="hidden lg:flex flex-col w-64 border-r-2 border-[var(--border-main)] p-6 fixed left-0 top-0 bottom-0 bg-[var(--bg-sidebar)] z-50">
-        <h1 className="text-2xl font-black text-[#58cc02] tracking-tighter uppercase italic mb-12">lingomaster</h1>
-        <nav className="flex-1 space-y-3">
-          <button onClick={() => setMode('path')} className={`sidebar-item w-full ${mode === 'path' ? 'active' : ''}`}>
-             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
-             LEARN PATH
+      {/* Duolingo-style Sidebar */}
+      <aside className="hidden lg:flex flex-col w-64 border-r-2 border-[var(--gray-path)] p-6 fixed left-0 top-0 bottom-0 bg-[var(--bg-main)] z-50">
+        <div className="mb-10 pl-2">
+           <h1 className="text-3xl font-black text-[var(--green)] tracking-tighter">lingo</h1>
+        </div>
+        
+        <nav className="flex-1 space-y-2">
+          <button onClick={() => setMode('path')} className={`w-full flex items-center gap-4 px-4 py-3 rounded-2xl font-bold text-sm transition-colors border-2 ${mode === 'path' ? 'bg-[var(--blue-light)] text-[var(--blue)] border-[var(--blue-light)]' : 'border-transparent text-[var(--text-main)] hover:bg-[var(--gray-bg)]'}`}>
+             <span className="text-2xl">🏠</span> LEARN
           </button>
-          <button onClick={() => setMode('practice')} className={`sidebar-item w-full ${mode === 'practice' ? 'active' : ''}`}>
-             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
-             PRACTICE CENTER
+          <button onClick={() => setMode('practice')} className={`w-full flex items-center gap-4 px-4 py-3 rounded-2xl font-bold text-sm transition-colors border-2 ${mode === 'practice' ? 'bg-[var(--blue-light)] text-[var(--blue)] border-[var(--blue-light)]' : 'border-transparent text-[var(--text-main)] hover:bg-[var(--gray-bg)]'}`}>
+             <span className="text-2xl">🏋️</span> PRACTICE
           </button>
-          <button onClick={() => setMode('analytics')} className={`sidebar-item w-full ${mode === 'analytics' ? 'active' : ''}`}>
-             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
-             STATISTICS
+          <button onClick={() => setMode('analytics')} className={`w-full flex items-center gap-4 px-4 py-3 rounded-2xl font-bold text-sm transition-colors border-2 ${mode === 'analytics' ? 'bg-[var(--blue-light)] text-[var(--blue)] border-[var(--blue-light)]' : 'border-transparent text-[var(--text-main)] hover:bg-[var(--gray-bg)]'}`}>
+             <span className="text-2xl">🛡️</span> LEAGUES
           </button>
-          <button onClick={() => setMode('add')} className={`sidebar-item w-full ${mode === 'add' ? 'active' : ''}`}>
-             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-             ADD NEW
-          </button>
-          <button onClick={toggleTheme} className="sidebar-item w-full mt-4">
-             <span className="text-lg">{theme === 'light' ? '🌙' : '☀️'}</span>
-             <span>THEME</span>
+          <button onClick={() => setMode('add')} className={`w-full flex items-center gap-4 px-4 py-3 rounded-2xl font-bold text-sm transition-colors border-2 ${mode === 'add' ? 'bg-[var(--blue-light)] text-[var(--blue)] border-[var(--blue-light)]' : 'border-transparent text-[var(--text-main)] hover:bg-[var(--gray-bg)]'}`}>
+             <span className="text-2xl">➕</span> ADD WORDS
           </button>
         </nav>
-        <div className="mt-auto p-4 bg-[var(--bg-hover)] rounded-2xl border-2 border-[var(--border-main)] text-center">
-           <p className="text-[10px] font-black uppercase mb-1">Track Progress</p>
-           <div className="lingo-progress h-2 mb-2"><div className="lingo-progress-inner bg-[#58cc02]" style={{ width: '45%' }}></div></div>
-           <p className="text-[10px] font-black">{activeTrack === 'english' ? 'TOEIC 700+' : 'JLPT N2'}</p>
-        </div>
       </aside>
 
       <main className="flex-1 w-full flex flex-col items-center min-h-screen lg:pl-64">
-        <div className="w-full max-w-[800px] flex flex-col items-center p-4 sm:p-10 md:p-16 pb-32">
-          
-          {(mode === 'path' || mode === 'practice') && (
-            <header className="w-full flex flex-col gap-6 mb-16 border-b-2 border-[var(--border-main)] pb-8">
-              <div className="flex items-center justify-between w-full">
-                <h2 className="text-xl font-black uppercase tracking-tight">{mode === 'path' ? 'Curriculum Path' : 'Practice Center'}</h2>
-                <div style={{ width: '36px', height: '36px' }} className="rounded-full border-2 border-[var(--border-main)] bg-[var(--bg-hover)] flex items-center justify-center text-sm shadow-sm">👤</div>
-              </div>
-              <div className="flex bg-[var(--bg-hover)] p-1.5 rounded-2xl border-2 border-[var(--border-main)] w-full max-w-sm self-center">
-                <button onClick={() => setActiveTrack('english')} className={`flex-1 py-3 rounded-xl font-black text-xs transition-all flex items-center justify-center gap-2 ${activeTrack === 'english' ? 'bg-[var(--bg-card)] shadow-md text-[#1cb0f6]' : 'text-[var(--text-muted)]'}`}>🇺🇸 ENGLISH</button>
-                <button onClick={() => setActiveTrack('japanese')} className={`flex-1 py-3 rounded-xl font-black text-xs transition-all flex items-center justify-center gap-2 ${activeTrack === 'japanese' ? 'bg-[var(--bg-card)] shadow-md text-[#ff4b4b]' : 'text-[var(--text-muted)]'}`}>🇯🇵 JAPANESE</button>
-              </div>
-            </header>
-          )}
+        
+        {/* Top Header Bar */}
+        {(mode === 'path' || mode === 'practice') && (
+          <header className="w-full h-16 border-b-2 border-[var(--gray-path)] flex items-center justify-between px-6 sticky top-0 bg-[var(--bg-main)]/90 backdrop-blur-md z-40">
+            <div className="flex items-center gap-6">
+               <button onClick={() => setActiveTrack('english')} className={`font-black text-sm flex items-center gap-2 transition-all ${activeTrack === 'english' ? 'text-[var(--blue)] border-b-4 border-[var(--blue)] pb-1' : 'text-[var(--text-muted)] hover:text-[var(--gray-path-dark)]'}`}>
+                 🇺🇸 EN
+               </button>
+               <button onClick={() => setActiveTrack('japanese')} className={`font-black text-sm flex items-center gap-2 transition-all ${activeTrack === 'japanese' ? 'text-[var(--blue)] border-b-4 border-[var(--blue)] pb-1' : 'text-[var(--text-muted)] hover:text-[var(--gray-path-dark)]'}`}>
+                 🇯🇵 JP
+               </button>
+            </div>
+            <div className="flex items-center gap-4 font-black">
+               <span className="text-[var(--gold)] flex items-center gap-1">👑 {currentUnlocked}</span>
+               <span className="text-[var(--red)] flex items-center gap-1">❤️ 5</span>
+               <button onClick={toggleTheme} className="text-xl active:scale-95 transition-transform">{theme === 'light' ? '🌙' : '☀️'}</button>
+            </div>
+          </header>
+        )}
 
-          {mode === 'path' && <div className="w-full animate-in fade-in duration-1000 flex flex-col items-center">{renderPath()}</div>}
+        <div className="w-full max-w-[600px] flex flex-col items-center p-6 md:p-10 pb-40">
+          
+          {mode === 'path' && <div className="w-full animate-in fade-in duration-500 flex flex-col items-center">{renderPath()}</div>}
 
           {mode === 'practice' && (
-            <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-6 animate-in slide-in-from-bottom-8 duration-700">
-               <div className="lingo-card flex flex-col gap-6 p-8 col-span-full bg-slate-900 text-white border-transparent">
-                  <div className="flex items-center gap-4">
-                     <div className="w-16 h-16 rounded-2xl bg-white/20 flex items-center justify-center text-3xl">📝</div>
-                     <div><h3 className="text-2xl font-black uppercase leading-none">Full Mock Exam</h3><p className="text-xs font-bold opacity-60 uppercase mt-2">Simulation of actual test pressure</p></div>
-                  </div>
-                  <button onClick={() => startDrill('quiz')} className="w-full btn-3d btn-blue py-4 font-black">START 20-QUESTION EXAM</button>
+            <div className="w-full flex flex-col gap-6 animate-in slide-in-from-bottom-8">
+               <div className="w-full flex flex-col gap-4 p-8 rounded-[2rem] border-2 border-[var(--gray-path)] bg-[var(--gray-bg)]">
+                  <div className="text-5xl">📝</div>
+                  <div><h3 className="text-2xl font-black">Mock Exam</h3><p className="text-sm font-bold text-[var(--text-muted)]">Full test pressure</p></div>
+                  <button onClick={() => startDrill('quiz')} className="btn-duo btn-blue h-14 mt-4 w-full">START TEST</button>
                </div>
-
-               <div className="lingo-card p-6 flex flex-col items-center text-center gap-4">
-                  <div className="w-14 h-14 rounded-full bg-[#58cc02]/10 text-[#58cc02] flex items-center justify-center text-2xl">🗂️</div>
-                  <h4 className="font-black uppercase text-sm">Vocab Drill</h4>
-                  <p className="text-xs font-bold text-[var(--text-muted)]">Practice all flashcards in your database</p>
-                  <button onClick={() => startDrill('flashcard')} className="w-full btn-3d btn-green py-3 text-xs">START DRILL</button>
-               </div>
-
-               <div className="lingo-card p-6 flex flex-col items-center text-center gap-4">
-                  <div className="w-14 h-14 rounded-full bg-[#1cb0f6]/10 text-[#1cb0f6] flex items-center justify-center text-2xl">⌨️</div>
-                  <h4 className="font-black uppercase text-sm">Dictation</h4>
-                  <p className="text-xs font-bold text-[var(--text-muted)]">Perfect your listening by typing phrases</p>
-                  <button onClick={() => startDrill('dictation')} className="w-full btn-3d btn-blue py-3 text-xs">START DRILL</button>
-               </div>
-
-               <div className="lingo-card p-6 flex flex-col items-center text-center gap-4">
-                  <div className="w-14 h-14 rounded-full bg-[#ce82ff]/10 text-[#ce82ff] flex items-center justify-center text-2xl">🎙️</div>
-                  <h4 className="font-black uppercase text-sm">Speaking</h4>
-                  <p className="text-xs font-bold text-[var(--text-muted)]">Focus on pronunciation and clarity</p>
-                  <button onClick={() => startDrill('speaking')} className="w-full btn-3d btn-purple py-3 text-xs">START DRILL</button>
-               </div>
-
-               <div className="lingo-card p-6 flex flex-col items-center text-center gap-4">
-                  <div className="w-14 h-14 rounded-full bg-[#afafaf]/10 text-[#afafaf] flex items-center justify-center text-2xl">➕</div>
-                  <h4 className="font-black uppercase text-sm">Collection</h4>
-                  <p className="text-xs font-bold text-[var(--text-muted)]">Review and manage your personal words</p>
-                  <button onClick={() => setMode('collection')} className="w-full btn-3d btn-outline py-3 text-xs uppercase">Open Library</button>
+               
+               <div className="grid grid-cols-2 gap-6 w-full">
+                 <div className="flex flex-col gap-4 p-6 rounded-[2rem] border-2 border-[var(--gray-path)] bg-[var(--gray-bg)]">
+                    <div className="text-4xl">🧩</div>
+                    <h4 className="font-black text-lg">Vocab</h4>
+                    <button onClick={() => startDrill('vocab-quiz')} className="btn-duo btn-green h-12 w-full text-xs">PRACTICE</button>
+                 </div>
+                 <div className="flex flex-col gap-4 p-6 rounded-[2rem] border-2 border-[var(--gray-path)] bg-[var(--gray-bg)]">
+                    <div className="text-4xl">⌨️</div>
+                    <h4 className="font-black text-lg">Listen</h4>
+                    <button onClick={() => startDrill('dictation')} className="btn-duo btn-purple h-12 w-full text-xs">PRACTICE</button>
+                 </div>
                </div>
             </div>
           )}
 
+          {/* Keep session logic similar but use duo-buttons */}
           {mode === 'session' && (
-            <div className="w-full flex flex-col items-center">
-              <div className="w-full flex items-center gap-6 mb-12 max-w-2xl">
-                 <button onClick={() => setMode('path')} className="w-10 h-10 flex items-center justify-center rounded-xl hover:bg-[var(--bg-hover)] text-[var(--text-muted)] transition-all"><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={4} d="M6 18L18 6M6 6l12 12" /></svg></button>
-                 <div className="flex-1 lingo-progress"><div className="lingo-progress-inner bg-[#58cc02]" style={{ width: `${((currentTaskIndex + 1) / sessionTasks.length) * 100}%` }}></div></div>
-                 <span className="text-xs font-black text-[var(--text-muted)]">{currentTaskIndex + 1}/{sessionTasks.length}</span>
-              </div>
-              {!isSessionFinished ? (
-                <div className="w-full max-w-xl">
-                  {sessionTasks[currentTaskIndex].type === 'flashcard' && <FlashcardView card={sessionTasks[currentTaskIndex].data as Flashcard} onRate={(grade) => nextTask(grade >= 3)} />}
-                  {sessionTasks[currentTaskIndex].type === 'quiz' && <QuizView questions={[sessionTasks[currentTaskIndex].data as Question]} category={activeTrack === 'english' ? 'toeic' : 'n2'} onComplete={(res) => nextTask(res.score === 1)} onCancel={() => setMode('path')} hideSummary={true} />}
-                  {sessionTasks[currentTaskIndex].type === 'listening' && <ListeningView lesson={sessionTasks[currentTaskIndex].data as ListeningLesson} onBack={() => nextTask(true)} hideBackButton={true} />}
-                  {sessionTasks[currentTaskIndex].type === 'speaking' && <SpeakingView lesson={sessionTasks[currentTaskIndex].data as SpeakingLesson} onComplete={() => nextTask(true)} />}
-                  {sessionTasks[currentTaskIndex].type === 'dictation' && <DictationView lesson={sessionTasks[currentTaskIndex].data as DictationLesson} onComplete={(isCorrect) => nextTask(isCorrect)} />}
-                </div>
-              ) : (
-                <div className="w-full max-w-lg bg-[var(--bg-card)] lingo-card text-center space-y-8 animate-in zoom-in-95 duration-500">
-                  <div className="text-8xl floating">🎯</div>
-                  <h2 className="text-4xl font-black uppercase tracking-tight">Session Results</h2>
-                  <div className="grid grid-cols-2 gap-4">
-                    <div className="bg-[#f2fcf0] p-6 rounded-2xl border-2 border-[#58cc02]"><p className="text-[10px] font-black text-[#58cc02] uppercase mb-1">Correct</p><p className="text-4xl font-black text-[#58cc02]">{sessionCorrect}</p></div>
-                    <div className="bg-[#fff5f5] p-6 rounded-2xl border-2 border-[#ff4b4b]"><p className="text-[10px] font-black text-[#ff4b4b] uppercase mb-1">Incorrect</p><p className="text-4xl font-black text-[#ff4b4b]">{sessionIncorrect}</p></div>
+            <div className="w-full flex flex-col items-center animate-in fade-in duration-300 pt-10">
+               <div className="w-full flex items-center gap-4 mb-10 px-4">
+                  <button onClick={() => setMode('path')} className="text-2xl text-[var(--text-muted)] hover:text-[var(--text-main)] active:scale-90">✖</button>
+                  <div className="flex-1 h-4 bg-[var(--gray-path)] rounded-full overflow-hidden">
+                    <div className="h-full bg-[var(--green)] transition-all duration-300" style={{ width: `${((currentTaskIndex + 1) / sessionTasks.length) * 100}%` }}></div>
                   </div>
-                  <div className="pt-4"><button onClick={finalizeSession} className="w-full btn-3d btn-blue py-6 text-xl uppercase shadow-blue-100">CONTINUE JOURNEY</button></div>
-                </div>
-              )}
+               </div>
+               {!isSessionFinished ? (
+                  <div className="w-full flex flex-col items-center">
+                    {sessionTasks[currentTaskIndex].type === 'vocab-quiz' && <VocabQuizView word={sessionTasks[currentTaskIndex].data as Flashcard} allCards={cards} onComplete={() => nextTask()} />}
+                    {sessionTasks[currentTaskIndex].type === 'quiz' && <QuizView questions={[sessionTasks[currentTaskIndex].data as Question]} category={activeTrack === 'english' ? 'toeic' : 'n2'} onComplete={() => nextTask()} onCancel={() => setMode('path')} hideSummary={true} />}
+                    {sessionTasks[currentTaskIndex].type === 'listening' && <ListeningView lesson={sessionTasks[currentTaskIndex].data as ListeningLesson} onBack={() => nextTask()} hideBackButton={true} />}
+                    {sessionTasks[currentTaskIndex].type === 'speaking' && <SpeakingView lesson={sessionTasks[currentTaskIndex].data as SpeakingLesson} onComplete={() => nextTask()} />}
+                    {sessionTasks[currentTaskIndex].type === 'dictation' && <DictationView lesson={sessionTasks[currentTaskIndex].data as DictationLesson} onComplete={() => nextTask()} />}
+                  </div>
+               ) : (
+                  <div className="w-full text-center space-y-8 animate-in zoom-in-95 duration-500 pt-10">
+                     <div className="text-[120px] select-none">🎉</div>
+                     <div className="space-y-2"><h2 className="text-4xl font-black text-[var(--gold)]">Lesson Complete!</h2><p className="text-base font-bold text-[var(--text-muted)]">You earned +10 XP</p></div>
+                     <button onClick={finalizeSession} className="w-full btn-duo btn-green h-16 text-lg mt-10">CONTINUE</button>
+                  </div>
+               )}
             </div>
           )}
 
-          {mode === 'add' && (
-             <div className="w-full max-w-xl flex flex-col items-center">
-                <div className="w-full flex justify-start mb-8"><button onClick={() => setMode('path')} className="w-10 h-10 flex items-center justify-center rounded-xl hover:bg-[var(--bg-hover)] text-[var(--text-muted)] transition-all"><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={4} d="M6 18L18 6M6 6l12 12" /></svg></button></div>
-                <AddFlashcard onAdd={handleAddCard} />
-                </div>
-                )}
+          {/* Management modes mapping */}
+          {mode === 'add' && <div className="w-full mt-10"><AddFlashcard onAdd={handleAddCard} /></div>}
+          {mode === 'collection' && <CollectionView cards={cards} activeTrack={activeTrack} onDelete={handleRemoveCard} />}
+          {mode === 'analytics' && <AnalyticsView results={examResults} activeTrack={activeTrack} />}
+          {mode === 'review' && <div className="w-full max-w-xl mt-10"><FlashcardView card={cards.filter(c => c.language === activeTrack)[currentReviewIndex]} onRate={handleRateCard} /></div>}
 
-                {mode === 'collection' && (
-                <div className="w-full flex flex-col items-center">
-                <div className="w-full flex justify-start mb-8 max-w-4xl">
-                 <button onClick={() => setMode('practice')} className="w-10 h-10 flex items-center justify-center rounded-xl hover:bg-[var(--bg-hover)] text-[var(--text-muted)] transition-all"><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={4} d="M6 18L18 6M6 6l12 12" /></svg></button>
-                </div>
-                <CollectionView cards={cards} activeTrack={activeTrack} onDelete={handleRemoveCard} />
-                </div>
-                )}
-
-                {mode === 'analytics' && (
-                <div className="w-full flex flex-col items-center">
-                <div className="w-full flex justify-start mb-8 max-w-4xl">
-                 <button onClick={() => setMode('path')} className="w-10 h-10 flex items-center justify-center rounded-xl hover:bg-[var(--bg-hover)] text-[var(--text-muted)] transition-all"><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={4} d="M6 18L18 6M6 6l12 12" /></svg></button>
-                </div>
-                <AnalyticsView results={examResults} activeTrack={activeTrack} />
-                </div>
-                )}
-
-                <footer className="mt-48 pt-8 border-t border-[var(--border-main)] w-full text-center">
-<p className="text-[10px] font-black text-[var(--text-muted)] tracking-[0.4em] uppercase">Lingomaster • Specialized Multi-Track Journey v2.0</p></footer>
         </div>
       </main>
 
-      {/* Bottom Nav - Mobile */}
-      <nav className="lg:hidden fixed bottom-0 left-0 right-0 h-20 bg-[var(--bg-sidebar)] border-t-2 border-[var(--border-main)] flex items-center justify-around px-6 z-50">
-        <button onClick={() => setMode('path')} className={`flex flex-col items-center gap-1 ${mode === 'path' ? 'text-[#1cb0f6]' : 'text-[var(--text-muted)]'}`}>
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill={mode === 'path' ? 'currentColor' : 'none'} viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
-          <span className="text-[9px] font-black">PATH</span>
-        </button>
-        <button onClick={() => setMode('practice')} className={`flex flex-col items-center gap-1 ${mode === 'practice' ? 'text-[#1cb0f6]' : 'text-[var(--text-muted)]'}`}>
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill={mode === 'practice' ? 'currentColor' : 'none'} viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
-          <span className="text-[9px] font-black">PRACTICE</span>
-        </button>
-        <button onClick={() => setMode('add')} className={`flex flex-col items-center gap-1 ${mode === 'add' ? 'text-[#1cb0f6]' : 'text-[var(--text-muted)]'}`}>
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill={mode === 'add' ? 'currentColor' : 'none'} viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-          <span className="text-[9px] font-black">ADD</span>
-        </button>
+      {/* Mobile Nav */}
+      <nav className="lg:hidden fixed bottom-0 left-0 right-0 h-20 bg-[var(--bg-main)] border-t-2 border-[var(--gray-path)] flex items-center justify-around px-2 z-50">
+        <button onClick={() => setMode('path')} className={`p-3 rounded-2xl transition-all border-2 ${mode === 'path' ? 'bg-[var(--blue-light)] border-[var(--blue-light)] text-[var(--blue)]' : 'border-transparent text-[var(--text-muted)]'}`}><span className="text-2xl">🏠</span></button>
+        <button onClick={() => setMode('practice')} className={`p-3 rounded-2xl transition-all border-2 ${mode === 'practice' ? 'bg-[var(--blue-light)] border-[var(--blue-light)] text-[var(--blue)]' : 'border-transparent text-[var(--text-muted)]'}`}><span className="text-2xl">🏋️</span></button>
+        <button onClick={() => setMode('analytics')} className={`p-3 rounded-2xl transition-all border-2 ${mode === 'analytics' ? 'bg-[var(--blue-light)] border-[var(--blue-light)] text-[var(--blue)]' : 'border-transparent text-[var(--text-muted)]'}`}><span className="text-2xl">🛡️</span></button>
       </nav>
     </div>
   );

@@ -60,31 +60,44 @@ export function FlashcardView({ card, onRate }: FlashcardViewProps) {
         </div>
       </div>
 
-      {/* Rating Controls - UNIFIED BUTTONS */}
+      {/* Rating Controls - SIMPLIFIED TO 3 LEVELS */}
       <div className={`w-full space-y-6 transition-all duration-500 ${isFlipped ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4 pointer-events-none'}`}>
-        <h3 className="text-center text-[10px] font-black text-[#afafaf] uppercase tracking-[0.2em]">How well did you know this?</h3>
-        <div className="grid grid-cols-6 gap-2">
-          {[0, 1, 2, 3, 4, 5].map((grade) => {
-            let btnClass = "btn-outline";
-            if (grade === 0) btnClass = "btn-red";
-            else if (grade === 5) btnClass = "btn-green";
-            else if (grade >= 3) btnClass = "btn-blue";
-            
-            return (
-              <button
-                key={grade}
-                onClick={(e) => {
-                  e.stopPropagation();
-                  setIsFlipped(false);
-                  setTimeout(() => onRate(grade as ReviewGrade), 300);
-                }}
-                className={`h-14 btn-3d ${btnClass} text-xl flex items-center justify-center p-0`}
-              >
-                {grade}
-              </button>
-            );
-          })}
+        <h3 className="text-center text-[10px] font-black text-[#afafaf] uppercase tracking-[0.2em]">Mức độ thuộc từ?</h3>
+        <div className="grid grid-cols-3 gap-4">
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              setIsFlipped(false);
+              setTimeout(() => onRate(0), 300);
+            }}
+            className="h-16 btn-3d btn-red text-sm font-black flex items-center justify-center p-0"
+          >
+            KHÓ
+          </button>
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              setIsFlipped(false);
+              setTimeout(() => onRate(3), 300);
+            }}
+            className="h-16 btn-3d btn-blue text-sm font-black flex items-center justify-center p-0"
+          >
+            VỪA
+          </button>
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              setIsFlipped(false);
+              setTimeout(() => onRate(5), 300);
+            }}
+            className="h-16 btn-3d btn-green text-sm font-black flex items-center justify-center p-0"
+          >
+            DỄ
+          </button>
         </div>
+        <p className="text-center text-[9px] font-bold text-[#afafaf] italic">
+          Dễ: ôn lại sau lâu hơn • Khó: ôn lại sớm hơn
+        </p>
       </div>
     </div>
   );

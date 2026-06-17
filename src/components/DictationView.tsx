@@ -60,9 +60,11 @@ export function DictationView({ lesson, onComplete }: DictationViewProps) {
         <h3 className="text-2xl font-black text-[var(--text-main)] leading-tight">
           Type exactly what you hear
         </h3>
-        <p className="text-sm font-bold text-[var(--text-muted)] italic">
-          Hint: "{lesson.translation}"
-        </p>
+        {feedback === 'retry' && (
+          <p className="text-sm font-bold text-[#ff4b4b] italic animate-in fade-in duration-500">
+            Hint: "{lesson.translation}"
+          </p>
+        )}
       </div>
 
       <audio ref={audioRef} src={lesson.audioUrl} className="hidden" />

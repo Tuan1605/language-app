@@ -1,178 +1,219 @@
 @import "tailwindcss";
 
-@theme {
-  --perspective-1000: 1000px;
-}
-
-/* 
-  Modern Theme-Driven CSS System
-*/
-
 :root {
-  /* Lingo Brand Colors */
-  --lingo-green: #58cc02;
-  --lingo-green-dark: #46a302;
-  --lingo-blue: #1cb0f6;
-  --lingo-blue-dark: #1899d6;
-  --lingo-red: #ff4b4b;
-  --lingo-red-dark: #d33131;
-  --lingo-orange: #ff9600;
-  --lingo-orange-dark: #e38600;
-  --lingo-purple: #ce82ff;
-  --lingo-purple-dark: #af69ef;
-  --lingo-gray: #afafaf;
+  /* Duolingo Authentic Palette */
+  --green: #58cc02;
+  --green-shadow: #58a700;
+  --green-light: #d7ffb8;
   
-  /* Light Theme Variables */
-  --bg-main: #ffffff;
-  --bg-card: #ffffff;
-  --bg-sidebar: #ffffff;
-  --bg-hover: #f7f7f7;
+  --blue: #1cb0f6;
+  --blue-shadow: #1899d6;
+  --blue-light: #ddf4ff;
+  
+  --purple: #ce82ff;
+  --purple-shadow: #a561cf;
+  
+  --red: #ff4b4b;
+  --red-shadow: #ea2b2b;
+  
+  --gold: #ffc800;
+  --gold-shadow: #cda000;
+
+  --gray-bg: #f7f7f7;
+  --gray-path: #e5e5e5;
+  --gray-path-dark: #cccccc;
+  
   --text-main: #4b4b4b;
   --text-muted: #afafaf;
-  --border-main: #e5e5e5;
-  --sidebar-width: 256px;
+  --bg-main: #ffffff;
 }
 
 [data-theme='dark'] {
-  /* Dark Theme Variables (Duolingo Style) */
-  --bg-main: #131f24;
-  --bg-card: #1f2d33;
-  --bg-sidebar: #131f24;
-  --bg-hover: #202f36;
+  --gray-bg: #131f24;
+  --gray-path: #202f36;
+  --gray-path-dark: #37464f;
   --text-main: #ffffff;
-  --text-muted: #77858c;
-  --border-main: #37464f;
+  --text-muted: #777777;
+  --bg-main: #131f24;
 }
 
 body {
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
   background-color: var(--bg-main);
   color: var(--text-main);
-  font-family: 'DIN Round', 'Plus Jakarta Sans', system-ui, sans-serif;
+  /* Mimicking DIN Round */
+  font-family: 'Nunito', 'Quicksand', system-ui, sans-serif; 
+  -webkit-font-smoothing: antialiased;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-#root {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-main {
-  width: 100%;
-  max-width: 1024px;
-  margin: 0 auto;
-  box-sizing: border-box;
-}
-
-@media (min-width: 1024px) {
-  main {
-    margin-left: var(--sidebar-width);
-    width: calc(100% - var(--sidebar-width));
-  }
-}
-
-/* Duolingo-style 3D Button - Unified */
-.btn-3d {
-  position: relative;
-  transition: all 0.1s ease;
-  border-width: 2px;
-  border-bottom-width: 4px;
-  border-style: solid;
-  cursor: pointer;
+/* --- THE CHUNKY 3D BUTTON SYSTEM --- */
+.btn-duo {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-weight: 800;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
   border-radius: 16px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: transform 0.1s, box-shadow 0.1s;
+  cursor: pointer;
+  border: 2px solid transparent;
   user-select: none;
-  font-size: 0.875rem;
-  padding: 12px 24px;
 }
 
-.btn-3d:active {
-  transform: translateY(2px);
-  border-bottom-width: 2px;
-  margin-bottom: 2px;
+.btn-duo:active:not(:disabled) {
+  transform: translateY(4px);
+  box-shadow: none !important;
 }
 
-.btn-green { background-color: var(--lingo-green); border-color: var(--lingo-green-dark); color: white; }
-.btn-blue { background-color: var(--lingo-blue); border-color: var(--lingo-blue-dark); color: white; }
-.btn-purple { background-color: var(--lingo-purple); border-color: var(--lingo-purple-dark); color: white; }
-.btn-red { background-color: var(--lingo-red); border-color: var(--lingo-red-dark); color: white; }
-.btn-orange { background-color: var(--lingo-orange); border-color: var(--lingo-orange-dark); color: white; }
-.btn-outline { 
-  background-color: var(--bg-card); 
-  border-color: var(--border-main); 
-  color: var(--text-muted); 
+.btn-duo:disabled {
+  background-color: #e5e5e5;
+  color: #afafaf;
+  box-shadow: 0 4px 0 #cccccc;
+  cursor: not-allowed;
+  transform: none;
 }
 
-/* Sidebar Styling */
-.sidebar-item {
+[data-theme='dark'] .btn-duo:disabled {
+  background-color: #37464f;
+  color: #777777;
+  box-shadow: 0 4px 0 #202f36;
+}
+
+/* Color Variants */
+.btn-green {
+  background-color: var(--green);
+  color: white;
+  box-shadow: 0 4px 0 var(--green-shadow);
+}
+.btn-blue {
+  background-color: var(--blue);
+  color: white;
+  box-shadow: 0 4px 0 var(--blue-shadow);
+}
+.btn-purple {
+  background-color: var(--purple);
+  color: white;
+  box-shadow: 0 4px 0 var(--purple-shadow);
+}
+.btn-red {
+  background-color: var(--red);
+  color: white;
+  box-shadow: 0 4px 0 var(--red-shadow);
+}
+.btn-gold {
+  background-color: var(--gold);
+  color: white;
+  box-shadow: 0 4px 0 var(--gold-shadow);
+}
+.btn-outline {
+  background-color: transparent;
+  color: var(--blue);
+  border: 2px solid var(--gray-path);
+  box-shadow: 0 4px 0 var(--gray-path);
+}
+.btn-outline:hover:not(:disabled) {
+  background-color: var(--gray-bg);
+}
+
+/* --- THE WINDING MAP NODE --- */
+.duo-node {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
-  gap: 16px;
-  padding: 12px 16px;
-  border-radius: 16px;
-  font-weight: 800;
-  color: var(--text-muted);
-  transition: all 0.2s;
-  border: 2px solid transparent;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-size: 13px;
+  justify-content: center;
+  z-index: 10;
+  position: relative;
+  font-size: 32px;
+  /* Thick Duolingo style */
+  background-color: var(--green);
+  box-shadow: 0 8px 0 var(--green-shadow);
+  transition: transform 0.1s, box-shadow 0.1s;
+  cursor: pointer;
 }
 
-.sidebar-item:hover {
-  background-color: var(--bg-hover);
-  color: var(--text-main);
+.duo-node:active:not(.locked) {
+  transform: translateY(8px) scale(0.95);
+  box-shadow: 0 0 0 var(--green-shadow);
 }
 
-.sidebar-item.active {
-  background-color: #ddf4ff;
-  color: var(--lingo-blue);
-  border-color: #84d8ff;
+.duo-node.locked {
+  background-color: var(--gray-path);
+  box-shadow: 0 8px 0 var(--gray-path-dark);
+  cursor: not-allowed;
+  transform: none;
 }
 
-[data-theme='dark'] .sidebar-item.active {
-  background-color: #1f2d33;
-  border-color: #1cb0f6;
+.duo-node.current {
+  /* The active glowing crown effect */
+  box-shadow: 0 8px 0 var(--green-shadow), 0 0 0 8px var(--green-light);
+  animation: bounce-subtle 2s infinite ease-in-out;
 }
 
-/* Card Styling */
-.lingo-card {
-  background: var(--bg-card);
-  border: 2px solid var(--border-main);
-  border-bottom-width: 6px;
-  border-radius: 24px;
-  padding: 32px;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
+.duo-node.current:active {
+  box-shadow: 0 0 0 var(--green-shadow), 0 0 0 8px var(--green-light);
+  transform: translateY(8px);
 }
 
-.lingo-progress {
-  height: 16px;
-  background-color: var(--border-main);
-  border-radius: 999px;
-  overflow: hidden;
+@keyframes bounce-subtle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
 }
 
-.lingo-progress-inner {
+/* --- THE PHYSICAL SVG PATH --- */
+.map-path-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
-  border-radius: 999px;
-  box-shadow: inset 0 -4px 0 rgba(0,0,0,0.15);
-  transition: width 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+  pointer-events: none;
+  z-index: 0;
 }
 
-/* Animations */
-@keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-8px); }
-  100% { transform: translateY(0px); }
+/* The thick base road */
+.map-path-bg {
+  fill: none;
+  stroke: var(--gray-path);
+  stroke-width: 35;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
-.floating { animation: float 3s ease-in-out infinite; }
+
+/* The dark border/shadow of the road */
+.map-path-shadow {
+  fill: none;
+  stroke: var(--gray-path-dark);
+  stroke-width: 35;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transform: translateY(6px); /* Drops the shadow straight down */
+}
+
+/* The completed (colored) portion of the road */
+.map-path-fill {
+  fill: none;
+  stroke: var(--gold);
+  stroke-width: 35;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  transition: stroke-dashoffset 1s ease-in-out;
+}
+
+/* Utility to ensure centering is strictly enforced */
+.map-center-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px; /* Duolingo keeps maps relatively narrow */
+  margin: 0 auto;
+}
+
+@theme {
+  --perspective-1000: 1000px;
+}
