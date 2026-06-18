@@ -90,13 +90,21 @@ function App() {
     const sList = filteredSpeak.length > 0 ? filteredSpeak : MOCK_SPEAKING_LESSONS.filter(s => (activeTrack === 'english' ? s.category === 'toeic' : s.category === 'n2'));
     const dList = filteredDict.length > 0 ? filteredDict : MOCK_DICTATION_LESSONS.filter(d => (activeTrack === 'english' ? d.category === 'toeic' : d.category === 'n2'));
 
-    const newTasks: SessionTask[] = [
-      { type: 'vocab-quiz', data: vList[nodeIdx % vList.length] },
-      { type: 'quiz', data: qList[nodeIdx % qList.length] },
-      { type: 'listening', data: lList[nodeIdx % lList.length] },
-      { type: 'dictation', data: dList[nodeIdx % dList.length] },
-      { type: 'speaking', data: sList[nodeIdx % sList.length] },
+    // Build tasks, skipping any lesson type that has no available data so we
+    // never index into an empty array (which would create an undefined task).
+    const pick = <T,>(list: T[]): T | undefined =>
+      list.length > 0 ? list[nodeIdx % list.length] : undefined;
+
+    const candidates: (SessionTask | null)[] = [
+      vList.length ? { type: 'vocab-quiz', data: pick(vList)! } : null,
+      qList.length ? { type: 'quiz', data: pick(qList)! } : null,
+      lList.length ? { type: 'listening', data: pick(lList)! } : null,
+      dList.length ? { type: 'dictation', data: pick(dList)! } : null,
+      sList.length ? { type: 'speaking', data: pick(sList)! } : null,
     ];
+    const newTasks: SessionTask[] = candidates.filter(
+      (t): t is SessionTask => t !== null
+    );
 
     setSessionTasks(newTasks);
     setCurrentTaskIndex(0); setIsSessionFinished(false); setMode('session');
