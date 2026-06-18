@@ -1,0 +1,22 @@
+[
+  { "id": "tv-001", "word": "agenda", "definition": "chuong trinh nghi su, lich lam viec", "example": "The first item on the agenda is the quarterly budget.", "difficulty": "beginner", "topic": "meetings" },
+  { "id": "tv-002", "word": "deadline", "definition": "han chot", "example": "We must meet the deadline for the client report.", "difficulty": "beginner", "topic": "general" },
+  { "id": "tv-003", "word": "invoice", "definition": "hoa don", "example": "Please send the invoice to the accounting department.", "difficulty": "beginner", "topic": "finance" },
+  { "id": "tv-004", "word": "colleague", "definition": "dong nghiep", "example": "She introduced me to her new colleague.", "difficulty": "beginner", "topic": "office" },
+  { "id": "tv-005", "word": "schedule", "definition": "lich trinh; len lich", "example": "Let's schedule the meeting for next Tuesday.", "difficulty": "beginner", "topic": "general" },
+  { "id": "tv-006", "word": "incentive", "definition": "su khuyen khich, uu dai", "example": "The bonus serves as an incentive to increase sales.", "difficulty": "intermediate", "topic": "hr" },
+  { "id": "tv-007", "word": "delegate", "definition": "uy thac, giao pho", "example": "Good managers delegate tasks effectively.", "difficulty": "intermediate", "topic": "management" },
+  { "id": "tv-008", "word": "procedure", "definition": "quy trinh, thu tuc", "example": "Follow the safety procedure at all times.", "difficulty": "intermediate", "topic": "operations" },
+  { "id": "tv-009", "word": "reimburse", "definition": "hoan tra, boi hoan", "example": "The company will reimburse your travel expenses.", "difficulty": "intermediate", "topic": "finance" },
+  { "id": "tv-010", "word": "warehouse", "definition": "nha kho", "example": "The goods are stored in the central warehouse.", "difficulty": "intermediate", "topic": "logistics" },
+  { "id": "tv-011", "word": "negotiate", "definition": "dam phan, thuong luong", "example": "They will negotiate the terms of the contract.", "difficulty": "intermediate", "topic": "business" },
+  { "id": "tv-012", "word": "warranty", "definition": "bao hanh", "example": "The product comes with a two-year warranty.", "difficulty": "intermediate", "topic": "sales" },
+  { "id": "tv-013", "word": "compliance", "definition": "su tuan thu", "example": "All staff must ensure compliance with the new regulations.", "difficulty": "advanced", "topic": "legal" },
+  { "id": "tv-014", "word": "acquisition", "definition": "su thau tom, mua lai", "example": "The acquisition expanded the firm's market share.", "difficulty": "advanced", "topic": "business" },
+  { "id": "tv-015", "word": "depreciation", "definition": "su khau hao", "example": "Depreciation of equipment is recorded annually.", "difficulty": "advanced", "topic": "finance" },
+  { "id": "tv-016", "word": "streamline", "definition": "tinh gian, toi uu quy trinh", "example": "The software helps streamline the approval process.", "difficulty": "advanced", "topic": "operations" },
+  { "id": "tv-017", "word": "stakeholder", "definition": "ben lien quan", "example": "We must keep every stakeholder informed of the changes.", "difficulty": "advanced", "topic": "management" },
+  { "id": "tv-018", "word": "itinerary", "definition": "lich trinh chuyen di", "example": "The travel agent emailed the full itinerary.", "difficulty": "intermediate", "topic": "travel" },
+  { "id": "tv-019", "word": "endorse", "definition": "tan thanh, chung thuc", "example": "The CEO endorsed the new marketing strategy.", "difficulty": "advanced", "topic": "business" },
+  { "id": "tv-020", "word": "prospective", "definition": "tiem nang, sap toi", "example": "We are meeting several prospective clients today.", "difficulty": "advanced", "topic": "sales" }
+]
