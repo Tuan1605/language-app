@@ -358,10 +358,10 @@ function App() {
 
         <div className="w-full max-w-[600px] flex flex-col items-center p-6 md:p-10 pb-40">
           
-          {mode === 'path' && <div className="w-full animate-in fade-in duration-500 flex flex-col items-center">{renderPath()}</div>}
+          {mode === 'path' && <div key="path" className="w-full view-enter flex flex-col items-center">{renderPath()}</div>}
 
           {mode === 'practice' && (
-            <div className="w-full flex flex-col gap-6 animate-in slide-in-from-bottom-8">
+            <div key="practice" className="w-full flex flex-col gap-6 view-enter">
                <div className="w-full flex flex-col gap-4 p-8 rounded-[2rem] border-2 border-[var(--gray-path)] bg-[var(--gray-bg)]">
                   <div className="text-5xl">📝</div>
                   <div><h3 className="text-2xl font-black">Mock Exam</h3><p className="text-sm font-bold text-[var(--text-muted)]">Full test pressure</p></div>
@@ -438,7 +438,7 @@ function App() {
           )}
 
           {/* Management modes mapping */}
-          {mode === 'add' && <div className="w-full mt-10"><AddFlashcard onAdd={handleAddCard} /></div>}
+          {mode === 'add' && <div key="add" className="w-full mt-10 view-enter"><AddFlashcard onAdd={handleAddCard} /></div>}
           {mode === 'collection' && <CollectionView cards={cards} activeTrack={activeTrack} onDelete={handleRemoveCard} />}
           {mode === 'analytics' && <AnalyticsView results={examResults} activeTrack={activeTrack} />}
           {mode === 'review' && <div className="w-full max-w-xl mt-10"><FlashcardView card={cards.filter(c => c.language === activeTrack)[currentReviewIndex]} onRate={handleRateCard} /></div>}
