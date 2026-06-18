@@ -1,8 +1,10 @@
 import type { Question, ListeningLesson, Flashcard, SpeakingLesson, DictationLesson, FullExam } from '../types';
+import { SEED_CARDS, SEED_QUESTIONS } from '../data/contentLoader';
 
 // --- ULTIMATE REPOSITORY (TOEIC 700+ & JLPT N2) ---
+// Original practice material only. Not copied from official exams.
 
-export const MOCK_CARDS: Flashcard[] = [
+const BASE_CARDS: Flashcard[] = [
   // --- TOEIC HIGH-FREQUENCY ---
   { id: 't-1', user_id: 'guest', word: 'Incentive', definition: 'Sự khuyến khích, ưu đãi', example: 'The bonus serves as an incentive.', language: 'english', category: 'toeic', difficulty: 'intermediate', repetition: 0, interval: 0, easiness: 2.5, next_review: new Date().toISOString(), created_at: new Date().toISOString() },
   { id: 't-2', user_id: 'guest', word: 'Delegate', definition: 'Ủy thác, giao phó', example: 'Managers must delegate tasks effectively.', language: 'english', category: 'toeic', difficulty: 'intermediate', repetition: 0, interval: 0, easiness: 2.5, next_review: new Date().toISOString(), created_at: new Date().toISOString() },
@@ -18,11 +20,13 @@ export const MOCK_CARDS: Flashcard[] = [
   { id: 'n-4', user_id: 'guest', word: '迅速 (じんそく)', definition: 'Nhanh chóng', language: 'japanese', category: 'n2', difficulty: 'advanced', repetition: 0, interval: 0, easiness: 2.5, next_review: new Date().toISOString(), created_at: new Date().toISOString() },
 
   // --- BEGINNER ---
-  { id: 'f-1', user_id: 'guest', word: 'あ', definition: 'Hiragana A', language: 'japanese', category: 'n2', difficulty: 'beginner', repetition: 0, interval: 0, easiness: 2.5, next_review: new Date().toISOString(), created_at: new Date().toISOString() },
   { id: 'f-2', user_id: 'guest', word: 'Hello', definition: 'Xin chào', language: 'english', category: 'toeic', difficulty: 'beginner', repetition: 0, interval: 0, easiness: 2.5, next_review: new Date().toISOString(), created_at: new Date().toISOString() },
 ];
 
-export const MOCK_QUESTIONS: Question[] = [
+// Combine the small built-in demo cards with the larger JSON seed library.
+export const MOCK_CARDS: Flashcard[] = [...BASE_CARDS, ...SEED_CARDS];
+
+const BASE_QUESTIONS: Question[] = [
   // --- TOEIC ---
   { id: 'tq-1', category: 'toeic', difficulty: 'advanced', text: 'The merger was delayed ________ unforeseen regulatory hurdles.', options: ['because', 'since', 'due to', 'despite'], correctAnswer: 2, subCategory: 'Grammar' },
   { id: 'tq-2', category: 'toeic', difficulty: 'intermediate', text: 'The project will be finished ________ next Friday.', options: ['by', 'until', 'at', 'on'], correctAnswer: 0, subCategory: 'Grammar' },
@@ -39,6 +43,9 @@ export const MOCK_QUESTIONS: Question[] = [
   { id: 'nq-5', category: 'n2', difficulty: 'intermediate', text: '彼の話は（　　　）ばかりで、内容がない。', options: ['うそ', 'ほんと', '冗談', '事実'], correctAnswer: 0, subCategory: 'Vocabulary' },
   { id: 'nq-6', category: 'n2', difficulty: 'advanced', text: '文章を読んで、筆者の主張を答えなさい。[...]', options: ['A', 'B', 'C', 'D'], correctAnswer: 2, subCategory: 'Reading' },
 ];
+
+// Combine built-in demo questions with the larger JSON seed bank.
+export const MOCK_QUESTIONS: Question[] = [...BASE_QUESTIONS, ...SEED_QUESTIONS];
 
 export const MOCK_LISTENING_LESSONS: ListeningLesson[] = [
   { id: 'l-1', category: 'toeic', difficulty: 'advanced', title: 'Earnings Call', audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3', transcript: [{ time: 0, text: 'Revenue growth exceeded projections.' }] },

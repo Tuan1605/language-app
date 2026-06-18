@@ -1,0 +1,12 @@
+[
+  { "id": "ng-001", "pattern": "～にもかかわらず", "meaning": "mac du～ (du... nhung van...)", "example": "努力したにもかかわらず、試合に負けた。", "exampleTranslation": "Mac du da no luc nhung van thua tran dau.", "difficulty": "advanced" },
+  { "id": "ng-002", "pattern": "～たびに", "meaning": "moi khi～, cu moi lan～", "example": "この写真を見るたびに、故郷を思い出す。", "exampleTranslation": "Moi khi nhin tam anh nay toi lai nho que huong.", "difficulty": "intermediate" },
+  { "id": "ng-003", "pattern": "～わけだ", "meaning": "the nen, hop ly la～", "example": "毎日練習している。上手なわけだ。", "exampleTranslation": "Ngay nao cung luyen tap. Hop ly la gioi.", "difficulty": "intermediate" },
+  { "id": "ng-004", "pattern": "～によって", "meaning": "tuy theo～, do boi～", "example": "地域によって風習が異なる。", "exampleTranslation": "Phong tuc khac nhau tuy theo vung mien.", "difficulty": "intermediate" },
+  { "id": "ng-005", "pattern": "～ぜを得ない", "meaning": "buoc phai～ (khong con cach nao khac)", "example": "台風のため、中止せざるを得ない。", "exampleTranslation": "Vi bao nen buoc phai huy.", "difficulty": "advanced" },
+  { "id": "ng-006", "pattern": "～上で", "meaning": "sau khi～ roi (moi)", "example": "よく考えた上で、返事します。", "exampleTranslation": "Sau khi suy nghi ky toi se tra loi.", "difficulty": "intermediate" },
+  { "id": "ng-007", "pattern": "～っぽい", "meaning": "co ve～, mang tinh～", "example": "彼は最近怠けっぽくなった。", "exampleTranslation": "Gan day anh ay co ve luoi bieng.", "difficulty": "intermediate" },
+  { "id": "ng-008", "pattern": "～てからでないと", "meaning": "neu chua～ thi khong the...", "example": "確認してからでないと、答えられません。", "exampleTranslation": "Neu chua kiem tra thi khong the tra loi.", "difficulty": "advanced" },
+  { "id": "ng-009", "pattern": "～ばかりに", "meaning": "nhu the muon～, gan nhu～", "example": "泃きださんばかりの表情だった。", "exampleTranslation": "Guong mat nhu the sap khoc.", "difficulty": "advanced" },
+  { "id": "ng-010", "pattern": "～とともに", "meaning": "cung voi～, dong thoi～", "example": "技術の進歩とともに生活が変わった。", "exampleTranslation": "Cuoc song thay doi cung voi tien bo cong nghe.", "difficulty": "intermediate" }
+]

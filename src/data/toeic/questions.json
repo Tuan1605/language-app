@@ -1,0 +1,82 @@
+[
+  {
+    "id": "toeic-g-001",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Grammar",
+    "text": "All visitors must ________ in at the front desk before entering the office.",
+    "options": ["sign", "signs", "signed", "signing"],
+    "correctAnswer": 0,
+    "explanation": "After the modal verb 'must', the base form of the verb is required: 'must sign'."
+  },
+  {
+    "id": "toeic-g-002",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Grammar",
+    "text": "The marketing team submitted ________ report two days ahead of the deadline.",
+    "options": ["they", "their", "them", "theirs"],
+    "correctAnswer": 1,
+    "explanation": "A possessive adjective ('their') is needed before the noun 'report'."
+  },
+  {
+    "id": "toeic-g-003",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "The new software will be installed ________ all computers are backed up.",
+    "options": ["despite", "once", "during", "because of"],
+    "correctAnswer": 1,
+    "explanation": "'Once' introduces a time clause meaning 'as soon as'. 'During' and 'because of' take a noun, not a clause."
+  },
+  {
+    "id": "toeic-g-004",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "Sales figures this quarter were significantly higher than ________ of last year.",
+    "options": ["this", "those", "that", "these"],
+    "correctAnswer": 2,
+    "explanation": "'That' refers back to the singular noun 'figures' as a group comparison ('that of last year')."
+  },
+  {
+    "id": "toeic-g-005",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The manager asked employees to ________ their expense reports by Friday.",
+    "options": ["submit", "subscribe", "sustain", "suspend"],
+    "correctAnswer": 0,
+    "explanation": "'Submit' (nop) collocates with 'reports'. The other options do not fit the business context."
+  },
+  {
+    "id": "toeic-g-006",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Grammar",
+    "text": "________ the budget constraints, the project was completed on schedule.",
+    "options": ["Despite", "Although", "Because", "However"],
+    "correctAnswer": 0,
+    "explanation": "'Despite' + noun phrase shows contrast. 'Although' would need a full clause, not just a noun phrase."
+  },
+  {
+    "id": "toeic-g-007",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The board approved the merger only after a ________ review of the financial records.",
+    "options": ["thorough", "thoughtful", "through", "throughout"],
+    "correctAnswer": 0,
+    "explanation": "'Thorough' (ky luong) describes a complete, careful review. 'Through' and 'throughout' are prepositions."
+  },
+  {
+    "id": "toeic-g-008",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Grammar",
+    "text": "Had the shipment arrived on time, the client ________ satisfied.",
+    "options": ["will be", "would have been", "is", "has been"],
+    "correctAnswer": 1,
+    "explanation": "This is a third conditional (past unreal). The result clause uses 'would have + past participle'."
+  }
+]
