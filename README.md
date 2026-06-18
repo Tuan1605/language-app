@@ -16,6 +16,33 @@ A gamified language learning web app inspired by Duolingo, designed for **TOEIC 
 - **PWA Support** - Installable as a Progressive Web App
 - **Responsive Design** - Desktop sidebar + mobile bottom navigation
 
+## Content
+
+All learning content (vocabulary, grammar, questions, listening/dictation/speaking
+prompts) is **original practice material** authored for this app. It mirrors the
+format and difficulty of TOEIC and JLPT N2 but is **not copied from any official
+exam** (ETS / JEES). Do not add copyrighted exam questions to this repository.
+
+Content lives as JSON under `src/data/` and is merged into the app via
+`src/data/contentLoader.ts`, so it can grow to hundreds of items without changing
+component code:
+
+```
+src/data/
+├── toeic/
+│   ├── vocabulary.json   # business vocabulary with examples
+│   └── questions.json    # Part 5/6 style questions with explanations
+└── n2/
+    ├── vocabulary.json   # N2 vocabulary with readings
+    ├── grammar.json      # N2 grammar patterns with examples
+    └── questions.json    # 文法 / 語彙 style questions with explanations
+```
+
+Listening, dictation and speaking lessons fall back to the browser **Web Speech
+API** (text-to-speech) when no recorded `audioUrl` is provided, so the app works
+without hosting audio files. Real audio can be added later via the optional
+`audioUrl` field.
+
 ## Tech Stack
 
 - **React 19** with TypeScript
