@@ -26,6 +26,9 @@
   --text-main: #4b4b4b;
   --text-muted: #afafaf;
   --bg-main: #ffffff;
+  --bg-card: #ffffff;
+  --border-main: #e5e5e5;
+  --bg-hover: #f7f7f7;
 }
 
 [data-theme='dark'] {
@@ -35,6 +38,9 @@
   --text-main: #ffffff;
   --text-muted: #777777;
   --bg-main: #131f24;
+  --bg-card: #1a2a32;
+  --border-main: #2a3a42;
+  --bg-hover: #1e2e36;
 }
 
 body {
@@ -212,6 +218,64 @@ body {
   width: 100%;
   max-width: 600px; /* Duolingo keeps maps relatively narrow */
   margin: 0 auto;
+}
+
+/* --- CARD CONTAINER --- */
+.lingo-card {
+  padding: 2rem;
+  border-radius: 1.5rem;
+  border: 2px solid var(--border-main);
+  background-color: var(--bg-card);
+  box-shadow: 0 4px 0 var(--border-main);
+}
+
+/* --- 3D BUTTON (alias for btn-duo style) --- */
+.btn-3d {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: transform 0.1s, box-shadow 0.1s;
+  cursor: pointer;
+  border: 2px solid transparent;
+  user-select: none;
+}
+
+.btn-3d:active:not(:disabled) {
+  transform: translateY(4px);
+  box-shadow: none !important;
+}
+
+.btn-3d:disabled {
+  background-color: #e5e5e5;
+  color: #afafaf;
+  box-shadow: 0 4px 0 #cccccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+[data-theme='dark'] .btn-3d:disabled {
+  background-color: #37464f;
+  color: #777777;
+  box-shadow: 0 4px 0 #202f36;
+}
+
+/* --- CUSTOM SCROLLBAR --- */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--gray-path);
+  border-radius: 3px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--gray-path-dark);
 }
 
 @theme {

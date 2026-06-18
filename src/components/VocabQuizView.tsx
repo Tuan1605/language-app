@@ -10,7 +10,7 @@ interface VocabQuizViewProps {
 export function VocabQuizView({ word, allCards, onComplete }: VocabQuizViewProps) {
   const [options, setOptions] = useState<string[]>([]);
   const [selectedIdx, setSelectedIdx] = useState<number | null>(null);
-  const [isAnswered, setIsFinished] = useState(false);
+  const [isAnswered, setIsAnswered] = useState(false);
   const [timeLeft, setTimeLeft] = useState(15);
   const timerRef = useRef<any>(null);
 
@@ -45,7 +45,7 @@ export function VocabQuizView({ word, allCards, onComplete }: VocabQuizViewProps
     if (isAnswered) return;
     clearInterval(timerRef.current);
     setSelectedIdx(idx);
-    setIsFinished(true);
+    setIsAnswered(true);
   };
 
   const correctIdx = options.indexOf(word.definition);
