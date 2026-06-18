@@ -1,5 +1,6 @@
 import { useState, useRef } from 'react';
 import type { ListeningLesson } from '../types';
+import { speak, stopSpeaking, isTTSSupported, langForCategory } from '../utils/tts';
 
 interface ListeningViewProps {
   lesson: ListeningLesson;
@@ -19,14 +20,30 @@ export function ListeningView({ lesson, onBack, hideBackButton }: ListeningViewP
   };
 
   const togglePlay = () => {
-    if (audioRef.current) {
+    // Real recorded audio takes priority when available.
+    if (lesson.audioUrl && audioRef.current) {
       if (isPlaying) {
         audioRef.current.pause();
       } else {
         audioRef.current.play();
       }
       setIsPlaying(!isPlaying);
+      return;
     }
+
+    // Fallback: synthesize the transcript with the Web Speech API.
+    if (isPlaying) {
+      stopSpeaking();
+      setIsPlaying(false);
+      return;
+    }
+    const fullText = lesson.transcript.map((t) => t.text).join(' ');
+    const started = speak(fullText, {
+      lang: langForCategory(lesson.category),
+      onStart: () => setIsPlaying(true),
+      onEnd: () => setIsPlaying(false),
+    });
+    if (started) setIsPlaying(true);
   };
 
   return (
@@ -85,6 +102,12 @@ export function ListeningView({ lesson, onBack, hideBackButton }: ListeningViewP
           </span>
         </div>
       </div>
+
+      {!lesson.audioUrl && !isTTSSupported() && (
+        <p className="text-xs text-[#ff4b4b] font-bold text-center mb-6">
+          ⚠️ Your browser does not support audio playback for this lesson. Please use Chrome or Edge.
+        </p>
+      )}
 
       <div className="space-y-6 max-h-[500px] overflow-y-auto pr-4 custom-scrollbar">
         <p className="text-[10px] font-black text-[var(--text-muted)] uppercase tracking-[0.2em] mb-4">Transcript & Translation</p>
