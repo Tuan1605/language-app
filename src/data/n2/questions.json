@@ -1,0 +1,52 @@
+[
+  {
+    "id": "n2-g-001",
+    "category": "n2",
+    "difficulty": "intermediate",
+    "subCategory": "文法",
+    "text": "大雨（　　）、試合は中止された。",
+    "options": ["によって", "によると", "のせいで", "のおかげで"],
+    "correctAnswer": 0,
+    "explanation": "「～によって」 chi nguyen nhan/phuong tien trung tinh. 「のせいで」 mang nghia tieu cuc nhung it trang trong hon o dang viet nay."
+  },
+  {
+    "id": "n2-g-002",
+    "category": "n2",
+    "difficulty": "advanced",
+    "subCategory": "文法",
+    "text": "一生懸命練習した（　　）、試合に負けてしまった。",
+    "options": ["からには", "ものだから", "にもかかわらず", "にかかわらず"],
+    "correctAnswer": 2,
+    "explanation": "「～にもかかわらず」 the hien su tuong phan (du～ nhung van～). 「にかかわらず」 di voi danh tu nhu 「天候にかかわらず」."
+  },
+  {
+    "id": "n2-g-003",
+    "category": "n2",
+    "difficulty": "advanced",
+    "subCategory": "文法",
+    "text": "この問題は、よく考えた（　　）で返事したい。",
+    "options": ["上", "中", "際", "最中"],
+    "correctAnswer": 0,
+    "explanation": "「～た上で」 nghia la 'sau khi～ roi moi'. O day la 'sau khi suy nghi ky roi moi tra loi'."
+  },
+  {
+    "id": "n2-v-001",
+    "category": "n2",
+    "difficulty": "intermediate",
+    "subCategory": "語彙",
+    "text": "現状を正確に（　　）することが大切だ。",
+    "options": ["把握", "担当", "負担", "担保"],
+    "correctAnswer": 0,
+    "explanation": "「把握する」 (nam bat) di voi 「現状」. Cac lua chon khac khong hop nghia."
+  },
+  {
+    "id": "n2-v-002",
+    "category": "n2",
+    "difficulty": "intermediate",
+    "subCategory": "語彙",
+    "text": "輸出が（　　）して、会社の利益が上がった。",
+    "options": ["増加", "減少", "損失", "低下"],
+    "correctAnswer": 0,
+    "explanation": "Loi nhuan tang nen xuat khau phai 「増加」 (tang len)."
+  }
+]
