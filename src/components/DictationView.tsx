@@ -1,5 +1,6 @@
 import { useState, useRef } from 'react';
 import type { DictationLesson } from '../types';
+import { speak, langForCategory } from '../utils/tts';
 
 interface DictationViewProps {
   lesson: DictationLesson;
@@ -14,10 +15,13 @@ export function DictationView({ lesson, onComplete }: DictationViewProps) {
   const audioRef = useRef<HTMLAudioElement>(null);
 
   const playAudio = () => {
-    if (audioRef.current) {
+    if (lesson.audioUrl && audioRef.current) {
       audioRef.current.currentTime = 0;
       audioRef.current.play();
+      return;
     }
+    // Fallback: read the target text aloud with the Web Speech API.
+    speak(lesson.targetText, { lang: langForCategory(lesson.category) });
   };
 
   const checkAnswer = () => {
