@@ -45,7 +45,7 @@ export interface ExamResult {
 export interface ListeningLesson {
   id: string;
   title: string;
-  audioUrl: string;
+  audioUrl?: string;
   category: 'toeic' | 'n2';
   difficulty: Difficulty;
   transcript: {
@@ -68,9 +68,27 @@ export interface DictationLesson {
   id: string;
   category: 'toeic' | 'n2';
   difficulty: Difficulty;
-  audioUrl: string;
+  audioUrl?: string;
   targetText: string;
   translation: string;
+}
+
+export interface GrammarPoint {
+  id: string;
+  pattern: string;
+  meaning: string;
+  example: string;
+  exampleTranslation: string;
+  difficulty: Difficulty;
+}
+
+export interface KanjiEntry {
+  id: string;
+  kanji: string;
+  reading: string;
+  meaning: string;
+  example?: string;
+  difficulty: Difficulty;
 }
 
 export type SessionTask = 
