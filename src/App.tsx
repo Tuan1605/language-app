@@ -410,11 +410,11 @@ function App() {
                <div className="w-full flex items-center gap-4 mb-10 px-4">
                   <button onClick={() => setMode('path')} className="text-2xl text-[var(--text-muted)] hover:text-[var(--text-main)] active:scale-90">✖</button>
                   <div className="flex-1 h-4 bg-[var(--gray-path)] rounded-full overflow-hidden">
-                    <div className="h-full bg-[var(--green)] transition-all duration-300" style={{ width: `${((currentTaskIndex + 1) / sessionTasks.length) * 100}%` }}></div>
+                    <div className="h-full bg-[var(--green)] rounded-full transition-all duration-500 ease-out progress-shine" style={{ width: `${((currentTaskIndex + 1) / sessionTasks.length) * 100}%` }}></div>
                   </div>
                </div>
                {!isSessionFinished ? (
-                  <div className="w-full flex flex-col items-center">
+                  <div key={currentTaskIndex} className="w-full flex flex-col items-center view-enter">
                     {sessionTasks[currentTaskIndex].type === 'vocab-quiz' && <VocabQuizView word={sessionTasks[currentTaskIndex].data as Flashcard} allCards={cards} onComplete={() => nextTask()} />}
                     {sessionTasks[currentTaskIndex].type === 'quiz' && <QuizView questions={[sessionTasks[currentTaskIndex].data as Question]} category={activeTrack === 'english' ? 'toeic' : 'n2'} onComplete={() => nextTask()} onCancel={() => setMode('path')} hideSummary={true} />}
                     {sessionTasks[currentTaskIndex].type === 'listening' && <ListeningView lesson={sessionTasks[currentTaskIndex].data as ListeningLesson} onBack={() => nextTask()} hideBackButton={true} />}
@@ -422,9 +422,15 @@ function App() {
                     {sessionTasks[currentTaskIndex].type === 'dictation' && <DictationView lesson={sessionTasks[currentTaskIndex].data as DictationLesson} onComplete={() => nextTask()} />}
                   </div>
                ) : (
-                  <div className="w-full text-center space-y-8 animate-in zoom-in-95 duration-500 pt-10">
-                     <div className="text-[120px] select-none">🎉</div>
-                     <div className="space-y-2"><h2 className="text-4xl font-black text-[var(--gold)]">Lesson Complete!</h2><p className="text-base font-bold text-[var(--text-muted)]">You earned +10 XP</p></div>
+                  <div className="w-full text-center space-y-8 pop-in pt-10 relative">
+                     {/* Confetti burst */}
+                     <div className="absolute left-1/2 -translate-x-1/2 top-0 w-0 h-0 pointer-events-none">
+                       {['var(--green)','var(--blue)','var(--gold)','var(--purple)','var(--red)','var(--blue)','var(--gold)','var(--green)'].map((c, i) => (
+                         <span key={i} className="confetti-dot" style={{ backgroundColor: c, left: `${(i - 4) * 22}px`, animationDelay: `${i * 0.06}s` }} />
+                       ))}
+                     </div>
+                     <div className="text-[120px] select-none animate-bounce">🎉</div>
+                     <div className="space-y-2"><h2 className="text-4xl font-black text-gradient">Lesson Complete!</h2><p className="text-base font-bold text-[var(--text-muted)]">You earned +10 XP</p></div>
                      <button onClick={finalizeSession} className="w-full btn-duo btn-green h-16 text-lg mt-10">CONTINUE</button>
                   </div>
                )}
