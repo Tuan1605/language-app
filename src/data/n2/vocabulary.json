@@ -1,0 +1,22 @@
+[
+  { "id": "nv-001", "word": "把握", "reading": "はあく", "definition": "nam bat, thau hieu", "example": "状況を正確に把握する。", "difficulty": "intermediate", "topic": "business" },
+  { "id": "nv-002", "word": "考慮", "reading": "こうりょ", "definition": "xem xet, can nhac", "example": "相手の気持ちを考慮する。", "difficulty": "intermediate", "topic": "general" },
+  { "id": "nv-003", "word": "徹底", "reading": "てってい", "definition": "triet de", "example": "ルールを徹底する。", "difficulty": "advanced", "topic": "general" },
+  { "id": "nv-004", "word": "迅速", "reading": "じんそく", "definition": "nhanh chong", "example": "迅速に対応します。", "difficulty": "advanced", "topic": "business" },
+  { "id": "nv-005", "word": "傾向", "reading": "けいこう", "definition": "khuynh huong, xu huong", "example": "価格が上がる傾向がある。", "difficulty": "intermediate", "topic": "general" },
+  { "id": "nv-006", "word": "担当", "reading": "たんとう", "definition": "phu trach", "example": "営業を担当しています。", "difficulty": "beginner", "topic": "business" },
+  { "id": "nv-007", "word": "協力", "reading": "きょうりょく", "definition": "hop tac", "example": "国際的な協力が必要だ。", "difficulty": "intermediate", "topic": "society" },
+  { "id": "nv-008", "word": "解決", "reading": "かいけつ", "definition": "giai quyet", "example": "問題を解決する。", "difficulty": "beginner", "topic": "general" },
+  { "id": "nv-009", "word": "制度", "reading": "せいど", "definition": "che do, the che", "example": "新しい制度を導入する。", "difficulty": "intermediate", "topic": "society" },
+  { "id": "nv-010", "word": "負担", "reading": "ふたん", "definition": "ganh nang", "example": "環境への負担を減らす。", "difficulty": "advanced", "topic": "society" },
+  { "id": "nv-011", "word": "圧力", "reading": "あつりょく", "definition": "ap luc", "example": "仕事の圧力に耐える。", "difficulty": "intermediate", "topic": "general" },
+  { "id": "nv-012", "word": "影響", "reading": "えいきょう", "definition": "anh huong", "example": "経済に大きな影響を与える。", "difficulty": "beginner", "topic": "general" },
+  { "id": "nv-013", "word": "損失", "reading": "そんしつ", "definition": "ton that, thiet hai", "example": "大きな損失を被った。", "difficulty": "advanced", "topic": "finance" },
+  { "id": "nv-014", "word": "保証", "reading": "ほしょう", "definition": "bao dam, bao hanh", "example": "品質を保証します。", "difficulty": "intermediate", "topic": "business" },
+  { "id": "nv-015", "word": "増加", "reading": "ぞうか", "definition": "tang len", "example": "輸出が増加している。", "difficulty": "beginner", "topic": "general" },
+  { "id": "nv-016", "word": "減少", "reading": "げんしょう", "definition": "giam di", "example": "人口が減少している。", "difficulty": "beginner", "topic": "society" },
+  { "id": "nv-017", "word": "催促", "reading": "さいそく", "definition": "thuc giuc, doi hoi", "example": "支払いを催促する。", "difficulty": "advanced", "topic": "business" },
+  { "id": "nv-018", "word": "規制", "reading": "きせい", "definition": "quy che, han che", "example": "政府が規制を強化する。", "difficulty": "advanced", "topic": "legal" },
+  { "id": "nv-019", "word": "協議", "reading": "きょうぎ", "definition": "hoi nghi, ban bac", "example": "対策について協議する。", "difficulty": "intermediate", "topic": "business" },
+  { "id": "nv-020", "word": "成果", "reading": "せいか", "definition": "thanh qua, ket qua", "example": "努力の成果が出た。", "difficulty": "beginner", "topic": "general" }
+]
