@@ -12,7 +12,7 @@ export function VocabQuizView({ word, allCards, onComplete }: VocabQuizViewProps
   const [selectedIdx, setSelectedIdx] = useState<number | null>(null);
   const [isAnswered, setIsAnswered] = useState(false);
   const [timeLeft, setTimeLeft] = useState(15);
-  const timerRef = useRef<any>(null);
+  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   useEffect(() => {
     // Generate 4 randomized options
@@ -27,11 +27,12 @@ export function VocabQuizView({ word, allCards, onComplete }: VocabQuizViewProps
     
     // Start timer
     setTimeLeft(15);
+    setIsAnswered(false);
+    setSelectedIdx(null);
     timerRef.current = setInterval(() => {
       setTimeLeft(prev => {
         if (prev <= 1) {
           clearInterval(timerRef.current);
-          handleSelect(-1); // Auto-fail if time runs out
           return 0;
         }
         return prev - 1;
@@ -39,7 +40,15 @@ export function VocabQuizView({ word, allCards, onComplete }: VocabQuizViewProps
     }, 1000);
 
     return () => clearInterval(timerRef.current);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [word]);
+
+  useEffect(() => {
+    if (timeLeft === 0 && !isAnswered) {
+      handleSelect(-1);
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [timeLeft, isAnswered]);
 
   const handleSelect = (idx: number) => {
     if (isAnswered) return;
@@ -94,8 +103,8 @@ export function VocabQuizView({ word, allCards, onComplete }: VocabQuizViewProps
         {options.map((option, idx) => {
           let btnClass = "border-[var(--border-main)] bg-[var(--bg-card)] text-[var(--text-main)]";
           if (isAnswered) {
-             if (idx === correctIdx) btnClass = "border-[#58cc02] bg-[#f2fcf0] text-[#58cc02] shadow-sm";
-             else if (idx === selectedIdx) btnClass = "border-[#ff4b4b] bg-[#fff5f5] text-[#ff4b4b]";
+             if (idx === correctIdx) btnClass = "border-[#58cc02] bg-[var(--tint-green)] text-[#58cc02] shadow-sm";
+             else if (idx === selectedIdx) btnClass = "border-[#ff4b4b] bg-[var(--tint-red)] text-[#ff4b4b]";
              else btnClass = "opacity-40 border-[var(--border-main)]";
           } else {
              btnClass = "border-[var(--border-main)] hover:border-[#1cb0f6] hover:bg-[var(--bg-hover)]";

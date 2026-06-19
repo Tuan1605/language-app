@@ -7,14 +7,15 @@ A gamified language learning web app inspired by Duolingo, designed for **TOEIC 
 - **Gamified Learning Path** - Duolingo-style winding map with unlockable units and nodes
 - **Flashcards with SM-2** - Spaced repetition algorithm for optimal memorization
 - **Quiz Mode** - Timed multiple-choice questions with auto-skip
-- **Listening Practice** - Audio lessons with synchronized transcripts
+- **Listening Practice** - Audio lessons with synchronized transcripts (TTS fallback)
 - **Speaking Practice** - Voice recognition powered by Web Speech API
 - **Dictation Mode** - Listen and type exercises with accuracy scoring
 - **Custom Exam Builder** - Create your own exams from the question bank
 - **Full Mock Exams** - Complete TOEIC and JLPT N2 practice tests
 - **Dark/Light Theme** - Toggle between themes with persistent preference
-- **PWA Support** - Installable as a Progressive Web App
+- **PWA Support** - Installable as a Progressive Web App with offline caching
 - **Responsive Design** - Desktop sidebar + mobile bottom navigation
+- **Error Boundary** - Graceful fallback if a view crashes
 
 ## Content
 
@@ -38,18 +39,18 @@ src/data/
     └── questions.json    # 文法 / 語彙 style questions with explanations
 ```
 
-Listening, dictation and speaking lessons fall back to the browser **Web Speech
-API** (text-to-speech) when no recorded `audioUrl` is provided, so the app works
-without hosting audio files. Real audio can be added later via the optional
-`audioUrl` field.
+Listening, dictation and speaking lessons use the browser **Web Speech API**
+(text-to-speech) by default. Real audio can be added later via the optional
+`audioUrl` field on each lesson.
 
 ## Tech Stack
 
 - **React 19** with TypeScript
 - **Vite** for fast development and building
 - **Tailwind CSS v4** for utility-first styling
-- **Supabase** for backend services (auth & database)
-- **Web Speech API** for voice recognition
+- **localStorage** for persistent progress & preferences (no backend required)
+- **Web Speech API** for voice recognition & synthesis
+- **Service Worker** for PWA offline support
 
 ## Getting Started
 
@@ -67,10 +68,6 @@ cd tuan
 
 # Install dependencies
 npm install
-
-# Set up environment variables
-cp .env.example .env
-# Edit .env with your Supabase credentials
 ```
 
 ### Development
@@ -93,23 +90,38 @@ src/
 │   ├── CollectionView.tsx
 │   ├── CreateExamView.tsx
 │   ├── DictationView.tsx
+│   ├── ErrorBoundary.tsx
 │   ├── FlashcardView.tsx
+│   ├── GamifiedPath.tsx
 │   ├── ListeningView.tsx
+│   ├── NotebookView.tsx
 │   ├── QuizView.tsx
 │   ├── SpeakingView.tsx
 │   └── VocabQuizView.tsx
-├── services/        # External service clients
-│   └── supabaseClient.ts
+├── data/            # JSON seed content + loader
+│   ├── contentLoader.ts
+│   ├── curriculums.ts
+│   ├── toeic/
+│   └── n2/
 ├── types/           # TypeScript type definitions
 │   └── index.ts
 ├── utils/           # Utility functions
-│   ├── mockData.ts  # Sample data for development
-│   └── sm2.ts       # SM-2 spaced repetition algorithm
+│   ├── mockData.ts
+│   ├── sm2.ts       # SM-2 spaced repetition algorithm
+│   ├── storage.ts   # localStorage helpers
+│   ├── stringSimilarity.ts
+│   └── tts.ts       # Text-to-speech helper
 ├── App.tsx          # Main application component
 ├── App.css          # App-specific styles
-├── index.css        # Global styles and Tailwind imports
-└── main.tsx         # Application entry point
+├── index.css        # Global styles, Tailwind imports, CSS variables
+└── main.tsx         # Application entry point (ErrorBoundary + SW register)
 ```
+
+## Deployment
+
+The app deploys to **GitLab Pages** via the included `.gitlab-ci.yml` pipeline.
+Set `base` in `vite.config.ts` to match your project's path on GitLab Pages
+(currently `/tuan/`).
 
 ## License
 

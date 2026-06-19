@@ -18,44 +18,44 @@ export function AddFlashcard({ onAdd }: AddFlashcardProps) {
   };
 
   return (
-    <div className="bg-white lingo-card max-w-xl mx-auto w-full animate-in slide-in-from-bottom-8 duration-500">
+    <div className="bg-[var(--bg-card)] lingo-card max-w-xl mx-auto w-full animate-in slide-in-from-bottom-8 duration-500">
       <div className="flex items-center gap-4 mb-10">
-        <div className="w-12 h-12 bg-[#ddf4ff] rounded-xl flex items-center justify-center text-[#1cb0f6]">
+        <div className="w-12 h-12 bg-[var(--tint-blue)] rounded-xl flex items-center justify-center text-[#1cb0f6]">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
           </svg>
         </div>
         <div>
-          <h2 className="text-2xl font-black text-[#4b4b4b] uppercase tracking-tight">New Discovery</h2>
-          <p className="text-[9px] font-black text-[#afafaf] uppercase tracking-[0.2em] mt-1">Add to your collection</p>
+          <h2 className="text-2xl font-black text-[var(--text-main)] uppercase tracking-tight">New Discovery</h2>
+          <p className="text-[9px] font-black text-[var(--text-muted)] uppercase tracking-[0.2em] mt-1">Add to your collection</p>
         </div>
       </div>
 
       <form onSubmit={handleSubmit} className="space-y-6">
         <div className="space-y-2">
-          <label className="text-[9px] font-black text-[#777] uppercase tracking-[0.2em] ml-1">Word or Phrase</label>
+          <label className="text-[9px] font-black text-[var(--text-muted)] uppercase tracking-[0.2em] ml-1">Word or Phrase</label>
           <input
             type="text"
             value={word}
             onChange={(e) => setWord(e.target.value)}
-            className="w-full bg-[#f7f7f7] border-2 border-[#e5e5e5] rounded-2xl px-5 h-14 text-lg font-bold focus:border-[#1cb0f6] focus:bg-white transition-all outline-none placeholder:text-[#afafaf]"
+            className="w-full bg-[var(--card-input-bg)] border-2 border-[var(--card-input-border)] rounded-2xl px-5 h-14 text-lg font-bold focus:border-[#1cb0f6] focus:bg-[var(--bg-card)] transition-all outline-none text-[var(--text-main)] placeholder:text-[var(--text-muted)]"
             placeholder="e.g. Approach / 接近"
           />
         </div>
-        
+
         <div className="space-y-2">
-          <label className="text-[9px] font-black text-[#777] uppercase tracking-[0.2em] ml-1">Meaning / Definition</label>
+          <label className="text-[9px] font-black text-[var(--text-muted)] uppercase tracking-[0.2em] ml-1">Meaning / Definition</label>
           <textarea
             value={definition}
             onChange={(e) => setDefinition(e.target.value)}
             rows={3}
-            className="w-full bg-[#f7f7f7] border-2 border-[#e5e5e5] rounded-2xl p-5 text-lg font-bold focus:border-[#1cb0f6] focus:bg-white transition-all outline-none placeholder:text-[#afafaf] resize-none"
+            className="w-full bg-[var(--card-input-bg)] border-2 border-[var(--card-input-border)] rounded-2xl p-5 text-lg font-bold focus:border-[#1cb0f6] focus:bg-[var(--bg-card)] transition-all outline-none resize-none text-[var(--text-main)] placeholder:text-[var(--text-muted)]"
             placeholder="What does it mean?..."
           />
         </div>
 
         <div className="space-y-3">
-          <label className="text-[9px] font-black text-[#777] uppercase tracking-[0.2em] ml-1 block text-center">Target Language</label>
+          <label className="text-[9px] font-black text-[var(--text-muted)] uppercase tracking-[0.2em] ml-1 block text-center">Target Language</label>
           <div className="grid grid-cols-2 gap-3">
             <button
               type="button"
@@ -79,8 +79,8 @@ export function AddFlashcard({ onAdd }: AddFlashcardProps) {
           disabled={!word || !definition}
           className={`w-full h-14 mt-4 transition-all ${
             word && definition 
-            ? 'btn-3d btn-green' 
-            : 'bg-[#e5e5e5] text-[#afafaf] font-black uppercase tracking-widest cursor-not-allowed border-b-4 border-[#cbd5e1] rounded-2xl'
+            ? 'btn-3d btn-green'
+            : 'bg-[var(--gray-path)] text-[var(--text-muted)] font-black uppercase tracking-widest cursor-not-allowed border-b-4 border-[var(--gray-path-dark)] rounded-2xl'
           }`}
         >
           SAVE CARD

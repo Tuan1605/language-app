@@ -4,79 +4,4499 @@
     "category": "toeic",
     "difficulty": "beginner",
     "subCategory": "Part 5 - Grammar",
-    "text": "All visitors must ________ in at the front desk before entering the office.",
-    "options": ["sign", "signs", "signed", "signing"],
+    "text": "The manager, along with his team members, _______ present at the meeting yesterday.",
+    "options": [
+      "was",
+      "were",
+      "are",
+      "have been"
+    ],
     "correctAnswer": 0,
-    "explanation": "After the modal verb 'must', the base form of the verb is required: 'must sign'."
+    "explanation": "Khi chủ ngữ chính đi kèm với 'along with', động từ chia theo chủ ngữ chính ('The manager' - số ít) → 'was'."
   },
   {
     "id": "toeic-g-002",
     "category": "toeic",
     "difficulty": "beginner",
     "subCategory": "Part 5 - Grammar",
-    "text": "The marketing team submitted ________ report two days ahead of the deadline.",
-    "options": ["they", "their", "them", "theirs"],
+    "text": "Neither the director nor the employees _______ available for the conference call.",
+    "options": [
+      "is",
+      "are",
+      "was",
+      "has been"
+    ],
     "correctAnswer": 1,
-    "explanation": "A possessive adjective ('their') is needed before the noun 'report'."
+    "explanation": "Với 'neither...nor', động từ chia theo chủ ngữ gần nhất ('employees' - số nhiều) → 'are'."
   },
   {
     "id": "toeic-g-003",
     "category": "toeic",
-    "difficulty": "intermediate",
+    "difficulty": "beginner",
     "subCategory": "Part 5 - Grammar",
-    "text": "The new software will be installed ________ all computers are backed up.",
-    "options": ["despite", "once", "during", "because of"],
-    "correctAnswer": 1,
-    "explanation": "'Once' introduces a time clause meaning 'as soon as'. 'During' and 'because of' take a noun, not a clause."
+    "text": "Each of the applicants _______ required to submit a resume.",
+    "options": [
+      "are",
+      "were",
+      "is",
+      "have been"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Each of + danh từ số nhiều' vẫn chia động từ số ít → 'is'."
   },
   {
     "id": "toeic-g-004",
     "category": "toeic",
-    "difficulty": "intermediate",
+    "difficulty": "beginner",
     "subCategory": "Part 5 - Grammar",
-    "text": "Sales figures this quarter were significantly higher than ________ of last year.",
-    "options": ["this", "those", "that", "these"],
+    "text": "The news about the merger _______ announced at the shareholders' meeting.",
+    "options": [
+      "were",
+      "have been",
+      "was",
+      "are"
+    ],
     "correctAnswer": 2,
-    "explanation": "'That' refers back to the singular noun 'figures' as a group comparison ('that of last year')."
+    "explanation": "'News' là danh từ không đếm được, luôn chia động từ số ít → 'was'."
   },
   {
     "id": "toeic-g-005",
     "category": "toeic",
-    "difficulty": "intermediate",
-    "subCategory": "Part 5 - Vocabulary",
-    "text": "The manager asked employees to ________ their expense reports by Friday.",
-    "options": ["submit", "subscribe", "sustain", "suspend"],
-    "correctAnswer": 0,
-    "explanation": "'Submit' (nop) collocates with 'reports'. The other options do not fit the business context."
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Grammar",
+    "text": "A number of employees _______ submitted their reports on time.",
+    "options": [
+      "has",
+      "have",
+      "is",
+      "was"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'A number of + danh từ số nhiều' chia động từ số nhiều → 'have'. (Khác với 'The number of' chia số ít)."
   },
   {
     "id": "toeic-g-006",
     "category": "toeic",
-    "difficulty": "advanced",
+    "difficulty": "beginner",
     "subCategory": "Part 5 - Grammar",
-    "text": "________ the budget constraints, the project was completed on schedule.",
-    "options": ["Despite", "Although", "Because", "However"],
-    "correctAnswer": 0,
-    "explanation": "'Despite' + noun phrase shows contrast. 'Although' would need a full clause, not just a noun phrase."
+    "text": "The committee _______ reached a unanimous decision on the budget proposal.",
+    "options": [
+      "have",
+      "has",
+      "are",
+      "were"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Committee' là danh từ tập thể, trong tiếng Anh Mỹ thường chia động từ số ít → 'has'."
   },
   {
     "id": "toeic-g-007",
     "category": "toeic",
-    "difficulty": "advanced",
-    "subCategory": "Part 5 - Vocabulary",
-    "text": "The board approved the merger only after a ________ review of the financial records.",
-    "options": ["thorough", "thoughtful", "through", "throughout"],
-    "correctAnswer": 0,
-    "explanation": "'Thorough' (ky luong) describes a complete, careful review. 'Through' and 'throughout' are prepositions."
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Grammar",
+    "text": "There _______ several reasons for the delay in shipment.",
+    "options": [
+      "is",
+      "was",
+      "are",
+      "has been"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Cấu trúc 'There + be', động từ chia theo danh từ phía sau ('reasons' - số nhiều) → 'are'."
   },
   {
     "id": "toeic-g-008",
     "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Grammar",
+    "text": "Mathematics _______ a required subject for all engineering students.",
+    "options": [
+      "are",
+      "were",
+      "have been",
+      "is"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'Mathematics' là danh từ kết thúc bằng -s nhưng là số ít → 'is'."
+  },
+  {
+    "id": "toeic-g-009",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Grammar",
+    "text": "The majority of the work _______ been completed ahead of schedule.",
+    "options": [
+      "have",
+      "are",
+      "were",
+      "has"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'The majority of + danh từ không đếm được (work)' chia động từ số ít → 'has'."
+  },
+  {
+    "id": "toeic-g-010",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Grammar",
+    "text": "Every employee and every manager _______ to attend the safety training.",
+    "options": [
+      "are required",
+      "were required",
+      "is required",
+      "have required"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Every + A and every B' chia động từ số ít → 'is required'."
+  },
+  {
+    "id": "toeic-g-011",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Grammar",
+    "text": "By the time the CEO arrived, the investors _______ already left the building.",
+    "options": [
+      "have",
+      "had",
+      "has",
+      "were"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Quá khứ hoàn thành (had + P.P) dùng để diễn tả hành động xảy ra trước một hành động khác trong quá khứ → 'had left'."
+  },
+  {
+    "id": "toeic-g-012",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Grammar",
+    "text": "The company _______ its annual report every December since 2015.",
+    "options": [
+      "publishes",
+      "has published",
+      "published",
+      "is publishing"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Since 2015' → dùng hiện tại hoàn thành (has/have + P.P) → 'has published'."
+  },
+  {
+    "id": "toeic-g-013",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Grammar",
+    "text": "Ms. Chen _______ in the marketing department for five years before she was promoted.",
+    "options": [
+      "works",
+      "has worked",
+      "had worked",
+      "is working"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Quá khứ hoàn thành (had worked) diễn tả hành động kéo dài trước một mốc thời gian quá khứ ('before she was promoted')."
+  },
+  {
+    "id": "toeic-g-014",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Grammar",
+    "text": "The new software _______ being tested by the IT department this week.",
+    "options": [
+      "has been",
+      "is",
+      "was",
+      "will be"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Hiện tại tiếp tục (is being + P.P) diễn tả hành động đang xảy ra ở hiện tại → 'is being tested'."
+  },
+  {
+    "id": "toeic-g-015",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Grammar",
+    "text": "By next quarter, the company _______ over 500 new employees.",
+    "options": [
+      "will hire",
+      "will have hired",
+      "is hiring",
+      "has hired"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Tương lai hoàn thành (will have + P.P) dùng với 'by next quarter' → 'will have hired'."
+  },
+  {
+    "id": "toeic-g-016",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Grammar",
+    "text": "The factory _______ twice as many units this year compared to last year.",
+    "options": [
+      "produce",
+      "produced",
+      "has produced",
+      "is produce"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'This year' + so sánh với 'last year' → hiện tại hoàn thành → 'has produced'."
+  },
+  {
+    "id": "toeic-g-017",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Grammar",
+    "text": "When I _______ the office this morning, the receptionist was talking on the phone.",
+    "options": [
+      "arrive",
+      "arrived",
+      "have arrived",
+      "had arrived"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Quá khứ đơn (arrived) kết hợp với quá khứ tiếp tục (was talking) → hành động chen ngang vào quá khứ."
+  },
+  {
+    "id": "toeic-g-018",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Grammar",
+    "text": "The shipment _______ by the time we open the warehouse tomorrow.",
+    "options": [
+      "will arrive",
+      "arrives",
+      "will have arrived",
+      "is arriving"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'By the time + hiện tại đơn' → mệnh đề chính dùng tương lai hoàn thành → 'will have arrived'."
+  },
+  {
+    "id": "toeic-g-019",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Grammar",
+    "text": "Our company _______ a new branch office in Singapore next year.",
+    "options": [
+      "opens",
+      "opened",
+      "will open",
+      "has opened"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Next year' → dùng tương lai đơn (will + V) → 'will open'."
+  },
+  {
+    "id": "toeic-g-020",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Grammar",
+    "text": "The report _______ before the deadline every quarter so far.",
+    "options": [
+      "was submitted",
+      "has been submitted",
+      "is submitted",
+      "will be submitted"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'So far' → hiện tại hoàn thành bị động (has been + P.P) → 'has been submitted'."
+  },
+  {
+    "id": "toeic-g-021",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Grammar",
+    "text": "If the company _______ more staff, the project would be completed on time.",
+    "options": [
+      "hire",
+      "hires",
+      "hired",
+      "will hire"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Câu điều kiện loại 2 (không có thật ở hiện tại): If + S + V(quá khứ), S + would + V → 'hired'."
+  },
+  {
+    "id": "toeic-g-022",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Grammar",
+    "text": "If the shipment had arrived on time, we _______ the order by now.",
+    "options": [
+      "would fulfill",
+      "will fulfill",
+      "would have fulfilled",
+      "fulfilled"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Câu điều kiện loại 3 (không có thật trong quá khứ): If + had + P.P, S + would have + P.P → 'would have fulfilled'."
+  },
+  {
+    "id": "toeic-g-023",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Grammar",
+    "text": "The profits will increase significantly if the marketing campaign _______ successful.",
+    "options": [
+      "is",
+      "was",
+      "were",
+      "had been"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Câu điều kiện loại 1 (có thật ở tương lai): If + S + V(hiện tại), S + will + V → 'is'."
+  },
+  {
+    "id": "toeic-g-024",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Grammar",
+    "text": "If I _______ the CEO, I would invest more in research and development.",
+    "options": [
+      "am",
+      "was",
+      "were",
+      "be"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Câu điều kiện loại 2 với 'I' → dùng 'were' (không dùng 'was' trong văn phong trang trọng)."
+  },
+  {
+    "id": "toeic-g-025",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Grammar",
+    "text": "Had the manager reviewed the contract carefully, the error _______ detected.",
+    "options": [
+      "would be",
+      "will be",
+      "would have been",
+      "is"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Đảo ngữ câu điều kiện loại 3: Had + S + P.P, S + would have + P.P → 'would have been'."
+  },
+  {
+    "id": "toeic-g-026",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Grammar",
+    "text": "Unless the supplier _______ the price, we will switch to a different vendor.",
+    "options": [
+      "reduce",
+      "reduces",
+      "reduced",
+      "will reduce"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Unless' = 'If not', trong câu điều kiện loại 1 dùng hiện tại đơn → 'reduces'."
+  },
+  {
+    "id": "toeic-g-027",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Grammar",
+    "text": "Provided that all documents _______ submitted, the application will be processed immediately.",
+    "options": [
+      "are",
+      "were",
+      "will be",
+      "have"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Provided that' = 'If', dùng hiện tại đơn trong mệnh đề if → 'are'."
+  },
+  {
+    "id": "toeic-g-028",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Grammar",
+    "text": "If we _______ the market trends earlier, we could have adjusted our strategy.",
+    "options": [
+      "analyze",
+      "analyzed",
+      "had analyzed",
+      "would analyze"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Câu điều kiện loại 3: If + had + P.P → 'had analyzed'."
+  },
+  {
+    "id": "toeic-g-029",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Grammar",
+    "text": "Should you need any assistance, please _______ the help desk.",
+    "options": [
+      "contact",
+      "contacted",
+      "contacting",
+      "to contact"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Đảo ngữ câu điều kiện loại 1: Should + S + V, S + will + V → mệnh đề chính dùng nguyên thể 'contact'."
+  },
+  {
+    "id": "toeic-g-030",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Grammar",
+    "text": "If the weather _______ better tomorrow, the outdoor team-building event will proceed as planned.",
+    "options": [
+      "is",
+      "was",
+      "were",
+      "would be"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Câu điều kiện loại 1: If + hiện tại đơn → 'is'."
+  },
+  {
+    "id": "toeic-g-031",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "The new policy _______ by the board of directors last month.",
+    "options": [
+      "approved",
+      "was approved",
+      "has approved",
+      "is approved"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Quá khứ bị động: was/were + P.P. 'Last month' → quá khứ đơn bị động → 'was approved'."
+  },
+  {
+    "id": "toeic-g-032",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "All invoices must _______ before the end of the fiscal year.",
+    "options": [
+      "be paid",
+      "paid",
+      "being paid",
+      "to be paid"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Sau modal verb (must) dùng dạng bị động: must + be + P.P → 'be paid'."
+  },
+  {
+    "id": "toeic-g-033",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "The conference room _______ cleaned every morning by the maintenance staff.",
+    "options": [
+      "is",
+      "was",
+      "has been",
+      "will be"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Hiện tại đơn bị động: is/are + P.P. 'Every morning' → thói quen → 'is cleaned'."
+  },
+  {
+    "id": "toeic-g-034",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "Several new products _______ at the trade show next week.",
+    "options": [
+      "will showcase",
+      "will be showcased",
+      "are showcasing",
+      "showcase"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Tương lai bị động: will be + P.P → 'will be showcased'."
+  },
+  {
+    "id": "toeic-g-035",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "The error in the financial statement _______ by the auditor yesterday.",
+    "options": [
+      "discovered",
+      "was discovered",
+      "has discovered",
+      "is discovered"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Quá khứ đơn bị động: was/were + P.P → 'was discovered'."
+  },
+  {
+    "id": "toeic-g-036",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "New employees _______ to complete their orientation within the first week.",
+    "options": [
+      "require",
+      "required",
+      "are required",
+      "were requiring"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Hiện tại đơn bị động: are + P.P → 'are required'."
+  },
+  {
+    "id": "toeic-g-037",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "The building _______ renovated since the beginning of the year.",
+    "options": [
+      "is being",
+      "was being",
+      "has been",
+      "had been"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Since the beginning of the year' → hiện tại hoàn thành bị động: has been + P.P → 'has been'."
+  },
+  {
+    "id": "toeic-g-038",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "By the time the audit was finished, most of the records _______ reviewed.",
+    "options": [
+      "had been",
+      "have been",
+      "were",
+      "are"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Quá khứ hoàn thành bị động: had been + P.P → 'had been'."
+  },
+  {
+    "id": "toeic-g-039",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "The results of the survey _______ to all department heads by email.",
+    "options": [
+      "sent",
+      "were sent",
+      "have sent",
+      "are sending"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Quá khứ đơn bị động: were + P.P → 'were sent'."
+  },
+  {
+    "id": "toeic-g-040",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "All company vehicles _______ inspected annually for safety compliance.",
+    "options": [
+      "must be",
+      "must",
+      "must being",
+      "must been"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Modal + be + P.P (bị động) → 'must be inspected'."
+  },
+  {
+    "id": "toeic-g-041",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "The employee _______ proposal was accepted will lead the new project.",
+    "options": [
+      "who",
+      "whose",
+      "which",
+      "whom"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Whose' dùng để chỉ sự sở hữu: 'the employee whose proposal' (đề xuất của nhân viên đó)."
+  },
+  {
+    "id": "toeic-g-042",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "The conference, _______ was held in Tokyo, attracted over 500 attendees.",
+    "options": [
+      "that",
+      "which",
+      "who",
+      "where"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Which' dùng trong mệnh đề quan hệ không xác định (non-restrictive) bổ nghĩa cho 'conference'."
+  },
+  {
+    "id": "toeic-g-043",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "The office _______ I used to work has been demolished.",
+    "options": [
+      "which",
+      "that",
+      "where",
+      "when"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Where' dùng để chỉ địa điểm → 'the office where I worked'."
+  },
+  {
+    "id": "toeic-g-044",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "The manager _______ I reported to has retired.",
+    "options": [
+      "who",
+      "whom",
+      "whose",
+      "which"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Whom' dùng tân ngữ (I reported to whom) → 'whom I reported to'."
+  },
+  {
+    "id": "toeic-g-045",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "The reason _______ the project was delayed is still unclear.",
+    "options": [
+      "which",
+      "where",
+      "why",
+      "when"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Why' dùng sau 'reason' → 'the reason why'."
+  },
+  {
+    "id": "toeic-g-046",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "Ms. Park, _______ has been with the company for 20 years, is retiring next month.",
+    "options": [
+      "that",
+      "who",
+      "which",
+      "whom"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Who' dùng trong mệnh đề không xác định bổ nghĩa cho người → 'Ms. Park, who has been...'."
+  },
+  {
+    "id": "toeic-g-047",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "The factory in _______ the products are manufactured is located in Shenzhen.",
+    "options": [
+      "that",
+      "which",
+      "where",
+      "whom"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Giới từ 'in' + 'which' (không dùng 'that' sau giới từ) → 'in which'."
+  },
+  {
+    "id": "toeic-g-048",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "The applicant _______ resume was most impressive received the job offer.",
+    "options": [
+      "who",
+      "whose",
+      "whom",
+      "which"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Whose' chỉ sở hữu: 'the applicant whose resume' (sơ yếu lý lịch của ứng viên đó)."
+  },
+  {
+    "id": "toeic-g-049",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "I need a computer _______ can handle large amounts of data.",
+    "options": [
+      "who",
+      "whom",
+      "whose",
+      "that"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'That' dùng cho vật trong mệnh đề quan hệ xác định → 'a computer that can handle...'."
+  },
+  {
+    "id": "toeic-g-050",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "The year _______ the company was founded was 1985.",
+    "options": [
+      "which",
+      "where",
+      "when",
+      "why"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'When' dùng sau danh từ chỉ thời gian → 'the year when'."
+  },
+  {
+    "id": "toeic-g-051",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "The manager is responsible _______ overseeing the entire production department.",
+    "options": [
+      "of",
+      "for",
+      "to",
+      "with"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Responsible for' là cụm từ cố định → 'responsible for overseeing'."
+  },
+  {
+    "id": "toeic-g-052",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "The new software is compatible _______ all operating systems.",
+    "options": [
+      "to",
+      "for",
+      "with",
+      "by"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Compatible with' là cụm từ cố định → 'compatible with all operating systems'."
+  },
+  {
+    "id": "toeic-g-053",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "We need to look _______ the contract details before signing.",
+    "options": [
+      "at",
+      "into",
+      "for",
+      "after"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Look into' = xem xét, điều tra → 'look into the contract details'."
+  },
+  {
+    "id": "toeic-g-054",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "The company plans to cut _______ on unnecessary expenses next quarter.",
+    "options": [
+      "off",
+      "out",
+      "down",
+      "back"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Cut down on' = cắt giảm → 'cut down on unnecessary expenses'."
+  },
+  {
+    "id": "toeic-g-055",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "Please refer _______ the attached document for more information.",
+    "options": [
+      "at",
+      "for",
+      "to",
+      "with"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Refer to' là cụm từ cố định = tham khảo → 'refer to the attached document'."
+  },
+  {
+    "id": "toeic-g-056",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "The meeting has been put _______ until next Monday due to scheduling conflicts.",
+    "options": [
+      "off",
+      "out",
+      "on",
+      "up"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Put off' = hoãn lại → 'put off until next Monday'."
+  },
+  {
+    "id": "toeic-g-057",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "The marketing team came _______ with an innovative advertising campaign.",
+    "options": [
+      "up",
+      "across",
+      "out",
+      "over"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Come up with' = nghĩ ra, nảy ra → 'came up with an innovative campaign'."
+  },
+  {
+    "id": "toeic-g-058",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "The new regulation will have a significant impact _______ the banking industry.",
+    "options": [
+      "in",
+      "on",
+      "at",
+      "for"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Impact on' là cụm từ cố định → 'impact on the banking industry'."
+  },
+  {
+    "id": "toeic-g-059",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "We should take _______ account the current market conditions before investing.",
+    "options": [
+      "in",
+      "on",
+      "into",
+      "for"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Take into account' = cân nhắc, tính đến → 'take into account the conditions'."
+  },
+  {
+    "id": "toeic-g-060",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "The IT department is looking _______ new candidates for the senior developer position.",
+    "options": [
+      "at",
+      "for",
+      "after",
+      "into"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Look for' = tìm kiếm → 'looking for new candidates'."
+  },
+  {
+    "id": "toeic-g-061",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "The company encourages employees _______ professional development courses.",
+    "options": [
+      "take",
+      "taking",
+      "to take",
+      "taken"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Encourage + someone + to V' → 'encourages employees to take'."
+  },
+  {
+    "id": "toeic-g-062",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "_______ the quarterly report on time is essential for the board meeting.",
+    "options": [
+      "Complete",
+      "Completing",
+      "Completed",
+      "To completing"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Danh động từ (V-ing) làm chủ ngữ → 'Completing the report is essential'."
+  },
+  {
+    "id": "toeic-g-063",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "The manager suggested _______ the deadline by two weeks.",
+    "options": [
+      "extend",
+      "to extend",
+      "extending",
+      "extended"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Suggest + V-ing' → 'suggested extending'."
+  },
+  {
+    "id": "toeic-g-064",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "She decided _______ the job offer after careful consideration.",
+    "options": [
+      "accept",
+      "accepting",
+      "accepted",
+      "to accept"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'Decide + to V' → 'decided to accept'."
+  },
+  {
+    "id": "toeic-g-065",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "The employees were asked _______ their timesheets by Friday.",
+    "options": [
+      "submit",
+      "submitting",
+      "submitted",
+      "to submit"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'Ask + someone + to V' → 'were asked to submit'."
+  },
+  {
+    "id": "toeic-g-066",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "_______ in business negotiations requires patience and skill.",
+    "options": [
+      "Succeed",
+      "Succeeding",
+      "Succeeded",
+      "To succeeding"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Danh động từ (V-ing) làm chủ ngữ → 'Succeeding in negotiations requires...'."
+  },
+  {
+    "id": "toeic-g-067",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "The CEO promised _______ the matter as soon as possible.",
+    "options": [
+      "investigate",
+      "investigating",
+      "to investigate",
+      "investigated"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Promise + to V' → 'promised to investigate'."
+  },
+  {
+    "id": "toeic-g-068",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "I look forward _______ from you at your earliest convenience.",
+    "options": [
+      "hear",
+      "hearing",
+      "to hear",
+      "to hearing"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'Look forward to + V-ing' (to ở đây là giới từ) → 'look forward to hearing'."
+  },
+  {
+    "id": "toeic-g-069",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "The training program aims _______ employees with the latest industry knowledge.",
+    "options": [
+      "equip",
+      "equipping",
+      "to equip",
+      "equipped"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Aim + to V' → 'aims to equip'."
+  },
+  {
+    "id": "toeic-g-070",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "He avoided _______ the question during the press conference.",
+    "options": [
+      "answer",
+      "to answer",
+      "answering",
+      "answered"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Avoid + V-ing' → 'avoided answering'."
+  },
+  {
+    "id": "toeic-g-071",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "The project was completed on time; _______, it exceeded the budget.",
+    "options": [
+      "however",
+      "therefore",
+      "moreover",
+      "consequently"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'However' (tuy nhiên) dùng để chỉ sự tương phản giữa hai ý → hoàn thành đúng hạn NHƯNG vượt ngân sách."
+  },
+  {
+    "id": "toeic-g-072",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "The company increased its marketing budget. _______, sales rose by 15 percent.",
+    "options": [
+      "Nevertheless",
+      "On the contrary",
+      "As a result",
+      "In contrast"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'As a result' (kết quả là) chỉ mối quan hệ nhân quả → tăng ngân sách → kết quả: doanh số tăng."
+  },
+  {
+    "id": "toeic-g-073",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "_______ the heavy rain, the outdoor event went ahead as scheduled.",
+    "options": [
+      "Despite",
+      "Although",
+      "Because",
+      "Since"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Despite + V-ing/N' = mặc dù → 'Despite the heavy rain'. (Không dùng 'Although' vì sau đó cần mệnh đề)."
+  },
+  {
+    "id": "toeic-g-074",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "The new product has been well received; _______, the company plans to expand its distribution.",
+    "options": [
+      "on the other hand",
+      "in conclusion",
+      "as a result",
+      "for instance"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'As a result' chỉ kết quả: sản phẩm được đón nhận → kết quả: mở rộng phân phối."
+  },
+  {
+    "id": "toeic-g-075",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Grammar",
+    "text": "_______ the company has made significant progress, there is still room for improvement.",
+    "options": [
+      "Because",
+      "While",
+      "So",
+      "Therefore"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'While' = although/mặc dù → 'While the company has made progress, there is still room...'."
+  },
+  {
+    "id": "toeic-g-076",
+    "category": "toeic",
     "difficulty": "advanced",
     "subCategory": "Part 5 - Grammar",
-    "text": "Had the shipment arrived on time, the client ________ satisfied.",
-    "options": ["will be", "would have been", "is", "has been"],
+    "text": "The board rejected the proposal. _______, they asked for a revised version.",
+    "options": [
+      "Instead",
+      "Otherwise",
+      "Therefore",
+      "Similarly"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Instead' (thay vào đó) → từ chối nhưng yêu cầu bản sửa đổi."
+  },
+  {
+    "id": "toeic-g-077",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Grammar",
+    "text": "The factory must increase output; _______, it will lose the contract.",
+    "options": [
+      "furthermore",
+      "otherwise",
+      "meanwhile",
+      "likewise"
+    ],
     "correctAnswer": 1,
-    "explanation": "This is a third conditional (past unreal). The result clause uses 'would have + past participle'."
+    "explanation": "'Otherwise' (nếu không thì) → nếu không tăng sản lượng thì sẽ mất hợp đồng."
+  },
+  {
+    "id": "toeic-g-078",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Grammar",
+    "text": "_______ being the newest member of the team, she contributed significantly to the project.",
+    "options": [
+      "Despite",
+      "Because",
+      "Although",
+      "Unless"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Despite + V-ing' = mặc dù → 'Despite being the newest member'."
+  },
+  {
+    "id": "toeic-g-079",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Grammar",
+    "text": "The CEO not only praised the team _______ also rewarded them with bonuses.",
+    "options": [
+      "and",
+      "but",
+      "yet",
+      "so"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Not only...but also' là cấu trúc tương quan → 'not only praised but also rewarded'."
+  },
+  {
+    "id": "toeic-g-080",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Grammar",
+    "text": "_______ you submit the application by the deadline, you will not be considered for the position.",
+    "options": [
+      "If",
+      "Unless",
+      "While",
+      "Since"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Unless' = if not → 'Unless you submit = If you do not submit'."
+  },
+  {
+    "id": "toeic-g-081",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Grammar",
+    "text": "She is _______ honest person who always keeps her promises.",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Honest' bắt đầu bằng âm nguyên âm (silent h) → dùng 'an'."
+  },
+  {
+    "id": "toeic-g-082",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Grammar",
+    "text": "I need _______ information about the new product line.",
+    "options": [
+      "a",
+      "an",
+      "some",
+      "many"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Information' là danh từ không đếm được, dùng 'some' (không dùng a/an hoặc many)."
+  },
+  {
+    "id": "toeic-g-083",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Grammar",
+    "text": "_______ CEO of the company announced her resignation yesterday.",
+    "options": [
+      "A",
+      "An",
+      "The",
+      "No article"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'The CEO' - dùng 'the' vì chỉ CEO cụ thể của công ty."
+  },
+  {
+    "id": "toeic-g-084",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Grammar",
+    "text": "There are _______ reasons for the decline in sales this quarter.",
+    "options": [
+      "a little",
+      "little",
+      "a few",
+      "much"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Reasons' là danh từ đếm được số nhiều → 'a few' (một vài). 'A little/little' + không đếm được, 'much' + không đếm được."
+  },
+  {
+    "id": "toeic-g-085",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Grammar",
+    "text": "We have _______ time left before the deadline, so we need to hurry.",
+    "options": [
+      "few",
+      "a few",
+      "little",
+      "a little"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Little time' (ít thời gian - sắc thái tiêu cực) → cần vội. 'A little' = một chút (sắc thái tích cực)."
+  },
+  {
+    "id": "toeic-g-086",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Grammar",
+    "text": "The company has offices in _______ United States and _______ United Kingdom.",
+    "options": [
+      "a, a",
+      "the, the",
+      "an, an",
+      "no article, no article"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Tên quốc gia có 'United/States/Kingdom' → dùng 'the': the United States, the United Kingdom."
+  },
+  {
+    "id": "toeic-g-087",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Grammar",
+    "text": "Could you please pass me _______ salt?",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'The salt' - dùng 'the' vì chỉ muối cụ thể trên bàn (cả hai người đều biết)."
+  },
+  {
+    "id": "toeic-g-088",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Grammar",
+    "text": "She has _______ experience in international marketing.",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'Experience' (kinh nghiệm) là danh từ không đếm được → không dùng mạo từ."
+  },
+  {
+    "id": "toeic-g-089",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Grammar",
+    "text": "_______ most employees prefer flexible working hours.",
+    "options": [
+      "A",
+      "An",
+      "The",
+      "No article"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'The most employees' - dùng 'the' với 'most' khi nói phần lớn của một nhóm cụ thể."
+  },
+  {
+    "id": "toeic-g-090",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Grammar",
+    "text": "He is _______ European businessman who operates in several countries.",
+    "options": [
+      "a",
+      "an",
+      "the",
+      "no article"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'European' bắt đầu bằng âm phụ âm /j/ → dùng 'a' (không phải 'an')."
+  },
+  {
+    "id": "toeic-g-091",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Grammar",
+    "text": "This quarter's results are _______ than expected.",
+    "options": [
+      "more better",
+      "better",
+      "more good",
+      "best"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Good' → so sánh hơn: better (bất quy tắc, không dùng 'more good')."
+  },
+  {
+    "id": "toeic-g-092",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Grammar",
+    "text": "Of all the candidates, Ms. Tanaka has the _______ qualifications.",
+    "options": [
+      "more impressive",
+      "most impressive",
+      "impressive",
+      "impressiver"
+    ],
+    "correctAnswer": 1,
+    "explanation": "So sánh nhất với tính từ dài: the most + adj → 'the most impressive'."
+  },
+  {
+    "id": "toeic-g-093",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Grammar",
+    "text": "The Tokyo branch is performing _______ than the London office.",
+    "options": [
+      "more efficient",
+      "most efficient",
+      "more efficiently",
+      "most efficiently"
+    ],
+    "correctAnswer": 2,
+    "explanation": "So sánh hơn của trạng từ: more + adv → 'more efficiently' (từ 'efficient' → trạng từ 'efficiently')."
+  },
+  {
+    "id": "toeic-g-094",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Grammar",
+    "text": "Sales in December were _______ higher than in November.",
+    "options": [
+      "very",
+      "much",
+      "more",
+      "most"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Much' dùng để nhấn mạnh so sánh hơn → 'much higher'. (Không dùng 'very' với so sánh hơn)."
+  },
+  {
+    "id": "toeic-g-095",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Grammar",
+    "text": "This is the _______ report I have ever read.",
+    "options": [
+      "most longest",
+      "longest",
+      "more long",
+      "longer"
+    ],
+    "correctAnswer": 1,
+    "explanation": "So sánh nhất với tính từ ngắn: the + adj-est → 'the longest'."
+  },
+  {
+    "id": "toeic-g-096",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Grammar",
+    "text": "The sooner we start, the _______ we will finish.",
+    "options": [
+      "fast",
+      "faster",
+      "fastest",
+      "more fast"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Cấu trúc 'The + so sánh hơn, the + so sánh hơn' → 'the sooner, the faster'."
+  },
+  {
+    "id": "toeic-g-097",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Grammar",
+    "text": "Customer satisfaction is _______ important than cost reduction.",
+    "options": [
+      "most",
+      "more",
+      "much",
+      "very"
+    ],
+    "correctAnswer": 1,
+    "explanation": "So sánh hơn: more + adj → 'more important'."
+  },
+  {
+    "id": "toeic-g-098",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Grammar",
+    "text": "Among all the departments, Marketing has the _______ budget.",
+    "options": [
+      "larger",
+      "large",
+      "largest",
+      "most large"
+    ],
+    "correctAnswer": 2,
+    "explanation": "So sánh nhất: 'Among all' → 'the largest'."
+  },
+  {
+    "id": "toeic-g-099",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Grammar",
+    "text": "The new office is _______ bigger than the old one.",
+    "options": [
+      "very",
+      "far",
+      "more",
+      "most"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Far' dùng nhấn mạnh so sánh hơn → 'far bigger' (= much bigger)."
+  },
+  {
+    "id": "toeic-g-100",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Grammar",
+    "text": "Working from home is becoming _______ common in the tech industry.",
+    "options": [
+      "increase",
+      "increased",
+      "increasingly",
+      "more increasing"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Increasingly' (ngày càng) là trạng từ bổ nghĩa cho tính từ 'common' → 'increasingly common'."
+  },
+  {
+    "id": "toeic-v-001",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The company's annual _______ showed a significant increase in revenue.",
+    "options": [
+      "report",
+      "resort",
+      "repeat",
+      "reply"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Report' = báo cáo → 'annual report' (báo cáo thường niên)."
+  },
+  {
+    "id": "toeic-v-002",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The bank offers competitive _______ rates on business loans.",
+    "options": [
+      "interesting",
+      "interest",
+      "interested",
+      "interestingly"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Interest rates' = lãi suất (cụm từ cố định trong tài chính)."
+  },
+  {
+    "id": "toeic-v-003",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The company had to _______ several employees due to budget cuts.",
+    "options": [
+      "lay off",
+      "lay on",
+      "lay out",
+      "lay down"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Lay off' = sa thải → sa thải nhân viên do cắt giảm ngân sách."
+  },
+  {
+    "id": "toeic-v-004",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "We need to _______ the terms of the contract before signing.",
+    "options": [
+      "negotiate",
+      "navigate",
+      "necessitate",
+      "nominate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Negotiate' = đàm phán → đàm phán các điều khoản hợp đồng."
+  },
+  {
+    "id": "toeic-v-005",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The company's _______ have doubled since the new CEO took over.",
+    "options": [
+      "profiles",
+      "profits",
+      "proofs",
+      "proposals"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Profits' = lợi nhuận → lợi nhuận đã tăng gấp đôi."
+  },
+  {
+    "id": "toeic-v-006",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The new tax policy will have a major _______ on small businesses.",
+    "options": [
+      "affect",
+      "effect",
+      "effort",
+      "afford"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Effect' (danh từ) = tác động → 'have an effect on'. (Affect là động từ)."
+  },
+  {
+    "id": "toeic-v-007",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The company plans to _______ its operations into Southeast Asia.",
+    "options": [
+      "expand",
+      "expend",
+      "expect",
+      "expense"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Expand' = mở rộng → mở rộng hoạt động vào Đông Nam Á."
+  },
+  {
+    "id": "toeic-v-008",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "All employees must _______ with the company's code of conduct.",
+    "options": [
+      "comply",
+      "apply",
+      "reply",
+      "supply"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Comply with' = tuân thủ → tuân thủ quy tắc ứng xử."
+  },
+  {
+    "id": "toeic-v-009",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The marketing _______ for the new product launch cost over $2 million.",
+    "options": [
+      "camp",
+      "campus",
+      "campaign",
+      "champion"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Campaign' = chiến dịch → chiến dịch marketing cho sản phẩm mới."
+  },
+  {
+    "id": "toeic-v-010",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The company issued new _______ to raise capital for expansion.",
+    "options": [
+      "bonds",
+      "boundaries",
+      "branches",
+      "brands"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Bonds' = trái phiếu → phát hành trái phiếu để huy động vốn."
+  },
+  {
+    "id": "toeic-v-011",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "Please ensure all documents are _______ before submitting them.",
+    "options": [
+      "accurate",
+      "accused",
+      "accessed",
+      "accumulated"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Accurate' = chính xác → đảm bảo tất cả tài liệu đều chính xác."
+  },
+  {
+    "id": "toeic-v-012",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The _______ for the position includes a bachelor's degree and three years of experience.",
+    "options": [
+      "requirement",
+      "require",
+      "requiring",
+      "required"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Requirement' (danh từ) = yêu cầu → yêu cầu cho vị trí này."
+  },
+  {
+    "id": "toeic-v-013",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The company provides free parking as an _______ for employees.",
+    "options": [
+      "incident",
+      "incentive",
+      "inclination",
+      "income"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Incentive' = ưu đãi, động lực → bãi đậu xe miễn phí là ưu đãi."
+  },
+  {
+    "id": "toeic-v-014",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "We need to _______ a meeting room for the client presentation.",
+    "options": [
+      "reverse",
+      "reserve",
+      "resolve",
+      "review"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Reserve' = đặt trước → đặt trước phòng họp."
+  },
+  {
+    "id": "toeic-v-015",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The new software will _______ our workflow and increase productivity.",
+    "options": [
+      "streamline",
+      "steamline",
+      "straightline",
+      "stressline"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Streamline' = hợp lý hóa, tinh giản → hợp lý hóa quy trình làm việc."
+  },
+  {
+    "id": "toeic-v-016",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The HR department is responsible for the _______ of new employees.",
+    "options": [
+      "oriental",
+      "orient",
+      "orientation",
+      "oriented"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Orientation' (danh từ) = chương trình định hướng → định hướng nhân viên mới."
+  },
+  {
+    "id": "toeic-v-017",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "All staff must attend the mandatory safety _______ next week.",
+    "options": [
+      "training",
+      "treating",
+      "trading",
+      "trailing"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Training' = đào tạo → đào tạo an toàn bắt buộc."
+  },
+  {
+    "id": "toeic-v-018",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The _______ date for the project has been extended by two weeks.",
+    "options": [
+      "dealine",
+      "deadline",
+      "dataline",
+      "deadlock"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Deadline' = hạn chót → hạn chót đã được gia hạn hai tuần."
+  },
+  {
+    "id": "toeic-v-019",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "Employees are encouraged to maintain a healthy work-life _______.",
+    "options": [
+      "balance",
+      "barrier",
+      "bargain",
+      "bachelor"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Balance' = cân bằng → cân bằng công việc-cuộc sống."
+  },
+  {
+    "id": "toeic-v-020",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The company offers flexible _______ arrangements for all full-time staff.",
+    "options": [
+      "working",
+      "walking",
+      "warming",
+      "wanting"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Working arrangements' = sắp xếp công việc → sắp xếp làm việc linh hoạt."
+  },
+  {
+    "id": "toeic-v-021",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The company's _______ strategy focuses on social media advertising.",
+    "options": [
+      "marketing",
+      "marking",
+      "marketed",
+      "marker"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Marketing strategy' = chiến lược tiếp thị → chiến lược tập trung vào mạng xã hội."
+  },
+  {
+    "id": "toeic-v-022",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The new product has received positive _______ from customers.",
+    "options": [
+      "feedback",
+      "fallback",
+      "fedback",
+      "feedout"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Feedback' = phản hồi → phản hồi tích cực từ khách hàng."
+  },
+  {
+    "id": "toeic-v-023",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "We need to _______ our target audience more effectively.",
+    "options": [
+      "target",
+      "tender",
+      "transfer",
+      "trend"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Target' = nhắm đến → nhắm đến đối tượng mục tiêu hiệu quả hơn."
+  },
+  {
+    "id": "toeic-v-024",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The company's brand _______ has increased significantly this year.",
+    "options": [
+      "awareness",
+      "awful",
+      "award",
+      "away"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Brand awareness' = nhận diện thương hiệu → tăng đáng kể trong năm nay."
+  },
+  {
+    "id": "toeic-v-025",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The sales team exceeded their quarterly _______ by 20 percent.",
+    "options": [
+      "quota",
+      "quote",
+      "quest",
+      "query"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Quota' = chỉ tiêu → vượt chỉ tiêu quý 20%."
+  },
+  {
+    "id": "toeic-v-026",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The _______ showed that 85% of customers were satisfied with the service.",
+    "options": [
+      "survey",
+      "surgery",
+      "surplus",
+      "surname"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Survey' = khảo sát → khảo sát cho thấy 85% khách hàng hài lòng."
+  },
+  {
+    "id": "toeic-v-027",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The company plans to _______ a new product line next quarter.",
+    "options": [
+      "launch",
+      "lunch",
+      "laundry",
+      "latch"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Launch' = ra mắt → ra mắt dòng sản phẩm mới."
+  },
+  {
+    "id": "toeic-v-028",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The advertising _______ helped increase brand recognition.",
+    "options": [
+      "camp",
+      "campaign",
+      "campus",
+      "champion"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Campaign' = chiến dịch → chiến dịch quảng cáo giúp tăng nhận diện."
+  },
+  {
+    "id": "toeic-v-029",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "We need to study the _______ before entering the new market.",
+    "options": [
+      "competence",
+      "competition",
+      "complication",
+      "composition"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Competition' = sự cạnh tranh → nghiên cứu đối thủ cạnh tranh."
+  },
+  {
+    "id": "toeic-v-030",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The company's _______ image has improved since the rebranding.",
+    "options": [
+      "public",
+      "publish",
+      "punctual",
+      "pursue"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Public image' = hình ảnh công chúng → cải thiện kể từ đổi thương hiệu."
+  },
+  {
+    "id": "toeic-v-031",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The company invested heavily in _______ infrastructure last year.",
+    "options": [
+      "IT",
+      "IQ",
+      "IO",
+      "IR"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'IT infrastructure' = hạ tầng công nghệ thông tin."
+  },
+  {
+    "id": "toeic-v-032",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "All employees must use strong _______ to protect their accounts.",
+    "options": [
+      "passwords",
+      "passports",
+      "pathways",
+      "passengers"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Passwords' = mật khẩu → sử dụng mật khẩu mạnh để bảo vệ tài khoản."
+  },
+  {
+    "id": "toeic-v-033",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The system underwent scheduled _______ over the weekend.",
+    "options": [
+      "maintenance",
+      "maintain",
+      "maintained",
+      "maintaining"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Maintenance' = bảo trì → bảo trì định kỳ vào cuối tuần."
+  },
+  {
+    "id": "toeic-v-034",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The new software _______ resolved several critical bugs.",
+    "options": [
+      "update",
+      "uphold",
+      "upset",
+      "upgrade"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Update' = bản cập nhật → bản cập nhật phần mềm sửa nhiều lỗi nghiêm trọng."
+  },
+  {
+    "id": "toeic-v-035",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The company experienced a major data _______ last month.",
+    "options": [
+      "bridge",
+      "breach",
+      "branch",
+      "brand"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Breach' = vi phạm → 'data breach' (vi phạm dữ liệu)."
+  },
+  {
+    "id": "toeic-v-036",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "We need to _______ all important files on a regular basis.",
+    "options": [
+      "back down",
+      "back up",
+      "back out",
+      "back off"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Back up' = sao lưu → sao lưu tất cả tệp quan trọng thường xuyên."
+  },
+  {
+    "id": "toeic-v-037",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The _______ between the two systems allows seamless data transfer.",
+    "options": [
+      "integration",
+      "integrity",
+      "intelligence",
+      "intention"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Integration' = tích hợp → tích hợp giữa hai hệ thống cho phép truyền dữ liệu liền mạch."
+  },
+  {
+    "id": "toeic-v-038",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The website experienced a temporary _______ due to high traffic.",
+    "options": [
+      "outbreak",
+      "outburst",
+      "outcome",
+      "outage"
+    ],
+    "correctAnswer": 3,
+    "explanation": "'Outage' = sự cố ngừng hoạt động → website bị ngừng do lưu lượng truy cập cao."
+  },
+  {
+    "id": "toeic-v-039",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The company uses _______ to analyze customer behavior patterns.",
+    "options": [
+      "analytic",
+      "analytics",
+      "analyze",
+      "analysis"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Analytics' = phân tích dữ liệu → sử dụng phân tích dữ liệu để hiểu hành vi khách hàng."
+  },
+  {
+    "id": "toeic-v-040",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "All employees received training on _______ threats and phishing attacks.",
+    "options": [
+      "cyber",
+      "cycle",
+      "cynic",
+      "civic"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Cyber threats' = mối đe dọa mạng → đào tạo về mối đe dọa mạng và tấn công lừa đảo."
+  },
+  {
+    "id": "toeic-v-041",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The CEO will _______ the annual shareholders' meeting next week.",
+    "options": [
+      "chair",
+      "chain",
+      "charm",
+      "chart"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Chair' (động từ) = chủ trì → CEO sẽ chủ trì đại hội cổ đông."
+  },
+  {
+    "id": "toeic-v-042",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "Please send a meeting _______ to all participants.",
+    "options": [
+      "agenda",
+      "agent",
+      "agony",
+      "agile"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Agenda' = chương trình nghị sự → gửi chương trình họp cho tất cả người tham dự."
+  },
+  {
+    "id": "toeic-v-043",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The team leader gave a brief _______ of the project status.",
+    "options": [
+      "overlook",
+      "overhaul",
+      "overview",
+      "overcome"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Overview' = tổng quan → tổng quan về tình trạng dự án."
+  },
+  {
+    "id": "toeic-v-044",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The presentation was followed by a Q&A _______.",
+    "options": [
+      "season",
+      "section",
+      "session",
+      "secretion"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Session' = phiên → phiên hỏi đáp sau bài thuyết trình."
+  },
+  {
+    "id": "toeic-v-045",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "We need to _______ the key points from the meeting minutes.",
+    "options": [
+      "extract",
+      "extra",
+      "extreme",
+      "extend"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Extract' = trích xuất → trích xuất các điểm chính từ biên bản họp."
+  },
+  {
+    "id": "toeic-v-046",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The client requested a _______ of the proposal with revised pricing.",
+    "options": [
+      "version",
+      "vision",
+      "visitor",
+      "victory"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Version' = phiên bản → yêu cầu phiên bản đề xuất với giá sửa đổi."
+  },
+  {
+    "id": "toeic-v-047",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The speaker made a compelling _______ for the new business strategy.",
+    "options": [
+      "case",
+      "cash",
+      "cast",
+      "cave"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Make a case for' = đưa ra lập luận → lập luận thuyết phục cho chiến lược mới."
+  },
+  {
+    "id": "toeic-v-048",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The manager asked for a _______ on the client's feedback.",
+    "options": [
+      "follow-up",
+      "follow-through",
+      "follow-on",
+      "follow-in"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Follow-up' = theo dõi tiếp → yêu cầu theo dõi phản hồi khách hàng."
+  },
+  {
+    "id": "toeic-v-049",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The company issued a press _______ about the merger.",
+    "options": [
+      "releast",
+      "release",
+      "relief",
+      "relate"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Press release' = thông cáo báo chí → phát hành thông cáo về vụ sáp nhập."
+  },
+  {
+    "id": "toeic-v-050",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "Both parties signed a _______ agreement to protect sensitive information.",
+    "options": [
+      "confidential",
+      "confident",
+      "conference",
+      "conflict"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Confidential agreement' = thỏa thuận bảo mật → bảo vệ thông tin nhạy cảm."
+  },
+  {
+    "id": "toeic-v-051",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The company is seeking _______ approval for the construction project.",
+    "options": [
+      "regular",
+      "regulate",
+      "regulatory",
+      "regulation"
+    ],
+    "correctAnswer": 2,
+    "explanation": "'Regulatory approval' = sự chấp thuận từ cơ quan quản lý."
+  },
+  {
+    "id": "toeic-v-052",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The new manager quickly gained the _______ of her team.",
+    "options": [
+      "respect",
+      "resort",
+      "resolve",
+      "resource"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Respect' = sự tôn trọng → nhanh chóng giành được sự tôn trọng của đội."
+  },
+  {
+    "id": "toeic-v-053",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The project faced several _______ before it was finally completed.",
+    "options": [
+      "setbacks",
+      "setups",
+      "setdowns",
+      "setouts"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Setbacks' = trở ngại, khó khăn → dự án đối mặt nhiều trở ngại."
+  },
+  {
+    "id": "toeic-v-054",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "We must consider the long-term _______ of this investment.",
+    "options": [
+      "implications",
+      "implementations",
+      "impressions",
+      "improvements"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Implications' = hệ quả, hàm ý → xem xét hệ quả dài hạn của khoản đầu tư."
+  },
+  {
+    "id": "toeic-v-055",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The company achieved a competitive _______ through innovation.",
+    "options": [
+      "advantage",
+      "adventure",
+      "advertisement",
+      "adviser"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Competitive advantage' = lợi thế cạnh tranh → đạt được thông qua đổi mới."
+  },
+  {
+    "id": "toeic-v-056",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The new hire showed great _______ in learning the company's systems.",
+    "options": [
+      "initiative",
+      "initial",
+      "initiate",
+      "initiation"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Initiative' = sự chủ động → thể hiện sự chủ động trong việc học hệ thống."
+  },
+  {
+    "id": "toeic-v-057",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The company is undergoing a major _______ to improve efficiency.",
+    "options": [
+      "restructuring",
+      "restricting",
+      "resulting",
+      "restoring"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Restructuring' = tái cấu trúc → tái cấu trúc lớn để cải thiện hiệu quả."
+  },
+  {
+    "id": "toeic-v-058",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "We need to find a _______ that benefits both parties.",
+    "options": [
+      "solution",
+      "situation",
+      "station",
+      "section"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Solution' = giải pháp → tìm giải pháp có lợi cho cả hai bên."
+  },
+  {
+    "id": "toeic-v-059",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The government introduced new _______ to regulate the industry.",
+    "options": [
+      "legislation",
+      "legation",
+      "legend",
+      "leisure"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Legislation' = luật pháp, quy định → giới thiệu quy định mới để điều tiết ngành."
+  },
+  {
+    "id": "toeic-v-060",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The company's _______ has grown steadily over the past decade.",
+    "options": [
+      "revenue",
+      "revenge",
+      "reverse",
+      "review"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Revenue' = doanh thu → doanh thu tăng trưởng ổn định trong thập kỷ qua."
+  },
+  {
+    "id": "toeic-v-061",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The new policy is a _______ of fresh air for the entire organization.",
+    "options": [
+      "breath",
+      "breadth",
+      "break",
+      "breed"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'A breath of fresh air' = luồng gió mới → chính sách mới là luồng gió mới."
+  },
+  {
+    "id": "toeic-v-062",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "We need to _______ the bull by the horns and address this issue directly.",
+    "options": [
+      "take",
+      "catch",
+      "grab",
+      "hold"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Take the bull by the horns' = đối mặt trực tiếp với vấn đề."
+  },
+  {
+    "id": "toeic-v-063",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The deal fell _______ at the last minute due to contract disputes.",
+    "options": [
+      "through",
+      "apart",
+      "off",
+      "down"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Fall through' = thất bại, không thành → giao dịch thất bại vào phút chót."
+  },
+  {
+    "id": "toeic-v-064",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "Let's _______ to the chase and discuss the main issue.",
+    "options": [
+      "get",
+      "cut",
+      "go",
+      "run"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Cut to the chase' = đi thẳng vào vấn đề chính."
+  },
+  {
+    "id": "toeic-v-065",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The manager decided to _______ the team a break after the intense project.",
+    "options": [
+      "give",
+      "offer",
+      "grant",
+      "allow"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Give the team a break' = cho đội nghỉ ngơi (cách diễn đạt tự nhiên)."
+  },
+  {
+    "id": "toeic-v-066",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The company is _______ the fence about whether to expand internationally.",
+    "options": [
+      "on",
+      "in",
+      "at",
+      "by"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'On the fence' = chưa quyết định → công ty chưa quyết định có mở rộng quốc tế không."
+  },
+  {
+    "id": "toeic-v-067",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The new product was an instant hit and flew _______ the shelves.",
+    "options": [
+      "off",
+      "on",
+      "out",
+      "away"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Fly off the shelves' = bán rất chạy → sản phẩm mới bán chạy ngay lập tức."
+  },
+  {
+    "id": "toeic-v-068",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "We need to _______ our cards right to win this contract.",
+    "options": [
+      "play",
+      "show",
+      "deal",
+      "draw"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Play our cards right' = hành động đúng đắn → cần hành động đúng để giành hợp đồng."
+  },
+  {
+    "id": "toeic-v-069",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The CEO always keeps her _______ to the ground when it comes to market trends.",
+    "options": [
+      "ear",
+      "eye",
+      "nose",
+      "finger"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Keep one's ear to the ground' = luôn cập nhật thông tin → CEO luôn theo dõi xu hướng thị trường."
+  },
+  {
+    "id": "toeic-v-070",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The project is expected to be a _______ in the park for our experienced team.",
+    "options": [
+      "walk",
+      "run",
+      "ride",
+      "drive"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'A walk in the park' = rất dễ dàng → dự án dễ dàng đối với đội kinh nghiệm."
+  },
+  {
+    "id": "toeic-v-071",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The company's _______ plan includes medical, dental, and vision coverage.",
+    "options": [
+      "benefit",
+      "benefits",
+      "beneficial",
+      "benefactor"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Benefits plan' = kế hoạch phúc lợi → cụm từ phổ biến trong nhân sự."
+  },
+  {
+    "id": "toeic-v-072",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "We need to conduct a thorough _______ of the competition before launching our product.",
+    "options": [
+      "review",
+      "revision",
+      "revival",
+      "revolution"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Review' = đánh giá, xem xét → tiến hành đánh giá kỹ lưỡng về đối thủ cạnh tranh."
+  },
+  {
+    "id": "toeic-v-073",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The new hire will _______ a three-month probation period before becoming a permanent employee.",
+    "options": [
+      "complete",
+      "compete",
+      "complain",
+      "compose"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Complete a probation period' = hoàn thành thời gian thử việc."
+  },
+  {
+    "id": "toeic-v-074",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The company's _______ increased by 25% after the successful product launch.",
+    "options": [
+      "market share",
+      "market place",
+      "market rate",
+      "market value"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Market share' = thị phần → thị phần tăng 25% sau ra mắt sản phẩm thành công."
+  },
+  {
+    "id": "toeic-v-075",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "All employees must _______ to the company's dress code policy.",
+    "options": [
+      "adhere",
+      "adopt",
+      "adapt",
+      "advance"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Adhere to' = tuân thủ → tuân thủ quy tắc trang phục."
+  },
+  {
+    "id": "toeic-v-076",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The board of directors will _______ the quarterly financial statements at tomorrow's meeting.",
+    "options": [
+      "review",
+      "revise",
+      "reverse",
+      "reveal"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Review' = xem xét, kiểm tra → hội đồng sẽ xem xét báo cáo tài chính quý."
+  },
+  {
+    "id": "toeic-v-077",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The new product received _______ reviews from industry experts.",
+    "options": [
+      "glow",
+      "glowing",
+      "glowed",
+      "glows"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Glowing reviews' = đánh giá rực rỡ, rất tích cực → tính từ bổ nghĩa cho 'reviews'."
+  },
+  {
+    "id": "toeic-v-078",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "We should _______ the risks before making a final decision on the investment.",
+    "options": [
+      "assess",
+      "access",
+      "asset",
+      "assist"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Assess the risks' = đánh giá rủi ro → cần đánh giá trước khi quyết định đầu tư."
+  },
+  {
+    "id": "toeic-v-079",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The company is looking for ways to reduce _______ costs without sacrificing quality.",
+    "options": [
+      "operation",
+      "operational",
+      "operate",
+      "operator"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Operational costs' = chi phí vận hành → tính từ 'operational' bổ nghĩa cho 'costs'."
+  },
+  {
+    "id": "toeic-v-080",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 5 - Vocabulary",
+    "text": "The merger created a _______ that dominates the entire industry.",
+    "options": [
+      "powerhouse",
+      "powerless",
+      "powerpoint",
+      "powerplant"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Powerhouse' = tập đoàn hùng mạnh → vụ sáp nhập tạo ra một tập đoàn thống trị ngành."
+  },
+  {
+    "id": "toeic-tc-001",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "Dear Mr. Johnson,\n\nThank you for your inquiry regarding our consulting services. We would be happy to _______ a meeting to discuss your needs in more detail.",
+    "options": [
+      "arrange",
+      "argue",
+      "arrest",
+      "arise"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Arrange a meeting' = sắp xếp cuộc họp → câu trang trọng trong email kinh doanh."
+  },
+  {
+    "id": "toeic-tc-002",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "Please find _______ the revised proposal for the marketing campaign. We have incorporated all the changes you requested.",
+    "options": [
+      "attached",
+      "attacked",
+      "attended",
+      "attempted"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Please find attached' = vui lòng tìm đính kèm → cụm từ phổ biến trong email kinh doanh."
+  },
+  {
+    "id": "toeic-tc-003",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "We are writing to _______ you of the upcoming changes to our company's vacation policy.",
+    "options": [
+      "inform",
+      "insist",
+      "insert",
+      "inspect"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Inform you of' = thông báo cho bạn về → cụm từ trang trọng trong thông báo."
+  },
+  {
+    "id": "toeic-tc-004",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "I am writing to _______ my interest in the Marketing Manager position advertised on your website.",
+    "options": [
+      "express",
+      "export",
+      "expand",
+      "explore"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Express my interest' = bày tỏ sự quan tâm → mẫu câu phổ biến trong thư xin việc."
+  },
+  {
+    "id": "toeic-tc-005",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "We sincerely _______ for any inconvenience this delay may have caused.",
+    "options": [
+      "apologize",
+      "appliance",
+      "application",
+      "appreciate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Apologize for' = xin lỗi về → cụm từ tiêu chuẩn trong email xin lỗi kinh doanh."
+  },
+  {
+    "id": "toeic-tc-006",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "We would like to _______ our gratitude for your continued partnership.",
+    "options": [
+      "extend",
+      "expect",
+      "expend",
+      "expire"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Extend our gratitude' = bày tỏ lòng biết ơn → cách diễn đạt trang trọng."
+  },
+  {
+    "id": "toeic-tc-007",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "Should you have any questions, please do not _______ to contact our customer service team.",
+    "options": [
+      "hesitate",
+      "hesitation",
+      "hesitant",
+      "hesitating"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Do not hesitate to contact' = đừng ngần ngại liên hệ → mẫu câu kết email phổ biến."
+  },
+  {
+    "id": "toeic-tc-008",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "We are pleased to _______ that your application has been approved.",
+    "options": [
+      "inform",
+      "insist",
+      "install",
+      "insure"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Pleased to inform' = vui lòng thông báo → câu trang trọng báo tin tốt."
+  },
+  {
+    "id": "toeic-tc-009",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "ATTENTION ALL STAFF: The annual fire safety drill will _______ place on Friday at 2:00 PM.",
+    "options": [
+      "take",
+      "make",
+      "do",
+      "give"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Take place' = diễn ra → cuộc diễn tập sẽ diễn ra vào thứ Sáu."
+  },
+  {
+    "id": "toeic-tc-010",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "Please _______ that all employees must wear their ID badges at all times while on company premises.",
+    "options": [
+      "note",
+      "notice",
+      "notion",
+      "notable"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Please note' = xin lưu ý → cụm từ phổ biến trong thông báo nội bộ."
+  },
+  {
+    "id": "toeic-tc-011",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "The cafeteria will be _______ for renovation from June 15 to June 30.",
+    "options": [
+      "closed",
+      "close",
+      "closing",
+      "closely"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Will be closed' = sẽ bị đóng cửa → bị động tương lai."
+  },
+  {
+    "id": "toeic-tc-012",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "All departments are _______ to submit their quarterly reports by the end of this week.",
+    "options": [
+      "required",
+      "requesting",
+      "retiring",
+      "resigning"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Are required to' = được yêu cầu phải → bị động trong thông báo."
+  },
+  {
+    "id": "toeic-tc-013",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "The IT department will be performing system _______ this Saturday from 10 PM to 2 AM.",
+    "options": [
+      "maintenance",
+      "maintain",
+      "maintained",
+      "maintaining"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'System maintenance' = bảo trì hệ thống → danh từ sau 'system'."
+  },
+  {
+    "id": "toeic-tc-014",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "Please direct all _______ regarding this matter to the Human Resources department.",
+    "options": [
+      "inquiries",
+      "inquires",
+      "inquired",
+      "inquiring"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Inquiries' = yêu cầu, thắc mắc (danh từ số nhiều) → gửi thắc mắc đến phòng nhân sự."
+  },
+  {
+    "id": "toeic-tc-015",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "The company picnic has been _______ due to the forecast of severe weather.",
+    "options": [
+      "postponed",
+      "posted",
+      "postulated",
+      "positioned"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Postponed' = bị hoãn lại → hoãn picnic do dự báo thời tiết xấu."
+  },
+  {
+    "id": "toeic-tc-016",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "Effective immediately, all overtime must be _______ in advance by the department supervisor.",
+    "options": [
+      "approved",
+      "approving",
+      "approach",
+      "appropriate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Must be approved' = phải được phê duyệt → bị động với modal verb."
+  },
+  {
+    "id": "toeic-tc-017",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "The quarterly sales report _______ that revenue increased by 12% compared to the same period last year.",
+    "options": [
+      "indicates",
+      "indication",
+      "indicative",
+      "indicating"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Indicates' (động từ) = chỉ ra → báo cáo chỉ ra doanh thu tăng 12%."
+  },
+  {
+    "id": "toeic-tc-018",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "Based on our _______ of the market data, we recommend expanding into the Asian market.",
+    "options": [
+      "analysis",
+      "analyze",
+      "analytical",
+      "analyst"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Analysis' (danh từ) = sự phân tích → 'based on our analysis'."
+  },
+  {
+    "id": "toeic-tc-019",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "The data _______ a clear trend toward online shopping among younger consumers.",
+    "options": [
+      "suggests",
+      "suggestions",
+      "suggestive",
+      "suggesting"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Suggests' (động từ) = gợi ý, cho thấy → dữ liệu cho thấy xu hướng rõ ràng."
+  },
+  {
+    "id": "toeic-tc-020",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "Customer satisfaction scores have improved _______ since the implementation of the new service protocol.",
+    "options": [
+      "significantly",
+      "significant",
+      "significance",
+      "signify"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Significantly' (trạng từ) = đáng kể → cải thiện đáng kể."
+  },
+  {
+    "id": "toeic-tc-021",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "The _______ show that the Eastern region outperformed all other territories.",
+    "options": [
+      "findings",
+      "finding",
+      "find",
+      "found"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Findings' = kết quả nghiên cứu → kết quả cho thấy khu vực Đông vượt trội."
+  },
+  {
+    "id": "toeic-tc-022",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "According to the _______, employee turnover decreased by 8% this year.",
+    "options": [
+      "statistics",
+      "statues",
+      "statures",
+      "statuses"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Statistics' = số liệu thống kê → theo số liệu, tỷ lệ nghỉ việc giảm 8%."
+  },
+  {
+    "id": "toeic-tc-023",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "The report _______ several recommendations for improving operational efficiency.",
+    "options": [
+      "outlines",
+      "outlying",
+      "outlook",
+      "outlined"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Outlines' (động từ) = phác thảo → báo cáo phác thảo một số khuyến nghị."
+  },
+  {
+    "id": "toeic-tc-024",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "The _______ of the survey revealed that most customers prefer the new packaging design.",
+    "options": [
+      "results",
+      "resorts",
+      "resolves",
+      "resources"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Results' = kết quả → kết quả khảo sát cho thấy khách hàng ưa thích thiết kế mới."
+  },
+  {
+    "id": "toeic-tc-025",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "Now _______ at a store near you! Try our revolutionary new cleaning product.",
+    "options": [
+      "available",
+      "availability",
+      "avail",
+      "availing"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Now available' = hiện có sẵn → cụm từ phổ biến trong quảng cáo."
+  },
+  {
+    "id": "toeic-tc-026",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "For a limited _______ only, enjoy 30% off on all summer merchandise.",
+    "options": [
+      "time",
+      "term",
+      "turn",
+      "trend"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'For a limited time only' = chỉ trong thời gian có hạn → cụm từ quảng cáo."
+  },
+  {
+    "id": "toeic-tc-027",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "Don't miss this _______ opportunity to invest in prime real estate.",
+    "options": [
+      "exclusive",
+      "excluded",
+      "excluding",
+      "exclusion"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Exclusive opportunity' = cơ hội độc quyền → từ ngữ quảng cáo bất động sản."
+  },
+  {
+    "id": "toeic-tc-028",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "Sign _______ today and receive a free welcome gift!",
+    "options": [
+      "up",
+      "on",
+      "in",
+      "out"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Sign up' = đăng ký → đăng ký ngay hôm nay để nhận quà tặng."
+  },
+  {
+    "id": "toeic-tc-029",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "This offer is _______ to customers who make a purchase before December 31.",
+    "options": [
+      "limited",
+      "limiting",
+      "limitless",
+      "limitation"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Limited to' = giới hạn cho → ưu đãi giới hạn cho khách hàng mua trước ngày 31/12."
+  },
+  {
+    "id": "toeic-tc-030",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "Join our loyalty program and earn _______ on every purchase.",
+    "options": [
+      "points",
+      "poles",
+      "ports",
+      "posts"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Earn points' = tích điểm → tham gia chương trình thành viên để tích điểm."
+  },
+  {
+    "id": "toeic-tc-031",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "All items are subject to _______ availability while supplies last.",
+    "options": [
+      "stock",
+      "stack",
+      "stick",
+      "stain"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Stock availability' = tình trạng còn hàng → trong khi hàng còn tồn kho."
+  },
+  {
+    "id": "toeic-tc-032",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "_______ now to reserve your spot at this year's annual conference.",
+    "options": [
+      "Register",
+      "Regular",
+      "Regulate",
+      "Regard"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Register now' = đăng ký ngay → lời kêu gọi hành động trong thông báo."
+  },
+  {
+    "id": "toeic-tc-033",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "Please _______ the steps below to complete the online registration process.",
+    "options": [
+      "follow",
+      "fall",
+      "fill",
+      "find"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Follow the steps' = làm theo các bước → hướng dẫn quy trình."
+  },
+  {
+    "id": "toeic-tc-034",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "Applicants must _______ all required documents before the application can be processed.",
+    "options": [
+      "submit",
+      "succeed",
+      "suggest",
+      "suppose"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Submit documents' = nộp tài liệu → nộp tất cả tài liệu bắt buộc."
+  },
+  {
+    "id": "toeic-tc-035",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "In _______ to apply for the position, candidates must have at least five years of experience.",
+    "options": [
+      "order",
+      "other",
+      "overall",
+      "outside"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'In order to' = để → cụm từ chỉ mục đích."
+  },
+  {
+    "id": "toeic-tc-036",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "The form must be completed in its _______. Incomplete forms will not be accepted.",
+    "options": [
+      "entirety",
+      "entire",
+      "entirely",
+      "enter"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'In its entirety' = hoàn toàn → biểu mẫu phải được điền đầy đủ."
+  },
+  {
+    "id": "toeic-tc-037",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "Please allow 5-7 business days for your application to be _______.",
+    "options": [
+      "processed",
+      "progressed",
+      "proceeded",
+      "produced"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Processed' = xử lý → cho phép 5-7 ngày làm việc để xử lý đơn."
+  },
+  {
+    "id": "toeic-tc-038",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "Failure to _______ with these regulations may result in disciplinary action.",
+    "options": [
+      "comply",
+      "complete",
+      "compare",
+      "compete"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Comply with' = tuân thủ → không tuân thủ có thể dẫn đến kỷ luật."
+  },
+  {
+    "id": "toeic-tc-039",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "Please retain this receipt for your _______. It may be required for returns or exchanges.",
+    "options": [
+      "records",
+      "recover",
+      "recreation",
+      "recognition"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'For your records' = để lưu hồ sơ → giữ hóa đơn để đối chiếu."
+  },
+  {
+    "id": "toeic-tc-040",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "The equipment must be operated _______ in accordance with the manufacturer's guidelines.",
+    "options": [
+      "solely",
+      "sole",
+      "soul",
+      "solve"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Solely' = chỉ, hoàn toàn → vận hành hoàn toàn theo hướng dẫn."
+  },
+  {
+    "id": "toeic-tc-041",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "The annual performance review is _______ for all employees in December.",
+    "options": [
+      "scheduled",
+      "schedule",
+      "scheduling",
+      "schematic"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Is scheduled' = được lên lịch → đánh giá hiệu suất được lên lịch vào tháng 12."
+  },
+  {
+    "id": "toeic-tc-042",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "The manager provided _______ feedback on the team's presentation skills.",
+    "options": [
+      "constructive",
+      "construction",
+      "constructed",
+      "constructing"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Constructive feedback' = phản hồi mang tính xây dựng."
+  },
+  {
+    "id": "toeic-tc-043",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "The employee received a formal _______ for consistently exceeding performance targets.",
+    "options": [
+      "commendation",
+      "command",
+      "comment",
+      "commerce"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Commendation' = khen ngợi chính thức → nhận khen ngợi vì vượt chỉ tiêu."
+  },
+  {
+    "id": "toeic-tc-044",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "We _______ your patience and understanding during this transition period.",
+    "options": [
+      "appreciate",
+      "apprehend",
+      "approach",
+      "approve"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Appreciate' = đánh giá cao → chúng tôi đánh giá cao sự kiên nhẫn của bạn."
+  },
+  {
+    "id": "toeic-tc-045",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "The feedback from the customer _______ highlighted the need for faster response times.",
+    "options": [
+      "survey",
+      "surveying",
+      "surveyed",
+      "surveyor"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Customer survey' = khảo sát khách hàng → khảo sát nhấn mạnh cần phản hồi nhanh hơn."
+  },
+  {
+    "id": "toeic-tc-046",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "The project was deemed a _______ success by the senior management team.",
+    "options": [
+      "resounding",
+      "resounding",
+      "resounded",
+      "resound"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Resounding success' = thành công vang dội → cụm từ nhấn mạnh."
+  },
+  {
+    "id": "toeic-tc-047",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "The team's _______ efforts resulted in the project being completed ahead of schedule.",
+    "options": [
+      "collaborative",
+      "collaboration",
+      "collaborate",
+      "collaborator"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Collaborative efforts' = nỗ lực hợp tác → tính từ bổ nghĩa cho 'efforts'."
+  },
+  {
+    "id": "toeic-tc-048",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "The client expressed _______ with the quality of service provided by our team.",
+    "options": [
+      "satisfaction",
+      "satisfactory",
+      "satisfy",
+      "satisfied"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Expressed satisfaction' = bày tỏ sự hài lòng → danh từ sau 'expressed'."
+  },
+  {
+    "id": "toeic-tc-049",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "You are cordially _______ to attend the company's 25th anniversary celebration.",
+    "options": [
+      "invited",
+      "inviting",
+      "invitation",
+      "invent"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Cordially invited' = trân trọng mời → cụm từ trang trọng trong thiệp mời."
+  },
+  {
+    "id": "toeic-tc-050",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "The event will _______ place at the Grand Hotel Ballroom on Saturday evening.",
+    "options": [
+      "take",
+      "make",
+      "do",
+      "give"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Take place' = diễn ra → sự kiện sẽ diễn ra tại khách sạn Grand."
+  },
+  {
+    "id": "toeic-tc-051",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "RSVP by October 15 to _______ your attendance at the gala dinner.",
+    "options": [
+      "confirm",
+      "conform",
+      "confuse",
+      "confide"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Confirm' = xác nhận → xác nhận tham dự trước ngày 15/10."
+  },
+  {
+    "id": "toeic-tc-052",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "Light refreshments and beverages will be _______ during the networking session.",
+    "options": [
+      "served",
+      "serviced",
+      "saved",
+      "supplied"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Will be served' = sẽ được phục vụ → bị động tương lai."
+  },
+  {
+    "id": "toeic-tc-053",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "The dress code for the event is business _______.",
+    "options": [
+      "casual",
+      "casually",
+      "case",
+      "cash"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Business casual' = trang phục công sở thường ngày → dress code phổ biến."
+  },
+  {
+    "id": "toeic-tc-054",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "We look forward to _______ you at the event.",
+    "options": [
+      "seeing",
+      "see",
+      "seen",
+      "saw"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Look forward to + V-ing' → 'look forward to seeing'."
+  },
+  {
+    "id": "toeic-tc-055",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "The conference will feature _______ speakers from leading technology companies.",
+    "options": [
+      "keynote",
+      "keyboard",
+      "keyword",
+      "keyless"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Keynote speakers' = diễn giả chính → từ chuyên dụng trong hội nghị."
+  },
+  {
+    "id": "toeic-tc-056",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "A complimentary parking _______ will be provided to all registered attendees.",
+    "options": [
+      "voucher",
+      "vouch",
+      "vocal",
+      "volume"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Parking voucher' = phiếu đậu xe miễn phí → 'complimentary' = miễn phí."
+  },
+  {
+    "id": "toeic-tc-057",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "Both parties agree to _______ by the terms and conditions set forth in this agreement.",
+    "options": [
+      "abide",
+      "abandon",
+      "absorb",
+      "abstract"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Abide by' = tuân thủ → cả hai bên đồng ý tuân thủ điều khoản."
+  },
+  {
+    "id": "toeic-tc-058",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "This agreement shall remain in _______ for a period of two years from the date of signing.",
+    "options": [
+      "effect",
+      "affect",
+      "effort",
+      "afford"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'In effect' = có hiệu lực → thỏa thuận có hiệu lực trong hai năm."
+  },
+  {
+    "id": "toeic-tc-059",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "Either party may _______ this agreement with 30 days' written notice.",
+    "options": [
+      "terminate",
+      "term",
+      "terminal",
+      "termite"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Terminate' = chấm dứt → chấm dứt thỏa thuận với thông báo trước 30 ngày."
+  },
+  {
+    "id": "toeic-tc-060",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 6 - Text Completion",
+    "text": "Any _______ to this agreement must be made in writing and signed by both parties.",
+    "options": [
+      "amendments",
+      "amends",
+      "amending",
+      "amended"
+    ],
+    "correctAnswer": 0,
+    "explanation": "'Amendments' = sửa đổi (danh từ số nhiều) → mọi sửa đổi phải bằng văn bản."
+  },
+  {
+    "id": "toeic-rc-001",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "From: Sarah Chen <s.chen@techcorp.com>\nTo: All Staff\nSubject: Office Closure Notice\n\nDear Team,\nPlease be advised that the main office will be closed on Monday, March 15 for scheduled electrical maintenance. All employees are expected to work remotely on this day. The office will reopen on Tuesday, March 16 at 8:00 AM.\nIf you need access to any physical files, please collect them by 5:00 PM on Friday, March 12.\n\nBest regards,\nSarah Chen\nFacilities Manager\n\nWhat is the main purpose of this email?",
+    "options": [
+      "To announce a temporary office closure",
+      "To introduce a new remote work policy",
+      "To schedule electrical maintenance",
+      "To change office hours permanently"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Mục đích chính của email là thông báo văn phòng sẽ đóng cửa tạm thời vào ngày 15/3 để bảo trì điện."
+  },
+  {
+    "id": "toeic-rc-002",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "From: Sarah Chen <s.chen@techcorp.com>\nTo: All Staff\nSubject: Office Closure Notice\n\nDear Team,\nPlease be advised that the main office will be closed on Monday, March 15 for scheduled electrical maintenance. All employees are expected to work remotely on this day. The office will reopen on Tuesday, March 16 at 8:00 AM.\nIf you need access to any physical files, please collect them by 5:00 PM on Friday, March 12.\n\nBest regards,\nSarah Chen\nFacilities Manager\n\nWhen will the office reopen?",
+    "options": [
+      "Monday, March 15 at 8:00 AM",
+      "Tuesday, March 16 at 8:00 AM",
+      "Friday, March 12 at 5:00 PM",
+      "Wednesday, March 17 at 9:00 AM"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Email nêu rõ: 'The office will reopen on Tuesday, March 16 at 8:00 AM'."
+  },
+  {
+    "id": "toeic-rc-003",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "From: Sarah Chen <s.chen@techcorp.com>\nTo: All Staff\nSubject: Office Closure Notice\n\nDear Team,\nPlease be advised that the main office will be closed on Monday, March 15 for scheduled electrical maintenance. All employees are expected to work remotely on this day. The office will reopen on Tuesday, March 16 at 8:00 AM.\nIf you need access to any physical files, please collect them by 5:00 PM on Friday, March 12.\n\nBest regards,\nSarah Chen\nFacilities Manager\n\nWhat should employees do if they need physical files?",
+    "options": [
+      "Request them from Sarah Chen",
+      "Collect them by Friday, March 12",
+      "Wait until Tuesday to access them",
+      "Submit an online request form"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Email nêu: 'If you need access to any physical files, please collect them by 5:00 PM on Friday, March 12'."
+  },
+  {
+    "id": "toeic-rc-004",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "JOB POSTING\n\nPosition: Senior Marketing Analyst\nCompany: GlobalTech Solutions\nLocation: New York, NY\nSalary: $85,000 - $95,000\n\nRequirements:\n- Bachelor's degree in Marketing, Business, or related field\n- Minimum 5 years of experience in marketing analytics\n- Proficiency in SQL, Python, and data visualization tools\n- Excellent communication and presentation skills\n\nBenefits include health insurance, 401(k) matching, and 20 days of paid vacation.\n\nTo apply, send your resume and cover letter to careers@globaltech.com by April 30.\n\nWhat is NOT listed as a requirement for this position?",
+    "options": [
+      "A bachelor's degree",
+      "5 years of experience",
+      "A master's degree",
+      "Proficiency in SQL"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Thạc sĩ (master's degree) không được liệt kê trong yêu cầu. Yêu cầu là bằng cử nhân (bachelor's degree)."
+  },
+  {
+    "id": "toeic-rc-005",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "JOB POSTING\n\nPosition: Senior Marketing Analyst\nCompany: GlobalTech Solutions\nLocation: New York, NY\nSalary: $85,000 - $95,000\n\nRequirements:\n- Bachelor's degree in Marketing, Business, or related field\n- Minimum 5 years of experience in marketing analytics\n- Proficiency in SQL, Python, and data visualization tools\n- Excellent communication and presentation skills\n\nBenefits include health insurance, 401(k) matching, and 20 days of paid vacation.\n\nTo apply, send your resume and cover letter to careers@globaltech.com by April 30.\n\nWhat is the salary range for this position?",
+    "options": [
+      "$75,000 - $85,000",
+      "$80,000 - $90,000",
+      "$85,000 - $95,000",
+      "$90,000 - $100,000"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Mức lương được ghi rõ: '$85,000 - $95,000'."
+  },
+  {
+    "id": "toeic-rc-006",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "JOB POSTING\n\nPosition: Senior Marketing Analyst\nCompany: GlobalTech Solutions\nLocation: New York, NY\nSalary: $85,000 - $95,000\n\nRequirements:\n- Bachelor's degree in Marketing, Business, or related field\n- Minimum 5 years of experience in marketing analytics\n- Proficiency in SQL, Python, and data visualization tools\n- Excellent communication and presentation skills\n\nBenefits include health insurance, 401(k) matching, and 20 days of paid vacation.\n\nTo apply, send your resume and cover letter to careers@globaltech.com by April 30.\n\nHow should candidates apply for this position?",
+    "options": [
+      "Fill out an online application form",
+      "Call the HR department directly",
+      "Send resume and cover letter by email",
+      "Visit the office in person"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Bài đăng ghi: 'send your resume and cover letter to careers@globaltech.com'."
+  },
+  {
+    "id": "toeic-rc-007",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "NOTICE\n\nTo: All Building Tenants\nFrom: Property Management\nDate: January 10, 2025\nSubject: Elevator Maintenance\n\nPlease be informed that the elevator in Building A will be out of service from January 15-17 for routine maintenance. During this period, please use the elevators in Buildings B and C. We apologize for any inconvenience.\n\nFor questions, contact the management office at extension 500.\n\nHow long will the elevator be out of service?",
+    "options": [
+      "One day",
+      "Two days",
+      "Three days",
+      "One week"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Thông báo ghi: 'from January 15-17' → 3 ngày (15, 16, 17/1)."
+  },
+  {
+    "id": "toeic-rc-008",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "NOTICE\n\nTo: All Building Tenants\nFrom: Property Management\nDate: January 10, 2025\nSubject: Elevator Maintenance\n\nPlease be informed that the elevator in Building A will be out of service from January 15-17 for routine maintenance. During this period, please use the elevators in Buildings B and C. We apologize for any inconvenience.\n\nFor questions, contact the management office at extension 500.\n\nWhat should tenants do during the maintenance period?",
+    "options": [
+      "Use the stairs only",
+      "Use elevators in Buildings B and C",
+      "Wait until maintenance is complete",
+      "Contact the management office first"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Thông báo ghi: 'please use the elevators in Buildings B and C'."
+  },
+  {
+    "id": "toeic-rc-009",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "INVOICE\n\nInvoice Number: INV-2025-0342\nDate: February 5, 2025\nBill To: ABC Corporation\n\nItem Description | Qty | Unit Price | Total\nOffice Chairs (Model X) | 20 | $250.00 | $5,000.00\nStanding Desks | 10 | $450.00 | $4,500.00\nMonitor Arms | 30 | $75.00 | $2,250.00\n\nSubtotal: $11,750.00\nTax (8%): $940.00\nShipping: $350.00\nTotal Due: $13,040.00\n\nPayment Terms: Net 30\n\nWhat is the total amount due?",
+    "options": [
+      "$11,750.00",
+      "$12,690.00",
+      "$13,040.00",
+      "$13,390.00"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Hóa đơn ghi rõ: 'Total Due: $13,040.00'."
+  },
+  {
+    "id": "toeic-rc-010",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "INVOICE\n\nInvoice Number: INV-2025-0342\nDate: February 5, 2025\nBill To: ABC Corporation\n\nItem Description | Qty | Unit Price | Total\nOffice Chairs (Model X) | 20 | $250.00 | $5,000.00\nStanding Desks | 10 | $450.00 | $4,500.00\nMonitor Arms | 30 | $75.00 | $2,250.00\n\nSubtotal: $11,750.00\nTax (8%): $940.00\nShipping: $350.00\nTotal Due: $13,040.00\n\nPayment Terms: Net 30\n\nHow many standing desks were ordered?",
+    "options": [
+      "10",
+      "20",
+      "30",
+      "40"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Hóa đơn ghi: 'Standing Desks | 10 | $450.00'."
+  },
+  {
+    "id": "toeic-rc-011",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "INVOICE\n\nInvoice Number: INV-2025-0342\nDate: February 5, 2025\nBill To: ABC Corporation\n\nItem Description | Qty | Unit Price | Total\nOffice Chairs (Model X) | 20 | $250.00 | $5,000.00\nStanding Desks | 10 | $450.00 | $4,500.00\nMonitor Arms | 30 | $75.00 | $2,250.00\n\nSubtotal: $11,750.00\nTax (8%): $940.00\nShipping: $350.00\nTotal Due: $13,040.00\n\nPayment Terms: Net 30\n\nWhat does 'Net 30' mean?",
+    "options": [
+      "A 30% discount is offered",
+      "Payment is due within 30 days",
+      "30 items must be ordered",
+      "The order will ship in 30 days"
+    ],
+    "correctAnswer": 1,
+    "explanation": "'Net 30' nghĩa là thanh toán trong vòng 30 ngày (điều khoản thanh toán kinh doanh tiêu chuẩn)."
+  },
+  {
+    "id": "toeic-rc-012",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "CONFERENCE SCHEDULE\n\nDay 1 - Monday, April 10\n9:00 AM - Registration & Coffee\n10:00 AM - Opening Keynote: \"The Future of AI in Business\"\n11:30 AM - Workshop: Digital Marketing Trends\n1:00 PM - Lunch Break\n2:30 PM - Panel Discussion: Sustainable Business Practices\n4:00 PM - Networking Session\n\nDay 2 - Tuesday, April 11\n9:00 AM - Workshop: Data Analytics for Beginners\n10:30 AM - Presentation: Global Market Outlook 2025\n12:00 PM - Lunch Break\n1:30 PM - Closing Remarks & Awards\n3:00 PM - Conference Ends\n\nWhat time does the opening keynote begin?",
+    "options": [
+      "9:00 AM",
+      "10:00 AM",
+      "10:30 AM",
+      "11:30 AM"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Lịch trình ghi: '10:00 AM - Opening Keynote'."
+  },
+  {
+    "id": "toeic-rc-013",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "CONFERENCE SCHEDULE\n\nDay 1 - Monday, April 10\n9:00 AM - Registration & Coffee\n10:00 AM - Opening Keynote: \"The Future of AI in Business\"\n11:30 AM - Workshop: Digital Marketing Trends\n1:00 PM - Lunch Break\n2:30 PM - Panel Discussion: Sustainable Business Practices\n4:00 PM - Networking Session\n\nDay 2 - Tuesday, April 11\n9:00 AM - Workshop: Data Analytics for Beginners\n10:30 AM - Presentation: Global Market Outlook 2025\n12:00 PM - Lunch Break\n1:30 PM - Closing Remarks & Awards\n3:00 PM - Conference Ends\n\nHow many days does the conference last?",
+    "options": [
+      "One day",
+      "Two days",
+      "Three days",
+      "Four days"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Hội nghị kéo dài 2 ngày: Day 1 (Monday, April 10) và Day 2 (Tuesday, April 11)."
+  },
+  {
+    "id": "toeic-rc-014",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "CONFERENCE SCHEDULE\n\nDay 1 - Monday, April 10\n9:00 AM - Registration & Coffee\n10:00 AM - Opening Keynote: \"The Future of AI in Business\"\n11:30 AM - Workshop: Digital Marketing Trends\n1:00 PM - Lunch Break\n2:30 PM - Panel Discussion: Sustainable Business Practices\n4:00 PM - Networking Session\n\nDay 2 - Tuesday, April 11\n9:00 AM - Workshop: Data Analytics for Beginners\n10:30 AM - Presentation: Global Market Outlook 2025\n12:00 PM - Lunch Break\n1:30 PM - Closing Remarks & Awards\n3:00 PM - Conference Ends\n\nWhat is the last event on Day 2?",
+    "options": [
+      "Lunch Break",
+      "Closing Remarks & Awards",
+      "Global Market Outlook presentation",
+      "Data Analytics workshop"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Sự kiện cuối cùng Day 2: '1:30 PM - Closing Remarks & Awards' (trước khi hội nghị kết thúc lúc 3:00 PM)."
+  },
+  {
+    "id": "toeic-rc-015",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "SPECIAL OFFER!\n\nGrand Opening Sale at TechMart Electronics!\n\nThis weekend only (March 8-9):\n- 30% off all laptops\n- 50% off selected smartphone accessories\n- Buy 1 Get 1 Free on all headphones\n- Free gift wrapping with any purchase over $50\n\nLocation: 245 Oak Street, Downtown\nHours: 9:00 AM - 9:00 PM\n\n*While supplies last. Cannot be combined with other offers.\n\nWhat is being offered for free?",
+    "options": [
+      "Laptops",
+      "Smartphone accessories",
+      "Headphones",
+      "Gift wrapping"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Quảng cáo ghi: 'Free gift wrapping with any purchase over $50' → gói quà miễn phí cho đơn hàng trên $50."
+  },
+  {
+    "id": "toeic-rc-016",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "SPECIAL OFFER!\n\nGrand Opening Sale at TechMart Electronics!\n\nThis weekend only (March 8-9):\n- 30% off all laptops\n- 50% off selected smartphone accessories\n- Buy 1 Get 1 Free on all headphones\n- Free gift wrapping with any purchase over $50\n\nLocation: 245 Oak Street, Downtown\nHours: 9:00 AM - 9:00 PM\n\n*While supplies last. Cannot be combined with other offers.\n\nWhen is this sale taking place?",
+    "options": [
+      "Every weekend in March",
+      "March 8-9 only",
+      "March 5-9",
+      "The entire month of March"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Quảng cáo ghi: 'This weekend only (March 8-9)'."
+  },
+  {
+    "id": "toeic-rc-017",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "SPECIAL OFFER!\n\nGrand Opening Sale at TechMart Electronics!\n\nThis weekend only (March 8-9):\n- 30% off all laptops\n- 50% off selected smartphone accessories\n- Buy 1 Get 1 Free on all headphones\n- Free gift wrapping with any purchase over $50\n\nLocation: 245 Oak Street, Downtown\nHours: 9:00 AM - 9:00 PM\n\n*While supplies last. Cannot be combined with other offers.\n\nWhat restriction applies to this offer?",
+    "options": [
+      "Only for members",
+      "Cannot be combined with other offers",
+      "Minimum purchase of $100 required",
+      "Online purchases only"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Ghi chú cuối: 'Cannot be combined with other offers' → không kết hợp với ưu đãi khác."
+  },
+  {
+    "id": "toeic-rc-018",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "Dear Customer Service,\n\nI am writing to express my dissatisfaction with order #45678, which I received on January 20. The wireless headphones I ordered arrived with a cracked ear cup and the charging case does not close properly.\n\nI have attached photos of the damage for your reference. I would like to request either a full replacement or a refund.\n\nPlease respond within 5 business days. If I do not hear back, I will be forced to escalate this matter.\n\nSincerely,\nDavid Kim\n\nWhat is the customer complaining about?",
+    "options": [
+      "Late delivery",
+      "Damaged product",
+      "Wrong item received",
+      "High shipping cost"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Khách hàng phàn nàn về sản phẩm bị hư hại: 'cracked ear cup' và 'charging case does not close properly'."
+  },
+  {
+    "id": "toeic-rc-019",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "Dear Customer Service,\n\nI am writing to express my dissatisfaction with order #45678, which I received on January 20. The wireless headphones I ordered arrived with a cracked ear cup and the charging case does not close properly.\n\nI have attached photos of the damage for your reference. I would like to request either a full replacement or a refund.\n\nPlease respond within 5 business days. If I do not hear back, I will be forced to escalate this matter.\n\nSincerely,\nDavid Kim\n\nWhat does the customer want?",
+    "options": [
+      "An apology letter",
+      "A discount on the next order",
+      "A replacement or refund",
+      "A store credit"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Khách hàng yêu cầu: 'either a full replacement or a refund' (hoàn tiền hoặc thay thế)."
+  },
+  {
+    "id": "toeic-rc-020",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "Dear Customer Service,\n\nI am writing to express my dissatisfaction with order #45678, which I received on January 20. The wireless headphones I ordered arrived with a cracked ear cup and the charging case does not close properly.\n\nI have attached photos of the damage for your reference. I would like to request either a full replacement or a refund.\n\nPlease respond within 5 business days. If I do not hear back, I will be forced to escalate this matter.\n\nSincerely,\nDavid Kim\n\nWhat will the customer do if there is no response?",
+    "options": [
+      "Write another letter",
+      "Post a negative review",
+      "Escalate the matter",
+      "Accept the damaged product"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Khách hàng đe dọa: 'I will be forced to escalate this matter' (sẽ leo thang vấn đề)."
+  },
+  {
+    "id": "toeic-rc-021",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "Document 1: Memo\nFrom: HR Department\nTo: All Employees\nSubject: New Remote Work Policy\n\nStarting April 1, employees may work from home up to two days per week with manager approval. All remote workers must be available during core hours (9 AM - 3 PM) and attend in-person team meetings on Wednesdays.\n\nDocument 2: Email\nFrom: John Park <j.park@company.com>\nTo: Lisa Wong <l.wong@company.com>\nSubject: RE: Remote Work Days\n\nLisa,\nI'd like to work from home on Mondays and Thursdays. I've reviewed the new policy and I'll make sure to be available during core hours. Can you approve this arrangement?\n\nThanks,\nJohn\n\nAccording to the memo, how many days per week can employees work from home?",
+    "options": [
+      "One day",
+      "Two days",
+      "Three days",
+      "Unlimited"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Memo ghi: 'employees may work from home up to two days per week'."
+  },
+  {
+    "id": "toeic-rc-022",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "Document 1: Memo\nFrom: HR Department\nTo: All Employees\nSubject: New Remote Work Policy\n\nStarting April 1, employees may work from home up to two days per week with manager approval. All remote workers must be available during core hours (9 AM - 3 PM) and attend in-person team meetings on Wednesdays.\n\nDocument 2: Email\nFrom: John Park <j.park@company.com>\nTo: Lisa Wong <l.wong@company.com>\nSubject: RE: Remote Work Days\n\nLisa,\nI'd like to work from home on Mondays and Thursdays. I've reviewed the new policy and I'll make sure to be available during core hours. Can you approve this arrangement?\n\nThanks,\nJohn\n\nWhat requirement does John mention he will follow?",
+    "options": [
+      "Attend Wednesday meetings",
+      "Be available during core hours",
+      "Submit a weekly report",
+      "Check in with his manager daily"
+    ],
+    "correctAnswer": 1,
+    "explanation": "John viết: 'I'll make sure to be available during core hours'."
+  },
+  {
+    "id": "toeic-rc-023",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "Document 1: Memo\nFrom: HR Department\nTo: All Employees\nSubject: New Remote Work Policy\n\nStarting April 1, employees may work from home up to two days per week with manager approval. All remote workers must be available during core hours (9 AM - 3 PM) and attend in-person team meetings on Wednesdays.\n\nDocument 2: Email\nFrom: John Park <j.park@company.com>\nTo: Lisa Wong <l.wong@company.com>\nSubject: RE: Remote Work Days\n\nLisa,\nI'd like to work from home on Mondays and Thursdays. I've reviewed the new policy and I'll make sure to be available during core hours. Can you approve this arrangement?\n\nThanks,\nJohn\n\nWhat is a potential issue with John's request?",
+    "options": [
+      "He wants to work three days from home",
+      "His chosen days may conflict with Wednesday meetings",
+      "He has not reviewed the policy",
+      "He needs to request from HR directly"
+    ],
+    "correctAnswer": 1,
+    "explanation": "John muốn làm việc từ nhà vào Thứ Hai và Thứ Năm, nhưng memo yêu cầu 'attend in-person team meetings on Wednesdays' → có thể xung đột."
+  },
+  {
+    "id": "toeic-rc-024",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "FLIGHT SCHEDULE CHANGE\n\nPassenger: Maria Santos\nBooking Reference: RT7845\n\nOriginal Flight:\nFlight AA205 - New York (JFK) to London (LHR)\nDeparture: March 20, 2025 at 7:30 PM\nArrival: March 21, 2025 at 7:45 AM\n\nUpdated Flight:\nFlight AA207 - New York (JFK) to London (LHR)\nDeparture: March 20, 2025 at 9:15 PM\nArrival: March 21, 2025 at 9:30 AM\n\nReason: Air traffic control restrictions\n\nPlease check in at least 3 hours before departure. For questions, call 1-800-555-0123.\n\nWhat changed about Maria's flight?",
+    "options": [
+      "The destination changed",
+      "The departure time was moved later",
+      "The flight was cancelled",
+      "The airline changed"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Chuyến bay ban đầu khởi hành lúc 7:30 PM, chuyến cập nhật khởi hành lúc 9:15 PM → giờ khởi hành bị trễ hơn."
+  },
+  {
+    "id": "toeic-rc-025",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "FLIGHT SCHEDULE CHANGE\n\nPassenger: Maria Santos\nBooking Reference: RT7845\n\nOriginal Flight:\nFlight AA205 - New York (JFK) to London (LHR)\nDeparture: March 20, 2025 at 7:30 PM\nArrival: March 21, 2025 at 7:45 AM\n\nUpdated Flight:\nFlight AA207 - New York (JFK) to London (LHR)\nDeparture: March 20, 2025 at 9:15 PM\nArrival: March 21, 2025 at 9:30 AM\n\nReason: Air traffic control restrictions\n\nPlease check in at least 3 hours before departure. For questions, call 1-800-555-0123.\n\nWhat is the reason for the schedule change?",
+    "options": [
+      "Bad weather",
+      "Mechanical issues",
+      "Air traffic control restrictions",
+      "Crew scheduling"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Lý do được ghi rõ: 'Air traffic control restrictions' (hạn chế kiểm soát không lưu)."
+  },
+  {
+    "id": "toeic-rc-026",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "FLIGHT SCHEDULE CHANGE\n\nPassenger: Maria Santos\nBooking Reference: RT7845\n\nOriginal Flight:\nFlight AA205 - New York (JFK) to London (LHR)\nDeparture: March 20, 2025 at 7:30 PM\nArrival: March 21, 2025 at 7:45 AM\n\nUpdated Flight:\nFlight AA207 - New York (JFK) to London (LHR)\nDeparture: March 20, 2025 at 9:15 PM\nArrival: March 21, 2025 at 9:30 AM\n\nReason: Air traffic control restrictions\n\nPlease check in at least 3 hours before departure. For questions, call 1-800-555-0123.\n\nWhen should Maria arrive at the airport?",
+    "options": [
+      "At 9:15 PM",
+      "At 6:15 PM",
+      "At 4:30 PM",
+      "At least 3 hours before departure"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Thông báo ghi: 'Please check in at least 3 hours before departure' → đến sân bay ít nhất 3 giờ trước giờ khởi hành."
+  },
+  {
+    "id": "toeic-rc-027",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "PRODUCT REVIEW\n\nProduct: ProSound X50 Wireless Earbuds\nRating: ★★★★☆ (4/5)\nReviewer: TechGuru Magazine\n\nThe ProSound X50 offers excellent sound quality with deep bass and clear highs. Battery life is impressive at 8 hours on a single charge, with the charging case providing an additional 24 hours. The earbuds are comfortable for extended wear and feature effective noise cancellation.\n\nHowever, the touch controls can be unresponsive at times, and the companion app lacks some features offered by competitors. The price point of $149 is reasonable for the quality offered.\n\nOverall, the ProSound X50 is a solid choice for music lovers seeking reliable wireless earbuds.\n\nWhat is the main criticism mentioned in the review?",
+    "options": [
+      "Poor sound quality",
+      "Short battery life",
+      "Unresponsive touch controls",
+      "High price"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Đánh giá phê bình: 'the touch controls can be unresponsive at times' (điều khiển cảm ứng đôi khi không nhạy)."
+  },
+  {
+    "id": "toeic-rc-028",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "PRODUCT REVIEW\n\nProduct: ProSound X50 Wireless Earbuds\nRating: ★★★★☆ (4/5)\nReviewer: TechGuru Magazine\n\nThe ProSound X50 offers excellent sound quality with deep bass and clear highs. Battery life is impressive at 8 hours on a single charge, with the charging case providing an additional 24 hours. The earbuds are comfortable for extended wear and feature effective noise cancellation.\n\nHowever, the touch controls can be unresponsive at times, and the companion app lacks some features offered by competitors. The price point of $149 is reasonable for the quality offered.\n\nOverall, the ProSound X50 is a solid choice for music lovers seeking reliable wireless earbuds.\n\nHow long does the battery last on a single charge?",
+    "options": [
+      "4 hours",
+      "6 hours",
+      "8 hours",
+      "24 hours"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Đánh giá ghi: 'Battery life is impressive at 8 hours on a single charge'."
+  },
+  {
+    "id": "toeic-rc-029",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "PRODUCT REVIEW\n\nProduct: ProSound X50 Wireless Earbuds\nRating: ★★★★☆ (4/5)\nReviewer: TechGuru Magazine\n\nThe ProSound X50 offers excellent sound quality with deep bass and clear highs. Battery life is impressive at 8 hours on a single charge, with the charging case providing an additional 24 hours. The earbuds are comfortable for extended wear and feature effective noise cancellation.\n\nHowever, the touch controls can be unresponsive at times, and the companion app lacks some features offered by competitors. The price point of $149 is reasonable for the quality offered.\n\nOverall, the ProSound X50 is a solid choice for music lovers seeking reliable wireless earbuds.\n\nWhat is the reviewer's overall opinion?",
+    "options": [
+      "It is overpriced",
+      "It is a solid choice",
+      "It needs significant improvement",
+      "It is the best in its class"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Kết luận: 'the ProSound X50 is a solid choice for music lovers' (lựa chọn tốt)."
+  },
+  {
+    "id": "toeic-rc-030",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "MEETING MINUTES\n\nProject: Website Redesign\nDate: March 5, 2025\nAttendees: Tom Lee, Sarah Kim, Mike Chen, Anna Park\n\nAgenda Items:\n1. Progress Update - The homepage redesign is 80% complete. The product catalog page is 60% complete.\n2. Budget Review - Current spending is at $45,000 of the $60,000 budget. An additional $5,000 has been requested for stock photography.\n3. Timeline - The launch date has been moved from April 1 to April 15 to allow for additional testing.\n4. Action Items:\n   - Tom: Complete homepage by March 15\n   - Sarah: Finalize product catalog by March 20\n   - Mike: Conduct user testing March 25-30\n   - Anna: Prepare launch marketing materials by April 5\n\nWhat is the reason for the delayed launch?",
+    "options": [
+      "Budget constraints",
+      "Staff shortage",
+      "Additional testing needed",
+      "Client requested changes"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Biên bản ghi: 'launch date has been moved from April 1 to April 15 to allow for additional testing' (để cho phép kiểm thử bổ sung)."
+  },
+  {
+    "id": "toeic-rc-031",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "MEETING MINUTES\n\nProject: Website Redesign\nDate: March 5, 2025\nAttendees: Tom Lee, Sarah Kim, Mike Chen, Anna Park\n\nAgenda Items:\n1. Progress Update - The homepage redesign is 80% complete. The product catalog page is 60% complete.\n2. Budget Review - Current spending is at $45,000 of the $60,000 budget. An additional $5,000 has been requested for stock photography.\n3. Timeline - The launch date has been moved from April 1 to April 15 to allow for additional testing.\n4. Action Items:\n   - Tom: Complete homepage by March 15\n   - Sarah: Finalize product catalog by March 20\n   - Mike: Conduct user testing March 25-30\n   - Anna: Prepare launch marketing materials by April 5\n\nWho is responsible for user testing?",
+    "options": [
+      "Tom Lee",
+      "Sarah Kim",
+      "Mike Chen",
+      "Anna Park"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Biên bản ghi: 'Mike: Conduct user testing March 25-30'."
+  },
+  {
+    "id": "toeic-rc-032",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "MEETING MINUTES\n\nProject: Website Redesign\nDate: March 5, 2025\nAttendees: Tom Lee, Sarah Kim, Mike Chen, Anna Park\n\nAgenda Items:\n1. Progress Update - The homepage redesign is 80% complete. The product catalog page is 60% complete.\n2. Budget Review - Current spending is at $45,000 of the $60,000 budget. An additional $5,000 has been requested for stock photography.\n3. Timeline - The launch date has been moved from April 1 to April 15 to allow for additional testing.\n4. Action Items:\n   - Tom: Complete homepage by March 15\n   - Sarah: Finalize product catalog by March 20\n   - Mike: Conduct user testing March 25-30\n   - Anna: Prepare launch marketing materials by April 5\n\nHow much of the budget has been spent so far?",
+    "options": [
+      "$15,000",
+      "$30,000",
+      "$45,000",
+      "$60,000"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Biên bản ghi: 'Current spending is at $45,000 of the $60,000 budget'."
+  },
+  {
+    "id": "toeic-rc-033",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "COMPANY EXPENSE POLICY\n\nPurpose: This policy outlines the guidelines for submitting business expense reports.\n\nEligible Expenses:\n- Business travel (flights, hotels, ground transportation)\n- Client entertainment (meals up to $75 per person)\n- Office supplies and equipment under $500\n- Professional development courses\n\nSubmission Process:\n1. Complete the expense report form\n2. Attach all original receipts\n3. Submit within 30 days of the expense\n4. Obtain manager approval for expenses over $200\n\nReimbursement will be processed within 14 business days of approval.\n\nWhat is the maximum amount per person for client meals?",
+    "options": [
+      "$50",
+      "$75",
+      "$200",
+      "$500"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Chính sách ghi: 'Client entertainment (meals up to $75 per person)'."
+  },
+  {
+    "id": "toeic-rc-034",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "COMPANY EXPENSE POLICY\n\nPurpose: This policy outlines the guidelines for submitting business expense reports.\n\nEligible Expenses:\n- Business travel (flights, hotels, ground transportation)\n- Client entertainment (meals up to $75 per person)\n- Office supplies and equipment under $500\n- Professional development courses\n\nSubmission Process:\n1. Complete the expense report form\n2. Attach all original receipts\n3. Submit within 30 days of the expense\n4. Obtain manager approval for expenses over $200\n\nReimbursement will be processed within 14 business days of approval.\n\nWhen must expense reports be submitted?",
+    "options": [
+      "Within 7 days",
+      "Within 14 days",
+      "Within 30 days",
+      "Within 60 days"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Chính sách ghi: 'Submit within 30 days of the expense'."
+  },
+  {
+    "id": "toeic-rc-035",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "COMPANY EXPENSE POLICY\n\nPurpose: This policy outlines the guidelines for submitting business expense reports.\n\nEligible Expenses:\n- Business travel (flights, hotels, ground transportation)\n- Client entertainment (meals up to $75 per person)\n- Office supplies and equipment under $500\n- Professional development courses\n\nSubmission Process:\n1. Complete the expense report form\n2. Attach all original receipts\n3. Submit within 30 days of the expense\n4. Obtain manager approval for expenses over $200\n\nReimbursement will be processed within 14 business days of approval.\n\nWhat requires manager approval?",
+    "options": [
+      "All expenses",
+      "Expenses over $200",
+      "Travel expenses only",
+      "Entertainment expenses only"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Chính sách ghi: 'Obtain manager approval for expenses over $200'."
+  },
+  {
+    "id": "toeic-rc-036",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "Document 1: Press Release\nFOR IMMEDIATE RELEASE\nMarch 10, 2025\n\nGreenLeaf Coffee Co. Announces New Recycling Initiative\n\nGreenLeaf Coffee Co. today announced a company-wide recycling program aimed at reducing waste by 50% within the next two years. The initiative includes the introduction of biodegradable cups, installation of recycling stations at all locations, and partnerships with local recycling facilities.\n\nDocument 2: Internal Memo\nFrom: Operations Department\nTo: All Store Managers\nSubject: Recycling Program Implementation\n\nFollowing the CEO's announcement, please note the following timeline:\n- April 1: Recycling stations delivered to all stores\n- April 15: Staff training on waste sorting procedures\n- May 1: Biodegradable cups replace current cups\n- June 1: Full program launch with customer awareness campaign\n\nWhat is GreenLeaf's environmental goal?",
+    "options": [
+      "Zero waste by 2025",
+      "Carbon-neutral by 2030",
+      "50% recycling by 2027",
+      "All biodegradable packaging by 2026"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Thông cáo báo chí ghi: 'our goal of becoming carbon-neutral by 2030'."
+  },
+  {
+    "id": "toeic-rc-037",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "Document 1: Press Release\nFOR IMMEDIATE RELEASE\nMarch 10, 2025\n\nGreenLeaf Coffee Co. Announces New Recycling Initiative\n\nGreenLeaf Coffee Co. today announced a company-wide recycling program aimed at reducing waste by 50% within the next two years. The initiative includes the introduction of biodegradable cups, installation of recycling stations at all locations, and partnerships with local recycling facilities.\n\nDocument 2: Internal Memo\nFrom: Operations Department\nTo: All Store Managers\nSubject: Recycling Program Implementation\n\nFollowing the CEO's announcement, please note the following timeline:\n- April 1: Recycling stations delivered to all stores\n- April 15: Staff training on waste sorting procedures\n- May 1: Biodegradable cups replace current cups\n- June 1: Full program launch with customer awareness campaign\n\nWhen will staff training take place?",
+    "options": [
+      "April 1",
+      "April 15",
+      "May 1",
+      "June 1"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Memo ghi: 'April 15: Staff training on waste sorting procedures'."
+  },
+  {
+    "id": "toeic-rc-038",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "Document 1: Press Release\nFOR IMMEDIATE RELEASE\nMarch 10, 2025\n\nGreenLeaf Coffee Co. Announces New Recycling Initiative\n\nGreenLeaf Coffee Co. today announced a company-wide recycling program aimed at reducing waste by 50% within the next two years. The initiative includes the introduction of biodegradable cups, installation of recycling stations at all locations, and partnerships with local recycling facilities.\n\nDocument 2: Internal Memo\nFrom: Operations Department\nTo: All Store Managers\nSubject: Recycling Program Implementation\n\nFollowing the CEO's announcement, please note the following timeline:\n- April 1: Recycling stations delivered to all stores\n- April 15: Staff training on waste sorting procedures\n- May 1: Biodegradable cups replace current cups\n- June 1: Full program launch with customer awareness campaign\n\nWhat does the program aim to reduce by 50%?",
+    "options": [
+      "Energy consumption",
+      "Water usage",
+      "Waste",
+      "Operating costs"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Thông cáo ghi: 'aimed at reducing waste by 50% within the next two years'."
+  },
+  {
+    "id": "toeic-rc-039",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "RESERVATION CONFIRMATION\n\nGuest: Robert Williams\nConfirmation #: HV-20250312-482\nHotel: Grand Pacific Resort\nCheck-in: Friday, April 4, 2025 (3:00 PM)\nCheck-out: Monday, April 7, 2025 (11:00 AM)\nRoom Type: Deluxe Ocean View King\nRate: $285/night\n\nIncluded:\n- Daily breakfast buffet for 2 guests\n- Complimentary Wi-Fi\n- Access to fitness center and pool\n\nCancellation Policy: Free cancellation up to 48 hours before check-in. Late cancellations will be charged one night's stay.\n\nFor modifications, call (555) 987-6543 or email reservations@grandpacific.com.\n\nHow many nights will Robert stay at the hotel?",
+    "options": [
+      "2 nights",
+      "3 nights",
+      "4 nights",
+      "5 nights"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Check-in ngày 4/4 (Friday), check-out ngày 7/4 (Monday) → 3 đêm."
+  },
+  {
+    "id": "toeic-rc-040",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "RESERVATION CONFIRMATION\n\nGuest: Robert Williams\nConfirmation #: HV-20250312-482\nHotel: Grand Pacific Resort\nCheck-in: Friday, April 4, 2025 (3:00 PM)\nCheck-out: Monday, April 7, 2025 (11:00 AM)\nRoom Type: Deluxe Ocean View King\nRate: $285/night\n\nIncluded:\n- Daily breakfast buffet for 2 guests\n- Complimentary Wi-Fi\n- Access to fitness center and pool\n\nCancellation Policy: Free cancellation up to 48 hours before check-in. Late cancellations will be charged one night's stay.\n\nFor modifications, call (555) 987-6543 or email reservations@grandpacific.com.\n\nWhat is included in Robert's reservation?",
+    "options": [
+      "Lunch and dinner",
+      "Daily breakfast for 2 guests",
+      "Airport shuttle",
+      "Spa access"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Xác nhận ghi: 'Daily breakfast buffet for 2 guests' (bữa sáng buffet hàng ngày cho 2 khách)."
+  },
+  {
+    "id": "toeic-rc-041",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "RESERVATION CONFIRMATION\n\nGuest: Robert Williams\nConfirmation #: HV-20250312-482\nHotel: Grand Pacific Resort\nCheck-in: Friday, April 4, 2025 (3:00 PM)\nCheck-out: Monday, April 7, 2025 (11:00 AM)\nRoom Type: Deluxe Ocean View King\nRate: $285/night\n\nIncluded:\n- Daily breakfast buffet for 2 guests\n- Complimentary Wi-Fi\n- Access to fitness center and pool\n\nCancellation Policy: Free cancellation up to 48 hours before check-in. Late cancellations will be charged one night's stay.\n\nFor modifications, call (555) 987-6543 or email reservations@grandpacific.com.\n\nWhat happens if Robert cancels less than 48 hours before check-in?",
+    "options": [
+      "Full refund",
+      "50% refund",
+      "Charged one night's stay",
+      "Charged full stay"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Chính sách hủy ghi: 'Late cancellations will be charged one night's stay' ($285)."
+  },
+  {
+    "id": "toeic-rc-042",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "EMPLOYEE SATISFACTION SURVEY RESULTS\n\nSurvey Period: January 2025\nResponse Rate: 78% (312 of 400 employees)\n\nKey Findings:\n\nCategory | Satisfaction Rate | Change from 2024\nWork Environment | 85% | +3%\nCompensation | 62% | -5%\nCareer Growth | 71% | +8%\nWork-Life Balance | 68% | -2%\nManagement | 76% | +1%\n\nTop Concerns:\n1. Salary competitiveness (cited by 45% of respondents)\n2. Limited promotion opportunities (cited by 32%)\n3. Excessive overtime (cited by 28%)\n\nWhich category showed the greatest improvement?",
+    "options": [
+      "Work Environment",
+      "Compensation",
+      "Career Growth",
+      "Management"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Career Growth tăng +8% (từ năm trước), mức tăng lớn nhất trong tất cả danh mục."
+  },
+  {
+    "id": "toeic-rc-043",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "EMPLOYEE SATISFACTION SURVEY RESULTS\n\nSurvey Period: January 2025\nResponse Rate: 78% (312 of 400 employees)\n\nKey Findings:\n\nCategory | Satisfaction Rate | Change from 2024\nWork Environment | 85% | +3%\nCompensation | 62% | -5%\nCareer Growth | 71% | +8%\nWork-Life Balance | 68% | -2%\nManagement | 76% | +1%\n\nTop Concerns:\n1. Salary competitiveness (cited by 45% of respondents)\n2. Limited promotion opportunities (cited by 32%)\n3. Excessive overtime (cited by 28%)\n\nWhich category had the lowest satisfaction rate?",
+    "options": [
+      "Work Environment",
+      "Compensation",
+      "Career Growth",
+      "Work-Life Balance"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Compensation có tỷ lệ hài lòng thấp nhất: 62%."
+  },
+  {
+    "id": "toeic-rc-044",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "EMPLOYEE SATISFACTION SURVEY RESULTS\n\nSurvey Period: January 2025\nResponse Rate: 78% (312 of 400 employees)\n\nKey Findings:\n\nCategory | Satisfaction Rate | Change from 2024\nWork Environment | 85% | +3%\nCompensation | 62% | -5%\nCareer Growth | 71% | +8%\nWork-Life Balance | 68% | -2%\nManagement | 76% | +1%\n\nTop Concerns:\n1. Salary competitiveness (cited by 45% of respondents)\n2. Limited promotion opportunities (cited by 32%)\n3. Excessive overtime (cited by 28%)\n\nWhat is the top concern among employees?",
+    "options": [
+      "Work-life balance",
+      "Salary competitiveness",
+      "Management issues",
+      "Job security"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mối quan tâm hàng đầu: 'Salary competitiveness (cited by 45% of respondents)'."
+  },
+  {
+    "id": "toeic-rc-045",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "COMPANY ANNOUNCEMENT\n\nNew Employee Benefits Package - Effective July 1, 2025\n\nWe are excited to announce an enhanced benefits package for all full-time employees:\n\nHealth & Wellness:\n- Expanded medical coverage including dental and vision\n- Mental health support program with up to 12 free counseling sessions per year\n- Gym membership subsidy of $50/month\n\nProfessional Development:\n- Annual learning allowance of $2,000 per employee\n- Access to online learning platforms (LinkedIn Learning, Coursera)\n- Tuition reimbursement for job-related courses up to $5,000/year\n\nWork-Life Balance:\n- Increased parental leave: 16 weeks paid (up from 12)\n- Flexible summer hours (June-August): 4-day work week option\n- Additional 2 personal days per year\n\nPlease contact HR at ext. 200 for questions or to enroll.\n\nWhat new wellness benefit is being offered?",
+    "options": [
+      "Free meals at the cafeteria",
+      "Mental health counseling sessions",
+      "Childcare services",
+      "Transportation allowance"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Thông báo ghi: 'Mental health support program with up to 12 free counseling sessions per year' (hỗ trợ sức khỏe tâm thần với tối đa 12 buổi tư vấn miễn phí mỗi năm)."
+  },
+  {
+    "id": "toeic-rc-046",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "COMPANY ANNOUNCEMENT\n\nNew Employee Benefits Package - Effective July 1, 2025\n\nWe are excited to announce an enhanced benefits package for all full-time employees:\n\nHealth & Wellness:\n- Expanded medical coverage including dental and vision\n- Mental health support program with up to 12 free counseling sessions per year\n- Gym membership subsidy of $50/month\n\nProfessional Development:\n- Annual learning allowance of $2,000 per employee\n- Access to online learning platforms (LinkedIn Learning, Coursera)\n- Tuition reimbursement for job-related courses up to $5,000/year\n\nWork-Life Balance:\n- Increased parental leave: 16 weeks paid (up from 12)\n- Flexible summer hours (June-August): 4-day work week option\n- Additional 2 personal days per year\n\nPlease contact HR at ext. 200 for questions or to enroll.\n\nHow much is the annual learning allowance per employee?",
+    "options": [
+      "$500",
+      "$1,000",
+      "$2,000",
+      "$5,000"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Thông báo ghi: 'Annual learning allowance of $2,000 per employee'."
+  },
+  {
+    "id": "toeic-rc-047",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "COMPANY ANNOUNCEMENT\n\nNew Employee Benefits Package - Effective July 1, 2025\n\nWe are excited to announce an enhanced benefits package for all full-time employees:\n\nHealth & Wellness:\n- Expanded medical coverage including dental and vision\n- Mental health support program with up to 12 free counseling sessions per year\n- Gym membership subsidy of $50/month\n\nProfessional Development:\n- Annual learning allowance of $2,000 per employee\n- Access to online learning platforms (LinkedIn Learning, Coursera)\n- Tuition reimbursement for job-related courses up to $5,000/year\n\nWork-Life Balance:\n- Increased parental leave: 16 weeks paid (up from 12)\n- Flexible summer hours (June-August): 4-day work week option\n- Additional 2 personal days per year\n\nPlease contact HR at ext. 200 for questions or to enroll.\n\nHow many weeks of paid parental leave are offered?",
+    "options": [
+      "8 weeks",
+      "12 weeks",
+      "16 weeks",
+      "20 weeks"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Thông báo ghi: 'Increased parental leave: 16 weeks paid (up from 12)'."
+  },
+  {
+    "id": "toeic-rc-048",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "TRAVEL ITINERARY\n\nTraveler: Jennifer Liu\nBusiness Trip: Tokyo, Japan\n\nDay 1 - Monday, May 12\n08:30 - Depart San Francisco (SFO) on Flight JL001\n11:45+1 - Arrive Tokyo Narita (NRT)\n14:00 - Check in at Hotel Metropolitan Tokyo\n16:00 - Meeting with Tanaka Corporation (Roppongi Office)\n19:00 - Business dinner at Sakura Restaurant\n\nDay 2 - Tuesday, May 13\n09:00 - Product presentation at Tanaka Corporation\n12:00 - Lunch meeting\n14:30 - Factory tour (Yokohama Plant)\n18:00 - Return to hotel\n\nDay 3 - Wednesday, May 14\n10:00 - Contract signing ceremony\n13:00 - Depart Tokyo Narita (NRT) on Flight JL002\n08:30+1 - Arrive San Francisco (SFO)\n\nWhat is the purpose of Jennifer's trip?",
+    "options": [
+      "Vacation",
+      "Conference attendance",
+      "Business meetings with Tanaka Corporation",
+      "Training program"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Lịch trình cho thấy Jennifer có nhiều cuộc họp với Tanaka Corporation: meeting, presentation, factory tour, contract signing."
+  },
+  {
+    "id": "toeic-rc-049",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "TRAVEL ITINERARY\n\nTraveler: Jennifer Liu\nBusiness Trip: Tokyo, Japan\n\nDay 1 - Monday, May 12\n08:30 - Depart San Francisco (SFO) on Flight JL001\n11:45+1 - Arrive Tokyo Narita (NRT)\n14:00 - Check in at Hotel Metropolitan Tokyo\n16:00 - Meeting with Tanaka Corporation (Roppongi Office)\n19:00 - Business dinner at Sakura Restaurant\n\nDay 2 - Tuesday, May 13\n09:00 - Product presentation at Tanaka Corporation\n12:00 - Lunch meeting\n14:30 - Factory tour (Yokohama Plant)\n18:00 - Return to hotel\n\nDay 3 - Wednesday, May 14\n10:00 - Contract signing ceremony\n13:00 - Depart Tokyo Narita (NRT) on Flight JL002\n08:30+1 - Arrive San Francisco (SFO)\n\nOn which day will Jennifer visit the factory?",
+    "options": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Lịch trình ghi Day 2 (Tuesday, May 13): '14:30 - Factory tour (Yokohama Plant)'."
+  },
+  {
+    "id": "toeic-rc-050",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "TRAVEL ITINERARY\n\nTraveler: Jennifer Liu\nBusiness Trip: Tokyo, Japan\n\nDay 1 - Monday, May 12\n08:30 - Depart San Francisco (SFO) on Flight JL001\n11:45+1 - Arrive Tokyo Narita (NRT)\n14:00 - Check in at Hotel Metropolitan Tokyo\n16:00 - Meeting with Tanaka Corporation (Roppongi Office)\n19:00 - Business dinner at Sakura Restaurant\n\nDay 2 - Tuesday, May 13\n09:00 - Product presentation at Tanaka Corporation\n12:00 - Lunch meeting\n14:30 - Factory tour (Yokohama Plant)\n18:00 - Return to hotel\n\nDay 3 - Wednesday, May 14\n10:00 - Contract signing ceremony\n13:00 - Depart Tokyo Narita (NRT) on Flight JL002\n08:30+1 - Arrive San Francisco (SFO)\n\nWhat event is scheduled for Day 3?",
+    "options": [
+      "Product presentation",
+      "Factory tour",
+      "Contract signing ceremony",
+      "Business dinner"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Lịch trình ghi Day 3 (Wednesday, May 14): '10:00 - Contract signing ceremony'."
+  },
+  {
+    "id": "toeic-rc-051",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "ABOUT ECOVISTA TECHNOLOGIES\n\nFounded in 2010 by Dr. Emily Wong and James Carter, EcoVista Technologies has grown from a small startup in Austin, Texas, to a leading provider of sustainable energy solutions with offices in 12 countries. The company specializes in solar panel technology, energy storage systems, and smart grid management software.\n\nEcoVista's flagship product, the SolarMax Pro, has won multiple industry awards for its efficiency and durability. The company currently holds over 150 patents and has installed its systems in more than 50,000 residential and commercial properties worldwide.\n\nIn 2024, EcoVista reported revenue of $2.3 billion, representing a 35% increase from the previous year. The company employs approximately 4,500 people globally and has been recognized as one of the \"Top 50 Green Companies\" by Business Today magazine for three consecutive years.\n\nEcoVista's mission is to make clean energy accessible and affordable for everyone. The company invests 15% of its annual revenue in research and development to maintain its competitive edge in the rapidly evolving renewable energy sector.\n\nWho founded EcoVista Technologies?",
+    "options": [
+      "James Carter alone",
+      "Dr. Emily Wong and James Carter",
+      "Dr. Emily Wong alone",
+      "Business Today magazine"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bài ghi: 'Founded in 2010 by Dr. Emily Wong and James Carter'."
+  },
+  {
+    "id": "toeic-rc-052",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "ABOUT ECOVISTA TECHNOLOGIES\n\nFounded in 2010 by Dr. Emily Wong and James Carter, EcoVista Technologies has grown from a small startup in Austin, Texas, to a leading provider of sustainable energy solutions with offices in 12 countries. The company specializes in solar panel technology, energy storage systems, and smart grid management software.\n\nEcoVista's flagship product, the SolarMax Pro, has won multiple industry awards for its efficiency and durability. The company currently holds over 150 patents and has installed its systems in more than 50,000 residential and commercial properties worldwide.\n\nIn 2024, EcoVista reported revenue of $2.3 billion, representing a 35% increase from the previous year. The company employs approximately 4,500 people globally and has been recognized as one of the \"Top 50 Green Companies\" by Business Today magazine for three consecutive years.\n\nEcoVista's mission is to make clean energy accessible and affordable for everyone. The company invests 15% of its annual revenue in research and development to maintain its competitive edge in the rapidly evolving renewable energy sector.\n\nWhat percentage of revenue does EcoVista invest in R&D?",
+    "options": [
+      "5%",
+      "10%",
+      "15%",
+      "20%"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Bài ghi: 'The company invests 15% of its annual revenue in research and development'."
+  },
+  {
+    "id": "toeic-rc-053",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "ABOUT ECOVISTA TECHNOLOGIES\n\nFounded in 2010 by Dr. Emily Wong and James Carter, EcoVista Technologies has grown from a small startup in Austin, Texas, to a leading provider of sustainable energy solutions with offices in 12 countries. The company specializes in solar panel technology, energy storage systems, and smart grid management software.\n\nEcoVista's flagship product, the SolarMax Pro, has won multiple industry awards for its efficiency and durability. The company currently holds over 150 patents and has installed its systems in more than 50,000 residential and commercial properties worldwide.\n\nIn 2024, EcoVista reported revenue of $2.3 billion, representing a 35% increase from the previous year. The company employs approximately 4,500 people globally and has been recognized as one of the \"Top 50 Green Companies\" by Business Today magazine for three consecutive years.\n\nEcoVista's mission is to make clean energy accessible and affordable for everyone. The company invests 15% of its annual revenue in research and development to maintain its competitive edge in the rapidly evolving renewable energy sector.\n\nHow many countries does EcoVista have offices in?",
+    "options": [
+      "6",
+      "10",
+      "12",
+      "15"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Bài ghi: 'with offices in 12 countries'."
+  },
+  {
+    "id": "toeic-rc-054",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "Ad 1: CityFit Gym\nNew Year Special! Join now and get your first 3 months FREE!\nMonthly membership: $49.99/month after promotional period.\nFacilities: Olympic-size pool, sauna, group fitness classes, personal training available.\nLocations: Downtown, Westside, Airport District\nOpen 24/7\n\nAd 2: FitZone Studio\nIntroductory offer: 50% off annual membership!\nAnnual membership: $399 (regular $798)\nFacilities: Yoga studio, spinning classes, weight room, juice bar.\nLocations: Midtown, Eastside\nHours: 5:00 AM - 11:00 PM\n\nWhat is the main difference in operating hours between the two facilities?",
+    "options": [
+      "CityFit is open 24/7; FitZone has limited hours",
+      "FitZone is open 24/7; CityFit has limited hours",
+      "Both are open 24/7",
+      "Both have the same limited hours"
+    ],
+    "correctAnswer": 0,
+    "explanation": "CityFit ghi 'Open 24/7', FitZone ghi 'Hours: 5:00 AM - 11:00 PM' → CityFit mở 24/7, FitZone có giờ hạn chế."
+  },
+  {
+    "id": "toeic-rc-055",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "Ad 1: CityFit Gym\nNew Year Special! Join now and get your first 3 months FREE!\nMonthly membership: $49.99/month after promotional period.\nFacilities: Olympic-size pool, sauna, group fitness classes, personal training available.\nLocations: Downtown, Westside, Airport District\nOpen 24/7\n\nAd 2: FitZone Studio\nIntroductory offer: 50% off annual membership!\nAnnual membership: $399 (regular $798)\nFacilities: Yoga studio, spinning classes, weight room, juice bar.\nLocations: Midtown, Eastside\nHours: 5:00 AM - 11:00 PM\n\nWhich facility offers a pool?",
+    "options": [
+      "CityFit only",
+      "FitZone only",
+      "Both facilities",
+      "Neither facility"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Chỉ CityFit liệt kê 'Olympic-size pool' trong cơ sở vật chất."
+  },
+  {
+    "id": "toeic-rc-056",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "Ad 1: CityFit Gym\nNew Year Special! Join now and get your first 3 months FREE!\nMonthly membership: $49.99/month after promotional period.\nFacilities: Olympic-size pool, sauna, group fitness classes, personal training available.\nLocations: Downtown, Westside, Airport District\nOpen 24/7\n\nAd 2: FitZone Studio\nIntroductory offer: 50% off annual membership!\nAnnual membership: $399 (regular $798)\nFacilities: Yoga studio, spinning classes, weight room, juice bar.\nLocations: Midtown, Eastside\nHours: 5:00 AM - 11:00 PM\n\nWhat is the effective monthly cost at FitZone with the introductory offer?",
+    "options": [
+      "$33.25",
+      "$49.99",
+      "$66.50",
+      "$399.00"
+    ],
+    "correctAnswer": 0,
+    "explanation": "FitZone: $399/năm ÷ 12 tháng = $33.25/tháng (với ưu đãi 50% off)."
+  },
+  {
+    "id": "toeic-rc-057",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "RESTAURANT REVIEW\n\nBella Italia - ★★★★☆ (4.5/5)\nReviewer: Food & Dining Magazine\n\nBella Italia offers an authentic Italian dining experience in the heart of downtown. The handmade pasta is exceptional, particularly the truffle mushroom ravioli. The wine selection is extensive, featuring over 100 Italian wines.\n\nService is attentive and knowledgeable, though wait times can exceed 30 minutes on weekends. The ambiance is warm and inviting, with exposed brick walls and soft lighting.\n\nMain courses range from $18 to $42, which is reasonable for the quality. Reservations are strongly recommended for dinner service.\n\nWhat does the reviewer praise most about the restaurant?",
+    "options": [
+      "The location",
+      "The handmade pasta",
+      "The prices",
+      "The parking"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đánh giá khen ngợi: 'The handmade pasta is exceptional, particularly the truffle mushroom ravioli' (mì ống thủ công đặc biệt xuất sắc)."
+  },
+  {
+    "id": "toeic-rc-058",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "RESTAURANT REVIEW\n\nBella Italia - ★★★★☆ (4.5/5)\nReviewer: Food & Dining Magazine\n\nBella Italia offers an authentic Italian dining experience in the heart of downtown. The handmade pasta is exceptional, particularly the truffle mushroom ravioli. The wine selection is extensive, featuring over 100 Italian wines.\n\nService is attentive and knowledgeable, though wait times can exceed 30 minutes on weekends. The ambiance is warm and inviting, with exposed brick walls and soft lighting.\n\nMain courses range from $18 to $42, which is reasonable for the quality. Reservations are strongly recommended for dinner service.\n\nWhat is mentioned as a potential drawback?",
+    "options": [
+      "Limited menu",
+      "High prices",
+      "Long wait times on weekends",
+      "Poor service"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Đánh giá đề cập: 'wait times can exceed 30 minutes on weekends' (thời gian chờ có thể超过 30 phút vào cuối tuần)."
+  },
+  {
+    "id": "toeic-rc-059",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "MONTHLY NEWSLETTER\n\nTechVision Inc. - January 2025\n\nDear Valued Customers,\n\nWe are excited to share several updates with you this month:\n\nProduct Update: Version 3.0 of our flagship software will be released on February 1. This update includes a redesigned dashboard, improved reporting tools, and enhanced security features.\n\nCustomer Support: We have extended our support hours. Our team is now available Monday through Saturday, 7:00 AM to 10:00 PM EST.\n\nReferral Program: Refer a friend and both of you will receive a 15% discount on your next renewal. There is no limit to the number of referrals.\n\nUpcoming Events: Join us for our annual user conference on March 15-16 in San Francisco. Early bird registration is now open at a 25% discount.\n\nThank you for your continued trust in TechVision.\n\nWhen will Version 3.0 be released?",
+    "options": [
+      "January 1",
+      "February 1",
+      "March 1",
+      "March 15"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Newsletter ghi: 'Version 3.0 of our flagship software will be released on February 1'."
+  },
+  {
+    "id": "toeic-rc-060",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "text": "MONTHLY NEWSLETTER\n\nTechVision Inc. - January 2025\n\nDear Valued Customers,\n\nWe are excited to share several updates with you this month:\n\nProduct Update: Version 3.0 of our flagship software will be released on February 1. This update includes a redesigned dashboard, improved reporting tools, and enhanced security features.\n\nCustomer Support: We have extended our support hours. Our team is now available Monday through Saturday, 7:00 AM to 10:00 PM EST.\n\nReferral Program: Refer a friend and both of you will receive a 15% discount on your next renewal. There is no limit to the number of referrals.\n\nUpcoming Events: Join us for our annual user conference on March 15-16 in San Francisco. Early bird registration is now open at a 25% discount.\n\nThank you for your continued trust in TechVision.\n\nWhat discount do referrers and their friends receive?",
+    "options": [
+      "10%",
+      "15%",
+      "20%",
+      "25%"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Newsletter ghi: 'both of you will receive a 15% discount on your next renewal'."
   }
 ]

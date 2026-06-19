@@ -16,7 +16,7 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
   
   // --- TIMER STATE ---
   const [timeLeft, setTimeLeft] = useState(15);
-  const timerRef = useRef<any>(null);
+  const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   useEffect(() => {
     if (isFinished) return;
@@ -28,7 +28,6 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
       setTimeLeft(prev => {
         if (prev <= 1) {
           clearInterval(timerRef.current);
-          handleNext(); // Auto-skip if time runs out
           return 0;
         }
         return prev - 1;
@@ -37,6 +36,13 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
 
     return () => clearInterval(timerRef.current);
   }, [currentIndex, isFinished]);
+
+  useEffect(() => {
+    if (timeLeft === 0 && !isFinished) {
+      handleNext();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [timeLeft, isFinished]);
 
   const handleSelect = (optionIndex: number) => {
     if (selectedAnswers[currentIndex] !== null) return; // Prevent changing answer
@@ -82,23 +88,23 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
     const percent = (finalScore / questions.length) * 100;
     
     return (
-      <div className="bg-white lingo-card text-center max-w-lg w-full mx-auto animate-in zoom-in-95 duration-500">
-        <div className="w-24 h-24 bg-[#ddf4ff] rounded-full flex items-center justify-center mx-auto mb-8 shadow-inner">
+      <div className="bg-[var(--bg-card)] lingo-card text-center max-w-lg w-full mx-auto animate-in zoom-in-95 duration-500">
+        <div className="w-24 h-24 bg-[var(--tint-blue)] rounded-full flex items-center justify-center mx-auto mb-8 shadow-inner">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-[#1cb0f6]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
         </div>
-        <h2 className="text-3xl font-black text-[#4b4b4b] mb-2 uppercase tracking-tight">Quest Complete!</h2>
-        <p className="text-[10px] font-black text-[#afafaf] mb-10 uppercase tracking-[0.2em]">{category} Practice Exam</p>
+        <h2 className="text-3xl font-black text-[var(--text-main)] mb-2 uppercase tracking-tight">Quest Complete!</h2>
+        <p className="text-[10px] font-black text-[var(--text-muted)] mb-10 uppercase tracking-[0.2em]">{category} Practice Exam</p>
         
         <div className="relative w-48 h-48 mx-auto mb-10">
           <svg className="w-full h-full transform -rotate-90">
-            <circle cx="96" cy="96" r="86" stroke="currentColor" strokeWidth="12" fill="transparent" className="text-[#f7f7f7]" />
+            <circle cx="96" cy="96" r="86" stroke="currentColor" strokeWidth="12" fill="transparent" className="text-[var(--gray-path)]" />
             <circle cx="96" cy="96" r="86" stroke="currentColor" strokeWidth="12" fill="transparent" className={percent >= 80 ? 'text-[#58cc02]' : 'text-[#ff9600]'} strokeDasharray={540.3} strokeDashoffset={540.3 - (540.3 * percent) / 100} strokeLinecap="round" />
           </svg>
           <div className="absolute inset-0 flex flex-col items-center justify-center">
-            <span className="text-5xl font-black text-[#4b4b4b]">{finalScore}</span>
-            <span className="text-[10px] font-black text-[#afafaf] uppercase tracking-widest">Score / {questions.length}</span>
+            <span className="text-5xl font-black text-[var(--text-main)]">{finalScore}</span>
+            <span className="text-[10px] font-black text-[var(--text-muted)] uppercase tracking-widest">Score / {questions.length}</span>
           </div>
         </div>
 
@@ -155,7 +161,7 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
       )}
 
       <div className="mb-10">
-        <h3 className="text-2xl font-black text-[#4b4b4b] leading-tight">
+        <h3 className="text-2xl font-black text-[var(--text-main)] leading-tight">
           {currentQuestion.text}
         </h3>
       </div>
@@ -167,14 +173,14 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
             onClick={() => handleSelect(idx)}
             className={`group w-full text-left h-16 px-6 rounded-2xl border-2 transition-all duration-200 flex items-center gap-4 relative overflow-hidden ${
               selectedAnswers[currentIndex] === idx
-                ? 'border-[#1cb0f6] bg-[#ddf4ff] text-[#1cb0f6]'
-                : 'border-[#e5e5e5] hover:border-[#afafaf] bg-white text-[#4b4b4b]'
+                ? 'border-[#1cb0f6] bg-[var(--tint-blue)] text-[#1cb0f6]'
+                : 'border-[var(--border-main)] hover:border-[var(--text-muted)] bg-[var(--bg-card)] text-[var(--text-main)]'
             }`}
           >
             <div className={`w-10 h-10 rounded-xl flex-shrink-0 flex items-center justify-center font-black text-lg transition-all border-2 ${
-              selectedAnswers[currentIndex] === idx 
-              ? 'bg-[#1cb0f6] text-white border-transparent' 
-              : 'bg-white text-[#afafaf] border-[#e5e5e5]'
+              selectedAnswers[currentIndex] === idx
+              ? 'bg-[#1cb0f6] text-white border-transparent'
+              : 'bg-[var(--bg-card)] text-[var(--text-muted)] border-[var(--border-main)]'
             }`}>
               {String.fromCharCode(65 + idx)}
             </div>
@@ -183,10 +189,10 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
         ))}
       </div>
 
-      <div className="flex justify-between items-center pt-8 border-t-2 border-[#f7f7f7]">
+      <div className="flex justify-between items-center pt-8 border-t-2 border-[var(--quiz-divider)]">
         <button
           onClick={onCancel}
-          className="text-[#afafaf] font-black hover:text-[#ff4b4b] transition-colors uppercase tracking-[0.2em] text-[9px]"
+          className="text-[var(--text-muted)] font-black hover:text-[#ff4b4b] transition-colors uppercase tracking-[0.2em] text-[9px]"
         >
           Quit Quest
         </button>
@@ -196,7 +202,7 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
           className={`px-10 h-14 rounded-2xl font-black transition-all ${
             selectedAnswers[currentIndex] !== null
               ? 'btn-3d btn-green'
-              : 'bg-[#e5e5e5] cursor-not-allowed text-[#afafaf] border-b-4 border-[#cbd5e1]'
+              : 'bg-[var(--gray-path)] cursor-not-allowed text-[var(--text-muted)] border-b-4 border-[var(--gray-path-dark)]'
           }`}
         >
           {currentIndex === questions.length - 1 ? 'Finish Quest' : 'Next Question'}

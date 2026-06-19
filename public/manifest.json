@@ -1,8 +1,11 @@
 {
   "name": "Lingomaster Ultimate",
   "short_name": "Lingomaster",
-  "start_url": "/",
+  "description": "Gamified TOEIC & JLPT N2 language learning app.",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
+  "orientation": "portrait",
   "background_color": "#ffffff",
   "theme_color": "#58cc02",
   "icons": [
@@ -11,6 +14,12 @@
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any"
+    },
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
     }
   ]
 }

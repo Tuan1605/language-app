@@ -1,0 +1,3202 @@
+[
+  {
+    "id": "nvs-001",
+    "word": "概念",
+    "reading": "がいねん",
+    "definition": "khái niệm",
+    "example": "この概念を理解するのは難しい。",
+    "difficulty": "advanced",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-002",
+    "word": "抽象",
+    "reading": "ちゅうしょう",
+    "definition": "trừu tượng",
+    "example": "抽象的な表現は避けたい。",
+    "difficulty": "advanced",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-003",
+    "word": "本質",
+    "reading": "ほんしつ",
+    "definition": "bản chất",
+    "example": "問題の本質を見極める。",
+    "difficulty": "advanced",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-004",
+    "word": "現象",
+    "reading": "げんしょう",
+    "definition": "hiện tượng",
+    "example": "不思議な現象が起きた。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-005",
+    "word": "矛盾",
+    "reading": "むじゅん",
+    "definition": "mâu thuẫn",
+    "example": "彼の言葉には矛盾がある。",
+    "difficulty": "advanced",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-006",
+    "word": "傾向",
+    "reading": "けいこう",
+    "definition": "khuynh hướng, xu hướng",
+    "example": "最近の傾向を分析する。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-007",
+    "word": "基準",
+    "reading": "きじゅん",
+    "definition": "tiêu chuẩn",
+    "example": "採用基準を満たしている。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-008",
+    "word": "要素",
+    "reading": "ようそ",
+    "definition": "yếu tố",
+    "example": "成功の要素を分析する。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-009",
+    "word": "範囲",
+    "reading": "はんい",
+    "definition": "phạm vi",
+    "example": "テストの範囲を確認する。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-010",
+    "word": "限界",
+    "reading": "げんかい",
+    "definition": "giới hạn",
+    "example": "人間の限界を超えた。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-011",
+    "word": "影響",
+    "reading": "えいきょう",
+    "definition": "ảnh hưởng",
+    "example": "環境に影響を与える。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-012",
+    "word": "効果",
+    "reading": "こうか",
+    "definition": "hiệu quả",
+    "example": "薬の効果が現れた。",
+    "difficulty": "beginner",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-013",
+    "word": "結果",
+    "reading": "けっか",
+    "definition": "kết quả",
+    "example": "調査の結果を発表する。",
+    "difficulty": "beginner",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-014",
+    "word": "原因",
+    "reading": "げんいん",
+    "definition": "nguyên nhân",
+    "example": "事故の原因を調べる。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-015",
+    "word": "目的",
+    "reading": "もくてき",
+    "definition": "mục đích",
+    "example": "目的を明確にする。",
+    "difficulty": "beginner",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-016",
+    "word": "手段",
+    "reading": "しゅだん",
+    "definition": "phương tiện, cách thức",
+    "example": "あらゆる手段を尽くす。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-017",
+    "word": "条件",
+    "reading": "じょうけん",
+    "definition": "điều kiện",
+    "example": "条件を満たす必要がある。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-018",
+    "word": "矛盾",
+    "reading": "むじゅん",
+    "definition": "mâu thuẫn",
+    "example": "理論に矛盾が見つかった。",
+    "difficulty": "advanced",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-019",
+    "word": "可能性",
+    "reading": "かのうせい",
+    "definition": "khả năng, tính có thể",
+    "example": "成功の可能性が高い。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-020",
+    "word": "実態",
+    "reading": "じったい",
+    "definition": "thực trạng",
+    "example": "問題の実態を把握する。",
+    "difficulty": "advanced",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-021",
+    "word": "仮説",
+    "reading": "かせつ",
+    "definition": "giả thuyết",
+    "example": "仮説を立てる。",
+    "difficulty": "advanced",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-022",
+    "word": "検証",
+    "reading": "けんしょう",
+    "definition": "kiểm chứng",
+    "example": "データを検証する。",
+    "difficulty": "advanced",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-023",
+    "word": "分析",
+    "reading": "ぶんせき",
+    "definition": "phân tích",
+    "example": "原因を分析する。",
+    "difficulty": "intermediate",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-024",
+    "word": "研究",
+    "reading": "けんきゅう",
+    "definition": "nghiên cứu",
+    "example": "新しい研究を始める。",
+    "difficulty": "intermediate",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-025",
+    "word": "実験",
+    "reading": "じっけん",
+    "definition": "thí nghiệm",
+    "example": "実験の結果を記録する。",
+    "difficulty": "intermediate",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-026",
+    "word": "理論",
+    "reading": "りろん",
+    "definition": "lý thuyết",
+    "example": "新しい理論を提唱する。",
+    "difficulty": "advanced",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-027",
+    "word": "証拠",
+    "reading": "しょうこ",
+    "definition": "bằng chứng",
+    "example": "証拠が見つかった。",
+    "difficulty": "intermediate",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-028",
+    "word": "推論",
+    "reading": "すいろん",
+    "definition": "suy luận",
+    "example": "論理的に推論する。",
+    "difficulty": "advanced",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-029",
+    "word": "定義",
+    "reading": "ていぎ",
+    "definition": "định nghĩa",
+    "example": "言葉の定義を確認する。",
+    "difficulty": "intermediate",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-030",
+    "word": "根拠",
+    "reading": "こんきょ",
+    "definition": "căn cứ",
+    "example": "根拠のある主張だ。",
+    "difficulty": "advanced",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-031",
+    "word": "統計",
+    "reading": "とうけい",
+    "definition": "thống kê",
+    "example": "統計データを分析する。",
+    "difficulty": "intermediate",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-032",
+    "word": "調査",
+    "reading": "ちょうさ",
+    "definition": "điều tra, khảo sát",
+    "example": "アンケート調査を実施する。",
+    "difficulty": "intermediate",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-033",
+    "word": "考察",
+    "reading": "こうさつ",
+    "definition": "khảo sát, xem xét",
+    "example": "問題について考察する。",
+    "difficulty": "advanced",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-034",
+    "word": "論文",
+    "reading": "ろんぶん",
+    "definition": "luận văn",
+    "example": "論文を提出する。",
+    "difficulty": "intermediate",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-035",
+    "word": "資料",
+    "reading": "しりょう",
+    "definition": "tài liệu",
+    "example": "資料を集める。",
+    "difficulty": "beginner",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-036",
+    "word": "文献",
+    "reading": "ぶんけん",
+    "definition": "văn hiến, tài liệu tham khảo",
+    "example": "関連文献を調べる。",
+    "difficulty": "advanced",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-037",
+    "word": "引用",
+    "reading": "いんよう",
+    "definition": "trích dẫn",
+    "example": "論文から引用する。",
+    "difficulty": "advanced",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-038",
+    "word": "要旨",
+    "reading": "ようし",
+    "definition": "ý chính, tóm tắt",
+    "example": "レポートの要旨をまとめる。",
+    "difficulty": "advanced",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-039",
+    "word": "結論",
+    "reading": "けつろん",
+    "definition": "kết luận",
+    "example": "結論に達した。",
+    "difficulty": "intermediate",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-040",
+    "word": "議論",
+    "reading": "ぎろん",
+    "definition": "bàn luận, tranh luận",
+    "example": "活発な議論が交わされた。",
+    "difficulty": "intermediate",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-041",
+    "word": "敬称",
+    "reading": "けいしょう",
+    "definition": "kính xưng",
+    "example": "敬称を使うのが一般的だ。",
+    "difficulty": "advanced",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-042",
+    "word": "謙譲",
+    "reading": "けんじょう",
+    "definition": "khiêm nhường",
+    "example": "謙譲語を使う。",
+    "difficulty": "advanced",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-043",
+    "word": "丁寧",
+    "reading": "ていねい",
+    "definition": "lịch sự, chu đáo",
+    "example": "丁寧に説明する。",
+    "difficulty": "beginner",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-044",
+    "word": "儀式",
+    "reading": "ぎしき",
+    "definition": "nghi thức",
+    "example": "卒業儀式が行われた。",
+    "difficulty": "intermediate",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-045",
+    "word": "式典",
+    "reading": "しきてん",
+    "definition": "lễ nghi, nghi lễ",
+    "example": "式典に出席する。",
+    "difficulty": "advanced",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-046",
+    "word": "挨拶",
+    "reading": "あいさつ",
+    "definition": "lời chào, chào hỏi",
+    "example": "朝の挨拶をする。",
+    "difficulty": "beginner",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-047",
+    "word": "招待",
+    "reading": "しょうたい",
+    "definition": "mời, chiêu đãi",
+    "example": "パーティーに招待する。",
+    "difficulty": "intermediate",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-048",
+    "word": "祝辞",
+    "reading": "しゅくじ",
+    "definition": "lời chúc mừng",
+    "example": "祝辞を述べる。",
+    "difficulty": "advanced",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-049",
+    "word": "哀悼",
+    "reading": "あいとう",
+    "definition": "ai điếu, phân ưu",
+    "example": "哀悼の意を表する。",
+    "difficulty": "advanced",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-050",
+    "word": "陳謝",
+    "reading": "ちんしゃ",
+    "definition": "tạ lỗi, xin lỗi",
+    "example": "陳謝の気持ちを伝える。",
+    "difficulty": "advanced",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-051",
+    "word": "承知",
+    "reading": "しょうち",
+    "definition": "biết rõ, hiểu rõ",
+    "example": "その件は承知しています。",
+    "difficulty": "intermediate",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-052",
+    "word": "了承",
+    "reading": "りょうしょう",
+    "definition": "hiểu và chấp nhận",
+    "example": "ご了承ください。",
+    "difficulty": "advanced",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-053",
+    "word": "伺う",
+    "reading": "うかがう",
+    "definition": "hỏi thăm, viếng thăm (khiêm nhường)",
+    "example": "ご意見を伺いたいです。",
+    "difficulty": "intermediate",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-054",
+    "word": "申す",
+    "reading": "もうす",
+    "definition": "nói (khiêm nhường)",
+    "example": "田中と申します。",
+    "difficulty": "intermediate",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-055",
+    "word": "参る",
+    "reading": "まいる",
+    "definition": "đi, đến (khiêm nhường)",
+    "example": "すぐ参ります。",
+    "difficulty": "intermediate",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-056",
+    "word": "拝見",
+    "reading": "はいけん",
+    "definition": "xem (khiêm nhường)",
+    "example": "資料を拝見しました。",
+    "difficulty": "intermediate",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-057",
+    "word": "頂く",
+    "reading": "いただく",
+    "definition": "nhận (khiêm nhường)",
+    "example": "お手紙を頂きました。",
+    "difficulty": "intermediate",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-058",
+    "word": "存じる",
+    "readonly": "そんじる",
+    "definition": "biết (khiêm nhường)",
+    "example": "よく存じております。",
+    "difficulty": "advanced",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-059",
+    "word": "致す",
+    "reading": "いたす",
+    "definition": "làm (khiêm nhường)",
+    "example": "お届けいたします。",
+    "difficulty": "intermediate",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-060",
+    "word": "差し上げる",
+    "reading": "さしあげる",
+    "definition": "cho, tặng (khiêm nhường)",
+    "example": "お土産を差し上げる。",
+    "difficulty": "intermediate",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-061",
+    "word": "哲学",
+    "reading": "てつがく",
+    "definition": "triết học",
+    "example": "哲学に興味がある。",
+    "difficulty": "advanced",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-062",
+    "word": "心理学",
+    "reading": "しんりがく",
+    "definition": "tâm lý học",
+    "example": "心理学を専攻する。",
+    "difficulty": "intermediate",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-063",
+    "word": "社会学",
+    "reading": "しゃかいがく",
+    "definition": "xã hội học",
+    "example": "社会学の授業を取る。",
+    "difficulty": "intermediate",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-064",
+    "word": "経済",
+    "reading": "けいざい",
+    "definition": "kinh tế",
+    "example": "経済が成長している。",
+    "difficulty": "intermediate",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-065",
+    "word": "政治",
+    "reading": "せいじ",
+    "definition": "chính trị",
+    "example": "政治に関心を持つ。",
+    "difficulty": "intermediate",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-066",
+    "word": "法律",
+    "reading": "ほうりつ",
+    "definition": "pháp luật",
+    "example": "法律を守る。",
+    "difficulty": "intermediate",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-067",
+    "word": "制度",
+    "reading": "せいど",
+    "definition": "chế độ, thể chế",
+    "example": "新しい制度を導入する。",
+    "difficulty": "intermediate",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-068",
+    "word": "政策",
+    "reading": "せいさく",
+    "definition": "chính sách",
+    "example": "政府の政策を批判する。",
+    "difficulty": "advanced",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-069",
+    "word": "権利",
+    "reading": "けんり",
+    "definition": "quyền lợi",
+    "example": "権利を主張する。",
+    "difficulty": "intermediate",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-070",
+    "word": "義務",
+    "reading": "ぎむ",
+    "definition": "nghĩa vụ",
+    "example": "義務を果たす。",
+    "difficulty": "intermediate",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-071",
+    "word": "自由",
+    "reading": "じゆう",
+    "definition": "tự do",
+    "example": "自由に発言する。",
+    "difficulty": "beginner",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-072",
+    "word": "平等",
+    "reading": "びょうどう",
+    "definition": "bình đẳng",
+    "example": "平等な扱いを求める。",
+    "difficulty": "advanced",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-073",
+    "word": "正義",
+    "reading": "せいぎ",
+    "definition": "chính nghĩa",
+    "example": "正義を守る。",
+    "difficulty": "advanced",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-074",
+    "word": "責任",
+    "reading": "せきにん",
+    "definition": "trách nhiệm",
+    "example": "責任を取る。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-075",
+    "word": "義務",
+    "reading": "ぎむ",
+    "definition": "nghĩa vụ",
+    "example": "納税は国民の義務だ。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-076",
+    "word": "信頼",
+    "reading": "しんらい",
+    "definition": "tin tưởng",
+    "example": "信頼できる人だ。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-077",
+    "word": "尊敬",
+    "reading": "そんけい",
+    "definition": "tôn trọng",
+    "example": "尊敬する人物だ。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-078",
+    "word": "名誉",
+    "reading": "めいよ",
+    "definition": "danh dự",
+    "example": "名誉を守る。",
+    "difficulty": "advanced",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-079",
+    "word": "尊厳",
+    "reading": "そんげん",
+    "definition": "phẩm giá, tôn nghiêm",
+    "example": "人間の尊厳を守る。",
+    "difficulty": "advanced",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-080",
+    "word": "良心",
+    "reading": "りょうしん",
+    "definition": "lương tâm",
+    "example": "良心が痛む。",
+    "difficulty": "advanced",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-081",
+    "word": "観点",
+    "reading": "かんてん",
+    "definition": "quan điểm",
+    "example": "別の観点から見る。",
+    "difficulty": "advanced",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-082",
+    "word": "視点",
+    "reading": "してん",
+    "definition": "góc nhìn",
+    "example": "消費者の視点で考える。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-083",
+    "word": "立場",
+    "reading": "たちば",
+    "definition": "lập trường, vị trí",
+    "example": "相手の立場を考える。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-084",
+    "word": "見解",
+    "reading": "けんかい",
+    "definition": "kiến giải, quan điểm",
+    "example": "見解を述べる。",
+    "difficulty": "advanced",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-085",
+    "word": "判断",
+    "reading": "はんだん",
+    "definition": "phán đoán",
+    "example": "正しい判断をする。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-086",
+    "word": "認識",
+    "reading": "にんしき",
+    "definition": "nhận thức",
+    "example": "問題を認識する。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-087",
+    "word": "理解",
+    "reading": "りかい",
+    "definition": "lý giải, hiểu",
+    "example": "状況を理解する。",
+    "difficulty": "beginner",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-088",
+    "word": "意識",
+    "reading": "いしき",
+    "definition": "ý thức",
+    "example": "環境問題への意識が高い。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-089",
+    "word": "感覚",
+    "reading": "かんかく",
+    "definition": "cảm giác",
+    "example": "感覚が麻痺する。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-090",
+    "word": "印象",
+    "reading": "いんしょう",
+    "definition": "ấn tượng",
+    "example": "良い印象を与える。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-091",
+    "word": "観察",
+    "reading": "かんさつ",
+    "definition": "quan sát",
+    "example": "動物を観察する。",
+    "difficulty": "intermediate",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-092",
+    "word": "測定",
+    "reading": "そくてい",
+    "definition": "đo lường",
+    "example": "温度を測定する。",
+    "difficulty": "advanced",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-093",
+    "word": "計算",
+    "reading": "けいさん",
+    "definition": "tính toán",
+    "example": "費用を計算する。",
+    "difficulty": "intermediate",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-094",
+    "word": "予測",
+    "reading": "よそく",
+    "definition": "dự đoán",
+    "example": "天気を予測する。",
+    "difficulty": "intermediate",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-095",
+    "word": "推測",
+    "reading": "すいそく",
+    "definition": "suy đoán",
+    "example": "結果を推測する。",
+    "difficulty": "advanced",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-096",
+    "word": "発見",
+    "reading": "はっけん",
+    "definition": "phát hiện",
+    "example": "新しい発見をした。",
+    "difficulty": "intermediate",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-097",
+    "word": "発明",
+    "reading": "はつめい",
+    "definition": "phát minh",
+    "example": "電球を発明した。",
+    "difficulty": "intermediate",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-098",
+    "word": "創造",
+    "reading": "そうぞう",
+    "definition": "sáng tạo",
+    "example": "創造力を養う。",
+    "difficulty": "advanced",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-099",
+    "word": "革新",
+    "reading": "かくしん",
+    "definition": "cách tân, đổi mới",
+    "example": "技術の革新が進む。",
+    "difficulty": "advanced",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-100",
+    "word": "進歩",
+    "reading": "しんぽ",
+    "definition": "tiến bộ",
+    "example": "科学が進歩する。",
+    "difficulty": "intermediate",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-101",
+    "word": "環境",
+    "reading": "かんきょう",
+    "definition": "môi trường",
+    "example": "環境を保護する。",
+    "difficulty": "intermediate",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-102",
+    "word": "資源",
+    "reading": "しげん",
+    "definition": "tài nguyên",
+    "example": "天然資源を守る。",
+    "difficulty": "intermediate",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-103",
+    "word": "人口",
+    "reading": "じんこう",
+    "definition": "dân số",
+    "example": "人口が増加している。",
+    "difficulty": "beginner",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-104",
+    "word": "文化",
+    "reading": "ぶんか",
+    "definition": "văn hóa",
+    "example": "日本文化に興味がある。",
+    "difficulty": "beginner",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-105",
+    "word": "伝統",
+    "reading": "でんとう",
+    "definition": "truyền thống",
+    "example": "伝統を守る。",
+    "difficulty": "intermediate",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-106",
+    "word": "風習",
+    "reading": "ふうしゅう",
+    "definition": "phong tục",
+    "example": "昔の風習が残っている。",
+    "difficulty": "advanced",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-107",
+    "word": "価値",
+    "reading": "かち",
+    "definition": "giá trị",
+    "example": "文化の価値を理解する。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-108",
+    "word": "意義",
+    "reading": "いぎ",
+    "definition": "ý nghĩa",
+    "example": "教育の意義を考える。",
+    "difficulty": "advanced",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-109",
+    "word": "役割",
+    "reading": "やくわり",
+    "definition": "vai trò",
+    "example": "自分の役割を果たす。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-110",
+    "word": "影響力",
+    "reading": "えいきょうりょく",
+    "definition": "ảnh hưởng lực",
+    "example": "大きな影響力を持つ。",
+    "difficulty": "advanced",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-111",
+    "word": "存在",
+    "reading": "そんざい",
+    "definition": "tồn tại",
+    "example": "彼の存在は大きい。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-112",
+    "word": "実態",
+    "reading": "じったい",
+    "definition": "thực trạng",
+    "example": "社会の実態を知る。",
+    "difficulty": "advanced",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-113",
+    "word": "実情",
+    "reading": "じつじょう",
+    "definition": "thực tình, tình hình thực tế",
+    "example": "現場の実情を把握する。",
+    "difficulty": "advanced",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-114",
+    "word": "背景",
+    "reading": "はいけい",
+    "definition": "bối cảnh",
+    "example": "事件の背景を調べる。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-115",
+    "word": "事情",
+    "reading": "じじょう",
+    "definition": "hoàn cảnh, tình hình",
+    "example": "家庭の事情で欠席する。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-116",
+    "word": "状況",
+    "reading": "じょうきょう",
+    "definition": "tình huống, tình hình",
+    "example": "状況が変化した。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-117",
+    "word": "局面",
+    "reading": "きょくめん",
+    "definition": "cục diện",
+    "example": "新しい局面を迎える。",
+    "difficulty": "advanced",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-118",
+    "word": "情勢",
+    "reading": "じょうせい",
+    "definition": "tình thế, tình hình",
+    "example": "国際情勢を把握する。",
+    "difficulty": "advanced",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-119",
+    "word": "動向",
+    "reading": "どうこう",
+    "definition": "động hướng, xu hướng",
+    "example": "市場の動向を注視する。",
+    "difficulty": "advanced",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-120",
+    "word": "変化",
+    "reading": "へんか",
+    "definition": "biến hóa, thay đổi",
+    "example": "大きな変化が起きた。",
+    "difficulty": "beginner",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-121",
+    "word": "展開",
+    "reading": "てんかい",
+    "definition": "triển khai, phát triển",
+    "example": "新しい展開を見せた。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-122",
+    "word": "推移",
+    "reading": "すいい",
+    "definition": "sự dịch chuyển, diễn biến",
+    "example": "物価の推移を調べる。",
+    "difficulty": "advanced",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-123",
+    "word": "過程",
+    "reading": "かてい",
+    "definition": "quá trình",
+    "example": "成長の過程を観察する。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-124",
+    "word": "段階",
+    "reading": "だんかい",
+    "definition": "giai đoạn",
+    "example": "準備の段階にある。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-125",
+    "word": "局面",
+    "reading": "きょくめん",
+    "definition": "cục diện, tình thế",
+    "example": "重要な局面に立つ。",
+    "difficulty": "advanced",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-126",
+    "word": "危機",
+    "reading": "きき",
+    "definition": "khủng hoảng",
+    "example": "経済危機に直面する。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-127",
+    "word": "挑戦",
+    "reading": "ちょうせん",
+    "definition": "thách thức",
+    "example": "新しいことに挑戦する。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-128",
+    "word": "試練",
+    "reading": "しれん",
+    "definition": "thử thách",
+    "example": "大きな試練に直面する。",
+    "difficulty": "advanced",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-129",
+    "word": "困難",
+    "reading": "こんなん",
+    "definition": "khó khăn",
+    "example": "困難を乗り越える。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-130",
+    "word": "苦難",
+    "reading": "くなん",
+    "definition": "khốn khổ, gian nan",
+    "example": "苦難の道を歩む。",
+    "difficulty": "advanced",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-131",
+    "word": "成功",
+    "reading": "せいこう",
+    "definition": "thành công",
+    "example": "プロジェクトが成功した。",
+    "difficulty": "beginner",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-132",
+    "word": "失敗",
+    "reading": "しっぱい",
+    "definition": "thất bại",
+    "example": "実験に失敗した。",
+    "difficulty": "beginner",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-133",
+    "word": "達成",
+    "reading": "たっせい",
+    "definition": "đạt thành, hoàn thành",
+    "example": "目標を達成する。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-134",
+    "word": "努力",
+    "reading": "どりょく",
+    "definition": "nỗ lực",
+    "example": "努力が報われた。",
+    "difficulty": "beginner",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-135",
+    "word": "決意",
+    "reading": "けつい",
+    "definition": "quyết tâm",
+    "example": "新しい決意を固める。",
+    "difficulty": "advanced",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-136",
+    "word": "覚悟",
+    "reading": "かくご",
+    "definition": "sự chuẩn bị tinh thần, quyết tâm",
+    "example": "覚悟を決める。",
+    "difficulty": "advanced",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-137",
+    "word": "勇気",
+    "reading": "ゆうき",
+    "definition": "dũng khí",
+    "example": "勇気を出す。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-138",
+    "word": "信念",
+    "reading": "しんねん",
+    "definition": "niềm tin",
+    "example": "信念を貫く。",
+    "difficulty": "advanced",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-139",
+    "word": "希望",
+    "reading": "きぼう",
+    "definition": "hy vọng",
+    "example": "希望を持って生きる。",
+    "difficulty": "beginner",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-140",
+    "word": "絶望",
+    "reading": "ぜつぼう",
+    "definition": "tuyệt vọng",
+    "example": "絶望的な状況だ。",
+    "difficulty": "advanced",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-141",
+    "word": "喜び",
+    "reading": "よろこび",
+    "definition": "niềm vui",
+    "example": "成功の喜びを分かち合う。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-142",
+    "word": "悲しみ",
+    "reading": "かなしみ",
+    "definition": "nỗi buồn",
+    "example": "悲しみを乗り越える。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-143",
+    "word": "怒り",
+    "reading": "いかり",
+    "definition": "sự giận dữ",
+    "example": "怒りを抑える。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-144",
+    "word": "恐怖",
+    "reading": "きょうふ",
+    "definition": "nỗi sợ hãi",
+    "example": "恐怖を感じる。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-145",
+    "word": "不安",
+    "reading": "ふあん",
+    "definition": "bất an",
+    "example": "将来に不安を感じる。",
+    "difficulty": "beginner",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-146",
+    "word": "孤独",
+    "reading": "こどく",
+    "definition": "cô độc",
+    "example": "孤独な時間を過ごす。",
+    "difficulty": "advanced",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-147",
+    "word": "寂しさ",
+    "reading": "さびしさ",
+    "definition": "sự cô đơn, tịch mịch",
+    "example": "寂しさを感じる。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-148",
+    "word": "感謝",
+    "reading": "かんしゃ",
+    "definition": "cảm tạ",
+    "example": "心から感謝する。",
+    "difficulty": "beginner",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-149",
+    "word": "後悔",
+    "reading": "こうかい",
+    "definition": "hối hận",
+    "example": "後悔しないように行動する。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-150",
+    "word": "満足",
+    "reading": "まんぞく",
+    "definition": "hài lòng, mãn nguyện",
+    "example": "結果に満足する。",
+    "difficulty": "beginner",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-151",
+    "word": "不満",
+    "reading": "ふまん",
+    "definition": "bất mãn",
+    "example": "処置に不満を漏らす。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-152",
+    "word": "疑問",
+    "reading": "ぎもん",
+    "definition": "nghi vấn",
+    "example": "疑問に思う。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-153",
+    "word": "関心",
+    "reading": "かんしん",
+    "definition": "quan tâm",
+    "example": "芸術に関心がある。",
+    "difficulty": "beginner",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-154",
+    "word": "興味",
+    "reading": "きょうみ",
+    "definition": "hứng thú",
+    "example": "歴史に興味を持つ。",
+    "difficulty": "beginner",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-155",
+    "word": "魅力",
+    "reading": "みりょく",
+    "definition": "mê lực, sức hấp dẫn",
+    "example": "彼女の魅力に引かれる。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-156",
+    "word": "個性",
+    "reading": "こせい",
+    "definition": "cá tính",
+    "example": "個性を大切にする。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-157",
+    "word": "性格",
+    "reading": "せいかく",
+    "definition": "tính cách",
+    "example": "明るい性格だ。",
+    "difficulty": "beginner",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-158",
+    "word": "態度",
+    "reading": "たいど",
+    "definition": "thái độ",
+    "example": "態度を改める。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-159",
+    "word": "行動",
+    "reading": "こうどう",
+    "definition": "hành động",
+    "example": "行動に移す。",
+    "difficulty": "beginner",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-160",
+    "word": "発言",
+    "reading": "はつげん",
+    "definition": "phát biểu",
+    "example": "会議で発言する。",
+    "difficulty": "intermediate",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-161",
+    "word": "提案",
+    "reading": "ていあん",
+    "definition": "đề xuất",
+    "example": "新しい提案をする。",
+    "difficulty": "intermediate",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-162",
+    "word": "主張",
+    "reading": "しゅちょう",
+    "definition": "chủ trương, yêu cầu",
+    "example": "自分の主張を貫く。",
+    "difficulty": "intermediate",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-163",
+    "word": "反対",
+    "reading": "はんたい",
+    "definition": "phản đối",
+    "example": "その案に反対する。",
+    "difficulty": "beginner",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-164",
+    "word": "賛成",
+    "reading": "さんせい",
+    "definition": "tán thành",
+    "example": "その意見に賛成する。",
+    "difficulty": "beginner",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-165",
+    "word": "妥協",
+    "reading": "だきょう",
+    "definition": "thỏa hiệp",
+    "example": "妥協点を見つける。",
+    "difficulty": "advanced",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-166",
+    "word": "交渉",
+    "reading": "こうしょう",
+    "definition": "đàm phán",
+    "example": "条件について交渉する。",
+    "difficulty": "advanced",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-167",
+    "word": "決定",
+    "reading": "けってい",
+    "definition": "quyết định",
+    "example": "最終決定を下す。",
+    "difficulty": "beginner",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-168",
+    "word": "承認",
+    "reading": "しょうにん",
+    "definition": "thừa nhận, công nhận",
+    "example": "計画が承認された。",
+    "difficulty": "advanced",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-169",
+    "word": "否決",
+    "reading": "ひけつ",
+    "definition": "phủ quyết",
+    "example": "提案が否決された。",
+    "difficulty": "advanced",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-170",
+    "word": "可決",
+    "reading": "かけつ",
+    "definition": "thông qua",
+    "example": "法案が可決された。",
+    "difficulty": "advanced",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-171",
+    "word": "採択",
+    "reading": "さいたく",
+    "definition": "thông qua, chấp nhận",
+    "example": "決議が採択された。",
+    "difficulty": "advanced",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-172",
+    "word": "施行",
+    "reading": "しこう",
+    "definition": "thi hành, thực thi",
+    "example": "新しい法律が施行された。",
+    "difficulty": "advanced",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-173",
+    "word": "公布",
+    "reading": "こうふ",
+    "definition": "công bố",
+    "example": "新憲法が公布された。",
+    "difficulty": "advanced",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-174",
+    "word": "宣言",
+    "reading": "せんげん",
+    "definition": "tuyên ngôn",
+    "example": "独立を宣言する。",
+    "difficulty": "advanced",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-175",
+    "word": "声明",
+    "reading": "せいめい",
+    "definition": "tuyên bố",
+    "example": "共同声明を発表する。",
+    "difficulty": "advanced",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-176",
+    "word": "指摘",
+    "reading": "してき",
+    "definition": "chỉ ra, chỉ trích",
+    "example": "問題点を指摘する。",
+    "difficulty": "intermediate",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-177",
+    "word": "批判",
+    "reading": "ひはん",
+    "definition": "phê phán",
+    "example": "政策を批判する。",
+    "difficulty": "intermediate",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-178",
+    "word": "評価",
+    "reading": "ひょうか",
+    "definition": "đánh giá",
+    "example": "高い評価を受ける。",
+    "difficulty": "intermediate",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-179",
+    "word": "分析",
+    "reading": "ぶんせき",
+    "definition": "phân tích",
+    "example": "データを分析する。",
+    "difficulty": "intermediate",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-180",
+    "word": "検討",
+    "reading": "けんとう",
+    "definition": "nghiên cứu, xem xét",
+    "example": "案を検討する。",
+    "difficulty": "intermediate",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-181",
+    "word": "把握",
+    "reading": "はあく",
+    "definition": "nắm bắt",
+    "example": "全体像を把握する。",
+    "difficulty": "intermediate",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-182",
+    "word": "対応",
+    "reading": "たいおう",
+    "definition": "đối ứng, ứng phó",
+    "example": "緊急事態に対応する。",
+    "difficulty": "intermediate",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-183",
+    "word": "対策",
+    "reading": "たいさく",
+    "definition": "đối sách, biện pháp",
+    "example": "水害対策を立てる。",
+    "difficulty": "intermediate",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-184",
+    "word": "措置",
+    "reading": "そち",
+    "definition": "biện pháp, xử lý",
+    "example": "緊急措置を取る。",
+    "difficulty": "advanced",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-185",
+    "word": "処理",
+    "reading": "しょり",
+    "definition": "xử lý",
+    "example": "データを処理する。",
+    "difficulty": "intermediate",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-186",
+    "word": "管理",
+    "reading": "かんり",
+    "definition": "quản lý",
+    "example": "在庫を管理する。",
+    "difficulty": "beginner",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-187",
+    "word": "監督",
+    "reading": "かんとく",
+    "definition": "giám sát",
+    "example": "工事を監督する。",
+    "difficulty": "intermediate",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-188",
+    "word": "指導",
+    "reading": "しどう",
+    "definition": "chỉ đạo",
+    "example": "後輩を指導する。",
+    "difficulty": "intermediate",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-189",
+    "word": "教育",
+    "reading": "きょういく",
+    "definition": "giáo dục",
+    "example": "教育の重要性を説く。",
+    "difficulty": "beginner",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-190",
+    "word": "訓練",
+    "reading": "くんれん",
+    "definition": "huấn luyện",
+    "example": "新人を訓練する。",
+    "difficulty": "intermediate",
+    "topic": "formal expressions",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-191",
+    "word": "能力",
+    "reading": "のうりょく",
+    "definition": "năng lực",
+    "example": "能力を伸ばす。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-192",
+    "word": "実力",
+    "reading": "じつりょく",
+    "definition": "thực lực",
+    "example": "実力を発揮する。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-193",
+    "word": "才能",
+    "reading": "さいのう",
+    "definition": "tài năng",
+    "example": "音楽の才能がある。",
+    "difficulty": "intermediate",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-194",
+    "word": "技術",
+    "reading": "ぎじゅつ",
+    "definition": "kỹ thuật",
+    "example": "新しい技術を開発する。",
+    "difficulty": "intermediate",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-195",
+    "word": "知識",
+    "reading": "ちしき",
+    "definition": "tri thức",
+    "example": "知識を深める。",
+    "difficulty": "intermediate",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-196",
+    "word": "経験",
+    "reading": "けいけん",
+    "definition": "kinh nghiệm",
+    "example": "貴重な経験を積む。",
+    "difficulty": "beginner",
+    "topic": "abstract concepts",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-197",
+    "word": "学問",
+    "reading": "がくもん",
+    "definition": "học vấn",
+    "example": "学問の道を歩む。",
+    "difficulty": "intermediate",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-198",
+    "word": "教養",
+    "reading": "きょうよう",
+    "definition": "giáo dưỡng",
+    "example": "教養を身につける。",
+    "difficulty": "advanced",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-199",
+    "word": "学術",
+    "reading": "がくじゅつ",
+    "definition": "học thuật",
+    "example": "学術的な研究をする。",
+    "difficulty": "advanced",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-200",
+    "word": "専門",
+    "reading": "せんもん",
+    "definition": "chuyên môn",
+    "example": "専門的な知識が必要だ。",
+    "difficulty": "intermediate",
+    "topic": "academic vocabulary",
+    "source": "日本語能力試験 N2 語彙公式リスト"
+  },
+  {
+    "id": "nvs-201",
+    "word": "打ち合わせ",
+    "reading": "うちあわせ",
+    "definition": "cuộc họp, buổi họp bàn",
+    "example": "午前中に打ち合わせがある。",
+    "difficulty": "intermediate",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-202",
+    "word": "打ち消す",
+    "reading": "うちけす",
+    "definition": "phủ định, bác bỏ",
+    "example": "その噂を打ち消す。",
+    "difficulty": "advanced",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-203",
+    "word": "打ち込む",
+    "reading": "うちこむ",
+    "definition": "đánh máy, đầu tư",
+    "example": "データを打ち込む。",
+    "difficulty": "intermediate",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-204",
+    "word": "受け取る",
+    "reading": "うけとる",
+    "definition": "nhận, tiếp nhận",
+    "example": "荷物を受け取る。",
+    "difficulty": "beginner",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-205",
+    "word": "受け持つ",
+    "reading": "うけもつ",
+    "definition": "đảm nhận, phụ trách",
+    "example": "このクラスを受け持つ。",
+    "difficulty": "intermediate",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-206",
+    "word": "受け継ぐ",
+    "reading": "うけつぐ",
+    "definition": "kế thừa",
+    "example": "父の事業を受け継ぐ。",
+    "difficulty": "advanced",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-207",
+    "word": "追い付く",
+    "reading": "おいつく",
+    "definition": "bắt kịp",
+    "example": "先進国に追い付く。",
+    "difficulty": "intermediate",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-208",
+    "word": "追い越す",
+    "reading": "おいこす",
+    "definition": "vượt qua",
+    "example": "前の車を追い越す。",
+    "difficulty": "intermediate",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-209",
+    "word": "追い求める",
+    "reading": "おいもとめる",
+    "definition": "theo đuổi",
+    "example": "夢を追い求める。",
+    "difficulty": "advanced",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-210",
+    "word": "追い出す",
+    "reading": "おいだす",
+    "definition": "đuổi ra, xua đuổi",
+    "example": "猫を部屋から追い出す。",
+    "difficulty": "intermediate",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-211",
+    "word": "思い込む",
+    "reading": "おもいこむ",
+    "definition": "tin chắc, nhất định cho rằng",
+    "example": "彼は勝手に思い込んでいる。",
+    "difficulty": "advanced",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-212",
+    "word": "思い切る",
+    "reading": "おもいきる",
+    "definition": "quyết tâm, liều lĩnh",
+    "example": "思い切って転職する。",
+    "difficulty": "advanced",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-213",
+    "word": "思い出す",
+    "reading": "おもいだす",
+    "definition": "nhớ lại",
+    "example": "子供の頃を思い出す。",
+    "difficulty": "beginner",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-214",
+    "word": "思い付く",
+    "reading": "おもいつく",
+    "definition": "nghĩ ra, chợt nghĩ",
+    "example": "いい方法を思い付いた。",
+    "difficulty": "intermediate",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-215",
+    "word": "引き受ける",
+    "reading": "ひきうける",
+    "definition": "đảm nhận, nhận lấy",
+    "example": "仕事を引き受ける。",
+    "difficulty": "intermediate",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-216",
+    "word": "引き返す",
+    "reading": "ひきかえす",
+    "definition": "quay lại, trở về",
+    "example": "途中で引き返す。",
+    "difficulty": "intermediate",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-217",
+    "word": "引き止める",
+    "reading": "ひきとめる",
+    "definition": "giữ lại, níu kéo",
+    "example": "帰る友人を引き止める。",
+    "difficulty": "advanced",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-218",
+    "word": "引き出す",
+    "reading": "ひきだす",
+    "definition": "rút ra, gợi ra",
+    "example": "銀行からお金を引き出す。",
+    "difficulty": "intermediate",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-219",
+    "word": "取り消す",
+    "reading": "とりけす",
+    "definition": "hủy bỏ, thu hồi",
+    "example": "注文を取り消す。",
+    "difficulty": "intermediate",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-220",
+    "word": "取り組む",
+    "reading": "とりくむ",
+    "definition": "nỗ lực, giải quyết",
+    "example": "問題に取り組む。",
+    "difficulty": "intermediate",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-221",
+    "word": "取り調べる",
+    "reading": "とりしらべる",
+    "definition": "điều tra, thẩm vấn",
+    "example": "警察が容疑者を取り調べる。",
+    "difficulty": "advanced",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-222",
+    "word": "取り除く",
+    "reading": "とりのぞく",
+    "definition": "loại bỏ, gỡ bỏ",
+    "example": "障害を取り除く。",
+    "difficulty": "advanced",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-223",
+    "word": "取り巻く",
+    "reading": "とりまく",
+    "definition": "bao quanh, vây quanh",
+    "example": "山に取り巻かれた町。",
+    "difficulty": "advanced",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-224",
+    "word": "差し出す",
+    "reading": "さしだす",
+    "definition": "đưa ra, dâng lên",
+    "example": "手を差し出す。",
+    "difficulty": "intermediate",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-225",
+    "word": "差し支える",
+    "reading": "さしつかえる",
+    "definition": "gây trở ngại, cản trở",
+    "example": "健康に差し支える。",
+    "difficulty": "advanced",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-226",
+    "word": "差し替える",
+    "reading": "さしかえる",
+    "definition": "thay thế, đổi lại",
+    "example": "花を差し替える。",
+    "difficulty": "advanced",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-227",
+    "word": "付け加える",
+    "reading": "つけくわえる",
+    "definition": "thêm vào, bổ sung",
+    "example": "コメントを付け加える。",
+    "difficulty": "intermediate",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-228",
+    "word": "付け足す",
+    "reading": "つけたす",
+    "definition": "thêm vào, bồi thêm",
+    "example": "最後に一言付け足す。",
+    "difficulty": "advanced",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-229",
+    "word": "書き直す",
+    "reading": "かきなおす",
+    "definition": "viết lại",
+    "example": "レポートを書き直す。",
+    "difficulty": "intermediate",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-230",
+    "word": "書き込む",
+    "reading": "かきこむ",
+    "definition": "ghi vào, điền vào",
+    "example": "名前を書き込む。",
+    "difficulty": "beginner",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-231",
+    "word": "言い換える",
+    "reading": "いいかえる",
+    "definition": "diễn đạt lại, nói cách khác",
+    "example": "難しい言葉を言い換える。",
+    "difficulty": "advanced",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-232",
+    "word": "言い出す",
+    "reading": "いいだす",
+    "definition": "nói ra, đề xuất",
+    "example": "突然辞めると言い出した。",
+    "difficulty": "intermediate",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-233",
+    "word": "言い付ける",
+    "reading": "いいつける",
+    "definition": "ra lệnh, bảo làm",
+    "example": "子供に掃除を言い付ける。",
+    "difficulty": "advanced",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-234",
+    "word": "立ち上がる",
+    "reading": "たちあがる",
+    "definition": "đứng dậy",
+    "example": "椅子から立ち上がる。",
+    "difficulty": "beginner",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-235",
+    "word": "立ち止まる",
+    "reading": "たちどまる",
+    "definition": "dừng lại",
+    "example": "道端で立ち止まる。",
+    "difficulty": "intermediate",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-236",
+    "word": "立ち向かう",
+    "reading": "たちむかう",
+    "definition": "đối đầu, đương đầu",
+    "example": "困難に立ち向かう。",
+    "difficulty": "advanced",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-237",
+    "word": "見直す",
+    "reading": "みなおす",
+    "definition": "xem lại, đánh giá lại",
+    "example": "計画を見直す。",
+    "difficulty": "intermediate",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-238",
+    "word": "見舞う",
+    "reading": "みまう",
+    "definition": "thăm hỏi, bị thiên tai",
+    "example": "病気の友人を見舞う。",
+    "difficulty": "intermediate",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-239",
+    "word": "見渡す",
+    "reading": "みわたす",
+    "definition": "nhìn bao quát, phóng tầm mắt",
+    "example": "景色を見渡す。",
+    "difficulty": "intermediate",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-240",
+    "word": "見張る",
+    "reading": "みはる",
+    "definition": "canh gác, trợn mắt",
+    "example": "目を見張るような景色だ。",
+    "difficulty": "advanced",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-241",
+    "word": "話し合う",
+    "reading": "はなしあう",
+    "definition": "trao đổi, thảo luận",
+    "example": "将来について話し合う。",
+    "difficulty": "beginner",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-242",
+    "word": "話し掛ける",
+    "reading": "はなしかける",
+    "definition": "bắt chuyện, chủ động nói",
+    "example": "知らない人に話し掛ける。",
+    "difficulty": "intermediate",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-243",
+    "word": "読み上げる",
+    "reading": "よみあげ",
+    "definition": "đọc to, đọc lên",
+    "example": "名前を読み上げる。",
+    "difficulty": "intermediate",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-244",
+    "word": "読み込む",
+    "reading": "よみこむ",
+    "definition": "đọc kỹ, nạp dữ liệu",
+    "example": "データをシステムに読み込む。",
+    "difficulty": "advanced",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-245",
+    "word": "持ち上げる",
+    "reading": "もちあげる",
+    "definition": "nâng lên, tâng bốc",
+    "example": "荷物を持ち上げる。",
+    "difficulty": "intermediate",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-246",
+    "word": "持ち込む",
+    "reading": "もちこむ",
+    "definition": "mang vào, đưa vào",
+    "example": "会議に資料を持ち込む。",
+    "difficulty": "intermediate",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-247",
+    "word": "動き出す",
+    "reading": "うごきだす",
+    "definition": "bắt đầu di chuyển",
+    "example": "列車が動き出した。",
+    "difficulty": "intermediate",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-248",
+    "word": "動き回る",
+    "reading": "うごきまわる",
+    "definition": "di chuyển xung quanh",
+    "example": "子供が部屋を動き回る。",
+    "difficulty": "intermediate",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-249",
+    "word": "落ち着く",
+    "reading": "おちつく",
+    "definition": "bình tĩnh, ổn định",
+    "example": "落ち着いて話してください。",
+    "difficulty": "beginner",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-250",
+    "word": "落ち込む",
+    "reading": "おちこむ",
+    "definition": "rơi vào, chán nản",
+    "example": "試験に落ち込んでる。",
+    "difficulty": "intermediate",
+    "topic": "compound verbs",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-251",
+    "word": "明るい",
+    "reading": "あかるい",
+    "definition": "sáng sủa, vui vẻ",
+    "example": "彼女は明るい性格だ。",
+    "difficulty": "beginner",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-252",
+    "word": "怪しい",
+    "reading": "あやしい",
+    "definition": "đáng ngờ, khả nghi",
+    "example": "怪しい人物がいた。",
+    "difficulty": "intermediate",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-253",
+    "word": "荒い",
+    "reading": "あらい",
+    "definition": "thô bạo, dữ dội",
+    "example": "波が荒い。",
+    "difficulty": "intermediate",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-254",
+    "word": "勇ましい",
+    "reading": "いさましい",
+    "definition": "dũng cảm, oai phong",
+    "example": "勇ましい姿に感動した。",
+    "difficulty": "advanced",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-255",
+    "word": "恨めしい",
+    "reading": "うらめしい",
+    "definition": "oán hận, căm ghét",
+    "example": "裏切られたのが恨めしい。",
+    "difficulty": "advanced",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-256",
+    "word": "嬉しい",
+    "reading": "うれしい",
+    "definition": "vui mừng",
+    "example": "プレゼントをもらって嬉しい。",
+    "difficulty": "beginner",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-257",
+    "word": "大きめ",
+    "reading": "おおきめ",
+    "definition": "hơi lớn, to hơn",
+    "example": "大きめのサイズをお願いします。",
+    "difficulty": "intermediate",
+    "topic": "na-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-258",
+    "word": "穏やか",
+    "reading": "おだやか",
+    "definition": "ôn hòa, điềm đạm",
+    "example": "穏やかな気候だ。",
+    "difficulty": "intermediate",
+    "topic": "na-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-259",
+    "word": "同じ",
+    "reading": "おなじ",
+    "definition": "giống nhau",
+    "example": "同じ意見だ。",
+    "difficulty": "beginner",
+    "topic": "na-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-260",
+    "word": "おとなしい",
+    "reading": "おとなしい",
+    "definition": "hiền lành, ngoan ngoãn",
+    "example": "おとなしい子供だ。",
+    "difficulty": "intermediate",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-261",
+    "word": "固い",
+    "reading": "かたい",
+    "definition": "cứng, kiên quyết",
+    "example": "握手が固い。",
+    "difficulty": "intermediate",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-262",
+    "word": "悲しい",
+    "reading": "かなしい",
+    "definition": "buồn bã",
+    "example": "悲しいニュースだった。",
+    "difficulty": "beginner",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-263",
+    "word": "痒い",
+    "reading": "かゆい",
+    "definition": "ngứa",
+    "example": "蚊に刺されて痒い。",
+    "difficulty": "intermediate",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-264",
+    "word": "軽い",
+    "reading": "かるい",
+    "definition": "nhẹ, thanh đạm",
+    "example": "荷物が軽い。",
+    "difficulty": "beginner",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-265",
+    "word": "可愛い",
+    "reading": "かわいい",
+    "definition": "dễ thương",
+    "example": "可愛い子猫だ。",
+    "difficulty": "beginner",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-266",
+    "word": "危ない",
+    "reading": "あぶない",
+    "definition": "nguy hiểm",
+    "example": "危ないから近づかないで。",
+    "difficulty": "beginner",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-267",
+    "word": "清い",
+    "reading": "きよい",
+    "definition": "trong sạch, tinh khiết",
+    "example": "清い水が流れる。",
+    "difficulty": "advanced",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-268",
+    "word": "暗い",
+    "reading": "くらい",
+    "definition": "tối tăm, u ám",
+    "example": "部屋が暗い。",
+    "difficulty": "beginner",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-269",
+    "word": "詳しい",
+    "reading": "くわしい",
+    "definition": "chi tiết, tường tận",
+    "example": "この辺の事情に詳しい。",
+    "difficulty": "intermediate",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-270",
+    "word": "煙たい",
+    "reading": "けむたい",
+    "definition": "khó chịu, ngột ngạt",
+    "example": "彼の態度は煙たい。",
+    "difficulty": "advanced",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-271",
+    "word": "騒がしい",
+    "reading": "さわがしい",
+    "definition": "ồn ào, ầm ĩ",
+    "example": "隣が騒がしい。",
+    "difficulty": "intermediate",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-272",
+    "word": "正しい",
+    "reading": "ただしい",
+    "definition": "đúng đắn, chính xác",
+    "example": "正しい答えを選ぶ。",
+    "difficulty": "beginner",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-273",
+    "word": "頼もしい",
+    "reading": "たのもしい",
+    "definition": "đáng tin cậy, đáng nhờ",
+    "example": "頼もしい味方だ。",
+    "difficulty": "advanced",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-274",
+    "word": "近い",
+    "reading": "ちかい",
+    "definition": "gần, thân cận",
+    "example": "駅から近い。",
+    "difficulty": "beginner",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-275",
+    "word": "冷たい",
+    "reading": "つめたい",
+    "definition": "lạnh lẽo, lạnh lùng",
+    "example": "水が冷たい。",
+    "difficulty": "beginner",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-276",
+    "word": "遠い",
+    "reading": "とおい",
+    "definition": "xa xôi",
+    "example": "故郷は遠い。",
+    "difficulty": "beginner",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-277",
+    "word": "長い",
+    "reading": "ながい",
+    "definition": "dài",
+    "example": "髪が長い。",
+    "difficulty": "beginner",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-278",
+    "word": "苦い",
+    "reading": "にがい",
+    "definition": "đắng",
+    "example": "コーヒーが苦い。",
+    "difficulty": "beginner",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-279",
+    "word": "温い",
+    "reading": "ぬるい",
+    "definition": "ấm, không đủ lạnh",
+    "example": "お茶が温い。",
+    "difficulty": "intermediate",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-280",
+    "word": "鈍い",
+    "reading": "にぶい",
+    "definition": "chậm, vụng về",
+    "example": "反応が鈍い。",
+    "difficulty": "advanced",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-281",
+    "word": "激しい",
+    "reading": "はげしい",
+    "definition": "dữ dội, mãnh liệt",
+    "example": "雨が激しい。",
+    "difficulty": "intermediate",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-282",
+    "word": "恥ずかしい",
+    "reading": "はずかしい",
+    "definition": "xấu hổ, ngại ngùng",
+    "example": "人前で恥ずかしい。",
+    "difficulty": "beginner",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-283",
+    "word": "等しい",
+    "reading": "ひとしい",
+    "definition": "bằng nhau, ngang bằng",
+    "example": "効果はゼロに等しい。",
+    "difficulty": "advanced",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-284",
+    "word": "細い",
+    "reading": "ほそい",
+    "definition": "mảnh, mỏng",
+    "example": "細い道を歩く。",
+    "difficulty": "beginner",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-285",
+    "word": "眩しい",
+    "reading": "まぶしい",
+    "definition": "chói mắt, lóa",
+    "example": "太陽が眩しい。",
+    "difficulty": "intermediate",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-286",
+    "word": "丸い",
+    "reading": "まるい",
+    "definition": "tròn",
+    "example": "丸い顔をした子供。",
+    "difficulty": "beginner",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-287",
+    "word": "短い",
+    "reading": "みじかい",
+    "definition": "ngắn",
+    "example": "日が短い。",
+    "difficulty": "beginner",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-288",
+    "word": "難しい",
+    "reading": "むずかしい",
+    "definition": "khó khăn",
+    "example": "難しい問題だ。",
+    "difficulty": "beginner",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-289",
+    "word": "珍しい",
+    "reading": "めずらしい",
+    "definition": "hiếm, quý hiếm",
+    "example": "珍しい体験をした。",
+    "difficulty": "intermediate",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-290",
+    "word": "優しい",
+    "reading": "やさしい",
+    "definition": "dịu dàng, dễ dàng",
+    "example": "彼女は優しい人だ。",
+    "difficulty": "beginner",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-291",
+    "word": "緩い",
+    "reading": "ゆるい",
+    "definition": "lỏng, thoải mái",
+    "example": "靴の紐が緩い。",
+    "difficulty": "intermediate",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-292",
+    "word": "若い",
+    "reading": "わかい",
+    "definition": "trẻ",
+    "example": "若い人が多い。",
+    "difficulty": "beginner",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-293",
+    "word": "柔らかい",
+    "reading": "やわらかい",
+    "definition": "mềm mại",
+    "example": "パンが柔らかい。",
+    "difficulty": "beginner",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-294",
+    "word": "快適",
+    "reading": "かいてき",
+    "definition": "thoải mái, dễ chịu",
+    "example": "快適な生活を送る。",
+    "difficulty": "intermediate",
+    "topic": "na-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-295",
+    "word": "華やか",
+    "reading": "はなやか",
+    "definition": "lộng lẫy, rực rỡ",
+    "example": "華やかな雰囲気だ。",
+    "difficulty": "advanced",
+    "topic": "na-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-296",
+    "word": "静か",
+    "reading": "しずか",
+    "definition": "yên tĩnh",
+    "example": "図書館は静かだ。",
+    "difficulty": "beginner",
+    "topic": "na-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-297",
+    "word": "賑やか",
+    "reading": "にぎやか",
+    "definition": "nhộn nhịp, tấp nập",
+    "example": "この辺は賑やかだ。",
+    "difficulty": "beginner",
+    "topic": "na-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-298",
+    "word": "真剣",
+    "reading": "しんけん",
+    "definition": "nghiêm túc",
+    "example": "真剣に考える。",
+    "difficulty": "intermediate",
+    "topic": "na-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-299",
+    "word": "正直",
+    "reading": "しょうじき",
+    "definition": "thành thật, trung thực",
+    "example": "正直に答える。",
+    "difficulty": "beginner",
+    "topic": "na-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-300",
+    "word": "素直",
+    "reading": "すなお",
+    "definition": "ngoan ngoãn, ngay thẳng",
+    "example": "素直な子供だ。",
+    "difficulty": "intermediate",
+    "topic": "na-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-301",
+    "word": "丁寧",
+    "reading": "ていねい",
+    "definition": "lịch sự, chu đáo",
+    "example": "丁寧に説明する。",
+    "difficulty": "beginner",
+    "topic": "na-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-302",
+    "word": "独特",
+    "reading": "どくとく",
+    "definition": "độc đáo",
+    "example": "独特の文化がある。",
+    "difficulty": "intermediate",
+    "topic": "na-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-303",
+    "word": "生意気",
+    "reading": "なまいき",
+    "definition": "hỗn xược, kiêu ngạo",
+    "example": "生意気な言い方をする。",
+    "difficulty": "intermediate",
+    "topic": "na-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-304",
+    "word": "派手",
+    "reading": "はで",
+    "definition": "lòe loẹt, phô trương",
+    "example": "派手な服を着る。",
+    "difficulty": "intermediate",
+    "topic": "na-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-305",
+    "word": "地味",
+    "reading": "じみ",
+    "definition": "khiêm tốn, giản dị",
+    "example": "地味な色の服を選ぶ。",
+    "difficulty": "intermediate",
+    "topic": "na-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-306",
+    "word": "真面目",
+    "reading": "まじめ",
+    "definition": "nghiêm túc, chăm chỉ",
+    "example": "真面目に勉強する。",
+    "difficulty": "beginner",
+    "topic": "na-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-307",
+    "word": "適当",
+    "reading": "てきとう",
+    "definition": "thích hợp, qua loa",
+    "example": "適当に答えるな。",
+    "difficulty": "intermediate",
+    "topic": "na-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-308",
+    "word": "無理",
+    "reading": "むり",
+    "definition": "vô lý, bất khả thi",
+    "example": "無理な要求だ。",
+    "difficulty": "beginner",
+    "topic": "na-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-309",
+    "word": "余計",
+    "reading": "よけい",
+    "definition": "thừa, dư thừa",
+    "example": "余計な心配だ。",
+    "difficulty": "intermediate",
+    "topic": "na-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-310",
+    "word": "不利",
+    "reading": "ふり",
+    "definition": "bất lợi",
+    "example": "不利な条件だ。",
+    "difficulty": "intermediate",
+    "topic": "na-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-311",
+    "word": "有利",
+    "reading": "ゆうり",
+    "definition": "thuận lợi",
+    "example": "有利な立場に立つ。",
+    "difficulty": "intermediate",
+    "topic": "na-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-312",
+    "word": "豊か",
+    "reading": "ゆたか",
+    "definition": "giàu có, phong phú",
+    "example": "豊かな生活を送る。",
+    "difficulty": "intermediate",
+    "topic": "na-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-313",
+    "word": "細かい",
+    "reading": "こまかい",
+    "definition": "chi tiết, nhỏ",
+    "example": "細かい指示を出す。",
+    "difficulty": "intermediate",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-314",
+    "word": "濃い",
+    "reading": "こい",
+    "definition": "đậm, đặc",
+    "example": "お茶が濃い。",
+    "difficulty": "intermediate",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-315",
+    "word": "薄い",
+    "reading": "うすい",
+    "definition": "mỏng, nhạt",
+    "example": "壁が薄い。",
+    "difficulty": "beginner",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-316",
+    "word": "太い",
+    "reading": "ふとい",
+    "definition": "to, dày",
+    "example": "太い木がある。",
+    "difficulty": "beginner",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-317",
+    "word": "甘い",
+    "reading": "あまい",
+    "definition": "ngọt, dễ dãi",
+    "example": "ケーキが甘い。",
+    "difficulty": "beginner",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-318",
+    "word": "辛い",
+    "reading": "からい",
+    "definition": "cay, vất vả",
+    "example": "この料理は辛い。",
+    "difficulty": "beginner",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-319",
+    "word": "酸っぱい",
+    "reading": "すっぱい",
+    "definition": "chua",
+    "example": "レモンは酸っぱい。",
+    "difficulty": "beginner",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  },
+  {
+    "id": "nvs-320",
+    "word": "塩辛い",
+    "reading": "しおからい",
+    "definition": "mặn",
+    "example": "スープが塩辛い。",
+    "difficulty": "intermediate",
+    "topic": "i-adjectives",
+    "source": "新完全マスター N2 語彙"
+  }
+]

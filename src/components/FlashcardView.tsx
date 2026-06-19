@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import type { Flashcard, ReviewGrade } from '../types';
 
 interface FlashcardViewProps {
@@ -9,6 +9,25 @@ interface FlashcardViewProps {
 export function FlashcardView({ card, onRate }: FlashcardViewProps) {
   const [isFlipped, setIsFlipped] = useState(false);
 
+  const speak = useCallback((text: string, lang: 'english' | 'japanese') => {
+    if (!window.speechSynthesis) return;
+    
+    // Cancel any ongoing speech
+    window.speechSynthesis.cancel();
+    
+    const utterance = new SpeechSynthesisUtterance(text);
+    utterance.lang = lang === 'english' ? 'en-US' : 'ja-JP';
+    utterance.rate = 0.9; // Slightly slower for clarity
+    utterance.pitch = 1.0;
+    
+    window.speechSynthesis.speak(utterance);
+  }, []);
+
+  // Reset flip state when card changes (but don't speak automatically)
+  useEffect(() => {
+    setIsFlipped(false);
+  }, [card]);
+
   return (
     <div className="flex flex-col items-center space-y-12 w-full max-w-lg mx-auto">
       <div 
@@ -16,25 +35,36 @@ export function FlashcardView({ card, onRate }: FlashcardViewProps) {
         className={`w-full h-80 cursor-pointer perspective-1000 transition-transform duration-700 transform-style-3d relative ${isFlipped ? 'rotate-y-180' : ''}`}
       >
         {/* Front Side */}
-        <div className="absolute inset-0 w-full h-full lingo-card flex flex-col items-center justify-center text-center backface-hidden bg-white">
-          <span className="absolute top-6 text-[10px] font-black text-[#1cb0f6] uppercase tracking-[0.2em] bg-[#ddf4ff] px-4 py-1.5 rounded-full z-10">
+        <div className="absolute inset-0 w-full h-full lingo-card flex flex-col items-center justify-center text-center backface-hidden bg-[var(--bg-card)]">
+          <span className="absolute top-6 text-[10px] font-black text-[#1cb0f6] uppercase tracking-[0.2em] bg-[var(--tint-blue)] px-4 py-1.5 rounded-full z-10">
             Question
           </span>
+          
+          <button 
+            onClick={(e) => {
+              e.stopPropagation();
+              speak(card.word, card.language);
+            }}
+            className="absolute top-5 right-6 w-10 h-10 rounded-xl bg-[var(--gray-bg)] flex items-center justify-center text-xl hover:bg-[var(--blue-light)] hover:text-[var(--blue)] transition-colors border-2 border-[var(--gray-path)] active:translate-y-1"
+          >
+            🔊
+          </button>
+
           {card.imageUrl ? (
             <div className="flex flex-col items-center gap-4 w-full px-6">
               <div className="w-full h-40 rounded-2xl overflow-hidden border-2 border-[var(--border-main)] shadow-inner">
                 <img src={card.imageUrl} alt={card.word} className="w-full h-full object-cover" />
               </div>
-              <h2 className="text-3xl font-black text-[#4b4b4b] leading-tight break-words">
+              <h2 className="text-3xl font-black text-[var(--text-main)] leading-tight break-words">
                 {card.word}
               </h2>
             </div>
           ) : (
-            <h2 className="text-4xl font-black text-[#4b4b4b] leading-tight px-6 break-words">
+            <h2 className="text-4xl font-black text-[var(--text-main)] leading-tight px-6 break-words">
               {card.word}
             </h2>
           )}
-          <div className="absolute bottom-6 flex items-center gap-2 text-[#afafaf] font-black text-[10px] uppercase tracking-widest animate-pulse">
+          <div className="absolute bottom-6 flex items-center gap-2 text-[var(--text-muted)] font-black text-[10px] uppercase tracking-widest animate-pulse">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
             </svg>
@@ -47,22 +77,42 @@ export function FlashcardView({ card, onRate }: FlashcardViewProps) {
           <span className="absolute top-6 text-[10px] font-black text-white/50 uppercase tracking-[0.2em] bg-white/20 px-4 py-1.5 rounded-full">
             Meaning
           </span>
+
+          <button 
+            onClick={(e) => {
+              e.stopPropagation();
+              speak(card.definition, card.language);
+            }}
+            className="absolute top-5 right-6 w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center text-xl hover:bg-white/40 transition-colors border-2 border-white/30 active:translate-y-1"
+          >
+            🔊
+          </button>
+
           <div className="space-y-6 px-6">
             <p className="text-3xl font-black leading-tight">{card.definition}</p>
             {card.example && (
-              <div className="bg-white/10 p-4 rounded-xl border-2 border-white/20 backdrop-blur-sm">
+              <div className="bg-white/10 p-4 rounded-xl border-2 border-white/20 backdrop-blur-sm relative">
                 <p className="text-xs font-bold italic text-white/90">
                   "{card.example}"
                 </p>
+                <button 
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    speak(card.example!, card.language);
+                  }}
+                  className="mt-2 text-[10px] bg-white/10 px-2 py-1 rounded-md hover:bg-white/20"
+                >
+                  🔊 Read Example
+                </button>
               </div>
             )}
           </div>
         </div>
       </div>
-
+...
       {/* Rating Controls - SIMPLIFIED TO 3 LEVELS */}
       <div className={`w-full space-y-6 transition-all duration-500 ${isFlipped ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4 pointer-events-none'}`}>
-        <h3 className="text-center text-[10px] font-black text-[#afafaf] uppercase tracking-[0.2em]">Mức độ thuộc từ?</h3>
+        <h3 className="text-center text-[10px] font-black text-[var(--text-muted)] uppercase tracking-[0.2em]">Mức độ thuộc từ?</h3>
         <div className="grid grid-cols-3 gap-4">
           <button
             onClick={(e) => {
@@ -95,7 +145,7 @@ export function FlashcardView({ card, onRate }: FlashcardViewProps) {
             DỄ
           </button>
         </div>
-        <p className="text-center text-[9px] font-bold text-[#afafaf] italic">
+        <p className="text-center text-[9px] font-bold text-[var(--text-muted)] italic">
           Dễ: ôn lại sau lâu hơn • Khó: ôn lại sớm hơn
         </p>
       </div>

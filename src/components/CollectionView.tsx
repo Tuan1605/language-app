@@ -32,7 +32,7 @@ export function CollectionView({ cards, activeTrack, onDelete }: CollectionViewP
             placeholder="Search words..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full bg-[var(--bg-hover)] border-2 border-[var(--border-main)] rounded-2xl py-3 px-10 font-bold outline-none focus:border-[#1cb0f6] transition-all"
+            className="w-full bg-[var(--bg-hover)] border-2 border-[var(--border-main)] rounded-2xl py-3 px-10 font-bold outline-none focus:border-[var(--blue)] transition-all text-[var(--text-main)]"
           />
           <span className="absolute left-4 top-1/2 -translate-y-1/2 opacity-30">🔍</span>
         </div>
@@ -41,12 +41,12 @@ export function CollectionView({ cards, activeTrack, onDelete }: CollectionViewP
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-h-[600px] overflow-y-auto pr-2 custom-scrollbar">
         {filtered.length > 0 ? (
           filtered.map(card => (
-            <div key={card.id} className="p-6 bg-[var(--bg-hover)] border-2 border-[var(--border-main)] rounded-2xl flex justify-between items-center group hover:border-[#1cb0f6] transition-all">
+            <div key={card.id} className="p-6 bg-[var(--bg-hover)] border-2 border-[var(--border-main)] rounded-2xl flex justify-between items-center group hover:border-[var(--blue)] transition-all">
               <div className="flex-1">
                 <p className="text-lg font-black text-[var(--text-main)]">{card.word}</p>
                 <p className="text-sm font-bold text-[var(--text-muted)] mt-1">{card.definition}</p>
                 <div className="flex gap-2 mt-3">
-                   <span className="text-[9px] font-black uppercase bg-[#1cb0f6]/10 text-[#1cb0f6] px-2 py-0.5 rounded-md">{card.difficulty}</span>
+                   <span className="text-[9px] font-black uppercase bg-[var(--blue)]/10 text-[var(--blue)] px-2 py-0.5 rounded-md">{card.difficulty}</span>
                 </div>
               </div>
               <button 

@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react';
 import type { DictationLesson } from '../types';
 import { speak, langForCategory } from '../utils/tts';
+import { calculateSimilarity } from '../utils/stringSimilarity';
 
 interface DictationViewProps {
   lesson: DictationLesson;
@@ -25,19 +26,7 @@ export function DictationView({ lesson, onComplete }: DictationViewProps) {
   };
 
   const checkAnswer = () => {
-    const target = lesson.targetText.toLowerCase().replace(/[.,!?;]/g, '').trim();
-    const input = userInput.toLowerCase().replace(/[.,!?;]/g, '').trim();
-    
-    // Basic word-based similarity
-    const targetWords = target.split(/\s+/);
-    const inputWords = input.split(/\s+/);
-    
-    let matches = 0;
-    targetWords.forEach(word => {
-      if (inputWords.includes(word)) matches++;
-    });
-
-    const acc = Math.round((matches / targetWords.length) * 100);
+    const acc = calculateSimilarity(lesson.targetText, userInput);
     setAccuracy(acc);
 
     if (acc >= 85) {

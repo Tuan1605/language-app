@@ -85,10 +85,16 @@ export interface GrammarPoint {
 export interface KanjiEntry {
   id: string;
   kanji: string;
-  reading: string;
+  reading?: string;
+  on_reading?: string;
+  kun_reading?: string;
   meaning: string;
   example?: string;
-  difficulty: Difficulty;
+  examples?: { word: string; reading: string; meaning: string }[];
+  difficulty?: Difficulty;
+  stroke_count?: number;
+  jlpt_level?: string;
+  source?: string;
 }
 
 export type SessionTask = 

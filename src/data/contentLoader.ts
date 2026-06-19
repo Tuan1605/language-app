@@ -13,10 +13,13 @@ import type {
 } from '../types';
 
 import toeicVocab from './toeic/vocabulary.json';
+import toeicVocabSupplement from './toeic/vocabulary-supplement.json';
 import toeicQuestions from './toeic/questions.json';
 import n2Vocab from './n2/vocabulary.json';
+import n2VocabSupplement from './n2/vocabulary-supplement.json';
 import n2Questions from './n2/questions.json';
 import n2Grammar from './n2/grammar.json';
+import n2KanjiData from './n2/kanji.json';
 
 const nowIso = () => new Date().toISOString();
 
@@ -60,11 +63,14 @@ function toFlashcard(raw: RawVocab, language: 'english' | 'japanese'): Flashcard
   };
 }
 
-export const SEED_TOEIC_CARDS: Flashcard[] = (toeicVocab as RawVocab[]).map((v) =>
+const allToeicVocab = [...(toeicVocab as RawVocab[]), ...(toeicVocabSupplement as RawVocab[])];
+const allN2Vocab = [...(n2Vocab as RawVocab[]), ...(n2VocabSupplement as RawVocab[])];
+
+export const SEED_TOEIC_CARDS: Flashcard[] = allToeicVocab.map((v) =>
   toFlashcard(v, 'english')
 );
 
-export const SEED_N2_CARDS: Flashcard[] = (n2Vocab as RawVocab[]).map((v) =>
+export const SEED_N2_CARDS: Flashcard[] = allN2Vocab.map((v) =>
   toFlashcard(v, 'japanese')
 );
 
@@ -86,4 +92,4 @@ export const SEED_QUESTIONS: Question[] = [
 
 export const SEED_N2_GRAMMAR: GrammarPoint[] = n2Grammar as GrammarPoint[];
 
-export const SEED_N2_KANJI: KanjiEntry[] = [];
+export const SEED_N2_KANJI: KanjiEntry[] = n2KanjiData as KanjiEntry[];

@@ -23,15 +23,15 @@ export function AnalyticsView({ results, activeTrack }: AnalyticsViewProps) {
 
       {/* Summary Cards */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-        <div className="p-8 bg-[#f2fcf0] border-2 border-[#58cc02] rounded-[2rem] text-center">
+        <div className="p-8 bg-[var(--tint-green)] border-2 border-[#58cc02] rounded-[2rem] text-center">
           <p className="text-[10px] font-black text-[#58cc02] uppercase mb-2">Total Quests</p>
           <p className="text-5xl font-black text-[#58cc02]">{filtered.length}</p>
         </div>
-        <div className="p-8 bg-[#ddf4ff] border-2 border-[#1cb0f6] rounded-[2rem] text-center">
+        <div className="p-8 bg-[var(--tint-blue)] border-2 border-[#1cb0f6] rounded-[2rem] text-center">
           <p className="text-[10px] font-black text-[#1cb0f6] uppercase mb-2">Avg Accuracy</p>
           <p className="text-5xl font-black text-[#1cb0f6]">{avgScore}%</p>
         </div>
-        <div className="p-8 bg-[#fff5f5] border-2 border-[#ff4b4b] rounded-[2rem] text-center">
+        <div className="p-8 bg-[var(--tint-red)] border-2 border-[#ff4b4b] rounded-[2rem] text-center">
           <p className="text-[10px] font-black text-[#ff4b4b] uppercase mb-2">Mastery Rank</p>
           <p className="text-2xl font-black text-[#ff4b4b] mt-3">
             {avgScore >= 80 ? 'EXPERT' : avgScore >= 50 ? 'WARRIOR' : 'BEGINNER'}

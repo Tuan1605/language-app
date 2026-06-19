@@ -1,5 +1,20 @@
 import { useState, useEffect, useRef } from 'react';
 import type { SpeakingLesson } from '../types';
+import { calculateSimilarity } from '../utils/stringSimilarity';
+
+interface SpeechRecognitionEvent {
+  results: { [index: number]: { [index: number]: { transcript: string } } };
+}
+
+interface SpeechRecognitionInstance {
+  continuous: boolean;
+  interimResults: boolean;
+  lang: string;
+  onresult: ((event: SpeechRecognitionEvent) => void) | null;
+  onend: (() => void) | null;
+  start: () => void;
+  stop: () => void;
+}
 
 interface SpeakingViewProps {
   lesson: SpeakingLesson;
@@ -12,49 +27,10 @@ export function SpeakingView({ lesson, onComplete }: SpeakingViewProps) {
   const [accuracy, setAccuracy] = useState<number | null>(null);
   const [feedback, setFeedback] = useState<'none' | 'success' | 'retry'>('none');
   
-  const recognitionRef = useRef<any>(null);
-
-  useEffect(() => {
-    const SpeechRecognition = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
-    if (SpeechRecognition) {
-      recognitionRef.current = new SpeechRecognition();
-      recognitionRef.current.continuous = false;
-      recognitionRef.current.interimResults = false;
-      recognitionRef.current.lang = lesson.category === 'toeic' ? 'en-US' : 'ja-JP';
-
-      recognitionRef.current.onresult = (event: any) => {
-        const result = event.results[0][0].transcript;
-        setTranscript(result);
-        checkAccuracy(result);
-      };
-
-      recognitionRef.current.onend = () => {
-        setIsListening(false);
-      };
-    }
-  }, [lesson]);
-
-  const startListening = () => {
-    setTranscript('');
-    setAccuracy(null);
-    setFeedback('none');
-    setIsListening(true);
-    recognitionRef.current?.start();
-  };
+  const recognitionRef = useRef<SpeechRecognitionInstance | null>(null);
 
   const checkAccuracy = (text: string) => {
-    const target = lesson.targetSentence.toLowerCase().replace(/[.,!?;]/g, '');
-    const recognized = text.toLowerCase().replace(/[.,!?;]/g, '');
-    
-    // Simple string similarity (very basic)
-    const targetWords = target.split(' ');
-    const recognizedWords = recognized.split(' ');
-    let matches = 0;
-    targetWords.forEach(word => {
-      if (recognizedWords.includes(word)) matches++;
-    });
-
-    const acc = Math.round((matches / targetWords.length) * 100);
+    const acc = calculateSimilarity(lesson.targetSentence, text);
     setAccuracy(acc);
 
     if (acc >= 70) {
@@ -63,6 +39,44 @@ export function SpeakingView({ lesson, onComplete }: SpeakingViewProps) {
     } else {
       setFeedback('retry');
     }
+  };
+
+  useEffect(() => {
+    const SpeechRecognitionAPI = (window as unknown as { SpeechRecognition?: new () => SpeechRecognitionInstance; webkitSpeechRecognition?: new () => SpeechRecognitionInstance }).SpeechRecognition || (window as unknown as { webkitSpeechRecognition?: new () => SpeechRecognitionInstance }).webkitSpeechRecognition;
+    if (SpeechRecognitionAPI) {
+      const recognition = new SpeechRecognitionAPI();
+      recognition.continuous = false;
+      recognition.interimResults = false;
+      recognition.lang = lesson.category === 'toeic' ? 'en-US' : 'ja-JP';
+
+      recognition.onresult = (event: SpeechRecognitionEvent) => {
+        const result = event.results[0][0].transcript;
+        setTranscript(result);
+        checkAccuracy(result);
+      };
+
+      recognition.onend = () => {
+        setIsListening(false);
+      };
+
+      recognitionRef.current = recognition;
+    }
+
+    return () => {
+      if (recognitionRef.current) {
+        recognitionRef.current.onresult = null;
+        recognitionRef.current.onend = null;
+      }
+    };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [lesson]);
+
+  const startListening = () => {
+    setTranscript('');
+    setAccuracy(null);
+    setFeedback('none');
+    setIsListening(true);
+    recognitionRef.current?.start();
   };
 
   return (

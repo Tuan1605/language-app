@@ -91,10 +91,17 @@ export function ListeningView({ lesson, onBack, hideBackButton }: ListeningViewP
           </button>
           
           <div className="flex-1 h-3 bg-[var(--border-main)] rounded-full overflow-hidden">
-            <div 
-              className="h-full bg-[#58cc02] transition-all duration-300" 
-              style={{ width: `${(currentTime / (audioRef.current?.duration || 1)) * 100}%` }}
-            />
+            {lesson.audioUrl ? (
+              <div 
+                className="h-full bg-[#58cc02] transition-all duration-300" 
+                style={{ width: `${(currentTime / (audioRef.current?.duration || 1)) * 100}%` }}
+              />
+            ) : (
+              <div 
+                className="h-full bg-[#58cc02] transition-all duration-300" 
+                style={{ width: isPlaying ? '100%' : '0%' }}
+              />
+            )}
           </div>
           
           <span className="text-xs font-black text-[var(--text-muted)] w-10 text-right tabular-nums">

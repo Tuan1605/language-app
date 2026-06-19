@@ -29,6 +29,18 @@
   --bg-card: #ffffff;
   --border-main: #e5e5e5;
   --bg-hover: #f7f7f7;
+
+  /* Tints used by quiz/flashcard UI. These re-export the brand colors as soft
+     backgrounds so components can drop hard-coded light hex values and stay
+     legible in both light and dark themes. */
+  --tint-blue: #ddf4ff;
+  --tint-green: #f2fcf0;
+  --tint-red: #fff5f5;
+  --tint-amber: #fff4e0;
+  --text-on-tint: #4b4b4b;
+  --card-input-bg: #f7f7f7;
+  --card-input-border: #e5e5e5;
+  --quiz-divider: #f7f7f7;
 }
 
 [data-theme='dark'] {
@@ -41,6 +53,15 @@
   --bg-card: #1a2a32;
   --border-main: #2a3a42;
   --bg-hover: #1e2e36;
+
+  --tint-blue: #123544;
+  --tint-green: #123018;
+  --tint-red: #3a1818;
+  --tint-amber: #3a2a10;
+  --text-on-tint: #ffffff;
+  --card-input-bg: #131f24;
+  --card-input-border: #2a3a42;
+  --quiz-divider: #2a3a42;
 }
 
 body {
