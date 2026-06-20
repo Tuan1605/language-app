@@ -26,7 +26,7 @@ export function FlashcardView({ card, onRate }: FlashcardViewProps) {
   // Reset flip state when card changes (but don't speak automatically)
   useEffect(() => {
     setIsFlipped(false);
-  }, [card]);
+  }, [card.id]);
 
   return (
     <div className="flex flex-col items-center space-y-12 w-full max-w-lg mx-auto">
@@ -113,7 +113,7 @@ export function FlashcardView({ card, onRate }: FlashcardViewProps) {
           </div>
         </div>
       </div>
-...
+
       {/* Rating Controls - SIMPLIFIED TO 3 LEVELS */}
       <div className={`w-full space-y-6 transition-all duration-500 ${isFlipped ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4 pointer-events-none'}`}>
         <h3 className="text-center text-[10px] font-black text-[var(--text-muted)] uppercase tracking-[0.2em]">Mức độ thuộc từ?</h3>

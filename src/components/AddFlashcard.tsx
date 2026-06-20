@@ -1,20 +1,22 @@
 import { useState } from 'react';
 
 interface AddFlashcardProps {
-  onAdd: (card: { word: string; definition: string; language: 'english' | 'japanese' }) => void;
+  onAdd: (card: { word: string; definition: string; example?: string; language: 'english' | 'japanese' }) => void;
 }
 
 export function AddFlashcard({ onAdd }: AddFlashcardProps) {
   const [word, setWord] = useState('');
   const [definition, setDefinition] = useState('');
+  const [example, setExample] = useState('');
   const [language, setLanguage] = useState<'english' | 'japanese'>('english');
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!word || !definition) return;
-    onAdd({ word, definition, language });
+    onAdd({ word, definition, example: example || undefined, language });
     setWord('');
     setDefinition('');
+    setExample('');
   };
 
   return (
@@ -51,6 +53,17 @@ export function AddFlashcard({ onAdd }: AddFlashcardProps) {
             rows={3}
             className="w-full bg-[var(--card-input-bg)] border-2 border-[var(--card-input-border)] rounded-2xl p-5 text-lg font-bold focus:border-[#1cb0f6] focus:bg-[var(--bg-card)] transition-all outline-none resize-none text-[var(--text-main)] placeholder:text-[var(--text-muted)]"
             placeholder="What does it mean?..."
+          />
+        </div>
+
+        <div className="space-y-2">
+          <label className="text-[9px] font-black text-[var(--text-muted)] uppercase tracking-[0.2em] ml-1">Example Sentence (optional)</label>
+          <input
+            type="text"
+            value={example}
+            onChange={(e) => setExample(e.target.value)}
+            className="w-full bg-[var(--card-input-bg)] border-2 border-[var(--card-input-border)] rounded-2xl px-5 h-14 text-lg font-bold focus:border-[#1cb0f6] focus:bg-[var(--bg-card)] transition-all outline-none text-[var(--text-main)] placeholder:text-[var(--text-muted)]"
+            placeholder="e.g. The bonus serves as an incentive."
           />
         </div>
 

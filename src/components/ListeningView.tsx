@@ -13,23 +13,21 @@ export function ListeningView({ lesson, onBack, hideBackButton }: ListeningViewP
   const [isPlaying, setIsPlaying] = useState(false);
   const [activeIdx, setActiveIdx] = useState(-1);
   const audioRef = useRef<HTMLAudioElement>(null);
-  const ttsTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const ttsTimersRef = useRef<ReturnType<typeof setTimeout>[]>([]);
   const ttsDoneRef = useRef(false);
 
-  const clearTTSTimer = useCallback(() => {
-    if (ttsTimerRef.current) {
-      clearTimeout(ttsTimerRef.current);
-      ttsTimerRef.current = null;
-    }
+  const clearTTSTimers = useCallback(() => {
+    ttsTimersRef.current.forEach(id => clearTimeout(id));
+    ttsTimersRef.current = [];
   }, []);
 
   // Cleanup on unmount
   useEffect(() => {
     return () => {
       stopSpeaking();
-      clearTTSTimer();
+      clearTTSTimers();
     };
-  }, [clearTTSTimer]);
+  }, [clearTTSTimers]);
 
   const handleTimeUpdate = () => {
     if (audioRef.current) {
@@ -52,7 +50,7 @@ export function ListeningView({ lesson, onBack, hideBackButton }: ListeningViewP
     // Fallback: synthesize the transcript with the Web Speech API.
     if (isPlaying) {
       stopSpeaking();
-      clearTTSTimer();
+      clearTTSTimers();
       setIsPlaying(false);
       setActiveIdx(-1);
       return;
@@ -63,9 +61,9 @@ export function ListeningView({ lesson, onBack, hideBackButton }: ListeningViewP
     const transcript = lesson.transcript;
 
     // Highlight each segment sequentially based on estimated timing.
-    // When TTS starts, we step through the transcript indices.
     const estimatedMsPerChar = langForCategory(lesson.category) === 'ja-JP' ? 120 : 70;
     let accumulated = 0;
+    const timers: ReturnType<typeof setTimeout>[] = [];
 
     for (let i = 0; i < transcript.length; i++) {
       const text = transcript[i].text;
@@ -73,20 +71,20 @@ export function ListeningView({ lesson, onBack, hideBackButton }: ListeningViewP
       accumulated += dur;
 
       const idx = i;
-      ((delay, index) => {
-        ttsTimerRef.current = setTimeout(() => {
-          setActiveIdx(index);
-        }, delay);
-      })(accumulated, idx);
+      timers.push(setTimeout(() => {
+        setActiveIdx(idx);
+      }, accumulated));
     }
 
     // Mark playback done after all segments.
     const totalDur = accumulated + 500;
-    ttsTimerRef.current = setTimeout(() => {
+    timers.push(setTimeout(() => {
       setActiveIdx(-1);
       setIsPlaying(false);
       ttsDoneRef.current = true;
-    }, totalDur);
+    }, totalDur));
+
+    ttsTimersRef.current = timers;
 
     const fullText = transcript.map((t) => t.text).join(' ');
     const started = speak(fullText, {
@@ -96,14 +94,14 @@ export function ListeningView({ lesson, onBack, hideBackButton }: ListeningViewP
         setIsPlaying(true);
       },
       onEnd: () => {
-        clearTTSTimer();
+        clearTTSTimers();
         setActiveIdx(-1);
         setIsPlaying(false);
         ttsDoneRef.current = true;
       },
     });
     if (!started) {
-      clearTTSTimer();
+      clearTTSTimers();
       setIsPlaying(false);
       setActiveIdx(-1);
     }

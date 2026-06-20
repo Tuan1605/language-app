@@ -13,6 +13,7 @@ interface SpeechRecognitionInstance {
   lang: string;
   onresult: ((event: SpeechRecognitionEvent) => void) | null;
   onend: (() => void) | null;
+  onerror: (() => void) | null;
   start: () => void;
   stop: () => void;
 }
@@ -61,13 +62,19 @@ export function SpeakingView({ lesson, onComplete }: SpeakingViewProps) {
         setIsListening(false);
       };
 
+      recognition.onerror = () => {
+        setIsListening(false);
+      };
+
       recognitionRef.current = recognition;
     }
 
     return () => {
       if (recognitionRef.current) {
+        try { recognitionRef.current.stop(); } catch { /* ignore */ }
         recognitionRef.current.onresult = null;
         recognitionRef.current.onend = null;
+        recognitionRef.current.onerror = null;
       }
     };
   }, [lesson, checkAccuracy]);
@@ -76,8 +83,10 @@ export function SpeakingView({ lesson, onComplete }: SpeakingViewProps) {
     setTranscript('');
     setAccuracy(null);
     setFeedback('none');
-    setIsListening(true);
-    recognitionRef.current?.start();
+    if (!isListening) {
+      setIsListening(true);
+      recognitionRef.current?.start();
+    }
   };
 
   const handlePlayExample = () => {

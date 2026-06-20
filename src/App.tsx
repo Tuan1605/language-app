@@ -164,12 +164,13 @@ function App() {
     setMode('practice');
   };
 
-  const handleAddCard = (data: { word: string; definition: string; language: 'english' | 'japanese' }) => {
+  const handleAddCard = (data: { word: string; definition: string; example?: string; language: 'english' | 'japanese' }) => {
     const newCard: Flashcard = {
       id: crypto.randomUUID(),
       user_id: 'guest', 
       word: data.word, 
       definition: data.definition, 
+      example: data.example,
       language: data.language,
       category: data.language === 'english' ? 'toeic' : 'n2', 
       difficulty: 'beginner', 
