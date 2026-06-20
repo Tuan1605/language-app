@@ -1,6 +1,7 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import type { SpeakingLesson } from '../types';
 import { calculateSimilarity } from '../utils/stringSimilarity';
+import { speak, langForCategory } from '../utils/tts';
 
 interface SpeechRecognitionEvent {
   results: { [index: number]: { [index: number]: { transcript: string } } };
@@ -23,13 +24,14 @@ interface SpeakingViewProps {
 
 export function SpeakingView({ lesson, onComplete }: SpeakingViewProps) {
   const [isListening, setIsListening] = useState(false);
+  const [isPlayingExample, setIsPlayingExample] = useState(false);
   const [transcript, setTranscript] = useState('');
   const [accuracy, setAccuracy] = useState<number | null>(null);
   const [feedback, setFeedback] = useState<'none' | 'success' | 'retry'>('none');
-  
+
   const recognitionRef = useRef<SpeechRecognitionInstance | null>(null);
 
-  const checkAccuracy = (text: string) => {
+  const checkAccuracy = useCallback((text: string) => {
     const acc = calculateSimilarity(lesson.targetSentence, text);
     setAccuracy(acc);
 
@@ -39,7 +41,7 @@ export function SpeakingView({ lesson, onComplete }: SpeakingViewProps) {
     } else {
       setFeedback('retry');
     }
-  };
+  }, [lesson.targetSentence, onComplete]);
 
   useEffect(() => {
     const SpeechRecognitionAPI = (window as unknown as { SpeechRecognition?: new () => SpeechRecognitionInstance; webkitSpeechRecognition?: new () => SpeechRecognitionInstance }).SpeechRecognition || (window as unknown as { webkitSpeechRecognition?: new () => SpeechRecognitionInstance }).webkitSpeechRecognition;
@@ -68,8 +70,7 @@ export function SpeakingView({ lesson, onComplete }: SpeakingViewProps) {
         recognitionRef.current.onend = null;
       }
     };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [lesson]);
+  }, [lesson, checkAccuracy]);
 
   const startListening = () => {
     setTranscript('');
@@ -77,6 +78,15 @@ export function SpeakingView({ lesson, onComplete }: SpeakingViewProps) {
     setFeedback('none');
     setIsListening(true);
     recognitionRef.current?.start();
+  };
+
+  const handlePlayExample = () => {
+    if (isPlayingExample) return;
+    setIsPlayingExample(true);
+    speak(lesson.targetSentence, {
+      lang: langForCategory(lesson.category),
+      onEnd: () => setIsPlayingExample(false),
+    });
   };
 
   return (
@@ -91,7 +101,7 @@ export function SpeakingView({ lesson, onComplete }: SpeakingViewProps) {
         </div>
       </div>
 
-      <div className="text-center space-y-6 mb-12">
+      <div className="text-center space-y-6 mb-10">
         <p className="text-[10px] font-black text-[#1cb0f6] uppercase tracking-[0.2em] mb-2">Speak this sentence:</p>
         <h3 className="text-3xl font-black text-[var(--text-main)] leading-tight px-4">
           {lesson.targetSentence}
@@ -101,27 +111,39 @@ export function SpeakingView({ lesson, onComplete }: SpeakingViewProps) {
         </p>
       </div>
 
+      {/* Listen Example button — lets user hear the sentence before recording */}
+      <button
+        onClick={handlePlayExample}
+        disabled={isPlayingExample}
+        className="w-full h-12 btn-3d btn-purple rounded-2xl text-sm font-black mb-8 flex items-center justify-center gap-2"
+        aria-label="Listen to example pronunciation"
+      >
+        <span className="text-lg">{isPlayingExample ? '🔊' : '🔈'}</span>
+        {isPlayingExample ? 'Playing...' : 'LISTEN TO EXAMPLE'}
+      </button>
+
       <div className="relative flex flex-col items-center gap-8 w-full">
-        <button 
+        <button
           onClick={startListening}
           disabled={isListening}
           className={`w-28 h-28 rounded-full flex items-center justify-center text-4xl shadow-2xl transition-all relative z-10
             ${isListening ? 'bg-[#ff4b4b] animate-pulse scale-110 shadow-red-200' : 'btn-3d btn-blue'}`}
+          aria-label={isListening ? 'Recording in progress' : 'Start recording'}
         >
           {isListening ? '🎙️' : '🎤'}
           {isListening && (
             <div className="absolute -inset-4 border-4 border-[#ff4b4b]/30 rounded-full animate-ping"></div>
           )}
         </button>
-        
+
         <p className="text-[10px] font-black text-[var(--text-muted)] uppercase tracking-widest">
           {isListening ? 'Listening...' : 'Tap to start recording'}
         </p>
 
         {transcript && (
           <div className={`w-full p-6 rounded-2xl border-2 transition-all duration-500 ${
-            feedback === 'success' ? 'bg-[#f2fcf0] border-[#58cc02] text-[#58cc02]' : 
-            feedback === 'retry' ? 'bg-[#fff5f5] border-[#ff4b4b] text-[#ff4b4b]' : 
+            feedback === 'success' ? 'bg-[var(--tint-green)] border-[#58cc02] text-[#58cc02]' :
+            feedback === 'retry' ? 'bg-[var(--tint-red)] border-[#ff4b4b] text-[#ff4b4b]' :
             'bg-[var(--bg-hover)] border-[var(--border-main)] text-[var(--text-main)]'
           }`}>
             <p className="text-[9px] font-black uppercase tracking-widest mb-2 opacity-60 text-center">I heard:</p>
@@ -138,14 +160,27 @@ export function SpeakingView({ lesson, onComplete }: SpeakingViewProps) {
               <p className="text-center font-black mt-4 animate-bounce">✨ EXCELLENT! ✨</p>
             )}
             {feedback === 'retry' && (
-              <p className="text-center font-black mt-4">Keep trying! Focus on clarity. 🔄</p>
+              <div className="flex items-center justify-center gap-3 mt-4">
+                <p className="font-black">Keep trying! 🔄</p>
+                <button onClick={startListening} className="text-[10px] font-black uppercase px-3 py-1 rounded-lg bg-[var(--bg-hover)] border-2 border-[var(--border-main)] hover:border-[#ff4b4b] transition-colors">
+                  RETRY
+                </button>
+              </div>
             )}
           </div>
         )}
       </div>
 
+      {/* Skip button when mic unavailable or user wants to move on */}
+      <button
+        onClick={onComplete}
+        className="mt-8 text-[var(--text-muted)] font-black hover:text-[var(--text-main)] transition-colors uppercase tracking-[0.2em] text-[10px]"
+      >
+        Skip this exercise →
+      </button>
+
       {!recognitionRef.current && (
-        <p className="mt-8 text-xs text-[#ff4b4b] font-bold text-center">
+        <p className="mt-4 text-xs text-[#ff4b4b] font-bold text-center">
           ⚠️ Your browser does not support voice recognition. Please use Chrome or Edge.
         </p>
       )}

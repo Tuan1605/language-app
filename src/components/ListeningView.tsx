@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect, useCallback } from 'react';
 import type { ListeningLesson } from '../types';
 import { speak, stopSpeaking, isTTSSupported, langForCategory } from '../utils/tts';
 
@@ -11,7 +11,25 @@ interface ListeningViewProps {
 export function ListeningView({ lesson, onBack, hideBackButton }: ListeningViewProps) {
   const [currentTime, setCurrentTime] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [activeIdx, setActiveIdx] = useState(-1);
   const audioRef = useRef<HTMLAudioElement>(null);
+  const ttsTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const ttsDoneRef = useRef(false);
+
+  const clearTTSTimer = useCallback(() => {
+    if (ttsTimerRef.current) {
+      clearTimeout(ttsTimerRef.current);
+      ttsTimerRef.current = null;
+    }
+  }, []);
+
+  // Cleanup on unmount
+  useEffect(() => {
+    return () => {
+      stopSpeaking();
+      clearTTSTimer();
+    };
+  }, [clearTTSTimer]);
 
   const handleTimeUpdate = () => {
     if (audioRef.current) {
@@ -34,23 +52,75 @@ export function ListeningView({ lesson, onBack, hideBackButton }: ListeningViewP
     // Fallback: synthesize the transcript with the Web Speech API.
     if (isPlaying) {
       stopSpeaking();
+      clearTTSTimer();
       setIsPlaying(false);
+      setActiveIdx(-1);
       return;
     }
-    const fullText = lesson.transcript.map((t) => t.text).join(' ');
+
+    ttsDoneRef.current = false;
+    setIsPlaying(true);
+    const transcript = lesson.transcript;
+
+    // Highlight each segment sequentially based on estimated timing.
+    // When TTS starts, we step through the transcript indices.
+    const estimatedMsPerChar = langForCategory(lesson.category) === 'ja-JP' ? 120 : 70;
+    let accumulated = 0;
+
+    for (let i = 0; i < transcript.length; i++) {
+      const text = transcript[i].text;
+      const dur = Math.max(800, text.length * estimatedMsPerChar);
+      accumulated += dur;
+
+      const idx = i;
+      ((delay, index) => {
+        ttsTimerRef.current = setTimeout(() => {
+          setActiveIdx(index);
+        }, delay);
+      })(accumulated, idx);
+    }
+
+    // Mark playback done after all segments.
+    const totalDur = accumulated + 500;
+    ttsTimerRef.current = setTimeout(() => {
+      setActiveIdx(-1);
+      setIsPlaying(false);
+      ttsDoneRef.current = true;
+    }, totalDur);
+
+    const fullText = transcript.map((t) => t.text).join(' ');
     const started = speak(fullText, {
       lang: langForCategory(lesson.category),
-      onStart: () => setIsPlaying(true),
-      onEnd: () => setIsPlaying(false),
+      onStart: () => {
+        setActiveIdx(0);
+        setIsPlaying(true);
+      },
+      onEnd: () => {
+        clearTTSTimer();
+        setActiveIdx(-1);
+        setIsPlaying(false);
+        ttsDoneRef.current = true;
+      },
     });
-    if (started) setIsPlaying(true);
+    if (!started) {
+      clearTTSTimer();
+      setIsPlaying(false);
+      setActiveIdx(-1);
+    }
   };
+
+  // Progress fraction for TTS (based on active index) vs audio (based on currentTime).
+  const progressPercent = lesson.audioUrl && audioRef.current?.duration
+    ? (currentTime / (audioRef.current.duration || 1)) * 100
+    : activeIdx >= 0
+      ? Math.min(100, ((activeIdx + 1) / lesson.transcript.length) * 100)
+      : isPlaying ? 100 : 0;
 
   return (
     <div className="bg-[var(--bg-card)] lingo-card p-10 max-w-3xl mx-auto w-full animate-in slide-in-from-bottom-8 duration-500">
       <div className="flex justify-between items-center mb-10">
         {!hideBackButton ? (
-          <button onClick={onBack} className="text-[var(--text-muted)] hover:text-[var(--text-main)] transition-colors">
+          <button onClick={onBack} aria-label="Go back" className="text-[var(--text-muted)] hover:text-[var(--text-main)] transition-colors">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M15 19l-7-7 7-7" />
             </svg>
@@ -70,18 +140,19 @@ export function ListeningView({ lesson, onBack, hideBackButton }: ListeningViewP
       <h2 className="text-3xl font-black text-[var(--text-main)] mb-10 text-center leading-tight">{lesson.title}</h2>
 
       <div className="bg-[var(--bg-hover)] p-8 rounded-[2rem] border-2 border-[var(--border-main)] mb-12 shadow-inner">
-        <audio 
+        <audio
           ref={audioRef}
           src={lesson.audioUrl}
           onTimeUpdate={handleTimeUpdate}
           onEnded={() => setIsPlaying(false)}
           className="hidden"
         />
-        
+
         <div className="flex items-center gap-6">
-          <button 
+          <button
             onClick={togglePlay}
             className={`w-16 h-16 rounded-full flex items-center justify-center text-white shadow-xl transition-all active:scale-95 ${isPlaying ? 'bg-[#ff4b4b]' : 'bg-[#58cc02]'}`}
+            aria-label={isPlaying ? 'Pause' : 'Play'}
           >
             {isPlaying ? (
               <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
@@ -89,21 +160,14 @@ export function ListeningView({ lesson, onBack, hideBackButton }: ListeningViewP
               <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132A1 1 0 0010 11.5v-0.664z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
             )}
           </button>
-          
+
           <div className="flex-1 h-3 bg-[var(--border-main)] rounded-full overflow-hidden">
-            {lesson.audioUrl ? (
-              <div 
-                className="h-full bg-[#58cc02] transition-all duration-300" 
-                style={{ width: `${(currentTime / (audioRef.current?.duration || 1)) * 100}%` }}
-              />
-            ) : (
-              <div 
-                className="h-full bg-[#58cc02] transition-all duration-300" 
-                style={{ width: isPlaying ? '100%' : '0%' }}
-              />
-            )}
+            <div
+              className="h-full bg-[#58cc02] transition-all duration-300"
+              style={{ width: `${progressPercent}%` }}
+            />
           </div>
-          
+
           <span className="text-xs font-black text-[var(--text-muted)] w-10 text-right tabular-nums">
             {Math.floor(currentTime)}s
           </span>
@@ -119,14 +183,17 @@ export function ListeningView({ lesson, onBack, hideBackButton }: ListeningViewP
       <div className="space-y-6 max-h-[500px] overflow-y-auto pr-4 custom-scrollbar">
         <p className="text-[10px] font-black text-[var(--text-muted)] uppercase tracking-[0.2em] mb-4">Transcript & Translation</p>
         {lesson.transcript.map((item, index) => {
-          const isActive = currentTime >= item.time && (index === lesson.transcript.length - 1 || currentTime < lesson.transcript[index + 1].time);
-          
+          // For real audio: use time-based highlight. For TTS: use activeIdx.
+          const isActive = lesson.audioUrl
+            ? (currentTime >= item.time && (index === lesson.transcript.length - 1 || currentTime < lesson.transcript[index + 1].time))
+            : activeIdx === index;
+
           return (
-            <div 
+            <div
               key={index}
               className={`p-6 rounded-2xl transition-all border-2 ${
-                isActive 
-                ? 'bg-[var(--bg-card)] border-[#1cb0f6] shadow-md scale-[1.02]' 
+                isActive
+                ? 'bg-[var(--bg-card)] border-[#1cb0f6] shadow-md scale-[1.02]'
                 : 'bg-transparent border-transparent opacity-50'
               }`}
             >

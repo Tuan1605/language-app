@@ -17,6 +17,7 @@ import toeicVocabSupplement from './toeic/vocabulary-supplement.json';
 import toeicQuestions from './toeic/questions.json';
 import n2Vocab from './n2/vocabulary.json';
 import n2VocabSupplement from './n2/vocabulary-supplement.json';
+import n2GrammarAnki from './n2/grammar-anki.json';
 import n2Questions from './n2/questions.json';
 import n2Grammar from './n2/grammar.json';
 import n2KanjiData from './n2/kanji.json';
@@ -64,7 +65,11 @@ function toFlashcard(raw: RawVocab, language: 'english' | 'japanese'): Flashcard
 }
 
 const allToeicVocab = [...(toeicVocab as RawVocab[]), ...(toeicVocabSupplement as RawVocab[])];
-const allN2Vocab = [...(n2Vocab as RawVocab[]), ...(n2VocabSupplement as RawVocab[])];
+const allN2Vocab = [
+  ...(n2Vocab as RawVocab[]),
+  ...(n2VocabSupplement as RawVocab[]),
+  ...(n2GrammarAnki as RawVocab[]), // 528 N2 grammar points from imported Anki deck
+];
 
 export const SEED_TOEIC_CARDS: Flashcard[] = allToeicVocab.map((v) =>
   toFlashcard(v, 'english')

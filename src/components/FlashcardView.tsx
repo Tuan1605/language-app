@@ -33,6 +33,10 @@ export function FlashcardView({ card, onRate }: FlashcardViewProps) {
       <div 
         onClick={() => setIsFlipped(!isFlipped)}
         className={`w-full h-80 cursor-pointer perspective-1000 transition-transform duration-700 transform-style-3d relative ${isFlipped ? 'rotate-y-180' : ''}`}
+        role="button"
+        tabIndex={0}
+        aria-label={isFlipped ? 'Showing meaning – tap to flip back' : `Flashcard: ${card.word} – tap to see meaning`}
+        onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') setIsFlipped(!isFlipped); }}
       >
         {/* Front Side */}
         <div className="absolute inset-0 w-full h-full lingo-card flex flex-col items-center justify-center text-center backface-hidden bg-[var(--bg-card)]">

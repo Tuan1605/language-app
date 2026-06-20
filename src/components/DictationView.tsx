@@ -32,9 +32,18 @@ export function DictationView({ lesson, onComplete }: DictationViewProps) {
     if (acc >= 85) {
       setFeedback('success');
       setIsFinished(true);
+      onComplete(true);
     } else {
       setFeedback('retry');
     }
+  };
+
+  const handleContinue = () => {
+    onComplete(feedback === 'success');
+  };
+
+  const handleSkip = () => {
+    onComplete(false);
   };
 
   return (
@@ -64,9 +73,10 @@ export function DictationView({ lesson, onComplete }: DictationViewProps) {
 
       <div className="w-full space-y-8">
         <div className="flex justify-center">
-          <button 
+          <button
             onClick={playAudio}
             className="w-24 h-24 rounded-full btn-3d btn-purple text-4xl shadow-xl flex items-center justify-center p-0"
+            aria-label="Play audio"
           >
             🔊
           </button>
@@ -77,12 +87,12 @@ export function DictationView({ lesson, onComplete }: DictationViewProps) {
           onChange={(e) => setUserInput(e.target.value)}
           disabled={isFinished}
           placeholder="Start typing here..."
-          className="w-full bg-[var(--bg-hover)] border-2 border-[var(--border-main)] rounded-2xl p-6 text-xl font-bold focus:border-[#1cb0f6] focus:bg-[var(--bg-card)] transition-all outline-none placeholder:text-[var(--text-muted)] resize-none h-32"
+          className="w-full bg-[var(--bg-hover)] border-2 border-[var(--border-main)] rounded-2xl p-6 text-xl font-bold focus:border-[#1cb0f6] focus:bg-[var(--bg-card)] transition-all outline-none placeholder:text-[var(--text-muted)] resize-none h-32 text-[var(--text-main)]"
         />
 
         <div className="flex flex-col items-center gap-6">
           {!isFinished ? (
-            <button 
+            <button
               disabled={!userInput.trim()}
               onClick={checkAnswer}
               className={`w-full h-16 btn-3d rounded-2xl text-lg font-black transition-all ${userInput.trim() ? 'btn-blue' : 'bg-[var(--bg-hover)] text-[var(--text-muted)] border-b-4 border-[var(--border-main)]'}`}
@@ -90,8 +100,8 @@ export function DictationView({ lesson, onComplete }: DictationViewProps) {
               SUBMIT ANSWER
             </button>
           ) : (
-            <button 
-              onClick={() => onComplete(true)}
+            <button
+              onClick={handleContinue}
               className="w-full h-16 btn-3d btn-green rounded-2xl text-lg font-black"
             >
               CONTINUE JOURNEY
@@ -99,19 +109,29 @@ export function DictationView({ lesson, onComplete }: DictationViewProps) {
           )}
 
           {feedback === 'retry' && (
-            <div className="w-full p-4 bg-[#fff5f5] border-2 border-[#ff4b4b] rounded-2xl animate-in shake duration-300">
+            <div className="w-full p-4 bg-[var(--tint-red)] border-2 border-[#ff4b4b] rounded-2xl animate-in shake duration-300">
                <p className="text-center text-[#ff4b4b] font-black text-sm uppercase">Accuracy: {accuracy}% - Not quite right! Listen again. 🔄</p>
             </div>
           )}
 
           {isFinished && (
-            <div className="w-full p-6 bg-[#f2fcf0] border-2 border-[#58cc02] rounded-2xl text-center space-y-2 animate-in zoom-in-95 duration-500">
+            <div className="w-full p-6 bg-[var(--tint-green)] border-2 border-[#58cc02] rounded-2xl text-center space-y-2 animate-in zoom-in-95 duration-500">
                <p className="text-[#58cc02] font-black uppercase text-xs tracking-widest">Excellent Work!</p>
                <p className="text-xl font-bold text-[var(--text-main)] leading-tight">"{lesson.targetText}"</p>
             </div>
           )}
         </div>
       </div>
+
+      {/* Skip button */}
+      {!isFinished && (
+        <button
+          onClick={handleSkip}
+          className="mt-6 text-[var(--text-muted)] font-black hover:text-[var(--text-main)] transition-colors uppercase tracking-[0.2em] text-[10px]"
+        >
+          Skip this exercise →
+        </button>
+      )}
     </div>
   );
 }

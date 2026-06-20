@@ -48,30 +48,30 @@ const BASE_QUESTIONS: Question[] = [
 export const MOCK_QUESTIONS: Question[] = [...BASE_QUESTIONS, ...SEED_QUESTIONS];
 
 export const MOCK_LISTENING_LESSONS: ListeningLesson[] = [
-  // TOEIC BEGINNER
-  { id: 'l-t-b1', category: 'toeic', difficulty: 'beginner', title: 'Self Introduction', audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3', transcript: [{ time: 0, text: 'Hello, my name is John Smith.' }, { time: 3, text: 'I am a marketing manager.' }, { time: 6, text: 'Nice to meet you.' }] },
-  { id: 'l-t-b2', category: 'toeic', difficulty: 'beginner', title: 'Daily Routine', audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3', transcript: [{ time: 0, text: 'I wake up at 7 AM every day.' }, { time: 3, text: 'I take the bus to work.' }, { time: 6, text: 'I start work at 9 AM.' }] },
-  { id: 'l-t-b3', category: 'toeic', difficulty: 'beginner', title: 'Office Basics', audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3', transcript: [{ time: 0, text: 'This is my desk.' }, { time: 3, text: 'I use a computer for my work.' }, { time: 6, text: 'The office is on the second floor.' }] },
+  // TOEIC BEGINNER — no audioUrl → uses Web Speech API (TTS) fallback
+  { id: 'l-t-b1', category: 'toeic', difficulty: 'beginner', title: 'Self Introduction', transcript: [{ time: 0, text: 'Hello, my name is John Smith.' }, { time: 3, text: 'I am a marketing manager.' }, { time: 6, text: 'Nice to meet you.' }] },
+  { id: 'l-t-b2', category: 'toeic', difficulty: 'beginner', title: 'Daily Routine', transcript: [{ time: 0, text: 'I wake up at 7 AM every day.' }, { time: 3, text: 'I take the bus to work.' }, { time: 6, text: 'I start work at 9 AM.' }] },
+  { id: 'l-t-b3', category: 'toeic', difficulty: 'beginner', title: 'Office Basics', transcript: [{ time: 0, text: 'This is my desk.' }, { time: 3, text: 'I use a computer for my work.' }, { time: 6, text: 'The office is on the second floor.' }] },
   // TOEIC INTERMEDIATE
-  { id: 'l-t-i1', category: 'toeic', difficulty: 'intermediate', title: 'Team Meeting', audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3', transcript: [{ time: 0, text: 'Good morning everyone, let us begin the meeting.' }, { time: 4, text: 'We need to discuss the quarterly sales report.' }, { time: 8, text: 'The marketing team has prepared a presentation.' }] },
-  { id: 'l-t-i2', category: 'toeic', difficulty: 'intermediate', title: 'Business Trip', audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3', transcript: [{ time: 0, text: 'I will be traveling to New York next week.' }, { time: 4, text: 'The flight departs at 8:30 AM.' }, { time: 8, text: 'I have meetings scheduled for Monday and Tuesday.' }] },
-  { id: 'l-t-i3', category: 'toeic', difficulty: 'intermediate', title: 'Customer Service', audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3', transcript: [{ time: 0, text: 'Thank you for calling our customer service line.' }, { time: 4, text: 'How can I assist you today?' }, { time: 8, text: 'I will check the status of your order right away.' }] },
+  { id: 'l-t-i1', category: 'toeic', difficulty: 'intermediate', title: 'Team Meeting', transcript: [{ time: 0, text: 'Good morning everyone, let us begin the meeting.' }, { time: 4, text: 'We need to discuss the quarterly sales report.' }, { time: 8, text: 'The marketing team has prepared a presentation.' }] },
+  { id: 'l-t-i2', category: 'toeic', difficulty: 'intermediate', title: 'Business Trip', transcript: [{ time: 0, text: 'I will be traveling to New York next week.' }, { time: 4, text: 'The flight departs at 8:30 AM.' }, { time: 8, text: 'I have meetings scheduled for Monday and Tuesday.' }] },
+  { id: 'l-t-i3', category: 'toeic', difficulty: 'intermediate', title: 'Customer Service', transcript: [{ time: 0, text: 'Thank you for calling our customer service line.' }, { time: 4, text: 'How can I assist you today?' }, { time: 8, text: 'I will check the status of your order right away.' }] },
   // TOEIC ADVANCED
-  { id: 'l-t-a1', category: 'toeic', difficulty: 'advanced', title: 'Earnings Call', audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3', transcript: [{ time: 0, text: 'Revenue growth exceeded projections by 15 percent.' }, { time: 5, text: 'The acquisition of our competitor has strengthened our market position.' }, { time: 10, text: 'We anticipate continued expansion into Asian markets.' }] },
-  { id: 'l-t-a2', category: 'toeic', difficulty: 'advanced', title: 'Strategic Planning', audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3', transcript: [{ time: 0, text: 'Our long-term strategy focuses on sustainable growth.' }, { time: 5, text: 'We will streamline operations to reduce overhead costs.' }, { time: 10, text: 'Stakeholder engagement remains our top priority.' }] },
-  { id: 'l-t-a3', category: 'toeic', difficulty: 'advanced', title: 'Board Presentation', audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3', transcript: [{ time: 0, text: 'The quarterly results demonstrate significant improvement.' }, { time: 5, text: 'Our compliance department has implemented new procedures.' }, { time: 10, text: 'The depreciation of assets has been properly accounted for.' }] },
+  { id: 'l-t-a1', category: 'toeic', difficulty: 'advanced', title: 'Earnings Call', transcript: [{ time: 0, text: 'Revenue growth exceeded projections by 15 percent.' }, { time: 5, text: 'The acquisition of our competitor has strengthened our market position.' }, { time: 10, text: 'We anticipate continued expansion into Asian markets.' }] },
+  { id: 'l-t-a2', category: 'toeic', difficulty: 'advanced', title: 'Strategic Planning', transcript: [{ time: 0, text: 'Our long-term strategy focuses on sustainable growth.' }, { time: 5, text: 'We will streamline operations to reduce overhead costs.' }, { time: 10, text: 'Stakeholder engagement remains our top priority.' }] },
+  { id: 'l-t-a3', category: 'toeic', difficulty: 'advanced', title: 'Board Presentation', transcript: [{ time: 0, text: 'The quarterly results demonstrate significant improvement.' }, { time: 5, text: 'Our compliance department has implemented new procedures.' }, { time: 10, text: 'The depreciation of assets has been properly accounted for.' }] },
   // N2 BEGINNER
-  { id: 'l-n-b1', category: 'n2', difficulty: 'beginner', title: 'Greetings', audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3', transcript: [{ time: 0, text: 'おはようございます。' }, { time: 3, text: '今日はいい天気ですね。' }, { time: 6, text: 'よろしくお願いします。' }] },
-  { id: 'l-n-b2', category: 'n2', difficulty: 'beginner', title: 'Self Introduction', audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-10.mp3', transcript: [{ time: 0, text: 'はじめまして、田中です。' }, { time: 3, text: '東京で働いています。' }, { time: 6, text: '趣味は読書です。' }] },
-  { id: 'l-n-b3', category: 'n2', difficulty: 'beginner', title: 'Daily Shopping', audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-11.mp3', transcript: [{ time: 0, text: 'すみません、りんごはどこですか。' }, { time: 4, text: 'ありがとうございます。' }, { time: 7, text: 'これをお願いします。' }] },
+  { id: 'l-n-b1', category: 'n2', difficulty: 'beginner', title: 'Greetings', transcript: [{ time: 0, text: 'おはようございます。' }, { time: 3, text: '今日はいい天気ですね。' }, { time: 6, text: 'よろしくお願いします。' }] },
+  { id: 'l-n-b2', category: 'n2', difficulty: 'beginner', title: 'Self Introduction', transcript: [{ time: 0, text: 'はじめまして、田中です。' }, { time: 3, text: '東京で働いています。' }, { time: 6, text: '趣味は読書です。' }] },
+  { id: 'l-n-b3', category: 'n2', difficulty: 'beginner', title: 'Daily Shopping', transcript: [{ time: 0, text: 'すみません、りんごはどこですか。' }, { time: 4, text: 'ありがとうございます。' }, { time: 7, text: 'これをお願いします。' }] },
   // N2 INTERMEDIATE
-  { id: 'l-n-i1', category: 'n2', difficulty: 'intermediate', title: 'Office Conversation', audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-12.mp3', transcript: [{ time: 0, text: '来週の会議の資料は準備できましたか。' }, { time: 5, text: 'はい、昨日のうちに完成させました。' }, { time: 10, text: 'では、メールで送ってください。' }] },
-  { id: 'l-n-i2', category: 'n2', difficulty: 'intermediate', title: 'Making Plans', audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-13.mp3', transcript: [{ time: 0, text: '今週末は何をするつもりですか。' }, { time: 5, text: '友達と映画を見に行く予定です。' }, { time: 10, text: 'それから、レストランで dinner をします。' }] },
-  { id: 'l-n-i3', category: 'n2', difficulty: 'intermediate', title: 'Telephone Call', audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-14.mp3', transcript: [{ time: 0, text: 'もしもし、田中さんですか。' }, { time: 5, text: 'はい、そうです。何かご用ですか。' }, { time: 10, text: '明日の会議についてお聞きしたいのですが。' }] },
+  { id: 'l-n-i1', category: 'n2', difficulty: 'intermediate', title: 'Office Conversation', transcript: [{ time: 0, text: '来週の会議の資料は準備できましたか。' }, { time: 5, text: 'はい、昨日のうちに完成させました。' }, { time: 10, text: 'では、メールで送ってください。' }] },
+  { id: 'l-n-i2', category: 'n2', difficulty: 'intermediate', title: 'Making Plans', transcript: [{ time: 0, text: '今週末は何をするつもりですか。' }, { time: 5, text: '友達と映画を見に行く予定です。' }, { time: 10, text: 'それから、レストランで dinner をします。' }] },
+  { id: 'l-n-i3', category: 'n2', difficulty: 'intermediate', title: 'Telephone Call', transcript: [{ time: 0, text: 'もしもし、田中さんですか。' }, { time: 5, text: 'はい、そうです。何かご用ですか。' }, { time: 10, text: '明日の会議についてお聞きしたいのですが。' }] },
   // N2 ADVANCED
-  { id: 'l-n-a1', category: 'n2', difficulty: 'advanced', title: 'Social Issues', audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3', transcript: [{ time: 0, text: '少子高齢化社会の課題について考えます。' }, { time: 5, text: '労働力の減少は大きな問題です。' }, { time: 10, text: '国際的な協力が不可欠です。' }] },
-  { id: 'l-n-a2', category: 'n2', difficulty: 'advanced', title: 'Business Meeting', audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-15.mp3', transcript: [{ time: 0, text: '今回のプロジェクトについて報告いたします。' }, { time: 5, text: '予算の把握と進捗管理が重要です。' }, { time: 10, text: '迅速に対応する必要があります。' }] },
-  { id: 'l-n-a3', category: 'n2', difficulty: 'advanced', title: 'Academic Lecture', audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-16.mp3', transcript: [{ time: 0, text: '今日の講義は環境問題についてです。' }, { time: 5, text: '地球温暖化の影響は深刻です。' }, { time: 10, text: '解決策を模索する必要があります。' }] },
+  { id: 'l-n-a1', category: 'n2', difficulty: 'advanced', title: 'Social Issues', transcript: [{ time: 0, text: '少子高齢化社会の課題について考えます。' }, { time: 5, text: '労働力の減少は大きな問題です。' }, { time: 10, text: '国際的な協力が不可欠です。' }] },
+  { id: 'l-n-a2', category: 'n2', difficulty: 'advanced', title: 'Business Meeting', transcript: [{ time: 0, text: '今回のプロジェクトについて報告いたします。' }, { time: 5, text: '予算の把握と進捗管理が重要です。' }, { time: 10, text: '迅速に対応する必要があります。' }] },
+  { id: 'l-n-a3', category: 'n2', difficulty: 'advanced', title: 'Academic Lecture', transcript: [{ time: 0, text: '今日の講義は環境問題についてです。' }, { time: 5, text: '地球温暖化の影響は深刻です。' }, { time: 10, text: '解決策を模索する必要があります。' }] },
 ];
 
 export const MOCK_SPEAKING_LESSONS: SpeakingLesson[] = [
@@ -103,29 +103,29 @@ export const MOCK_SPEAKING_LESSONS: SpeakingLesson[] = [
 
 export const MOCK_DICTATION_LESSONS: DictationLesson[] = [
   // TOEIC BEGINNER
-  { id: 'd-t-b1', category: 'toeic', difficulty: 'beginner', audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3', targetText: 'I work at a law firm.', translation: 'Tôi làm việc tại một công ty luật.' },
-  { id: 'd-t-b2', category: 'toeic', difficulty: 'beginner', audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3', targetText: 'The meeting is at 3 PM.', translation: 'Cuộc họp lúc 3 giờ chiều.' },
-  { id: 'd-t-b3', category: 'toeic', difficulty: 'beginner', audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3', targetText: 'Please send me the email.', translation: 'Vui lòng gửi cho tôi email.' },
+  { id: 'd-t-b1', category: 'toeic', difficulty: 'beginner', targetText: 'I work at a law firm.', translation: 'Tôi làm việc tại một công ty luật.' },
+  { id: 'd-t-b2', category: 'toeic', difficulty: 'beginner', targetText: 'The meeting is at 3 PM.', translation: 'Cuộc họp lúc 3 giờ chiều.' },
+  { id: 'd-t-b3', category: 'toeic', difficulty: 'beginner', targetText: 'Please send me the email.', translation: 'Vui lòng gửi cho tôi email.' },
   // TOEIC INTERMEDIATE
-  { id: 'd-t-i1', category: 'toeic', difficulty: 'intermediate', audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3', targetText: 'The quarterly report needs to be reviewed.', translation: 'Báo cáo quý cần được xem xét.' },
-  { id: 'd-t-i2', category: 'toeic', difficulty: 'intermediate', audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3', targetText: 'We have to submit the proposal by Friday.', translation: 'Chúng ta phải nộp đề xuất trước thứ Sáu.' },
-  { id: 'd-t-i3', category: 'toeic', difficulty: 'intermediate', audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3', targetText: 'The client requested additional information.', translation: 'Khách hàng yêu cầu thêm thông tin.' },
+  { id: 'd-t-i1', category: 'toeic', difficulty: 'intermediate', targetText: 'The quarterly report needs to be reviewed.', translation: 'Báo cáo quý cần được xem xét.' },
+  { id: 'd-t-i2', category: 'toeic', difficulty: 'intermediate', targetText: 'We have to submit the proposal by Friday.', translation: 'Chúng ta phải nộp đề xuất trước thứ Sáu.' },
+  { id: 'd-t-i3', category: 'toeic', difficulty: 'intermediate', targetText: 'The client requested additional information.', translation: 'Khách hàng yêu cầu thêm thông tin.' },
   // TOEIC ADVANCED
-  { id: 'd-t-a1', category: 'toeic', difficulty: 'advanced', audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3', targetText: 'Unforeseen circumstances led to a significant delay.', translation: 'Các trường hợp không lường trước dẫn đến sự chậm trễ.' },
-  { id: 'd-t-a2', category: 'toeic', difficulty: 'advanced', audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3', targetText: 'The acquisition expanded the firm market share.', translation: 'Vụ thâu tóm đã mở rộng thị phần của công ty.' },
-  { id: 'd-t-a3', category: 'toeic', difficulty: 'advanced', audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-10.mp3', targetText: 'Compliance with regulations is mandatory.', translation: 'Tuân thủ các quy định là bắt buộc.' },
+  { id: 'd-t-a1', category: 'toeic', difficulty: 'advanced', targetText: 'Unforeseen circumstances led to a significant delay.', translation: 'Các trường hợp không lường trước dẫn đến sự chậm trễ.' },
+  { id: 'd-t-a2', category: 'toeic', difficulty: 'advanced', targetText: 'The acquisition expanded the firm market share.', translation: 'Vụ thâu tóm đã mở rộng thị phần của công ty.' },
+  { id: 'd-t-a3', category: 'toeic', difficulty: 'advanced', targetText: 'Compliance with regulations is mandatory.', translation: 'Tuân thủ các quy định là bắt buộc.' },
   // N2 BEGINNER
-  { id: 'd-n-b1', category: 'n2', difficulty: 'beginner', audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3', targetText: 'これは新しい本です。', translation: 'Đây là quyển sách mới.' },
-  { id: 'd-n-b2', category: 'n2', difficulty: 'beginner', audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-11.mp3', targetText: '明日は学校です。', translation: 'Ngày mai là ngày đi học.' },
-  { id: 'd-n-b3', category: 'n2', difficulty: 'beginner', audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-12.mp3', targetText: 'コーヒーを飲みませんか。', translation: 'Bạn có muốn uống cà phê không?' },
+  { id: 'd-n-b1', category: 'n2', difficulty: 'beginner', targetText: 'これは新しい本です。', translation: 'Đây là quyển sách mới.' },
+  { id: 'd-n-b2', category: 'n2', difficulty: 'beginner', targetText: '明日は学校です。', translation: 'Ngày mai là ngày đi học.' },
+  { id: 'd-n-b3', category: 'n2', difficulty: 'beginner', targetText: 'コーヒーを飲みませんか。', translation: 'Bạn có muốn uống cà phê không?' },
   // N2 INTERMEDIATE
-  { id: 'd-n-i1', category: 'n2', difficulty: 'intermediate', audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-13.mp3', targetText: '来週の会議に参加してください。', translation: 'Vui lòng tham gia cuộc họp tuần sau.' },
-  { id: 'd-n-i2', category: 'n2', difficulty: 'intermediate', audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-14.mp3', targetText: 'この問題を解決する必要があります。', translation: 'Cần giải quyết vấn đề này.' },
-  { id: 'd-n-i3', category: 'n2', difficulty: 'intermediate', audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-15.mp3', targetText: '予算を確認してから判断します。', translation: 'Sẽ quyết định sau khi kiểm tra ngân sách.' },
+  { id: 'd-n-i1', category: 'n2', difficulty: 'intermediate', targetText: '来週の会議に参加してください。', translation: 'Vui lòng tham gia cuộc họp tuần sau.' },
+  { id: 'd-n-i2', category: 'n2', difficulty: 'intermediate', targetText: 'この問題を解決する必要があります。', translation: 'Cần giải quyết vấn đề này.' },
+  { id: 'd-n-i3', category: 'n2', difficulty: 'intermediate', targetText: '予算を確認してから判断します。', translation: 'Sẽ quyết định sau khi kiểm tra ngân sách.' },
   // N2 ADVANCED
-  { id: 'd-n-a1', category: 'n2', difficulty: 'advanced', audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3', targetText: '地球温暖化問題の解決には国際的な協力が不可欠だ。', translation: 'Hợp tác quốc tế là không thể thiếu cho vấn đề nóng lên toàn cầu.' },
-  { id: 'd-n-a2', category: 'n2', difficulty: 'advanced', audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-16.mp3', targetText: '経済に大きな影響を与える政策だ。', translation: 'Đây là chính sách có ảnh hưởng lớn đến nền kinh tế.' },
-  { id: 'd-n-a3', category: 'n2', difficulty: 'advanced', audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-17.mp3', targetText: '制度の改革は避けて通れない。', translation: 'Cải cách hệ thống là không thể tránh khỏi.' },
+  { id: 'd-n-a1', category: 'n2', difficulty: 'advanced', targetText: '地球温暖化問題の解決には国際的な協力が不可欠だ。', translation: 'Hợp tác quốc tế là không thể thiếu cho vấn đề nóng lên toàn cầu.' },
+  { id: 'd-n-a2', category: 'n2', difficulty: 'advanced', targetText: '経済に大きな影響を与える政策だ。', translation: 'Đây là chính sách có ảnh hưởng lớn đến nền kinh tế.' },
+  { id: 'd-n-a3', category: 'n2', difficulty: 'advanced', targetText: '制度の改革は避けて通れない。', translation: 'Cải cách hệ thống là không thể tránh khỏi.' },
 ];
 
 export const MOCK_FULL_EXAMS: FullExam[] = [

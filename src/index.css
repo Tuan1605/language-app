@@ -303,6 +303,28 @@ body {
   --perspective-1000: 1000px;
 }
 
+/* --- FLASHCARD 3D FLIP ---
+   Tailwind v4 does not ship perspective/backface utilities so we define them
+   here. The flip container needs perspective on the parent and
+   transform-style: preserve-3d + backface-visibility: hidden on children. */
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
 /* =====================================================================
    UI POLISH LAYER
    Subtle hover/press feedback, smoother transitions and tasteful
