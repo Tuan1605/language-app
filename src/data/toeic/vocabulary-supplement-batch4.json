@@ -1,0 +1,5266 @@
+[
+  {
+    "id": "tvs4-001",
+    "word": "innovation",
+    "definition": "sự đổi mới, sáng kiến",
+    "example": "The company invested heavily in innovation to stay competitive.",
+    "difficulty": "intermediate",
+    "topic": "technology"
+  },
+  {
+    "id": "tvs4-002",
+    "word": "digital",
+    "definition": "kỹ thuật số",
+    "example": "Our digital strategy targets online consumers.",
+    "difficulty": "beginner",
+    "topic": "technology"
+  },
+  {
+    "id": "tvs4-003",
+    "word": "platform",
+    "definition": "nền tảng",
+    "example": "The new platform supports both web and mobile users.",
+    "difficulty": "beginner",
+    "topic": "technology"
+  },
+  {
+    "id": "tvs4-004",
+    "word": "infrastructure",
+    "definition": "hạ tầng",
+    "example": "The company invested in new IT infrastructure.",
+    "difficulty": "intermediate",
+    "topic": "technology"
+  },
+  {
+    "id": "tvs4-005",
+    "word": "compatible",
+    "definition": "tương thích",
+    "example": "The device is compatible with most operating systems.",
+    "difficulty": "intermediate",
+    "topic": "technology"
+  },
+  {
+    "id": "tvs4-006",
+    "word": "optimize",
+    "definition": "tối ưu hóa",
+    "example": "We need to optimize the website for faster loading.",
+    "difficulty": "intermediate",
+    "topic": "technology"
+  },
+  {
+    "id": "tvs4-007",
+    "word": "innovative",
+    "definition": "đổi mới, sáng tạo",
+    "example": "Their innovative approach attracted many investors.",
+    "difficulty": "intermediate",
+    "topic": "technology"
+  },
+  {
+    "id": "tvs4-008",
+    "word": "rollout",
+    "definition": "ra mắt, triển khai",
+    "example": "The rollout of the new service begins in March.",
+    "difficulty": "intermediate",
+    "topic": "technology"
+  },
+  {
+    "id": "tvs4-009",
+    "word": "legacy",
+    "definition": "hệ thống cũ, di sản",
+    "example": "The legacy system still handles most transactions.",
+    "difficulty": "advanced",
+    "topic": "technology"
+  },
+  {
+    "id": "tvs4-010",
+    "word": "uptime",
+    "definition": "thời gian hoạt động liên tục",
+    "example": "We guarantee 99.9% uptime for all services.",
+    "difficulty": "intermediate",
+    "topic": "technology"
+  },
+  {
+    "id": "tvs4-011",
+    "word": "integration",
+    "definition": "sự tích hợp",
+    "example": "The integration of the two systems was completed successfully.",
+    "difficulty": "intermediate",
+    "topic": "technology"
+  },
+  {
+    "id": "tvs4-012",
+    "word": "abundance",
+    "definition": "sự dồi dào",
+    "example": "There is an abundance of data available for analysis.",
+    "difficulty": "intermediate",
+    "topic": "technology"
+  },
+  {
+    "id": "tvs4-013",
+    "word": "surge",
+    "definition": "sự tăng vọt",
+    "example": "We experienced a surge in traffic after the product launch.",
+    "difficulty": "intermediate",
+    "topic": "technology"
+  },
+  {
+    "id": "tvs4-014",
+    "word": "obsolescence",
+    "definition": "sự lỗi thời",
+    "example": "Planned obsolescence drives consumers to buy new products.",
+    "difficulty": "advanced",
+    "topic": "technology"
+  },
+  {
+    "id": "tvs4-015",
+    "word": "exponential",
+    "definition": "theo cấp số nhân",
+    "example": "Data growth has been exponential over the past decade.",
+    "difficulty": "advanced",
+    "topic": "technology"
+  },
+  {
+    "id": "tvs4-016",
+    "word": "ubiquitous",
+    "definition": "có mặt khắp nơi",
+    "example": "Smartphones have become ubiquitous in modern society.",
+    "difficulty": "advanced",
+    "topic": "technology"
+  },
+  {
+    "id": "tvs4-017",
+    "word": "reliability",
+    "definition": "độ tin cậy",
+    "example": "Reliability is the most important factor in choosing a provider.",
+    "difficulty": "intermediate",
+    "topic": "technology"
+  },
+  {
+    "id": "tvs4-018",
+    "word": "digitalization",
+    "definition": "quá trình số hóa",
+    "example": "Digitalization of records improved search efficiency.",
+    "difficulty": "intermediate",
+    "topic": "technology"
+  },
+  {
+    "id": "tvs4-019",
+    "word": "connectivity",
+    "definition": "tính kết nối",
+    "example": "Global connectivity enables real-time collaboration.",
+    "difficulty": "beginner",
+    "topic": "technology"
+  },
+  {
+    "id": "tvs4-020",
+    "word": "accessibility",
+    "definition": "khả năng truy cập",
+    "example": "Accessibility features make technology usable for everyone.",
+    "difficulty": "intermediate",
+    "topic": "technology"
+  },
+  {
+    "id": "tvs4-021",
+    "word": "computing",
+    "definition": "điện toán",
+    "example": "Cloud computing has revolutionized IT infrastructure.",
+    "difficulty": "beginner",
+    "topic": "technology"
+  },
+  {
+    "id": "tvs4-022",
+    "word": "information technology",
+    "definition": "công nghệ thông tin",
+    "example": "Information technology supports all departments in the company.",
+    "difficulty": "beginner",
+    "topic": "technology"
+  },
+  {
+    "id": "tvs4-023",
+    "word": "data privacy",
+    "definition": "quyền riêng tư dữ liệu",
+    "example": "Data privacy regulations protect customer information.",
+    "difficulty": "intermediate",
+    "topic": "technology"
+  },
+  {
+    "id": "tvs4-024",
+    "word": "tech stack",
+    "definition": "công nghệ sử dụng",
+    "example": "Our tech stack includes React, Node.js, and PostgreSQL.",
+    "difficulty": "intermediate",
+    "topic": "technology"
+  },
+  {
+    "id": "tvs4-025",
+    "word": "system architecture",
+    "definition": "kiến trúc hệ thống",
+    "example": "The system architecture was redesigned for better performance.",
+    "difficulty": "advanced",
+    "topic": "technology"
+  },
+  {
+    "id": "tvs4-026",
+    "word": "emerging technology",
+    "definition": "công nghệ mới nổi",
+    "example": "Emerging technology such as quantum computing is rapidly evolving.",
+    "difficulty": "advanced",
+    "topic": "technology"
+  },
+  {
+    "id": "tvs4-027",
+    "word": "technology adoption",
+    "definition": "áp dụng công nghệ",
+    "example": "Technology adoption across the industry has accelerated.",
+    "difficulty": "intermediate",
+    "topic": "technology"
+  },
+  {
+    "id": "tvs4-028",
+    "word": "disruption",
+    "definition": "sự phá vỡ thị trường",
+    "example": "Technological disruption changed the entire retail industry.",
+    "difficulty": "advanced",
+    "topic": "technology"
+  },
+  {
+    "id": "tvs4-029",
+    "word": "repository",
+    "definition": "kho lưu trữ",
+    "example": "The repository contains all project documentation and code.",
+    "difficulty": "beginner",
+    "topic": "technology"
+  },
+  {
+    "id": "tvs4-030",
+    "word": "patch",
+    "definition": "bản cập nhật sửa lỗi",
+    "example": "The security patch was released to fix a critical vulnerability.",
+    "difficulty": "intermediate",
+    "topic": "software"
+  },
+  {
+    "id": "tvs4-031",
+    "word": "release",
+    "definition": "phiên bản phát hành",
+    "example": "The new software release includes several feature improvements.",
+    "difficulty": "beginner",
+    "topic": "software"
+  },
+  {
+    "id": "tvs4-032",
+    "word": "install",
+    "definition": "cài đặt",
+    "example": "Please install the latest version before the meeting.",
+    "difficulty": "beginner",
+    "topic": "software"
+  },
+  {
+    "id": "tvs4-033",
+    "word": "compile",
+    "definition": "biên dịch mã nguồn",
+    "example": "The developer needs to compile the code before testing.",
+    "difficulty": "advanced",
+    "topic": "software"
+  },
+  {
+    "id": "tvs4-034",
+    "word": "rollback",
+    "definition": "quay lại phiên bản trước",
+    "example": "We had to rollback the update due to system errors.",
+    "difficulty": "intermediate",
+    "topic": "software"
+  },
+  {
+    "id": "tvs4-035",
+    "word": "refactor",
+    "definition": "tái cấu trúc lại mã nguồn",
+    "example": "The team refactored the code to improve performance.",
+    "difficulty": "advanced",
+    "topic": "software"
+  },
+  {
+    "id": "tvs4-036",
+    "word": "module",
+    "definition": "mô-đun, khối phần mềm",
+    "example": "Each module can be updated independently.",
+    "difficulty": "intermediate",
+    "topic": "software"
+  },
+  {
+    "id": "tvs4-037",
+    "word": "plugin",
+    "definition": "phần mở rộng, plugin",
+    "example": "Install the browser plugin to enable video playback.",
+    "difficulty": "beginner",
+    "topic": "software"
+  },
+  {
+    "id": "tvs4-038",
+    "word": "runtime",
+    "definition": "thời gian chạy",
+    "example": "The runtime environment must be configured properly.",
+    "difficulty": "advanced",
+    "topic": "software"
+  },
+  {
+    "id": "tvs4-039",
+    "word": "codebase",
+    "definition": "tổng thể mã nguồn",
+    "example": "The codebase has grown significantly over the past year.",
+    "difficulty": "intermediate",
+    "topic": "software"
+  },
+  {
+    "id": "tvs4-040",
+    "word": "commit",
+    "definition": "commit mã nguồn",
+    "example": "Please commit your changes before leaving for the day.",
+    "difficulty": "intermediate",
+    "topic": "software"
+  },
+  {
+    "id": "tvs4-041",
+    "word": "merge",
+    "definition": "hợp nhất nhánh mã nguồn",
+    "example": "The feature branch was merged into the main branch.",
+    "difficulty": "intermediate",
+    "topic": "software"
+  },
+  {
+    "id": "tvs4-042",
+    "word": "syntax",
+    "definition": "cú pháp lập trình",
+    "example": "A syntax error prevented the program from running.",
+    "difficulty": "advanced",
+    "topic": "software"
+  },
+  {
+    "id": "tvs4-043",
+    "word": "debug",
+    "definition": "gỡ lỗi",
+    "example": "She spent hours debugging the application.",
+    "difficulty": "intermediate",
+    "topic": "software"
+  },
+  {
+    "id": "tvs4-044",
+    "word": "deployment",
+    "definition": "sự triển khai phần mềm",
+    "example": "The deployment process was automated to reduce errors.",
+    "difficulty": "intermediate",
+    "topic": "software"
+  },
+  {
+    "id": "tvs4-045",
+    "word": "emulator",
+    "definition": "trình giả lập",
+    "example": "Test the app on an emulator before releasing it.",
+    "difficulty": "advanced",
+    "topic": "software"
+  },
+  {
+    "id": "tvs4-046",
+    "word": "artifact",
+    "definition": "đầu ra build, sản phẩm build",
+    "example": "The build artifact was uploaded to the distribution server.",
+    "difficulty": "advanced",
+    "topic": "software"
+  },
+  {
+    "id": "tvs4-047",
+    "word": "versioning",
+    "definition": "quản lý phiên bản",
+    "example": "Proper versioning helps track changes over time.",
+    "difficulty": "intermediate",
+    "topic": "software"
+  },
+  {
+    "id": "tvs4-048",
+    "word": "localization",
+    "definition": "bản địa hóa phần mềm",
+    "example": "Localization adapts the software for different languages.",
+    "difficulty": "advanced",
+    "topic": "software"
+  },
+  {
+    "id": "tvs4-049",
+    "word": "user interface",
+    "definition": "giao diện người dùng",
+    "example": "The user interface is intuitive and easy to navigate.",
+    "difficulty": "beginner",
+    "topic": "software"
+  },
+  {
+    "id": "tvs4-050",
+    "word": "backend",
+    "definition": "phần backend, máy chủ",
+    "example": "The backend handles all database operations.",
+    "difficulty": "intermediate",
+    "topic": "software"
+  },
+  {
+    "id": "tvs4-051",
+    "word": "frontend",
+    "definition": "phần frontend, giao diện",
+    "example": "The frontend displays data retrieved from the server.",
+    "difficulty": "intermediate",
+    "topic": "software"
+  },
+  {
+    "id": "tvs4-052",
+    "word": "responsive design",
+    "definition": "thiết kế đáp ứng",
+    "example": "Responsive design ensures the website works on all screen sizes.",
+    "difficulty": "intermediate",
+    "topic": "software"
+  },
+  {
+    "id": "tvs4-053",
+    "word": "cross-platform",
+    "definition": "đa nền tảng",
+    "example": "The cross-platform app runs on both iOS and Android.",
+    "difficulty": "intermediate",
+    "topic": "software"
+  },
+  {
+    "id": "tvs4-054",
+    "word": "functionality",
+    "definition": "chức năng",
+    "example": "The new software has improved functionality for data reporting.",
+    "difficulty": "beginner",
+    "topic": "software"
+  },
+  {
+    "id": "tvs4-055",
+    "word": "bug fix",
+    "definition": "sửa lỗi phần mềm",
+    "example": "The bug fix resolved the issue with the login screen.",
+    "difficulty": "beginner",
+    "topic": "software"
+  },
+  {
+    "id": "tvs4-056",
+    "word": "software lifecycle",
+    "definition": "vòng đời phần mềm",
+    "example": "Understanding the software lifecycle helps plan maintenance.",
+    "difficulty": "advanced",
+    "topic": "software"
+  },
+  {
+    "id": "tvs4-057",
+    "word": "user experience",
+    "definition": "trải nghiệm người dùng",
+    "example": "Improving user experience increases customer satisfaction.",
+    "difficulty": "beginner",
+    "topic": "software"
+  },
+  {
+    "id": "tvs4-058",
+    "word": "uninstall",
+    "definition": "gỡ bỏ cài đặt",
+    "example": "You should uninstall the old version first.",
+    "difficulty": "beginner",
+    "topic": "software"
+  },
+  {
+    "id": "tvs4-059",
+    "word": "processor",
+    "definition": "bộ vi xử lý",
+    "example": "The new processor delivers faster performance.",
+    "difficulty": "beginner",
+    "topic": "hardware"
+  },
+  {
+    "id": "tvs4-060",
+    "word": "motherboard",
+    "definition": "bo mạch chủ",
+    "example": "The motherboard connects all hardware components.",
+    "difficulty": "beginner",
+    "topic": "hardware"
+  },
+  {
+    "id": "tvs4-061",
+    "word": "memory",
+    "definition": "bộ nhớ",
+    "example": "Upgrade the memory to improve system speed.",
+    "difficulty": "beginner",
+    "topic": "hardware"
+  },
+  {
+    "id": "tvs4-062",
+    "word": "storage",
+    "definition": "bộ nhớ lưu trữ",
+    "example": "The storage capacity has been expanded to two terabytes.",
+    "difficulty": "beginner",
+    "topic": "hardware"
+  },
+  {
+    "id": "tvs4-063",
+    "word": "monitor",
+    "definition": "màn hình máy tính",
+    "example": "The dual-monitor setup increases productivity.",
+    "difficulty": "beginner",
+    "topic": "hardware"
+  },
+  {
+    "id": "tvs4-064",
+    "word": "keyboard",
+    "definition": "bàn phím",
+    "example": "The ergonomic keyboard reduces wrist strain.",
+    "difficulty": "beginner",
+    "topic": "hardware"
+  },
+  {
+    "id": "tvs4-065",
+    "word": "mouse",
+    "definition": "chuột máy tính",
+    "example": "The wireless mouse offers greater flexibility.",
+    "difficulty": "beginner",
+    "topic": "hardware"
+  },
+  {
+    "id": "tvs4-066",
+    "word": "hard drive",
+    "definition": "ổ đĩa cứng",
+    "example": "Replace the hard drive with a solid-state drive for better speed.",
+    "difficulty": "beginner",
+    "topic": "hardware"
+  },
+  {
+    "id": "tvs4-067",
+    "word": "solid-state drive",
+    "definition": "ổ cứng SSD",
+    "example": "An SSD significantly reduces boot time.",
+    "difficulty": "intermediate",
+    "topic": "hardware"
+  },
+  {
+    "id": "tvs4-068",
+    "word": "cable",
+    "definition": "dây cáp",
+    "example": "Use an HDMI cable to connect the monitor.",
+    "difficulty": "beginner",
+    "topic": "hardware"
+  },
+  {
+    "id": "tvs4-069",
+    "word": "adapter",
+    "definition": "bộ chuyển đổi",
+    "example": "You may need a USB-C adapter for older devices.",
+    "difficulty": "beginner",
+    "topic": "hardware"
+  },
+  {
+    "id": "tvs4-070",
+    "word": "power supply",
+    "definition": "nguồn điện, bộ nguồn",
+    "example": "The power supply must match the system requirements.",
+    "difficulty": "intermediate",
+    "topic": "hardware"
+  },
+  {
+    "id": "tvs4-071",
+    "word": "cooling fan",
+    "definition": "quạt tản nhiệt",
+    "example": "The cooling fan prevents the processor from overheating.",
+    "difficulty": "intermediate",
+    "topic": "hardware"
+  },
+  {
+    "id": "tvs4-072",
+    "word": "graphics card",
+    "definition": "card đồ họa",
+    "example": "A powerful graphics card is needed for video editing.",
+    "difficulty": "beginner",
+    "topic": "hardware"
+  },
+  {
+    "id": "tvs4-073",
+    "word": "peripheral",
+    "definition": "thiết bị ngoại vi",
+    "example": "Printers and scanners are common peripherals.",
+    "difficulty": "intermediate",
+    "topic": "hardware"
+  },
+  {
+    "id": "tvs4-074",
+    "word": "port",
+    "definition": "cổng kết nối",
+    "example": "The laptop has four USB ports.",
+    "difficulty": "beginner",
+    "topic": "hardware"
+  },
+  {
+    "id": "tvs4-075",
+    "word": "laptop",
+    "definition": "máy tính xách tay",
+    "example": "She brought her laptop to the client meeting.",
+    "difficulty": "beginner",
+    "topic": "hardware"
+  },
+  {
+    "id": "tvs4-076",
+    "word": "desktop",
+    "definition": "máy tính để bàn",
+    "example": "The desktop computer is more powerful than the laptop.",
+    "difficulty": "beginner",
+    "topic": "hardware"
+  },
+  {
+    "id": "tvs4-077",
+    "word": "tablet",
+    "definition": "máy tính bảng",
+    "example": "The sales team uses tablets during product demonstrations.",
+    "difficulty": "beginner",
+    "topic": "hardware"
+  },
+  {
+    "id": "tvs4-078",
+    "word": "server rack",
+    "definition": "tủ rack máy chủ",
+    "example": "All servers are mounted in the server rack.",
+    "difficulty": "intermediate",
+    "topic": "hardware"
+  },
+  {
+    "id": "tvs4-079",
+    "word": "power bank",
+    "definition": "sạc dự phòng",
+    "example": "Keep a power bank in your bag for emergencies.",
+    "difficulty": "beginner",
+    "topic": "hardware"
+  },
+  {
+    "id": "tvs4-080",
+    "word": "ethernet",
+    "definition": "cáp ethernet",
+    "example": "Connect via ethernet for a more stable connection.",
+    "difficulty": "intermediate",
+    "topic": "hardware"
+  },
+  {
+    "id": "tvs4-081",
+    "word": "socket",
+    "definition": "ổ cắm, socket",
+    "example": "Make sure the processor fits the correct socket type.",
+    "difficulty": "intermediate",
+    "topic": "hardware"
+  },
+  {
+    "id": "tvs4-082",
+    "word": "thermal",
+    "definition": "liên quan đến nhiệt độ",
+    "example": "Thermal paste improves heat transfer between components.",
+    "difficulty": "advanced",
+    "topic": "hardware"
+  },
+  {
+    "id": "tvs4-083",
+    "word": "chipset",
+    "definition": "bộ vi mạch",
+    "example": "The new chipset supports faster data transfer speeds.",
+    "difficulty": "intermediate",
+    "topic": "hardware"
+  },
+  {
+    "id": "tvs4-084",
+    "word": "server room",
+    "definition": "phòng máy chủ",
+    "example": "The server room has strict temperature controls.",
+    "difficulty": "beginner",
+    "topic": "hardware"
+  },
+  {
+    "id": "tvs4-085",
+    "word": "cooling system",
+    "definition": "hệ thống làm mát",
+    "example": "The cooling system prevents hardware from overheating.",
+    "difficulty": "beginner",
+    "topic": "hardware"
+  },
+  {
+    "id": "tvs4-086",
+    "word": "data center",
+    "definition": "trung tâm dữ liệu",
+    "example": "The data center houses servers for multiple clients.",
+    "difficulty": "beginner",
+    "topic": "hardware"
+  },
+  {
+    "id": "tvs4-087",
+    "word": "drone",
+    "definition": "máy bay không người lái",
+    "example": "The company uses drones for warehouse inventory checks.",
+    "difficulty": "intermediate",
+    "topic": "hardware"
+  },
+  {
+    "id": "tvs4-088",
+    "word": "router",
+    "definition": "bộ định tuyến",
+    "example": "The router distributes internet access to all devices.",
+    "difficulty": "beginner",
+    "topic": "hardware"
+  },
+  {
+    "id": "tvs4-089",
+    "word": "malware",
+    "definition": "phần mềm độc hại",
+    "example": "The malware infected thousands of computers worldwide.",
+    "difficulty": "intermediate",
+    "topic": "cybersecurity"
+  },
+  {
+    "id": "tvs4-090",
+    "word": "phishing",
+    "definition": "lừa đảo trực tuyến",
+    "example": "The phishing email tricked employees into revealing passwords.",
+    "difficulty": "intermediate",
+    "topic": "cybersecurity"
+  },
+  {
+    "id": "tvs4-091",
+    "word": "ransomware",
+    "definition": "phần mềm tống tiền",
+    "example": "The ransomware attack encrypted all company files.",
+    "difficulty": "advanced",
+    "topic": "cybersecurity"
+  },
+  {
+    "id": "tvs4-092",
+    "word": "vulnerability",
+    "definition": "lỗ hổng bảo mật",
+    "example": "The security team patched the vulnerability immediately.",
+    "difficulty": "intermediate",
+    "topic": "cybersecurity"
+  },
+  {
+    "id": "tvs4-093",
+    "word": "threat",
+    "definition": "mối đe dọa",
+    "example": "Cyber threats are becoming more sophisticated each year.",
+    "difficulty": "intermediate",
+    "topic": "cybersecurity"
+  },
+  {
+    "id": "tvs4-094",
+    "word": "intrusion",
+    "definition": "sự xâm nhập",
+    "example": "The intrusion detection system flagged suspicious activity.",
+    "difficulty": "advanced",
+    "topic": "cybersecurity"
+  },
+  {
+    "id": "tvs4-095",
+    "word": "authorization",
+    "definition": "phân quyền",
+    "example": "Only authorized personnel can access this database.",
+    "difficulty": "intermediate",
+    "topic": "cybersecurity"
+  },
+  {
+    "id": "tvs4-096",
+    "word": "decryption",
+    "definition": "giải mã",
+    "example": "The decryption key was stored in a secure location.",
+    "difficulty": "advanced",
+    "topic": "cybersecurity"
+  },
+  {
+    "id": "tvs4-097",
+    "word": "breach",
+    "definition": "sự vi phạm bảo mật",
+    "example": "The data breach exposed millions of customer records.",
+    "difficulty": "intermediate",
+    "topic": "cybersecurity"
+  },
+  {
+    "id": "tvs4-098",
+    "word": "exploit",
+    "definition": "lợi dụng lỗ hổng",
+    "example": "Hackers exploit known vulnerabilities to gain access.",
+    "difficulty": "advanced",
+    "topic": "cybersecurity"
+  },
+  {
+    "id": "tvs4-099",
+    "word": "patch management",
+    "definition": "quản lý bản cập nhật",
+    "example": "Regular patch management reduces the risk of attacks.",
+    "difficulty": "advanced",
+    "topic": "cybersecurity"
+  },
+  {
+    "id": "tvs4-100",
+    "word": "access control",
+    "definition": "kiểm soát truy cập",
+    "example": "Strict access control prevents unauthorized data access.",
+    "difficulty": "intermediate",
+    "topic": "cybersecurity"
+  },
+  {
+    "id": "tvs4-101",
+    "word": "audit log",
+    "definition": "nhật ký kiểm toán",
+    "example": "The audit log records all user activities on the system.",
+    "difficulty": "intermediate",
+    "topic": "cybersecurity"
+  },
+  {
+    "id": "tvs4-102",
+    "word": "incident response",
+    "definition": "phản ứng sự cố",
+    "example": "The incident response team contained the breach within hours.",
+    "difficulty": "advanced",
+    "topic": "cybersecurity"
+  },
+  {
+    "id": "tvs4-103",
+    "word": "zero trust",
+    "definition": "mô hình zero trust",
+    "example": "Our security policy follows the zero trust model.",
+    "difficulty": "advanced",
+    "topic": "cybersecurity"
+  },
+  {
+    "id": "tvs4-104",
+    "word": "cyber hygiene",
+    "definition": "vệ sinh mạng",
+    "example": "Good cyber hygiene includes regular password changes.",
+    "difficulty": "intermediate",
+    "topic": "cybersecurity"
+  },
+  {
+    "id": "tvs4-105",
+    "word": "data protection",
+    "definition": "bảo vệ dữ liệu",
+    "example": "Data protection is a legal requirement in many countries.",
+    "difficulty": "intermediate",
+    "topic": "cybersecurity"
+  },
+  {
+    "id": "tvs4-106",
+    "word": "social engineering",
+    "definition": "kỹ thuật lừa đảo",
+    "example": "Social engineering attacks target human psychology, not technology.",
+    "difficulty": "advanced",
+    "topic": "cybersecurity"
+  },
+  {
+    "id": "tvs4-107",
+    "word": "dark web",
+    "definition": "mạng đen",
+    "example": "Stolen credentials are often sold on the dark web.",
+    "difficulty": "advanced",
+    "topic": "cybersecurity"
+  },
+  {
+    "id": "tvs4-108",
+    "word": "sandbox",
+    "definition": "môi trường cô lập",
+    "example": "Run untested code in a sandbox to prevent system damage.",
+    "difficulty": "advanced",
+    "topic": "cybersecurity"
+  },
+  {
+    "id": "tvs4-109",
+    "word": "authentication",
+    "definition": "xác thực",
+    "example": "Two-factor authentication adds an extra layer of security.",
+    "difficulty": "intermediate",
+    "topic": "cybersecurity"
+  },
+  {
+    "id": "tvs4-110",
+    "word": "penetration testing",
+    "definition": "kiểm tra thâm nhập",
+    "example": "Penetration testing helps identify security weaknesses.",
+    "difficulty": "advanced",
+    "topic": "cybersecurity"
+  },
+  {
+    "id": "tvs4-111",
+    "word": "two-factor authentication",
+    "definition": "xác thực hai yếu tố",
+    "example": "Two-factor authentication adds an extra layer of account security.",
+    "difficulty": "intermediate",
+    "topic": "cybersecurity"
+  },
+  {
+    "id": "tvs4-112",
+    "word": "firewall rule",
+    "definition": "quy tắc tường lửa",
+    "example": "Configure the firewall rule to allow only approved traffic.",
+    "difficulty": "intermediate",
+    "topic": "cybersecurity"
+  },
+  {
+    "id": "tvs4-113",
+    "word": "threat detection",
+    "definition": "phát hiện mối đe dọa",
+    "example": "Advanced threat detection systems monitor network activity.",
+    "difficulty": "intermediate",
+    "topic": "cybersecurity"
+  },
+  {
+    "id": "tvs4-114",
+    "word": "security policy",
+    "definition": "chính sách bảo mật",
+    "example": "The security policy outlines rules for data handling.",
+    "difficulty": "intermediate",
+    "topic": "cybersecurity"
+  },
+  {
+    "id": "tvs4-115",
+    "word": "intrusion prevention",
+    "definition": "ngăn chặn xâm nhập",
+    "example": "The intrusion prevention system blocks suspicious network traffic.",
+    "difficulty": "advanced",
+    "topic": "cybersecurity"
+  },
+  {
+    "id": "tvs4-116",
+    "word": "security audit",
+    "definition": "kiểm toán bảo mật",
+    "example": "The security audit revealed several vulnerabilities in the system.",
+    "difficulty": "intermediate",
+    "topic": "cybersecurity"
+  },
+  {
+    "id": "tvs4-117",
+    "word": "cyber resilience",
+    "definition": "khả năng phục hồi mạng",
+    "example": "Cyber resilience ensures the organization can recover from attacks.",
+    "difficulty": "advanced",
+    "topic": "cybersecurity"
+  },
+  {
+    "id": "tvs4-118",
+    "word": "information security",
+    "definition": "bảo mật thông tin",
+    "example": "Information security is everyone's responsibility in the company.",
+    "difficulty": "intermediate",
+    "topic": "cybersecurity"
+  },
+  {
+    "id": "tvs4-119",
+    "word": "antivirus",
+    "definition": "phần mềm diệt virus",
+    "example": "Install antivirus software on all company computers.",
+    "difficulty": "beginner",
+    "topic": "cybersecurity"
+  },
+  {
+    "id": "tvs4-120",
+    "word": "cloud storage",
+    "definition": "lưu trữ đám mây",
+    "example": "Cloud storage allows access to files from any device.",
+    "difficulty": "beginner",
+    "topic": "cloud_computing"
+  },
+  {
+    "id": "tvs4-121",
+    "word": "hosting",
+    "definition": "dịch vụ lưu trữ web",
+    "example": "The website is hosted on a reliable cloud platform.",
+    "difficulty": "beginner",
+    "topic": "cloud_computing"
+  },
+  {
+    "id": "tvs4-122",
+    "word": "serverless",
+    "definition": "không cần máy chủ",
+    "example": "Serverless computing reduces infrastructure management costs.",
+    "difficulty": "advanced",
+    "topic": "cloud_computing"
+  },
+  {
+    "id": "tvs4-123",
+    "word": "elasticity",
+    "definition": "tính linh hoạt tài nguyên",
+    "example": "Cloud elasticity allows resources to scale up or down automatically.",
+    "difficulty": "advanced",
+    "topic": "cloud_computing"
+  },
+  {
+    "id": "tvs4-124",
+    "word": "multi-tenant",
+    "definition": "đa người dùng",
+    "example": "A multi-tenant architecture serves multiple clients efficiently.",
+    "difficulty": "advanced",
+    "topic": "cloud_computing"
+  },
+  {
+    "id": "tvs4-125",
+    "word": "single sign-on",
+    "definition": "đăng nhập một lần",
+    "example": "Single sign-on simplifies user access across applications.",
+    "difficulty": "intermediate",
+    "topic": "cloud_computing"
+  },
+  {
+    "id": "tvs4-126",
+    "word": "data migration",
+    "definition": "di chuyển dữ liệu",
+    "example": "Data migration to the cloud was completed over the weekend.",
+    "difficulty": "intermediate",
+    "topic": "cloud_computing"
+  },
+  {
+    "id": "tvs4-127",
+    "word": "virtual machine",
+    "definition": "máy ảo",
+    "example": "Each virtual machine runs its own operating system.",
+    "difficulty": "intermediate",
+    "topic": "cloud_computing"
+  },
+  {
+    "id": "tvs4-128",
+    "word": "containerization",
+    "definition": "công nghệ container",
+    "example": "Containerization makes applications portable across environments.",
+    "difficulty": "advanced",
+    "topic": "cloud_computing"
+  },
+  {
+    "id": "tvs4-129",
+    "word": "on-demand",
+    "definition": "theo yêu cầu",
+    "example": "Cloud services are available on-demand, paying only for what you use.",
+    "difficulty": "intermediate",
+    "topic": "cloud_computing"
+  },
+  {
+    "id": "tvs4-130",
+    "word": "microservices",
+    "definition": "kiến trúc vi dịch vụ",
+    "example": "Microservices allow independent development of application components.",
+    "difficulty": "advanced",
+    "topic": "cloud_computing"
+  },
+  {
+    "id": "tvs4-131",
+    "word": "disaster recovery",
+    "definition": "khôi phục thảm họa",
+    "example": "A disaster recovery plan ensures business continuity.",
+    "difficulty": "intermediate",
+    "topic": "cloud_computing"
+  },
+  {
+    "id": "tvs4-132",
+    "word": "load balancer",
+    "definition": "bộ cân bằng tải",
+    "example": "The load balancer distributes traffic across multiple servers.",
+    "difficulty": "intermediate",
+    "topic": "cloud_computing"
+  },
+  {
+    "id": "tvs4-133",
+    "word": "cloud-native",
+    "definition": "được xây dựng trên đám mây",
+    "example": "Cloud-native applications are designed to run in the cloud.",
+    "difficulty": "advanced",
+    "topic": "cloud_computing"
+  },
+  {
+    "id": "tvs4-134",
+    "word": "hybrid cloud",
+    "definition": "đám mây lai",
+    "example": "A hybrid cloud combines public and private cloud resources.",
+    "difficulty": "intermediate",
+    "topic": "cloud_computing"
+  },
+  {
+    "id": "tvs4-135",
+    "word": "private cloud",
+    "definition": "đám mây riêng",
+    "example": "Sensitive data is stored on a private cloud for security.",
+    "difficulty": "intermediate",
+    "topic": "cloud_computing"
+  },
+  {
+    "id": "tvs4-136",
+    "word": "public cloud",
+    "definition": "đám mây công cộng",
+    "example": "The public cloud offers cost-effective computing resources.",
+    "difficulty": "beginner",
+    "topic": "cloud_computing"
+  },
+  {
+    "id": "tvs4-137",
+    "word": "autoscaling",
+    "definition": "tự động mở rộng",
+    "example": "Autoscaling adjusts resources based on traffic demands.",
+    "difficulty": "advanced",
+    "topic": "cloud_computing"
+  },
+  {
+    "id": "tvs4-138",
+    "word": "edge computing",
+    "definition": "điện toán biên",
+    "example": "Edge computing processes data closer to the source.",
+    "difficulty": "advanced",
+    "topic": "cloud_computing"
+  },
+  {
+    "id": "tvs4-139",
+    "word": "API gateway",
+    "definition": "cổng API",
+    "example": "The API gateway manages all incoming requests.",
+    "difficulty": "intermediate",
+    "topic": "cloud_computing"
+  },
+  {
+    "id": "tvs4-140",
+    "word": "cloud platform",
+    "definition": "nền tảng đám mây",
+    "example": "Our cloud platform supports multiple programming languages.",
+    "difficulty": "beginner",
+    "topic": "cloud_computing"
+  },
+  {
+    "id": "tvs4-141",
+    "word": "provisioning",
+    "definition": "cung cấp tài nguyên",
+    "example": "Automated provisioning reduces setup time for new servers.",
+    "difficulty": "advanced",
+    "topic": "cloud_computing"
+  },
+  {
+    "id": "tvs4-142",
+    "word": "tenant isolation",
+    "definition": "cô lập người dùng",
+    "example": "Tenant isolation ensures data privacy between organizations.",
+    "difficulty": "advanced",
+    "topic": "cloud_computing"
+  },
+  {
+    "id": "tvs4-143",
+    "word": "cloud security",
+    "definition": "bảo mật đám mây",
+    "example": "Cloud security requires ongoing monitoring and updates.",
+    "difficulty": "intermediate",
+    "topic": "cloud_computing"
+  },
+  {
+    "id": "tvs4-144",
+    "word": "cloud service provider",
+    "definition": "nhà cung cấp dịch vụ đám mây",
+    "example": "Choose a reliable cloud service provider for your business.",
+    "difficulty": "intermediate",
+    "topic": "cloud_computing"
+  },
+  {
+    "id": "tvs4-145",
+    "word": "cloud infrastructure",
+    "definition": "hạ tầng đám mây",
+    "example": "The cloud infrastructure supports global operations.",
+    "difficulty": "intermediate",
+    "topic": "cloud_computing"
+  },
+  {
+    "id": "tvs4-146",
+    "word": "cloud deployment",
+    "definition": "triển khai đám mây",
+    "example": "Cloud deployment requires careful planning and testing.",
+    "difficulty": "intermediate",
+    "topic": "cloud_computing"
+  },
+  {
+    "id": "tvs4-147",
+    "word": "cloud migration",
+    "definition": "di chuyển lên đám mây",
+    "example": "Cloud migration reduced our on-premise server costs.",
+    "difficulty": "intermediate",
+    "topic": "cloud_computing"
+  },
+  {
+    "id": "tvs4-148",
+    "word": "data lake",
+    "definition": "hồ dữ liệu",
+    "example": "The data lake stores raw data from multiple sources.",
+    "difficulty": "advanced",
+    "topic": "cloud_computing"
+  },
+  {
+    "id": "tvs4-149",
+    "word": "uptime guarantee",
+    "definition": "cam kết thời gian hoạt động",
+    "example": "Our uptime guarantee is 99.99%.",
+    "difficulty": "intermediate",
+    "topic": "cloud_computing"
+  },
+  {
+    "id": "tvs4-150",
+    "word": "storage tier",
+    "definition": "mức lưu trữ",
+    "example": "Frequently accessed data is stored in a higher storage tier.",
+    "difficulty": "advanced",
+    "topic": "cloud_computing"
+  },
+  {
+    "id": "tvs4-151",
+    "word": "data set",
+    "definition": "tập dữ liệu",
+    "example": "The data set includes records from the past five years.",
+    "difficulty": "beginner",
+    "topic": "data_analytics"
+  },
+  {
+    "id": "tvs4-152",
+    "word": "trend",
+    "definition": "xu hướng",
+    "example": "The analysis revealed a downward trend in customer satisfaction.",
+    "difficulty": "beginner",
+    "topic": "data_analytics"
+  },
+  {
+    "id": "tvs4-153",
+    "word": "pattern",
+    "definition": "mẫu, quy luật",
+    "example": "We identified a pattern in customer purchasing behavior.",
+    "difficulty": "beginner",
+    "topic": "data_analytics"
+  },
+  {
+    "id": "tvs4-154",
+    "word": "correlation",
+    "definition": "tương quan",
+    "example": "There is a strong correlation between price and demand.",
+    "difficulty": "intermediate",
+    "topic": "data_analytics"
+  },
+  {
+    "id": "tvs4-155",
+    "word": "insight",
+    "definition": "hiểu biết sâu sắc, phát hiện",
+    "example": "The data provided valuable insights into customer behavior.",
+    "difficulty": "beginner",
+    "topic": "data_analytics"
+  },
+  {
+    "id": "tvs4-156",
+    "word": "visualization",
+    "definition": "trực quan hóa dữ liệu",
+    "example": "Data visualization makes complex information easier to understand.",
+    "difficulty": "intermediate",
+    "topic": "data_analytics"
+  },
+  {
+    "id": "tvs4-157",
+    "word": "dashboard",
+    "definition": "bảng điều khiển",
+    "example": "The dashboard displays real-time sales data.",
+    "difficulty": "beginner",
+    "topic": "data_analytics"
+  },
+  {
+    "id": "tvs4-158",
+    "word": "metric",
+    "definition": "chỉ số đo lường",
+    "example": "Customer satisfaction is our most important metric.",
+    "difficulty": "beginner",
+    "topic": "data_analytics"
+  },
+  {
+    "id": "tvs4-159",
+    "word": "sample",
+    "definition": "mẫu kiểm tra",
+    "example": "We selected a random sample of five hundred customers.",
+    "difficulty": "beginner",
+    "topic": "data_analytics"
+  },
+  {
+    "id": "tvs4-160",
+    "word": "regression",
+    "definition": "phân tích hồi quy",
+    "example": "Regression analysis helps predict future sales trends.",
+    "difficulty": "advanced",
+    "topic": "data_analytics"
+  },
+  {
+    "id": "tvs4-161",
+    "word": "outlier",
+    "definition": "giá trị ngoại lai",
+    "example": "The outlier skewed the average significantly.",
+    "difficulty": "advanced",
+    "topic": "data_analytics"
+  },
+  {
+    "id": "tvs4-162",
+    "word": "mean",
+    "definition": "giá trị trung bình",
+    "example": "The mean salary of employees is sixty thousand dollars.",
+    "difficulty": "beginner",
+    "topic": "data_analytics"
+  },
+  {
+    "id": "tvs4-163",
+    "word": "median",
+    "definition": "trung vị",
+    "example": "The median age of our customers is thirty-five.",
+    "difficulty": "intermediate",
+    "topic": "data_analytics"
+  },
+  {
+    "id": "tvs4-164",
+    "word": "aggregation",
+    "definition": "sự tổng hợp dữ liệu",
+    "example": "Aggregation of data from multiple sources improves accuracy.",
+    "difficulty": "advanced",
+    "topic": "data_analytics"
+  },
+  {
+    "id": "tvs4-165",
+    "word": "data quality",
+    "definition": "chất lượng dữ liệu",
+    "example": "Poor data quality leads to unreliable analysis results.",
+    "difficulty": "intermediate",
+    "topic": "data_analytics"
+  },
+  {
+    "id": "tvs4-166",
+    "word": "segmentation",
+    "definition": "phân khúc dữ liệu",
+    "example": "Customer segmentation helps target marketing campaigns.",
+    "difficulty": "intermediate",
+    "topic": "data_analytics"
+  },
+  {
+    "id": "tvs4-167",
+    "word": "predictive",
+    "definition": "mang tính dự đoán",
+    "example": "Predictive analytics helps forecast future demand.",
+    "difficulty": "intermediate",
+    "topic": "data_analytics"
+  },
+  {
+    "id": "tvs4-168",
+    "word": "descriptive",
+    "definition": "mang tính mô tả",
+    "example": "Descriptive statistics summarize the main features of a data set.",
+    "difficulty": "intermediate",
+    "topic": "data_analytics"
+  },
+  {
+    "id": "tvs4-169",
+    "word": "prescriptive",
+    "definition": "mang tính khuyên nghị",
+    "example": "Prescriptive analytics suggests the best course of action.",
+    "difficulty": "advanced",
+    "topic": "data_analytics"
+  },
+  {
+    "id": "tvs4-170",
+    "word": "data mining",
+    "definition": "khai thác dữ liệu",
+    "example": "Data mining reveals hidden patterns in large data sets.",
+    "difficulty": "intermediate",
+    "topic": "data_analytics"
+  },
+  {
+    "id": "tvs4-171",
+    "word": "ETL",
+    "definition": "trích xuất, chuyển đổi, tải dữ liệu",
+    "example": "The ETL process cleans data before loading it into the warehouse.",
+    "difficulty": "advanced",
+    "topic": "data_analytics"
+  },
+  {
+    "id": "tvs4-172",
+    "word": "data warehouse",
+    "definition": "kho dữ liệu",
+    "example": "The data warehouse stores historical records for analysis.",
+    "difficulty": "intermediate",
+    "topic": "data_analytics"
+  },
+  {
+    "id": "tvs4-173",
+    "word": "reporting",
+    "definition": "lập báo cáo",
+    "example": "Automated reporting saves time for the analytics team.",
+    "difficulty": "beginner",
+    "topic": "data_analytics"
+  },
+  {
+    "id": "tvs4-174",
+    "word": "data-driven",
+    "definition": "dựa trên dữ liệu",
+    "example": "Our data-driven approach ensures better business decisions.",
+    "difficulty": "intermediate",
+    "topic": "data_analytics"
+  },
+  {
+    "id": "tvs4-175",
+    "word": "statistical",
+    "definition": "thống kê",
+    "example": "Statistical analysis revealed significant differences between groups.",
+    "difficulty": "intermediate",
+    "topic": "data_analytics"
+  },
+  {
+    "id": "tvs4-176",
+    "word": "normalization",
+    "definition": "chuẩn hóa dữ liệu",
+    "example": "Data normalization ensures consistency across different formats.",
+    "difficulty": "advanced",
+    "topic": "data_analytics"
+  },
+  {
+    "id": "tvs4-177",
+    "word": "anomaly",
+    "definition": "sự bất thường",
+    "example": "The system detected an anomaly in the transaction data.",
+    "difficulty": "advanced",
+    "topic": "data_analytics"
+  },
+  {
+    "id": "tvs4-178",
+    "word": "granularity",
+    "definition": "mức độ chi tiết",
+    "example": "Increasing data granularity provides more precise insights.",
+    "difficulty": "advanced",
+    "topic": "data_analytics"
+  },
+  {
+    "id": "tvs4-179",
+    "word": "data analysis",
+    "definition": "phân tích dữ liệu",
+    "example": "Data analysis reveals trends that guide business decisions.",
+    "difficulty": "beginner",
+    "topic": "data_analytics"
+  },
+  {
+    "id": "tvs4-180",
+    "word": "data science",
+    "definition": "khoa học dữ liệu",
+    "example": "Data science combines statistics and programming to extract insights.",
+    "difficulty": "intermediate",
+    "topic": "data_analytics"
+  },
+  {
+    "id": "tvs4-181",
+    "word": "business intelligence",
+    "definition": "trí tuệ kinh doanh",
+    "example": "Business intelligence tools help managers make informed decisions.",
+    "difficulty": "intermediate",
+    "topic": "data_analytics"
+  },
+  {
+    "id": "tvs4-182",
+    "word": "data visualization",
+    "definition": "trực quan hóa dữ liệu",
+    "example": "Data visualization helps present complex data clearly.",
+    "difficulty": "intermediate",
+    "topic": "data_analytics"
+  },
+  {
+    "id": "tvs4-183",
+    "word": "neural network",
+    "definition": "mạng thần kinh",
+    "example": "Neural networks are used for image recognition tasks.",
+    "difficulty": "advanced",
+    "topic": "artificial_intelligence"
+  },
+  {
+    "id": "tvs4-184",
+    "word": "deep learning",
+    "definition": "học sâu",
+    "example": "Deep learning powers voice assistants and recommendation engines.",
+    "difficulty": "advanced",
+    "topic": "artificial_intelligence"
+  },
+  {
+    "id": "tvs4-185",
+    "word": "training data",
+    "definition": "dữ liệu huấn luyện",
+    "example": "The model was trained on millions of labeled images.",
+    "difficulty": "intermediate",
+    "topic": "artificial_intelligence"
+  },
+  {
+    "id": "tvs4-186",
+    "word": "model",
+    "definition": "mô hình AI",
+    "example": "The AI model predicts customer churn with high accuracy.",
+    "difficulty": "intermediate",
+    "topic": "artificial_intelligence"
+  },
+  {
+    "id": "tvs4-187",
+    "word": "inference",
+    "definition": "suy luận, dự đoán",
+    "example": "The system performs real-time inference on incoming data.",
+    "difficulty": "advanced",
+    "topic": "artificial_intelligence"
+  },
+  {
+    "id": "tvs4-188",
+    "word": "supervised learning",
+    "definition": "học có giám sát",
+    "example": "Supervised learning uses labeled data to train models.",
+    "difficulty": "advanced",
+    "topic": "artificial_intelligence"
+  },
+  {
+    "id": "tvs4-189",
+    "word": "unsupervised learning",
+    "definition": "học không giám sát",
+    "example": "Unsupervised learning identifies hidden patterns in data.",
+    "difficulty": "advanced",
+    "topic": "artificial_intelligence"
+  },
+  {
+    "id": "tvs4-190",
+    "word": "natural language processing",
+    "definition": "xử lý ngôn ngữ tự nhiên",
+    "example": "NLP enables chatbots to understand human language.",
+    "difficulty": "advanced",
+    "topic": "artificial_intelligence"
+  },
+  {
+    "id": "tvs4-191",
+    "word": "chatbot",
+    "definition": "trò chuyện tự động, chatbot",
+    "example": "The customer service chatbot handles common inquiries.",
+    "difficulty": "beginner",
+    "topic": "artificial_intelligence"
+  },
+  {
+    "id": "tvs4-192",
+    "word": "recommendation engine",
+    "definition": "công cụ gợi ý",
+    "example": "The recommendation engine suggests products based on browsing history.",
+    "difficulty": "intermediate",
+    "topic": "artificial_intelligence"
+  },
+  {
+    "id": "tvs4-193",
+    "word": "autonomous",
+    "definition": "tự động, tự chủ",
+    "example": "Autonomous vehicles use AI to navigate roads safely.",
+    "difficulty": "intermediate",
+    "topic": "artificial_intelligence"
+  },
+  {
+    "id": "tvs4-194",
+    "word": "bias",
+    "definition": "thiên vị trong dữ liệu",
+    "example": "AI bias can lead to unfair outcomes in hiring decisions.",
+    "difficulty": "advanced",
+    "topic": "artificial_intelligence"
+  },
+  {
+    "id": "tvs4-195",
+    "word": "annotation",
+    "definition": "đánh dấu dữ liệu",
+    "example": "Accurate annotation is essential for supervised learning.",
+    "difficulty": "advanced",
+    "topic": "artificial_intelligence"
+  },
+  {
+    "id": "tvs4-196",
+    "word": "classification",
+    "definition": "phân loại",
+    "example": "The classification algorithm sorts emails into categories.",
+    "difficulty": "intermediate",
+    "topic": "artificial_intelligence"
+  },
+  {
+    "id": "tvs4-197",
+    "word": "clustering",
+    "definition": "phân cụm",
+    "example": "Clustering groups similar customers together.",
+    "difficulty": "intermediate",
+    "topic": "artificial_intelligence"
+  },
+  {
+    "id": "tvs4-198",
+    "word": "reinforcement learning",
+    "definition": "học tăng cường",
+    "example": "Reinforcement learning trains agents through trial and error.",
+    "difficulty": "advanced",
+    "topic": "artificial_intelligence"
+  },
+  {
+    "id": "tvs4-199",
+    "word": "generative AI",
+    "definition": "AI tạo sinh",
+    "example": "Generative AI can create text, images, and music.",
+    "difficulty": "intermediate",
+    "topic": "artificial_intelligence"
+  },
+  {
+    "id": "tvs4-200",
+    "word": "large language model",
+    "definition": "mô hình ngôn ngữ lớn",
+    "example": "Large language models generate human-like responses.",
+    "difficulty": "advanced",
+    "topic": "artificial_intelligence"
+  },
+  {
+    "id": "tvs4-201",
+    "word": "prompt engineering",
+    "definition": "thiết kế lệnh cho AI",
+    "example": "Good prompt engineering improves AI output quality.",
+    "difficulty": "advanced",
+    "topic": "artificial_intelligence"
+  },
+  {
+    "id": "tvs4-202",
+    "word": "ethics",
+    "definition": "đạo đức AI",
+    "example": "AI ethics guidelines ensure responsible technology use.",
+    "difficulty": "intermediate",
+    "topic": "artificial_intelligence"
+  },
+  {
+    "id": "tvs4-203",
+    "word": "explainability",
+    "definition": "khả năng giải thích",
+    "example": "Model explainability helps stakeholders understand AI decisions.",
+    "difficulty": "advanced",
+    "topic": "artificial_intelligence"
+  },
+  {
+    "id": "tvs4-204",
+    "word": "overfitting",
+    "definition": "quá拟合",
+    "example": "Overfitting occurs when a model learns noise instead of patterns.",
+    "difficulty": "advanced",
+    "topic": "artificial_intelligence"
+  },
+  {
+    "id": "tvs4-205",
+    "word": "computer vision",
+    "definition": "thị giác máy tính",
+    "example": "Computer vision enables machines to interpret images.",
+    "difficulty": "advanced",
+    "topic": "artificial_intelligence"
+  },
+  {
+    "id": "tvs4-206",
+    "word": "speech recognition",
+    "definition": "nhận dạng giọng nói",
+    "example": "Speech recognition converts spoken words into text.",
+    "difficulty": "intermediate",
+    "topic": "artificial_intelligence"
+  },
+  {
+    "id": "tvs4-207",
+    "word": "sentiment analysis",
+    "definition": "phân tích cảm xúc",
+    "example": "Sentiment analysis measures customer opinions on social media.",
+    "difficulty": "intermediate",
+    "topic": "artificial_intelligence"
+  },
+  {
+    "id": "tvs4-208",
+    "word": "AI assistant",
+    "definition": "trợ lý AI",
+    "example": "The AI assistant schedules meetings and sends reminders.",
+    "difficulty": "beginner",
+    "topic": "artificial_intelligence"
+  },
+  {
+    "id": "tvs4-209",
+    "word": "robotics",
+    "definition": "ngành robot học",
+    "example": "Robotics combines AI with mechanical engineering.",
+    "difficulty": "intermediate",
+    "topic": "artificial_intelligence"
+  },
+  {
+    "id": "tvs4-210",
+    "word": "predictive model",
+    "definition": "mô hình dự đoán",
+    "example": "The predictive model forecasts quarterly revenue accurately.",
+    "difficulty": "intermediate",
+    "topic": "artificial_intelligence"
+  },
+  {
+    "id": "tvs4-211",
+    "word": "edge AI",
+    "definition": "AI tại biên",
+    "example": "Edge AI processes data on local devices instead of the cloud.",
+    "difficulty": "advanced",
+    "topic": "artificial_intelligence"
+  },
+  {
+    "id": "tvs4-212",
+    "word": "fine-tuning",
+    "definition": "tinh chỉnh mô hình",
+    "example": "Fine-tuning the model improved its accuracy on domain-specific tasks.",
+    "difficulty": "advanced",
+    "topic": "artificial_intelligence"
+  },
+  {
+    "id": "tvs4-213",
+    "word": "dataset",
+    "definition": "tập dữ liệu huấn luyện",
+    "example": "A large, diverse dataset improves model performance.",
+    "difficulty": "intermediate",
+    "topic": "artificial_intelligence"
+  },
+  {
+    "id": "tvs4-214",
+    "word": "automated",
+    "definition": "tự động hóa",
+    "example": "The automated system processes orders without human intervention.",
+    "difficulty": "beginner",
+    "topic": "automation"
+  },
+  {
+    "id": "tvs4-215",
+    "word": "robotic process automation",
+    "definition": "tự động hóa quy trình bằng robot",
+    "example": "RPA eliminates repetitive data entry tasks.",
+    "difficulty": "intermediate",
+    "topic": "automation"
+  },
+  {
+    "id": "tvs4-216",
+    "word": "scheduling",
+    "definition": "lập lịch trình",
+    "example": "Automated scheduling ensures tasks are completed on time.",
+    "difficulty": "beginner",
+    "topic": "automation"
+  },
+  {
+    "id": "tvs4-217",
+    "word": "trigger",
+    "definition": "kích hoạt",
+    "example": "The email trigger sends a notification when the task is complete.",
+    "difficulty": "intermediate",
+    "topic": "automation"
+  },
+  {
+    "id": "tvs4-218",
+    "word": "orchestration",
+    "definition": "điều phối tự động",
+    "example": "Container orchestration manages hundreds of microservices.",
+    "difficulty": "advanced",
+    "topic": "automation"
+  },
+  {
+    "id": "tvs4-219",
+    "word": "batch processing",
+    "definition": "xử lý hàng loạt",
+    "example": "Batch processing runs at night to minimize system impact.",
+    "difficulty": "intermediate",
+    "topic": "automation"
+  },
+  {
+    "id": "tvs4-220",
+    "word": "real-time",
+    "definition": "thời gian thực",
+    "example": "Real-time monitoring alerts operators to system issues.",
+    "difficulty": "intermediate",
+    "topic": "automation"
+  },
+  {
+    "id": "tvs4-221",
+    "word": "script",
+    "definition": "kịch bản tự động, script",
+    "example": "The script automates the daily backup process.",
+    "difficulty": "beginner",
+    "topic": "automation"
+  },
+  {
+    "id": "tvs4-222",
+    "word": "macro",
+    "definition": "macro tự động",
+    "example": "The Excel macro calculates totals automatically.",
+    "difficulty": "beginner",
+    "topic": "automation"
+  },
+  {
+    "id": "tvs4-223",
+    "word": "repetitive",
+    "definition": "lặp đi lặp lại",
+    "example": "Repetitive tasks are ideal candidates for automation.",
+    "difficulty": "beginner",
+    "topic": "automation"
+  },
+  {
+    "id": "tvs4-224",
+    "word": "auto-scaling",
+    "definition": "tự động mở rộng tài nguyên",
+    "example": "Auto-scaling adjusts server capacity based on traffic.",
+    "difficulty": "intermediate",
+    "topic": "automation"
+  },
+  {
+    "id": "tvs4-225",
+    "word": "self-service",
+    "definition": "tự phục vụ",
+    "example": "Self-service portals let customers resolve issues independently.",
+    "difficulty": "intermediate",
+    "topic": "automation"
+  },
+  {
+    "id": "tvs4-226",
+    "word": "workflow engine",
+    "definition": "công cụ quản lý luồng công việc",
+    "example": "The workflow engine routes tasks to the right team members.",
+    "difficulty": "intermediate",
+    "topic": "automation"
+  },
+  {
+    "id": "tvs4-227",
+    "word": "task automation",
+    "definition": "tự động hóa tác vụ",
+    "example": "Task automation frees employees to focus on higher-value work.",
+    "difficulty": "beginner",
+    "topic": "automation"
+  },
+  {
+    "id": "tvs4-228",
+    "word": "monitoring",
+    "definition": "giám sát tự động",
+    "example": "Continuous monitoring detects issues before they escalate.",
+    "difficulty": "intermediate",
+    "topic": "automation"
+  },
+  {
+    "id": "tvs4-229",
+    "word": "scheduled",
+    "definition": "đã lên lịch",
+    "example": "Scheduled maintenance occurs every Sunday at midnight.",
+    "difficulty": "beginner",
+    "topic": "automation"
+  },
+  {
+    "id": "tvs4-230",
+    "word": "trigger-based",
+    "definition": "dựa trên sự kích hoạt",
+    "example": "Trigger-based actions respond to specific events in the system.",
+    "difficulty": "intermediate",
+    "topic": "automation"
+  },
+  {
+    "id": "tvs4-231",
+    "word": "rule engine",
+    "definition": "công cụ quy tắc",
+    "example": "The rule engine automates approval workflows.",
+    "difficulty": "advanced",
+    "topic": "automation"
+  },
+  {
+    "id": "tvs4-232",
+    "word": "intelligent automation",
+    "definition": "tự động hóa thông minh",
+    "example": "Intelligent automation combines AI with traditional automation.",
+    "difficulty": "advanced",
+    "topic": "automation"
+  },
+  {
+    "id": "tvs4-233",
+    "word": "lights-out",
+    "definition": "hoạt động không cần người",
+    "example": "The lights-out factory operates entirely through automation.",
+    "difficulty": "advanced",
+    "topic": "automation"
+  },
+  {
+    "id": "tvs4-234",
+    "word": "process mining",
+    "definition": "khai thác quy trình",
+    "example": "Process mining identifies bottlenecks in business workflows.",
+    "difficulty": "advanced",
+    "topic": "automation"
+  },
+  {
+    "id": "tvs4-235",
+    "word": "hyperautomation",
+    "definition": "siêu tự động hóa",
+    "example": "Hyperautomation combines multiple technologies to automate complex processes.",
+    "difficulty": "advanced",
+    "topic": "automation"
+  },
+  {
+    "id": "tvs4-236",
+    "word": "digital worker",
+    "definition": "công nhân kỹ thuật số",
+    "example": "Digital workers handle routine tasks alongside human teams.",
+    "difficulty": "intermediate",
+    "topic": "automation"
+  },
+  {
+    "id": "tvs4-237",
+    "word": "error handling",
+    "definition": "xử lý lỗi tự động",
+    "example": "Robust error handling prevents automation failures.",
+    "difficulty": "intermediate",
+    "topic": "automation"
+  },
+  {
+    "id": "tvs4-238",
+    "word": "data entry",
+    "definition": "nhập dữ liệu",
+    "example": "Automated data entry eliminates typing errors.",
+    "difficulty": "beginner",
+    "topic": "automation"
+  },
+  {
+    "id": "tvs4-239",
+    "word": "auto-reply",
+    "definition": "trả lời tự động",
+    "example": "The auto-reply function acknowledges customer emails instantly.",
+    "difficulty": "beginner",
+    "topic": "automation"
+  },
+  {
+    "id": "tvs4-240",
+    "word": "process automation",
+    "definition": "tự động hóa quy trình",
+    "example": "Process automation reduces manual errors in data entry.",
+    "difficulty": "intermediate",
+    "topic": "automation"
+  },
+  {
+    "id": "tvs4-241",
+    "word": "simplified",
+    "definition": "được đơn giản hóa",
+    "example": "The simplified process reduces errors and saves time.",
+    "difficulty": "beginner",
+    "topic": "automation"
+  },
+  {
+    "id": "tvs4-242",
+    "word": "workflow automation",
+    "definition": "tự động hóa luồng công việc",
+    "example": "Workflow automation streamlines the approval process.",
+    "difficulty": "intermediate",
+    "topic": "automation"
+  },
+  {
+    "id": "tvs4-243",
+    "word": "broadband",
+    "definition": "băng thông rộng",
+    "example": "Broadband internet is essential for remote work.",
+    "difficulty": "beginner",
+    "topic": "telecommunications"
+  },
+  {
+    "id": "tvs4-244",
+    "word": "fiber optic",
+    "definition": "cáp quang",
+    "example": "Fiber optic connections provide the fastest internet speeds.",
+    "difficulty": "intermediate",
+    "topic": "telecommunications"
+  },
+  {
+    "id": "tvs4-245",
+    "word": "signal",
+    "definition": "tín hiệu",
+    "example": "The signal was weak in the rural area.",
+    "difficulty": "beginner",
+    "topic": "telecommunications"
+  },
+  {
+    "id": "tvs4-246",
+    "word": "satellite",
+    "definition": "vệ tinh",
+    "example": "Satellite internet reaches remote locations.",
+    "difficulty": "intermediate",
+    "topic": "telecommunications"
+  },
+  {
+    "id": "tvs4-247",
+    "word": "roaming",
+    "definition": "chuyển vùng",
+    "example": "Roaming charges apply when using your phone abroad.",
+    "difficulty": "beginner",
+    "topic": "telecommunications"
+  },
+  {
+    "id": "tvs4-248",
+    "word": "tower",
+    "definition": "tháp truyền thông",
+    "example": "The cell tower provides coverage for the surrounding area.",
+    "difficulty": "beginner",
+    "topic": "telecommunications"
+  },
+  {
+    "id": "tvs4-249",
+    "word": "spectrum",
+    "definition": "phổ tần số",
+    "example": "The government allocated new spectrum for 5G networks.",
+    "difficulty": "advanced",
+    "topic": "telecommunications"
+  },
+  {
+    "id": "tvs4-250",
+    "word": "relay",
+    "definition": "trạm tiếp sóng",
+    "example": "The relay station extends the signal to distant areas.",
+    "difficulty": "intermediate",
+    "topic": "telecommunications"
+  },
+  {
+    "id": "tvs4-251",
+    "word": "antenna",
+    "definition": "ăng-ten",
+    "example": "The antenna improves signal reception for the building.",
+    "difficulty": "beginner",
+    "topic": "telecommunications"
+  },
+  {
+    "id": "tvs4-252",
+    "word": "modem",
+    "definition": "bộ điều giải",
+    "example": "The modem connects the home network to the internet.",
+    "difficulty": "beginner",
+    "topic": "telecommunications"
+  },
+  {
+    "id": "tvs4-253",
+    "word": "access point",
+    "definition": "điểm truy cập",
+    "example": "Install an access point to extend Wi-Fi coverage.",
+    "difficulty": "intermediate",
+    "topic": "telecommunications"
+  },
+  {
+    "id": "tvs4-254",
+    "word": "mesh network",
+    "definition": "mạng lưới mesh",
+    "example": "A mesh network provides seamless Wi-Fi throughout the building.",
+    "difficulty": "intermediate",
+    "topic": "telecommunications"
+  },
+  {
+    "id": "tvs4-255",
+    "word": "packet",
+    "definition": "gói dữ liệu",
+    "example": "Each data packet is routed through the network independently.",
+    "difficulty": "intermediate",
+    "topic": "telecommunications"
+  },
+  {
+    "id": "tvs4-256",
+    "word": "VoIP",
+    "definition": "thoại qua giao thức internet",
+    "example": "VoIP technology reduces international calling costs.",
+    "difficulty": "intermediate",
+    "topic": "telecommunications"
+  },
+  {
+    "id": "tvs4-257",
+    "word": "SIM card",
+    "definition": "thẻ SIM",
+    "example": "Insert the SIM card to activate the phone.",
+    "difficulty": "beginner",
+    "topic": "telecommunications"
+  },
+  {
+    "id": "tvs4-258",
+    "word": "data plan",
+    "definition": "gói dữ liệu di động",
+    "example": "Choose a data plan that suits your monthly usage.",
+    "difficulty": "beginner",
+    "topic": "telecommunications"
+  },
+  {
+    "id": "tvs4-259",
+    "word": "congestion",
+    "definition": "tắc nghẽn mạng",
+    "example": "Network congestion causes slow data transfer speeds.",
+    "difficulty": "intermediate",
+    "topic": "telecommunications"
+  },
+  {
+    "id": "tvs4-260",
+    "word": "bandwidth allocation",
+    "definition": "phân bổ băng thông",
+    "example": "Proper bandwidth allocation prevents network bottlenecks.",
+    "difficulty": "intermediate",
+    "topic": "telecommunications"
+  },
+  {
+    "id": "tvs4-261",
+    "word": "telephony",
+    "definition": "công nghệ điện thoại",
+    "example": "Cloud telephony replaces traditional phone systems.",
+    "difficulty": "intermediate",
+    "topic": "telecommunications"
+  },
+  {
+    "id": "tvs4-262",
+    "word": "network topology",
+    "definition": "cấu trúc mạng",
+    "example": "The star topology is common in small office networks.",
+    "difficulty": "advanced",
+    "topic": "telecommunications"
+  },
+  {
+    "id": "tvs4-263",
+    "word": "network infrastructure",
+    "definition": "hạ tầng mạng",
+    "example": "The company upgraded its network infrastructure for faster speeds.",
+    "difficulty": "intermediate",
+    "topic": "telecommunications"
+  },
+  {
+    "id": "tvs4-264",
+    "word": "wireless",
+    "definition": "không dây",
+    "example": "Wireless technology allows devices to connect without cables.",
+    "difficulty": "beginner",
+    "topic": "telecommunications"
+  },
+  {
+    "id": "tvs4-265",
+    "word": "mobile network",
+    "definition": "mạng di động",
+    "example": "The mobile network provides coverage in rural areas.",
+    "difficulty": "beginner",
+    "topic": "telecommunications"
+  },
+  {
+    "id": "tvs4-266",
+    "word": "signal strength",
+    "definition": "cường độ tín hiệu",
+    "example": "Signal strength is stronger near the cell tower.",
+    "difficulty": "beginner",
+    "topic": "telecommunications"
+  },
+  {
+    "id": "tvs4-267",
+    "word": "5G",
+    "definition": "mạng thế hệ thứ 5",
+    "example": "5G technology enables faster wireless communication.",
+    "difficulty": "intermediate",
+    "topic": "telecommunications"
+  },
+  {
+    "id": "tvs4-268",
+    "word": "failover",
+    "definition": "chuyển dự phòng",
+    "example": "Automatic failover ensures uninterrupted service during outages.",
+    "difficulty": "advanced",
+    "topic": "telecommunications"
+  },
+  {
+    "id": "tvs4-269",
+    "word": "point of presence",
+    "definition": "điểm hiện diện mạng",
+    "example": "The ISP has points of presence in major cities.",
+    "difficulty": "advanced",
+    "topic": "telecommunications"
+  },
+  {
+    "id": "tvs4-270",
+    "word": "spectrum allocation",
+    "definition": "phân bổ phổ tần",
+    "example": "Spectrum allocation affects the quality of wireless services.",
+    "difficulty": "advanced",
+    "topic": "telecommunications"
+  },
+  {
+    "id": "tvs4-271",
+    "word": "subnetwork",
+    "definition": "mạng con",
+    "example": "The office is divided into separate subnetworks for security.",
+    "difficulty": "intermediate",
+    "topic": "networking"
+  },
+  {
+    "id": "tvs4-272",
+    "word": "gateway",
+    "definition": "cổng mạng",
+    "example": "The gateway connects the local network to the internet.",
+    "difficulty": "intermediate",
+    "topic": "networking"
+  },
+  {
+    "id": "tvs4-273",
+    "word": "bridge",
+    "definition": "bộ cầu nối mạng",
+    "example": "The bridge connects two network segments.",
+    "difficulty": "intermediate",
+    "topic": "networking"
+  },
+  {
+    "id": "tvs4-274",
+    "word": "topology",
+    "definition": "cấu trúc mạng",
+    "example": "The network topology determines how devices are connected.",
+    "difficulty": "intermediate",
+    "topic": "networking"
+  },
+  {
+    "id": "tvs4-275",
+    "word": "node",
+    "definition": "nút mạng",
+    "example": "Each node in the network can communicate with others.",
+    "difficulty": "intermediate",
+    "topic": "networking"
+  },
+  {
+    "id": "tvs4-276",
+    "word": "hop",
+    "definition": "bước nhảy mạng",
+    "example": "Each hop adds a small amount of latency to the connection.",
+    "difficulty": "advanced",
+    "topic": "networking"
+  },
+  {
+    "id": "tvs4-277",
+    "word": "packet loss",
+    "definition": "mất gói dữ liệu",
+    "example": "High packet loss degrades video call quality.",
+    "difficulty": "intermediate",
+    "topic": "networking"
+  },
+  {
+    "id": "tvs4-278",
+    "word": "jitter",
+    "definition": "biến thiên độ trễ",
+    "example": "Low jitter is important for voice over IP calls.",
+    "difficulty": "advanced",
+    "topic": "networking"
+  },
+  {
+    "id": "tvs4-279",
+    "word": "VPN",
+    "definition": "mạng riêng ảo",
+    "example": "The VPN encrypts all data transmitted over the internet.",
+    "difficulty": "intermediate",
+    "topic": "networking"
+  },
+  {
+    "id": "tvs4-280",
+    "word": "DHCP",
+    "definition": "giao thức cấu hình IP tự động",
+    "example": "DHCP automatically assigns IP addresses to devices.",
+    "difficulty": "advanced",
+    "topic": "networking"
+  },
+  {
+    "id": "tvs4-281",
+    "word": "DNS",
+    "definition": "hệ thống tên miền",
+    "example": "DNS translates domain names into IP addresses.",
+    "difficulty": "intermediate",
+    "topic": "networking"
+  },
+  {
+    "id": "tvs4-282",
+    "word": "static IP",
+    "definition": "địa chỉ IP tĩnh",
+    "example": "Servers typically use a static IP address.",
+    "difficulty": "intermediate",
+    "topic": "networking"
+  },
+  {
+    "id": "tvs4-283",
+    "word": "dynamic IP",
+    "definition": "địa chỉ IP động",
+    "example": "Dynamic IP addresses change each time a device connects.",
+    "difficulty": "intermediate",
+    "topic": "networking"
+  },
+  {
+    "id": "tvs4-284",
+    "word": "subnet mask",
+    "definition": "mặt nạ mạng con",
+    "example": "The subnet mask defines the network portion of an IP address.",
+    "difficulty": "advanced",
+    "topic": "networking"
+  },
+  {
+    "id": "tvs4-285",
+    "word": "NAT",
+    "definition": "dịch địa chỉ mạng",
+    "example": "NAT allows multiple devices to share one public IP address.",
+    "difficulty": "advanced",
+    "topic": "networking"
+  },
+  {
+    "id": "tvs4-286",
+    "word": "port forwarding",
+    "definition": "chuyển tiếp cổng",
+    "example": "Port forwarding directs external traffic to a specific device.",
+    "difficulty": "advanced",
+    "topic": "networking"
+  },
+  {
+    "id": "tvs4-287",
+    "word": "loopback",
+    "definition": "địa chỉ loopback",
+    "example": "The loopback address 127.0.0.1 refers to the local machine.",
+    "difficulty": "advanced",
+    "topic": "networking"
+  },
+  {
+    "id": "tvs4-288",
+    "word": "unicast",
+    "definition": "phát sóng đơn",
+    "example": "Unicast sends data from one sender to one receiver.",
+    "difficulty": "advanced",
+    "topic": "networking"
+  },
+  {
+    "id": "tvs4-289",
+    "word": "multicast",
+    "definition": "phát sóng đa phương",
+    "example": "Multicast efficiently delivers data to multiple recipients.",
+    "difficulty": "advanced",
+    "topic": "networking"
+  },
+  {
+    "id": "tvs4-290",
+    "word": "broadcast",
+    "definition": "phát sóng toàn mạng",
+    "example": "Broadcast messages are sent to all devices on the network.",
+    "difficulty": "intermediate",
+    "topic": "networking"
+  },
+  {
+    "id": "tvs4-291",
+    "word": "MAC address",
+    "definition": "địa chỉ MAC",
+    "example": "Each network interface has a unique MAC address.",
+    "difficulty": "intermediate",
+    "topic": "networking"
+  },
+  {
+    "id": "tvs4-292",
+    "word": "network security",
+    "definition": "bảo mật mạng",
+    "example": "Network security protects against unauthorized access.",
+    "difficulty": "intermediate",
+    "topic": "networking"
+  },
+  {
+    "id": "tvs4-293",
+    "word": "remote access",
+    "definition": "truy cập từ xa",
+    "example": "Remote access allows employees to work from home securely.",
+    "difficulty": "beginner",
+    "topic": "networking"
+  },
+  {
+    "id": "tvs4-294",
+    "word": "IP address",
+    "definition": "địa chỉ IP",
+    "example": "Each device on the network has a unique IP address.",
+    "difficulty": "beginner",
+    "topic": "networking"
+  },
+  {
+    "id": "tvs4-295",
+    "word": "ethernet cable",
+    "definition": "cáp ethernet",
+    "example": "Connect the computer using an ethernet cable for stability.",
+    "difficulty": "beginner",
+    "topic": "networking"
+  },
+  {
+    "id": "tvs4-296",
+    "word": "network performance",
+    "definition": "hiệu suất mạng",
+    "example": "Network performance was optimized after the hardware upgrade.",
+    "difficulty": "intermediate",
+    "topic": "networking"
+  },
+  {
+    "id": "tvs4-297",
+    "word": "caching",
+    "definition": "bộ nhớ đệm",
+    "example": "DNS caching speeds up domain name resolution.",
+    "difficulty": "intermediate",
+    "topic": "networking"
+  },
+  {
+    "id": "tvs4-298",
+    "word": "load balancing",
+    "definition": "cân bằng tải",
+    "example": "Load balancing distributes traffic evenly across servers.",
+    "difficulty": "intermediate",
+    "topic": "networking"
+  },
+  {
+    "id": "tvs4-299",
+    "word": "table",
+    "definition": "bảng dữ liệu",
+    "example": "The customer table stores all client information.",
+    "difficulty": "beginner",
+    "topic": "database"
+  },
+  {
+    "id": "tvs4-300",
+    "word": "record",
+    "definition": "bản ghi",
+    "example": "Each record represents one customer's data.",
+    "difficulty": "beginner",
+    "topic": "database"
+  },
+  {
+    "id": "tvs4-301",
+    "word": "field",
+    "definition": "trường dữ liệu",
+    "example": "The email field must be unique for each record.",
+    "difficulty": "beginner",
+    "topic": "database"
+  },
+  {
+    "id": "tvs4-302",
+    "word": "query",
+    "definition": "truy vấn dữ liệu",
+    "example": "The SQL query retrieves all orders from last month.",
+    "difficulty": "intermediate",
+    "topic": "database"
+  },
+  {
+    "id": "tvs4-303",
+    "word": "index",
+    "definition": "chỉ mục",
+    "example": "Adding an index improves query performance.",
+    "difficulty": "intermediate",
+    "topic": "database"
+  },
+  {
+    "id": "tvs4-304",
+    "word": "join",
+    "definition": "nối bảng",
+    "example": "The join operation combines data from multiple tables.",
+    "difficulty": "intermediate",
+    "topic": "database"
+  },
+  {
+    "id": "tvs4-305",
+    "word": "primary key",
+    "definition": "khóa chính",
+    "example": "Each table must have a unique primary key.",
+    "difficulty": "intermediate",
+    "topic": "database"
+  },
+  {
+    "id": "tvs4-306",
+    "word": "foreign key",
+    "definition": "khóa ngoại",
+    "example": "The foreign key links the order table to the customer table.",
+    "difficulty": "intermediate",
+    "topic": "database"
+  },
+  {
+    "id": "tvs4-307",
+    "word": "transaction",
+    "definition": "giao dịch",
+    "example": "Each transaction must be committed or rolled back.",
+    "difficulty": "intermediate",
+    "topic": "database"
+  },
+  {
+    "id": "tvs4-308",
+    "word": "restore",
+    "definition": "phục hồi dữ liệu",
+    "example": "The restore process recovered all data from last night's backup.",
+    "difficulty": "intermediate",
+    "topic": "database"
+  },
+  {
+    "id": "tvs4-309",
+    "word": "schema",
+    "definition": "cấu trúc cơ sở dữ liệu",
+    "example": "The database schema defines all tables and their relationships.",
+    "difficulty": "intermediate",
+    "topic": "database"
+  },
+  {
+    "id": "tvs4-310",
+    "word": "stored procedure",
+    "definition": "thủ tục lưu trữ",
+    "example": "The stored procedure automates complex data operations.",
+    "difficulty": "advanced",
+    "topic": "database"
+  },
+  {
+    "id": "tvs4-311",
+    "word": "replication",
+    "definition": "sao chép dữ liệu",
+    "example": "Database replication ensures data availability across regions.",
+    "difficulty": "advanced",
+    "topic": "database"
+  },
+  {
+    "id": "tvs4-312",
+    "word": "sharding",
+    "definition": "phân mảnh dữ liệu",
+    "example": "Sharding distributes data across multiple database servers.",
+    "difficulty": "advanced",
+    "topic": "database"
+  },
+  {
+    "id": "tvs4-313",
+    "word": "concurrency",
+    "definition": "tính đồng thời",
+    "example": "Concurrency control prevents simultaneous conflicts.",
+    "difficulty": "advanced",
+    "topic": "database"
+  },
+  {
+    "id": "tvs4-314",
+    "word": "integrity",
+    "definition": "tính toàn vẹn dữ liệu",
+    "example": "Data integrity constraints prevent invalid data from being entered.",
+    "difficulty": "intermediate",
+    "topic": "database"
+  },
+  {
+    "id": "tvs4-315",
+    "word": "constraint",
+    "definition": "ràng buộc dữ liệu",
+    "example": "The unique constraint ensures no duplicate email addresses.",
+    "difficulty": "intermediate",
+    "topic": "database"
+  },
+  {
+    "id": "tvs4-316",
+    "word": "NoSQL",
+    "definition": "cơ sở dữ liệu phi quan hệ",
+    "example": "NoSQL databases handle unstructured data efficiently.",
+    "difficulty": "intermediate",
+    "topic": "database"
+  },
+  {
+    "id": "tvs4-317",
+    "word": "relational database",
+    "definition": "cơ sở dữ liệu quan hệ",
+    "example": "MySQL is a popular relational database management system.",
+    "difficulty": "beginner",
+    "topic": "database"
+  },
+  {
+    "id": "tvs4-318",
+    "word": "data model",
+    "definition": "mô hình dữ liệu",
+    "example": "The data model describes how information is organized.",
+    "difficulty": "intermediate",
+    "topic": "database"
+  },
+  {
+    "id": "tvs4-319",
+    "word": "query optimization",
+    "definition": "tối ưu hóa truy vấn",
+    "example": "Query optimization reduces database response time.",
+    "difficulty": "intermediate",
+    "topic": "database"
+  },
+  {
+    "id": "tvs4-320",
+    "word": "SQL",
+    "definition": "ngôn ngữ truy vấn có cấu trúc",
+    "example": "The SQL query joins two tables to generate a report.",
+    "difficulty": "intermediate",
+    "topic": "database"
+  },
+  {
+    "id": "tvs4-321",
+    "word": "database management",
+    "definition": "quản lý cơ sở dữ liệu",
+    "example": "Database management ensures data is stored and retrieved efficiently.",
+    "difficulty": "beginner",
+    "topic": "database"
+  },
+  {
+    "id": "tvs4-322",
+    "word": "database security",
+    "definition": "bảo mật cơ sở dữ liệu",
+    "example": "Database security protects sensitive customer information.",
+    "difficulty": "intermediate",
+    "topic": "database"
+  },
+  {
+    "id": "tvs4-323",
+    "word": "view",
+    "definition": "tầm nhìn dữ liệu",
+    "example": "The view presents a filtered subset of the data.",
+    "difficulty": "intermediate",
+    "topic": "database"
+  },
+  {
+    "id": "tvs4-324",
+    "word": "partition",
+    "definition": "phân vùng dữ liệu",
+    "example": "Partitioning large tables improves query performance.",
+    "difficulty": "advanced",
+    "topic": "database"
+  },
+  {
+    "id": "tvs4-325",
+    "word": "cursor",
+    "definition": "con trỏ dữ liệu",
+    "example": "The cursor iterates through each record in the result set.",
+    "difficulty": "advanced",
+    "topic": "database"
+  },
+  {
+    "id": "tvs4-326",
+    "word": "function",
+    "definition": "hàm",
+    "example": "The function calculates the total price of the order.",
+    "difficulty": "beginner",
+    "topic": "programming"
+  },
+  {
+    "id": "tvs4-327",
+    "word": "loop",
+    "definition": "vòng lặp",
+    "example": "The loop processes each item in the list.",
+    "difficulty": "beginner",
+    "topic": "programming"
+  },
+  {
+    "id": "tvs4-328",
+    "word": "conditional",
+    "definition": "điều kiện",
+    "example": "The conditional statement checks if the input is valid.",
+    "difficulty": "beginner",
+    "topic": "programming"
+  },
+  {
+    "id": "tvs4-329",
+    "word": "array",
+    "definition": "mảng",
+    "example": "The array stores all product prices.",
+    "difficulty": "beginner",
+    "topic": "programming"
+  },
+  {
+    "id": "tvs4-330",
+    "word": "string",
+    "definition": "chuỗi ký tự",
+    "example": "The function converts the string to lowercase.",
+    "difficulty": "beginner",
+    "topic": "programming"
+  },
+  {
+    "id": "tvs4-331",
+    "word": "integer",
+    "definition": "số nguyên",
+    "example": "The variable holds an integer value.",
+    "difficulty": "beginner",
+    "topic": "programming"
+  },
+  {
+    "id": "tvs4-332",
+    "word": "boolean",
+    "definition": "giá trị đúng/sai",
+    "example": "The boolean flag indicates whether the user is logged in.",
+    "difficulty": "beginner",
+    "topic": "programming"
+  },
+  {
+    "id": "tvs4-333",
+    "word": "object",
+    "definition": "đối tượng",
+    "example": "The object contains properties and methods.",
+    "difficulty": "beginner",
+    "topic": "programming"
+  },
+  {
+    "id": "tvs4-334",
+    "word": "class",
+    "definition": "lớp",
+    "example": "The class defines the structure for a user account.",
+    "difficulty": "beginner",
+    "topic": "programming"
+  },
+  {
+    "id": "tvs4-335",
+    "word": "inheritance",
+    "definition": "kế thừa",
+    "example": "Inheritance allows a class to reuse code from a parent class.",
+    "difficulty": "intermediate",
+    "topic": "programming"
+  },
+  {
+    "id": "tvs4-336",
+    "word": "polymorphism",
+    "definition": "đa hình",
+    "example": "Polymorphism lets objects of different types respond to the same method.",
+    "difficulty": "advanced",
+    "topic": "programming"
+  },
+  {
+    "id": "tvs4-337",
+    "word": "abstraction",
+    "definition": "trừu tượng hóa",
+    "example": "Abstraction hides complex implementation details from users.",
+    "difficulty": "advanced",
+    "topic": "programming"
+  },
+  {
+    "id": "tvs4-338",
+    "word": "encapsulation",
+    "definition": "đóng gói",
+    "example": "Encapsulation protects data by restricting direct access.",
+    "difficulty": "advanced",
+    "topic": "programming"
+  },
+  {
+    "id": "tvs4-339",
+    "word": "library",
+    "definition": "thư viện",
+    "example": "Import the library to use pre-built functions.",
+    "difficulty": "beginner",
+    "topic": "programming"
+  },
+  {
+    "id": "tvs4-340",
+    "word": "framework",
+    "definition": "khung làm việc",
+    "example": "The framework provides tools for building web applications.",
+    "difficulty": "intermediate",
+    "topic": "programming"
+  },
+  {
+    "id": "tvs4-341",
+    "word": "compiler",
+    "definition": "trình biên dịch",
+    "example": "The compiler converts source code into machine code.",
+    "difficulty": "intermediate",
+    "topic": "programming"
+  },
+  {
+    "id": "tvs4-342",
+    "word": "interpreter",
+    "definition": "trình thông dịch",
+    "example": "The interpreter executes code line by line.",
+    "difficulty": "intermediate",
+    "topic": "programming"
+  },
+  {
+    "id": "tvs4-343",
+    "word": "data structure",
+    "definition": "cấu trúc dữ liệu",
+    "example": "Choose the right data structure for efficient data access.",
+    "difficulty": "intermediate",
+    "topic": "programming"
+  },
+  {
+    "id": "tvs4-344",
+    "word": "recursion",
+    "definition": "đệ quy",
+    "example": "Recursion simplifies problems that have repetitive sub-problems.",
+    "difficulty": "advanced",
+    "topic": "programming"
+  },
+  {
+    "id": "tvs4-345",
+    "word": "exception",
+    "definition": "ngoại lệ, lỗi",
+    "example": "The exception handler catches runtime errors gracefully.",
+    "difficulty": "intermediate",
+    "topic": "programming"
+  },
+  {
+    "id": "tvs4-346",
+    "word": "refactoring",
+    "definition": "tái cấu trúc mã nguồn",
+    "example": "Refactoring improves code readability without changing behavior.",
+    "difficulty": "intermediate",
+    "topic": "programming"
+  },
+  {
+    "id": "tvs4-347",
+    "word": "dependency injection",
+    "definition": "tiêm phụ thuộc",
+    "example": "Dependency injection makes components easier to test.",
+    "difficulty": "advanced",
+    "topic": "programming"
+  },
+  {
+    "id": "tvs4-348",
+    "word": "unit test",
+    "definition": "kiểm thử đơn vị",
+    "example": "Unit tests verify that individual functions work correctly.",
+    "difficulty": "intermediate",
+    "topic": "programming"
+  },
+  {
+    "id": "tvs4-349",
+    "word": "version control",
+    "definition": "kiểm soát phiên bản",
+    "example": "Version control tracks changes to the codebase over time.",
+    "difficulty": "intermediate",
+    "topic": "programming"
+  },
+  {
+    "id": "tvs4-350",
+    "word": "syntax error",
+    "definition": "lỗi cú pháp",
+    "example": "A missing semicolon caused a syntax error.",
+    "difficulty": "beginner",
+    "topic": "programming"
+  },
+  {
+    "id": "tvs4-351",
+    "word": "runtime error",
+    "definition": "lỗi thời gian chạy",
+    "example": "A runtime error occurred when the file was not found.",
+    "difficulty": "intermediate",
+    "topic": "programming"
+  },
+  {
+    "id": "tvs4-352",
+    "word": "middleware",
+    "definition": "phần mềm trung gian",
+    "example": "Middleware handles authentication between the client and server.",
+    "difficulty": "advanced",
+    "topic": "programming"
+  },
+  {
+    "id": "tvs4-353",
+    "word": "Python",
+    "definition": "ngôn ngữ lập trình Python",
+    "example": "Python is widely used for data analysis and web development.",
+    "difficulty": "beginner",
+    "topic": "programming"
+  },
+  {
+    "id": "tvs4-354",
+    "word": "JavaScript",
+    "definition": "ngôn ngữ lập trình JavaScript",
+    "example": "JavaScript is used to create interactive web pages.",
+    "difficulty": "beginner",
+    "topic": "programming"
+  },
+  {
+    "id": "tvs4-355",
+    "word": "open source",
+    "definition": "mã nguồn mở",
+    "example": "The open source community contributes to thousands of projects.",
+    "difficulty": "beginner",
+    "topic": "programming"
+  },
+  {
+    "id": "tvs4-356",
+    "word": "agile development",
+    "definition": "phát triển linh hoạt",
+    "example": "Agile development allows teams to adapt to changing requirements.",
+    "difficulty": "intermediate",
+    "topic": "programming"
+  },
+  {
+    "id": "tvs4-357",
+    "word": "work breakdown structure",
+    "definition": "cấu trúc phân chia công việc",
+    "example": "The WBS divides the project into manageable tasks.",
+    "difficulty": "advanced",
+    "topic": "project_management"
+  },
+  {
+    "id": "tvs4-358",
+    "word": "backlog",
+    "definition": "danh sách công việc chờ",
+    "example": "New features are added to the product backlog.",
+    "difficulty": "intermediate",
+    "topic": "project_management"
+  },
+  {
+    "id": "tvs4-359",
+    "word": "standup",
+    "definition": "cuộc họp ngắn hàng ngày",
+    "example": "The standup meeting takes place every morning at nine.",
+    "difficulty": "beginner",
+    "topic": "project_management"
+  },
+  {
+    "id": "tvs4-360",
+    "word": "status report",
+    "definition": "báo cáo tiến độ",
+    "example": "The status report is distributed every Friday.",
+    "difficulty": "beginner",
+    "topic": "project_management"
+  },
+  {
+    "id": "tvs4-361",
+    "word": "task assignment",
+    "definition": "phân công tác vụ",
+    "example": "Task assignment is done during the weekly planning meeting.",
+    "difficulty": "beginner",
+    "topic": "project_management"
+  },
+  {
+    "id": "tvs4-362",
+    "word": "earned value",
+    "definition": "giá trị thu được",
+    "example": "Earned value analysis measures project performance.",
+    "difficulty": "advanced",
+    "topic": "project_management"
+  },
+  {
+    "id": "tvs4-363",
+    "word": "phase",
+    "definition": "giai đoạn",
+    "example": "The project has four main phases.",
+    "difficulty": "beginner",
+    "topic": "project_management"
+  },
+  {
+    "id": "tvs4-364",
+    "word": "acceptance criteria",
+    "definition": "tiêu chí chấp nhận",
+    "example": "The acceptance criteria define when a task is complete.",
+    "difficulty": "intermediate",
+    "topic": "project_management"
+  },
+  {
+    "id": "tvs4-365",
+    "word": "agile",
+    "definition": "linh hoạt (phương pháp)",
+    "example": "The agile approach allows flexibility in project development.",
+    "difficulty": "intermediate",
+    "topic": "project_management"
+  },
+  {
+    "id": "tvs4-366",
+    "word": "waterfall",
+    "definition": "phương pháp thác nước",
+    "example": "The waterfall model follows sequential project phases.",
+    "difficulty": "intermediate",
+    "topic": "project_management"
+  },
+  {
+    "id": "tvs4-367",
+    "word": "kanban board",
+    "definition": "bảng kanban",
+    "example": "The kanban board tracks tasks from todo to done.",
+    "difficulty": "intermediate",
+    "topic": "project_management"
+  },
+  {
+    "id": "tvs4-368",
+    "word": "project timeline",
+    "definition": "dòng thời gian dự án",
+    "example": "The project timeline shows all major milestones.",
+    "difficulty": "beginner",
+    "topic": "project_management"
+  },
+  {
+    "id": "tvs4-369",
+    "word": "team coordination",
+    "definition": "phối hợp nhóm",
+    "example": "Effective team coordination keeps the project on schedule.",
+    "difficulty": "intermediate",
+    "topic": "project_management"
+  },
+  {
+    "id": "tvs4-370",
+    "word": "sprint planning",
+    "definition": "lập kế hoạch sprint",
+    "example": "Sprint planning defines the tasks for the next two weeks.",
+    "difficulty": "intermediate",
+    "topic": "project_management"
+  },
+  {
+    "id": "tvs4-371",
+    "word": "project delivery",
+    "definition": "bàn giao dự án",
+    "example": "On-time project delivery is a key performance indicator.",
+    "difficulty": "beginner",
+    "topic": "project_management"
+  },
+  {
+    "id": "tvs4-372",
+    "word": "project governance",
+    "definition": "quản trị dự án",
+    "example": "Project governance ensures decisions follow established procedures.",
+    "difficulty": "advanced",
+    "topic": "project_management"
+  },
+  {
+    "id": "tvs4-373",
+    "word": "transition",
+    "definition": "sự chuyển đổi",
+    "example": "The transition to the new system took three months.",
+    "difficulty": "beginner",
+    "topic": "change_management"
+  },
+  {
+    "id": "tvs4-374",
+    "word": "adoption",
+    "definition": "sự chấp nhận, áp dụng",
+    "example": "Employee adoption of the new software was slower than expected.",
+    "difficulty": "intermediate",
+    "topic": "change_management"
+  },
+  {
+    "id": "tvs4-375",
+    "word": "resistance",
+    "definition": "sự kháng cự, phản đối",
+    "example": "The team showed resistance to the organizational changes.",
+    "difficulty": "intermediate",
+    "topic": "change_management"
+  },
+  {
+    "id": "tvs4-376",
+    "word": "communication plan",
+    "definition": "kế hoạch truyền thông",
+    "example": "A clear communication plan reduces uncertainty during transitions.",
+    "difficulty": "intermediate",
+    "topic": "change_management"
+  },
+  {
+    "id": "tvs4-377",
+    "word": "pilot",
+    "definition": "thử nghiệm",
+    "example": "The pilot program tested the new system with one department.",
+    "difficulty": "intermediate",
+    "topic": "change_management"
+  },
+  {
+    "id": "tvs4-378",
+    "word": "impact assessment",
+    "definition": "đánh giá tác động",
+    "example": "The impact assessment identified which departments would be affected.",
+    "difficulty": "intermediate",
+    "topic": "change_management"
+  },
+  {
+    "id": "tvs4-379",
+    "word": "readiness",
+    "definition": "sự sẵn sàng",
+    "example": "The readiness assessment showed the team needed more training.",
+    "difficulty": "intermediate",
+    "topic": "change_management"
+  },
+  {
+    "id": "tvs4-380",
+    "word": "gap analysis",
+    "definition": "phân tích khoảng cách",
+    "example": "The gap analysis identified what skills the team was missing.",
+    "difficulty": "intermediate",
+    "topic": "change_management"
+  },
+  {
+    "id": "tvs4-381",
+    "word": "reinforcement",
+    "definition": "sự củng cố",
+    "example": "Reinforcement through regular updates helps sustain changes.",
+    "difficulty": "intermediate",
+    "topic": "change_management"
+  },
+  {
+    "id": "tvs4-382",
+    "word": "buy-in",
+    "definition": "sự đồng thuận, ủng hộ",
+    "example": "Getting management buy-in is crucial for any major change.",
+    "difficulty": "intermediate",
+    "topic": "change_management"
+  },
+  {
+    "id": "tvs4-383",
+    "word": "champion",
+    "definition": "người đi đầu, đại sứ thay đổi",
+    "example": "The project champion advocates for the new process across teams.",
+    "difficulty": "intermediate",
+    "topic": "change_management"
+  },
+  {
+    "id": "tvs4-384",
+    "word": "roadmap",
+    "definition": "lộ trình thay đổi",
+    "example": "The roadmap outlines each stage of the transformation.",
+    "difficulty": "intermediate",
+    "topic": "change_management"
+  },
+  {
+    "id": "tvs4-385",
+    "word": "audit trail",
+    "definition": "dấu vết kiểm toán",
+    "example": "An audit trail records all changes made to the system.",
+    "difficulty": "advanced",
+    "topic": "change_management"
+  },
+  {
+    "id": "tvs4-386",
+    "word": "communication strategy",
+    "definition": "chiến lược truyền thông",
+    "example": "A strong communication strategy aligns all teams during change.",
+    "difficulty": "intermediate",
+    "topic": "change_management"
+  },
+  {
+    "id": "tvs4-387",
+    "word": "change agent",
+    "definition": "động lực thay đổi",
+    "example": "The change agent facilitates smooth transitions between teams.",
+    "difficulty": "intermediate",
+    "topic": "change_management"
+  },
+  {
+    "id": "tvs4-388",
+    "word": "process improvement",
+    "definition": "cải tiến quy trình",
+    "example": "Process improvement initiatives reduce waste and save time.",
+    "difficulty": "intermediate",
+    "topic": "change_management"
+  },
+  {
+    "id": "tvs4-389",
+    "word": "feedback loop",
+    "definition": "vòng phản hồi",
+    "example": "A feedback loop allows continuous adjustment during transitions.",
+    "difficulty": "intermediate",
+    "topic": "change_management"
+  },
+  {
+    "id": "tvs4-390",
+    "word": "transition plan",
+    "definition": "kế hoạch chuyển đổi",
+    "example": "The transition plan details every step of the change process.",
+    "difficulty": "intermediate",
+    "topic": "change_management"
+  },
+  {
+    "id": "tvs4-391",
+    "word": "continuous improvement",
+    "definition": "cải tiến liên tục",
+    "example": "Continuous improvement keeps processes efficient over time.",
+    "difficulty": "intermediate",
+    "topic": "change_management"
+  },
+  {
+    "id": "tvs4-392",
+    "word": "organizational culture",
+    "definition": "văn hóa tổ chức",
+    "example": "Organizational culture influences how employees respond to change.",
+    "difficulty": "advanced",
+    "topic": "change_management"
+  },
+  {
+    "id": "tvs4-393",
+    "word": "resistance management",
+    "definition": "quản lý phản đối",
+    "example": "Effective resistance management addresses concerns proactively.",
+    "difficulty": "advanced",
+    "topic": "change_management"
+  },
+  {
+    "id": "tvs4-394",
+    "word": "organizational change",
+    "definition": "thay đổi tổ chức",
+    "example": "Managing organizational change requires empathy and communication.",
+    "difficulty": "intermediate",
+    "topic": "change_management"
+  },
+  {
+    "id": "tvs4-395",
+    "word": "change readiness",
+    "definition": "sự sẵn sàng thay đổi",
+    "example": "Measuring change readiness helps plan effective transitions.",
+    "difficulty": "intermediate",
+    "topic": "change_management"
+  },
+  {
+    "id": "tvs4-396",
+    "word": "impact analysis",
+    "definition": "phân tích tác động",
+    "example": "The impact analysis helps prioritize change initiatives.",
+    "difficulty": "intermediate",
+    "topic": "change_management"
+  },
+  {
+    "id": "tvs4-397",
+    "word": "risk",
+    "definition": "rủi ro",
+    "example": "Identifying risk early allows the team to prepare responses.",
+    "difficulty": "beginner",
+    "topic": "risk_management"
+  },
+  {
+    "id": "tvs4-398",
+    "word": "mitigation",
+    "definition": "sự giảm thiểu",
+    "example": "Risk mitigation strategies reduce the likelihood of negative outcomes.",
+    "difficulty": "intermediate",
+    "topic": "risk_management"
+  },
+  {
+    "id": "tvs4-399",
+    "word": "probability",
+    "definition": "xác suất",
+    "example": "The probability of a data breach is evaluated annually.",
+    "difficulty": "intermediate",
+    "topic": "risk_management"
+  },
+  {
+    "id": "tvs4-400",
+    "word": "impact",
+    "definition": "tác động",
+    "example": "The impact of supply chain disruption was significant.",
+    "difficulty": "beginner",
+    "topic": "risk_management"
+  },
+  {
+    "id": "tvs4-401",
+    "word": "assessment",
+    "definition": "đánh giá",
+    "example": "The risk assessment identified the top five threats.",
+    "difficulty": "intermediate",
+    "topic": "risk_management"
+  },
+  {
+    "id": "tvs4-402",
+    "word": "exposure",
+    "definition": "mức độ tổn thương",
+    "example": "The company reduced its exposure to currency fluctuations.",
+    "difficulty": "advanced",
+    "topic": "risk_management"
+  },
+  {
+    "id": "tvs4-403",
+    "word": "insurable",
+    "definition": "có thể bảo hiểm",
+    "example": "Fire damage is an insurable risk for most businesses.",
+    "difficulty": "intermediate",
+    "topic": "risk_management"
+  },
+  {
+    "id": "tvs4-404",
+    "word": "residual risk",
+    "definition": "rủi ro còn lại",
+    "example": "Some residual risk always remains after mitigation efforts.",
+    "difficulty": "advanced",
+    "topic": "risk_management"
+  },
+  {
+    "id": "tvs4-405",
+    "word": "inherent risk",
+    "definition": "rủi ro nội tại",
+    "example": "Inherent risk is the level of risk before any controls are applied.",
+    "difficulty": "advanced",
+    "topic": "risk_management"
+  },
+  {
+    "id": "tvs4-406",
+    "word": "risk register",
+    "definition": "sổ đăng ký rủi ro",
+    "example": "The risk register tracks all identified risks and their status.",
+    "difficulty": "intermediate",
+    "topic": "risk_management"
+  },
+  {
+    "id": "tvs4-407",
+    "word": "risk appetite",
+    "definition": "mức độ chấp nhận rủi ro",
+    "example": "The board defined the company's risk appetite for investments.",
+    "difficulty": "advanced",
+    "topic": "risk_management"
+  },
+  {
+    "id": "tvs4-408",
+    "word": "compliance risk",
+    "definition": "rủi ro tuân thủ",
+    "example": "Non-compliance with regulations creates significant compliance risk.",
+    "difficulty": "intermediate",
+    "topic": "risk_management"
+  },
+  {
+    "id": "tvs4-409",
+    "word": "operational risk",
+    "definition": "rủi ro vận hành",
+    "example": "Operational risk includes equipment failures and process errors.",
+    "difficulty": "intermediate",
+    "topic": "risk_management"
+  },
+  {
+    "id": "tvs4-410",
+    "word": "financial risk",
+    "definition": "rủi ro tài chính",
+    "example": "The company took steps to reduce financial risk.",
+    "difficulty": "beginner",
+    "topic": "risk_management"
+  },
+  {
+    "id": "tvs4-411",
+    "word": "reputational risk",
+    "definition": "rủi ro danh tiếng",
+    "example": "Poor customer service poses a reputational risk.",
+    "difficulty": "intermediate",
+    "topic": "risk_management"
+  },
+  {
+    "id": "tvs4-412",
+    "word": "avoidance",
+    "definition": "sự tránh né",
+    "example": "Risk avoidance means eliminating the activity that causes risk.",
+    "difficulty": "intermediate",
+    "topic": "risk_management"
+  },
+  {
+    "id": "tvs4-413",
+    "word": "transfer",
+    "definition": "chuyển giao rủi ro",
+    "example": "Insurance transfers the financial risk to another party.",
+    "difficulty": "intermediate",
+    "topic": "risk_management"
+  },
+  {
+    "id": "tvs4-414",
+    "word": "acceptance",
+    "definition": "sự chấp nhận rủi ro",
+    "example": "The team decided to accept the minor risk of delay.",
+    "difficulty": "intermediate",
+    "topic": "risk_management"
+  },
+  {
+    "id": "tvs4-415",
+    "word": "scenario analysis",
+    "definition": "phân tích kịch bản",
+    "example": "Scenario analysis evaluates different possible outcomes.",
+    "difficulty": "advanced",
+    "topic": "risk_management"
+  },
+  {
+    "id": "tvs4-416",
+    "word": "sensitivity analysis",
+    "definition": "phân tích độ nhạy",
+    "example": "Sensitivity analysis shows how changes in variables affect results.",
+    "difficulty": "advanced",
+    "topic": "risk_management"
+  },
+  {
+    "id": "tvs4-417",
+    "word": "insurance",
+    "definition": "bảo hiểm",
+    "example": "The company purchased insurance to cover potential losses.",
+    "difficulty": "beginner",
+    "topic": "risk_management"
+  },
+  {
+    "id": "tvs4-418",
+    "word": "deductible",
+    "definition": "số tiền khấu trừ",
+    "example": "A lower deductible means higher premium costs.",
+    "difficulty": "intermediate",
+    "topic": "risk_management"
+  },
+  {
+    "id": "tvs4-419",
+    "word": "business continuity",
+    "definition": "tính liên tục kinh doanh",
+    "example": "Business continuity planning ensures operations during crises.",
+    "difficulty": "intermediate",
+    "topic": "risk_management"
+  },
+  {
+    "id": "tvs4-420",
+    "word": "threat assessment",
+    "definition": "đánh giá mối đe dọa",
+    "example": "The threat assessment report was presented to the board.",
+    "difficulty": "intermediate",
+    "topic": "risk_management"
+  },
+  {
+    "id": "tvs4-421",
+    "word": "risk response",
+    "definition": "phản ứng trước rủi ro",
+    "example": "The risk response plan outlines actions for each identified threat.",
+    "difficulty": "intermediate",
+    "topic": "risk_management"
+  },
+  {
+    "id": "tvs4-422",
+    "word": "risk mitigation",
+    "definition": "giảm thiểu rủi ro",
+    "example": "Risk mitigation strategies include insurance and contingency planning.",
+    "difficulty": "intermediate",
+    "topic": "risk_management"
+  },
+  {
+    "id": "tvs4-423",
+    "word": "crisis management",
+    "definition": "quản lý khủng hoảng",
+    "example": "Crisis management plans help organizations respond to emergencies.",
+    "difficulty": "intermediate",
+    "topic": "risk_management"
+  },
+  {
+    "id": "tvs4-424",
+    "word": "strategy",
+    "definition": "chiến lược",
+    "example": "The new strategy focuses on expanding into emerging markets.",
+    "difficulty": "beginner",
+    "topic": "strategic_planning"
+  },
+  {
+    "id": "tvs4-425",
+    "word": "mission",
+    "definition": "sứ mệnh",
+    "example": "Our mission is to make education accessible to everyone.",
+    "difficulty": "beginner",
+    "topic": "strategic_planning"
+  },
+  {
+    "id": "tvs4-426",
+    "word": "goal",
+    "definition": "mục đích, mục tiêu",
+    "example": "The goal is to reduce costs by fifteen percent this year.",
+    "difficulty": "beginner",
+    "topic": "strategic_planning"
+  },
+  {
+    "id": "tvs4-427",
+    "word": "competitive advantage",
+    "definition": "lợi thế cạnh tranh",
+    "example": "Innovation is our main competitive advantage.",
+    "difficulty": "intermediate",
+    "topic": "strategic_planning"
+  },
+  {
+    "id": "tvs4-428",
+    "word": "market position",
+    "definition": "vị thế thị trường",
+    "example": "Our market position improved after the product launch.",
+    "difficulty": "intermediate",
+    "topic": "strategic_planning"
+  },
+  {
+    "id": "tvs4-429",
+    "word": "long-term",
+    "definition": "dài hạn",
+    "example": "The long-term plan includes expansion into three new countries.",
+    "difficulty": "beginner",
+    "topic": "strategic_planning"
+  },
+  {
+    "id": "tvs4-430",
+    "word": "short-term",
+    "definition": "ngắn hạn",
+    "example": "Short-term goals focus on increasing quarterly sales.",
+    "difficulty": "beginner",
+    "topic": "strategic_planning"
+  },
+  {
+    "id": "tvs4-431",
+    "word": "competitive landscape",
+    "definition": "bức tranh cạnh tranh",
+    "example": "The competitive landscape has changed significantly this year.",
+    "difficulty": "intermediate",
+    "topic": "strategic_planning"
+  },
+  {
+    "id": "tvs4-432",
+    "word": "strategic alignment",
+    "definition": "sự phù hợp chiến lược",
+    "example": "Strategic alignment ensures all departments work toward the same goals.",
+    "difficulty": "advanced",
+    "topic": "strategic_planning"
+  },
+  {
+    "id": "tvs4-433",
+    "word": "resource planning",
+    "definition": "lập kế hoạch nguồn lực",
+    "example": "Resource planning matches team capacity with project demands.",
+    "difficulty": "intermediate",
+    "topic": "strategic_planning"
+  },
+  {
+    "id": "tvs4-434",
+    "word": "scenario planning",
+    "definition": "lập kế hoạch kịch bản",
+    "example": "Scenario planning prepares the company for multiple futures.",
+    "difficulty": "advanced",
+    "topic": "strategic_planning"
+  },
+  {
+    "id": "tvs4-435",
+    "word": "balanced scorecard",
+    "definition": "thẻ điểm cân bằng",
+    "example": "The balanced scorecard measures performance across four perspectives.",
+    "difficulty": "advanced",
+    "topic": "strategic_planning"
+  },
+  {
+    "id": "tvs4-436",
+    "word": "strategic planning",
+    "definition": "lập kế hoạch chiến lược",
+    "example": "Strategic planning sessions are held annually with senior leaders.",
+    "difficulty": "beginner",
+    "topic": "strategic_planning"
+  },
+  {
+    "id": "tvs4-437",
+    "word": "market analysis",
+    "definition": "phân tích thị trường",
+    "example": "Market analysis helps identify new business opportunities.",
+    "difficulty": "intermediate",
+    "topic": "strategic_planning"
+  },
+  {
+    "id": "tvs4-438",
+    "word": "growth strategy",
+    "definition": "chiến lược tăng trưởng",
+    "example": "The growth strategy includes both organic expansion and acquisitions.",
+    "difficulty": "intermediate",
+    "topic": "strategic_planning"
+  },
+  {
+    "id": "tvs4-439",
+    "word": "market opportunity",
+    "definition": "cơ hội thị trường",
+    "example": "The market opportunity in Asia is enormous.",
+    "difficulty": "beginner",
+    "topic": "strategic_planning"
+  },
+  {
+    "id": "tvs4-440",
+    "word": "portfolio management",
+    "definition": "quản lý danh mục đầu tư",
+    "example": "Portfolio management ensures optimal allocation of resources.",
+    "difficulty": "advanced",
+    "topic": "strategic_planning"
+  },
+  {
+    "id": "tvs4-441",
+    "word": "action plan",
+    "definition": "kế hoạch hành động",
+    "example": "The action plan details the steps needed to achieve each goal.",
+    "difficulty": "beginner",
+    "topic": "strategic_planning"
+  },
+  {
+    "id": "tvs4-442",
+    "word": "executive summary",
+    "definition": "tóm tắt điều hành",
+    "example": "The executive summary presents the key findings to the board.",
+    "difficulty": "intermediate",
+    "topic": "strategic_planning"
+  },
+  {
+    "id": "tvs4-443",
+    "word": "corporate strategy",
+    "definition": "chiến lược doanh nghiệp",
+    "example": "The corporate strategy defines the company's long-term direction.",
+    "difficulty": "intermediate",
+    "topic": "strategic_planning"
+  },
+  {
+    "id": "tvs4-444",
+    "word": "business strategy",
+    "definition": "chiến lược kinh doanh",
+    "example": "The business strategy focuses on customer retention.",
+    "difficulty": "beginner",
+    "topic": "strategic_planning"
+  },
+  {
+    "id": "tvs4-445",
+    "word": "operational plan",
+    "definition": "kế hoạch vận hành",
+    "example": "The operational plan translates strategy into daily activities.",
+    "difficulty": "intermediate",
+    "topic": "strategic_planning"
+  },
+  {
+    "id": "tvs4-446",
+    "word": "strategic review",
+    "definition": "đánh giá chiến lược",
+    "example": "The strategic review is conducted every six months.",
+    "difficulty": "intermediate",
+    "topic": "strategic_planning"
+  },
+  {
+    "id": "tvs4-447",
+    "word": "competitive analysis",
+    "definition": "phân tích cạnh tranh",
+    "example": "Competitive analysis reveals strengths and weaknesses of rivals.",
+    "difficulty": "intermediate",
+    "topic": "strategic_planning"
+  },
+  {
+    "id": "tvs4-448",
+    "word": "strategic objective",
+    "definition": "mục tiêu chiến lược",
+    "example": "Achieving the strategic objective requires cross-team collaboration.",
+    "difficulty": "intermediate",
+    "topic": "strategic_planning"
+  },
+  {
+    "id": "tvs4-449",
+    "word": "cross-selling",
+    "definition": "bán chéo",
+    "example": "Cross-selling complementary products boosts total sales.",
+    "difficulty": "intermediate",
+    "topic": "business_development"
+  },
+  {
+    "id": "tvs4-450",
+    "word": "proposal",
+    "definition": "đề xuất kinh doanh",
+    "example": "The proposal outlines our services and pricing.",
+    "difficulty": "beginner",
+    "topic": "business_development"
+  },
+  {
+    "id": "tvs4-451",
+    "word": "negotiation",
+    "definition": "đàm phán",
+    "example": "The negotiation lasted three hours before reaching agreement.",
+    "difficulty": "intermediate",
+    "topic": "business_development"
+  },
+  {
+    "id": "tvs4-452",
+    "word": "territory",
+    "definition": "lãnh thổ kinh doanh",
+    "example": "Each sales representative manages a specific territory.",
+    "difficulty": "intermediate",
+    "topic": "business_development"
+  },
+  {
+    "id": "tvs4-453",
+    "word": "cold calling",
+    "definition": "gọi điện chào hàng",
+    "example": "Cold calling is one way to generate new leads.",
+    "difficulty": "beginner",
+    "topic": "business_development"
+  },
+  {
+    "id": "tvs4-454",
+    "word": "lead qualification",
+    "definition": "đánh giá khách hàng tiềm năng",
+    "example": "Lead qualification ensures the sales team focuses on serious buyers.",
+    "difficulty": "intermediate",
+    "topic": "business_development"
+  },
+  {
+    "id": "tvs4-455",
+    "word": "deal",
+    "definition": "thỏa thuận, giao dịch",
+    "example": "Closing the deal took two months of negotiations.",
+    "difficulty": "beginner",
+    "topic": "business_development"
+  },
+  {
+    "id": "tvs4-456",
+    "word": "revenue growth",
+    "definition": "tăng trưởng doanh thu",
+    "example": "Revenue growth has been steady for the past three years.",
+    "difficulty": "beginner",
+    "topic": "business_development"
+  },
+  {
+    "id": "tvs4-457",
+    "word": "market expansion",
+    "definition": "mở rộng thị trường",
+    "example": "Market expansion into Southeast Asia is a top priority.",
+    "difficulty": "intermediate",
+    "topic": "business_development"
+  },
+  {
+    "id": "tvs4-458",
+    "word": "competitive pricing",
+    "definition": "định giá cạnh tranh",
+    "example": "Competitive pricing helps us win more contracts.",
+    "difficulty": "intermediate",
+    "topic": "business_development"
+  },
+  {
+    "id": "tvs4-459",
+    "word": "customer acquisition",
+    "definition": "thu hút khách hàng mới",
+    "example": "Customer acquisition costs have decreased this quarter.",
+    "difficulty": "intermediate",
+    "topic": "business_development"
+  },
+  {
+    "id": "tvs4-460",
+    "word": "account management",
+    "definition": "quản lý tài khoản",
+    "example": "Account management ensures long-term client satisfaction.",
+    "difficulty": "intermediate",
+    "topic": "business_development"
+  },
+  {
+    "id": "tvs4-461",
+    "word": "business case",
+    "definition": "cơ sở kinh doanh",
+    "example": "The business case justifies the investment in new technology.",
+    "difficulty": "intermediate",
+    "topic": "business_development"
+  },
+  {
+    "id": "tvs4-462",
+    "word": "value creation",
+    "definition": "tạo giá trị",
+    "example": "Value creation is the foundation of sustainable business growth.",
+    "difficulty": "intermediate",
+    "topic": "business_development"
+  },
+  {
+    "id": "tvs4-463",
+    "word": "product launch",
+    "definition": "ra mắt sản phẩm",
+    "example": "The product launch event attracted media attention.",
+    "difficulty": "beginner",
+    "topic": "business_development"
+  },
+  {
+    "id": "tvs4-464",
+    "word": "sales strategy",
+    "definition": "chiến lược bán hàng",
+    "example": "The sales strategy focuses on building long-term partnerships.",
+    "difficulty": "beginner",
+    "topic": "business_development"
+  },
+  {
+    "id": "tvs4-465",
+    "word": "business growth",
+    "definition": "tăng trưởng kinh doanh",
+    "example": "Consistent business growth requires innovation and investment.",
+    "difficulty": "beginner",
+    "topic": "business_development"
+  },
+  {
+    "id": "tvs4-466",
+    "word": "business opportunity",
+    "definition": "cơ hội kinh doanh",
+    "example": "The partnership opened new business opportunities in Europe.",
+    "difficulty": "beginner",
+    "topic": "business_development"
+  },
+  {
+    "id": "tvs4-467",
+    "word": "business development",
+    "definition": "phát triển kinh doanh",
+    "example": "The business development team focuses on new market opportunities.",
+    "difficulty": "beginner",
+    "topic": "business_development"
+  },
+  {
+    "id": "tvs4-468",
+    "word": "client acquisition",
+    "definition": "thu hút khách hàng",
+    "example": "Digital marketing has improved our client acquisition rate.",
+    "difficulty": "intermediate",
+    "topic": "business_development"
+  },
+  {
+    "id": "tvs4-469",
+    "word": "business expansion",
+    "definition": "mở rộng kinh doanh",
+    "example": "Business expansion into new regions requires local partnerships.",
+    "difficulty": "intermediate",
+    "topic": "business_development"
+  },
+  {
+    "id": "tvs4-470",
+    "word": "partner",
+    "definition": "đối tác",
+    "example": "Our technology partner provides cloud infrastructure.",
+    "difficulty": "beginner",
+    "topic": "partnership"
+  },
+  {
+    "id": "tvs4-471",
+    "word": "alliance",
+    "definition": "liên minh",
+    "example": "The alliance between the two companies created a stronger market position.",
+    "difficulty": "intermediate",
+    "topic": "partnership"
+  },
+  {
+    "id": "tvs4-472",
+    "word": "collaboration",
+    "definition": "sự hợp tác",
+    "example": "Collaboration between departments improved project outcomes.",
+    "difficulty": "beginner",
+    "topic": "partnership"
+  },
+  {
+    "id": "tvs4-473",
+    "word": "cooperation",
+    "definition": "sự phối hợp",
+    "example": "Cooperation with local vendors reduced supply costs.",
+    "difficulty": "beginner",
+    "topic": "partnership"
+  },
+  {
+    "id": "tvs4-474",
+    "word": "synergy",
+    "definition": "sự cộng hưởng",
+    "example": "The merger created synergy that increased efficiency.",
+    "difficulty": "intermediate",
+    "topic": "partnership"
+  },
+  {
+    "id": "tvs4-475",
+    "word": "affiliation",
+    "definition": "sự liên kết",
+    "example": "The affiliation with a global brand boosted our credibility.",
+    "difficulty": "intermediate",
+    "topic": "partnership"
+  },
+  {
+    "id": "tvs4-476",
+    "word": "consortium",
+    "definition": "hiệp hội liên doanh",
+    "example": "The consortium of firms bid for the government contract.",
+    "difficulty": "advanced",
+    "topic": "partnership"
+  },
+  {
+    "id": "tvs4-477",
+    "word": "mutual benefit",
+    "definition": "lợi ích chung",
+    "example": "The agreement was based on mutual benefit for both parties.",
+    "difficulty": "beginner",
+    "topic": "partnership"
+  },
+  {
+    "id": "tvs4-478",
+    "word": "trust",
+    "definition": "sự tin tưởng",
+    "example": "Trust is the foundation of any successful partnership.",
+    "difficulty": "beginner",
+    "topic": "partnership"
+  },
+  {
+    "id": "tvs4-479",
+    "word": "term sheet",
+    "definition": "bản ghi nhớ điều khoản",
+    "example": "The term sheet outlines the key terms of the partnership.",
+    "difficulty": "advanced",
+    "topic": "partnership"
+  },
+  {
+    "id": "tvs4-480",
+    "word": "non-compete",
+    "definition": "hợp đồng không cạnh tranh",
+    "example": "The non-compete clause prevents the partner from entering our market.",
+    "difficulty": "advanced",
+    "topic": "partnership"
+  },
+  {
+    "id": "tvs4-481",
+    "word": "memorandum of understanding",
+    "definition": "bản ghi nhớ hợp tác",
+    "example": "The MOU was signed before the formal partnership agreement.",
+    "difficulty": "intermediate",
+    "topic": "partnership"
+  },
+  {
+    "id": "tvs4-482",
+    "word": "strategic fit",
+    "definition": "phù hợp chiến lược",
+    "example": "A strong strategic fit increases the chances of partnership success.",
+    "difficulty": "advanced",
+    "topic": "partnership"
+  },
+  {
+    "id": "tvs4-483",
+    "word": "co-branding",
+    "definition": "đồng thương hiệu",
+    "example": "Co-branding campaigns leverage the reputation of both brands.",
+    "difficulty": "intermediate",
+    "topic": "partnership"
+  },
+  {
+    "id": "tvs4-484",
+    "word": "supply partnership",
+    "definition": "quan hệ đối tác cung ứng",
+    "example": "The supply partnership ensures timely delivery of materials.",
+    "difficulty": "intermediate",
+    "topic": "partnership"
+  },
+  {
+    "id": "tvs4-485",
+    "word": "vendor relationship",
+    "definition": "quan hệ nhà cung cấp",
+    "example": "Strong vendor relationships lead to better pricing and service.",
+    "difficulty": "beginner",
+    "topic": "partnership"
+  },
+  {
+    "id": "tvs4-486",
+    "word": "revenue sharing",
+    "definition": "phân chia doanh thu",
+    "example": "Revenue sharing incentivizes both parties to promote the product.",
+    "difficulty": "intermediate",
+    "topic": "partnership"
+  },
+  {
+    "id": "tvs4-487",
+    "word": "technology partner",
+    "definition": "đối tác công nghệ",
+    "example": "Our technology partner integrates with our existing systems.",
+    "difficulty": "beginner",
+    "topic": "partnership"
+  },
+  {
+    "id": "tvs4-488",
+    "word": "distribution partner",
+    "definition": "đối tác phân phối",
+    "example": "The distribution partner handles logistics across the region.",
+    "difficulty": "beginner",
+    "topic": "partnership"
+  },
+  {
+    "id": "tvs4-489",
+    "word": "referral partner",
+    "definition": "đối tác giới thiệu",
+    "example": "Referral partners earn a fee for each successful introduction.",
+    "difficulty": "intermediate",
+    "topic": "partnership"
+  },
+  {
+    "id": "tvs4-490",
+    "word": "strategic partnership",
+    "definition": "đối tác chiến lược",
+    "example": "The strategic partnership expands our reach in new markets.",
+    "difficulty": "intermediate",
+    "topic": "partnership"
+  },
+  {
+    "id": "tvs4-491",
+    "word": "partnership agreement",
+    "definition": "thỏa thuận đối tác",
+    "example": "The partnership agreement details each party's responsibilities.",
+    "difficulty": "intermediate",
+    "topic": "partnership"
+  },
+  {
+    "id": "tvs4-492",
+    "word": "conflict resolution",
+    "definition": "giải quyết xung đột",
+    "example": "Effective conflict resolution preserves business relationships.",
+    "difficulty": "intermediate",
+    "topic": "partnership"
+  },
+  {
+    "id": "tvs4-493",
+    "word": "exit strategy",
+    "definition": "chiến lược thoái vốn",
+    "example": "A clear exit strategy protects both parties' interests.",
+    "difficulty": "advanced",
+    "topic": "partnership"
+  },
+  {
+    "id": "tvs4-494",
+    "word": "performance metrics",
+    "definition": "chỉ số hiệu suất",
+    "example": "Performance metrics track the success of the partnership.",
+    "difficulty": "intermediate",
+    "topic": "partnership"
+  },
+  {
+    "id": "tvs4-495",
+    "word": "value chain",
+    "definition": "chuỗi giá trị",
+    "example": "Partnerships strengthen the overall value chain.",
+    "difficulty": "advanced",
+    "topic": "partnership"
+  },
+  {
+    "id": "tvs4-496",
+    "word": "partner ecosystem",
+    "definition": "hệ sinh thái đối tác",
+    "example": "A strong partner ecosystem accelerates product adoption.",
+    "difficulty": "intermediate",
+    "topic": "partnership"
+  },
+  {
+    "id": "tvs4-497",
+    "word": "governance structure",
+    "definition": "cấu trúc quản trị",
+    "example": "The governance structure defines decision-making authority.",
+    "difficulty": "advanced",
+    "topic": "partnership"
+  },
+  {
+    "id": "tvs4-498",
+    "word": "expectation",
+    "definition": "kỳ vọng",
+    "example": "Managing stakeholder expectations prevents misunderstandings.",
+    "difficulty": "beginner",
+    "topic": "stakeholder"
+  },
+  {
+    "id": "tvs4-499",
+    "word": "influence",
+    "definition": "ảnh hưởng",
+    "example": "Key stakeholders have significant influence over project outcomes.",
+    "difficulty": "beginner",
+    "topic": "stakeholder"
+  },
+  {
+    "id": "tvs4-500",
+    "word": "interest",
+    "definition": "quan tâm, lợi ích",
+    "example": "We mapped stakeholder interest to prioritize communication.",
+    "difficulty": "beginner",
+    "topic": "stakeholder"
+  },
+  {
+    "id": "tvs4-501",
+    "word": "alignment",
+    "definition": "sự phù hợp",
+    "example": "Stakeholder alignment ensures everyone works toward the same goal.",
+    "difficulty": "intermediate",
+    "topic": "stakeholder"
+  },
+  {
+    "id": "tvs4-502",
+    "word": "communication",
+    "definition": "truyền thông",
+    "example": "Regular communication keeps stakeholders informed of progress.",
+    "difficulty": "beginner",
+    "topic": "stakeholder"
+  },
+  {
+    "id": "tvs4-503",
+    "word": "approval",
+    "definition": "sự phê duyệt",
+    "example": "The board's approval is required before proceeding.",
+    "difficulty": "beginner",
+    "topic": "stakeholder"
+  },
+  {
+    "id": "tvs4-504",
+    "word": "conflict",
+    "definition": "xung đột",
+    "example": "Conflict between stakeholders can delay project decisions.",
+    "difficulty": "beginner",
+    "topic": "stakeholder"
+  },
+  {
+    "id": "tvs4-505",
+    "word": "consultation",
+    "definition": "tư vấn, tham vấn",
+    "example": "The consultation process involved representatives from all departments.",
+    "difficulty": "intermediate",
+    "topic": "stakeholder"
+  },
+  {
+    "id": "tvs4-506",
+    "word": "representation",
+    "definition": "đại diện",
+    "example": "Each department has representation on the steering committee.",
+    "difficulty": "intermediate",
+    "topic": "stakeholder"
+  },
+  {
+    "id": "tvs4-507",
+    "word": "prioritization",
+    "definition": "sự ưu tiên",
+    "example": "Stakeholder prioritization focuses resources on the most important relationships.",
+    "difficulty": "intermediate",
+    "topic": "stakeholder"
+  },
+  {
+    "id": "tvs4-508",
+    "word": "expectation management",
+    "definition": "quản lý kỳ vọng",
+    "example": "Effective expectation management reduces project conflicts.",
+    "difficulty": "intermediate",
+    "topic": "stakeholder"
+  },
+  {
+    "id": "tvs4-509",
+    "word": "mapping",
+    "definition": "lập bản đồ",
+    "example": "Stakeholder mapping identifies who has the most influence.",
+    "difficulty": "intermediate",
+    "topic": "stakeholder"
+  },
+  {
+    "id": "tvs4-510",
+    "word": "analysis",
+    "definition": "phân tích",
+    "example": "Stakeholder analysis helps prioritize communication efforts.",
+    "difficulty": "intermediate",
+    "topic": "stakeholder"
+  },
+  {
+    "id": "tvs4-511",
+    "word": "commitment",
+    "definition": "cam kết",
+    "example": "Stakeholder commitment drives project success.",
+    "difficulty": "beginner",
+    "topic": "stakeholder"
+  },
+  {
+    "id": "tvs4-512",
+    "word": "participation",
+    "definition": "sự tham gia",
+    "example": "Active participation from stakeholders improves outcomes.",
+    "difficulty": "beginner",
+    "topic": "stakeholder"
+  },
+  {
+    "id": "tvs4-513",
+    "word": "relationship management",
+    "definition": "quản lý quan hệ",
+    "example": "Effective relationship management maintains long-term partnerships.",
+    "difficulty": "intermediate",
+    "topic": "stakeholder"
+  },
+  {
+    "id": "tvs4-514",
+    "word": "influence mapping",
+    "definition": "bản đồ ảnh hưởng",
+    "example": "Influence mapping helps identify key decision-makers.",
+    "difficulty": "advanced",
+    "topic": "stakeholder"
+  },
+  {
+    "id": "tvs4-515",
+    "word": "engagement plan",
+    "definition": "kế hoạch tham gia",
+    "example": "The engagement plan outlines how to involve each stakeholder group.",
+    "difficulty": "intermediate",
+    "topic": "stakeholder"
+  },
+  {
+    "id": "tvs4-516",
+    "word": "stakeholder communication",
+    "definition": "truyền thông với bên liên quan",
+    "example": "Stakeholder communication keeps everyone informed and aligned.",
+    "difficulty": "beginner",
+    "topic": "stakeholder"
+  },
+  {
+    "id": "tvs4-517",
+    "word": "stakeholder management",
+    "definition": "quản lý bên liên quan",
+    "example": "Effective stakeholder management prevents project conflicts.",
+    "difficulty": "intermediate",
+    "topic": "stakeholder"
+  },
+  {
+    "id": "tvs4-518",
+    "word": "stakeholder register",
+    "definition": "danh sách bên liên quan",
+    "example": "The stakeholder register lists all parties involved in the project.",
+    "difficulty": "intermediate",
+    "topic": "stakeholder"
+  },
+  {
+    "id": "tvs4-519",
+    "word": "stakeholder alignment",
+    "definition": "sự phù hợp lợi ích các bên",
+    "example": "Stakeholder alignment ensures everyone supports the partnership goals.",
+    "difficulty": "advanced",
+    "topic": "stakeholder"
+  },
+  {
+    "id": "tvs4-520",
+    "word": "performance management",
+    "definition": "quản lý hiệu suất",
+    "example": "Performance management tools help track employee progress.",
+    "difficulty": "intermediate",
+    "topic": "stakeholder"
+  },
+  {
+    "id": "tvs4-521",
+    "word": "stakeholder value",
+    "definition": "giá trị cho bên liên quan",
+    "example": "Creating stakeholder value is the primary business objective.",
+    "difficulty": "intermediate",
+    "topic": "stakeholder"
+  },
+  {
+    "id": "tvs4-522",
+    "word": "standard",
+    "definition": "tiêu chuẩn",
+    "example": "All products must meet international quality standards.",
+    "difficulty": "beginner",
+    "topic": "governance"
+  },
+  {
+    "id": "tvs4-523",
+    "word": "fiduciary",
+    "definition": "nghĩa vụ ủy thác",
+    "example": "The board has a fiduciary duty to act in shareholders' best interest.",
+    "difficulty": "advanced",
+    "topic": "governance"
+  },
+  {
+    "id": "tvs4-524",
+    "word": "internal controls",
+    "definition": "kiểm soát nội bộ",
+    "example": "Strong internal controls prevent fraud and errors.",
+    "difficulty": "intermediate",
+    "topic": "governance"
+  },
+  {
+    "id": "tvs4-525",
+    "word": "committee",
+    "definition": "ủy ban",
+    "example": "The audit committee oversees financial reporting.",
+    "difficulty": "intermediate",
+    "topic": "governance"
+  },
+  {
+    "id": "tvs4-526",
+    "word": "charter",
+    "definition": "điều lệ",
+    "example": "The corporate charter defines the organization's purpose.",
+    "difficulty": "intermediate",
+    "topic": "governance"
+  },
+  {
+    "id": "tvs4-527",
+    "word": "bylaws",
+    "definition": "quy tắc nội bộ",
+    "example": "The bylaws outline procedures for electing board members.",
+    "difficulty": "advanced",
+    "topic": "governance"
+  },
+  {
+    "id": "tvs4-528",
+    "word": "separation of duties",
+    "definition": "phân tách nhiệm vụ",
+    "example": "Separation of duties prevents any single person from controlling all transactions.",
+    "difficulty": "advanced",
+    "topic": "governance"
+  },
+  {
+    "id": "tvs4-529",
+    "word": "regulatory compliance",
+    "definition": "tuân thủ quy định",
+    "example": "Regulatory compliance is essential for avoiding fines.",
+    "difficulty": "intermediate",
+    "topic": "governance"
+  },
+  {
+    "id": "tvs4-530",
+    "word": "ethical standards",
+    "definition": "tiêu chuẩn đạo đức",
+    "example": "The company adheres to the highest ethical standards.",
+    "difficulty": "beginner",
+    "topic": "governance"
+  },
+  {
+    "id": "tvs4-531",
+    "word": "governance framework",
+    "definition": "khung quản trị",
+    "example": "The governance framework defines roles, responsibilities, and rules.",
+    "difficulty": "advanced",
+    "topic": "governance"
+  },
+  {
+    "id": "tvs4-532",
+    "word": "risk governance",
+    "definition": "quản trị rủi ro",
+    "example": "Risk governance identifies and mitigates business threats.",
+    "difficulty": "advanced",
+    "topic": "governance"
+  },
+  {
+    "id": "tvs4-533",
+    "word": "governance policy",
+    "definition": "chính sách quản trị",
+    "example": "The governance policy is reviewed annually by the board.",
+    "difficulty": "intermediate",
+    "topic": "governance"
+  },
+  {
+    "id": "tvs4-534",
+    "word": "accountability framework",
+    "definition": "khung trách nhiệm",
+    "example": "The accountability framework clarifies who is responsible for what.",
+    "difficulty": "advanced",
+    "topic": "governance"
+  },
+  {
+    "id": "tvs4-535",
+    "word": "ethical conduct",
+    "definition": "hành vi đạo đức",
+    "example": "The company promotes ethical conduct in all business dealings.",
+    "difficulty": "beginner",
+    "topic": "governance"
+  },
+  {
+    "id": "tvs4-536",
+    "word": "regulatory body",
+    "definition": "cơ quan quản lý",
+    "example": "The regulatory body oversees compliance in the financial sector.",
+    "difficulty": "intermediate",
+    "topic": "governance"
+  },
+  {
+    "id": "tvs4-537",
+    "word": "compliance program",
+    "definition": "chương trình tuân thủ",
+    "example": "The compliance program includes regular training and audits.",
+    "difficulty": "intermediate",
+    "topic": "governance"
+  },
+  {
+    "id": "tvs4-538",
+    "word": "board oversight",
+    "definition": "giám sát của hội đồng",
+    "example": "Board oversight ensures management acts in the company's best interest.",
+    "difficulty": "intermediate",
+    "topic": "governance"
+  },
+  {
+    "id": "tvs4-539",
+    "word": "corporate policy",
+    "definition": "chính sách doanh nghiệp",
+    "example": "The corporate policy was updated to reflect new regulations.",
+    "difficulty": "beginner",
+    "topic": "governance"
+  },
+  {
+    "id": "tvs4-540",
+    "word": "board committee",
+    "definition": "ủy ban hội đồng",
+    "example": "The board committee reviews financial statements quarterly.",
+    "difficulty": "intermediate",
+    "topic": "governance"
+  },
+  {
+    "id": "tvs4-541",
+    "word": "regulatory framework",
+    "definition": "khung pháp lý",
+    "example": "The regulatory framework governs how companies handle data.",
+    "difficulty": "advanced",
+    "topic": "governance"
+  },
+  {
+    "id": "tvs4-542",
+    "word": "compliance audit",
+    "definition": "kiểm toán tuân thủ",
+    "example": "The compliance audit confirmed adherence to all regulations.",
+    "difficulty": "intermediate",
+    "topic": "governance"
+  },
+  {
+    "id": "tvs4-543",
+    "word": "corporate integrity",
+    "definition": "tính toàn vẹn doanh nghiệp",
+    "example": "Corporate integrity is essential for long-term business success.",
+    "difficulty": "intermediate",
+    "topic": "governance"
+  },
+  {
+    "id": "tvs4-544",
+    "word": "regulatory oversight",
+    "definition": "giám sát pháp lý",
+    "example": "Regulatory oversight ensures fair business practices.",
+    "difficulty": "intermediate",
+    "topic": "governance"
+  },
+  {
+    "id": "tvs4-545",
+    "word": "governance review",
+    "definition": "đánh giá quản trị",
+    "example": "The governance review identified areas for improvement.",
+    "difficulty": "intermediate",
+    "topic": "governance"
+  },
+  {
+    "id": "tvs4-546",
+    "word": "policy enforcement",
+    "definition": "thực thi chính sách",
+    "example": "Policy enforcement ensures all employees follow established rules.",
+    "difficulty": "intermediate",
+    "topic": "governance"
+  },
+  {
+    "id": "tvs4-547",
+    "word": "corporate oversight",
+    "definition": "giám sát doanh nghiệp",
+    "example": "Corporate oversight prevents financial mismanagement.",
+    "difficulty": "intermediate",
+    "topic": "governance"
+  },
+  {
+    "id": "tvs4-548",
+    "word": "ethical governance",
+    "definition": "quản trị đạo đức",
+    "example": "Ethical governance promotes responsible business practices.",
+    "difficulty": "intermediate",
+    "topic": "governance"
+  },
+  {
+    "id": "tvs4-549",
+    "word": "corporate responsibility",
+    "definition": "trách nhiệm doanh nghiệp",
+    "example": "Corporate responsibility includes environmental and social initiatives.",
+    "difficulty": "beginner",
+    "topic": "governance"
+  },
+  {
+    "id": "tvs4-550",
+    "word": "policy compliance",
+    "definition": "tuân thủ chính sách",
+    "example": "All departments must ensure policy compliance.",
+    "difficulty": "beginner",
+    "topic": "governance"
+  },
+  {
+    "id": "tvs4-551",
+    "word": "governance practice",
+    "definition": "thực hành quản trị",
+    "example": "Best governance practices improve organizational performance.",
+    "difficulty": "intermediate",
+    "topic": "governance"
+  },
+  {
+    "id": "tvs4-552",
+    "word": "project scope",
+    "definition": "phạm vi dự án",
+    "example": "Defining the project scope prevents scope creep.",
+    "difficulty": "beginner",
+    "topic": "project_management"
+  },
+  {
+    "id": "tvs4-553",
+    "word": "project team",
+    "definition": "nhóm dự án",
+    "example": "The project team met every morning to review progress.",
+    "difficulty": "beginner",
+    "topic": "project_management"
+  },
+  {
+    "id": "tvs4-554",
+    "word": "project risk",
+    "definition": "rủi ro dự án",
+    "example": "Project risk is assessed at the beginning of each phase.",
+    "difficulty": "intermediate",
+    "topic": "project_management"
+  },
+  {
+    "id": "tvs4-555",
+    "word": "work package",
+    "definition": "gói công việc",
+    "example": "The project is divided into manageable work packages.",
+    "difficulty": "intermediate",
+    "topic": "project_management"
+  },
+  {
+    "id": "tvs4-556",
+    "word": "project milestone",
+    "definition": "cột mốc dự án",
+    "example": "Each project milestone has a specific deadline.",
+    "difficulty": "intermediate",
+    "topic": "project_management"
+  },
+  {
+    "id": "tvs4-557",
+    "word": "project kickoff",
+    "definition": "khởi động dự án",
+    "example": "The project kickoff meeting set expectations for the team.",
+    "difficulty": "beginner",
+    "topic": "project_management"
+  },
+  {
+    "id": "tvs4-558",
+    "word": "project monitoring",
+    "definition": "giám sát dự án",
+    "example": "Project monitoring ensures tasks stay on track.",
+    "difficulty": "intermediate",
+    "topic": "project_management"
+  },
+  {
+    "id": "tvs4-559",
+    "word": "project evaluation",
+    "definition": "đánh giá dự án",
+    "example": "Project evaluation occurs after each major milestone.",
+    "difficulty": "intermediate",
+    "topic": "project_management"
+  },
+  {
+    "id": "tvs4-560",
+    "word": "task tracking",
+    "definition": "theo dõi tác vụ",
+    "example": "Task tracking tools help managers monitor progress.",
+    "difficulty": "beginner",
+    "topic": "project_management"
+  },
+  {
+    "id": "tvs4-561",
+    "word": "project completion",
+    "definition": "hoàn thành dự án",
+    "example": "Project completion requires sign-off from all stakeholders.",
+    "difficulty": "beginner",
+    "topic": "project_management"
+  },
+  {
+    "id": "tvs4-562",
+    "word": "project review",
+    "definition": "đánh giá dự án",
+    "example": "The project review meeting discussed lessons learned.",
+    "difficulty": "beginner",
+    "topic": "project_management"
+  },
+  {
+    "id": "tvs4-563",
+    "word": "project planning",
+    "definition": "lập kế hoạch dự án",
+    "example": "Thorough project planning reduces the risk of delays.",
+    "difficulty": "beginner",
+    "topic": "project_management"
+  },
+  {
+    "id": "tvs4-564",
+    "word": "task dependency",
+    "definition": "phụ thuộc tác vụ",
+    "example": "Task dependency determines the order of work execution.",
+    "difficulty": "intermediate",
+    "topic": "project_management"
+  },
+  {
+    "id": "tvs4-565",
+    "word": "project budget",
+    "definition": "ngân sách dự án",
+    "example": "The project budget was approved by the finance department.",
+    "difficulty": "beginner",
+    "topic": "project_management"
+  },
+  {
+    "id": "tvs4-566",
+    "word": "project schedule",
+    "definition": "lịch trình dự án",
+    "example": "The project schedule shows all task deadlines.",
+    "difficulty": "beginner",
+    "topic": "project_management"
+  },
+  {
+    "id": "tvs4-567",
+    "word": "milestone tracking",
+    "definition": "theo dõi cột mốc",
+    "example": "Milestone tracking helps ensure the project stays on schedule.",
+    "difficulty": "intermediate",
+    "topic": "project_management"
+  },
+  {
+    "id": "tvs4-568",
+    "word": "customer relationship",
+    "definition": "quan hệ khách hàng",
+    "example": "Building strong customer relationships increases repeat business.",
+    "difficulty": "beginner",
+    "topic": "business_development"
+  },
+  {
+    "id": "tvs4-569",
+    "word": "sales performance",
+    "definition": "hiệu suất bán hàng",
+    "example": "Sales performance was measured against quarterly targets.",
+    "difficulty": "beginner",
+    "topic": "business_development"
+  },
+  {
+    "id": "tvs4-570",
+    "word": "customer segment",
+    "definition": "phân khúc khách hàng",
+    "example": "Each customer segment has unique needs and preferences.",
+    "difficulty": "intermediate",
+    "topic": "business_development"
+  },
+  {
+    "id": "tvs4-571",
+    "word": "revenue forecast",
+    "definition": "dự báo doanh thu",
+    "example": "The revenue forecast predicts growth for the next quarter.",
+    "difficulty": "intermediate",
+    "topic": "business_development"
+  },
+  {
+    "id": "tvs4-572",
+    "word": "customer loyalty",
+    "definition": "lòng trung thành khách hàng",
+    "example": "Customer loyalty programs increase repeat purchase rates.",
+    "difficulty": "beginner",
+    "topic": "business_development"
+  },
+  {
+    "id": "tvs4-573",
+    "word": "sales pipeline",
+    "definition": "đường ống bán hàng",
+    "example": "A healthy sales pipeline ensures consistent revenue.",
+    "difficulty": "intermediate",
+    "topic": "business_development"
+  },
+  {
+    "id": "tvs4-574",
+    "word": "revenue target",
+    "definition": "mục tiêu doanh thu",
+    "example": "The revenue target for this quarter is five million dollars.",
+    "difficulty": "beginner",
+    "topic": "business_development"
+  },
+  {
+    "id": "tvs4-575",
+    "word": "customer engagement",
+    "definition": "tham gia của khách hàng",
+    "example": "Customer engagement drives brand loyalty and sales.",
+    "difficulty": "intermediate",
+    "topic": "business_development"
+  },
+  {
+    "id": "tvs4-576",
+    "word": "market positioning",
+    "definition": "vị thế thị trường",
+    "example": "Strong market positioning differentiates us from competitors.",
+    "difficulty": "intermediate",
+    "topic": "business_development"
+  },
+  {
+    "id": "tvs4-577",
+    "word": "customer lifecycle",
+    "definition": "vòng đời khách hàng",
+    "example": "Understanding the customer lifecycle improves retention strategies.",
+    "difficulty": "intermediate",
+    "topic": "business_development"
+  },
+  {
+    "id": "tvs4-578",
+    "word": "project stakeholder",
+    "definition": "bên liên quan dự án",
+    "example": "Each project stakeholder has specific expectations.",
+    "difficulty": "beginner",
+    "topic": "stakeholder"
+  },
+  {
+    "id": "tvs4-579",
+    "word": "stakeholder feedback",
+    "definition": "phản hồi bên liên quan",
+    "example": "Stakeholder feedback was incorporated into the project plan.",
+    "difficulty": "beginner",
+    "topic": "stakeholder"
+  },
+  {
+    "id": "tvs4-580",
+    "word": "stakeholder satisfaction",
+    "definition": "sự hài lòng bên liên quan",
+    "example": "Stakeholder satisfaction surveys are conducted quarterly.",
+    "difficulty": "beginner",
+    "topic": "stakeholder"
+  },
+  {
+    "id": "tvs4-581",
+    "word": "stakeholder commitment",
+    "definition": "cam kết bên liên quan",
+    "example": "Stakeholder commitment drives project success.",
+    "difficulty": "beginner",
+    "topic": "stakeholder"
+  },
+  {
+    "id": "tvs4-582",
+    "word": "stakeholder representation",
+    "definition": "đại diện bên liên quan",
+    "example": "Each department has stakeholder representation on the committee.",
+    "difficulty": "intermediate",
+    "topic": "stakeholder"
+  },
+  {
+    "id": "tvs4-583",
+    "word": "stakeholder interests",
+    "definition": "lợi ích bên liên quan",
+    "example": "Balancing stakeholder interests requires careful negotiation.",
+    "difficulty": "intermediate",
+    "topic": "stakeholder"
+  },
+  {
+    "id": "tvs4-584",
+    "word": "stakeholder concerns",
+    "definition": "mối quan ngại bên liên quan",
+    "example": "Addressing stakeholder concerns early prevents project delays.",
+    "difficulty": "intermediate",
+    "topic": "stakeholder"
+  },
+  {
+    "id": "tvs4-585",
+    "word": "stakeholder partnership",
+    "definition": "quan hệ đối tác bên liên quan",
+    "example": "Stakeholder partnership leads to better project outcomes.",
+    "difficulty": "intermediate",
+    "topic": "stakeholder"
+  },
+  {
+    "id": "tvs4-586",
+    "word": "stakeholder input",
+    "definition": "ý kiến đóng góp bên liên quan",
+    "example": "Stakeholder input was gathered during the planning phase.",
+    "difficulty": "beginner",
+    "topic": "stakeholder"
+  },
+  {
+    "id": "tvs4-587",
+    "word": "stakeholder reporting",
+    "definition": "báo cáo bên liên quan",
+    "example": "Monthly stakeholder reporting keeps everyone informed of progress.",
+    "difficulty": "beginner",
+    "topic": "stakeholder"
+  },
+  {
+    "id": "tvs4-588",
+    "word": "stakeholder needs",
+    "definition": "nhu cầu bên liên quan",
+    "example": "Understanding stakeholder needs is critical for project success.",
+    "difficulty": "beginner",
+    "topic": "stakeholder"
+  },
+  {
+    "id": "tvs4-589",
+    "word": "stakeholder priorities",
+    "definition": "ưu tiên bên liên quan",
+    "example": "Stakeholder priorities determine project focus areas.",
+    "difficulty": "intermediate",
+    "topic": "stakeholder"
+  },
+  {
+    "id": "tvs4-590",
+    "word": "organizational readiness",
+    "definition": "sự sẵn sàng tổ chức",
+    "example": "Organizational readiness determines how quickly changes are adopted.",
+    "difficulty": "intermediate",
+    "topic": "change_management"
+  },
+  {
+    "id": "tvs4-591",
+    "word": "change communication",
+    "definition": "truyền thông thay đổi",
+    "example": "Clear change communication reduces employee anxiety.",
+    "difficulty": "intermediate",
+    "topic": "change_management"
+  },
+  {
+    "id": "tvs4-592",
+    "word": "change strategy",
+    "definition": "chiến lược thay đổi",
+    "example": "The change strategy was developed based on the readiness assessment.",
+    "difficulty": "intermediate",
+    "topic": "change_management"
+  },
+  {
+    "id": "tvs4-593",
+    "word": "change initiative",
+    "definition": "sáng kiến thay đổi",
+    "example": "The change initiative focused on improving customer service.",
+    "difficulty": "intermediate",
+    "topic": "change_management"
+  },
+  {
+    "id": "tvs4-594",
+    "word": "change impact",
+    "definition": "tác động thay đổi",
+    "example": "Measuring change impact helps evaluate the success of transitions.",
+    "difficulty": "intermediate",
+    "topic": "change_management"
+  },
+  {
+    "id": "tvs4-595",
+    "word": "change leadership",
+    "definition": "lãnh đạo thay đổi",
+    "example": "Strong change leadership drives successful organizational transformations.",
+    "difficulty": "intermediate",
+    "topic": "change_management"
+  },
+  {
+    "id": "tvs4-596",
+    "word": "change adoption",
+    "definition": "áp dụng thay đổi",
+    "example": "Accelerating change adoption requires consistent communication.",
+    "difficulty": "intermediate",
+    "topic": "change_management"
+  },
+  {
+    "id": "tvs4-597",
+    "word": "change resistance",
+    "definition": "kháng cự thay đổi",
+    "example": "Understanding change resistance helps address employee concerns.",
+    "difficulty": "intermediate",
+    "topic": "change_management"
+  },
+  {
+    "id": "tvs4-598",
+    "word": "change planning",
+    "definition": "lập kế hoạch thay đổi",
+    "example": "Thorough change planning minimizes disruptions to daily operations.",
+    "difficulty": "intermediate",
+    "topic": "change_management"
+  },
+  {
+    "id": "tvs4-599",
+    "word": "change management plan",
+    "definition": "kế hoạch quản lý thay đổi",
+    "example": "The change management plan outlines each phase of the transition.",
+    "difficulty": "intermediate",
+    "topic": "change_management"
+  },
+  {
+    "id": "tvs4-600",
+    "word": "change communication plan",
+    "definition": "kế hoạch truyền thông thay đổi",
+    "example": "The change communication plan ensures timely updates for all employees.",
+    "difficulty": "intermediate",
+    "topic": "change_management"
+  },
+  {
+    "id": "tvs4-601",
+    "word": "change readiness assessment",
+    "definition": "đánh giá sẵn sàng thay đổi",
+    "example": "The change readiness assessment revealed the need for additional training.",
+    "difficulty": "intermediate",
+    "topic": "change_management"
+  },
+  {
+    "id": "tvs4-602",
+    "word": "change governance",
+    "definition": "quản trị thay đổi",
+    "example": "Change governance ensures decisions follow established procedures.",
+    "difficulty": "intermediate",
+    "topic": "change_management"
+  },
+  {
+    "id": "tvs4-603",
+    "word": "change implementation",
+    "definition": "triển khai thay đổi",
+    "example": "Change implementation requires coordination across multiple departments.",
+    "difficulty": "intermediate",
+    "topic": "change_management"
+  },
+  {
+    "id": "tvs4-604",
+    "word": "change evaluation",
+    "definition": "đánh giá thay đổi",
+    "example": "Change evaluation measures the success of organizational transitions.",
+    "difficulty": "intermediate",
+    "topic": "change_management"
+  },
+  {
+    "id": "tvs4-605",
+    "word": "change success",
+    "definition": "thành công thay đổi",
+    "example": "Measuring change success requires clear metrics and regular reviews.",
+    "difficulty": "intermediate",
+    "topic": "change_management"
+  },
+  {
+    "id": "tvs4-606",
+    "word": "change framework",
+    "definition": "khung thay đổi",
+    "example": "The change framework provides a structured approach to transitions.",
+    "difficulty": "intermediate",
+    "topic": "change_management"
+  },
+  {
+    "id": "tvs4-607",
+    "word": "risk identification",
+    "definition": "xác định rủi ro",
+    "example": "Risk identification is the first step in risk management.",
+    "difficulty": "intermediate",
+    "topic": "risk_management"
+  },
+  {
+    "id": "tvs4-608",
+    "word": "risk evaluation",
+    "definition": "đánh giá rủi ro",
+    "example": "Risk evaluation helps prioritize which threats need immediate attention.",
+    "difficulty": "intermediate",
+    "topic": "risk_management"
+  },
+  {
+    "id": "tvs4-609",
+    "word": "risk monitoring",
+    "definition": "giám sát rủi ro",
+    "example": "Risk monitoring ensures ongoing awareness of potential threats.",
+    "difficulty": "intermediate",
+    "topic": "risk_management"
+  },
+  {
+    "id": "tvs4-610",
+    "word": "risk control",
+    "definition": "kiểm soát rủi ro",
+    "example": "Risk control measures reduce the likelihood of negative outcomes.",
+    "difficulty": "intermediate",
+    "topic": "risk_management"
+  },
+  {
+    "id": "tvs4-611",
+    "word": "risk analysis",
+    "definition": "phân tích rủi ro",
+    "example": "Risk analysis helps the team prepare effective responses.",
+    "difficulty": "intermediate",
+    "topic": "risk_management"
+  },
+  {
+    "id": "tvs4-612",
+    "word": "risk reporting",
+    "definition": "báo cáo rủi ro",
+    "example": "Regular risk reporting keeps leadership informed of potential threats.",
+    "difficulty": "intermediate",
+    "topic": "risk_management"
+  },
+  {
+    "id": "tvs4-613",
+    "word": "risk communication",
+    "definition": "truyền thông rủi ro",
+    "example": "Clear risk communication ensures all team members understand potential threats.",
+    "difficulty": "intermediate",
+    "topic": "risk_management"
+  },
+  {
+    "id": "tvs4-614",
+    "word": "risk planning",
+    "definition": "lập kế hoạch rủi ro",
+    "example": "Risk planning prepares the team to respond effectively to threats.",
+    "difficulty": "intermediate",
+    "topic": "risk_management"
+  },
+  {
+    "id": "tvs4-615",
+    "word": "risk response plan",
+    "definition": "kế hoạch phản ứng rủi ro",
+    "example": "The risk response plan details actions for each identified threat.",
+    "difficulty": "intermediate",
+    "topic": "risk_management"
+  },
+  {
+    "id": "tvs4-616",
+    "word": "risk treatment",
+    "definition": "xử lý rủi ro",
+    "example": "Risk treatment involves selecting and implementing measures to address threats.",
+    "difficulty": "intermediate",
+    "topic": "risk_management"
+  },
+  {
+    "id": "tvs4-617",
+    "word": "risk dashboard",
+    "definition": "bảng điều khiển rủi ro",
+    "example": "The risk dashboard displays all identified threats and their status.",
+    "difficulty": "intermediate",
+    "topic": "risk_management"
+  },
+  {
+    "id": "tvs4-618",
+    "word": "risk review",
+    "definition": "đánh giá rủi ro",
+    "example": "The risk review meeting updates the status of all identified threats.",
+    "difficulty": "intermediate",
+    "topic": "risk_management"
+  },
+  {
+    "id": "tvs4-619",
+    "word": "risk strategy",
+    "definition": "chiến lược rủi ro",
+    "example": "The risk strategy outlines how the company addresses potential threats.",
+    "difficulty": "intermediate",
+    "topic": "risk_management"
+  },
+  {
+    "id": "tvs4-620",
+    "word": "risk tolerance",
+    "definition": "khả năng chịu đựng rủi ro",
+    "example": "Risk tolerance defines the acceptable level of risk for the organization.",
+    "difficulty": "advanced",
+    "topic": "risk_management"
+  },
+  {
+    "id": "tvs4-621",
+    "word": "risk escalation",
+    "definition": "leo thang rủi ro",
+    "example": "Risk escalation ensures critical threats are brought to management attention.",
+    "difficulty": "intermediate",
+    "topic": "risk_management"
+  },
+  {
+    "id": "tvs4-622",
+    "word": "risk assessment report",
+    "definition": "báo cáo đánh giá rủi ro",
+    "example": "The risk assessment report was presented to the board of directors.",
+    "difficulty": "intermediate",
+    "topic": "risk_management"
+  },
+  {
+    "id": "tvs4-623",
+    "word": "risk awareness",
+    "definition": "nhận thức rủi ro",
+    "example": "Risk awareness training helps employees identify potential threats.",
+    "difficulty": "beginner",
+    "topic": "risk_management"
+  },
+  {
+    "id": "tvs4-624",
+    "word": "digital tools",
+    "definition": "công cụ kỹ thuật số",
+    "example": "Digital tools streamline collaboration across teams.",
+    "difficulty": "beginner",
+    "topic": "technology"
+  },
+  {
+    "id": "tvs4-625",
+    "word": "code repository",
+    "definition": "kho mã nguồn",
+    "example": "The code repository stores all project source files.",
+    "difficulty": "beginner",
+    "topic": "software"
+  },
+  {
+    "id": "tvs4-626",
+    "word": "software update",
+    "definition": "cập nhật phần mềm",
+    "example": "The software update fixes several known bugs.",
+    "difficulty": "beginner",
+    "topic": "software"
+  },
+  {
+    "id": "tvs4-627",
+    "word": "network switch",
+    "definition": "bộ chuyển mạch mạng",
+    "example": "The network switch connects all office devices.",
+    "difficulty": "beginner",
+    "topic": "hardware"
+  },
+  {
+    "id": "tvs4-628",
+    "word": "computer mouse",
+    "definition": "chuột máy tính",
+    "example": "The wireless computer mouse is comfortable to use.",
+    "difficulty": "beginner",
+    "topic": "hardware"
+  },
+  {
+    "id": "tvs4-629",
+    "word": "data security",
+    "definition": "bảo mật dữ liệu",
+    "example": "Data security is critical for protecting customer information.",
+    "difficulty": "beginner",
+    "topic": "cybersecurity"
+  },
+  {
+    "id": "tvs4-630",
+    "word": "network protection",
+    "definition": "bảo vệ mạng",
+    "example": "Network protection prevents unauthorized system access.",
+    "difficulty": "intermediate",
+    "topic": "cybersecurity"
+  },
+  {
+    "id": "tvs4-631",
+    "word": "data reporting",
+    "definition": "báo cáo dữ liệu",
+    "example": "Automated data reporting saves hours of manual work each week.",
+    "difficulty": "beginner",
+    "topic": "data_analytics"
+  },
+  {
+    "id": "tvs4-632",
+    "word": "business analytics",
+    "definition": "phân tích kinh doanh",
+    "example": "Business analytics helps identify opportunities for growth.",
+    "difficulty": "intermediate",
+    "topic": "data_analytics"
+  },
+  {
+    "id": "tvs4-633",
+    "word": "AI technology",
+    "definition": "công nghệ AI",
+    "example": "AI technology is transforming how businesses operate.",
+    "difficulty": "beginner",
+    "topic": "artificial_intelligence"
+  },
+  {
+    "id": "tvs4-634",
+    "word": "machine learning model",
+    "definition": "mô hình học máy",
+    "example": "The machine learning model predicts customer behavior accurately.",
+    "difficulty": "intermediate",
+    "topic": "artificial_intelligence"
+  },
+  {
+    "id": "tvs4-635",
+    "word": "automated process",
+    "definition": "quy trình tự động",
+    "example": "The automated process handles order fulfillment efficiently.",
+    "difficulty": "beginner",
+    "topic": "automation"
+  },
+  {
+    "id": "tvs4-636",
+    "word": "digital automation",
+    "definition": "tự động hóa kỹ thuật số",
+    "example": "Digital automation reduces manual processing time by 60%.",
+    "difficulty": "intermediate",
+    "topic": "automation"
+  },
+  {
+    "id": "tvs4-637",
+    "word": "wireless network",
+    "definition": "mạng không dây",
+    "example": "The wireless network covers the entire office building.",
+    "difficulty": "beginner",
+    "topic": "telecommunications"
+  },
+  {
+    "id": "tvs4-638",
+    "word": "communication system",
+    "definition": "hệ thống truyền thông",
+    "example": "The communication system connects offices in five countries.",
+    "difficulty": "beginner",
+    "topic": "telecommunications"
+  },
+  {
+    "id": "tvs4-639",
+    "word": "network protocol",
+    "definition": "giao thức mạng",
+    "example": "The network protocol defines how data is transmitted.",
+    "difficulty": "intermediate",
+    "topic": "networking"
+  },
+  {
+    "id": "tvs4-640",
+    "word": "network connection",
+    "definition": "kết nối mạng",
+    "example": "A stable network connection is essential for video calls.",
+    "difficulty": "beginner",
+    "topic": "networking"
+  },
+  {
+    "id": "tvs4-641",
+    "word": "data storage",
+    "definition": "lưu trữ dữ liệu",
+    "example": "Efficient data storage reduces costs and improves access speed.",
+    "difficulty": "beginner",
+    "topic": "database"
+  },
+  {
+    "id": "tvs4-642",
+    "word": "data retrieval",
+    "definition": "truy xuất dữ liệu",
+    "example": "Fast data retrieval is critical for real-time applications.",
+    "difficulty": "intermediate",
+    "topic": "database"
+  },
+  {
+    "id": "tvs4-643",
+    "word": "software development",
+    "definition": "phát triển phần mềm",
+    "example": "Software development follows the agile methodology.",
+    "difficulty": "beginner",
+    "topic": "programming"
+  },
+  {
+    "id": "tvs4-644",
+    "word": "code quality",
+    "definition": "chất lượng mã nguồn",
+    "example": "Code quality improves with regular reviews and testing.",
+    "difficulty": "intermediate",
+    "topic": "programming"
+  },
+  {
+    "id": "tvs4-645",
+    "word": "project manager",
+    "definition": "quản lý dự án",
+    "example": "The project manager coordinates all team activities.",
+    "difficulty": "beginner",
+    "topic": "project_management"
+  },
+  {
+    "id": "tvs4-646",
+    "word": "project execution",
+    "definition": "thực thi dự án",
+    "example": "Project execution requires careful resource management.",
+    "difficulty": "intermediate",
+    "topic": "project_management"
+  },
+  {
+    "id": "tvs4-647",
+    "word": "risk management",
+    "definition": "quản lý rủi ro",
+    "example": "Risk management is essential for business continuity.",
+    "difficulty": "beginner",
+    "topic": "risk_management"
+  },
+  {
+    "id": "tvs4-648",
+    "word": "business planning",
+    "definition": "lập kế hoạch kinh doanh",
+    "example": "Annual business planning aligns resources with company goals.",
+    "difficulty": "beginner",
+    "topic": "strategic_planning"
+  },
+  {
+    "id": "tvs4-649",
+    "word": "strategic analysis",
+    "definition": "phân tích chiến lược",
+    "example": "Strategic analysis examines internal and external business factors.",
+    "difficulty": "intermediate",
+    "topic": "strategic_planning"
+  },
+  {
+    "id": "tvs4-650",
+    "word": "business partnership",
+    "definition": "quan hệ đối tác kinh doanh",
+    "example": "A strong business partnership leads to mutual growth.",
+    "difficulty": "beginner",
+    "topic": "partnership"
+  },
+  {
+    "id": "tvs4-651",
+    "word": "partnership development",
+    "definition": "phát triển quan hệ đối tác",
+    "example": "Partnership development requires ongoing communication and trust.",
+    "difficulty": "intermediate",
+    "topic": "partnership"
+  },
+  {
+    "id": "tvs4-652",
+    "word": "stakeholder review",
+    "definition": "đánh giá bên liên quan",
+    "example": "The stakeholder review meeting updated all parties on progress.",
+    "difficulty": "intermediate",
+    "topic": "stakeholder"
+  },
+  {
+    "id": "tvs4-653",
+    "word": "stakeholder involvement",
+    "definition": "tham gia bên liên quan",
+    "example": "Stakeholder involvement improves the quality of project decisions.",
+    "difficulty": "intermediate",
+    "topic": "stakeholder"
+  },
+  {
+    "id": "tvs4-654",
+    "word": "board governance",
+    "definition": "quản trị hội đồng",
+    "example": "Board governance ensures ethical leadership of the company.",
+    "difficulty": "intermediate",
+    "topic": "governance"
+  },
+  {
+    "id": "tvs4-655",
+    "word": "system design",
+    "definition": "thiết kế hệ thống",
+    "example": "System design must account for scalability and reliability.",
+    "difficulty": "intermediate",
+    "topic": "technology"
+  },
+  {
+    "id": "tvs4-656",
+    "word": "code review",
+    "definition": "đánh giá mã nguồn",
+    "example": "Regular code review improves overall software quality.",
+    "difficulty": "intermediate",
+    "topic": "programming"
+  },
+  {
+    "id": "tvs4-657",
+    "word": "vendor management",
+    "definition": "quản lý nhà cung cấp",
+    "example": "Effective vendor management reduces procurement costs.",
+    "difficulty": "intermediate",
+    "topic": "business_development"
+  },
+  {
+    "id": "tvs4-658",
+    "word": "service delivery",
+    "definition": "cung cấp dịch vụ",
+    "example": "Timely service delivery is critical for client satisfaction.",
+    "difficulty": "intermediate",
+    "topic": "governance"
+  }
+]

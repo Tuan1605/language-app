@@ -1,5 +1,6 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect } from 'react';
 import type { Flashcard, ReviewGrade } from '../types';
+import { speak, langForCategory, isTTSSupported, hasVoiceFor } from '../utils/tts';
 
 interface FlashcardViewProps {
   card: Flashcard;
@@ -8,20 +9,32 @@ interface FlashcardViewProps {
 
 export function FlashcardView({ card, onRate }: FlashcardViewProps) {
   const [isFlipped, setIsFlipped] = useState(false);
+  const [isSpeaking, setIsSpeaking] = useState(false);
 
-  const speak = useCallback((text: string, lang: 'english' | 'japanese') => {
-    if (!window.speechSynthesis) return;
-    
-    // Cancel any ongoing speech
-    window.speechSynthesis.cancel();
-    
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.lang = lang === 'english' ? 'en-US' : 'ja-JP';
-    utterance.rate = 0.9; // Slightly slower for clarity
-    utterance.pitch = 1.0;
-    
-    window.speechSynthesis.speak(utterance);
-  }, []);
+  // Track voice readiness the same way Listening/Dictation do, so a Firefox
+  // user sees a hint instead of silence when no voice has loaded yet.
+  const ttsLang = langForCategory(card.language);
+  const [voiceReady, setVoiceReady] = useState(() => hasVoiceFor(ttsLang));
+  useEffect(() => {
+    if (!isTTSSupported()) return;
+    const check = () => setVoiceReady(hasVoiceFor(ttsLang));
+    check();
+    window.speechSynthesis.addEventListener('voiceschanged', check);
+    return () => window.speechSynthesis.removeEventListener('voiceschanged', check);
+  }, [ttsLang]);
+
+  // Reuse the shared TTS helper so voice loading / cancellation stays
+  // consistent with the rest of the app (Listening / Dictation / Speaking).
+  const speakText = (text: string) => {
+    if (isSpeaking) return; // prevent overlap on rapid clicks
+    setIsSpeaking(true);
+    const started = speak(text, {
+      lang: ttsLang,
+      rate: 0.9,
+      onEnd: () => setIsSpeaking(false),
+    });
+    if (!started) setIsSpeaking(false);
+  };
 
   // Reset flip state when card changes (but don't speak automatically)
   useEffect(() => {
@@ -44,14 +57,15 @@ export function FlashcardView({ card, onRate }: FlashcardViewProps) {
             Question
           </span>
           
-          <button 
+          <button
             onClick={(e) => {
               e.stopPropagation();
-              speak(card.word, card.language);
+              speakText(card.word);
             }}
-            className="absolute top-5 right-6 w-10 h-10 rounded-xl bg-[var(--gray-bg)] flex items-center justify-center text-xl hover:bg-[var(--blue-light)] hover:text-[var(--blue)] transition-colors border-2 border-[var(--gray-path)] active:translate-y-1"
+            disabled={isSpeaking}
+            className="absolute top-5 right-6 w-10 h-10 rounded-xl bg-[var(--gray-bg)] flex items-center justify-center text-xl hover:bg-[var(--blue-light)] hover:text-[var(--blue)] transition-colors border-2 border-[var(--gray-path)] active:translate-y-1 disabled:opacity-60"
           >
-            🔊
+            <span className={isSpeaking ? 'animate-pulse' : ''}>🔊</span>
           </button>
 
           {card.imageUrl ? (
@@ -82,14 +96,15 @@ export function FlashcardView({ card, onRate }: FlashcardViewProps) {
             Meaning
           </span>
 
-          <button 
+          <button
             onClick={(e) => {
               e.stopPropagation();
-              speak(card.definition, card.language);
+              speakText(card.definition);
             }}
-            className="absolute top-5 right-6 w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center text-xl hover:bg-white/40 transition-colors border-2 border-white/30 active:translate-y-1"
+            disabled={isSpeaking}
+            className="absolute top-5 right-6 w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center text-xl hover:bg-white/40 transition-colors border-2 border-white/30 active:translate-y-1 disabled:opacity-60"
           >
-            🔊
+            <span className={isSpeaking ? 'animate-pulse' : ''}>🔊</span>
           </button>
 
           <div className="space-y-6 px-6">
@@ -99,14 +114,15 @@ export function FlashcardView({ card, onRate }: FlashcardViewProps) {
                 <p className="text-xs font-bold italic text-white/90">
                   "{card.example}"
                 </p>
-                <button 
+                <button
                   onClick={(e) => {
                     e.stopPropagation();
-                    speak(card.example!, card.language);
+                    speakText(card.example!);
                   }}
-                  className="mt-2 text-[10px] bg-white/10 px-2 py-1 rounded-md hover:bg-white/20"
+                  disabled={isSpeaking}
+                  className="mt-2 text-[10px] bg-white/10 px-2 py-1 rounded-md hover:bg-white/20 disabled:opacity-60"
                 >
-                  🔊 Read Example
+                  {isSpeaking ? '🔊 Đang phát…' : '🔊 Read Example'}
                 </button>
               </div>
             )}
@@ -153,6 +169,17 @@ export function FlashcardView({ card, onRate }: FlashcardViewProps) {
           Dễ: ôn lại sau lâu hơn • Khó: ôn lại sớm hơn
         </p>
       </div>
+
+      {!isTTSSupported() && (
+        <p className="text-xs text-[#ff4b4b] font-bold text-center">
+          ⚠️ Trình duyệt không hỗ trợ đọc từ. Hãy dùng Chrome hoặc Edge.
+        </p>
+      )}
+      {isTTSSupported() && !voiceReady && (
+        <p className="text-xs text-[#ff9600] font-bold text-center">
+          ⏳ Đang tải giọng đọc… nếu bấm loa không nghe thấy gì, hãy bấm lại sau giây lát, hoặc dùng Chrome/Edge.
+        </p>
+      )}
     </div>
   );
 }

@@ -12,19 +12,9 @@ import type {
   KanjiEntry,
 } from '../types';
 
-import toeicVocab from './toeic/vocabulary.json';
-import toeicVocabSupplement from './toeic/vocabulary-supplement.json';
-import toeicQuestions from './toeic/questions.json';
-import n2Vocab from './n2/vocabulary.json';
-import n2VocabSupplement from './n2/vocabulary-supplement.json';
-import n2GrammarAnki from './n2/grammar-anki.json';
-import n2Questions from './n2/questions.json';
-import n2Grammar from './n2/grammar.json';
-import n2KanjiData from './n2/kanji.json';
-
 const nowIso = () => new Date().toISOString();
 
-interface RawVocab {
+export interface RawVocab {
   id: string;
   word: string;
   reading?: string;
@@ -34,7 +24,7 @@ interface RawVocab {
   topic?: string;
 }
 
-interface RawQuestion {
+export interface RawQuestion {
   id: string;
   category: 'toeic' | 'n2';
   difficulty: 'beginner' | 'intermediate' | 'advanced';
@@ -45,7 +35,7 @@ interface RawQuestion {
   explanation?: string;
 }
 
-function toFlashcard(raw: RawVocab, language: 'english' | 'japanese'): Flashcard {
+export function toFlashcard(raw: RawVocab, language: 'english' | 'japanese'): Flashcard {
   const word = raw.reading ? `${raw.word} (${raw.reading})` : raw.word;
   return {
     id: raw.id,
@@ -64,37 +54,88 @@ function toFlashcard(raw: RawVocab, language: 'english' | 'japanese'): Flashcard
   };
 }
 
-const allToeicVocab = [...(toeicVocab as RawVocab[]), ...(toeicVocabSupplement as RawVocab[])];
-const allN2Vocab = [
-  ...(n2Vocab as RawVocab[]),
-  ...(n2VocabSupplement as RawVocab[]),
-  ...(n2GrammarAnki as RawVocab[]), // 528 N2 grammar points from imported Anki deck
-];
+export async function loadSeedCards(language: 'english' | 'japanese'): Promise<Flashcard[]> {
+  if (language === 'english') {
+    const [v1, v2, v3, v4, v5, v6] = await Promise.all([
+      import('./toeic/vocabulary.json'),
+      import('./toeic/vocabulary-supplement.json'),
+      import('./toeic/vocabulary-supplement-batch1.json'),
+      import('./toeic/vocabulary-supplement-batch2.json'),
+      import('./toeic/vocabulary-supplement-batch3.json'),
+      import('./toeic/vocabulary-supplement-batch4.json'),
+    ]);
+    const raw = [
+      ...v1.default,
+      ...v2.default,
+      ...v3.default,
+      ...v4.default,
+      ...v5.default,
+      ...v6.default,
+    ] as RawVocab[];
+    return raw.map((v) => toFlashcard(v, 'english'));
+  } else {
+    const [v1, v2, v3, v4, v5, v6, v7, v8] = await Promise.all([
+      import('./n2/vocabulary.json'),
+      import('./n2/vocabulary-supplement.json'),
+      import('./n2/vocabulary-supplement-batch1.json'),
+      import('./n2/vocabulary-supplement-batch2.json'),
+      import('./n2/vocabulary-supplement-batch3.json'),
+      import('./n2/vocabulary-supplement-batch4.json'),
+      import('./n2/vocabulary-supplement-batch5.json'),
+      import('./n2/grammar-anki.json'),
+    ]);
+    const raw = [
+      ...v1.default,
+      ...v2.default,
+      ...v3.default,
+      ...v4.default,
+      ...v5.default,
+      ...v6.default,
+      ...v7.default,
+      ...v8.default,
+    ] as RawVocab[];
+    return raw.map((v) => toFlashcard(v, 'japanese'));
+  }
+}
 
-export const SEED_TOEIC_CARDS: Flashcard[] = allToeicVocab.map((v) =>
-  toFlashcard(v, 'english')
-);
+export async function loadSeedQuestions(): Promise<Question[]> {
+  const [q1, q2, q3, q4] = await Promise.all([
+    import('./toeic/questions.json'),
+    import('./toeic/questions-listening.json'),
+    import('./n2/questions.json'),
+    import('./n2/questions-supplement.json'),
+  ]);
+  return [
+    ...(q1.default as RawQuestion[]),
+    ...(q2.default as RawQuestion[]),
+    ...(q3.default as RawQuestion[]),
+    ...(q4.default as RawQuestion[]),
+  ].map((q) => ({
+    id: q.id,
+    text: q.text,
+    options: q.options,
+    correctAnswer: q.correctAnswer,
+    explanation: q.explanation,
+    category: q.category,
+    difficulty: q.difficulty,
+    subCategory: q.subCategory,
+  }));
+}
 
-export const SEED_N2_CARDS: Flashcard[] = allN2Vocab.map((v) =>
-  toFlashcard(v, 'japanese')
-);
+export async function loadSeedN2Kanji(): Promise<KanjiEntry[]> {
+  const [k1, k2, k3] = await Promise.all([
+    import('./n2/kanji.json'),
+    import('./n2/kanji-supplement-batch1.json'),
+    import('./n2/kanji-supplement-batch2.json'),
+  ]);
+  return [
+    ...(k1.default as KanjiEntry[]),
+    ...(k2.default as KanjiEntry[]),
+    ...(k3.default as KanjiEntry[]),
+  ];
+}
 
-export const SEED_CARDS: Flashcard[] = [...SEED_TOEIC_CARDS, ...SEED_N2_CARDS];
-
-export const SEED_QUESTIONS: Question[] = [
-  ...(toeicQuestions as RawQuestion[]),
-  ...(n2Questions as RawQuestion[]),
-].map((q) => ({
-  id: q.id,
-  text: q.text,
-  options: q.options,
-  correctAnswer: q.correctAnswer,
-  explanation: q.explanation,
-  category: q.category,
-  difficulty: q.difficulty,
-  subCategory: q.subCategory,
-}));
-
-export const SEED_N2_GRAMMAR: GrammarPoint[] = n2Grammar as GrammarPoint[];
-
-export const SEED_N2_KANJI: KanjiEntry[] = n2KanjiData as KanjiEntry[];
+export async function loadSeedN2Grammar(): Promise<GrammarPoint[]> {
+  const g = await import('./n2/grammar.json');
+  return g.default as GrammarPoint[];
+}

@@ -1,0 +1,4002 @@
+[
+  {
+    "id": "tvs2-001",
+    "word": "human resources",
+    "definition": "bộ phận nhân sự",
+    "example": "Please contact the human resources department for your benefits enrollment.",
+    "difficulty": "beginner",
+    "topic": "human_resources"
+  },
+  {
+    "id": "tvs2-002",
+    "word": "personnel",
+    "definition": "nhân viên, nhân sự",
+    "example": "The personnel office handles all employee records.",
+    "difficulty": "beginner",
+    "topic": "human_resources"
+  },
+  {
+    "id": "tvs2-003",
+    "word": "employee",
+    "definition": "nhân viên",
+    "example": "Every employee must complete the safety training.",
+    "difficulty": "beginner",
+    "topic": "human_resources"
+  },
+  {
+    "id": "tvs2-004",
+    "word": "staff",
+    "definition": "nhân viên, đội ngũ",
+    "example": "The marketing staff will attend the conference.",
+    "difficulty": "beginner",
+    "topic": "human_resources"
+  },
+  {
+    "id": "tvs2-005",
+    "word": "workforce",
+    "definition": "lực lượng lao động",
+    "example": "Our workforce has grown by fifteen percent this year.",
+    "difficulty": "intermediate",
+    "topic": "human_resources"
+  },
+  {
+    "id": "tvs2-006",
+    "word": "department",
+    "definition": "bộ phận, phòng ban",
+    "example": "The finance department will review the budget proposal.",
+    "difficulty": "beginner",
+    "topic": "human_resources"
+  },
+  {
+    "id": "tvs2-007",
+    "word": "division",
+    "definition": "chi nhánh, phòng ban",
+    "example": "She was promoted to manage the international division.",
+    "difficulty": "intermediate",
+    "topic": "human_resources"
+  },
+  {
+    "id": "tvs2-008",
+    "word": "subordinate",
+    "definition": "cấp dưới",
+    "example": "A good manager delegates tasks to subordinates.",
+    "difficulty": "intermediate",
+    "topic": "human_resources"
+  },
+  {
+    "id": "tvs2-009",
+    "word": "colleague",
+    "definition": "đồng nghiệp",
+    "example": "My colleague helped me with the quarterly report.",
+    "difficulty": "beginner",
+    "topic": "human_resources"
+  },
+  {
+    "id": "tvs2-010",
+    "word": "supervisor",
+    "definition": "giám sát viên",
+    "example": "You should discuss this with your supervisor first.",
+    "difficulty": "beginner",
+    "topic": "human_resources"
+  },
+  {
+    "id": "tvs2-011",
+    "word": "manager",
+    "definition": "quản lý",
+    "example": "The manager approved the vacation request.",
+    "difficulty": "beginner",
+    "topic": "human_resources"
+  },
+  {
+    "id": "tvs2-012",
+    "word": "executive",
+    "definition": "giám đốc điều hành",
+    "example": "The executives held a meeting to discuss the merger.",
+    "difficulty": "intermediate",
+    "topic": "human_resources"
+  },
+  {
+    "id": "tvs2-013",
+    "word": "headcount",
+    "definition": "số lượng nhân viên",
+    "example": "The company needs to increase its headcount in sales.",
+    "difficulty": "intermediate",
+    "topic": "human_resources"
+  },
+  {
+    "id": "tvs2-014",
+    "word": "talent",
+    "definition": "tài năng, nhân tài",
+    "example": "We need to attract top talent to our organization.",
+    "difficulty": "intermediate",
+    "topic": "human_resources"
+  },
+  {
+    "id": "tvs2-015",
+    "word": "staffing",
+    "definition": "tuyển dụng, bố trí nhân sự",
+    "example": "The staffing process for the new branch begins next month.",
+    "difficulty": "intermediate",
+    "topic": "human_resources"
+  },
+  {
+    "id": "tvs2-016",
+    "word": "compliance",
+    "definition": "tuân thủ",
+    "example": "The company must ensure compliance with labor regulations.",
+    "difficulty": "advanced",
+    "topic": "human_resources"
+  },
+  {
+    "id": "tvs2-017",
+    "word": "regulations",
+    "definition": "quy định",
+    "example": "All employees must follow the safety regulations.",
+    "difficulty": "intermediate",
+    "topic": "human_resources"
+  },
+  {
+    "id": "tvs2-018",
+    "word": "policies",
+    "definition": "chính sách",
+    "example": "Please review the company policies in the employee handbook.",
+    "difficulty": "beginner",
+    "topic": "human_resources"
+  },
+  {
+    "id": "tvs2-019",
+    "word": "handbook",
+    "definition": "sổ tay nhân viên",
+    "example": "The employee handbook contains information about benefits.",
+    "difficulty": "beginner",
+    "topic": "human_resources"
+  },
+  {
+    "id": "tvs2-020",
+    "word": "personnel file",
+    "definition": "hồ sơ nhân sự",
+    "example": "Your personnel file is kept confidential by HR.",
+    "difficulty": "beginner",
+    "topic": "human_resources"
+  },
+  {
+    "id": "tvs2-021",
+    "word": "job description",
+    "definition": "mô tả công việc",
+    "example": "The job description outlines the responsibilities of the position.",
+    "difficulty": "beginner",
+    "topic": "human_resources"
+  },
+  {
+    "id": "tvs2-022",
+    "word": "job title",
+    "definition": "chức danh công việc",
+    "example": "Her job title was changed to Senior Analyst.",
+    "difficulty": "beginner",
+    "topic": "human_resources"
+  },
+  {
+    "id": "tvs2-023",
+    "word": "position",
+    "definition": "vị trí, chức vụ",
+    "example": "We have an open position in the accounting department.",
+    "difficulty": "beginner",
+    "topic": "human_resources"
+  },
+  {
+    "id": "tvs2-024",
+    "word": "temporary",
+    "definition": "tạm thời",
+    "example": "She was hired as a temporary worker during the busy season.",
+    "difficulty": "beginner",
+    "topic": "human_resources"
+  },
+  {
+    "id": "tvs2-025",
+    "word": "probationary",
+    "definition": "thử việc",
+    "example": "New employees are on probationary status for three months.",
+    "difficulty": "advanced",
+    "topic": "human_resources"
+  },
+  {
+    "id": "tvs2-026",
+    "word": "job posting",
+    "definition": "bài đăng tuyển dụng",
+    "example": "The job posting was listed on the company website.",
+    "difficulty": "beginner",
+    "topic": "recruitment"
+  },
+  {
+    "id": "tvs2-027",
+    "word": "vacancy",
+    "definition": "vị trí trống",
+    "example": "There is a vacancy in the marketing department.",
+    "difficulty": "intermediate",
+    "topic": "recruitment"
+  },
+  {
+    "id": "tvs2-028",
+    "word": "applicant",
+    "definition": "người nộp đơn",
+    "example": "We received over two hundred applicants for the position.",
+    "difficulty": "beginner",
+    "topic": "recruitment"
+  },
+  {
+    "id": "tvs2-029",
+    "word": "candidate",
+    "definition": "ứng viên",
+    "example": "The candidate impressed us during the interview.",
+    "difficulty": "beginner",
+    "topic": "recruitment"
+  },
+  {
+    "id": "tvs2-030",
+    "word": "resume",
+    "definition": "sơ yếu lý lịch",
+    "example": "Please submit your resume by the end of the week.",
+    "difficulty": "beginner",
+    "topic": "recruitment"
+  },
+  {
+    "id": "tvs2-031",
+    "word": "curriculum vitae",
+    "definition": "bản lý lịch trích ngang",
+    "example": "The curriculum vitae should include your work experience.",
+    "difficulty": "intermediate",
+    "topic": "recruitment"
+  },
+  {
+    "id": "tvs2-032",
+    "word": "cover letter",
+    "definition": "thư xin việc",
+    "example": "A well-written cover letter can make a good impression.",
+    "difficulty": "beginner",
+    "topic": "recruitment"
+  },
+  {
+    "id": "tvs2-033",
+    "word": "interview",
+    "definition": "phỏng vấn",
+    "example": "Your interview is scheduled for Monday at ten o'clock.",
+    "difficulty": "beginner",
+    "topic": "recruitment"
+  },
+  {
+    "id": "tvs2-034",
+    "word": "screening",
+    "definition": "sàng lọc",
+    "example": "The initial screening will be conducted over the phone.",
+    "difficulty": "intermediate",
+    "topic": "recruitment"
+  },
+  {
+    "id": "tvs2-035",
+    "word": "reference check",
+    "definition": "kiểm tra lý lịch",
+    "example": "We will conduct a reference check before making an offer.",
+    "difficulty": "intermediate",
+    "topic": "recruitment"
+  },
+  {
+    "id": "tvs2-036",
+    "word": "background check",
+    "definition": "kiểm tra lý lịch",
+    "example": "All new hires must pass a background check.",
+    "difficulty": "beginner",
+    "topic": "recruitment"
+  },
+  {
+    "id": "tvs2-037",
+    "word": "offer letter",
+    "definition": "thư đề nghị tuyển dụng",
+    "example": "She signed the offer letter and returned it to HR.",
+    "difficulty": "beginner",
+    "topic": "recruitment"
+  },
+  {
+    "id": "tvs2-038",
+    "word": "job fair",
+    "definition": "hội chợ việc làm",
+    "example": "The company will have a booth at the job fair.",
+    "difficulty": "beginner",
+    "topic": "recruitment"
+  },
+  {
+    "id": "tvs2-039",
+    "word": "employment agency",
+    "definition": "cơ quan việc làm",
+    "example": "We use an employment agency to find qualified candidates.",
+    "difficulty": "intermediate",
+    "topic": "recruitment"
+  },
+  {
+    "id": "tvs2-040",
+    "word": "recruiter",
+    "definition": "nhà tuyển dụng",
+    "example": "The recruiter will contact you for a preliminary interview.",
+    "difficulty": "beginner",
+    "topic": "recruitment"
+  },
+  {
+    "id": "tvs2-041",
+    "word": "headhunter",
+    "definition": "săn đầu người",
+    "example": "The headhunter found a perfect candidate for the CEO position.",
+    "difficulty": "advanced",
+    "topic": "recruitment"
+  },
+  {
+    "id": "tvs2-042",
+    "word": "talent acquisition",
+    "definition": "tuyển dụng nhân tài",
+    "example": "The talent acquisition team is expanding.",
+    "difficulty": "advanced",
+    "topic": "recruitment"
+  },
+  {
+    "id": "tvs2-043",
+    "word": "recruitment process",
+    "definition": "quy trình tuyển dụng",
+    "example": "The recruitment process typically takes four to six weeks.",
+    "difficulty": "intermediate",
+    "topic": "recruitment"
+  },
+  {
+    "id": "tvs2-044",
+    "word": "hiring manager",
+    "definition": "quản lý tuyển dụng",
+    "example": "The hiring manager will make the final decision.",
+    "difficulty": "beginner",
+    "topic": "recruitment"
+  },
+  {
+    "id": "tvs2-045",
+    "word": "employment contract",
+    "definition": "hợp đồng lao động",
+    "example": "Please sign the employment contract before starting work.",
+    "difficulty": "intermediate",
+    "topic": "recruitment"
+  },
+  {
+    "id": "tvs2-046",
+    "word": "negotiate",
+    "definition": "thương lượng",
+    "example": "You can negotiate your salary during the hiring process.",
+    "difficulty": "intermediate",
+    "topic": "recruitment"
+  },
+  {
+    "id": "tvs2-047",
+    "word": "qualified",
+    "definition": "đủ trình độ",
+    "example": "We are looking for qualified candidates with experience.",
+    "difficulty": "beginner",
+    "topic": "recruitment"
+  },
+  {
+    "id": "tvs2-048",
+    "word": "shortlist",
+    "definition": "danh sách rút gọn",
+    "example": "Your application has been shortlisted for the next round.",
+    "difficulty": "intermediate",
+    "topic": "recruitment"
+  },
+  {
+    "id": "tvs2-049",
+    "word": "selection",
+    "definition": "sự lựa chọn",
+    "example": "The selection process involves multiple interviews.",
+    "difficulty": "intermediate",
+    "topic": "recruitment"
+  },
+  {
+    "id": "tvs2-050",
+    "word": "onboard",
+    "definition": "tiếp nhận nhân viên mới",
+    "example": "We need to onboard the new employees this week.",
+    "difficulty": "intermediate",
+    "topic": "recruitment"
+  },
+  {
+    "id": "tvs2-051",
+    "word": "training program",
+    "definition": "chương trình đào tạo",
+    "example": "All new employees must complete the training program.",
+    "difficulty": "beginner",
+    "topic": "training"
+  },
+  {
+    "id": "tvs2-052",
+    "word": "workshop",
+    "definition": "hội thảo thực hành",
+    "example": "The workshop on time management was very helpful.",
+    "difficulty": "beginner",
+    "topic": "training"
+  },
+  {
+    "id": "tvs2-053",
+    "word": "seminar",
+    "definition": "hội thảo",
+    "example": "She attended a seminar on leadership skills.",
+    "difficulty": "beginner",
+    "topic": "training"
+  },
+  {
+    "id": "tvs2-054",
+    "word": "certification",
+    "definition": "chứng chỉ",
+    "example": "He earned a certification in project management.",
+    "difficulty": "beginner",
+    "topic": "training"
+  },
+  {
+    "id": "tvs2-055",
+    "word": "course",
+    "definition": "khóa học",
+    "example": "The company offers free courses for employees.",
+    "difficulty": "beginner",
+    "topic": "training"
+  },
+  {
+    "id": "tvs2-056",
+    "word": "curriculum",
+    "definition": "chương trình giảng dạy",
+    "example": "The training curriculum covers all essential skills.",
+    "difficulty": "intermediate",
+    "topic": "training"
+  },
+  {
+    "id": "tvs2-057",
+    "word": "instructor",
+    "definition": "giảng viên",
+    "example": "The instructor explained the material clearly.",
+    "difficulty": "beginner",
+    "topic": "training"
+  },
+  {
+    "id": "tvs2-058",
+    "word": "trainer",
+    "definition": "huấn luyện viên",
+    "example": "The trainer demonstrated the new software.",
+    "difficulty": "beginner",
+    "topic": "training"
+  },
+  {
+    "id": "tvs2-059",
+    "word": "competency",
+    "definition": "năng lực",
+    "example": "We assess employee competency during the review.",
+    "difficulty": "advanced",
+    "topic": "training"
+  },
+  {
+    "id": "tvs2-060",
+    "word": "skill development",
+    "definition": "phát triển kỹ năng",
+    "example": "Skill development is essential for career growth.",
+    "difficulty": "intermediate",
+    "topic": "training"
+  },
+  {
+    "id": "tvs2-061",
+    "word": "hands-on",
+    "definition": "thực hành",
+    "example": "The training includes hands-on experience.",
+    "difficulty": "beginner",
+    "topic": "training"
+  },
+  {
+    "id": "tvs2-062",
+    "word": "professional development",
+    "definition": "phát triển chuyên môn",
+    "example": "The company supports professional development for all staff.",
+    "difficulty": "intermediate",
+    "topic": "training"
+  },
+  {
+    "id": "tvs2-063",
+    "word": "retraining",
+    "definition": "đào tạo lại",
+    "example": "The retraining program helps employees learn new skills.",
+    "difficulty": "intermediate",
+    "topic": "training"
+  },
+  {
+    "id": "tvs2-064",
+    "word": "tuition reimbursement",
+    "definition": "hoàn trả học phí",
+    "example": "The company offers tuition reimbursement for further education.",
+    "difficulty": "advanced",
+    "topic": "training"
+  },
+  {
+    "id": "tvs2-065",
+    "word": "e-learning",
+    "definition": "học trực tuyến",
+    "example": "Our e-learning platform is available twenty-four seven.",
+    "difficulty": "beginner",
+    "topic": "training"
+  },
+  {
+    "id": "tvs2-066",
+    "word": "on-the-job training",
+    "definition": "đào tạo tại nơi làm việc",
+    "example": "New employees receive on-the-job training.",
+    "difficulty": "beginner",
+    "topic": "training"
+  },
+  {
+    "id": "tvs2-067",
+    "word": "orientation",
+    "definition": "định hướng, giới thiệu",
+    "example": "The orientation session is held on the first day.",
+    "difficulty": "beginner",
+    "topic": "training"
+  },
+  {
+    "id": "tvs2-068",
+    "word": "knowledge transfer",
+    "definition": "chuyển giao kiến thức",
+    "example": "Knowledge transfer from senior staff is very important.",
+    "difficulty": "advanced",
+    "topic": "training"
+  },
+  {
+    "id": "tvs2-069",
+    "word": "upskilling",
+    "definition": "nâng cao kỹ năng",
+    "example": "The company is investing in upskilling its workforce.",
+    "difficulty": "advanced",
+    "topic": "training"
+  },
+  {
+    "id": "tvs2-070",
+    "word": "cross-training",
+    "definition": "đào tạo chéo",
+    "example": "Cross-training helps employees understand other departments.",
+    "difficulty": "advanced",
+    "topic": "training"
+  },
+  {
+    "id": "tvs2-071",
+    "word": "assessment",
+    "definition": "đánh giá",
+    "example": "The assessment will determine your training needs.",
+    "difficulty": "intermediate",
+    "topic": "training"
+  },
+  {
+    "id": "tvs2-072",
+    "word": "evaluation",
+    "definition": "đánh giá",
+    "example": "Course evaluation is conducted at the end of each program.",
+    "difficulty": "intermediate",
+    "topic": "training"
+  },
+  {
+    "id": "tvs2-073",
+    "word": "feedback",
+    "definition": "phản hồi",
+    "example": "Please provide feedback on the training session.",
+    "difficulty": "beginner",
+    "topic": "training"
+  },
+  {
+    "id": "tvs2-074",
+    "word": "learning objective",
+    "definition": "mục tiêu học tập",
+    "example": "Each module has specific learning objectives.",
+    "difficulty": "intermediate",
+    "topic": "training"
+  },
+  {
+    "id": "tvs2-075",
+    "word": "completion",
+    "definition": "hoàn thành",
+    "example": "A certificate of completion will be awarded.",
+    "difficulty": "beginner",
+    "topic": "training"
+  },
+  {
+    "id": "tvs2-076",
+    "word": "performance review",
+    "definition": "đánh giá hiệu suất",
+    "example": "The performance review is conducted twice a year.",
+    "difficulty": "beginner",
+    "topic": "performance_review"
+  },
+  {
+    "id": "tvs2-077",
+    "word": "appraisal",
+    "definition": "đánh giá, thẩm định",
+    "example": "She received a positive appraisal from her manager.",
+    "difficulty": "intermediate",
+    "topic": "performance_review"
+  },
+  {
+    "id": "tvs2-078",
+    "word": "performance appraisal",
+    "definition": "đánh giá hiệu suất",
+    "example": "The performance appraisal was thorough and fair.",
+    "difficulty": "intermediate",
+    "topic": "performance_review"
+  },
+  {
+    "id": "tvs2-079",
+    "word": "rating",
+    "definition": "xếp hạng",
+    "example": "His performance rating was outstanding.",
+    "difficulty": "beginner",
+    "topic": "performance_review"
+  },
+  {
+    "id": "tvs2-080",
+    "word": "goals",
+    "definition": "mục tiêu",
+    "example": "We set specific goals for each quarter.",
+    "difficulty": "beginner",
+    "topic": "performance_review"
+  },
+  {
+    "id": "tvs2-081",
+    "word": "objectives",
+    "definition": "mục tiêu",
+    "example": "The objectives were clearly defined at the start.",
+    "difficulty": "beginner",
+    "topic": "performance_review"
+  },
+  {
+    "id": "tvs2-082",
+    "word": "achievement",
+    "definition": "thành tích",
+    "example": "She listed her achievements in the performance review.",
+    "difficulty": "beginner",
+    "topic": "performance_review"
+  },
+  {
+    "id": "tvs2-083",
+    "word": "strengths",
+    "definition": "điểm mạnh",
+    "example": "The review highlighted her key strengths.",
+    "difficulty": "beginner",
+    "topic": "performance_review"
+  },
+  {
+    "id": "tvs2-084",
+    "word": "weaknesses",
+    "definition": "điểm yếu",
+    "example": "Identifying weaknesses helps with improvement.",
+    "difficulty": "beginner",
+    "topic": "performance_review"
+  },
+  {
+    "id": "tvs2-085",
+    "word": "improvement plan",
+    "definition": "kế hoạch cải thiện",
+    "example": "He was put on an improvement plan after the review.",
+    "difficulty": "intermediate",
+    "topic": "performance_review"
+  },
+  {
+    "id": "tvs2-086",
+    "word": "KPI",
+    "definition": "chỉ số hiệu suất chính",
+    "example": "We track KPIs to measure employee performance.",
+    "difficulty": "intermediate",
+    "topic": "performance_review"
+  },
+  {
+    "id": "tvs2-087",
+    "word": "360-degree feedback",
+    "definition": "phản hồi 360 độ",
+    "example": "The 360-degree feedback includes input from peers and managers.",
+    "difficulty": "advanced",
+    "topic": "performance_review"
+  },
+  {
+    "id": "tvs2-088",
+    "word": "self-assessment",
+    "definition": "tự đánh giá",
+    "example": "Complete the self-assessment before your review meeting.",
+    "difficulty": "intermediate",
+    "topic": "performance_review"
+  },
+  {
+    "id": "tvs2-089",
+    "word": "documentation",
+    "definition": "tài liệu, hồ sơ",
+    "example": "Proper documentation is required for the performance review.",
+    "difficulty": "intermediate",
+    "topic": "performance_review"
+  },
+  {
+    "id": "tvs2-090",
+    "word": "expectations",
+    "definition": "kỳ vọng",
+    "example": "The review clarified performance expectations.",
+    "difficulty": "beginner",
+    "topic": "performance_review"
+  },
+  {
+    "id": "tvs2-091",
+    "word": "benchmark",
+    "definition": "chuẩn mực",
+    "example": "The benchmark for this position is clearly defined.",
+    "difficulty": "advanced",
+    "topic": "performance_review"
+  },
+  {
+    "id": "tvs2-092",
+    "word": "metrics",
+    "definition": "chỉ số đo lường",
+    "example": "Performance metrics are reviewed quarterly.",
+    "difficulty": "intermediate",
+    "topic": "performance_review"
+  },
+  {
+    "id": "tvs2-093",
+    "word": "potential",
+    "definition": "tiềm năng",
+    "example": "She shows great potential for a leadership role.",
+    "difficulty": "beginner",
+    "topic": "performance_review"
+  },
+  {
+    "id": "tvs2-094",
+    "word": "review meeting",
+    "definition": "cuộc họp đánh giá",
+    "example": "The review meeting is scheduled for Friday afternoon.",
+    "difficulty": "beginner",
+    "topic": "performance_review"
+  },
+  {
+    "id": "tvs2-095",
+    "word": "constructive feedback",
+    "definition": "phản hồi mang tính xây dựng",
+    "example": "Constructive feedback helps employees improve.",
+    "difficulty": "intermediate",
+    "topic": "performance_review"
+  },
+  {
+    "id": "tvs2-096",
+    "word": "goals setting",
+    "definition": "đặt mục tiêu",
+    "example": "Goals setting should be done at the beginning of the year.",
+    "difficulty": "intermediate",
+    "topic": "performance_review"
+  },
+  {
+    "id": "tvs2-097",
+    "word": "progress review",
+    "definition": "đánh giá tiến độ",
+    "example": "We have a progress review every three months.",
+    "difficulty": "beginner",
+    "topic": "performance_review"
+  },
+  {
+    "id": "tvs2-098",
+    "word": "annual review",
+    "definition": "đánh giá hàng năm",
+    "example": "The annual review determines your bonus eligibility.",
+    "difficulty": "beginner",
+    "topic": "performance_review"
+  },
+  {
+    "id": "tvs2-099",
+    "word": "quarterly review",
+    "definition": "đánh giá hàng quý",
+    "example": "Quarterly reviews help track ongoing performance.",
+    "difficulty": "beginner",
+    "topic": "performance_review"
+  },
+  {
+    "id": "tvs2-100",
+    "word": "performance improvement",
+    "definition": "cải thiện hiệu suất",
+    "example": "The goal of the review is performance improvement.",
+    "difficulty": "intermediate",
+    "topic": "performance_review"
+  },
+  {
+    "id": "tvs2-101",
+    "word": "salary",
+    "definition": "lương",
+    "example": "Your salary will be reviewed after six months.",
+    "difficulty": "beginner",
+    "topic": "compensation"
+  },
+  {
+    "id": "tvs2-102",
+    "word": "wage",
+    "definition": "tiền công",
+    "example": "The hourly wage for this position is competitive.",
+    "difficulty": "beginner",
+    "topic": "compensation"
+  },
+  {
+    "id": "tvs2-103",
+    "word": "compensation",
+    "definition": "thù lao, đãi ngộ",
+    "example": "The compensation package includes salary and benefits.",
+    "difficulty": "intermediate",
+    "topic": "compensation"
+  },
+  {
+    "id": "tvs2-104",
+    "word": "remuneration",
+    "definition": "tiền lương, thù lao",
+    "example": "The remuneration for this role is negotiable.",
+    "difficulty": "advanced",
+    "topic": "compensation"
+  },
+  {
+    "id": "tvs2-105",
+    "word": "bonus",
+    "definition": "tiền thưởng",
+    "example": "Employees receive an annual performance bonus.",
+    "difficulty": "beginner",
+    "topic": "compensation"
+  },
+  {
+    "id": "tvs2-106",
+    "word": "incentive",
+    "definition": "khuyến khích, ưu đãi",
+    "example": "The incentive program rewards top performers.",
+    "difficulty": "intermediate",
+    "topic": "compensation"
+  },
+  {
+    "id": "tvs2-107",
+    "word": "commission",
+    "definition": "hoa hồng",
+    "example": "Sales staff earn commission on every deal they close.",
+    "difficulty": "beginner",
+    "topic": "compensation"
+  },
+  {
+    "id": "tvs2-108",
+    "word": "raise",
+    "definition": "tăng lương",
+    "example": "She received a raise after her excellent performance.",
+    "difficulty": "beginner",
+    "topic": "compensation"
+  },
+  {
+    "id": "tvs2-109",
+    "word": "payroll",
+    "definition": "bảng lương",
+    "example": "Payroll is processed on the last working day of the month.",
+    "difficulty": "beginner",
+    "topic": "compensation"
+  },
+  {
+    "id": "tvs2-110",
+    "word": "deduction",
+    "definition": "khấu trừ",
+    "example": "Tax deductions are automatically calculated.",
+    "difficulty": "intermediate",
+    "topic": "compensation"
+  },
+  {
+    "id": "tvs2-111",
+    "word": "gross pay",
+    "definition": "thu nhập gross",
+    "example": "Your gross pay is before any deductions.",
+    "difficulty": "beginner",
+    "topic": "compensation"
+  },
+  {
+    "id": "tvs2-112",
+    "word": "net pay",
+    "definition": "thu nhập net",
+    "example": "Net pay is the amount you receive after deductions.",
+    "difficulty": "beginner",
+    "topic": "compensation"
+  },
+  {
+    "id": "tvs2-113",
+    "word": "overtime",
+    "definition": "làm thêm giờ",
+    "example": "Overtime pay is one point five times the regular rate.",
+    "difficulty": "beginner",
+    "topic": "compensation"
+  },
+  {
+    "id": "tvs2-114",
+    "word": "stock option",
+    "definition": "quyền chọn cổ phiếu",
+    "example": "The company offers stock options to senior employees.",
+    "difficulty": "advanced",
+    "topic": "compensation"
+  },
+  {
+    "id": "tvs2-115",
+    "word": "profit sharing",
+    "definition": "chia sẻ lợi nhuận",
+    "example": "Employees benefit from the profit sharing program.",
+    "difficulty": "advanced",
+    "topic": "compensation"
+  },
+  {
+    "id": "tvs2-116",
+    "word": "equity",
+    "definition": "cổ phần, vốn chủ sở hữu",
+    "example": "The equity component of the compensation is significant.",
+    "difficulty": "advanced",
+    "topic": "compensation"
+  },
+  {
+    "id": "tvs2-117",
+    "word": "market rate",
+    "definition": "mức lương thị trường",
+    "example": "We offer salaries at or above market rate.",
+    "difficulty": "intermediate",
+    "topic": "compensation"
+  },
+  {
+    "id": "tvs2-118",
+    "word": "competitive salary",
+    "definition": "mức lương cạnh tranh",
+    "example": "The company offers a competitive salary to attract talent.",
+    "difficulty": "beginner",
+    "topic": "compensation"
+  },
+  {
+    "id": "tvs2-119",
+    "word": "pay raise",
+    "definition": "tăng lương",
+    "example": "She requested a pay raise based on her performance.",
+    "difficulty": "beginner",
+    "topic": "compensation"
+  },
+  {
+    "id": "tvs2-120",
+    "word": "salary increase",
+    "definition": "tăng lương",
+    "example": "The salary increase will take effect next month.",
+    "difficulty": "beginner",
+    "topic": "compensation"
+  },
+  {
+    "id": "tvs2-121",
+    "word": "minimum wage",
+    "definition": "lương tối thiểu",
+    "example": "The company pays above the minimum wage.",
+    "difficulty": "beginner",
+    "topic": "compensation"
+  },
+  {
+    "id": "tvs2-122",
+    "word": "wage increase",
+    "definition": "tăng lương",
+    "example": "The union negotiated a wage increase for its members.",
+    "difficulty": "beginner",
+    "topic": "compensation"
+  },
+  {
+    "id": "tvs2-123",
+    "word": "salary range",
+    "definition": "phạm vi lương",
+    "example": "The salary range for this position is specified in the posting.",
+    "difficulty": "intermediate",
+    "topic": "compensation"
+  },
+  {
+    "id": "tvs2-124",
+    "word": "pay scale",
+    "definition": "bảng lương",
+    "example": "The pay scale is based on experience and qualifications.",
+    "difficulty": "intermediate",
+    "topic": "compensation"
+  },
+  {
+    "id": "tvs2-125",
+    "word": "merit increase",
+    "definition": "tăng lương theo thành tích",
+    "example": "Merit increases are awarded based on performance.",
+    "difficulty": "advanced",
+    "topic": "compensation"
+  },
+  {
+    "id": "tvs2-126",
+    "word": "health insurance",
+    "definition": "bảo hiểm sức khỏe",
+    "example": "All employees are eligible for health insurance.",
+    "difficulty": "beginner",
+    "topic": "benefits"
+  },
+  {
+    "id": "tvs2-127",
+    "word": "dental plan",
+    "definition": "chế độ bảo hiểm răng",
+    "example": "The dental plan covers two checkups per year.",
+    "difficulty": "beginner",
+    "topic": "benefits"
+  },
+  {
+    "id": "tvs2-128",
+    "word": "vision insurance",
+    "definition": "bảo hiểm mắt",
+    "example": "Vision insurance is included in the benefits package.",
+    "difficulty": "beginner",
+    "topic": "benefits"
+  },
+  {
+    "id": "tvs2-129",
+    "word": "life insurance",
+    "definition": "bảo hiểm nhân thọ",
+    "example": "The company provides life insurance to all employees.",
+    "difficulty": "beginner",
+    "topic": "benefits"
+  },
+  {
+    "id": "tvs2-130",
+    "word": "retirement plan",
+    "definition": "kế hoạch hưu trí",
+    "example": "The retirement plan includes employer matching contributions.",
+    "difficulty": "beginner",
+    "topic": "benefits"
+  },
+  {
+    "id": "tvs2-131",
+    "word": "401k",
+    "definition": "quỹ hưu trí 401k",
+    "example": "You can contribute to your 401k from your first paycheck.",
+    "difficulty": "beginner",
+    "topic": "benefits"
+  },
+  {
+    "id": "tvs2-132",
+    "word": "pension",
+    "definition": "lương hưu",
+    "example": "She is eligible for a pension after twenty years of service.",
+    "difficulty": "intermediate",
+    "topic": "benefits"
+  },
+  {
+    "id": "tvs2-133",
+    "word": "paid time off",
+    "definition": "ngày nghỉ có lương",
+    "example": "Employees accrue paid time off each month.",
+    "difficulty": "beginner",
+    "topic": "benefits"
+  },
+  {
+    "id": "tvs2-134",
+    "word": "vacation days",
+    "definition": "ngày nghỉ phép",
+    "example": "You are entitled to fifteen vacation days per year.",
+    "difficulty": "beginner",
+    "topic": "benefits"
+  },
+  {
+    "id": "tvs2-135",
+    "word": "sick leave",
+    "definition": "nghỉ ốm có lương",
+    "example": "You can use sick leave when you are unwell.",
+    "difficulty": "beginner",
+    "topic": "benefits"
+  },
+  {
+    "id": "tvs2-136",
+    "word": "maternity leave",
+    "definition": "nghỉ thai sản",
+    "example": "She is on maternity leave for three months.",
+    "difficulty": "beginner",
+    "topic": "benefits"
+  },
+  {
+    "id": "tvs2-137",
+    "word": "paternity leave",
+    "definition": "nghỉ nuôi con",
+    "example": "New fathers are entitled to two weeks paternity leave.",
+    "difficulty": "intermediate",
+    "topic": "benefits"
+  },
+  {
+    "id": "tvs2-138",
+    "word": "disability insurance",
+    "definition": "bảo hiểm khuyết tật",
+    "example": "Disability insurance provides income if you cannot work.",
+    "difficulty": "intermediate",
+    "topic": "benefits"
+  },
+  {
+    "id": "tvs2-139",
+    "word": "wellness program",
+    "definition": "chương trình sức khỏe",
+    "example": "The wellness program includes gym memberships.",
+    "difficulty": "intermediate",
+    "topic": "benefits"
+  },
+  {
+    "id": "tvs2-140",
+    "word": "flexible spending account",
+    "definition": "tài khoản chi tiêu linh hoạt",
+    "example": "A flexible spending account helps with medical expenses.",
+    "difficulty": "advanced",
+    "topic": "benefits"
+  },
+  {
+    "id": "tvs2-141",
+    "word": "relocation assistance",
+    "definition": "hỗ trợ chuyển nhà",
+    "example": "The company provides relocation assistance for new hires.",
+    "difficulty": "intermediate",
+    "topic": "benefits"
+  },
+  {
+    "id": "tvs2-142",
+    "word": "employee discount",
+    "definition": "giảm giá cho nhân viên",
+    "example": "Employees receive a twenty percent discount on products.",
+    "difficulty": "beginner",
+    "topic": "benefits"
+  },
+  {
+    "id": "tvs2-143",
+    "word": "commuter benefits",
+    "definition": "ưu đãi đi lại",
+    "example": "Commuter benefits help with transportation costs.",
+    "difficulty": "intermediate",
+    "topic": "benefits"
+  },
+  {
+    "id": "tvs2-144",
+    "word": "bonus eligibility",
+    "definition": "đủ điều kiện nhận thưởng",
+    "example": "Bonus eligibility depends on your performance rating.",
+    "difficulty": "intermediate",
+    "topic": "benefits"
+  },
+  {
+    "id": "tvs2-145",
+    "word": "perks",
+    "definition": "ưu đãi, phúc lợi",
+    "example": "The job offers great perks including free lunch.",
+    "difficulty": "beginner",
+    "topic": "benefits"
+  },
+  {
+    "id": "tvs2-146",
+    "word": "fringe benefits",
+    "definition": "phúc lợi phụ",
+    "example": "Fringe benefits may include a company car.",
+    "difficulty": "advanced",
+    "topic": "benefits"
+  },
+  {
+    "id": "tvs2-147",
+    "word": "co-pay",
+    "definition": "đồng thanh toán",
+    "example": "The co-pay for a doctor visit is twenty dollars.",
+    "difficulty": "intermediate",
+    "topic": "benefits"
+  },
+  {
+    "id": "tvs2-148",
+    "word": "deductible",
+    "definition": "số tiền tự chi trả",
+    "example": "You must pay the deductible before insurance kicks in.",
+    "difficulty": "intermediate",
+    "topic": "benefits"
+  },
+  {
+    "id": "tvs2-149",
+    "word": "premium",
+    "definition": "tiền bảo hiểm",
+    "example": "The company pays the full premium for health insurance.",
+    "difficulty": "intermediate",
+    "topic": "benefits"
+  },
+  {
+    "id": "tvs2-150",
+    "word": "benefits package",
+    "definition": "gói phúc lợi",
+    "example": "The benefits package is one of the best in the industry.",
+    "difficulty": "beginner",
+    "topic": "benefits"
+  },
+  {
+    "id": "tvs2-151",
+    "word": "hard hat",
+    "definition": "mũ bảo hộ",
+    "example": "All visitors must wear a hard hat in the construction area.",
+    "difficulty": "beginner",
+    "topic": "workplace_safety"
+  },
+  {
+    "id": "tvs2-152",
+    "word": "safety glasses",
+    "definition": "kính bảo hộ",
+    "example": "Safety glasses are required when operating machinery.",
+    "difficulty": "beginner",
+    "topic": "workplace_safety"
+  },
+  {
+    "id": "tvs2-153",
+    "word": "gloves",
+    "definition": "găng tay bảo hộ",
+    "example": "Wear gloves when handling chemical substances.",
+    "difficulty": "beginner",
+    "topic": "workplace_safety"
+  },
+  {
+    "id": "tvs2-154",
+    "word": "safety boots",
+    "definition": "giày bảo hộ",
+    "example": "Safety boots protect your feet from falling objects.",
+    "difficulty": "beginner",
+    "topic": "workplace_safety"
+  },
+  {
+    "id": "tvs2-155",
+    "word": "ear protection",
+    "definition": "bảo vệ tai",
+    "example": "Ear protection is necessary in the noisy factory.",
+    "difficulty": "beginner",
+    "topic": "workplace_safety"
+  },
+  {
+    "id": "tvs2-156",
+    "word": "goggles",
+    "definition": "kính che mắt",
+    "example": "Chemical goggles must be worn in the laboratory.",
+    "difficulty": "beginner",
+    "topic": "workplace_safety"
+  },
+  {
+    "id": "tvs2-157",
+    "word": "respirator",
+    "definition": "mặt nạ phòng độc",
+    "example": "A respirator is required when working with hazardous fumes.",
+    "difficulty": "intermediate",
+    "topic": "workplace_safety"
+  },
+  {
+    "id": "tvs2-158",
+    "word": "first aid",
+    "definition": "sơ cứu",
+    "example": "The first aid kit is located near the emergency exit.",
+    "difficulty": "beginner",
+    "topic": "workplace_safety"
+  },
+  {
+    "id": "tvs2-159",
+    "word": "fire extinguisher",
+    "definition": "bình chữa cháy",
+    "example": "Learn how to use a fire extinguisher during safety training.",
+    "difficulty": "beginner",
+    "topic": "workplace_safety"
+  },
+  {
+    "id": "tvs2-160",
+    "word": "emergency exit",
+    "definition": "lối thoát hiểm",
+    "example": "Follow the emergency exit signs in case of fire.",
+    "difficulty": "beginner",
+    "topic": "workplace_safety"
+  },
+  {
+    "id": "tvs2-161",
+    "word": "evacuation plan",
+    "definition": "kế hoạch sơ tán",
+    "example": "All employees must know the evacuation plan.",
+    "difficulty": "intermediate",
+    "topic": "workplace_safety"
+  },
+  {
+    "id": "tvs2-162",
+    "word": "hazard",
+    "definition": "mối nguy hiểm",
+    "example": "Identifying hazards is the first step in safety management.",
+    "difficulty": "beginner",
+    "topic": "workplace_safety"
+  },
+  {
+    "id": "tvs2-163",
+    "word": "risk assessment",
+    "definition": "đánh giá rủi ro",
+    "example": "A risk assessment should be conducted before starting work.",
+    "difficulty": "intermediate",
+    "topic": "workplace_safety"
+  },
+  {
+    "id": "tvs2-164",
+    "word": "accident",
+    "definition": "tai nạn",
+    "example": "Report any accident to your supervisor immediately.",
+    "difficulty": "beginner",
+    "topic": "workplace_safety"
+  },
+  {
+    "id": "tvs2-165",
+    "word": "injury",
+    "definition": "chấn thương",
+    "example": "She filed an injury report after the workplace incident.",
+    "difficulty": "beginner",
+    "topic": "workplace_safety"
+  },
+  {
+    "id": "tvs2-166",
+    "word": "near miss",
+    "definition": "sự cố suýt xảy ra",
+    "example": "Report all near misses to prevent future accidents.",
+    "difficulty": "intermediate",
+    "topic": "workplace_safety"
+  },
+  {
+    "id": "tvs2-167",
+    "word": "safety inspection",
+    "definition": "kiểm tra an toàn",
+    "example": "The safety inspection revealed several compliance issues.",
+    "difficulty": "intermediate",
+    "topic": "workplace_safety"
+  },
+  {
+    "id": "tvs2-168",
+    "word": "safety protocol",
+    "definition": "quy trình an toàn",
+    "example": "Follow the safety protocol at all times.",
+    "difficulty": "intermediate",
+    "topic": "workplace_safety"
+  },
+  {
+    "id": "tvs2-169",
+    "word": "safety policy",
+    "definition": "chính sách an toàn",
+    "example": "The safety policy was updated last quarter.",
+    "difficulty": "intermediate",
+    "topic": "workplace_safety"
+  },
+  {
+    "id": "tvs2-170",
+    "word": "PPE",
+    "definition": "thiết bị bảo hộ cá nhân",
+    "example": "PPE is mandatory in the production area.",
+    "difficulty": "beginner",
+    "topic": "workplace_safety"
+  },
+  {
+    "id": "tvs2-171",
+    "word": "safety training",
+    "definition": "đào tạo an toàn",
+    "example": "Annual safety training is required for all staff.",
+    "difficulty": "beginner",
+    "topic": "workplace_safety"
+  },
+  {
+    "id": "tvs2-172",
+    "word": "workplace hazard",
+    "definition": "mối nguy tại nơi làm việc",
+    "example": "Spills are a common workplace hazard in the kitchen.",
+    "difficulty": "intermediate",
+    "topic": "workplace_safety"
+  },
+  {
+    "id": "tvs2-173",
+    "word": "protective equipment",
+    "definition": "thiết bị bảo vệ",
+    "example": "Protective equipment must be worn at all times.",
+    "difficulty": "intermediate",
+    "topic": "workplace_safety"
+  },
+  {
+    "id": "tvs2-174",
+    "word": "safety sign",
+    "definition": "biển báo an toàn",
+    "example": "Pay attention to safety signs in the work area.",
+    "difficulty": "beginner",
+    "topic": "workplace_safety"
+  },
+  {
+    "id": "tvs2-175",
+    "word": "incident report",
+    "definition": "báo cáo sự cố",
+    "example": "Complete an incident report after any workplace accident.",
+    "difficulty": "intermediate",
+    "topic": "workplace_safety"
+  },
+  {
+    "id": "tvs2-176",
+    "word": "ergonomic chair",
+    "definition": "ghế công thái học",
+    "example": "An ergonomic chair helps prevent back pain.",
+    "difficulty": "intermediate",
+    "topic": "ergonomics"
+  },
+  {
+    "id": "tvs2-177",
+    "word": "ergonomic desk",
+    "definition": "bàn công thái học",
+    "example": "The ergonomic desk can be adjusted to standing height.",
+    "difficulty": "intermediate",
+    "topic": "ergonomics"
+  },
+  {
+    "id": "tvs2-178",
+    "word": "keyboard",
+    "definition": "bàn phím",
+    "example": "A split keyboard reduces strain on your wrists.",
+    "difficulty": "beginner",
+    "topic": "ergonomics"
+  },
+  {
+    "id": "tvs2-179",
+    "word": "mouse",
+    "definition": "chuột máy tính",
+    "example": "The ergonomic mouse fits comfortably in your hand.",
+    "difficulty": "beginner",
+    "topic": "ergonomics"
+  },
+  {
+    "id": "tvs2-180",
+    "word": "monitor",
+    "definition": "màn hình máy tính",
+    "example": "Position your monitor at eye level to reduce neck strain.",
+    "difficulty": "beginner",
+    "topic": "ergonomics"
+  },
+  {
+    "id": "tvs2-181",
+    "word": "standing desk",
+    "definition": "bàn làm việc đứng",
+    "example": "A standing desk promotes better posture.",
+    "difficulty": "beginner",
+    "topic": "ergonomics"
+  },
+  {
+    "id": "tvs2-182",
+    "word": "footrest",
+    "definition": "chân đế",
+    "example": "A footrest can improve circulation while sitting.",
+    "difficulty": "beginner",
+    "topic": "ergonomics"
+  },
+  {
+    "id": "tvs2-183",
+    "word": "wrist rest",
+    "definition": "gối đỡ cổ tay",
+    "example": "Use a wrist rest to keep your wrists in a neutral position.",
+    "difficulty": "beginner",
+    "topic": "ergonomics"
+  },
+  {
+    "id": "tvs2-184",
+    "word": "posture",
+    "definition": "tư thế",
+    "example": "Good posture reduces the risk of back injury.",
+    "difficulty": "beginner",
+    "topic": "ergonomics"
+  },
+  {
+    "id": "tvs2-185",
+    "word": "lumbar support",
+    "definition": "hỗ trợ lưng dưới",
+    "example": "Lumbar support is essential for long hours of sitting.",
+    "difficulty": "intermediate",
+    "topic": "ergonomics"
+  },
+  {
+    "id": "tvs2-186",
+    "word": "neck strain",
+    "definition": "căng thẳng cổ",
+    "example": "Adjust your monitor height to prevent neck strain.",
+    "difficulty": "intermediate",
+    "topic": "ergonomics"
+  },
+  {
+    "id": "tvs2-187",
+    "word": "repetitive strain",
+    "definition": "chấn thương do lặp đi lặp lại",
+    "example": "Repetitive strain injury is common among office workers.",
+    "difficulty": "intermediate",
+    "topic": "ergonomics"
+  },
+  {
+    "id": "tvs2-188",
+    "word": "carpal tunnel",
+    "definition": "hội chứng ống cổ tay",
+    "example": "Proper wrist positioning helps prevent carpal tunnel syndrome.",
+    "difficulty": "advanced",
+    "topic": "ergonomics"
+  },
+  {
+    "id": "tvs2-189",
+    "word": "eye strain",
+    "definition": "mỏi mắt",
+    "example": "Take regular breaks to reduce eye strain.",
+    "difficulty": "beginner",
+    "topic": "ergonomics"
+  },
+  {
+    "id": "tvs2-190",
+    "word": "workstation",
+    "definition": "bàn làm việc",
+    "example": "Set up your workstation for optimal comfort.",
+    "difficulty": "beginner",
+    "topic": "ergonomics"
+  },
+  {
+    "id": "tvs2-191",
+    "word": "adjustable",
+    "definition": "có thể điều chỉnh",
+    "example": "An adjustable chair allows you to set the proper height.",
+    "difficulty": "beginner",
+    "topic": "ergonomics"
+  },
+  {
+    "id": "tvs2-192",
+    "word": "cushion",
+    "definition": "đệm",
+    "example": "A seat cushion provides extra comfort and support.",
+    "difficulty": "beginner",
+    "topic": "ergonomics"
+  },
+  {
+    "id": "tvs2-193",
+    "word": "back support",
+    "definition": "hỗ trợ lưng",
+    "example": "Back support is important for preventing injury.",
+    "difficulty": "beginner",
+    "topic": "ergonomics"
+  },
+  {
+    "id": "tvs2-194",
+    "word": "desk height",
+    "definition": "chiều cao bàn",
+    "example": "The desk height should allow your arms to rest comfortably.",
+    "difficulty": "beginner",
+    "topic": "ergonomics"
+  },
+  {
+    "id": "tvs2-195",
+    "word": "computer screen",
+    "definition": "màn hình máy tính",
+    "example": "Keep your computer screen at least an arm's length away.",
+    "difficulty": "beginner",
+    "topic": "ergonomics"
+  },
+  {
+    "id": "tvs2-196",
+    "word": "break reminder",
+    "definition": "nhắc nhở nghỉ giải lao",
+    "example": "Set a break reminder to stretch every hour.",
+    "difficulty": "beginner",
+    "topic": "ergonomics"
+  },
+  {
+    "id": "tvs2-197",
+    "word": "stretching",
+    "definition": "kéo giãn cơ",
+    "example": "Regular stretching helps prevent muscle stiffness.",
+    "difficulty": "beginner",
+    "topic": "ergonomics"
+  },
+  {
+    "id": "tvs2-198",
+    "word": "body position",
+    "definition": "vị trí cơ thể",
+    "example": "Maintaining a proper body position reduces fatigue.",
+    "difficulty": "intermediate",
+    "topic": "ergonomics"
+  },
+  {
+    "id": "tvs2-199",
+    "word": "workplace comfort",
+    "definition": "sự thoải mái tại nơi làm việc",
+    "example": "Workplace comfort improves productivity.",
+    "difficulty": "intermediate",
+    "topic": "ergonomics"
+  },
+  {
+    "id": "tvs2-200",
+    "word": "ergonomic assessment",
+    "definition": "đánh giá công thái học",
+    "example": "Request an ergonomic assessment for your workstation.",
+    "difficulty": "advanced",
+    "topic": "ergonomics"
+  },
+  {
+    "id": "tvs2-201",
+    "word": "diversity",
+    "definition": "sự đa dạng",
+    "example": "Diversity in the workplace brings different perspectives.",
+    "difficulty": "beginner",
+    "topic": "diversity_inclusion"
+  },
+  {
+    "id": "tvs2-202",
+    "word": "inclusion",
+    "definition": "sự hòa nhập",
+    "example": "Inclusion ensures everyone feels valued.",
+    "difficulty": "beginner",
+    "topic": "diversity_inclusion"
+  },
+  {
+    "id": "tvs2-203",
+    "word": "equality",
+    "definition": "bình đẳng",
+    "example": "The company promotes equality in the workplace.",
+    "difficulty": "beginner",
+    "topic": "diversity_inclusion"
+  },
+  {
+    "id": "tvs2-204",
+    "word": "fairness",
+    "definition": "sự công bằng",
+    "example": "Fairness in the workplace builds trust.",
+    "difficulty": "intermediate",
+    "topic": "diversity_inclusion"
+  },
+  {
+    "id": "tvs2-205",
+    "word": "tolerance",
+    "definition": "sự khoan dung",
+    "example": "Tolerance is a core value of our organization.",
+    "difficulty": "beginner",
+    "topic": "diversity_inclusion"
+  },
+  {
+    "id": "tvs2-206",
+    "word": "respect",
+    "definition": "sự tôn trọng",
+    "example": "We treat all colleagues with respect.",
+    "difficulty": "beginner",
+    "topic": "diversity_inclusion"
+  },
+  {
+    "id": "tvs2-207",
+    "word": "cultural awareness",
+    "definition": "nhận thức văn hóa",
+    "example": "Cultural awareness training is offered annually.",
+    "difficulty": "intermediate",
+    "topic": "diversity_inclusion"
+  },
+  {
+    "id": "tvs2-208",
+    "word": "multicultural",
+    "definition": "đa văn hóa",
+    "example": "We have a multicultural workforce from over thirty countries.",
+    "difficulty": "intermediate",
+    "topic": "diversity_inclusion"
+  },
+  {
+    "id": "tvs2-209",
+    "word": "bias",
+    "definition": "thiên kiến",
+    "example": "We work to eliminate bias in hiring decisions.",
+    "difficulty": "intermediate",
+    "topic": "diversity_inclusion"
+  },
+  {
+    "id": "tvs2-210",
+    "word": "unconscious bias",
+    "definition": "thiến kiến vô thức",
+    "example": "Unconscious bias can affect our judgment without us knowing.",
+    "difficulty": "advanced",
+    "topic": "diversity_inclusion"
+  },
+  {
+    "id": "tvs2-211",
+    "word": "stereotype",
+    "definition": "định kiến",
+    "example": "Stereotypes can lead to unfair treatment.",
+    "difficulty": "intermediate",
+    "topic": "diversity_inclusion"
+  },
+  {
+    "id": "tvs2-212",
+    "word": "discrimination",
+    "definition": "phân biệt đối xử",
+    "example": "Discrimination in the workplace is illegal.",
+    "difficulty": "beginner",
+    "topic": "diversity_inclusion"
+  },
+  {
+    "id": "tvs2-213",
+    "word": "harassment",
+    "definition": "quấy rối",
+    "example": "The company has a zero tolerance policy for harassment.",
+    "difficulty": "beginner",
+    "topic": "diversity_inclusion"
+  },
+  {
+    "id": "tvs2-214",
+    "word": "equal opportunity",
+    "definition": "cơ hội bình đẳng",
+    "example": "We are an equal opportunity employer.",
+    "difficulty": "beginner",
+    "topic": "diversity_inclusion"
+  },
+  {
+    "id": "tvs2-215",
+    "word": "affirmative action",
+    "definition": "hành động khẳng định",
+    "example": "Affirmative action policies promote diversity in hiring.",
+    "difficulty": "advanced",
+    "topic": "diversity_inclusion"
+  },
+  {
+    "id": "tvs2-216",
+    "word": "belonging",
+    "definition": "sự gắn bó, hòa nhập",
+    "example": "A sense of belonging improves employee retention.",
+    "difficulty": "intermediate",
+    "topic": "diversity_inclusion"
+  },
+  {
+    "id": "tvs2-217",
+    "word": "accessibility",
+    "definition": "khả năng tiếp cận",
+    "example": "We are committed to making the workplace accessible.",
+    "difficulty": "intermediate",
+    "topic": "diversity_inclusion"
+  },
+  {
+    "id": "tvs2-218",
+    "word": "accommodation",
+    "definition": "sự sắp xếp, điều chỉnh",
+    "example": "Reasonable accommodation is provided for disabled employees.",
+    "difficulty": "intermediate",
+    "topic": "diversity_inclusion"
+  },
+  {
+    "id": "tvs2-219",
+    "word": "inclusive environment",
+    "definition": "môi trường hòa nhập",
+    "example": "Creating an inclusive environment benefits everyone.",
+    "difficulty": "intermediate",
+    "topic": "diversity_inclusion"
+  },
+  {
+    "id": "tvs2-220",
+    "word": "ally",
+    "definition": "đồng minh",
+    "example": "Being an ally means supporting your colleagues actively.",
+    "difficulty": "intermediate",
+    "topic": "diversity_inclusion"
+  },
+  {
+    "id": "tvs2-221",
+    "word": "advocacy",
+    "definition": "ủng hộ, vận động",
+    "example": "She is known for her advocacy of workplace diversity.",
+    "difficulty": "advanced",
+    "topic": "diversity_inclusion"
+  },
+  {
+    "id": "tvs2-222",
+    "word": "representation",
+    "definition": "sự đại diện",
+    "example": "Increased representation leads to better business outcomes.",
+    "difficulty": "intermediate",
+    "topic": "diversity_inclusion"
+  },
+  {
+    "id": "tvs2-223",
+    "word": "underrepresented",
+    "definition": "bị thiếu đại diện",
+    "example": "Women are underrepresented in senior leadership roles.",
+    "difficulty": "advanced",
+    "topic": "diversity_inclusion"
+  },
+  {
+    "id": "tvs2-224",
+    "word": "sensitivity training",
+    "definition": "đào tạo nhạy cảm",
+    "example": "Sensitivity training helps employees understand differences.",
+    "difficulty": "advanced",
+    "topic": "diversity_inclusion"
+  },
+  {
+    "id": "tvs2-225",
+    "word": "D&I",
+    "definition": "đa dạng và hòa nhập",
+    "example": "The D&I initiative has improved company culture.",
+    "difficulty": "beginner",
+    "topic": "diversity_inclusion"
+  },
+  {
+    "id": "tvs2-226",
+    "word": "morale",
+    "definition": "tinh thần",
+    "example": "High morale leads to better productivity.",
+    "difficulty": "beginner",
+    "topic": "employee_relations"
+  },
+  {
+    "id": "tvs2-227",
+    "word": "engagement",
+    "definition": "mức độ gắn kết",
+    "example": "Employee engagement surveys are conducted annually.",
+    "difficulty": "intermediate",
+    "topic": "employee_relations"
+  },
+  {
+    "id": "tvs2-228",
+    "word": "satisfaction",
+    "definition": "sự hài lòng",
+    "example": "Employee satisfaction is measured through regular surveys.",
+    "difficulty": "beginner",
+    "topic": "employee_relations"
+  },
+  {
+    "id": "tvs2-229",
+    "word": "commitment",
+    "definition": "cam kết",
+    "example": "The company shows commitment to its employees' growth.",
+    "difficulty": "beginner",
+    "topic": "employee_relations"
+  },
+  {
+    "id": "tvs2-230",
+    "word": "loyalty",
+    "definition": "sự trung thành",
+    "example": "Employee loyalty is built through fair treatment.",
+    "difficulty": "beginner",
+    "topic": "employee_relations"
+  },
+  {
+    "id": "tvs2-231",
+    "word": "trust",
+    "definition": "sự tin tưởng",
+    "example": "Trust between management and staff is essential.",
+    "difficulty": "beginner",
+    "topic": "employee_relations"
+  },
+  {
+    "id": "tvs2-232",
+    "word": "recognition",
+    "definition": "sự công nhận",
+    "example": "Employee recognition boosts motivation.",
+    "difficulty": "intermediate",
+    "topic": "employee_relations"
+  },
+  {
+    "id": "tvs2-233",
+    "word": "appreciation",
+    "definition": "sự đánh giá cao",
+    "example": "Showing appreciation helps retain good employees.",
+    "difficulty": "beginner",
+    "topic": "employee_relations"
+  },
+  {
+    "id": "tvs2-234",
+    "word": "grievance",
+    "definition": "khiếu nại",
+    "example": "Employees can file a grievance with HR.",
+    "difficulty": "intermediate",
+    "topic": "employee_relations"
+  },
+  {
+    "id": "tvs2-235",
+    "word": "complaint",
+    "definition": "phàn nàn, khiếu nại",
+    "example": "All complaints are handled confidentially.",
+    "difficulty": "beginner",
+    "topic": "employee_relations"
+  },
+  {
+    "id": "tvs2-236",
+    "word": "dispute",
+    "definition": "tranh chấp",
+    "example": "The dispute between the two departments was resolved.",
+    "difficulty": "intermediate",
+    "topic": "employee_relations"
+  },
+  {
+    "id": "tvs2-237",
+    "word": "mediation",
+    "definition": "hòa giải",
+    "example": "Mediation is used to resolve workplace conflicts.",
+    "difficulty": "intermediate",
+    "topic": "employee_relations"
+  },
+  {
+    "id": "tvs2-238",
+    "word": "arbitration",
+    "definition": "phân xử, trọng tài",
+    "example": "Arbitration may be necessary if mediation fails.",
+    "difficulty": "advanced",
+    "topic": "employee_relations"
+  },
+  {
+    "id": "tvs2-239",
+    "word": "collaboration",
+    "definition": "sự hợp tác",
+    "example": "Collaboration between departments improves efficiency.",
+    "difficulty": "intermediate",
+    "topic": "employee_relations"
+  },
+  {
+    "id": "tvs2-240",
+    "word": "teamwork",
+    "definition": "làm việc nhóm",
+    "example": "Good teamwork is essential for project success.",
+    "difficulty": "beginner",
+    "topic": "employee_relations"
+  },
+  {
+    "id": "tvs2-241",
+    "word": "partnership",
+    "definition": "sự đối tác, hợp tác",
+    "example": "A strong partnership between employees and management is key.",
+    "difficulty": "intermediate",
+    "topic": "employee_relations"
+  },
+  {
+    "id": "tvs2-242",
+    "word": "rapport",
+    "definition": "mối quan hệ tốt",
+    "example": "Building rapport with colleagues is important.",
+    "difficulty": "intermediate",
+    "topic": "employee_relations"
+  },
+  {
+    "id": "tvs2-243",
+    "word": "workplace culture",
+    "definition": "văn hóa nơi làm việc",
+    "example": "A positive workplace culture attracts talent.",
+    "difficulty": "beginner",
+    "topic": "employee_relations"
+  },
+  {
+    "id": "tvs2-244",
+    "word": "employee morale",
+    "definition": "tinh thần nhân viên",
+    "example": "Team building activities boost employee morale.",
+    "difficulty": "intermediate",
+    "topic": "employee_relations"
+  },
+  {
+    "id": "tvs2-245",
+    "word": "employee relations",
+    "definition": "quan hệ nhân viên",
+    "example": "Good employee relations reduce turnover.",
+    "difficulty": "beginner",
+    "topic": "employee_relations"
+  },
+  {
+    "id": "tvs2-246",
+    "word": "feedback session",
+    "definition": "buổi phản hồi",
+    "example": "The feedback session was constructive and helpful.",
+    "difficulty": "intermediate",
+    "topic": "employee_relations"
+  },
+  {
+    "id": "tvs2-247",
+    "word": "employee engagement",
+    "definition": "mức độ gắn kết nhân viên",
+    "example": "High employee engagement leads to better results.",
+    "difficulty": "intermediate",
+    "topic": "employee_relations"
+  },
+  {
+    "id": "tvs2-248",
+    "word": "conflict management",
+    "definition": "quản lý xung đột",
+    "example": "Effective conflict management skills are essential.",
+    "difficulty": "intermediate",
+    "topic": "employee_relations"
+  },
+  {
+    "id": "tvs2-249",
+    "word": "open door policy",
+    "definition": "chính sách mở cửa",
+    "example": "The open door policy encourages communication.",
+    "difficulty": "intermediate",
+    "topic": "employee_relations"
+  },
+  {
+    "id": "tvs2-250",
+    "word": "employee welfare",
+    "definition": "phúc lợi nhân viên",
+    "example": "Employee welfare is a priority for the company.",
+    "difficulty": "intermediate",
+    "topic": "employee_relations"
+  },
+  {
+    "id": "tvs2-251",
+    "word": "labor law",
+    "definition": "luật lao động",
+    "example": "All employers must comply with labor law.",
+    "difficulty": "beginner",
+    "topic": "labor_law"
+  },
+  {
+    "id": "tvs2-252",
+    "word": "employment law",
+    "definition": "luật việc làm",
+    "example": "Employment law protects workers' rights.",
+    "difficulty": "beginner",
+    "topic": "labor_law"
+  },
+  {
+    "id": "tvs2-253",
+    "word": "at-will employment",
+    "definition": "việc làm theo ý muốn",
+    "example": "At-will employment means either party can end the relationship.",
+    "difficulty": "advanced",
+    "topic": "labor_law"
+  },
+  {
+    "id": "tvs2-254",
+    "word": "workers compensation",
+    "definition": "bồi thường lao động",
+    "example": "Workers compensation covers medical expenses from work injuries.",
+    "difficulty": "intermediate",
+    "topic": "labor_law"
+  },
+  {
+    "id": "tvs2-255",
+    "word": "unemployment insurance",
+    "definition": "bảo hiểm thất nghiệp",
+    "example": "Unemployment insurance provides income after job loss.",
+    "difficulty": "intermediate",
+    "topic": "labor_law"
+  },
+  {
+    "id": "tvs2-256",
+    "word": "FMLA",
+    "definition": "Luật nghỉ phép gia đình và y tế",
+    "example": "FMLA allows eligible employees to take unpaid leave.",
+    "difficulty": "advanced",
+    "topic": "labor_law"
+  },
+  {
+    "id": "tvs2-257",
+    "word": "OSHA",
+    "definition": "Cơ quan An toàn và Sức khỏe Nghề nghiệp",
+    "example": "OSHA sets workplace safety standards.",
+    "difficulty": "intermediate",
+    "topic": "labor_law"
+  },
+  {
+    "id": "tvs2-258",
+    "word": "NLRB",
+    "definition": "Hội đồng Quan hệ Lao động Quốc gia",
+    "example": "The NLRB oversees union elections and labor disputes.",
+    "difficulty": "advanced",
+    "topic": "labor_law"
+  },
+  {
+    "id": "tvs2-259",
+    "word": "EEOC",
+    "definition": "Ủy ban Cơ hội Việc làm Bình đẳng",
+    "example": "The EEOC enforces anti-discrimination laws.",
+    "difficulty": "advanced",
+    "topic": "labor_law"
+  },
+  {
+    "id": "tvs2-260",
+    "word": "ADA",
+    "definition": "Đạo luật Người khuyết tật",
+    "example": "The ADA requires reasonable accommodation for disabled employees.",
+    "difficulty": "advanced",
+    "topic": "labor_law"
+  },
+  {
+    "id": "tvs2-261",
+    "word": "Title VII",
+    "definition": "Điều VII Luật Civil Rights",
+    "example": "Title VII prohibits employment discrimination.",
+    "difficulty": "advanced",
+    "topic": "labor_law"
+  },
+  {
+    "id": "tvs2-262",
+    "word": "wage law",
+    "definition": "luật lương",
+    "example": "Wage law sets minimum pay requirements.",
+    "difficulty": "beginner",
+    "topic": "labor_law"
+  },
+  {
+    "id": "tvs2-263",
+    "word": "overtime pay",
+    "definition": "tiền làm thêm giờ",
+    "example": "Overtime pay must be at least one point five times regular pay.",
+    "difficulty": "beginner",
+    "topic": "labor_law"
+  },
+  {
+    "id": "tvs2-264",
+    "word": "discrimination law",
+    "definition": "luật chống phân biệt",
+    "example": "Discrimination law protects employees from unfair treatment.",
+    "difficulty": "intermediate",
+    "topic": "labor_law"
+  },
+  {
+    "id": "tvs2-265",
+    "word": "harassment law",
+    "definition": "luật chống quấy rối",
+    "example": "Harassment law covers sexual and workplace harassment.",
+    "difficulty": "intermediate",
+    "topic": "labor_law"
+  },
+  {
+    "id": "tvs2-266",
+    "word": "fair labor standards",
+    "definition": "chuẩn lao động công bằng",
+    "example": "Fair labor standards set minimum wage and overtime rules.",
+    "difficulty": "intermediate",
+    "topic": "labor_law"
+  },
+  {
+    "id": "tvs2-267",
+    "word": "employment agreement",
+    "definition": "thỏa thuận việc làm",
+    "example": "The employment agreement outlines your responsibilities.",
+    "difficulty": "beginner",
+    "topic": "labor_law"
+  },
+  {
+    "id": "tvs2-268",
+    "word": "severance",
+    "definition": "trợ cấp thôi việc",
+    "example": "Severance pay is provided to laid-off employees.",
+    "difficulty": "intermediate",
+    "topic": "labor_law"
+  },
+  {
+    "id": "tvs2-269",
+    "word": "non-compete clause",
+    "definition": "điều khoản không cạnh tranh",
+    "example": "The non-compete clause prevents working for competitors.",
+    "difficulty": "advanced",
+    "topic": "labor_law"
+  },
+  {
+    "id": "tvs2-270",
+    "word": "whistleblower",
+    "definition": "người tố giác",
+    "example": "Whistleblowers are protected by law from retaliation.",
+    "difficulty": "advanced",
+    "topic": "labor_law"
+  },
+  {
+    "id": "tvs2-271",
+    "word": "right to work",
+    "definition": "quyền làm việc",
+    "example": "Right to work laws vary by state.",
+    "difficulty": "intermediate",
+    "topic": "labor_law"
+  },
+  {
+    "id": "tvs2-272",
+    "word": "labor standards",
+    "definition": "chuẩn lao động",
+    "example": "The company meets all labor standards.",
+    "difficulty": "intermediate",
+    "topic": "labor_law"
+  },
+  {
+    "id": "tvs2-273",
+    "word": "wage and hour",
+    "definition": "lương và giờ làm",
+    "example": "The wage and hour division enforces pay regulations.",
+    "difficulty": "intermediate",
+    "topic": "labor_law"
+  },
+  {
+    "id": "tvs2-274",
+    "word": "employment regulation",
+    "definition": "quy định việc làm",
+    "example": "Employment regulation protects both employers and employees.",
+    "difficulty": "intermediate",
+    "topic": "labor_law"
+  },
+  {
+    "id": "tvs2-275",
+    "word": "labor standards act",
+    "definition": "Đạo luật Chuẩn Lao động",
+    "example": "The Labor Standards Act sets minimum wage requirements.",
+    "difficulty": "advanced",
+    "topic": "labor_law"
+  },
+  {
+    "id": "tvs2-276",
+    "word": "union membership",
+    "definition": "tư cách thành viên công đoàn",
+    "example": "Union membership is voluntary in most states.",
+    "difficulty": "beginner",
+    "topic": "union"
+  },
+  {
+    "id": "tvs2-277",
+    "word": "union dues",
+    "definition": "phí công đoàn",
+    "example": "Union dues are deducted from your paycheck.",
+    "difficulty": "beginner",
+    "topic": "union"
+  },
+  {
+    "id": "tvs2-278",
+    "word": "union representative",
+    "definition": "đại diện công đoàn",
+    "example": "The union representative will attend the meeting.",
+    "difficulty": "beginner",
+    "topic": "union"
+  },
+  {
+    "id": "tvs2-279",
+    "word": "shop steward",
+    "definition": "lãnh đạo công đoàn tại xưởng",
+    "example": "The shop steward spoke on behalf of the workers.",
+    "difficulty": "intermediate",
+    "topic": "union"
+  },
+  {
+    "id": "tvs2-280",
+    "word": "collective bargaining",
+    "definition": "đàm phán tập thể",
+    "example": "Collective bargaining resulted in better working conditions.",
+    "difficulty": "intermediate",
+    "topic": "union"
+  },
+  {
+    "id": "tvs2-281",
+    "word": "strike",
+    "definition": "đình công",
+    "example": "The workers voted to go on strike.",
+    "difficulty": "beginner",
+    "topic": "union"
+  },
+  {
+    "id": "tvs2-282",
+    "word": "lockout",
+    "definition": "ngừng việc",
+    "example": "The company imposed a lockout during negotiations.",
+    "difficulty": "intermediate",
+    "topic": "union"
+  },
+  {
+    "id": "tvs2-283",
+    "word": "picket line",
+    "definition": "hàng rào biểu tình",
+    "example": "Workers gathered on the picket line.",
+    "difficulty": "intermediate",
+    "topic": "union"
+  },
+  {
+    "id": "tvs2-284",
+    "word": "union meeting",
+    "definition": "họp công đoàn",
+    "example": "The union meeting is scheduled for Friday.",
+    "difficulty": "beginner",
+    "topic": "union"
+  },
+  {
+    "id": "tvs2-285",
+    "word": "union contract",
+    "definition": "hợp đồng công đoàn",
+    "example": "The union contract was renewed for three years.",
+    "difficulty": "intermediate",
+    "topic": "union"
+  },
+  {
+    "id": "tvs2-286",
+    "word": "union rules",
+    "definition": "quy tắc công đoàn",
+    "example": "All members must follow the union rules.",
+    "difficulty": "beginner",
+    "topic": "union"
+  },
+  {
+    "id": "tvs2-287",
+    "word": "union benefits",
+    "definition": "phúc lợi công đoàn",
+    "example": "Union benefits include health insurance and retirement.",
+    "difficulty": "intermediate",
+    "topic": "union"
+  },
+  {
+    "id": "tvs2-288",
+    "word": "union hall",
+    "definition": "hội trường công đoàn",
+    "example": "The union meeting will be held at the union hall.",
+    "difficulty": "beginner",
+    "topic": "union"
+  },
+  {
+    "id": "tvs2-289",
+    "word": "union shop",
+    "definition": "cửa hàng công đoàn",
+    "example": "In a union shop, all employees must join the union.",
+    "difficulty": "advanced",
+    "topic": "union"
+  },
+  {
+    "id": "tvs2-290",
+    "word": "closed shop",
+    "definition": "cửa hàng đóng cửa",
+    "example": "Closed shops are illegal in most states.",
+    "difficulty": "advanced",
+    "topic": "union"
+  },
+  {
+    "id": "tvs2-291",
+    "word": "agency shop",
+    "definition": "cửa hàng đại lý",
+    "example": "Agency shops require non-members to pay a fee.",
+    "difficulty": "advanced",
+    "topic": "union"
+  },
+  {
+    "id": "tvs2-292",
+    "word": "fair share",
+    "definition": "phí chia sẻ công bằng",
+    "example": "Fair share fees cover the cost of collective bargaining.",
+    "difficulty": "advanced",
+    "topic": "union"
+  },
+  {
+    "id": "tvs2-293",
+    "word": "union organizing",
+    "definition": "tổ chức công đoàn",
+    "example": "Union organizing efforts began at the new factory.",
+    "difficulty": "intermediate",
+    "topic": "union"
+  },
+  {
+    "id": "tvs2-294",
+    "word": "union certification",
+    "definition": "chứng nhận công đoàn",
+    "example": "The union certification was approved by the NLRB.",
+    "difficulty": "advanced",
+    "topic": "union"
+  },
+  {
+    "id": "tvs2-295",
+    "word": "decertification",
+    "definition": "thu hồi chứng nhận",
+    "example": "The employees voted for decertification of the union.",
+    "difficulty": "advanced",
+    "topic": "union"
+  },
+  {
+    "id": "tvs2-296",
+    "word": "grievance procedure",
+    "definition": "quy trình khiếu nại",
+    "example": "The grievance procedure is outlined in the union contract.",
+    "difficulty": "intermediate",
+    "topic": "union"
+  },
+  {
+    "id": "tvs2-297",
+    "word": "bargaining unit",
+    "definition": "đơn vị đàm phán",
+    "example": "The bargaining unit includes all hourly workers.",
+    "difficulty": "advanced",
+    "topic": "union"
+  },
+  {
+    "id": "tvs2-298",
+    "word": "labor dispute",
+    "definition": "tranh chấp lao động",
+    "example": "The labor dispute lasted for several weeks.",
+    "difficulty": "intermediate",
+    "topic": "union"
+  },
+  {
+    "id": "tvs2-299",
+    "word": "union steward",
+    "definition": "lãnh đạo công đoàn",
+    "example": "The union steward will represent you in the grievance.",
+    "difficulty": "intermediate",
+    "topic": "union"
+  },
+  {
+    "id": "tvs2-300",
+    "word": "collective agreement",
+    "definition": "thỏa thuận tập thể",
+    "example": "The collective agreement was signed by both parties.",
+    "difficulty": "intermediate",
+    "topic": "union"
+  },
+  {
+    "id": "tvs2-301",
+    "word": "employee turnover",
+    "definition": "tỷ lệ nghỉ việc",
+    "example": "High employee turnover is costly for the company.",
+    "difficulty": "beginner",
+    "topic": "turnover_rate"
+  },
+  {
+    "id": "tvs2-302",
+    "word": "retention",
+    "definition": "sự giữ chân nhân viên",
+    "example": "Employee retention is a key priority for HR.",
+    "difficulty": "intermediate",
+    "topic": "turnover_rate"
+  },
+  {
+    "id": "tvs2-303",
+    "word": "attrition",
+    "definition": "sự giảm dần nhân sự",
+    "example": "The company reduced staff through natural attrition.",
+    "difficulty": "advanced",
+    "topic": "turnover_rate"
+  },
+  {
+    "id": "tvs2-304",
+    "word": "turnover rate",
+    "definition": "tỷ lệ nghỉ việc",
+    "example": "The turnover rate has decreased this year.",
+    "difficulty": "beginner",
+    "topic": "turnover_rate"
+  },
+  {
+    "id": "tvs2-305",
+    "word": "voluntary turnover",
+    "definition": "nghì việc tự nguyện",
+    "example": "Voluntary turnover occurs when employees choose to leave.",
+    "difficulty": "intermediate",
+    "topic": "turnover_rate"
+  },
+  {
+    "id": "tvs2-306",
+    "word": "involuntary turnover",
+    "definition": "nghỉ việc bắt buộc",
+    "example": "Involuntary turnover includes layoffs and terminations.",
+    "difficulty": "intermediate",
+    "topic": "turnover_rate"
+  },
+  {
+    "id": "tvs2-307",
+    "word": "exit interview",
+    "definition": "phỏng vấn thôi việc",
+    "example": "An exit interview is conducted when an employee leaves.",
+    "difficulty": "beginner",
+    "topic": "turnover_rate"
+  },
+  {
+    "id": "tvs2-308",
+    "word": "turnover cost",
+    "definition": "chi phí nghỉ việc",
+    "example": "The turnover cost includes hiring and training expenses.",
+    "difficulty": "intermediate",
+    "topic": "turnover_rate"
+  },
+  {
+    "id": "tvs2-309",
+    "word": "hiring cost",
+    "definition": "chi phí tuyển dụng",
+    "example": "Hiring costs include advertising and interviewing expenses.",
+    "difficulty": "beginner",
+    "topic": "turnover_rate"
+  },
+  {
+    "id": "tvs2-310",
+    "word": "replacement cost",
+    "definition": "chi phí thay thế",
+    "example": "The replacement cost for a skilled worker is high.",
+    "difficulty": "intermediate",
+    "topic": "turnover_rate"
+  },
+  {
+    "id": "tvs2-311",
+    "word": "knowledge loss",
+    "definition": "mất kiến thức",
+    "example": "Knowledge loss is a major concern when senior staff leave.",
+    "difficulty": "intermediate",
+    "topic": "turnover_rate"
+  },
+  {
+    "id": "tvs2-312",
+    "word": "career path",
+    "definition": "con đường sự nghiệp",
+    "example": "A clear career path helps retain employees.",
+    "difficulty": "beginner",
+    "topic": "turnover_rate"
+  },
+  {
+    "id": "tvs2-313",
+    "word": "internal mobility",
+    "definition": "di chuyển nội bộ",
+    "example": "Internal mobility allows employees to grow within the company.",
+    "difficulty": "advanced",
+    "topic": "turnover_rate"
+  },
+  {
+    "id": "tvs2-314",
+    "word": "stay interview",
+    "definition": "phỏng vấn giữ chân",
+    "example": "Stay interviews help identify why employees remain.",
+    "difficulty": "intermediate",
+    "topic": "turnover_rate"
+  },
+  {
+    "id": "tvs2-315",
+    "word": "retention strategy",
+    "definition": "chiến lược giữ chân nhân viên",
+    "example": "The company developed a new retention strategy.",
+    "difficulty": "intermediate",
+    "topic": "turnover_rate"
+  },
+  {
+    "id": "tvs2-316",
+    "word": "retention bonus",
+    "definition": "thưởng giữ chân",
+    "example": "Retention bonuses are offered to key employees.",
+    "difficulty": "intermediate",
+    "topic": "turnover_rate"
+  },
+  {
+    "id": "tvs2-317",
+    "word": "turnover analysis",
+    "definition": "phân tích tỷ lệ nghỉ việc",
+    "example": "Turnover analysis reveals patterns in employee departures.",
+    "difficulty": "advanced",
+    "topic": "turnover_rate"
+  },
+  {
+    "id": "tvs2-318",
+    "word": "employee retention rate",
+    "definition": "tỷ lệ giữ chân nhân viên",
+    "example": "The employee retention rate improved after the new policy.",
+    "difficulty": "intermediate",
+    "topic": "turnover_rate"
+  },
+  {
+    "id": "tvs2-319",
+    "word": "turnover prevention",
+    "definition": "phòng ngừa nghỉ việc",
+    "example": "Turnover prevention programs reduce employee departures.",
+    "difficulty": "advanced",
+    "topic": "turnover_rate"
+  },
+  {
+    "id": "tvs2-320",
+    "word": "turnover reduction",
+    "definition": "giảm tỷ lệ nghỉ việc",
+    "example": "The focus is on turnover reduction through engagement.",
+    "difficulty": "advanced",
+    "topic": "turnover_rate"
+  },
+  {
+    "id": "tvs2-321",
+    "word": "employee departure",
+    "definition": "sự ra đi của nhân viên",
+    "example": "Each employee departure affects team productivity.",
+    "difficulty": "intermediate",
+    "topic": "turnover_rate"
+  },
+  {
+    "id": "tvs2-322",
+    "word": "job satisfaction",
+    "definition": "sự hài lòng với công việc",
+    "example": "Job satisfaction is directly linked to retention.",
+    "difficulty": "beginner",
+    "topic": "turnover_rate"
+  },
+  {
+    "id": "tvs2-323",
+    "word": "employee commitment",
+    "definition": "cam kết của nhân viên",
+    "example": "Employee commitment drives long-term retention.",
+    "difficulty": "intermediate",
+    "topic": "turnover_rate"
+  },
+  {
+    "id": "tvs2-324",
+    "word": "workforce stability",
+    "definition": "sự ổn định lực lượng lao động",
+    "example": "Workforce stability is essential for business continuity.",
+    "difficulty": "advanced",
+    "topic": "turnover_rate"
+  },
+  {
+    "id": "tvs2-325",
+    "word": "turnover reduction program",
+    "definition": "chương trình giảm tỷ lệ nghỉ việc",
+    "example": "The turnover reduction program has shown positive results.",
+    "difficulty": "advanced",
+    "topic": "turnover_rate"
+  },
+  {
+    "id": "tvs2-326",
+    "word": "new hire",
+    "definition": "nhân viên mới",
+    "example": "The new hire starts on Monday.",
+    "difficulty": "beginner",
+    "topic": "onboarding"
+  },
+  {
+    "id": "tvs2-327",
+    "word": "welcome",
+    "definition": "chào mừng",
+    "example": "We welcome all new employees on their first day.",
+    "difficulty": "beginner",
+    "topic": "onboarding"
+  },
+  {
+    "id": "tvs2-328",
+    "word": "company tour",
+    "definition": "tham quan công ty",
+    "example": "A company tour is part of the first day activities.",
+    "difficulty": "beginner",
+    "topic": "onboarding"
+  },
+  {
+    "id": "tvs2-329",
+    "word": "buddy system",
+    "definition": "hệ thống người hướng dẫn",
+    "example": "The buddy system pairs new hires with experienced staff.",
+    "difficulty": "intermediate",
+    "topic": "onboarding"
+  },
+  {
+    "id": "tvs2-330",
+    "word": "paperwork",
+    "definition": "giấy tờ hành chính",
+    "example": "All paperwork must be completed before your first day.",
+    "difficulty": "beginner",
+    "topic": "onboarding"
+  },
+  {
+    "id": "tvs2-331",
+    "word": "identification",
+    "definition": "giấy tờ tùy thân",
+    "example": "Bring your identification for the onboarding process.",
+    "difficulty": "beginner",
+    "topic": "onboarding"
+  },
+  {
+    "id": "tvs2-332",
+    "word": "company values",
+    "definition": "giá trị công ty",
+    "example": "Company values are discussed during orientation.",
+    "difficulty": "beginner",
+    "topic": "onboarding"
+  },
+  {
+    "id": "tvs2-333",
+    "word": "company culture",
+    "definition": "văn hóa công ty",
+    "example": "Understanding company culture helps new employees adjust.",
+    "difficulty": "beginner",
+    "topic": "onboarding"
+  },
+  {
+    "id": "tvs2-334",
+    "word": "benefits enrollment",
+    "definition": "đăng ký phúc lợi",
+    "example": "Benefits enrollment must be completed within thirty days.",
+    "difficulty": "intermediate",
+    "topic": "onboarding"
+  },
+  {
+    "id": "tvs2-335",
+    "word": "payroll setup",
+    "definition": "thiết lập bảng lương",
+    "example": "Payroll setup is completed during the first week.",
+    "difficulty": "beginner",
+    "topic": "onboarding"
+  },
+  {
+    "id": "tvs2-336",
+    "word": "equipment",
+    "definition": "thiết bị, trang bị",
+    "example": "New employees receive their equipment on the first day.",
+    "difficulty": "beginner",
+    "topic": "onboarding"
+  },
+  {
+    "id": "tvs2-337",
+    "word": "workspace",
+    "definition": "không gian làm việc",
+    "example": "Your workspace will be prepared before you arrive.",
+    "difficulty": "beginner",
+    "topic": "onboarding"
+  },
+  {
+    "id": "tvs2-338",
+    "word": "introduction",
+    "definition": "giới thiệu",
+    "example": "Introductions to team members are part of onboarding.",
+    "difficulty": "beginner",
+    "topic": "onboarding"
+  },
+  {
+    "id": "tvs2-339",
+    "word": "social integration",
+    "definition": "hòa nhập xã hội",
+    "example": "Social integration helps new employees feel comfortable.",
+    "difficulty": "intermediate",
+    "topic": "onboarding"
+  },
+  {
+    "id": "tvs2-340",
+    "word": "cultural assimilation",
+    "definition": "đồng hóa văn hóa",
+    "example": "Cultural assimilation takes time for new hires.",
+    "difficulty": "advanced",
+    "topic": "onboarding"
+  },
+  {
+    "id": "tvs2-341",
+    "word": "performance expectations",
+    "definition": "kỳ vọng hiệu suất",
+    "example": "Performance expectations are set during onboarding.",
+    "difficulty": "intermediate",
+    "topic": "onboarding"
+  },
+  {
+    "id": "tvs2-342",
+    "word": "goal setting",
+    "definition": "đặt mục tiêu",
+    "example": "Goal setting is part of the first week's activities.",
+    "difficulty": "beginner",
+    "topic": "onboarding"
+  },
+  {
+    "id": "tvs2-343",
+    "word": "check-in",
+    "definition": "cuộc gặp gỡ định kỳ",
+    "example": "Regular check-ins help new employees stay on track.",
+    "difficulty": "beginner",
+    "topic": "onboarding"
+  },
+  {
+    "id": "tvs2-344",
+    "word": "onboarding process",
+    "definition": "quy trình tiếp nhận",
+    "example": "The onboarding process takes two weeks.",
+    "difficulty": "beginner",
+    "topic": "onboarding"
+  },
+  {
+    "id": "tvs2-345",
+    "word": "onboarding program",
+    "definition": "chương trình tiếp nhận",
+    "example": "The onboarding program includes training and mentorship.",
+    "difficulty": "intermediate",
+    "topic": "onboarding"
+  },
+  {
+    "id": "tvs2-346",
+    "word": "orientation session",
+    "definition": "phiên định hướng",
+    "example": "The orientation session is held in the main conference room.",
+    "difficulty": "beginner",
+    "topic": "onboarding"
+  },
+  {
+    "id": "tvs2-347",
+    "word": "team introduction",
+    "definition": "giới thiệu nhóm",
+    "example": "A team introduction is scheduled for your first day.",
+    "difficulty": "beginner",
+    "topic": "onboarding"
+  },
+  {
+    "id": "tvs2-348",
+    "word": "welcome package",
+    "definition": "gói chào mừng",
+    "example": "The welcome package includes company information.",
+    "difficulty": "beginner",
+    "topic": "onboarding"
+  },
+  {
+    "id": "tvs2-349",
+    "word": "first day",
+    "definition": "ngày đầu tiên",
+    "example": "Your first day will include orientation and training.",
+    "difficulty": "beginner",
+    "topic": "onboarding"
+  },
+  {
+    "id": "tvs2-350",
+    "word": "new employee orientation",
+    "definition": "định hướng nhân viên mới",
+    "example": "New employee orientation covers safety and policies.",
+    "difficulty": "intermediate",
+    "topic": "onboarding"
+  },
+  {
+    "id": "tvs2-351",
+    "word": "succession planning",
+    "definition": "kế hoạch kế nhiệm",
+    "example": "Succession planning ensures business continuity.",
+    "difficulty": "intermediate",
+    "topic": "succession_plan"
+  },
+  {
+    "id": "tvs2-352",
+    "word": "leadership development",
+    "definition": "phát triển lãnh đạo",
+    "example": "Leadership development programs prepare future leaders.",
+    "difficulty": "intermediate",
+    "topic": "succession_plan"
+  },
+  {
+    "id": "tvs2-353",
+    "word": "high potential",
+    "definition": "tiềm năng cao",
+    "example": "High potential employees are identified for leadership roles.",
+    "difficulty": "intermediate",
+    "topic": "succession_plan"
+  },
+  {
+    "id": "tvs2-354",
+    "word": "talent pool",
+    "definition": "nguồn nhân tài",
+    "example": "Building a strong talent pool is essential for succession.",
+    "difficulty": "intermediate",
+    "topic": "succession_plan"
+  },
+  {
+    "id": "tvs2-355",
+    "word": "leadership pipeline",
+    "definition": "dòng chảy lãnh đạo",
+    "example": "The leadership pipeline ensures a steady supply of leaders.",
+    "difficulty": "advanced",
+    "topic": "succession_plan"
+  },
+  {
+    "id": "tvs2-356",
+    "word": "talent management",
+    "definition": "quản lý nhân tài",
+    "example": "Talent management is a strategic priority.",
+    "difficulty": "intermediate",
+    "topic": "succession_plan"
+  },
+  {
+    "id": "tvs2-357",
+    "word": "promotion",
+    "definition": "thăng chức",
+    "example": "Promotion opportunities attract top talent.",
+    "difficulty": "beginner",
+    "topic": "succession_plan"
+  },
+  {
+    "id": "tvs2-358",
+    "word": "advancement",
+    "definition": "sự thăng tiến",
+    "example": "Career advancement is possible through hard work.",
+    "difficulty": "beginner",
+    "topic": "succession_plan"
+  },
+  {
+    "id": "tvs2-359",
+    "word": "readiness review",
+    "definition": "đánh giá sự sẵn sàng",
+    "example": "Readiness reviews identify who is prepared for leadership.",
+    "difficulty": "advanced",
+    "topic": "succession_plan"
+  },
+  {
+    "id": "tvs2-360",
+    "word": "development plan",
+    "definition": "kế hoạch phát triển",
+    "example": "Each potential leader has a development plan.",
+    "difficulty": "intermediate",
+    "topic": "succession_plan"
+  },
+  {
+    "id": "tvs2-361",
+    "word": "job rotation",
+    "definition": "luân chuyển công việc",
+    "example": "Job rotation helps employees gain diverse experience.",
+    "difficulty": "intermediate",
+    "topic": "succession_plan"
+  },
+  {
+    "id": "tvs2-362",
+    "word": "stretch assignment",
+    "definition": "nhiệm vụ thử thách",
+    "example": "Stretch assignments help develop leadership skills.",
+    "difficulty": "intermediate",
+    "topic": "succession_plan"
+  },
+  {
+    "id": "tvs2-363",
+    "word": "shadowing",
+    "definition": "theo dõi, học việc",
+    "example": "Shadowing a senior manager provides valuable experience.",
+    "difficulty": "intermediate",
+    "topic": "succession_plan"
+  },
+  {
+    "id": "tvs2-364",
+    "word": "knowledge handover",
+    "definition": "bàn giao kiến thức",
+    "example": "Knowledge handover ensures continuity when staff leave.",
+    "difficulty": "intermediate",
+    "topic": "succession_plan"
+  },
+  {
+    "id": "tvs2-365",
+    "word": "legacy planning",
+    "definition": "kế hoạch di sản",
+    "example": "Legacy planning ensures leadership continuity.",
+    "difficulty": "advanced",
+    "topic": "succession_plan"
+  },
+  {
+    "id": "tvs2-366",
+    "word": "continuity planning",
+    "definition": "kế hoạch liên tục",
+    "example": "Continuity planning is essential for organizational stability.",
+    "difficulty": "advanced",
+    "topic": "succession_plan"
+  },
+  {
+    "id": "tvs2-367",
+    "word": "emergency succession",
+    "definition": "kế hoạch kế nhiệm khẩn cấp",
+    "example": "Emergency succession plans are reviewed annually.",
+    "difficulty": "advanced",
+    "topic": "succession_plan"
+  },
+  {
+    "id": "tvs2-368",
+    "word": "bench strength",
+    "definition": "sức mạnh dự bị",
+    "example": "Strong bench strength means having multiple ready leaders.",
+    "difficulty": "advanced",
+    "topic": "succession_plan"
+  },
+  {
+    "id": "tvs2-369",
+    "word": "talent review",
+    "definition": "đánh giá nhân tài",
+    "example": "Talent reviews are conducted twice a year.",
+    "difficulty": "intermediate",
+    "topic": "succession_plan"
+  },
+  {
+    "id": "tvs2-370",
+    "word": "succession candidate",
+    "definition": "ứng viên kế nhiệm",
+    "example": "She is a strong succession candidate for the director role.",
+    "difficulty": "intermediate",
+    "topic": "succession_plan"
+  },
+  {
+    "id": "tvs2-371",
+    "word": "career development",
+    "definition": "phát triển sự nghiệp",
+    "example": "Career development is supported through training programs.",
+    "difficulty": "beginner",
+    "topic": "succession_plan"
+  },
+  {
+    "id": "tvs2-372",
+    "word": "leadership assessment",
+    "definition": "đánh giá lãnh đạo",
+    "example": "Leadership assessment identifies strengths and areas for growth.",
+    "difficulty": "advanced",
+    "topic": "succession_plan"
+  },
+  {
+    "id": "tvs2-373",
+    "word": "succession strategy",
+    "definition": "chiến lược kế nhiệm",
+    "example": "The succession strategy aligns with business goals.",
+    "difficulty": "advanced",
+    "topic": "succession_plan"
+  },
+  {
+    "id": "tvs2-374",
+    "word": "career path planning",
+    "definition": "lập kế hoạch con đường sự nghiệp",
+    "example": "Career path planning helps employees see their future.",
+    "difficulty": "intermediate",
+    "topic": "succession_plan"
+  },
+  {
+    "id": "tvs2-375",
+    "word": "leadership readiness",
+    "definition": "sự sẵn sàng lãnh đạo",
+    "example": "Leadership readiness is evaluated during talent reviews.",
+    "difficulty": "advanced",
+    "topic": "succession_plan"
+  },
+  {
+    "id": "tvs2-376",
+    "word": "mentor",
+    "definition": "người cố vấn",
+    "example": "Her mentor guided her through the first year.",
+    "difficulty": "beginner",
+    "topic": "mentoring"
+  },
+  {
+    "id": "tvs2-377",
+    "word": "mentee",
+    "definition": "người được cố vấn",
+    "example": "The mentee learned a lot from the experience.",
+    "difficulty": "beginner",
+    "topic": "mentoring"
+  },
+  {
+    "id": "tvs2-378",
+    "word": "mentoring relationship",
+    "definition": "mối quan hệ cố vấn",
+    "example": "A strong mentoring relationship requires trust.",
+    "difficulty": "intermediate",
+    "topic": "mentoring"
+  },
+  {
+    "id": "tvs2-379",
+    "word": "mentoring program",
+    "definition": "chương trình cố vấn",
+    "example": "The company launched a new mentoring program.",
+    "difficulty": "intermediate",
+    "topic": "mentoring"
+  },
+  {
+    "id": "tvs2-380",
+    "word": "guidance",
+    "definition": "sự hướng dẫn",
+    "example": "She provided valuable guidance to the new team members.",
+    "difficulty": "beginner",
+    "topic": "mentoring"
+  },
+  {
+    "id": "tvs2-381",
+    "word": "advice",
+    "definition": "lời khuyên",
+    "example": "His advice on career development was very helpful.",
+    "difficulty": "beginner",
+    "topic": "mentoring"
+  },
+  {
+    "id": "tvs2-382",
+    "word": "encouragement",
+    "definition": "sự鼓励",
+    "example": "Encouragement from the mentor boosted her confidence.",
+    "difficulty": "beginner",
+    "topic": "mentoring"
+  },
+  {
+    "id": "tvs2-383",
+    "word": "accountability",
+    "definition": "trách nhiệm giải trình",
+    "example": "The mentoring relationship promotes accountability.",
+    "difficulty": "intermediate",
+    "topic": "mentoring"
+  },
+  {
+    "id": "tvs2-384",
+    "word": "role model",
+    "definition": "hình mẫu",
+    "example": "A good mentor serves as a role model.",
+    "difficulty": "beginner",
+    "topic": "mentoring"
+  },
+  {
+    "id": "tvs2-385",
+    "word": "experience sharing",
+    "definition": "chia sẻ kinh nghiệm",
+    "example": "Experience sharing is a key part of mentoring.",
+    "difficulty": "intermediate",
+    "topic": "mentoring"
+  },
+  {
+    "id": "tvs2-386",
+    "word": "career guidance",
+    "definition": "hướng dẫn sự nghiệp",
+    "example": "Career guidance helps employees plan their future.",
+    "difficulty": "intermediate",
+    "topic": "mentoring"
+  },
+  {
+    "id": "tvs2-387",
+    "word": "networking",
+    "definition": "mạng lưới quan hệ",
+    "example": "Networking opportunities are available through mentoring.",
+    "difficulty": "intermediate",
+    "topic": "mentoring"
+  },
+  {
+    "id": "tvs2-388",
+    "word": "career advice",
+    "definition": "lời khuyên nghề nghiệp",
+    "example": "She sought career advice from her mentor.",
+    "difficulty": "beginner",
+    "topic": "mentoring"
+  },
+  {
+    "id": "tvs2-389",
+    "word": "mentor matching",
+    "definition": "ghép đôi cố vấn",
+    "example": "The mentor matching process considers skills and goals.",
+    "difficulty": "intermediate",
+    "topic": "mentoring"
+  },
+  {
+    "id": "tvs2-390",
+    "word": "mentoring goals",
+    "definition": "mục tiêu cố vấn",
+    "example": "Mentoring goals should be specific and measurable.",
+    "difficulty": "intermediate",
+    "topic": "mentoring"
+  },
+  {
+    "id": "tvs2-391",
+    "word": "mentoring outcomes",
+    "definition": "kết quả cố vấn",
+    "example": "Mentoring outcomes are evaluated at the end of the program.",
+    "difficulty": "advanced",
+    "topic": "mentoring"
+  },
+  {
+    "id": "tvs2-392",
+    "word": "mentoring benefits",
+    "definition": "lợi ích cố vấn",
+    "example": "Mentoring benefits include skill development and networking.",
+    "difficulty": "intermediate",
+    "topic": "mentoring"
+  },
+  {
+    "id": "tvs2-393",
+    "word": "mentoring agreement",
+    "definition": "thỏa thuận cố vấn",
+    "example": "A mentoring agreement outlines expectations.",
+    "difficulty": "intermediate",
+    "topic": "mentoring"
+  },
+  {
+    "id": "tvs2-394",
+    "word": "mentoring session",
+    "definition": "phiên cố vấn",
+    "example": "Regular mentoring sessions are held weekly.",
+    "difficulty": "beginner",
+    "topic": "mentoring"
+  },
+  {
+    "id": "tvs2-395",
+    "word": "peer mentoring",
+    "definition": "cố vấn đồng nghiệp",
+    "example": "Peer mentoring encourages collaboration among equals.",
+    "difficulty": "intermediate",
+    "topic": "mentoring"
+  },
+  {
+    "id": "tvs2-396",
+    "word": "reverse mentoring",
+    "definition": "cố vấn ngược",
+    "example": "Reverse mentoring allows junior staff to teach seniors.",
+    "difficulty": "advanced",
+    "topic": "mentoring"
+  },
+  {
+    "id": "tvs2-397",
+    "word": "mentoring culture",
+    "definition": "văn hóa cố vấn",
+    "example": "Building a mentoring culture improves employee development.",
+    "difficulty": "advanced",
+    "topic": "mentoring"
+  },
+  {
+    "id": "tvs2-398",
+    "word": "mentoring skills",
+    "definition": "kỹ năng cố vấn",
+    "example": "Developing mentoring skills benefits everyone.",
+    "difficulty": "intermediate",
+    "topic": "mentoring"
+  },
+  {
+    "id": "tvs2-399",
+    "word": "mentoring framework",
+    "definition": "khung cố vấn",
+    "example": "A mentoring framework provides structure for the program.",
+    "difficulty": "advanced",
+    "topic": "mentoring"
+  },
+  {
+    "id": "tvs2-400",
+    "word": "mentoring partnership",
+    "definition": "đối tác cố vấn",
+    "example": "A successful mentoring partnership requires commitment.",
+    "difficulty": "advanced",
+    "topic": "mentoring"
+  },
+  {
+    "id": "tvs2-401",
+    "word": "coach",
+    "definition": "huấn luyện viên",
+    "example": "The coach helped him improve his leadership skills.",
+    "difficulty": "beginner",
+    "topic": "coaching"
+  },
+  {
+    "id": "tvs2-402",
+    "word": "coaching",
+    "definition": "huấn luyện",
+    "example": "Coaching sessions are held weekly for new managers.",
+    "difficulty": "beginner",
+    "topic": "coaching"
+  },
+  {
+    "id": "tvs2-403",
+    "word": "coaching session",
+    "definition": "phiên huấn luyện",
+    "example": "Each coaching session focuses on specific goals.",
+    "difficulty": "beginner",
+    "topic": "coaching"
+  },
+  {
+    "id": "tvs2-404",
+    "word": "coaching plan",
+    "definition": "kế hoạch huấn luyện",
+    "example": "The coaching plan outlines development objectives.",
+    "difficulty": "intermediate",
+    "topic": "coaching"
+  },
+  {
+    "id": "tvs2-405",
+    "word": "coaching goals",
+    "definition": "mục tiêu huấn luyện",
+    "example": "Coaching goals are set at the beginning of the program.",
+    "difficulty": "beginner",
+    "topic": "coaching"
+  },
+  {
+    "id": "tvs2-406",
+    "word": "performance coaching",
+    "definition": "huấn luyện hiệu suất",
+    "example": "Performance coaching helps employees reach their potential.",
+    "difficulty": "intermediate",
+    "topic": "coaching"
+  },
+  {
+    "id": "tvs2-407",
+    "word": "leadership coaching",
+    "definition": "huấn luyện lãnh đạo",
+    "example": "Leadership coaching prepares executives for challenges.",
+    "difficulty": "intermediate",
+    "topic": "coaching"
+  },
+  {
+    "id": "tvs2-408",
+    "word": "executive coaching",
+    "definition": "huấn luyện điều hành",
+    "example": "Executive coaching is offered to senior leaders.",
+    "difficulty": "advanced",
+    "topic": "coaching"
+  },
+  {
+    "id": "tvs2-409",
+    "word": "career coaching",
+    "definition": "huấn luyện sự nghiệp",
+    "example": "Career coaching helps employees plan their next steps.",
+    "difficulty": "intermediate",
+    "topic": "coaching"
+  },
+  {
+    "id": "tvs2-410",
+    "word": "skills coaching",
+    "definition": "huấn luyện kỹ năng",
+    "example": "Skills coaching focuses on developing specific abilities.",
+    "difficulty": "intermediate",
+    "topic": "coaching"
+  },
+  {
+    "id": "tvs2-411",
+    "word": "coaching feedback",
+    "definition": "phản hồi huấn luyện",
+    "example": "Coaching feedback is always constructive and supportive.",
+    "difficulty": "intermediate",
+    "topic": "coaching"
+  },
+  {
+    "id": "tvs2-412",
+    "word": "coaching techniques",
+    "definition": "kỹ thuật huấn luyện",
+    "example": "Effective coaching techniques improve employee performance.",
+    "difficulty": "intermediate",
+    "topic": "coaching"
+  },
+  {
+    "id": "tvs2-413",
+    "word": "coaching questions",
+    "definition": "câu hỏi huấn luyện",
+    "example": "Coaching questions help employees think critically.",
+    "difficulty": "intermediate",
+    "topic": "coaching"
+  },
+  {
+    "id": "tvs2-414",
+    "word": "active listening",
+    "definition": "lắng nghe tích cực",
+    "example": "Active listening is a key coaching skill.",
+    "difficulty": "beginner",
+    "topic": "coaching"
+  },
+  {
+    "id": "tvs2-415",
+    "word": "coaching observation",
+    "definition": "quan sát huấn luyện",
+    "example": "Coaching observation helps identify areas for improvement.",
+    "difficulty": "advanced",
+    "topic": "coaching"
+  },
+  {
+    "id": "tvs2-416",
+    "word": "coaching analysis",
+    "definition": "phân tích huấn luyện",
+    "example": "Coaching analysis provides insights into performance.",
+    "difficulty": "advanced",
+    "topic": "coaching"
+  },
+  {
+    "id": "tvs2-417",
+    "word": "action plan",
+    "definition": "kế hoạch hành động",
+    "example": "The action plan outlines steps for improvement.",
+    "difficulty": "beginner",
+    "topic": "coaching"
+  },
+  {
+    "id": "tvs2-418",
+    "word": "coaching follow-up",
+    "definition": "theo dõi huấn luyện",
+    "example": "Regular coaching follow-up ensures progress.",
+    "difficulty": "intermediate",
+    "topic": "coaching"
+  },
+  {
+    "id": "tvs2-419",
+    "word": "coaching trust",
+    "definition": "niềm tin huấn luyện",
+    "example": "Building coaching trust takes time and consistency.",
+    "difficulty": "intermediate",
+    "topic": "coaching"
+  },
+  {
+    "id": "tvs2-420",
+    "word": "coaching rapport",
+    "definition": "mối quan hệ huấn luyện",
+    "example": "A strong coaching rapport leads to better results.",
+    "difficulty": "advanced",
+    "topic": "coaching"
+  },
+  {
+    "id": "tvs2-421",
+    "word": "coaching development",
+    "definition": "phát triển huấn luyện",
+    "example": "Coaching development programs train future coaches.",
+    "difficulty": "advanced",
+    "topic": "coaching"
+  },
+  {
+    "id": "tvs2-422",
+    "word": "coaching improvement",
+    "definition": "cải thiện huấn luyện",
+    "example": "Coaching improvement leads to better outcomes.",
+    "difficulty": "intermediate",
+    "topic": "coaching"
+  },
+  {
+    "id": "tvs2-423",
+    "word": "coaching success",
+    "definition": "thành công huấn luyện",
+    "example": "Coaching success is measured by performance improvement.",
+    "difficulty": "intermediate",
+    "topic": "coaching"
+  },
+  {
+    "id": "tvs2-424",
+    "word": "coaching outcome",
+    "definition": "kết quả huấn luyện",
+    "example": "The coaching outcome exceeded expectations.",
+    "difficulty": "advanced",
+    "topic": "coaching"
+  },
+  {
+    "id": "tvs2-425",
+    "word": "coaching impact",
+    "definition": "tác động huấn luyện",
+    "example": "The coaching impact was significant for the team.",
+    "difficulty": "advanced",
+    "topic": "coaching"
+  },
+  {
+    "id": "tvs2-426",
+    "word": "team building",
+    "definition": "xây dựng nhóm",
+    "example": "Team building activities improve collaboration.",
+    "difficulty": "beginner",
+    "topic": "team_building"
+  },
+  {
+    "id": "tvs2-427",
+    "word": "team building activity",
+    "definition": "hoạt động xây dựng nhóm",
+    "example": "The team building activity was fun and educational.",
+    "difficulty": "beginner",
+    "topic": "team_building"
+  },
+  {
+    "id": "tvs2-428",
+    "word": "team building event",
+    "definition": "sự kiện xây dựng nhóm",
+    "example": "The annual team building event brings everyone together.",
+    "difficulty": "beginner",
+    "topic": "team_building"
+  },
+  {
+    "id": "tvs2-429",
+    "word": "trust building",
+    "definition": "xây dựng niềm tin",
+    "example": "Trust building is the foundation of effective teams.",
+    "difficulty": "intermediate",
+    "topic": "team_building"
+  },
+  {
+    "id": "tvs2-430",
+    "word": "collaboration building",
+    "definition": "xây dựng sự hợp tác",
+    "example": "Collaboration building exercises strengthen teamwork.",
+    "difficulty": "intermediate",
+    "topic": "team_building"
+  },
+  {
+    "id": "tvs2-431",
+    "word": "problem solving",
+    "definition": "giải quyết vấn đề",
+    "example": "Problem solving skills are developed through team activities.",
+    "difficulty": "beginner",
+    "topic": "team_building"
+  },
+  {
+    "id": "tvs2-432",
+    "word": "decision making",
+    "definition": "ra quyết định",
+    "example": "Team building improves group decision making.",
+    "difficulty": "beginner",
+    "topic": "team_building"
+  },
+  {
+    "id": "tvs2-433",
+    "word": "brainstorming",
+    "definition": "tư duy phản biện",
+    "example": "Brainstorming sessions generate creative ideas.",
+    "difficulty": "beginner",
+    "topic": "team_building"
+  },
+  {
+    "id": "tvs2-434",
+    "word": "team roles",
+    "definition": "vai trò nhóm",
+    "example": "Understanding team roles improves efficiency.",
+    "difficulty": "intermediate",
+    "topic": "team_building"
+  },
+  {
+    "id": "tvs2-435",
+    "word": "team dynamics",
+    "definition": "động lực nhóm",
+    "example": "Positive team dynamics lead to better performance.",
+    "difficulty": "intermediate",
+    "topic": "team_building"
+  },
+  {
+    "id": "tvs2-436",
+    "word": "team cohesion",
+    "definition": "sự gắn kết nhóm",
+    "example": "Team cohesion is built through shared experiences.",
+    "difficulty": "intermediate",
+    "topic": "team_building"
+  },
+  {
+    "id": "tvs2-437",
+    "word": "team building workshop",
+    "definition": "hội thảo xây dựng nhóm",
+    "example": "The team building workshop was held off-site.",
+    "difficulty": "intermediate",
+    "topic": "team_building"
+  },
+  {
+    "id": "tvs2-438",
+    "word": "team building retreat",
+    "definition": "khoảng nghỉ xây dựng nhóm",
+    "example": "The team building retreat was a great success.",
+    "difficulty": "intermediate",
+    "topic": "team_building"
+  },
+  {
+    "id": "tvs2-439",
+    "word": "team building game",
+    "definition": "trò chơi xây dựng nhóm",
+    "example": "The team building game encouraged cooperation.",
+    "difficulty": "beginner",
+    "topic": "team_building"
+  },
+  {
+    "id": "tvs2-440",
+    "word": "team building exercise",
+    "definition": "bài tập xây dựng nhóm",
+    "example": "The team building exercise required everyone to participate.",
+    "difficulty": "beginner",
+    "topic": "team_building"
+  },
+  {
+    "id": "tvs2-441",
+    "word": "team building challenge",
+    "definition": "thử thách xây dựng nhóm",
+    "example": "The team building challenge tested our communication.",
+    "difficulty": "intermediate",
+    "topic": "team_building"
+  },
+  {
+    "id": "tvs2-442",
+    "word": "team building project",
+    "definition": "dự án xây dựng nhóm",
+    "example": "The team building project required collaboration.",
+    "difficulty": "intermediate",
+    "topic": "team_building"
+  },
+  {
+    "id": "tvs2-443",
+    "word": "trust building exercise",
+    "definition": "bài tập xây dựng niềm tin",
+    "example": "The trust building exercise was challenging but rewarding.",
+    "difficulty": "intermediate",
+    "topic": "team_building"
+  },
+  {
+    "id": "tvs2-444",
+    "word": "communication building",
+    "definition": "xây dựng kỹ năng giao tiếp",
+    "example": "Communication building is essential for teamwork.",
+    "difficulty": "intermediate",
+    "topic": "team_building"
+  },
+  {
+    "id": "tvs2-445",
+    "word": "creativity",
+    "definition": "sự sáng tạo",
+    "example": "Team building encourages creativity and innovation.",
+    "difficulty": "beginner",
+    "topic": "team_building"
+  },
+  {
+    "id": "tvs2-446",
+    "word": "innovation",
+    "definition": "sự đổi mới",
+    "example": "Innovation thrives in collaborative environments.",
+    "difficulty": "intermediate",
+    "topic": "team_building"
+  },
+  {
+    "id": "tvs2-447",
+    "word": "planning",
+    "definition": "kế hoạch",
+    "example": "Effective planning is a result of good teamwork.",
+    "difficulty": "beginner",
+    "topic": "team_building"
+  },
+  {
+    "id": "tvs2-448",
+    "word": "organization",
+    "definition": "sự tổ chức",
+    "example": "Team building improves organization and structure.",
+    "difficulty": "beginner",
+    "topic": "team_building"
+  },
+  {
+    "id": "tvs2-449",
+    "word": "stress management",
+    "definition": "quản lý căng thẳng",
+    "example": "Team building includes stress management techniques.",
+    "difficulty": "intermediate",
+    "topic": "team_building"
+  },
+  {
+    "id": "tvs2-450",
+    "word": "followership",
+    "definition": "sự theo dõi, tuân theo",
+    "example": "Good followership is as important as leadership.",
+    "difficulty": "advanced",
+    "topic": "team_building"
+  },
+  {
+    "id": "tvs2-451",
+    "word": "conflict resolution",
+    "definition": "giải quyết xung đột",
+    "example": "Conflict resolution skills are essential for managers.",
+    "difficulty": "beginner",
+    "topic": "conflict_resolution"
+  },
+  {
+    "id": "tvs2-452",
+    "word": "conflict handling",
+    "definition": "xử lý xung đột",
+    "example": "Good conflict handling skills are essential for managers.",
+    "difficulty": "intermediate",
+    "topic": "conflict_resolution"
+  },
+  {
+    "id": "tvs2-453",
+    "word": "dispute mediation",
+    "definition": "hòa giải tranh chấp",
+    "example": "Dispute mediation helps parties reach agreement.",
+    "difficulty": "intermediate",
+    "topic": "conflict_resolution"
+  },
+  {
+    "id": "tvs2-454",
+    "word": "dispute resolution",
+    "definition": "giải quyết tranh chấp",
+    "example": "Dispute resolution methods are outlined in company policy.",
+    "difficulty": "advanced",
+    "topic": "conflict_resolution"
+  },
+  {
+    "id": "tvs2-455",
+    "word": "negotiation",
+    "definition": "đàm phán",
+    "example": "Negotiation skills help resolve conflicts peacefully.",
+    "difficulty": "beginner",
+    "topic": "conflict_resolution"
+  },
+  {
+    "id": "tvs2-456",
+    "word": "compromise",
+    "definition": "sự thỏa hiệp",
+    "example": "Reaching a compromise satisfies both parties.",
+    "difficulty": "beginner",
+    "topic": "conflict_resolution"
+  },
+  {
+    "id": "tvs2-457",
+    "word": "joint effort",
+    "definition": "nỗ lực chung",
+    "example": "Joint effort from all departments was needed.",
+    "difficulty": "beginner",
+    "topic": "conflict_resolution"
+  },
+  {
+    "id": "tvs2-458",
+    "word": "cooperation",
+    "definition": "sự hợp tác",
+    "example": "Cooperation between teams reduces workplace conflicts.",
+    "difficulty": "beginner",
+    "topic": "conflict_resolution"
+  },
+  {
+    "id": "tvs2-459",
+    "word": "empathy",
+    "definition": "sự đồng cảm",
+    "example": "Empathy helps understand the other person's perspective.",
+    "difficulty": "intermediate",
+    "topic": "conflict_resolution"
+  },
+  {
+    "id": "tvs2-460",
+    "word": "perspective taking",
+    "definition": "nhìn nhận từ góc nhìn khác",
+    "example": "Perspective taking is key to resolving disagreements.",
+    "difficulty": "advanced",
+    "topic": "conflict_resolution"
+  },
+  {
+    "id": "tvs2-461",
+    "word": "root cause analysis",
+    "definition": "phân tích nguyên nhân gốc",
+    "example": "Root cause analysis identifies the source of conflict.",
+    "difficulty": "advanced",
+    "topic": "conflict_resolution"
+  },
+  {
+    "id": "tvs2-462",
+    "word": "solution finding",
+    "definition": "tìm giải pháp",
+    "example": "Solution finding requires creativity and patience.",
+    "difficulty": "intermediate",
+    "topic": "conflict_resolution"
+  },
+  {
+    "id": "tvs2-463",
+    "word": "agreement building",
+    "definition": "xây dựng thỏa thuận",
+    "example": "Agreement building focuses on common ground.",
+    "difficulty": "advanced",
+    "topic": "conflict_resolution"
+  },
+  {
+    "id": "tvs2-464",
+    "word": "relationship repair",
+    "definition": "sửa chữa mối quan hệ",
+    "example": "Relationship repair is possible after a conflict.",
+    "difficulty": "intermediate",
+    "topic": "conflict_resolution"
+  },
+  {
+    "id": "tvs2-465",
+    "word": "trust rebuilding",
+    "definition": "xây dựng lại niềm tin",
+    "example": "Trust rebuilding takes time and consistent actions.",
+    "difficulty": "intermediate",
+    "topic": "conflict_resolution"
+  },
+  {
+    "id": "tvs2-466",
+    "word": "emotional intelligence",
+    "definition": "trí tuệ cảm xúc",
+    "example": "Emotional intelligence helps manage workplace conflicts.",
+    "difficulty": "intermediate",
+    "topic": "conflict_resolution"
+  },
+  {
+    "id": "tvs2-467",
+    "word": "de-escalation",
+    "definition": "hạ nhiệt, giảm căng thẳng",
+    "example": "De-escalation techniques calm tense situations.",
+    "difficulty": "advanced",
+    "topic": "conflict_resolution"
+  },
+  {
+    "id": "tvs2-468",
+    "word": "resolution strategy",
+    "definition": "chiến lược giải quyết",
+    "example": "A clear resolution strategy speeds up the process.",
+    "difficulty": "intermediate",
+    "topic": "conflict_resolution"
+  },
+  {
+    "id": "tvs2-469",
+    "word": "resolution process",
+    "definition": "quy trình giải quyết",
+    "example": "The resolution process is outlined in company policy.",
+    "difficulty": "intermediate",
+    "topic": "conflict_resolution"
+  },
+  {
+    "id": "tvs2-470",
+    "word": "resolution outcome",
+    "definition": "kết quả giải quyết",
+    "example": "A positive resolution outcome benefits everyone.",
+    "difficulty": "intermediate",
+    "topic": "conflict_resolution"
+  },
+  {
+    "id": "tvs2-471",
+    "word": "listening skills",
+    "definition": "kỹ năng lắng nghe",
+    "example": "Strong listening skills improve communication.",
+    "difficulty": "beginner",
+    "topic": "communication_skills"
+  },
+  {
+    "id": "tvs2-472",
+    "word": "verbal communication",
+    "definition": "giao tiếp bằng lời",
+    "example": "Clear verbal communication is essential in the workplace.",
+    "difficulty": "beginner",
+    "topic": "communication_skills"
+  },
+  {
+    "id": "tvs2-473",
+    "word": "nonverbal communication",
+    "definition": "giao tiếp phi ngôn ngữ",
+    "example": "Body language is a form of nonverbal communication.",
+    "difficulty": "intermediate",
+    "topic": "communication_skills"
+  },
+  {
+    "id": "tvs2-474",
+    "word": "written communication",
+    "definition": "giao tiếp bằng văn bản",
+    "example": "Written communication must be clear and professional.",
+    "difficulty": "beginner",
+    "topic": "communication_skills"
+  },
+  {
+    "id": "tvs2-475",
+    "word": "presentation skills",
+    "definition": "kỹ năng thuyết trình",
+    "example": "Good presentation skills help convey ideas effectively.",
+    "difficulty": "beginner",
+    "topic": "communication_skills"
+  },
+  {
+    "id": "tvs2-476",
+    "word": "persuasion",
+    "definition": "sự thuyết phục",
+    "example": "Persuasion skills are important for sales professionals.",
+    "difficulty": "intermediate",
+    "topic": "communication_skills"
+  },
+  {
+    "id": "tvs2-477",
+    "word": "negotiation skills",
+    "definition": "kỹ năng đàm phán",
+    "example": "Negotiation skills help reach mutually beneficial agreements.",
+    "difficulty": "intermediate",
+    "topic": "communication_skills"
+  },
+  {
+    "id": "tvs2-478",
+    "word": "interpersonal skills",
+    "definition": "kỹ năng giao tiếp",
+    "example": "Strong interpersonal skills build better relationships.",
+    "difficulty": "beginner",
+    "topic": "communication_skills"
+  },
+  {
+    "id": "tvs2-479",
+    "word": "communication style",
+    "definition": "phong cách giao tiếp",
+    "example": "Understanding communication styles improves interactions.",
+    "difficulty": "intermediate",
+    "topic": "communication_skills"
+  },
+  {
+    "id": "tvs2-480",
+    "word": "communication barriers",
+    "definition": "rào cản giao tiếp",
+    "example": "Language differences can create communication barriers.",
+    "difficulty": "intermediate",
+    "topic": "communication_skills"
+  },
+  {
+    "id": "tvs2-481",
+    "word": "feedback giving",
+    "definition": "đưa phản hồi",
+    "example": "Feedback giving should be done constructively.",
+    "difficulty": "beginner",
+    "topic": "communication_skills"
+  },
+  {
+    "id": "tvs2-482",
+    "word": "feedback receiving",
+    "definition": "nhận phản hồi",
+    "example": "Receiving feedback gracefully is a valuable skill.",
+    "difficulty": "beginner",
+    "topic": "communication_skills"
+  },
+  {
+    "id": "tvs2-483",
+    "word": "message clarity",
+    "definition": "sự rõ ràng thông điệp",
+    "example": "Message clarity ensures your point is understood.",
+    "difficulty": "intermediate",
+    "topic": "communication_skills"
+  },
+  {
+    "id": "tvs2-484",
+    "word": "message delivery",
+    "definition": "truyền tải thông điệp",
+    "example": "Effective message delivery impacts how information is received.",
+    "difficulty": "intermediate",
+    "topic": "communication_skills"
+  },
+  {
+    "id": "tvs2-485",
+    "word": "communication effectiveness",
+    "definition": "hiệu quả giao tiếp",
+    "example": "Communication effectiveness improves team performance.",
+    "difficulty": "intermediate",
+    "topic": "communication_skills"
+  },
+  {
+    "id": "tvs2-486",
+    "word": "communication strategy",
+    "definition": "chiến lược giao tiếp",
+    "example": "A communication strategy ensures consistent messaging.",
+    "difficulty": "intermediate",
+    "topic": "communication_skills"
+  },
+  {
+    "id": "tvs2-487",
+    "word": "communication channel",
+    "definition": "kênh giao tiếp",
+    "example": "Email is an effective communication channel for formal messages.",
+    "difficulty": "beginner",
+    "topic": "communication_skills"
+  },
+  {
+    "id": "tvs2-488",
+    "word": "communication tools",
+    "definition": "công cụ giao tiếp",
+    "example": "The company uses various communication tools for collaboration.",
+    "difficulty": "beginner",
+    "topic": "communication_skills"
+  },
+  {
+    "id": "tvs2-489",
+    "word": "public speaking",
+    "definition": "nói trước công chúng",
+    "example": "Public speaking skills are valuable for leaders.",
+    "difficulty": "beginner",
+    "topic": "communication_skills"
+  },
+  {
+    "id": "tvs2-490",
+    "word": "body language",
+    "definition": "ngôn ngữ cơ thể",
+    "example": "Positive body language makes a good impression.",
+    "difficulty": "beginner",
+    "topic": "communication_skills"
+  },
+  {
+    "id": "tvs2-491",
+    "word": "tone of voice",
+    "definition": "giọng điệu",
+    "example": "Your tone of voice affects how your message is received.",
+    "difficulty": "beginner",
+    "topic": "communication_skills"
+  },
+  {
+    "id": "tvs2-492",
+    "word": "communication plan",
+    "definition": "kế hoạch giao tiếp",
+    "example": "A communication plan outlines who receives what information.",
+    "difficulty": "intermediate",
+    "topic": "communication_skills"
+  },
+  {
+    "id": "tvs2-493",
+    "word": "communication medium",
+    "definition": "phương tiện giao tiếp",
+    "example": "Choose the right communication medium for your message.",
+    "difficulty": "intermediate",
+    "topic": "communication_skills"
+  },
+  {
+    "id": "tvs2-494",
+    "word": "communication technology",
+    "definition": "công nghệ giao tiếp",
+    "example": "Communication technology connects remote teams.",
+    "difficulty": "intermediate",
+    "topic": "communication_skills"
+  },
+  {
+    "id": "tvs2-495",
+    "word": "message understanding",
+    "definition": "hiểu thông điệp",
+    "example": "Ensure message understanding by asking clarifying questions.",
+    "difficulty": "intermediate",
+    "topic": "communication_skills"
+  },
+  {
+    "id": "tvs2-496",
+    "word": "message reception",
+    "definition": "tiếp nhận thông điệp",
+    "example": "Positive message reception depends on delivery style.",
+    "difficulty": "advanced",
+    "topic": "communication_skills"
+  },
+  {
+    "id": "tvs2-497",
+    "word": "communication efficiency",
+    "definition": "hiệu quả giao tiếp",
+    "example": "Communication efficiency saves time and reduces errors.",
+    "difficulty": "intermediate",
+    "topic": "communication_skills"
+  },
+  {
+    "id": "tvs2-498",
+    "word": "clear communication",
+    "definition": "giao tiếp rõ ràng",
+    "example": "Clear communication prevents misunderstandings.",
+    "difficulty": "beginner",
+    "topic": "communication_skills"
+  },
+  {
+    "id": "tvs2-499",
+    "word": "effective communication",
+    "definition": "giao tiếp hiệu quả",
+    "example": "Effective communication is the foundation of teamwork.",
+    "difficulty": "beginner",
+    "topic": "communication_skills"
+  },
+  {
+    "id": "tvs2-500",
+    "word": "communication skills",
+    "definition": "kỹ năng giao tiếp",
+    "example": "Communication skills are essential for career success.",
+    "difficulty": "beginner",
+    "topic": "communication_skills"
+  }
+]

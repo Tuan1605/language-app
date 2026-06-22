@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
 import type { ListeningLesson } from '../types';
-import { speak, stopSpeaking, isTTSSupported, langForCategory } from '../utils/tts';
+import { speak, stopSpeaking, isTTSSupported, hasVoiceFor, langForCategory } from '../utils/tts';
 
 interface ListeningViewProps {
   lesson: ListeningLesson;
@@ -15,6 +15,19 @@ export function ListeningView({ lesson, onBack, hideBackButton }: ListeningViewP
   const audioRef = useRef<HTMLAudioElement>(null);
   const ttsTimersRef = useRef<ReturnType<typeof setTimeout>[]>([]);
   const ttsDoneRef = useRef(false);
+
+  // Track whether a voice for this lesson's language is available. On
+  // Firefox/Windows, voices often load late (after the view mounts), so we
+  // listen for onvoiceschanged and re-check so the warning can disappear.
+  const ttsLang = langForCategory(lesson.category);
+  const [voiceReady, setVoiceReady] = useState(() => hasVoiceFor(ttsLang));
+  useEffect(() => {
+    if (!isTTSSupported()) return;
+    const check = () => setVoiceReady(hasVoiceFor(ttsLang));
+    check();
+    window.speechSynthesis.addEventListener('voiceschanged', check);
+    return () => window.speechSynthesis.removeEventListener('voiceschanged', check);
+  }, [ttsLang]);
 
   const clearTTSTimers = useCallback(() => {
     ttsTimersRef.current.forEach(id => clearTimeout(id));
@@ -58,6 +71,11 @@ export function ListeningView({ lesson, onBack, hideBackButton }: ListeningViewP
 
     ttsDoneRef.current = false;
     setIsPlaying(true);
+
+    // Clear any leftover timers from a previous playback so they don't
+    // interfere with the new one (prevents highlight flicker on Play→Pause→Play).
+    clearTTSTimers();
+
     const transcript = lesson.transcript;
 
     // Highlight each segment sequentially based on estimated timing.
@@ -174,7 +192,12 @@ export function ListeningView({ lesson, onBack, hideBackButton }: ListeningViewP
 
       {!lesson.audioUrl && !isTTSSupported() && (
         <p className="text-xs text-[#ff4b4b] font-bold text-center mb-6">
-          ⚠️ Your browser does not support audio playback for this lesson. Please use Chrome or Edge.
+          ⚠️ Trình duyệt không hỗ trợ phát audio cho bài này. Hãy dùng Chrome hoặc Edge.
+        </p>
+      )}
+      {!lesson.audioUrl && isTTSSupported() && !voiceReady && (
+        <p className="text-xs text-[#ff9600] font-bold text-center mb-6">
+          ⏳ Đang tải giọng đọc… nếu không nghe thấy gì sau vài giây, hãy bấm lại nút Play, hoặc dùng Chrome/Edge để có giọng tốt nhất.
         </p>
       )}
 

@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import type { SpeakingLesson } from '../types';
 import { calculateSimilarity } from '../utils/stringSimilarity';
-import { speak, langForCategory } from '../utils/tts';
+import { speak, langForCategory, isSpeechRecognitionSupported } from '../utils/tts';
 
 interface SpeechRecognitionEvent {
   results: { [index: number]: { [index: number]: { transcript: string } } };
@@ -29,6 +29,7 @@ export function SpeakingView({ lesson, onComplete }: SpeakingViewProps) {
   const [transcript, setTranscript] = useState('');
   const [accuracy, setAccuracy] = useState<number | null>(null);
   const [feedback, setFeedback] = useState<'none' | 'success' | 'retry'>('none');
+  const [recognitionSupported] = useState(() => isSpeechRecognitionSupported());
 
   const recognitionRef = useRef<SpeechRecognitionInstance | null>(null);
 
@@ -120,6 +121,26 @@ export function SpeakingView({ lesson, onComplete }: SpeakingViewProps) {
         </p>
       </div>
 
+      {/* Prominent notice + skip when the browser cannot do speech recognition
+          (e.g. Firefox). Users can still hear the example via TTS below. */}
+      {!recognitionSupported && (
+        <div className="w-full p-6 mb-8 rounded-2xl border-2 border-[#ff4b4b] bg-[var(--tint-red)] text-center space-y-3">
+          <p className="text-sm font-black text-[#ff4b4b] leading-relaxed">
+            ⚠️ Trình duyệt này không hỗ trợ nhận diện giọng nói.<br/>
+            Hãy dùng <strong>Chrome hoặc Edge</strong> để luyện Nói (phần mic).
+          </p>
+          <p className="text-xs font-bold text-[var(--text-muted)]">
+            Bạn vẫn có thể nghe câu mẫu bên dưới rồi tự nhẩm, sau đó bấm bỏ qua để tiếp tục.
+          </p>
+          <button
+            onClick={onComplete}
+            className="mt-2 inline-block btn-3d btn-blue px-6 py-2 rounded-xl text-xs font-black"
+          >
+            BỎ QUA BÀI NÀY →
+          </button>
+        </div>
+      )}
+
       {/* Listen Example button — lets user hear the sentence before recording */}
       <button
         onClick={handlePlayExample}
@@ -134,10 +155,12 @@ export function SpeakingView({ lesson, onComplete }: SpeakingViewProps) {
       <div className="relative flex flex-col items-center gap-8 w-full">
         <button
           onClick={startListening}
-          disabled={isListening}
+          disabled={isListening || !recognitionSupported}
           className={`w-28 h-28 rounded-full flex items-center justify-center text-4xl shadow-2xl transition-all relative z-10
-            ${isListening ? 'bg-[#ff4b4b] animate-pulse scale-110 shadow-red-200' : 'btn-3d btn-blue'}`}
+            ${isListening ? 'bg-[#ff4b4b] animate-pulse scale-110 shadow-red-200' : 'btn-3d btn-blue'}
+            ${!recognitionSupported ? 'opacity-40 cursor-not-allowed' : 'active:scale-95'}`}
           aria-label={isListening ? 'Recording in progress' : 'Start recording'}
+          title={recognitionSupported ? undefined : 'Trình duyệt không hỗ trợ mic — dùng Chrome/Edge'}
         >
           {isListening ? '🎙️' : '🎤'}
           {isListening && (
@@ -171,7 +194,7 @@ export function SpeakingView({ lesson, onComplete }: SpeakingViewProps) {
             {feedback === 'retry' && (
               <div className="flex items-center justify-center gap-3 mt-4">
                 <p className="font-black">Keep trying! 🔄</p>
-                <button onClick={startListening} className="text-[10px] font-black uppercase px-3 py-1 rounded-lg bg-[var(--bg-hover)] border-2 border-[var(--border-main)] hover:border-[#ff4b4b] transition-colors">
+                <button onClick={recognitionSupported ? startListening : undefined} disabled={!recognitionSupported} className="text-[10px] font-black uppercase px-3 py-1 rounded-lg bg-[var(--bg-hover)] border-2 border-[var(--border-main)] hover:border-[#ff4b4b] transition-colors disabled:opacity-40 disabled:cursor-not-allowed">
                   RETRY
                 </button>
               </div>
@@ -188,9 +211,9 @@ export function SpeakingView({ lesson, onComplete }: SpeakingViewProps) {
         Skip this exercise →
       </button>
 
-      {!recognitionRef.current && (
+      {!recognitionSupported && (
         <p className="mt-4 text-xs text-[#ff4b4b] font-bold text-center">
-          ⚠️ Your browser does not support voice recognition. Please use Chrome or Edge.
+          ⚠️ Trình duyệt không hỗ trợ nhận diện giọng nói. Hãy dùng Chrome hoặc Edge để luyện Nói.
         </p>
       )}
     </div>

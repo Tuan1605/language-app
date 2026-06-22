@@ -13,13 +13,21 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState<(number | null)[]>(new Array(questions.length).fill(null));
   const [isFinished, setIsFinished] = useState(false);
+  const [isAnswered, setIsAnswered] = useState(false);
+  const [selectedOption, setSelectedOption] = useState<number | null>(null);
   
   // --- TIMER STATE ---
   const [timeLeft, setTimeLeft] = useState(15);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
+  // Reset answer states when moving to a new question
   useEffect(() => {
-    if (isFinished) return;
+    setIsAnswered(false);
+    setSelectedOption(null);
+  }, [currentIndex]);
+
+  useEffect(() => {
+    if (isFinished || isAnswered) return;
     
     setTimeLeft(15);
     if (timerRef.current) clearInterval(timerRef.current);
@@ -34,22 +42,30 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
       });
     }, 1000);
 
-    return () => clearInterval(timerRef.current);
-  }, [currentIndex, isFinished]);
+    return () => {
+      if (timerRef.current) clearInterval(timerRef.current);
+    };
+  }, [currentIndex, isFinished, isAnswered]);
 
   useEffect(() => {
-    if (timeLeft === 0 && !isFinished) {
-      handleNext();
+    if (timeLeft === 0 && !isFinished && !isAnswered) {
+      // Auto-submit as incorrect when time runs out
+      setIsAnswered(true);
+      if (timerRef.current) clearInterval(timerRef.current);
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [timeLeft, isFinished]);
+  }, [timeLeft, isFinished, isAnswered]);
 
   const handleSelect = (optionIndex: number) => {
-    if (selectedAnswers[currentIndex] !== null) return; // Prevent changing answer
+    if (isAnswered) return; // Prevent changing answer after check
+    setSelectedOption(optionIndex);
+  };
+
+  const handleCheck = () => {
+    if (selectedOption === null) return;
     const newAnswers = [...selectedAnswers];
-    newAnswers[currentIndex] = optionIndex;
+    newAnswers[currentIndex] = selectedOption;
     setSelectedAnswers(newAnswers);
-    // Clear timer when answer is selected for better UX
+    setIsAnswered(true);
     if (timerRef.current) clearInterval(timerRef.current);
   };
 
@@ -57,7 +73,9 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
     if (currentIndex < questions.length - 1) {
       setCurrentIndex(currentIndex + 1);
     } else {
-      const finalScore = calculateScore();
+      const finalAnswers = [...selectedAnswers];
+      // In case of any uncommitted answer (like timeout), it stays null.
+      const finalScore = calculateScore(finalAnswers);
       if (hideSummary) {
         onComplete({
           id: crypto.randomUUID(),
@@ -73,9 +91,9 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
     }
   };
 
-  const calculateScore = () => {
+  const calculateScore = (currentAnswersList: (number | null)[]) => {
     let score = 0;
-    selectedAnswers.forEach((ans, idx) => {
+    currentAnswersList.forEach((ans, idx) => {
       if (ans === questions[idx].correctAnswer) {
         score++;
       }
@@ -84,7 +102,7 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
   };
 
   if (isFinished) {
-    const finalScore = calculateScore();
+    const finalScore = calculateScore(selectedAnswers);
     const percent = (finalScore / questions.length) * 100;
     
     return (
@@ -130,7 +148,7 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
   return (
     <div className="bg-[var(--bg-card)] lingo-card max-w-3xl w-full mx-auto relative overflow-hidden">
       {/* Visual Timer Bar */}
-      {!isFinished && (
+      {!isFinished && !isAnswered && (
         <div className="absolute top-0 left-0 right-0 h-1.5 bg-[var(--bg-hover)] overflow-hidden">
           <div 
             className={`h-full transition-all duration-1000 ease-linear ${timeLeft <= 5 ? 'bg-[#ff4b4b] animate-pulse' : 'bg-[#1cb0f6]'}`}
@@ -143,9 +161,14 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
         <div className="flex items-center gap-3">
           <div className={`w-3 h-3 rounded-full ${category === 'toeic' ? 'bg-[#1cb0f6]' : 'bg-[#ff4b4b]'}`}></div>
           <span className="text-[10px] font-black text-[var(--text-muted)] uppercase tracking-[0.2em]">{category} Mock Exam</span>
-          {!isFinished && (
+          {!isFinished && !isAnswered && (
             <span className={`text-[10px] font-black uppercase px-2 py-0.5 rounded-md border-2 ${timeLeft <= 5 ? 'text-[#ff4b4b] border-[#ff4b4b] animate-pulse' : 'text-[#1cb0f6] border-[#1cb0f6]'}`}>
               {timeLeft}s
+            </span>
+          )}
+          {isAnswered && (
+            <span className="text-[10px] font-black uppercase px-2 py-0.5 rounded-md border-2 text-[var(--text-muted)] border-[var(--border-main)] bg-[var(--bg-hover)]">
+              Answered
             </span>
           )}
         </div>
@@ -166,28 +189,68 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
         </h3>
       </div>
 
-      <div className="grid grid-cols-1 gap-3 mb-10">
-        {currentQuestion.options.map((option, idx) => (
-          <button
-            key={idx}
-            onClick={() => handleSelect(idx)}
-            className={`group w-full text-left h-16 px-6 rounded-2xl border-2 transition-all duration-200 flex items-center gap-4 relative overflow-hidden ${
-              selectedAnswers[currentIndex] === idx
-                ? 'border-[#1cb0f6] bg-[var(--tint-blue)] text-[#1cb0f6]'
-                : 'border-[var(--border-main)] hover:border-[var(--text-muted)] bg-[var(--bg-card)] text-[var(--text-main)]'
-            }`}
-          >
-            <div className={`w-10 h-10 rounded-xl flex-shrink-0 flex items-center justify-center font-black text-lg transition-all border-2 ${
-              selectedAnswers[currentIndex] === idx
-              ? 'bg-[#1cb0f6] text-white border-transparent'
-              : 'bg-[var(--bg-card)] text-[var(--text-muted)] border-[var(--border-main)]'
-            }`}>
-              {String.fromCharCode(65 + idx)}
-            </div>
-            <span className="text-lg font-bold">{option}</span>
-          </button>
-        ))}
+      <div className="grid grid-cols-1 gap-3 mb-8">
+        {currentQuestion.options.map((option, idx) => {
+          let btnClass = "";
+          let badgeClass = "";
+          
+          if (isAnswered) {
+            if (idx === currentQuestion.correctAnswer) {
+              btnClass = "border-[#58cc02] bg-[var(--tint-green)] text-[#58cc02] shadow-sm";
+              badgeClass = "bg-[#58cc02] text-white border-transparent";
+            } else if (idx === selectedOption) {
+              btnClass = "border-[#ff4b4b] bg-[var(--tint-red)] text-[#ff4b4b]";
+              badgeClass = "bg-[#ff4b4b] text-white border-transparent";
+            } else {
+              btnClass = "opacity-40 border-[var(--border-main)] bg-[var(--bg-card)] text-[var(--text-main)]";
+              badgeClass = "bg-[var(--bg-card)] text-[var(--text-muted)] border-[var(--border-main)]";
+            }
+          } else {
+            if (selectedOption === idx) {
+              btnClass = "border-[#1cb0f6] bg-[var(--tint-blue)] text-[#1cb0f6]";
+              badgeClass = "bg-[#1cb0f6] text-white border-transparent";
+            } else {
+              btnClass = "border-[var(--border-main)] hover:border-[var(--text-muted)] bg-[var(--bg-card)] text-[var(--text-main)]";
+              badgeClass = "bg-[var(--bg-card)] text-[var(--text-muted)] border-[var(--border-main)]";
+            }
+          }
+
+          return (
+            <button
+              key={idx}
+              onClick={() => handleSelect(idx)}
+              disabled={isAnswered}
+              className={`group w-full text-left h-16 px-6 rounded-2xl border-2 transition-all duration-200 flex items-center gap-4 relative overflow-hidden ${btnClass}`}
+            >
+              <div className={`w-10 h-10 rounded-xl flex-shrink-0 flex items-center justify-center font-black text-lg transition-all border-2 ${badgeClass}`}>
+                {String.fromCharCode(65 + idx)}
+              </div>
+              <span className="text-lg font-bold">{option}</span>
+            </button>
+          );
+        })}
       </div>
+
+      {/* Immediate feedback section */}
+      {isAnswered && (
+        <div className={`p-6 rounded-2xl border-2 mb-8 animate-in slide-in-from-bottom-4 duration-300 ${
+          selectedOption === currentQuestion.correctAnswer 
+            ? 'bg-[var(--tint-green)] border-[#58cc02] text-[var(--text-on-tint)]' 
+            : 'bg-[var(--tint-red)] border-[#ff4b4b] text-[var(--text-on-tint)]'
+        }`}>
+          <h4 className="font-black text-lg mb-2 flex items-center gap-2">
+            {selectedOption === currentQuestion.correctAnswer ? '🎉 Correct!' : '❌ Incorrect'}
+          </h4>
+          <p className="text-sm font-bold opacity-80 mb-2 uppercase tracking-wide">
+            Correct Answer: {String.fromCharCode(65 + currentQuestion.correctAnswer)}. {currentQuestion.options[currentQuestion.correctAnswer]}
+          </p>
+          {currentQuestion.explanation && (
+            <p className="text-sm font-medium leading-relaxed border-t border-current/10 pt-2 mt-2">
+              💡 {currentQuestion.explanation}
+            </p>
+          )}
+        </div>
+      )}
 
       <div className="flex justify-between items-center pt-8 border-t-2 border-[var(--quiz-divider)]">
         <button
@@ -196,17 +259,27 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
         >
           Quit Quest
         </button>
-        <button
-          disabled={selectedAnswers[currentIndex] === null}
-          onClick={handleNext}
-          className={`px-10 h-14 rounded-2xl font-black transition-all ${
-            selectedAnswers[currentIndex] !== null
-              ? 'btn-3d btn-green'
-              : 'bg-[var(--gray-path)] cursor-not-allowed text-[var(--text-muted)] border-b-4 border-[var(--gray-path-dark)]'
-          }`}
-        >
-          {currentIndex === questions.length - 1 ? 'Finish Quest' : 'Next Question'}
-        </button>
+        
+        {!isAnswered ? (
+          <button
+            disabled={selectedOption === null}
+            onClick={handleCheck}
+            className={`px-10 h-14 rounded-2xl font-black transition-all ${
+              selectedOption !== null
+                ? 'btn-3d btn-blue'
+                : 'bg-[var(--gray-path)] cursor-not-allowed text-[var(--text-muted)] border-b-4 border-[var(--gray-path-dark)]'
+            }`}
+          >
+            Check Answer
+          </button>
+        ) : (
+          <button
+            onClick={handleNext}
+            className="px-10 h-14 rounded-2xl font-black transition-all btn-3d btn-green"
+          >
+            {currentIndex === questions.length - 1 ? 'Finish Quest' : 'Continue'}
+          </button>
+        )}
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
-import { useState, useRef } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import type { DictationLesson } from '../types';
-import { speak, langForCategory } from '../utils/tts';
+import { speak, langForCategory, isTTSSupported, hasVoiceFor } from '../utils/tts';
 import { calculateSimilarity } from '../utils/stringSimilarity';
 
 interface DictationViewProps {
@@ -14,6 +14,18 @@ export function DictationView({ lesson, onComplete }: DictationViewProps) {
   const [feedback, setFeedback] = useState<'none' | 'success' | 'retry'>('none');
   const [accuracy, setAccuracy] = useState<number | null>(null);
   const audioRef = useRef<HTMLAudioElement>(null);
+
+  // Same voice-readiness tracking as ListeningView: on Firefox/Windows the
+  // voices list can arrive after mount, so we re-check on onvoiceschanged.
+  const ttsLang = langForCategory(lesson.category);
+  const [voiceReady, setVoiceReady] = useState(() => hasVoiceFor(ttsLang));
+  useEffect(() => {
+    if (!isTTSSupported()) return;
+    const check = () => setVoiceReady(hasVoiceFor(ttsLang));
+    check();
+    window.speechSynthesis.addEventListener('voiceschanged', check);
+    return () => window.speechSynthesis.removeEventListener('voiceschanged', check);
+  }, [ttsLang]);
 
   const playAudio = () => {
     if (lesson.audioUrl && audioRef.current) {
@@ -32,7 +44,8 @@ export function DictationView({ lesson, onComplete }: DictationViewProps) {
     if (acc >= 85) {
       setFeedback('success');
       setIsFinished(true);
-      onComplete(true);
+      // Don't call onComplete here — let handleContinue be the single exit
+      // point so we never double-fire nextTask().
     } else {
       setFeedback('retry');
     }
@@ -81,6 +94,17 @@ export function DictationView({ lesson, onComplete }: DictationViewProps) {
             🔊
           </button>
         </div>
+
+        {!lesson.audioUrl && !isTTSSupported() && (
+          <p className="text-xs text-[#ff4b4b] font-bold text-center">
+            ⚠️ Trình duyệt không hỗ trợ phát audio. Hãy dùng Chrome hoặc Edge.
+          </p>
+        )}
+        {!lesson.audioUrl && isTTSSupported() && !voiceReady && (
+          <p className="text-xs text-[#ff9600] font-bold text-center">
+            ⏳ Đang tải giọng đọc… nếu không nghe thấy gì, hãy bấm lại nút loa, hoặc dùng Chrome/Edge.
+          </p>
+        )}
 
         <textarea
           value={userInput}

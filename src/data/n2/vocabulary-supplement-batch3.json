@@ -1,0 +1,9002 @@
+[
+  {
+    "id": "nvs3-001",
+    "word": "感動",
+    "reading": "かんどう",
+    "definition": "cảm động",
+    "example": "この映画に感動した。",
+    "difficulty": "advanced",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-002",
+    "word": "感慨",
+    "reading": "がんかい",
+    "definition": "cảm khái",
+    "example": "感慨深い思いである。",
+    "difficulty": "advanced",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-003",
+    "word": "興奮",
+    "reading": "こうふん",
+    "definition": "phấn khích",
+    "example": "彼は興奮して声を上げた。",
+    "difficulty": "advanced",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-004",
+    "word": "歓喜",
+    "reading": "かんき",
+    "definition": "vui mừng khôn xiết",
+    "example": "勝利の歓喜に包まれた。",
+    "difficulty": "advanced",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-005",
+    "word": "安堵",
+    "reading": "あんど",
+    "definition": "an tâm nhẹ nhõm",
+    "example": "安堵のため息をついた。",
+    "difficulty": "advanced",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-006",
+    "word": "憤り",
+    "reading": "いきどおり",
+    "definition": "phẫn nộ",
+    "example": "不正に憤りを感じる。",
+    "difficulty": "advanced",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-007",
+    "word": "苛立ち",
+    "reading": "いらだち",
+    "definition": "sự khó chịu",
+    "example": "待つのが苛立つ。",
+    "difficulty": "advanced",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-008",
+    "word": "落胆",
+    "reading": "らくたん",
+    "definition": "thất vọng",
+    "example": "結果に落胆した。",
+    "difficulty": "advanced",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-009",
+    "word": "悲哀",
+    "reading": "ひあい",
+    "definition": "nỗi bi ai",
+    "example": "人生の悲哀を感じる。",
+    "difficulty": "advanced",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-010",
+    "word": "懐かしさ",
+    "reading": "なつかしさ",
+    "definition": "sự nhớ nhung",
+    "example": "故郷の懐かしさに胸がいっぱいになった。",
+    "difficulty": "advanced",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-011",
+    "word": "切なさ",
+    "reading": "せつなさ",
+    "definition": "sự thổn thức",
+    "example": "切なさが込み上げてくる。",
+    "difficulty": "advanced",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-012",
+    "word": "虚無感",
+    "reading": "きょむかん",
+    "definition": "cảm giác hư vô",
+    "example": "虚無感に苛まれる。",
+    "difficulty": "advanced",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-013",
+    "word": "焦り",
+    "reading": "あせり",
+    "definition": "sự nóng ruột",
+    "example": "焦りを感じ始める。",
+    "difficulty": "advanced",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-014",
+    "word": "戸惑い",
+    "reading": "とまどい",
+    "definition": "sự bối rối",
+    "example": "突然のことに戸惑った。",
+    "difficulty": "advanced",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-015",
+    "word": "後悔",
+    "reading": "こうかい",
+    "definition": "hối hận",
+    "example": "過去を後悔している。",
+    "difficulty": "advanced",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-016",
+    "word": "恐怖",
+    "reading": "きょうふ",
+    "definition": "nỗi sợ hãi",
+    "example": "恐怖に支配された。",
+    "difficulty": "intermediate",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-017",
+    "word": "嫉妬",
+    "reading": "しっと",
+    "definition": "ghen tị",
+    "example": "彼を嫉妬する気持ちがある。",
+    "difficulty": "intermediate",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-018",
+    "word": "劣等感",
+    "reading": "れっとうかん",
+    "definition": "cảm giác tự ti",
+    "example": "劣等感にかられる。",
+    "difficulty": "intermediate",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-019",
+    "word": "絶望",
+    "reading": "ぜつぼう",
+    "definition": "tuyệt vọng",
+    "example": "絶望の淵に立たされた。",
+    "difficulty": "intermediate",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-020",
+    "word": "感謝",
+    "reading": "かんしゃ",
+    "definition": "biết ơn",
+    "example": "心から感謝している。",
+    "difficulty": "intermediate",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-021",
+    "word": "悔しさ",
+    "reading": "くやしさ",
+    "definition": "sự cay đắng",
+    "example": "悔しさを噛みしめる。",
+    "difficulty": "intermediate",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-022",
+    "word": "嬉しさ",
+    "reading": "うれしさ",
+    "definition": "sự vui mừng",
+    "example": "嬉しさのあまり涙が出た。",
+    "difficulty": "intermediate",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-023",
+    "word": "悲しみ",
+    "reading": "かなしみ",
+    "definition": "nỗi buồn",
+    "example": "悲しみを乗り越える。",
+    "difficulty": "intermediate",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-024",
+    "word": "喜び",
+    "reading": "よろこび",
+    "definition": "niềm vui",
+    "example": "成功の喜びを分かち合う。",
+    "difficulty": "intermediate",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-025",
+    "word": "怒り",
+    "reading": "おこり",
+    "definition": "cơn giận",
+    "example": "怒りを抑えることが大切だ。",
+    "difficulty": "intermediate",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-026",
+    "word": "恐れ",
+    "reading": "おそれ",
+    "definition": "nỗi sợ",
+    "example": "失敗への恐れがある。",
+    "difficulty": "intermediate",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-027",
+    "word": "ため息",
+    "reading": "ためいき",
+    "definition": "tiếng thở dài",
+    "example": "ため息をつきながら歩いた。",
+    "difficulty": "intermediate",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-028",
+    "word": "直感",
+    "reading": "ちょっかん",
+    "definition": "trực giác",
+    "example": "直感を信じるべきだ。",
+    "difficulty": "intermediate",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-029",
+    "word": "共感",
+    "reading": "きょうかん",
+    "definition": "sự đồng cảm",
+    "example": "彼の意見に共感した。",
+    "difficulty": "intermediate",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-030",
+    "word": "同情",
+    "reading": "どうじょう",
+    "definition": "sự thông cảm",
+    "example": "彼に同情する。",
+    "difficulty": "intermediate",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-031",
+    "word": "同情心",
+    "reading": "どうじょうしん",
+    "definition": "lòng trắc ẩn",
+    "example": "同情心が豊かだ。",
+    "difficulty": "intermediate",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-032",
+    "word": "良心",
+    "reading": "りょうしん",
+    "definition": "lương tâm",
+    "example": "良心に従って行動する。",
+    "difficulty": "intermediate",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-033",
+    "word": "情熱",
+    "reading": "じょうねつ",
+    "definition": "nhiệt huyết",
+    "example": "仕事への情熱がすごい。",
+    "difficulty": "intermediate",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-034",
+    "word": "執着",
+    "reading": "しゅうちゃく",
+    "definition": "sự bám chấp",
+    "example": "執着しすぎるのは良くない。",
+    "difficulty": "intermediate",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-035",
+    "word": "欲望",
+    "reading": "よくぼう",
+    "definition": "khao khát",
+    "example": "欲望に忠実すぎる。",
+    "difficulty": "beginner",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-036",
+    "word": "恩義",
+    "reading": "おんぎ",
+    "definition": "ân nghĩa",
+    "example": "恩義を感じている。",
+    "difficulty": "beginner",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-037",
+    "word": "義理",
+    "reading": "ぎり",
+    "definition": "nghĩa vụ",
+    "example": "義理を果たさなければならない。",
+    "difficulty": "beginner",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-038",
+    "word": "照れ",
+    "reading": "てれ",
+    "definition": "sự xấu hổ",
+    "example": "照れながら話した。",
+    "difficulty": "beginner",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-039",
+    "word": "照れくさい",
+    "reading": "てれくさい",
+    "definition": "xấu hổ ngại ngùng",
+    "example": "照れくさいので目を逸らした。",
+    "difficulty": "beginner",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-040",
+    "word": "情けない",
+    "reading": "なさけない",
+    "definition": "thất bại vô dụng",
+    "example": "情けない結果になってしまった。",
+    "difficulty": "beginner",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-041",
+    "word": "悔やむ",
+    "reading": "くやむ",
+    "definition": "hối tiếc",
+    "example": "過去の過ちを悔やむ。",
+    "difficulty": "beginner",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-042",
+    "word": "嘆く",
+    "reading": "なげく",
+    "definition": "than khóc tiếc nuối",
+    "example": "運命に嘆く。",
+    "difficulty": "beginner",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-043",
+    "word": "憤る",
+    "reading": "いきどおる",
+    "definition": "phẫn nộ",
+    "example": "不正に憤る。",
+    "difficulty": "beginner",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-044",
+    "word": "悲嘆",
+    "reading": "ひたん",
+    "definition": "nỗi bi sầu",
+    "example": "悲嘆に暮れる。",
+    "difficulty": "beginner",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-045",
+    "word": "苦悩",
+    "reading": "くのう",
+    "definition": "nỗi khổ sở",
+    "example": "苦悩を抱える。",
+    "difficulty": "beginner",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-046",
+    "word": "歎息",
+    "reading": "たんそく",
+    "definition": "tiếng thở dài",
+    "example": "歎息を漏らす。",
+    "difficulty": "beginner",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-047",
+    "word": "鼓舞",
+    "reading": "こぶ",
+    "definition": "khích lệ",
+    "example": "士気を鼓舞する。",
+    "difficulty": "beginner",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-048",
+    "word": "畏敬",
+    "reading": "いけi",
+    "definition": "sự kính畏",
+    "example": "畏敬の念を抱く。",
+    "difficulty": "beginner",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-049",
+    "word": "懐疑",
+    "reading": "かいぎ",
+    "definition": "hoài nghi",
+    "example": "懐疑的な態度。",
+    "difficulty": "beginner",
+    "topic": "emotions_advanced"
+  },
+  {
+    "id": "nvs3-050",
+    "word": "性格",
+    "reading": "せいかく",
+    "definition": "tính cách",
+    "example": "明るい性格の人だ。",
+    "difficulty": "advanced",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-051",
+    "word": "気性",
+    "reading": "きしょう",
+    "definition": "tính khí",
+    "example": "気性が激しい。",
+    "difficulty": "advanced",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-052",
+    "word": "気質",
+    "reading": "きしつ",
+    "definition": "phẩm chất",
+    "example": "芸術家気質がある。",
+    "difficulty": "advanced",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-053",
+    "word": "根気",
+    "reading": "こんき",
+    "definition": "kiên nhẫn",
+    "example": "根気が強い。",
+    "difficulty": "advanced",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-054",
+    "word": "忍耐",
+    "reading": "にんたい",
+    "definition": "sự kiên nhẫn",
+    "example": "忍耐力が強い。",
+    "difficulty": "advanced",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-055",
+    "word": "慎重",
+    "reading": "しんちょう",
+    "definition": "thận trọng",
+    "example": "慎重に判断する。",
+    "difficulty": "advanced",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-056",
+    "word": "大胆",
+    "reading": "だいたん",
+    "definition": "táo bạo",
+    "example": "大胆な計画を立てる。",
+    "difficulty": "advanced",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-057",
+    "word": "几帳面",
+    "reading": "きちょうめん",
+    "definition": "chu đáo cẩn thận",
+    "example": "几帳面な人だ。",
+    "difficulty": "advanced",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-058",
+    "word": "誠実",
+    "reading": "せいじつ",
+    "definition": "thành thật",
+    "example": "誠実な人柄だ。",
+    "difficulty": "advanced",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-059",
+    "word": "素直",
+    "reading": "すなお",
+    "definition": "ngoan hiền thẳng thắn",
+    "example": "素直な子供だ。",
+    "difficulty": "advanced",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-060",
+    "word": "謙虚",
+    "reading": "けんきょ",
+    "definition": "khiêm tốn",
+    "example": "謙虚な態度を保つ。",
+    "difficulty": "advanced",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-061",
+    "word": "傲慢",
+    "reading": "ごうまん",
+    "definition": "kiêu ngạo",
+    "example": "傲慢な態度は取らない。",
+    "difficulty": "advanced",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-062",
+    "word": "寛容",
+    "reading": "かんよう",
+    "definition": "khoan dung",
+    "example": "寛容な心を持つ。",
+    "difficulty": "advanced",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-063",
+    "word": "優しい",
+    "reading": "やさしい",
+    "definition": "tốt bụng dịu dàng",
+    "example": "彼女は優しい人だ。",
+    "difficulty": "advanced",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-064",
+    "word": "厳しい",
+    "reading": "きびしい",
+    "definition": "nghiêm khắc",
+    "example": "厳しい先生だ。",
+    "difficulty": "intermediate",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-065",
+    "word": "真面目",
+    "reading": "まじめ",
+    "definition": "nghiêm túc",
+    "example": "真面目に勉強する。",
+    "difficulty": "intermediate",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-066",
+    "word": "真剣",
+    "reading": "しんけん",
+    "definition": "nghiêm túc tập trung",
+    "example": "真剣に取り組む。",
+    "difficulty": "intermediate",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-067",
+    "word": "臆病",
+    "reading": "おくびょう",
+    "definition": "nhút nhát",
+    "example": "臆病な性格を克服する。",
+    "difficulty": "intermediate",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-068",
+    "word": "積極的",
+    "reading": "せっきょくてき",
+    "definition": "chủ động",
+    "example": "積極的に意見を述べる。",
+    "difficulty": "intermediate",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-069",
+    "word": "消極的",
+    "reading": "しょうきょくてき",
+    "definition": "thụ động",
+    "example": "消極的な態度は変えたい。",
+    "difficulty": "intermediate",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-070",
+    "word": "控えめ",
+    "reading": "ひかえめ",
+    "definition": "khiêm tốn dè dặt",
+    "example": "控えめに振る舞う。",
+    "difficulty": "intermediate",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-071",
+    "word": "我慢強い",
+    "reading": "がまんづよい",
+    "definition": "kiên trì",
+    "example": "我慢強い性格だ。",
+    "difficulty": "intermediate",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-072",
+    "word": "短気",
+    "reading": "たんき",
+    "definition": "nóng tính",
+    "example": "短気なところがある。",
+    "difficulty": "intermediate",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-073",
+    "word": "粘り強い",
+    "reading": "ねばりづよい",
+    "definition": "bền bỉ",
+    "example": "粘り強い姿勢で挑む。",
+    "difficulty": "intermediate",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-074",
+    "word": "柔軟",
+    "reading": "じゅうなん",
+    "definition": "linh hoạt",
+    "example": "柔軟な発想をする。",
+    "difficulty": "intermediate",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-075",
+    "word": "頑固",
+    "reading": "がんこ",
+    "definition": "cứng đầu",
+    "example": "頑固な父だ。",
+    "difficulty": "intermediate",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-076",
+    "word": "優柔不断",
+    "reading": "ゆうじゅうふだん",
+    "definition": "do dự thiếu quyết đoán",
+    "example": "優柔不断な性格を直したい。",
+    "difficulty": "intermediate",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-077",
+    "word": "不器用",
+    "reading": "ぶきương",
+    "definition": "vụng về",
+    "example": "不器用な手つきで包む。",
+    "difficulty": "intermediate",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-078",
+    "word": "器用",
+    "reading": "きよう",
+    "definition": "khéo tay",
+    "example": "器用な手仕事をする。",
+    "difficulty": "intermediate",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-079",
+    "word": "感受性",
+    "reading": "かんじゅせい",
+    "definition": "nhạy cảm",
+    "example": "感受性が豊かだ。",
+    "difficulty": "intermediate",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-080",
+    "word": "自尊心",
+    "reading": "じそんしん",
+    "definition": "lòng tự trọng",
+    "example": "自尊心が高い。",
+    "difficulty": "intermediate",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-081",
+    "word": "内気",
+    "reading": "うちき",
+    "definition": "rụt rè nhút nhát",
+    "example": "内気な性格だった。",
+    "difficulty": "intermediate",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-082",
+    "word": "社交的",
+    "reading": "しゃこうてき",
+    "definition": "hòa đồng",
+    "example": "社交的な人だ。",
+    "difficulty": "intermediate",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-083",
+    "word": "利己的",
+    "reading": "りこてき",
+    "definition": "ích kỷ",
+    "example": "利己的な行動は慎むべきだ。",
+    "difficulty": "beginner",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-084",
+    "word": "利他的",
+    "reading": "りたてき",
+    "definition": "vị tha",
+    "example": "利他的な精神を持つ。",
+    "difficulty": "beginner",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-085",
+    "word": "純粋",
+    "reading": "じゅんすい",
+    "definition": "ngây thơ thuần khiết",
+    "example": "純粋な心を持っている。",
+    "difficulty": "beginner",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-086",
+    "word": "正直",
+    "reading": "しょうじき",
+    "definition": "trung thực thật thà",
+    "example": "正直に答える。",
+    "difficulty": "beginner",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-087",
+    "word": "人間力",
+    "reading": "にんげんりょく",
+    "definition": "năng lực con người",
+    "example": "人間力を高める。",
+    "difficulty": "beginner",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-088",
+    "word": "小心者",
+    "reading": "しょうしんもの",
+    "definition": "người nhút nhát",
+    "example": "小心者の彼が勇気を出した。",
+    "difficulty": "beginner",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-089",
+    "word": "大胆不敵",
+    "reading": "だいたんてき",
+    "definition": "táo bạo không sợ hãi",
+    "example": "大胆不敵な計画を実行した。",
+    "difficulty": "beginner",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-090",
+    "word": "小悪党",
+    "reading": "こあくとう",
+    "definition": "tiểu quỷ",
+    "example": "小悪党のような笑み。",
+    "difficulty": "beginner",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-091",
+    "word": "天真爛漫",
+    "reading": "てんしんらんまん",
+    "definition": "ngây thơ vô tư",
+    "example": "天真爛漫な子供たち。",
+    "difficulty": "beginner",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-092",
+    "word": "快活",
+    "reading": "かいかつ",
+    "definition": "hoạt bát",
+    "example": "快活な女の子だ。",
+    "difficulty": "beginner",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-093",
+    "word": "朗らか",
+    "reading": "ほがらか",
+    "definition": "vui vẻ lạc quan",
+    "example": "朗らかな性格だ。",
+    "difficulty": "beginner",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-094",
+    "word": "穏やか",
+    "reading": "おだやか",
+    "definition": "hiền hòa",
+    "example": "穏やかな人だ。",
+    "difficulty": "beginner",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-095",
+    "word": "剛毅",
+    "reading": "ごうき",
+    "definition": "cương nghị",
+    "example": "剛毅な姿勢。",
+    "difficulty": "beginner",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-096",
+    "word": "温厚",
+    "reading": "おんこう",
+    "definition": "ôn hòa",
+    "example": "温厚な人柄。",
+    "difficulty": "beginner",
+    "topic": "personality"
+  },
+  {
+    "id": "nvs3-097",
+    "word": "手首",
+    "reading": "てくび",
+    "definition": "cổ tay",
+    "example": "手首を痛めた。",
+    "difficulty": "advanced",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-098",
+    "word": "肘",
+    "reading": "ひじ",
+    "definition": "khuỷu tay",
+    "example": "肘をぶつけた。",
+    "difficulty": "advanced",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-099",
+    "word": "膝",
+    "reading": "ひざ",
+    "definition": "đầu gối",
+    "example": "膝に水が溜まった。",
+    "difficulty": "advanced",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-100",
+    "word": "ふくらはぎ",
+    "reading": "ふくらはぎ",
+    "definition": "bắp chân",
+    "example": "ふくらはぎがつりそうになった。",
+    "difficulty": "advanced",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-101",
+    "word": "くるぶし",
+    "reading": "くるぶし",
+    "definition": "mắt cá chân",
+    "example": "くるぶしをねんざした。",
+    "difficulty": "advanced",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-102",
+    "word": "つま先",
+    "reading": "つまさき",
+    "definition": "đầu ngón chân",
+    "example": "つま先まで冷たい。",
+    "difficulty": "advanced",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-103",
+    "word": "爪",
+    "reading": "つめ",
+    "definition": "móng tay",
+    "example": "爪を切る。",
+    "difficulty": "advanced",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-104",
+    "word": "親指",
+    "reading": "おやゆび",
+    "definition": "ngón cái",
+    "example": "親指を立てた。",
+    "difficulty": "advanced",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-105",
+    "word": "人差し指",
+    "reading": "ひとよしゆび",
+    "definition": "ngón trỏ",
+    "example": "人差し指で指し示す。",
+    "difficulty": "advanced",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-106",
+    "word": "中指",
+    "reading": "なかゆび",
+    "definition": "ngón giữa",
+    "example": "中指が一番長い。",
+    "difficulty": "advanced",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-107",
+    "word": "薬指",
+    "reading": "くすりゆび",
+    "definition": "ngón áp út",
+    "example": "薬指に指輪をはめた。",
+    "difficulty": "advanced",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-108",
+    "word": "小指",
+    "reading": "こゆび",
+    "definition": "ngón út",
+    "example": "小指を引っ張る。",
+    "difficulty": "advanced",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-109",
+    "word": "喉仏",
+    "reading": "のどぼと",
+    "definition": "sụn thanh quản",
+    "example": "喉仏が動いた。",
+    "difficulty": "advanced",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-110",
+    "word": "こめかみ",
+    "reading": "こめかみ",
+    "definition": "thái dương",
+    "example": "こめかみが痛い。",
+    "difficulty": "advanced",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-111",
+    "word": "まぶた",
+    "reading": "まぶた",
+    "definition": "mi mắt",
+    "example": "まぶたが重い。",
+    "difficulty": "advanced",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-112",
+    "word": "まつ毛",
+    "reading": "まつげ",
+    "definition": "lông mi",
+    "example": "まつ毛が長い。",
+    "difficulty": "intermediate",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-113",
+    "word": "まゆげ",
+    "reading": "まゆげ",
+    "definition": "lông mày",
+    "example": "まゆげを整える。",
+    "difficulty": "intermediate",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-114",
+    "word": "背骨",
+    "reading": "せぼね",
+    "definition": "xương sống",
+    "example": "背骨が曲がった。",
+    "difficulty": "intermediate",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-115",
+    "word": "足の裏",
+    "reading": "あしのうら",
+    "definition": "bàn chân",
+    "example": "足の裏が痒い。",
+    "difficulty": "intermediate",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-116",
+    "word": "手のひら",
+    "reading": "てのひら",
+    "definition": "lòng bàn tay",
+    "example": "手のひらが汗ばむ。",
+    "difficulty": "intermediate",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-117",
+    "word": "手の甲",
+    "reading": "てのこう",
+    "definition": "mặt lưng bàn tay",
+    "example": "手の甲に日焼けをした。",
+    "difficulty": "intermediate",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-118",
+    "word": "顎",
+    "reading": "あご",
+    "definition": "cằm",
+    "example": "顎を出している。",
+    "difficulty": "intermediate",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-119",
+    "word": "頬",
+    "reading": "ほお",
+    "definition": "má",
+    "example": "頬が赤い。",
+    "difficulty": "intermediate",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-120",
+    "word": "額",
+    "reading": "ひたい",
+    "definition": "trán",
+    "example": "額に汗が伝った。",
+    "difficulty": "intermediate",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-121",
+    "word": "頭髪",
+    "reading": "とうはつ",
+    "definition": "tóc",
+    "example": "頭髪が薄い。",
+    "difficulty": "intermediate",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-122",
+    "word": "体毛",
+    "reading": "たいもう",
+    "definition": "lông trên cơ thể",
+    "example": "体毛が濃い。",
+    "difficulty": "intermediate",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-123",
+    "word": "脈",
+    "reading": "みゃく",
+    "definition": "mạch đập",
+    "example": "脈が速い。",
+    "difficulty": "intermediate",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-124",
+    "word": "血管",
+    "reading": "けっかん",
+    "definition": "mạch máu",
+    "example": "血管が浮き出ている。",
+    "difficulty": "intermediate",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-125",
+    "word": "神経",
+    "reading": "しんけい",
+    "definition": "dây thần kinh",
+    "example": "神経が疲れました。",
+    "difficulty": "intermediate",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-126",
+    "word": "内臓",
+    "reading": "ないぞう",
+    "definition": "nội tạng",
+    "example": "内臓の健康を保つ。",
+    "difficulty": "intermediate",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-127",
+    "word": "肺",
+    "reading": "はい",
+    "definition": "phổi",
+    "example": "肺が弱い。",
+    "difficulty": "intermediate",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-128",
+    "word": "肝臓",
+    "reading": "かんぞう",
+    "definition": "gan",
+    "example": "肝臓に悪い。",
+    "difficulty": "intermediate",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-129",
+    "word": "腎臓",
+    "reading": "じんぞう",
+    "definition": "thận",
+    "example": "腎臓の病気を患う。",
+    "difficulty": "intermediate",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-130",
+    "word": "膵臓",
+    "reading": "すいぞう",
+    "definition": "tụy",
+    "example": "膵臓がんに罹った。",
+    "difficulty": "intermediate",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-131",
+    "word": "胆嚢",
+    "reading": "たんのう",
+    "definition": "túi mật",
+    "example": "胆嚢に石がある。",
+    "difficulty": "intermediate",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-132",
+    "word": "消化器",
+    "reading": "しょうかき",
+    "definition": "hệ tiêu hóa",
+    "example": "消化器に優しい食品。",
+    "difficulty": "intermediate",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-133",
+    "word": "呼吸器",
+    "reading": "こきゅうき",
+    "definition": "hệ hô hấp",
+    "example": "呼吸器に障害がある。",
+    "difficulty": "beginner",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-134",
+    "word": "頭頂部",
+    "reading": "とうちょうぶ",
+    "definition": "đỉnh đầu",
+    "example": "頭頂部が薄くなった。",
+    "difficulty": "beginner",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-135",
+    "word": "眼球",
+    "reading": "がんきゅう",
+    "definition": "cầu mắt",
+    "example": "眼球が疲れた。",
+    "difficulty": "beginner",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-136",
+    "word": "鼓膜",
+    "reading": "こまく",
+    "definition": "màng nhĩ",
+    "example": "鼓膜が破れた。",
+    "difficulty": "beginner",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-137",
+    "word": "肩甲骨",
+    "reading": "けんこうこつ",
+    "definition": "xương bả vai",
+    "example": "肩甲骨が痛い。",
+    "difficulty": "beginner",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-138",
+    "word": "鎖骨",
+    "reading": "さこつ",
+    "definition": "xương đòn",
+    "example": "鎖骨が見える。",
+    "difficulty": "beginner",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-139",
+    "word": "指先",
+    "reading": "ゆびさき",
+    "definition": "đầu ngón tay",
+    "example": "指先が冷たい。",
+    "difficulty": "beginner",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-140",
+    "word": "甲",
+    "reading": "こう",
+    "definition": "mu bàn tay",
+    "example": "甲に日焼けした。",
+    "difficulty": "beginner",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-141",
+    "word": "太もも",
+    "reading": "ふともモ",
+    "definition": "đùi",
+    "example": "太ももが太い。",
+    "difficulty": "beginner",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-142",
+    "word": "二の腕",
+    "reading": "にのうで",
+    "definition": "bắp tay trên",
+    "example": "二の腕が細い。",
+    "difficulty": "beginner",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-143",
+    "word": "三の腕",
+    "reading": "さんのうで",
+    "definition": "bắp tay dưới",
+    "example": "三の腕が気になる。",
+    "difficulty": "beginner",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-144",
+    "word": "首筋",
+    "reading": "くびすじ",
+    "definition": "cổ",
+    "example": "首筋に汗が流れた。",
+    "difficulty": "beginner",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-145",
+    "word": "肩",
+    "reading": "かた",
+    "definition": "vai",
+    "example": "肩がこる。",
+    "difficulty": "beginner",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-146",
+    "word": "脇",
+    "reading": "わき",
+    "definition": "nách",
+    "example": "脇を締めて泳ぐ。",
+    "difficulty": "beginner",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-147",
+    "word": "脇腹",
+    "reading": "わきはら",
+    "definition": "hông",
+    "example": "脇腹を突かれた。",
+    "difficulty": "beginner",
+    "topic": "body_parts"
+  },
+  {
+    "id": "nvs3-148",
+    "word": "上着",
+    "reading": "うわぎ",
+    "definition": "áo khoác ngoài",
+    "example": "上着を羽織る。",
+    "difficulty": "advanced",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-149",
+    "word": "下着",
+    "reading": "したぎ",
+    "definition": "đồ lót",
+    "example": "下着を着替える。",
+    "difficulty": "advanced",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-150",
+    "word": "袖",
+    "reading": "そで",
+    "definition": "ống tay áo",
+    "example": "袖が長い。",
+    "difficulty": "advanced",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-151",
+    "word": "襟",
+    "reading": "えり",
+    "definition": "cổ áo",
+    "example": "襟を立てる。",
+    "difficulty": "advanced",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-152",
+    "word": "裾",
+    "reading": "すそ",
+    "definition": "vạt áo",
+    "example": "裾をたくし上げる。",
+    "difficulty": "advanced",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-153",
+    "word": "革靴",
+    "reading": "かわぐつ",
+    "definition": "giày da",
+    "example": "革靴を磨く。",
+    "difficulty": "advanced",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-154",
+    "word": "マフラー",
+    "reading": "マフラー",
+    "definition": "khăn choàng cổ",
+    "example": "マフラーを巻く。",
+    "difficulty": "advanced",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-155",
+    "word": "手袋",
+    "reading": "てぶくろ",
+    "definition": "găng tay",
+    "example": "手袋をはめる。",
+    "difficulty": "advanced",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-156",
+    "word": "帽子",
+    "reading": "ぼうし",
+    "definition": "mũ",
+    "example": "帽子をかぶる。",
+    "difficulty": "advanced",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-157",
+    "word": "コート",
+    "reading": "コート",
+    "definition": "áo choàng",
+    "example": "コートを着る。",
+    "difficulty": "advanced",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-158",
+    "word": "ジャケット",
+    "reading": "ジャケット",
+    "definition": "áo jacket",
+    "example": "ジャケットを脱ぐ。",
+    "difficulty": "advanced",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-159",
+    "word": "セーター",
+    "reading": "セーター",
+    "definition": "áo len",
+    "example": "セーターを編む。",
+    "difficulty": "advanced",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-160",
+    "word": "シャツ",
+    "reading": "シャツ",
+    "definition": "áo sơ mi",
+    "example": "シャツを洗濯する。",
+    "difficulty": "advanced",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-161",
+    "word": "ズボン",
+    "reading": "ズボン",
+    "definition": "quần",
+    "example": "ズボンに汚れた。",
+    "difficulty": "advanced",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-162",
+    "word": "スカート",
+    "reading": "スカート",
+    "definition": "váy",
+    "example": "スカートを履く。",
+    "difficulty": "advanced",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-163",
+    "word": "ワンピース",
+    "reading": "ワンピース",
+    "definition": "váy liền thân",
+    "example": "ワンピースを買った。",
+    "difficulty": "intermediate",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-164",
+    "word": "パジャマ",
+    "reading": "パジャマ",
+    "definition": "đồ ngủ",
+    "example": "パジャマに着替える。",
+    "difficulty": "intermediate",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-165",
+    "word": "浴衣",
+    "reading": "ゆかた",
+    "definition": "yukata",
+    "example": "浴衣を着て花火を見る。",
+    "difficulty": "intermediate",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-166",
+    "word": "和服",
+    "reading": "わふく",
+    "definition": "trang phục truyền thống Nhật",
+    "example": "和服を着る。",
+    "difficulty": "intermediate",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-167",
+    "word": "帯",
+    "reading": "おび",
+    "definition": "đai thắt lưng",
+    "example": "帯を結ぶ。",
+    "difficulty": "intermediate",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-168",
+    "word": "長袖",
+    "reading": "ながそで",
+    "definition": "tay dài",
+    "example": "長袖の服を選ぶ。",
+    "difficulty": "intermediate",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-169",
+    "word": "半袖",
+    "reading": "はんそで",
+    "definition": "tay ngắn",
+    "example": "半袖のシャツを着る。",
+    "difficulty": "intermediate",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-170",
+    "word": "フード",
+    "reading": "フード",
+    "definition": "mũ trùm",
+    "example": "フードを被る。",
+    "difficulty": "intermediate",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-171",
+    "word": "ポケット",
+    "reading": "ポケット",
+    "definition": "túi áo",
+    "example": "ポケットに手を入れる。",
+    "difficulty": "intermediate",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-172",
+    "word": "ボタン",
+    "reading": "ボタン",
+    "definition": "nút áo",
+    "example": "ボタンを留める。",
+    "difficulty": "intermediate",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-173",
+    "word": "ファスナー",
+    "reading": "ファスナー",
+    "definition": "khóa kéo",
+    "example": "ファスナーが壊れた。",
+    "difficulty": "intermediate",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-174",
+    "word": "布地",
+    "reading": "ぬのじ",
+    "definition": "vải",
+    "example": "布地が柔らかい。",
+    "difficulty": "intermediate",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-175",
+    "word": "チェック",
+    "reading": "チェック",
+    "definition": "ô vuông",
+    "example": "チェックの柄。",
+    "difficulty": "intermediate",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-176",
+    "word": "柄",
+    "reading": "がら",
+    "definition": "hoa văn",
+    "example": "花柄のワンピース。",
+    "difficulty": "intermediate",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-177",
+    "word": "素材",
+    "reading": "そざい",
+    "definition": "chất liệu",
+    "example": "素材が高級だ。",
+    "difficulty": "intermediate",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-178",
+    "word": "デザイン",
+    "reading": "デザイン",
+    "definition": "thiết kế",
+    "example": "デザインが美しい。",
+    "difficulty": "intermediate",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-179",
+    "word": "普段着",
+    "reading": "ふだんぎ",
+    "definition": "đồ thường ngày",
+    "example": "普段着で出かける。",
+    "difficulty": "intermediate",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-180",
+    "word": "正装",
+    "reading": "せいそう",
+    "definition": "trang phục trang trọng",
+    "example": "正装で出席する。",
+    "difficulty": "intermediate",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-181",
+    "word": "袴",
+    "reading": "はかま",
+    "definition": "váy hakama",
+    "example": "袴を履いて踊る。",
+    "difficulty": "intermediate",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-182",
+    "word": "羽織",
+    "reading": "はおり",
+    "definition": "áo choàng truyền thống",
+    "example": "羽織を羽織る。",
+    "difficulty": "intermediate",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-183",
+    "word": "前掛け",
+    "reading": "まえかけ",
+    "definition": "tấm chắn trước",
+    "example": "前掛けをして料理する。",
+    "difficulty": "intermediate",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-184",
+    "word": "スニーカー",
+    "reading": "スニーカー",
+    "definition": "giày thể thao",
+    "example": "スニーカーで走る。",
+    "difficulty": "beginner",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-185",
+    "word": "ブーツ",
+    "reading": "ブーツ",
+    "definition": "ủng giày ống",
+    "example": "ブーツを履く。",
+    "difficulty": "beginner",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-186",
+    "word": "サンダル",
+    "reading": "サンダル",
+    "definition": "dép xăng đan",
+    "example": "サンダルを履いて出かける。",
+    "difficulty": "beginner",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-187",
+    "word": "ネクタイ",
+    "reading": "ネクタイ",
+    "definition": "cà vạt",
+    "example": "ネクタイを締める。",
+    "difficulty": "beginner",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-188",
+    "word": "ベルト",
+    "reading": "ベルト",
+    "definition": "thắt lưng",
+    "example": "ベルトを緩める。",
+    "difficulty": "beginner",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-189",
+    "word": "スラックス",
+    "reading": "スラックス",
+    "definition": "quần âu",
+    "example": "スラックスを着る。",
+    "difficulty": "beginner",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-190",
+    "word": "ブラウス",
+    "reading": "ブラウス",
+    "definition": "áo blouse",
+    "example": "ブラウスが似合う。",
+    "difficulty": "beginner",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-191",
+    "word": "レース",
+    "reading": "レース",
+    "definition": "đồ ren",
+    "example": "レースの飾りが付いている。",
+    "difficulty": "beginner",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-192",
+    "word": "フリル",
+    "reading": "フリル",
+    "definition": "liềm xô",
+    "example": "フリルが付いたスカート。",
+    "difficulty": "beginner",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-193",
+    "word": "ストライプ",
+    "reading": "ストライプ",
+    "definition": "sọc",
+    "example": "ストライプのシャツ。",
+    "difficulty": "beginner",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-194",
+    "word": "ハンガー",
+    "reading": "ハンガー",
+    "definition": "móc treo",
+    "example": "ハンガーに掛ける。",
+    "difficulty": "beginner",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-195",
+    "word": "カーテン",
+    "reading": "カーテン",
+    "definition": "rèm cửa",
+    "example": "カーテンを引く。",
+    "difficulty": "beginner",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-196",
+    "word": "袖口",
+    "reading": "そでぐち",
+    "definition": "cổ tay áo",
+    "example": "袖口を直す。",
+    "difficulty": "beginner",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-197",
+    "word": "胸元",
+    "reading": "むなもと",
+    "definition": "ngực áo",
+    "example": "胸元にピンを留める。",
+    "difficulty": "beginner",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-198",
+    "word": "衿元",
+    "reading": "えりもと",
+    "definition": "cổ áo",
+    "example": "衿元を整える。",
+    "difficulty": "beginner",
+    "topic": "clothing"
+  },
+  {
+    "id": "nvs3-199",
+    "word": "マンション",
+    "reading": "マンション",
+    "definition": "căn hộ",
+    "example": "マンションに引っ越す。",
+    "difficulty": "advanced",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-200",
+    "word": "一戸建て",
+    "reading": "いっこだて",
+    "definition": "nhà riêng",
+    "example": "一戸建てを建てる。",
+    "difficulty": "advanced",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-201",
+    "word": "賃貸",
+    "reading": "ちんたい",
+    "definition": "thuê nhà",
+    "example": "賃貸マンションを探す。",
+    "difficulty": "advanced",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-202",
+    "word": "間取り",
+    "reading": "まどり",
+    "definition": "bố cục phòng",
+    "example": "間取りが良い。",
+    "difficulty": "advanced",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-203",
+    "word": "玄関",
+    "reading": "げんかん",
+    "definition": "ngõ ra vào",
+    "example": "玄関で靴を脱ぐ。",
+    "difficulty": "advanced",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-204",
+    "word": "廊下",
+    "reading": "ろうか",
+    "definition": "hành lang",
+    "example": "廊下を歩く。",
+    "difficulty": "advanced",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-205",
+    "word": "階段",
+    "reading": "かいだん",
+    "definition": "cầu thang",
+    "example": "階段を登る。",
+    "difficulty": "advanced",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-206",
+    "word": "屋根",
+    "reading": "やね",
+    "definition": "mái nhà",
+    "example": "屋根が壊れた。",
+    "difficulty": "advanced",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-207",
+    "word": "壁",
+    "reading": "かべ",
+    "definition": "tường",
+    "example": "壁に絵を掛ける。",
+    "difficulty": "advanced",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-208",
+    "word": "天井",
+    "reading": "てんじょう",
+    "definition": "trần nhà",
+    "example": "天井が高い部屋。",
+    "difficulty": "advanced",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-209",
+    "word": "窓",
+    "reading": "まど",
+    "definition": "cửa sổ",
+    "example": "窓を開ける。",
+    "difficulty": "advanced",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-210",
+    "word": "柱",
+    "reading": "はしら",
+    "definition": "trụ cột",
+    "example": "柱を支える。",
+    "difficulty": "advanced",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-211",
+    "word": "床",
+    "reading": "ゆか",
+    "definition": "sàn nhà",
+    "example": "床を磨く。",
+    "difficulty": "advanced",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-212",
+    "word": "ドア",
+    "reading": "ドア",
+    "definition": "cửa ra vào",
+    "example": "ドアを閉める。",
+    "difficulty": "advanced",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-213",
+    "word": "引き戸",
+    "reading": "ひきど",
+    "definition": "cửa trượt",
+    "example": "引き戸を開ける。",
+    "difficulty": "advanced",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-214",
+    "word": "雨戸",
+    "reading": "あまど",
+    "definition": "cửa chống bão",
+    "example": "雨戸を閉める。",
+    "difficulty": "intermediate",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-215",
+    "word": "畳",
+    "reading": "たたみ",
+    "definition": "tấm tatami",
+    "example": "畳の部屋。",
+    "difficulty": "intermediate",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-216",
+    "word": "障子",
+    "reading": "しょうじ",
+    "definition": "cửa giấy shoji",
+    "example": "障子の向こうに影が映る。",
+    "difficulty": "intermediate",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-217",
+    "word": "風呂",
+    "reading": "ふろ",
+    "definition": "phòng tắm",
+    "example": "風呂に入る。",
+    "difficulty": "intermediate",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-218",
+    "word": "トイレ",
+    "reading": "トイレ",
+    "definition": "nhà vệ sinh",
+    "example": "トイレに行く。",
+    "difficulty": "intermediate",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-219",
+    "word": "キッチン",
+    "reading": "キッチン",
+    "definition": "nhà bếp",
+    "example": "キッチンで料理する。",
+    "difficulty": "intermediate",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-220",
+    "word": "庭",
+    "reading": "にわ",
+    "definition": "sân vườn",
+    "example": "庭を手入れする。",
+    "difficulty": "intermediate",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-221",
+    "word": "駐車場",
+    "reading": "ちゅうしゃじょう",
+    "definition": "bãi đậu xe",
+    "example": "駐車場に車を停める。",
+    "difficulty": "intermediate",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-222",
+    "word": "管理人",
+    "reading": "かんりにん",
+    "definition": "quản lý tòa nhà",
+    "example": "管理人に連絡する。",
+    "difficulty": "intermediate",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-223",
+    "word": "賃料",
+    "reading": "ちんりょう",
+    "definition": "tiền thuê nhà",
+    "example": "賃料が高い。",
+    "difficulty": "intermediate",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-224",
+    "word": "管理費",
+    "reading": "かんりひ",
+    "definition": "phí quản lý",
+    "example": "管理費を払う。",
+    "difficulty": "intermediate",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-225",
+    "word": "更新料",
+    "reading": "こうしんりょう",
+    "definition": "phí gia hạn",
+    "example": "更新料が必要だ。",
+    "difficulty": "intermediate",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-226",
+    "word": "礼金",
+    "reading": "れいきん",
+    "definition": "tiền lễ",
+    "example": "礼金を払う。",
+    "difficulty": "intermediate",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-227",
+    "word": "仲介手数料",
+    "reading": "ちゅうかいてすうりょう",
+    "definition": "phí môi giới",
+    "example": "仲介手数料を支払う。",
+    "difficulty": "intermediate",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-228",
+    "word": "保証金",
+    "reading": "ほしょうきん",
+    "definition": "tiền đặt cọc",
+    "example": "保証金を返してもらう。",
+    "difficulty": "intermediate",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-229",
+    "word": "日当たり",
+    "reading": "ひあたり",
+    "definition": "đón nắng",
+    "example": "日当たりが良い部屋。",
+    "difficulty": "intermediate",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-230",
+    "word": "眺め",
+    "reading": "ながめ",
+    "definition": "tầm nhìn",
+    "example": "眺めが良い。",
+    "difficulty": "intermediate",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-231",
+    "word": "物置",
+    "reading": "ものおき",
+    "definition": "kho chứa đồ",
+    "example": "物置に荷物をしまう。",
+    "difficulty": "intermediate",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-232",
+    "word": "裏口",
+    "reading": "うらぐち",
+    "definition": "cửa sau",
+    "example": "裏口から出る。",
+    "difficulty": "intermediate",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-233",
+    "word": "契約書",
+    "reading": "けいやくしょ",
+    "definition": "hợp đồng thuê",
+    "example": "契約書にサインする。",
+    "difficulty": "beginner",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-234",
+    "word": "耐震",
+    "reading": "たいしん",
+    "definition": "chống động đất",
+    "example": "耐震構造のマンション。",
+    "difficulty": "beginner",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-235",
+    "word": "防音",
+    "reading": "ぼうおん",
+    "definition": "cách âm",
+    "example": "防音が良い。",
+    "difficulty": "beginner",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-236",
+    "word": "共用部",
+    "reading": "きょうようぶ",
+    "definition": "khu vực chung",
+    "example": "共用部を清潔に保つ。",
+    "difficulty": "beginner",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-237",
+    "word": "敷地",
+    "reading": "しきち",
+    "definition": "diện tích đất",
+    "example": "敷地が広い。",
+    "difficulty": "beginner",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-238",
+    "word": "築年数",
+    "reading": "ちくねんすう",
+    "definition": "tuổi thọ tòa nhà",
+    "example": "築年数が古い。",
+    "difficulty": "beginner",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-239",
+    "word": "フロア",
+    "reading": "フロア",
+    "definition": "tầng",
+    "example": "二フロアに住んでいる。",
+    "difficulty": "beginner",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-240",
+    "word": "ベランダ",
+    "reading": "ベランダ",
+    "definition": "ban công",
+    "example": "ベランダに洗濯物を干す。",
+    "difficulty": "beginner",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-241",
+    "word": "屋上",
+    "reading": "おくじょう",
+    "definition": "sân thượng",
+    "example": "屋上から見える景色。",
+    "difficulty": "beginner",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-242",
+    "word": "階",
+    "reading": "かい",
+    "definition": "tầng",
+    "example": "三階に上がる。",
+    "difficulty": "beginner",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-243",
+    "word": "アパート",
+    "reading": "アパート",
+    "definition": "chung cư nhỏ",
+    "example": "アパートを借りる。",
+    "difficulty": "beginner",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-244",
+    "word": "賃貸住宅",
+    "reading": "ちんたいじゅうたく",
+    "definition": "nhà cho thuê",
+    "example": "賃貸住宅を探す。",
+    "difficulty": "beginner",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-245",
+    "word": "床暖房",
+    "reading": "ゆかだんぼう",
+    "definition": "sưởi sàn",
+    "example": "床暖房が入っている。",
+    "difficulty": "beginner",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-246",
+    "word": "内装",
+    "reading": "ないそう",
+    "definition": "trang trí nội thất",
+    "example": "内装をリニューアルする。",
+    "difficulty": "beginner",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-247",
+    "word": "外構",
+    "reading": "そとがまえ",
+    "definition": "sân ngoài",
+    "example": "外構を整える。",
+    "difficulty": "beginner",
+    "topic": "housing"
+  },
+  {
+    "id": "nvs3-248",
+    "word": "ソファ",
+    "reading": "ソファ",
+    "definition": "ghế sofa",
+    "example": "ソファで休む。",
+    "difficulty": "advanced",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-249",
+    "word": "本棚",
+    "reading": "ほんだな",
+    "definition": "kệ sách",
+    "example": "本棚に本を並べる。",
+    "difficulty": "advanced",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-250",
+    "word": "テレビ台",
+    "reading": "テレビだい",
+    "definition": "kệ tivi",
+    "example": "テレビ台の上に置く。",
+    "difficulty": "advanced",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-251",
+    "word": "ベッド",
+    "reading": "ベッド",
+    "definition": "giường",
+    "example": "ベッドで寝る。",
+    "difficulty": "advanced",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-252",
+    "word": "枕",
+    "reading": "まくら",
+    "definition": "gối",
+    "example": "枕を変える。",
+    "difficulty": "advanced",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-253",
+    "word": "シーツ",
+    "reading": "シーツ",
+    "definition": "ga trải giường",
+    "example": "シーツを変える。",
+    "difficulty": "advanced",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-254",
+    "word": "ローテーブル",
+    "reading": "ローテーブル",
+    "definition": "bàn thấp",
+    "example": "ローテーブルに座る。",
+    "difficulty": "advanced",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-255",
+    "word": "座布団",
+    "reading": "ざぶとん",
+    "definition": "đệm ngồi",
+    "example": "座布団に座る。",
+    "difficulty": "advanced",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-256",
+    "word": "椅子",
+    "reading": "いす",
+    "definition": "ghế",
+    "example": "椅子に座る。",
+    "difficulty": "advanced",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-257",
+    "word": "机",
+    "reading": "つくえ",
+    "definition": "bàn làm việc",
+    "example": "机で勉強する。",
+    "difficulty": "advanced",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-258",
+    "word": "引き出し",
+    "reading": "ひきだし",
+    "definition": "ngăn kéo",
+    "example": "引き出しを開ける。",
+    "difficulty": "advanced",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-259",
+    "word": "棚",
+    "reading": "たな",
+    "definition": "kệ",
+    "example": "棚に物を置く。",
+    "difficulty": "advanced",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-260",
+    "word": "冷蔵庫",
+    "reading": "れいぞうこ",
+    "definition": "tủ lạnh",
+    "example": "冷蔵庫を確認する。",
+    "difficulty": "advanced",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-261",
+    "word": "洗濯機",
+    "reading": "せんたくき",
+    "definition": "máy giặt",
+    "example": "洗濯機を回す。",
+    "difficulty": "advanced",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-262",
+    "word": "鏡",
+    "reading": "かがみ",
+    "definition": "gương",
+    "example": "鏡で顔をチェックする。",
+    "difficulty": "intermediate",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-263",
+    "word": "布団",
+    "reading": "ふとん",
+    "definition": "đệm futon",
+    "example": "布団を干す。",
+    "difficulty": "intermediate",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-264",
+    "word": "エアコン",
+    "reading": "エアコン",
+    "definition": "máy lạnh",
+    "example": "エアコンを付ける。",
+    "difficulty": "intermediate",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-265",
+    "word": "暖房",
+    "reading": "だんぼう",
+    "definition": "hệ thống sưởi",
+    "example": "暖房が効いている。",
+    "difficulty": "intermediate",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-266",
+    "word": "冷房",
+    "reading": "れいぼう",
+    "definition": "hệ thống làm mát",
+    "example": "冷房が効かない。",
+    "difficulty": "intermediate",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-267",
+    "word": "掃除機",
+    "reading": "そうじき",
+    "definition": "máy hút bụi",
+    "example": "掃除機をかける。",
+    "difficulty": "intermediate",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-268",
+    "word": "ドライヤー",
+    "reading": "ドライヤー",
+    "definition": "máy sấy tóc",
+    "example": "ドライヤーで乾かす。",
+    "difficulty": "intermediate",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-269",
+    "word": "アイロン",
+    "reading": "アイロン",
+    "definition": "bàn là",
+    "example": "アイロンをかける。",
+    "difficulty": "intermediate",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-270",
+    "word": "収納ボックス",
+    "reading": "しゅうのうボックス",
+    "definition": "hộp đựng đồ",
+    "example": "収納ボックスにしまう。",
+    "difficulty": "intermediate",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-271",
+    "word": "食器棚",
+    "reading": "しょきだん",
+    "definition": "tủ đựng bát đĩa",
+    "example": "食器をしまう。",
+    "difficulty": "intermediate",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-272",
+    "word": "ロッカー",
+    "reading": "ロッカー",
+    "definition": "tủ locker",
+    "example": "ロッカーに荷物を入れる。",
+    "difficulty": "intermediate",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-273",
+    "word": "カーペット",
+    "reading": "カーペット",
+    "definition": "thảm",
+    "example": "カーペットを敷く。",
+    "difficulty": "intermediate",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-274",
+    "word": "フック",
+    "reading": "フック",
+    "definition": "móc treo",
+    "example": "フックにコートを掛ける。",
+    "difficulty": "intermediate",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-275",
+    "word": "トランク",
+    "reading": "トランク",
+    "definition": "hộp đựng",
+    "example": "トランクに荷物を詰める。",
+    "difficulty": "intermediate",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-276",
+    "word": "加湿器",
+    "reading": "かしつき",
+    "definition": "máy tạo ẩm",
+    "example": "加湿器を使う。",
+    "difficulty": "intermediate",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-277",
+    "word": "空気清浄機",
+    "reading": "くうきせいじょうき",
+    "definition": "máy lọc không khí",
+    "example": "空気清浄機を買う。",
+    "difficulty": "intermediate",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-278",
+    "word": "食洗機",
+    "reading": "しょくせんき",
+    "definition": "máy rửa bát",
+    "example": "食洗機を導入する。",
+    "difficulty": "intermediate",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-279",
+    "word": "文机",
+    "reading": "ぶんづくえ",
+    "definition": "bàn học",
+    "example": "文机で宿題をする。",
+    "difficulty": "intermediate",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-280",
+    "word": "暖炉",
+    "reading": "だんろ",
+    "definition": "lò sưởi",
+    "example": "暖炉の前で温まる。",
+    "difficulty": "intermediate",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-281",
+    "word": "電気スタンド",
+    "reading": "でんきスタンド",
+    "definition": "đèn bàn",
+    "example": "電気スタンドをつける。",
+    "difficulty": "intermediate",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-282",
+    "word": "ワードローブ",
+    "reading": "ワードローブ",
+    "definition": "tủ quần áo",
+    "example": "ワードローブにしまう。",
+    "difficulty": "beginner",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-283",
+    "word": "ダイニングテーブル",
+    "reading": "ダイニングテーブル",
+    "definition": "bàn ăn",
+    "example": "ダイニングテーブルを買った。",
+    "difficulty": "beginner",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-284",
+    "word": "チェスト",
+    "reading": "チェスト",
+    "definition": "tủ ngăn kéo",
+    "example": "チェストに服をしまう。",
+    "difficulty": "beginner",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-285",
+    "word": "壁掛け時計",
+    "reading": "かべかけとけい",
+    "definition": "đồng hồ treo tường",
+    "example": "壁掛け時計が鳴る。",
+    "difficulty": "beginner",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-286",
+    "word": "ラグ",
+    "reading": "ラグ",
+    "definition": "thảm nhỏ",
+    "example": "ラグを部屋に置く。",
+    "difficulty": "beginner",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-287",
+    "word": "掛け布団",
+    "reading": "かけぶとん",
+    "definition": "chăn ga",
+    "example": "掛け布団を掛ける。",
+    "difficulty": "beginner",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-288",
+    "word": "インバーター",
+    "reading": "インバーター",
+    "definition": "bộ chuyển tần",
+    "example": "インバーターを節約する。",
+    "difficulty": "beginner",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-289",
+    "word": "アイロン台",
+    "reading": "アイロンだい",
+    "definition": "bàn là ủi",
+    "example": "アイロン台を広げる。",
+    "difficulty": "beginner",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-290",
+    "word": "冷暖房",
+    "reading": "れいだんぼう",
+    "definition": "hệ thống lạnh sưởi",
+    "example": "冷暖房完備の部屋。",
+    "difficulty": "beginner",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-291",
+    "word": "家電",
+    "reading": "かでん",
+    "definition": "đồ điện gia dụng",
+    "example": "家電を揃える。",
+    "difficulty": "beginner",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-292",
+    "word": "テレビ",
+    "reading": "テレビ",
+    "definition": "tivi",
+    "example": "テレビを見る。",
+    "difficulty": "beginner",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-293",
+    "word": "電子レンジ",
+    "reading": "でんしレンジ",
+    "definition": "lò vi sóng",
+    "example": "電子レンジで温める。",
+    "difficulty": "beginner",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-294",
+    "word": "ミルクフード",
+    "reading": "ミルクフード",
+    "definition": "máy hâm sữa",
+    "example": "ミルクフードで温める。",
+    "difficulty": "beginner",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-295",
+    "word": "座卓",
+    "reading": "ざたく",
+    "definition": "bàn thấp",
+    "example": "座卓を囲んで食事する。",
+    "difficulty": "beginner",
+    "topic": "furniture"
+  },
+  {
+    "id": "nvs3-296",
+    "word": "ペン",
+    "reading": "ペン",
+    "definition": "bút",
+    "example": "ペンで書く。",
+    "difficulty": "advanced",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-297",
+    "word": "鉛筆",
+    "reading": "えんぴつ",
+    "definition": "bút chì",
+    "example": "鉛筆を削る。",
+    "difficulty": "advanced",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-298",
+    "word": "消しゴム",
+    "reading": "けしゴム",
+    "definition": "cục tẩy",
+    "example": "消しゴムで消す。",
+    "difficulty": "advanced",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-299",
+    "word": "ノート",
+    "reading": "ノート",
+    "definition": "vở",
+    "example": "ノートにメモする。",
+    "difficulty": "advanced",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-300",
+    "word": "付箋",
+    "reading": "ふせん",
+    "definition": "giấy note dán",
+    "example": "付箋に書いて貼る。",
+    "difficulty": "advanced",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-301",
+    "word": "マーカー",
+    "reading": "マーカー",
+    "definition": "bút dạ quang",
+    "example": "マーカーで線を引く。",
+    "difficulty": "advanced",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-302",
+    "word": "ホッチキス",
+    "reading": "ホッチキス",
+    "definition": "ghim dập",
+    "example": "ホッチキスで留める。",
+    "difficulty": "advanced",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-303",
+    "word": "のり",
+    "reading": "のり",
+    "definition": "keo dán",
+    "example": "のりをつける。",
+    "difficulty": "advanced",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-304",
+    "word": "はさみ",
+    "reading": "はさみ",
+    "definition": "kéo",
+    "example": "はさみで切る。",
+    "difficulty": "advanced",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-305",
+    "word": "定規",
+    "reading": "じょうぎ",
+    "definition": "thước kẻ",
+    "example": "定規で線を引く。",
+    "difficulty": "advanced",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-306",
+    "word": "蛍光ペン",
+    "reading": "けいこうペン",
+    "definition": "bút highlight",
+    "example": "蛍光ペンで塗る。",
+    "difficulty": "advanced",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-307",
+    "word": "修正液",
+    "reading": "しゅうせいえき",
+    "definition": "bút tẩy dạng lỏng",
+    "example": "修正液を塗る。",
+    "difficulty": "advanced",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-308",
+    "word": "ファイル",
+    "reading": "ファイル",
+    "definition": "cặp tài liệu",
+    "example": "ファイルに整理する。",
+    "difficulty": "advanced",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-309",
+    "word": "バインダー",
+    "reading": "バインダー",
+    "definition": "bìa binder",
+    "example": "バインダーに挟む。",
+    "difficulty": "advanced",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-310",
+    "word": "インク",
+    "reading": "インク",
+    "definition": "mực",
+    "example": "インクが切れた。",
+    "difficulty": "intermediate",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-311",
+    "word": "スタンプ",
+    "reading": "スタンプ",
+    "definition": "con dán dấu",
+    "example": "スタンプを押す。",
+    "difficulty": "intermediate",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-312",
+    "word": "名刺入れ",
+    "reading": "めいれい入れ",
+    "definition": "hộp danh thiếp",
+    "example": "名刺入れに入れる。",
+    "difficulty": "intermediate",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-313",
+    "word": "文房具",
+    "reading": "ぶんぼうぐ",
+    "definition": "đồ văn phòng",
+    "example": "文房具を買う。",
+    "difficulty": "intermediate",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-314",
+    "word": "シャープペン",
+    "reading": "シャープペン",
+    "definition": "bút chì cơ khí",
+    "example": "シャープペンで書く。",
+    "difficulty": "intermediate",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-315",
+    "word": "ボールペン",
+    "reading": "ボールペン",
+    "definition": "bút bi",
+    "example": "ボールペンを貸す。",
+    "difficulty": "intermediate",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-316",
+    "word": "万年筆",
+    "reading": "まんねんひつ",
+    "definition": "bút máy",
+    "example": "万年筆で書く。",
+    "difficulty": "intermediate",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-317",
+    "word": "印鑑",
+    "reading": "いんかん",
+    "definition": "con dấu",
+    "example": "印鑑を押す。",
+    "difficulty": "intermediate",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-318",
+    "word": "クリアファイル",
+    "reading": "クリアファイル",
+    "definition": "cặp trong suốt",
+    "example": "クリアファイルに入れる。",
+    "difficulty": "intermediate",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-319",
+    "word": "コピー用紙",
+    "reading": "コピーようし",
+    "definition": "giấy photo",
+    "example": "コピー用紙を買い足す。",
+    "difficulty": "intermediate",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-320",
+    "word": "ラベル",
+    "reading": "ラベル",
+    "definition": "nhãn dán",
+    "example": "ラベルを貼る。",
+    "difficulty": "intermediate",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-321",
+    "word": "ゴミ袋",
+    "reading": "ごみぶくろ",
+    "definition": "túi rác",
+    "example": "ゴミ袋に入れる。",
+    "difficulty": "intermediate",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-322",
+    "word": "計算器",
+    "reading": "けいさんき",
+    "definition": "máy tính",
+    "example": "計算器を借りる。",
+    "difficulty": "intermediate",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-323",
+    "word": "電卓",
+    "reading": "でんたく",
+    "definition": "máy tính bỏ túi",
+    "example": "電卓で計算する。",
+    "difficulty": "intermediate",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-324",
+    "word": "下敷き",
+    "reading": "したじき",
+    "definition": "tấm lót bàn",
+    "example": "下敷きの下に隠す。",
+    "difficulty": "intermediate",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-325",
+    "word": "模造紙",
+    "reading": "もうぞうし",
+    "definition": "giấy bản",
+    "example": "模造紙に書く。",
+    "difficulty": "intermediate",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-326",
+    "word": "紙袋",
+    "reading": "かみぶくろ",
+    "definition": "túi giấy",
+    "example": "紙袋にしまう。",
+    "difficulty": "intermediate",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-327",
+    "word": "カーボン",
+    "reading": "カーボン",
+    "definition": "giấy carbon",
+    "example": "カーボンで複写する。",
+    "difficulty": "intermediate",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-328",
+    "word": "マスキングテープ",
+    "reading": "マスキングテープ",
+    "definition": "băng keo che",
+    "example": "マスキングテープで隠す。",
+    "difficulty": "intermediate",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-329",
+    "word": "付箋紙",
+    "reading": "ふせんし",
+    "definition": "giấy note dán",
+    "example": "付箋紙に書き留める。",
+    "difficulty": "intermediate",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-330",
+    "word": "毛筆",
+    "reading": "もうひつ",
+    "definition": "bút lông",
+    "example": "毛筆で書道をする。",
+    "difficulty": "beginner",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-331",
+    "word": "墨",
+    "reading": "すみ",
+    "definition": "mực tàu",
+    "example": "墨を磨る。",
+    "difficulty": "beginner",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-332",
+    "word": "包み紙",
+    "reading": "つつみがみ",
+    "definition": "giấy gói",
+    "example": "包み紙で包む。",
+    "difficulty": "beginner",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-333",
+    "word": "文具箱",
+    "reading": "ぶんぐばこ",
+    "definition": "hộp bút",
+    "example": "文具箱にしまう。",
+    "difficulty": "beginner",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-334",
+    "word": "シャーペン芯",
+    "reading": "シャーペンしん",
+    "definition": "ruột bút chì cơ khí",
+    "example": "シャーペン芯を買う。",
+    "difficulty": "beginner",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-335",
+    "word": "墨汁",
+    "reading": "ぼくじゅう",
+    "definition": "nước mực tàu",
+    "example": "墨汁を準備する。",
+    "difficulty": "beginner",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-336",
+    "word": "硯",
+    "reading": "すずり",
+    "definition": "đá mài mực",
+    "example": "硯に墨を磨る。",
+    "difficulty": "beginner",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-337",
+    "word": "修正テープ",
+    "reading": "しゅうせいテープ",
+    "definition": "băng keo sửa",
+    "example": "修正テープを貼る。",
+    "difficulty": "beginner",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-338",
+    "word": "分度器",
+    "reading": "ぶんどき",
+    "definition": "thước đo độ",
+    "example": "分度器で角度を測る。",
+    "difficulty": "beginner",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-339",
+    "word": "鉛筆削り",
+    "reading": "えんぴつけずり",
+    "definition": "gọt bút chì",
+    "example": "鉛筆削りを使う。",
+    "difficulty": "beginner",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-340",
+    "word": "筆記用具",
+    "reading": "ひっきようぐ",
+    "definition": "dụng cụ viết",
+    "example": "筆記用具を選ぶ。",
+    "difficulty": "beginner",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-341",
+    "word": "色鉛筆",
+    "reading": "いろえんぴつ",
+    "definition": "bút chì màu",
+    "example": "色鉛筆で描く。",
+    "difficulty": "beginner",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-342",
+    "word": "水彩絵の具",
+    "reading": "すいさいえのぐ",
+    "definition": "màu nước",
+    "example": "水彩絵の具で描く。",
+    "difficulty": "beginner",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-343",
+    "word": "パレット",
+    "reading": "パレット",
+    "definition": "bảng pha màu",
+    "example": "パレットに絵の具を出す。",
+    "difficulty": "beginner",
+    "topic": "stationery"
+  },
+  {
+    "id": "nvs3-344",
+    "word": "赤",
+    "reading": "あか",
+    "definition": "màu đỏ",
+    "example": "赤い花が咲いた。",
+    "difficulty": "advanced",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-345",
+    "word": "青",
+    "reading": "あお",
+    "definition": "màu xanh dương",
+    "example": "青い空が広がる。",
+    "difficulty": "advanced",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-346",
+    "word": "黄色",
+    "reading": "きいろ",
+    "definition": "màu vàng",
+    "example": "黄色い蝶が飛んでいる。",
+    "difficulty": "advanced",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-347",
+    "word": "緑",
+    "reading": "みどり",
+    "definition": "màu xanh lá",
+    "example": "緑の木々が生い茂る。",
+    "difficulty": "advanced",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-348",
+    "word": "白",
+    "reading": "しろ",
+    "definition": "màu trắng",
+    "example": "白い雪が降る。",
+    "difficulty": "advanced",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-349",
+    "word": "黒",
+    "reading": "くろ",
+    "definition": "màu đen",
+    "example": "黒い猫がいる。",
+    "difficulty": "advanced",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-350",
+    "word": "茶色",
+    "reading": "ちゃいろ",
+    "definition": "màu nâu",
+    "example": "茶色い犬だ。",
+    "difficulty": "advanced",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-351",
+    "word": "ピンク",
+    "reading": "ピンク",
+    "definition": "màu hồng",
+    "example": "ピンクの花がきれいだ。",
+    "difficulty": "advanced",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-352",
+    "word": "紫",
+    "reading": "むらさき",
+    "definition": "màu tím",
+    "example": "紫の藤の花。",
+    "difficulty": "advanced",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-353",
+    "word": "灰色",
+    "reading": "はいいろ",
+    "definition": "màu xám",
+    "example": "灰色の空だ。",
+    "difficulty": "advanced",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-354",
+    "word": "金色",
+    "reading": "きんいろ",
+    "definition": "màu vàng kim",
+    "example": "金色に輝く。",
+    "difficulty": "advanced",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-355",
+    "word": "銀色",
+    "reading": "ぎんいろ",
+    "definition": "màu bạc",
+    "example": "銀色のナイフ。",
+    "difficulty": "advanced",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-356",
+    "word": "水色",
+    "reading": "みずいろ",
+    "definition": "màu xanh nhạt",
+    "example": "水色の空が広がる。",
+    "difficulty": "advanced",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-357",
+    "word": "薄紫",
+    "reading": "うすむらさき",
+    "definition": "màu tím nhạt",
+    "example": "薄紫の夕焼け。",
+    "difficulty": "advanced",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-358",
+    "word": "臙脂",
+    "reading": "えんじ",
+    "definition": "màu đỏ sẫm",
+    "example": "臙脂色のリップ。",
+    "difficulty": "intermediate",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-359",
+    "word": "珊瑚",
+    "reading": "さんご",
+    "definition": "màu san hô",
+    "example": "珊瑚色のネックレス。",
+    "difficulty": "intermediate",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-360",
+    "word": "藍色",
+    "reading": "あいいろ",
+    "definition": "màu chàm",
+    "example": "藍色の浴衣。",
+    "difficulty": "intermediate",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-361",
+    "word": "桜色",
+    "reading": "さくらいろ",
+    "definition": "màu hoa anh đào",
+    "example": "桜色がきれいだ。",
+    "difficulty": "intermediate",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-362",
+    "word": "朱色",
+    "reading": "しゅいろ",
+    "definition": "màu đỏ cam",
+    "example": "朱色の鳥居。",
+    "difficulty": "intermediate",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-363",
+    "word": "桃色",
+    "reading": "ももいろ",
+    "definition": "màu hồng đào",
+    "example": "桃色のサクラ。",
+    "difficulty": "intermediate",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-364",
+    "word": "アイボリー",
+    "reading": "アイボリー",
+    "definition": "màu ngà voi",
+    "example": "アイボリーの壁紙。",
+    "difficulty": "intermediate",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-365",
+    "word": "ベージュ",
+    "reading": "ベージュ",
+    "definition": "màu be",
+    "example": "ベージュのソファ。",
+    "difficulty": "intermediate",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-366",
+    "word": "スカイブルー",
+    "reading": "スカイブルー",
+    "definition": "màu xanh trời",
+    "example": "スカイブルーの空。",
+    "difficulty": "intermediate",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-367",
+    "word": "コーラル",
+    "reading": "コーラル",
+    "definition": "màu san hô",
+    "example": "コーラルのリップ。",
+    "difficulty": "intermediate",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-368",
+    "word": "ラベンダー",
+    "reading": "ラベンダー",
+    "definition": "màu oải hương",
+    "example": "ラベンダーの花畑。",
+    "difficulty": "intermediate",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-369",
+    "word": "オレンジ",
+    "reading": "オレンジ",
+    "definition": "màu cam",
+    "example": "オレンジジュース。",
+    "difficulty": "intermediate",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-370",
+    "word": "ブラウン",
+    "reading": "ブラウン",
+    "definition": "màu nâu",
+    "example": "ブラウンの靴。",
+    "difficulty": "intermediate",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-371",
+    "word": "クリーム",
+    "reading": "クリーム",
+    "definition": "màu kem",
+    "example": "クリーム色の壁。",
+    "difficulty": "intermediate",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-372",
+    "word": "ミント",
+    "reading": "ミント",
+    "definition": "màu bạc hà",
+    "example": "ミントグリーンのテーブル。",
+    "difficulty": "intermediate",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-373",
+    "word": "ダークブルー",
+    "reading": "ダークブルー",
+    "definition": "màu xanh đậm",
+    "example": "ダークブルーのスカート。",
+    "difficulty": "intermediate",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-374",
+    "word": "ライトグリーン",
+    "reading": "ライトグリーン",
+    "definition": "màu xanh lá nhạt",
+    "example": "ライトグリーンの壁。",
+    "difficulty": "intermediate",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-375",
+    "word": "パール",
+    "reading": "パール",
+    "definition": "màu ngọc trai",
+    "example": "パールのネックレス。",
+    "difficulty": "intermediate",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-376",
+    "word": "セピア",
+    "reading": "セピア",
+    "definition": "màu nâu cổ điển",
+    "example": "セピア写真。",
+    "difficulty": "intermediate",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-377",
+    "word": "琥珀",
+    "reading": "こはく",
+    "definition": "màu hổ phách",
+    "example": "琥珀色のペンダント。",
+    "difficulty": "intermediate",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-378",
+    "word": "翡翠",
+    "reading": "ひすい",
+    "definition": "màu lục ngọc",
+    "example": "翡翠色のアクセサリー。",
+    "difficulty": "beginner",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-379",
+    "word": "紅色",
+    "reading": "べにいろ",
+    "definition": "màu đỏ thẫm",
+    "example": "紅色の衣装。",
+    "difficulty": "beginner",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-380",
+    "word": "薄色",
+    "reading": "うすいろ",
+    "definition": "màu tím nhạt",
+    "example": "薄色の着物。",
+    "difficulty": "beginner",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-381",
+    "word": "萌黄",
+    "reading": "もえぎ",
+    "definition": "màu xanh non",
+    "example": "萌黄の葉。",
+    "difficulty": "beginner",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-382",
+    "word": "朽葉色",
+    "reading": "くちばいろ",
+    "definition": "màu nâu úa",
+    "example": "朽葉色の落ち葉。",
+    "difficulty": "beginner",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-383",
+    "word": "群青",
+    "reading": "ぐんじょう",
+    "definition": "màu xanh đậm",
+    "example": "群青の空。",
+    "difficulty": "beginner",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-384",
+    "word": "墨色",
+    "reading": "すみいろ",
+    "definition": "màu đen mực",
+    "example": "墨色の髪。",
+    "difficulty": "beginner",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-385",
+    "word": "茜色",
+    "reading": "あかねいろ",
+    "definition": "màu đỏ sunset",
+    "example": "茜色の夕焼け。",
+    "difficulty": "beginner",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-386",
+    "word": "藤色",
+    "reading": "ふじいろ",
+    "definition": "màu tím藤",
+    "example": "藤色のカーテン。",
+    "difficulty": "beginner",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-387",
+    "word": "葡萄色",
+    "reading": "ぶどういろ",
+    "definition": "màu nho tím",
+    "example": "葡萄色のワイン。",
+    "difficulty": "beginner",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-388",
+    "word": "山吹色",
+    "reading": "やまぶきいろ",
+    "definition": "màu vàng rực",
+    "example": "山吹色の花。",
+    "difficulty": "beginner",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-389",
+    "word": "鴇色",
+    "reading": "ときいろ",
+    "definition": "màu hồng flamingo",
+    "example": "鴇色の羽。",
+    "difficulty": "beginner",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-390",
+    "word": "白磁",
+    "reading": "はくじ",
+    "definition": "màu trắng sứ",
+    "example": "白磁の皿。",
+    "difficulty": "beginner",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-391",
+    "word": "臙脂色",
+    "reading": "えんじいろ",
+    "definition": "màu đỏ tía",
+    "example": "臙脂色のワンピース。",
+    "difficulty": "beginner",
+    "topic": "colors"
+  },
+  {
+    "id": "nvs3-392",
+    "word": "丸",
+    "reading": "まる",
+    "definition": "hình tròn",
+    "example": "丸い月が昇った。",
+    "difficulty": "advanced",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-393",
+    "word": "四角",
+    "reading": "しかく",
+    "definition": "hình vuông",
+    "example": "四角いテーブル。",
+    "difficulty": "advanced",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-394",
+    "word": "三角",
+    "reading": "さんかく",
+    "definition": "hình tam giác",
+    "example": "三角形のピラミッド。",
+    "difficulty": "advanced",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-395",
+    "word": "長方形",
+    "reading": "ちょうほうけい",
+    "definition": "hình chữ nhật",
+    "example": "長方形の部屋。",
+    "difficulty": "advanced",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-396",
+    "word": "正方形",
+    "reading": "せいほうけい",
+    "definition": "hình vuông đều",
+    "example": "正方形のカード。",
+    "difficulty": "advanced",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-397",
+    "word": "星形",
+    "reading": "ほしがた",
+    "definition": "hình ngôi sao",
+    "example": "星形のイルミネーション。",
+    "difficulty": "advanced",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-398",
+    "word": "半円",
+    "reading": "はんえん",
+    "definition": "hình bán nguyệt",
+    "example": "半円のテーブル。",
+    "difficulty": "advanced",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-399",
+    "word": "楕円",
+    "reading": "だえん",
+    "definition": "hình bầu dục",
+    "example": "楕円のプール。",
+    "difficulty": "advanced",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-400",
+    "word": "直線",
+    "reading": "ちょくせん",
+    "definition": "đường thẳng",
+    "example": "直線を引く。",
+    "difficulty": "advanced",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-401",
+    "word": "曲線",
+    "reading": "きょくせん",
+    "definition": "đường cong",
+    "example": "曲線が美しい。",
+    "difficulty": "advanced",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-402",
+    "word": "波",
+    "reading": "なみ",
+    "definition": "sóng",
+    "example": "波が高くなった。",
+    "difficulty": "advanced",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-403",
+    "word": "点",
+    "reading": "てん",
+    "definition": "điểm",
+    "example": "点を打つ。",
+    "difficulty": "advanced",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-404",
+    "word": "線",
+    "reading": "せん",
+    "definition": "đường",
+    "example": "線を引く。",
+    "difficulty": "advanced",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-405",
+    "word": "面",
+    "reading": "めん",
+    "definition": "mặt phẳng",
+    "example": "平面を描く。",
+    "difficulty": "advanced",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-406",
+    "word": "立体",
+    "reading": "りったい",
+    "definition": "khối 3 chiều",
+    "example": "立体の模型。",
+    "difficulty": "advanced",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-407",
+    "word": "角",
+    "reading": "かく",
+    "definition": "góc",
+    "example": "角が曲がった。",
+    "difficulty": "intermediate",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-408",
+    "word": "隅",
+    "reading": "すみ",
+    "definition": "góc tường",
+    "example": "隅に物を置く。",
+    "difficulty": "intermediate",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-409",
+    "word": "縁",
+    "reading": "ふち",
+    "definition": "cạnh viền",
+    "example": "縁が曲がった。",
+    "difficulty": "intermediate",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-410",
+    "word": "端",
+    "reading": "はし",
+    "definition": "đầu mút",
+    "example": "端を切る。",
+    "difficulty": "intermediate",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-411",
+    "word": "中央",
+    "reading": "ちゅうおう",
+    "definition": "trung tâm",
+    "example": "中央に置く。",
+    "difficulty": "intermediate",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-412",
+    "word": "周囲",
+    "reading": "しゅうい",
+    "definition": "xung quanh",
+    "example": "周囲を確認する。",
+    "difficulty": "intermediate",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-413",
+    "word": "内側",
+    "reading": "うちがわ",
+    "definition": "phía trong",
+    "example": "内側に隠す。",
+    "difficulty": "intermediate",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-414",
+    "word": "外側",
+    "reading": "そとがわ",
+    "definition": "phía ngoài",
+    "example": "外側から見ると美しい。",
+    "difficulty": "intermediate",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-415",
+    "word": "斜め",
+    "reading": "ななめ",
+    "definition": "hình chéo",
+    "example": "斜めに切る。",
+    "difficulty": "intermediate",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-416",
+    "word": "水平",
+    "reading": "すいへい",
+    "definition": "ngang",
+    "example": "水平に保つ。",
+    "difficulty": "intermediate",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-417",
+    "word": "垂直",
+    "reading": "すいちょく",
+    "definition": "thẳng đứng",
+    "example": "垂直に立っている。",
+    "difficulty": "intermediate",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-418",
+    "word": "対称",
+    "reading": "たいしょう",
+    "definition": "đối xứng",
+    "example": "対称なデザイン。",
+    "difficulty": "intermediate",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-419",
+    "word": "不規則",
+    "reading": "ふきそく",
+    "definition": "không đều",
+    "example": "不規則な形。",
+    "difficulty": "intermediate",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-420",
+    "word": "規則的",
+    "reading": "きそくてき",
+    "definition": "có quy luật",
+    "example": "規則的な模様。",
+    "difficulty": "intermediate",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-421",
+    "word": "均一",
+    "reading": "きんいつ",
+    "definition": "đều nhau",
+    "example": "均一なサイズ。",
+    "difficulty": "intermediate",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-422",
+    "word": "対角線",
+    "reading": "たいかくせん",
+    "definition": "đường chéo",
+    "example": "対角線を結ぶ。",
+    "difficulty": "intermediate",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-423",
+    "word": "平行線",
+    "reading": "へいこうせん",
+    "definition": "đường song song",
+    "example": "平行線を引く。",
+    "difficulty": "intermediate",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-424",
+    "word": "螺旋",
+    "reading": "らせん",
+    "definition": "hình xoắn ốc",
+    "example": "螺旋階段を登る。",
+    "difficulty": "intermediate",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-425",
+    "word": "菱形",
+    "reading": "ひしがた",
+    "definition": "hình thoi",
+    "example": "菱形の模様。",
+    "difficulty": "intermediate",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-426",
+    "word": "台形",
+    "reading": "だいけい",
+    "definition": "hình thang",
+    "example": "台形の庭。",
+    "difficulty": "beginner",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-427",
+    "word": "五角形",
+    "reading": "ごかくけい",
+    "definition": "hình ngũ giác",
+    "example": "五角形の印章。",
+    "difficulty": "beginner",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-428",
+    "word": "六角形",
+    "reading": "ろっかくけい",
+    "definition": "hình lục giác",
+    "example": "六角形のガラス。",
+    "difficulty": "beginner",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-429",
+    "word": "円柱",
+    "reading": "えんちゅう",
+    "definition": "hình trụ",
+    "example": "円柱の建物。",
+    "difficulty": "beginner",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-430",
+    "word": "円錐",
+    "reading": "えんすい",
+    "definition": "hình nón",
+    "example": "円錐の山。",
+    "difficulty": "beginner",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-431",
+    "word": "渦巻き",
+    "reading": "うずまき",
+    "definition": "hình xoáy",
+    "example": "渦巻き模様。",
+    "difficulty": "beginner",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-432",
+    "word": "波模様",
+    "reading": "なみもよう",
+    "definition": "hoa văn sóng",
+    "example": "波模様の服。",
+    "difficulty": "beginner",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-433",
+    "word": "手前",
+    "reading": "てまえ",
+    "definition": "phía trước",
+    "example": "手前で止まる。",
+    "difficulty": "beginner",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-434",
+    "word": "奥",
+    "reading": "おく",
+    "definition": "phía trong cùng",
+    "example": "奥に進む。",
+    "difficulty": "beginner",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-435",
+    "word": "上面",
+    "reading": "じょうめん",
+    "definition": "mặt trên",
+    "example": "上面を磨く。",
+    "difficulty": "beginner",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-436",
+    "word": "下面",
+    "reading": "かめん",
+    "definition": "mặt dưới",
+    "example": "下面に傷がある。",
+    "difficulty": "beginner",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-437",
+    "word": "断面",
+    "reading": "だんめん",
+    "definition": "mặt cắt",
+    "example": "断面図を描く。",
+    "difficulty": "beginner",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-438",
+    "word": "側面",
+    "reading": "そくめん",
+    "definition": "mặt bên",
+    "example": "側面から見る。",
+    "difficulty": "beginner",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-439",
+    "word": "表面",
+    "reading": "ひょうめん",
+    "definition": "bề mặt",
+    "example": "表面が滑らかだ。",
+    "difficulty": "beginner",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-440",
+    "word": "裏面",
+    "reading": "りめん",
+    "definition": "mặt sau",
+    "example": "裏面に注意書きがある。",
+    "difficulty": "beginner",
+    "topic": "shapes"
+  },
+  {
+    "id": "nvs3-441",
+    "word": "東",
+    "reading": "ひがし",
+    "definition": "phía đông",
+    "example": "東に進む。",
+    "difficulty": "advanced",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-442",
+    "word": "南",
+    "reading": "みなみ",
+    "definition": "phía nam",
+    "example": "南に向かう。",
+    "difficulty": "advanced",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-443",
+    "word": "西",
+    "reading": "にし",
+    "definition": "phía tây",
+    "example": "西に見える山。",
+    "difficulty": "advanced",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-444",
+    "word": "北",
+    "reading": "きた",
+    "definition": "phía bắc",
+    "example": "北から風が吹く。",
+    "difficulty": "advanced",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-445",
+    "word": "右",
+    "reading": "みぎ",
+    "definition": "bên phải",
+    "example": "右に曲がる。",
+    "difficulty": "advanced",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-446",
+    "word": "左",
+    "reading": "ひだり",
+    "definition": "bên trái",
+    "example": "左に信号がある。",
+    "difficulty": "advanced",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-447",
+    "word": "前",
+    "reading": "まえ",
+    "definition": "phía trước",
+    "example": "前に歩く。",
+    "difficulty": "advanced",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-448",
+    "word": "後ろ",
+    "reading": "うしろ",
+    "definition": "phía sau",
+    "example": "後ろを振り返る。",
+    "difficulty": "advanced",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-449",
+    "word": "横",
+    "reading": "よこ",
+    "definition": "bên cạnh",
+    "example": "横に座る。",
+    "difficulty": "advanced",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-450",
+    "word": "隣",
+    "reading": "となり",
+    "definition": "bên cạnh",
+    "example": "隣に座る。",
+    "difficulty": "advanced",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-451",
+    "word": "表",
+    "reading": "おもて",
+    "definition": "mặt trước",
+    "example": "表に名前が書いてある。",
+    "difficulty": "advanced",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-452",
+    "word": "裏",
+    "reading": "うら",
+    "definition": "mặt sau",
+    "example": "裏に住所が書いてある。",
+    "difficulty": "advanced",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-453",
+    "word": "中",
+    "reading": "なか",
+    "definition": "bên trong",
+    "example": "中に入る。",
+    "difficulty": "advanced",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-454",
+    "word": "外",
+    "reading": "そと",
+    "definition": "bên ngoài",
+    "example": "外に出て遊ぶ。",
+    "difficulty": "advanced",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-455",
+    "word": "近所",
+    "reading": "きんじょ",
+    "definition": "khu phố xung quanh",
+    "example": "近所に公園がある。",
+    "difficulty": "advanced",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-456",
+    "word": "方角",
+    "reading": "ほうがく",
+    "definition": "phương hướng",
+    "example": "方角がわかる。",
+    "difficulty": "intermediate",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-457",
+    "word": "正面",
+    "reading": "しょうめん",
+    "definition": "mặt chính diện",
+    "example": "正面に入口がある。",
+    "difficulty": "intermediate",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-458",
+    "word": "出口",
+    "reading": "でぐち",
+    "definition": "lối ra",
+    "example": "出口はどこですか。",
+    "difficulty": "intermediate",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-459",
+    "word": "入口",
+    "reading": "いりぐち",
+    "definition": "lối vào",
+    "example": "入口で待つ。",
+    "difficulty": "intermediate",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-460",
+    "word": "交差点",
+    "reading": "こうさてん",
+    "definition": "ngã tư đường",
+    "example": "交差点を渡る。",
+    "difficulty": "intermediate",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-461",
+    "word": "曲がり角",
+    "reading": "まがりかど",
+    "definition": "ngã rẽ",
+    "example": "曲がり角を曲がる。",
+    "difficulty": "intermediate",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-462",
+    "word": "突き当たり",
+    "reading": "つきあたり",
+    "definition": "đầu đường cụt",
+    "example": "突き当たりが駅だ。",
+    "difficulty": "intermediate",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-463",
+    "word": "北向き",
+    "reading": "きたむき",
+    "definition": "hướng bắc",
+    "example": "北向きの部屋。",
+    "difficulty": "intermediate",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-464",
+    "word": "南向き",
+    "reading": "みなみむき",
+    "definition": "hướng nam",
+    "example": "南向きのベランダ。",
+    "difficulty": "intermediate",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-465",
+    "word": "向かい",
+    "reading": "むかい",
+    "definition": "đối diện",
+    "example": "向かいの建物。",
+    "difficulty": "intermediate",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-466",
+    "word": "向かい側",
+    "reading": "むかいがわ",
+    "definition": "phía đối diện",
+    "example": "向かい側の席。",
+    "difficulty": "intermediate",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-467",
+    "word": "斜向かい",
+    "reading": "ななむかい",
+    "definition": "chéo đối diện",
+    "example": "斜向かいに店がある。",
+    "difficulty": "intermediate",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-468",
+    "word": "一直線",
+    "reading": "いっちょくせん",
+    "definition": "đường thẳng",
+    "example": "一直線に進む。",
+    "difficulty": "intermediate",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-469",
+    "word": "丁字路",
+    "reading": "ちょうじろ",
+    "definition": "ngã ba chữ T",
+    "example": "丁字路で左に曲がる。",
+    "difficulty": "intermediate",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-470",
+    "word": "死路",
+    "reading": "しろ",
+    "definition": "đường cụt",
+    "example": "死路に突き当たった。",
+    "difficulty": "intermediate",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-471",
+    "word": "北西",
+    "reading": "きたにし",
+    "definition": "tây bắc",
+    "example": "北西の方向。",
+    "difficulty": "intermediate",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-472",
+    "word": "北東",
+    "reading": "きたひがし",
+    "definition": "đông bắc",
+    "example": "北東の風。",
+    "difficulty": "intermediate",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-473",
+    "word": "南西",
+    "reading": "みなみにし",
+    "definition": "tây nam",
+    "example": "南西に向かう。",
+    "difficulty": "intermediate",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-474",
+    "word": "南東",
+    "reading": "みなみひがし",
+    "definition": "đông nam",
+    "example": "南東の海。",
+    "difficulty": "intermediate",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-475",
+    "word": "下り",
+    "reading": "くだり",
+    "definition": "đường xuống",
+    "example": "下りのエスカレーター。",
+    "difficulty": "intermediate",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-476",
+    "word": "上り",
+    "reading": "のぼり",
+    "definition": "đường lên",
+    "example": "上りの階段。",
+    "difficulty": "intermediate",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-477",
+    "word": "進行方向",
+    "reading": "しんこうほうこう",
+    "definition": "hướng di chuyển",
+    "example": "進行方向に注意する。",
+    "difficulty": "beginner",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-478",
+    "word": "反対側",
+    "reading": "はんたいがわ",
+    "definition": "phía đối lập",
+    "example": "反対側に回る。",
+    "difficulty": "beginner",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-479",
+    "word": "回り道",
+    "reading": "まわりみち",
+    "definition": "đường vòng",
+    "example": "回り道をした。",
+    "difficulty": "beginner",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-480",
+    "word": "直進",
+    "reading": "ちょくしん",
+    "definition": "đi thẳng",
+    "example": "直進して左に曲がる。",
+    "difficulty": "beginner",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-481",
+    "word": "裏通り",
+    "reading": "うらどおり",
+    "definition": "hẻm",
+    "example": "裏通りを歩く。",
+    "difficulty": "beginner",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-482",
+    "word": "本通り",
+    "reading": "ほんどおり",
+    "definition": "đường chính",
+    "example": "本通りに出る。",
+    "difficulty": "beginner",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-483",
+    "word": "裏手",
+    "reading": "うらて",
+    "definition": "phía sau nhà",
+    "example": "裏手の庭。",
+    "difficulty": "beginner",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-484",
+    "word": "先",
+    "reading": "さき",
+    "definition": "phía trước mặt",
+    "example": "先に進む。",
+    "difficulty": "beginner",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-485",
+    "word": "上",
+    "reading": "うえ",
+    "definition": "phía trên",
+    "example": "上に上がる。",
+    "difficulty": "beginner",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-486",
+    "word": "下",
+    "reading": "した",
+    "definition": "phía dưới",
+    "example": "下に降りる。",
+    "difficulty": "beginner",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-487",
+    "word": "隣り合った",
+    "reading": "となりあった",
+    "definition": "liền kề",
+    "example": "隣り合ったマンション。",
+    "difficulty": "beginner",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-488",
+    "word": "正面玄関",
+    "reading": "しょうめんげんかん",
+    "definition": "cửa chính",
+    "example": "正面玄関から入る。",
+    "difficulty": "beginner",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-489",
+    "word": "至近距離",
+    "reading": "しきんきょり",
+    "definition": "khoảng cách gần",
+    "example": "至近距離にいる。",
+    "difficulty": "beginner",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-490",
+    "word": "遠く",
+    "reading": "とおく",
+    "definition": "xa",
+    "example": "遠くに見える山。",
+    "difficulty": "beginner",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-491",
+    "word": "近く",
+    "reading": "ちかく",
+    "definition": "gần",
+    "example": "近くにコンビニがある。",
+    "difficulty": "beginner",
+    "topic": "directions"
+  },
+  {
+    "id": "nvs3-492",
+    "word": "電車",
+    "reading": "でんしゃ",
+    "definition": "tàu điện",
+    "example": "電車に乗る。",
+    "difficulty": "advanced",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-493",
+    "word": "地下鉄",
+    "reading": "ちかてつ",
+    "definition": "tàu điện ngầm",
+    "example": "地下鉄で通勤する。",
+    "difficulty": "advanced",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-494",
+    "word": "新幹線",
+    "reading": "しんかんせん",
+    "definition": "tàu Shinkansen",
+    "example": "新幹線で京都に行く。",
+    "difficulty": "advanced",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-495",
+    "word": "バス",
+    "reading": "バス",
+    "definition": "xe buýt",
+    "example": "バスを待つ。",
+    "difficulty": "advanced",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-496",
+    "word": "タクシー",
+    "reading": "タクシー",
+    "definition": "xe taxi",
+    "example": "タクシーを呼ぶ。",
+    "difficulty": "advanced",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-497",
+    "word": "飛行機",
+    "reading": "ひこうき",
+    "definition": "máy bay",
+    "example": "飛行機で東京に行く。",
+    "difficulty": "advanced",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-498",
+    "word": "自転車",
+    "reading": "じてんしゃ",
+    "definition": "xe đạp",
+    "example": "自転車で通学する。",
+    "difficulty": "advanced",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-499",
+    "word": "バイク",
+    "reading": "バイク",
+    "definition": "xe máy",
+    "example": "バイクを運転する。",
+    "difficulty": "advanced",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-500",
+    "word": "車",
+    "reading": "くるま",
+    "definition": "xe hơi",
+    "example": "車を洗う。",
+    "difficulty": "advanced",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-501",
+    "word": "トラック",
+    "reading": "トラック",
+    "definition": "xe tải",
+    "example": "トラックが通る。",
+    "difficulty": "advanced",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-502",
+    "word": "フェリー",
+    "reading": "フェリー",
+    "definition": "phà",
+    "example": "フェリーで島に行く。",
+    "difficulty": "advanced",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-503",
+    "word": "路面電車",
+    "reading": "ろめんでんしゃ",
+    "definition": "tàu điện trên mặt đất",
+    "example": "路面電車が来る。",
+    "difficulty": "advanced",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-504",
+    "word": "ロープウェイ",
+    "reading": "ロープウェイ",
+    "definition": "cáp treo",
+    "example": "ロープウェイで山に登る。",
+    "difficulty": "advanced",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-505",
+    "word": "車両",
+    "reading": "しゃりょう",
+    "definition": "toa xe",
+    "example": "車両が連結された。",
+    "difficulty": "advanced",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-506",
+    "word": "高速道路",
+    "reading": "こうそくどうろ",
+    "definition": "đường cao tốc",
+    "example": "高速道路を走る。",
+    "difficulty": "advanced",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-507",
+    "word": "信号",
+    "reading": "しんごう",
+    "definition": "đèn giao thông",
+    "example": "信号が青に変わった。",
+    "difficulty": "advanced",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-508",
+    "word": "横断歩道",
+    "reading": "おうだんほどう",
+    "definition": "đường đi bộ qua đường",
+    "example": "横断歩道を渡る。",
+    "difficulty": "advanced",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-509",
+    "word": "踏切",
+    "reading": "ふみきり",
+    "definition": "đường giao nhau đường sắt",
+    "example": "踏切が開くのを待つ。",
+    "difficulty": "intermediate",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-510",
+    "word": "駅",
+    "reading": "えき",
+    "definition": "nhà ga",
+    "example": "駅で友人と会う。",
+    "difficulty": "intermediate",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-511",
+    "word": "乗り場",
+    "reading": "のりば",
+    "definition": "sàn lên tàu",
+    "example": "バス乗り場はどこですか。",
+    "difficulty": "intermediate",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-512",
+    "word": "特急",
+    "reading": "とっきゅう",
+    "definition": "tàu siêu tốc",
+    "example": "特急に乗る。",
+    "difficulty": "intermediate",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-513",
+    "word": "急行",
+    "reading": "きゅうこう",
+    "definition": "tàu nhanh",
+    "example": "急行で通勤する。",
+    "difficulty": "intermediate",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-514",
+    "word": "普通",
+    "reading": "ふつう",
+    "definition": "tàu thường",
+    "example": "普通の電車。",
+    "difficulty": "intermediate",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-515",
+    "word": "乗り換え",
+    "reading": "のりかえ",
+    "definition": "chuyển tàu",
+    "example": "ここで乗り換える。",
+    "difficulty": "intermediate",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-516",
+    "word": "定期券",
+    "reading": "ていきけん",
+    "definition": "vé tháng",
+    "example": "定期券を買う。",
+    "difficulty": "intermediate",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-517",
+    "word": "切符",
+    "reading": "きっぷ",
+    "definition": "vé",
+    "example": "切符を切られる。",
+    "difficulty": "intermediate",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-518",
+    "word": "運転",
+    "reading": "うんてん",
+    "definition": "lái xe",
+    "example": "運転に集中する。",
+    "difficulty": "intermediate",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-519",
+    "word": "運転手",
+    "reading": "うんてんしゅ",
+    "definition": "tài xế",
+    "example": "運転手に伝える。",
+    "difficulty": "intermediate",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-520",
+    "word": "乗客",
+    "reading": "じょうきゃく",
+    "definition": "hành khách",
+    "example": "乗客が満員だ。",
+    "difficulty": "intermediate",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-521",
+    "word": "搭乗",
+    "reading": "とうじょう",
+    "definition": "lên tàu máy bay",
+    "example": "搭乗手続きをする。",
+    "difficulty": "intermediate",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-522",
+    "word": "到着",
+    "reading": "とうちゃく",
+    "definition": "đến nơi",
+    "example": "到着は三時です。",
+    "difficulty": "intermediate",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-523",
+    "word": "発車",
+    "reading": "はっしゃ",
+    "definition": "khởi hành",
+    "example": "発車が遅れている。",
+    "difficulty": "intermediate",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-524",
+    "word": "遅延",
+    "reading": "ちえん",
+    "definition": "chậm trễ",
+    "example": "遅延で困った。",
+    "difficulty": "intermediate",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-525",
+    "word": "運賃",
+    "reading": "うんちん",
+    "definition": "giá vé",
+    "example": "運賃が値上げされた。",
+    "difficulty": "intermediate",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-526",
+    "word": "片道",
+    "reading": "かたみち",
+    "definition": "một chiều",
+    "example": "片道の切符を買う。",
+    "difficulty": "intermediate",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-527",
+    "word": "往復",
+    "reading": "おうふく",
+    "definition": "khứ hồi",
+    "example": "往復の切符を買った。",
+    "difficulty": "intermediate",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-528",
+    "word": "手荷物",
+    "reading": "てにもつ",
+    "definition": "hành lý xách tay",
+    "example": "手荷物は預けない。",
+    "difficulty": "intermediate",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-529",
+    "word": "貨物",
+    "reading": "かもつ",
+    "definition": "hàng hóa",
+    "example": "貨物を運ぶ。",
+    "difficulty": "intermediate",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-530",
+    "word": "通勤",
+    "reading": "つうきん",
+    "definition": "đi làm",
+    "example": "通勤ラッシュ。",
+    "difficulty": "intermediate",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-531",
+    "word": "通学",
+    "reading": "つうがく",
+    "definition": "đi học",
+    "example": "通学路を歩く。",
+    "difficulty": "intermediate",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-532",
+    "word": "車庫",
+    "reading": "しゃこ",
+    "definition": "nhà để xe",
+    "example": "車庫に車を停める。",
+    "difficulty": "intermediate",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-533",
+    "word": "回送",
+    "reading": "かいそう",
+    "definition": "chở rỗng",
+    "example": "回送電車には乗れない。",
+    "difficulty": "beginner",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-534",
+    "word": "ICカード",
+    "reading": "ICカード",
+    "definition": "thẻ IC",
+    "example": "ICカードをタッチする。",
+    "difficulty": "beginner",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-535",
+    "word": "搭乗券",
+    "reading": "とうじょうけん",
+    "definition": "thẻ lên tàu",
+    "example": "搭乗券を準備する。",
+    "difficulty": "beginner",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-536",
+    "word": "ターミナル",
+    "reading": "ターミナル",
+    "definition": "nhà ga trung tâm",
+    "example": "ターミナルで待ち合わせ。",
+    "difficulty": "beginner",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-537",
+    "word": "空港",
+    "reading": "くうこう",
+    "definition": "sân bay",
+    "example": "空港に向かう。",
+    "difficulty": "beginner",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-538",
+    "word": "港",
+    "reading": "みなと",
+    "definition": "cảng",
+    "example": "港に船が着いた。",
+    "difficulty": "beginner",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-539",
+    "word": "駐輪場",
+    "reading": "ちゅうりんじょう",
+    "definition": "bãi đậu xe đạp",
+    "example": "駐輪場に自行车を停める。",
+    "difficulty": "beginner",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-540",
+    "word": "タクシー乗り場",
+    "reading": "タクシーのりば",
+    "definition": "bến taxi",
+    "example": "タクシー乗り場に並ぶ。",
+    "difficulty": "beginner",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-541",
+    "word": "停車場",
+    "reading": "ていしゃじょう",
+    "definition": "bãi đỗ xe",
+    "example": "停車場が満車だ。",
+    "difficulty": "beginner",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-542",
+    "word": "ガソリンスタンド",
+    "reading": "ガソリンスタンド",
+    "definition": "trạm xăng",
+    "example": "ガソリンスタンドに寄る。",
+    "difficulty": "beginner",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-543",
+    "word": "免許証",
+    "reading": "めんきょしょう",
+    "definition": "bằng lái xe",
+    "example": "免許証を見せる。",
+    "difficulty": "beginner",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-544",
+    "word": "運転免許",
+    "reading": "うんてんめんきょ",
+    "definition": "bằng lái xe",
+    "example": "運転免許を取得する。",
+    "difficulty": "beginner",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-545",
+    "word": "渋滞",
+    "reading": "じゅうたい",
+    "definition": "kẹt xe",
+    "example": "渋滞に巻き込まれた。",
+    "difficulty": "beginner",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-546",
+    "word": "通行止め",
+    "reading": "つうこうどめ",
+    "definition": "đường bị chặn",
+    "example": "通行止めになっている。",
+    "difficulty": "beginner",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-547",
+    "word": "一方通行",
+    "reading": "いっぽうつうこう",
+    "definition": "đường một chiều",
+    "example": "一方通行の道路。",
+    "difficulty": "beginner",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-548",
+    "word": "車道",
+    "reading": "しゃどう",
+    "definition": "làn đường xe",
+    "example": "車道を渡る。",
+    "difficulty": "beginner",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-549",
+    "word": "歩道",
+    "reading": "ほどう",
+    "definition": "làn đường bộ",
+    "example": "歩道を歩く。",
+    "difficulty": "beginner",
+    "topic": "transportation"
+  },
+  {
+    "id": "nvs3-550",
+    "word": "買い物",
+    "reading": "かいもの",
+    "definition": "mua sắm",
+    "example": "買い物に行く。",
+    "difficulty": "advanced",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-551",
+    "word": "店員",
+    "reading": "てんいん",
+    "definition": "nhân viên cửa hàng",
+    "example": "店員に聞く。",
+    "difficulty": "advanced",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-552",
+    "word": "レジ",
+    "reading": "レジ",
+    "definition": "quầy thanh toán",
+    "example": "レジで会計する。",
+    "difficulty": "advanced",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-553",
+    "word": "領収書",
+    "reading": "りょうしゅうしょ",
+    "definition": "hóa đơn",
+    "example": "領収書をもらう。",
+    "difficulty": "advanced",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-554",
+    "word": "値段",
+    "reading": "ねだん",
+    "definition": "giá cả",
+    "example": "値段が高い。",
+    "difficulty": "advanced",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-555",
+    "word": "割引",
+    "reading": "わりびき",
+    "definition": "giảm giá",
+    "example": "割引で買う。",
+    "difficulty": "advanced",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-556",
+    "word": "品切れ",
+    "reading": "しなぎれ",
+    "definition": "hết hàng",
+    "example": "品切れになってしまった。",
+    "difficulty": "advanced",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-557",
+    "word": "入荷",
+    "reading": "にゅうか",
+    "definition": "nhập hàng",
+    "example": "新しい入荷があった。",
+    "difficulty": "advanced",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-558",
+    "word": "在庫",
+    "reading": "ざいこ",
+    "definition": "hàng tồn kho",
+    "example": "在庫を確認する。",
+    "difficulty": "advanced",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-559",
+    "word": "予約",
+    "reading": "よやく",
+    "definition": "đặt trước",
+    "example": "予約して買った。",
+    "difficulty": "advanced",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-560",
+    "word": "サイズ",
+    "reading": "サイズ",
+    "definition": "kích cỡ",
+    "example": "サイズが合わない。",
+    "difficulty": "advanced",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-561",
+    "word": "クーポン",
+    "reading": "クーポン",
+    "definition": "phiếu giảm giá",
+    "example": "クーポンをもらう。",
+    "difficulty": "advanced",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-562",
+    "word": "カゴ",
+    "reading": "カゴ",
+    "definition": "giỏ",
+    "example": "カゴに入れる。",
+    "difficulty": "advanced",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-563",
+    "word": "袋",
+    "reading": "ふくろ",
+    "definition": "túi",
+    "example": "袋をください。",
+    "difficulty": "advanced",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-564",
+    "word": "返品",
+    "reading": "へんぴん",
+    "definition": "trả hàng",
+    "example": "返品したいです。",
+    "difficulty": "advanced",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-565",
+    "word": "交換",
+    "reading": "こうかん",
+    "definition": "đổi hàng",
+    "example": "サイズを交換したい。",
+    "difficulty": "intermediate",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-566",
+    "word": "保証書",
+    "reading": "ほしょうしょ",
+    "definition": "phiếu bảo hành",
+    "example": "保証書を保管する。",
+    "difficulty": "intermediate",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-567",
+    "word": "クレジットカード",
+    "reading": "クレジットカード",
+    "definition": "thẻ tín dụng",
+    "example": "クレジットカードで支払う。",
+    "difficulty": "intermediate",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-568",
+    "word": "現金",
+    "reading": "げんきん",
+    "definition": "tiền mặt",
+    "example": "現金で払う。",
+    "difficulty": "intermediate",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-569",
+    "word": "ポイントカード",
+    "reading": "ポイントカード",
+    "definition": "thẻ tích điểm",
+    "example": "ポイントカードを使う。",
+    "difficulty": "intermediate",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-570",
+    "word": "百貨店",
+    "reading": "ひゃっかてん",
+    "definition": "cửa hàng bách hóa",
+    "example": "百貨店で買い物する。",
+    "difficulty": "intermediate",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-571",
+    "word": "スーパー",
+    "reading": "スーパー",
+    "definition": "siêu thị",
+    "example": "スーパーで食材を買う。",
+    "difficulty": "intermediate",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-572",
+    "word": "コンビニ",
+    "reading": "コンビニ",
+    "definition": "tiệm tiện lợi",
+    "example": "コンビニで弁当を買う。",
+    "difficulty": "intermediate",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-573",
+    "word": "店",
+    "reading": "みせ",
+    "definition": "cửa hàng",
+    "example": "新しい店ができた。",
+    "difficulty": "intermediate",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-574",
+    "word": "販売",
+    "reading": "はんばい",
+    "definition": "bán hàng",
+    "example": "販売が好調だ。",
+    "difficulty": "intermediate",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-575",
+    "word": "購入",
+    "reading": "こうにゅう",
+    "definition": "mua hàng",
+    "example": "購入を検討する。",
+    "difficulty": "intermediate",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-576",
+    "word": "特売",
+    "reading": "とくばい",
+    "definition": "giảm giá đặc biệt",
+    "example": "特売品を買った。",
+    "difficulty": "intermediate",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-577",
+    "word": "バーゲン",
+    "reading": "バーゲン",
+    "definition": "giảm giá lớn",
+    "example": "バーゲンセールが始まった。",
+    "difficulty": "intermediate",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-578",
+    "word": "キャッシュバック",
+    "reading": "キャッシュバック",
+    "definition": "tiền hoàn lại",
+    "example": "キャッシュバックがある。",
+    "difficulty": "intermediate",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-579",
+    "word": "電子マネー",
+    "reading": "でんしマネー",
+    "definition": "tiền điện tử",
+    "example": "電子マネーで決済する。",
+    "difficulty": "intermediate",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-580",
+    "word": "バーコード",
+    "reading": "バーコード",
+    "definition": "mã vạch",
+    "example": "バーコードを読ませる。",
+    "difficulty": "intermediate",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-581",
+    "word": "ショーウィンドウ",
+    "reading": "ショーウィンドウ",
+    "definition": "cửa kính trưng bày",
+    "example": "ショーウィンドウを見る。",
+    "difficulty": "intermediate",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-582",
+    "word": "陳列",
+    "reading": "ちんれつ",
+    "definition": "trưng bày",
+    "example": "陳列がきれいだ。",
+    "difficulty": "intermediate",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-583",
+    "word": "専門店",
+    "reading": "せんもんてん",
+    "definition": "cửa hàng chuyên",
+    "example": "専門店で選ぶ。",
+    "difficulty": "intermediate",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-584",
+    "word": "アウトレット",
+    "reading": "アウトレット",
+    "definition": "cửa hàng outlet",
+    "example": "アウトレットで買い物する。",
+    "difficulty": "intermediate",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-585",
+    "word": "店舗",
+    "reading": "てんぽ",
+    "definition": "cửa hàng",
+    "example": "店舗数が増える。",
+    "difficulty": "intermediate",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-586",
+    "word": "宅配便",
+    "reading": "たくはいびん",
+    "definition": "giao hàng tận nơi",
+    "example": "宅配便で届く。",
+    "difficulty": "beginner",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-587",
+    "word": "配送",
+    "reading": "はいそう",
+    "definition": "vận chuyển",
+    "example": "配送はいつですか。",
+    "difficulty": "beginner",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-588",
+    "word": "ドラッグストア",
+    "reading": "ドラッグストア",
+    "definition": "nhà thuốc",
+    "example": "ドラッグストアに行く。",
+    "difficulty": "beginner",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-589",
+    "word": "ポイント",
+    "reading": "ポイント",
+    "definition": "điểm thưởng",
+    "example": "ポイントが貯まった。",
+    "difficulty": "beginner",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-590",
+    "word": "サンプル",
+    "reading": "サンプル",
+    "definition": "mẫu thử",
+    "example": "サンプルをもらう。",
+    "difficulty": "beginner",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-591",
+    "word": "試着",
+    "reading": "しちゃく",
+    "definition": "thử đồ",
+    "example": "試着室に入る。",
+    "difficulty": "beginner",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-592",
+    "word": "原産国",
+    "reading": "げんさんこく",
+    "definition": "quốc gia xuất xứ",
+    "example": "原産国はどこですか。",
+    "difficulty": "beginner",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-593",
+    "word": "店先",
+    "reading": "みせさき",
+    "definition": "mặt tiền cửa hàng",
+    "example": "店先に並ぶ商品。",
+    "difficulty": "beginner",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-594",
+    "word": "フランチャイズ",
+    "reading": "フランチャイズ",
+    "definition": "nhượng quyền",
+    "example": "フランチャイズで出店する。",
+    "difficulty": "beginner",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-595",
+    "word": "お買い得",
+    "reading": "おかいどく",
+    "definition": "giá hời",
+    "example": "お買い得の品。",
+    "difficulty": "beginner",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-596",
+    "word": "値引き",
+    "reading": "ねびき",
+    "definition": "giảm giá",
+    "example": "値引きして売る。",
+    "difficulty": "beginner",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-597",
+    "word": "お釣り",
+    "reading": "おつり",
+    "definition": "tiền thừa",
+    "example": "お釣りをもらう。",
+    "difficulty": "beginner",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-598",
+    "word": "会計",
+    "reading": "かいけい",
+    "definition": "thanh toán",
+    "example": "会計を済ませる。",
+    "difficulty": "beginner",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-599",
+    "word": "レシート",
+    "reading": "レシート",
+    "definition": "hóa đơn nhỏ",
+    "example": "レシートを保管する。",
+    "difficulty": "beginner",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-600",
+    "word": "商品",
+    "reading": "しょうひん",
+    "definition": "hàng hóa",
+    "example": "商品を選びます。",
+    "difficulty": "beginner",
+    "topic": "shopping"
+  },
+  {
+    "id": "nvs3-601",
+    "word": "メニュー",
+    "reading": "メニュー",
+    "definition": "thực đơn",
+    "example": "メニューを見る。",
+    "difficulty": "advanced",
+    "topic": "restaurant"
+  },
+  {
+    "id": "nvs3-602",
+    "word": "注文",
+    "reading": "ちゅうもん",
+    "definition": "đặt món",
+    "example": "注文を取る。",
+    "difficulty": "advanced",
+    "topic": "restaurant"
+  },
+  {
+    "id": "nvs3-603",
+    "word": "料理",
+    "reading": "りょうり",
+    "definition": "món ăn",
+    "example": "料理がおいしい。",
+    "difficulty": "advanced",
+    "topic": "restaurant"
+  },
+  {
+    "id": "nvs3-604",
+    "word": "定食",
+    "reading": "ていしょく",
+    "definition": "cơm phần",
+    "example": "定食を注文する。",
+    "difficulty": "advanced",
+    "topic": "restaurant"
+  },
+  {
+    "id": "nvs3-605",
+    "word": "セット",
+    "reading": "セット",
+    "definition": "phần ăn combo",
+    "example": "セットで注文する。",
+    "difficulty": "advanced",
+    "topic": "restaurant"
+  },
+  {
+    "id": "nvs3-606",
+    "word": "ランチ",
+    "reading": "ランチ",
+    "definition": "bữa trưa",
+    "example": "ランチタイム。",
+    "difficulty": "advanced",
+    "topic": "restaurant"
+  },
+  {
+    "id": "nvs3-607",
+    "word": "ディナー",
+    "reading": "ディナー",
+    "definition": "bữa tối",
+    "example": "ディナーに着ていく服。",
+    "difficulty": "advanced",
+    "topic": "restaurant"
+  },
+  {
+    "id": "nvs3-608",
+    "word": "コース",
+    "reading": "コース",
+    "definition": "combo theo bữa",
+    "example": "コース料理を予約する。",
+    "difficulty": "advanced",
+    "topic": "restaurant"
+  },
+  {
+    "id": "nvs3-609",
+    "word": "デザート",
+    "reading": "デザート",
+    "definition": "tráng miệng",
+    "example": "デザートを頼む。",
+    "difficulty": "advanced",
+    "topic": "restaurant"
+  },
+  {
+    "id": "nvs3-610",
+    "word": "ドリンク",
+    "reading": "ドリンク",
+    "definition": "đồ uống",
+    "example": "ドリンクはいかがですか。",
+    "difficulty": "advanced",
+    "topic": "restaurant"
+  },
+  {
+    "id": "nvs3-611",
+    "word": "ビール",
+    "reading": "ビール",
+    "definition": "bia",
+    "example": "ビールを一杯。",
+    "difficulty": "advanced",
+    "topic": "restaurant"
+  },
+  {
+    "id": "nvs3-612",
+    "word": "ワイン",
+    "reading": "ワイン",
+    "definition": "rượu vang",
+    "example": "ワインを注文する。",
+    "difficulty": "advanced",
+    "topic": "restaurant"
+  },
+  {
+    "id": "nvs3-613",
+    "word": "グラス",
+    "reading": "グラス",
+    "definition": "ly",
+    "example": "グラスをもう一つ。",
+    "difficulty": "advanced",
+    "topic": "restaurant"
+  },
+  {
+    "id": "nvs3-614",
+    "word": "ボトル",
+    "reading": "ボトル",
+    "definition": "chai",
+    "example": "ボトルを注文する。",
+    "difficulty": "advanced",
+    "topic": "restaurant"
+  },
+  {
+    "id": "nvs3-615",
+    "word": "おしぼり",
+    "reading": "おしぼり",
+    "definition": "khăn nóng lau tay",
+    "example": "おしぼりを使う。",
+    "difficulty": "intermediate",
+    "topic": "restaurant"
+  },
+  {
+    "id": "nvs3-616",
+    "word": "席",
+    "reading": "せき",
+    "definition": "chỗ ngồi",
+    "example": "席を案内する。",
+    "difficulty": "intermediate",
+    "topic": "restaurant"
+  },
+  {
+    "id": "nvs3-617",
+    "word": "カウンター",
+    "reading": "カウンター",
+    "definition": "quầy",
+    "example": "カウンター席に座る。",
+    "difficulty": "intermediate",
+    "topic": "restaurant"
+  },
+  {
+    "id": "nvs3-618",
+    "word": "個室",
+    "reading": "こしつ",
+    "definition": "phòng riêng",
+    "example": "個室を予約する。",
+    "difficulty": "intermediate",
+    "topic": "restaurant"
+  },
+  {
+    "id": "nvs3-619",
+    "word": "テーブル",
+    "reading": "テーブル",
+    "definition": "bàn",
+    "example": "テーブルを準備する。",
+    "difficulty": "intermediate",
+    "topic": "restaurant"
+  },
+  {
+    "id": "nvs3-620",
+    "word": "店長",
+    "reading": "てんちょう",
+    "definition": "quản lý cửa hàng",
+    "example": "店長に聞く。",
+    "difficulty": "intermediate",
+    "topic": "restaurant"
+  },
+  {
+    "id": "nvs3-621",
+    "word": "シェフ",
+    "reading": "シェフ",
+    "definition": "đầu bếp",
+    "example": "シェフに感謝する。",
+    "difficulty": "intermediate",
+    "topic": "restaurant"
+  },
+  {
+    "id": "nvs3-622",
+    "word": "ウェイター",
+    "reading": "ウェイター",
+    "definition": "bồi bàn",
+    "example": "ウェイターを呼ぶ。",
+    "difficulty": "intermediate",
+    "topic": "restaurant"
+  },
+  {
+    "id": "nvs3-623",
+    "word": "台所",
+    "reading": "だいどころ",
+    "definition": "nhà bếp",
+    "example": "台所に立つ。",
+    "difficulty": "intermediate",
+    "topic": "restaurant"
+  },
+  {
+    "id": "nvs3-624",
+    "word": "皿",
+    "reading": "さら",
+    "definition": "đĩa",
+    "example": "皿に盛り付ける。",
+    "difficulty": "intermediate",
+    "topic": "restaurant"
+  },
+  {
+    "id": "nvs3-625",
+    "word": "丼",
+    "reading": "どんぶり",
+    "definition": "bát cơm",
+    "example": "丼を注文する。",
+    "difficulty": "intermediate",
+    "topic": "restaurant"
+  },
+  {
+    "id": "nvs3-626",
+    "word": "茶碗",
+    "reading": "ちゃわん",
+    "definition": "bát cơm nhỏ",
+    "example": "茶碗にお茶を注ぐ。",
+    "difficulty": "intermediate",
+    "topic": "restaurant"
+  },
+  {
+    "id": "nvs3-627",
+    "word": "出汁",
+    "reading": "だし",
+    "definition": "nước dùng",
+    "example": "出汁が濃い。",
+    "difficulty": "intermediate",
+    "topic": "restaurant"
+  },
+  {
+    "id": "nvs3-628",
+    "word": "お通し",
+    "reading": "おとおし",
+    "definition": "món khai vị nhỏ",
+    "example": "お通しが出た。",
+    "difficulty": "intermediate",
+    "topic": "restaurant"
+  },
+  {
+    "id": "nvs3-629",
+    "word": "割烹",
+    "reading": "かっぽう",
+    "definition": "nhà hàng truyền thống",
+    "example": "割烹で食事をする。",
+    "difficulty": "intermediate",
+    "topic": "restaurant"
+  },
+  {
+    "id": "nvs3-630",
+    "word": "居酒屋",
+    "reading": "いざかや",
+    "definition": "quán rượu izakaya",
+    "example": "居酒屋で飲む。",
+    "difficulty": "intermediate",
+    "topic": "restaurant"
+  },
+  {
+    "id": "nvs3-631",
+    "word": "焼鳥屋",
+    "reading": "やきとりや",
+    "definition": "quán nướng yakitori",
+    "example": "焼鳥屋に行く。",
+    "difficulty": "intermediate",
+    "topic": "restaurant"
+  },
+  {
+    "id": "nvs3-632",
+    "word": "看板",
+    "reading": "かんばん",
+    "definition": "biển hiệu",
+    "example": "看板を見る。",
+    "difficulty": "intermediate",
+    "topic": "restaurant"
+  },
+  {
+    "id": "nvs3-633",
+    "word": "食券",
+    "reading": "しょっけん",
+    "definition": "vé đặt món tự phục vụ",
+    "example": "食券を買う。",
+    "difficulty": "beginner",
+    "topic": "restaurant"
+  },
+  {
+    "id": "nvs3-634",
+    "word": "メインディッシュ",
+    "reading": "メインディッシュ",
+    "definition": "món chính",
+    "example": "メインディッシュは何ですか。",
+    "difficulty": "beginner",
+    "topic": "restaurant"
+  },
+  {
+    "id": "nvs3-635",
+    "word": "ソフトドリンク",
+    "reading": "ソフトドリンク",
+    "definition": "đồ uống không cồn",
+    "example": "ソフトドリンクしか飲めない。",
+    "difficulty": "beginner",
+    "topic": "restaurant"
+  },
+  {
+    "id": "nvs3-636",
+    "word": "添え物",
+    "reading": "そえもの",
+    "definition": "đồ ăn kèm",
+    "example": "添え物がつく。",
+    "difficulty": "beginner",
+    "topic": "restaurant"
+  },
+  {
+    "id": "nvs3-637",
+    "word": "小鉢",
+    "reading": "こばち",
+    "definition": "đĩa nhỏ",
+    "example": "小鉢に盛る。",
+    "difficulty": "beginner",
+    "topic": "restaurant"
+  },
+  {
+    "id": "nvs3-638",
+    "word": "箸",
+    "reading": "はし",
+    "definition": "đũa",
+    "example": "箸をもらう。",
+    "difficulty": "beginner",
+    "topic": "restaurant"
+  },
+  {
+    "id": "nvs3-639",
+    "word": "スプーン",
+    "reading": "スプーン",
+    "definition": "thìa",
+    "example": "スプーンで食べる。",
+    "difficulty": "beginner",
+    "topic": "restaurant"
+  },
+  {
+    "id": "nvs3-640",
+    "word": "フォーク",
+    "reading": "フォーク",
+    "definition": "nĩa",
+    "example": "フォークを使う。",
+    "difficulty": "beginner",
+    "topic": "restaurant"
+  },
+  {
+    "id": "nvs3-641",
+    "word": "ナイフ",
+    "reading": "ナイフ",
+    "definition": "dao",
+    "example": "ナイフで切る。",
+    "difficulty": "beginner",
+    "topic": "restaurant"
+  },
+  {
+    "id": "nvs3-642",
+    "word": "呼び出しベル",
+    "reading": "よびだしベル",
+    "definition": "chuông gọi nhân viên",
+    "example": "呼び出しベルを押す。",
+    "difficulty": "beginner",
+    "topic": "restaurant"
+  },
+  {
+    "id": "nvs3-643",
+    "word": "厨房",
+    "reading": "ちゅうぼう",
+    "definition": "bếp nhà hàng",
+    "example": "厨房から料理が出てくる。",
+    "difficulty": "beginner",
+    "topic": "restaurant"
+  },
+  {
+    "id": "nvs3-644",
+    "word": "湯呑み",
+    "reading": "ゆのみ",
+    "definition": "cốc uống trà nhỏ",
+    "example": "湯呑みで飲む。",
+    "difficulty": "beginner",
+    "topic": "restaurant"
+  },
+  {
+    "id": "nvs3-645",
+    "word": "ウェイトレス",
+    "reading": "ウェイトレス",
+    "definition": "nữ phục vụ",
+    "example": "ウェイトレスが来る。",
+    "difficulty": "beginner",
+    "topic": "restaurant"
+  },
+  {
+    "id": "nvs3-646",
+    "word": "お勘定",
+    "reading": "おかんじょう",
+    "definition": "tính tiền",
+    "example": "お勘定をお願いします。",
+    "difficulty": "beginner",
+    "topic": "restaurant"
+  },
+  {
+    "id": "nvs3-647",
+    "word": "病院",
+    "reading": "びょういん",
+    "definition": "bệnh viện",
+    "example": "病院に行く。",
+    "difficulty": "advanced",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-648",
+    "word": "患者",
+    "reading": "かんじゃ",
+    "definition": "bệnh nhân",
+    "example": "患者を診察する。",
+    "difficulty": "advanced",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-649",
+    "word": "医者",
+    "reading": "いしゃ",
+    "definition": "bác sĩ",
+    "example": "医者に相談する。",
+    "difficulty": "advanced",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-650",
+    "word": "看護師",
+    "reading": "かんごし",
+    "definition": "y tá",
+    "example": "看護師が看護する。",
+    "difficulty": "advanced",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-651",
+    "word": "薬",
+    "reading": "くすり",
+    "definition": "thuốc",
+    "example": "薬をもらう。",
+    "difficulty": "advanced",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-652",
+    "word": "処方箋",
+    "reading": "しょほうせん",
+    "definition": "đơn thuốc",
+    "example": "処方箋をもらう。",
+    "difficulty": "advanced",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-653",
+    "word": "診察",
+    "reading": "しんさつ",
+    "definition": "khám bệnh",
+    "example": "診察を受ける。",
+    "difficulty": "advanced",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-654",
+    "word": "検査",
+    "reading": "けんさ",
+    "definition": "xét nghiệm",
+    "example": "検査の結果。",
+    "difficulty": "advanced",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-655",
+    "word": "手術",
+    "reading": "しゅじゅつ",
+    "definition": "phẫu thuật",
+    "example": "手術を受けた。",
+    "difficulty": "advanced",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-656",
+    "word": "入院",
+    "reading": "にゅういん",
+    "definition": "nhập viện",
+    "example": "入院することになった。",
+    "difficulty": "advanced",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-657",
+    "word": "退院",
+    "reading": "たいいん",
+    "definition": "xuất viện",
+    "example": "退院する。",
+    "difficulty": "advanced",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-658",
+    "word": "予防接種",
+    "reading": "よぼうせっしゅ",
+    "definition": "tiêm phòng",
+    "example": "予防接種をする。",
+    "difficulty": "advanced",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-659",
+    "word": "健康診断",
+    "reading": "けんこうしんだん",
+    "definition": "khám sức khỏe định kỳ",
+    "example": "健康診断を受ける。",
+    "difficulty": "advanced",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-660",
+    "word": "薬局",
+    "reading": "やっきょく",
+    "definition": "nhà thuốc",
+    "example": "薬局に行く。",
+    "difficulty": "advanced",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-661",
+    "word": "内科",
+    "reading": "ないか",
+    "definition": "khoa nội",
+    "example": "内科で診てもらう。",
+    "difficulty": "advanced",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-662",
+    "word": "外科",
+    "reading": "げか",
+    "definition": "khoa ngoại",
+    "example": "外科に通院する。",
+    "difficulty": "intermediate",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-663",
+    "word": "歯科",
+    "reading": "しか",
+    "definition": "khoa nha khoa",
+    "example": "歯科で治療する。",
+    "difficulty": "intermediate",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-664",
+    "word": "眼科",
+    "reading": "がんか",
+    "definition": "khoa nhãn khoa",
+    "example": "眼科で検査する。",
+    "difficulty": "intermediate",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-665",
+    "word": "耳鼻科",
+    "reading": "じびか",
+    "definition": "khoa tai mũi họng",
+    "example": "耳鼻科に行く。",
+    "difficulty": "intermediate",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-666",
+    "word": "皮膚科",
+    "reading": "ひふか",
+    "definition": "khoa da liễu",
+    "example": "皮膚科に相談する。",
+    "difficulty": "intermediate",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-667",
+    "word": "整形外科",
+    "reading": "せいけいげか",
+    "definition": "khoa chỉnh hình",
+    "example": "整形外科に行く。",
+    "difficulty": "intermediate",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-668",
+    "word": "産婦人科",
+    "reading": "さんふじんか",
+    "definition": "khoa sản",
+    "example": "産婦人科にかかる。",
+    "difficulty": "intermediate",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-669",
+    "word": "小児科",
+    "reading": "しょうにか",
+    "definition": "khoa nhi",
+    "example": "小児科に連れて行く。",
+    "difficulty": "intermediate",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-670",
+    "word": "救急車",
+    "reading": "きゅうきゅうしゃ",
+    "definition": "xe cấp cứu",
+    "example": "救急車を呼ぶ。",
+    "difficulty": "intermediate",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-671",
+    "word": "診察券",
+    "reading": "しんさつけん",
+    "definition": "thẻ khám bệnh",
+    "example": "診察券を見せる。",
+    "difficulty": "intermediate",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-672",
+    "word": "問診票",
+    "reading": "もんしんひょう",
+    "definition": "phiếu khám bệnh",
+    "example": "問診票を書く。",
+    "difficulty": "intermediate",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-673",
+    "word": "症状",
+    "reading": "しょうじょう",
+    "definition": "triệu chứng",
+    "example": "症状を伝える。",
+    "difficulty": "intermediate",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-674",
+    "word": "診断",
+    "reading": "しんだん",
+    "definition": "chẩn đoán",
+    "example": "診断が下りた。",
+    "difficulty": "intermediate",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-675",
+    "word": "治療",
+    "reading": "ちりょう",
+    "definition": "điều trị",
+    "example": "治療を受ける。",
+    "difficulty": "intermediate",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-676",
+    "word": "注射",
+    "reading": "ちゅうしゃ",
+    "definition": "tiêm",
+    "example": "注射を打つ。",
+    "difficulty": "intermediate",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-677",
+    "word": "点滴",
+    "reading": "てんてき",
+    "definition": "tiêm truyền",
+    "example": "点滴を打つ。",
+    "difficulty": "intermediate",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-678",
+    "word": "採血",
+    "reading": "さいけつ",
+    "definition": "lấy máu",
+    "example": "採血をする。",
+    "difficulty": "intermediate",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-679",
+    "word": "レントゲン",
+    "reading": "レントゲン",
+    "definition": "chụp X-quang",
+    "example": "レントゲンを撮る。",
+    "difficulty": "intermediate",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-680",
+    "word": "処方",
+    "reading": "しょほう",
+    "definition": "kê đơn",
+    "example": "処方を受ける。",
+    "difficulty": "intermediate",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-681",
+    "word": "内服薬",
+    "reading": "ないふくやく",
+    "definition": "thuốc uống",
+    "example": "内服薬を飲む。",
+    "difficulty": "beginner",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-682",
+    "word": "外用薬",
+    "reading": "がいようやく",
+    "definition": "thuốc bôi",
+    "example": "外用薬を塗る。",
+    "difficulty": "beginner",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-683",
+    "word": "副作用",
+    "reading": "ふくさよう",
+    "definition": "tác dụng phụ",
+    "example": "副作用に注意する。",
+    "difficulty": "beginner",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-684",
+    "word": "通院",
+    "reading": "つういん",
+    "definition": "đi khám định kỳ",
+    "example": "通院を続ける。",
+    "difficulty": "beginner",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-685",
+    "word": "急性",
+    "reading": "きゅうせい",
+    "definition": "cấp tính",
+    "example": "急性の病気。",
+    "difficulty": "beginner",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-686",
+    "word": "慢性",
+    "reading": "まんせい",
+    "definition": "mãn tính",
+    "example": "慢性の病気。",
+    "difficulty": "beginner",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-687",
+    "word": "手術室",
+    "reading": "しゅじゅつしつ",
+    "definition": "phòng mổ",
+    "example": "手術室に入る。",
+    "difficulty": "beginner",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-688",
+    "word": "待合室",
+    "reading": "まちあいしつ",
+    "definition": "phòng chờ",
+    "example": "待合室で待つ。",
+    "difficulty": "beginner",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-689",
+    "word": "保険証",
+    "reading": "ほけんしょう",
+    "definition": "thẻ bảo hiểm",
+    "example": "保険証を見せる。",
+    "difficulty": "beginner",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-690",
+    "word": "医師",
+    "reading": "いし",
+    "definition": "bác sĩ",
+    "example": "医師の指示に従う。",
+    "difficulty": "beginner",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-691",
+    "word": "診療",
+    "reading": "しんりょう",
+    "definition": "khám và chữa bệnh",
+    "example": "午後の診療。",
+    "difficulty": "beginner",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-692",
+    "word": "脈拍",
+    "reading": "みゃくはく",
+    "definition": "mạch đập",
+    "example": "脈拍が速い。",
+    "difficulty": "beginner",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-693",
+    "word": "体温",
+    "reading": "たいおん",
+    "definition": "nhiệt độ cơ thể",
+    "example": "体温を測る。",
+    "difficulty": "beginner",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-694",
+    "word": "血圧",
+    "reading": "けつあつ",
+    "definition": "huyết áp",
+    "example": "血圧が高い。",
+    "difficulty": "beginner",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-695",
+    "word": "院長",
+    "reading": "いんちょう",
+    "definition": "giám đốc bệnh viện",
+    "example": "院長が話す。",
+    "difficulty": "beginner",
+    "topic": "hospital"
+  },
+  {
+    "id": "nvs3-696",
+    "word": "学校",
+    "reading": "がっこう",
+    "definition": "trường học",
+    "example": "学校に通う。",
+    "difficulty": "advanced",
+    "topic": "school"
+  },
+  {
+    "id": "nvs3-697",
+    "word": "教室",
+    "reading": "きょうしつ",
+    "definition": "lớp học",
+    "example": "教室に入る。",
+    "difficulty": "advanced",
+    "topic": "school"
+  },
+  {
+    "id": "nvs3-698",
+    "word": "先生",
+    "reading": "せんせい",
+    "definition": "giáo viên",
+    "example": "先生に質問する。",
+    "difficulty": "advanced",
+    "topic": "school"
+  },
+  {
+    "id": "nvs3-699",
+    "word": "生徒",
+    "reading": "せいと",
+    "definition": "học sinh",
+    "example": "生徒が集まる。",
+    "difficulty": "advanced",
+    "topic": "school"
+  },
+  {
+    "id": "nvs3-700",
+    "word": "授業",
+    "reading": "じゅぎょう",
+    "definition": "bài giảng",
+    "example": "授業を受ける。",
+    "difficulty": "advanced",
+    "topic": "school"
+  },
+  {
+    "id": "nvs3-701",
+    "word": "宿題",
+    "reading": "しゅくだい",
+    "definition": "bài tập về nhà",
+    "example": "宿題を終える。",
+    "difficulty": "advanced",
+    "topic": "school"
+  },
+  {
+    "id": "nvs3-702",
+    "word": "テスト",
+    "reading": "テスト",
+    "definition": "bài kiểm tra",
+    "example": "テストを受ける。",
+    "difficulty": "advanced",
+    "topic": "school"
+  },
+  {
+    "id": "nvs3-703",
+    "word": "試験",
+    "reading": "しけん",
+    "definition": "kỳ thi",
+    "example": "試験に受かる。",
+    "difficulty": "advanced",
+    "topic": "school"
+  },
+  {
+    "id": "nvs3-704",
+    "word": "成績",
+    "reading": "せいせき",
+    "definition": "điểm số",
+    "example": "成績が良い。",
+    "difficulty": "advanced",
+    "topic": "school"
+  },
+  {
+    "id": "nvs3-705",
+    "word": "卒業",
+    "reading": "そつぎょう",
+    "definition": "tốt nghiệp",
+    "example": "卒業式。",
+    "difficulty": "advanced",
+    "topic": "school"
+  },
+  {
+    "id": "nvs3-706",
+    "word": "入学",
+    "reading": "にゅうがく",
+    "definition": "nhập học",
+    "example": "入学式に参加する。",
+    "difficulty": "advanced",
+    "topic": "school"
+  },
+  {
+    "id": "nvs3-707",
+    "word": "教科書",
+    "reading": "きょうかしょ",
+    "definition": "sách giáo khoa",
+    "example": "教科書を忘れた。",
+    "difficulty": "advanced",
+    "topic": "school"
+  },
+  {
+    "id": "nvs3-708",
+    "word": "体育館",
+    "reading": "たいいくかん",
+    "definition": "nhà thi đấu",
+    "example": "体育館で運動する。",
+    "difficulty": "advanced",
+    "topic": "school"
+  },
+  {
+    "id": "nvs3-709",
+    "word": "プール",
+    "reading": "プール",
+    "definition": "bể bơi",
+    "example": "プールで泳ぐ。",
+    "difficulty": "advanced",
+    "topic": "school"
+  },
+  {
+    "id": "nvs3-710",
+    "word": "校庭",
+    "reading": "こうてい",
+    "definition": "sân trường",
+    "example": "校庭で遊ぶ。",
+    "difficulty": "intermediate",
+    "topic": "school"
+  },
+  {
+    "id": "nvs3-711",
+    "word": "図書館",
+    "reading": "としょかん",
+    "definition": "thư viện",
+    "example": "図書館で勉強する。",
+    "difficulty": "intermediate",
+    "topic": "school"
+  },
+  {
+    "id": "nvs3-712",
+    "word": "部活",
+    "reading": "ぶかつ",
+    "definition": "hoạt động câu lạc bộ",
+    "example": "部活に参加する。",
+    "difficulty": "intermediate",
+    "topic": "school"
+  },
+  {
+    "id": "nvs3-713",
+    "word": "文化祭",
+    "reading": "ぶんかさい",
+    "definition": "lễ hội văn hóa",
+    "example": "文化祭を開く。",
+    "difficulty": "intermediate",
+    "topic": "school"
+  },
+  {
+    "id": "nvs3-714",
+    "word": "体育祭",
+    "reading": "たいいくさい",
+    "definition": "lễ hội thể thao",
+    "example": "体育祭に参加する。",
+    "difficulty": "intermediate",
+    "topic": "school"
+  },
+  {
+    "id": "nvs3-715",
+    "word": "遠足",
+    "reading": "えんそく",
+    "definition": "đi dã ngoại",
+    "example": "遠足に行く。",
+    "difficulty": "intermediate",
+    "topic": "school"
+  },
+  {
+    "id": "nvs3-716",
+    "word": "修学旅行",
+    "reading": "しゅうがくりょこう",
+    "definition": "chuyến đi thực tế",
+    "example": "修学旅行に行く。",
+    "difficulty": "intermediate",
+    "topic": "school"
+  },
+  {
+    "id": "nvs3-717",
+    "word": "進級",
+    "reading": "しんきゅう",
+    "definition": "lên lớp",
+    "example": "進級が決まった。",
+    "difficulty": "intermediate",
+    "topic": "school"
+  },
+  {
+    "id": "nvs3-718",
+    "word": "遅刻",
+    "reading": "ちこく",
+    "definition": "đến muộn",
+    "example": "遅刻しないように。",
+    "difficulty": "intermediate",
+    "topic": "school"
+  },
+  {
+    "id": "nvs3-719",
+    "word": "出席",
+    "reading": "しゅっせき",
+    "definition": "đi học đầy đủ",
+    "example": "出席を取る。",
+    "difficulty": "intermediate",
+    "topic": "school"
+  },
+  {
+    "id": "nvs3-720",
+    "word": "欠席",
+    "reading": "けっせき",
+    "definition": "vắng mặt",
+    "example": "欠席が多い。",
+    "difficulty": "intermediate",
+    "topic": "school"
+  },
+  {
+    "id": "nvs3-721",
+    "word": "早退",
+    "reading": "そうたい",
+    "definition": "về sớm",
+    "example": "早退する。",
+    "difficulty": "intermediate",
+    "topic": "school"
+  },
+  {
+    "id": "nvs3-722",
+    "word": "講堂",
+    "reading": "こうどう",
+    "definition": "hội trường",
+    "example": "講堂で集まる。",
+    "difficulty": "intermediate",
+    "topic": "school"
+  },
+  {
+    "id": "nvs3-723",
+    "word": "理科室",
+    "reading": "りかしつ",
+    "definition": "phòng thí nghiệm",
+    "example": "理科室で実験する。",
+    "difficulty": "intermediate",
+    "topic": "school"
+  },
+  {
+    "id": "nvs3-724",
+    "word": "音楽室",
+    "reading": "おんがくしつ",
+    "definition": "phòng âm nhạc",
+    "example": "音楽室で歌う。",
+    "difficulty": "intermediate",
+    "topic": "school"
+  },
+  {
+    "id": "nvs3-725",
+    "word": "美術室",
+    "reading": "びじゅつしつ",
+    "definition": "phòng mỹ thuật",
+    "example": "美術室で絵を描く。",
+    "difficulty": "intermediate",
+    "topic": "school"
+  },
+  {
+    "id": "nvs3-726",
+    "word": "校舎",
+    "reading": "こうしゃ",
+    "definition": "tòa nhà trường",
+    "example": "校舎が古い。",
+    "difficulty": "intermediate",
+    "topic": "school"
+  },
+  {
+    "id": "nvs3-727",
+    "word": "校門",
+    "reading": "こうもん",
+    "definition": "cổng trường",
+    "example": "校門で待ち合わせ。",
+    "difficulty": "beginner",
+    "topic": "school"
+  },
+  {
+    "id": "nvs3-728",
+    "word": "教員",
+    "reading": "きょういん",
+    "definition": "giáo viên",
+    "example": "教員研修がある。",
+    "difficulty": "beginner",
+    "topic": "school"
+  },
+  {
+    "id": "nvs3-729",
+    "word": "校長",
+    "reading": "こうちょう",
+    "definition": "hiệu trưởng",
+    "example": "校長の講話。",
+    "difficulty": "beginner",
+    "topic": "school"
+  },
+  {
+    "id": "nvs3-730",
+    "word": "学年",
+    "reading": "がくねん",
+    "definition": "niên học",
+    "example": "一年学年。",
+    "difficulty": "beginner",
+    "topic": "school"
+  },
+  {
+    "id": "nvs3-731",
+    "word": "進路",
+    "reading": "しんろ",
+    "definition": "định hướng tương lai",
+    "example": "進路を決める。",
+    "difficulty": "beginner",
+    "topic": "school"
+  },
+  {
+    "id": "nvs3-732",
+    "word": "クラブ",
+    "reading": "クラブ",
+    "definition": "câu lạc bộ",
+    "example": "クラブに入る。",
+    "difficulty": "beginner",
+    "topic": "school"
+  },
+  {
+    "id": "nvs3-733",
+    "word": "留年",
+    "reading": "りゅうねん",
+    "definition": "bị ở lại",
+    "example": "留年してしまう。",
+    "difficulty": "beginner",
+    "topic": "school"
+  },
+  {
+    "id": "nvs3-734",
+    "word": "辞書",
+    "reading": "じしょ",
+    "definition": "từ điển",
+    "example": "辞書を引く。",
+    "difficulty": "beginner",
+    "topic": "school"
+  },
+  {
+    "id": "nvs3-735",
+    "word": "黒板",
+    "reading": "こくばん",
+    "definition": "bảng đen",
+    "example": "黒板を見る。",
+    "difficulty": "beginner",
+    "topic": "school"
+  },
+  {
+    "id": "nvs3-736",
+    "word": "卒業証書",
+    "reading": "そつぎょうしょうしょ",
+    "definition": "bằng tốt nghiệp",
+    "example": "卒業証書をもらう。",
+    "difficulty": "beginner",
+    "topic": "school"
+  },
+  {
+    "id": "nvs3-737",
+    "word": "学生",
+    "reading": "がくせい",
+    "definition": "sinh viên",
+    "example": "学生の頃。",
+    "difficulty": "beginner",
+    "topic": "school"
+  },
+  {
+    "id": "nvs3-738",
+    "word": "学期",
+    "reading": "がっき",
+    "definition": "học kỳ",
+    "example": "新しい学期が始まる。",
+    "difficulty": "beginner",
+    "topic": "school"
+  },
+  {
+    "id": "nvs3-739",
+    "word": "夏休み",
+    "reading": "なつやすみ",
+    "definition": "kỳ nghỉ hè",
+    "example": "夏休みはどこに行く。",
+    "difficulty": "beginner",
+    "topic": "school"
+  },
+  {
+    "id": "nvs3-740",
+    "word": "冬休み",
+    "reading": "ふゆやすみ",
+    "definition": "kỳ nghỉ đông",
+    "example": "冬休みの計画。",
+    "difficulty": "beginner",
+    "topic": "school"
+  },
+  {
+    "id": "nvs3-741",
+    "word": "会社",
+    "reading": "かいしゃ",
+    "definition": "công ty",
+    "example": "会社に行く。",
+    "difficulty": "advanced",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-742",
+    "word": "仕事",
+    "reading": "しごと",
+    "definition": "công việc",
+    "example": "仕事を始める。",
+    "difficulty": "advanced",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-743",
+    "word": "オフィス",
+    "reading": "オフィス",
+    "definition": "văn phòng",
+    "example": "オフィスで働く。",
+    "difficulty": "advanced",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-744",
+    "word": "会議",
+    "reading": "かいぎ",
+    "definition": "cuộc họp",
+    "example": "会議に出席する。",
+    "difficulty": "advanced",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-745",
+    "word": "会議室",
+    "reading": "かいぎしつ",
+    "definition": "phòng họp",
+    "example": "会議室で打ち合わせる。",
+    "difficulty": "advanced",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-746",
+    "word": "社員",
+    "reading": "しゃいん",
+    "definition": "nhân viên",
+    "example": "社員が集まる。",
+    "difficulty": "advanced",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-747",
+    "word": "上司",
+    "reading": "じょうし",
+    "definition": "cấp trên",
+    "example": "上司に報告する。",
+    "difficulty": "advanced",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-748",
+    "word": "部下",
+    "reading": "ぶか",
+    "definition": "cấp dưới",
+    "example": "部下を指導する。",
+    "difficulty": "advanced",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-749",
+    "word": "同僚",
+    "reading": "どうりょう",
+    "definition": "đồng nghiệp",
+    "example": "同僚と一緒に働く。",
+    "difficulty": "advanced",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-750",
+    "word": "出張",
+    "reading": "しゅっちょう",
+    "definition": "công tác",
+    "example": "出張に行く。",
+    "difficulty": "advanced",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-751",
+    "word": "残業",
+    "reading": "ざんぎょう",
+    "definition": "tăng ca",
+    "example": "残業が多い。",
+    "difficulty": "advanced",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-752",
+    "word": "営業",
+    "reading": "えいぎょう",
+    "definition": "phòng kinh doanh",
+    "example": "営業部に所属する。",
+    "difficulty": "advanced",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-753",
+    "word": "人事",
+    "reading": "じんじ",
+    "definition": "phòng nhân sự",
+    "example": "人事に連絡する。",
+    "difficulty": "advanced",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-754",
+    "word": "企画",
+    "reading": "きかく",
+    "definition": "phòng kế hoạch",
+    "example": "企画書を書く。",
+    "difficulty": "advanced",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-755",
+    "word": "開発",
+    "reading": "かいはつ",
+    "definition": "phòng phát triển",
+    "example": "開発に携わる。",
+    "difficulty": "advanced",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-756",
+    "word": "提案",
+    "reading": "ていあん",
+    "definition": "đề xuất",
+    "example": "提案書を出す。",
+    "difficulty": "advanced",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-757",
+    "word": "議事録",
+    "reading": "ぎじろく",
+    "definition": "biên bản họp",
+    "example": "議事録を取る。",
+    "difficulty": "intermediate",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-758",
+    "word": "名刺",
+    "reading": "めいし",
+    "definition": "danh thiếp",
+    "example": "名刺を交換する。",
+    "difficulty": "intermediate",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-759",
+    "word": "給料",
+    "reading": "きゅうりょう",
+    "definition": "lương",
+    "example": "給料が上がる。",
+    "difficulty": "intermediate",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-760",
+    "word": "契約",
+    "reading": "けいやく",
+    "definition": "hợp đồng",
+    "example": "契約を結ぶ。",
+    "difficulty": "intermediate",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-761",
+    "word": "役員",
+    "reading": "やくいん",
+    "definition": "ban lãnh đạo",
+    "example": "役員会議。",
+    "difficulty": "intermediate",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-762",
+    "word": "総務",
+    "reading": "そうむ",
+    "definition": "phòng tổng vụ",
+    "example": "総務に相談する。",
+    "difficulty": "intermediate",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-763",
+    "word": "経理",
+    "reading": "けいり",
+    "definition": "phòng kế toán",
+    "example": "経理を確認する。",
+    "difficulty": "intermediate",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-764",
+    "word": "報告書",
+    "reading": "ほうこくしょ",
+    "definition": "báo cáo",
+    "example": "報告書をまとめる。",
+    "difficulty": "intermediate",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-765",
+    "word": "定例会議",
+    "reading": "ていれいかいぎ",
+    "definition": "cuộc họp định kỳ",
+    "example": "定例会議を開く。",
+    "difficulty": "intermediate",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-766",
+    "word": "研修",
+    "reading": "けんしゅう",
+    "definition": "đào tạo",
+    "example": "研修を受ける。",
+    "difficulty": "intermediate",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-767",
+    "word": "昇進",
+    "reading": "しょうしん",
+    "definition": "thăng chức",
+    "example": "昇進する。",
+    "difficulty": "intermediate",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-768",
+    "word": "退職",
+    "reading": "たいしょく",
+    "definition": "nghỉ việc",
+    "example": "退職届を出す。",
+    "difficulty": "intermediate",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-769",
+    "word": "雇用",
+    "reading": "こよう",
+    "definition": "tuyển dụng",
+    "example": "雇用が増える。",
+    "difficulty": "intermediate",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-770",
+    "word": "ボーナス",
+    "reading": "ボーナス",
+    "definition": "tiền thưởng",
+    "example": "ボーナスが出る。",
+    "difficulty": "intermediate",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-771",
+    "word": "デスク",
+    "reading": "デスク",
+    "definition": "bàn làm việc",
+    "example": "デスクに座る。",
+    "difficulty": "intermediate",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-772",
+    "word": "コピー機",
+    "reading": "コピーき",
+    "definition": "máy photo",
+    "example": "コピー機でコピーする。",
+    "difficulty": "intermediate",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-773",
+    "word": "有給休暇",
+    "reading": "ゆうきゅうきゅうか",
+    "definition": "nghỉ phép có lương",
+    "example": "有給休暇を取る。",
+    "difficulty": "intermediate",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-774",
+    "word": "ミーティング",
+    "reading": "ミーティング",
+    "definition": "cuộc họp",
+    "example": "ミーティングを開く。",
+    "difficulty": "intermediate",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-775",
+    "word": "マーケティング",
+    "reading": "マーケティング",
+    "definition": "phòng marketing",
+    "example": "マーケティング戦略。",
+    "difficulty": "intermediate",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-776",
+    "word": "社員旅行",
+    "reading": "しゃいんりょこう",
+    "definition": "chuyến du lịch công ty",
+    "example": "社員旅行に行く。",
+    "difficulty": "intermediate",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-777",
+    "word": "出世",
+    "reading": "しゅっせ",
+    "definition": "thành công",
+    "example": "出世したい。",
+    "difficulty": "beginner",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-778",
+    "word": "解雇",
+    "reading": "かいこ",
+    "definition": "sa thải",
+    "example": "解雇された。",
+    "difficulty": "beginner",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-779",
+    "word": "労働",
+    "reading": "ろうどう",
+    "definition": "lao động",
+    "example": "労働に従事する。",
+    "difficulty": "beginner",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-780",
+    "word": "残業代",
+    "reading": "ざんぎょうだい",
+    "definition": "tiền tăng ca",
+    "example": "残業代が欲しい。",
+    "difficulty": "beginner",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-781",
+    "word": "給与",
+    "reading": "きゅうよ",
+    "definition": "tiền lương",
+    "example": "給与が上がる。",
+    "difficulty": "beginner",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-782",
+    "word": "時給",
+    "reading": "じきゅう",
+    "definition": "tiền lương theo giờ",
+    "example": "時給が安い。",
+    "difficulty": "beginner",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-783",
+    "word": "月給",
+    "reading": "げっきゅう",
+    "definition": "tiền lương tháng",
+    "example": "月給で働く。",
+    "difficulty": "beginner",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-784",
+    "word": "年収",
+    "reading": "ねんしゅう",
+    "definition": "thu nhập năm",
+    "example": "年収が高い。",
+    "difficulty": "beginner",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-785",
+    "word": "昇給",
+    "reading": "しょうきゅう",
+    "definition": "tăng lương",
+    "example": "昇給する。",
+    "difficulty": "beginner",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-786",
+    "word": "休憩",
+    "reading": "きゅうけい",
+    "definition": "nghỉ giải lao",
+    "example": "休憩に入る。",
+    "difficulty": "beginner",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-787",
+    "word": "就職",
+    "reading": "しゅうしょく",
+    "definition": "đi làm",
+    "example": "就職活動をする。",
+    "difficulty": "beginner",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-788",
+    "word": "転職",
+    "reading": "てんしょく",
+    "definition": "chuyển việc",
+    "example": "転職を検討する。",
+    "difficulty": "beginner",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-789",
+    "word": "定年退職",
+    "reading": "ていねんたいしょく",
+    "definition": "nghỉ hưu",
+    "example": "定年退職を迎える。",
+    "difficulty": "beginner",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-790",
+    "word": "労働者",
+    "reading": "ろうどうしゃ",
+    "definition": "người lao động",
+    "example": "労働者の権利。",
+    "difficulty": "beginner",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-791",
+    "word": "正社員",
+    "reading": "せいしゃいん",
+    "definition": "nhân viên chính thức",
+    "example": "正社員として採用される。",
+    "difficulty": "beginner",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-792",
+    "word": "派遣社員",
+    "reading": "はけんしゃいん",
+    "definition": "nhân viên thời vụ",
+    "example": "派遣社員として働く。",
+    "difficulty": "beginner",
+    "topic": "workplace"
+  },
+  {
+    "id": "nvs3-793",
+    "word": "政府",
+    "reading": "せいふ",
+    "definition": "chính phủ",
+    "example": "政府が発表する。",
+    "difficulty": "advanced",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-794",
+    "word": "国会",
+    "reading": "こっかい",
+    "definition": "Quốc hội",
+    "example": "国会が開かれる。",
+    "difficulty": "advanced",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-795",
+    "word": "首相",
+    "reading": "しゅしょう",
+    "definition": "Thủ tướng",
+    "example": "首相が演説する。",
+    "difficulty": "advanced",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-796",
+    "word": "大臣",
+    "reading": "だいじん",
+    "definition": "Bộ trưởng",
+    "example": "大臣が会見する。",
+    "difficulty": "advanced",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-797",
+    "word": "議員",
+    "reading": "ぎいん",
+    "definition": "nghị sĩ",
+    "example": "議員が質疑する。",
+    "difficulty": "advanced",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-798",
+    "word": "選挙",
+    "reading": "せんきょ",
+    "definition": "bầu cử",
+    "example": "選挙で投票する。",
+    "difficulty": "advanced",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-799",
+    "word": "投票",
+    "reading": "とうひょう",
+    "definition": "bỏ phiếu",
+    "example": "投票所に行く。",
+    "difficulty": "advanced",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-800",
+    "word": "法律",
+    "reading": "ほうりつ",
+    "definition": "pháp luật",
+    "example": "法律を遵守する。",
+    "difficulty": "advanced",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-801",
+    "word": "予算",
+    "reading": "よさん",
+    "definition": "ngân sách",
+    "example": "予算を計上する。",
+    "difficulty": "advanced",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-802",
+    "word": "税金",
+    "reading": "ぜいきん",
+    "definition": "thuế",
+    "example": "税金を払う。",
+    "difficulty": "advanced",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-803",
+    "word": "条例",
+    "reading": "じょうれい",
+    "definition": "điều lệ",
+    "example": "条例が制定された。",
+    "difficulty": "advanced",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-804",
+    "word": "法案",
+    "reading": "ほうあん",
+    "definition": "dự luật",
+    "example": "法案を審議する。",
+    "difficulty": "advanced",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-805",
+    "word": "憲法",
+    "reading": "けんぽう",
+    "definition": "Hiến pháp",
+    "example": "憲法を改正する。",
+    "difficulty": "advanced",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-806",
+    "word": "行政",
+    "reading": "ぎょうせい",
+    "definition": "hành chính",
+    "example": "行政の改革。",
+    "difficulty": "advanced",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-807",
+    "word": "司法",
+    "reading": "しほう",
+    "definition": "tư pháp",
+    "example": "司法の独立。",
+    "difficulty": "advanced",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-808",
+    "word": "立法",
+    "reading": "りっぽう",
+    "definition": "lập pháp",
+    "example": "立法機関。",
+    "difficulty": "intermediate",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-809",
+    "word": "市役所",
+    "reading": "しやくしょ",
+    "definition": "tòa thị chính",
+    "example": "市役所に行く。",
+    "difficulty": "intermediate",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-810",
+    "word": "区役所",
+    "reading": "くやくしょ",
+    "definition": "văn phòng khu",
+    "example": "区役所で届出をする。",
+    "difficulty": "intermediate",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-811",
+    "word": "知事",
+    "reading": "ちじ",
+    "definition": "tỉnh trưởng",
+    "example": "知事が挨拶する。",
+    "difficulty": "intermediate",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-812",
+    "word": "与党",
+    "reading": "よとう",
+    "definition": "đảng cầm quyền",
+    "example": "与党が法案を提出する。",
+    "difficulty": "intermediate",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-813",
+    "word": "野党",
+    "reading": "やとう",
+    "definition": "đảng đối lập",
+    "example": "野党が批判する。",
+    "difficulty": "intermediate",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-814",
+    "word": "政治",
+    "reading": "せいじ",
+    "definition": "chính trị",
+    "example": "政治に関心がある。",
+    "difficulty": "intermediate",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-815",
+    "word": "政策",
+    "reading": "せいさく",
+    "definition": "chính sách",
+    "example": "政策を実行する。",
+    "difficulty": "intermediate",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-816",
+    "word": "外交",
+    "reading": "がいこう",
+    "definition": "ngoại giao",
+    "example": "外交政策。",
+    "difficulty": "intermediate",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-817",
+    "word": "防衛",
+    "reading": "ぼうえい",
+    "definition": "quốc phòng",
+    "example": "防衛費。",
+    "difficulty": "intermediate",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-818",
+    "word": "国民",
+    "reading": "こくみん",
+    "definition": "công dân",
+    "example": "国民の義務。",
+    "difficulty": "intermediate",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-819",
+    "word": "国家",
+    "reading": "こっか",
+    "definition": "quốc gia",
+    "example": "国家のために尽くす。",
+    "difficulty": "intermediate",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-820",
+    "word": "地方自治体",
+    "reading": "ちほうじちたい",
+    "definition": "chính quyền địa phương",
+    "example": "地方自治体に申請する。",
+    "difficulty": "intermediate",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-821",
+    "word": "議長",
+    "reading": "ぎちょう",
+    "definition": "Chủ tịch",
+    "example": "議長が会議を進行する。",
+    "difficulty": "intermediate",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-822",
+    "word": "公務員",
+    "reading": "こうむいん",
+    "definition": "công chức",
+    "example": "公務員試験。",
+    "difficulty": "intermediate",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-823",
+    "word": "選挙区",
+    "reading": "せんきょく",
+    "definition": "khu vực bầu cử",
+    "example": "選挙区を選ぶ。",
+    "difficulty": "intermediate",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-824",
+    "word": "立候補",
+    "reading": "りっこうほ",
+    "definition": "ứng cử",
+    "example": "立候補する。",
+    "difficulty": "intermediate",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-825",
+    "word": "公約",
+    "reading": "こうやく",
+    "definition": "cam kết",
+    "example": "公約を守る。",
+    "difficulty": "intermediate",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-826",
+    "word": "官僚",
+    "reading": "かんりょう",
+    "definition": "quan chức",
+    "example": "官僚制度。",
+    "difficulty": "intermediate",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-827",
+    "word": "民主主義",
+    "reading": "みんしゅしゅぎ",
+    "definition": "dân chủ",
+    "example": "民主主義を守る。",
+    "difficulty": "beginner",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-828",
+    "word": "災害",
+    "reading": "さいがい",
+    "definition": "thiên tai",
+    "example": "災害対策。",
+    "difficulty": "beginner",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-829",
+    "word": "住民票",
+    "reading": "じゅうみんひょう",
+    "definition": "giấy tờ hộ khẩu",
+    "example": "住民票を取得する。",
+    "difficulty": "beginner",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-830",
+    "word": "届出",
+    "reading": "とどけで",
+    "definition": "đăng ký",
+    "example": "届出をする。",
+    "difficulty": "beginner",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-831",
+    "word": "登記",
+    "reading": "とうき",
+    "definition": "đăng ký",
+    "example": "登記を済ませる。",
+    "difficulty": "beginner",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-832",
+    "word": "請願",
+    "reading": "せいがん",
+    "definition": "kiến nghị",
+    "example": "請願書を提出する。",
+    "difficulty": "beginner",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-833",
+    "word": "都道府県",
+    "reading": "とどうふけん",
+    "definition": "tỉnh/thành phố",
+    "example": "都道府県の首長。",
+    "difficulty": "beginner",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-834",
+    "word": "町役場",
+    "reading": "まちやくば",
+    "definition": "văn phòng thị trấn",
+    "example": "町役場に届け出る。",
+    "difficulty": "beginner",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-835",
+    "word": "公的機関",
+    "reading": "こうてききかん",
+    "definition": "cơ quan nhà nước",
+    "example": "公的機関に問い合わせる。",
+    "difficulty": "beginner",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-836",
+    "word": "自治体",
+    "reading": "じちたい",
+    "definition": "chính quyền tự quản",
+    "example": "自治体が主体的に動く。",
+    "difficulty": "beginner",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-837",
+    "word": "条例制定",
+    "reading": "じょうれいていい",
+    "definition": "ban hành điều lệ",
+    "example": "条例制定の手続き。",
+    "difficulty": "beginner",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-838",
+    "word": "投票所",
+    "reading": "とうひょうじょ",
+    "definition": "điểm bỏ phiếu",
+    "example": "投票所に行く。",
+    "difficulty": "beginner",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-839",
+    "word": "立会人",
+    "reading": "たちあいにん",
+    "definition": "nhân chứng",
+    "example": "立会人がいる。",
+    "difficulty": "beginner",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-840",
+    "word": "公選法",
+    "reading": "こうせんほう",
+    "definition": "luật bầu cử",
+    "example": "公選法に違反する。",
+    "difficulty": "beginner",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-841",
+    "word": "国政",
+    "reading": "こくせい",
+    "definition": "chính trị quốc gia",
+    "example": "国政に関わる。",
+    "difficulty": "beginner",
+    "topic": "government"
+  },
+  {
+    "id": "nvs3-842",
+    "word": "警察",
+    "reading": "けいさつ",
+    "definition": "cảnh sát",
+    "example": "警察に通報する。",
+    "difficulty": "advanced",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-843",
+    "word": "警官",
+    "reading": "けいかん",
+    "definition": "cảnh sát viên",
+    "example": "警官に事情を話す。",
+    "difficulty": "advanced",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-844",
+    "word": "交番",
+    "reading": "こうばん",
+    "definition": "trạm cảnh sát",
+    "example": "交番で相談する。",
+    "difficulty": "advanced",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-845",
+    "word": "事件",
+    "reading": "じけん",
+    "definition": "vụ án",
+    "example": "事件が発生した。",
+    "difficulty": "advanced",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-846",
+    "word": "犯罪",
+    "reading": "はんざい",
+    "definition": "tội phạm",
+    "example": "犯罪を抑止する。",
+    "difficulty": "advanced",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-847",
+    "word": "容疑者",
+    "reading": "ようぎしゃ",
+    "definition": "nghi phạm",
+    "example": "容疑者を逮捕する。",
+    "difficulty": "advanced",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-848",
+    "word": "被害者",
+    "reading": "ひがいしゃ",
+    "definition": "nạn nhân",
+    "example": "被害者に賠償する。",
+    "difficulty": "advanced",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-849",
+    "word": "加害者",
+    "reading": "かがいしゃ",
+    "definition": "thủ phạm",
+    "example": "加害者を特定する。",
+    "difficulty": "advanced",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-850",
+    "word": "逮捕",
+    "reading": "たいほ",
+    "definition": "bắt giữ",
+    "example": "逮捕令状が出る。",
+    "difficulty": "advanced",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-851",
+    "word": "捜査",
+    "reading": "そうさ",
+    "definition": "điều tra",
+    "example": "捜査が進む。",
+    "difficulty": "advanced",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-852",
+    "word": "証拠",
+    "reading": "しょうこ",
+    "definition": "bằng chứng",
+    "example": "証拠を集める。",
+    "difficulty": "advanced",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-853",
+    "word": "裁判",
+    "reading": "さいばん",
+    "definition": "phiên tòa",
+    "example": "裁判を受ける。",
+    "difficulty": "advanced",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-854",
+    "word": "判決",
+    "reading": "はんけつ",
+    "definition": "phán quyết",
+    "example": "判決が下りる。",
+    "difficulty": "advanced",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-855",
+    "word": "有罪",
+    "reading": "ゆうざい",
+    "definition": "có tội",
+    "example": "有罪判決。",
+    "difficulty": "advanced",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-856",
+    "word": "無罪",
+    "reading": "むざい",
+    "definition": "vô tội",
+    "example": "無罪判決。",
+    "difficulty": "advanced",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-857",
+    "word": "通報",
+    "reading": "つうほう",
+    "definition": "báo cáo",
+    "example": "通報を受ける。",
+    "difficulty": "intermediate",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-858",
+    "word": "防犯",
+    "reading": "ぼうはん",
+    "definition": "phòng chống tội phạm",
+    "example": "防犯カメラ。",
+    "difficulty": "intermediate",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-859",
+    "word": "巡査",
+    "reading": "じゅんさ",
+    "definition": "cảnh sát tuần tra",
+    "example": "巡査が道を歩いている。",
+    "difficulty": "intermediate",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-860",
+    "word": "手錠",
+    "reading": "てじょう",
+    "definition": "còng tay",
+    "example": "手錠を掛ける。",
+    "difficulty": "intermediate",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-861",
+    "word": "指紋",
+    "reading": "しふん",
+    "definition": "vân tay",
+    "example": "指紋を採取する。",
+    "difficulty": "intermediate",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-862",
+    "word": "勾留",
+    "reading": "こうりう",
+    "definition": "tạm giam",
+    "example": "勾留が延長される。",
+    "difficulty": "intermediate",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-863",
+    "word": "保釈",
+    "reading": "ほしゃく",
+    "definition": "phóng thích",
+    "example": "保釈金を支払う。",
+    "difficulty": "intermediate",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-864",
+    "word": "前科",
+    "reading": "ぜんか",
+    "definition": "tiền án",
+    "example": "前科がある。",
+    "difficulty": "intermediate",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-865",
+    "word": "示談",
+    "reading": "じだん",
+    "definition": "đàm phán bồi thường",
+    "example": "示談がまとまった。",
+    "difficulty": "intermediate",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-866",
+    "word": "被害届",
+    "reading": "ひがいとどけ",
+    "definition": "đơn trình báo",
+    "example": "被害届を出す。",
+    "difficulty": "intermediate",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-867",
+    "word": "盗難",
+    "reading": "とうなん",
+    "definition": "trộm cắp",
+    "example": "盗難に遭った。",
+    "difficulty": "intermediate",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-868",
+    "word": "詐欺",
+    "reading": "さぎ",
+    "definition": "lừa đảo",
+    "example": "詐欺に引っかかった。",
+    "difficulty": "intermediate",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-869",
+    "word": "暴行",
+    "reading": "ぼうこう",
+    "definition": "bạo lực",
+    "example": "暴行を加える。",
+    "difficulty": "intermediate",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-870",
+    "word": "殺人",
+    "reading": "さつじん",
+    "definition": "giết người",
+    "example": "殺人事件。",
+    "difficulty": "intermediate",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-871",
+    "word": "放火",
+    "reading": "ほうか",
+    "definition": "đốt phá",
+    "example": "放火事件。",
+    "difficulty": "intermediate",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-872",
+    "word": "令状",
+    "reading": "れいじょう",
+    "definition": "lệnh bắt",
+    "example": "令状を得る。",
+    "difficulty": "intermediate",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-873",
+    "word": "自白",
+    "reading": "じはく",
+    "definition": "lời thú nhận",
+    "example": "自白書を書く。",
+    "difficulty": "intermediate",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-874",
+    "word": "尋問",
+    "reading": "じんもん",
+    "definition": "thẩm vấn",
+    "example": "尋問を受ける。",
+    "difficulty": "intermediate",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-875",
+    "word": "留置",
+    "reading": "りゅうち",
+    "definition": "giam giữ",
+    "example": "留置場に入る。",
+    "difficulty": "intermediate",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-876",
+    "word": "起訴",
+    "reading": "きそ",
+    "definition": "truy tố",
+    "example": "起訴された。",
+    "difficulty": "intermediate",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-877",
+    "word": "保護",
+    "reading": "ほご",
+    "definition": "bảo vệ",
+    "example": "被害者を保護する。",
+    "difficulty": "intermediate",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-878",
+    "word": "取調べ",
+    "reading": "とりしらべ",
+    "definition": "thẩm vấn",
+    "example": "取り調べを受ける。",
+    "difficulty": "beginner",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-879",
+    "word": "署長",
+    "reading": "しょちょう",
+    "definition": "trưởng đồn cảnh sát",
+    "example": "署長が会見する。",
+    "difficulty": "beginner",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-880",
+    "word": "犯人",
+    "reading": "はんにん",
+    "definition": "tên tội phạm",
+    "example": "犯人が捕まった。",
+    "difficulty": "beginner",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-881",
+    "word": "警棒",
+    "reading": "けいぼう",
+    "definition": "cây gậy",
+    "example": "警棒を持つ。",
+    "difficulty": "beginner",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-882",
+    "word": "110番",
+    "reading": "ひゃくとおばん",
+    "definition": "số 110",
+    "example": "110番に電話する。",
+    "difficulty": "beginner",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-883",
+    "word": "交通巡査",
+    "reading": "つうこうじゅんさ",
+    "definition": "cảnh sát giao thông",
+    "example": "交通巡査に止められる。",
+    "difficulty": "beginner",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-884",
+    "word": "留置場",
+    "reading": "りゅうちじょう",
+    "definition": "nhà giam",
+    "example": "留置場に連行される。",
+    "difficulty": "beginner",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-885",
+    "word": "DNA型鑑定",
+    "reading": "ディーエヌエーがたかんてい",
+    "definition": "Xét nghiệm ADN",
+    "example": "DNA型鑑定を行う。",
+    "difficulty": "beginner",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-886",
+    "word": "身柄拘束",
+    "reading": "みがらこうそく",
+    "definition": "giam giữ nghi phạm",
+    "example": "身柄拘束が行われる。",
+    "difficulty": "beginner",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-887",
+    "word": "防弾",
+    "reading": "ぼうだん",
+    "definition": "chống đạn",
+    "example": "防弾チョッキ。",
+    "difficulty": "beginner",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-888",
+    "word": "サイレン",
+    "reading": "サイレン",
+    "definition": "còi báo động",
+    "example": "サイレンが鳴る。",
+    "difficulty": "beginner",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-889",
+    "word": "薬物犯罪",
+    "reading": "やくぶつはんざい",
+    "definition": "tội phạm ma túy",
+    "example": "薬物犯罪を摘発する。",
+    "difficulty": "beginner",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-890",
+    "word": "指名手配",
+    "reading": "しめいてはい",
+    "definition": "truy nã",
+    "example": "指名手配犯を逮捕する。",
+    "difficulty": "beginner",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-891",
+    "word": "捜索令状",
+    "reading": "そうさくれいじょう",
+    "definition": "lệnh khám xét",
+    "example": "捜索令状を発する。",
+    "difficulty": "beginner",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-892",
+    "word": "公判",
+    "reading": "こうはん",
+    "definition": "phiên tòa công khai",
+    "example": "公判に問われる。",
+    "difficulty": "beginner",
+    "topic": "law_enforcement"
+  },
+  {
+    "id": "nvs3-893",
+    "word": "自衛隊",
+    "reading": "じえいたい",
+    "definition": "Lực lượng Phòng vệ",
+    "example": "自衛隊に参加する。",
+    "difficulty": "advanced",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-894",
+    "word": "軍隊",
+    "reading": "ぐんたい",
+    "definition": "quân đội",
+    "example": "軍隊に入る。",
+    "difficulty": "advanced",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-895",
+    "word": "兵士",
+    "reading": "へいし",
+    "definition": "lính",
+    "example": "兵士が訓練する。",
+    "difficulty": "advanced",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-896",
+    "word": "将軍",
+    "reading": "しょうぐん",
+    "definition": "tướng quân",
+    "example": "将軍が指揮を取る。",
+    "difficulty": "advanced",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-897",
+    "word": "士官",
+    "reading": "しかん",
+    "definition": "sĩ quan",
+    "example": "士官学校に入る。",
+    "difficulty": "advanced",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-898",
+    "word": "軍人",
+    "reading": "ぐんじん",
+    "definition": "quân nhân",
+    "example": "軍人として働く。",
+    "difficulty": "advanced",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-899",
+    "word": "武器",
+    "reading": "ぶき",
+    "definition": "vũ khí",
+    "example": "武器を扱う。",
+    "difficulty": "advanced",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-900",
+    "word": "銃",
+    "reading": "じゅう",
+    "definition": "súng",
+    "example": "銃を持つ。",
+    "difficulty": "advanced",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-901",
+    "word": "弾",
+    "reading": "たま",
+    "definition": "đạn",
+    "example": "弾を撃つ。",
+    "difficulty": "advanced",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-902",
+    "word": "戦争",
+    "reading": "せんそう",
+    "definition": "chiến tranh",
+    "example": "戦争が起きる。",
+    "difficulty": "advanced",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-903",
+    "word": "戦闘",
+    "reading": "せんとう",
+    "definition": "trận chiến",
+    "example": "戦闘が激化する。",
+    "difficulty": "advanced",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-904",
+    "word": "訓練",
+    "reading": "くんれん",
+    "definition": "huấn luyện",
+    "example": "訓練を受ける。",
+    "difficulty": "advanced",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-905",
+    "word": "基地",
+    "reading": "きち",
+    "definition": "căn cứ",
+    "example": "基地に駐屯する。",
+    "difficulty": "advanced",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-906",
+    "word": "戦車",
+    "reading": "せんしゃ",
+    "definition": "xe tăng",
+    "example": "戦車が進む。",
+    "difficulty": "advanced",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-907",
+    "word": "戦闘機",
+    "reading": "せんとうき",
+    "definition": "máy bay chiến đấu",
+    "example": "戦闘機が飛ぶ。",
+    "difficulty": "advanced",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-908",
+    "word": "ミサイル",
+    "reading": "ミサイル",
+    "definition": "tên lửa",
+    "example": "ミサイルを発射する。",
+    "difficulty": "advanced",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-909",
+    "word": "防御",
+    "reading": "ぼうぎょ",
+    "definition": "phòng thủ",
+    "example": "防御線を張る。",
+    "difficulty": "intermediate",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-910",
+    "word": "攻撃",
+    "reading": "こうげき",
+    "definition": "tấn công",
+    "example": "攻撃を仕掛ける。",
+    "difficulty": "intermediate",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-911",
+    "word": "作戦",
+    "reading": "さくせん",
+    "definition": "chiến thuật",
+    "example": "作戦を立てる。",
+    "difficulty": "intermediate",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-912",
+    "word": "司令部",
+    "reading": "しれいぶ",
+    "definition": "bộ chỉ huy",
+    "example": "司令部から命令が来る。",
+    "difficulty": "intermediate",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-913",
+    "word": "指揮官",
+    "reading": "しきかん",
+    "definition": "chỉ huy",
+    "example": "指揮官が指示を出す。",
+    "difficulty": "intermediate",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-914",
+    "word": "通信",
+    "reading": "つうしん",
+    "definition": "thông tin liên lạc",
+    "example": "通信が途絶える。",
+    "difficulty": "intermediate",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-915",
+    "word": "偵察",
+    "reading": "ていさつ",
+    "definition": "trinh sát",
+    "example": "偵察を行う。",
+    "difficulty": "intermediate",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-916",
+    "word": "情報",
+    "reading": "じょうほう",
+    "definition": "tin tức",
+    "example": "情報を収集する。",
+    "difficulty": "intermediate",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-917",
+    "word": "戦場",
+    "reading": "せんじょう",
+    "definition": "chiến trường",
+    "example": "戦場に向かう。",
+    "difficulty": "intermediate",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-918",
+    "word": "前線",
+    "reading": "ぜんせん",
+    "definition": "tiền tuyến",
+    "example": "前線に赴く。",
+    "difficulty": "intermediate",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-919",
+    "word": "撤退",
+    "reading": "撤退",
+    "definition": "rút lui",
+    "example": "撤退を命じる。",
+    "difficulty": "intermediate",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-920",
+    "word": "突撃",
+    "reading": "とつげき",
+    "definition": "xung phong",
+    "example": "突撃をかける。",
+    "difficulty": "intermediate",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-921",
+    "word": "投降",
+    "reading": "とうこう",
+    "definition": "đầu hàng",
+    "example": "投降する。",
+    "difficulty": "intermediate",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-922",
+    "word": "捕虜",
+    "reading": "ほりょ",
+    "definition": "tù binh",
+    "example": "捕虜になる。",
+    "difficulty": "intermediate",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-923",
+    "word": "降伏",
+    "reading": "こうふく",
+    "definition": "đầu hàng",
+    "example": "降伏を申し入れる。",
+    "difficulty": "intermediate",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-924",
+    "word": "停戦",
+    "reading": "ていせん",
+    "definition": "ngừng bắn",
+    "example": "停戦を結ぶ。",
+    "difficulty": "intermediate",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-925",
+    "word": "軍事",
+    "reading": "ぐんじ",
+    "definition": "quân sự",
+    "example": "軍事演習。",
+    "difficulty": "intermediate",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-926",
+    "word": "弾薬",
+    "reading": "だんやく",
+    "definition": "đạn dược",
+    "example": "弾薬を補給する。",
+    "difficulty": "intermediate",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-927",
+    "word": "補給",
+    "reading": "ほきゅう",
+    "definition": "bổ sung",
+    "example": "物資を補給する。",
+    "difficulty": "intermediate",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-928",
+    "word": "輸送",
+    "reading": "ゆそう",
+    "definition": "vận chuyển",
+    "example": "輸送機。",
+    "difficulty": "intermediate",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-929",
+    "word": "衛生",
+    "reading": "えいせい",
+    "definition": "vệ sinh",
+    "example": "衛生兵。",
+    "difficulty": "intermediate",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-930",
+    "word": "軍服",
+    "reading": "ぐんふく",
+    "definition": "đồng phục quân đội",
+    "example": "軍服を着る。",
+    "difficulty": "intermediate",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-931",
+    "word": "階級",
+    "reading": "かいきゅう",
+    "definition": "cấp bậc quân hàm",
+    "example": "階級を上げる。",
+    "difficulty": "beginner",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-932",
+    "word": "勲章",
+    "reading": "くんしょう",
+    "definition": "huy chương",
+    "example": "勲章を授与される。",
+    "difficulty": "beginner",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-933",
+    "word": "記念碑",
+    "reading": "きねんひ",
+    "definition": "đài tưởng niệm",
+    "example": "記念碑を建立する。",
+    "difficulty": "beginner",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-934",
+    "word": "犠牲",
+    "reading": "ぎせい",
+    "definition": "sự hy sinh",
+    "example": "犠牲を出す。",
+    "difficulty": "beginner",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-935",
+    "word": "忠誠",
+    "reading": "ちゅうせい",
+    "definition": "lòng trung thành",
+    "example": "忠誠を誓う。",
+    "difficulty": "beginner",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-936",
+    "word": "徴兵",
+    "reading": "ちょうへい",
+    "definition": "tuyển nghĩa vụ quân sự",
+    "example": "徴兵制。",
+    "difficulty": "beginner",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-937",
+    "word": "退役",
+    "reading": "たいえき",
+    "definition": "nghỉ hưu quân đội",
+    "example": "退役軍人。",
+    "difficulty": "beginner",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-938",
+    "word": "航空母艦",
+    "reading": "こうくうぼかん",
+    "definition": "tàu sân bay",
+    "example": "航空母艦が到着する。",
+    "difficulty": "beginner",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-939",
+    "word": "和平",
+    "reading": "わへい",
+    "definition": "hòa bình",
+    "example": "和平交渉。",
+    "difficulty": "beginner",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-940",
+    "word": "戦略",
+    "reading": "せんりゃく",
+    "definition": "chiến lược",
+    "example": "戦略を立てる。",
+    "difficulty": "beginner",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-941",
+    "word": "作戦会議",
+    "reading": "さくせんかいぎ",
+    "definition": "họp chiến thuật",
+    "example": "作戦会議を開く。",
+    "difficulty": "beginner",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-942",
+    "word": "砲撃",
+    "reading": "ほうげき",
+    "definition": "pháo kích",
+    "example": "砲撃が始まった。",
+    "difficulty": "beginner",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-943",
+    "word": "陸軍",
+    "reading": "りくぐん",
+    "definition": "quân lục quân",
+    "example": "陸軍に所属する。",
+    "difficulty": "beginner",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-944",
+    "word": "海軍",
+    "reading": "かいぐん",
+    "definition": "quân hải quân",
+    "example": "海軍の訓練。",
+    "difficulty": "beginner",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-945",
+    "word": "空軍",
+    "reading": "くうぐん",
+    "definition": "quân không quân",
+    "example": "空軍の基地。",
+    "difficulty": "beginner",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-946",
+    "word": "特殊部隊",
+    "reading": "とくしゅぶたい",
+    "definition": "đội đặc biệt",
+    "example": "特殊部隊が投入される。",
+    "difficulty": "beginner",
+    "topic": "military"
+  },
+  {
+    "id": "nvs3-947",
+    "word": "宗教",
+    "reading": "しゅうきょう",
+    "definition": "tôn giáo",
+    "example": "宗教を信じる。",
+    "difficulty": "advanced",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-948",
+    "word": "寺院",
+    "reading": "じいん",
+    "definition": "chùa đền",
+    "example": "寺院を参拝する。",
+    "difficulty": "advanced",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-949",
+    "word": "神社",
+    "reading": "じんじゃ",
+    "definition": "đền Shrine",
+    "example": "神社に参拝する。",
+    "difficulty": "advanced",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-950",
+    "word": "教会",
+    "reading": "きょうかい",
+    "definition": "nhà thờ",
+    "example": "教会に行く。",
+    "difficulty": "advanced",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-951",
+    "word": "僧侶",
+    "reading": "そうりょ",
+    "definition": "nhà sư",
+    "example": "僧侶が説法する。",
+    "difficulty": "advanced",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-952",
+    "word": "神父",
+    "reading": "しんぷ",
+    "definition": "linh mục",
+    "example": "神父に告解する。",
+    "difficulty": "advanced",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-953",
+    "word": "牧師",
+    "reading": "ぼくし",
+    "definition": "mục sư",
+    "example": "牧師が説教する。",
+    "difficulty": "advanced",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-954",
+    "word": "信徒",
+    "reading": "しんと",
+    "definition": "tín đồ",
+    "example": "信徒が集まる。",
+    "difficulty": "advanced",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-955",
+    "word": "参拝",
+    "reading": "さんぱい",
+    "definition": "cầu nguyện",
+    "example": "神社に参拝する。",
+    "difficulty": "advanced",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-956",
+    "word": "祈り",
+    "reading": "いのり",
+    "definition": "lời cầu nguyện",
+    "example": "祈りを捧げる。",
+    "difficulty": "advanced",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-957",
+    "word": "祈祷",
+    "reading": "きとう",
+    "definition": "cầu nguyện",
+    "example": "祈祷を行う。",
+    "difficulty": "advanced",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-958",
+    "word": "説教",
+    "reading": "せっきょう",
+    "definition": "bài giảng đạo",
+    "example": "説教を聞く。",
+    "difficulty": "advanced",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-959",
+    "word": "経典",
+    "reading": "きょうてん",
+    "definition": "kinh điển",
+    "example": "経典を読む。",
+    "difficulty": "advanced",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-960",
+    "word": "聖書",
+    "reading": "せいしょ",
+    "definition": "Kinh Thánh",
+    "example": "聖書を読む。",
+    "difficulty": "advanced",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-961",
+    "word": "仏像",
+    "reading": "ぶつぞう",
+    "definition": "tượng Phật",
+    "example": "仏像を拝む。",
+    "difficulty": "advanced",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-962",
+    "word": "葬式",
+    "reading": "そうしき",
+    "definition": "đám tang",
+    "example": "葬式を挙げる。",
+    "difficulty": "advanced",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-963",
+    "word": "葬儀",
+    "reading": "そうぎ",
+    "definition": "đám tang",
+    "example": "葬儀が行われる。",
+    "difficulty": "intermediate",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-964",
+    "word": "供養",
+    "reading": "くよう",
+    "definition": "cúng dường",
+    "example": "供養をする。",
+    "difficulty": "intermediate",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-965",
+    "word": "坐禅",
+    "reading": "ざぜん",
+    "definition": "ngồi thiền",
+    "example": "坐禅を組む。",
+    "difficulty": "intermediate",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-966",
+    "word": "戒律",
+    "reading": "かいりつ",
+    "definition": "giới luật",
+    "example": "戒律を守る。",
+    "difficulty": "intermediate",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-967",
+    "word": "教義",
+    "reading": "きょうぎ",
+    "definition": "giáo lý",
+    "example": "教義を学ぶ。",
+    "difficulty": "intermediate",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-968",
+    "word": "儀式",
+    "reading": "ぎしき",
+    "definition": "nghi lễ",
+    "example": "儀式が行われる。",
+    "difficulty": "intermediate",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-969",
+    "word": "仏事",
+    "reading": "ぶつじ",
+    "definition": "nghi lễ Phật giáo",
+    "example": "仏事を行う。",
+    "difficulty": "intermediate",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-970",
+    "word": "法要",
+    "reading": "ほうよう",
+    "definition": "nghi lễ Phật giáo",
+    "example": "法要に参列する。",
+    "difficulty": "intermediate",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-971",
+    "word": "本堂",
+    "reading": "ほんどう",
+    "definition": "chánh điện",
+    "example": "本堂で読経する。",
+    "difficulty": "intermediate",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-972",
+    "word": "墓",
+    "reading": "はか",
+    "definition": "mộ",
+    "example": "墓参りをする。",
+    "difficulty": "intermediate",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-973",
+    "word": "墓参り",
+    "reading": "はかまいり",
+    "definition": "viếng mộ",
+    "example": "墓参りに行く。",
+    "difficulty": "intermediate",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-974",
+    "word": "お坊さん",
+    "reading": "おぼうさん",
+    "definition": "nhà sư",
+    "example": "お坊さんが読経する。",
+    "difficulty": "intermediate",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-975",
+    "word": "お寺",
+    "reading": "おてら",
+    "definition": "chùa",
+    "example": "お寺に参る。",
+    "difficulty": "intermediate",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-976",
+    "word": "仏教",
+    "reading": "ぶっきょう",
+    "definition": "Phật giáo",
+    "example": "仏教を信じる。",
+    "difficulty": "intermediate",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-977",
+    "word": "神道",
+    "reading": "しんとう",
+    "definition": "Shinto",
+    "example": "神道の儀式。",
+    "difficulty": "intermediate",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-978",
+    "word": "キリスト教",
+    "reading": "キリストきょう",
+    "definition": "Kitô giáo",
+    "example": "キリスト教の教会。",
+    "difficulty": "intermediate",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-979",
+    "word": "神話",
+    "reading": "しんわ",
+    "definition": "huyền thoại",
+    "example": "神話を語る。",
+    "difficulty": "intermediate",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-980",
+    "word": "奇跡",
+    "reading": "きせき",
+    "definition": "phép màu",
+    "example": "奇跡が起きた。",
+    "difficulty": "intermediate",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-981",
+    "word": "悟り",
+    "reading": "さとり",
+    "definition": "giác ngộ",
+    "example": "悟りを開く。",
+    "difficulty": "intermediate",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-982",
+    "word": "来世",
+    "reading": "らいせ",
+    "definition": "kiếp sau",
+    "example": "来世を信じる。",
+    "difficulty": "intermediate",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-983",
+    "word": "線香",
+    "reading": "せんこう",
+    "definition": "nhang",
+    "example": "線香を焚く。",
+    "difficulty": "intermediate",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-984",
+    "word": "位牌",
+    "reading": "いはい",
+    "definition": "bảng ghi tên người chết",
+    "example": "位牌を祭る。",
+    "difficulty": "intermediate",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-985",
+    "word": "戒名",
+    "reading": "かいみょう",
+    "definition": "tên phật tử",
+    "example": "戒名を授かる。",
+    "difficulty": "beginner",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-986",
+    "word": "遺骨",
+    "reading": "いこつ",
+    "definition": "xương cốt",
+    "example": "遺骨を納める。",
+    "difficulty": "beginner",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-987",
+    "word": "参禅",
+    "reading": "さんぜん",
+    "definition": "thiền định",
+    "example": "参禅をする。",
+    "difficulty": "beginner",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-988",
+    "word": "精進料理",
+    "reading": "しょうじんりょうり",
+    "definition": "đồ chay",
+    "example": "精進料理を食べる。",
+    "difficulty": "beginner",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-989",
+    "word": "護摩",
+    "reading": "ごま",
+    "definition": "lửa cúng",
+    "example": "護摩を焚く。",
+    "difficulty": "beginner",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-990",
+    "word": "灌頂",
+    "reading": "かんじょう",
+    "definition": "lễ quán đỉnh",
+    "example": "灌頂を授かる。",
+    "difficulty": "beginner",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-991",
+    "word": "供花",
+    "reading": "きょうか",
+    "definition": "hoa cúng",
+    "example": "供花を送る。",
+    "difficulty": "beginner",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-992",
+    "word": "鐘楼",
+    "reading": "しょうろう",
+    "definition": "tháp chuông",
+    "example": "鐘楼の鐘を鳴らす。",
+    "difficulty": "beginner",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-993",
+    "word": "教団",
+    "reading": "きょうだん",
+    "definition": "giáo đoàn",
+    "example": "教団に属する。",
+    "difficulty": "beginner",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-994",
+    "word": "浄土",
+    "reading": "じょうど",
+    "definition": "cực lạc",
+    "example": "浄土に往生する。",
+    "difficulty": "beginner",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-995",
+    "word": "回教",
+    "reading": "かいきょう",
+    "definition": "Hồi giáo",
+    "example": "回教の寺院。",
+    "difficulty": "beginner",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-996",
+    "word": "仏式",
+    "reading": "ぶっしき",
+    "definition": "kiểu Phật giáo",
+    "example": "仏式で結婚式を挙げる。",
+    "difficulty": "beginner",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-997",
+    "word": "神式",
+    "reading": "しんしき",
+    "definition": "kiểu Shinto",
+    "example": "神式の葬儀。",
+    "difficulty": "beginner",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-998",
+    "word": "経文",
+    "reading": "きょうもん",
+    "definition": "kinh văn",
+    "example": "経文を唱える。",
+    "difficulty": "beginner",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-999",
+    "word": "お守り",
+    "reading": "おまもり",
+    "definition": "bùa hộ mệnh",
+    "example": "お守りを買う。",
+    "difficulty": "beginner",
+    "topic": "religion"
+  },
+  {
+    "id": "nvs3-1000",
+    "word": "おみくじ",
+    "reading": "おみくじ",
+    "definition": "xem bói",
+    "example": "おみくじを引く。",
+    "difficulty": "beginner",
+    "topic": "religion"
+  }
+]

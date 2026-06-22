@@ -1,0 +1,5068 @@
+[
+ {
+  "id": "nks2-002",
+  "kanji": "案",
+  "on_reading": "アン",
+  "kun_reading": "あん",
+  "meaning": "Bản thảo, đề án",
+  "examples": [
+   {
+    "word": "提案",
+    "reading": "ていあん",
+    "meaning": "Đề xuất"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-003",
+  "kanji": "以",
+  "on_reading": "イ",
+  "kun_reading": "もっ.て",
+  "meaning": "Bằng, dùng",
+  "examples": [
+   {
+    "word": "以上",
+    "reading": "いじょう",
+    "meaning": "Trên, hơn"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-006",
+  "kanji": "易",
+  "on_reading": "エキ",
+  "kun_reading": "やさ.しい",
+  "meaning": "Dễ",
+  "examples": [
+   {
+    "word": "容易",
+    "reading": "ようい",
+    "meaning": "Dễ dàng"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-007",
+  "kanji": "益",
+  "on_reading": "エキ",
+  "kun_reading": "ま.す",
+  "meaning": "Lợi ích",
+  "examples": [
+   {
+    "word": "利益",
+    "reading": "りえき",
+    "meaning": "Lợi nhuận"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-012",
+  "kanji": "阴",
+  "on_reading": "イン",
+  "kun_reading": "かげ",
+  "meaning": "Bóng râm",
+  "examples": [
+   {
+    "word": "陰",
+    "reading": "かげ",
+    "meaning": "Bóng râm"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-020",
+  "kanji": "兵",
+  "on_reading": "ヘイ",
+  "kun_reading": "つわもの",
+  "meaning": "Binh lính",
+  "examples": [
+   {
+    "word": "兵器",
+    "reading": "へいき",
+    "meaning": "Vũ khí"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-024",
+  "kanji": "別",
+  "on_reading": "ベツ",
+  "kun_reading": "わけ.る",
+  "meaning": "Phân biệt",
+  "examples": [
+   {
+    "word": "特別",
+    "reading": "とくべつ",
+    "meaning": "Đặc biệt"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-027",
+  "kanji": "負",
+  "on_reading": "フ",
+  "kun_reading": "ま.ける",
+  "meaning": "Thua, chịu",
+  "examples": [
+   {
+    "word": "責任",
+    "reading": "せきにん",
+    "meaning": "Trách nhiệm"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-030",
+  "kanji": "分",
+  "on_reading": "ブン",
+  "kun_reading": "わ.ける",
+  "meaning": "Phân chia",
+  "examples": [
+   {
+    "word": "部分",
+    "reading": "ぶぶん",
+    "meaning": "Phần"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-031",
+  "kanji": "米",
+  "on_reading": "ベイ",
+  "kun_reading": "こめ",
+  "meaning": "Gạo, Mỹ",
+  "examples": [
+   {
+    "word": "米国",
+    "reading": "べいこく",
+    "meaning": "Mỹ"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-032",
+  "kanji": "毛",
+  "on_reading": "モウ",
+  "kun_reading": "け",
+  "meaning": "Lông",
+  "examples": [
+   {
+    "word": "毛布",
+    "reading": "もうふ",
+    "meaning": "Chăn"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-033",
+  "kanji": "門",
+  "on_reading": "モン",
+  "kun_reading": "かど",
+  "meaning": "Cửa",
+  "examples": [
+   {
+    "word": "門外",
+    "reading": "もんがい",
+    "meaning": "Ngoài cửa"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-035",
+  "kanji": "夜",
+  "on_reading": "ヤ",
+  "kun_reading": "よる",
+  "meaning": "Đêm",
+  "examples": [
+   {
+    "word": "夜中",
+    "reading": "よなか",
+    "meaning": "Giữa đêm"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-036",
+  "kanji": "野",
+  "on_reading": "ヤ",
+  "kun_reading": "の",
+  "meaning": "Đồng, dã",
+  "examples": [
+   {
+    "word": "野菜",
+    "reading": "やさい",
+    "meaning": "Rau"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-044",
+  "kanji": "力",
+  "on_reading": "リョク",
+  "kun_reading": "ちから",
+  "meaning": "Sức mạnh",
+  "examples": [
+   {
+    "word": "努力",
+    "reading": "どりょく",
+    "meaning": "Nỗ lực"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-046",
+  "kanji": "例",
+  "on_reading": "レイ",
+  "kun_reading": "たと.える",
+  "meaning": "Ví dụ",
+  "examples": [
+   {
+    "word": "例文",
+    "reading": "れいぶん",
+    "meaning": "Câu ví dụ"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-047",
+  "kanji": "連",
+  "on_reading": "レン",
+  "kun_reading": "つら.なる",
+  "meaning": "Liên kết",
+  "examples": [
+   {
+    "word": "連絡",
+    "reading": "れんらく",
+    "meaning": "Liên lạc"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-050",
+  "kanji": "悪",
+  "on_reading": "アク",
+  "kun_reading": "わる.い",
+  "meaning": "Xấu",
+  "examples": [
+   {
+    "word": "悪化",
+    "reading": "あっか",
+    "meaning": "Xấu đi"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-054",
+  "kanji": "員",
+  "on_reading": "イン",
+  "kun_reading": "成员",
+  "meaning": "成员",
+  "examples": [
+   {
+    "word": "会員",
+    "reading": "かいいん",
+    "meaning": "Hội viên"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-057",
+  "kanji": "器",
+  "on_reading": "キ",
+  "kun_reading": "うつわ",
+  "meaning": "Dụng cụ",
+  "examples": [
+   {
+    "word": "器具",
+    "reading": "きぐ",
+    "meaning": "Dụng cụ"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-058",
+  "kanji": "気",
+  "on_reading": "キ",
+  "kun_reading": "き",
+  "meaning": "Khí",
+  "examples": [
+   {
+    "word": "気候",
+    "reading": "きこう",
+    "meaning": "Khí hậu"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-059",
+  "kanji": "起",
+  "on_reading": "キ",
+  "kun_reading": "お.きる",
+  "meaning": "Dậy, khởi",
+  "examples": [
+   {
+    "word": "起床",
+    "reading": "きしょう",
+    "meaning": "Thức dậy"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-064",
+  "kanji": "穴",
+  "on_reading": "ケツ",
+  "kun_reading": "あな",
+  "meaning": "Lỗ",
+  "examples": [
+   {
+    "word": "穴居",
+    "reading": "けっきょ",
+    "meaning": "Sống hang"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-070",
+  "kanji": "古",
+  "on_reading": "コ",
+  "kun_reading": "ふる.い",
+  "meaning": "Cũ",
+  "examples": [
+   {
+    "word": "古語",
+    "reading": "こご",
+    "meaning": "Từ cổ"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-082",
+  "kanji": "黄",
+  "on_reading": "コウ",
+  "kun_reading": "き",
+  "meaning": "Vàng",
+  "examples": [
+   {
+    "word": "黄色",
+    "reading": "きいろ",
+    "meaning": "Màu vàng"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-083",
+  "kanji": "港",
+  "on_reading": "コウ",
+  "kun_reading": "みなと",
+  "meaning": "Cảng",
+  "examples": [
+   {
+    "word": "港湾",
+    "reading": "こうわん",
+    "meaning": "Cảng biển"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-084",
+  "kanji": "国",
+  "on_reading": "コク",
+  "kun_reading": "くに",
+  "meaning": "Quốc gia",
+  "examples": [
+   {
+    "word": "国内",
+    "reading": "こくない",
+    "meaning": "Trong nước"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-088",
+  "kanji": "前",
+  "on_reading": "ゼン",
+  "kun_reading": "まえ",
+  "meaning": "Trước",
+  "examples": [
+   {
+    "word": "前回",
+    "reading": "ぜんかい",
+    "meaning": "Lần trước"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-093",
+  "kanji": "説",
+  "on_reading": "セツ",
+  "kun_reading": "と.く",
+  "meaning": "Giải thích",
+  "examples": [
+   {
+    "word": "説明",
+    "reading": "せつめい",
+    "meaning": "Giải thích"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-101",
+  "kanji": "速",
+  "on_reading": "ソク",
+  "kun_reading": "はや.い",
+  "meaning": "Nhanh",
+  "examples": [
+   {
+    "word": "速度",
+    "reading": "そくど",
+    "meaning": "Tốc độ"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-102",
+  "kanji": "台",
+  "on_reading": "ダイ",
+  "kun_reading": "うてな",
+  "meaning": "Bệ, đài",
+  "examples": [
+   {
+    "word": "台風",
+    "reading": "たいふう",
+    "meaning": "Bão"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-103",
+  "kanji": "体",
+  "on_reading": "タイ",
+  "kun_reading": "からだ",
+  "meaning": "Cơ thể",
+  "examples": [
+   {
+    "word": "体力",
+    "reading": "たいりょく",
+    "meaning": "Sức khỏe"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-104",
+  "kanji": "大",
+  "on_reading": "ダイ",
+  "kun_reading": "おお.きい",
+  "meaning": "Lớn",
+  "examples": [
+   {
+    "word": "大事",
+    "reading": "だいじ",
+    "meaning": "Quan trọng"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-114",
+  "kanji": "主",
+  "on_reading": "シュ",
+  "kun_reading": "ぬし",
+  "meaning": "Chủ",
+  "examples": [
+   {
+    "word": "主要",
+    "reading": "しゅよう",
+    "meaning": "Chính"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-119",
+  "kanji": "終",
+  "on_reading": "シュウ",
+  "kun_reading": "お.わる",
+  "meaning": "Kết thúc",
+  "examples": [
+   {
+    "word": "終了",
+    "reading": "しゅうりょう",
+    "meaning": "Kết thúc"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-122",
+  "kanji": "従",
+  "on_reading": "ジュウ",
+  "kun_reading": "したが.う",
+  "meaning": "Theo",
+  "examples": [
+   {
+    "word": "従来",
+    "reading": "じゅうらい",
+    "meaning": "Trước nay"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-130",
+  "kanji": "状",
+  "on_reading": "ジョウ",
+  "kun_reading": "さま",
+  "meaning": "Trạng thái",
+  "examples": [
+   {
+    "word": "状態",
+    "reading": "じょうたい",
+    "meaning": "Tình trạng"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-131",
+  "kanji": "常",
+  "on_reading": "ジョウ",
+  "kun_reading": "つね",
+  "meaning": "Thường",
+  "examples": [
+   {
+    "word": "常識",
+    "reading": "じょうしき",
+    "meaning": "Kiến thức thông thường"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-132",
+  "kanji": "情",
+  "on_reading": "ジョウ",
+  "kun_reading": "なさ.け",
+  "meaning": "Tình cảm",
+  "examples": [
+   {
+    "word": "情報",
+    "reading": "じょうほう",
+    "meaning": "Thông tin"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-133",
+  "kanji": "職",
+  "on_reading": "ショク",
+  "kun_reading": "しごと",
+  "meaning": "Nghề",
+  "examples": [
+   {
+    "word": "職業",
+    "reading": "しょくぎょう",
+    "meaning": "Nghề nghiệp"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-139",
+  "kanji": "数",
+  "on_reading": "スウ",
+  "kun_reading": "かず",
+  "meaning": "Số",
+  "examples": [
+   {
+    "word": "数学",
+    "reading": "すうがく",
+    "meaning": "Toán học"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-142",
+  "kanji": "西",
+  "on_reading": "セイ/サイ",
+  "kun_reading": "にし",
+  "meaning": "Tây",
+  "examples": [
+   {
+    "word": "西方",
+    "reading": "せいほう",
+    "meaning": "Phương Tây"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-143",
+  "kanji": "声",
+  "on_reading": "セイ",
+  "kun_reading": "こえ",
+  "meaning": "Giọng",
+  "examples": [
+   {
+    "word": "声明",
+    "reading": "せいめɪng",
+    "meaning": "Tuyên bố"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-147",
+  "kanji": "晴",
+  "on_reading": "セイ",
+  "kun_reading": "は.れる",
+  "meaning": "Nắng",
+  "examples": [
+   {
+    "word": "晴れ",
+    "reading": "はれ",
+    "meaning": "Trời nắng"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-148",
+  "kanji": "積",
+  "on_reading": "セキ",
+  "kun_reading": "つ.む",
+  "meaning": "Chất, tích lũy",
+  "examples": [
+   {
+    "word": "積み立て",
+    "reading": "つみたて",
+    "meaning": "Tích lũy"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-149",
+  "kanji": "石",
+  "on_reading": "セキ/シャク",
+  "kun_reading": "いし",
+  "meaning": "Đá",
+  "examples": [
+   {
+    "word": "石材",
+    "reading": "せきざい",
+    "meaning": "Đá"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-150",
+  "kanji": "赤",
+  "on_reading": "セキ/シャク",
+  "kun_reading": "あか",
+  "meaning": "Đỏ",
+  "examples": [
+   {
+    "word": "赤字",
+    "reading": "あかじ",
+    "meaning": "Thâm hụt"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-151",
+  "kanji": "切",
+  "on_reading": "セツ",
+  "kun_reading": "き.る",
+  "meaning": "Cắt",
+  "examples": [
+   {
+    "word": "大切",
+    "reading": "たいせつ",
+    "meaning": "Quan trọng"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-152",
+  "kanji": "接",
+  "on_reading": "セツ",
+  "kun_reading": "つ.ぐ",
+  "meaning": "Kết, tiếp xúc",
+  "examples": [
+   {
+    "word": "接続",
+    "reading": "せつぞく",
+    "meaning": "Kết nối"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-153",
+  "kanji": "折",
+  "on_reading": "セツ",
+  "kun_reading": "お.る",
+  "meaning": "Gấp, bẻ",
+  "examples": [
+   {
+    "word": "折り返し",
+    "reading": "おりかえし",
+    "meaning": "Quay lại"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-157",
+  "kanji": "線",
+  "on_reading": "セン",
+  "kun_reading": "せん",
+  "meaning": "Đường",
+  "examples": [
+   {
+    "word": "線路",
+    "reading": "せんろ",
+    "meaning": "Đường ray"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-160",
+  "kanji": "愛",
+  "on_reading": "アイ",
+  "kun_reading": "あい",
+  "meaning": "Tình yêu",
+  "examples": [
+   {
+    "word": "愛人",
+    "reading": "あいじん",
+    "meaning": "Người yêu"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-161",
+  "kanji": "悪",
+  "on_reading": "アク",
+  "kun_reading": "わる.い",
+  "meaning": "Xấu",
+  "examples": [
+   {
+    "word": "最悪",
+    "reading": "さいあく",
+    "meaning": "Tệ nhất"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-176",
+  "kanji": "逸",
+  "on_reading": "イツ",
+  "kun_reading": "い.す",
+  "meaning": "Lạc, trốn",
+  "examples": [
+   {
+    "word": "逸脱",
+    "reading": "いつだつ",
+    "meaning": "Sai lệch"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-179",
+  "kanji": "到",
+  "on_reading": "トウ",
+  "kun_reading": "いた.る",
+  "meaning": "Đến",
+  "examples": [
+   {
+    "word": "到着",
+    "reading": "とうちゃく",
+    "meaning": "Đến nơi"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-187",
+  "kanji": "判",
+  "on_reading": "ハン",
+  "kun_reading": "わ.ける",
+  "meaning": "Phán",
+  "examples": [
+   {
+    "word": "判断",
+    "reading": "はんだん",
+    "meaning": "Phán đoán"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-188",
+  "kanji": "非",
+  "on_reading": "ヒ",
+  "kun_reading": "あら.ず",
+  "meaning": "Không phải",
+  "examples": [
+   {
+    "word": "非難",
+    "reading": "ひなん",
+    "meaning": "Chỉ trích"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-189",
+  "kanji": "飛",
+  "on_reading": "ヒ",
+  "kun_reading": "と.ぶ",
+  "meaning": "Bay",
+  "examples": [
+   {
+    "word": "飛行",
+    "reading": "ひこう",
+    "meaning": "Bay"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-190",
+  "kanji": "比",
+  "on_reading": "ヒ",
+  "kun_reading": "くら.べ.る",
+  "meaning": "So sánh",
+  "examples": [
+   {
+    "word": "比較",
+    "reading": "ひかく",
+    "meaning": "So sánh"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-191",
+  "kanji": "必",
+  "on_reading": "ヒツ",
+  "kun_reading": "かなら.ず",
+  "meaning": "Nhất định",
+  "examples": [
+   {
+    "word": "必要",
+    "reading": "ひつよう",
+    "meaning": "Cần thiết"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-194",
+  "kanji": "仏",
+  "on_reading": "ブツ",
+  "kun_reading": "ほとけ",
+  "meaning": "Phật",
+  "examples": [
+   {
+    "word": "仏教",
+    "reading": "ぶっきょう",
+    "meaning": "Phật giáo"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-195",
+  "kanji": "仮",
+  "on_reading": "カ",
+  "kun_reading": "かり",
+  "meaning": "Tạm",
+  "examples": [
+   {
+    "word": "仮定",
+    "reading": "かてい",
+    "meaning": "Giả định"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-196",
+  "kanji": "各",
+  "on_reading": "カク",
+  "kun_reading": "おのお.の",
+  "meaning": "Mỗi",
+  "examples": [
+   {
+    "word": "各人",
+    "reading": "かくじん",
+    "meaning": "Mỗi người"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-198",
+  "kanji": "革",
+  "on_reading": "カク",
+  "kun_reading": "かわ",
+  "meaning": "Da (vật)",
+  "examples": [
+   {
+    "word": "革新",
+    "reading": "かくしん",
+    "meaning": "Cải cách"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-200",
+  "kanji": "確",
+  "on_reading": "カク",
+  "kun_reading": "たし.かめる",
+  "meaning": "Chắc chắn",
+  "examples": [
+   {
+    "word": "確認",
+    "reading": "かくにん",
+    "meaning": "Xác nhận"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-201",
+  "kanji": "較",
+  "on_reading": "カク",
+  "kun_reading": "くら.べ.る",
+  "meaning": "So",
+  "examples": [
+   {
+    "word": "比較",
+    "reading": "ひかく",
+    "meaning": "So sánh"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-202",
+  "kanji": "獲",
+  "on_reading": "カク",
+  "kun_reading": "え.る",
+  "meaning": "Bắt, săn",
+  "examples": [
+   {
+    "word": "獲物",
+    "reading": "えもの",
+    "meaning": "Mồi săn"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-203",
+  "kanji": "確",
+  "on_reading": "カク",
+  "kun_reading": "たし.か",
+  "meaning": "Chắc",
+  "examples": [
+   {
+    "word": "確実",
+    "reading": "かくじつ",
+    "meaning": "Chắc chắn"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-204",
+  "kanji": "各",
+  "on_reading": "カク",
+  "kun_reading": "おのお.",
+  "meaning": "Mỗi",
+  "examples": [
+   {
+    "word": "各国",
+    "reading": "かっこく",
+    "meaning": "Các nước"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-206",
+  "kanji": "額",
+  "on_reading": "ガク",
+  "kun_reading": "ひたい",
+  "meaning": "Trán, số tiền",
+  "examples": [
+   {
+    "word": "額面",
+    "reading": "がくめん",
+    "meaning": "Mặt nạ, mệnh giá"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-209",
+  "kanji": "較",
+  "on_reading": "カク",
+  "kun_reading": "くら.べ",
+  "meaning": "So",
+  "examples": [
+   {
+    "word": "比較的",
+    "reading": "ひかくてき",
+    "meaning": "Tương đối"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-210",
+  "kanji": "括",
+  "on_reading": "カツ",
+  "kun_reading": "くく.る",
+  "meaning": "Buộc",
+  "examples": [
+   {
+    "word": "括弧",
+    "reading": "かっこ",
+    "meaning": "Dấu ngoặc"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-212",
+  "kanji": "割",
+  "on_reading": "カツ",
+  "kun_reading": "わ.る",
+  "meaning": "Chia, cắt",
+  "examples": [
+   {
+    "word": "割合",
+    "reading": "わりあい",
+    "meaning": "Tỷ lệ"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-213",
+  "kanji": "渇",
+  "on_reading": "カツ",
+  "kun_reading": "かわ.く",
+  "meaning": "Khát",
+  "examples": [
+   {
+    "word": "渇望",
+    "reading": "かつぼう",
+    "meaning": "Khao khát"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-214",
+  "kanji": "干",
+  "on_reading": "カン",
+  "kun_reading": "ほ.す",
+  "meaning": "Phơi",
+  "examples": [
+   {
+    "word": "干燥",
+    "reading": "かんそう",
+    "meaning": "Khô ráo"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-215",
+  "kanji": "甘",
+  "on_reading": "カン",
+  "kun_reading": "あま.い",
+  "meaning": "Ngọt",
+  "examples": [
+   {
+    "word": "甘心",
+    "reading": "かんしん",
+    "meaning": "Cam lòng"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-216",
+  "kanji": "缶",
+  "on_reading": "カン",
+  "kun_reading": "かん",
+  "meaning": "Lon",
+  "examples": [
+   {
+    "word": "缶詰",
+    "reading": "かんづめ",
+    "meaning": "Đóng hộp"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-217",
+  "kanji": "看",
+  "on_reading": "カン",
+  "kun_reading": "み.る",
+  "meaning": "Nhìn, coi",
+  "examples": [
+   {
+    "word": "看護",
+    "reading": "かんご",
+    "meaning": "Điều dưỡng"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-219",
+  "kanji": "棺",
+  "on_reading": "カン",
+  "kun_reading": "ひつぎ",
+  "meaning": "Quan tài",
+  "examples": [
+   {
+    "word": "棺桶",
+    "reading": "かんおけ",
+    "meaning": "Quan tài"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-220",
+  "kanji": "患",
+  "on_reading": "カン",
+  "kun_reading": "わずら.う",
+  "meaning": "Bệnh",
+  "examples": [
+   {
+    "word": "患者",
+    "reading": "かんじゃ",
+    "meaning": "Bệnh nhân"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-221",
+  "kanji": "喚",
+  "on_reading": "カン",
+  "kun_reading": "わ.めく",
+  "meaning": "La hét",
+  "examples": [
+   {
+    "word": "喚起",
+    "reading": "かんき",
+    "meaning": "Khơi dậy"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-222",
+  "kanji": "慣",
+  "on_reading": "カン",
+  "kun_reading": "な.れる",
+  "meaning": "Quen",
+  "examples": [
+   {
+    "word": "慣習",
+    "reading": "かんしゅう",
+    "meaning": "Thói quen"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-223",
+  "kanji": "監",
+  "on_reading": "カン",
+  "kun_reading": "かん.する",
+  "meaning": "Giám sát",
+  "examples": [
+   {
+    "word": "監督",
+    "reading": "かんとく",
+    "meaning": "Đạo diễn"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-224",
+  "kanji": "緩",
+  "on_reading": "カン",
+  "kun_reading": "ゆる.い",
+  "meaning": "Lỏng",
+  "examples": [
+   {
+    "word": "緩和",
+    "reading": "かんわ",
+    "meaning": "Lỏng lẻo"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-225",
+  "kanji": "完",
+  "on_reading": "カン",
+  "kun_reading": "まった.い",
+  "meaning": "Hoàn",
+  "examples": [
+   {
+    "word": "完成",
+    "reading": "かんせい",
+    "meaning": "Hoàn thành"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-227",
+  "kanji": "巻",
+  "on_reading": "カン",
+  "kun_reading": "ま.く",
+  "meaning": "Cuộn",
+  "examples": [
+   {
+    "word": "巻物",
+    "reading": "まきもの",
+    "meaning": "Cuộn giấy"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-228",
+  "kanji": "環",
+  "on_reading": "カン",
+  "kun_reading": "わ",
+  "meaning": "Vòng",
+  "examples": [
+   {
+    "word": "環境",
+    "reading": "かんきょう",
+    "meaning": "Môi trường"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-229",
+  "kanji": "簡",
+  "on_reading": "カン",
+  "kun_reading": "かん.じる",
+  "meaning": "Đơn giản",
+  "examples": [
+   {
+    "word": "簡単",
+    "reading": "かんたん",
+    "meaning": "Đơn giản"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-230",
+  "kanji": "岸",
+  "on_reading": "ガン",
+  "kun_reading": "きし",
+  "meaning": "Bờ",
+  "examples": [
+   {
+    "word": "岸辺",
+    "reading": "きしべ",
+    "meaning": "Bờ sông"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-231",
+  "kanji": "岩",
+  "on_reading": "ガン",
+  "kun_reading": "いわ",
+  "meaning": "Đá",
+  "examples": [
+   {
+    "word": "岩石",
+    "reading": "がんせき",
+    "meaning": "Đá"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-232",
+  "kanji": "眼",
+  "on_reading": "ガン",
+  "kun_reading": "め",
+  "meaning": "Mắt",
+  "examples": [
+   {
+    "word": "眼鏡",
+    "reading": "めがね",
+    "meaning": "Kính"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-233",
+  "kanji": "頑",
+  "on_reading": "ガン",
+  "kun_reading": "かたくな",
+  "meaning": "Cứng đầu",
+  "examples": [
+   {
+    "word": "頑固",
+    "reading": "がんこ",
+    "meaning": "Cứng đầu"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-235",
+  "kanji": "偽",
+  "on_reading": "ギ",
+  "kun_reading": "いつわ.る",
+  "meaning": "Giả",
+  "examples": [
+   {
+    "word": "偽物",
+    "reading": "にせもの",
+    "meaning": "Đồ giả"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-236",
+  "kanji": "宜",
+  "on_reading": "ギ",
+  "kun_reading": "よろ.しい",
+  "meaning": "Nên",
+  "examples": [
+   {
+    "word": "宜しい",
+    "reading": "よろしい",
+    "meaning": "Được"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-237",
+  "kanji": "戯",
+  "on_reading": "ギ",
+  "kun_reading": "たわむ.れる",
+  "meaning": "Đùa",
+  "examples": [
+   {
+    "word": "戯曲",
+    "reading": "ぎきょく",
+    "meaning": "Kịch"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-238",
+  "kanji": "犠",
+  "on_reading": "ギ",
+  "kun_reading": "ぎえい",
+  "meaning": "Hi sinh",
+  "examples": [
+   {
+    "word": "犠牲",
+    "reading": "ぎせい",
+    "meaning": "Hi sinh"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-242",
+  "kanji": "吟",
+  "on_reading": "ギン",
+  "kun_reading": "ぎん",
+  "meaning": "Ngâm",
+  "examples": [
+   {
+    "word": "吟味",
+    "reading": "ぎんみ",
+    "meaning": "Cân nhắc"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-248",
+  "kanji": "訓",
+  "on_reading": "クン",
+  "kun_reading": "お.し.える",
+  "meaning": "Huấn",
+  "examples": [
+   {
+    "word": "訓練",
+    "reading": "くんれん",
+    "meaning": "Huấn luyện"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-249",
+  "kanji": "軍",
+  "on_reading": "グン",
+  "kun_reading": "いくさ",
+  "meaning": "Quân",
+  "examples": [
+   {
+    "word": "軍隊",
+    "reading": "ぐんたい",
+    "meaning": "Quân đội"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-250",
+  "kanji": "揮",
+  "on_reading": "キ",
+  "kun_reading": "ふる.う",
+  "meaning": "Phất",
+  "examples": [
+   {
+    "word": "指揮",
+    "reading": "しき",
+    "meaning": "Chỉ huy"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-251",
+  "kanji": "貴",
+  "on_reading": "キ",
+  "kun_reading": "たっと.い",
+  "meaning": "Quý",
+  "examples": [
+   {
+    "word": "貴重",
+    "reading": "きちょう",
+    "meaning": "Quý giá"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-252",
+  "kanji": "季",
+  "on_reading": "キ",
+  "kun_reading": "すき",
+  "meaning": "Mùa",
+  "examples": [
+   {
+    "word": "季節",
+    "reading": "きせつ",
+    "meaning": "Mùa"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-253",
+  "kanji": "旗",
+  "on_reading": "キ",
+  "kun_reading": "はた",
+  "meaning": "Cờ",
+  "examples": [
+   {
+    "word": "国旗",
+    "reading": "こっき",
+    "meaning": "Quốc kỳ"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-255",
+  "kanji": "帰",
+  "on_reading": "キ",
+  "kun_reading": "かえ.る",
+  "meaning": "Về",
+  "examples": [
+   {
+    "word": "帰国",
+    "reading": "きこく",
+    "meaning": "Về nước"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-256",
+  "kanji": "祈",
+  "on_reading": "キ",
+  "kun_reading": "いの.る",
+  "meaning": "Cầu nguyện",
+  "examples": [
+   {
+    "word": "祈り",
+    "reading": "いのり",
+    "meaning": "Lời cầu nguyện"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-257",
+  "kanji": "菊",
+  "on_reading": "キク",
+  "kun_reading": "きく",
+  "meaning": "Cúc",
+  "examples": [
+   {
+    "word": "菊の花",
+    "reading": "きくのはな",
+    "meaning": "Hoa cúc"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-258",
+  "kanji": "喫",
+  "on_reading": "キツ",
+  "kun_reading": "の.む",
+  "meaning": "Uống, hút",
+  "examples": [
+   {
+    "word": "喫茶",
+    "reading": "きっさ",
+    "meaning": "Quán trà"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-259",
+  "kanji": "吉",
+  "on_reading": "キチ",
+  "kun_reading": "きち",
+  "meaning": "Cát",
+  "examples": [
+   {
+    "word": "大吉",
+    "reading": "だいきち",
+    "meaning": "Đại cát"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-260",
+  "kanji": "詰",
+  "on_reading": "キツ",
+  "kun_reading": "つ.める",
+  "meaning": "Đẩy vào",
+  "examples": [
+   {
+    "word": "詰め",
+    "reading": "つめ",
+    "meaning": "Sự đẩy vào"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-261",
+  "kanji": "却",
+  "on_reading": "キャク",
+  "kun_reading": "かえ.って",
+  "meaning": "Ngược lại",
+  "examples": [
+   {
+    "word": "却下",
+    "reading": "きゃっか",
+    "meaning": "Bác bỏ"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-262",
+  "kanji": "客",
+  "on_reading": "キャク",
+  "kun_reading": "きゃく",
+  "meaning": "Khách",
+  "examples": [
+   {
+    "word": "客観",
+    "reading": "きゃっかん",
+    "meaning": "Khách quan"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-263",
+  "kanji": "脚",
+  "on_reading": "キャク/キャク",
+  "kun_reading": "あし",
+  "meaning": "Chân",
+  "examples": [
+   {
+    "word": "脚本",
+    "reading": "きゃくほん",
+    "meaning": "Kịch bản"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-264",
+  "kanji": "却",
+  "on_reading": "キャク",
+  "kun_reading": "しりぞ.ける",
+  "meaning": "Đuổi",
+  "examples": [
+   {
+    "word": "退却",
+    "reading": "たいきゃk",
+    "meaning": "Rút lui"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-265",
+  "kanji": "逆",
+  "on_reading": "ギャク",
+  "kun_reading": "さか.い",
+  "meaning": "Ngược",
+  "examples": [
+   {
+    "word": "逆転",
+    "reading": "ぎゃくてん",
+    "meaning": "Đảo ngược"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-266",
+  "kanji": "虐",
+  "on_reading": "ギャク",
+  "kun_reading": "しいた.げる",
+  "meaning": "Bạo ngược",
+  "examples": [
+   {
+    "word": "虐殺",
+    "reading": "ぎゃくさつ",
+    "meaning": "Thảm sát"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-267",
+  "kanji": "糾",
+  "on_reading": "キュウ",
+  "kun_reading": "あば.く",
+  "meaning": "Tố cáo",
+  "examples": [
+   {
+    "word": "糾明",
+    "reading": "きゅうめɪng",
+    "meaning": "Làm rõ"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-268",
+  "kanji": "休",
+  "on_reading": "キュウ",
+  "kun_reading": "やす.む",
+  "meaning": "Nghỉ",
+  "examples": [
+   {
+    "word": "休憩",
+    "reading": "きゅうけい",
+    "meaning": "Nghỉ giải lao"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-270",
+  "kanji": "及",
+  "on_reading": "キュウ",
+  "kun_reading": "およ.ぶ",
+  "meaning": "Đạt đến",
+  "examples": [
+   {
+    "word": "及び",
+    "reading": "および",
+    "meaning": "Và"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-272",
+  "kanji": "弓",
+  "on_reading": "キュウ",
+  "kun_reading": "ゆ",
+  "meaning": "Cung tên",
+  "examples": [
+   {
+    "word": "弓道",
+    "reading": "きゅうどう",
+    "meaning": "Đạo cung"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-273",
+  "kanji": "愚",
+  "on_reading": "グ",
+  "kun_reading": "おろ.か",
+  "meaning": "Ngu",
+  "examples": [
+   {
+    "word": "愚痴",
+    "reading": "ぐち",
+    "meaning": "Than vãn"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-274",
+  "kanji": "偶",
+  "on_reading": "グう",
+  "kun_reading": "たま",
+  "meaning": "Ngẫu nhiên",
+  "examples": [
+   {
+    "word": "偶然",
+    "reading": "ぐうぜん",
+    "meaning": "Tình cờ"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-275",
+  "kanji": "屈",
+  "on_reading": "クツ",
+  "kun_reading": "かが.む",
+  "meaning": "Cúi",
+  "examples": [
+   {
+    "word": "屈辱",
+    "reading": "くつじょく",
+    "meaning": "Nhục nhã"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-276",
+  "kanji": "掘",
+  "on_reading": "クツ",
+  "kun_reading": "ほ.る",
+  "meaning": "Đào",
+  "examples": [
+   {
+    "word": "掘削",
+    "reading": "くっさく",
+    "meaning": "Khai thác"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-277",
+  "kanji": "窟",
+  "on_reading": "クツ",
+  "kun_reading": "いわや",
+  "meaning": "Hang",
+  "examples": [
+   {
+    "word": "石窟",
+    "reading": "せっくつ",
+    "meaning": "Động đá"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-278",
+  "kanji": "靴",
+  "on_reading": "クツ",
+  "kun_reading": "くつ",
+  "meaning": "Giày",
+  "examples": [
+   {
+    "word": "靴下",
+    "reading": "くつした",
+    "meaning": "Tất"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-279",
+  "kanji": "繰",
+  "on_reading": "クリ",
+  "kun_reading": "く.る",
+  "meaning": "Lặp lại",
+  "examples": [
+   {
+    "word": "繰り返し",
+    "reading": "くりかえし",
+    "meaning": "Sự lặp lại"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-280",
+  "kanji": "軍",
+  "on_reading": "グン",
+  "kun_reading": "いくさ",
+  "meaning": "Quân",
+  "examples": [
+   {
+    "word": "陸軍",
+    "reading": "りくぐん",
+    "meaning": "Quân lục"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-281",
+  "kanji": "訓",
+  "on_reading": "クン",
+  "kun_reading": "おし",
+  "meaning": "Huấn",
+  "examples": [
+   {
+    "word": "基訓",
+    "reading": "きくん",
+    "meaning": "Cơ bản"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-282",
+  "kanji": "勲",
+  "on_reading": "クン",
+  "kun_reading": "いさお",
+  "meaning": "Công",
+  "examples": [
+   {
+    "word": "勲章",
+    "reading": "くんしょう",
+    "meaning": "Huy chương"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-283",
+  "kanji": "型",
+  "on_reading": "ケイ",
+  "kun_reading": "かた",
+  "meaning": "Kiểu",
+  "examples": [
+   {
+    "word": "型式",
+    "reading": "けいしき",
+    "meaning": "Kiểu dáng"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-285",
+  "kanji": "敬",
+  "on_reading": "ケイ",
+  "kun_reading": "うやま.う",
+  "meaning": "Kính",
+  "examples": [
+   {
+    "word": "尊敬",
+    "reading": "そんけɪng",
+    "meaning": "Tôn kính"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-288",
+  "kanji": "傾",
+  "on_reading": "ケイ",
+  "kun_reading": "かたむ.く",
+  "meaning": "Nghiêng",
+  "examples": [
+   {
+    "word": "傾向",
+    "reading": "けいこう",
+    "meaning": "Xu hướng"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-289",
+  "kanji": "渓",
+  "on_reading": "ケイ",
+  "kun_reading": "たに",
+  "meaning": "Suối",
+  "examples": [
+   {
+    "word": "渓谷",
+    "reading": "けいこく",
+    "meaning": "Thung lũng"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-290",
+  "kanji": "蛍",
+  "on_reading": "ケイ",
+  "kun_reading": "ほたる",
+  "meaning": "Đom đóm",
+  "examples": [
+   {
+    "word": "蛍光",
+    "reading": "けいこう",
+    "meaning": "Huỳnh quang"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-291",
+  "kanji": "携",
+  "on_reading": "ケイ",
+  "kun_reading": "たずさ.える",
+  "meaning": "Mang theo",
+  "examples": [
+   {
+    "word": "携帯",
+    "reading": "けいたい",
+    "meaning": "Di động"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-292",
+  "kanji": "鶏",
+  "on_reading": "ケイ",
+  "kun_reading": "にわとり",
+  "meaning": "Gà",
+  "examples": [
+   {
+    "word": "鶏肉",
+    "reading": "けいにく",
+    "meaning": "Thịt gà"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-298",
+  "kanji": "潔",
+  "on_reading": "ケツ",
+  "kun_reading": "いさぎよ.い",
+  "meaning": "Trong sạch",
+  "examples": [
+   {
+    "word": "清潔",
+    "reading": "せいけつ",
+    "meaning": "Sạch sẽ"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-299",
+  "kanji": "月",
+  "on_reading": "ゲツ/ガツ",
+  "kun_reading": "つき",
+  "meaning": "Tháng, trăng",
+  "examples": [
+   {
+    "word": "月曜",
+    "reading": "げつよう",
+    "meaning": "Thứ Hai"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-306",
+  "kanji": "堅",
+  "on_reading": "ケン",
+  "kun_reading": "かた.い",
+  "meaning": "Chắc",
+  "examples": [
+   {
+    "word": "堅実",
+    "reading": "けんじつ",
+    "meaning": "Thực tế"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-307",
+  "kanji": "肩",
+  "on_reading": "ケン",
+  "kun_reading": "かた",
+  "meaning": "Vai",
+  "examples": [
+   {
+    "word": "肩書き",
+    "reading": "かたがき",
+    "meaning": "Chức danh"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-308",
+  "kanji": "謙",
+  "on_reading": "ケん",
+  "kun_reading": "けん.する",
+  "meaning": "Khiêm",
+  "examples": [
+   {
+    "word": "謙遜",
+    "reading": "けんそん",
+    "meaning": "Khiêm tốn"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-310",
+  "kanji": "絹",
+  "on_reading": "ケン",
+  "kun_reading": "きぬ",
+  "meaning": "Lụa",
+  "examples": [
+   {
+    "word": "絹布",
+    "reading": "けんぷ",
+    "meaning": "Vải lụa"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-312",
+  "kanji": "古",
+  "on_reading": "コ",
+  "kun_reading": "ふる.い",
+  "meaning": "Cũ",
+  "examples": [
+   {
+    "word": "考古",
+    "reading": "こうこ",
+    "meaning": "Khảo cổ"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-315",
+  "kanji": "己",
+  "on_reading": "コ/キ",
+  "kun_reading": "おのれ",
+  "meaning": "Bản thân",
+  "examples": [
+   {
+    "word": "知己",
+    "reading": "ちき",
+    "meaning": "Tri kỷ"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-322",
+  "kanji": "呉",
+  "on_reading": "ゴ",
+  "kun_reading": "く.れる",
+  "meaning": "Cho",
+  "examples": [
+   {
+    "word": "呉服",
+    "reading": "ごふく",
+    "meaning": "Vải"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-325",
+  "kanji": "業",
+  "on_reading": "ギョウ/ゴウ",
+  "kun_reading": "わざ",
+  "meaning": "Nghiệp",
+  "examples": [
+   {
+    "word": "産業",
+    "reading": "さんぎょう",
+    "meaning": "Công nghiệp"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-326",
+  "kanji": "曲",
+  "on_reading": "キョク",
+  "kun_reading": "ま.がる",
+  "meaning": "Cong",
+  "examples": [
+   {
+    "word": "曲線",
+    "reading": "きょくせん",
+    "meaning": "Đường cong"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-327",
+  "kanji": "極",
+  "on_reading": "キョク",
+  "kun_reading": "きわ.める",
+  "meaning": "Cực",
+  "examples": [
+   {
+    "word": "積極",
+    "reading": "せっきょく",
+    "meaning": "Tích cực"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-328",
+  "kanji": "玉",
+  "on_reading": "ギョク",
+  "kun_reading": "たま",
+  "meaning": "Ngọc",
+  "examples": [
+   {
+    "word": "宝石",
+    "reading": "ほうせき",
+    "meaning": "Đá quý"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-331",
+  "kanji": "屈",
+  "on_reading": "クツ",
+  "kun_reading": "くっ.する",
+  "meaning": "Uốn",
+  "examples": [
+   {
+    "word": "屈服",
+    "reading": "くっぷuku",
+    "meaning": "Phục tùng"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-332",
+  "kanji": "靴",
+  "on_reading": "クツ",
+  "kun_reading": "くつ",
+  "meaning": "Giày",
+  "examples": [
+   {
+    "word": "長靴",
+    "reading": "ながぐつ",
+    "meaning": "Ủng"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-333",
+  "kanji": "繰",
+  "on_reading": "ク",
+  "kun_reading": "く.り",
+  "meaning": "Quấn",
+  "examples": [
+   {
+    "word": "手繰り",
+    "reading": "てくり",
+    "meaning": "Kéo"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-334",
+  "kanji": "軍",
+  "on_reading": "グン",
+  "kun_reading": "いくさ",
+  "meaning": "Quân",
+  "examples": [
+   {
+    "word": "海軍",
+    "reading": "かいぐん",
+    "meaning": "Quân hải"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-335",
+  "kanji": "勲",
+  "on_reading": "クン",
+  "kun_reading": "いさ.お",
+  "meaning": "Công trạng",
+  "examples": [
+   {
+    "word": "勲記",
+    "reading": "くんき",
+    "meaning": "Sách công"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-336",
+  "kanji": "型",
+  "on_reading": "ケイ",
+  "kun_reading": "かた",
+  "meaning": "Mẫu",
+  "examples": [
+   {
+    "word": "典型",
+    "reading": "てんけɪng",
+    "meaning": "Điển hình"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-339",
+  "kanji": "傾",
+  "on_reading": "ケイ",
+  "kun_reading": "かたむ.ける",
+  "meaning": "Nghiêng",
+  "examples": [
+   {
+    "word": "傾倒",
+    "reading": "けいとう",
+    "meaning": "Sùng bái"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-340",
+  "kanji": "携",
+  "on_reading": "ケイ",
+  "kun_reading": "たずさ.わ",
+  "meaning": "Mang",
+  "examples": [
+   {
+    "word": "携行",
+    "reading": "けいこう",
+    "meaning": "Mang theo"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-346",
+  "kanji": "月",
+  "on_reading": "ゲツ",
+  "kun_reading": "つき",
+  "meaning": "Trăng",
+  "examples": [
+   {
+    "word": "月明",
+    "reading": "げつめい",
+    "meaning": "Trăng sáng"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-351",
+  "kanji": "堅",
+  "on_reading": "ケン",
+  "kun_reading": "かた.く",
+  "meaning": "Chắc",
+  "examples": [
+   {
+    "word": "堅固",
+    "reading": "けんご",
+    "meaning": "Vững chắc"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-353",
+  "kanji": "肩",
+  "on_reading": "ケん",
+  "kun_reading": "かた",
+  "meaning": "Vai",
+  "examples": [
+   {
+    "word": "肩身",
+    "reading": "かたみ",
+    "meaning": "Vai trò"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-354",
+  "kanji": "謙",
+  "on_reading": "ケン",
+  "kun_reading": "へりくだ.る",
+  "meaning": "Khiêm",
+  "examples": [
+   {
+    "word": "謙虚",
+    "reading": "けんきょ",
+    "meaning": "Khiêm nhường"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-355",
+  "kanji": "弦",
+  "on_reading": "ゲン",
+  "kun_reading": "つる",
+  "meaning": "Dây cung",
+  "examples": [
+   {
+    "word": "弦楽",
+    "reading": "げんがく",
+    "meaning": "Dây"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-358",
+  "kanji": "減",
+  "on_reading": "ゲン",
+  "kun_reading": "へ.る",
+  "meaning": "Giảm",
+  "examples": [
+   {
+    "word": "減少",
+    "reading": "げんしょう",
+    "meaning": "Giảm"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-359",
+  "kanji": "源",
+  "on_reading": "ゲン",
+  "kun_reading": "みなもと",
+  "meaning": "Nguồn",
+  "examples": [
+   {
+    "word": "起源",
+    "reading": "きげん",
+    "meaning": "Nguồn gốc"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-361",
+  "kanji": "古",
+  "on_reading": "コ",
+  "kun_reading": "ふる",
+  "meaning": "Cũ",
+  "examples": [
+   {
+    "word": "古代",
+    "reading": "こだい",
+    "meaning": "Cổ đại"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-365",
+  "kanji": "耕",
+  "on_reading": "コウ",
+  "kun_reading": "たが.ày",
+  "meaning": "Cày",
+  "examples": [
+   {
+    "word": "耕作",
+    "reading": "こうさく",
+    "meaning": "Canh tác"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-367",
+  "kanji": "航",
+  "on_reading": "コウ",
+  "kun_reading": "わた.る",
+  "meaning": "Đi tàu",
+  "examples": [
+   {
+    "word": "航海",
+    "reading": "こうかい",
+    "meaning": "Hàng hải"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-368",
+  "kanji": "貢",
+  "on_reading": "コウ",
+  "kun_reading": "みつ.げる",
+  "meaning": "Đóng góp",
+  "examples": [
+   {
+    "word": "貢献",
+    "reading": "こうけん",
+    "meaning": "Đóng góp"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-369",
+  "kanji": "降",
+  "on_reading": "コウ",
+  "kun_reading": "お.りる",
+  "meaning": "Xuống",
+  "examples": [
+   {
+    "word": "降下",
+    "reading": "こうか",
+    "meaning": "Hạ"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-370",
+  "kanji": "鉱",
+  "on_reading": "コウ",
+  "kun_reading": "あらがね",
+  "meaning": "Quặng",
+  "examples": [
+   {
+    "word": "鉱山",
+    "reading": "こうざん",
+    "meaning": "Mỏ"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-371",
+  "kanji": "項",
+  "on_reading": "コウ",
+  "kun_reading": "うなじ",
+  "meaning": "Gáy",
+  "examples": [
+   {
+    "word": "項目",
+    "reading": "こうもく",
+    "meaning": "Mục"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-372",
+  "kanji": "香",
+  "on_reading": "コウ",
+  "kun_reading": "かお.る",
+  "meaning": "Thơm",
+  "examples": [
+   {
+    "word": "香水",
+    "reading": "こうすい",
+    "meaning": "Nước hoa"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-376",
+  "kanji": "昆",
+  "on_reading": "コン",
+  "kun_reading": "こん",
+  "meaning": "Hỗn",
+  "examples": [
+   {
+    "word": "昆布",
+    "reading": "こんぶ",
+    "meaning": "Rong biển"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-381",
+  "kanji": "砂",
+  "on_reading": "サ",
+  "kun_reading": "すな",
+  "meaning": "Cát",
+  "examples": [
+   {
+    "word": "砂漠",
+    "reading": "さばく",
+    "meaning": "Sa mạc"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-383",
+  "kanji": "鎖",
+  "on_reading": "サ",
+  "kun_reading": "くさり",
+  "meaning": "Xích",
+  "examples": [
+   {
+    "word": "鎖骨",
+    "reading": "さこつ",
+    "meaning": "Xương đòn"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-386",
+  "kanji": "索",
+  "on_reading": "サク",
+  "kun_reading": "な.る",
+  "meaning": "Tìm",
+  "examples": [
+   {
+    "word": "探索",
+    "reading": "たんさく",
+    "meaning": "Khám phá"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-387",
+  "kanji": "冊",
+  "on_reading": "サツ",
+  "kun_reading": "さつ",
+  "meaning": "Quyển",
+  "examples": [
+   {
+    "word": "名冊",
+    "reading": "めいさつ",
+    "meaning": "Danh sách"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-388",
+  "kanji": "刹",
+  "on_reading": "セツ",
+  "kun_reading": "さて",
+  "meaning": "Chùa",
+  "examples": [
+   {
+    "word": "刹那",
+    "reading": "せつな",
+    "meaning": "Chớp nhoáng"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-389",
+  "kanji": "摂",
+  "on_reading": "セツ",
+  "kun_reading": "おさ.める",
+  "meaning": "Thu",
+  "examples": [
+   {
+    "word": "摂理",
+    "reading": "せつり",
+    "meaning": "Định lý"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-392",
+  "kanji": "窃",
+  "on_reading": "セツ",
+  "kun_reading": "ぬす.む",
+  "meaning": "Trộm",
+  "examples": [
+   {
+    "word": "窃盗",
+    "reading": "せっとう",
+    "meaning": "Trộm cắp"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-393",
+  "kanji": "説",
+  "on_reading": "セツ",
+  "kun_reading": "と.く",
+  "meaning": "Nói",
+  "examples": [
+   {
+    "word": "説得",
+    "reading": "せっとく",
+    "meaning": "Thuyết phục"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-394",
+  "kanji": "拙",
+  "on_reading": "セツ",
+  "kun_reading": "へた.い",
+  "meaning": "Tệ",
+  "examples": [
+   {
+    "word": "拙作",
+    "reading": "せっさく",
+    "meaning": "Tác phẩm tệ"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-395",
+  "kanji": "舌",
+  "on_reading": "セツ",
+  "kun_reading": "した",
+  "meaning": "Lưỡi",
+  "examples": [
+   {
+    "word": "舌戦",
+    "reading": "ぜっせん",
+    "meaning": "Tranh luận"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-396",
+  "kanji": "絶",
+  "on_reading": "ゼツ",
+  "kun_reading": "た.える",
+  "meaning": "Tuyệt",
+  "examples": [
+   {
+    "word": "絶対",
+    "reading": "ぜったい",
+    "meaning": "Tuyệt đối"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-397",
+  "kanji": "仙",
+  "on_reading": "セン",
+  "kun_reading": "せん",
+  "meaning": "Tiên",
+  "examples": [
+   {
+    "word": "仙境",
+    "reading": "せんきょう",
+    "meaning": "Cõi tiên"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-399",
+  "kanji": "穿",
+  "on_reading": "セン",
+  "kun_reading": "うが.つ",
+  "meaning": "Đục",
+  "examples": [
+   {
+    "word": "穿鑿",
+    "reading": "せんさく",
+    "meaning": "Mổ xẻ"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-400",
+  "kanji": "扇",
+  "on_reading": "セン",
+  "kun_reading": "おうぎ",
+  "meaning": "Quạt",
+  "examples": [
+   {
+    "word": "扇動",
+    "reading": "せんどう",
+    "meaning": "Kích động"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-401",
+  "kanji": "専",
+  "on_reading": "セン",
+  "kun_reading": "もっ.する",
+  "meaning": "Chuyên",
+  "examples": [
+   {
+    "word": "専門",
+    "reading": "せんもん",
+    "meaning": "Chuyên môn"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-403",
+  "kanji": "浅",
+  "on_reading": "セン",
+  "kun_reading": "あさ.い",
+  "meaning": "Nông",
+  "examples": [
+   {
+    "word": "浅学",
+    "reading": "せんがく",
+    "meaning": "Học nông"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-405",
+  "kanji": "染",
+  "on_reading": "セン",
+  "kun_reading": "そ.める",
+  "meaning": " nhuộm",
+  "examples": [
+   {
+    "word": "染色",
+    "reading": "せんしょく",
+    "meaning": "Nhuộm"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-406",
+  "kanji": "旋",
+  "on_reading": "セン",
+  "kun_reading": "め.ぐ",
+  "meaning": "Xoay",
+  "examples": [
+   {
+    "word": "旋回",
+    "reading": "せんかい",
+    "meaning": "Xoay"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-408",
+  "kanji": "占",
+  "on_reading": "セン",
+  "kun_reading": "し.める",
+  "meaning": "Chiếm",
+  "examples": [
+   {
+    "word": "占領",
+    "reading": "せんりょう",
+    "meaning": "Chiếm lĩnh"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-411",
+  "kanji": "禅",
+  "on_reading": "ゼン",
+  "kun_reading": "ぜん",
+  "meaning": "Thiền",
+  "examples": [
+   {
+    "word": "禅宗",
+    "reading": "ぜんしゅう",
+    "meaning": "Thiền tông"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-412",
+  "kanji": "繕",
+  "on_reading": "ゼン",
+  "kun_reading": "つくろ.う",
+  "meaning": "Sửa",
+  "examples": [
+   {
+    "word": "繕い",
+    "reading": "つくろい",
+    "meaning": "Sự sửa"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-413",
+  "kanji": "阻",
+  "on_reading": "ソ",
+  "kun_reading": "はば.む",
+  "meaning": "Ngăn",
+  "examples": [
+   {
+    "word": "阻害",
+    "reading": "そがい",
+    "meaning": "Cản trở"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-417",
+  "kanji": "倉",
+  "on_reading": "ソウ",
+  "kun_reading": "くら",
+  "meaning": "Kho",
+  "examples": [
+   {
+    "word": "倉庫",
+    "reading": "そうこ",
+    "meaning": "Nhà kho"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-418",
+  "kanji": "巣",
+  "on_reading": "ソウ",
+  "kun_reading": "す",
+  "meaning": "Tổ",
+  "examples": [
+   {
+    "word": "巣窟",
+    "reading": "そうくつ",
+    "meaning": "Ổ"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-419",
+  "kanji": "掃",
+  "on_reading": "ソウ",
+  "kun_reading": "は.く",
+  "meaning": "Quét",
+  "examples": [
+   {
+    "word": "掃除",
+    "reading": "そうじ",
+    "meaning": "Dọn dẹp"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-420",
+  "kanji": "庄",
+  "on_reading": "ソウ",
+  "kun_reading": "しょう",
+  "meaning": "Trang",
+  "examples": [
+   {
+    "word": "庄園",
+    "reading": "しょうえん",
+    "meaning": "Trang trại"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-421",
+  "kanji": "巣",
+  "on_reading": "ソウ",
+  "kun_reading": "す.る",
+  "meaning": "Làm tổ",
+  "examples": [
+   {
+    "word": "巣立つ",
+    "reading": "すだつ",
+    "meaning": "Rời tổ"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-422",
+  "kanji": "惣",
+  "on_reading": "ソウ",
+  "kun_reading": "そう",
+  "meaning": "Tổng",
+  "examples": [
+   {
+    "word": "惣菜",
+    "reading": "そうざい",
+    "meaning": "Đồ ăn sẵn"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-423",
+  "kanji": "創",
+  "on_reading": "ソウ",
+  "kun_reading": "つく.る",
+  "meaning": "Sáng tạo",
+  "examples": [
+   {
+    "word": "創造",
+    "reading": "そうぞう",
+    "meaning": "Sáng tạo"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-424",
+  "kanji": "総",
+  "on_reading": "ソウ",
+  "kun_reading": "そう",
+  "meaning": "Tổng",
+  "examples": [
+   {
+    "word": "総合",
+    "reading": "そうごう",
+    "meaning": "Tổng hợp"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-425",
+  "kanji": "速",
+  "on_reading": "ソク",
+  "kun_reading": "はや.い",
+  "meaning": "Nhanh",
+  "examples": [
+   {
+    "word": "迅速",
+    "reading": "じんそつ",
+    "meaning": "Nhanh chóng"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-426",
+  "kanji": "俗",
+  "on_reading": "ゾク",
+  "kun_reading": "ぞく",
+  "meaning": "Tục",
+  "examples": [
+   {
+    "word": "俗語",
+    "reading": "ぞくご",
+    "meaning": "Tiếng lóng"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-427",
+  "kanji": "賊",
+  "on_reading": "ゾク",
+  "kun_reading": "ぞく",
+  "meaning": "Tặc",
+  "examples": [
+   {
+    "word": "盗賊",
+    "reading": "とうぞك",
+    "meaning": "Cướp"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-429",
+  "kanji": "妥",
+  "on_reading": "ダ",
+  "kun_reading": "おさま.る",
+  "meaning": "Thỏa",
+  "examples": [
+   {
+    "word": "妥当",
+    "reading": "だとう",
+    "meaning": "Thích đáng"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-430",
+  "kanji": "惰",
+  "on_reading": "ダ",
+  "kun_reading": "だ.い",
+  "meaning": "Lười",
+  "examples": [
+   {
+    "word": "惰性",
+    "reading": "だせい",
+    "meaning": "Quyền"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-431",
+  "kanji": "打",
+  "on_reading": "ダ",
+  "kun_reading": "う.つ",
+  "meaning": "Đánh",
+  "examples": [
+   {
+    "word": "打撃",
+    "reading": "だげき",
+    "meaning": "Cú đánh"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-437",
+  "kanji": "拓",
+  "on_reading": "タク",
+  "kun_reading": "ひら.く",
+  "meaning": "Mở",
+  "examples": [
+   {
+    "word": "開拓",
+    "reading": "かいたく",
+    "meaning": "Khai hoang"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-438",
+  "kanji": "択",
+  "on_reading": "タク",
+  "kun_reading": "えら.ぶ",
+  "meaning": "Chọn",
+  "examples": [
+   {
+    "word": "選択",
+    "reading": "せんたく",
+    "meaning": "Lựa chọn"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-439",
+  "kanji": "諾",
+  "on_reading": "ダク",
+  "kun_reading": "だく",
+  "meaning": "Th承诺",
+  "examples": [
+   {
+    "word": "承諾",
+    "reading": "しょうだく",
+    "meaning": "Chấp nhận"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-440",
+  "kanji": "但",
+  "on_reading": "タン",
+  "kun_reading": "ただ.し",
+  "meaning": "Nhưng",
+  "examples": [
+   {
+    "word": "但し",
+    "reading": "ただしい",
+    "meaning": "Tuy nhiên"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-441",
+  "kanji": "達",
+  "on_reading": "タツ",
+  "kun_reading": "たっ.する",
+  "meaning": "Đạt",
+  "examples": [
+   {
+    "word": "達人",
+    "reading": "たつじん",
+    "meaning": "Bậc thầy"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-442",
+  "kanji": "脱",
+  "on_reading": "ダツ",
+  "kun_reading": "ぬ.ぐ",
+  "meaning": "Cởi",
+  "examples": [
+   {
+    "word": "脱出",
+    "reading": "だっしゅốt",
+    "meaning": "Thoát ra"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-443",
+  "kanji": "棚",
+  "on_reading": "ダナ",
+  "kun_reading": "たな",
+  "meaning": "Giá",
+  "examples": [
+   {
+    "word": "棚卸し",
+    "reading": "たなおろし",
+    "meaning": "Kiểm kê"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-448",
+  "kanji": "弛",
+  "on_reading": "シ",
+  "kun_reading": "たる.む",
+  "meaning": "Lỏng",
+  "examples": [
+   {
+    "word": "弛緩",
+    "reading": "しかん",
+    "meaning": "Sụp đổ"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-451",
+  "kanji": "智",
+  "on_reading": "チ",
+  "kun_reading": "ち",
+  "meaning": "Trí",
+  "examples": [
+   {
+    "word": "知恵",
+    "reading": "ちえ",
+    "meaning": "Trí tuệ"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-452",
+  "kanji": "稚",
+  "on_reading": "チ",
+  "kun_reading": "おさな",
+  "meaning": "Trẻ",
+  "examples": [
+   {
+    "word": "幼稚",
+    "reading": "ようち",
+    "meaning": "Mầm non"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-455",
+  "kanji": "窒",
+  "on_reading": "チツ",
+  "kun_reading": "ちっ.する",
+  "meaning": "Bít",
+  "examples": [
+   {
+    "word": "窒息",
+    "reading": "ちっそく",
+    "meaning": "Ngạt"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-458",
+  "kanji": "嫡",
+  "on_reading": "チャク",
+  "kun_reading": "嫡子",
+  "meaning": "ちゃくし",
+  "examples": [
+   {
+    "word": "Con chính",
+    "reading": "嫡出",
+    "meaning": "ちゃくしゅつ"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-460",
+  "kanji": "忠",
+  "on_reading": "チュウ",
+  "kun_reading": "ちゅう",
+  "meaning": "Trung",
+  "examples": [
+   {
+    "word": "忠誠",
+    "reading": "ちゅうせい",
+    "meaning": "Trung thành"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-461",
+  "kanji": "仲",
+  "on_reading": "チュウ",
+  "kun_reading": "なか",
+  "meaning": "Quan hệ",
+  "examples": [
+   {
+    "word": "仲間",
+    "reading": "なかま",
+    "meaning": "Bạn bè"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-463",
+  "kanji": "沖",
+  "on_reading": "チュウ",
+  "kun_reading": "おき",
+  "meaning": "Biển khơi",
+  "examples": [
+   {
+    "word": "沖縄",
+    "reading": "おきなわ",
+    "meaning": "Okinawa"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-465",
+  "kanji": "柱",
+  "on_reading": "チュウ",
+  "kun_reading": "はしら",
+  "meaning": "Cột",
+  "examples": [
+   {
+    "word": "支柱",
+    "reading": "しちゅう",
+    "meaning": "Cột chống"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-466",
+  "kanji": "注",
+  "on_reading": "チュウ",
+  "kun_reading": "そそ.ぎ",
+  "meaning": "Rót",
+  "examples": [
+   {
+    "word": "注意",
+    "reading": "ちゅうい",
+    "meaning": "Chú ý"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-467",
+  "kanji": "駐",
+  "on_reading": "チュウ",
+  "kun_reading": "と.まる",
+  "meaning": "Đỗ",
+  "examples": [
+   {
+    "word": "駐車",
+    "reading": "ちゅうしゃ",
+    "meaning": "Đỗ xe"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-468",
+  "kanji": "鋳",
+  "on_reading": "チュウ",
+  "kun_reading": "い.る",
+  "meaning": "Đúc",
+  "examples": [
+   {
+    "word": "鋳型",
+    "reading": "いがた",
+    "meaning": "Khuôn đúc"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-469",
+  "kanji": "貯",
+  "on_reading": "チョ",
+  "kun_reading": "た.める",
+  "meaning": "Tích",
+  "examples": [
+   {
+    "word": "貯金",
+    "reading": "ちょきん",
+    "meaning": "Gửi tiền"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-473",
+  "kanji": "底",
+  "on_reading": "テイ",
+  "kun_reading": "そこ",
+  "meaning": "Đáy",
+  "examples": [
+   {
+    "word": "底辺",
+    "reading": "ていへん",
+    "meaning": "Đáy"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-474",
+  "kanji": "的",
+  "on_reading": "テキ",
+  "kun_reading": "まと",
+  "meaning": "Mục tiêu",
+  "examples": [
+   {
+    "word": "的確",
+    "reading": "てきかく",
+    "meaning": "Chính xác"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-482",
+  "kanji": "途",
+  "on_reading": "ト",
+  "kun_reading": "みち",
+  "meaning": "Đường",
+  "examples": [
+   {
+    "word": "途中",
+    "reading": "とちゅう",
+    "meaning": "Giữa chừng"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-486",
+  "kanji": "到",
+  "on_reading": "トウ",
+  "kun_reading": "いた.る",
+  "meaning": "Đến",
+  "examples": [
+   {
+    "word": "到達",
+    "reading": "とうたつ",
+    "meaning": "Đạt đến"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-487",
+  "kanji": "逃",
+  "on_reading": "トウ",
+  "kun_reading": "に.げる",
+  "meaning": "Trốn",
+  "examples": [
+   {
+    "word": "逃避",
+    "reading": "とうひ",
+    "meaning": "Trốn tránh"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-489",
+  "kanji": "統",
+  "on_reading": "トウ",
+  "kun_reading": "す.べる",
+  "meaning": "Tổng",
+  "examples": [
+   {
+    "word": "統一",
+    "reading": "とういつ",
+    "meaning": "Thống nhất"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-498",
+  "kanji": "把",
+  "on_reading": "ハ",
+  "kun_reading": "と.る",
+  "meaning": "Nắm",
+  "examples": [
+   {
+    "word": "把握",
+    "reading": "はあく",
+    "meaning": "Nắm bắt"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-501",
+  "kanji": "婆",
+  "on_reading": "バ",
+  "kun_reading": "ばば",
+  "meaning": "Bà",
+  "examples": [
+   {
+    "word": "婆さん",
+    "reading": "ばあさん",
+    "meaning": "Bà cụ"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-504",
+  "kanji": "排",
+  "on_reading": "ハイ",
+  "kun_reading": "はい.する",
+  "meaning": "Loại",
+  "examples": [
+   {
+    "word": "排除",
+    "reading": "はいじょ",
+    "meaning": "Loại bỏ"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-507",
+  "kanji": "輩",
+  "on_reading": "ハイ",
+  "kun_reading": "やから",
+  "meaning": "Bối",
+  "examples": [
+   {
+    "word": "先輩",
+    "reading": "せんぱい",
+    "meaning": "Tiền bối"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-508",
+  "kanji": "薄",
+  "on_reading": "ハク",
+  "kun_reading": "うす.い",
+  "meaning": "Mỏng",
+  "examples": [
+   {
+    "word": "薄情",
+    "reading": "はくじょう",
+    "meaning": "Bạc tình"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-509",
+  "kanji": "漠",
+  "on_reading": "バク",
+  "kun_reading": "ばく",
+  "meaning": "Sa mạc",
+  "examples": [
+   {
+    "word": "漠然",
+    "reading": "ばくぜん",
+    "meaning": "Mơ hồ"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-510",
+  "kanji": "爆",
+  "on_reading": "バク",
+  "kun_reading": "ばく",
+  "meaning": "Nổ",
+  "examples": [
+   {
+    "word": "爆発",
+    "reading": "ばくはつ",
+    "meaning": "Nổ"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-511",
+  "kanji": "箱",
+  "on_reading": "ハコ",
+  "kun_reading": "はこ",
+  "meaning": "Hộp",
+  "examples": [
+   {
+    "word": "箱庭",
+    "reading": "はこにわ",
+    "meaning": "Vườn mini"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-512",
+  "kanji": "箸",
+  "on_reading": "ハシ",
+  "kun_reading": "はし",
+  "meaning": "Đũa",
+  "examples": [
+   {
+    "word": "箸休め",
+    "reading": "はしやすめ",
+    "meaning": "Món ăn nhẹ"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-514",
+  "kanji": "罰",
+  "on_reading": "バツ",
+  "kun_reading": "ばっ.する",
+  "meaning": "Phạt",
+  "examples": [
+   {
+    "word": "罰則",
+    "reading": "ばっそく",
+    "meaning": "Quy tắc phạt"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-517",
+  "kanji": "判",
+  "on_reading": "ハン",
+  "kun_reading": "わ.ける",
+  "meaning": "Phân",
+  "examples": [
+   {
+    "word": "判定",
+    "reading": "はんてい",
+    "meaning": "Phân định"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-518",
+  "kanji": "叛",
+  "on_reading": "ハン",
+  "kun_reading": "叛",
+  "meaning": "Phản",
+  "examples": [
+   {
+    "word": "叛逆",
+    "reading": "はんぎゃく",
+    "meaning": "Phản nghịch"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-519",
+  "kanji": "煩",
+  "on_reading": "ハン",
+  "kun_reading": "わずら.う",
+  "meaning": "Phiền",
+  "examples": [
+   {
+    "word": "煩労",
+    "reading": "はんろう",
+    "meaning": "Vất vả"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-520",
+  "kanji": "繁",
+  "on_reading": "ハン",
+  "kun_reading": "しげ.い",
+  "meaning": "Phồn",
+  "examples": [
+   {
+    "word": "繁盛",
+    "reading": "はんじょう",
+    "meaning": "Phồn thịnh"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-521",
+  "kanji": "非",
+  "on_reading": "ヒ",
+  "kun_reading": "あら.ず",
+  "meaning": "Sai",
+  "examples": [
+   {
+    "word": "非行",
+    "reading": "ひこう",
+    "meaning": "Hành vi xấu"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-522",
+  "kanji": "悲",
+  "on_reading": "ヒ",
+  "kun_reading": "かな.しい",
+  "meaning": "Buồn",
+  "examples": [
+   {
+    "word": "悲劇",
+    "reading": "ひげき",
+    "meaning": "Bi kịch"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-523",
+  "kanji": "比",
+  "on_reading": "ヒ",
+  "kun_reading": "くら.べ",
+  "meaning": "So",
+  "examples": [
+   {
+    "word": "比率",
+    "reading": "ひりつ",
+    "meaning": "Tỷ lệ"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-524",
+  "kanji": "彼",
+  "on_reading": "ヒ/Hi",
+  "kun_reading": "かれ",
+  "meaning": "Anh ấy",
+  "examples": [
+   {
+    "word": "彼女",
+    "reading": "かのじょ",
+    "meaning": "Cô ấy"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-525",
+  "kanji": "肥",
+  "on_reading": "ヒ",
+  "kun_reading": "こ.え",
+  "meaning": "Béo",
+  "examples": [
+   {
+    "word": "肥料",
+    "reading": "ひりょう",
+    "meaning": "Phân bón"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-526",
+  "kanji": "秘",
+  "on_reading": "ヒ",
+  "kun_reading": "ひ.める",
+  "meaning": "Bí",
+  "examples": [
+   {
+    "word": "秘密",
+    "reading": "ひみつ",
+    "meaning": "Bí mật"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-527",
+  "kanji": "碑",
+  "on_reading": "ヒ",
+  "kun_reading": "いしぶみ",
+  "meaning": "Bia",
+  "examples": [
+   {
+    "word": "記念碑",
+    "reading": "きねんひ",
+    "meaning": "Đài tưởng niệm"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-528",
+  "kanji": "卑",
+  "on_reading": "ヒ",
+  "kun_reading": "いや.しい",
+  "meaning": "Hèn",
+  "examples": [
+   {
+    "word": "卑怯",
+    "reading": "ひきょう",
+    "meaning": "Hèn nhát"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-529",
+  "kanji": "避",
+  "on_reading": "ヒ",
+  "kun_reading": "さ.ける",
+  "meaning": "Tránh",
+  "examples": [
+   {
+    "word": "避難",
+    "reading": "ひなん",
+    "meaning": "Sơ tán"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-532",
+  "kanji": "痺",
+  "on_reading": "ヒ",
+  "kun_reading": "しび.る",
+  "meaning": "Tê",
+  "examples": [
+   {
+    "word": "痺れ",
+    "reading": "しびれ",
+    "meaning": "Tê"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-533",
+  "kanji": "必",
+  "on_reading": "ヒツ",
+  "kun_reading": "かなら.ず",
+  "meaning": "Phải",
+  "examples": [
+   {
+    "word": "否定",
+    "reading": "ひてい",
+    "meaning": "Phủ định"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-535",
+  "kanji": "房",
+  "on_reading": "ボウ",
+  "kun_reading": "ふさ",
+  "meaning": "Nhóm (tóc)",
+  "examples": [
+   {
+    "word": "房室",
+    "reading": "ぼうしつ",
+    "meaning": "Phòng"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-536",
+  "kanji": "暴",
+  "on_reading": "ボウ",
+  "kun_reading": "あば.る",
+  "meaning": "Bạo",
+  "examples": [
+   {
+    "word": "暴露",
+    "reading": "ばくろ",
+    "meaning": "Phơi bày"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-537",
+  "kanji": "望",
+  "on_reading": "ボウ/モウ",
+  "kun_reading": "のぞ.む",
+  "meaning": "Hy vọng",
+  "examples": [
+   {
+    "word": "望遠鏡",
+    "reading": "ぼうえんきょう",
+    "meaning": "Kính viễn vọng"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-538",
+  "kanji": "母",
+  "on_reading": "ボ",
+  "kun_reading": "はは",
+  "meaning": "Mẹ",
+  "examples": [
+   {
+    "word": "母校",
+    "reading": "ぼこう",
+    "meaning": "Trường cũ"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-539",
+  "kanji": "墨",
+  "on_reading": "ボク",
+  "kun_reading": "すみ",
+  "meaning": "Mực",
+  "examples": [
+   {
+    "word": "墨絵",
+    "reading": "すみえ",
+    "meaning": "Tranh mực"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-541",
+  "kanji": "腹",
+  "on_reading": "フク",
+  "kun_reading": "はら",
+  "meaning": "Bụng",
+  "examples": [
+   {
+    "word": "腹案",
+    "reading": "はらあん",
+    "meaning": "Kế hoạch trong đầu"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-542",
+  "kanji": "複",
+  "on_reading": "フク",
+  "kun_reading": "ふく",
+  "meaning": "Phức",
+  "examples": [
+   {
+    "word": "複雑",
+    "reading": "ふくざつ",
+    "meaning": "Phức tạp"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-543",
+  "kanji": "払",
+  "on_reading": "フツ",
+  "kun_reading": "はら.う",
+  "meaning": "Trả",
+  "examples": [
+   {
+    "word": "払拭",
+    "reading": "ふっしょく",
+    "meaning": "Xóa bỏ"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-544",
+  "kanji": "仏",
+  "on_reading": "ブツ",
+  "kun_reading": "ほとけ",
+  "meaning": "Phật",
+  "examples": [
+   {
+    "word": "仏教",
+    "reading": "ぶっきょう",
+    "meaning": "Phật pháp"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-545",
+  "kanji": "沸",
+  "on_reading": "フツ",
+  "kun_reading": "わ.く",
+  "meaning": "Sôi",
+  "examples": [
+   {
+    "word": "沸騰",
+    "reading": "ふっとう",
+    "meaning": "Sôi sùng sục"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-546",
+  "kanji": "分",
+  "on_reading": "ブン/フン",
+  "kun_reading": "わ.ける",
+  "meaning": "Chia",
+  "examples": [
+   {
+    "word": "分配",
+    "reading": "ぶんぱi",
+    "meaning": "Phân phối"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-547",
+  "kanji": "粉",
+  "on_reading": "フン",
+  "kun_reading": "こ",
+  "meaning": "Bột",
+  "examples": [
+   {
+    "word": "粉末",
+    "reading": "ふんまつ",
+    "meaning": "Bột"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-548",
+  "kanji": "並",
+  "on_reading": "ヘイ",
+  "kun_reading": "な.み",
+  "meaning": "Hàng",
+  "examples": [
+   {
+    "word": "並列",
+    "reading": "へいれつ",
+    "meaning": "Liệt hàng"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-549",
+  "kanji": "閉",
+  "on_reading": "ヘイ",
+  "kun_reading": "し.める",
+  "meaning": "Đóng",
+  "examples": [
+   {
+    "word": "閉鎖",
+    "reading": "へいさ",
+    "meaning": "Đóng cửa"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-551",
+  "kanji": "米",
+  "on_reading": "ベイ",
+  "kun_reading": "こめ",
+  "meaning": "Gạo",
+  "examples": [
+   {
+    "word": "米国",
+    "reading": "べいこく",
+    "meaning": "Hoa Kỳ"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-552",
+  "kanji": "壁",
+  "on_reading": "ヘキ",
+  "kun_reading": "かべ",
+  "meaning": "Tường",
+  "examples": [
+   {
+    "word": "壁面",
+    "reading": "へきめん",
+    "meaning": "Mặt tường"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-553",
+  "kanji": "癖",
+  "on_reading": "ヘキ",
+  "kun_reading": "くせ",
+  "meaning": "Tật",
+  "examples": [
+   {
+    "word": "癖のある",
+    "reading": "くせのある",
+    "meaning": "Có tật"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-554",
+  "kanji": "別",
+  "on_reading": "ベツ",
+  "kun_reading": "わけ.る",
+  "meaning": "Tách",
+  "examples": [
+   {
+    "word": "別々",
+    "reading": "べつべつ",
+    "meaning": "Riêng biệt"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-558",
+  "kanji": "弁",
+  "on_reading": "ベン",
+  "kun_reading": "べん",
+  "meaning": "Biện",
+  "examples": [
+   {
+    "word": "弁護",
+    "reading": "べんご",
+    "meaning": "Bào chữa"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-562",
+  "kanji": "暴",
+  "on_reading": "ボウ",
+  "kun_reading": "ぼう",
+  "meaning": "Bạo",
+  "examples": [
+   {
+    "word": "暴力",
+    "reading": "ぼうりょく",
+    "meaning": "Bạo lực"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-563",
+  "kanji": "棒",
+  "on_reading": "ボウ",
+  "kun_reading": "ぼう",
+  "meaning": "Gậy",
+  "examples": [
+   {
+    "word": "棒読み",
+    "reading": "ぼうよみ",
+    "meaning": "Đọc một mạch"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-571",
+  "kanji": "眠",
+  "on_reading": "ミン",
+  "kun_reading": "ねむ.る",
+  "meaning": "Ngủ",
+  "examples": [
+   {
+    "word": "睡眠",
+    "reading": "すいみん",
+    "meaning": "Giấc ngủ"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-579",
+  "kanji": "躍",
+  "on_reading": "ヤク",
+  "kun_reading": "おど.る",
+  "meaning": "Nhảy",
+  "examples": [
+   {
+    "word": "躍動",
+    "reading": "やくどう",
+    "meaning": "Sức sống"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-581",
+  "kanji": "幽",
+  "on_reading": "ユウ",
+  "kun_reading": "ゆう",
+  "meaning": "U",
+  "examples": [
+   {
+    "word": "幽霊",
+    "reading": "ゆうれい",
+    "meaning": "Ma"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-583",
+  "kanji": "郵",
+  "on_reading": "ユウ",
+  "kun_reading": "ゆう",
+  "meaning": "Bưu",
+  "examples": [
+   {
+    "word": "郵便",
+    "reading": "ゆうびん",
+    "meaning": "Bưu điện"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-585",
+  "kanji": "憂",
+  "on_reading": "ユウ",
+  "kun_reading": "うれ.える",
+  "meaning": "Lo",
+  "examples": [
+   {
+    "word": "憂慮",
+    "reading": "ゆうりょ",
+    "meaning": "Lo lắng"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-587",
+  "kanji": "癒",
+  "on_reading": "ユ",
+  "kun_reading": "い.える",
+  "meaning": "Chữa",
+  "examples": [
+   {
+    "word": "癒し",
+    "reading": "いやし",
+    "meaning": "Sự chữa lành"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-593",
+  "kanji": "脇",
+  "on_reading": "ヨウ",
+  "kun_reading": "わき",
+  "meaning": "Nách",
+  "examples": [
+   {
+    "word": "脇役",
+    "reading": "わきやく",
+    "meaning": "Vai phụ"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-599",
+  "kanji": "略",
+  "on_reading": "リャク",
+  "kun_reading": "りゃく",
+  "meaning": "Lược",
+  "examples": [
+   {
+    "word": "略語",
+    "reading": "りゃくご",
+    "meaning": "Viết tắt"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-600",
+  "kanji": "涼",
+  "on_reading": "リョウ",
+  "kun_reading": "すず.しい",
+  "meaning": "Mát",
+  "examples": [
+   {
+    "word": "涼風",
+    "reading": "すずかぜ",
+    "meaning": "Gió mát"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-602",
+  "kanji": "旅",
+  "on_reading": "リョ",
+  "kun_reading": "たび",
+  "meaning": "Du lịch",
+  "examples": [
+   {
+    "word": "旅行",
+    "reading": "りょこう",
+    "meaning": "Du lịch"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-603",
+  "kanji": "力",
+  "on_reading": "リョク",
+  "kun_reading": "ちから",
+  "meaning": "Sức",
+  "examples": [
+   {
+    "word": "力強い",
+    "reading": "ちからづよい",
+    "meaning": "Mạnh mẽ"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-606",
+  "kanji": "類",
+  "on_reading": "ルイ",
+  "kun_reading": "たぐい",
+  "meaning": "Loại",
+  "examples": [
+   {
+    "word": "種類",
+    "reading": "しゅるい",
+    "meaning": "Phân loại"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-607",
+  "kanji": "礼",
+  "on_reading": "レイ",
+  "kun_reading": "れい",
+  "meaning": "Lễ",
+  "examples": [
+   {
+    "word": "礼拝",
+    "reading": "れいはい",
+    "meaning": "Cầu nguyện"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-608",
+  "kanji": "列",
+  "on_reading": "レツ",
+  "kun_reading": "れつ",
+  "meaning": "Hàng",
+  "examples": [
+   {
+    "word": "列車",
+    "reading": "れっしゃ",
+    "meaning": "Tàu hỏa"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-609",
+  "kanji": "歴",
+  "on_reading": "レキ",
+  "kun_reading": "れき",
+  "meaning": "Lịch sử",
+  "examples": [
+   {
+    "word": "歴史",
+    "reading": "れきし",
+    "meaning": "Lịch sử"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-610",
+  "kanji": "恋",
+  "on_reading": "レン",
+  "kun_reading": "こい",
+  "meaning": "Tình",
+  "examples": [
+   {
+    "word": "恋人",
+    "reading": "こいびと",
+    "meaning": "Người yêu"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ },
+ {
+  "id": "nks2-611",
+  "kanji": "錬",
+  "on_reading": "レン",
+  "kun_reading": "ね.る",
+  "meaning": "Luyện",
+  "examples": [
+   {
+    "word": "錬金",
+    "reading": "れんきん",
+    "meaning": "Thôi kim"
+   }
+  ],
+  "stroke_count": 1,
+  "jlpt_level": "N2",
+  "source": "日本語能力試験 N2 漢字公式リスト"
+ }
+]

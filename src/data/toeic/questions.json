@@ -4498,5 +4498,1925 @@
     ],
     "correctAnswer": 1,
     "explanation": "Newsletter ghi: 'both of you will receive a 15% discount on your next renewal'."
+  },
+  {
+    "id": "toeic-l-001",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture. A woman is sitting at a desk in an office.",
+    "options": [
+      "A woman is typing on a computer.",
+      "A woman is sitting at a desk in an office.",
+      "A woman is standing near a window.",
+      "A woman is talking on the phone."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì mô tả chính xác hình ảnh: một phụ nữ ngồi tại bàn làm việc trong văn phòng."
+  },
+  {
+    "id": "toeic-l-002",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture. Two men are shaking hands.",
+    "options": [
+      "Two men are arguing.",
+      "Two men are sitting down.",
+      "Two men are shaking hands.",
+      "Two men are walking away."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Đáp án đúng là C vì hình ảnh cho thấy hai người đàn ông đang bắt tay nhau."
+  },
+  {
+    "id": "toeic-l-003",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture. A group of people are sitting around a conference table.",
+    "options": [
+      "A group of people are eating lunch.",
+      "A group of people are sitting around a conference table.",
+      "A group of people are standing in a hallway.",
+      "A group of people are looking at a presentation screen."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì hình ảnh mô tả một nhóm người ngồi quanh bàn hội nghị."
+  },
+  {
+    "id": "toeic-l-004",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture. A woman is answering a telephone.",
+    "options": [
+      "A woman is writing a letter.",
+      "A woman is drinking coffee.",
+      "A woman is answering a telephone.",
+      "A woman is closing a door."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Đáp án đúng là C vì hình ảnh cho thấy phụ nữ đang nghe điện thoại."
+  },
+  {
+    "id": "toeic-l-005",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture. A man is carrying a briefcase.",
+    "options": [
+      "A man is carrying a briefcase.",
+      "A man is holding an umbrella.",
+      "A man is reading a newspaper.",
+      "A man is drinking water."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Đáp án đúng là A vì hình ảnh cho thấy một người đàn ông đang cầm cặp tài liệu."
+  },
+  {
+    "id": "toeic-l-006",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture. Several cars are parked in a parking lot.",
+    "options": [
+      "Several cars are driving on a highway.",
+      "Several cars are parked in a parking lot.",
+      "Several cars are at a car wash.",
+      "Several cars are in a traffic jam."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì hình ảnh cho thấy nhiều ô tô đang đậu trong bãi đỗ xe."
+  },
+  {
+    "id": "toeic-l-007",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture. A receptionist is greeting a visitor.",
+    "options": [
+      "A receptionist is greeting a visitor.",
+      "A receptionist is making a phone call.",
+      "A receptionist is typing on a keyboard.",
+      "A receptionist is eating lunch."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Đáp án đúng là A vì hình ảnh cho thấy lễ tân đang chào đón khách."
+  },
+  {
+    "id": "toeic-l-008",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture. Workers are assembling products on a production line.",
+    "options": [
+      "Workers are taking a break.",
+      "Workers are assembling products on a production line.",
+      "Workers are cleaning the factory.",
+      "Workers are having a meeting."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì hình ảnh cho thấy công nhân đang lắp ráp sản phẩm trên dây chuyền sản xuất."
+  },
+  {
+    "id": "toeic-l-009",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture. A waiter is serving food to customers.",
+    "options": [
+      "A waiter is cooking in the kitchen.",
+      "A waiter is cleaning tables.",
+      "A waiter is serving food to customers.",
+      "A waiter is taking an order."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Đáp án đúng là C vì hình ảnh cho thấy người phục vụ đang bưng đồ ăn cho khách."
+  },
+  {
+    "id": "toeic-l-010",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture. A woman is walking her dog in the park.",
+    "options": [
+      "A woman is jogging in the park.",
+      "A woman is sitting on a bench.",
+      "A woman is walking her dog in the park.",
+      "A woman is reading a book on the grass."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Đáp án đúng là C vì hình ảnh cho thấy phụ nữ đang dắt chó đi dạo trong công viên."
+  },
+  {
+    "id": "toeic-l-011",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture. The sales representative is presenting new products to potential clients.",
+    "options": [
+      "The sales representative is closing a deal.",
+      "The sales representative is presenting new products to potential clients.",
+      "The sales representative is packing boxes.",
+      "The sales representative is making a phone call."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì hình ảnh cho thấy nhân viên bán hàng đang trình bày sản phẩm mới cho khách hàng tiềm năng."
+  },
+  {
+    "id": "toeic-l-012",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture. The technician is repairing equipment in the laboratory.",
+    "options": [
+      "The technician is conducting an experiment.",
+      "The technician is writing a report.",
+      "The technician is repairing equipment in the laboratory.",
+      "The technician is cleaning glassware."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Đáp án đúng là C vì hình ảnh cho thấy kỹ thuật viên đang sửa chữa thiết bị trong phòng thí nghiệm."
+  },
+  {
+    "id": "toeic-l-013",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture. Passengers are boarding an airplane at the gate.",
+    "options": [
+      "Passengers are waiting in the terminal.",
+      "Passengers are collecting their luggage.",
+      "Passengers are boarding an airplane at the gate.",
+      "Passengers are going through customs."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Đáp án đúng là C vì hình ảnh cho thấy hành khách đang lên máy bay tại cổng."
+  },
+  {
+    "id": "toeic-l-014",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture. The architect is reviewing blueprints with colleagues.",
+    "options": [
+      "The architect is drawing sketches.",
+      "The architect is reviewing blueprints with colleagues.",
+      "The architect is visiting a construction site.",
+      "The architect is presenting to clients."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì hình ảnh cho thấy kiến trúc sư đang xem xét bản thiết kế với đồng nghiệp."
+  },
+  {
+    "id": "toeic-l-015",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture. Employees are attending a safety training session.",
+    "options": [
+      "Employees are working at their desks.",
+      "Employees are having a coffee break.",
+      "Employees are attending a safety training session.",
+      "Employees are leaving the building."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Đáp án đúng là C vì hình ảnh cho thấy nhân viên đang tham dự buổi tập huấn an toàn."
+  },
+  {
+    "id": "toeic-l-016",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture. The warehouse workers are loading boxes onto a truck.",
+    "options": [
+      "The warehouse workers are organizing shelves.",
+      "The warehouse workers are unloading a shipment.",
+      "The warehouse workers are loading boxes onto a truck.",
+      "The warehouse workers are taking inventory."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Đáp án đúng là C vì hình ảnh cho thấy công nhân kho đang xếp thùng lên xe tải."
+  },
+  {
+    "id": "toeic-l-017",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture. The dentist is examining a patient's teeth.",
+    "options": [
+      "The dentist is giving an injection.",
+      "The dentist is examining a patient's teeth.",
+      "The dentist is taking an X-ray.",
+      "The dentist is cleaning equipment."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì hình ảnh cho thấy nha sĩ đang kiểm tra răng của bệnh nhân."
+  },
+  {
+    "id": "toeic-l-018",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture. The chef is chopping vegetables in the kitchen.",
+    "options": [
+      "The chef is grilling meat.",
+      "The chef is plating a dish.",
+      "The chef is chopping vegetables in the kitchen.",
+      "The chef is washing dishes."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Đáp án đúng là C vì hình ảnh cho thấy đầu bếp đang thái rau trong bếp."
+  },
+  {
+    "id": "toeic-l-019",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture. A pharmacist is dispensing medication to a customer.",
+    "options": [
+      "A pharmacist is stocking shelves.",
+      "A pharmacist is dispensing medication to a customer.",
+      "A pharmacist is answering the phone.",
+      "A pharmacist is reviewing prescriptions."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì hình ảnh cho thấy dược sĩ đang phát thuốc cho khách hàng."
+  },
+  {
+    "id": "toeic-l-020",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture. The flight attendant is demonstrating safety procedures.",
+    "options": [
+      "The flight attendant is serving beverages.",
+      "The flight attendant is checking tickets.",
+      "The flight attendant is demonstrating safety procedures.",
+      "The flight attendant is opening the overhead compartments."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Đáp án đúng là C vì hình ảnh cho thấy tiếp viên hàng không đang hướng dẫn quy trình an toàn."
+  },
+  {
+    "id": "toeic-l-021",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture. The project manager is leading a brainstorming session with the team.",
+    "options": [
+      "The project manager is reviewing project deadlines.",
+      "The project manager is leading a brainstorming session with the team.",
+      "The project manager is presenting quarterly results.",
+      "The project manager is interviewing job candidates."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì hình ảnh cho thấy quản lý dự án đang điều hành buổi brainstorming với nhóm."
+  },
+  {
+    "id": "toeic-l-022",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture. The surgeon is performing a laparoscopic procedure.",
+    "options": [
+      "The surgeon is examining a patient.",
+      "The surgeon is reviewing medical records.",
+      "The surgeon is performing a laparoscopic procedure.",
+      "The surgeon is consulting with colleagues."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Đáp án đúng là C vì hình ảnh cho thấy bác sĩ phẫu thuật đang thực hiện phẫu thuật nội soi."
+  },
+  {
+    "id": "toeic-l-023",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture. The pilot is communicating with air traffic control.",
+    "options": [
+      "The pilot is reviewing the flight plan.",
+      "The pilot is communicating with air traffic control.",
+      "The pilot is conducting pre-flight checks.",
+      "The pilot is greeting passengers."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì hình ảnh cho thấy phi công đang liên lạc với kiểm soát không lưu."
+  },
+  {
+    "id": "toeic-l-024",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture. The accountant is reconciling financial statements.",
+    "options": [
+      "The accountant is filing tax documents.",
+      "The accountant is reconciling financial statements.",
+      "The accountant is meeting with the auditor.",
+      "The accountant is using a calculator."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì hình ảnh cho thấy kế toán đang đối chiếu báo cáo tài chính."
+  },
+  {
+    "id": "toeic-l-025",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture. The real estate agent is showing a property to prospective buyers.",
+    "options": [
+      "The real estate agent is negotiating a contract.",
+      "The real estate agent is showing a property to prospective buyers.",
+      "The real estate agent is taking photos of a house.",
+      "The real estate agent is meeting with a mortgage broker."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì hình ảnh cho thấy nhân viên bất động sản đang giới thiệu nhà cho khách hàng tiềm năng."
+  },
+  {
+    "id": "toeic-l-026",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture. The electrician is installing wiring in a new building.",
+    "options": [
+      "The electrician is troubleshooting an outage.",
+      "The electrician is inspecting a circuit breaker.",
+      "The electrician is installing wiring in a new building.",
+      "The electrician is reading technical manuals."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Đáp án đúng là C vì hình ảnh cho thấy thợ điện đang lắp đặt hệ thống dây điện trong tòa nhà mới."
+  },
+  {
+    "id": "toeic-l-027",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture. The marketing director is analyzing campaign metrics on a dashboard.",
+    "options": [
+      "The marketing director is creating a presentation.",
+      "The marketing director is analyzing campaign metrics on a dashboard.",
+      "The marketing director is meeting with advertisers.",
+      "The marketing director is reviewing a budget proposal."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì hình ảnh cho thấy giám đốc marketing đang phân tích các chỉ số chiến dịch trên bảng điều khiển."
+  },
+  {
+    "id": "toeic-l-028",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture. The pharmacist is labeling prescriptions in the dispensary.",
+    "options": [
+      "The pharmacist is consulting with a doctor.",
+      "The pharmacist is labeling prescriptions in the dispensary.",
+      "The pharmacist is taking inventory.",
+      "The pharmacist is answering customer questions."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì hình ảnh cho thấy dược sĩ đang dán nhãn đơn thuốc trong phòng phát thuốc."
+  },
+  {
+    "id": "toeic-l-029",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture. The forensic analyst is examining evidence under a microscope.",
+    "options": [
+      "The forensic analyst is photographing evidence.",
+      "The forensic analyst is writing a report.",
+      "The forensic analyst is examining evidence under a microscope.",
+      "The forensic analyst is interviewing a witness."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Đáp án đúng là C vì hình ảnh cho thấy chuyên viên pháp y đang kiểm tra bằng chứng dưới kính hiển vi."
+  },
+  {
+    "id": "toeic-l-030",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture. The conference attendees are networking during a coffee break.",
+    "options": [
+      "The conference attendees are listening to a keynote speech.",
+      "The conference attendees are networking during a coffee break.",
+      "The conference attendees are signing registration forms.",
+      "The conference attendees are setting up displays."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì hình ảnh cho thấy người tham dự hội nghị đang giao lưu trong giờ nghỉ giải lao."
+  },
+  {
+    "id": "toeic-l-031",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 2 - Question-Response",
+    "text": "Where is the copy machine?",
+    "options": [
+      "It's made by Canon.",
+      "In the supply room down the hall.",
+      "We need more paper."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời hợp lý cho câu hỏi hỏi về vị trí máy photocopy: 'Ở phòng tiếp vật tư cuối hành lang'."
+  },
+  {
+    "id": "toeic-l-032",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 2 - Question-Response",
+    "text": "What time does the meeting start?",
+    "options": [
+      "In the conference room.",
+      "About twenty people.",
+      "At two o'clock."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Đáp án đúng là C vì đây là câu trả lời cho câu hỏi hỏi về giờ bắt đầu cuộc họp: 'Lúc hai giờ'."
+  },
+  {
+    "id": "toeic-l-033",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 2 - Question-Response",
+    "text": "Who is the new manager?",
+    "options": [
+      "She started last week.",
+      "Mr. Thompson from the Chicago office.",
+      "The manager's office is on the third floor."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về danh tính quản lý mới: 'Ông Thompson từ văn phòng Chicago'."
+  },
+  {
+    "id": "toeic-l-034",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 2 - Question-Response",
+    "text": "Is the report finished?",
+    "options": [
+      "Yes, I'll send it to you.",
+      "It's about twenty pages long.",
+      "I finished it yesterday."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Đáp án đúng là C vì đây là câu trả lời hợp lý cho câu hỏi hỏi về việc hoàn thành báo cáo: 'Tôi đã hoàn thành nó hôm qua'."
+  },
+  {
+    "id": "toeic-l-035",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 2 - Question-Response",
+    "text": "How much does this cost?",
+    "options": [
+      "It's on sale.",
+      "About fifty dollars.",
+      "We have three colors."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về giá: 'Khoảng năm mươi đô la'."
+  },
+  {
+    "id": "toeic-l-036",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 2 - Question-Response",
+    "text": "Can you help me with this form?",
+    "options": [
+      "I filled it out already.",
+      "Sure, what do you need?",
+      "The forms are on the desk."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời lịch sự khi được nhờ giúp đỡ: 'Được thôi, bạn cần gì?'"
+  },
+  {
+    "id": "toeic-l-037",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 2 - Question-Response",
+    "text": "When is the deadline?",
+    "options": [
+      "The deadline has been extended.",
+      "By next Friday.",
+      "I need more time."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về hạn chót: 'Trước thứ Sáu tuần sau'."
+  },
+  {
+    "id": "toeic-l-038",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 2 - Question-Response",
+    "text": "Do you have the client's phone number?",
+    "options": [
+      "I'll call them tomorrow.",
+      "Yes, it's in my contact list.",
+      "The client was very satisfied."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời hợp lý cho câu hỏi về số điện thoại khách hàng: 'Có, nó trong danh bạ của tôi'."
+  },
+  {
+    "id": "toeic-l-039",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 2 - Question-Response",
+    "text": "Where should I park?",
+    "options": [
+      "I drive a sedan.",
+      "In the visitor lot behind the building.",
+      "Parking is free on weekends."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về nơi đỗ xe: 'Ở bãi đỗ khách phía sau tòa nhà'."
+  },
+  {
+    "id": "toeic-l-040",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 2 - Question-Response",
+    "text": "Is this seat taken?",
+    "options": [
+      "I'm saving it for someone.",
+      "The seats are very comfortable.",
+      "I've been waiting for twenty minutes."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Đáp án đúng là A vì đây là câu trả lời hợp lý cho câu hỏi hỏi về chỗ ngồi: 'Tôi đang giữ nó cho ai đó'."
+  },
+  {
+    "id": "toeic-l-041",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 2 - Question-Response",
+    "text": "Have you reviewed the contract yet?",
+    "options": [
+      "The contract is very detailed.",
+      "I need to go over it one more time.",
+      "Yes, we signed it last Tuesday."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời hợp lý cho câu hỏi hỏi về việc xem xét hợp đồng: 'Tôi cần xem lại nó thêm một lần nữa'."
+  },
+  {
+    "id": "toeic-l-042",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 2 - Question-Response",
+    "text": "Which vendor offers the best pricing?",
+    "options": [
+      "The vendor is located downtown.",
+      "Supplier B has the most competitive rates.",
+      "We've been using them for years."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về nhà cung cấp tốt nhất: 'Nhà cung cấp B có mức giá cạnh tranh nhất'."
+  },
+  {
+    "id": "toeic-l-043",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 2 - Question-Response",
+    "text": "Why was the shipment delayed?",
+    "options": [
+      "The shipment arrived this morning.",
+      "There were issues with customs clearance.",
+      "We ship to over thirty countries."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về lý do lô hàng bị trì hoãn: 'Có vấn đề với thủ tục hải quan'."
+  },
+  {
+    "id": "toeic-l-044",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 2 - Question-Response",
+    "text": "Could you forward me that email?",
+    "options": [
+      "I already deleted it.",
+      "Sure, I'll send it right over.",
+      "The email address is on the website."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời lịch sự khi được nhờ chuyển tiếp email: 'Được, tôi sẽ gửi ngay'."
+  },
+  {
+    "id": "toeic-l-045",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 2 - Question-Response",
+    "text": "What's causing the increase in customer complaints?",
+    "options": [
+      "We hired more support staff.",
+      "The new software update has several bugs.",
+      "Customers can submit complaints online."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về nguyên nhân tăng khiếu nại: 'Bản cập nhật phần mềm mới có nhiều lỗi'."
+  },
+  {
+    "id": "toeic-l-046",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 2 - Question-Response",
+    "text": "Do we need to register in advance?",
+    "options": [
+      "Registration is required for all attendees.",
+      "The event is next Saturday.",
+      "I'm not sure, let me check."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Đáp án đúng là C vì đây là câu trả lời hợp lý khi chưa chắc chắn: 'Tôi không chắc, để tôi kiểm tra'."
+  },
+  {
+    "id": "toeic-l-047",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 2 - Question-Response",
+    "text": "How do I access the company database?",
+    "options": [
+      "The database is updated daily.",
+      "Use your employee ID and password to log in.",
+      "We migrated to a new system last month."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời hướng dẫn cách truy cập: 'Sử dụng mã nhân viên và mật khẩu để đăng nhập'."
+  },
+  {
+    "id": "toeic-l-048",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 2 - Question-Response",
+    "text": "Who should I contact about the travel arrangements?",
+    "options": [
+      "I'll be traveling with my colleague.",
+      "The travel department handles all bookings.",
+      "The trip is scheduled for next month."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về người liên hệ: 'Bộ phận du lịch xử lý tất cả các đặt chỗ'."
+  },
+  {
+    "id": "toeic-l-049",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 2 - Question-Response",
+    "text": "Will the workshop be held online or in person?",
+    "options": [
+      "The workshop is about leadership skills.",
+      "It's being offered in a hybrid format.",
+      "I signed up last week."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về hình thức tổ chức: 'Nó được tổ chức theo hình thức kết hợp'."
+  },
+  {
+    "id": "toeic-l-050",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 2 - Question-Response",
+    "text": "Can I get a refund if I'm not satisfied?",
+    "options": [
+      "We have a thirty-day return policy.",
+      "The product comes in two sizes.",
+      "You can exchange it for another item."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Đáp án đúng là A vì đây là câu trả lời trực tiếp cho câu hỏi hỏi về hoàn tiền: 'Chúng tôi có chính sách hoàn tiền trong ba mươi ngày'."
+  },
+  {
+    "id": "toeic-l-051",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 2 - Question-Response",
+    "text": "What measures are being taken to reduce operational costs?",
+    "options": [
+      "The company has been profitable for five years.",
+      "We're implementing automation and renegotiating supplier contracts.",
+      "Costs have increased due to inflation."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời hợp lý cho câu hỏi hỏi về biện pháp giảm chi phí: 'Chúng tôi đang triển khai tự động hóa và đàm phán lại hợp đồng nhà cung cấp'."
+  },
+  {
+    "id": "toeic-l-052",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 2 - Question-Response",
+    "text": "When will the results of the audit be available?",
+    "options": [
+      "The audit was conducted by an external firm.",
+      "We expect to have the final report by the end of the month.",
+      "The auditors reviewed three years of financial records."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về thời gian có kết quả kiểm toán: 'Chúng tôi mong có báo cáo cuối cùng vào cuối tháng'."
+  },
+  {
+    "id": "toeic-l-053",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 2 - Question-Response",
+    "text": "How did the company manage to exceed its quarterly targets?",
+    "options": [
+      "The targets were set at the beginning of the fiscal year.",
+      "Strong sales in the Asia-Pacific region drove the growth.",
+      "We're aiming to maintain this momentum next quarter."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về lý do vượt mục tiêu: 'Doanh số mạnh ở khu vực châu Á-Thái Bình Dương thúc đẩy tăng trưởng'."
+  },
+  {
+    "id": "toeic-l-054",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 2 - Question-Response",
+    "text": "What qualifications are required for the senior analyst position?",
+    "options": [
+      "The position reports to the CFO.",
+      "A master's degree and at least five years of experience.",
+      "The salary is very competitive."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về yêu cầu qualifications: 'Bằng thạc sĩ và ít nhất năm năm kinh nghiệm'."
+  },
+  {
+    "id": "toeic-l-055",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 2 - Question-Response",
+    "text": "Why did the board decide to postpone the product launch?",
+    "options": [
+      "The board meets quarterly.",
+      "Regulatory approval is still pending in several markets.",
+      "The product was well-received at the trade show."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về lý do hoãn ra mắt sản phẩm: 'Phê duyệt quy định vẫn đang chờ xử lý ở nhiều thị trường'."
+  },
+  {
+    "id": "toeic-l-056",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 2 - Question-Response",
+    "text": "What steps are we taking to improve employee retention?",
+    "options": [
+      "Turnover has been higher in the sales department.",
+      "We've introduced flexible work arrangements and professional development programs.",
+      "Retention rates are measured quarterly."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời hợp lý cho câu hỏi hỏi về cải thiện tỷ lệ giữ chân nhân viên: 'Chúng tôi đã giới thiệu các sắp xếp làm việc linh hoạt và chương trình phát triển nghề nghiệp'."
+  },
+  {
+    "id": "toeic-l-057",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 2 - Question-Response",
+    "text": "Can you explain the discrepancy in the financial statements?",
+    "options": [
+      "The discrepancy was due to a data entry error.",
+      "The statements were prepared by the accounting team.",
+      "We'll need to consult with the auditors."
+    ],
+    "correctAnswer": 0,
+    "explanation": "Đáp án đúng là A vì đây là câu trả lời giải thích sự khác biệt: 'Sự khác biệt là do lỗi nhập liệu'."
+  },
+  {
+    "id": "toeic-l-058",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 2 - Question-Response",
+    "text": "How will the merger affect current employees?",
+    "options": [
+      "The merger was announced last week.",
+      "There will be some restructuring, but most positions will be retained.",
+      "The combined company will have over 5,000 employees."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về tác động của sáp nhập: 'Sẽ có một số tái cơ cấu, nhưng hầu hết các vị trí sẽ được giữ lại'."
+  },
+  {
+    "id": "toeic-l-059",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 2 - Question-Response",
+    "text": "What's the projected return on investment for this initiative?",
+    "options": [
+      "The initiative was approved by the executive committee.",
+      "We're forecasting a fifteen percent ROI within the first year.",
+      "The initial investment is substantial."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về lợi nhuận đầu tư: 'Chúng tôi dự báo lợi nhuận mười lăm phần trăm trong năm đầu tiên'."
+  },
+  {
+    "id": "toeic-l-060",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 2 - Question-Response",
+    "text": "Who is responsible for overseeing compliance with the new regulations?",
+    "options": [
+      "The new regulations take effect next quarter.",
+      "The compliance officer and the legal department will jointly manage it.",
+      "We've already updated our training materials."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về người chịu trách nhiệm: 'Giám đốc tuân thủ và bộ phận pháp lý sẽ cùng quản lý'."
+  },
+  {
+    "id": "toeic-l-061",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 3 - Conversations",
+    "text": "Man: Excuse me, where can I find the restrooms?\nWoman: They're at the end of this hallway, on the right.\nMan: Thank you very much.\n\nWhat is the man looking for?",
+    "options": [
+      "The exit",
+      "The restrooms",
+      "The elevator",
+      "The reception desk"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì người đàn ông hỏi về vị trí nhà vệ sinh."
+  },
+  {
+    "id": "toeic-l-062",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 3 - Conversations",
+    "text": "Woman A: Did you enjoy the training session this morning?\nWoman B: Yes, it was very informative. I learned a lot about the new software.\n\nWhat are the women talking about?",
+    "options": [
+      "A software update",
+      "A training session",
+      "A staff meeting",
+      "A client presentation"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì hai người phụ nữ đang nói về buổi đào tạo."
+  },
+  {
+    "id": "toeic-l-063",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 3 - Conversations",
+    "text": "Man: Would you like to join us for lunch?\nWoman: I'd love to, but I have a meeting at noon.\nMan: Maybe another time then.\n\nWhy can't the woman join for lunch?",
+    "options": [
+      "She's not hungry.",
+      "She has a meeting.",
+      "She's going out of town.",
+      "She's on a diet."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì người phụ nữ nói cô ấy có cuộc họp lúc 12 giờ."
+  },
+  {
+    "id": "toeic-l-064",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 3 - Conversations",
+    "text": "Man: How was your flight yesterday?\nWoman: It was smooth, but the turbulence near the end was a bit scary.\nMan: I'm glad you arrived safely.\n\nWhat does the woman mention about her flight?",
+    "options": [
+      "It was delayed.",
+      "There was turbulence.",
+      "The food was terrible.",
+      "She got upgraded."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì người phụ nữ đề cập đến sự rung lắc gần cuối chuyến bay."
+  },
+  {
+    "id": "toeic-l-065",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 3 - Conversations",
+    "text": "Woman A: Have you tried the new café on Oak Street?\nWoman B: Not yet. Is it good?\nWoman A: Yes, their coffee is excellent.\n\nWhere is the new café located?",
+    "options": [
+      "On Oak Street",
+      "On Main Street",
+      "On Park Avenue",
+      "On First Avenue"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Đáp án đúng là A vì quán cà phê mới nằm trên đường Oak Street."
+  },
+  {
+    "id": "toeic-l-066",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 3 - Conversations",
+    "text": "Man: Did you receive the package I sent?\nWoman: Yes, thank you. The documents were all there.\nMan: Great. Let me know if you have any questions.\n\nWhat did the man send?",
+    "options": [
+      "A gift",
+      "Documents",
+      "A computer",
+      "Office supplies"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì người phụ nữ xác nhận đã nhận được tài liệu."
+  },
+  {
+    "id": "toeic-l-067",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 3 - Conversations",
+    "text": "Woman: The printer on the second floor isn't working.\nMan: I'll send someone to fix it right away.\n\nWhat is the problem?",
+    "options": [
+      "The printer is out of paper.",
+      "The printer is broken.",
+      "The printer is on the wrong floor.",
+      "The printer is too slow."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì người phụ nữ nói máy in ở tầng hai không hoạt động."
+  },
+  {
+    "id": "toeic-l-068",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 3 - Conversations",
+    "text": "Man: When is the best time to visit the factory?\nWoman: Anytime between 9 AM and 4 PM on weekdays.\nMan: I'll plan to come on Wednesday morning.\n\nWhat are they discussing?",
+    "options": [
+      "A factory tour",
+      "A product order",
+      "A job interview",
+      "A delivery schedule"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Đáp án đúng là A vì họ đang thảo luận về thời điểm tốt nhất để tham quan nhà máy."
+  },
+  {
+    "id": "toeic-l-069",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 3 - Conversations",
+    "text": "Woman A: Are you coming to the office party tonight?\nWoman B: Yes, I wouldn't miss it. What time does it start?\nWoman A: At seven o'clock.\n\nWhat time does the party start?",
+    "options": [
+      "At six o'clock",
+      "At seven o'clock",
+      "At eight o'clock",
+      "At nine o'clock"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì bữa tiệc bắt đầu lúc 7 giờ."
+  },
+  {
+    "id": "toeic-l-070",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 3 - Conversations",
+    "text": "Man: Can I borrow your stapler?\nWoman: Sure, but please return it when you're done.\nMan: No problem. Thanks.\n\nWhat does the man want to borrow?",
+    "options": [
+      "A pen",
+      "A stapler",
+      "A notebook",
+      "A ruler"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì người đàn ông muốn mượn ghim dập."
+  },
+  {
+    "id": "toeic-l-071",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 3 - Conversations",
+    "text": "Man: I've been looking over the budget proposal. Some of the numbers seem off.\nWoman: Which section are you concerned about?\nMan: The marketing expenses are about twenty percent higher than last quarter.\n\nWhat is the man's concern?",
+    "options": [
+      "The budget is too low.",
+      "Marketing expenses are too high.",
+      "The proposal is incomplete.",
+      "The deadline has passed."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì người đàn ông lo ngại chi phí marketing cao hơn khoảng 20% so với quý trước."
+  },
+  {
+    "id": "toeic-l-072",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 3 - Conversations",
+    "text": "Woman A: Have you heard about the reorganization?\nWoman B: Yes, they're moving the sales team to the downtown office.\nWoman A: That's going to be inconvenient for those of us who live in the suburbs.\n\nHow does Woman A feel about the change?",
+    "options": [
+      "Excited",
+      "Indifferent",
+      "Displeased",
+      "Relieved"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Đáp án đúng là C vì Woman A nói điều đó sẽ bất tiện cho những người sống ở ngoại ô, cho thấy sự không hài lòng."
+  },
+  {
+    "id": "toeic-l-073",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 3 - Conversations",
+    "text": "Man: The supplier called about the delayed shipment.\nWoman: What did they say?\nMan: There was a problem at customs, but it should clear by tomorrow.\n\nWhat caused the delay?",
+    "options": [
+      "Bad weather",
+      "A customs problem",
+      "A factory closure",
+      "A transportation strike"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì người đàn ông nói có vấn đề ở hải quan."
+  },
+  {
+    "id": "toeic-l-074",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 3 - Conversations",
+    "text": "Woman: I need to book a flight to San Francisco for the conference.\nMan: When is the conference?\nWoman: It starts on the fifteenth, so I should arrive a day early.\n\nWhen should the woman arrive?",
+    "options": [
+      "On the fourteenth",
+      "On the fifteenth",
+      "On the sixteenth",
+      "On the thirteenth"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Đáp án đúng là A vì hội nghị bắt đầu ngày 15 và cô ấy nên đến trước một ngày, tức là ngày 14."
+  },
+  {
+    "id": "toeic-l-075",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 3 - Conversations",
+    "text": "Man: How's the new employee working out?\nWoman: She's doing great. She picked up the procedures very quickly.\nMan: That's good to hear. We made the right choice.\n\nWhat are they discussing?",
+    "options": [
+      "A job applicant",
+      "A new employee's performance",
+      "A training program",
+      "A promotion decision"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì họ đang thảo luận về hiệu suất của nhân viên mới."
+  },
+  {
+    "id": "toeic-l-076",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 3 - Conversations",
+    "text": "Woman A: I can't believe the project deadline was moved up.\nWoman B: I know. We'll need to work overtime to finish on time.\nWoman A: Let's divide the remaining tasks between us.\n\nWhat do they decide to do?",
+    "options": [
+      "Ask for an extension",
+      "Work overtime",
+      "Delegate tasks to interns",
+      "Cancel the project"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì Woman B nói họ sẽ cần làm thêm giờ để hoàn thành đúng hạn."
+  },
+  {
+    "id": "toeic-l-077",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 3 - Conversations",
+    "text": "Man: I noticed the website hasn't been updated yet.\nWoman: The IT department is still working on it. They expect to finish by Friday.\nMan: I hope so. The old information is misleading customers.\n\nWhat is the problem?",
+    "options": [
+      "The website is down.",
+      "The website has outdated information.",
+      "The website is too slow.",
+      "The website has the wrong prices."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì người đàn ông nói thông tin cũ đang gây hiểu lầm cho khách hàng."
+  },
+  {
+    "id": "toeic-l-078",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 3 - Conversations",
+    "text": "Woman: Would you prefer the morning or afternoon session?\nMan: The morning works better for me. I have appointments in the afternoon.\nWoman: I'll put you down for the 10 AM session then.\n\nWhat time will the man attend?",
+    "options": [
+      "8 AM",
+      "10 AM",
+      "2 PM",
+      "4 PM"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì người phụ nữ ghi danh người đàn ông cho buổi lúc 10 giờ sáng."
+  },
+  {
+    "id": "toeic-l-079",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 3 - Conversations",
+    "text": "Man: I'm having trouble with my computer. It keeps freezing.\nWoman: Have you tried restarting it?\nMan: Yes, but the problem persists. Maybe I need a new one.\n\nWhat does the man think is the solution?",
+    "options": [
+      "Restart the computer",
+      "Install new software",
+      "Get a new computer",
+      "Call technical support"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Đáp án đúng là C vì người đàn ông nói có lẽ anh ấy cần một máy mới."
+  },
+  {
+    "id": "toeic-l-080",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 3 - Conversations",
+    "text": "Woman A: Did you see the email about the mandatory training?\nWoman B: Yes, it's scheduled for next Monday. I already registered.\nWoman A: I almost forgot. Thanks for reminding me.\n\nWhat does Woman A need to do?",
+    "options": [
+      "Complete a report",
+      "Register for training",
+      "Cancel a meeting",
+      "Send an email"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì Woman A cần đăng ký cho buổi đào tạo bắt buộc."
+  },
+  {
+    "id": "toeic-l-080b",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 3 - Conversations",
+    "text": "Man: I noticed our inventory levels are lower than expected.\nWoman: Yes, we've been experiencing supply chain disruptions.\nMan: We should consider alternative suppliers to avoid stockouts.\n\nWhat is the man's recommendation?",
+    "options": [
+      "Increase production",
+      "Find alternative suppliers",
+      "Reduce prices",
+      "Hire more staff"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì người đàn ông đề xuất tìm nhà cung cấp thay thế để tránh hết hàng."
+  },
+  {
+    "id": "toeic-l-080c",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 3 - Conversations",
+    "text": "Woman A: Have you completed the customer feedback survey?\nWoman B: Not yet. I've been too busy with the quarterly report.\nWoman A: The deadline is tomorrow. You should finish it today.\n\nWhat does Woman A suggest?",
+    "options": [
+      "Start the report",
+      "Finish the survey today",
+      "Ask for an extension",
+      "Skip the survey"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì Woman A gợi ý hoàn thành khảo sát hôm nay."
+  },
+  {
+    "id": "toeic-l-081",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 3 - Conversations",
+    "text": "Man: I've been reviewing the market analysis, and I think we need to reconsider our strategy in Asia.\nWoman: What specifically concerns you?\nMan: Our market share has been declining for three consecutive quarters, and our competitors are aggressively expanding.\n\nWhat does the man suggest?",
+    "options": [
+      "Hiring more staff",
+      "Reconsidering the strategy",
+      "Reducing prices",
+      "Launching a new product"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì người đàn ông nói họ cần xem xét lại chiến lược ở châu Á."
+  },
+  {
+    "id": "toeic-l-082",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 3 - Conversations",
+    "text": "Woman: The audit findings were quite surprising. There are significant discrepancies in the quarterly reports.\nMan: Were they isolated incidents or part of a pattern?\nWoman: Unfortunately, it appears to be systemic. We need to address this immediately.\n\nWhat is the nature of the problem?",
+    "options": [
+      "It's a one-time error",
+      "It's a recurring issue",
+      "It's a minor problem",
+      "It's already been resolved"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì người phụ nữ nói vấn đề có vẻ mang tính hệ thống, không phải sự cố isolated."
+  },
+  {
+    "id": "toeic-l-083",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 3 - Conversations",
+    "text": "Man: I've been approached by a competitor with a very attractive offer.\nWoman: That's unexpected. Are you seriously considering it?\nMan: I want to hear what they have to offer, but I'm also happy here.\n\nHow does the man feel?",
+    "options": [
+      "He's ready to leave immediately.",
+      "He's conflicted about the decision.",
+      "He's completely uninterested.",
+      "He's angry about the offer."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì người đàn ông nói anh ấy muốn nghe đề nghị nhưng cũng hài lòng ở đây, cho thấy sự phân vân."
+  },
+  {
+    "id": "toeic-l-084",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 3 - Conversations",
+    "text": "Woman A: The regulatory changes are going to affect our entire supply chain.\nWoman B: How so?\nWoman A: We'll need to source materials from different suppliers to comply with the new standards.\n\nWhat action is required?",
+    "options": [
+      "Increasing production",
+      "Changing suppliers",
+      "Training employees",
+      "Updating software"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì Woman A nói họ cần mua nguyên liệu từ nhà cung cấp khác để tuân thủ tiêu chuẩn mới."
+  },
+  {
+    "id": "toeic-l-085",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 3 - Conversations",
+    "text": "Man: The client wants to renegotiate the terms of our agreement.\nWoman: On what grounds?\nMan: They're claiming our delivery times are too long and they've found cheaper alternatives.\n\nWhat is the client's main complaint?",
+    "options": [
+      "Product quality",
+      "Delivery times",
+      "Customer service",
+      "Contract price"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì người đàn ông nói khách hàng cho rằng thời gian giao hàng quá lâu."
+  },
+  {
+    "id": "toeic-l-086",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 3 - Conversations",
+    "text": "Woman: I've been analyzing our employee turnover data, and the patterns are concerning.\nMan: What are you seeing?\nWoman: Most of the departures are from our mid-level management, and they're all citing lack of growth opportunities.\n\nWhat is the root cause?",
+    "options": [
+      "Low salaries",
+      "Poor management",
+      "Limited career advancement",
+      "Difficult working conditions"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Đáp án đúng là C vì người phụ nữ nói nhân viên rời đi vì thiếu cơ hội phát triển."
+  },
+  {
+    "id": "toeic-l-087",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 3 - Conversations",
+    "text": "Man: We need to decide whether to invest in the new technology or stick with our current systems.\nWoman: What are the risks of not upgrading?\nMan: We could fall behind competitors and lose our competitive edge.\n\nWhat might happen if they don't invest?",
+    "options": [
+      "They'll save money",
+      "They'll lose their competitive advantage",
+      "They'll need more employees",
+      "They'll face legal issues"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì người đàn ông nói họ có thể tụt hậu so với đối thủ và mất lợi thế cạnh tranh."
+  },
+  {
+    "id": "toeic-l-088",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 3 - Conversations",
+    "text": "Woman: The CEO's presentation at the investor meeting was impressive, but I'm concerned about the long-term sustainability.\nMan: What makes you say that?\nWoman: The growth projections seem overly optimistic given current market conditions.\n\nWhat is the woman's concern?",
+    "options": [
+      "The CEO's communication skills",
+      "The realism of the growth projections",
+      "The investor relationships",
+      "The company's branding"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì người phụ nữ lo ngại các dự báo tăng trưởng có vẻ quá lạc quan."
+  },
+  {
+    "id": "toeic-l-089",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 3 - Conversations",
+    "text": "Man: I've been tasked with finding ways to streamline our operations.\nWoman: Have you considered automation?\nMan: Yes, but the upfront costs are substantial. I need to build a strong case for the board.\n\nWhat is the main obstacle?",
+    "options": [
+      "Lack of staff expertise",
+      "High initial investment",
+      "Employee resistance",
+      "Technical limitations"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì người đàn ông nói chi phí ban đầu rất lớn."
+  },
+  {
+    "id": "toeic-l-090",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 3 - Conversations",
+    "text": "Woman: The feedback from the focus groups was mixed.\nMan: What were the main points of criticism?\nWoman: Participants found the interface confusing and the registration process too lengthy.\n\nWhat do the focus groups dislike?",
+    "options": [
+      "The product price",
+      "The interface and registration process",
+      "The marketing approach",
+      "The customer support"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì người phụ nữ nói người tham gia thấy giao diện khó hiểu và quy trình đăng ký quá dài."
+  },
+  {
+    "id": "toeic-l-090b",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 3 - Conversations",
+    "text": "Man: The board is concerned about our declining profit margins.\nWoman: What do they suggest?\nMan: They want us to either cut operational costs or increase prices, but neither option is simple.\n\nWhat is the board's main concern?",
+    "options": [
+      "Employee turnover",
+      "Declining profit margins",
+      "Market competition",
+      "Regulatory compliance"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì ban giám đốc lo ngại về biên lợi nhuận giảm."
+  },
+  {
+    "id": "toeic-l-090c",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 3 - Conversations",
+    "text": "Woman A: The merger negotiations have reached a critical stage.\nWoman B: What's the main sticking point?\nWoman A: It's the valuation of intellectual property assets. Both sides have different assessments.\n\nWhat is causing the difficulty in negotiations?",
+    "options": [
+      "Employee benefits",
+      "Intellectual property valuation",
+      "Office locations",
+      "Brand names"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì Woman A nói điểm bế tắc chính là định giá tài sản sở hữu trí tuệ."
+  },
+  {
+    "id": "toeic-l-090d",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 3 - Conversations",
+    "text": "Man: I've been analyzing our customer churn data, and there's a concerning trend.\nWoman: What patterns are you seeing?\nMan: Customers who don't engage with our onboarding program are three times more likely to cancel within the first year.\n\nWhat is the key factor in customer retention?",
+    "options": [
+      "Product quality",
+      "Onboarding program engagement",
+      "Price competitiveness",
+      "Customer service"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì người đàn ông nói khách hàng không tham gia chương trình giới thiệu có khả năng hủy cao gấp ba lần."
+  },
+  {
+    "id": "toeic-l-091",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 4 - Short Talks",
+    "text": "Attention all employees. The company will be closed next Monday for a holiday. Please plan your work accordingly. If you have any questions, contact your supervisor.",
+    "options": [
+      "There will be a staff meeting.",
+      "The office will be closed on Monday.",
+      "New employees will be orientation.",
+      "The parking lot will be repaved."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì thông báo nói công ty sẽ đóng cửa vào thứ Hai."
+  },
+  {
+    "id": "toeic-l-092",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 4 - Short Talks",
+    "text": "This is a reminder that the annual company picnic will take place this Saturday at Riverside Park. Employees and their families are welcome to attend. Food and drinks will be provided.",
+    "options": [
+      "The picnic has been canceled.",
+      "Employees can bring their families.",
+      "The picnic is next weekend.",
+      "Employees must bring their own food."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì thông báo nói nhân viên và gia đình được hoan nghênh tham dự."
+  },
+  {
+    "id": "toeic-l-093",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 4 - Short Talks",
+    "text": "Good morning, everyone. I'd like to welcome our new team member, Sarah, who joins us today. She'll be working in the marketing department. Please make her feel welcome.",
+    "options": [
+      "Sarah is leaving the company.",
+      "Sarah is a new team member.",
+      "Sarah is being promoted.",
+      " Sarah is transferring departments."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì thông báo chào đón Sarah, thành viên mới của nhóm."
+  },
+  {
+    "id": "toeic-l-094",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 4 - Short Talks",
+    "text": "Attention, shoppers. The store will be closing in fifteen minutes. Please bring your purchases to the checkout counter. Thank you for shopping with us.",
+    "options": [
+      "The store is opening soon.",
+      "The store will close soon.",
+      "There is a sale going on.",
+      "The store has moved to a new location."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì thông báo nói cửa hàng sẽ đóng cửa trong mười lăm phút."
+  },
+  {
+    "id": "toeic-l-095",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 4 - Short Talks",
+    "text": "Passengers on flight 247 to London, please proceed to gate 12. The flight is now boarding. Please have your boarding pass ready.",
+    "options": [
+      "The flight has been delayed.",
+      "The flight is now boarding.",
+      "The gate has changed.",
+      "The flight has been canceled."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì thông báo nói chuyến bay đang lên máy bay."
+  },
+  {
+    "id": "toeic-l-096",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 4 - Short Talks",
+    "text": "This is the building manager. The air conditioning will be shut off tonight from 10 PM to 6 AM for maintenance. We apologize for the inconvenience.",
+    "options": [
+      "The building is being renovated.",
+      "The air conditioning will be off tonight.",
+      "The heating will be turned on.",
+      "The elevator is out of service."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì thông báo nói hệ thống điều hòa sẽ tắt từ 10 giờ tối đến 6 giờ sáng."
+  },
+  {
+    "id": "toeic-l-097",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 4 - Short Talks",
+    "text": "Good afternoon. This is a reminder that all expense reports must be submitted by the end of the month. Late submissions will not be reimbursed until the following month.",
+    "options": [
+      "Expense reports are being reviewed.",
+      "Expense reports are due by month's end.",
+      "Expenses have been reduced.",
+      "A new expense policy is in effect."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì thông báo nhắc nhở rằng tất cả báo cáo chi phí phải nộp trước cuối tháng."
+  },
+  {
+    "id": "toeic-l-098",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 4 - Short Talks",
+    "text": "Attention, all students. The library will be closed this weekend for a special event. It will reopen on Monday at its regular hours.",
+    "options": [
+      "The library has new hours.",
+      "The library is closed this weekend.",
+      "The library has moved.",
+      "The library is open for a special event."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì thông báo nói thư viện sẽ đóng cửa cuối tuần này."
+  },
+  {
+    "id": "toeic-l-099",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 4 - Short Talks",
+    "text": "This is a message from the IT department. If you experience any issues with your computer, please submit a help desk ticket online. Do not attempt to fix the problem yourself.",
+    "options": [
+      "Employees should fix their own computers.",
+      "Employees should submit a help desk ticket.",
+      "The IT department is closed.",
+      "New computers are being distributed."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì thông báo yêu cầu nhân viên nộp phiếu hỗ trợ trực tuyến khi gặp sự cố."
+  },
+  {
+    "id": "toeic-l-100",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 4 - Short Talks",
+    "text": "Ladies and gentlemen, thank you for attending today's seminar. Please remember to fill out the evaluation form before you leave. Your feedback is important to us.",
+    "options": [
+      "The seminar has been canceled.",
+      "Attendees should fill out an evaluation form.",
+      "Lunch will be served.",
+      "Certificates will be awarded."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì thông báo yêu cầu người tham dự điền phiếu đánh giá trước khi rời đi."
+  },
+  {
+    "id": "toeic-l-101",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 4 - Short Talks",
+    "text": "This is an announcement from the human resources department. Open enrollment for health insurance will begin next Monday and run through the end of the month. Information sessions will be held in Conference Room A on Tuesday and Thursday.",
+    "options": [
+      "Health insurance costs are increasing.",
+      "Open enrollment starts next Monday.",
+      "The information sessions are on Monday.",
+      "HR is hiring new staff."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì thông báo nói đăng ký mở cho bảo hiểm sức khỏe bắt đầu vào thứ Hai tuần sau."
+  },
+  {
+    "id": "toeic-l-102",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 4 - Short Talks",
+    "text": "Attention, employees. The parking garage on Fifth Street will be undergoing repairs starting next week. Alternative parking is available in the lot on Oak Avenue. Shuttle service will be provided.",
+    "options": [
+      "The parking garage is full.",
+      "The parking garage will be closed for repairs.",
+      "Parking fees are being waived.",
+      "New parking spaces are being added."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì thông báo nói bãi đậu xe sẽ được sửa chữa bắt đầu từ tuần sau."
+  },
+  {
+    "id": "toeic-l-103",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 4 - Short Talks",
+    "text": "This is the restaurant manager. Due to the holiday weekend, we will be operating with reduced staff. Wait times may be longer than usual. We appreciate your patience.",
+    "options": [
+      "The restaurant is hiring.",
+      "The restaurant has extended hours.",
+      "Wait times may be longer.",
+      "The restaurant is fully booked."
+    ],
+    "correctAnswer": 2,
+    "explanation": "Đáp án đúng là C vì thông báo nói thời gian chờ có thể lâu hơn bình thường."
+  },
+  {
+    "id": "toeic-l-104",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 4 - Short Talks",
+    "text": "Good morning. This is a reminder that the quarterly sales meeting will be held in the main auditorium at 2 PM today. All sales representatives are required to attend.",
+    "options": [
+      "The meeting has been rescheduled.",
+      "The sales meeting is today at 2 PM.",
+      "Attendance is optional.",
+      "The meeting is in Conference Room B."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì thông báo nói cuộc họp bán hàng quý diễn ra hôm nay lúc 2 giờ chiều."
+  },
+  {
+    "id": "toeic-l-105",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 4 - Short Talks",
+    "text": "This is a public service announcement. The city water department will be conducting routine maintenance on the water mains this weekend. Residents may experience temporary water pressure changes.",
+    "options": [
+      "Water service will be shut off completely.",
+      "Water pressure may change temporarily.",
+      "The water is contaminated.",
+      "New water pipes are being installed."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì thông báo nói cư dân có thể trải qua thay đổi áp lực nước tạm thời."
+  },
+  {
+    "id": "toeic-l-106",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 4 - Short Talks",
+    "text": "Attention, all staff. The annual performance review period begins next week. Please submit your self-evaluations to your department heads by Friday.",
+    "options": [
+      "Performance reviews are being eliminated.",
+      "Self-evaluations are due by Friday.",
+      "New performance metrics have been introduced.",
+      "Reviews will be conducted next month."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì thông báo nói bài tự đánh giá phải nộp cho trưởng phòng trước thứ Sáu."
+  },
+  {
+    "id": "toeic-l-107",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 4 - Short Talks",
+    "text": "This is a message from the facilities department. The elevator in Building C will be out of service tomorrow for scheduled maintenance. Please use the stairs or the elevator in Building B.",
+    "options": [
+      "The elevator has been replaced.",
+      "The elevator in Building C will be closed.",
+      "Building C is closed.",
+      "The stairs have been repaired."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì thông báo nói thang máy ở Tòa nhà C sẽ ngừng hoạt động."
+  },
+  {
+    "id": "toeic-l-108",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 4 - Short Talks",
+    "text": "Good afternoon. I'm pleased to announce that our company has been named one of the top employers in the region. This recognition reflects our commitment to our employees.",
+    "options": [
+      "The company is opening a new office.",
+      "The company received an employer award.",
+      "The company is expanding.",
+      "The company is launching a new product."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì thông báo nói công ty được vinh danh là một trong những nhà tuyển dụng hàng đầu."
+  },
+  {
+    "id": "toeic-l-109",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 4 - Short Talks",
+    "text": "This is a security notice. All employees must wear their identification badges at all times while on company premises. Visitors must check in at the front desk and wear visitor passes.",
+    "options": [
+      "Security has been upgraded.",
+      "ID badges must be worn at all times.",
+      "The front desk is closed.",
+      "Visitor passes are no longer required."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì thông báo nói tất cả nhân viên phải đeo thẻ nhận dạng mọi lúc."
+  },
+  {
+    "id": "toeic-l-110",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 4 - Short Talks",
+    "text": "Attention, conference attendees. Due to high demand, we have added an additional breakout session on digital marketing strategies. The session will be held in Room 201 at 3 PM.",
+    "options": [
+      "The session has been canceled.",
+      "A new breakout session has been added.",
+      "The session is sold out.",
+      "The session has been moved."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì thông báo nói đã thêm một buổi họp nhóm bổ sung về chiến lược tiếp thị kỹ thuật số."
+  },
+  {
+    "id": "toeic-l-111",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 4 - Short Talks",
+    "text": "This is an important announcement regarding our company's sustainability initiative. Beginning next quarter, we will be transitioning to one hundred percent renewable energy across all our facilities. This will reduce our carbon footprint by forty percent and align with our corporate social responsibility goals.",
+    "options": [
+      "The company is reducing staff.",
+      "The company is switching to renewable energy.",
+      "The company is closing some facilities.",
+      "The company is launching a new product line."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì thông báo nói công ty sẽ chuyển sang sử dụng năng lượng tái tạo 100%."
+  },
+  {
+    "id": "toeic-l-112",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 4 - Short Talks",
+    "text": "Attention, shareholders. The board of directors has approved a comprehensive restructuring plan that will streamline operations and improve efficiency. The plan includes consolidating three regional offices into one central location, which is expected to generate significant cost savings.",
+    "options": [
+      "The company is merging with another firm.",
+      "Regional offices are being consolidated.",
+      "New offices are being opened.",
+      "The board has been dissolved."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì thông báo nói kế hoạch tái cơ cấu bao gồm hợp nhất ba văn phòng khu vực."
+  },
+  {
+    "id": "toeic-l-113",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 4 - Short Talks",
+    "text": "This is a regulatory compliance update. All employees must complete the updated cybersecurity training module by the end of this month. Failure to comply may result in restricted access to company systems and potential disciplinary action.",
+    "options": [
+      "Cybersecurity training is optional.",
+      "Training must be completed by month's end.",
+      "System access has been enhanced.",
+      "New employees are exempt from training."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì thông báo nói tất cả nhân viên phải hoàn thành mô-đun đào tạo an ninh mạng cập nhật trước cuối tháng."
+  },
+  {
+    "id": "toeic-l-114",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 4 - Short Talks",
+    "text": "Good morning. I'd like to share some positive news. Our latest customer satisfaction survey shows a fifteen percent improvement over last quarter. Our Net Promoter Score has reached an all-time high, indicating that our efforts to improve service quality are paying off.",
+    "options": [
+      "Customer complaints have increased.",
+      "Customer satisfaction has improved.",
+      "The survey was canceled.",
+      "Service quality has declined."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì thông báo nói khảo sát hài lòng khách hàng cho thấy cải thiện 15% so với quý trước."
+  },
+  {
+    "id": "toeic-l-115",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 4 - Short Talks",
+    "text": "This is an update from the research and development department. After two years of development, we are pleased to announce that our new product line has received regulatory approval and will be available in stores starting next month. Early market research indicates strong demand.",
+    "options": [
+      "The product has been delayed.",
+      "The new product line has been approved.",
+      "Market research showed weak demand.",
+      "R&D has been shut down."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì thông báo nói dòng sản phẩm mới đã nhận được phê duyệt quy định."
+  },
+  {
+    "id": "toeic-l-116",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 4 - Short Talks",
+    "text": "Attention, all employees. As part of our digital transformation strategy, we will be implementing a new enterprise resource planning system over the next six months. Training sessions will be mandatory for all departments, and we have hired external consultants to support the transition.",
+    "options": [
+      "The old system will be restored.",
+      "A new ERP system is being implemented.",
+      "Consultants are being replaced.",
+      "The transformation has been canceled."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì thông báo nói hệ thống ERP mới sẽ được triển khai trong sáu tháng tới."
+  },
+  {
+    "id": "toeic-l-117",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 4 - Short Talks",
+    "text": "This is a health and safety notice. Due to recent changes in occupational health regulations, we are updating our workplace safety protocols. All employees must attend a mandatory orientation session next week. Updated safety manuals will be distributed after the session.",
+    "options": [
+      "Safety protocols are being relaxed.",
+      "New safety protocols are being introduced.",
+      "The safety manual has been eliminated.",
+      "Orientation is optional."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì thông báo nói các quy trình an toàn mới đang được giới thiệu."
+  },
+  {
+    "id": "toeic-l-118",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 4 - Short Talks",
+    "text": "Good afternoon. I'm announcing the formation of a new diversity and inclusion committee. The committee will be responsible for developing initiatives to ensure our workplace reflects the diverse communities we serve. Applications for committee membership are now open.",
+    "options": [
+      "The company is reducing its workforce.",
+      "A new diversity committee is being formed.",
+      "The committee has been disbanded.",
+      "Membership is by invitation only."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì thông báo nói thành lập ủy ban đa số và hòa nhập mới."
+  },
+  {
+    "id": "toeic-l-119",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 4 - Short Talks",
+    "text": "This is a financial update for department heads. The finance team has completed the mid-year budget review. Departments that exceeded their spending targets will need to submit revised budgets. Additional funding requests must be justified with detailed cost-benefit analyses.",
+    "options": [
+      "All budgets have been approved.",
+      "Some departments need revised budgets.",
+      "Spending targets have been eliminated.",
+      "The review has been postponed."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì thông báo nói các phòng ban vượt quá mục tiêu chi tiêu cần nộp ngân sách修订."
+  },
+  {
+    "id": "toeic-l-120",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 4 - Short Talks",
+    "text": "Attention, team leaders. We are transitioning to an agile project management methodology across all departments. This shift will require restructuring teams and adopting new communication tools. A comprehensive training program will begin in January.",
+    "options": [
+      "Agile methodology is being abandoned.",
+      "The company is adopting agile practices.",
+      "Teams are being dissolved.",
+      "Training is optional."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì thông báo nói công ty đang chuyển sang phương pháp quản lý dự án agile."
+  },
+  {
+    "id": "toeic-l-121",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 4 - Short Talks",
+    "text": "This is an announcement from the procurement department. Effective immediately, all purchase orders exceeding ten thousand dollars require approval from two senior managers. This policy change is designed to improve cost control and accountability.",
+    "options": [
+      "Purchase order limits have been removed.",
+      "Higher approval is required for large orders.",
+      "The procurement department is closing.",
+      "All orders now require approval."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì thông báo nói đơn đặt hàng trên mười nghìn đô la cần sự chấp thuận của hai quản lý cấp cao."
+  },
+  {
+    "id": "toeic-l-122",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 4 - Short Talks",
+    "text": "Good morning. I'd like to provide an update on our international expansion. We have successfully secured regulatory approval in three new markets. The launch teams have been deployed, and we anticipate generating revenue from these markets by the end of the fiscal year.",
+    "options": [
+      "The expansion has been halted.",
+      "International expansion is proceeding.",
+      "Markets have rejected the products.",
+      "Revenue targets have been lowered."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì thông báo nói việc mở rộng quốc tế đang tiến triển tốt."
+  },
+  {
+    "id": "toeic-l-123",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 4 - Short Talks",
+    "text": "This is an important notice about data privacy. Under the new regulations, all customer data must be encrypted, and data retention policies must be updated. Department heads should schedule a meeting with the compliance team to review the requirements.",
+    "options": [
+      "Data privacy rules are being relaxed.",
+      "New data privacy requirements are in effect.",
+      "Customer data will be deleted.",
+      "The compliance team is disbanding."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì thông báo nói các yêu cầu bảo mật dữ liệu mới đang có hiệu lực."
+  },
+  {
+    "id": "toeic-l-124",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 4 - Short Talks",
+    "text": "Attention, all managers. The employee engagement survey results are in. Overall satisfaction has increased by eight percent, but areas such as work-life balance and career development still need attention. Action plans should be developed at the department level.",
+    "options": [
+      "Engagement scores have decreased.",
+      "Work-life balance needs improvement.",
+      "The survey has been canceled.",
+      "Career development is satisfactory."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì thông báo nói sự cân bằng công việc-cuộc sống vẫn cần được chú ý."
+  },
+  {
+    "id": "toeic-l-125",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 4 - Short Talks",
+    "text": "This is a message from the quality assurance team. After a thorough review, we have identified several areas where our manufacturing processes can be improved. We are recommending the adoption of lean manufacturing principles to reduce waste and improve efficiency.",
+    "options": [
+      "Quality standards are being lowered.",
+      "Lean manufacturing principles are being recommended.",
+      "The manufacturing process is being outsourced.",
+      "QA team is being eliminated."
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đáp án đúng là B vì thông báo nói đang đề xuất áp dụng nguyên tắc sản xuất tinh gọn."
   }
 ]

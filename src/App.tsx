@@ -11,9 +11,11 @@ import { AnalyticsView } from './components/AnalyticsView';
 import { CreateExamView } from './components/CreateExamView';
 import { NotebookView } from './components/NotebookView';
 import { GamifiedPath } from './components/GamifiedPath';
-import type { Flashcard, ExamResult, ListeningLesson, SpeakingLesson, Question, Difficulty, DictationLesson, ReviewGrade, SessionTask, FullExam } from './types';
+import { RealExamView } from './components/RealExamView';
+import type { Flashcard, ExamResult, ListeningLesson, SpeakingLesson, Question, Difficulty, DictationLesson, ReviewGrade, SessionTask, FullExam, GrammarPoint, KanjiEntry, AuthenticExam } from './types';
 import { calculateSM2, getNextReviewDate } from './utils/sm2';
 import { MOCK_QUESTIONS, MOCK_LISTENING_LESSONS, MOCK_CARDS, MOCK_SPEAKING_LESSONS, MOCK_DICTATION_LESSONS, MOCK_FULL_EXAMS } from './utils/mockData';
+import { AUTHENTIC_EXAMS } from './data/authenticExams';
 import { TOEIC_CURRICULUM, N2_CURRICULUM } from './data/curriculums';
 import { loadCards, saveCards, loadProgress, saveProgress, loadExamResults, saveExamResults, loadTheme, saveTheme } from './utils/storage';
 
@@ -25,7 +27,7 @@ const trackCategory = (track: 'english' | 'japanese'): 'toeic' | 'n2' =>
 type AppMode =
   | 'path' | 'practice' | 'session' | 'add'
   | 'collection' | 'analytics' | 'review'
-  | 'create-exam' | 'notebook';
+  | 'create-exam' | 'notebook' | 'real-exam';
 
 function App() {
   const [cards, setCards] = useState<Flashcard[]>(() => loadCards() || MOCK_CARDS);
@@ -36,11 +38,15 @@ function App() {
   const [unlockedEn, setUnlockedEn] = useState(() => loadProgress().unlocked_en);
   const [unlockedJa, setUnlockedJa] = useState(() => loadProgress().unlocked_ja);
   const [customExams, setCustomExams] = useState<FullExam[]>([]);
+  const [questions, setQuestions] = useState<Question[]>(() => MOCK_QUESTIONS);
+  const [n2Grammar, setN2Grammar] = useState<GrammarPoint[]>([]);
+  const [n2Kanji, setN2Kanji] = useState<KanjiEntry[]>([]);
 
   const [sessionTasks, setSessionTasks] = useState<SessionTask[]>([]);
   const [currentTaskIndex, setCurrentTaskIndex] = useState(0);
   const [isSessionFinished, setIsSessionFinished] = useState(false);
   const [currentReviewIndex, setCurrentReviewIndex] = useState(0);
+  const [currentAuthenticExam, setCurrentAuthenticExam] = useState<AuthenticExam | null>(null);
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
@@ -51,6 +57,16 @@ function App() {
   useEffect(() => { saveCards(cards); }, [cards]);
   useEffect(() => { saveProgress({ unlocked_en: unlockedEn, unlocked_ja: unlockedJa }); }, [unlockedEn, unlockedJa]);
   useEffect(() => { saveExamResults(examResults); }, [examResults]);
+
+  useEffect(() => {
+    import('./data/contentLoader').then(({ loadSeedN2Grammar, loadSeedN2Kanji, loadSeedQuestions }) => {
+      loadSeedN2Grammar().then(setN2Grammar).catch(err => console.error("Failed to load grammar:", err));
+      loadSeedN2Kanji().then(setN2Kanji).catch(err => console.error("Failed to load kanji:", err));
+      loadSeedQuestions().then(loaded => {
+        setQuestions(prev => [...prev, ...loaded]);
+      }).catch(err => console.error("Failed to load questions:", err));
+    });
+  }, []);
 
   const toggleTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
@@ -65,13 +81,13 @@ function App() {
   const startSession = (nodeIdx: number, unitDifficulty: Difficulty) => {
     const cat = trackCategory(activeTrack);
     const filteredVocab = cards.filter(c => c.language === activeTrack && c.difficulty === unitDifficulty);
-    const filteredQuizzes = MOCK_QUESTIONS.filter(q => q.category === cat && q.difficulty === unitDifficulty);
+    const filteredQuizzes = questions.filter(q => q.category === cat && q.difficulty === unitDifficulty);
     const filteredListen = MOCK_LISTENING_LESSONS.filter(l => l.category === cat && l.difficulty === unitDifficulty);
     const filteredSpeak = MOCK_SPEAKING_LESSONS.filter(s => s.category === cat && s.difficulty === unitDifficulty);
     const filteredDict = MOCK_DICTATION_LESSONS.filter(d => d.category === cat && d.difficulty === unitDifficulty);
 
     const vList = filteredVocab.length > 0 ? filteredVocab : cards.filter(c => c.language === activeTrack);
-    const qList = filteredQuizzes.length > 0 ? filteredQuizzes : MOCK_QUESTIONS.filter(q => q.category === cat);
+    const qList = filteredQuizzes.length > 0 ? filteredQuizzes : questions.filter(q => q.category === cat);
     const lList = filteredListen.length > 0 ? filteredListen : MOCK_LISTENING_LESSONS.filter(l => l.category === cat);
     const sList = filteredSpeak.length > 0 ? filteredSpeak : MOCK_SPEAKING_LESSONS.filter(s => s.category === cat);
     const dList = filteredDict.length > 0 ? filteredDict : MOCK_DICTATION_LESSONS.filter(d => d.category === cat);
@@ -92,19 +108,49 @@ function App() {
       (t): t is SessionTask => t !== null
     );
 
+    if (newTasks.length === 0) {
+      alert("No content available for this node yet.");
+      return;
+    }
+
     setSessionTasks(newTasks);
     setCurrentTaskIndex(0); setIsSessionFinished(false); setMode('session');
+  };
+
+  // Sort helper: order items beginner → intermediate → advanced
+  const difficultyOrder = (d: string) => d === 'beginner' ? 0 : d === 'intermediate' ? 1 : 2;
+  const sortByDifficulty = <T extends { difficulty: string }>(items: T[]): T[] =>
+    [...items].sort((a, b) => difficultyOrder(a.difficulty) - difficultyOrder(b.difficulty));
+
+  // Sample evenly across difficulty levels, then sort easy→hard
+  const sampleAcrossDifficulties = <T extends { difficulty: string }>(items: T[], total: number): T[] => {
+    const byDiff: Record<string, T[]> = { beginner: [], intermediate: [], advanced: [] };
+    items.forEach(item => { if (byDiff[item.difficulty]) byDiff[item.difficulty].push(item); });
+    const perLevel = Math.max(1, Math.floor(total / 3));
+    const sampled = [
+      ...byDiff.beginner.slice(0, perLevel),
+      ...byDiff.intermediate.slice(0, perLevel),
+      ...byDiff.advanced.slice(0, total - perLevel * 2),
+    ];
+    return sortByDifficulty(sampled);
   };
 
   const startDrill = (type: SessionTask['type'] | 'review') => {
     if (type === 'review') { setCurrentReviewIndex(0); setMode('review'); return; }
     const cat = trackCategory(activeTrack);
     const filtered = (type === 'vocab-quiz') ? cards.filter(c => c.language === activeTrack) :
-                     (type === 'quiz') ? MOCK_QUESTIONS.filter(q => q.category === cat) :
+                     (type === 'quiz') ? questions.filter(q => q.category === cat) :
                      (type === 'listening') ? MOCK_LISTENING_LESSONS.filter(l => l.category === cat) :
                      (type === 'speaking') ? MOCK_SPEAKING_LESSONS.filter(s => s.category === cat) :
                      MOCK_DICTATION_LESSONS.filter(d => d.category === cat);
-    const newTasks: SessionTask[] = filtered.slice(0, 10).map(item => ({ type, data: item }) as SessionTask);
+    const sampled = sampleAcrossDifficulties(filtered as (typeof filtered[number] & { difficulty: string })[], 10);
+    const newTasks: SessionTask[] = sampled.map(item => ({ type, data: item }) as SessionTask);
+    
+    if (newTasks.length === 0) {
+      alert("No content available for this practice yet.");
+      return;
+    }
+
     setSessionTasks(newTasks);
     setCurrentTaskIndex(0); setIsSessionFinished(false); setMode('session');
   };
@@ -114,6 +160,11 @@ function App() {
     setCurrentTaskIndex(0);
     setIsSessionFinished(false);
     setMode('session');
+  };
+
+  const startAuthenticExam = (exam: AuthenticExam) => {
+    setCurrentAuthenticExam(exam);
+    setMode('real-exam');
   };
 
   // Persist an ExamResult so AnalyticsView and the saved history stay in sync.
@@ -198,26 +249,47 @@ function App() {
         </div>
         
         <nav className="flex-1 space-y-2" aria-label="Main navigation">
-          <button onClick={() => setMode('path')} aria-label="Learn" aria-current={mode === 'path'} className={`w-full flex items-center gap-4 px-4 py-3 rounded-2xl font-bold text-sm transition-colors border-2 ${mode === 'path' ? 'bg-[var(--blue-light)] text-[var(--blue)] border-[var(--blue-light)]' : 'border-transparent text-[var(--text-main)] hover:bg-[var(--gray-bg)]'}`}>
-             <span className="text-2xl">🏠</span> LEARN
+          <button onClick={() => setMode('path')} aria-label="Learn" aria-current={mode === 'path'} className={`w-full flex items-center gap-4 px-4 py-3 rounded-2xl font-black text-xs tracking-wider transition-all border-2 active:scale-98 ${mode === 'path' ? 'bg-[var(--tint-blue)] text-[var(--blue)] border-[var(--tint-blue)]' : 'border-transparent text-[var(--text-main)] hover:bg-[var(--gray-bg)]'}`}>
+             <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+               <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+             </svg>
+             LEARN
           </button>
-          <button onClick={() => setMode('practice')} aria-label="Practice" aria-current={mode === 'practice'} className={`w-full flex items-center gap-4 px-4 py-3 rounded-2xl font-bold text-sm transition-colors border-2 ${mode === 'practice' ? 'bg-[var(--blue-light)] text-[var(--blue)] border-[var(--blue-light)]' : 'border-transparent text-[var(--text-main)] hover:bg-[var(--gray-bg)]'}`}>
-             <span className="text-2xl">🏋️</span> PRACTICE
+          <button onClick={() => setMode('practice')} aria-label="Practice" aria-current={mode === 'practice'} className={`w-full flex items-center gap-4 px-4 py-3 rounded-2xl font-black text-xs tracking-wider transition-all border-2 active:scale-98 ${mode === 'practice' ? 'bg-[var(--tint-blue)] text-[var(--blue)] border-[var(--tint-blue)]' : 'border-transparent text-[var(--text-main)] hover:bg-[var(--gray-bg)]'}`}>
+             <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+               <path strokeLinecap="round" strokeLinejoin="round" d="M19 12H5M3 10v4M21 10v4M6 8h2v8H6zm10 0h2v8h-2z" />
+             </svg>
+             PRACTICE
           </button>
-          <button onClick={() => setMode('notebook')} aria-label="Notebook" aria-current={mode === 'notebook'} className={`w-full flex items-center gap-4 px-4 py-3 rounded-2xl font-bold text-sm transition-colors border-2 ${mode === 'notebook' ? 'bg-[var(--blue-light)] text-[var(--blue)] border-[var(--blue-light)]' : 'border-transparent text-[var(--text-main)] hover:bg-[var(--gray-bg)]'}`}>
-             <span className="text-2xl">📔</span> NOTEBOOK
+          <button onClick={() => setMode('notebook')} aria-label="Notebook" aria-current={mode === 'notebook'} className={`w-full flex items-center gap-4 px-4 py-3 rounded-2xl font-black text-xs tracking-wider transition-all border-2 active:scale-98 ${mode === 'notebook' ? 'bg-[var(--tint-blue)] text-[var(--blue)] border-[var(--tint-blue)]' : 'border-transparent text-[var(--text-main)] hover:bg-[var(--gray-bg)]'}`}>
+             <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+               <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18c-2.305 0-4.408.867-6 2.292m0-14.25v14.25" />
+             </svg>
+             NOTEBOOK
           </button>
-          <button onClick={() => startDrill('review')} aria-label="Review flashcards" aria-current={mode === 'review'} className={`w-full flex items-center gap-4 px-4 py-3 rounded-2xl font-bold text-sm transition-colors border-2 ${mode === 'review' ? 'bg-[var(--blue-light)] text-[var(--blue)] border-[var(--blue-light)]' : 'border-transparent text-[var(--text-main)] hover:bg-[var(--gray-bg)]'}`}>
-             <span className="text-2xl">🔁</span> REVIEW
+          <button onClick={() => startDrill('review')} aria-label="Review flashcards" aria-current={mode === 'review'} className={`w-full flex items-center gap-4 px-4 py-3 rounded-2xl font-black text-xs tracking-wider transition-all border-2 active:scale-98 ${mode === 'review' ? 'bg-[var(--tint-blue)] text-[var(--blue)] border-[var(--tint-blue)]' : 'border-transparent text-[var(--text-main)] hover:bg-[var(--gray-bg)]'}`}>
+             <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+               <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
+             </svg>
+             REVIEW
           </button>
-          <button onClick={() => setMode('collection')} aria-label="Word library" aria-current={mode === 'collection'} className={`w-full flex items-center gap-4 px-4 py-3 rounded-2xl font-bold text-sm transition-colors border-2 ${mode === 'collection' ? 'bg-[var(--blue-light)] text-[var(--blue)] border-[var(--blue-light)]' : 'border-transparent text-[var(--text-main)] hover:bg-[var(--gray-bg)]'}`}>
-             <span className="text-2xl">📚</span> LIBRARY
+          <button onClick={() => setMode('collection')} aria-label="Word library" aria-current={mode === 'collection'} className={`w-full flex items-center gap-4 px-4 py-3 rounded-2xl font-black text-xs tracking-wider transition-all border-2 active:scale-98 ${mode === 'collection' ? 'bg-[var(--tint-blue)] text-[var(--blue)] border-[var(--tint-blue)]' : 'border-transparent text-[var(--text-main)] hover:bg-[var(--gray-bg)]'}`}>
+             <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+               <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
+             </svg>
+             LIBRARY
           </button>
-          <button onClick={() => setMode('analytics')} aria-label="Learning stats" aria-current={mode === 'analytics'} className={`w-full flex items-center gap-4 px-4 py-3 rounded-2xl font-bold text-sm transition-colors border-2 ${mode === 'analytics' ? 'bg-[var(--blue-light)] text-[var(--blue)] border-[var(--blue-light)]' : 'border-transparent text-[var(--text-main)] hover:bg-[var(--gray-bg)]'}`}>
-             <span className="text-2xl">📊</span> STATS
+          <button onClick={() => setMode('analytics')} aria-label="Learning stats" aria-current={mode === 'analytics'} className={`w-full flex items-center gap-4 px-4 py-3 rounded-2xl font-black text-xs tracking-wider transition-all border-2 active:scale-98 ${mode === 'analytics' ? 'bg-[var(--tint-blue)] text-[var(--blue)] border-[var(--tint-blue)]' : 'border-transparent text-[var(--text-main)] hover:bg-[var(--gray-bg)]'}`}>
+             <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+               <path strokeLinecap="round" strokeLinejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v5.25c0 .621-.504 1.125-1.125 1.125h-2.25A1.125 1.125 0 013 18.375v-5.25zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125v-9.75zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v14.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
+             </svg>
+             STATS
           </button>
-          <button onClick={() => setMode('add')} aria-label="Add words" aria-current={mode === 'add'} className={`w-full flex items-center gap-4 px-4 py-3 rounded-2xl font-bold text-sm transition-colors border-2 ${mode === 'add' ? 'bg-[var(--blue-light)] text-[var(--blue)] border-[var(--blue-light)]' : 'border-transparent text-[var(--text-main)] hover:bg-[var(--gray-bg)]'}`}>
-             <span className="text-2xl">➕</span> ADD WORDS
+          <button onClick={() => setMode('add')} aria-label="Add words" aria-current={mode === 'add'} className={`w-full flex items-center gap-4 px-4 py-3 rounded-2xl font-black text-xs tracking-wider transition-all border-2 active:scale-98 ${mode === 'add' ? 'bg-[var(--tint-blue)] text-[var(--blue)] border-[var(--tint-blue)]' : 'border-transparent text-[var(--text-main)] hover:bg-[var(--gray-bg)]'}`}>
+             <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+               <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+             </svg>
+             ADD WORDS
           </button>
         </nav>
       </aside>
@@ -262,8 +334,27 @@ function App() {
                   <button onClick={() => startDrill('quiz')} className="btn-duo btn-blue h-14 mt-4 w-full">START TEST</button>
                </div>
 
+               {/* Authentic Exams Section */}
+               <div className="w-full flex flex-col gap-4 mt-2">
+                 <div className="px-2">
+                   <h3 className="text-2xl font-black text-[var(--gold)] flex items-center gap-2">🏆 Authentic Full Tests</h3>
+                   <p className="text-sm font-bold text-[var(--text-muted)] mt-1">Real exam structure, sections, and 120-minute timer.</p>
+                 </div>
+                 {AUTHENTIC_EXAMS.filter(exam => exam.category === trackCategory(activeTrack)).map(exam => (
+                   <div key={exam.id} className="w-full flex items-center justify-between gap-4 p-6 rounded-[1.5rem] border-2 border-[var(--gold)] bg-[var(--tint-gold)] text-[var(--gold-shadow)] shadow-sm">
+                      <div>
+                        <div className="flex items-center gap-2 mb-1">
+                          <h4 className="font-black text-lg">{exam.title}</h4>
+                        </div>
+                        <p className="text-sm font-bold opacity-80">{exam.year} - {exam.timeLimitMinutes} minutes</p>
+                     </div>
+                     <button onClick={() => startAuthenticExam(exam)} className="btn-duo btn-gold h-12 w-32 text-xs">START REAL TEST</button>
+                   </div>
+                 ))}
+               </div>
+
                {/* Create Exam Button */}
-               <div className="w-full">
+               <div className="w-full mt-4">
                  <button onClick={() => setMode('create-exam')} className="w-full btn-duo btn-purple h-14 text-base">
                    ✨ Create Your Own Exam
                  </button>
@@ -274,9 +365,20 @@ function App() {
                  <h3 className="text-2xl font-black px-2">Full Official Exams</h3>
                  {[...MOCK_FULL_EXAMS, ...customExams].filter(exam => exam.category === trackCategory(activeTrack)).map(exam => (
                    <div key={exam.id} className="w-full flex items-center justify-between gap-4 p-6 rounded-[1.5rem] border-2 border-[var(--gray-path)] bg-[var(--gray-bg)]">
-                     <div>
-                       <h4 className="font-black text-lg">{exam.title}</h4>
-                       <p className="text-sm font-bold text-[var(--text-muted)]">{exam.year} - {exam.tasks.length} tasks</p>
+                      <div>
+                        <div className="flex items-center gap-2 mb-1">
+                          <h4 className="font-black text-lg">{exam.title}</h4>
+                          {exam.difficulty && (
+                            <span className={`px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider border ${
+                              exam.difficulty === 'beginner' ? 'bg-[var(--tint-green)] text-[var(--green-shadow)] border-[var(--green-shadow)]' :
+                              exam.difficulty === 'intermediate' ? 'bg-[var(--tint-blue)] text-[var(--blue-shadow)] border-[var(--blue-shadow)]' :
+                              'bg-[var(--tint-red)] text-[var(--red-shadow)] border-[var(--red-shadow)]'
+                            }`}>
+                              {exam.difficulty}
+                            </span>
+                          )}
+                        </div>
+                        <p className="text-sm font-bold text-[var(--text-muted)]">{exam.year} - {exam.tasks.length} tasks</p>
                      </div>
                      <button onClick={() => startFullExam(exam)} className="btn-duo btn-green h-12 w-32 text-xs">START</button>
                    </div>
@@ -329,7 +431,7 @@ function App() {
                     {sessionTasks[currentTaskIndex].type === 'quiz' && <QuizView questions={[sessionTasks[currentTaskIndex].data as Question]} category={trackCategory(activeTrack)} onComplete={handleSessionQuizComplete} onCancel={() => setMode('path')} hideSummary={true} />}
                     {sessionTasks[currentTaskIndex].type === 'listening' && <ListeningView lesson={sessionTasks[currentTaskIndex].data as ListeningLesson} onBack={() => nextTask()} hideBackButton={true} />}
                     {sessionTasks[currentTaskIndex].type === 'speaking' && <SpeakingView lesson={sessionTasks[currentTaskIndex].data as SpeakingLesson} onComplete={() => nextTask()} />}
-                    {sessionTasks[currentTaskIndex].type === 'dictation' && <DictationView lesson={sessionTasks[currentTaskIndex].data as DictationLesson} onComplete={(_isCorrect) => nextTask()} />}
+                    {sessionTasks[currentTaskIndex].type === 'dictation' && <DictationView lesson={sessionTasks[currentTaskIndex].data as DictationLesson} onComplete={() => nextTask()} />}
                   </div>
                ) : (
                   <div className="w-full text-center space-y-8 pop-in pt-10 relative">
@@ -349,7 +451,7 @@ function App() {
 
           {/* Management modes mapping */}
           {mode === 'add' && <div key="add" className="w-full mt-10 view-enter"><AddFlashcard onAdd={handleAddCard} /></div>}
-          {mode === 'notebook' && <NotebookView activeTrack={activeTrack} />}
+          {mode === 'notebook' && <NotebookView activeTrack={activeTrack} n2Grammar={n2Grammar} n2Kanji={n2Kanji} />}
           {mode === 'collection' && <CollectionView cards={cards} activeTrack={activeTrack} onDelete={handleRemoveCard} />}
           {mode === 'analytics' && <AnalyticsView results={examResults} activeTrack={activeTrack} />}
           {mode === 'review' && (() => {
@@ -374,26 +476,102 @@ function App() {
             );
           })()}
           {mode === 'create-exam' && (
-            <CreateExamView
+              <CreateExamView
               onSave={handleSaveExam}
               onCancel={() => setMode('practice')}
-              allQuestions={MOCK_QUESTIONS}
+              allQuestions={questions}
               allListening={MOCK_LISTENING_LESSONS}
               allSpeaking={MOCK_SPEAKING_LESSONS}
               allDictation={MOCK_DICTATION_LESSONS}
             />
+          )}
+          {mode === 'real-exam' && currentAuthenticExam && (
+            <div className="w-full mt-10 view-enter">
+              <RealExamView
+                exam={currentAuthenticExam}
+                onCancel={() => setMode('practice')}
+                onComplete={(score, total) => {
+                  alert(`You scored ${score} out of ${total}!`);
+                  setMode('practice');
+                }}
+              />
+            </div>
           )}
 
         </div>
       </main>
 
       {/* Mobile Nav */}
-      <nav className="lg:hidden fixed bottom-0 left-0 right-0 h-20 bg-[var(--bg-main)] border-t-2 border-[var(--gray-path)] flex items-center justify-around px-1 z-50">
-        <button onClick={() => setMode('path')} aria-label="Learn" aria-current={mode === 'path'} className={`p-3 rounded-2xl transition-all border-2 ${mode === 'path' ? 'bg-[var(--blue-light)] border-[var(--blue-light)] text-[var(--blue)]' : 'border-transparent text-[var(--text-muted)]'}`}><span className="text-2xl">🏠</span></button>
-        <button onClick={() => startDrill('review')} aria-label="Review flashcards" aria-current={mode === 'review'} className={`p-3 rounded-2xl transition-all border-2 ${mode === 'review' ? 'bg-[var(--blue-light)] border-[var(--blue-light)] text-[var(--blue)]' : 'border-transparent text-[var(--text-muted)]'}`}><span className="text-2xl">🔁</span></button>
-        <button onClick={() => setMode('practice')} aria-label="Practice" aria-current={mode === 'practice'} className={`p-3 rounded-2xl transition-all border-2 ${mode === 'practice' ? 'bg-[var(--blue-light)] border-[var(--blue-light)] text-[var(--blue)]' : 'border-transparent text-[var(--text-muted)]'}`}><span className="text-2xl">🏋️</span></button>
-        <button onClick={() => setMode('add')} aria-label="Add words" aria-current={mode === 'add'} className={`p-3 rounded-2xl transition-all border-2 ${mode === 'add' ? 'bg-[var(--blue-light)] border-[var(--blue-light)] text-[var(--blue)]' : 'border-transparent text-[var(--text-muted)]'}`}><span className="text-2xl">➕</span></button>
-        <button onClick={() => setMode('notebook')} aria-label="Notebook" aria-current={mode === 'notebook'} className={`p-3 rounded-2xl transition-all border-2 ${mode === 'notebook' ? 'bg-[var(--blue-light)] border-[var(--blue-light)] text-[var(--blue)]' : 'border-transparent text-[var(--text-muted)]'}`}><span className="text-2xl">📔</span></button>
+      <nav className="lg:hidden fixed bottom-0 left-0 right-0 h-20 backdrop-blur-md bg-[var(--bg-main)]/85 border-t-2 border-[var(--gray-path)] shadow-[0_-4px_24px_rgba(0,0,0,0.04)] flex items-center justify-around px-2 z-50">
+        <button 
+          onClick={() => setMode('path')} 
+          aria-label="Learn" 
+          aria-current={mode === 'path'} 
+          className={`flex flex-col items-center justify-center flex-1 h-full py-1 transition-all active:scale-95 relative ${mode === 'path' ? 'text-[var(--blue)]' : 'text-[var(--text-muted)]'}`}
+        >
+          <div className={`p-2 rounded-xl transition-all ${mode === 'path' ? 'bg-[var(--tint-blue)]' : 'bg-transparent'}`}>
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+            </svg>
+          </div>
+          <span className="text-[10px] font-black uppercase tracking-wider mt-1">Learn</span>
+        </button>
+
+        <button 
+          onClick={() => startDrill('review')} 
+          aria-label="Review flashcards" 
+          aria-current={mode === 'review'} 
+          className={`flex flex-col items-center justify-center flex-1 h-full py-1 transition-all active:scale-95 relative ${mode === 'review' ? 'text-[var(--blue)]' : 'text-[var(--text-muted)]'}`}
+        >
+          <div className={`p-2 rounded-xl transition-all ${mode === 'review' ? 'bg-[var(--tint-blue)]' : 'bg-transparent'}`}>
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
+            </svg>
+          </div>
+          <span className="text-[10px] font-black uppercase tracking-wider mt-1">Review</span>
+        </button>
+
+        <button 
+          onClick={() => setMode('practice')} 
+          aria-label="Practice" 
+          aria-current={mode === 'practice'} 
+          className={`flex flex-col items-center justify-center flex-1 h-full py-1 transition-all active:scale-95 relative ${mode === 'practice' ? 'text-[var(--blue)]' : 'text-[var(--text-muted)]'}`}
+        >
+          <div className={`p-2 rounded-xl transition-all ${mode === 'practice' ? 'bg-[var(--tint-blue)]' : 'bg-transparent'}`}>
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19 12H5M3 10v4M21 10v4M6 8h2v8H6zm10 0h2v8h-2z" />
+            </svg>
+          </div>
+          <span className="text-[10px] font-black uppercase tracking-wider mt-1">Practice</span>
+        </button>
+
+        <button 
+          onClick={() => setMode('add')} 
+          aria-label="Add words" 
+          aria-current={mode === 'add'} 
+          className={`flex flex-col items-center justify-center flex-1 h-full py-1 transition-all active:scale-95 relative ${mode === 'add' ? 'text-[var(--blue)]' : 'text-[var(--text-muted)]'}`}
+        >
+          <div className={`p-2 rounded-xl transition-all ${mode === 'add' ? 'bg-[var(--tint-blue)]' : 'bg-transparent'}`}>
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+            </svg>
+          </div>
+          <span className="text-[10px] font-black uppercase tracking-wider mt-1">Add</span>
+        </button>
+
+        <button 
+          onClick={() => setMode('notebook')} 
+          aria-label="Notebook" 
+          aria-current={mode === 'notebook'} 
+          className={`flex flex-col items-center justify-center flex-1 h-full py-1 transition-all active:scale-95 relative ${mode === 'notebook' ? 'text-[var(--blue)]' : 'text-[var(--text-muted)]'}`}
+        >
+          <div className={`p-2 rounded-xl transition-all ${mode === 'notebook' ? 'bg-[var(--tint-blue)]' : 'bg-transparent'}`}>
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18c-2.305 0-4.408.867-6 2.292m0-14.25v14.25" />
+            </svg>
+          </div>
+          <span className="text-[10px] font-black uppercase tracking-wider mt-1">Notebook</span>
+        </button>
       </nav>
     </div>
   );

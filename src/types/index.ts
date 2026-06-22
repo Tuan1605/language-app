@@ -109,5 +109,8 @@ export interface FullExam {
   title: string;
   year: number;
   category: 'toeic' | 'n2';
+  difficulty?: Difficulty;
   tasks: SessionTask[];
 }
+
+export * from './authentic';
