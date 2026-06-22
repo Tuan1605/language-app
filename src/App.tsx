@@ -297,7 +297,7 @@ function App() {
       <main className="flex-1 w-full flex flex-col items-center min-h-screen lg:pl-64">
         
         {/* Top Header Bar */}
-        {(mode === 'path' || mode === 'practice') && (
+        {!(mode === 'session' || mode === 'real-exam') && (
           <header className="w-full h-16 border-b-2 border-[var(--gray-path)] flex items-center justify-between px-6 sticky top-0 bg-[var(--bg-main)]/90 backdrop-blur-md z-40">
             <div className="flex items-center gap-6">
                <button onClick={() => setActiveTrack('english')} className={`font-black text-sm flex items-center gap-2 transition-all ${activeTrack === 'english' ? 'text-[var(--blue)] border-b-4 border-[var(--blue)] pb-1' : 'text-[var(--text-muted)] hover:text-[var(--gray-path-dark)]'}`}>
