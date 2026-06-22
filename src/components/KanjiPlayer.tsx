@@ -43,7 +43,7 @@ export function KanjiPlayer({ kanji }: KanjiPlayerProps) {
         const textElements = Array.from(doc.querySelectorAll('text'));
 
         setStrokes(pathElements.map((p, i) => ({ d: p.getAttribute('d') || '', id: p.id || `s${i}` })));
-        setNumbers(textElements.map((t, i) => ({ transform: t.getAttribute('transform') || '', text: t.textContent || '' })));
+        setNumbers(textElements.map((t) => ({ transform: t.getAttribute('transform') || '', text: t.textContent || '' })));
       })
       .catch((err) => {
         if (isActive) setError(err.message);
@@ -102,7 +102,7 @@ export function KanjiPlayer({ kanji }: KanjiPlayerProps) {
         
         <svg viewBox="0 0 109 109" className="w-full h-full relative z-10">
           {/* Mờ các nét chưa vẽ (hoặc tất cả nếu đang xem tĩnh) */}
-          {strokes.map((s, i) => (
+          {strokes.map((s) => (
             <path
               key={`bg-${s.id}`}
               d={s.d}
