@@ -33,17 +33,24 @@ export function SpeakingView({ lesson, onComplete }: SpeakingViewProps) {
 
   const recognitionRef = useRef<SpeechRecognitionInstance | null>(null);
 
+  // Use refs for callbacks that change frequently so the SpeechRecognition
+  // instance doesn't need to be torn down and rebuilt on every render.
+  const onCompleteRef = useRef(onComplete);
+  onCompleteRef.current = onComplete;
+  const targetSentenceRef = useRef(lesson.targetSentence);
+  targetSentenceRef.current = lesson.targetSentence;
+
   const checkAccuracy = useCallback((text: string) => {
-    const acc = calculateSimilarity(lesson.targetSentence, text);
+    const acc = calculateSimilarity(targetSentenceRef.current, text);
     setAccuracy(acc);
 
     if (acc >= 70) {
       setFeedback('success');
-      setTimeout(() => onComplete(), 1500);
+      setTimeout(() => onCompleteRef.current(), 1500);
     } else {
       setFeedback('retry');
     }
-  }, [lesson.targetSentence, onComplete]);
+  }, []);
 
   useEffect(() => {
     const SpeechRecognitionAPI = (window as unknown as { SpeechRecognition?: new () => SpeechRecognitionInstance; webkitSpeechRecognition?: new () => SpeechRecognitionInstance }).SpeechRecognition || (window as unknown as { webkitSpeechRecognition?: new () => SpeechRecognitionInstance }).webkitSpeechRecognition;
@@ -78,7 +85,7 @@ export function SpeakingView({ lesson, onComplete }: SpeakingViewProps) {
         recognitionRef.current.onerror = null;
       }
     };
-  }, [lesson, checkAccuracy]);
+  }, [lesson.category, checkAccuracy]);
 
   const startListening = () => {
     setTranscript('');

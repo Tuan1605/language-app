@@ -1,5 +1,5 @@
-import { useState, useRef, useEffect } from 'react';
-import HanziWriter from 'hanzi-writer';
+import { useState, useRef } from 'react';
+import { KanjiPlayer } from './KanjiPlayer';
 import type { GrammarPoint, KanjiEntry } from '../types';
 
 interface NotebookViewProps {
@@ -123,32 +123,6 @@ export function NotebookView({ activeTrack, n2Grammar, n2Kanji }: NotebookViewPr
     const ctx = canvas?.getContext('2d');
     if (canvas && ctx) {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
-    }
-  };
-
-  // HanziWriter Integration
-  const writerContainerRef = useRef<HTMLDivElement>(null);
-  const writerInstanceRef = useRef<HanziWriter | null>(null);
-
-  useEffect(() => {
-    if (selectedKanji && writerContainerRef.current) {
-      writerContainerRef.current.innerHTML = '';
-      writerInstanceRef.current = HanziWriter.create(writerContainerRef.current, selectedKanji.kanji, {
-        width: 120,
-        height: 120,
-        padding: 5,
-        strokeAnimationSpeed: 1.5,
-        delayBetweenStrokes: 100,
-        showOutline: true,
-        strokeColor: '#EF4444',
-        outlineColor: '#CBD5E1',
-      });
-    }
-  }, [selectedKanji]);
-
-  const playAnimation = () => {
-    if (writerInstanceRef.current) {
-      writerInstanceRef.current.animateCharacter();
     }
   };
 
@@ -297,10 +271,7 @@ export function NotebookView({ activeTrack, n2Grammar, n2Kanji }: NotebookViewPr
             
             <div className="overflow-y-auto p-6 space-y-6 custom-scrollbar">
               <div className="flex flex-col items-center gap-4">
-                <div className="w-32 h-32 flex items-center justify-center bg-[var(--tint-red)] rounded-[2rem] border-4 border-[var(--red)] relative" ref={writerContainerRef}>
-                  {/* HanziWriter SVG injects here. Fallback text: */}
-                  {!writerInstanceRef.current && <span className="text-7xl font-black text-[var(--red)] font-[serif]">{selectedKanji.kanji}</span>}
-                </div>
+                <KanjiPlayer kanji={selectedKanji.kanji} />
                 <div className="text-center">
                   <h4 className="text-2xl font-black text-[var(--text-main)] mb-2">{selectedKanji.meaning}</h4>
                   <div className="flex flex-col gap-1 text-sm font-bold">
@@ -342,14 +313,6 @@ export function NotebookView({ activeTrack, n2Grammar, n2Kanji }: NotebookViewPr
                 </div>
                 <p className="text-center text-xs font-bold text-[var(--text-muted)]">Bạn có thể dùng chuột hoặc ngón tay để đồ theo nét chữ mờ phía trên.</p>
               </div>
-
-              {/* In-app Stroke Order Animation Button */}
-              <button 
-                onClick={playAnimation}
-                className="btn-duo btn-blue w-full h-12 flex items-center justify-center text-sm"
-              >
-                🎥 PHÁT ẢNH ĐỘNG HƯỚNG DẪN NÉT VIẾT
-              </button>
 
               {selectedKanji.examples && selectedKanji.examples.length > 0 && (
                 <div className="space-y-3">

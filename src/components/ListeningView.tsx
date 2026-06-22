@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
 import type { ListeningLesson } from '../types';
-import { speak, stopSpeaking, isTTSSupported, hasVoiceFor, langForCategory } from '../utils/tts';
+import { speak, stopSpeaking, hasVoiceFor, langForCategory } from '../utils/tts';
 
 interface ListeningViewProps {
   lesson: ListeningLesson;
@@ -22,7 +22,7 @@ export function ListeningView({ lesson, onBack, hideBackButton }: ListeningViewP
   const ttsLang = langForCategory(lesson.category);
   const [voiceReady, setVoiceReady] = useState(() => hasVoiceFor(ttsLang));
   useEffect(() => {
-    if (!isTTSSupported()) return;
+    if (!('speechSynthesis' in window)) return;
     const check = () => setVoiceReady(hasVoiceFor(ttsLang));
     check();
     window.speechSynthesis.addEventListener('voiceschanged', check);
@@ -173,7 +173,7 @@ export function ListeningView({ lesson, onBack, hideBackButton }: ListeningViewP
             {isPlaying ? (
               <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
             ) : (
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132A1 1 0 0010 11.5v-0.664z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.97l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
             )}
           </button>
 
@@ -190,14 +190,9 @@ export function ListeningView({ lesson, onBack, hideBackButton }: ListeningViewP
         </div>
       </div>
 
-      {!lesson.audioUrl && !isTTSSupported() && (
-        <p className="text-xs text-[#ff4b4b] font-bold text-center mb-6">
-          ⚠️ Trình duyệt không hỗ trợ phát audio cho bài này. Hãy dùng Chrome hoặc Edge.
-        </p>
-      )}
-      {!lesson.audioUrl && isTTSSupported() && !voiceReady && (
-        <p className="text-xs text-[#ff9600] font-bold text-center mb-6">
-          ⏳ Đang tải giọng đọc… nếu không nghe thấy gì sau vài giây, hãy bấm lại nút Play, hoặc dùng Chrome/Edge để có giọng tốt nhất.
+      {!lesson.audioUrl && !voiceReady && (
+        <p className="text-xs text-[#1cb0f6] font-bold text-center mb-6">
+          🔊 Sẽ dùng giọng đọc online. Bấm Play để nghe.
         </p>
       )}
 

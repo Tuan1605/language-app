@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import type { Flashcard, ReviewGrade } from '../types';
-import { speak, langForCategory, isTTSSupported, hasVoiceFor } from '../utils/tts';
+import { speak, langForCategory, hasVoiceFor } from '../utils/tts';
 
 interface FlashcardViewProps {
   card: Flashcard;
@@ -16,7 +16,7 @@ export function FlashcardView({ card, onRate }: FlashcardViewProps) {
   const ttsLang = langForCategory(card.language);
   const [voiceReady, setVoiceReady] = useState(() => hasVoiceFor(ttsLang));
   useEffect(() => {
-    if (!isTTSSupported()) return;
+    if (!('speechSynthesis' in window)) return;
     const check = () => setVoiceReady(hasVoiceFor(ttsLang));
     check();
     window.speechSynthesis.addEventListener('voiceschanged', check);
@@ -170,14 +170,9 @@ export function FlashcardView({ card, onRate }: FlashcardViewProps) {
         </p>
       </div>
 
-      {!isTTSSupported() && (
-        <p className="text-xs text-[#ff4b4b] font-bold text-center">
-          ⚠️ Trình duyệt không hỗ trợ đọc từ. Hãy dùng Chrome hoặc Edge.
-        </p>
-      )}
-      {isTTSSupported() && !voiceReady && (
-        <p className="text-xs text-[#ff9600] font-bold text-center">
-          ⏳ Đang tải giọng đọc… nếu bấm loa không nghe thấy gì, hãy bấm lại sau giây lát, hoặc dùng Chrome/Edge.
+      {!voiceReady && (
+        <p className="text-xs text-[#1cb0f6] font-bold text-center">
+          🔊 Bấm nút loa để nghe phát âm online.
         </p>
       )}
     </div>

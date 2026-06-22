@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 import type { DictationLesson } from '../types';
-import { speak, langForCategory, isTTSSupported, hasVoiceFor } from '../utils/tts';
+import { speak, langForCategory, hasVoiceFor } from '../utils/tts';
 import { calculateSimilarity } from '../utils/stringSimilarity';
 
 interface DictationViewProps {
@@ -20,7 +20,7 @@ export function DictationView({ lesson, onComplete }: DictationViewProps) {
   const ttsLang = langForCategory(lesson.category);
   const [voiceReady, setVoiceReady] = useState(() => hasVoiceFor(ttsLang));
   useEffect(() => {
-    if (!isTTSSupported()) return;
+    if (!('speechSynthesis' in window)) return;
     const check = () => setVoiceReady(hasVoiceFor(ttsLang));
     check();
     window.speechSynthesis.addEventListener('voiceschanged', check);
@@ -95,14 +95,9 @@ export function DictationView({ lesson, onComplete }: DictationViewProps) {
           </button>
         </div>
 
-        {!lesson.audioUrl && !isTTSSupported() && (
-          <p className="text-xs text-[#ff4b4b] font-bold text-center">
-            ⚠️ Trình duyệt không hỗ trợ phát audio. Hãy dùng Chrome hoặc Edge.
-          </p>
-        )}
-        {!lesson.audioUrl && isTTSSupported() && !voiceReady && (
-          <p className="text-xs text-[#ff9600] font-bold text-center">
-            ⏳ Đang tải giọng đọc… nếu không nghe thấy gì, hãy bấm lại nút loa, hoặc dùng Chrome/Edge.
+        {!lesson.audioUrl && !voiceReady && (
+          <p className="text-xs text-[#1cb0f6] font-bold text-center">
+            🔊 Sẽ dùng giọng đọc online. Bấm nút loa để nghe.
           </p>
         )}
 
