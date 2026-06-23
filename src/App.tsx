@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Toaster, toast } from 'react-hot-toast';
 import { AddFlashcard } from './components/AddFlashcard';
 import { FlashcardView } from './components/FlashcardView';
 import { QuizView } from './components/QuizView';
@@ -6,6 +7,7 @@ import { ListeningView } from './components/ListeningView';
 import { SpeakingView } from './components/SpeakingView';
 import { DictationView } from './components/DictationView';
 import { VocabQuizView } from './components/VocabQuizView';
+import { GrammarQuizView } from './components/GrammarQuizView';
 import { CollectionView } from './components/CollectionView';
 import { AnalyticsView } from './components/AnalyticsView';
 import { CreateExamView } from './components/CreateExamView';
@@ -41,6 +43,8 @@ function App() {
   const [questions, setQuestions] = useState<Question[]>(() => MOCK_QUESTIONS);
   const [n2Grammar, setN2Grammar] = useState<GrammarPoint[]>([]);
   const [n2Kanji, setN2Kanji] = useState<KanjiEntry[]>([]);
+  const [toeicGrammar, setToeicGrammar] = useState<GrammarPoint[]>([]);
+  const [isLoadingData, setIsLoadingData] = useState(true);
 
   const [sessionTasks, setSessionTasks] = useState<SessionTask[]>([]);
   const [currentTaskIndex, setCurrentTaskIndex] = useState(0);
@@ -50,21 +54,26 @@ function App() {
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
+    document.documentElement.setAttribute('data-track', activeTrack);
     document.body.style.fontFamily = "'Nunito', 'Quicksand', sans-serif";
-  }, [theme]);
+  }, [theme, activeTrack]);
 
   useEffect(() => { saveTheme(theme); }, [theme]);
   useEffect(() => { saveCards(cards); }, [cards]);
+
+
   useEffect(() => { saveProgress({ unlocked_en: unlockedEn, unlocked_ja: unlockedJa }); }, [unlockedEn, unlockedJa]);
   useEffect(() => { saveExamResults(examResults); }, [examResults]);
 
   useEffect(() => {
-    import('./data/contentLoader').then(({ loadSeedN2Grammar, loadSeedN2Kanji, loadSeedQuestions }) => {
-      loadSeedN2Grammar().then(setN2Grammar).catch(err => console.error("Failed to load grammar:", err));
-      loadSeedN2Kanji().then(setN2Kanji).catch(err => console.error("Failed to load kanji:", err));
-      loadSeedQuestions().then(loaded => {
-        setQuestions(prev => [...prev, ...loaded]);
-      }).catch(err => console.error("Failed to load questions:", err));
+    import('./data/contentLoader').then(({ loadSeedN2Grammar, loadSeedN2Kanji, loadSeedQuestions, loadSeedToeicGrammar }) => {
+      Promise.all([
+        loadSeedN2Grammar().then(setN2Grammar),
+        loadSeedN2Kanji().then(setN2Kanji),
+        loadSeedToeicGrammar().then(setToeicGrammar),
+        loadSeedQuestions().then(loaded => setQuestions(prev => [...prev, ...loaded]))
+      ]).catch(err => console.error("Failed to load initial data:", err))
+      .finally(() => setIsLoadingData(false));
     });
   }, []);
 
@@ -76,6 +85,10 @@ function App() {
 
   const handleRemoveCard = (id: string) => {
     setCards(cards.filter(c => c.id !== id));
+  };
+
+  const handleEditCard = (updatedCard: Flashcard) => {
+    setCards(cards.map(c => c.id === updatedCard.id ? updatedCard : c));
   };
 
   const startSession = (nodeIdx: number, unitDifficulty: Difficulty) => {
@@ -109,7 +122,7 @@ function App() {
     );
 
     if (newTasks.length === 0) {
-      alert("No content available for this node yet.");
+      toast.error("No content available for this node yet.");
       return;
     }
 
@@ -138,6 +151,38 @@ function App() {
   const startDrill = (type: SessionTask['type'] | 'review') => {
     if (type === 'review') { setCurrentReviewIndex(0); setMode('review'); return; }
     const cat = trackCategory(activeTrack);
+
+    if (type === 'grammar') {
+      if (n2Grammar.length === 0) {
+        toast.error("No grammar content available.");
+        return;
+      }
+      const sampled = sampleAcrossDifficulties(n2Grammar as any, 10) as GrammarPoint[];
+      const newTasks: SessionTask[] = sampled.map(point => {
+        const options = [point.pattern];
+        
+        // Distractors should ideally be of the same difficulty level
+        const sameDifficultyGrammar = n2Grammar.filter(g => g.difficulty === point.difficulty && g.pattern !== point.pattern);
+        const distractorPool = sameDifficultyGrammar.length >= 3 ? sameDifficultyGrammar : n2Grammar;
+
+        while (options.length < 4 && options.length < n2Grammar.length) {
+          const randomPattern = distractorPool[Math.floor(Math.random() * distractorPool.length)].pattern;
+          if (!options.includes(randomPattern)) {
+            options.push(randomPattern);
+          }
+        }
+        for (let i = options.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [options[i], options[j]] = [options[j], options[i]];
+        }
+        const correctIndex = options.indexOf(point.pattern);
+        return { type: 'grammar', data: { id: `grammar-${point.id}`, point, options, correctIndex } };
+      });
+      setSessionTasks(newTasks);
+      setCurrentTaskIndex(0); setIsSessionFinished(false); setMode('session');
+      return;
+    }
+
     const filtered = (type === 'vocab-quiz') ? cards.filter(c => c.language === activeTrack) :
                      (type === 'quiz') ? questions.filter(q => q.category === cat) :
                      (type === 'listening') ? MOCK_LISTENING_LESSONS.filter(l => l.category === cat) :
@@ -147,7 +192,7 @@ function App() {
     const newTasks: SessionTask[] = sampled.map(item => ({ type, data: item }) as SessionTask);
     
     if (newTasks.length === 0) {
-      alert("No content available for this practice yet.");
+      toast.error("No content available for this practice yet.");
       return;
     }
 
@@ -183,6 +228,11 @@ function App() {
     const reviewQueue = cards.filter(c => c.language === activeTrack);
     const card = reviewQueue[currentReviewIndex];
     if (!card) { setMode('path'); return; }
+    
+    // Save previous state for undo
+    const oldCard = { ...card };
+    const oldIndex = currentReviewIndex;
+
     const { repetition, interval, easiness } = calculateSM2(grade, card.repetition, card.interval, card.easiness);
     const updatedCard = {
       ...card,
@@ -195,6 +245,24 @@ function App() {
     setCards(cards.map((c) => (c.id === card.id ? updatedCard : c)));
     if (currentReviewIndex < reviewQueue.length - 1) setCurrentReviewIndex(prev => prev + 1);
     else setMode('path');
+
+    // Show Undo Toast
+    toast((t) => (
+      <div className="flex items-center gap-3">
+        <span>Card graded.</span>
+        <button
+          onClick={() => {
+            toast.dismiss(t.id);
+            setCards(currentCards => currentCards.map(c => c.id === oldCard.id ? oldCard : c));
+            setCurrentReviewIndex(oldIndex);
+            setMode('review');
+          }}
+          className="bg-[var(--bg-main)] text-[var(--blue)] px-3 py-1 rounded-md text-xs font-bold uppercase border border-[var(--border-main)] hover:bg-[var(--tint-blue)]"
+        >
+          Undo
+        </button>
+      </div>
+    ), { id: `undo-${card.id}`, duration: 4000 });
   };
 
   const nextTask = () => {
@@ -203,7 +271,7 @@ function App() {
   };
 
   const finalizeSession = () => {
-    if (mode === 'session' && sessionTasks.length > 5) {
+    if (mode === 'session' && sessionTasks.length > 0) {
        if (activeTrack === 'english') setUnlockedEn(prev => prev + 1);
        else setUnlockedJa(prev => prev + 1);
     }
@@ -239,12 +307,25 @@ function App() {
   const currentCurriculum = activeTrack === 'english' ? TOEIC_CURRICULUM : N2_CURRICULUM;
   const currentUnlocked = activeTrack === 'english' ? unlockedEn : unlockedJa;
 
+  if (isLoadingData) {
+    return (
+      <div className="min-h-screen bg-[var(--bg-main)] flex items-center justify-center flex-col gap-6">
+        <div className="w-16 h-16 border-4 border-[var(--gray-path)] border-t-[var(--blue)] rounded-full animate-spin"></div>
+        <p className="text-[var(--text-muted)] font-black uppercase tracking-widest text-sm animate-pulse">
+          Loading Data...
+        </p>
+      </div>
+    );
+  }
+
   return (
-    <div className="min-h-screen w-full bg-[var(--bg-main)] text-[var(--text-main)] flex flex-col items-center font-sans overflow-x-hidden transition-all duration-300">
+    <div className="min-h-screen bg-[var(--bg-main)] text-[var(--text-main)] flex flex-col md:flex-row font-sans selection:bg-[var(--blue)] selection:text-white transition-colors duration-300" data-track={activeTrack}>
+      <Toaster position="bottom-center" toastOptions={{ duration: 3000, style: { background: 'var(--bg-card)', color: 'var(--text-main)', border: '2px solid var(--border-main)', borderRadius: '1rem', fontWeight: 'bold' } }} />
       
       {/* Duolingo-style Sidebar */}
       <aside className="hidden lg:flex flex-col w-64 border-r-2 border-[var(--gray-path)] p-6 fixed left-0 top-0 bottom-0 bg-[var(--bg-main)] z-50">
-        <div className="mb-10 pl-2">
+        <div className="mb-10 pl-2 flex items-center gap-3">
+           <img src="/logo.png" alt="Lingomaster Logo" className="w-8 h-8 rounded-[8px] shadow-sm" />
            <h1 className="text-3xl font-black text-[var(--green)] tracking-tighter">lingo</h1>
         </div>
         
@@ -308,7 +389,7 @@ function App() {
                </button>
             </div>
             <div className="flex items-center gap-4 font-black">
-               <span className="text-[var(--gold)] flex items-center gap-1">👑 {currentUnlocked}</span>
+               <span className="text-[var(--gold)] flex items-center gap-1">{currentUnlocked}</span>
                <button onClick={toggleTheme} className="text-xl active:scale-95 transition-transform">{theme === 'light' ? '🌙' : '☀️'}</button>
             </div>
           </header>
@@ -329,7 +410,6 @@ function App() {
           {mode === 'practice' && (
             <div key="practice" className="w-full flex flex-col gap-6 view-enter">
                <div className="w-full flex flex-col gap-4 p-8 rounded-[2rem] border-2 border-[var(--gray-path)] bg-[var(--gray-bg)]">
-                  <div className="text-5xl">📝</div>
                   <div><h3 className="text-2xl font-black">Mock Exam</h3><p className="text-sm font-bold text-[var(--text-muted)]">Full test pressure</p></div>
                   <button onClick={() => startDrill('quiz')} className="btn-duo btn-blue h-14 mt-4 w-full">START TEST</button>
                </div>
@@ -337,7 +417,7 @@ function App() {
                {/* Authentic Exams Section */}
                <div className="w-full flex flex-col gap-4 mt-2">
                  <div className="px-2">
-                   <h3 className="text-2xl font-black text-[var(--gold)] flex items-center gap-2">🏆 Authentic Full Tests</h3>
+                   <h3 className="text-2xl font-black text-[var(--gold)] flex items-center gap-2">Authentic Full Tests</h3>
                    <p className="text-sm font-bold text-[var(--text-muted)] mt-1">Real exam structure, sections, and 120-minute timer.</p>
                  </div>
                  {AUTHENTIC_EXAMS.filter(exam => exam.category === trackCategory(activeTrack)).map(exam => (
@@ -356,7 +436,7 @@ function App() {
                {/* Create Exam Button */}
                <div className="w-full mt-4">
                  <button onClick={() => setMode('create-exam')} className="w-full btn-duo btn-purple h-14 text-base">
-                   ✨ Create Your Own Exam
+                   Create Your Own Exam
                  </button>
                </div>
                
@@ -387,36 +467,43 @@ function App() {
                
                <div className="grid grid-cols-2 gap-6 w-full mt-6">
                  <div className="flex flex-col gap-4 p-6 rounded-[2rem] border-2 border-[var(--gray-path)] bg-[var(--gray-bg)]">
-                    <div className="text-4xl">🧩</div>
                     <h4 className="font-black text-lg">Vocab</h4>
                     <button onClick={() => startDrill('vocab-quiz')} className="btn-duo btn-green h-12 w-full text-xs">PRACTICE</button>
                  </div>
+                 
+                 {activeTrack === 'japanese' && (
+                    <div className="bg-[var(--bg-card)] border-2 border-[var(--border-main)] rounded-2xl p-6 flex flex-col items-center text-center gap-2 hover:border-[var(--purple)] transition-colors">
+                      <div className="w-16 h-16 bg-[var(--tint-blue)] rounded-full flex items-center justify-center text-[var(--purple)] mb-2 shadow-sm border-2 border-[var(--purple)]/20">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg>
+                      </div>
+                      <h4 className="font-black text-lg">GRAMMAR</h4>
+                      <p className="text-xs font-bold text-[var(--text-muted)] mb-4">Fill in blanks</p>
+                      <button onClick={() => startDrill('grammar')} className="btn-duo btn-purple h-12 w-full text-xs">PRACTICE</button>
+                    </div>
+                  )}
+
                  <div className="flex flex-col gap-4 p-6 rounded-[2rem] border-2 border-[var(--gray-path)] bg-[var(--gray-bg)]">
-                    <div className="text-4xl">⌨️</div>
                     <h4 className="font-black text-lg">Listen</h4>
                     <button onClick={() => startDrill('dictation')} className="btn-duo btn-purple h-12 w-full text-xs">PRACTICE</button>
                  </div>
                </div>
 
-               {/* Quick access to Library / Stats / Review (mobile-friendly entry points) */}
                <div className="grid grid-cols-3 gap-4 w-full mt-8">
-                 <button onClick={() => setMode('collection')} className="flex flex-col items-center gap-2 p-5 rounded-[1.5rem] border-2 border-[var(--gray-path)] bg-[var(--gray-bg)] hover:border-[var(--blue)] transition-colors">
-                    <span className="text-3xl">📚</span>
-                    <span className="text-[10px] font-black uppercase tracking-wider text-[var(--text-main)]">Library</span>
+                 <button onClick={() => setMode('collection')} className="flex flex-col items-center justify-center gap-2 p-5 rounded-[1.5rem] border-2 border-[var(--gray-path)] bg-[var(--gray-bg)] hover:border-[var(--blue)] transition-colors h-24">
+                    <span className="text-xs font-black uppercase tracking-wider text-[var(--text-main)]">Library</span>
                  </button>
-                 <button onClick={() => setMode('analytics')} className="flex flex-col items-center gap-2 p-5 rounded-[1.5rem] border-2 border-[var(--gray-path)] bg-[var(--gray-bg)] hover:border-[var(--blue)] transition-colors">
-                    <span className="text-3xl">📊</span>
-                    <span className="text-[10px] font-black uppercase tracking-wider text-[var(--text-main)]">Stats</span>
+                 <button onClick={() => setMode('analytics')} className="flex flex-col items-center justify-center gap-2 p-5 rounded-[1.5rem] border-2 border-[var(--gray-path)] bg-[var(--gray-bg)] hover:border-[var(--blue)] transition-colors h-24">
+                    <span className="text-xs font-black uppercase tracking-wider text-[var(--text-main)]">Stats</span>
                  </button>
-                 <button onClick={() => startDrill('review')} className="flex flex-col items-center gap-2 p-5 rounded-[1.5rem] border-2 border-[var(--gray-path)] bg-[var(--gray-bg)] hover:border-[var(--blue)] transition-colors">
-                    <span className="text-3xl">🔁</span>
-                    <span className="text-[10px] font-black uppercase tracking-wider text-[var(--text-main)]">Review</span>
+                 <button onClick={() => startDrill('review')} className="flex flex-col items-center justify-center gap-2 p-5 rounded-[1.5rem] border-2 border-[var(--gray-path)] bg-[var(--gray-bg)] hover:border-[var(--blue)] transition-colors h-24">
+                    <span className="text-xs font-black uppercase tracking-wider text-[var(--text-main)]">Review</span>
                  </button>
                </div>
             </div>
           )}
 
-          {/* Keep session logic similar but use duo-buttons */}
           {mode === 'session' && (
             <div className="w-full flex flex-col items-center animate-in fade-in duration-300 pt-10">
                <div className="w-full flex items-center gap-4 mb-10 px-4">
@@ -428,6 +515,7 @@ function App() {
                {!isSessionFinished ? (
                   <div key={currentTaskIndex} className="w-full flex flex-col items-center view-enter">
                     {sessionTasks[currentTaskIndex].type === 'vocab-quiz' && <VocabQuizView word={sessionTasks[currentTaskIndex].data as Flashcard} allCards={cards} onComplete={() => nextTask()} />}
+                    {sessionTasks[currentTaskIndex].type === 'grammar' && <GrammarQuizView task={sessionTasks[currentTaskIndex].data as any} onComplete={() => nextTask()} onCancel={finalizeSession} />}
                     {sessionTasks[currentTaskIndex].type === 'quiz' && <QuizView questions={[sessionTasks[currentTaskIndex].data as Question]} category={trackCategory(activeTrack)} onComplete={handleSessionQuizComplete} onCancel={() => setMode('path')} hideSummary={true} />}
                     {sessionTasks[currentTaskIndex].type === 'listening' && <ListeningView lesson={sessionTasks[currentTaskIndex].data as ListeningLesson} onBack={() => nextTask()} hideBackButton={true} />}
                     {sessionTasks[currentTaskIndex].type === 'speaking' && <SpeakingView lesson={sessionTasks[currentTaskIndex].data as SpeakingLesson} onComplete={() => nextTask()} />}
@@ -451,8 +539,8 @@ function App() {
 
           {/* Management modes mapping */}
           {mode === 'add' && <div key="add" className="w-full mt-10 view-enter"><AddFlashcard onAdd={handleAddCard} /></div>}
-          {mode === 'notebook' && <NotebookView activeTrack={activeTrack} n2Grammar={n2Grammar} n2Kanji={n2Kanji} />}
-          {mode === 'collection' && <CollectionView cards={cards} activeTrack={activeTrack} onDelete={handleRemoveCard} />}
+          {mode === 'notebook' && <NotebookView activeTrack={activeTrack} n2Grammar={n2Grammar} n2Kanji={n2Kanji} toeicGrammar={toeicGrammar} />}
+          {mode === 'collection' && <CollectionView cards={cards} activeTrack={activeTrack} onDelete={handleRemoveCard} onEdit={handleEditCard} />}
           {mode === 'analytics' && <AnalyticsView results={examResults} activeTrack={activeTrack} />}
           {mode === 'review' && (() => {
             const reviewQueue = cards.filter(c => c.language === activeTrack);
@@ -460,7 +548,6 @@ function App() {
             if (!card) {
               return (
                 <div className="w-full max-w-xl mt-10 lingo-card p-10 text-center space-y-4 view-enter">
-                  <div className="text-5xl">📭</div>
                   <h2 className="text-2xl font-black text-[var(--text-main)]">Nothing to review</h2>
                   <p className="text-sm font-bold text-[var(--text-muted)]">
                     Add words first, or come back after building up your collection.
@@ -492,6 +579,15 @@ function App() {
                 onCancel={() => setMode('practice')}
                 onComplete={(score, total) => {
                   alert(`You scored ${score} out of ${total}!`);
+                  recordExamResult({
+                    id: crypto.randomUUID(),
+                    date: new Date().toISOString(),
+                    score,
+                    totalQuestions: total,
+                    category: currentAuthenticExam.category,
+                    difficulty: currentAuthenticExam.difficulty,
+                    type: 'full-exam'
+                  });
                   setMode('practice');
                 }}
               />
@@ -510,7 +606,7 @@ function App() {
           className={`flex flex-col items-center justify-center flex-1 h-full py-1 transition-all active:scale-95 relative ${mode === 'path' ? 'text-[var(--blue)]' : 'text-[var(--text-muted)]'}`}
         >
           <div className={`p-2 rounded-xl transition-all ${mode === 'path' ? 'bg-[var(--tint-blue)]' : 'bg-transparent'}`}>
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="1.75" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
             </svg>
           </div>
@@ -524,7 +620,7 @@ function App() {
           className={`flex flex-col items-center justify-center flex-1 h-full py-1 transition-all active:scale-95 relative ${mode === 'review' ? 'text-[var(--blue)]' : 'text-[var(--text-muted)]'}`}
         >
           <div className={`p-2 rounded-xl transition-all ${mode === 'review' ? 'bg-[var(--tint-blue)]' : 'bg-transparent'}`}>
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="1.75" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
             </svg>
           </div>
@@ -538,25 +634,11 @@ function App() {
           className={`flex flex-col items-center justify-center flex-1 h-full py-1 transition-all active:scale-95 relative ${mode === 'practice' ? 'text-[var(--blue)]' : 'text-[var(--text-muted)]'}`}
         >
           <div className={`p-2 rounded-xl transition-all ${mode === 'practice' ? 'bg-[var(--tint-blue)]' : 'bg-transparent'}`}>
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="1.75" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" d="M19 12H5M3 10v4M21 10v4M6 8h2v8H6zm10 0h2v8h-2z" />
             </svg>
           </div>
           <span className="text-[10px] font-black uppercase tracking-wider mt-1">Practice</span>
-        </button>
-
-        <button 
-          onClick={() => setMode('add')} 
-          aria-label="Add words" 
-          aria-current={mode === 'add'} 
-          className={`flex flex-col items-center justify-center flex-1 h-full py-1 transition-all active:scale-95 relative ${mode === 'add' ? 'text-[var(--blue)]' : 'text-[var(--text-muted)]'}`}
-        >
-          <div className={`p-2 rounded-xl transition-all ${mode === 'add' ? 'bg-[var(--tint-blue)]' : 'bg-transparent'}`}>
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-            </svg>
-          </div>
-          <span className="text-[10px] font-black uppercase tracking-wider mt-1">Add</span>
         </button>
 
         <button 
@@ -566,7 +648,7 @@ function App() {
           className={`flex flex-col items-center justify-center flex-1 h-full py-1 transition-all active:scale-95 relative ${mode === 'notebook' ? 'text-[var(--blue)]' : 'text-[var(--text-muted)]'}`}
         >
           <div className={`p-2 rounded-xl transition-all ${mode === 'notebook' ? 'bg-[var(--tint-blue)]' : 'bg-transparent'}`}>
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="1.75" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18c-2.305 0-4.408.867-6 2.292m0-14.25v14.25" />
             </svg>
           </div>

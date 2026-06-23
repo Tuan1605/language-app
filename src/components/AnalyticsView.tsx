@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import type { ExamResult } from '../types';
 
 interface AnalyticsViewProps {
@@ -6,7 +7,10 @@ interface AnalyticsViewProps {
 }
 
 export function AnalyticsView({ results, activeTrack }: AnalyticsViewProps) {
-  const filtered = results.filter(r => (activeTrack === 'english' ? r.category === 'toeic' : r.category === 'n2'));
+  const [filterType, setFilterType] = useState<'all' | 'full-exam' | 'mini-quiz'>('all');
+
+  const filteredByLanguage = results.filter(r => (activeTrack === 'english' ? r.category === 'toeic' : r.category === 'n2'));
+  const filtered = filteredByLanguage.filter(r => filterType === 'all' || r.type === filterType);
   
   const avgScore = filtered.length > 0 
     ? Math.round((filtered.reduce((acc, curr) => acc + (curr.score / curr.totalQuestions), 0) / filtered.length) * 100)
@@ -21,19 +25,41 @@ export function AnalyticsView({ results, activeTrack }: AnalyticsViewProps) {
         </p>
       </div>
 
+      {/* Filter Tabs */}
+      <div className="flex flex-wrap gap-3 mb-8 border-b-2 border-[var(--border-main)] pb-4">
+        <button 
+          onClick={() => setFilterType('all')}
+          className={`px-4 py-2 rounded-xl text-xs font-black uppercase tracking-wider transition-all ${filterType === 'all' ? 'bg-[var(--text-main)] text-[var(--bg-main)]' : 'bg-[var(--bg-hover)] text-[var(--text-muted)] hover:bg-[var(--border-main)]'}`}
+        >
+          All Exams
+        </button>
+        <button 
+          onClick={() => setFilterType('full-exam')}
+          className={`px-4 py-2 rounded-xl text-xs font-black uppercase tracking-wider transition-all ${filterType === 'full-exam' ? 'bg-[var(--blue)] text-white' : 'bg-[var(--bg-hover)] text-[var(--text-muted)] hover:bg-[var(--border-main)]'}`}
+        >
+          Full Tests
+        </button>
+        <button 
+          onClick={() => setFilterType('mini-quiz')}
+          className={`px-4 py-2 rounded-xl text-xs font-black uppercase tracking-wider transition-all ${filterType === 'mini-quiz' ? 'bg-[var(--green)] text-white' : 'bg-[var(--bg-hover)] text-[var(--text-muted)] hover:bg-[var(--border-main)]'}`}
+        >
+          Mini Quizzes
+        </button>
+      </div>
+
       {/* Summary Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-        <div className="p-8 bg-[var(--tint-green)] border-2 border-[#58cc02] rounded-[2rem] text-center">
-          <p className="text-[10px] font-black text-[#58cc02] uppercase mb-2">Total Quests</p>
-          <p className="text-5xl font-black text-[#58cc02]">{filtered.length}</p>
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 mb-12">
+        <div className="p-6 bg-[var(--tint-green)] border-2 border-[var(--green)] rounded-[1.5rem] md:rounded-[2rem] text-center flex flex-col justify-center">
+          <p className="text-[10px] md:text-xs font-black text-[var(--green)] uppercase opacity-80 mb-2 tracking-wider">Total Completed</p>
+          <p className="text-4xl md:text-5xl font-black text-[var(--green)]">{filtered.length}</p>
         </div>
-        <div className="p-8 bg-[var(--tint-blue)] border-2 border-[#1cb0f6] rounded-[2rem] text-center">
-          <p className="text-[10px] font-black text-[#1cb0f6] uppercase mb-2">Avg Accuracy</p>
-          <p className="text-5xl font-black text-[#1cb0f6]">{avgScore}%</p>
+        <div className="p-6 bg-[var(--tint-blue)] border-2 border-[var(--blue)] rounded-[1.5rem] md:rounded-[2rem] text-center flex flex-col justify-center">
+          <p className="text-[10px] md:text-xs font-black text-[var(--blue)] uppercase opacity-80 mb-2 tracking-wider">Avg Accuracy</p>
+          <p className="text-4xl md:text-5xl font-black text-[var(--blue)]">{avgScore}%</p>
         </div>
-        <div className="p-8 bg-[var(--tint-red)] border-2 border-[#ff4b4b] rounded-[2rem] text-center">
-          <p className="text-[10px] font-black text-[#ff4b4b] uppercase mb-2">Mastery Rank</p>
-          <p className="text-2xl font-black text-[#ff4b4b] mt-3">
+        <div className="p-6 bg-[var(--tint-red)] border-2 border-[var(--red)] rounded-[1.5rem] md:rounded-[2rem] text-center flex flex-col justify-center overflow-hidden">
+          <p className="text-[10px] md:text-xs font-black text-[var(--red)] uppercase opacity-80 mb-2 tracking-wider">Mastery Rank</p>
+          <p className="text-lg sm:text-xl md:text-2xl font-black text-[var(--red)] mt-2 break-words leading-tight">
             {avgScore >= 80 ? 'EXPERT' : avgScore >= 50 ? 'WARRIOR' : 'BEGINNER'}
           </p>
         </div>
@@ -47,17 +73,22 @@ export function AnalyticsView({ results, activeTrack }: AnalyticsViewProps) {
             filtered.map((res) => (
               <div key={res.id} className="p-5 bg-[var(--bg-hover)] border-2 border-[var(--border-main)] rounded-2xl flex justify-between items-center">
                 <div className="flex items-center gap-4">
-                  <div className={`w-12 h-12 rounded-xl flex items-center justify-center text-white font-black shadow-lg ${res.category === 'toeic' ? 'bg-[#1cb0f6]' : 'bg-[#ff4b4b]'}`}>
-                    {res.category.toUpperCase().charAt(0)}
+                  <div className={`w-12 h-12 rounded-xl flex items-center justify-center text-white font-black shadow-lg ${res.type === 'full-exam' ? 'bg-[var(--blue)]' : 'bg-[var(--green)]'}`}>
+                    {res.type === 'full-exam' ? 'F' : 'M'}
                   </div>
                   <div>
-                    <p className="font-black text-[var(--text-main)] uppercase text-xs">{res.difficulty} EXAM</p>
+                    <div className="flex items-center gap-2 mb-1">
+                      <p className="font-black text-[var(--text-main)] uppercase text-xs">{res.difficulty} EXAM</p>
+                      <span className={`px-2 py-0.5 rounded text-[8px] font-black uppercase ${res.type === 'full-exam' ? 'bg-[var(--tint-blue)] text-[var(--blue)]' : 'bg-[var(--tint-green)] text-[var(--green-shadow)]'}`}>
+                        {res.type === 'full-exam' ? 'FULL TEST' : res.type === 'mini-quiz' ? 'MINI QUIZ' : 'LEGACY'}
+                      </span>
+                    </div>
                     <p className="text-[10px] font-bold text-[var(--text-muted)]">{new Date(res.date).toLocaleDateString()} at {new Date(res.date).toLocaleTimeString()}</p>
                   </div>
                 </div>
                 <div className="text-right">
                    <p className="text-2xl font-black text-[var(--text-main)] leading-none">{res.score}/{res.totalQuestions}</p>
-                   <p className={`text-[9px] font-black uppercase mt-1 ${res.score / res.totalQuestions >= 0.8 ? 'text-[#58cc02]' : 'text-[#ff9600]'}`}>
+                   <p className={`text-[9px] font-black uppercase mt-1 ${res.score / res.totalQuestions >= 0.8 ? 'text-[var(--green)]' : 'text-[var(--gold)]'}`}>
                       {res.score / res.totalQuestions >= 0.8 ? 'Excellent' : 'Completed'}
                    </p>
                 </div>
@@ -65,7 +96,7 @@ export function AnalyticsView({ results, activeTrack }: AnalyticsViewProps) {
             ))
           ) : (
             <div className="py-12 text-center border-2 border-dashed border-[var(--border-main)] rounded-2xl">
-               <p className="font-bold text-[var(--text-muted)]">No exam data available yet.</p>
+               <p className="font-bold text-[var(--text-muted)]">No exam data available for this filter.</p>
             </div>
           )}
         </div>

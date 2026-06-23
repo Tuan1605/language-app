@@ -2,6 +2,8 @@ import { useState, useRef, useEffect } from 'react';
 import type { DictationLesson } from '../types';
 import { speak, langForCategory, hasVoiceFor } from '../utils/tts';
 import { calculateSimilarity } from '../utils/stringSimilarity';
+import { playCorrectSound } from '../utils/sound';
+import { Volume2, RefreshCw } from 'lucide-react';
 
 interface DictationViewProps {
   lesson: DictationLesson;
@@ -42,6 +44,7 @@ export function DictationView({ lesson, onComplete }: DictationViewProps) {
     setAccuracy(acc);
 
     if (acc >= 85) {
+      playCorrectSound();
       setFeedback('success');
       setIsFinished(true);
       // Don't call onComplete here — let handleContinue be the single exit
@@ -63,7 +66,7 @@ export function DictationView({ lesson, onComplete }: DictationViewProps) {
     <div className="bg-[var(--bg-card)] lingo-card p-10 max-w-2xl mx-auto w-full animate-in slide-in-from-bottom-8 duration-500 flex flex-col items-center">
       <div className="w-full flex justify-between items-center mb-10">
         <div className="flex items-center gap-3">
-          <div className={`w-3 h-3 rounded-full ${lesson.category === 'toeic' ? 'bg-[#1cb0f6]' : 'bg-[#ff4b4b]'}`}></div>
+          <div className={`w-3 h-3 rounded-full ${lesson.category === 'toeic' ? 'bg-[var(--blue)]' : 'bg-[var(--red)]'}`}></div>
           <span className="text-[10px] font-black text-[var(--text-muted)] uppercase tracking-[0.2em]">Dictation Mastery</span>
         </div>
         <div className="bg-[var(--bg-hover)] px-4 py-1.5 rounded-xl text-[9px] font-black text-[var(--text-muted)] uppercase tracking-widest border-2 border-[var(--border-main)]">
@@ -76,9 +79,15 @@ export function DictationView({ lesson, onComplete }: DictationViewProps) {
           Type exactly what you hear
         </h3>
         {feedback === 'retry' && (
-          <p className="text-sm font-bold text-[#ff4b4b] italic animate-in fade-in duration-500">
-            Hint: "{lesson.translation}"
-          </p>
+          <div className="space-y-2 animate-in fade-in duration-500">
+            <p className="text-sm font-bold text-[var(--red)] italic">
+              Hint: "{lesson.translation}"
+            </p>
+            <div className="p-4 bg-[var(--tint-red)] border-2 border-[var(--red)] rounded-xl inline-block text-left">
+              <p className="text-[10px] font-black text-[var(--red)] uppercase tracking-widest mb-1">Correct Answer:</p>
+              <p className="font-bold text-[var(--text-main)]">{lesson.targetText}</p>
+            </div>
+          </div>
         )}
       </div>
 
@@ -91,13 +100,13 @@ export function DictationView({ lesson, onComplete }: DictationViewProps) {
             className="w-24 h-24 rounded-full btn-3d btn-purple text-4xl shadow-xl flex items-center justify-center p-0"
             aria-label="Play audio"
           >
-            🔊
+            <Volume2 size={40} />
           </button>
         </div>
 
         {!lesson.audioUrl && !voiceReady && (
-          <p className="text-xs text-[#1cb0f6] font-bold text-center">
-            🔊 Sẽ dùng giọng đọc online. Bấm nút loa để nghe.
+          <p className="text-xs text-[var(--blue)] font-bold text-center flex items-center justify-center gap-2">
+            <Volume2 size={16} /> Sẽ dùng giọng đọc online. Bấm nút loa để nghe.
           </p>
         )}
 
@@ -106,7 +115,7 @@ export function DictationView({ lesson, onComplete }: DictationViewProps) {
           onChange={(e) => setUserInput(e.target.value)}
           disabled={isFinished}
           placeholder="Start typing here..."
-          className="w-full bg-[var(--bg-hover)] border-2 border-[var(--border-main)] rounded-2xl p-6 text-xl font-bold focus:border-[#1cb0f6] focus:bg-[var(--bg-card)] transition-all outline-none placeholder:text-[var(--text-muted)] resize-none h-32 text-[var(--text-main)]"
+          className="w-full bg-[var(--bg-hover)] border-2 border-[var(--border-main)] rounded-2xl p-6 text-xl font-bold focus:border-[var(--blue)] focus:bg-[var(--bg-card)] transition-all outline-none placeholder:text-[var(--text-muted)] resize-none h-32 text-[var(--text-main)]"
         />
 
         <div className="flex flex-col items-center gap-6">
@@ -128,14 +137,16 @@ export function DictationView({ lesson, onComplete }: DictationViewProps) {
           )}
 
           {feedback === 'retry' && (
-            <div className="w-full p-4 bg-[var(--tint-red)] border-2 border-[#ff4b4b] rounded-2xl animate-in shake duration-300">
-               <p className="text-center text-[#ff4b4b] font-black text-sm uppercase">Accuracy: {accuracy}% - Not quite right! Listen again. 🔄</p>
+            <div className="w-full p-4 bg-[var(--tint-red)] border-2 border-[var(--red)] rounded-2xl animate-in shake duration-300">
+               <p className="text-center text-[var(--red)] font-black text-sm uppercase flex items-center justify-center gap-2">
+                 Accuracy: {accuracy}% - Not quite right! Listen again. <RefreshCw size={14} />
+               </p>
             </div>
           )}
 
           {isFinished && (
-            <div className="w-full p-6 bg-[var(--tint-green)] border-2 border-[#58cc02] rounded-2xl text-center space-y-2 animate-in zoom-in-95 duration-500">
-               <p className="text-[#58cc02] font-black uppercase text-xs tracking-widest">Excellent Work!</p>
+            <div className="w-full p-6 bg-[var(--tint-green)] border-2 border-[var(--green)] rounded-2xl text-center space-y-2 animate-in zoom-in-95 duration-500">
+               <p className="text-[var(--green)] font-black uppercase text-xs tracking-widest">Excellent Work!</p>
                <p className="text-xl font-bold text-[var(--text-main)] leading-tight">"{lesson.targetText}"</p>
             </div>
           )}

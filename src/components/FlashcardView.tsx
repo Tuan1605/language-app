@@ -1,6 +1,10 @@
 import { useState, useEffect } from 'react';
 import type { Flashcard, ReviewGrade } from '../types';
+import { Volume2 } from 'lucide-react';
 import { speak, langForCategory, hasVoiceFor } from '../utils/tts';
+
+/** Strip HTML tags that may come from Anki-imported data (e.g. grammar-anki.json). */
+const stripHtml = (s: string) => s.replace(/<[^>]*>/g, '').replace(/&nbsp;/g, ' ').trim();
 
 interface FlashcardViewProps {
   card: Flashcard;
@@ -52,80 +56,85 @@ export function FlashcardView({ card, onRate }: FlashcardViewProps) {
         onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') setIsFlipped(!isFlipped); }}
       >
         {/* Front Side */}
-        <div className="absolute inset-0 w-full h-full lingo-card flex flex-col items-center justify-center text-center backface-hidden bg-[var(--bg-card)]">
-          <span className="absolute top-6 text-[10px] font-black text-[#1cb0f6] uppercase tracking-[0.2em] bg-[var(--tint-blue)] px-4 py-1.5 rounded-full z-10">
-            Question
-          </span>
-          
-          <button
-            onClick={(e) => {
-              e.stopPropagation();
-              speakText(card.word);
-            }}
-            disabled={isSpeaking}
-            className="absolute top-5 right-6 w-10 h-10 rounded-xl bg-[var(--gray-bg)] flex items-center justify-center text-xl hover:bg-[var(--blue-light)] hover:text-[var(--blue)] transition-colors border-2 border-[var(--gray-path)] active:translate-y-1 disabled:opacity-60"
-          >
-            <span className={isSpeaking ? 'animate-pulse' : ''}>🔊</span>
-          </button>
+        <div className="absolute inset-0 w-full h-full backface-hidden">
+          <div className="w-full h-full lingo-card flex flex-col items-center justify-center text-center bg-[var(--bg-card)] relative">
+            <span className="absolute top-6 text-[10px] font-black text-[var(--blue)] uppercase tracking-[0.2em] bg-[var(--tint-blue)] px-4 py-1.5 rounded-full">
+              Question
+            </span>
+            
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                speakText(card.word);
+              }}
+              disabled={isSpeaking}
+              className="absolute top-5 right-6 w-10 h-10 rounded-xl bg-[var(--gray-bg)] flex items-center justify-center text-xl hover:bg-[var(--blue-light)] hover:text-[var(--blue)] transition-colors border-2 border-[var(--gray-path)] active:translate-y-1 disabled:opacity-60"
+            >
+              <Volume2 size={24} className={isSpeaking ? 'animate-pulse' : ''} />
+            </button>
 
-          {card.imageUrl ? (
-            <div className="flex flex-col items-center gap-4 w-full px-6">
-              <div className="w-full h-40 rounded-2xl overflow-hidden border-2 border-[var(--border-main)] shadow-inner">
-                <img src={card.imageUrl} alt={card.word} className="w-full h-full object-cover" />
+            {card.imageUrl ? (
+              <div className="flex flex-col items-center gap-4 w-full px-6">
+                <div className="w-full h-40 rounded-2xl overflow-hidden border-2 border-[var(--border-main)] shadow-inner">
+                  <img src={card.imageUrl} alt={card.word} className="w-full h-full object-cover" />
+                </div>
+                <h2 className="text-3xl font-black text-[var(--text-main)] leading-tight break-words">
+                  {card.word}
+                </h2>
               </div>
-              <h2 className="text-3xl font-black text-[var(--text-main)] leading-tight break-words">
+            ) : (
+              <h2 className="text-4xl font-black text-[var(--text-main)] leading-tight px-6 break-words">
                 {card.word}
               </h2>
+            )}
+            <div className="absolute bottom-6 flex items-center gap-2 text-[var(--text-muted)] font-black text-[10px] uppercase tracking-widest">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+              </svg>
+              Tap to see meaning
             </div>
-          ) : (
-            <h2 className="text-4xl font-black text-[var(--text-main)] leading-tight px-6 break-words">
-              {card.word}
-            </h2>
-          )}
-          <div className="absolute bottom-6 flex items-center gap-2 text-[var(--text-muted)] font-black text-[10px] uppercase tracking-widest animate-pulse">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
-            </svg>
-            Tap to see meaning
           </div>
         </div>
 
         {/* Back Side */}
-        <div className="absolute inset-0 w-full h-full lingo-card bg-[#1cb0f6] border-[#1899d6] flex flex-col items-center justify-center text-center backface-hidden rotate-y-180 text-white">
-          <span className="absolute top-6 text-[10px] font-black text-white/50 uppercase tracking-[0.2em] bg-white/20 px-4 py-1.5 rounded-full">
-            Meaning
-          </span>
+        <div className="absolute inset-0 w-full h-full backface-hidden rotate-y-180">
+          <div className="w-full h-full lingo-card bg-[var(--blue)] border-[#1899d6] flex flex-col items-center justify-center text-center text-white relative">
+            <span className="absolute top-6 text-[10px] font-black text-white/50 uppercase tracking-[0.2em] bg-white/20 px-4 py-1.5 rounded-full">
+              Meaning
+            </span>
 
-          <button
-            onClick={(e) => {
-              e.stopPropagation();
-              speakText(card.definition);
-            }}
-            disabled={isSpeaking}
-            className="absolute top-5 right-6 w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center text-xl hover:bg-white/40 transition-colors border-2 border-white/30 active:translate-y-1 disabled:opacity-60"
-          >
-            <span className={isSpeaking ? 'animate-pulse' : ''}>🔊</span>
-          </button>
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                speakText(card.definition);
+              }}
+              disabled={isSpeaking}
+              className="absolute top-5 right-6 w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center text-xl hover:bg-white/40 transition-colors border-2 border-white/30 active:translate-y-1 disabled:opacity-60"
+            >
+              <Volume2 size={24} className={isSpeaking ? 'animate-pulse' : ''} />
+            </button>
 
-          <div className="space-y-6 px-6">
-            <p className="text-3xl font-black leading-tight">{card.definition}</p>
-            {card.example && (
-              <div className="bg-white/10 p-4 rounded-xl border-2 border-white/20 backdrop-blur-sm relative">
-                <p className="text-xs font-bold italic text-white/90">
-                  "{card.example}"
-                </p>
-                <button
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    speakText(card.example!);
-                  }}
-                  disabled={isSpeaking}
-                  className="mt-2 text-[10px] bg-white/10 px-2 py-1 rounded-md hover:bg-white/20 disabled:opacity-60"
-                >
-                  {isSpeaking ? '🔊 Đang phát…' : '🔊 Read Example'}
-                </button>
-              </div>
-            )}
+            <div className="space-y-6 px-6">
+              <p className="text-3xl font-black leading-tight">{stripHtml(card.definition)}</p>
+              {card.example && (
+                <div className="bg-white/10 p-4 rounded-xl border-2 border-white/20 backdrop-blur-sm relative">
+                  <p className="text-xs font-bold italic text-white/90">
+                    "{stripHtml(card.example)}"
+                  </p>
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      speakText(card.example!);
+                    }}
+                    disabled={isSpeaking}
+                    className="mt-2 text-[10px] bg-white/10 px-2 py-1 rounded-md hover:bg-white/20 disabled:opacity-60 flex items-center justify-center gap-1"
+                  >
+                    <Volume2 size={12} className={isSpeaking ? 'animate-pulse' : ''} />
+                    {isSpeaking ? 'Đang phát…' : 'Read Example'}
+                  </button>
+                </div>
+              )}
+            </div>
           </div>
         </div>
       </div>
@@ -171,8 +180,8 @@ export function FlashcardView({ card, onRate }: FlashcardViewProps) {
       </div>
 
       {!voiceReady && (
-        <p className="text-xs text-[#1cb0f6] font-bold text-center">
-          🔊 Bấm nút loa để nghe phát âm online.
+        <p className="text-xs text-[var(--blue)] font-bold text-center flex items-center justify-center gap-2">
+          <Volume2 size={16} /> Bấm nút loa để nghe phát âm online.
         </p>
       )}
     </div>

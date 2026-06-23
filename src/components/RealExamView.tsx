@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import type { AuthenticExam } from '../types';
 
+
 interface RealExamViewProps {
   exam: AuthenticExam;
   onCancel: () => void;
@@ -14,7 +15,28 @@ export function RealExamView({ exam, onCancel, onComplete }: RealExamViewProps) 
   const [isFinished, setIsFinished] = useState(false);
 
   useEffect(() => {
-    if (isFinished) return;
+    const saved = localStorage.getItem('real_exam_backup');
+    if (saved) {
+      try {
+        const parsed = JSON.parse(saved);
+        if (parsed.examId === exam.id) {
+          if (window.confirm("Bạn có bài thi đang làm dở. Bạn có muốn tiếp tục không?")) {
+            setTimeLeft(parsed.timeLeft);
+            setAnswers(parsed.answers);
+            setCurrentSectionIndex(parsed.currentSectionIndex || 0);
+          } else {
+            localStorage.removeItem('real_exam_backup');
+          }
+        }
+      } catch (e) {}
+    }
+  }, [exam.id]);
+
+  useEffect(() => {
+    if (isFinished) {
+      localStorage.removeItem('real_exam_backup');
+      return;
+    }
     
     const timer = setInterval(() => {
       setTimeLeft(prev => {
@@ -29,6 +51,17 @@ export function RealExamView({ exam, onCancel, onComplete }: RealExamViewProps) 
 
     return () => clearInterval(timer);
   }, [isFinished]);
+
+  useEffect(() => {
+    if (!isFinished) {
+      localStorage.setItem('real_exam_backup', JSON.stringify({
+        examId: exam.id,
+        timeLeft,
+        answers,
+        currentSectionIndex
+      }));
+    }
+  }, [exam.id, timeLeft, answers, currentSectionIndex, isFinished]);
 
   const handleSelectAnswer = (questionId: string, optionIndex: number) => {
     if (isFinished) return;
@@ -80,11 +113,34 @@ export function RealExamView({ exam, onCancel, onComplete }: RealExamViewProps) 
     const percentage = Math.round((correct / total) * 100);
 
     return (
-      <div className="w-full max-w-2xl mx-auto flex flex-col items-center p-8 space-y-6 view-enter">
-        <h2 className="text-3xl font-black text-[var(--text-main)]">Exam Finished!</h2>
-        <div className="text-[100px]">🏆</div>
-        <div className="text-xl font-bold">Your Score: {correct} / {total} ({percentage}%)</div>
-        <button onClick={handleSubmit} className="btn-duo btn-green w-full h-14 mt-4">
+      <div className="w-full h-[85vh] max-w-2xl mx-auto flex flex-col items-center bg-white rounded-2xl border-2 border-[var(--gray-path)] p-8 shadow-xl view-enter overflow-y-auto">
+        <h2 className="text-3xl font-black text-[var(--text-main)] mb-2">Exam Complete!</h2>
+        <div className="text-[80px] mb-4">🏆</div>
+        <div className="text-2xl font-black text-[var(--blue)] mb-8">Overall Score: {correct} / {total} ({percentage}%)</div>
+        
+        <div className="w-full space-y-3 mb-8">
+          <h3 className="text-lg font-black text-[var(--text-muted)] uppercase tracking-wider mb-4">Section Breakdown</h3>
+          {exam.sections.map(sec => {
+            let secCorrect = 0;
+            let secTotal = 0;
+            sec.questions.forEach(q => {
+              secTotal++;
+              if (answers[q.id] === q.correctAnswer) secCorrect++;
+            });
+            const secPct = secTotal > 0 ? Math.round((secCorrect / secTotal) * 100) : 0;
+            return (
+              <div key={sec.id} className="flex items-center justify-between p-4 bg-[var(--gray-bg)] rounded-xl border border-[var(--gray-path)]">
+                <span className="font-bold text-[var(--text-main)] flex-1">{sec.title}</span>
+                <span className="font-black text-[var(--text-main)] min-w-[80px] text-right">{secCorrect}/{secTotal}</span>
+                <span className={`font-black min-w-[60px] text-right ${secPct >= 80 ? 'text-[var(--green)]' : secPct >= 50 ? 'text-[var(--gold)]' : 'text-[var(--red)]'}`}>
+                  {secPct}%
+                </span>
+              </div>
+            );
+          })}
+        </div>
+
+        <button onClick={handleSubmit} className="btn-duo btn-green w-full h-14 mt-auto shrink-0">
           CONTINUE
         </button>
       </div>

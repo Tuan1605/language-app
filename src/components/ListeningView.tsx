@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
 import type { ListeningLesson } from '../types';
 import { speak, stopSpeaking, hasVoiceFor, langForCategory } from '../utils/tts';
+import { Volume2, Play, Pause } from 'lucide-react';
 
 interface ListeningViewProps {
   lesson: ListeningLesson;
@@ -143,7 +144,7 @@ export function ListeningView({ lesson, onBack, hideBackButton }: ListeningViewP
           </button>
         ) : <div className="w-10"></div>}
         <div className="flex items-center gap-3">
-          <div className={`w-3 h-3 rounded-full ${lesson.category === 'toeic' ? 'bg-[#1cb0f6]' : 'bg-[#ff4b4b]'}`}></div>
+          <div className={`w-3 h-3 rounded-full ${lesson.category === 'toeic' ? 'bg-[var(--blue)]' : 'bg-[var(--red)]'}`}></div>
           <span className="text-[10px] font-black text-[var(--text-muted)] uppercase tracking-[0.2em]">{lesson.category} Audio Lesson</span>
         </div>
         {!hideBackButton ? <div className="w-10"></div> : (
@@ -167,19 +168,19 @@ export function ListeningView({ lesson, onBack, hideBackButton }: ListeningViewP
         <div className="flex items-center gap-6">
           <button
             onClick={togglePlay}
-            className={`w-16 h-16 rounded-full flex items-center justify-center text-white shadow-xl transition-all active:scale-95 ${isPlaying ? 'bg-[#ff4b4b]' : 'bg-[#58cc02]'}`}
+            className={`w-16 h-16 rounded-full flex items-center justify-center text-white shadow-xl transition-all active:scale-95 ${isPlaying ? 'bg-[var(--red)]' : 'bg-[var(--green)]'}`}
             aria-label={isPlaying ? 'Pause' : 'Play'}
           >
             {isPlaying ? (
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              <Pause size={32} fill="currentColor" />
             ) : (
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.348a1.125 1.125 0 010 1.97l-11.54 6.347a1.125 1.125 0 01-1.667-.985V5.653z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              <Play size={32} fill="currentColor" className="ml-1" />
             )}
           </button>
 
-          <div className="flex-1 h-3 bg-[var(--border-main)] rounded-full overflow-hidden">
+          <div className="flex-1 h-4 bg-[var(--bg-card)] border-2 border-[var(--border-main)] rounded-full overflow-hidden">
             <div
-              className="h-full bg-[#58cc02] transition-all duration-300"
+              className="h-full bg-[var(--green)] transition-all duration-300"
               style={{ width: `${progressPercent}%` }}
             />
           </div>
@@ -191,8 +192,8 @@ export function ListeningView({ lesson, onBack, hideBackButton }: ListeningViewP
       </div>
 
       {!lesson.audioUrl && !voiceReady && (
-        <p className="text-xs text-[#1cb0f6] font-bold text-center mb-6">
-          🔊 Sẽ dùng giọng đọc online. Bấm Play để nghe.
+        <p className="text-xs text-[var(--blue)] font-bold text-center mb-6 flex items-center justify-center gap-2">
+          <Volume2 size={16} /> Sẽ dùng giọng đọc online. Bấm Play để nghe.
         </p>
       )}
 
@@ -209,7 +210,7 @@ export function ListeningView({ lesson, onBack, hideBackButton }: ListeningViewP
               key={index}
               className={`p-6 rounded-2xl transition-all border-2 ${
                 isActive
-                ? 'bg-[var(--bg-card)] border-[#1cb0f6] shadow-md scale-[1.02]'
+                ? 'bg-[var(--bg-card)] border-[var(--blue)] shadow-md scale-[1.02]'
                 : 'bg-transparent border-transparent opacity-50'
               }`}
             >

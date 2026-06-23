@@ -30,6 +30,11 @@
   --border-main: #E2E8F0;
   --bg-hover: #F1F5F9;
 
+  --active-path-bg: #b45309; /* Muted Amber */
+  --active-path-shadow: #92400e;
+  --locked-path-bg: #e2e8f0;
+  --locked-path-shadow: #cbd5e1;
+
   --tint-blue: #EFF6FF;
   --tint-green: #ECFDF5;
   --tint-red: #FEF2F2;
@@ -38,6 +43,23 @@
   --card-input-bg: #F8FAFC;
   --card-input-border: #E2E8F0;
   --quiz-divider: #F1F5F9;
+  --quiz-divider: #F1F5F9;
+}
+
+[data-track='japanese'] {
+  --blue: #E11D48; /* Rose red */
+  --blue-shadow: #BE123C;
+  --blue-light: #FFE4E6;
+  
+  --green: #F43F5E; /* Sakura pinkish red */
+  --green-shadow: #E11D48;
+  --green-light: #FFE4E6;
+  
+  --purple: #9F1239; /* Deep maroon */
+  --purple-shadow: #881337;
+
+  --tint-blue: #FFF1F2;
+  --tint-green: #FFF1F2;
 }
 
 [data-theme='dark'] {
@@ -51,6 +73,11 @@
   --border-main: #1E293B;
   --bg-hover: #1E293B;
 
+  --active-path-bg: #b45309;
+  --active-path-shadow: #92400e;
+  --locked-path-bg: #1E293B;
+  --locked-path-shadow: #020617;
+
   --tint-blue: #172554;
   --tint-green: #064E3B;
   --tint-red: #450A0A;
@@ -59,6 +86,17 @@
   --card-input-bg: #020617;
   --card-input-border: #1E293B;
   --quiz-divider: #1E293B;
+}
+
+[data-theme='dark'][data-track='japanese'] {
+  --blue: #E11D48;
+  --blue-shadow: #9F1239;
+  --green: #F43F5E;
+  --green-shadow: #BE123C;
+  --purple: #9F1239;
+  --purple-shadow: #4C0519;
+  --tint-blue: #4C0519;
+  --tint-green: #4C0519;
 }
 
 body {
@@ -73,100 +111,99 @@ body {
 }
 
 /* --- PREMIUM MODERN BUTTON SYSTEM --- */
-.btn-duo {
+.btn-duo, .btn-3d {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 14px;
-  font-weight: 700;
+  border-radius: 16px;
+  font-weight: 800;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.1s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.1s cubic-bezier(0, 0, 0.2, 1), filter 0.2s ease;
   cursor: pointer;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   user-select: none;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 0 var(--btn-shadow, rgba(0,0,0,0.1));
+  will-change: transform, box-shadow;
 }
 
-.btn-duo:active:not(:disabled) {
-  transform: translateY(2px) scale(0.98);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+.btn-duo:hover:not(:disabled), .btn-3d:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 var(--btn-shadow, rgba(0,0,0,0.1)), 0 8px 12px var(--btn-glow, rgba(0,0,0,0));
+  filter: brightness(1.05);
 }
 
-.btn-duo:disabled {
+.btn-duo:active:not(:disabled), .btn-3d:active:not(:disabled) {
+  transform: translateY(4px);
+  box-shadow: 0 0px 0 var(--btn-shadow, rgba(0,0,0,0.1));
+  filter: brightness(0.95);
+  transition: transform 0.05s, box-shadow 0.05s, filter 0.05s;
+}
+
+.btn-duo:disabled, .btn-3d:disabled {
   background-color: var(--gray-path);
   color: var(--text-muted);
-  box-shadow: none;
+  --btn-shadow: var(--gray-path-dark);
   cursor: not-allowed;
   transform: none;
+  box-shadow: 0 4px 0 var(--btn-shadow);
 }
 
-[data-theme='dark'] .btn-duo:disabled {
+[data-theme='dark'] .btn-duo:disabled, [data-theme='dark'] .btn-3d:disabled {
   background-color: var(--gray-path);
   color: var(--text-muted);
-  box-shadow: none;
+  --btn-shadow: var(--border-main);
+  box-shadow: 0 4px 0 var(--btn-shadow);
 }
 
 /* Color Variants */
 .btn-green {
   background-color: var(--green);
   color: white;
-  border-color: var(--green-shadow);
-}
-.btn-green:hover:not(:disabled) {
-  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
-  filter: brightness(1.05);
+  --btn-shadow: var(--green-shadow);
+  --btn-glow: rgba(16, 185, 129, 0.3);
 }
 
 .btn-blue {
   background-color: var(--blue);
   color: white;
-  border-color: var(--blue-shadow);
-}
-.btn-blue:hover:not(:disabled) {
-  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
-  filter: brightness(1.05);
+  --btn-shadow: var(--blue-shadow);
+  --btn-glow: rgba(59, 130, 246, 0.3);
 }
 
 .btn-purple {
   background-color: var(--purple);
   color: white;
-  border-color: var(--purple-shadow);
-}
-.btn-purple:hover:not(:disabled) {
-  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
-  filter: brightness(1.05);
+  --btn-shadow: var(--purple-shadow);
+  --btn-glow: rgba(139, 92, 246, 0.3);
 }
 
 .btn-red {
   background-color: var(--red);
   color: white;
-  border-color: var(--red-shadow);
-}
-.btn-red:hover:not(:disabled) {
-  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
-  filter: brightness(1.05);
+  --btn-shadow: var(--red-shadow);
+  --btn-glow: rgba(239, 68, 68, 0.3);
 }
 
 .btn-gold {
   background-color: var(--gold);
   color: white;
-  border-color: var(--gold-shadow);
-}
-.btn-gold:hover:not(:disabled) {
-  box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
-  filter: brightness(1.05);
+  --btn-shadow: var(--gold-shadow);
+  --btn-glow: rgba(245, 158, 11, 0.3);
 }
 
 .btn-outline {
   background-color: transparent;
   color: var(--blue);
   border: 2px solid var(--border-main);
-  box-shadow: none;
+  --btn-shadow: var(--border-main);
+  --btn-glow: rgba(59, 130, 246, 0.1);
 }
 .btn-outline:hover:not(:disabled) {
   background-color: var(--bg-hover);
   border-color: var(--blue);
+  color: var(--blue-shadow);
+  --btn-shadow: var(--blue);
 }
 
 /* --- THE WINDING MAP NODE --- */
@@ -273,39 +310,7 @@ body {
 }
 
 /* --- 3D BUTTON (alias for btn-duo style) --- */
-.btn-3d {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 14px;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
-  border: 1px solid transparent;
-  user-select: none;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-.btn-3d:active:not(:disabled) {
-  transform: translateY(2px) scale(0.98);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-}
-
-.btn-3d:disabled {
-  background-color: var(--gray-path);
-  color: var(--text-muted);
-  box-shadow: none;
-  cursor: not-allowed;
-  transform: none;
-}
-
-[data-theme='dark'] .btn-3d:disabled {
-  background-color: var(--gray-path);
-  color: var(--text-muted);
-  box-shadow: none;
-}
+/* Styles for .btn-3d are now merged into the .btn-duo definition above. */
 
 /* --- CUSTOM SCROLLBAR --- */
 .custom-scrollbar::-webkit-scrollbar {
@@ -337,6 +342,7 @@ body {
 
 .transform-style-3d {
   transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
 }
 
 .backface-hidden {
@@ -348,31 +354,11 @@ body {
   transform: rotateY(180deg);
 }
 
-/* =====================================================================
-   UI POLISH LAYER
-   Subtle hover/press feedback, smoother transitions and tasteful
-   animations layered on top of the existing Duolingo-style system.
-   Respects prefers-reduced-motion.
-   ===================================================================== */
-
-/* Smooth, springy feedback on the 3D buttons */
-.btn-duo,
-.btn-3d {
-  transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 0.15s ease, filter 0.15s ease;
-  will-change: transform;
-}
-
-.btn-duo:hover:not(:disabled),
-.btn-3d:hover:not(:disabled) {
-  transform: translateY(-2px);
-  filter: brightness(1.05);
-}
-
+/* UI POLISH LAYER: Subtle hover/press feedback, smoother transitions */
 .btn-duo:focus-visible,
 .btn-3d:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.35);
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.35), 0 4px 0 var(--btn-shadow);
 }
 
 /* Card hover lift */

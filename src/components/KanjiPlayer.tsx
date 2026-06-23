@@ -159,7 +159,7 @@ export function KanjiPlayer({ kanji }: KanjiPlayerProps) {
         disabled={isPlaying}
         className={`btn-duo btn-blue w-full h-12 flex items-center justify-center text-sm ${isPlaying ? 'opacity-40 cursor-not-allowed' : ''}`}
       >
-        {isPlaying ? '⏳ ĐANG PHÁT...' : '🎥 PHÁT ẢNH ĐỘNG HƯỚNG DẪN NÉT VIẾT'}
+        {isPlaying ? 'ĐANG PHÁT...' : 'XEM CÁCH VIẾT'}
       </button>
     </div>
   );

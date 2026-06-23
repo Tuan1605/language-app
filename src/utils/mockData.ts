@@ -394,17 +394,21 @@ function buildExamTasks(
   const dictation = sortByDiff(dList);
 
   const tasks: SessionTask[] = [];
+  let qIdx = startOffset;
+  let lIdx = startOffset;
+  let sIdx = startOffset;
+  let dIdx = startOffset;
+
   for (let i = 0; i < count; i++) {
-    const idx = (startOffset + i);
     const mod = i % 5;
     if (mod === 0 && listening.length > 0)
-      tasks.push({ type: 'listening', data: listening[idx % listening.length] });
+      tasks.push({ type: 'listening', data: listening[lIdx++ % listening.length] });
     else if (mod === 3 && speaking.length > 0)
-      tasks.push({ type: 'speaking', data: speaking[idx % speaking.length] });
+      tasks.push({ type: 'speaking', data: speaking[sIdx++ % speaking.length] });
     else if (mod === 4 && dictation.length > 0)
-      tasks.push({ type: 'dictation', data: dictation[idx % dictation.length] });
+      tasks.push({ type: 'dictation', data: dictation[dIdx++ % dictation.length] });
     else if (questions.length > 0)
-      tasks.push({ type: 'quiz', data: questions[idx % questions.length] });
+      tasks.push({ type: 'quiz', data: questions[qIdx++ % questions.length] });
   }
   return tasks;
 }

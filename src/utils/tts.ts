@@ -52,6 +52,7 @@ if (speechSynthAvailable()) {
 
 
 /** True when we can speak the `lang`. Now always true because we have the Audio fallback! */
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export function hasVoiceFor(_lang: TTSLang): boolean {
   return true;
 }
@@ -162,7 +163,7 @@ function speakViaAudio(
           bytes[i] = audioArray[i];
         }
 
-        const AudioContextClass = window.AudioContext || (window as any).webkitAudioContext;
+        const AudioContextClass = window.AudioContext || (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext;
         if (!AudioContextClass) {
           throw new Error('Trình duyệt không hỗ trợ Web Audio API');
         }
@@ -225,11 +226,11 @@ function stopAudioPlayback(): void {
     currentAudio = null;
   }
   if (currentAudioSource) {
-    try { currentAudioSource.stop(); } catch(e) {}
+    try { currentAudioSource.stop(); } catch { /* ignore */ }
     currentAudioSource = null;
   }
   if (currentAudioCtx) {
-    try { currentAudioCtx.close(); } catch(e) {}
+    try { currentAudioCtx.close(); } catch { /* ignore */ }
     currentAudioCtx = null;
   }
 }
@@ -261,17 +262,40 @@ export function speak(text: string, options: SpeakOptions = {}): boolean {
     return false;
   }
 
-  const { lang = 'en-US', onEnd, onStart } = options;
+  const { lang = 'en-US', onEnd, onStart, rate = 0.9 } = options;
 
   // Stop anything currently playing
   stopSpeaking();
 
-  // Decide strategy: if Web Speech API has voices, try it with a timeout
-  // fallback; otherwise go straight to Audio-based TTS.
-  // We forcefully bypass Web Speech API because on some systems (especially Linux),
-  // speechSynthesis reports voices and fires onstart/onend events perfectly, but
-  // produces NO SOUND at the OS level. It's impossible to detect this programmatically.
-  // Using the audio fallback ensures the user ALWAYS hears sound.
+  if (speechSynthAvailable()) {
+    const voices = readVoices();
+    // Look for premium voices
+    let premiumVoice = null;
+    if (lang === 'ja-JP') {
+      premiumVoice = voices.find(v => v.lang.includes('ja') && (v.name.includes('Google') || v.name.includes('Haruka') || v.name.includes('Kyoko') || v.name.includes('Nanami')));
+    } else {
+      premiumVoice = voices.find(v => v.lang.includes('en') && (v.name.includes('Google') || v.name.includes('Zira') || v.name.includes('Aria') || v.name.includes('Jenny') || v.name.includes('Samantha')));
+    }
+
+    if (premiumVoice) {
+      console.log('[TTS] Using premium voice:', premiumVoice.name);
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.voice = premiumVoice;
+      utterance.lang = lang;
+      utterance.rate = rate;
+      utterance.onstart = () => onStart?.();
+      utterance.onend = () => onEnd?.();
+      utterance.onerror = () => {
+        console.error('[TTS] Web Speech API failed, falling back to Audio.');
+        speakViaAudio(text, lang, onStart, onEnd);
+      };
+      window.speechSynthesis.speak(utterance);
+      return true;
+    }
+  }
+
+  // Fallback if no premium voice is found, to ensure the user ALWAYS hears sound.
+  console.log('[TTS] No premium voice found, using Audio fallback.');
   speakViaAudio(text, lang, onStart, onEnd);
 
   return true;

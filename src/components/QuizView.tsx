@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import type { Question, ExamResult } from '../types';
+import { playCorrectSound } from '../utils/sound';
 
 interface QuizViewProps {
   questions: Question[];
@@ -67,6 +68,10 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
     setSelectedAnswers(newAnswers);
     setIsAnswered(true);
     if (timerRef.current) clearInterval(timerRef.current);
+
+    if (selectedOption === questions[currentIndex].correctAnswer) {
+      playCorrectSound();
+    }
   };
 
   const handleNext = () => {
@@ -83,7 +88,8 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
           score: finalScore,
           totalQuestions: questions.length,
           category,
-          difficulty: questions[0].difficulty
+          difficulty: questions[0].difficulty,
+          type: 'mini-quiz'
         });
       } else {
         setIsFinished(true);
@@ -108,7 +114,7 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
     return (
       <div className="bg-[var(--bg-card)] lingo-card text-center max-w-lg w-full mx-auto animate-in zoom-in-95 duration-500">
         <div className="w-24 h-24 bg-[var(--tint-blue)] rounded-full flex items-center justify-center mx-auto mb-8 shadow-inner">
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-[#1cb0f6]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-[var(--blue)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
           </svg>
         </div>
@@ -118,7 +124,7 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
         <div className="relative w-48 h-48 mx-auto mb-10">
           <svg className="w-full h-full transform -rotate-90">
             <circle cx="96" cy="96" r="86" stroke="currentColor" strokeWidth="12" fill="transparent" className="text-[var(--gray-path)]" />
-            <circle cx="96" cy="96" r="86" stroke="currentColor" strokeWidth="12" fill="transparent" className={percent >= 80 ? 'text-[#58cc02]' : 'text-[#ff9600]'} strokeDasharray={540.3} strokeDashoffset={540.3 - (540.3 * percent) / 100} strokeLinecap="round" />
+            <circle cx="96" cy="96" r="86" stroke="currentColor" strokeWidth="12" fill="transparent" className={percent >= 80 ? 'text-[var(--green)]' : 'text-[var(--gold)]'} strokeDasharray={540.3} strokeDashoffset={540.3 - (540.3 * percent) / 100} strokeLinecap="round" />
           </svg>
           <div className="absolute inset-0 flex flex-col items-center justify-center">
             <span className="text-5xl font-black text-[var(--text-main)]">{finalScore}</span>
@@ -133,7 +139,8 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
             score: finalScore,
             totalQuestions: questions.length,
             category,
-            difficulty: questions[0].difficulty
+            difficulty: questions[0].difficulty,
+            type: 'mini-quiz'
           })}
           className="w-full btn-3d btn-blue h-14"
         >
@@ -151,7 +158,7 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
       {!isFinished && !isAnswered && (
         <div className="absolute top-0 left-0 right-0 h-1.5 bg-[var(--bg-hover)] overflow-hidden">
           <div 
-            className={`h-full transition-all duration-1000 ease-linear ${timeLeft <= 5 ? 'bg-[#ff4b4b] animate-pulse' : 'bg-[#1cb0f6]'}`}
+            className={`h-full transition-all duration-1000 ease-linear ${timeLeft <= 5 ? 'bg-[var(--red)] animate-pulse' : 'bg-[var(--blue)]'}`}
             style={{ width: `${(timeLeft / 15) * 100}%` }}
           ></div>
         </div>
@@ -159,10 +166,10 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
 
       <div className="flex justify-between items-center mb-10 mt-2">
         <div className="flex items-center gap-3">
-          <div className={`w-3 h-3 rounded-full ${category === 'toeic' ? 'bg-[#1cb0f6]' : 'bg-[#ff4b4b]'}`}></div>
+          <div className={`w-3 h-3 rounded-full ${category === 'toeic' ? 'bg-[var(--blue)]' : 'bg-[var(--red)]'}`}></div>
           <span className="text-[10px] font-black text-[var(--text-muted)] uppercase tracking-[0.2em]">{category} Mock Exam</span>
           {!isFinished && !isAnswered && (
-            <span className={`text-[10px] font-black uppercase px-2 py-0.5 rounded-md border-2 ${timeLeft <= 5 ? 'text-[#ff4b4b] border-[#ff4b4b] animate-pulse' : 'text-[#1cb0f6] border-[#1cb0f6]'}`}>
+            <span className={`text-[10px] font-black uppercase px-2 py-0.5 rounded-md border-2 ${timeLeft <= 5 ? 'text-[var(--red)] border-[var(--red)] animate-pulse' : 'text-[var(--blue)] border-[var(--blue)]'}`}>
               {timeLeft}s
             </span>
           )}
@@ -196,19 +203,19 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
           
           if (isAnswered) {
             if (idx === currentQuestion.correctAnswer) {
-              btnClass = "border-[#58cc02] bg-[var(--tint-green)] text-[#58cc02] shadow-sm";
-              badgeClass = "bg-[#58cc02] text-white border-transparent";
+              btnClass = "border-[var(--green)] bg-[var(--tint-green)] text-[var(--green)] shadow-sm";
+              badgeClass = "bg-[var(--green)] text-white border-transparent";
             } else if (idx === selectedOption) {
-              btnClass = "border-[#ff4b4b] bg-[var(--tint-red)] text-[#ff4b4b]";
-              badgeClass = "bg-[#ff4b4b] text-white border-transparent";
+              btnClass = "border-[var(--red)] bg-[var(--tint-red)] text-[var(--red)]";
+              badgeClass = "bg-[var(--red)] text-white border-transparent";
             } else {
               btnClass = "opacity-40 border-[var(--border-main)] bg-[var(--bg-card)] text-[var(--text-main)]";
               badgeClass = "bg-[var(--bg-card)] text-[var(--text-muted)] border-[var(--border-main)]";
             }
           } else {
             if (selectedOption === idx) {
-              btnClass = "border-[#1cb0f6] bg-[var(--tint-blue)] text-[#1cb0f6]";
-              badgeClass = "bg-[#1cb0f6] text-white border-transparent";
+              btnClass = "border-[var(--blue)] bg-[var(--tint-blue)] text-[var(--blue)]";
+              badgeClass = "bg-[var(--blue)] text-white border-transparent";
             } else {
               btnClass = "border-[var(--border-main)] hover:border-[var(--text-muted)] bg-[var(--bg-card)] text-[var(--text-main)]";
               badgeClass = "bg-[var(--bg-card)] text-[var(--text-muted)] border-[var(--border-main)]";
@@ -235,8 +242,8 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
       {isAnswered && (
         <div className={`p-6 rounded-2xl border-2 mb-8 animate-in slide-in-from-bottom-4 duration-300 ${
           selectedOption === currentQuestion.correctAnswer 
-            ? 'bg-[var(--tint-green)] border-[#58cc02] text-[var(--text-on-tint)]' 
-            : 'bg-[var(--tint-red)] border-[#ff4b4b] text-[var(--text-on-tint)]'
+            ? 'bg-[var(--tint-green)] border-[var(--green)] text-[var(--text-on-tint)]' 
+            : 'bg-[var(--tint-red)] border-[var(--red)] text-[var(--text-on-tint)]'
         }`}>
           <h4 className="font-black text-lg mb-2 flex items-center gap-2">
             {selectedOption === currentQuestion.correctAnswer ? '🎉 Correct!' : '❌ Incorrect'}
@@ -255,7 +262,7 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
       <div className="flex justify-between items-center pt-8 border-t-2 border-[var(--quiz-divider)]">
         <button
           onClick={onCancel}
-          className="text-[var(--text-muted)] font-black hover:text-[#ff4b4b] transition-colors uppercase tracking-[0.2em] text-[9px]"
+          className="text-[var(--text-muted)] font-black hover:text-[var(--red)] transition-colors uppercase tracking-[0.2em] text-[9px]"
         >
           Quit Quest
         </button>

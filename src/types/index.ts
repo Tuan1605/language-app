@@ -40,6 +40,7 @@ export interface ExamResult {
   totalQuestions: number;
   category: 'toeic' | 'n2';
   difficulty: Difficulty;
+  type?: 'mini-quiz' | 'full-exam';
 }
 
 export interface ListeningLesson {
@@ -76,8 +77,10 @@ export interface DictationLesson {
 export interface GrammarPoint {
   id: string;
   pattern: string;
+  structure?: string;
   meaning: string;
   example: string;
+  blankedExample?: string;
   exampleTranslation: string;
   difficulty: Difficulty;
 }
@@ -97,12 +100,20 @@ export interface KanjiEntry {
   source?: string;
 }
 
+export interface GrammarQuizTaskData {
+  id: string;
+  point: GrammarPoint;
+  options: string[]; // grammar patterns to choose from
+  correctIndex: number;
+}
+
 export type SessionTask = 
   | { type: 'vocab-quiz'; data: Flashcard }
   | { type: 'quiz'; data: Question }
   | { type: 'listening'; data: ListeningLesson }
   | { type: 'speaking'; data: SpeakingLesson }
-  | { type: 'dictation'; data: DictationLesson };
+  | { type: 'dictation'; data: DictationLesson }
+  | { type: 'grammar'; data: GrammarQuizTaskData };
 
 export interface FullExam {
   id: string;

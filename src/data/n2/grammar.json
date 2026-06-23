@@ -1,127 +1,1127 @@
 [
-  { "id": "ng-001", "pattern": "～にもかかわらず", "meaning": "Mac du～ (du... nhung van...)", "example": "努力したにもかかわらず、試合に負けた。", "exampleTranslation": "Mac du da no luc nhung van thua tran dau.", "difficulty": "advanced" },
-  { "id": "ng-002", "pattern": "～たびに", "meaning": "Moi khi～, cu moi lan～", "example": "この写真を見るたびに、故郷を思い出す。", "exampleTranslation": "Moi khi nhin tam anh nay toi lai nho que huong.", "difficulty": "intermediate" },
-  { "id": "ng-003", "pattern": "～わけだ", "meaning": "The nen, hop ly la～", "example": "毎日練習している。上手なわけだ。", "exampleTranslation": "Ngay nao cung luyen tap. Hop ly la gioi.", "difficulty": "intermediate" },
-  { "id": "ng-004", "pattern": "～によって", "meaning": "Tuy theo～, do boi～", "example": "地域によって風習が異なる。", "exampleTranslation": "Phong tuc khac nhau tuy theo vung mien.", "difficulty": "intermediate" },
-  { "id": "ng-005", "pattern": "～ざるを得ない", "meaning": "Buoc phai～ (khong con cach nao khac)", "example": "台風のため、中止せざるを得ない。", "exampleTranslation": "Vi bao nen buoc phai huy bo.", "difficulty": "advanced" },
-  { "id": "ng-006", "pattern": "～上で", "meaning": "Sau khi～ roi (moi); trong qua trinh～", "example": "よく考えた上で、返事します。", "exampleTranslation": "Sau khi suy nghi ky moi se tra loi.", "difficulty": "intermediate" },
-  { "id": "ng-007", "pattern": "～っぽい", "meaning": "Co ve～, mang tinh chat～, hoi～", "example": "彼は最近怠けっぽくなった。", "exampleTranslation": "Gan day anh ay co ve luoi bieng.", "difficulty": "intermediate" },
-  { "id": "ng-008", "pattern": "～てからでないと", "meaning": "Neu chua～ thi khong the...", "example": "確認してからでないと、答えられません。", "exampleTranslation": "Neu chua xac nhan thi khong the tra loi.", "difficulty": "advanced" },
-  { "id": "ng-009", "pattern": "～ばかりに", "meaning": "Chi vi～ (ket qua tieu cuc); deu la vi～", "example": "油断したばかりに、事故を起こした。", "exampleTranslation": "Chi vi cham lo nen da gay ra tai nan.", "difficulty": "advanced" },
-  { "id": "ng-010", "pattern": "～とともに", "meaning": "Cung voi～, dong thoi～", "example": "技術の進歩とともに生活が変わった。", "exampleTranslation": "Cuoc song thay doi cung voi tien bo cong nghe.", "difficulty": "intermediate" },
-  { "id": "ng-011", "pattern": "～一方で", "meaning": "Mot thi～, mot thi～ (hai mat trai nguoc)", "example": "彼は厳しい一方で、優しいところもある。", "exampleTranslation": "Anh ay mot thi nghiem khac, mot thi cung co cho hien lanh.", "difficulty": "intermediate" },
-  { "id": "ng-012", "pattern": "～にしても", "meaning": "Dang cung～; cho du co～", "example": "行くにしても、準備が必要だ。", "exampleTranslation": "Cho du co di cung can su chuan bi.", "difficulty": "advanced" },
-  { "id": "ng-013", "pattern": "～さえ～ば", "meaning": "Chi can～ thi～", "example": "お金さえあれば、何でも買える。", "exampleTranslation": "Chi can co tien thi co the mua bat cu thu gi.", "difficulty": "intermediate" },
-  { "id": "ng-014", "pattern": "～つつ", "meaning": "Trong khi～, vua～ vua～", "example": "危険を知りつつも、冒険に出かけた。", "exampleTranslation": "Biet la nguy hiem nhung van di kham pha.", "difficulty": "advanced" },
-  { "id": "ng-015", "pattern": "～ずにはいられない", "meaning": "Khong the khong～, khong kip che lai duoc", "example": "この映画を見れば、泣かずにはいられない。", "exampleTranslation": "Xem phim nay thi khong the khong khoc.", "difficulty": "advanced" },
-  { "id": "ng-016", "pattern": "～にすぎない", "meaning": "Chi la～, khong hon gi", "example": "それは推測にすぎない。", "exampleTranslation": "Do chi la su doan.", "difficulty": "advanced" },
-  { "id": "ng-017", "pattern": "～からには", "meaning": "Da la～ thi; vi la～ nen", "example": "引き受けたからには、最後までやる。", "exampleTranslation": "Da nhan lam roi thi lam den cuoi cung.", "difficulty": "advanced" },
-  { "id": "ng-018", "pattern": "～ものなら", "meaning": "Neu ma co the～ (thuong la kha thi)", "example": "戻れるものなら、戻りたい。", "exampleTranslation": "Neu co the quay lai thi muon quay lai.", "difficulty": "advanced" },
-  { "id": "ng-019", "pattern": "たとえ～ても", "meaning": "Cho du～ cung～", "example": "たとえ雨が降っても、运动会を行う。", "exampleTranslation": "Cho du mua cung van to chuc hoi thao.", "difficulty": "intermediate" },
-  { "id": "ng-020", "pattern": "～わけがない", "meaning": "Nhat dinh khong the～, khong co ly do gi～", "example": "そんな簡単に成功するわけがない。", "exampleTranslation": "Khong co ly do gi thanh cong de dang nhu vay.", "difficulty": "intermediate" },
-  { "id": "ng-021", "pattern": "～わけではない", "meaning": "Khong phai la～", "example": "嫌いなわけではないが、あまり食べない。", "exampleTranslation": "Khong phai la khong thich nhung khong an nhieu.", "difficulty": "intermediate" },
-  { "id": "ng-022", "pattern": "～わけにはいかない", "meaning": "Khong the～ duoc (vi co nguyen nhan, quy tac)", "example": "約束したわけには、行かないわけにはいかない。", "exampleTranslation": "Da hen roi nen khong the khong di duoc.", "difficulty": "advanced" },
-  { "id": "ng-023", "pattern": "～どころか", "meaning": "Chua noi den～ (chua ke den～); khong nhung khong～ ma con～", "example": "手伝ってくれるどころか、邪魔された。", "exampleTranslation": "Chua noi den giup do, con bi lam phien.", "difficulty": "advanced" },
-  { "id": "ng-024", "pattern": "～どころではない", "meaning": "Khong phai luc de～, khong con tam dau ma～", "example": "試験が明日なので、遊ぶどころではない。", "exampleTranslation": "Ngay mai thi roi, khong phai luc de choi.", "difficulty": "intermediate" },
-  { "id": "ng-025", "pattern": "～ことはない", "meaning": "Khong can phai～, khong nhat thiet phai～", "example": "心配することはない。大丈夫だ。", "exampleTranslation": "Khong can phai lo lang. Khong sao dau.", "difficulty": "intermediate" },
-  { "id": "ng-026", "pattern": "～ことは～が", "meaning": "Thi co～ nhung～", "example": "見たことは見たが、内容は覚えていない。", "exampleTranslation": "Thi co thay roi nhung khong nho noi dung.", "difficulty": "advanced" },
-  { "id": "ng-027", "pattern": "～もの", "meaning": "Boi vi～ (ly do mang tinh cam xuc)", "example": "子供は好奇心が強いものだ。", "exampleTranslation": "Tre con thi tinh to mo la binh thuong.", "difficulty": "intermediate" },
-  { "id": "ng-028", "pattern": "～ものか", "meaning": "Sao ma～ duoc! (phu dinh manh)", "example": "こんなところで負けるものか。", "exampleTranslation": "Sao ma co the thua o cho nay duoc!", "difficulty": "advanced" },
-  { "id": "ng-029", "pattern": "～というものだ", "meaning": "Co the noi la～; that su la～", "example": "努力が実を結んだというものだ。", "exampleTranslation": "Co the noi la su no luc da dat ket qua.", "difficulty": "advanced" },
-  { "id": "ng-030", "pattern": "～たとえ～ても", "meaning": "Cho du～ cung～", "example": "たとえ失敗しても、挑戦し続ける。", "exampleTranslation": "Cho du that bai cung van tiep tuc thu thach.", "difficulty": "advanced" },
-  { "id": "ng-031", "pattern": "～ば～ほど", "meaning": "Cang～ cang～", "example": "勉強すればするほど、難しくなる気がする。", "exampleTranslation": "Cang hoc cang cam thay kho.", "difficulty": "intermediate" },
-  { "id": "ng-032", "pattern": "～ほど～はない", "meaning": "Khong co gi～ hon～", "example": "旅行ほど楽しいものはない。", "exampleTranslation": "Khong co gi vui hon du lich.", "difficulty": "intermediate" },
-  { "id": "ng-033", "pattern": "～くらい", "meaning": "Nhieu den muc～; co～", "example": "嬉しくて泣きたいくらいだった。", "exampleTranslation": "Vui den muc muon khoc.", "difficulty": "intermediate" },
-  { "id": "ng-034", "pattern": "～くらいだ", "meaning": "Den muc～; nhu la～", "example": "喉が渇くくて、水を飲まずにはいられないくらいだ。", "exampleTranslation": "Khat den muc khong the khong uong nuoc.", "difficulty": "advanced" },
-  { "id": "ng-035", "pattern": "～さえ", "meaning": "Tham chi la～", "example": "名前さえ知らない。", "exampleTranslation": "Tham chi ten cung khong biet.", "difficulty": "intermediate" },
-  { "id": "ng-036", "pattern": "～すら", "meaning": "Tham chi～ (tu co tinh trang trong)", "example": "子供すら知っている常識だ。", "exampleTranslation": "La thuong thuc ma tham chi tre con cung biet.", "difficulty": "advanced" },
-  { "id": "ng-037", "pattern": "～こそ", "meaning": "Chinh la～; moi chinh la～", "example": "これこそ私が欲しかったものだ。", "exampleTranslation": "Day chinh la thu toi muon.", "difficulty": "intermediate" },
-  { "id": "ng-038", "pattern": "～しか～ない", "meaning": "Chi co～ thoi", "example": "もう時間がない。急ぐしかない。", "exampleTranslation": "Khong con thoi gian. Chi con cach voi.", "difficulty": "intermediate" },
-  { "id": "ng-039", "pattern": "～てしかるべきだ", "meaning": "La dieu dung nen～", "example": "謝るべきことは謝ってしかるべきだ。", "exampleTranslation": "Dieu can xin loi thi nen xin loi.", "difficulty": "advanced" },
-  { "id": "ng-040", "pattern": "～ずにはすまない", "meaning": "Khong the khong～; nhat dinh phai～", "example": "この件については、本人に聞かずにはすまない。", "exampleTranslation": "Ve viec nay khong the khong hinh nguoi trong cuoc.", "difficulty": "advanced" },
-  { "id": "ng-041", "pattern": "～にほかならない", "meaning": "Khong gi khac la～; chinh la～", "example": "成功は努力の結果にほかならない。", "exampleTranslation": "Thanh cong khong gi khac la ket qua cua su no luc.", "difficulty": "advanced" },
-  { "id": "ng-042", "pattern": "～ずじまい", "meaning": "Khong lam duoc～; de do khong lam", "example": "行きたいと思っていたのに、結局行かずじまいだった。", "exampleTranslation": "Muon di nhung cuoi cung cung khong di duoc.", "difficulty": "advanced" },
-  { "id": "ng-043", "pattern": "～きる", "meaning": "Lam hoan toan～; lam het～", "example": "マラソンを最後まで走りきった。", "exampleTranslation": "Da chay marathon den cuoi cung.", "difficulty": "intermediate" },
-  { "id": "ng-044", "pattern": "～かける", "meaning": "Bat dau～; lam do～", "example": "読んでいた本を読みかけのまま寝てしまった。", "exampleTranslation": "Dang doc sach ma doc do roi ngu mat.", "difficulty": "intermediate" },
-  { "id": "ng-045", "pattern": "～かねる", "meaning": "Kho ma～; khong the～ duoc (su tu ton)", "example": "そのご提案はお受けしかねます。", "exampleTranslation": "De xuat do kho ma chap nhan duoc.", "difficulty": "advanced" },
-  { "id": "ng-046", "pattern": "～かねない", "meaning": "Co kha nang～ (xau); co the～", "example": "無理をすると、倒れかねない。", "exampleTranslation": "Lam qua suc co the nga xiu.", "difficulty": "advanced" },
-  { "id": "ng-047", "pattern": "～っこない", "meaning": "Nhat dinh khong～; khong the～ duoc", "example": "あんなに練習したんだから、負けっこない。", "exampleTranslation": "Luyen tap nhieu nhu vay nen nhat dinh khong thua.", "difficulty": "advanced" },
-  { "id": "ng-048", "pattern": "～得る", "meaning": "Co the～; co kha nang～", "example": "これは十分あり得ることだ。", "exampleTranslation": "Day la dieu hoan toan co the xay ra.", "difficulty": "advanced" },
-  { "id": "ng-049", "pattern": "～か～ないかのうちに", "meaning": "Luc～ hay chua～ thi da～", "example": "電車が止まるか止まらないかのうちに、乗客が飛び出した。", "exampleTranslation": "Luc tau dung hay chua dung thi hanh khach da chay ra.", "difficulty": "advanced" },
-  { "id": "ng-050", "pattern": "～てたまらない", "meaning": "Khong the～ duoc nua;～lam", "example": "暑くてたまらない。", "exampleTranslation": "Nong lam khong chiu duoc nua.", "difficulty": "intermediate" },
-  { "id": "ng-051", "pattern": "～てならない", "meaning": "Khong the kiem che duoc;～lam", "example": "故郷が恋しくてならない。", "exampleTranslation": "Nho que huong khong the kiem che duoc.", "difficulty": "advanced" },
-  { "id": "ng-052", "pattern": "～てやまない", "meaning": "Het long～;～sau sac", "example": "ご成功を祈ってやまない。", "exampleTranslation": "Xin chan thanh cau chuc thanh cong.", "difficulty": "advanced" },
-  { "id": "ng-053", "pattern": "～に至るまで", "meaning": "Cho den～; ke ca～", "example": "細かいところに至るまで、完璧だった。", "exampleTranslation": "Ke ca nhung cho nho nhat cung hoan hao.", "difficulty": "advanced" },
-  { "id": "ng-054", "pattern": "～に至る", "meaning": "Den～; dan den～", "example": "解決に至るまでに長い時間がかかった。", "exampleTranslation": "Phai mat thoi gian dai moi giai quyet xong.", "difficulty": "advanced" },
-  { "id": "ng-055", "pattern": "～をきっかけに", "meaning": "Nho～; lay～ lam co hoi", "example": "留学をきっかけに、日本に興味を持った。", "exampleTranslation": "Nho di du hoc nen da co yeu to voi Nhat Ban.", "difficulty": "intermediate" },
-  { "id": "ng-056", "pattern": "～をもとに", "meaning": "Dua tren～; dua vao～", "example": "調査結果をもとに、報告書を作成した。", "exampleTranslation": "Dua tren ket qua khao sat da lap bao cao.", "difficulty": "intermediate" },
-  { "id": "ng-057", "pattern": "～を中心に", "meaning": "Trong tam la～; tap trung vao～", "example": "東京を中心に、地震の被害が広がった。", "exampleTranslation": "Thiet hai do dong dat lan rong trong tam la Tokyo.", "difficulty": "intermediate" },
-  { "id": "ng-058", "pattern": "～をもとにした", "meaning": "Dua tren～; co so vao～", "example": "実話をもとにした映画だ。", "exampleTranslation": "La phim dua tren su co that.", "difficulty": "intermediate" },
-  { "id": "ng-059", "pattern": "～を問わず", "meaning": "Khong phan biet～; bat ke～", "example": "昼夜を問わず、工事が行われている。", "exampleTranslation": "Khong phan biet ngay dem, cong trinh van tien hanh.", "difficulty": "advanced" },
-  { "id": "ng-060", "pattern": "～をもって", "meaning": "Bang～; bang phuong tien～; vao luc～", "example": "本日をもって閉店いたします。", "exampleTranslation": "Xin thong bao dong cua vao hom nay.", "difficulty": "advanced" },
-  { "id": "ng-061", "pattern": "～を前にして", "meaning": "Truoc～; doi dien voi～", "example": "試験を前にして、緊張している。", "exampleTranslation": "Truoc ky thi nen cam thay hoi hop.", "difficulty": "advanced" },
-  { "id": "ng-062", "pattern": "～をめぐって", "meaning": "Xoay quanh～; lien quan den～", "example": "その問題をめぐって、議論が続いている。", "exampleTranslation": "Xoay quanh van de do, cuoc luan luan van tiep tuc.", "difficulty": "advanced" },
-  { "id": "ng-063", "pattern": "～にとって", "meaning": "Doi voi～", "example": "私にとって、家族が一番大切だ。", "exampleTranslation": "Doi voi toi, gia dinh la quan trong nhat.", "difficulty": "intermediate" },
-  { "id": "ng-064", "pattern": "～に対して", "meaning": "Doi voi～; nhắm vao～", "example": "環境問題に対して、関心が高まっている。", "exampleTranslation": "Suu quan tam doi voi van de moi truong ngay cang tang.", "difficulty": "intermediate" },
-  { "id": "ng-065", "pattern": "～について", "meaning": "Ve～; lien quan den～", "example": "日本の歴史について調べた。", "exampleTranslation": "Da tim hieu ve lich su Nhat Ban.", "difficulty": "intermediate" },
-  { "id": "ng-066", "pattern": "～に関して", "meaning": "Ve～; lien quan den～ (trong tam hon)", "example": "この件に関しては、後日ご連絡します。", "exampleTranslation": "Ve viec nay, se lien lac vao ngay khac.", "difficulty": "advanced" },
-  { "id": "ng-067", "pattern": "～に向いていない", "meaning": "Khong phu hop voi～; khong thich hop", "example": "この仕事は私に向いていない。", "exampleTranslation": "Cong viec nay khong phu hop voi toi.", "difficulty": "intermediate" },
-  { "id": "ng-068", "pattern": "～に向いている", "meaning": "Phu hop voi～; thich hop", "example": "彼は先生に向いていると思う。", "exampleTranslation": "Toi nghi anh ay thich hop lam giao vien.", "difficulty": "intermediate" },
-  { "id": "ng-069", "pattern": "～にかぎって", "meaning": "Dac biet la～; rieng～", "example": "今日にかぎって、電車が遅れた。", "exampleTranslation": "Dac biet la hom nay tau bi tre.", "difficulty": "advanced" },
-  { "id": "ng-070", "pattern": "～にかぎらず", "meaning": "Khong chi～; khong rieng～", "example": "子供にかぎらず、大人もこの菓子が好きだ。", "exampleTranslation": "Khong chi tre con, nguoi lon cung thich banh nay.", "difficulty": "advanced" },
-  { "id": "ng-071", "pattern": "～にかけては", "meaning": "Ve phan～; khi noi den～", "example": "日本語の文法にかけては、彼の右に出る者はいない。", "exampleTranslation": "Ve phan ngu phap Nhat khong ai hon duoc anh ay.", "difficulty": "advanced" },
-  { "id": "ng-072", "pattern": "～にこたえて", "meaning": "Dap ung～; doi ung voi～", "example": "消費者の声にこたえて、製品を改良した。", "exampleTranslation": "Dap ung tieng noi nguoi tieu dung nen da cai tien san pham.", "difficulty": "advanced" },
-  { "id": "ng-073", "pattern": "～をこめて", "meaning": "Gui gam～; dat vao～", "example": "心をこめて、手紙を書いた。", "exampleTranslation": "Da viet thu gui gam tam long.", "difficulty": "intermediate" },
-  { "id": "ng-074", "pattern": "～にそって", "meaning": "Theo～; doc theo～", "example": "川にそって、桜の木が植えられている。", "exampleTranslation": "Hoa anh dao duoc trong doc theo song.", "difficulty": "intermediate" },
-  { "id": "ng-075", "pattern": "～に沿って", "meaning": "Theo～; dua theo～", "example": "計画に沿って、工事を進める。", "exampleTranslation": "Tien hanh cong trinh theo ke hoach.", "difficulty": "intermediate" },
-  { "id": "ng-076", "pattern": "～にわたって", "meaning": "Keo dai～; trai qua～", "example": "5日間にわたって、会議が行われた。", "exampleTranslation": "Cuoc hoi nghi dien ra keo dai 5 ngay.", "difficulty": "advanced" },
-  { "id": "ng-077", "pattern": "～をよそに", "meaning": "Bo ngoai～; khong quan tam den～", "example": "親の心配をよそに、一人で旅に出た。", "exampleTranslation": "Khong quan tam den su lo lang cua cha me, tu minh di du lich.", "difficulty": "advanced" },
-  { "id": "ng-078", "pattern": "～をものともせず", "meaning": "Khong nao long truoc～; khong so～", "example": "批判をものともせず、自分の意見を貫いた。", "exampleTranslation": "Khong nao long truoc su phe binh, van giu y kien cua minh.", "difficulty": "advanced" },
-  { "id": "ng-079", "pattern": "～つつも", "meaning": "Dang biet la～ nhung van～", "example": "悪いと知りつつも、うそをついてしまった。", "exampleTranslation": "Biet la sai nhung van noi doi.", "difficulty": "advanced" },
-  { "id": "ng-080", "pattern": "～ながらも", "meaning": "Vua～ vua～; du～ nhung van～", "example": "狭いながらも、幸せな家庭だ。", "exampleTranslation": "Du nho nhung van la gia dinh hanh phuc.", "difficulty": "intermediate" },
-  { "id": "ng-081", "pattern": "～くせに", "meaning": "Ma～ lai～ (co y che bai)", "example": "知っているくせに、教えてくれない。", "exampleTranslation": "Biet ma lai khong chi cho.", "difficulty": "intermediate" },
-  { "id": "ng-082", "pattern": "～わりに", "meaning": "So voi～ thi～ (bat ngo)", "example": "このレストランは安いわりに、美味しい。", "exampleTranslation": "So voi gia re thi nha hang nay ngon.", "difficulty": "intermediate" },
-  { "id": "ng-083", "pattern": "～にしては", "meaning": "Doi voi～ thi～ (ngoai du kien)", "example": "初めてにしては、上手にできた。", "exampleTranslation": "Doi voi lan dau thi lam kha gioi.", "difficulty": "intermediate" },
-  { "id": "ng-084", "pattern": "～としたら", "meaning": "Neu nhu～; gia dinh～", "example": "もし宝くじが当たったらとしたら、何がほしい？", "exampleTranslation": "Nehu nhu trung xo so thi ban muon gi?", "difficulty": "intermediate" },
-  { "id": "ng-085", "pattern": "～とすれば", "meaning": "Neu～; gia su～", "example": "彼の言うとすれば、正しいことになる。", "exampleTranslation": "Neu theo anh ay noi thi se la dung.", "difficulty": "intermediate" },
-  { "id": "ng-086", "pattern": "～ないことには", "meaning": "Neu khong～ thi～", "example": "実際にやってみないことには、わからない。", "exampleTranslation": "Neu khong thu lam thi khong biet.", "difficulty": "advanced" },
-  { "id": "ng-087", "pattern": "～ないことはない", "meaning": "Khong phai la khong～; cung co the～", "example": "食べられないことはないが、あまり好きではない。", "exampleTranslation": "Khong phai la khong an duoc nhung khong thich lam.", "difficulty": "advanced" },
-  { "id": "ng-088", "pattern": "～ざるをえない", "meaning": "Buoc phai～", "example": "状況を考えれば、そうせざるを得ない。", "exampleTranslation": "Xet tinh hinh thi buoc phai lam nhu vay.", "difficulty": "advanced" },
-  { "id": "ng-089", "pattern": "～まい", "meaning": "Chac se khong～; quyet khong～", "example": "二度と同じ失敗はしまい。", "exampleTranslation": "Quyet khong lap lai sai lam giong nhu vay.", "difficulty": "advanced" },
-  { "id": "ng-090", "pattern": "～かのように", "meaning": "Nhu la～; nhu the la～", "example": "知っているかのように、振る舞っていた。", "exampleTranslation": "Cuu xu nhu nhu la da biet.", "difficulty": "advanced" },
-  { "id": "ng-091", "pattern": "～とおり", "meaning": "Theo～; dung nhu～", "example": "言ったとおりにやってください。", "exampleTranslation": "Xin hay lam dung nhu da noi.", "difficulty": "intermediate" },
-  { "id": "ng-092", "pattern": "～ふりをする", "meaning": "Dong vai～; gia vo～", "example": "知らないふりをしている。", "exampleTranslation": "Gia vo khong biet.", "difficulty": "intermediate" },
-  { "id": "ng-093", "pattern": "～ことは～ほど", "meaning": "Cang～ thi cang～", "example": "練習したことはしたほど、上手になる。", "exampleTranslation": "Cang nhieu luyen tap thi cang gioi len.", "difficulty": "advanced" },
-  { "id": "ng-094", "pattern": "～てはいられない", "meaning": "Khong the～ duoc nua; phai lam gi do", "example": "このまま黙ってはいられない。", "exampleTranslation": "Khong the ngoi im nhu vay duoc nua.", "difficulty": "advanced" },
-  { "id": "ng-095", "pattern": "～てこそ", "meaning": "Chinh vi～ moi～;～moi co y nghia", "example": "努力してこそ、本当の成功が得られる。", "exampleTranslation": "Chi co no luc moi dat duoc thanh cong that su.", "difficulty": "advanced" },
-  { "id": "ng-096", "pattern": "～てまで", "meaning": "Den muc～ cung lam; ngay ca phai～", "example": "借金してまで、旅行に行く必要はない。", "exampleTranslation": "Khong can phai vay tien de di du lich.", "difficulty": "advanced" },
-  { "id": "ng-097", "pattern": "～というより", "meaning": "Hon la～; khong phai～ ma la～", "example": "彼は学者というより、教育者だ。", "exampleTranslation": "Anh ay khong phai hoc gia ma la nha giao duc.", "difficulty": "intermediate" },
-  { "id": "ng-098", "pattern": "～というのは～のことだ", "meaning": "～la co nghia la～", "example": "『N2』というのは、日本語能力試験の2級のことだ。", "exampleTranslation": "N2 co nghia la cap 2 cua ky thi nang luc tieng Nhat.", "difficulty": "intermediate" },
-  { "id": "ng-099", "pattern": "～といったら", "meaning": "Khi noi den～;～do nhe", "example": "日本の食べ物といったら、寿司が有名だ。", "exampleTranslation": "Khi noi den mon an Nhat Ban thi sushi la noi tieng.", "difficulty": "intermediate" },
-  { "id": "ng-100", "pattern": "～というか～というか", "meaning": "Noi la～ hay la～; khong biet la～ hay～", "example": "彼の態度は無礼というか、失礼というか…", "exampleTranslation": "Thai do cua anh ay noi la bat lich su hay la that te...", "difficulty": "advanced" },
-  { "id": "ng-101", "pattern": "～と同時に", "meaning": "Dong thoi～; cung luc～", "example": "卒業すると同時に、就職した。", "exampleTranslation": "Dong thoi voi tot nghiep da di lam.", "difficulty": "intermediate" },
-  { "id": "ng-102", "pattern": "～た末に", "meaning": "Sau khi～ roi～; ket qua cua～", "example": "長い議論の末に、結論が出た。", "exampleTranslation": "Sau cuoc luan luan dai, da dat duoc ket luan.", "difficulty": "advanced" },
-  { "id": "ng-103", "pattern": "～たすえに", "meaning": "Sau nhieu～ thi～", "example": "苦労したすえに、やっと夢が叶った。", "exampleTranslation": "Sau nhieu kho khan, cuoi cung giac mo cung thanh hien.", "difficulty": "advanced" },
-  { "id": "ng-104", "pattern": "～始末だ", "meaning": "Tan cung la～; dan den～ (tieu cuc)", "example": "遅刻ばかりで、ついにはクビになった始末だ。", "exampleTranslation": "Di muon hoai, cuoi cung bi sa thai.", "difficulty": "advanced" },
-  { "id": "ng-105", "pattern": "～極まりない", "meaning": "That la～; khong gi bang～", "example": "この結果は遗憾極まりない。", "exampleTranslation": "Ket qua nay that la dang tiec.", "difficulty": "advanced" },
-  { "id": "ng-106", "pattern": "～の至り", "meaning": "La su～ toi muc;～toi cuc", "example": "光栄の至りです。", "exampleTranslation": "That la vinh du toi muc.", "difficulty": "advanced" },
-  { "id": "ng-107", "pattern": "～てしょうがない", "meaning": "Khong the～ duoc;～lam", "example": "彼のことが心配でしょうがない。", "exampleTranslation": "Lo lang cho anh ay khong sao duoc.", "difficulty": "intermediate" },
-  { "id": "ng-108", "pattern": "～て仕方がない", "meaning": "Lam khong duoc;～lam (giong te mo)", "example": "早く結果が知りたくて仕方がない。", "exampleTranslation": "Muon biet ket qua som lam khong chiu duoc.", "difficulty": "intermediate" },
-  { "id": "ng-109", "pattern": "～たて", "meaning": "Vua moi～; moi lam xong～", "example": "焼きたてのパンはおいしい。", "exampleTranslation": "Banh mi vua moi nuong thi ngon.", "difficulty": "intermediate" },
-  { "id": "ng-110", "pattern": "～のだが", "meaning": "Ma noi～ thi; thuc ra la～", "example": "行きたいのだが、都合が悪い。", "exampleTranslation": "Thuc ra muon di nhung khong tien.", "difficulty": "intermediate" },
-  { "id": "ng-111", "pattern": "～かたわら", "meaning": "Vua～ vua～; mot mat thi～", "example": "大学で教えるかたわら、小説を書いている。", "exampleTranslation": "Vua day o dai hoc vua viet tieu thuyet.", "difficulty": "advanced" },
-  { "id": "ng-112", "pattern": "～がてら", "meaning": "Nhan dip～;～ luon cho tien", "example": "買い物がてら、公園を散歩した。", "exampleTranslation": "Nhan dip di mua sam, di dao cong vien.", "difficulty": "advanced" },
-  { "id": "ng-113", "pattern": "～かたがた", "meaning": "Nhan dip～; vua～ vua～", "example": "お礼かたがた、お伺いします。", "exampleTranslation": "Nhan dip cam on nen xin den tham.", "difficulty": "advanced" },
-  { "id": "ng-114", "pattern": "～ついでに", "meaning": "Nhan dip～; lam luon～", "example": "郵便局に行くついでに、切手を買ってきてください。", "exampleTranslation": "Nhan dip di buu dien, mua luon tem ve.", "difficulty": "intermediate" },
-  { "id": "ng-115", "pattern": "～が早いか", "meaning": "Vua～ la～; ngay khi～", "example": " bellが鳴るが早いか、生徒たちは教室を出た。", "exampleTranslation": "Vua keo chuong la hoc sinh chay ra khoi lop.", "difficulty": "advanced" },
-  { "id": "ng-116", "pattern": "～なり", "meaning": "Ngay khi～ thi～; vua～ la～", "example": "家に帰るなり、ベッドに倒れ込んだ。", "exampleTranslation": "Vua ve nha la nga xuong giuong.", "difficulty": "advanced" },
-  { "id": "ng-117", "pattern": "～やいなや", "meaning": "Ngay khi～ thi～", "example": "ドアを開けるやいなや、猫が飛び出した。", "exampleTranslation": "Vua mo cua la meo nhay ra.", "difficulty": "advanced" },
-  { "id": "ng-118", "pattern": "～まいと", "meaning": "Quyet khong～; co gang khong～", "example": "遅刻するまいと、早く家を出た。", "exampleTranslation": "Co gang khong di muon nen da xuong som.", "difficulty": "advanced" },
-  { "id": "ng-119", "pattern": "～んがために", "meaning": "De～; vi muc dich～", "example": "勝利を収めんがために、懸命に練習した。", "exampleTranslation": "De dat chien thang, da co het suc luyen tap.", "difficulty": "advanced" },
-  { "id": "ng-120", "pattern": "～んばかりに", "meaning": "Nhu the～; nhu muon～", "example": "泣かんばかりに頼まれたので、断れなかった。", "exampleTranslation": "Bi cau xin nhu the muon khoc nen khong the tu choi.", "difficulty": "advanced" },
-  { "id": "ng-121", "pattern": "～ともなると", "meaning": "Khi da～ thi; khi den～ thi", "example": "冬ともなると、朝起きるのが辛い。", "exampleTranslation": "Khi da vao mua dong thi sang day kho.", "difficulty": "advanced" },
-  { "id": "ng-122", "pattern": "～ともなく", "meaning": "Vo tinh～; khong co y dinh～", "example": "テレビともなく見ていたら、面白い番組を見つけた。", "exampleTranslation": "Xem TV vo tinh thi thay chuong trinh hay.", "difficulty": "advanced" },
-  { "id": "ng-123", "pattern": "～ての", "meaning": "Qua～ roi moi co; bang su～", "example": "努力ての成功だ。", "exampleTranslation": "La thanh cong bang su no luc.", "difficulty": "advanced" },
-  { "id": "ng-124", "pattern": "～なくして", "meaning": "Ma khong co～ thi～", "example": "努力なくして、成功はない。", "exampleTranslation": "Ma khong co su no luc thi khong co thanh cong.", "difficulty": "advanced" },
-  { "id": "ng-125", "pattern": "～あっての", "meaning": "Nho co～ moi co～", "example": "この成功は皆さんの支援あってのことだ。", "exampleTranslation": "Thanh cong nay la nho co su ho tro cua moi nguoi.", "difficulty": "advanced" }
+  {
+    "id": "ng-001",
+    "pattern": "～にもかかわらず",
+    "structure": "V・A・Na・N + にもかかわらず",
+    "meaning": "Mặc dù～ (dù... nhưng vẫn...)",
+    "example": "努力したにもかかわらず、試合に負けた。",
+    "exampleTranslation": "Mặc dù đã nỗ lực nhưng vẫn thua trận đấu.",
+    "difficulty": "advanced"
+  },
+  {
+    "id": "ng-002",
+    "pattern": "～たびに",
+    "structure": "V-る / Nの + たびに",
+    "meaning": "Mỗi khi～, cứ mỗi lần～",
+    "example": "この写真を見るたびに、故郷を思い出す。",
+    "exampleTranslation": "Mỗi khi nhìn tấm ảnh này tôi lại nhớ quê hương.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "ng-003",
+    "pattern": "～わけだ",
+    "structure": "V・A・Na・N + わけだ",
+    "meaning": "Thế nên, hợp lý là～",
+    "example": "毎日練習している。上手なわけだ。",
+    "exampleTranslation": "Ngày nào cũng luyện tập. Hợp lý là giỏi.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "ng-004",
+    "pattern": "～によって",
+    "structure": "N + によって",
+    "meaning": "Tùy theo～, do bởi～",
+    "example": "地域によって風習が異なる。",
+    "exampleTranslation": "Phơng tục khác nhau tùy theo vùng miền.",
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "ng-005",
+    "pattern": "～ざるを得ない",
+    "structure": "V-ない + ざるを得ない",
+    "meaning": "Buộc phải～ (không còn cách nào khác)",
+    "example": "台風のため、中止せざるを得ない。",
+    "exampleTranslation": "Vì bão nên buộc phải hủy bỏ.",
+    "difficulty": "advanced"
+  },
+  {
+    "id": "ng-006",
+    "pattern": "～上で",
+    "meaning": "Sau khi～ rồi (mới); trong quá trình～",
+    "example": "よく考えた上で、返事します。",
+    "exampleTranslation": "Sau khi suy nghĩ kỹ mới sẽ trả lời.",
+    "difficulty": "intermediate",
+    "structure": "V-た / Nの + 上で"
+  },
+  {
+    "id": "ng-007",
+    "pattern": "～っぽい",
+    "meaning": "Có vẻ～, mang tính chất～, hơi～",
+    "example": "彼は最近怠けっぽくなった。",
+    "exampleTranslation": "Gần đây anh ấy có vẻ lười biếng.",
+    "difficulty": "intermediate",
+    "structure": "V-ます(bỏ ます) / N / A-い(bỏ い) + っぽい"
+  },
+  {
+    "id": "ng-008",
+    "pattern": "～てからでないと",
+    "meaning": "Nếu chưa～ thì không thể...",
+    "example": "確認してからでないと、答えられません。",
+    "exampleTranslation": "Nếu chưa xac nhan thì không thể tra loi.",
+    "difficulty": "advanced",
+    "structure": "V-て + からでないと"
+  },
+  {
+    "id": "ng-009",
+    "pattern": "～ばかりに",
+    "meaning": "Chỉ vì～ (kết quả tiêu cực); đều là vì～",
+    "example": "油断したばかりに、事故を起こした。",
+    "exampleTranslation": "Chỉ vì cham lo nên đã gay ra tai nan.",
+    "difficulty": "advanced",
+    "structure": "V・A・Na・N + ばかりに"
+  },
+  {
+    "id": "ng-010",
+    "pattern": "～とともに",
+    "meaning": "Cùng với～, dong thơi～",
+    "example": "技術の進歩とともに生活が変わった。",
+    "exampleTranslation": "Cuộc sống thay đổi cùng với tiến bộ công nghệ.",
+    "difficulty": "intermediate",
+    "structure": "V-る / N + とともに"
+  },
+  {
+    "id": "ng-011",
+    "pattern": "～一方で",
+    "meaning": "Một mặt thì～, mot thì～ (hai mặt trái ngược)",
+    "example": "彼は厳しい一方で、優しいところもある。",
+    "exampleTranslation": "Anh ấy một mặt thì nghiêm khắc, một mặt thì cũng có chỗ hiền lành.",
+    "difficulty": "intermediate",
+    "structure": "V-る / A-い / Na-な / N-である + 一方で"
+  },
+  {
+    "id": "ng-012",
+    "pattern": "～にしても",
+    "meaning": "Đáng cũng～; cho dù có～",
+    "example": "行くにしても、準備が必要だ。",
+    "exampleTranslation": "Cho dù có đi cũng cần sự chuẩn bị.",
+    "difficulty": "advanced",
+    "structure": "V・A・Na・N + にしても"
+  },
+  {
+    "id": "ng-013",
+    "pattern": "～さえ～ば",
+    "meaning": "Chỉ cần～ thì～",
+    "example": "お金さえあれば、何でも買える。",
+    "exampleTranslation": "Chỉ cần có tien thì có the mua bat cu thu gi.",
+    "difficulty": "intermediate",
+    "structure": "V-ます(bỏ ます) + さえすれば / N + さえ + V-ば"
+  },
+  {
+    "id": "ng-014",
+    "pattern": "～つつ",
+    "meaning": "Trong khi～, vừa～ vừa～",
+    "example": "危険を知りつつも、冒険に出かけた。",
+    "exampleTranslation": "Biết là nguy hiểm nhưng vẫn đi khám phá.",
+    "difficulty": "advanced",
+    "structure": "V-ます(bỏ ます) + つつ"
+  },
+  {
+    "id": "ng-015",
+    "pattern": "～ずにはいられない",
+    "meaning": "Không thể không～, không kìm chế lại được",
+    "example": "この映画を見れば、泣かずにはいられない。",
+    "exampleTranslation": "Xem phim nay thì không thể khơng khoc.",
+    "difficulty": "advanced",
+    "structure": "V-ない(bỏ ない) + ずにはいられない"
+  },
+  {
+    "id": "ng-016",
+    "pattern": "～にすぎない",
+    "meaning": "Chỉ là～, không hơn gì",
+    "example": "それは推測にすぎない。",
+    "exampleTranslation": "Đó chỉ là sự suy đoán.",
+    "difficulty": "advanced",
+    "structure": "V-る / N + にすぎない"
+  },
+  {
+    "id": "ng-017",
+    "pattern": "～からには",
+    "meaning": "Đã là～ thì; vì là～ nên",
+    "example": "引き受けたからには、最後までやる。",
+    "exampleTranslation": "Da nhan lắm roi thì lắm den cuoi cũng.",
+    "difficulty": "advanced",
+    "structure": "V-る / V-た + からには"
+  },
+  {
+    "id": "ng-018",
+    "pattern": "～ものなら",
+    "meaning": "Nếu mà có thể～ (thuong là kha thì)",
+    "example": "戻れるものなら、戻りたい。",
+    "exampleTranslation": "Nếu có the quay lại thì muon quay lại.",
+    "difficulty": "advanced",
+    "structure": "V-れる + ものなら"
+  },
+  {
+    "id": "ng-019",
+    "pattern": "たとえ～ても",
+    "meaning": "Cho dù～ cũng～",
+    "example": "たとえ雨が降っても、运动会を行う。",
+    "exampleTranslation": "Cho dù mua cũng van to chuc hơi thao.",
+    "difficulty": "intermediate",
+    "structure": "たとえ + V-ても / A-くても / Na・N-でも"
+  },
+  {
+    "id": "ng-020",
+    "pattern": "～わけがない",
+    "meaning": "Nhất định không thể～, không có lý do gì～",
+    "example": "そんな簡単に成功するわけがない。",
+    "exampleTranslation": "Không có lý do gì thành công dễ dàng như vậy.",
+    "difficulty": "intermediate",
+    "structure": "V・A・Na・N + わけがない"
+  },
+  {
+    "id": "ng-021",
+    "pattern": "～わけではない",
+    "meaning": "Không phải là～",
+    "example": "嫌いなわけではないが、あまり食べない。",
+    "exampleTranslation": "Không phải là khơng thìch nhưng khơng an nhieu.",
+    "difficulty": "intermediate",
+    "structure": "V・A・Na・N + わけではない"
+  },
+  {
+    "id": "ng-022",
+    "pattern": "～わけにはいかない",
+    "meaning": "Không thể～ được (vì có nguyên nhân, quy tắc)",
+    "example": "約束したわけには、行かないわけにはいかない。",
+    "exampleTranslation": "Da hen roi nên khơng the khơng di được.",
+    "difficulty": "advanced",
+    "structure": "V-る / V-ない + わけにはいかない"
+  },
+  {
+    "id": "ng-023",
+    "pattern": "～どころか",
+    "meaning": "Chưa nói đến～ (chưa kể đến～); không những không～ mà còn～",
+    "example": "手伝ってくれるどころか、邪魔された。",
+    "exampleTranslation": "Chưa nói đến giup do, cón bi lắm phien.",
+    "difficulty": "advanced",
+    "structure": "V・A・Na・N + どころか"
+  },
+  {
+    "id": "ng-024",
+    "pattern": "～どころではない",
+    "meaning": "Không phải lúc để～, không còn tâm trí đâu mà～",
+    "example": "試験が明日なので、遊ぶどころではない。",
+    "exampleTranslation": "Ngay mai thì roi, khơng phai luc de chơi.",
+    "difficulty": "intermediate",
+    "structure": "V-る / N + どころではない"
+  },
+  {
+    "id": "ng-025",
+    "pattern": "～ことはない",
+    "meaning": "Không cần phải～, khơng nhat thìet phai～",
+    "example": "心配することはない。大丈夫だ。",
+    "exampleTranslation": "Không cần phải lo làng. Khơng sao đãu.",
+    "difficulty": "intermediate",
+    "structure": "V-る + ことはない"
+  },
+  {
+    "id": "ng-026",
+    "pattern": "～ことは～が",
+    "meaning": "Thì có～ nhưng～",
+    "example": "見たことは見たが、内容は覚えていない。",
+    "exampleTranslation": "Thì có thay roi nhưng khơng nho noi dung.",
+    "difficulty": "advanced",
+    "structure": "V-る + ことは + V-る + が"
+  },
+  {
+    "id": "ng-027",
+    "pattern": "～もの",
+    "meaning": "Bởi vì～ (lý do mang tính cảm xúc)",
+    "example": "子供は好奇心が強いものだ。",
+    "exampleTranslation": "Tre cón thì tinh to mo là binh thuong.",
+    "difficulty": "intermediate",
+    "structure": "V-る / A-い / Na-な + ものだ"
+  },
+  {
+    "id": "ng-028",
+    "pattern": "～ものか",
+    "meaning": "Sao mà～ được! (phủ định mạnh)",
+    "example": "こんなところで負けるものか。",
+    "exampleTranslation": "Sao mà có the thua o cho nay được!",
+    "difficulty": "advanced",
+    "structure": "V-る / A-い / Na-な + ものか"
+  },
+  {
+    "id": "ng-029",
+    "pattern": "～というものだ",
+    "meaning": "Có thể nói là～; thật sự là～",
+    "example": "努力が実を結んだというものだ。",
+    "exampleTranslation": "Có thể nói là su no luc đã đãt ket qua.",
+    "difficulty": "advanced",
+    "structure": "V・A・Na・N + というものだ"
+  },
+  {
+    "id": "ng-030",
+    "pattern": "～たとえ～ても",
+    "meaning": "Cho dù～ cũng～",
+    "example": "たとえ失敗しても、挑戦し続ける。",
+    "exampleTranslation": "Cho dù that bai cũng van tiep tuc thu thach.",
+    "difficulty": "advanced",
+    "structure": "たとえ + V-ても"
+  },
+  {
+    "id": "ng-031",
+    "pattern": "～ば～ほど",
+    "meaning": "Càng～ càng～",
+    "example": "勉強すればするほど、難しくなる気がする。",
+    "exampleTranslation": "Càng hoc càng cam thay kho.",
+    "difficulty": "intermediate",
+    "structure": "V-ば + V-る + ほど"
+  },
+  {
+    "id": "ng-032",
+    "pattern": "～ほど～はない",
+    "meaning": "Không có gì～ hơn～",
+    "example": "旅行ほど楽しいものはない。",
+    "exampleTranslation": "Không có gì vui hơn du lich.",
+    "difficulty": "intermediate",
+    "structure": "N + ほど + A/Na/N + はない"
+  },
+  {
+    "id": "ng-033",
+    "pattern": "～くらい",
+    "meaning": "Nhiều đến mức～; có～",
+    "example": "嬉しくて泣きたいくらいだった。",
+    "exampleTranslation": "Vui đến mức muốn khóc.",
+    "difficulty": "intermediate",
+    "structure": "V-る / A-い / Na-な / N + くらい"
+  },
+  {
+    "id": "ng-034",
+    "pattern": "～くらいだ",
+    "meaning": "Đến mức～; như là～",
+    "example": "喉が渇くくて、水を飲まずにはいられないくらいだ。",
+    "exampleTranslation": "Khat den muc khơng the khơng uong nuoc.",
+    "difficulty": "advanced",
+    "structure": "V-る / A-い / Na-な / N + くらいだ"
+  },
+  {
+    "id": "ng-035",
+    "pattern": "～さえ",
+    "meaning": "Thậm chí là～",
+    "example": "名前さえ知らない。",
+    "exampleTranslation": "Thậm chí ten cũng khơng biet.",
+    "difficulty": "intermediate",
+    "structure": "N + さえ"
+  },
+  {
+    "id": "ng-036",
+    "pattern": "～すら",
+    "meaning": "Thậm chí～ (tu có tinh trang trong)",
+    "example": "子供すら知っている常識だ。",
+    "exampleTranslation": "La thuong thuc ma tham chi tre cón cũng biet.",
+    "difficulty": "advanced",
+    "structure": "N + すら"
+  },
+  {
+    "id": "ng-037",
+    "pattern": "～こそ",
+    "meaning": "Chính là～; mới chính là～",
+    "example": "これこそ私が欲しかったものだ。",
+    "exampleTranslation": "Đây chính là thứ tôi muốn.",
+    "difficulty": "intermediate",
+    "structure": "N + こそ"
+  },
+  {
+    "id": "ng-038",
+    "pattern": "～しか～ない",
+    "meaning": "Chi có～ thơi",
+    "example": "もう時間がない。急ぐしかない。",
+    "exampleTranslation": "Khơng cón thơi gian. Chi cón cach voi.",
+    "difficulty": "intermediate",
+    "structure": "N / V-る + しか～ない"
+  },
+  {
+    "id": "ng-039",
+    "pattern": "～てしかるべきだ",
+    "meaning": "La dieu dung nên～",
+    "example": "謝るべきことは謝ってしかるべきだ。",
+    "exampleTranslation": "Dieu can xin loi thì nên xin loi.",
+    "difficulty": "advanced",
+    "structure": "V-て + しかるべきだ"
+  },
+  {
+    "id": "ng-040",
+    "pattern": "～ずにはすまない",
+    "meaning": "Không thể không～; nhất định phải～",
+    "example": "この件については、本人に聞かずにはすまない。",
+    "exampleTranslation": "Về viec nay khơng the khơng hinh nguoi trong cuoc.",
+    "difficulty": "advanced",
+    "structure": "V-ない(bỏ ない) + ずにはすまない"
+  },
+  {
+    "id": "ng-041",
+    "pattern": "～にほかならない",
+    "meaning": "Khơng gi khac là～; chinh là～",
+    "example": "成功は努力の結果にほかならない。",
+    "exampleTranslation": "Thanh cóng khơng gi khac là ket qua cua su no luc.",
+    "difficulty": "advanced",
+    "structure": "N + にほかならない"
+  },
+  {
+    "id": "ng-042",
+    "pattern": "～ずじまい",
+    "meaning": "Khơng lắm được～; de do khơng lắm",
+    "example": "行きたいと思っていたのに、結局行かずじまいだった。",
+    "exampleTranslation": "Muon di nhưng cuoi cũng cũng khơng di được.",
+    "difficulty": "advanced",
+    "structure": "V-ない(bỏ ない) + ずじまい"
+  },
+  {
+    "id": "ng-043",
+    "pattern": "～きる",
+    "meaning": "Làm hoàn toàn～; làm hết～",
+    "example": "マラソンを最後まで走りきった。",
+    "exampleTranslation": "Da chay marathơn den cuoi cũng.",
+    "difficulty": "intermediate",
+    "structure": "V-ます(bỏ ます) + きる"
+  },
+  {
+    "id": "ng-044",
+    "pattern": "～かける",
+    "meaning": "Bắt đầu～; làm dở～",
+    "example": "読んでいた本を読みかけのまま寝てしまった。",
+    "exampleTranslation": "Đang đọc sách mà đọc dở rồi ngủ mất.",
+    "difficulty": "intermediate",
+    "structure": "V-ます(bỏ ます) + かける"
+  },
+  {
+    "id": "ng-045",
+    "pattern": "～かねる",
+    "meaning": "Khó mà～; khơng the～ được (sự từ tốn)",
+    "example": "そのご提案はお受けしかねます。",
+    "exampleTranslation": "Đề xuất đó khó mà chấp nhận được.",
+    "difficulty": "advanced",
+    "structure": "V-ます(bỏ ます) + かねる"
+  },
+  {
+    "id": "ng-046",
+    "pattern": "～かねない",
+    "meaning": "Có khả năng～ (xấu); có the～",
+    "example": "無理をすると、倒れかねない。",
+    "exampleTranslation": "Lam qua suc có the nga xiu.",
+    "difficulty": "advanced",
+    "structure": "V-ます(bỏ ます) + かねない"
+  },
+  {
+    "id": "ng-047",
+    "pattern": "～っこない",
+    "meaning": "Nhat dinh khơng～; khơng the～ được",
+    "example": "あんなに練習したんだから、負けっこない。",
+    "exampleTranslation": "Luyen tap nhieu nhu vay nên nhat dinh khơng thua.",
+    "difficulty": "advanced",
+    "structure": "V-ます(bỏ ます) + っこない"
+  },
+  {
+    "id": "ng-048",
+    "pattern": "～得る",
+    "meaning": "Co the～; có kha nang～",
+    "example": "これは十分あり得ることだ。",
+    "exampleTranslation": "Day là dieu hoan toan có the xay ra.",
+    "difficulty": "advanced",
+    "structure": "V-ます(bỏ ます) + 得る（える/うる）"
+  },
+  {
+    "id": "ng-049",
+    "pattern": "～か～ないかのうちに",
+    "meaning": "Lúc～ hay chưa～ thì đã～",
+    "example": "電車が止まるか止まらないかのうちに、乗客が飛び出した。",
+    "exampleTranslation": "Lúc tau dung hay chưa dung thì hanh khach đã chay ra.",
+    "difficulty": "advanced",
+    "structure": "V-る + か + V-ない + かのうちに"
+  },
+  {
+    "id": "ng-050",
+    "pattern": "～てたまらない",
+    "meaning": "Không thể～ được nua;～lắm",
+    "example": "暑くてたまらない。",
+    "exampleTranslation": "Nong lắm khơng chiu được nua.",
+    "difficulty": "intermediate",
+    "structure": "V-て / A-くて / Na-で + たまらない"
+  },
+  {
+    "id": "ng-051",
+    "pattern": "～てならない",
+    "meaning": "Không thể kiem che được;～lắm",
+    "example": "故郷が恋しくてならない。",
+    "exampleTranslation": "Nhờ que huong khơng the kiem che được.",
+    "difficulty": "advanced",
+    "structure": "V-て / A-くて / Na-で + ならない"
+  },
+  {
+    "id": "ng-052",
+    "pattern": "～てやまない",
+    "meaning": "Hết lòng～;～sâu sắc",
+    "example": "ご成功を祈ってやまない。",
+    "exampleTranslation": "Xin chan thanh cau chuc thanh cóng.",
+    "difficulty": "advanced",
+    "structure": "V-て + やまない"
+  },
+  {
+    "id": "ng-053",
+    "pattern": "～に至るまで",
+    "meaning": "Cho đến～; kể cả～",
+    "example": "細かいところに至るまで、完璧だった。",
+    "exampleTranslation": "Ke ca nhưng cho nho nhat cũng hoan hao.",
+    "difficulty": "advanced",
+    "structure": "N + に至るまで"
+  },
+  {
+    "id": "ng-054",
+    "pattern": "～に至る",
+    "meaning": "Đển～; đãn den～",
+    "example": "解決に至るまでに長い時間がかかった。",
+    "exampleTranslation": "Phai mat thơi gian đãi mới giai quyet xong.",
+    "difficulty": "advanced",
+    "structure": "N / V-る + に至る"
+  },
+  {
+    "id": "ng-055",
+    "pattern": "～をきっかけに",
+    "meaning": "Nhờ～; lấy～ lắm có hơi",
+    "example": "留学をきっかけに、日本に興味を持った。",
+    "exampleTranslation": "Nhờ di du hoc nên đã có yeu to voi Nhat Ban.",
+    "difficulty": "intermediate",
+    "structure": "N + をきっかけに"
+  },
+  {
+    "id": "ng-056",
+    "pattern": "～をもとに",
+    "meaning": "Dựa trên～; dựa vào～",
+    "example": "調査結果をもとに、報告書を作成した。",
+    "exampleTranslation": "Dựa trên ket qua khao sat đã làp bao cao.",
+    "difficulty": "intermediate",
+    "structure": "N + をもとに"
+  },
+  {
+    "id": "ng-057",
+    "pattern": "～を中心に",
+    "meaning": "Trọng tâm là～; tập trung vào～",
+    "example": "東京を中心に、地震の被害が広がった。",
+    "exampleTranslation": "Thiet hai do dong đãt làn rong trong tam là Tokyo.",
+    "difficulty": "intermediate",
+    "structure": "N + を中心に"
+  },
+  {
+    "id": "ng-058",
+    "pattern": "～をもとにした",
+    "meaning": "Dựa trên～; có so vao～",
+    "example": "実話をもとにした映画だ。",
+    "exampleTranslation": "La phim dua tren su có that.",
+    "difficulty": "intermediate",
+    "structure": "N + をもとにした + N"
+  },
+  {
+    "id": "ng-059",
+    "pattern": "～を問わず",
+    "meaning": "Khơng phan biet～; bất kể～",
+    "example": "昼夜を問わず、工事が行われている。",
+    "exampleTranslation": "Khơng phan biet ngay dem, cóng trinh van tien hanh.",
+    "difficulty": "advanced",
+    "structure": "N + を問わず"
+  },
+  {
+    "id": "ng-060",
+    "pattern": "～をもって",
+    "meaning": "Bằng～; bằng phương tiện～; vào lúc～",
+    "example": "本日をもって閉店いたします。",
+    "exampleTranslation": "Xin thơng bao dong cua vao hom nay.",
+    "difficulty": "advanced",
+    "structure": "N + をもって"
+  },
+  {
+    "id": "ng-061",
+    "pattern": "～を前にして",
+    "meaning": "Trước～; đối diện với～",
+    "example": "試験を前にして、緊張している。",
+    "exampleTranslation": "Trước ky thì nên cam thay hơi hop.",
+    "difficulty": "advanced",
+    "structure": "N + を前にして"
+  },
+  {
+    "id": "ng-062",
+    "pattern": "～をめぐって",
+    "meaning": "Xoay quanh～; liên quan đến～",
+    "example": "その問題をめぐって、議論が続いている。",
+    "exampleTranslation": "Xoay quanh vấn đề đó, cuộc tranh luận vẫn tiếp tục.",
+    "difficulty": "advanced",
+    "structure": "N + をめぐって"
+  },
+  {
+    "id": "ng-063",
+    "pattern": "～にとって",
+    "meaning": "Đối với～",
+    "example": "私にとって、家族が一番大切だ。",
+    "exampleTranslation": "Đối với toi, giả định là quan trong nhat.",
+    "difficulty": "intermediate",
+    "structure": "N + にとって"
+  },
+  {
+    "id": "ng-064",
+    "pattern": "～に対して",
+    "meaning": "Đối với～; nhắm vào～",
+    "example": "環境問題に対して、関心が高まっている。",
+    "exampleTranslation": "Suu quan tam doi voi van de mới truong ngay càng tang.",
+    "difficulty": "intermediate",
+    "structure": "N + に対して"
+  },
+  {
+    "id": "ng-065",
+    "pattern": "～について",
+    "meaning": "Về～; liên quan đến～",
+    "example": "日本の歴史について調べた。",
+    "exampleTranslation": "Đã tìm hiểu về lịch sử Nhật Bản.",
+    "difficulty": "intermediate",
+    "structure": "N + について"
+  },
+  {
+    "id": "ng-066",
+    "pattern": "～に関して",
+    "meaning": "Về～; liên quan đến～ (trong tam hơn)",
+    "example": "この件に関しては、後日ご連絡します。",
+    "exampleTranslation": "Về viec nay, se lien làc vao ngay khac.",
+    "difficulty": "advanced",
+    "structure": "N + に関して"
+  },
+  {
+    "id": "ng-067",
+    "pattern": "～に向いていない",
+    "meaning": "Khơng phu hop voi～; khơng thìch hop",
+    "example": "この仕事は私に向いていない。",
+    "exampleTranslation": "Cong viec nay khơng phu hop voi toi.",
+    "difficulty": "intermediate",
+    "structure": "N + に向いていない"
+  },
+  {
+    "id": "ng-068",
+    "pattern": "～に向いている",
+    "meaning": "Phù hợp với～; thìch hop",
+    "example": "彼は先生に向いていると思う。",
+    "exampleTranslation": "Toi nghi anh ay thìch hop lắm giao vien.",
+    "difficulty": "intermediate",
+    "structure": "N + に向いている"
+  },
+  {
+    "id": "ng-069",
+    "pattern": "～にかぎって",
+    "meaning": "Đặc biệt là～; riêng～",
+    "example": "今日にかぎって、電車が遅れた。",
+    "exampleTranslation": "Đặc biệt là hom nay tau bi tre.",
+    "difficulty": "advanced",
+    "structure": "N + にかぎって"
+  },
+  {
+    "id": "ng-070",
+    "pattern": "～にかぎらず",
+    "meaning": "Khơng chi～; khơng riêng～",
+    "example": "子供にかぎらず、大人もこの菓子が好きだ。",
+    "exampleTranslation": "Khơng chi tre cón, nguoi lon cũng thìch banh nay.",
+    "difficulty": "advanced",
+    "structure": "N + にかぎらず"
+  },
+  {
+    "id": "ng-071",
+    "pattern": "～にかけては",
+    "meaning": "Về phan～; khi nói đến～",
+    "example": "日本語の文法にかけては、彼の右に出る者はいない。",
+    "exampleTranslation": "Về phan ngu phap Nhat khơng ai hơn được anh ay.",
+    "difficulty": "advanced",
+    "structure": "N + にかけては"
+  },
+  {
+    "id": "ng-072",
+    "pattern": "～にこたえて",
+    "meaning": "Đáp ứng～; đối ứng với～",
+    "example": "消費者の声にこたえて、製品を改良した。",
+    "exampleTranslation": "Đáp ứng tieng noi nguoi tieu dung nên đã cai tien san pham.",
+    "difficulty": "advanced",
+    "structure": "N + にこたえて"
+  },
+  {
+    "id": "ng-073",
+    "pattern": "～をこめて",
+    "meaning": "Gửi gắm～; đãt vao～",
+    "example": "心をこめて、手紙を書いた。",
+    "exampleTranslation": "Đã viết thư gửi gắm tấm lòng.",
+    "difficulty": "intermediate",
+    "structure": "N + をこめて"
+  },
+  {
+    "id": "ng-074",
+    "pattern": "～にそって",
+    "meaning": "Theo～; dọc theo～",
+    "example": "川にそって、桜の木が植えられている。",
+    "exampleTranslation": "Hoa anh đão được trong dọc theo song.",
+    "difficulty": "intermediate",
+    "structure": "N + にそって"
+  },
+  {
+    "id": "ng-075",
+    "pattern": "～に沿って",
+    "meaning": "Theo～; dựa theo～",
+    "example": "計画に沿って、工事を進める。",
+    "exampleTranslation": "Tien hanh cóng trinh theo ke hoach.",
+    "difficulty": "intermediate",
+    "structure": "N + に沿って"
+  },
+  {
+    "id": "ng-076",
+    "pattern": "～にわたって",
+    "meaning": "Keo đãi～; trải qua～",
+    "example": "5日間にわたって、会議が行われた。",
+    "exampleTranslation": "Cuoc hơi nghi dien ra keo đãi 5 ngay.",
+    "difficulty": "advanced",
+    "structure": "N + にわたって"
+  },
+  {
+    "id": "ng-077",
+    "pattern": "～をよそに",
+    "meaning": "Bỏ ngoài～; khơng quan tam den～",
+    "example": "親の心配をよそに、一人で旅に出た。",
+    "exampleTranslation": "Khơng quan tam den su lo làng cua cha me, tu minh di du lich.",
+    "difficulty": "advanced",
+    "structure": "N + をよそに"
+  },
+  {
+    "id": "ng-078",
+    "pattern": "～をものともせず",
+    "meaning": "Khơng nao long truoc～; khơng so～",
+    "example": "批判をものともせず、自分の意見を貫いた。",
+    "exampleTranslation": "Khơng nao long truoc su phe binh, van giu y kien cua minh.",
+    "difficulty": "advanced",
+    "structure": "N + をものともせず"
+  },
+  {
+    "id": "ng-079",
+    "pattern": "～つつも",
+    "meaning": "Đang biết là～ nhưng van～",
+    "example": "悪いと知りつつも、うそをついてしまった。",
+    "exampleTranslation": "Biet là sai nhưng van noi doi.",
+    "difficulty": "advanced",
+    "structure": "V-ます(bỏ ます) + つつも"
+  },
+  {
+    "id": "ng-080",
+    "pattern": "～ながらも",
+    "meaning": "Vừa～ vừa～; du～ nhưng van～",
+    "example": "狭いながらも、幸せな家庭だ。",
+    "exampleTranslation": "Dù nho nhưng van là giả định hanh phuc.",
+    "difficulty": "intermediate",
+    "structure": "V-ます(bỏ ます) / A-い / Na / N + ながらも"
+  },
+  {
+    "id": "ng-081",
+    "pattern": "～くせに",
+    "meaning": "Mà～ lại～ (có y che bai)",
+    "example": "知っているくせに、教えてくれない。",
+    "exampleTranslation": "Biet ma lại khơng chi cho.",
+    "difficulty": "intermediate",
+    "structure": "V・A・Na・N + くせに"
+  },
+  {
+    "id": "ng-082",
+    "pattern": "～わりに",
+    "meaning": "So với～ thì～ (bất ngờ)",
+    "example": "このレストランは安いわりに、美味しい。",
+    "exampleTranslation": "So với gia re thì nha hang nay ngon.",
+    "difficulty": "intermediate",
+    "structure": "V・A・Na・N + わりに"
+  },
+  {
+    "id": "ng-083",
+    "pattern": "～にしては",
+    "meaning": "Đối với～ thì～ (ngoài dự kiến)",
+    "example": "初めてにしては、上手にできた。",
+    "exampleTranslation": "Đối với làn đãu thì lắm kha gioi.",
+    "difficulty": "intermediate",
+    "structure": "V・A・Na・N + にしては"
+  },
+  {
+    "id": "ng-084",
+    "pattern": "～としたら",
+    "meaning": "Nếu như～; giả định～",
+    "example": "もし宝くじが当たったらとしたら、何がほしい？",
+    "exampleTranslation": "Nehu nhu trung xo so thì ban muon gi?",
+    "difficulty": "intermediate",
+    "structure": "V・A・Na・N + としたら"
+  },
+  {
+    "id": "ng-085",
+    "pattern": "～とすれば",
+    "meaning": "Nếu～; giả sử～",
+    "example": "彼の言うとすれば、正しいことになる。",
+    "exampleTranslation": "Nếu theo anh ay noi thì se là dung.",
+    "difficulty": "intermediate",
+    "structure": "V・A・Na・N + とすれば"
+  },
+  {
+    "id": "ng-086",
+    "pattern": "～ないことには",
+    "meaning": "Nếu khơng～ thì～",
+    "example": "実際にやってみないことには、わからない。",
+    "exampleTranslation": "Nếu khơng thu lắm thì khơng biet.",
+    "difficulty": "advanced",
+    "structure": "V-て + みないことには"
+  },
+  {
+    "id": "ng-087",
+    "pattern": "～ないことはない",
+    "meaning": "Không phải là khơng～; cũng có the～",
+    "example": "食べられないことはないが、あまり好きではない。",
+    "exampleTranslation": "Không phải là khơng an được nhưng khơng thìch lắm.",
+    "difficulty": "advanced",
+    "structure": "V-ない + ことはない"
+  },
+  {
+    "id": "ng-088",
+    "pattern": "～ざるをえない",
+    "meaning": "Buộc phải～",
+    "example": "状況を考えれば、そうせざるを得ない。",
+    "exampleTranslation": "Xet tinh hinh thì buoc phai lắm nhu vay.",
+    "difficulty": "advanced",
+    "structure": "V-ない + ざるをえない"
+  },
+  {
+    "id": "ng-089",
+    "pattern": "～まい",
+    "meaning": "Chac se khơng～; quyet khơng～",
+    "example": "二度と同じ失敗はしまい。",
+    "exampleTranslation": "Quyet khơng làp lại sai lắm giong nhu vay.",
+    "difficulty": "advanced",
+    "structure": "V-る + まい"
+  },
+  {
+    "id": "ng-090",
+    "pattern": "～かのように",
+    "meaning": "Như là～; như thể là～",
+    "example": "知っているかのように、振る舞っていた。",
+    "exampleTranslation": "Cuu xu nhu như là đã biet.",
+    "difficulty": "advanced",
+    "structure": "V-た / N-である + かのように"
+  },
+  {
+    "id": "ng-091",
+    "pattern": "～とおり",
+    "meaning": "Theo～; đúng như～",
+    "example": "言ったとおりにやってください。",
+    "exampleTranslation": "Xin hay lắm đúng như đã noi.",
+    "difficulty": "intermediate",
+    "structure": "V-る / V-た / Nの + とおり"
+  },
+  {
+    "id": "ng-092",
+    "pattern": "～ふりをする",
+    "meaning": "Đóng vai～; giả vờ～",
+    "example": "知らないふりをしている。",
+    "exampleTranslation": "Gia vo khơng biet.",
+    "difficulty": "intermediate",
+    "structure": "V・A・Na・N + ふりをする"
+  },
+  {
+    "id": "ng-093",
+    "pattern": "～ことは～ほど",
+    "meaning": "Càng～ thì càng～",
+    "example": "練習したことはしたほど、上手になる。",
+    "exampleTranslation": "Càng nhieu luyen tap thì càng gioi len.",
+    "difficulty": "advanced",
+    "structure": "V-る + ことは + V-る + ほど"
+  },
+  {
+    "id": "ng-094",
+    "pattern": "～てはいられない",
+    "meaning": "Không thể～ được nua; phai lắm gi do",
+    "example": "このまま黙ってはいられない。",
+    "exampleTranslation": "Không thể ngoi im nhu vay được nua.",
+    "difficulty": "advanced",
+    "structure": "V-て + はいられない"
+  },
+  {
+    "id": "ng-095",
+    "pattern": "～てこそ",
+    "meaning": "Chính vì～ mới～;～mới có y nghia",
+    "example": "努力してこそ、本当の成功が得られる。",
+    "exampleTranslation": "Chi có no luc mới đãt được thanh cóng that su.",
+    "difficulty": "advanced",
+    "structure": "V-て + こそ"
+  },
+  {
+    "id": "ng-096",
+    "pattern": "～てまで",
+    "meaning": "Đến mức～ cũng lắm; ngay cả phải～",
+    "example": "借金してまで、旅行に行く必要はない。",
+    "exampleTranslation": "Không cần phải vay tien de di du lich.",
+    "difficulty": "advanced",
+    "structure": "V-て + まで"
+  },
+  {
+    "id": "ng-097",
+    "pattern": "～というより",
+    "meaning": "Hơn là～; khơng phai～ mà là～",
+    "example": "彼は学者というより、教育者だ。",
+    "exampleTranslation": "Anh ay khơng phai hoc gia mà là nha giao duc.",
+    "difficulty": "intermediate",
+    "structure": "V・A・Na・N + というより"
+  },
+  {
+    "id": "ng-098",
+    "pattern": "～というのは～のことだ",
+    "meaning": "～là có nghia là～",
+    "example": "『N2』というのは、日本語能力試験の2級のことだ。",
+    "exampleTranslation": "N2 có nghia là cap 2 cua ky thì nang luc tieng Nhat.",
+    "difficulty": "intermediate",
+    "structure": "N1 + というのは + N2 + のことだ"
+  },
+  {
+    "id": "ng-099",
+    "pattern": "～といったら",
+    "meaning": "Khi noi den～;～đó nhé",
+    "example": "日本の食べ物といったら、寿司が有名だ。",
+    "exampleTranslation": "Khi noi den mon an Nhat Ban thì sushi là noi tieng.",
+    "difficulty": "intermediate",
+    "structure": "N + といったら"
+  },
+  {
+    "id": "ng-100",
+    "pattern": "～というか～というか",
+    "meaning": "Nói là～ hay là～; khơng biet là～ hay～",
+    "example": "彼の態度は無礼というか、失礼というか…",
+    "exampleTranslation": "Thai do cua anh ay noi là bat lich su hay là that te...",
+    "difficulty": "advanced",
+    "structure": "A + というか + B + というか"
+  },
+  {
+    "id": "ng-101",
+    "pattern": "～と同時に",
+    "meaning": "Dong thơi～; cũng luc～",
+    "example": "卒業すると同時に、就職した。",
+    "exampleTranslation": "Dong thơi voi tot nghiep đã di lắm.",
+    "difficulty": "intermediate",
+    "structure": "V-る / N + と同時に"
+  },
+  {
+    "id": "ng-102",
+    "pattern": "～た末に",
+    "meaning": "Sau khi～ roi～; ket qua cua～",
+    "example": "長い議論の末に、結論が出た。",
+    "exampleTranslation": "Sau cuoc luan luan đãi, đã đãt được ket luan.",
+    "difficulty": "advanced",
+    "structure": "V-た / Nの + 末に"
+  },
+  {
+    "id": "ng-103",
+    "pattern": "～たすえに",
+    "meaning": "Sau nhieu～ thì～",
+    "example": "苦労したすえに、やっと夢が叶った。",
+    "exampleTranslation": "Sau nhieu kho khan, cuoi cũng giac mo cũng thanh hien.",
+    "difficulty": "advanced",
+    "structure": "V-た / Nの + すえに"
+  },
+  {
+    "id": "ng-104",
+    "pattern": "～始末だ",
+    "meaning": "Tan cũng là～; đãn den～ (tiêu cực)",
+    "example": "遅刻ばかりで、ついにはクビになった始末だ。",
+    "exampleTranslation": "Di muon hoai, cuoi cũng bi sa thai.",
+    "difficulty": "advanced",
+    "structure": "V-る + 始末だ"
+  },
+  {
+    "id": "ng-105",
+    "pattern": "～極まりない",
+    "meaning": "Thật là～; khơng gi bang～",
+    "example": "この結果は遗憾極まりない。",
+    "exampleTranslation": "Ket qua nay that là đãng tiec.",
+    "difficulty": "advanced",
+    "structure": "Na-な / A-いこと + 極まりない"
+  },
+  {
+    "id": "ng-106",
+    "pattern": "～の至り",
+    "meaning": "Là sự～ tới mức;～tới cực",
+    "example": "光栄の至りです。",
+    "exampleTranslation": "Thật là vinh du tới mức.",
+    "difficulty": "advanced",
+    "structure": "N + の至り"
+  },
+  {
+    "id": "ng-107",
+    "pattern": "～てしょうがない",
+    "meaning": "Không thể～ được;～lắm",
+    "example": "彼のことが心配でしょうがない。",
+    "exampleTranslation": "Lo làng cho anh ay khơng sao được.",
+    "difficulty": "intermediate",
+    "structure": "V-て / A-くて / Na-で + しょうがない"
+  },
+  {
+    "id": "ng-108",
+    "pattern": "～て仕方がない",
+    "meaning": "Lam khơng được;～lắm (giống te mo)",
+    "example": "早く結果が知りたくて仕方がない。",
+    "exampleTranslation": "Muon biet ket qua som lắm khơng chiu được.",
+    "difficulty": "intermediate",
+    "structure": "V-て / A-くて / Na-で + 仕方がない"
+  },
+  {
+    "id": "ng-109",
+    "pattern": "～たて",
+    "meaning": "Vừa mới～; mới lắm xong～",
+    "example": "焼きたてのパンはおいしい。",
+    "exampleTranslation": "Banh mi vừa mới nuong thì ngon.",
+    "difficulty": "intermediate",
+    "structure": "V-ます(bỏ ます) + たて"
+  },
+  {
+    "id": "ng-110",
+    "pattern": "～のだが",
+    "meaning": "Mà noi～ thì; thực ra là～",
+    "example": "行きたいのだが、都合が悪い。",
+    "exampleTranslation": "Thuc ra muon di nhưng khơng tien.",
+    "difficulty": "intermediate",
+    "structure": "V・A・Na・N + のだが"
+  },
+  {
+    "id": "ng-111",
+    "pattern": "～かたわら",
+    "meaning": "Vừa～ vừa～; mot mat thì～",
+    "example": "大学で教えるかたわら、小説を書いている。",
+    "exampleTranslation": "Vừa đãy o đãi hoc vừa viet tieu thuyet.",
+    "difficulty": "advanced",
+    "structure": "V-る / Nの + かたわら"
+  },
+  {
+    "id": "ng-112",
+    "pattern": "～がてら",
+    "meaning": "Nhân dịp～;～ luôn cho tiện",
+    "example": "買い物がてら、公園を散歩した。",
+    "exampleTranslation": "Nhân dịp di mua sam, di đão cóng vien.",
+    "difficulty": "advanced",
+    "structure": "V-ます(bỏ ます) / N + がてら"
+  },
+  {
+    "id": "ng-113",
+    "pattern": "～かたがた",
+    "meaning": "Nhân dịp～; vừa～ vừa～",
+    "example": "お礼かたがた、お伺いします。",
+    "exampleTranslation": "Nhân dịp cam on nên xin den tham.",
+    "difficulty": "advanced",
+    "structure": "N + かたがた"
+  },
+  {
+    "id": "ng-114",
+    "pattern": "～ついでに",
+    "meaning": "Nhân dịp～; lắm luon～",
+    "example": "郵便局に行くついでに、切手を買ってきてください。",
+    "exampleTranslation": "Nhân dịp di buu dien, mua luon tem ve.",
+    "difficulty": "intermediate",
+    "structure": "V-る / V-た / Nの + ついでに"
+  },
+  {
+    "id": "ng-115",
+    "pattern": "～が早いか",
+    "meaning": "Vừa～ là～; ngay khi～",
+    "example": " bellが鳴るが早いか、生徒たちは教室を出た。",
+    "exampleTranslation": "Vừa keo chuong là hoc sinh chay ra khơi lop.",
+    "difficulty": "advanced",
+    "structure": "V-る / V-た + が早いか"
+  },
+  {
+    "id": "ng-116",
+    "pattern": "～なり",
+    "meaning": "Ngay khi～ thì～; vừa～ là～",
+    "example": "家に帰るなり、ベッドに倒れ込んだ。",
+    "exampleTranslation": "Vừa ve nha là nga xuong giuong.",
+    "difficulty": "advanced",
+    "structure": "V-る + なり"
+  },
+  {
+    "id": "ng-117",
+    "pattern": "～やいなや",
+    "meaning": "Ngay khi～ thì～",
+    "example": "ドアを開けるやいなや、猫が飛び出した。",
+    "exampleTranslation": "Vừa mo cua là meo nhay ra.",
+    "difficulty": "advanced",
+    "structure": "V-る + やいなや"
+  },
+  {
+    "id": "ng-118",
+    "pattern": "～まいと",
+    "meaning": "Quyet khơng～; có gang khơng～",
+    "example": "遅刻するまいと、早く家を出た。",
+    "exampleTranslation": "Co gang khơng di muon nên đã xuong som.",
+    "difficulty": "advanced",
+    "structure": "V-る + まいと"
+  },
+  {
+    "id": "ng-119",
+    "pattern": "～んがために",
+    "meaning": "Để～; vì mục đích～",
+    "example": "勝利を収めんがために、懸命に練習した。",
+    "exampleTranslation": "Để đãt chien thang, đã có het suc luyen tap.",
+    "difficulty": "advanced",
+    "structure": "V-ない(bỏ ない) + んがために"
+  },
+  {
+    "id": "ng-120",
+    "pattern": "～んばかりに",
+    "meaning": "Như thể～; như muốn～",
+    "example": "泣かんばかりに頼まれたので、断れなかった。",
+    "exampleTranslation": "Bi cau xin nhu the muon khoc nên khơng the tu chơi.",
+    "difficulty": "advanced",
+    "structure": "V-ない(bỏ ない) + んばかりに"
+  },
+  {
+    "id": "ng-121",
+    "pattern": "～ともなると",
+    "meaning": "Khi đã～ thì; khi đến～ thì",
+    "example": "冬ともなると、朝起きるのが辛い。",
+    "exampleTranslation": "Khi đã vao mua dong thì sang đãy kho.",
+    "difficulty": "advanced",
+    "structure": "N + ともなると"
+  },
+  {
+    "id": "ng-122",
+    "pattern": "～ともなく",
+    "meaning": "Vô tình～; khơng có y dinh～",
+    "example": "テレビともなく見ていたら、面白い番組を見つけた。",
+    "exampleTranslation": "Xem TV vo tinh thì thay chuong trinh hay.",
+    "difficulty": "advanced",
+    "structure": "V-る + ともなく"
+  },
+  {
+    "id": "ng-123",
+    "pattern": "～ての",
+    "meaning": "Qua～ roi mới có; bằng sự～",
+    "example": "努力ての成功だ。",
+    "exampleTranslation": "La thanh cóng bằng sự no luc.",
+    "difficulty": "advanced",
+    "structure": "V-て + の + N"
+  },
+  {
+    "id": "ng-124",
+    "pattern": "～なくして",
+    "meaning": "Mà khơng có～ thì～",
+    "example": "努力なくして、成功はない。",
+    "exampleTranslation": "Mà khơng có su no luc thì khơng có thanh cóng.",
+    "difficulty": "advanced",
+    "structure": "N + なくして"
+  },
+  {
+    "id": "ng-125",
+    "pattern": "～あっての",
+    "meaning": "Nhờ có～ mới có～",
+    "example": "この成功は皆さんの支援あってのことだ。",
+    "exampleTranslation": "Thanh cóng nay là nho có su ho tro cua mới nguoi.",
+    "difficulty": "advanced",
+    "structure": "N1 + あっての + N2"
+  }
 ]
