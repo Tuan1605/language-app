@@ -4,6 +4,7 @@ export const AUTHENTIC_EXAMS: AuthenticExam[] = [
   {
     id: 'toeic-mock-1',
     title: 'TOEIC Mock Exam - ETS Format',
+    year: 2024,
     category: 'toeic',
     timeLimitMinutes: 120,
     sections: [
@@ -115,6 +116,7 @@ export const AUTHENTIC_EXAMS: AuthenticExam[] = [
   {
     id: 'jlpt-n2-mock-1',
     title: 'JLPT N2 Mock Exam',
+    year: 2024,
     category: 'n2',
     timeLimitMinutes: 105,
     sections: [

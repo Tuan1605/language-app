@@ -8,6 +8,7 @@ export interface AuthenticExamQuestion {
   audioUrl?: string; // For listening sections
   imageUrl?: string; // For questions with images (e.g. TOEIC Part 1)
   passage?: string; // For reading sections
+  explanation?: string; // Optional explanation for the correct answer
 }
 
 export interface AuthenticExamSection {
