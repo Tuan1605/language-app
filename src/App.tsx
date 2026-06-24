@@ -1,4 +1,3 @@
-import { useState, useEffect } from 'react';
 import { Toaster, toast } from 'react-hot-toast';
 import { AddFlashcard } from './components/AddFlashcard';
 import { FlashcardView } from './components/FlashcardView';
@@ -6,6 +5,7 @@ import { QuizView } from './components/QuizView';
 import { ListeningView } from './components/ListeningView';
 import { SpeakingView } from './components/SpeakingView';
 import { DictationView } from './components/DictationView';
+import { WritingView } from './components/WritingView';
 import { VocabQuizView } from './components/VocabQuizView';
 import { GrammarQuizView } from './components/GrammarQuizView';
 import { CollectionView } from './components/CollectionView';
@@ -13,78 +13,57 @@ import { AnalyticsView } from './components/AnalyticsView';
 import { CreateExamView } from './components/CreateExamView';
 import { NotebookView } from './components/NotebookView';
 import { GamifiedPath } from './components/GamifiedPath';
+import { ReviewReminder } from './components/ReviewReminder';
 import { RealExamView } from './components/RealExamView';
-import type { Flashcard, ExamResult, ListeningLesson, SpeakingLesson, Question, Difficulty, DictationLesson, ReviewGrade, SessionTask, FullExam, GrammarPoint, KanjiEntry, AuthenticExam } from './types';
+import { MistakeBookView } from './components/MistakeBookView';
+import { MistakeReviewView } from './components/MistakeReviewView';
+import { OnboardingOverlay } from './components/OnboardingOverlay';
+import type { Flashcard, ExamResult, Difficulty, SessionTask, FullExam, AuthenticExam, GrammarPoint, ListeningLesson, SpeakingLesson, DictationLesson, WritingLesson, Question } from './types';
 import { calculateSM2, getNextReviewDate } from './utils/sm2';
-import { MOCK_QUESTIONS, MOCK_LISTENING_LESSONS, MOCK_CARDS, MOCK_SPEAKING_LESSONS, MOCK_DICTATION_LESSONS, MOCK_FULL_EXAMS } from './utils/mockData';
+import { MOCK_LISTENING_LESSONS, MOCK_SPEAKING_LESSONS, MOCK_DICTATION_LESSONS, MOCK_FULL_EXAMS } from './utils/mockData';
 import { AUTHENTIC_EXAMS } from './data/authenticExams';
 import { TOEIC_CURRICULUM, N2_CURRICULUM } from './data/curriculums';
-import { loadCards, saveCards, loadProgress, saveProgress, loadExamResults, saveExamResults, loadTheme, saveTheme } from './utils/storage';
+import { useAppState } from './hooks/useAppState';
+import type { ReviewGrade } from './types';
 
 // Map the active learning track to its content category. Centralised so the
 // TOEIC/N2 switch is applied consistently across filtering and result saving.
 const trackCategory = (track: 'english' | 'japanese'): 'toeic' | 'n2' =>
   track === 'english' ? 'toeic' : 'n2';
 
-type AppMode =
-  | 'path' | 'practice' | 'session' | 'add'
-  | 'collection' | 'analytics' | 'review'
-  | 'create-exam' | 'notebook' | 'real-exam';
-
 function App() {
-  const [cards, setCards] = useState<Flashcard[]>(() => loadCards() || MOCK_CARDS);
-  const [examResults, setExamResults] = useState<ExamResult[]>(() => loadExamResults());
-  const [mode, setMode] = useState<AppMode>('path');
-  const [theme, setTheme] = useState<'light' | 'dark'>(() => loadTheme());
-  const [activeTrack, setActiveTrack] = useState<'english' | 'japanese'>('english');
-  const [unlockedEn, setUnlockedEn] = useState(() => loadProgress().unlocked_en);
-  const [unlockedJa, setUnlockedJa] = useState(() => loadProgress().unlocked_ja);
-  const [customExams, setCustomExams] = useState<FullExam[]>([]);
-  const [questions, setQuestions] = useState<Question[]>(() => MOCK_QUESTIONS);
-  const [n2Grammar, setN2Grammar] = useState<GrammarPoint[]>([]);
-  const [n2Kanji, setN2Kanji] = useState<KanjiEntry[]>([]);
-  const [toeicGrammar, setToeicGrammar] = useState<GrammarPoint[]>([]);
-  const [isLoadingData, setIsLoadingData] = useState(true);
-
-  const [sessionTasks, setSessionTasks] = useState<SessionTask[]>([]);
-  const [currentTaskIndex, setCurrentTaskIndex] = useState(0);
-  const [isSessionFinished, setIsSessionFinished] = useState(false);
-  const [currentReviewIndex, setCurrentReviewIndex] = useState(0);
-  const [currentAuthenticExam, setCurrentAuthenticExam] = useState<AuthenticExam | null>(null);
-
-  useEffect(() => {
-    document.documentElement.setAttribute('data-theme', theme);
-    document.documentElement.setAttribute('data-track', activeTrack);
-    document.body.style.fontFamily = "'Nunito', 'Quicksand', sans-serif";
-  }, [theme, activeTrack]);
-
-  useEffect(() => { saveTheme(theme); }, [theme]);
-  useEffect(() => { saveCards(cards); }, [cards]);
+  const {
+    cards, setCards,
+    examResults, setExamResults,
+    mistakes, setMistakes,
+    mode, setMode,
+    theme, toggleTheme,
+    activeTrack, setActiveTrack,
+    unlockedEn, setUnlockedEn,
+    unlockedJa, setUnlockedJa,
+    customExams, setCustomExams,
+    questions,
+    n2Grammar, n2Kanji, toeicGrammar,
+    isLoadingData,
+    sessionTasks, setSessionTasks,
+    currentTaskIndex, setCurrentTaskIndex,
+    isSessionFinished, setIsSessionFinished,
+    currentReviewIndex, setCurrentReviewIndex,
+    currentAuthenticExam, setCurrentAuthenticExam
+  } = useAppState();
 
 
-  useEffect(() => { saveProgress({ unlocked_en: unlockedEn, unlocked_ja: unlockedJa }); }, [unlockedEn, unlockedJa]);
-  useEffect(() => { saveExamResults(examResults); }, [examResults]);
-
-  useEffect(() => {
-    import('./data/contentLoader').then(({ loadSeedN2Grammar, loadSeedN2Kanji, loadSeedQuestions, loadSeedToeicGrammar }) => {
-      Promise.all([
-        loadSeedN2Grammar().then(setN2Grammar),
-        loadSeedN2Kanji().then(setN2Kanji),
-        loadSeedToeicGrammar().then(setToeicGrammar),
-        loadSeedQuestions().then(loaded => setQuestions(prev => [...prev, ...loaded]))
-      ]).catch(err => console.error("Failed to load initial data:", err))
-      .finally(() => setIsLoadingData(false));
-    });
-  }, []);
-
-  const toggleTheme = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light';
-    setTheme(newTheme);
-    document.documentElement.setAttribute('data-theme', newTheme);
-  };
 
   const handleRemoveCard = (id: string) => {
     setCards(cards.filter(c => c.id !== id));
+  };
+
+  const handleRemoveCards = (ids: string[]) => {
+    setCards(cards.filter(c => !ids.includes(c.id)));
+  };
+
+  const handleRemoveMistake = (id: string) => {
+    setMistakes(mistakes.filter(m => m.id !== id));
   };
 
   const handleEditCard = (updatedCard: Flashcard) => {
@@ -300,12 +279,37 @@ function App() {
       created_at: new Date().toISOString(),
     };
 
-    setCards([...cards, newCard]);
+    setCards(prev => [...prev, newCard]);
+    setMode('path');
+  };
+
+  const handleAddCardsBulk = (cardsData: Array<{ word: string; definition: string; example?: string; language: 'english' | 'japanese' }>) => {
+    const newCards: Flashcard[] = cardsData.map(data => ({
+      id: crypto.randomUUID(),
+      user_id: 'guest', 
+      word: data.word, 
+      definition: data.definition, 
+      example: data.example,
+      language: data.language,
+      category: data.language === 'english' ? 'toeic' : 'n2', 
+      difficulty: 'beginner', 
+      repetition: 0, 
+      interval: 0, 
+      easiness: 2.5,
+      next_review: new Date().toISOString(), 
+      created_at: new Date().toISOString(),
+    }));
+
+    setCards(prev => [...prev, ...newCards]);
+    toast.success(`Imported ${newCards.length} cards successfully!`);
     setMode('path');
   };
 
   const currentCurriculum = activeTrack === 'english' ? TOEIC_CURRICULUM : N2_CURRICULUM;
   const currentUnlocked = activeTrack === 'english' ? unlockedEn : unlockedJa;
+
+  const now = new Date();
+  const dueCount = cards.filter(c => c.language === activeTrack && new Date(c.next_review) <= now).length;
 
   if (isLoadingData) {
     return (
@@ -321,6 +325,7 @@ function App() {
   return (
     <div className="min-h-screen bg-[var(--bg-main)] text-[var(--text-main)] flex flex-col md:flex-row font-sans selection:bg-[var(--blue)] selection:text-white transition-colors duration-300" data-track={activeTrack}>
       <Toaster position="bottom-center" toastOptions={{ duration: 3000, style: { background: 'var(--bg-card)', color: 'var(--text-main)', border: '2px solid var(--border-main)', borderRadius: '1rem', fontWeight: 'bold' } }} />
+      <OnboardingOverlay />
       
       {/* Duolingo-style Sidebar */}
       <aside className="hidden lg:flex flex-col w-64 border-r-2 border-[var(--gray-path)] p-6 fixed left-0 top-0 bottom-0 bg-[var(--bg-main)] z-50">
@@ -353,12 +358,23 @@ function App() {
                <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
              </svg>
              REVIEW
+             {dueCount > 0 && (
+               <span className="ml-auto bg-[var(--gold)] text-white text-[10px] font-black rounded-full w-6 h-6 flex items-center justify-center">
+                 {dueCount}
+               </span>
+             )}
           </button>
           <button onClick={() => setMode('collection')} aria-label="Word library" aria-current={mode === 'collection'} className={`w-full flex items-center gap-4 px-4 py-3 rounded-2xl font-black text-xs tracking-wider transition-all border-2 active:scale-98 ${mode === 'collection' ? 'bg-[var(--tint-blue)] text-[var(--blue)] border-[var(--tint-blue)]' : 'border-transparent text-[var(--text-main)] hover:bg-[var(--gray-bg)]'}`}>
              <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
              </svg>
              LIBRARY
+          </button>
+          <button onClick={() => setMode('mistakes')} aria-label="Mistake Book" aria-current={mode === 'mistakes'} className={`w-full flex items-center gap-4 px-4 py-3 rounded-2xl font-black text-xs tracking-wider transition-all border-2 active:scale-98 ${mode === 'mistakes' ? 'bg-[var(--tint-red)] text-[var(--red)] border-[var(--tint-red)]' : 'border-transparent text-[var(--text-main)] hover:bg-[var(--gray-bg)]'}`}>
+             <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+               <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m0-10.036A11.959 11.959 0 0112 3.75c-4.437 0-8.283 2.39-10.456 5.964M12 9v3.75m0 0v3.75m0-3.75h3.75m-3.75 0H8.25" />
+             </svg>
+             MISTAKES
           </button>
           <button onClick={() => setMode('analytics')} aria-label="Learning stats" aria-current={mode === 'analytics'} className={`w-full flex items-center gap-4 px-4 py-3 rounded-2xl font-black text-xs tracking-wider transition-all border-2 active:scale-98 ${mode === 'analytics' ? 'bg-[var(--tint-blue)] text-[var(--blue)] border-[var(--tint-blue)]' : 'border-transparent text-[var(--text-main)] hover:bg-[var(--gray-bg)]'}`}>
              <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
@@ -399,6 +415,7 @@ function App() {
           
           {mode === 'path' && (
             <div key="path" className="w-full view-enter flex flex-col items-center">
+              <ReviewReminder dueCount={dueCount} onStartReview={() => startDrill('review')} />
               <GamifiedPath 
                 curriculum={currentCurriculum} 
                 currentUnlocked={currentUnlocked} 
@@ -494,6 +511,9 @@ function App() {
                  <button onClick={() => setMode('collection')} className="flex flex-col items-center justify-center gap-2 p-5 rounded-[1.5rem] border-2 border-[var(--gray-path)] bg-[var(--gray-bg)] hover:border-[var(--blue)] transition-colors h-24">
                     <span className="text-xs font-black uppercase tracking-wider text-[var(--text-main)]">Library</span>
                  </button>
+                 <button onClick={() => setMode('mistakes')} className="flex flex-col items-center justify-center gap-2 p-5 rounded-[1.5rem] border-2 border-[var(--gray-path)] bg-[var(--gray-bg)] hover:border-[var(--red)] transition-colors h-24">
+                    <span className="text-xs font-black uppercase tracking-wider text-[var(--text-main)]">Mistakes</span>
+                 </button>
                  <button onClick={() => setMode('analytics')} className="flex flex-col items-center justify-center gap-2 p-5 rounded-[1.5rem] border-2 border-[var(--gray-path)] bg-[var(--gray-bg)] hover:border-[var(--blue)] transition-colors h-24">
                     <span className="text-xs font-black uppercase tracking-wider text-[var(--text-main)]">Stats</span>
                  </button>
@@ -516,10 +536,11 @@ function App() {
                   <div key={currentTaskIndex} className="w-full flex flex-col items-center view-enter">
                     {sessionTasks[currentTaskIndex].type === 'vocab-quiz' && <VocabQuizView word={sessionTasks[currentTaskIndex].data as Flashcard} allCards={cards} onComplete={() => nextTask()} />}
                     {sessionTasks[currentTaskIndex].type === 'grammar' && <GrammarQuizView task={sessionTasks[currentTaskIndex].data as any} onComplete={() => nextTask()} onCancel={finalizeSession} />}
-                    {sessionTasks[currentTaskIndex].type === 'quiz' && <QuizView questions={[sessionTasks[currentTaskIndex].data as Question]} category={trackCategory(activeTrack)} onComplete={handleSessionQuizComplete} onCancel={() => setMode('path')} hideSummary={true} />}
+                    {sessionTasks[currentTaskIndex].type === 'quiz' && <QuizView questions={[sessionTasks[currentTaskIndex].data as Question]} category={trackCategory(activeTrack)} onComplete={handleSessionQuizComplete} onCancel={() => setMode('path')} hideSummary={true} onSaveMistake={(m) => setMistakes(prev => [m, ...prev])} />}
                     {sessionTasks[currentTaskIndex].type === 'listening' && <ListeningView lesson={sessionTasks[currentTaskIndex].data as ListeningLesson} onBack={() => nextTask()} hideBackButton={true} />}
                     {sessionTasks[currentTaskIndex].type === 'speaking' && <SpeakingView lesson={sessionTasks[currentTaskIndex].data as SpeakingLesson} onComplete={() => nextTask()} />}
                     {sessionTasks[currentTaskIndex].type === 'dictation' && <DictationView lesson={sessionTasks[currentTaskIndex].data as DictationLesson} onComplete={() => nextTask()} />}
+                    {sessionTasks[currentTaskIndex].type === 'writing' && <WritingView lesson={sessionTasks[currentTaskIndex].data as WritingLesson} onComplete={() => nextTask()} onCancel={() => nextTask()} onSaveMistake={(m) => setMistakes(prev => [m, ...prev])} />}
                   </div>
                ) : (
                   <div className="w-full text-center space-y-8 pop-in pt-10 relative">
@@ -538,10 +559,12 @@ function App() {
           )}
 
           {/* Management modes mapping */}
-          {mode === 'add' && <div key="add" className="w-full mt-10 view-enter"><AddFlashcard onAdd={handleAddCard} /></div>}
+          {mode === 'add' && <div key="add" className="w-full mt-10 view-enter"><AddFlashcard onAdd={handleAddCard} onAddBulk={handleAddCardsBulk} /></div>}
           {mode === 'notebook' && <NotebookView activeTrack={activeTrack} n2Grammar={n2Grammar} n2Kanji={n2Kanji} toeicGrammar={toeicGrammar} />}
-          {mode === 'collection' && <CollectionView cards={cards} activeTrack={activeTrack} onDelete={handleRemoveCard} onEdit={handleEditCard} />}
-          {mode === 'analytics' && <AnalyticsView results={examResults} activeTrack={activeTrack} />}
+          {mode === 'collection' && <CollectionView cards={cards} activeTrack={activeTrack} onDelete={handleRemoveCard} onDeleteBulk={handleRemoveCards} onEdit={handleEditCard} />}
+          {mode === 'mistakes' && <MistakeBookView mistakes={mistakes} onRemoveMistake={handleRemoveMistake} onReview={() => setMode('review-mistakes')} />}
+          {mode === 'review-mistakes' && <MistakeReviewView mistakes={mistakes} onComplete={() => setMode('mistakes')} onCancel={() => setMode('mistakes')} onRemoveMistake={handleRemoveMistake} />}
+          {mode === 'analytics' && <AnalyticsView results={examResults} cards={cards} activeTrack={activeTrack} />}
           {mode === 'review' && (() => {
             const reviewQueue = cards.filter(c => c.language === activeTrack);
             const card = reviewQueue[currentReviewIndex];
@@ -576,9 +599,11 @@ function App() {
             <div className="w-full mt-10 view-enter">
               <RealExamView
                 exam={currentAuthenticExam}
-                onCancel={() => setMode('practice')}
+                onCancel={() => {
+                  setMode('path');
+                  setCurrentAuthenticExam(null);
+                }}
                 onComplete={(score, total) => {
-                  alert(`You scored ${score} out of ${total}!`);
                   recordExamResult({
                     id: crypto.randomUUID(),
                     date: new Date().toISOString(),
@@ -590,6 +615,7 @@ function App() {
                   });
                   setMode('practice');
                 }}
+                onSaveMistake={(m) => setMistakes(prev => [m, ...prev])}
               />
             </div>
           )}
@@ -619,10 +645,15 @@ function App() {
           aria-current={mode === 'review'} 
           className={`flex flex-col items-center justify-center flex-1 h-full py-1 transition-all active:scale-95 relative ${mode === 'review' ? 'text-[var(--blue)]' : 'text-[var(--text-muted)]'}`}
         >
-          <div className={`p-2 rounded-xl transition-all ${mode === 'review' ? 'bg-[var(--tint-blue)]' : 'bg-transparent'}`}>
+          <div className={`p-2 rounded-xl transition-all relative ${mode === 'review' ? 'bg-[var(--tint-blue)]' : 'bg-transparent'}`}>
             <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="1.75" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
             </svg>
+            {dueCount > 0 && (
+              <span className="absolute -top-1 -right-1 bg-[var(--gold)] text-white text-[9px] font-black rounded-full w-4 h-4 flex items-center justify-center">
+                {dueCount}
+              </span>
+            )}
           </div>
           <span className="text-[10px] font-black uppercase tracking-wider mt-1">Review</span>
         </button>

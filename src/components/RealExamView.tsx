@@ -1,18 +1,27 @@
-import { useState, useEffect } from 'react';
-import type { AuthenticExam } from '../types';
-
+import { useState, useEffect, useRef } from 'react';
+import type { AuthenticExam, Mistake } from '../types';
+import { ExamTimer } from './ExamTimer';
+import { ExamReviewView } from './ExamReviewView';
+import { Modal } from './Modal';
 
 interface RealExamViewProps {
   exam: AuthenticExam;
   onCancel: () => void;
   onComplete: (score: number, total: number) => void;
+  onSaveMistake?: (mistake: Mistake) => void;
 }
 
-export function RealExamView({ exam, onCancel, onComplete }: RealExamViewProps) {
-  const [timeLeft, setTimeLeft] = useState(exam.timeLimitMinutes * 60);
+export function RealExamView({ exam, onCancel, onComplete, onSaveMistake }: RealExamViewProps) {
   const [currentSectionIndex, setCurrentSectionIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string, number>>({});
   const [isFinished, setIsFinished] = useState(false);
+  const [showResumeModal, setShowResumeModal] = useState(false);
+  const [showConfirmSubmitModal, setShowConfirmSubmitModal] = useState(false);
+  const [backupLoaded, setBackupLoaded] = useState(false);
+  const [initialTime, setInitialTime] = useState(exam.timeLimitMinutes * 60);
+
+  const currentTimeLeftRef = useRef(exam.timeLimitMinutes * 60);
+  const backupDataRef = useRef<any>(null);
 
   useEffect(() => {
     const saved = localStorage.getItem('real_exam_backup');
@@ -20,48 +29,29 @@ export function RealExamView({ exam, onCancel, onComplete }: RealExamViewProps) 
       try {
         const parsed = JSON.parse(saved);
         if (parsed.examId === exam.id) {
-          if (window.confirm("Bạn có bài thi đang làm dở. Bạn có muốn tiếp tục không?")) {
-            setTimeLeft(parsed.timeLeft);
-            setAnswers(parsed.answers);
-            setCurrentSectionIndex(parsed.currentSectionIndex || 0);
-          } else {
-            localStorage.removeItem('real_exam_backup');
-          }
+          backupDataRef.current = parsed;
+          setShowResumeModal(true);
+          return;
         }
       } catch (e) {}
     }
+    setBackupLoaded(true);
   }, [exam.id]);
 
   useEffect(() => {
-    if (isFinished) {
-      localStorage.removeItem('real_exam_backup');
-      return;
-    }
-    
-    const timer = setInterval(() => {
-      setTimeLeft(prev => {
-        if (prev <= 1) {
-          clearInterval(timer);
-          handleFinish();
-          return 0;
-        }
-        return prev - 1;
-      });
-    }, 1000);
-
-    return () => clearInterval(timer);
-  }, [isFinished]);
-
-  useEffect(() => {
-    if (!isFinished) {
+    if (!isFinished && backupLoaded) {
       localStorage.setItem('real_exam_backup', JSON.stringify({
         examId: exam.id,
-        timeLeft,
+        timeLeft: currentTimeLeftRef.current,
         answers,
         currentSectionIndex
       }));
     }
-  }, [exam.id, timeLeft, answers, currentSectionIndex, isFinished]);
+  }, [exam.id, answers, currentSectionIndex, isFinished, backupLoaded]);
+
+  const handleTimeTick = (time: number) => {
+    currentTimeLeftRef.current = time;
+  };
 
   const handleSelectAnswer = (questionId: string, optionIndex: number) => {
     if (isFinished) return;
@@ -73,10 +63,11 @@ export function RealExamView({ exam, onCancel, onComplete }: RealExamViewProps) 
 
   const handleFinish = () => {
     setIsFinished(true);
+    setShowConfirmSubmitModal(false);
+    localStorage.removeItem('real_exam_backup');
   };
 
-  const handleSubmit = () => {
-    // Calculate Score
+  const handleCloseReview = () => {
     let correct = 0;
     let total = 0;
     exam.sections.forEach(sec => {
@@ -84,6 +75,14 @@ export function RealExamView({ exam, onCancel, onComplete }: RealExamViewProps) 
         total++;
         if (answers[q.id] === q.correctAnswer) {
           correct++;
+        } else if (onSaveMistake) {
+          onSaveMistake({
+            id: `mistake-${q.id}-${Date.now()}`,
+            type: 'question',
+            data: q,
+            wrongAnswer: answers[q.id] !== undefined ? q.options[answers[q.id]] : 'Skipped',
+            timestamp: new Date().toISOString()
+          });
         }
       });
     });
@@ -92,63 +91,50 @@ export function RealExamView({ exam, onCancel, onComplete }: RealExamViewProps) 
 
   const currentSection = exam.sections[currentSectionIndex];
 
-  const formatTime = (seconds: number) => {
-    const h = Math.floor(seconds / 3600);
-    const m = Math.floor((seconds % 3600) / 60);
-    const s = seconds % 60;
-    return `${h > 0 ? h + ':' : ''}${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
-  };
-
   if (isFinished) {
-    let correct = 0;
-    let total = 0;
-    exam.sections.forEach(sec => {
-      sec.questions.forEach(q => {
-        total++;
-        if (answers[q.id] === q.correctAnswer) {
-          correct++;
-        }
-      });
-    });
-    const percentage = Math.round((correct / total) * 100);
-
-    return (
-      <div className="w-full h-[85vh] max-w-2xl mx-auto flex flex-col items-center bg-white rounded-2xl border-2 border-[var(--gray-path)] p-8 shadow-xl view-enter overflow-y-auto">
-        <h2 className="text-3xl font-black text-[var(--text-main)] mb-2">Exam Complete!</h2>
-        <div className="text-[80px] mb-4">🏆</div>
-        <div className="text-2xl font-black text-[var(--blue)] mb-8">Overall Score: {correct} / {total} ({percentage}%)</div>
-        
-        <div className="w-full space-y-3 mb-8">
-          <h3 className="text-lg font-black text-[var(--text-muted)] uppercase tracking-wider mb-4">Section Breakdown</h3>
-          {exam.sections.map(sec => {
-            let secCorrect = 0;
-            let secTotal = 0;
-            sec.questions.forEach(q => {
-              secTotal++;
-              if (answers[q.id] === q.correctAnswer) secCorrect++;
-            });
-            const secPct = secTotal > 0 ? Math.round((secCorrect / secTotal) * 100) : 0;
-            return (
-              <div key={sec.id} className="flex items-center justify-between p-4 bg-[var(--gray-bg)] rounded-xl border border-[var(--gray-path)]">
-                <span className="font-bold text-[var(--text-main)] flex-1">{sec.title}</span>
-                <span className="font-black text-[var(--text-main)] min-w-[80px] text-right">{secCorrect}/{secTotal}</span>
-                <span className={`font-black min-w-[60px] text-right ${secPct >= 80 ? 'text-[var(--green)]' : secPct >= 50 ? 'text-[var(--gold)]' : 'text-[var(--red)]'}`}>
-                  {secPct}%
-                </span>
-              </div>
-            );
-          })}
-        </div>
-
-        <button onClick={handleSubmit} className="btn-duo btn-green w-full h-14 mt-auto shrink-0">
-          CONTINUE
-        </button>
-      </div>
-    );
+    return <ExamReviewView exam={exam} answers={answers} onClose={handleCloseReview} />;
   }
 
   return (
     <div className="w-full h-[85vh] flex flex-col view-enter bg-[var(--bg-main)] rounded-2xl border-2 border-[var(--gray-path)] overflow-hidden shadow-xl">
+      
+      <Modal 
+        isOpen={showResumeModal} 
+        onClose={() => {
+          // Decline resume
+          setShowResumeModal(false);
+          setBackupLoaded(true);
+          localStorage.removeItem('real_exam_backup');
+        }}
+        title="Resume Previous Attempt?"
+        confirmText="Yes, Resume"
+        cancelText="Start Fresh"
+        onConfirm={() => {
+          // Accept resume
+          const parsed = backupDataRef.current;
+          setInitialTime(parsed.timeLeft);
+          currentTimeLeftRef.current = parsed.timeLeft;
+          setAnswers(parsed.answers || {});
+          setCurrentSectionIndex(parsed.currentSectionIndex || 0);
+          setShowResumeModal(false);
+          setBackupLoaded(true);
+        }}
+      >
+        <p>You have an incomplete attempt for this exam saved on your device.</p>
+        <p>Would you like to resume where you left off, or start a new attempt?</p>
+      </Modal>
+
+      <Modal
+        isOpen={showConfirmSubmitModal}
+        onClose={() => setShowConfirmSubmitModal(false)}
+        title="Submit Exam"
+        confirmText="Submit Now"
+        onConfirm={handleFinish}
+      >
+        <p>Are you sure you want to submit your exam now?</p>
+        <p>You cannot change your answers after submission.</p>
+      </Modal>
+
       {/* Header */}
       <div className="h-16 border-b-2 border-[var(--gray-path)] bg-[var(--gray-bg)] flex items-center justify-between px-6 shrink-0">
         <div className="flex items-center gap-4">
@@ -157,9 +143,15 @@ export function RealExamView({ exam, onCancel, onComplete }: RealExamViewProps) 
           </button>
           <h2 className="text-lg font-black">{exam.title}</h2>
         </div>
-        <div className={`font-black text-xl tracking-wider ${timeLeft < 300 ? 'text-[var(--red)] animate-pulse' : 'text-[var(--blue)]'}`}>
-          ⏱ {formatTime(timeLeft)}
-        </div>
+        {backupLoaded && (
+          <ExamTimer 
+            key={initialTime} 
+            initialTime={initialTime} 
+            onTimeTick={handleTimeTick} 
+            onTimeUp={handleFinish} 
+            isFinished={isFinished} 
+          />
+        )}
       </div>
 
       <div className="flex flex-1 overflow-hidden">
@@ -269,7 +261,7 @@ export function RealExamView({ exam, onCancel, onComplete }: RealExamViewProps) 
                 </button>
               ) : (
                 <button
-                  onClick={handleFinish}
+                  onClick={() => setShowConfirmSubmitModal(true)}
                   className="btn-duo btn-green px-8 py-3"
                 >
                   FINISH EXAM

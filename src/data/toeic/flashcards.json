@@ -1,0 +1,3572 @@
+[
+  {
+    "id": "tf-1",
+    "word": "negotiate",
+    "definition": "đàm phán",
+    "example": "The two companies will negotiate a new partnership agreement next week.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-2",
+    "word": "revenue",
+    "definition": "doanh thu",
+    "example": "The company's annual revenue exceeded $10 million for the first time.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-3",
+    "word": "strategy",
+    "definition": "chiến lược",
+    "example": "Our marketing strategy needs to be updated to reach younger consumers.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-4",
+    "word": "stakeholder",
+    "definition": "bên liên quan",
+    "example": "All stakeholders were invited to attend the quarterly review meeting.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-5",
+    "word": "profitability",
+    "definition": "khả năng sinh lời",
+    "example": "The new product line has significantly improved the company's profitability.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-6",
+    "word": "merger",
+    "definition": "sáp nhập",
+    "example": "The merger between the two firms was approved by the board of directors.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-7",
+    "word": "acquisition",
+    "definition": "thâu tóm, mua lại",
+    "example": "The acquisition of the smaller startup will expand our market share.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-8",
+    "word": "delegate",
+    "definition": "ủy quyền, giao phó",
+    "example": "A good manager knows when to delegate tasks to team members.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-9",
+    "word": "quota",
+    "definition": "chỉ tiêu, hạn ngạch",
+    "example": "The sales team must meet their quarterly quota by the end of the month.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-10",
+    "word": "benchmark",
+    "definition": "tiêu chuẩn đánh giá",
+    "example": "We need to establish benchmarks to measure our progress effectively.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-11",
+    "word": "outsource",
+    "definition": "thuê ngoài",
+    "example": "The company decided to outsource its customer service operations.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-12",
+    "word": "consortium",
+    "definition": "hiệp hội, tập đoàn liên doanh",
+    "example": "A consortium of banks provided the funding for the infrastructure project.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-13",
+    "word": "commodity",
+    "definition": "hàng hóa",
+    "example": "Oil is one of the most traded commodities in the global market.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-14",
+    "word": "franchise",
+    "definition": "nhượng quyền",
+    "example": "She opened a new franchise of the popular restaurant chain.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-15",
+    "word": "venture",
+    "definition": "liên doanh, dự án kinh doanh",
+    "example": "The joint venture between the two companies was a great success.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-16",
+    "word": "leverage",
+    "definition": "sức ảnh hưởng, đòn bẩy",
+    "example": "We can leverage our existing customer base to launch the new product.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-17",
+    "word": "scalability",
+    "definition": "khả năng mở rộng",
+    "example": "Scalability is an important factor when choosing software for our business.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-18",
+    "word": "liability",
+    "definition": "trách nhiệm pháp lý",
+    "example": "The company accepted liability for the damages caused by the defective product.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-19",
+    "word": "diversify",
+    "definition": "đa dạng hóa",
+    "example": "The firm plans to diversify its product range to reduce risk.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-20",
+    "word": "commodity",
+    "definition": "hàng hóa cơ bản",
+    "example": "The price of agricultural commodities has risen sharply this year.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-21",
+    "word": "entrepreneur",
+    "definition": "doanh nhân",
+    "example": "The young entrepreneur launched a successful technology startup.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-22",
+    "word": "incentive",
+    "definition": "ưu đãi, động lực",
+    "example": "The company offers performance incentives to motivate employees.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-23",
+    "word": "expedite",
+    "definition": "đẩy nhanh",
+    "example": "We need to expedite the shipping process to meet the deadline.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-24",
+    "word": "prudent",
+    "definition": "thận trọng, khôn ngoan",
+    "example": "It would be prudent to review the budget before making any commitments.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-25",
+    "word": "consolidate",
+    "definition": "tập hợp, hợp nhất",
+    "example": "The department will consolidate its resources to complete the project faster.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-26",
+    "word": "compliance",
+    "definition": "tuân thủ",
+    "example": "All employees must complete compliance training by the end of the quarter.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-27",
+    "word": "stakeholder",
+    "definition": "cổ đông, bên hưởng lợi",
+    "example": "The CEO presented the annual results to all stakeholders.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-28",
+    "word": "obsolete",
+    "definition": "lỗi thời",
+    "example": "The old software has become obsolete and needs to be replaced.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-29",
+    "word": "initiative",
+    "definition": "sáng kiến",
+    "example": "The management launched a new initiative to improve workplace safety.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-30",
+    "word": "reimburse",
+    "definition": "bồi hoàn, hoàn trả",
+    "example": "The company will reimburse you for any travel expenses incurred.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-31",
+    "word": "adjourn",
+    "definition": "tạm hoãn, đình chỉ",
+    "example": "The chairman decided to adjourn the meeting until next Monday.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-32",
+    "word": "implement",
+    "definition": "thực hiện, triển khai",
+    "example": "The new policy will be implemented starting next month.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-33",
+    "word": "procurement",
+    "definition": "mua sắm, thu mua",
+    "example": "The procurement department is responsible for purchasing office supplies.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-34",
+    "word": "restructure",
+    "definition": "tái cơ cấu",
+    "example": "The company decided to restructure its organization to improve efficiency.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-35",
+    "word": "relinquish",
+    "definition": "từ bỏ",
+    "example": "The former CEO agreed to relinquish his position to the new leader.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-36",
+    "word": "facilitate",
+    "definition": "tạo điều kiện, hỗ trợ",
+    "example": "The software will facilitate communication between remote team members.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-37",
+    "word": "consensus",
+    "definition": "sự đồng thuận",
+    "example": "The board reached a consensus on the proposed budget for next year.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-38",
+    "word": "mandatory",
+    "definition": "bắt buộc",
+    "example": "Attendance at the safety briefing is mandatory for all employees.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-39",
+    "word": "amend",
+    "definition": "sửa đổi",
+    "example": "The contract needs to be amended to include the new terms.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-40",
+    "word": "ratify",
+    "definition": "phê chuẩn",
+    "example": "The committee voted to ratify the new international agreement.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-41",
+    "word": "bureaucracy",
+    "definition": "bộ máy hành chính",
+    "example": "Excessive bureaucracy can slow down decision-making processes.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-42",
+    "word": "audit",
+    "definition": "kiểm toán",
+    "example": "An annual audit is conducted to ensure financial transparency.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-43",
+    "word": "contingency",
+    "definition": "dự phòng, tình huống bất ngờ",
+    "example": "We need to develop a contingency plan in case of supply chain disruptions.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-44",
+    "word": "viability",
+    "definition": "tính khả thi",
+    "example": "The feasibility study assessed the viability of the proposed project.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-45",
+    "word": "subsidiary",
+    "definition": "công ty con",
+    "example": "The subsidiary operates independently but reports to the parent company.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-46",
+    "word": "benchmark",
+    "definition": "điểm chuẩn, tiêu chuẩn",
+    "example": "The company set new benchmarks for customer satisfaction this year.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-47",
+    "word": "impartial",
+    "definition": "công bằng, vô tư",
+    "example": "The mediator must remain impartial during the dispute resolution process.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-48",
+    "word": "collaborate",
+    "definition": "cộng tác, hợp tác",
+    "example": "The design team will collaborate with the marketing department on the campaign.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-49",
+    "word": "repercussion",
+    "definition": "hậu quả, phản ứng dây chuyền",
+    "example": "The policy change could have serious repercussions for small businesses.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-50",
+    "word": "endeavor",
+    "definition": "nỗ lực, cố gắng",
+    "example": "We will endeavor to complete the project ahead of schedule.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-51",
+    "word": "printer",
+    "definition": "máy in",
+    "example": "Please use the printer on the second floor to print the documents.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-52",
+    "word": "stapler",
+    "definition": "bấm kim",
+    "example": "Could you hand me the stapler so I can bind these papers together?",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-53",
+    "word": "filing",
+    "definition": "lưu trữ hồ sơ",
+    "example": "The new filing system will make it easier to locate important documents.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-54",
+    "word": "memo",
+    "definition": "bản ghi nhớ",
+    "example": "The manager sent a memo to all staff about the upcoming holiday schedule.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-55",
+    "word": "agenda",
+    "definition": "chương trình nghị sự",
+    "example": "The agenda for tomorrow's meeting has been distributed to all participants.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-56",
+    "word": "minutes",
+    "definition": "biên bản họp",
+    "example": "Please review the minutes from yesterday's meeting and provide feedback.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-57",
+    "word": "correspondence",
+    "definition": "thư từ, liên lạc",
+    "example": "All business correspondence should be filed in the appropriate folder.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-58",
+    "word": "stationery",
+    "definition": "đồ văn phòng phẩm",
+    "example": "We need to order new stationery for the upcoming quarter.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-59",
+    "word": "workstation",
+    "definition": "trạm làm việc",
+    "example": "Each employee has a dedicated workstation equipped with a computer.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-60",
+    "word": "photocopy",
+    "definition": "bản sao chụp",
+    "example": "I need to make a photocopy of my passport for the visa application.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-61",
+    "word": "shredder",
+    "definition": "máy hủy giấy",
+    "example": "Confidential documents should be destroyed using the shredder.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-62",
+    "word": "ergonomic",
+    "definition": "thiết kế tiện lợi",
+    "example": "The company provided ergonomic chairs to improve employee comfort.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-63",
+    "word": "receptionist",
+    "definition": "lễ tân",
+    "example": "The receptionist will greet visitors and direct them to the appropriate office.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-64",
+    "word": "dispensary",
+    "definition": "khu vực phát thuốc",
+    "example": "The office dispensary is stocked with basic first-aid supplies.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-65",
+    "word": "inventory",
+    "definition": "hàng tồn kho, kiểm kê",
+    "example": "The office manager conducted an inventory of all office supplies.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-66",
+    "word": "requisition",
+    "definition": "yêu cầu cung cấp",
+    "example": "Please submit a requisition form if you need additional supplies.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-67",
+    "word": "briefcase",
+    "definition": "cặp da công sở",
+    "example": "He carried his documents in a leather briefcase to the meeting.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-68",
+    "word": "whiteboard",
+    "definition": "bảng trắng",
+    "example": "The team used the whiteboard to brainstorm ideas for the new project.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-69",
+    "word": "bulletin",
+    "definition": "bản tin, thông báo",
+    "example": "Important announcements are posted on the company bulletin board.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-70",
+    "word": "dispatch",
+    "definition": "gửi đi, điều phối",
+    "example": "The dispatch team ensures all packages are delivered on time.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-71",
+    "word": "overhead",
+    "definition": "chi phí chung",
+    "example": "The company is trying to reduce overhead costs by switching to digital records.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-72",
+    "word": "downtime",
+    "definition": "thời gian ngừng hoạt động",
+    "example": "Scheduled maintenance will cause some downtime for the server this weekend.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-73",
+    "word": "timekeeper",
+    "definition": "người chấm công",
+    "example": "The timekeeper records the arrival and departure times of all employees.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-74",
+    "word": "handbook",
+    "definition": "cẩm nang, sổ tay hướng dẫn",
+    "example": "New employees should read the employee handbook during their first week.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-75",
+    "word": "logistics",
+    "definition": "hậu cần",
+    "example": "The logistics department coordinates the delivery of office furniture.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-76",
+    "word": "archive",
+    "definition": "kho lưu trữ",
+    "example": "Old documents are moved to the archive room for long-term storage.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-77",
+    "word": "dispatcher",
+    "definition": "điều phối viên",
+    "example": "The dispatcher assigns drivers to different delivery routes each morning.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-78",
+    "word": "intercom",
+    "definition": "thiết bị liên lạc nội bộ",
+    "example": "Please use the intercom to announce when the visitor arrives.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-79",
+    "word": "clipboard",
+    "definition": "kẹp hồ sơ",
+    "example": "The manager carried a clipboard with all the inspection checklists.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-80",
+    "word": "breakroom",
+    "definition": "phòng nghỉ ngơi",
+    "example": "Employees can prepare lunch in the breakroom on the ground floor.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-81",
+    "word": "bulletin board",
+    "definition": "bảng thông báo",
+    "example": "Check the bulletin board for upcoming company events and announcements.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-82",
+    "word": "compendium",
+    "definition": "tóm tắt, tổng hợp",
+    "example": "The compendium of company policies is available on the intranet.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-83",
+    "word": "laminator",
+    "definition": "máy ép plastic",
+    "example": "We use the laminator to protect important reference documents.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-84",
+    "word": "puncher",
+    "definition": "dập lỗ giấy",
+    "example": "Use the puncher to make holes in the documents before filing them.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-85",
+    "word": "sticker",
+    "definition": "nhãn dán",
+    "example": "Please apply the priority sticker to all urgent packages.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-86",
+    "word": "signatory",
+    "definition": "người ký tên",
+    "example": "Both parties must be present as signatories on the official document.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-87",
+    "word": "tender",
+    "definition": "đấu thầu",
+    "example": "The company submitted a tender for the government infrastructure project.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-88",
+    "word": "manifest",
+    "definition": "hàng hóa kê khai",
+    "example": "Please check the manifest to confirm all items have been delivered.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-89",
+    "word": "ledger",
+    "definition": "sổ cái",
+    "example": "The accountant updated the ledger with all transactions from last week.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-90",
+    "word": "ledger",
+    "definition": "sổ kế toán",
+    "example": "The financial ledger must be reconciled at the end of each month.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-91",
+    "word": "carbon copy",
+    "definition": "bản sao",
+    "example": "Please send a carbon copy of the report to the department head.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-92",
+    "word": "file cabinet",
+    "definition": "tủ hồ sơ",
+    "example": "All confidential files are stored in the locked file cabinet.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-93",
+    "word": "dictation",
+    "definition": "thuyết minh, đọc cho viết",
+    "example": "The executive uses dictation software to draft emails efficiently.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-94",
+    "word": "notepad",
+    "definition": "sổ tay",
+    "example": "She took notes on her notepad during the client presentation.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-95",
+    "word": "label maker",
+    "definition": "máy dán nhãn",
+    "example": "Use the label maker to organize the file folders in the supply room.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-96",
+    "word": "tape dispenser",
+    "definition": "máy kéo băng keo",
+    "example": "The tape dispenser on your desk is used for sealing packages.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-97",
+    "word": "scanning",
+    "definition": "quét bản sao",
+    "example": "All incoming documents must be scanned and saved digitally.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-98",
+    "word": "workstation",
+    "definition": "bàn làm việc cá nhân",
+    "example": "Each workstation is equipped with a monitor, keyboard, and mouse.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-99",
+    "word": "cubicle",
+    "definition": "vách ngăn văn phòng",
+    "example": "The new office design replaces cubicles with open-plan workspaces.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-100",
+    "word": "dispatcher",
+    "definition": "bộ phận điều phối",
+    "example": "Contact the dispatch center if you need to schedule a delivery.",
+    "topic": "Office"
+  },
+  {
+    "id": "tf-101",
+    "word": "accounting",
+    "definition": "kế toán",
+    "example": "The accounting department prepares monthly financial reports for management.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-102",
+    "word": "budget",
+    "definition": "ngân sách",
+    "example": "The department must stay within its allocated budget for the fiscal year.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-103",
+    "word": "expenditure",
+    "definition": "chi tiêu",
+    "example": "The company's expenditure on research and development has increased significantly.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-104",
+    "word": "dividend",
+    "definition": "cổ tức",
+    "example": "Shareholders received a generous dividend at the end of the fiscal year.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-105",
+    "word": "amortize",
+    "definition": "khấu hao dần",
+    "example": "The company will amortize the cost of the equipment over five years.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-106",
+    "word": "depreciation",
+    "definition": "khấu hao",
+    "example": "The depreciation of the company's assets was recorded in the annual report.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-107",
+    "word": "capital",
+    "definition": "vốn",
+    "example": "The startup raised additional capital through a series of investments.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-108",
+    "word": "asset",
+    "definition": "tài sản",
+    "example": "The company's total assets are valued at over $50 million.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-109",
+    "word": "liability",
+    "definition": "nợ, nghĩa vụ tài chính",
+    "example": "The company's liabilities exceed its current assets.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-110",
+    "word": "equity",
+    "definition": "vốn chủ sở hữu",
+    "example": "The equity stake in the company increased after the latest funding round.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-111",
+    "word": "fiscal",
+    "definition": "tài chính",
+    "example": "The fiscal year ends on December 31st for most companies.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-112",
+    "word": "revenue",
+    "definition": "thu nhập, doanh thu",
+    "example": "The quarterly revenue report shows a 15% increase compared to last year.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-113",
+    "word": "invoice",
+    "definition": "hóa đơn",
+    "example": "Please send the invoice to the accounts payable department for processing.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-114",
+    "word": "receivable",
+    "definition": "phải thu",
+    "example": "The accounts receivable team follows up on outstanding payments from clients.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-115",
+    "word": "payable",
+    "definition": "phải trả",
+    "example": "All accounts payable must be settled before the end of the month.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-116",
+    "word": "ledger",
+    "definition": "sổ cái kế toán",
+    "example": "The ledger is updated daily to reflect all financial transactions.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-117",
+    "word": "reconcile",
+    "definition": "đối chiếu, điều chỉnh",
+    "example": "The accountant must reconcile the bank statement with the company's records.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-118",
+    "word": "withhold",
+    "definition": "giữ lại, khấu trừ",
+    "example": "The employer must withhold taxes from employee paychecks each month.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-119",
+    "word": "gross",
+    "definition": "tổng, trước khi trừ",
+    "example": "The gross income for the quarter was significantly higher than expected.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-120",
+    "word": "net",
+    "definition": "ròng, sau khi trừ",
+    "example": "The net profit margin improved due to reduced operating costs.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-121",
+    "word": "audit",
+    "definition": "kiểm toán",
+    "example": "An independent audit will be conducted to verify the financial statements.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-122",
+    "word": "bond",
+    "definition": "trái phiếu",
+    "example": "The company issued bonds to raise money for the new factory construction.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-123",
+    "word": "stock",
+    "definition": "cổ phiếu",
+    "example": "The stock price rose after the company announced record-breaking earnings.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-124",
+    "word": "treasury",
+    "definition": "kho bạc",
+    "example": "The treasury department manages the company's cash flow and investments.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-125",
+    "word": "hedge",
+    "definition": "phòng ngừa rủi ro",
+    "example": "The company hedges against currency fluctuations in international markets.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-126",
+    "word": "portfolio",
+    "definition": "danh mục đầu tư",
+    "example": "The investor diversified her portfolio to reduce exposure to market risk.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-127",
+    "word": "liquidity",
+    "definition": "tính thanh khoản",
+    "example": "The company maintains high liquidity to cover unexpected expenses.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-128",
+    "word": "collateral",
+    "definition": "tài sản thế chấp",
+    "example": "The bank required collateral before approving the business loan.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-129",
+    "word": "interest rate",
+    "definition": "lãi suất",
+    "example": "The central bank raised the interest rate to control inflation.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-130",
+    "word": "credit",
+    "definition": "tín dụng",
+    "example": "The company has a strong credit rating from international agencies.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-131",
+    "word": "debit",
+    "definition": "ghi nợ",
+    "example": "The debit card is used for day-to-day business transactions.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-132",
+    "word": "transaction",
+    "definition": "giao dịch",
+    "example": "All financial transactions must be recorded in the accounting system.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-133",
+    "word": "surplus",
+    "definition": "thặng dư",
+    "example": "The government announced a budget surplus for the current fiscal year.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-134",
+    "word": "deficit",
+    "definition": "thâm hụt",
+    "example": "The company faces a budget deficit due to decreased sales.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-135",
+    "word": "mortgage",
+    "definition": "thế chấp",
+    "example": "The company secured a mortgage to finance the new office building.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-136",
+    "word": "depreciate",
+    "definition": "mất giá, khấu hao",
+    "example": "The value of the equipment will depreciate over its useful life.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-137",
+    "word": "acquisition",
+    "definition": "thu mua doanh nghiệp",
+    "example": "The acquisition was financed through a combination of debt and equity.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-138",
+    "word": "annuity",
+    "definition": "tiền niên kim",
+    "example": "The pension plan provides a steady annuity for retired employees.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-139",
+    "word": "broker",
+    "definition": "môi giới",
+    "example": "The broker recommended investing in government bonds for stability.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-140",
+    "word": "yield",
+    "definition": "lợi suất",
+    "example": "The bond yield increased after the Federal Reserve announcement.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-141",
+    "word": "securities",
+    "definition": "chứng khoán",
+    "example": "The firm specializes in trading securities on the stock exchange.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-142",
+    "word": "valuation",
+    "definition": "định giá",
+    "example": "The valuation of the startup was estimated at $200 million.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-143",
+    "word": "fiscal year",
+    "definition": "năm tài chính",
+    "example": "The fiscal year begins on April 1st and ends on March 31st.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-144",
+    "word": "overhead costs",
+    "definition": "chi phí vận hành",
+    "example": "The company reduced overhead costs by closing unprofitable branches.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-145",
+    "word": "balance sheet",
+    "definition": "bảng cân đối kế toán",
+    "example": "The balance sheet shows the company's assets, liabilities, and equity.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-146",
+    "word": "cash flow",
+    "definition": "dòng tiền",
+    "example": "Positive cash flow indicates the company can meet its financial obligations.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-147",
+    "word": "gross margin",
+    "definition": " biên lợi nhuận gộp",
+    "example": "The gross margin improved after the company reduced production costs.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-148",
+    "word": "earnings",
+    "definition": "thu nhập, lợi nhuận",
+    "example": "The quarterly earnings exceeded analysts' expectations.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-149",
+    "word": "capital gain",
+    "definition": "lợi nhuận vốn",
+    "example": "The investor realized a capital gain from the sale of the property.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-150",
+    "word": "diversification",
+    "definition": "đa dạng hóa danh mục",
+    "example": "Diversification is a key strategy for reducing investment risk.",
+    "topic": "Finance"
+  },
+  {
+    "id": "tf-151",
+    "word": "contract",
+    "definition": "hợp đồng",
+    "example": "Both parties must sign the contract before the end of the month.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-152",
+    "word": "litigation",
+    "definition": "kiện tụng",
+    "example": "The company is facing litigation from former employees over unpaid wages.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-153",
+    "word": "arbitration",
+    "definition": "phân xử, trọng tài",
+    "example": "The dispute was resolved through arbitration rather than a court trial.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-154",
+    "word": "jurisdiction",
+    "definition": "thẩm quyền tài phán",
+    "example": "The case falls under the jurisdiction of the federal court.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-155",
+    "word": "verdict",
+    "definition": "phán quyết",
+    "example": "The jury delivered a verdict of not guilty after a two-week trial.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-156",
+    "word": "settlement",
+    "definition": "dàn xếp, thỏa thuận",
+    "example": "The parties reached a settlement out of court to avoid further expenses.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-157",
+    "word": "plaintiff",
+    "definition": "nguyên đơn",
+    "example": "The plaintiff filed a lawsuit against the company for breach of contract.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-158",
+    "word": "defendant",
+    "definition": "bị đơn",
+    "example": "The defendant pleaded not guilty to all charges in the case.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-159",
+    "word": "testimony",
+    "definition": "lời khai",
+    "example": "The witness provided testimony that supported the plaintiff's claims.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-160",
+    "word": "deposition",
+    "definition": "lời khai trước tòa",
+    "example": "The attorney took the deposition of the key witness in the case.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-161",
+    "word": "subpoena",
+    "definition": "truyền cảm",
+    "example": "The court issued a subpoena requiring the executive to appear as a witness.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-162",
+    "word": "injunction",
+    "definition": "lệnh cấm",
+    "example": "The court granted a temporary injunction to halt the construction project.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-163",
+    "word": "compliance",
+    "definition": "tuân thủ pháp luật",
+    "example": "The company ensures compliance with all environmental regulations.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-164",
+    "word": "regulation",
+    "definition": "quy định",
+    "example": "New regulations require companies to disclose their carbon emissions.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-165",
+    "word": "statute",
+    "definition": "đạo luật",
+    "example": "The statute of limitations for filing a claim is three years.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-166",
+    "word": "provision",
+    "definition": "điều khoản",
+    "example": "The contract includes a provision for early termination under certain conditions.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-167",
+    "word": "breach",
+    "definition": "vi phạm",
+    "example": "The company sued the supplier for breach of the delivery agreement.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-168",
+    "word": "penalty",
+    "definition": "hình phạt, tiền phạt",
+    "example": "A penalty will be imposed for late payment of invoices.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-169",
+    "word": "warrant",
+    "definition": "lệnh bắt, giấy ủy quyền",
+    "example": "The police obtained a warrant to search the company's premises.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-170",
+    "word": "affidavit",
+    "definition": "bản khai có tuyên thệ",
+    "example": "The employee signed an affidavit confirming the details of the incident.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-171",
+    "word": "counsel",
+    "definition": "luật sư tư vấn",
+    "example": "The company's legal counsel advised against signing the agreement.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-172",
+    "word": "prosecution",
+    "definition": "truy tố",
+    "example": "The prosecution presented strong evidence against the defendant.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-173",
+    "word": "amnesty",
+    "definition": "lệnh ân xá",
+    "example": "The government declared an amnesty for minor tax offenses.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-174",
+    "word": "testify",
+    "definition": "làm chứng",
+    "example": "The manager was asked to testify about the events leading up to the dispute.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-175",
+    "word": "ruling",
+    "definition": "phán quyết của thẩm phán",
+    "example": "The court's ruling favored the plaintiff in the copyright infringement case.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-176",
+    "word": "liable",
+    "definition": "chịu trách nhiệm",
+    "example": "The manufacturer may be held liable for damages caused by defective products.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-177",
+    "word": "negligence",
+    "definition": "sơ suất",
+    "example": "The lawsuit alleged negligence on the part of the building contractor.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-178",
+    "word": "indemnity",
+    "definition": "bồi thường, bảo đảm",
+    "example": "The insurance policy provides indemnity for losses incurred during shipping.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-179",
+    "word": "jurisdiction",
+    "definition": "quyền tài phán",
+    "example": "The case was transferred to a jurisdiction with appropriate authority.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-180",
+    "word": "annul",
+    "definition": "hủy bỏ",
+    "example": "The court decided to annul the contract due to fraud.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-181",
+    "word": "arbitrator",
+    "definition": "trọng tài viên",
+    "example": "The arbitrator was appointed to resolve the labor dispute between the parties.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-182",
+    "word": "litigant",
+    "definition": "bên tranh chấp",
+    "example": "Both litigants agreed to participate in the mediation session.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-183",
+    "word": "decedent",
+    "definition": "người đã mất",
+    "example": "The will of the decedent was reviewed by the probate court.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-184",
+    "word": "estoppel",
+    "definition": "nguyên tắc estoppel",
+    "example": "The doctrine of estoppel prevents a party from denying previous statements.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-185",
+    "word": "tort",
+    "definition": "sai phạm dân sự",
+    "example": "The company was sued for a tort related to environmental pollution.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-186",
+    "word": "mandate",
+    "definition": "lệnh tòa án",
+    "example": "The court issued a mandate requiring the company to comply with safety standards.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-187",
+    "word": "allegation",
+    "definition": "cáo buộc",
+    "example": "The company denied all allegations of wrongdoing in the investigation.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-188",
+    "word": "debarment",
+    "definition": "cấm thầu",
+    "example": "The firm faced debarment from government contracts due to corruption charges.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-189",
+    "word": "lien",
+    "definition": "quyền giữ tài sản",
+    "example": "The bank placed a lien on the property until the loan was repaid.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-190",
+    "word": "waiver",
+    "definition": "từ bỏ quyền",
+    "example": "The employee signed a waiver before participating in the company retreat.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-191",
+    "word": "depose",
+    "definition": "lấy lời khai",
+    "example": "The attorney will depose three witnesses before the trial begins.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-192",
+    "word": "clemency",
+    "definition": "sự khoan hồng",
+    "example": "The judge showed clemency by reducing the sentence for the first-time offender.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-193",
+    "word": "advocate",
+    "definition": "luật sư biện hộ",
+    "example": "The advocate presented a compelling argument in favor of the defendant.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-194",
+    "word": "exonerate",
+    "definition": "minh oan",
+    "example": "The new evidence helped to exonerate the accused person.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-195",
+    "word": "adjudicate",
+    "definition": "phân xử, xét xử",
+    "example": "The panel was appointed to adjudicate the dispute between the two companies.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-196",
+    "word": "decree",
+    "definition": "sắc lệnh",
+    "example": "The government issued a decree banning the import of certain chemicals.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-197",
+    "word": "repeal",
+    "definition": "bãi bỏ luật",
+    "example": "The outdated regulation was repealed after years of debate.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-198",
+    "word": "convict",
+    "definition": "kết tội",
+    "example": "The jury voted to convict the defendant on all charges.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-199",
+    "word": "acquit",
+    "definition": "tha bổng, trắng án",
+    "example": "The court decided to acquit the defendant due to insufficient evidence.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-200",
+    "word": "appeal",
+    "definition": "kháng cáo",
+    "example": "The company decided to appeal the court's decision to a higher authority.",
+    "topic": "Legal"
+  },
+  {
+    "id": "tf-201",
+    "word": "campaign",
+    "definition": "chiến dịch",
+    "example": "The marketing team launched a new advertising campaign for the product launch.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-202",
+    "word": "demographic",
+    "definition": "nhân khẩu học",
+    "example": "The survey analyzed the demographic profile of our target customers.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-203",
+    "word": "branding",
+    "definition": "xây dựng thương hiệu",
+    "example": "Effective branding helps companies differentiate themselves from competitors.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-204",
+    "word": "segment",
+    "definition": "phân khúc",
+    "example": "We need to segment our customer base to create targeted marketing messages.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-205",
+    "word": "conversion",
+    "definition": "tỷ lệ chuyển đổi",
+    "example": "The website redesign improved the conversion rate from visitors to buyers.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-206",
+    "word": "engagement",
+    "definition": "mức độ tương tác",
+    "example": "Social media engagement increased by 30% after the new content strategy.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-207",
+    "word": "analytics",
+    "definition": "phân tích dữ liệu",
+    "example": "The marketing team uses analytics to measure the success of their campaigns.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-208",
+    "word": "conversion rate",
+    "definition": "tỷ lệ chuyển đổi",
+    "example": "Increasing the conversion rate is a primary goal of the marketing department.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-209",
+    "word": "ROI",
+    "definition": "lợi nhuận trên vốn đầu tư",
+    "example": "The campaign achieved a high ROI compared to previous advertising efforts.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-210",
+    "word": "branding",
+    "definition": "định vị thương hiệu",
+    "example": "Consistent branding across all channels strengthens customer recognition.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-211",
+    "word": "benchmark",
+    "definition": "điểm chuẩn hiệu suất",
+    "example": "The marketing team set benchmarks for measuring campaign performance.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-212",
+    "word": "promotion",
+    "definition": "khuyến mãi",
+    "example": "The limited-time promotion increased sales by 25% during the holiday season.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-213",
+    "word": "audience",
+    "definition": "đối tượng khán giả",
+    "example": "The advertisement was designed to appeal to a younger audience.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-214",
+    "word": "positioning",
+    "definition": "định vị thị trường",
+    "example": "The company's positioning strategy emphasizes quality and reliability.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-215",
+    "word": "slogan",
+    "definition": "khẩu hiệu",
+    "example": "The new slogan was designed to resonate with our target demographic.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-216",
+    "word": "brochure",
+    "definition": "tờ rơi, tập quảng cáo",
+    "example": "The sales team distributed brochures at the trade show to attract new clients.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-217",
+    "word": "endorsement",
+    "definition": "sự chứng thực",
+    "example": "The celebrity endorsement helped boost product awareness significantly.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-218",
+    "word": "pitch",
+    "definition": "trình bày ý tưởng",
+    "example": "The marketing director delivered a compelling pitch to potential investors.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-219",
+    "word": "affiliate",
+    "definition": "liên kết tiếp thị",
+    "example": "The affiliate marketing program generates additional revenue for the company.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-220",
+    "word": "viral",
+    "definition": "lan truyền nhanh",
+    "example": "The video went viral and reached millions of viewers within 24 hours.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-221",
+    "word": "content marketing",
+    "definition": "tiếp thị nội dung",
+    "example": "Content marketing is an effective way to build trust with potential customers.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-222",
+    "word": "SEO",
+    "definition": "tối ưu hóa công cụ tìm kiếm",
+    "example": "Improving SEO helps the company's website rank higher in search results.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-223",
+    "word": "PPC",
+    "definition": "quảng cáo trả tiền mỗi lượt nhấp",
+    "example": "The PPC campaign generated a significant increase in website traffic.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-224",
+    "word": "email marketing",
+    "definition": "tiếp thị qua email",
+    "example": "Email marketing remains one of the most cost-effective digital channels.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-225",
+    "word": "call to action",
+    "definition": "lời kêu gọi hành động",
+    "example": "Every advertisement should include a clear call to action for the audience.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-226",
+    "word": "survey",
+    "definition": "khảo sát",
+    "example": "The customer satisfaction survey revealed areas for improvement in service.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-227",
+    "word": "market share",
+    "definition": "thị phần",
+    "example": "The company increased its market share by 5% in the past year.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-228",
+    "word": "target market",
+    "definition": "thị trường mục tiêu",
+    "example": "Understanding the target market is essential for successful product launches.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-229",
+    "word": "competitive analysis",
+    "definition": "phân tích cạnh tranh",
+    "example": "A thorough competitive analysis helps identify gaps in the market.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-230",
+    "word": "lead generation",
+    "definition": "thu hút khách hàng tiềm năng",
+    "example": "Lead generation through social media has become increasingly important.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-231",
+    "word": "customer journey",
+    "definition": "hành trình khách hàng",
+    "example": "Mapping the customer journey helps optimize touchpoints with the brand.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-232",
+    "word": "loyalty",
+    "definition": "sự trung thành",
+    "example": "Customer loyalty programs help retain existing clients and attract new ones.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-233",
+    "word": "retention",
+    "definition": "giữ chân khách hàng",
+    "example": "Improving customer retention is more cost-effective than acquiring new customers.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-234",
+    "word": "bounce rate",
+    "definition": "tỷ lệ thoát trang",
+    "example": "A high bounce rate indicates that visitors are leaving the website quickly.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-235",
+    "word": "CTA",
+    "definition": "nút kêu gọi hành động",
+    "example": "The CTA button on the landing page encouraged users to sign up for the newsletter.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-236",
+    "word": "impression",
+    "definition": "lượt hiển thị",
+    "example": "The campaign generated over 1 million impressions across social media platforms.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-237",
+    "word": "click-through rate",
+    "definition": "tỷ lệ nhấp chuột",
+    "example": "The click-through rate for the email campaign was above industry average.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-238",
+    "word": "value proposition",
+    "definition": "giá trị cốt lõi",
+    "example": "A strong value proposition differentiates the company from its competitors.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-239",
+    "word": "personalization",
+    "definition": "cá nhân hóa",
+    "example": "Personalization in marketing messages increases customer engagement rates.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-240",
+    "word": "market penetration",
+    "definition": "thâm nhập thị trường",
+    "example": "The company developed a strategy for market penetration in Southeast Asia.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-241",
+    "word": "rebranding",
+    "definition": "đổi thương hiệu",
+    "example": "The company underwent rebranding to appeal to a younger demographic.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-242",
+    "word": "merchandise",
+    "definition": "hàng hóa",
+    "example": "The store displays its merchandise in an attractive and organized manner.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-243",
+    "word": "influencer",
+    "definition": "người có ảnh hưởng",
+    "example": "The influencer partnership helped increase brand awareness among millennials.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-244",
+    "word": "sponsorship",
+    "definition": "tài trợ",
+    "example": "The company secured a sponsorship deal with the national sports team.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-245",
+    "word": "billboard",
+    "definition": "biển quảng cáo",
+    "example": "The billboard advertisement is visible to thousands of commuters daily.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-246",
+    "word": "publicity",
+    "definition": "quảng bá",
+    "example": "The product launch generated significant publicity through media coverage.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-247",
+    "word": "market research",
+    "definition": "nghiên cứu thị trường",
+    "example": "Conducting market research before launching a new product is essential.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-248",
+    "word": "focus group",
+    "definition": "nhóm nghiên cứu thị trường",
+    "example": "The focus group provided valuable feedback on the new product design.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-249",
+    "word": "unique selling point",
+    "definition": "điểm bán hàng độc đáo",
+    "example": "The unique selling point of our product is its eco-friendly design.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-250",
+    "word": "cross-promotion",
+    "definition": "quảng cáo chéo",
+    "example": "Cross-promotion between the two brands increased sales for both companies.",
+    "topic": "Marketing"
+  },
+  {
+    "id": "tf-251",
+    "word": "recruitment",
+    "definition": "tuyển dụng",
+    "example": "The recruitment process includes multiple rounds of interviews and assessments.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-252",
+    "word": "onboarding",
+    "definition": "đào tạo nhập môn",
+    "example": "A comprehensive onboarding program helps new employees integrate quickly.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-253",
+    "word": "compensation",
+    "definition": "lương thưởng, đãi ngộ",
+    "example": "The company offers competitive compensation packages to attract top talent.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-254",
+    "word": "appraisal",
+    "definition": "đánh giá hiệu suất",
+    "example": "Annual performance appraisals determine eligibility for salary increases.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-255",
+    "word": "turnover",
+    "definition": "tỷ lệ nghỉ việc",
+    "example": "High employee turnover can increase recruitment and training costs.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-256",
+    "word": "benefits",
+    "definition": "phúc lợi",
+    "example": "The benefits package includes health insurance, dental coverage, and retirement plans.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-257",
+    "word": "retention",
+    "definition": "giữ chân nhân viên",
+    "example": "Employee retention strategies include career development and flexible work hours.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-258",
+    "word": "payroll",
+    "definition": "bảng lương",
+    "example": "The payroll department ensures all employees are paid accurately and on time.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-259",
+    "word": "headhunter",
+    "definition": "nhà tuyển dụng cấp cao",
+    "example": "The headhunter was hired to find a qualified candidate for the CEO position.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-260",
+    "word": "job description",
+    "definition": "mô tả công việc",
+    "example": "The job description outlines the responsibilities and qualifications required.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-261",
+    "word": "workforce",
+    "definition": "lực lượng lao động",
+    "example": "The company plans to expand its workforce by 20% in the next fiscal year.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-262",
+    "word": "discipline",
+    "definition": "kỷ luật",
+    "example": "The HR department handles all matters related to employee discipline.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-263",
+    "word": "grievance",
+    "definition": "khiếu nại",
+    "example": "Employees can file a grievance if they feel they have been treated unfairly.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-264",
+    "word": "termination",
+    "definition": "sa thải, chấm dứt hợp đồng",
+    "example": "The termination of employment must follow the procedures outlined in the contract.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-265",
+    "word": "probation",
+    "definition": "thử việc",
+    "example": "New employees must complete a six-month probation period before permanent hire.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-266",
+    "word": "overtime",
+    "definition": "làm thêm giờ",
+    "example": "Employees are compensated at a higher rate for any overtime work.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-267",
+    "word": "sabbatical",
+    "definition": "nghỉ phép dài hạn",
+    "example": "After ten years of service, the professor took a sabbatical for research.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-268",
+    "word": "telecommute",
+    "definition": "làm việc từ xa",
+    "example": "The company allows employees to telecommute three days per week.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-269",
+    "word": "job fair",
+    "definition": "hội chợ việc làm",
+    "example": "The company will host a booth at the job fair to recruit new graduates.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-270",
+    "word": "mentor",
+    "definition": "người cố vấn",
+    "example": "Each new hire is assigned a mentor to guide them through their first year.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-271",
+    "word": "promotion",
+    "definition": "thăng chức",
+    "example": "Based on her excellent performance, she was offered a promotion to senior manager.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-272",
+    "word": "demotion",
+    "definition": "giáng chức",
+    "example": "The employee faced demotion due to repeated performance issues.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-273",
+    "word": "absenteeism",
+    "definition": "tỷ lệ nghỉ việc cao",
+    "example": "High absenteeism can indicate underlying issues with employee morale.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-274",
+    "word": "induction",
+    "definition": "buổi giới thiệu nhân viên mới",
+    "example": "The induction session covers company policies and workplace expectations.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-275",
+    "word": "skills gap",
+    "definition": "khoảng cách kỹ năng",
+    "example": "Identifying the skills gap helps determine appropriate training programs.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-276",
+    "word": "talent pool",
+    "definition": "nguồn nhân lực",
+    "example": "Building a strong talent pool is essential for long-term organizational success.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-277",
+    "word": "job description",
+    "definition": "bản mô tả công việc",
+    "example": "The job description should clearly outline the duties and expectations.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-278",
+    "word": "workplace safety",
+    "definition": "an toàn lao động",
+    "example": "The company is committed to maintaining high standards of workplace safety.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-279",
+    "word": "employee engagement",
+    "definition": "mức độ gắn kết nhân viên",
+    "example": "Employee engagement surveys help identify areas for improving workplace culture.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-280",
+    "word": "compensation package",
+    "definition": "gói đãi ngộ",
+    "example": "The compensation package includes salary, bonuses, and stock options.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-281",
+    "word": "training program",
+    "definition": "chương trình đào tạo",
+    "example": "The training program is designed to enhance employees' technical skills.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-282",
+    "word": "human capital",
+    "definition": "vốn nhân lực",
+    "example": "Investing in human capital leads to better productivity and innovation.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-283",
+    "word": "recruitment agency",
+    "definition": "cơ quan tuyển dụng",
+    "example": "The recruitment agency helped find qualified candidates for the executive position.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-284",
+    "word": "appraisal form",
+    "definition": "biểu mẫu đánh giá",
+    "example": "The appraisal form is used to document performance reviews each quarter.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-285",
+    "word": "severance",
+    "definition": "tiền trợ cấp thôi việc",
+    "example": "The employee received severance pay after the company downsized.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-286",
+    "word": "retention strategy",
+    "definition": "chiến lược giữ chân nhân viên",
+    "example": "The company developed a retention strategy to reduce employee turnover.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-287",
+    "word": "job posting",
+    "definition": "bảng tin tuyển dụng",
+    "example": "The job posting was shared on multiple online platforms to attract applicants.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-288",
+    "word": "work-life balance",
+    "definition": "cân bằng công việc và cuộc sống",
+    "example": "Promoting work-life balance improves employee satisfaction and productivity.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-289",
+    "word": "organizational chart",
+    "definition": "sơ đồ tổ chức",
+    "example": "The organizational chart shows the hierarchy and reporting structure.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-290",
+    "word": "talent acquisition",
+    "definition": "thu hút nhân tài",
+    "example": "Talent acquisition is a critical function of the human resources department.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-291",
+    "word": "background check",
+    "definition": "kiểm tra lý lịch",
+    "example": "All candidates must undergo a background check before receiving an offer.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-292",
+    "word": "job interview",
+    "definition": "phỏng vấn việc làm",
+    "example": "The job interview will assess both technical skills and cultural fit.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-293",
+    "word": "resume",
+    "definition": "sơ yếu lý lịch",
+    "example": "Please send your resume along with a cover letter to the HR department.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-294",
+    "word": "employment contract",
+    "definition": "hợp đồng lao động",
+    "example": "The employment contract specifies the terms and conditions of the job.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-295",
+    "word": "employee handbook",
+    "definition": "sổ tay nhân viên",
+    "example": "The employee handbook contains information about company policies and benefits.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-296",
+    "word": "salary increment",
+    "definition": "tăng lương",
+    "example": "Employees who meet their targets are eligible for a salary increment.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-297",
+    "word": "career development",
+    "definition": "phát triển nghề nghiệp",
+    "example": "The company offers career development programs for ambitious employees.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-298",
+    "word": "job satisfaction",
+    "definition": "sự hài lòng trong công việc",
+    "example": "High job satisfaction correlates with increased employee retention.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-299",
+    "word": "diversity",
+    "definition": "đa dạng",
+    "example": "The company is committed to promoting diversity and inclusion in the workplace.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-300",
+    "word": "equal opportunity",
+    "definition": "cơ hội bình đẳng",
+    "example": "The company is an equal opportunity employer that values diversity.",
+    "topic": "Human Resources"
+  },
+  {
+    "id": "tf-301",
+    "word": "software",
+    "definition": "phần mềm",
+    "example": "The new software will streamline the document management process.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-302",
+    "word": "hardware",
+    "definition": "phần cứng",
+    "example": "The IT department is upgrading the hardware in all office workstations.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-303",
+    "word": "bandwidth",
+    "definition": "băng thông",
+    "example": "The company upgraded its bandwidth to support more simultaneous connections.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-304",
+    "word": "malware",
+    "definition": "phần mềm độc hại",
+    "example": "The company installed antivirus software to protect against malware attacks.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-305",
+    "word": "encryption",
+    "definition": "mã hóa",
+    "example": "Data encryption is essential for protecting sensitive customer information.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-306",
+    "word": "firewall",
+    "definition": "tường lửa",
+    "example": "The firewall prevents unauthorized access to the company's internal network.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-307",
+    "word": "cybersecurity",
+    "definition": "an ninh mạng",
+    "example": "Investing in cybersecurity is critical for protecting business data.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-308",
+    "word": "cloud computing",
+    "definition": "điện toán đám mây",
+    "example": "Cloud computing allows employees to access files from any location.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-309",
+    "word": "database",
+    "definition": "cơ sở dữ liệu",
+    "example": "The customer database stores all relevant information for the sales team.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-310",
+    "word": "backup",
+    "definition": "sao lưu",
+    "example": "Regular backups are essential to prevent data loss in case of system failure.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-311",
+    "word": "server",
+    "definition": "máy chủ",
+    "example": "The server handles all incoming requests from the company's website.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-312",
+    "word": "protocol",
+    "definition": "giao thức",
+    "example": "The network uses the TCP/IP protocol for data transmission.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-313",
+    "word": "algorithm",
+    "definition": "thuật toán",
+    "example": "The algorithm improves the accuracy of the recommendation engine.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-314",
+    "word": "interface",
+    "definition": "giao diện",
+    "example": "The user-friendly interface makes the software easy to navigate.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-315",
+    "word": "upgrade",
+    "definition": "nâng cấp",
+    "example": "The company plans to upgrade its operating system to the latest version.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-316",
+    "word": "deploy",
+    "definition": "triển khai",
+    "example": "The IT team will deploy the new software across all departments.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-317",
+    "word": "bug",
+    "definition": "lỗi phần mềm",
+    "example": "The developers are working to fix a bug in the latest software release.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-318",
+    "word": "downtime",
+    "definition": "thời gian ngừng hoạt động",
+    "example": "Scheduled maintenance will cause some downtime for the servers this weekend.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-319",
+    "word": "pixel",
+    "definition": "điểm ảnh",
+    "example": "The high-resolution image contains over 10 million pixels.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-320",
+    "word": "download",
+    "definition": "tải xuống",
+    "example": "Please download the latest version of the application from the company portal.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-321",
+    "word": "upload",
+    "definition": "tải lên",
+    "example": "Employees must upload their reports to the shared drive by Friday.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-322",
+    "word": "streaming",
+    "definition": "phát trực tuyến",
+    "example": "The company uses streaming technology for live video conferences.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-323",
+    "word": "wireless",
+    "definition": "không dây",
+    "example": "The office is equipped with a high-speed wireless network.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-324",
+    "word": "peripheral",
+    "definition": "thiết bị ngoại vi",
+    "example": "The computer comes with several peripherals including a keyboard and mouse.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-325",
+    "word": "browser",
+    "definition": "trình duyệt web",
+    "example": "The website is optimized for all major web browsers.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-326",
+    "word": "virus",
+    "definition": "vi-rút máy tính",
+    "example": "The IT department removed a virus from the infected computer network.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-327",
+    "word": "firewall",
+    "definition": "bức tường lửa",
+    "example": "A strong firewall is essential for protecting the company's network.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-328",
+    "word": "interface",
+    "definition": "giao diện người dùng",
+    "example": "The new interface design improves the user experience significantly.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-329",
+    "word": "processor",
+    "definition": "bộ xử lý",
+    "example": "The latest processor offers faster performance for data-intensive tasks.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-330",
+    "word": "memory",
+    "definition": "bộ nhớ",
+    "example": "Increasing the computer's memory will improve its multitasking capability.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-331",
+    "word": "storage",
+    "definition": "bộ nhớ trong",
+    "example": "The cloud storage solution provides unlimited space for company files.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-332",
+    "word": "monitor",
+    "definition": "màn hình",
+    "example": "Each workstation is equipped with a dual-monitor setup for productivity.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-333",
+    "word": "laptop",
+    "definition": "máy tính xách tay",
+    "example": "The company provides a laptop for all employees who work remotely.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-334",
+    "word": "tablet",
+    "definition": "máy tính bảng",
+    "example": "Sales representatives use tablets to present product catalogs to clients.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-335",
+    "word": "desktop",
+    "definition": "máy tính để bàn",
+    "example": "The desktop computer in the office has a powerful graphics card.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-336",
+    "word": "printer",
+    "definition": "máy in laser",
+    "example": "The high-speed printer can produce up to 50 pages per minute.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-337",
+    "word": "scanner",
+    "definition": "máy quét",
+    "example": "Use the scanner to digitize all paper documents for archiving.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-338",
+    "word": "projector",
+    "definition": "máy chiếu",
+    "example": "The projector is used for presentations in the conference room.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-339",
+    "word": "webcam",
+    "definition": "máy ảnh web",
+    "example": "The webcam is essential for video conferencing with remote teams.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-340",
+    "word": "microphone",
+    "definition": "microphone",
+    "example": "The wireless microphone ensures clear audio during virtual meetings.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-341",
+    "word": "headset",
+    "definition": "tai nghe",
+    "example": "Customer service representatives use headsets for phone conversations.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-342",
+    "word": "modem",
+    "definition": "bộ điều giải",
+    "example": "The modem connects the office to the internet through a broadband connection.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-343",
+    "word": "router",
+    "definition": "bộ định tuyến",
+    "example": "The router distributes internet access to all devices in the office.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-344",
+    "word": "switch",
+    "definition": "công tắc mạng",
+    "example": "The network switch connects multiple computers to the local area network.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-345",
+    "word": "ethernet",
+    "definition": "cáp ethernet",
+    "example": "The ethernet cable provides a stable and fast internet connection.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-346",
+    "word": "antenna",
+    "definition": "ăng-ten",
+    "example": "The wireless antenna improves signal strength in the conference room.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-347",
+    "word": "bluetooth",
+    "definition": "công nghệ không dây ngắn hạn",
+    "example": "The device uses Bluetooth to connect to wireless peripherals.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-348",
+    "word": "USB",
+    "definition": "cổng kết nối phổ dụng",
+    "example": "Plug the USB drive into your computer to transfer the files.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-349",
+    "word": "HDMI",
+    "definition": "cổng kết nối video",
+    "example": "Use the HDMI cable to connect your laptop to the projector.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-350",
+    "word": "touchscreen",
+    "definition": "màn hình cảm ứng",
+    "example": "The new kiosk features a touchscreen for easy navigation.",
+    "topic": "Technology"
+  },
+  {
+    "id": "tf-351",
+    "word": "reservation",
+    "definition": "đặt chỗ, đặt phòng",
+    "example": "I made a reservation at the hotel for three nights during the business trip.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-352",
+    "word": "itinerary",
+    "definition": "lịch trình",
+    "example": "The travel agent prepared a detailed itinerary for the conference trip.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-353",
+    "word": "check-in",
+    "definition": "nhận phòng",
+    "example": "The hotel check-in process takes approximately 10 minutes.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-354",
+    "word": "boarding pass",
+    "definition": "thẻ lên máy bay",
+    "example": "Please present your boarding pass and identification at the gate.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-355",
+    "word": "layover",
+    "definition": "quá cảnh",
+    "example": "The flight includes a two-hour layover in Singapore before continuing.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-356",
+    "word": "terminal",
+    "definition": "nhà ga",
+    "example": "The departure terminal for international flights is Terminal 3.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-357",
+    "word": "concierge",
+    "definition": "lễ tân khách sạn",
+    "example": "The concierge can arrange transportation and restaurant reservations.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-358",
+    "word": "amenity",
+    "definition": "tiện nghi",
+    "example": "The hotel offers a wide range of amenities including a spa and gym.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-359",
+    "word": "suite",
+    "definition": "phòng cao cấp",
+    "example": "The executive suite includes a separate living area and meeting room.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-360",
+    "word": "hospitality",
+    "definition": "lĩnh vực dịch vụ lưu trú",
+    "example": "The hospitality industry has seen strong growth in the past year.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-361",
+    "word": "accommodation",
+    "definition": "chỗ ở",
+    "example": "The company arranged accommodation for all employees attending the seminar.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-362",
+    "word": "itinerary",
+    "definition": "chuyến đi chi tiết",
+    "example": "The detailed itinerary includes meetings, meals, and sightseeing activities.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-363",
+    "word": "departure",
+    "definition": "khởi hành",
+    "example": "The departure time for the morning flight is 8:30 AM.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-364",
+    "word": "arrival",
+    "definition": "đến nơi",
+    "example": "The arrival gate for international passengers is on the second floor.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-365",
+    "word": "baggage",
+    "definition": "hành lý",
+    "example": "Please ensure your baggage does not exceed the weight limit.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-366",
+    "word": "luggage",
+    "definition": "hành lý ký gửi",
+    "example": "The luggage carousel is located in the baggage claim area.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-367",
+    "word": "customs",
+    "definition": "hải quan",
+    "example": "All travelers must go through customs upon arriving in the country.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-368",
+    "word": "immigration",
+    "definition": "xuất nhập cảnh",
+    "example": "The immigration officer checked my passport and visa at the airport.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-369",
+    "word": "visa",
+    "definition": "thị thực",
+    "example": "You will need a visa to travel to certain countries for business purposes.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-370",
+    "word": "passport",
+    "definition": "hộ chiếu",
+    "example": "Please ensure your passport is valid for at least six months before traveling.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-371",
+    "word": "airfare",
+    "definition": "giá vé máy bay",
+    "example": "The company will cover the airfare for all conference attendees.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-372",
+    "word": "upgrade",
+    "definition": "nâng hạng",
+    "example": "The frequent flyer was upgraded to business class for the flight.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-373",
+    "word": "layover",
+    "definition": "dừng chân trung chuyển",
+    "example": "The long layover gave us time to explore the city during our connection.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-374",
+    "word": "cruise",
+    "definition": "chuyến du thuyền",
+    "example": "The company organized a cruise for its top-performing sales team.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-375",
+    "word": "excursion",
+    "definition": "chuyến tham quan ngắn",
+    "example": "The hotel offers guided excursions to nearby historical landmarks.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-376",
+    "word": "tourism",
+    "definition": "du lịch",
+    "example": "Tourism is a major source of revenue for many coastal cities.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-377",
+    "word": "resort",
+    "definition": "khu nghỉ dưỡng",
+    "example": "The luxury resort offers stunning ocean views and world-class dining.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-378",
+    "word": "hostel",
+    "definition": "nhà trọ giá rẻ",
+    "example": "Budget travelers often choose hostels for their affordable accommodation.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-379",
+    "word": "motel",
+    "definition": "nhà nghỉ bên đường",
+    "example": "The motel is conveniently located near the highway for road travelers.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-380",
+    "word": "banquet",
+    "definition": "tiệc yến tiệc",
+    "example": "The hotel hosted a banquet for 200 guests at the annual company dinner.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-381",
+    "word": "catering",
+    "definition": "dịch vụ tiệc",
+    "example": "The catering service provided refreshments for the corporate event.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-382",
+    "word": "venue",
+    "definition": "địa điểm tổ chức",
+    "example": "The conference venue can accommodate up to 500 attendees.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-383",
+    "word": "shuttle",
+    "definition": "xe đưa đón",
+    "example": "A complimentary shuttle service runs between the airport and the hotel.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-384",
+    "word": "rental",
+    "definition": "cho thuê",
+    "example": "The car rental company offers competitive rates for business travelers.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-385",
+    "word": "itinerary",
+    "definition": "lịch trình di chuyển",
+    "example": "Please review the itinerary to ensure all travel arrangements are correct.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-386",
+    "word": "destination",
+    "definition": "điểm đến",
+    "example": "Tokyo is a popular destination for business conferences and trade shows.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-387",
+    "word": "transit",
+    "definition": "quá cảnh, trung chuyển",
+    "example": "The baggage must remain in transit until the final destination.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-388",
+    "word": "tour guide",
+    "definition": "hướng dẫn viên du lịch",
+    "example": "The tour guide provided interesting facts about the historical site.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-389",
+    "word": "sightseeing",
+    "definition": "tham quan",
+    "example": "The group enjoyed sightseeing in the old quarter during their free time.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-390",
+    "word": "souvenir",
+    "definition": "quà lưu niệm",
+    "example": "She bought traditional souvenirs for her colleagues at the gift shop.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-391",
+    "word": "check-out",
+    "definition": "trả phòng",
+    "example": "The hotel check-out time is 11:00 AM to prepare for new guests.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-392",
+    "word": "room service",
+    "definition": "dịch vụ phòng",
+    "example": "Room service is available 24 hours a day for hotel guests.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-393",
+    "word": "bellhop",
+    "definition": "người khuân vác hành lý",
+    "example": "The bellhop carried our luggage to the room upon arrival.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-394",
+    "word": "valet",
+    "definition": "người đỗ xe hộ",
+    "example": "The valet parked our car while we attended the conference dinner.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-395",
+    "word": "suite",
+    "definition": "phòng tổng thống",
+    "example": "The CEO stayed in the presidential suite during the business trip.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-396",
+    "word": "reception",
+    "definition": "lễ tân",
+    "example": "The reception desk is located in the main lobby of the hotel.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-397",
+    "word": "housekeeping",
+    "definition": "dọn dẹp phòng",
+    "example": "The housekeeping staff ensures all rooms are clean and well-maintained.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-398",
+    "word": "amenity",
+    "definition": "tiện nghi phòng",
+    "example": "The room includes modern amenities such as a flat-screen TV and minibar.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-399",
+    "word": "tourism board",
+    "definition": "cục du lịch",
+    "example": "The tourism board promotes the city as a destination for business events.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-400",
+    "word": "airline",
+    "definition": "hãng hàng không",
+    "example": "The airline offers discounted fares for corporate travel bookings.",
+    "topic": "Travel & Hospitality"
+  },
+  {
+    "id": "tf-401",
+    "word": "diagnosis",
+    "definition": "chẩn đoán",
+    "example": "The doctor made an accurate diagnosis after running several tests.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-402",
+    "word": "prescription",
+    "definition": "đơn thuốc",
+    "example": "The doctor wrote a prescription for antibiotics to treat the infection.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-403",
+    "word": "symptom",
+    "definition": "triệu chứng",
+    "example": "The patient reported symptoms of fatigue and headache for several days.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-404",
+    "word": "pharmacy",
+    "definition": "nhà thuốc",
+    "example": "You can pick up your medication at the pharmacy on the ground floor.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-405",
+    "word": "treatment",
+    "definition": "điều trị",
+    "example": "The treatment plan includes both medication and physical therapy.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-406",
+    "word": "specialist",
+    "definition": "chuyên gia y tế",
+    "example": "The patient was referred to a specialist for further evaluation.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-407",
+    "word": "clinic",
+    "definition": "phòng khám",
+    "example": "The employee visited the clinic for a routine health check-up.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-408",
+    "word": "vaccination",
+    "definition": "tiêm chủng",
+    "example": "Annual vaccination is recommended for employees in the healthcare sector.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-409",
+    "word": "injection",
+    "definition": "tiêm",
+    "example": "The nurse administered an injection to reduce the patient's pain.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-410",
+    "word": "surgery",
+    "definition": "phẫu thuật",
+    "example": "The patient underwent surgery to repair a damaged knee ligament.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-411",
+    "word": "chronic",
+    "definition": "mạn tính",
+    "example": "The doctor is treating the patient for a chronic respiratory condition.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-412",
+    "word": "acute",
+    "definition": "cấp tính",
+    "example": "The patient was admitted to the hospital with acute chest pain.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-413",
+    "word": "dosage",
+    "definition": "liều lượng",
+    "example": "The pharmacist explained the correct dosage for the medication.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-414",
+    "word": "infected",
+    "definition": "bị nhiễm trùng",
+    "example": "The wound became infected and required immediate medical attention.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-415",
+    "word": "outpatient",
+    "definition": "bệnh nhân ngoại trú",
+    "example": "The outpatient clinic provides medical care without overnight hospitalization.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-416",
+    "word": "inpatient",
+    "definition": "bệnh nhân nội trú",
+    "example": "The inpatient ward is located on the third floor of the hospital.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-417",
+    "word": "diagnose",
+    "definition": "chẩn đoán bệnh",
+    "example": "The physician used advanced imaging technology to diagnose the condition.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-418",
+    "word": "referral",
+    "definition": "giới thiệu chuyên khoa",
+    "example": "The primary care doctor gave a referral to a cardiologist for further examination.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-419",
+    "word": "recovery",
+    "definition": "hồi phục",
+    "example": "The patient's recovery is progressing well after the surgery.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-420",
+    "word": "relapse",
+    "definition": "tái phát",
+    "example": "The patient experienced a relapse and was readmitted to the hospital.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-421",
+    "word": "allergic",
+    "definition": "dị ứng",
+    "example": "The patient is allergic to penicillin and should not be prescribed that medication.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-422",
+    "word": "epidemic",
+    "definition": "dịch bệnh",
+    "example": "The health department issued warnings about the flu epidemic in the region.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-423",
+    "word": "quarantine",
+    "definition": "cách ly",
+    "example": "Travelers returning from affected areas were placed in quarantine.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-424",
+    "word": "sanitation",
+    "definition": "vệ sinh",
+    "example": "Proper sanitation practices help prevent the spread of infectious diseases.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-425",
+    "word": "hygiene",
+    "definition": "giữ gìn vệ sinh",
+    "example": "Good hygiene practices are essential in preventing the spread of illness.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-426",
+    "word": "ambulance",
+    "definition": "xe cứu thương",
+    "example": "Call an ambulance immediately if someone experiences a medical emergency.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-427",
+    "word": "surgical",
+    "definition": "thuộc phẫu thuật",
+    "example": "The surgical team prepared for the complex operation.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-428",
+    "word": "anesthesia",
+    "definition": "gây mê",
+    "example": "The patient was given general anesthesia before the operation began.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-429",
+    "word": "biopsy",
+    "definition": "sinh thiết",
+    "example": "The doctor ordered a biopsy to determine if the tissue was cancerous.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-430",
+    "word": "radiology",
+    "definition": "chụp X-quang",
+    "example": "The radiology department uses advanced imaging for accurate diagnosis.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-431",
+    "word": "laboratory",
+    "definition": "phòng thí nghiệm",
+    "example": "The laboratory results confirmed the presence of a bacterial infection.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-432",
+    "word": "paramedic",
+    "definition": "nhân viên cấp cứu",
+    "example": "The paramedic arrived at the scene within five minutes of the call.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-433",
+    "word": "ward",
+    "definition": "khu bệnh",
+    "example": "The pediatric ward is located on the second floor of the hospital.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-434",
+    "word": "discharge",
+    "definition": "xuất viện",
+    "example": "The patient was discharged after three days of successful treatment.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-435",
+    "word": "admission",
+    "definition": "nhập viện",
+    "example": "The admission process requires completing several medical forms.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-436",
+    "word": "prescribe",
+    "definition": "kê đơn",
+    "example": "The doctor prescribed medication to manage the patient's blood pressure.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-437",
+    "word": "vaccination",
+    "definition": "tiêm vắc-xin",
+    "example": "The vaccination program aims to protect the community from preventable diseases.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-438",
+    "word": "antibiotic",
+    "definition": "thuốc kháng sinh",
+    "example": "The antibiotic was effective in treating the bacterial infection.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-439",
+    "word": "vital signs",
+    "definition": "dấu hiệu sinh tồn",
+    "example": "The nurse checked the patient's vital signs before administering medication.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-440",
+    "word": "surgeon",
+    "definition": "bác sĩ phẫu thuật",
+    "example": "The surgeon performed the operation with great precision.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-441",
+    "word": "pediatric",
+    "definition": "nhi khoa",
+    "example": "The pediatric department provides specialized care for children.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-442",
+    "word": "cardiology",
+    "definition": "tim mạch học",
+    "example": "The cardiology department specializes in heart disease treatment.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-443",
+    "word": "oncology",
+    "definition": "ung thư học",
+    "example": "The oncology team developed a comprehensive treatment plan for the patient.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-444",
+    "word": "dermatology",
+    "definition": "da liễu",
+    "example": "The dermatology clinic offers treatments for various skin conditions.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-445",
+    "word": "neurology",
+    "definition": "thần kinh học",
+    "example": "The neurology department specializes in diagnosing brain disorders.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-446",
+    "word": "orthopedics",
+    "definition": "chỉnh hình",
+    "example": "The orthopedics department treats fractures and joint injuries.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-447",
+    "word": "therapist",
+    "definition": "chuyên gia trị liệu",
+    "example": "The physical therapist designed an exercise program for rehabilitation.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-448",
+    "word": "insurance claim",
+    "definition": "bồi thường bảo hiểm",
+    "example": "The insurance claim was processed quickly after the hospital stay.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-449",
+    "word": "medical record",
+    "definition": "hồ sơ bệnh án",
+    "example": "The medical record contains the patient's complete health history.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-450",
+    "word": "wellness",
+    "definition": "sức khỏe tổng thể",
+    "example": "The company promotes employee wellness through health programs.",
+    "topic": "Healthcare"
+  },
+  {
+    "id": "tf-451",
+    "word": "commute",
+    "definition": "đi làm hàng ngày",
+    "example": "She commutes to work by subway every morning.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-452",
+    "word": "subscribe",
+    "definition": "đăng ký",
+    "example": "Many employees subscribe to industry newsletters to stay informed.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-453",
+    "word": "renew",
+    "definition": "gia hạn",
+    "example": "I need to renew my subscription to the professional journal before it expires.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-454",
+    "word": "enroll",
+    "definition": "ghi danh",
+    "example": "She enrolled in an online course to improve her leadership skills.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-455",
+    "word": "postpone",
+    "definition": "hoãn lại",
+    "example": "The meeting has been postponed until next Wednesday due to a scheduling conflict.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-456",
+    "word": "cancellation",
+    "definition": "sự hủy bỏ",
+    "example": "The cancellation of the flight caused delays for many business travelers.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-457",
+    "word": "reschedule",
+    "definition": "đặt lại lịch",
+    "example": "We need to reschedule the appointment to a more convenient time.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-458",
+    "word": "confirmation",
+    "definition": "sự xác nhận",
+    "example": "Please send a confirmation email once you have received the documents.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-459",
+    "word": "appliance",
+    "definition": "thiết bị gia dụng",
+    "example": "The office kitchen is equipped with modern appliances for employee use.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-460",
+    "word": "maintenance",
+    "definition": "bảo trì",
+    "example": "Regular maintenance of the air conditioning system ensures optimal performance.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-461",
+    "word": "renewal",
+    "definition": "gia hạn",
+    "example": "The renewal of the insurance policy is due at the end of the month.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-462",
+    "word": "commuter",
+    "definition": "người đi làm hàng ngày",
+    "example": "The commuter train runs every 10 minutes during rush hour.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-463",
+    "word": "enrollment",
+    "definition": "sự ghi danh",
+    "example": "The enrollment deadline for the training program is next Friday.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-464",
+    "word": "forecast",
+    "definition": "dự báo thời tiết",
+    "example": "The weather forecast predicts rain for the next three days.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-465",
+    "word": "transportation",
+    "definition": "giao thông vận tải",
+    "example": "The company provides free transportation for employees during the holiday season.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-466",
+    "word": "subscription",
+    "definition": "gói đăng ký",
+    "example": "The premium subscription includes access to exclusive content and features.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-467",
+    "word": "grocery",
+    "definition": "siêu thị thực phẩm",
+    "example": "The grocery store is located just five minutes from the office.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-468",
+    "word": "entertainment",
+    "definition": "giải trí",
+    "example": "The company organized entertainment activities for the annual team-building event.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-469",
+    "word": "recreation",
+    "definition": "giải trí, thư giãn",
+    "example": "The recreation center offers various sports facilities for employees.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-470",
+    "word": "weather",
+    "definition": "thời tiết",
+    "example": "The weather conditions may affect our travel plans for the conference.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-471",
+    "word": "temperature",
+    "definition": "nhiệt độ",
+    "example": "Please adjust the temperature in the office to a comfortable level.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-472",
+    "word": "traffic",
+    "definition": "giao thông",
+    "example": "Heavy traffic caused a 30-minute delay for employees commuting to the office.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-473",
+    "word": "pedestrian",
+    "definition": "người đi bộ",
+    "example": "The new sidewalk provides a safe path for pedestrians near the office.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-474",
+    "word": "intersection",
+    "definition": "giao lộ",
+    "example": "The traffic light at the intersection was repaired after a power outage.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-475",
+    "word": "detour",
+    "definition": "đường vòng",
+    "example": "Due to road construction, drivers must take a detour around the main street.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-476",
+    "word": "commute",
+    "definition": "hành trình đi làm",
+    "example": "The average commute time in the city is approximately 45 minutes.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-477",
+    "word": "curriculum",
+    "definition": "chương trình giảng dạy",
+    "example": "The school updated its curriculum to include more technology courses.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-478",
+    "word": "diploma",
+    "definition": "bằng cấp",
+    "example": "She received her diploma after completing the four-year engineering program.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-479",
+    "word": "certificate",
+    "definition": "chứng chỉ",
+    "example": "The certificate of completion is awarded after finishing the training course.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-480",
+    "word": "scholarship",
+    "definition": "học bổng",
+    "example": "The scholarship covers tuition fees and living expenses for deserving students.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-481",
+    "word": "tuition",
+    "definition": "học phí",
+    "example": "The tuition for the graduate program is payable in two installments.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-482",
+    "word": "lecture",
+    "definition": "bài giảng",
+    "example": "The professor delivered an engaging lecture on international business.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-483",
+    "word": "seminar",
+    "definition": "hội thảo",
+    "example": "The seminar attracted over 100 professionals from various industries.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-484",
+    "word": "cuisine",
+    "definition": "ẩm thực",
+    "example": "The restaurant is known for its authentic Italian cuisine and friendly service.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-485",
+    "word": "catering",
+    "definition": "dịch vụ ăn uống",
+    "example": "The catering company provided lunch for the all-day workshop.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-486",
+    "word": "beverage",
+    "definition": "đồ uống",
+    "example": "Hot beverages are available in the breakroom throughout the day.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-487",
+    "word": "ingredients",
+    "definition": "nguyên liệu",
+    "example": "The recipe lists all the ingredients needed to prepare the dish.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-488",
+    "word": "nutritious",
+    "definition": "bổ dưỡng",
+    "example": "The cafeteria serves nutritious meals for health-conscious employees.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-489",
+    "word": "vegetarian",
+    "definition": "ăn chay",
+    "example": "The restaurant offers vegetarian options on its lunch menu.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-490",
+    "word": "recipe",
+    "definition": "công thức nấu ăn",
+    "example": "The recipe for the special dish is available on the company intranet.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-491",
+    "word": "recipe",
+    "definition": "công thức",
+    "example": "The chef shared a simple recipe for preparing healthy office lunches.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-492",
+    "word": "subscription",
+    "definition": "gói dịch vụ",
+    "example": "The magazine subscription includes both digital and print editions.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-493",
+    "word": "recreation",
+    "definition": "hoạt động giải trí",
+    "example": "The recreation room on the fifth floor has a pool table and foosball.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-494",
+    "word": "leisure",
+    "definition": "thời gian rảnh rỗi",
+    "example": "Employees are encouraged to use their leisure time for personal development.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-495",
+    "word": "vacation",
+    "definition": "kỳ nghỉ",
+    "example": "She took a vacation to visit family during the holiday break.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-496",
+    "word": "commuter",
+    "definition": "người đi lại hàng ngày",
+    "example": "The commuter parking lot fills up quickly during peak hours.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-497",
+    "word": "forecast",
+    "definition": "dự báo",
+    "example": "The financial forecast indicates steady growth for the coming quarter.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-498",
+    "word": "subscription",
+    "definition": "sự đăng ký định kỳ",
+    "example": "The online subscription provides access to thousands of academic journals.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-499",
+    "word": "commuter",
+    "definition": "người sử dụng phương tiện công cộng",
+    "example": "The commuter train schedule has been updated for the summer months.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-500",
+    "word": "commute",
+    "definition": "đi lại hàng ngày",
+    "example": "The new subway line will reduce commute time for thousands of workers.",
+    "topic": "Daily Life & General"
+  },
+  {
+    "id": "tf-501",
+    "word": "prospect",
+    "definition": "khách hàng tiềm năng",
+    "example": "The sales team identified several new prospects during the trade show.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-502",
+    "word": "procurement",
+    "definition": "bộ phận mua sắm",
+    "example": "The procurement team negotiated better prices with our suppliers.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-503",
+    "word": "wholesale",
+    "definition": "bán buôn",
+    "example": "The company sells products at wholesale prices to retail stores.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-504",
+    "word": "retail",
+    "definition": "bán lẻ",
+    "example": "The retail division reported a significant increase in sales during the holiday season.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-505",
+    "word": "inventory",
+    "definition": "kiểm kê hàng tồn kho",
+    "example": "The warehouse manager conducts inventory checks every Friday afternoon.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-506",
+    "word": "logistics",
+    "definition": "quản lý chuỗi cung ứng",
+    "example": "The logistics team ensures products are delivered on time and in good condition.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-507",
+    "word": "overhead",
+    "definition": "chi phí hoạt động chung",
+    "example": "The company reduced overhead by moving to a smaller office space.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-508",
+    "word": "deadline",
+    "definition": "hạn chót",
+    "example": "The project must be completed before the deadline at the end of the month.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-509",
+    "word": "milestone",
+    "definition": "cột mốc quan trọng",
+    "example": "Reaching 1 million users is a major milestone for the company.",
+    "topic": "Business"
+  },
+  {
+    "id": "tf-510",
+    "word": "benchmark",
+    "definition": "chuẩn mực",
+    "example": "The company established benchmarks for measuring customer satisfaction.",
+    "topic": "Business"
+  }
+]

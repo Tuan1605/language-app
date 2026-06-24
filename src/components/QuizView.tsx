@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import type { Question, ExamResult } from '../types';
+import type { Question, ExamResult, Mistake } from '../types';
 import { playCorrectSound } from '../utils/sound';
 
 interface QuizViewProps {
@@ -8,9 +8,10 @@ interface QuizViewProps {
   onComplete: (result: ExamResult) => void;
   onCancel: () => void;
   hideSummary?: boolean;
+  onSaveMistake?: (mistake: Mistake) => void;
 }
 
-export function QuizView({ questions, category, onComplete, onCancel, hideSummary }: QuizViewProps) {
+export function QuizView({ questions, category, onComplete, onCancel, hideSummary = false, onSaveMistake }: QuizViewProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState<(number | null)[]>(new Array(questions.length).fill(null));
   const [isFinished, setIsFinished] = useState(false);
@@ -71,6 +72,14 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
 
     if (selectedOption === questions[currentIndex].correctAnswer) {
       playCorrectSound();
+    } else if (onSaveMistake) {
+      onSaveMistake({
+        id: `mistake-${questions[currentIndex].id}-${Date.now()}`,
+        type: 'question',
+        data: questions[currentIndex],
+        wrongAnswer: selectedOption !== null ? questions[currentIndex].options[selectedOption] : 'Skipped',
+        timestamp: new Date().toISOString()
+      });
     }
   };
 

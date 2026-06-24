@@ -15,6 +15,7 @@ interface NotebookViewProps {
 export function NotebookView({ activeTrack, n2Grammar, n2Kanji, toeicGrammar }: NotebookViewProps) {
   const [activeTab, setActiveTab] = useState<'grammar' | 'kanji' | 'alphabet'>(activeTrack === 'japanese' ? 'alphabet' : 'grammar');
   const [kanjiSearch, setKanjiSearch] = useState('');
+  const [grammarSearch, setGrammarSearch] = useState('');
   const [selectedKanji, setSelectedKanji] = useState<KanjiEntry | null>(null);
 
   // Alphabet state
@@ -24,11 +25,19 @@ export function NotebookView({ activeTrack, n2Grammar, n2Kanji, toeicGrammar }: 
   // Drawing Pad state (replaced by HanziWriterPad, keeping for Kana detail)
 
   const grammarList = activeTrack === 'japanese' ? n2Grammar : toeicGrammar;
-  console.log("Rendering NotebookView", { activeTrack, firstGrammar: grammarList[0] });
+  
+  const filteredGrammar = useMemo(() => {
+    return grammarList.filter(g => 
+      !grammarSearch || 
+      g.pattern.toLowerCase().includes(grammarSearch.toLowerCase()) || 
+      g.meaning.toLowerCase().includes(grammarSearch.toLowerCase())
+    );
+  }, [grammarList, grammarSearch]);
+
   const kanjiList = useMemo(() => n2Kanji.filter(k =>
     !kanjiSearch ||
     k.kanji.includes(kanjiSearch) ||
-    k.meaning.includes(kanjiSearch) ||
+    k.meaning.toLowerCase().includes(kanjiSearch.toLowerCase()) ||
     k.on_reading?.includes(kanjiSearch) ||
     k.kun_reading?.includes(kanjiSearch)
   ), [n2Kanji, kanjiSearch]);
@@ -114,32 +123,48 @@ export function NotebookView({ activeTrack, n2Grammar, n2Kanji, toeicGrammar }: 
           </div>
         )}
         {activeTab === 'grammar' && (
-          grammarList.length > 0 ? (
-            grammarList.map(point => (
-              <div key={point.id} className="lingo-card p-6 border-l-8 border-l-[var(--purple)]">
-                <div className="flex justify-between items-start mb-2">
-                  <h3 className="text-xl font-black text-[var(--purple)]">{point.pattern}</h3>
-                  <span className="text-[10px] font-black px-2 py-1 rounded-md bg-[var(--gray-bg)] text-[var(--text-muted)] uppercase">
-                    {point.difficulty}
-                  </span>
-                </div>
-                <p className="font-bold text-sm mb-4 text-[var(--text-main)]">{point.meaning}</p>
-                <div className="bg-[var(--gray-bg)] p-3 rounded-xl text-xs space-y-1">
-                  {point.structure && (
-                    <div className="mb-2 pb-2 border-b border-[var(--gray-path)]">
-                      <p className="font-black text-[var(--purple)]">Cấu trúc: <span className="font-bold text-[var(--text-main)]">{point.structure}</span></p>
-                    </div>
-                  )}
-                  <p className="font-bold text-[var(--text-main)]">Ex: {point.example}</p>
-                  <p className="text-[var(--text-muted)]">{point.exampleTranslation}</p>
-                </div>
-              </div>
-            ))
-          ) : (
-            <div className="text-center py-20 bg-[var(--gray-bg)] rounded-[2rem] border-2 border-dashed border-[var(--gray-path)]">
-              <p className="text-[var(--text-muted)] font-bold">Chưa có ngữ pháp nào được lưu.</p>
+          <div className="space-y-4">
+            <div className="relative">
+              <input
+                type="text"
+                value={grammarSearch}
+                onChange={(e) => setGrammarSearch(e.target.value)}
+                className="w-full bg-[var(--bg-hover)] border-2 border-[var(--border-main)] rounded-2xl py-3 px-10 font-bold outline-none focus:border-[var(--blue)] transition-all text-[var(--text-main)]"
+                placeholder={activeTrack === 'english' ? "Search grammar..." : "Tìm mẫu ngữ pháp..."}
+              />
             </div>
-          )
+            <p className="text-[10px] font-black text-[var(--text-muted)] uppercase tracking-[0.2em]">
+              {filteredGrammar.length} điểm ngữ pháp
+            </p>
+            <div className="space-y-3 max-h-[500px] overflow-y-auto pr-2 custom-scrollbar">
+              {filteredGrammar.length > 0 ? (
+                filteredGrammar.map(point => (
+                  <div key={point.id} className="lingo-card p-6 border-l-8 border-l-[var(--purple)]">
+                    <div className="flex justify-between items-start mb-2">
+                      <h3 className="text-xl font-black text-[var(--purple)]">{point.pattern}</h3>
+                      <span className="text-[10px] font-black px-2 py-1 rounded-md bg-[var(--gray-bg)] text-[var(--text-muted)] uppercase">
+                        {point.difficulty}
+                      </span>
+                    </div>
+                    <p className="font-bold text-sm mb-4 text-[var(--text-main)]">{point.meaning}</p>
+                    <div className="bg-[var(--gray-bg)] p-3 rounded-xl text-xs space-y-1">
+                      {point.structure && (
+                        <div className="mb-2 pb-2 border-b border-[var(--gray-path)]">
+                          <p className="font-black text-[var(--purple)]">Cấu trúc: <span className="font-bold text-[var(--text-main)]">{point.structure}</span></p>
+                        </div>
+                      )}
+                      <p className="font-bold text-[var(--text-main)]">Ex: {point.example}</p>
+                      <p className="text-[var(--text-muted)]">{point.exampleTranslation}</p>
+                    </div>
+                  </div>
+                ))
+              ) : (
+                <div className="text-center py-20 bg-[var(--gray-bg)] rounded-[2rem] border-2 border-dashed border-[var(--gray-path)]">
+                  <p className="text-[var(--text-muted)] font-bold">Không tìm thấy ngữ pháp nào phù hợp.</p>
+                </div>
+              )}
+            </div>
+          </div>
         )}
 
         {activeTab === 'kanji' && (

@@ -1,25 +1,25 @@
-import type { Question, ListeningLesson, Flashcard, SpeakingLesson, DictationLesson, FullExam, SessionTask } from '../types';
+import type { Question, ListeningLesson, Flashcard, SpeakingLesson, DictationLesson, FullExam, SessionTask, WritingLesson } from '../types';
 
 // --- ULTIMATE REPOSITORY (TOEIC 700+ & JLPT N2) ---
 // Original practice material only. Not copied from official exams.
 
 const BASE_CARDS: Flashcard[] = [
   // --- TOEIC HIGH-FREQUENCY ---
-  { id: 't-1', user_id: 'guest', word: 'Incentive', definition: 'Sự khuyến khích, ưu đãi', example: 'The bonus serves as an incentive.', language: 'english', category: 'toeic', difficulty: 'intermediate', repetition: 0, interval: 0, easiness: 2.5, next_review: new Date().toISOString(), created_at: new Date().toISOString() },
-  { id: 't-2', user_id: 'guest', word: 'Delegate', definition: 'Ủy thác, giao phó', example: 'Managers must delegate tasks effectively.', language: 'english', category: 'toeic', difficulty: 'intermediate', repetition: 0, interval: 0, easiness: 2.5, next_review: new Date().toISOString(), created_at: new Date().toISOString() },
-  { id: 't-3', user_id: 'guest', word: 'Requirement', definition: 'Yêu cầu bắt buộc', language: 'english', category: 'toeic', difficulty: 'beginner', repetition: 0, interval: 0, easiness: 2.5, next_review: new Date().toISOString(), created_at: new Date().toISOString() },
-  { id: 't-4', user_id: 'guest', word: 'Procedure', definition: 'Quy trình, thủ tục', language: 'english', category: 'toeic', difficulty: 'beginner', repetition: 0, interval: 0, easiness: 2.5, next_review: new Date().toISOString(), created_at: new Date().toISOString() },
-  { id: 't-5', user_id: 'guest', word: 'Compliance', definition: 'Sự tuân thủ', language: 'english', category: 'toeic', difficulty: 'advanced', repetition: 0, interval: 0, easiness: 2.5, next_review: new Date().toISOString(), created_at: new Date().toISOString() },
-  { id: 't-6', user_id: 'guest', word: 'Acquisition', definition: 'Sự thâu tóm/mua lại', language: 'english', category: 'toeic', difficulty: 'advanced', repetition: 0, interval: 0, easiness: 2.5, next_review: new Date().toISOString(), created_at: new Date().toISOString() },
+  { id: 't-1', user_id: 'guest', word: 'Incentive', definition: 'Sự khuyến khích, ưu đãi', example: 'The bonus serves as an incentive.', language: 'english', category: 'toeic', difficulty: 'intermediate', topic: 'Business', repetition: 0, interval: 0, easiness: 2.5, next_review: new Date().toISOString(), created_at: new Date().toISOString() },
+  { id: 't-2', user_id: 'guest', word: 'Delegate', definition: 'Ủy thác, giao phó', example: 'Managers must delegate tasks effectively.', language: 'english', category: 'toeic', difficulty: 'intermediate', topic: 'Business', repetition: 0, interval: 0, easiness: 2.5, next_review: new Date().toISOString(), created_at: new Date().toISOString() },
+  { id: 't-3', user_id: 'guest', word: 'Requirement', definition: 'Yêu cầu bắt buộc', language: 'english', category: 'toeic', difficulty: 'beginner', topic: 'General', repetition: 0, interval: 0, easiness: 2.5, next_review: new Date().toISOString(), created_at: new Date().toISOString() },
+  { id: 't-4', user_id: 'guest', word: 'Procedure', definition: 'Quy trình, thủ tục', language: 'english', category: 'toeic', difficulty: 'beginner', topic: 'Office', repetition: 0, interval: 0, easiness: 2.5, next_review: new Date().toISOString(), created_at: new Date().toISOString() },
+  { id: 't-5', user_id: 'guest', word: 'Compliance', definition: 'Sự tuân thủ', language: 'english', category: 'toeic', difficulty: 'advanced', topic: 'Legal', repetition: 0, interval: 0, easiness: 2.5, next_review: new Date().toISOString(), created_at: new Date().toISOString() },
+  { id: 't-6', user_id: 'guest', word: 'Acquisition', definition: 'Sự thâu tóm/mua lại', language: 'english', category: 'toeic', difficulty: 'advanced', topic: 'Business', repetition: 0, interval: 0, easiness: 2.5, next_review: new Date().toISOString(), created_at: new Date().toISOString() },
 
   // --- JLPT N2 CORE ---
-  { id: 'n-1', user_id: 'guest', word: '把握 (はあく)', definition: 'Nắm bắt, thấu hiểu', language: 'japanese', category: 'n2', difficulty: 'intermediate', repetition: 0, interval: 0, easiness: 2.5, next_review: new Date().toISOString(), created_at: new Date().toISOString() },
-  { id: 'n-2', user_id: 'guest', word: '考慮 (こうりょ)', definition: 'Xem xét, cân nhắc', language: 'japanese', category: 'n2', difficulty: 'intermediate', repetition: 0, interval: 0, easiness: 2.5, next_review: new Date().toISOString(), created_at: new Date().toISOString() },
-  { id: 'n-3', user_id: 'guest', word: '徹底 (てってい)', definition: 'Triệt để', language: 'japanese', category: 'n2', difficulty: 'advanced', repetition: 0, interval: 0, easiness: 2.5, next_review: new Date().toISOString(), created_at: new Date().toISOString() },
-  { id: 'n-4', user_id: 'guest', word: '迅速 (じんそく)', definition: 'Nhanh chóng', language: 'japanese', category: 'n2', difficulty: 'advanced', repetition: 0, interval: 0, easiness: 2.5, next_review: new Date().toISOString(), created_at: new Date().toISOString() },
+  { id: 'n-1', user_id: 'guest', word: '把握 (はあく)', definition: 'Nắm bắt, thấu hiểu', language: 'japanese', category: 'n2', difficulty: 'intermediate', topic: 'Academic', repetition: 0, interval: 0, easiness: 2.5, next_review: new Date().toISOString(), created_at: new Date().toISOString() },
+  { id: 'n-2', user_id: 'guest', word: '考慮 (こうりょ)', definition: 'Xem xét, cân nhắc', language: 'japanese', category: 'n2', difficulty: 'intermediate', topic: 'Academic', repetition: 0, interval: 0, easiness: 2.5, next_review: new Date().toISOString(), created_at: new Date().toISOString() },
+  { id: 'n-3', user_id: 'guest', word: '徹底 (てってい)', definition: 'Triệt để', language: 'japanese', category: 'n2', difficulty: 'advanced', topic: 'Work', repetition: 0, interval: 0, easiness: 2.5, next_review: new Date().toISOString(), created_at: new Date().toISOString() },
+  { id: 'n-4', user_id: 'guest', word: '迅速 (じんそく)', definition: 'Nhanh chóng', language: 'japanese', category: 'n2', difficulty: 'advanced', topic: 'Work', repetition: 0, interval: 0, easiness: 2.5, next_review: new Date().toISOString(), created_at: new Date().toISOString() },
 
   // --- BEGINNER ---
-  { id: 'f-2', user_id: 'guest', word: 'Hello', definition: 'Xin chào', language: 'english', category: 'toeic', difficulty: 'beginner', repetition: 0, interval: 0, easiness: 2.5, next_review: new Date().toISOString(), created_at: new Date().toISOString() },
+  { id: 'f-2', user_id: 'guest', word: 'Hello', definition: 'Xin chào', language: 'english', category: 'toeic', difficulty: 'beginner', topic: 'Daily Life', repetition: 0, interval: 0, easiness: 2.5, next_review: new Date().toISOString(), created_at: new Date().toISOString() },
 ];
 
 // Combine the small built-in demo cards with the larger JSON seed library.
@@ -220,9 +220,24 @@ export const MOCK_SPEAKING_LESSONS: SpeakingLesson[] = [
   { id: 's-t-i8', category: 'toeic', difficulty: 'intermediate', targetSentence: 'The training session will be held next Wednesday.', translation: 'Buổi đào tạo sẽ được tổ chức vào thứ Tư tuần sau.' },
   { id: 's-t-i9', category: 'toeic', difficulty: 'intermediate', targetSentence: 'Our team has exceeded the quarterly sales target.', translation: 'Đội của chúng tôi đã vượt mục tiêu bán hàng quý.' },
   { id: 's-t-i10', category: 'toeic', difficulty: 'intermediate', targetSentence: 'I recommend that we postpone the product launch.', translation: 'Tôi đề nghị chúng ta hoãn ra mắt sản phẩm.' },
+  { id: 's-t-i21', category: 'toeic', difficulty: 'intermediate', targetSentence: 'Could you walk me through the presentation slides?', translation: 'Bạn có thể hướng dẫn tôi qua các trang trình bày không?' },
+  { id: 's-t-i22', category: 'toeic', difficulty: 'intermediate', targetSentence: 'We should delegate this task to someone with more experience.', translation: 'Chúng ta nên giao nhiệm vụ này cho người có nhiều kinh nghiệm hơn.' },
+  { id: 's-t-i23', category: 'toeic', difficulty: 'intermediate', targetSentence: 'The contract needs both parties signatures before Friday.', translation: 'Hợp đồng cần chữ ký của cả hai bên trước thứ Sáu.' },
+  { id: 's-t-i24', category: 'toeic', difficulty: 'intermediate', targetSentence: 'Our competitors have lowered their prices significantly.', translation: 'Đối thủ của chúng tôi đã giảm giá đáng kể.' },
+  { id: 's-t-i25', category: 'toeic', difficulty: 'intermediate', targetSentence: 'I would like to request a transfer to the finance department.', translation: 'Tôi muốn xin chuyển sang bộ phận tài chính.' },
+  { id: 's-t-i26', category: 'toeic', difficulty: 'intermediate', targetSentence: 'The supplier has agreed to extend the payment terms.', translation: 'Nhà cung cấp đã đồng ý gia hạn điều khoản thanh toán.' },
+  { id: 's-t-i27', category: 'toeic', difficulty: 'intermediate', targetSentence: 'Please forward the meeting minutes to all team members.', translation: 'Vui lòng chuyển biên bản họp cho tất cả thành viên nhóm.' },
+  { id: 's-t-i28', category: 'toeic', difficulty: 'intermediate', targetSentence: 'We are currently reviewing applications for the open position.', translation: 'Chúng tôi hiện đang xem xét đơn tuyển cho vị trí trống.' },
+  { id: 's-t-i29', category: 'toeic', difficulty: 'intermediate', targetSentence: 'The product warranty covers defects for up to two years.', translation: 'Bảo hành sản phẩm bao gồm lỗi trong vòng hai năm.' },
+  { id: 's-t-i30', category: 'toeic', difficulty: 'intermediate', targetSentence: 'I believe we can improve efficiency by automating this process.', translation: 'Tôi tin rằng chúng ta có thể cải thiện hiệu quả bằng cách tự động hóa quy trình này.' },
+  { id: 's-t-i31', category: 'toeic', difficulty: 'intermediate', targetSentence: 'The invoice has been processed and will be paid next week.', translation: 'Hóa đơn đã được xử lý và sẽ được thanh toán tuần sau.' },
+  { id: 's-t-i32', category: 'toeic', difficulty: 'intermediate', targetSentence: 'Could you provide an update on the marketing campaign?', translation: 'Bạn có thể cập nhật về chiến dịch marketing không?' },
+  { id: 's-t-i33', category: 'toeic', difficulty: 'intermediate', targetSentence: 'The office will be closed for maintenance this Saturday.', translation: 'Văn phòng sẽ đóng cửa để bảo trì vào thứ Bảy này.' },
+  { id: 's-t-i34', category: 'toeic', difficulty: 'intermediate', targetSentence: 'We need to align our goals with the company vision.', translation: 'Chúng ta cần đồng bộ hóa mục tiêu với tầm nhìn công ty.' },
+  { id: 's-t-i35', category: 'toeic', difficulty: 'intermediate', targetSentence: 'The employee training program will start next Monday.', translation: 'Chương trình đào tạo nhân viên sẽ bắt đầu vào thứ Hai tuần sau.' },
 
   // ═══════════════════════════════════════════════════════════════
-  //  TOEIC ADVANCED (10 lessons)
+  //  TOEIC ADVANCED (15 lessons)
   // ═══════════════════════════════════════════════════════════════
   { id: 's-t-a1', category: 'toeic', difficulty: 'advanced', targetSentence: 'The board of directors is evaluating the acquisition proposal.', translation: 'Hội đồng quản trị đang đánh giá đề xuất thâu tóm.' },
   { id: 's-t-a2', category: 'toeic', difficulty: 'advanced', targetSentence: 'We need to streamline our operational processes.', translation: 'Chúng ta cần tinh giản quy trình vận hành.' },
@@ -234,6 +249,11 @@ export const MOCK_SPEAKING_LESSONS: SpeakingLesson[] = [
   { id: 's-t-a8', category: 'toeic', difficulty: 'advanced', targetSentence: 'Stakeholder engagement is crucial for the success of this initiative.', translation: 'Sự tham gia của các bên liên quan là rất quan trọng cho sự thành công.' },
   { id: 's-t-a9', category: 'toeic', difficulty: 'advanced', targetSentence: 'The merger will consolidate our position in the global marketplace.', translation: 'Việc sáp nhập sẽ củng cố vị thế của chúng ta trên thị trường toàn cầu.' },
   { id: 's-t-a10', category: 'toeic', difficulty: 'advanced', targetSentence: 'Innovation drives competitive advantage in a rapidly evolving industry.', translation: 'Đổi mới thúc đẩy lợi thế cạnh tranh trong ngành phát triển nhanh.' },
+  { id: 's-t-a11', category: 'toeic', difficulty: 'advanced', targetSentence: 'The negotiation yielded a mutually beneficial agreement for both parties.', translation: 'Cuộc đàm phán đã đạt được thỏa thuận có lợi cho cả hai bên.' },
+  { id: 's-t-a12', category: 'toeic', difficulty: 'advanced', targetSentence: 'We must anticipate potential disruptions in the supply chain.', translation: 'Chúng ta phải dự đoán các sự gián đoạn tiềm ẩn trong chuỗi cung ứng.' },
+  { id: 's-t-a13', category: 'toeic', difficulty: 'advanced', targetSentence: 'The chief financial officer presented a comprehensive risk assessment.', translation: 'Giám đốc tài chính đã trình bày đánh giá rủi ro toàn diện.' },
+  { id: 's-t-a14', category: 'toeic', difficulty: 'advanced', targetSentence: 'Our intellectual property portfolio has grown substantially this year.', translation: 'Danh mục sở hữu trí tuệ của chúng tôi đã tăng đáng kể trong năm nay.' },
+  { id: 's-t-a15', category: 'toeic', difficulty: 'advanced', targetSentence: 'Sustainable business practices are essential for long-term profitability.', translation: 'Các hoạt động kinh doanh bền vững là thiết yếu cho lợi nhuận lâu dài.' },
 
   // ═══════════════════════════════════════════════════════════════
   //  N2 BEGINNER (10 lessons)
@@ -262,9 +282,24 @@ export const MOCK_SPEAKING_LESSONS: SpeakingLesson[] = [
   { id: 's-n-i8', category: 'n2', difficulty: 'intermediate', targetSentence: '日本の文化に興味を持っています。', translation: 'Tôi có hứng thú với văn hóa Nhật Bản.' },
   { id: 's-n-i9', category: 'n2', difficulty: 'intermediate', targetSentence: 'このプロジェクトは順調に進んでいます。', translation: 'Dự án này đang tiến triển thuận lợi.' },
   { id: 's-n-i10', category: 'n2', difficulty: 'intermediate', targetSentence: '来月から新しい部署に異動になりました。', translation: 'Từ tháng sau tôi chuyển sang bộ phận mới.' },
+  { id: 's-n-i21', category: 'n2', difficulty: 'intermediate', targetSentence: 'この件について上司と相談する必要があります。', translation: 'Cần phải tham khảo ý kiến cấp trên về vấn đề này.' },
+  { id: 's-n-i22', category: 'n2', difficulty: 'intermediate', targetSentence: '来週までに企画書を完成させるつもりです。', translation: 'Tôi dự định hoàn thành bản kế hoạch trước tuần sau.' },
+  { id: 's-n-i23', category: 'n2', difficulty: 'intermediate', targetSentence: '会議室を予約したいのですが、空いていますか。', translation: 'Tôi muốn đặt phòng họp, phòng còn trống không?' },
+  { id: 's-n-i24', category: 'n2', difficulty: 'intermediate', targetSentence: '給料日は毎月25日です。', translation: 'Ngày nhận lương là ngày 25 hàng tháng.' },
+  { id: 's-n-i25', category: 'n2', difficulty: 'intermediate', targetSentence: 'このプロジェクトの責任者は誰ですか。', translation: 'Ai là người chịu trách nhiệm cho dự án này?' },
+  { id: 's-n-i26', category: 'n2', difficulty: 'intermediate', targetSentence: '出張の交通費は会社が負担します。', translation: 'Chi phí đi lại cho công tác sẽ do công ty chi trả.' },
+  { id: 's-n-i27', category: 'n2', difficulty: 'intermediate', targetSentence: '新しい规章制度について説明会があります。', translation: 'Có buổi họp hướng dẫn về quy tắc quản lý mới.' },
+  { id: 's-n-i28', category: 'n2', difficulty: 'intermediate', targetSentence: '客户からのクレームに対応する必要があります。', translation: 'Cần xử lý khiếu nại từ khách hàng.' },
+  { id: 's-n-i29', category: 'n2', difficulty: 'intermediate', targetSentence: '在庫が不足している商品があります。', translation: 'Có một số mặt hàng tồn kho đang bị thiếu.' },
+  { id: 's-n-i30', category: 'n2', difficulty: 'intermediate', targetSentence: '来月の売上目標を設定する必要があります。', translation: 'Cần đặt mục tiêu doanh thu cho tháng sau.' },
+  { id: 's-n-i31', category: 'n2', difficulty: 'intermediate', targetSentence: '経費精算の方法を教えてください。', translation: 'Xin hãy chỉ cho tôi cách quyết toán chi phí.' },
+  { id: 's-n-i32', category: 'n2', difficulty: 'intermediate', targetSentence: '取引先との打ち合わせは午後からです。', translation: 'Buổi họp với đối tác bắt đầu từ buổi chiều.' },
+  { id: 's-n-i33', category: 'n2', difficulty: 'intermediate', targetSentence: 'この書類は印鑑が必要です。', translation: 'Tài liệu này cần con dấu.' },
+  { id: 's-n-i34', category: 'n2', difficulty: 'intermediate', targetSentence: '残業が多いので、体調管理に気をつけてください。', translation: 'Vì thường xuyên tăng ca, xin hãy chú ý sức khỏe.' },
+  { id: 's-n-i35', category: 'n2', difficulty: 'intermediate', targetSentence: '新人研修は来週の月曜日から始まります。', translation: 'Khóa đào tạo nhân viên mới bắt đầu từ thứ Hai tuần sau.' },
 
   // ═══════════════════════════════════════════════════════════════
-  //  N2 ADVANCED (10 lessons)
+  //  N2 ADVANCED (15 lessons)
   // ═══════════════════════════════════════════════════════════════
   { id: 's-n-a1', category: 'n2', difficulty: 'advanced', targetSentence: '現状を正確に把握する必要がある。', translation: 'Cần nắm bắt chính xác hiện trạng.' },
   { id: 's-n-a2', category: 'n2', difficulty: 'advanced', targetSentence: '迅速に対応するための措置を講じます。', translation: 'Sẽ thực hiện các biện pháp để ứng phó nhanh chóng.' },
@@ -276,6 +311,11 @@ export const MOCK_SPEAKING_LESSONS: SpeakingLesson[] = [
   { id: 's-n-a8', category: 'n2', difficulty: 'advanced', targetSentence: '技術革新が産業構造を根本から変えつつある。', translation: 'Đổi mới công nghệ đang thay đổi cấu trúc ngành từ gốc.' },
   { id: 's-n-a9', category: 'n2', difficulty: 'advanced', targetSentence: '異文化理解は国際社会において不可欠な能力だ。', translation: 'Hiểu biết đa văn hóa là năng lực không thể thiếu trong xã hội quốc tế.' },
   { id: 's-n-a10', category: 'n2', difficulty: 'advanced', targetSentence: '人材育成こそが企業の競争力の源泉である。', translation: 'Đào tạo nhân tài chính là nguồn lực cạnh tranh của doanh nghiệp.' },
+  { id: 's-n-a11', category: 'n2', difficulty: 'advanced', targetSentence: '企業の社会的責任を果たすことが期待されている。', translation: 'Đang được kỳ vọng thực hiện trách nhiệm xã hội của doanh nghiệp.' },
+  { id: 's-n-a12', category: 'n2', difficulty: 'advanced', targetSentence: 'デジタル変革がビジネスモデルに大きな影響を与えている。', translation: 'Chuyển đổi kỹ thuật số đang có ảnh hưởng lớn đến mô hình kinh doanh.' },
+  { id: 's-n-a13', category: 'n2', difficulty: 'advanced', targetSentence: '将来を見据えた戦略的な意思決定が求められている。', translation: 'Đang được yêu cầu ra quyết định chiến lược nhìn về tương lai.' },
+  { id: 's-n-a14', category: 'n2', difficulty: 'advanced', targetSentence: '顧客満足度を向上させるための取り組みを強化する必要がある。', translation: 'Cần tăng cường các nỗ lực nhằm nâng cao mức độ hài lòng của khách hàng.' },
+  { id: 's-n-a15', category: 'n2', difficulty: 'advanced', targetSentence: '組織の風通しを良くすることが管理の基本である。', translation: 'Cải thiện sự thông thoáng trong tổ chức là nền tảng của quản lý.' },
 ];
 
 export const MOCK_DICTATION_LESSONS: DictationLesson[] = [
@@ -306,9 +346,24 @@ export const MOCK_DICTATION_LESSONS: DictationLesson[] = [
   { id: 'd-t-i8', category: 'toeic', difficulty: 'intermediate', targetText: 'Our new policy takes effect at the beginning of next month.', translation: 'Chính sách mới có hiệu lực vào đầu tháng sau.' },
   { id: 'd-t-i9', category: 'toeic', difficulty: 'intermediate', targetText: 'The customer satisfaction survey showed positive results.', translation: 'Khảo sát hài lòng khách hàng cho thấy kết quả tích cực.' },
   { id: 'd-t-i10', category: 'toeic', difficulty: 'intermediate', targetText: 'All employees must complete the safety training by next week.', translation: 'Tất cả nhân viên phải hoàn thành đào tạo an toàn trước tuần sau.' },
+  { id: 'd-t-i21', category: 'toeic', difficulty: 'intermediate', targetText: 'The project manager will brief the team on Monday.', translation: 'Quản lý dự án sẽ họp nhóm vào thứ Hai.' },
+  { id: 'd-t-i22', category: 'toeic', difficulty: 'intermediate', targetText: 'We need to finalize the budget before the board meeting.', translation: 'Chúng ta cần hoàn thiện ngân sách trước cuộc họp hội đồng.' },
+  { id: 'd-t-i23', category: 'toeic', difficulty: 'intermediate', targetText: 'The new employee orientation is scheduled for tomorrow.', translation: 'Buổi giới thiệu nhân viên mới được lên lịch cho ngày mai.' },
+  { id: 'd-t-i24', category: 'toeic', difficulty: 'intermediate', targetText: 'Please review the attached document and provide feedback.', translation: 'Vui lòng xem xét tài liệu đính kèm và đưa ra phản hồi.' },
+  { id: 'd-t-i25', category: 'toeic', difficulty: 'intermediate', targetText: 'The company picnic has been moved to next weekend.', translation: 'Buổi dã ngoại công ty đã được chuyển sang cuối tuần sau.' },
+  { id: 'd-t-i26', category: 'toeic', difficulty: 'intermediate', targetText: 'Our office will be undergoing renovations starting Monday.', translation: 'Văn phòng chúng tôi sẽ bắt đầu tu sửa từ thứ Hai.' },
+  { id: 'd-t-i27', category: 'toeic', difficulty: 'intermediate', targetText: 'The hiring manager wants to schedule a second interview.', translation: 'Quản lý tuyển dụng muốn sắp xếp vòng phỏng vấn thứ hai.' },
+  { id: 'd-t-i28', category: 'toeic', difficulty: 'intermediate', targetText: 'The vendor has delivered the equipment ahead of schedule.', translation: 'Nhà cung cấp đã giao thiết bị sớm hơn dự kiến.' },
+  { id: 'd-t-i29', category: 'toeic', difficulty: 'intermediate', targetText: 'We are conducting a survey on employee satisfaction.', translation: 'Chúng tôi đang thực hiện khảo sát về sự hài lòng của nhân viên.' },
+  { id: 'd-t-i30', category: 'toeic', difficulty: 'intermediate', targetText: 'The annual sales conference will be held in Chicago this year.', translation: 'Hội nghị bán hàng thường niên sẽ được tổ chức ở Chicago năm nay.' },
+  { id: 'd-t-i31', category: 'toeic', difficulty: 'intermediate', targetText: 'Please make sure all reports are submitted by end of day.', translation: 'Vui lòng đảm bảo tất cả báo cáo được nộp trước cuối ngày.' },
+  { id: 'd-t-i32', category: 'toeic', difficulty: 'intermediate', targetText: 'The IT department will perform system maintenance tonight.', translation: 'Bộ phận IT sẽ thực hiện bảo trì hệ thống tối nay.' },
+  { id: 'd-t-i33', category: 'toeic', difficulty: 'intermediate', targetText: 'We have received approval to hire two additional staff.', translation: 'Chúng tôi đã nhận được phê duyệt để tuyển hai nhân viên bổ sung.' },
+  { id: 'd-t-i34', category: 'toeic', difficulty: 'intermediate', targetText: 'The client meeting has been rescheduled to Thursday.', translation: 'Cuộc họp khách hàng đã được đổi lịch sang thứ Năm.' },
+  { id: 'd-t-i35', category: 'toeic', difficulty: 'intermediate', targetText: 'Our team is preparing a proposal for the government tender.', translation: 'Đội của chúng tôi đang chuẩn bị đề xuất cho đấu thầu chính phủ.' },
 
   // ═══════════════════════════════════════════════════════════════
-  //  TOEIC ADVANCED (10 lessons)
+  //  TOEIC ADVANCED (15 lessons)
   // ═══════════════════════════════════════════════════════════════
   { id: 'd-t-a1', category: 'toeic', difficulty: 'advanced', targetText: 'Unforeseen circumstances led to a significant delay.', translation: 'Các trường hợp không lường trước dẫn đến sự chậm trễ.' },
   { id: 'd-t-a2', category: 'toeic', difficulty: 'advanced', targetText: 'The acquisition expanded the firm market share.', translation: 'Vụ thâu tóm đã mở rộng thị phần của công ty.' },
@@ -320,6 +375,11 @@ export const MOCK_DICTATION_LESSONS: DictationLesson[] = [
   { id: 'd-t-a8', category: 'toeic', difficulty: 'advanced', targetText: 'The intellectual property rights must be protected at all costs.', translation: 'Quyền sở hữu trí tuệ phải được bảo vệ bằng mọi giá.' },
   { id: 'd-t-a9', category: 'toeic', difficulty: 'advanced', targetText: 'Shareholder confidence has been restored following the announcement.', translation: 'Niềm tin cổ đông đã phục hồi sau thông báo.' },
   { id: 'd-t-a10', category: 'toeic', difficulty: 'advanced', targetText: 'The subsidiary will operate independently under the new structure.', translation: 'Công ty con sẽ hoạt động độc lập theo cấu trúc mới.' },
+  { id: 'd-t-a11', category: 'toeic', difficulty: 'advanced', targetText: 'The auditor flagged several areas requiring immediate attention.', translation: 'Kiểm toán viên đã chỉ ra nhiều lĩnh vực cần chú ý ngay lập tức.' },
+  { id: 'd-t-a12', category: 'toeic', difficulty: 'advanced', targetText: 'Market volatility has prompted a reassessment of our investment strategy.', translation: 'Biến động thị trường đã khiến phải đánh giá lại chiến lược đầu tư.' },
+  { id: 'd-t-a13', category: 'toeic', difficulty: 'advanced', targetText: 'The patent filing process requires meticulous documentation.', translation: 'Quy trình nộp bằng sáng chế yêu cầu tài liệu tỉ mỉ.' },
+  { id: 'd-t-a14', category: 'toeic', difficulty: 'advanced', targetText: 'Cross-functional collaboration has improved project delivery times.', translation: 'Sự hợp tác liên phòng ban đã cải thiện thời gian thực hiện dự án.' },
+  { id: 'd-t-a15', category: 'toeic', difficulty: 'advanced', targetText: 'The company is implementing a new cybersecurity framework.', translation: 'Công ty đang triển khai khung an ninh mạng mới.' },
 
   // ═══════════════════════════════════════════════════════════════
   //  N2 BEGINNER (10 lessons)
@@ -348,9 +408,24 @@ export const MOCK_DICTATION_LESSONS: DictationLesson[] = [
   { id: 'd-n-i8', category: 'n2', difficulty: 'intermediate', targetText: '地下鉄の方がバスより速いです。', translation: 'Tàu điện ngầm nhanh hơn xe buýt.' },
   { id: 'd-n-i9', category: 'n2', difficulty: 'intermediate', targetText: '留学の経験は就職に役立ちます。', translation: 'Kinh nghiệm du học có ích cho việc tìm việc.' },
   { id: 'd-n-i10', category: 'n2', difficulty: 'intermediate', targetText: '今年の目標を達成できるように頑張ります。', translation: 'Tôi sẽ cố gắng để đạt mục tiêu năm nay.' },
+  { id: 'd-n-i21', category: 'n2', difficulty: 'intermediate', targetText: '会議の議事録をメールで共有してください。', translation: 'Vui lòng chia sẻ biên bản họp qua email.' },
+  { id: 'd-n-i22', category: 'n2', difficulty: 'intermediate', targetText: '出張費の精算は経理部門に提出してください。', translation: 'Vui lòng nộp quyết toán chi phí công tác cho bộ phận kế toán.' },
+  { id: 'd-n-i23', category: 'n2', difficulty: 'intermediate', targetText: 'この商品の納期はいつになりますか。', translation: 'Thời gian giao hàng của sản phẩm này là khi nào?' },
+  { id: 'd-n-i24', category: 'n2', difficulty: 'intermediate', targetText: '来月から新しい取引先との契約が始まります。', translation: 'Từ tháng sau hợp đồng với đối tác mới sẽ bắt đầu.' },
+  { id: 'd-n-i25', category: 'n2', difficulty: 'intermediate', targetText: '従業員の福利厚生を充実させる方針です。', translation: 'Đây là chính sách tăng cường phúc lợi cho nhân viên.' },
+  { id: 'd-n-i26', category: 'n2', difficulty: 'intermediate', targetText: '営業部から新商品の販売計画が発表されました。', translation: 'Bộ phận kinh doanh đã công bố kế hoạch bán hàng sản phẩm mới.' },
+  { id: 'd-n-i27', category: 'n2', difficulty: 'intermediate', targetText: '社内のコミュニケーションを改善する取り組みを始めます。', translation: 'Sẽ bắt đầu các nỗ lực cải thiện giao tiếp trong công ty.' },
+  { id: 'd-n-i28', category: 'n2', difficulty: 'intermediate', targetText: '予算の執行状況を毎月報告する必要があります。', translation: 'Cần báo cáo tình hình thực thi ngân sách mỗi tháng.' },
+  { id: 'd-n-i29', category: 'n2', difficulty: 'intermediate', targetText: 'この企画書の内容について議論しましょう。', translation: 'Hãy thảo luận về nội dung bản kế hoạch này.' },
+  { id: 'd-n-i30', category: 'n2', difficulty: 'intermediate', targetText: '来週のプレゼンテーションの準備を進めています。', translation: 'Đang tiến hành chuẩn bị bài thuyết trình tuần sau.' },
+  { id: 'd-n-i31', category: 'n2', difficulty: 'intermediate', targetText: '社長の挨拶から会議が始まります。', translation: 'Cuộc họp bắt đầu từ lời phát biểu của giám đốc.' },
+  { id: 'd-n-i32', category: 'n2', difficulty: 'intermediate', targetText: 'この書類には代表者の署名が必要です。', translation: 'Tài liệu này cần chữ ký của người đại diện.' },
+  { id: 'd-n-i33', category: 'n2', difficulty: 'intermediate', targetText: '従業員向けの健康診断が来月あります。', translation: 'Có buổi khám sức khỏe định kỳ cho nhân viên vào tháng sau.' },
+  { id: 'd-n-i34', category: 'n2', difficulty: 'intermediate', targetText: '交通費は実費精算となります。', translation: 'Chi phí đi lại sẽ được quyết toán theo thực tế.' },
+  { id: 'd-n-i35', category: 'n2', difficulty: 'intermediate', targetText: 'このプロジェクトには跨部門チームを結成します。', translation: 'Sẽ thành lập nhóm liên phòng ban cho dự án này.' },
 
   // ═══════════════════════════════════════════════════════════════
-  //  N2 ADVANCED (10 lessons)
+  //  N2 ADVANCED (15 lessons)
   // ═══════════════════════════════════════════════════════════════
   { id: 'd-n-a1', category: 'n2', difficulty: 'advanced', targetText: '地球温暖化問題の解決には国際的な協力が不可欠だ。', translation: 'Hợp tác quốc tế là không thể thiếu cho vấn đề nóng lên toàn cầu.' },
   { id: 'd-n-a2', category: 'n2', difficulty: 'advanced', targetText: '経済に大きな影響を与える政策だ。', translation: 'Đây là chính sách có ảnh hưởng lớn đến nền kinh tế.' },
@@ -362,6 +437,11 @@ export const MOCK_DICTATION_LESSONS: DictationLesson[] = [
   { id: 'd-n-a8', category: 'n2', difficulty: 'advanced', targetText: '異文化間の相互理解がグローバル社会の基盤となる。', translation: 'Hiểu biết lẫn nhau giữa các nền văn hóa là nền tảng của xã hội toàn cầu.' },
   { id: 'd-n-a9', category: 'n2', difficulty: 'advanced', targetText: '格差社会の是正には構造的な改革が不可欠である。', translation: 'Để khắc phục xã hội bất bình đẳng cần cải cách mang tính cấu trúc.' },
   { id: 'd-n-a10', category: 'n2', difficulty: 'advanced', targetText: '持続可能な開発目標の達成に向けた取り組みが加速している。', translation: 'Nỗ lực hướng tới đạt các mục tiêu phát triển bền vững đang tăng tốc.' },
+  { id: 'd-n-a11', category: 'n2', difficulty: 'advanced', targetText: '企業のガバナンス改革が急務となっている。', translation: 'Cải cách quản trị doanh nghiệp trở thành nhiệm vụ cấp bách.' },
+  { id: 'd-n-a12', category: 'n2', difficulty: 'advanced', targetText: '社会保障制度の持続可能性について議論が行われている。', translation: 'Đang diễn ra thảo luận về tính bền vững của hệ thống an sinh xã hội.' },
+  { id: 'd-n-a13', category: 'n2', difficulty: 'advanced', targetText: '労働市場の柔軟性を高める改革が必要だ。', translation: 'Cần cải cách nhằm tăng tính linh hoạt của thị trường lao động.' },
+  { id: 'd-n-a14', category: 'n2', difficulty: 'advanced', targetText: '科学的根拠に基づいた意思決定が求められている。', translation: 'Đang được yêu cầu ra quyết định dựa trên bằng chứng khoa học.' },
+  { id: 'd-n-a15', category: 'n2', difficulty: 'advanced', targetText: '地域間の格差是正に向けた政策が展開されている。', translation: 'Chính sách nhằm thu hẹp khoảng cách giữa các khu vực đang được triển khai.' },
 ];
 
 // Helper to build a large mock exam with progressive difficulty (easy → hard)
@@ -412,6 +492,82 @@ function buildExamTasks(
   }
   return tasks;
 }
+
+export const MOCK_WRITING_LESSONS: WritingLesson[] = [
+  // ═══════════════════════════════════════════════════════════════
+  //  TOEIC BEGINNER (8 lessons) — simple sentences
+  // ═══════════════════════════════════════════════════════════════
+  { id: 'w-t-3', category: 'toeic', difficulty: 'beginner', sourceText: 'Please submit the report by Friday.', targetText: 'Vui lòng nộp báo cáo trước thứ Sáu.', hint: 'submit = nộp, report = báo cáo' },
+  { id: 'w-t-4', category: 'toeic', difficulty: 'beginner', sourceText: 'The meeting is scheduled for Monday at 10 AM.', targetText: 'Cuộc họp được lên lịch vào thứ Hai lúc 10 giờ sáng.', hint: 'scheduled = được lên lịch' },
+  { id: 'w-t-5', category: 'toeic', difficulty: 'beginner', sourceText: 'Where is the nearest restroom?', targetText: 'Nhà vệ sinh gần nhất ở đâu?', hint: 'restroom = nhà vệ sinh' },
+  { id: 'w-t-6', category: 'toeic', difficulty: 'beginner', sourceText: 'I would like to introduce myself. My name is John.', targetText: 'Tôi muốn tự giới thiệu. Tôi tên là John.', hint: 'introduce = giới thiệu' },
+  { id: 'w-t-7', category: 'toeic', difficulty: 'beginner', sourceText: 'Could you please repeat that?', targetText: 'Bạn có thể nhắc lại được không?', hint: 'repeat = nhắc lại' },
+  { id: 'w-t-8', category: 'toeic', difficulty: 'beginner', sourceText: 'The office is on the second floor.', targetText: 'Văn phòng ở tầng hai.', hint: 'floor = tầng' },
+  { id: 'w-t-9', category: 'toeic', difficulty: 'beginner', sourceText: 'Turn left at the corner.', targetText: 'Rẽ trái ở góc đường.', hint: 'turn left = rẽ trái' },
+  { id: 'w-t-10', category: 'toeic', difficulty: 'beginner', sourceText: 'I need to purchase some office supplies.', targetText: 'Tôi cần mua một số văn phòng phẩm.', hint: 'purchase = mua, supplies = vật tư' },
+
+  // ═══════════════════════════════════════════════════════════════
+  //  TOEIC INTERMEDIATE (8 new + 1 existing = 9 total)
+  // ═══════════════════════════════════════════════════════════════
+  { id: 'w-t-1', category: 'toeic', difficulty: 'intermediate', sourceText: 'Công ty sẽ mở rộng hoạt động sang châu Á vào năm tới.', targetText: 'The company will expand its operations to Asia next year.' },
+  { id: 'w-t-11', category: 'toeic', difficulty: 'intermediate', sourceText: 'We would like to schedule a meeting to discuss the project timeline.', targetText: 'Chúng tôi muốn lên lịch họp để thảo luận về timeline dự án.', hint: 'schedule = lên lịch, timeline = thời gian biểu' },
+  { id: 'w-t-12', category: 'toeic', difficulty: 'intermediate', sourceText: 'Thank you for your email. I will review the document and get back to you shortly.', targetText: 'Cảm ơn email của bạn. Tôi sẽ xem xét tài liệu và phản hồi bạn sớm.', hint: 'review = xem xét, get back to = phản hồi' },
+  { id: 'w-t-13', category: 'toeic', difficulty: 'intermediate', sourceText: 'Please confirm your attendance by the end of this week.', targetText: 'Vui lòng xác nhận tham dự trước cuối tuần này.', hint: 'confirm = xác nhận, attendance = sự tham dự' },
+  { id: 'w-t-14', category: 'toeic', difficulty: 'intermediate', sourceText: 'The deadline for the proposal has been extended to next month.', targetText: 'Hạn chót cho đề xuất đã được gia hạn đến tháng sau.', hint: 'deadline = hạn chót, extended = gia hạn' },
+  { id: 'w-t-15', category: 'toeic', difficulty: 'intermediate', sourceText: 'Our team has been working hard to meet the quarterly targets.', targetText: 'Đội của chúng tôi đã nỗ lực hết mình để đạt các mục tiêu quý.', hint: 'quarterly = hàng quý, targets = mục tiêu' },
+  { id: 'w-t-16', category: 'toeic', difficulty: 'intermediate', sourceText: 'I would appreciate it if you could provide an update on the progress.', targetText: 'Tôi rất mong bạn có thể cung cấp thông tin cập nhật về tiến độ.', hint: 'appreciate = trân trọng, progress = tiến độ' },
+  { id: 'w-t-17', category: 'toeic', difficulty: 'intermediate', sourceText: 'The training session will cover customer service best practices.', targetText: 'Buổi đào tạo sẽ đề cập đến các phương pháp tốt nhất về phục vụ khách hàng.', hint: 'best practices = phương pháp tốt nhất' },
+  { id: 'w-t-18', category: 'toeic', difficulty: 'intermediate', sourceText: 'Due to budget constraints, we need to reduce operational costs.', targetText: 'Do hạn chế về ngân sách, chúng ta cần giảm chi phí vận hành.', hint: 'constraints = hạn chế, operational = vận hành' },
+
+  // ═══════════════════════════════════════════════════════════════
+  //  TOEIC ADVANCED (8 new + 1 existing = 8 total)
+  // ═══════════════════════════════════════════════════════════════
+  { id: 'w-t-2', category: 'toeic', difficulty: 'advanced', sourceText: 'Mặc dù có những trở ngại không lường trước, dự án đã hoàn thành đúng hạn.', targetText: 'Despite unforeseen hurdles, the project was completed on time.' },
+  { id: 'w-t-19', category: 'toeic', difficulty: 'advanced', sourceText: 'The board of directors has unanimously approved the acquisition proposal.', targetText: 'Hội đồng quản trị đã nhất trí phê duyệt đề xuất thâu tóm.', hint: 'unanimously = nhất trí, acquisition = thâu tóm' },
+  { id: 'w-t-20', category: 'toeic', difficulty: 'advanced', sourceText: 'In accordance with the regulatory framework, all transactions must be documented.', targetText: 'Theo quy định khung pháp lý, tất cả giao dịch phải được ghi chép đầy đủ.', hint: 'in accordance with = theo, framework = khung' },
+  { id: 'w-t-21', category: 'toeic', difficulty: 'advanced', sourceText: 'Our sustainability initiatives have yielded measurable improvements in carbon emissions.', targetText: 'Các sáng kiến bền vững của chúng tôi đã mang lại những cải thiện có thể đo lường về lượng phát thải carbon.', hint: 'sustainability = bền vững, yields = mang lại' },
+  { id: 'w-t-22', category: 'toeic', difficulty: 'advanced', sourceText: 'The restructuring plan is designed to optimize resource allocation across all departments.', targetText: 'Kế hoạch tái cấu trúc được thiết kế để tối ưu hóa phân bổ nguồn lực trên tất cả các phòng ban.', hint: 'restructure = tái cấu trúc, allocation = phân bổ' },
+  { id: 'w-t-23', category: 'toeic', difficulty: 'advanced', sourceText: 'We must ensure compliance with international trade regulations to avoid penalties.', targetText: 'Chúng ta phải đảm bảo tuân thủ các quy định thương mại quốc tế để tránh phạt.', hint: 'compliance = sự tuân thủ, penalties = hình phạt' },
+  { id: 'w-t-24', category: 'toeic', difficulty: 'advanced', sourceText: 'The quarterly earnings report indicates a significant improvement in operating margins.', targetText: 'Báo cáo thu nhập quý cho thấy sự cải thiện đáng kể về biên lợi nhuận vận hành.', hint: 'operating margins = biên lợi nhuận vận hành' },
+  { id: 'w-t-25', category: 'toeic', difficulty: 'advanced', sourceText: 'Stakeholder engagement remains integral to the success of our strategic initiatives.', targetText: 'Sự tham gia của các bên liên quan vẫn là yếu tố không thể thiếu cho sự thành công của các sáng kiến chiến lược.', hint: 'stakeholder = bên liên quan, integral = không thể thiếu' },
+
+  // ═══════════════════════════════════════════════════════════════
+  //  N2 BEGINNER (8 lessons) — simple Japanese
+  // ═══════════════════════════════════════════════════════════════
+  { id: 'w-n-3', category: 'n2', difficulty: 'beginner', sourceText: '明日は午後から雨が降るでしょう。', targetText: 'Ngày mai trời sẽ mưa từ buổi chiều.', hint: '午後 = buổi chiều, 降る = rơi/mưa' },
+  { id: 'w-n-4', category: 'n2', difficulty: 'beginner', sourceText: '毎朝コーヒーを一杯飲みます。', targetText: 'Mỗi sáng tôi uống một ly cà phê.', hint: '毎朝 = mỗi sáng, 一杯 = một ly' },
+  { id: 'w-n-5', category: 'n2', difficulty: 'beginner', sourceText: '週末は友達と公園で散歩しました。', targetText: 'Cuối tuần tôi đã đi dạo ở công viên với bạn.', hint: '散歩する = đi dạo, 友達 = bạn' },
+  { id: 'w-n-6', category: 'n2', difficulty: 'beginner', sourceText: 'この映画はとても面白かったです。', targetText: 'Bộ phim này rất thú vị.', hint: '面白い = thú vị' },
+  { id: 'w-n-7', category: 'n2', difficulty: 'beginner', sourceText: '東京の天気は今日とても暑いです。', targetText: 'Thời tiết ở Tokyo hôm nay rất nóng.', hint: '天気 = thời tiết, 暑い = nóng' },
+  { id: 'w-n-8', category: 'n2', difficulty: 'beginner', sourceText: '来週の月曜日に会議があります。', targetText: 'Có cuộc họp vào thứ Hai tuần sau.', hint: '会議 = cuộc họp, 来週 = tuần sau' },
+  { id: 'w-n-9', category: 'n2', difficulty: 'beginner', sourceText: '私は毎日日本語を勉強しています。', targetText: 'Tôi đang học tiếng Nhật mỗi ngày.', hint: '勉強する = học, 毎日 = mỗi ngày' },
+  { id: 'w-n-10', category: 'n2', difficulty: 'beginner', sourceText: '新しいアパートは駅から近いです。', targetText: 'Căn hộ mới gần ga tàu.', hint: '近い = gần, 駅 = ga' },
+
+  // ═══════════════════════════════════════════════════════════════
+  //  N2 INTERMEDIATE (8 new + 1 existing = 9 total)
+  // ═══════════════════════════════════════════════════════════════
+  { id: 'w-n-1', category: 'n2', difficulty: 'intermediate', sourceText: 'Anh ấy luôn đến trễ mặc dù đã hứa sẽ đến đúng giờ.', targetText: '彼は時間通りに来ると約束したにもかかわらず、いつも遅刻する。' },
+  { id: 'w-n-11', category: 'n2', difficulty: 'intermediate', sourceText: 'この計画の実現には、チーム全体の協力が必要です。', targetText: 'Để thực hiện kế hoạch này, cần sự hợp tác của toàn bộ đội ngũ.', hint: '実現 = thực hiện, 協力 = hợp tác' },
+  { id: 'w-n-12', category: 'n2', difficulty: 'intermediate', sourceText: '新しい方針について、来週の会議で説明させていただきます。', targetText: 'Về phương châm mới, tôi xin phép giải thích tại cuộc họp tuần sau.', hint: '方針 = phương chích, 説明 = giải thích' },
+  { id: 'w-n-13', category: 'n2', difficulty: 'intermediate', sourceText: 'このプロジェクトの進捗状況を報告いたします。', targetText: 'Tôi xin báo cáo tình hình tiến độ dự án này.', hint: '進捗 = tiến độ, 報告 = báo cáo' },
+  { id: 'w-n-14', category: 'n2', difficulty: 'intermediate', sourceText: '今月の売上は前月比で15%増加しました。', targetText: 'Doanh thu tháng này tăng 15% so với tháng trước.', hint: '売上 = doanh thu, 増加 = tăng' },
+  { id: 'w-n-15', category: 'n2', difficulty: 'intermediate', sourceText: '海外進出を検討する必要があります。', targetText: 'Cần phải cân nhắc việc mở rộng ra thị trường nước ngoài.', hint: '検討 = cân nhắc, 進出 = mở rộng' },
+  { id: 'w-n-16', category: 'n2', difficulty: 'intermediate', sourceText: '質問がございましたら、お気軽にご連絡ください。', targetText: 'Nếu có câu hỏi, xin vui lòng liên hệ.', hint: 'ご連絡 = liên hệ, お気軽に = vui lòng' },
+  { id: 'w-n-17', category: 'n2', difficulty: 'intermediate', sourceText: '来月から新しいプロジェクトに参加いたします。', targetText: 'Từ tháng sau tôi sẽ tham gia dự án mới.', hint: '参加 = tham gia, 新しい = mới' },
+  { id: 'w-n-18', category: 'n2', difficulty: 'intermediate', sourceText: 'この問題を解決するための最善の方法を模索しています。', targetText: 'Chúng tôi đang tìm kiếm phương pháp tốt nhất để giải quyết vấn đề này.', hint: '解決 = giải quyết, 模索 = tìm kiếm' },
+
+  // ═══════════════════════════════════════════════════════════════
+  //  N2 ADVANCED (8 new + 1 existing = 9 total)
+  // ═══════════════════════════════════════════════════════════════
+  { id: 'w-n-2', category: 'n2', difficulty: 'advanced', sourceText: 'Sau một thời gian dài suy nghĩ, tôi quyết định đổi việc.', targetText: '長い時間考え抜いた末、転職することに決めた。' },
+  { id: 'w-n-19', category: 'n2', difficulty: 'advanced', sourceText: '持続可能な社会の実現に向けて、企業の社会的責任が問われている。', targetText: 'Hướng tới thực hiện xã hội bền vững, trách nhiệm xã hội của doanh nghiệp đang được đặt ra.', hint: '持続可能 = bền vững, 社会的責任 = trách nhiệm xã hội' },
+  { id: 'w-n-20', category: 'n2', difficulty: 'advanced', sourceText: 'グローバル化の進展に伴い、異文化間コミュニケーションの重要性が増している。', targetText: 'Kéo theo sự tiến bộ của toàn cầu hóa, tầm quan trọng của giao tiếp liên văn hóa đang ngày càng tăng.', hint: 'グローバル化 = toàn cầu hóa, 伴い = kéo theo' },
+  { id: 'w-n-21', category: 'n2', difficulty: 'advanced', sourceText: '本研究の結果は、従来の学説とは異なる見解を示唆している。', targetText: 'Kết quả nghiên cứu này cho thấy quan điểm khác với lý thuyết trước đây.', hint: '学説 = lý thuyết, 示唆 = gợi ý/cho thấy' },
+  { id: 'w-n-22', category: 'n2', difficulty: 'advanced', sourceText: '企業のガバナンス強化は、 investor relations の観点からも不可欠である。', targetText: 'Cải thiện quản trị doanh nghiệp cũng không thể thiếu từ góc độ quan hệ nhà đầu tư.', hint: 'ガバナンス = quản trị, 不可欠 = không thể thiếu' },
+  { id: 'w-n-23', category: 'n2', difficulty: 'advanced', sourceText: 'この問題については、多角的なアプローチが求められている。', targetText: 'Vấn đề này đòi hỏi phương pháp tiếp cận đa chiều.', hint: '多角的 = đa chiều, 求められている = đang được đòi hỏi' },
+  { id: 'w-n-24', category: 'n2', difficulty: 'advanced', sourceText: '制度の根本的な改革なくして、抜本的な解決は望めない。', targetText: 'Không có cải cách căn bản hệ thống thì không thể mong đợi giải quyết triệt để.', hint: '根本的 = căn bản, 抜本的 = triệt để' },
+  { id: 'w-n-25', category: 'n2', difficulty: 'advanced', sourceText: '技術革新がもたらす社会変革に対して、適切な規制の整備が急務である。', targetText: 'Đối với sự thay đổi xã hội do đổi mới công nghệ mang lại, việc hoàn thiện quy định phù hợp là nhiệm vụ cấp bách.', hint: '規制 = quy định, 急務 = nhiệm vụ cấp bách' }
+];
 
 export const MOCK_FULL_EXAMS: FullExam[] = [
   // ═══════════════════════════════════════════════════════════════

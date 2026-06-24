@@ -15,6 +15,7 @@ export function DictationView({ lesson, onComplete }: DictationViewProps) {
   const [isFinished, setIsFinished] = useState(false);
   const [feedback, setFeedback] = useState<'none' | 'success' | 'retry'>('none');
   const [accuracy, setAccuracy] = useState<number | null>(null);
+  const [isSlow, setIsSlow] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
 
   // Same voice-readiness tracking as ListeningView: on Firefox/Windows the
@@ -31,19 +32,20 @@ export function DictationView({ lesson, onComplete }: DictationViewProps) {
 
   const playAudio = () => {
     if (lesson.audioUrl && audioRef.current) {
+      audioRef.current.playbackRate = isSlow ? 0.75 : 1.0;
       audioRef.current.currentTime = 0;
       audioRef.current.play();
       return;
     }
     // Fallback: read the target text aloud with the Web Speech API.
-    speak(lesson.targetText, { lang: langForCategory(lesson.category) });
+    speak(lesson.targetText, { lang: langForCategory(lesson.category), rate: isSlow ? 0.75 : 0.9 });
   };
 
   const checkAnswer = () => {
     const acc = calculateSimilarity(lesson.targetText, userInput);
     setAccuracy(acc);
 
-    if (acc >= 85) {
+    if (acc >= 75) {
       playCorrectSound();
       setFeedback('success');
       setIsFinished(true);
@@ -94,13 +96,23 @@ export function DictationView({ lesson, onComplete }: DictationViewProps) {
       <audio ref={audioRef} src={lesson.audioUrl} className="hidden" />
 
       <div className="w-full space-y-8">
-        <div className="flex justify-center">
+        <div className="flex justify-center items-end gap-4">
           <button
             onClick={playAudio}
-            className="w-24 h-24 rounded-full btn-3d btn-purple text-4xl shadow-xl flex items-center justify-center p-0"
+            className="w-24 h-24 rounded-full btn-3d btn-purple text-4xl shadow-xl flex items-center justify-center p-0 relative"
             aria-label="Play audio"
           >
             <Volume2 size={40} />
+            {isSlow && (
+              <span className="absolute -top-2 -right-2 bg-[var(--gold)] text-white text-[10px] font-black px-2 py-1 rounded-full border-2 border-white shadow-sm">0.75x</span>
+            )}
+          </button>
+          <button
+            onClick={() => setIsSlow(!isSlow)}
+            className={`h-10 px-4 rounded-2xl font-black text-xs transition-colors border-2 ${isSlow ? 'bg-[var(--gold)] border-[var(--gold-shadow)] text-white' : 'bg-[var(--bg-hover)] border-[var(--border-main)] text-[var(--text-muted)] hover:text-[var(--text-main)]'}`}
+            title="Toggle slow playback"
+          >
+            🐢 SLOW
           </button>
         </div>
 

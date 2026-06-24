@@ -174,9 +174,21 @@ export function FlashcardView({ card, onRate }: FlashcardViewProps) {
             DỄ
           </button>
         </div>
-        <p className="text-center text-[9px] font-bold text-[var(--text-muted)] italic">
-          Dễ: ôn lại sau lâu hơn • Khó: ôn lại sớm hơn
-        </p>
+        <div className="flex flex-col items-center gap-2 mt-4">
+          <p className="text-center text-[9px] font-bold text-[var(--text-muted)] italic">
+            Dễ: ôn lại sau lâu hơn • Khó: ôn lại sớm hơn
+          </p>
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              setIsFlipped(false);
+              setTimeout(() => onRate(5), 300); // Treating suspend as "Super Easy"
+            }}
+            className="text-[10px] font-black uppercase text-[var(--text-muted)] hover:text-[var(--red)] transition-colors tracking-widest border-2 border-transparent hover:border-[var(--red)] px-3 py-1 rounded-lg"
+          >
+            🚫 Đã thuộc (Bỏ qua vĩnh viễn)
+          </button>
+        </div>
       </div>
 
       {!voiceReady && (

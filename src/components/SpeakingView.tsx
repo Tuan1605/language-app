@@ -56,6 +56,7 @@ export function SpeakingView({ lesson, onComplete }: SpeakingViewProps) {
   const [feedback, setFeedback] = useState<'none' | 'success' | 'retry'>('none');
   const [errorMsg, setErrorMsg] = useState('');
   const [recognitionSupported] = useState(() => isSpeechRecognitionSupported());
+  const listeningTimeoutRef = useRef<number | null>(null);
 
   const recognitionRef = useRef<SpeechRecognitionInstance | null>(null);
 
@@ -78,6 +79,13 @@ export function SpeakingView({ lesson, onComplete }: SpeakingViewProps) {
     }
   }, []);
 
+  const clearListeningTimeout = () => {
+    if (listeningTimeoutRef.current) {
+      window.clearTimeout(listeningTimeoutRef.current);
+      listeningTimeoutRef.current = null;
+    }
+  };
+
   useEffect(() => {
     const SpeechRecognitionAPI = (window as unknown as { SpeechRecognition?: new () => SpeechRecognitionInstance; webkitSpeechRecognition?: new () => SpeechRecognitionInstance }).SpeechRecognition || (window as unknown as { webkitSpeechRecognition?: new () => SpeechRecognitionInstance }).webkitSpeechRecognition;
     if (SpeechRecognitionAPI) {
@@ -87,6 +95,7 @@ export function SpeakingView({ lesson, onComplete }: SpeakingViewProps) {
       recognition.lang = lesson.category === 'toeic' ? 'en-US' : 'ja-JP';
 
       recognition.onresult = (event: SpeechRecognitionEvent) => {
+        clearListeningTimeout();
         const result = event.results[0][0].transcript;
         setTranscript(result);
         setErrorMsg('');
@@ -94,10 +103,12 @@ export function SpeakingView({ lesson, onComplete }: SpeakingViewProps) {
       };
 
       recognition.onend = () => {
+        clearListeningTimeout();
         setIsListening(false);
       };
 
       recognition.onerror = (event: SpeechRecognitionErrorEvent) => {
+        clearListeningTimeout();
         console.error('[SpeechRecognition] error:', event.error, event.message);
         setIsListening(false);
         // 'no-speech' just means user didn't say anything – not really a
@@ -109,6 +120,7 @@ export function SpeakingView({ lesson, onComplete }: SpeakingViewProps) {
     }
 
     return () => {
+      clearListeningTimeout();
       if (recognitionRef.current) {
         try { recognitionRef.current.stop(); } catch { /* ignore */ }
         recognitionRef.current.onresult = null;
@@ -127,8 +139,18 @@ export function SpeakingView({ lesson, onComplete }: SpeakingViewProps) {
       setIsListening(true);
       try {
         recognitionRef.current.start();
+        
+        // Timeout in case the browser hangs silently (e.g. Brave)
+        listeningTimeoutRef.current = window.setTimeout(() => {
+          if (recognitionRef.current) {
+            try { recognitionRef.current.stop(); } catch { /* ignore */ }
+          }
+          setIsListening(false);
+          setErrorMsg('⏳ Không nhận được tín hiệu âm thanh nào quá lâu. Trình duyệt của bạn có thể đã chặn micro hoặc không được hỗ trợ (như Brave/Cốc Cốc). Vui lòng dùng Google Chrome hoặc Edge.');
+        }, 12000);
       } catch (e) {
         // Can throw if recognition is already started or permission denied
+        clearListeningTimeout();
         console.error('[SpeechRecognition] start() threw:', e);
         setIsListening(false);
         setErrorMsg('🚫 Không thể bắt đầu ghi âm. Hãy kiểm tra quyền micro và thử lại.');
@@ -241,7 +263,20 @@ export function SpeakingView({ lesson, onComplete }: SpeakingViewProps) {
             'bg-[var(--bg-hover)] border-[var(--border-main)] text-[var(--text-main)]'
           }`}>
             <p className="text-[9px] font-black uppercase tracking-widest mb-2 opacity-60 text-center">I heard:</p>
-            <p className="text-xl font-bold text-center mb-3">"{transcript}"</p>
+            <p className="text-xl font-bold text-center mb-3 leading-relaxed">
+              {(() => {
+                const targetWords = lesson.targetSentence.toLowerCase().replace(/[.,!?]/g, '').split(' ');
+                return transcript.split(' ').map((word, i) => {
+                  const cleanWord = word.toLowerCase().replace(/[.,!?]/g, '');
+                  const isCorrect = targetWords.includes(cleanWord);
+                  return (
+                    <span key={i} className={isCorrect ? 'text-[var(--green)]' : 'text-[var(--red)] underline decoration-[var(--red)] decoration-2 underline-offset-4'}>
+                      {word}{' '}
+                    </span>
+                  );
+                });
+              })()}
+            </p>
             {accuracy !== null && (
               <div className="flex flex-col items-center gap-1">
                 <div className="w-full bg-[var(--border-main)] h-2 rounded-full overflow-hidden max-w-[200px]">
@@ -256,10 +291,21 @@ export function SpeakingView({ lesson, onComplete }: SpeakingViewProps) {
               </p>
             )}
             {feedback === 'retry' && (
-              <div className="flex items-center justify-center gap-3 mt-4">
-                <p className="font-black">Keep trying!</p>
-                <button onClick={recognitionSupported ? startListening : undefined} disabled={!recognitionSupported} className="text-[10px] font-black uppercase px-3 py-1 rounded-lg bg-[var(--bg-hover)] border-2 border-[var(--border-main)] hover:border-[var(--red)] transition-colors disabled:opacity-40 disabled:cursor-not-allowed flex items-center gap-1">
-                  <RefreshCw size={12} /> RETRY
+              <div className="flex flex-col items-center gap-3 mt-4">
+                <div className="flex items-center justify-center gap-3">
+                  <p className="font-black">Keep trying!</p>
+                  <button onClick={recognitionSupported ? startListening : undefined} disabled={!recognitionSupported} className="text-[10px] font-black uppercase px-3 py-1 rounded-lg bg-[var(--bg-hover)] border-2 border-[var(--border-main)] hover:border-[var(--red)] transition-colors disabled:opacity-40 disabled:cursor-not-allowed flex items-center gap-1">
+                    <RefreshCw size={12} /> RETRY
+                  </button>
+                </div>
+                <button
+                  onClick={() => {
+                    setFeedback('success');
+                    setTimeout(() => onCompleteRef.current(), 1500);
+                  }}
+                  className="text-[10px] font-bold text-[var(--text-muted)] hover:text-[var(--green)] underline underline-offset-4 decoration-dotted mt-2"
+                >
+                  Tôi đã đọc đúng! (Bỏ qua chấm điểm AI)
                 </button>
               </div>
             )}

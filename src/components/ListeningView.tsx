@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
 import type { ListeningLesson } from '../types';
 import { speak, stopSpeaking, hasVoiceFor, langForCategory } from '../utils/tts';
-import { Volume2, Play, Pause } from 'lucide-react';
+import { Volume2, Play, Pause, Rewind, FastForward, Gauge } from 'lucide-react';
 
 interface ListeningViewProps {
   lesson: ListeningLesson;
@@ -13,15 +13,14 @@ export function ListeningView({ lesson, onBack, hideBackButton }: ListeningViewP
   const [currentTime, setCurrentTime] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [activeIdx, setActiveIdx] = useState(-1);
+  const [playbackRate, setPlaybackRate] = useState(1);
   const audioRef = useRef<HTMLAudioElement>(null);
   const ttsTimersRef = useRef<ReturnType<typeof setTimeout>[]>([]);
   const ttsDoneRef = useRef(false);
 
-  // Track whether a voice for this lesson's language is available. On
-  // Firefox/Windows, voices often load late (after the view mounts), so we
-  // listen for onvoiceschanged and re-check so the warning can disappear.
   const ttsLang = langForCategory(lesson.category);
   const [voiceReady, setVoiceReady] = useState(() => hasVoiceFor(ttsLang));
+  
   useEffect(() => {
     if (!('speechSynthesis' in window)) return;
     const check = () => setVoiceReady(hasVoiceFor(ttsLang));
@@ -35,7 +34,6 @@ export function ListeningView({ lesson, onBack, hideBackButton }: ListeningViewP
     ttsTimersRef.current = [];
   }, []);
 
-  // Cleanup on unmount
   useEffect(() => {
     return () => {
       stopSpeaking();
@@ -43,14 +41,43 @@ export function ListeningView({ lesson, onBack, hideBackButton }: ListeningViewP
     };
   }, [clearTTSTimers]);
 
+  useEffect(() => {
+    if (audioRef.current) {
+      audioRef.current.playbackRate = playbackRate;
+    }
+  }, [playbackRate]);
+
   const handleTimeUpdate = () => {
     if (audioRef.current) {
       setCurrentTime(audioRef.current.currentTime);
     }
   };
 
+  const skipTime = (amount: number) => {
+    if (audioRef.current) {
+      audioRef.current.currentTime = Math.max(0, Math.min(audioRef.current.duration || 0, audioRef.current.currentTime + amount));
+    }
+  };
+
+  const seekToTime = (time: number) => {
+    if (audioRef.current) {
+      audioRef.current.currentTime = time;
+      if (!isPlaying) {
+        audioRef.current.play();
+        setIsPlaying(true);
+      }
+    }
+  };
+
+  const cyclePlaybackRate = () => {
+    setPlaybackRate(prev => {
+      if (prev === 1) return 1.25;
+      if (prev === 1.25) return 0.75;
+      return 1;
+    });
+  };
+
   const togglePlay = () => {
-    // Real recorded audio takes priority when available.
     if (lesson.audioUrl && audioRef.current) {
       if (isPlaying) {
         audioRef.current.pause();
@@ -61,7 +88,6 @@ export function ListeningView({ lesson, onBack, hideBackButton }: ListeningViewP
       return;
     }
 
-    // Fallback: synthesize the transcript with the Web Speech API.
     if (isPlaying) {
       stopSpeaking();
       clearTTSTimers();
@@ -72,14 +98,9 @@ export function ListeningView({ lesson, onBack, hideBackButton }: ListeningViewP
 
     ttsDoneRef.current = false;
     setIsPlaying(true);
-
-    // Clear any leftover timers from a previous playback so they don't
-    // interfere with the new one (prevents highlight flicker on Play→Pause→Play).
     clearTTSTimers();
 
     const transcript = lesson.transcript;
-
-    // Highlight each segment sequentially based on estimated timing.
     const estimatedMsPerChar = langForCategory(lesson.category) === 'ja-JP' ? 120 : 70;
     let accumulated = 0;
     const timers: ReturnType<typeof setTimeout>[] = [];
@@ -95,7 +116,6 @@ export function ListeningView({ lesson, onBack, hideBackButton }: ListeningViewP
       }, accumulated));
     }
 
-    // Mark playback done after all segments.
     const totalDur = accumulated + 500;
     timers.push(setTimeout(() => {
       setActiveIdx(-1);
@@ -126,7 +146,6 @@ export function ListeningView({ lesson, onBack, hideBackButton }: ListeningViewP
     }
   };
 
-  // Progress fraction for TTS (based on active index) vs audio (based on currentTime).
   const progressPercent = lesson.audioUrl && audioRef.current?.duration
     ? (currentTime / (audioRef.current.duration || 1)) * 100
     : activeIdx >= 0
@@ -165,29 +184,57 @@ export function ListeningView({ lesson, onBack, hideBackButton }: ListeningViewP
           className="hidden"
         />
 
-        <div className="flex items-center gap-6">
-          <button
-            onClick={togglePlay}
-            className={`w-16 h-16 rounded-full flex items-center justify-center text-white shadow-xl transition-all active:scale-95 ${isPlaying ? 'bg-[var(--red)]' : 'bg-[var(--green)]'}`}
-            aria-label={isPlaying ? 'Pause' : 'Play'}
-          >
-            {isPlaying ? (
-              <Pause size={32} fill="currentColor" />
-            ) : (
-              <Play size={32} fill="currentColor" className="ml-1" />
-            )}
-          </button>
+        <div className="flex flex-col gap-6">
+          <div className="flex items-center gap-6">
+            <button
+              onClick={togglePlay}
+              className={`w-16 h-16 rounded-full flex items-center justify-center text-white shadow-xl transition-all active:scale-95 shrink-0 ${isPlaying ? 'bg-[var(--red)]' : 'bg-[var(--green)]'}`}
+              aria-label={isPlaying ? 'Pause' : 'Play'}
+            >
+              {isPlaying ? (
+                <Pause size={32} fill="currentColor" />
+              ) : (
+                <Play size={32} fill="currentColor" className="ml-1" />
+              )}
+            </button>
 
-          <div className="flex-1 h-4 bg-[var(--bg-card)] border-2 border-[var(--border-main)] rounded-full overflow-hidden">
-            <div
-              className="h-full bg-[var(--green)] transition-all duration-300"
-              style={{ width: `${progressPercent}%` }}
-            />
+            <div className="flex-1 h-4 bg-[var(--bg-card)] border-2 border-[var(--border-main)] rounded-full overflow-hidden cursor-pointer" onClick={(e) => {
+              if (lesson.audioUrl && audioRef.current && audioRef.current.duration) {
+                const rect = e.currentTarget.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const percentage = x / rect.width;
+                seekToTime(percentage * audioRef.current.duration);
+              }
+            }}>
+              <div
+                className="h-full bg-[var(--green)] transition-all duration-300"
+                style={{ width: `${progressPercent}%` }}
+              />
+            </div>
+
+            <span className="text-xs font-black text-[var(--text-muted)] w-10 text-right tabular-nums shrink-0">
+              {Math.floor(currentTime)}s
+            </span>
           </div>
 
-          <span className="text-xs font-black text-[var(--text-muted)] w-10 text-right tabular-nums">
-            {Math.floor(currentTime)}s
-          </span>
+          {lesson.audioUrl && (
+            <div className="flex items-center justify-center gap-4 pt-2 border-t-2 border-[var(--border-main)] border-dashed">
+              <button onClick={() => skipTime(-5)} className="p-3 rounded-full hover:bg-[var(--gray-path)] transition-colors text-[var(--text-muted)] hover:text-[var(--text-main)] flex flex-col items-center gap-1 active:scale-95" aria-label="Rewind 5s">
+                <Rewind size={20} />
+                <span className="text-[10px] font-black tracking-widest">-5s</span>
+              </button>
+              
+              <button onClick={cyclePlaybackRate} className="p-3 rounded-xl hover:bg-[var(--gray-path)] transition-colors text-[var(--text-muted)] hover:text-[var(--text-main)] flex items-center gap-2 active:scale-95" aria-label="Change Speed">
+                <Gauge size={20} />
+                <span className="text-xs font-black w-8 text-center">{playbackRate}x</span>
+              </button>
+
+              <button onClick={() => skipTime(5)} className="p-3 rounded-full hover:bg-[var(--gray-path)] transition-colors text-[var(--text-muted)] hover:text-[var(--text-main)] flex flex-col items-center gap-1 active:scale-95" aria-label="Forward 5s">
+                <FastForward size={20} />
+                <span className="text-[10px] font-black tracking-widest">+5s</span>
+              </button>
+            </div>
+          )}
         </div>
       </div>
 
@@ -200,7 +247,6 @@ export function ListeningView({ lesson, onBack, hideBackButton }: ListeningViewP
       <div className="space-y-6 max-h-[500px] overflow-y-auto pr-4 custom-scrollbar">
         <p className="text-[10px] font-black text-[var(--text-muted)] uppercase tracking-[0.2em] mb-4">Transcript & Translation</p>
         {lesson.transcript.map((item, index) => {
-          // For real audio: use time-based highlight. For TTS: use activeIdx.
           const isActive = lesson.audioUrl
             ? (currentTime >= item.time && (index === lesson.transcript.length - 1 || currentTime < lesson.transcript[index + 1].time))
             : activeIdx === index;
@@ -208,7 +254,12 @@ export function ListeningView({ lesson, onBack, hideBackButton }: ListeningViewP
           return (
             <div
               key={index}
-              className={`p-6 rounded-2xl transition-all border-2 ${
+              onClick={() => {
+                if (lesson.audioUrl) {
+                  seekToTime(item.time);
+                }
+              }}
+              className={`p-6 rounded-2xl transition-all border-2 ${lesson.audioUrl ? 'cursor-pointer hover:border-[var(--blue)]/50 hover:bg-[var(--tint-blue)]' : ''} ${
                 isActive
                 ? 'bg-[var(--bg-card)] border-[var(--blue)] shadow-md scale-[1.02]'
                 : 'bg-transparent border-transparent opacity-50'

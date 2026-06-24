@@ -10,6 +10,7 @@ export interface Flashcard {
   language: 'english' | 'japanese';
   category: 'toeic' | 'n2';
   difficulty: Difficulty;
+  topic?: string;
   
   // SM-2 Algorithm fields
   repetition: number;
@@ -74,6 +75,15 @@ export interface DictationLesson {
   translation: string;
 }
 
+export interface WritingLesson {
+  id: string;
+  category: 'toeic' | 'n2';
+  difficulty: Difficulty;
+  sourceText: string; // The text to translate from
+  targetText: string; // The text to translate to
+  hint?: string;
+}
+
 export interface GrammarPoint {
   id: string;
   pattern: string;
@@ -113,6 +123,7 @@ export type SessionTask =
   | { type: 'listening'; data: ListeningLesson }
   | { type: 'speaking'; data: SpeakingLesson }
   | { type: 'dictation'; data: DictationLesson }
+  | { type: 'writing'; data: WritingLesson }
   | { type: 'grammar'; data: GrammarQuizTaskData };
 
 export interface FullExam {
@@ -122,6 +133,14 @@ export interface FullExam {
   category: 'toeic' | 'n2';
   difficulty?: Difficulty;
   tasks: SessionTask[];
+}
+
+export interface Mistake {
+  id: string;
+  type: 'question' | 'dictation' | 'speaking' | 'writing';
+  data: any;
+  wrongAnswer: string;
+  timestamp: string;
 }
 
 export * from './authentic';

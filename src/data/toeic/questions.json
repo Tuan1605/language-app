@@ -6418,5 +6418,455 @@
     ],
     "correctAnswer": 1,
     "explanation": "Đáp án đúng là B vì thông báo nói đang đề xuất áp dụng nguyên tắc sản xuất tinh gọn."
+  },
+  {
+    "id": "tp7-d1",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 7 - Reading",
+    "text": "Passage 1:\nFrom: David Kim <d.kim@nexustech.com>\nTo: All Department Heads\nSubject: Office Relocation Update\n\nDear Department Heads,\nAs you know, we are relocating our headquarters to the new Nexus Tower building starting next month. Please note that each department will be assigned a specific floor, and moving schedules will be coordinated by the Facilities team. Department heads should submit their inventory lists to Facilities by March 25.\n\nBest regards,\nDavid Kim\nVP of Operations\n\nPassage 2:\nFrom: Lisa Tran <l.tran@nexustech.com>\nTo: All Staff\nSubject: Moving Day Instructions\n\nDear Staff,\nPlease pack your personal items and labeled boxes by end of day Friday, March 28. The moving company will transport all sealed boxes over the weekend. On Monday, March 31, your new desk assignments will be posted outside the elevator lobby on your assigned floor. IT will be available all day to help reconnect your equipment.\n\nBest regards,\nLisa Tran\nFacilities Coordinator\n\nQuestion: What must department heads do before March 25?",
+    "options": [
+      "Pack personal items into labeled boxes",
+      "Submit inventory lists to Facilities",
+      "Reconnect IT equipment at new desks",
+      "Post new desk assignments on each floor"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Passage 1 cho biết: 'Department heads should submit their inventory lists to Facilities by March 25'."
+  },
+  {
+    "id": "tp7-d2",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 7 - Reading",
+    "text": "Passage 1:\nFrom: Quality Control Dept.\nTo: Production Team\nSubject: New Safety Protocol - Effective Immediately\n\nDue to recent findings from our internal audit, all production line workers must now wear cut-resistant gloves when operating metal stamping machinery. Safety glasses remain mandatory. Non-compliance will result in a formal written warning.\n\nPassage 2:\nFrom: Safety Officer Rachel Green\nTo: All Production Staff\nSubject: Updated PPE Distribution Schedule\n\nNew cut-resistant gloves (EN 388 Level 5) will be distributed at the start of each shift from the safety supply room on Floor 2. Each employee must sign the PPE receipt log. Gloves that are worn or damaged should be reported immediately for replacement.\n\nQuestion: Where can production workers obtain new safety gloves?",
+    "options": [
+      "From the HR office on Floor 1",
+      "From the safety supply room on Floor 2",
+      "From their department supervisor",
+      "From the online company store"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Passage 2 cho biết: 'distributed at the start of each shift from the safety supply room on Floor 2'."
+  },
+  {
+    "id": "tp7-d3",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 7 - Reading",
+    "text": "Passage 1:\nFrom: Marketing Director Emily Ward\nTo: Product Team\nSubject: Q3 Product Launch - Final Timeline\n\nThe SmartWidget Pro launch is confirmed for September 15. Marketing materials must be finalized by August 20. The press release will go out on September 1, and pre-orders will open on September 5. Please ensure all product photos and specifications are uploaded to the website by August 25.\n\nPassage 2:\nFrom: Sales Manager Tom Richards\nTo: Regional Sales Teams\nSubject: SmartWidget Pro - Pre-Launch Briefing\n\nAll sales teams should familiarize themselves with the SmartWidget Pro features and pricing before September 5. Training webinars will be held on August 18 and August 22. Pricing sheets and comparison guides will be sent to your email by August 15. Please confirm your webinar attendance by August 10.\n\nQuestion: When will customers be able to start placing pre-orders for the SmartWidget Pro?",
+    "options": [
+      "August 20",
+      "September 1",
+      "September 5",
+      "September 15"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Passage 1 cho biết: 'pre-orders will open on September 5'."
+  },
+  {
+    "id": "tp7-d4",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 7 - Reading",
+    "text": "Passage 1:\nNOTICE\nTo: All Employees\nFrom: Building Management\nDate: May 10, 2025\n\nThe main lobby will undergo floor polishing from May 12-14. During this period, please enter and exit through the East Wing entrance. Elevator B will be shut down for maintenance from May 13-15. Elevator A and the stairwells will remain operational.\n\nPassage 2:\nMEMO\nTo: All Staff\nFrom: HR Department\nDate: May 10, 2025\n\nPlease note that parking garage Level 2 will be closed May 12-14 for concrete repairs. Employees who normally park on Level 2 should use Level 3 or Level 4 during this time. Shuttle service from the remote parking lot will run every 10 minutes as usual.\n\nQuestion: Which entrances will be available to employees on May 13?",
+    "options": [
+      "Only the main lobby entrance",
+      "The main lobby and East Wing entrances",
+      "Only the East Wing entrance",
+      "Only the West Wing entrance"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Passage 1 cho biết: từ ngày 12-14, sảnh chính đang đánh bóng, nên nhân viên 'please enter and exit through the East Wing entrance'."
+  },
+  {
+    "id": "tp7-d5",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 7 - Reading",
+    "text": "Passage 1:\nFrom: CFO Robert Chen\nTo: Department Directors\nSubject: Q2 Budget Review Meeting\n\nPlease submit your department's Q2 spending summary by June 15. We will review all budgets at the executive meeting on June 20. Departments that exceeded their Q1 allocation by more than 10% should prepare a written explanation. Capital expenditure requests for Q3 must also be submitted by June 15.\n\nPassage 2:\nFrom: CFO Robert Chen\nTo: Department Directors\nSubject: RE: Q2 Budget Review Meeting - Updated Instructions\n\nFollowing up on my earlier email, I want to clarify that the spending summary should use the standardized template shared on the company intranet under Finance > Templates. Handwritten summaries or ad hoc formats will not be accepted. Please also include year-to-date projections along with Q2 actual figures.\n\nQuestion: What format should department spending summaries follow?",
+    "options": [
+      "Any format the department prefers",
+      "The standardized template on the company intranet",
+      "A handwritten summary with receipts attached",
+      "An email with bullet points"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Passage 2 bổ sung: 'the spending summary should use the standardized template shared on the company intranet under Finance > Templates'."
+  },
+  {
+    "id": "tp7-d6",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 7 - Reading",
+    "text": "Passage 1:\nFrom: Training Coordinator Amy Liu\nTo: All Managers\nSubject: Mandatory Management Training Program\n\nAll new managers with less than one year of experience must complete the Leadership Foundations course by end of Q3. The course consists of four half-day sessions held every other Tuesday starting July 8. Registration is through the Learning Portal.\n\nPassage 2:\nFrom: Training Coordinator Amy Liu\nTo: All Managers\nSubject: RE: Leadership Foundations - Session Locations\n\nDue to high enrollment, Session 1 (July 8) and Session 2 (July 22) will be held at the Riverside Conference Center, 450 Market Street. Sessions 3 and 4 will be held at the main office, Training Room 3A. Parking vouchers for the Riverside location will be available at the front desk.\n\nQuestion: Where will the first session of the Leadership Foundations course take place?",
+    "options": [
+      "At the main office, Training Room 3A",
+      "At the Riverside Conference Center",
+      "Online through the Learning Portal",
+      "At the HR department office"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Passage 2 cho biết: 'Session 1 (July 8) and Session 2 (July 22) will be held at the Riverside Conference Center'."
+  },
+  {
+    "id": "tp7-d7",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 7 - Reading",
+    "text": "Passage 1:\nFrom: Customer Relations Manager Pat O'Brien\nTo: Support Team Lead\nSubject: Escalated Complaint - Horizon Inc.\n\nHorizon Inc. has filed a formal complaint about delayed shipments over the past three months. Their account manager, Jennifer Walsh, reports that 4 of their last 10 orders arrived after the promised delivery date. The client is threatening to move to a competitor. Please investigate and respond to Jennifer by Friday.\n\nPassage 2:\nFrom: Logistics Supervisor Mark Davis\nTo: Customer Relations Manager\nSubject: RE: Escalated Complaint - Horizon Inc.\n\nI've reviewed the shipping records for Horizon Inc. The delays were caused by a carrier change we made in January to reduce costs. Three shipments were rerouted through a secondary hub in Dallas, adding 2-3 days to transit times. I recommend reverting to our original carrier for this account immediately.\n\nQuestion: What caused the shipment delays for Horizon Inc.?",
+    "options": [
+      "Warehouse staff shortages",
+      "A change to a slower shipping carrier",
+      "Incorrect addresses on the orders",
+      "Severe weather in the delivery region"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Passage 2 giải thích: 'The delays were caused by a carrier change we made in January to reduce costs'."
+  },
+  {
+    "id": "tp7-d8",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 7 - Reading",
+    "text": "Passage 1:\nPOLICY UPDATE\nEffective Date: June 1, 2025\n\nAll employees are now required to use two-factor authentication (2FA) when accessing company systems remotely. Acceptable 2FA methods include the company-issued authenticator app or hardware security keys. SMS-based verification will no longer be supported after June 30.\n\nPassage 2:\nFrom: IT Help Desk\nTo: All Staff\nSubject: Setting Up Two-Factor Authentication\n\nStep 1: Download the NexusAuth app from your device's app store.\nStep 2: Log in with your company email and scan the QR code displayed on the login page.\nStep 3: Enter the 6-digit code from the app to verify your setup.\n\nIf you need a hardware security key instead, submit a request through the IT portal. Keys will be delivered within 5 business days.\n\nQuestion: What will no longer be accepted as a 2FA method after June 30?",
+    "options": [
+      "Hardware security keys",
+      "The NexusAuth authenticator app",
+      "SMS-based verification",
+      "Biometric fingerprint scanning"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Passage 1 cho biết: 'SMS-based verification will no longer be supported after June 30'."
+  },
+  {
+    "id": "tp7-d9",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 7 - Reading",
+    "text": "Passage 1:\nFrom: Event Planner Nicole Adams\nTo: Executive Committee\nSubject: Annual Company Gala - Venue Options\n\nI have narrowed down the venue options for the annual gala to two choices:\nOption A: The Metropolitan Grand Ballroom - Capacity 300, cost $12,000, includes catering.\nOption B: Harbor View Pavilion - Capacity 250, cost $8,500, catering separate ($4,000 estimated).\n\nPlease vote by email by April 25. The event is scheduled for June 14.\n\nPassage 2:\nFrom: Executive Committee Chair James Wu\nTo: All Committee Members\nSubject: RE: Annual Company Gala - Voting Reminder\n\nPlease note that based on our RSVP count of 278 confirmed guests, Option B's capacity of 250 will not be sufficient. I recommend we proceed with Option A. The additional cost is justified by the capacity and included catering. Please send your final vote by end of day tomorrow.\n\nQuestion: Why is Option B not suitable for the company gala?",
+    "options": [
+      "The cost is too high",
+      "It is not available on June 14",
+      "It cannot accommodate all confirmed guests",
+      "Catering services are not included"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Passage 2 giải thích: 'based on our RSVP count of 278 confirmed guests, Option B's capacity of 250 will not be sufficient'."
+  },
+  {
+    "id": "tp7-d10",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 7 - Reading",
+    "text": "Passage 1:\nFrom: Procurement Manager Sandra Lee\nTo: Office Managers\nSubject: New Office Supply Vendor\n\nStarting next quarter, all office supply orders should be placed through our new vendor, OfficeMax Pro, instead of the previous supplier. The transition period runs from April 1-30. During this time, orders can be placed through either vendor. After April 30, only OfficeMax Pro will be authorized.\n\nPassage 2:\nFrom: OfficeMax Pro Customer Service\nTo: Nexus Tech Office Managers\nSubject: Welcome & Account Setup Instructions\n\nDear valued customer, welcome to OfficeMax Pro! To set up your department account:\n1. Visit officemaxpro.com/nexus\n2. Enter your company code: NXT-2025\n3. Create a department login with your company email\n4. Select your default shipping address\n\nOrders placed before April 15 will receive a 15% introductory discount.\n\nQuestion: What is the deadline for transitioning to the new office supply vendor?",
+    "options": [
+      "March 31",
+      "April 15",
+      "April 30",
+      "End of Q2"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Passage 1 cho biết: 'After April 30, only OfficeMax Pro will be authorized' → hạn chót chuyển đổi là 30/4."
+  },
+  {
+    "id": "tp7-t1",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 7 - Reading",
+    "text": "Document A:\nFrom: Regional Sales Director Karen Phillips\nTo: All Sales Representatives\nSubject: Q3 Sales Targets\n\nThe Q3 sales target for each territory has been increased by 15% over Q2 figures. This reflects our aggressive growth strategy for the second half of the year. Updated target sheets will be distributed by July 5. Please review and acknowledge receipt by July 10.\n\nDocument B:\nINTERNAL MEMO\nTo: Sales Team\nFrom: HR Department\nDate: July 1, 2025\nSubject: Performance Bonus Structure Update\n\nEffective Q3, the performance bonus structure has been revised:\n- 100-109% of target: 5% bonus\n- 110-119% of target: 10% bonus\n- 120%+ of target: 15% bonus\n\nThis replaces the previous flat 7% bonus for meeting target.\n\nDocument C:\nEmail from Sales Rep Mike Johnson\nTo: Colleagues\nSubject: My Quick Analysis of the New Targets\n\nHi team, I just ran the numbers. With a 15% increase in targets and the new bonus tiers, we'd need to sell approximately 120% of last Q3 to match what we earned under the old system. I think the revised bonus structure actually makes this achievable if we focus on our top 20 clients.\n\nQuestion: According to Mike Johnson's analysis, what percentage of last year's Q3 sales would be needed to earn a comparable bonus?",
+    "options": [
+      "100%",
+      "110%",
+      "115%",
+      "120%"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Document C cho biết: 'we'd need to sell approximately 120% of last Q3 to match what we earned under the old system'."
+  },
+  {
+    "id": "tp7-t2",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 7 - Reading",
+    "text": "Document A:\nFrom: Facilities Manager Carlos Rivera\nTo: All Staff\nSubject: Building Renovation Notice - Floor 3\n\nFloor 3 will undergo renovation from August 1-31 to create additional meeting rooms and a collaboration space. Staff currently seated on Floor 3 will be temporarily relocated to Floors 2 and 4. A detailed seating plan will be posted by July 20.\n\nDocument B:\nNOTICE\nTo: Floor 3 Employees\nFrom: Facilities Department\nDate: July 15, 2025\nSubject: Temporary Desk Assignments During Renovation\n\nYour temporary desks during the August renovation:\n- Marketing team → Floor 2, desks 201-215\n- Accounting team → Floor 4, desks 401-420\n- Legal team → Floor 2, desks 216-225\n\nPlease pack personal items in the provided moving boxes by July 31. The moving company will transport boxes on the morning of August 1.\n\nDocument C:\nFrom: IT Support\nTo: All Floor 3 Staff\nSubject: Network Setup at Temporary Locations\n\nDuring the renovation, all temporary desks have been pre-configured with network access. However, please test your connection on your first day at the new location and call the IT help desk (ext. 5555) if you experience any issues. VPN access remains unchanged.\n\nQuestion: Which team will be relocated to Floor 4 during the renovation?",
+    "options": [
+      "Marketing team",
+      "Accounting team",
+      "Legal team",
+      "IT Support team"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Document B cho biết: 'Accounting team → Floor 4, desks 401-420'."
+  },
+  {
+    "id": "tp7-t3",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 7 - Reading",
+    "text": "Document A:\nFrom: HR Director Michelle Tan\nTo: All Employees\nSubject: Company-Wide Wellness Initiative Launch\n\nWe are launching a comprehensive wellness program called 'Thrive@Work' starting September 1. The program includes gym membership subsidies, mental health resources, and quarterly wellness challenges. Enrollment opens August 15 through the employee portal.\n\nDocument B:\nFLYER - Thrive@Work Program\n\nGym Subsidy: $75/month toward any gym membership\nMental Health: 8 free counseling sessions per year through MindCare Partners\nWellness Challenges: Quarterly team challenges with prizes up to $500\nHealthy Snacks: Free fruit and nuts in all break rooms starting September 1\n\nEligibility: All full-time employees with 6+ months of service\nEnrollment: August 15 - August 31 at portal.nexustech.com/thrive\n\nDocument C:\nFrom: Employee Survey Team\nTo: HR Director\nSubject: Pre-Launch Survey Results\n\nBased on a survey of 200 employees conducted in June:\n- 78% expressed interest in gym subsidies\n- 65% wanted mental health support\n- 82% wanted healthier food options at work\n- 45% were interested in team wellness challenges\n\nThe most requested feature was healthier food options in break rooms.\n\nQuestion: Which wellness feature had the highest interest rate according to the pre-launch survey?",
+    "options": [
+      "Gym membership subsidies",
+      "Mental health counseling",
+      "Healthier food options",
+      "Team wellness challenges"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Document C cho biết: '82% wanted healthier food options at work' và 'The most requested feature was healthier food options'."
+  },
+  {
+    "id": "tp7-t4",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 7 - Reading",
+    "text": "Document A:\nFrom: Customer Success Manager Anna Kowalski\nTo: VP of Product\nSubject: Q2 Customer Feedback Summary\n\nOur Net Promoter Score dropped from 72 to 65 in Q2. The main complaints were:\n1. Mobile app crashing (reported by 340 users)\n2. Slow page loading on dashboard (reported by 215 users)\n3. Difficulty exporting reports (reported by 189 users)\n\nThe mobile app issue is by far the most critical.\n\nDocument B:\nPRODUCT TEAM REPORT\nBug Priority Analysis - Q2 Customer Issues\n\nPriority 1 (Critical): Mobile app crashes on iOS 17.4+\n- Impact: 340 users, estimated revenue at risk: $180,000\n- Root cause: Memory leak in the notification module\n- Fix status: Patch in testing, expected release: July 20\n\nPriority 2 (High): Dashboard slow loading\n- Impact: 215 users, estimated revenue at risk: $85,000\n- Root cause: Unoptimized database queries\n- Fix status: In development, expected release: August 10\n\nPriority 3 (Medium): Report export functionality\n- Impact: 189 users, estimated revenue at risk: $45,000\n- Root cause: File format compatibility issue\n- Fix status: Scheduled for Q4\n\nDocument C:\nFrom: CEO David Park\nTo: All Staff\nSubject: Customer Satisfaction Action Plan\n\nGiven the decline in our NPS score, I am asking all teams to prioritize customer experience improvements. The product team will fast-track the mobile app fix. Marketing should prepare a customer communication addressing known issues. Customer Success will offer affected accounts a one-month service credit.\n\nQuestion: What is the estimated revenue at risk from the mobile app crashing issue?",
+    "options": [
+      "$45,000",
+      "$85,000",
+      "$180,000",
+      "$310,000"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Document B cho biết: 'Impact: 340 users, estimated revenue at risk: $180,000' cho vấn đề mobile app crashes."
+  },
+  {
+    "id": "tp7-t5",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 7 - Reading",
+    "text": "Document A:\nFrom: EHS Manager Thomas Black\nTo: All Employees\nSubject: Annual Fire Safety Drill - Mandatory Attendance\n\nThe annual fire safety drill will take place on Thursday, October 9 at 10:00 AM. All employees must participate. Assembly points are in the parking lot near the north gate. Attendance will be recorded, and failure to participate may result in a formal warning.\n\nDocument B:\nNOTICE\nTo: All Floor Wardens\nFrom: EHS Department\nDate: October 1, 2025\nSubject: Fire Drill - Floor Warden Instructions\n\nFloor wardens must:\n1. Check all restrooms and meeting rooms for remaining staff\n2. Ensure all employees on their floor have evacuated\n3. Report headcount to the EHS coordinator at the assembly point\n4. Use the checklist provided (attached)\n\nWardens should arrive 15 minutes early for a briefing in Conference Room 1B.\n\nDocument C:\nFrom: EHS Manager Thomas Black\nTo: Floor Wardens\nSubject: RE: Fire Drill - Last-Minute Changes\n\nDue to construction on the east stairwell, the evacuation route for Floors 5-8 has been changed. Instead of using the east stairwell, staff on these floors should use the west stairwell and exit through the north door. A updated floor map is attached. Please share this with all employees on your floor before Thursday.\n\nQuestion: What should floor wardens do 15 minutes before the drill?",
+    "options": [
+      "Evacuate their floor immediately",
+      "Attend a briefing in Conference Room 1B",
+      "Report headcount to the EHS coordinator",
+      "Check restrooms and meeting rooms"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Document B cho biết: 'Wardens should arrive 15 minutes early for a briefing in Conference Room 1B'."
+  },
+  {
+    "id": "tp7-t6",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 7 - Reading",
+    "text": "Document A:\nFrom: Project Manager Rachel Torres\nTo: Development Team\nSubject: Project Phoenix - Updated Timeline\n\nDue to client feedback, we need to add a reporting module to Project Phoenix. The revised timeline:\n- Backend development: July 7-25\n- Frontend integration: July 28 - August 8\n- QA testing: August 11-22\n- Client review: August 25-27\n- Launch: September 1\n\nThis is a 3-week extension from the original schedule.\n\nDocument B:\nMEETING NOTES - Project Phoenix\nDate: June 28, 2025\nAttendees: Rachel Torres, Dev Team Leads, QA Lead\n\nKey decisions:\n- The reporting module will include PDF export and email scheduling features\n- Two additional developers (Priya and Jun) will be assigned to the backend work\n- QA will begin parallel testing starting August 4 for completed modules\n- Daily standups will continue at 9:30 AM\n\nDocument C:\nCONFERENCE ROOM BOOKING\nEvent: Project Phoenix Sprint Review\nDate: August 22, 2025\nTime: 2:00 PM - 4:00 PM\nRoom: Innovation Lab\nAttendees: Development Team, QA Lead, Client Representatives (remote)\nAV Equipment: Projector, video conferencing setup\nCatering: Coffee and light refreshments requested\n\nQuestion: Why was the Project Phoenix timeline extended by 3 weeks?",
+    "options": [
+      "Staff shortages in the development team",
+      "Client requested an additional reporting module",
+      "QA testing took longer than expected",
+      "A new conference room needed to be booked"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Document A giải thích: 'Due to client feedback, we need to add a reporting module to Project Phoenix'."
+  },
+  {
+    "id": "tp7-t7",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 7 - Reading",
+    "text": "Document A:\nFrom: Career Services Director Dr. Helen Marsh\nTo: Faculty and Staff\nSubject: Annual Career Fair - October 15\n\nOur annual career fair will be held in the University Atrium on October 15 from 10:00 AM to 3:00 PM. Over 60 companies have registered to participate. Students should bring printed resumes and dress in professional attire. Registration for the event opens on October 1 through the career portal.\n\nDocument B:\nFLYER - Nexus Tech at University Career Fair\n\nNexus Tech is hiring! Visit us at Booth #24.\nOpen positions:\n- Software Engineer (3 positions)\n- Marketing Analyst (2 positions)\n- Project Coordinator (1 position)\n\nRequirements: Bachelor's degree, 0-2 years experience\nBenefits: Competitive salary, health insurance, 401(k) matching, remote work options\n\nBring your resume and be prepared for on-site interviews!\n\nDocument C:\nFrom: HR Recruiter Sarah Kim\nTo: University Career Services\nSubject: Career Fair Logistics Confirmation\n\nDear Dr. Marsh,\n\nWe confirm our participation at Booth #24. We will need:\n- A table for 3 recruiters\n- Access to power outlets for 2 laptops\n- A sign with the Nexus Tech logo\n\nWe would also like to reserve a private room for on-site interviews from 11:00 AM to 2:00 PM if available.\n\nThank you,\nSarah Kim\nNexus Tech Recruiting Team\n\nQuestion: What is the minimum requirement to apply for the Nexus Tech positions at the career fair?",
+    "options": [
+      "A master's degree",
+      "3 years of experience",
+      "A bachelor's degree",
+      "Previous internship experience"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Document B cho biết: 'Requirements: Bachelor's degree, 0-2 years experience'."
+  },
+  {
+    "id": "tp7-t8",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 7 - Reading",
+    "text": "Document A:\nFrom: Sustainability Officer Dr. Maya Patel\nTo: Executive Board\nSubject: Annual Sustainability Report - Key Highlights\n\nOur company achieved a 22% reduction in carbon emissions this year, exceeding our 15% target. Key initiatives include switching to renewable energy at 3 of 5 facilities and reducing paper usage by 40% through digital workflows.\n\nDocument B:\nMEMO\nTo: All Facility Managers\nFrom: Sustainability Department\nDate: September 10, 2025\nSubject: Energy Reduction Targets - Next Steps\n\nBuilding on this year's success, next year's targets:\n- Install solar panels at remaining 2 facilities by Q3 2026\n- Achieve 30% total carbon emission reduction\n- Replace all company vehicles with electric models\n- Implement water recycling at manufacturing plants\n\nPlease submit your facility's implementation plan by November 1.\n\nDocument C:\nFrom: External Auditor GreenVerify Inc.\nTo: Nexus Tech Sustainability Team\nSubject: Verification Summary - 2025 Sustainability Report\n\nWe have verified the following claims in your sustainability report:\n✓ 22% carbon emission reduction (verified)\n✓ 40% paper usage reduction (verified)\n✓ Renewable energy at 3 facilities (verified)\n△ Electric vehicle transition (18% complete - below 25% target)\n\nOverall assessment: Company meets 3 of 4 sustainability targets.\n\nQuestion: How many of the company's sustainability targets were fully met according to the external auditor?",
+    "options": [
+      "One",
+      "Two",
+      "Three",
+      "Four"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Document C cho biết: 'Company meets 3 of 4 sustainability targets'."
+  },
+  {
+    "id": "tp7-t9",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 7 - Reading",
+    "text": "Document A:\nFrom: CTO James Liu\nTo: All Staff\nSubject: IT System Upgrade - Scheduled Downtime\n\nWe will be upgrading our core ERP system from Version 7.2 to Version 8.0 over the weekend of November 8-9. All systems will be unavailable from Saturday 6:00 PM to Sunday 6:00 PM. Please save all work and log out before Saturday 5:00 PM.\n\nDocument B:\nNOTICE\nTo: All Departments\nFrom: IT Department\nDate: November 1, 2025\nSubject: ERP Upgrade - Pre-Migration Checklist\n\nBefore the upgrade, please:\n1. Export all pending reports from the current system\n2. Save any draft documents to the shared drive (not the ERP)\n3. Note any custom settings or workflows you use regularly\n4. Report any existing bugs to IT by November 5\n\nThe upgrade includes: new reporting dashboard, improved search functionality, and mobile app integration.\n\nDocument C:\nFrom: IT Department\nTo: All Staff\nSubject: Post-Upgrade Support - November 10-14\n\nFollowing the ERP upgrade:\n- IT support hours extended: 7:00 AM - 9:00 PM (Mon-Fri)\n- Walk-in support available at IT Help Desk, Floor 1\n- Quick reference guides available at intranet.nexustech.com/erp8\n- Training sessions: Nov 10 at 10 AM, Nov 12 at 2 PM (Training Room 3A)\n\nReport any issues to helpdesk@nexustech.com or ext. 5555.\n\nQuestion: What should employees do before the system upgrade begins?",
+    "options": [
+      "Attend a training session in Training Room 3A",
+      "Export pending reports and save drafts to the shared drive",
+      "Download the new ERP mobile app",
+      "Submit a bug report after the upgrade is complete"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Document B yêu cầu: 'Export all pending reports from the current system' và 'Save any draft documents to the shared drive'."
+  },
+  {
+    "id": "tp7-t10",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 7 - Reading",
+    "text": "Document A:\nFrom: CEO Sarah Mitchell\nTo: Board of Directors\nSubject: Strategic Partnership with EuroTech Solutions\n\nI am pleased to announce that we have signed a letter of intent with EuroTech Solutions to establish a strategic partnership. This partnership will give us access to the European market and their distribution network of 2,000+ retail locations. The formal agreement is expected to be finalized by December 15.\n\nDocument B:\nMEMO\nTo: International Business Team\nFrom: Legal Department\nDate: October 20, 2025\nSubject: EuroTech Partnership - Key Terms Under Negotiation\n\nKey terms still being negotiated:\n- Revenue sharing: 60/40 split (us/them) proposed, EuroTech wants 55/45\n- Territory exclusivity: We want exclusive rights in 5 EU countries\n- Intellectual property: Both parties retain ownership of existing IP\n- Contract duration: 3-year initial term with 2-year renewal option\n\nLegal review must be completed by December 1.\n\nDocument C:\nFrom: CFO Michael Ross\nTo: CEO Sarah Mitchell\nSubject: Financial Analysis - EuroTech Partnership\n\nPreliminary projections for the EuroTech partnership:\n- Year 1 estimated revenue: $4.5M from European sales\n- Partnership setup costs: $800K\n- Break-even expected: Month 14\n- Net 5-year benefit: $12M\n\nRecommendation: The partnership is financially viable. I suggest we accept the 55/45 revenue split if EuroTech insists, as the volume advantage outweighs the 5% difference.\n\nQuestion: At what point does the CFO expect the EuroTech partnership to break even?",
+    "options": [
+      "After 6 months",
+      "After 12 months",
+      "After 14 months",
+      "After 24 months"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Document C cho biết: 'Break-even expected: Month 14'."
+  },
+  {
+    "id": "tp7-s1",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 7 - Reading",
+    "text": "BUSINESS PROPOSAL - GreenBuild Construction Solutions\nPrepared for: Metro City Housing Authority\nDate: March 15, 2025\n\nExecutive Summary:\nGreenBuild Construction Solutions proposes a comprehensive renovation plan for the Riverside Community Center. Our proposal includes complete structural upgrades, energy-efficient system installations, and modern accessibility improvements, all within a projected budget of $2.8 million.\n\nScope of Work:\nPhase 1 (Months 1-3): Structural assessment and foundation repairs. Estimated cost: $450,000.\nPhase 2 (Months 3-6): HVAC system replacement with energy-efficient units, LED lighting retrofit throughout the building. Estimated cost: $780,000.\nPhase 3 (Months 6-9): ADA-compliant ramps, elevator installation, and restroom renovations. Estimated cost: $620,000.\nPhase 4 (Months 9-12): Interior renovation including new flooring, paint, and furniture. Estimated cost: $550,000.\nContingency fund (15%): $400,000.\n\nProject Timeline: 12 months from notice to proceed.\n\nCompany Credentials: GreenBuild has completed 47 similar community center renovations in the past 5 years with a 98% on-time completion rate.\n\nWhat is the total contingency fund included in the GreenBuild proposal?",
+    "options": [
+      "$450,000",
+      "$400,000",
+      "$550,000",
+      "$780,000"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Đề xuất ghi rõ: 'Contingency fund (15%): $400,000'."
+  },
+  {
+    "id": "tp7-s2",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 7 - Reading",
+    "text": "SOFTWARE LICENSE AGREEMENT\nBetween: NexusTech Solutions, Inc. (Licensor)\nAnd: GlobalMedia Corp. (Licensee)\nEffective Date: January 1, 2025\n\n1. LICENSE GRANT\nNexusTech grants GlobalMedia a non-exclusive, non-transferable license to use the NexusAnalytics software platform for up to 500 concurrent users across all GlobalMedia offices worldwide.\n\n2. TERM\nThis agreement shall remain in effect for three (3) years from the effective date, with automatic renewal for successive one-year periods unless either party provides 90 days written notice of non-renewal.\n\n3. FEES\nAnnual license fee: $150,000, payable in quarterly installments of $37,500.\nLate payments incur a 1.5% monthly interest charge.\n\n4. RESTRICTIONS\nThe Licensee shall not:\na) Sublicense, sell, or transfer the software to any third party\nb) Reverse engineer, decompile, or disassemble the software\nc) Use the software for any purpose other than internal business operations\n\n5. SUPPORT AND MAINTENANCE\nIncluded in the license fee:\n- 24/7 technical support hotline\n- Software updates and patches\n- Quarterly on-site maintenance visits\n\nWhat happens if GlobalMedia does not pay the quarterly fee on time?",
+    "options": [
+      "The license is immediately terminated",
+      "A 1.5% monthly interest charge is applied",
+      "GlobalMedia must pay double the fee",
+      "Technical support is suspended"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mục 3 ghi rõ: 'Late payments incur a 1.5% monthly interest charge'."
+  },
+  {
+    "id": "tp7-s3",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 7 - Reading",
+    "text": "ANNUAL REPORT - Pinnacle Financial Group\nFiscal Year 2024\n\nChairman's Message:\nFiscal Year 2024 was a landmark year for Pinnacle Financial Group. Despite challenging market conditions, we achieved record revenues of $3.2 billion, a 12% increase from the previous year. Our diversified portfolio strategy and expansion into emerging markets drove strong performance across all divisions.\n\nFinancial Highlights:\n- Total Revenue: $3.2 billion (up 12%)\n- Net Income: $480 million (up 18%)\n- Assets Under Management: $45 billion (up 8%)\n- Employee Count: 12,500 (up 500 from 2023)\n\nDivision Performance:\nRetail Banking: Revenue $1.1B (+10%), profit margin 22%\nWealth Management: Revenue $980M (+15%), profit margin 28%\nCorporate Lending: Revenue $720M (+8%), profit margin 18%\nInsurance: Revenue $400M (+14%), profit margin 25%\n\nOutlook for 2025:\nWe anticipate continued growth driven by our digital banking initiatives and planned expansion into Southeast Asian markets. Projected revenue growth: 10-14%.\n\nWhich Pinnacle Financial Group division had the highest profit margin in 2024?",
+    "options": [
+      "Retail Banking",
+      "Wealth Management",
+      "Corporate Lending",
+      "Insurance"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Báo cáo cho thấy Wealth Management có biên lợi nhuận cao nhất: 28%."
+  },
+  {
+    "id": "tp7-s4",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 7 - Reading",
+    "text": "EMPLOYEE HANDBOOK - Chapter 7: Leave Policies\nEffective Date: January 1, 2025\n\n7.1 Annual Leave\nFull-time employees accrue 15 days of annual leave per year. Leave accrues at a rate of 1.25 days per month. Annual leave may be carried over up to 5 days to the following year. Unused leave beyond 5 days will be forfeited on December 31.\n\n7.2 Sick Leave\nEmployees receive 10 sick days per year. Sick leave does not carry over. A medical certificate is required for absences exceeding 3 consecutive days. Sick leave may be used for personal illness, medical appointments, or care of an immediate family member.\n\n7.3 Parental Leave\nPrimary caregivers are entitled to 16 weeks of paid parental leave at 100% of base salary. Secondary caregivers receive 6 weeks at 100% of base salary. Parental leave must be taken within 12 months of the child's birth or adoption. Employees returning from parental leave are guaranteed their previous position or an equivalent role.\n\n7.4 Bereavement Leave\nIn the event of the death of an immediate family member (spouse, child, parent, sibling), employees may take up to 5 days of paid bereavement leave. For extended family members (grandparent, in-law), 2 days of paid leave are provided.\n\n7.5 Leave Requests\nAll leave requests must be submitted through the HR portal at least 2 weeks in advance for planned leave. Emergency leave may be reported by phone to your manager, followed by a written request within 2 business days.\n\nHow many days of annual leave can an employee carry over to the next year?",
+    "options": [
+      "None",
+      "Up to 5 days",
+      "Up to 10 days",
+      "All unused days"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Mục 7.1 ghi rõ: 'Annual leave may be carried over up to 5 days to the following year'."
+  },
+  {
+    "id": "tp7-s5",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 7 - Reading",
+    "text": "RESEARCH REPORT - Consumer Preferences in Sustainable Packaging\nPrepared by: Market Insights Research Group\nClient: EcoWrap Industries\nDate: February 2025\n\nMethodology:\nOnline survey of 2,500 consumers across 15 metropolitan areas, conducted January 5-20, 2025. Margin of error: ±3%.\n\nKey Findings:\n1. Packaging Preference: 67% of consumers prefer products in sustainable/recyclable packaging, up from 54% in 2022.\n2. Willingness to Pay: 43% of respondents said they would pay up to 10% more for products in sustainable packaging. Only 12% said they would pay 15% or more.\n3. Purchase Influence: Sustainable packaging ranked as the 3rd most important factor in purchasing decisions, behind price (1st) and product quality (2nd).\n4. Demographics: Consumers aged 25-34 showed the highest preference for sustainable packaging (78%), followed by ages 18-24 (74%) and ages 35-44 (65%).\n5. Brand Perception: 72% of respondents said they view brands using sustainable packaging more favorably.\n\nRecommendations:\n- Prioritize recyclable and compostable materials for all new product lines\n- Develop marketing campaigns highlighting sustainability credentials\n- Consider a modest price increase (5-10%) for premium sustainable packaging\n- Target marketing toward the 25-34 age demographic\n\nAccording to the report, what percentage of consumers would pay up to 10% more for sustainable packaging?",
+    "options": [
+      "12%",
+      "43%",
+      "67%",
+      "72%"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Báo cáo ghi: '43% of respondents said they would pay up to 10% more for products in sustainable packaging'."
+  },
+  {
+    "id": "tp7-s6",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 7 - Reading",
+    "text": "TRAVEL ITINERARY - International Business Trip\nTraveler: Executive VP Daniel Park\nTrip Dates: March 10-22, 2025\n\nMarch 10 (Monday) - New York to London\nFlight BA178, Depart JFK 7:30 PM, Arrive LHR 7:30 AM +1\nHotel: The Kensington, Suite 412 (3 nights)\nMarch 11: Client meeting with Sterling Financial (10 AM, their offices in Canary Warf)\nMarch 12: UK office visit and team lunch\nMarch 13: Morning free; afternoon flight to Munich\n\nMarch 13-16 - Munich\nFlight LH401, Depart LHR 2:15 PM, Arrive MUC 5:20 PM\nHotel: Bayerischer Hof, Room 708 (3 nights)\nMarch 14: Conference - European Tech Summit, Munich Convention Center (all day)\nMarch 15: Meeting with Dr. Hans Weber, Meridian Engineering (11 AM)\nMarch 16: Flight to Tokyo\n\nMarch 16-22 - Tokyo\nFlight NH204, Depart MUC 6:45 PM, Arrive NRT 3:30 PM +1\nHotel: Park Hyatt Tokyo, Suite 3201 (5 nights)\nMarch 18: Board meeting with Nexus Japan subsidiary\nMarch 19-20: Client visits in Osaka (overnight train, March 19 evening)\nMarch 21: Return to Tokyo; farewell dinner with Asia-Pacific team\nMarch 22: Flight home\nFlight NH9, Depart NRT 11:00 AM, Arrive JFK 10:30 AM (same day)\n\nTotal Estimated Budget: $18,500 (flights $8,200, hotels $7,800, meals/transport $2,500)\n\nHow many nights will Daniel Park spend in Tokyo?",
+    "options": [
+      "3 nights",
+      "4 nights",
+      "5 nights",
+      "6 nights"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Lịch trình ghi: 'Park Hyatt Tokyo, Suite 3201 (5 nights)' từ ngày 16-22/3."
+  },
+  {
+    "id": "tp7-s7",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 7 - Reading",
+    "text": "HEALTH INSURANCE POLICY SUMMARY - Plan: Premium Plus\nProvider: HealthFirst Insurance\nPolicy Year: 2025\n\nCoverage Details:\n- Monthly Premium: $650 (employee only), $1,300 (employee + family)\n- Annual Deductible: $500 (individual), $1,000 (family)\n- Out-of-Pocket Maximum: $3,000 (individual), $6,000 (family)\n\nCovered Services:\n- Primary care visits: $25 copay\n- Specialist visits: $50 copay\n- Emergency room: $250 copay (waived if admitted)\n- Generic prescription drugs: $10 copay\n- Brand-name prescription drugs: $30 copay\n- Physical therapy: $40 copay, up to 20 sessions per year\n- Mental health: $35 copay per session, up to 12 sessions per year\n- Dental (cleaning & exam): 100% covered, 2 visits per year\n- Vision (exam + glasses): $25 copay for exam, $150 allowance for glasses\n\nImportant Notes:\n- In-network providers only for copay rates. Out-of-network visits subject to coinsurance.\n- Pre-authorization required for surgeries, MRIs, and hospital stays.\n- Coverage begins on the first day of the month following 30 days of employment.\n\nWhat is the annual out-of-pocket maximum for an individual employee?",
+    "options": [
+      "$500",
+      "$650",
+      "$3,000",
+      "$6,000"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Chính sách ghi: 'Out-of-Pocket Maximum: $3,000 (individual), $6,000 (family)'."
+  },
+  {
+    "id": "tp7-s8",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 7 - Reading",
+    "text": "EMPLOYEE SATISFACTION SURVEY RESULTS\nFiscal Year 2024 - Comprehensive Analysis\nPrepared by: People Analytics Team\n\nSurvey Overview:\nResponse Rate: 82% (1,640 of 2,000 employees)\nSurvey Period: November 1-15, 2024\n\nOverall Satisfaction Score: 3.8 / 5.0 (up from 3.6 in 2023)\n\nCategory Breakdown:\n\nCompensation & Benefits: 3.4/5.0\n- 68% satisfied with base salary\n- 52% satisfied with bonus structure\n- 74% satisfied with health benefits\n- 45% feel compensation is competitive with industry\n\nWork Environment: 4.1/5.0\n- 88% satisfied with physical workspace\n- 76% satisfied with technology/tools provided\n- 82% feel the office is clean and well-maintained\n\nCareer Development: 3.6/5.0\n- 62% see clear growth opportunities\n- 58% feel they receive adequate training\n- 71% have discussed career goals with their manager\n\nWork-Life Balance: 3.5/5.0\n- 64% feel they can manage work and personal life\n- 55% use flexible work arrangements\n- 48% feel workload is manageable\n\nLeadership & Management: 3.9/5.0\n- 81% trust their direct manager\n- 77% feel well-informed about company decisions\n- 73% believe leadership acts on employee feedback\n\nOpen Comments Analysis (Top 5 Themes):\n1. Need for higher salaries (mentioned in 34% of comments)\n2. Desire for more remote work options (28%)\n3. Request for clearer promotion criteria (22%)\n4. Appreciation for supportive managers (19%)\n5. Concerns about workload during peak periods (17%)\n\nWhich category received the highest satisfaction score in the survey?",
+    "options": [
+      "Compensation & Benefits",
+      "Work Environment",
+      "Career Development",
+      "Leadership & Management"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Work Environment có điểm hài lòng cao nhất: 4.1/5.0."
+  },
+  {
+    "id": "tp7-s9",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 7 - Reading",
+    "text": "COMPANY NEWSLETTER - TechPulse Monthly\nVolume 12, Issue 3 - March 2025\n\nHEADLINE: TechPulse Surpasses 10 Million Users Milestone\n\nTechPulse Inc. announced today that its flagship productivity platform has surpassed 10 million active users worldwide, a milestone reached just 18 months after the platform's global launch. CEO Lisa Huang credited the rapid growth to the company's focus on user experience and strategic partnerships.\n\n\"Reaching 10 million users validates our vision of making workplace collaboration seamless,\" said Huang at a press event held at the company's San Francisco headquarters. \"Our next goal is 25 million users by the end of 2026.\"\n\nThe company also announced three new features launching in Q2:\n- AI-powered meeting summaries that automatically generate action items\n- Integration with 50+ third-party applications including Slack and Salesforce\n- Real-time document collaboration with version history\n\nIn other news, TechPulse opened a new engineering office in Berlin, Germany, bringing its total number of global offices to 8. The Berlin office will house 150 engineers and is expected to be fully operational by June 2025.\n\nThe company's stock (TPSE) rose 7% following the announcements, closing at $142.50 per share.\n\nHow many active users does TechPulse's platform have as of March 2025?",
+    "options": [
+      "5 million",
+      "8 million",
+      "10 million",
+      "25 million"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Bản tin cho biết: 'TechPulse Inc. announced today that its flagship productivity platform has surpassed 10 million active users worldwide'."
+  },
+  {
+    "id": "tp7-s10",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 7 - Reading",
+    "text": "INTERNAL AUDIT REPORT - Data Security Practices\nAudit Period: Q3-Q4 2024\nPrepared by: Internal Audit Department\nAudit Lead: CPA Sarah Chen\n\nExecutive Summary:\nThe audit assessed compliance with the company's data security policies and identified areas requiring immediate attention. Overall compliance rate: 74%, below the 90% target.\n\nKey Findings:\n\n1. Access Control (Compliance: 68%)\n- 23% of former employees still had active system accounts\n- 15% of employees shared login credentials with colleagues\n- Multi-factor authentication not enabled for 31% of privileged accounts\n\n2. Data Encryption (Compliance: 82%)\n- All customer databases are encrypted at rest (compliant)\n- Email encryption not consistently applied for sensitive data (18% non-compliant)\n- Backup tapes stored off-site are not encrypted (2 non-compliant facilities)\n\n3. Incident Response (Compliance: 71%)\n- Incident response plan last updated 14 months ago (target: 6 months)\n- Only 45% of IT staff completed incident response training in 2024\n- Average incident detection time: 72 hours (target: 24 hours)\n\n4. Vendor Management (Compliance: 65%)\n- 8 vendors accessed company data without signed security agreements\n- Security assessments not completed for 35% of critical vendors\n- Vendor access not reviewed quarterly as required\n\nRecommendations:\n- Immediate: Deactivate all former employee accounts (Priority: Critical)\n- Short-term (30 days): Enable MFA for all privileged accounts\n- Medium-term (90 days): Update incident response plan and conduct training\n- Long-term (6 months): Implement automated vendor security monitoring\n\nWhat is the overall compliance rate found in the data security audit?",
+    "options": [
+      "68%",
+      "74%",
+      "82%",
+      "90%"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Báo cáo ghi rõ: 'Overall compliance rate: 74%, below the 90% target'."
   }
 ]

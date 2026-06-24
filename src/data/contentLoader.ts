@@ -9,6 +9,7 @@ import type {
   Question,
   GrammarPoint,
   KanjiEntry,
+  Flashcard,
 } from '../types';
 
 export interface RawQuestion {
@@ -67,5 +68,42 @@ export async function loadSeedN2Grammar(): Promise<GrammarPoint[]> {
 export async function loadSeedToeicGrammar(): Promise<GrammarPoint[]> {
   const g = await import('./toeic/grammar.json');
   return g.default as GrammarPoint[];
+}
+
+interface RawFlashcard {
+  id: string;
+  word: string;
+  definition: string;
+  example?: string;
+  topic?: string;
+}
+
+function rawToFlashcard(raw: RawFlashcard, language: 'english' | 'japanese', category: 'toeic' | 'n2'): Flashcard {
+  return {
+    id: raw.id,
+    user_id: 'guest',
+    word: raw.word,
+    definition: raw.definition,
+    example: raw.example,
+    language,
+    category,
+    difficulty: 'beginner',
+    topic: raw.topic,
+    repetition: 0,
+    interval: 0,
+    easiness: 2.5,
+    next_review: new Date().toISOString(),
+    created_at: new Date().toISOString(),
+  };
+}
+
+export async function loadSeedFlashcards(): Promise<Flashcard[]> {
+  const [toeicRaw, n2Raw] = await Promise.all([
+    import('./toeic/flashcards.json'),
+    import('./n2/flashcards.json'),
+  ]);
+  const toeicCards = (toeicRaw.default as RawFlashcard[]).map(r => rawToFlashcard(r, 'english', 'toeic'));
+  const n2Cards = (n2Raw.default as RawFlashcard[]).map(r => rawToFlashcard(r, 'japanese', 'n2'));
+  return [...toeicCards, ...n2Cards];
 }
 
