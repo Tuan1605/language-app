@@ -10,6 +10,8 @@ const STORAGE_KEYS = {
 interface Progress {
   unlocked_en: number;
   unlocked_ja: number;
+  streak?: number;
+  lastActiveDate?: string;
 }
 
 export function loadCards(): Flashcard[] | null {
@@ -28,9 +30,9 @@ export function saveCards(cards: Flashcard[]): void {
 export function loadProgress(): Progress {
   try {
     const data = localStorage.getItem(STORAGE_KEYS.PROGRESS);
-    return data ? JSON.parse(data) : { unlocked_en: 0, unlocked_ja: 0 };
+    return data ? JSON.parse(data) : { unlocked_en: 0, unlocked_ja: 0, streak: 0, lastActiveDate: '' };
   } catch {
-    return { unlocked_en: 0, unlocked_ja: 0 };
+    return { unlocked_en: 0, unlocked_ja: 0, streak: 0, lastActiveDate: '' };
   }
 }
 

@@ -17,6 +17,8 @@ export function useAppState() {
   const [activeTrack, setActiveTrack] = useState<'english' | 'japanese'>('english');
   const [unlockedEn, setUnlockedEn] = useState(() => loadProgress().unlocked_en);
   const [unlockedJa, setUnlockedJa] = useState(() => loadProgress().unlocked_ja);
+  const [streak, setStreak] = useState(() => loadProgress().streak || 0);
+  const [lastActiveDate, setLastActiveDate] = useState(() => loadProgress().lastActiveDate || '');
   const [customExams, setCustomExams] = useState<FullExam[]>([]);
   const [questions, setQuestions] = useState(() => MOCK_QUESTIONS);
   const [n2Grammar, setN2Grammar] = useState<GrammarPoint[]>([]);
@@ -38,7 +40,7 @@ export function useAppState() {
 
   useEffect(() => { saveTheme(theme); }, [theme]);
   useEffect(() => { saveCards(cards); }, [cards]);
-  useEffect(() => { saveProgress({ unlocked_en: unlockedEn, unlocked_ja: unlockedJa }); }, [unlockedEn, unlockedJa]);
+  useEffect(() => { saveProgress({ unlocked_en: unlockedEn, unlocked_ja: unlockedJa, streak, lastActiveDate }); }, [unlockedEn, unlockedJa, streak, lastActiveDate]);
   useEffect(() => { saveExamResults(examResults); }, [examResults]);
   useEffect(() => { saveMistakes(mistakes); }, [mistakes]);
 
@@ -74,6 +76,8 @@ export function useAppState() {
     activeTrack, setActiveTrack,
     unlockedEn, setUnlockedEn,
     unlockedJa, setUnlockedJa,
+    streak, setStreak,
+    lastActiveDate, setLastActiveDate,
     customExams, setCustomExams,
     questions, setQuestions,
     n2Grammar, n2Kanji, toeicGrammar,

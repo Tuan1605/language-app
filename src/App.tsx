@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Toaster, toast } from 'react-hot-toast';
 import { AddFlashcard } from './components/AddFlashcard';
 import { FlashcardView } from './components/FlashcardView';
@@ -41,6 +42,8 @@ function App() {
     activeTrack, setActiveTrack,
     unlockedEn, setUnlockedEn,
     unlockedJa, setUnlockedJa,
+    streak, setStreak,
+    lastActiveDate, setLastActiveDate,
     customExams, setCustomExams,
     questions,
     n2Grammar, n2Kanji, toeicGrammar,
@@ -52,7 +55,23 @@ function App() {
     currentAuthenticExam, setCurrentAuthenticExam
   } = useAppState();
 
+  useEffect(() => {
+    if (isSessionFinished) {
+      const today = new Date().toISOString().split('T')[0];
+      if (lastActiveDate !== today) {
+        const yesterdayDate = new Date();
+        yesterdayDate.setDate(yesterdayDate.getDate() - 1);
+        const yesterday = yesterdayDate.toISOString().split('T')[0];
 
+        if (lastActiveDate === yesterday) {
+          setStreak(s => (s || 0) + 1);
+        } else {
+          setStreak(1);
+        }
+        setLastActiveDate(today);
+      }
+    }
+  }, [isSessionFinished, lastActiveDate, setLastActiveDate, setStreak]);
 
   const handleRemoveCard = (id: string) => {
     setCards(cards.filter(c => c.id !== id));
@@ -405,7 +424,10 @@ function App() {
                </button>
             </div>
             <div className="flex items-center gap-4 font-black">
-               <span className="text-[var(--gold)] flex items-center gap-1">{currentUnlocked}</span>
+               <span className="text-[var(--gold)] flex items-center gap-1" title={`Chuỗi học liên tục: ${streak} ngày`}>
+                 <svg className="w-5 h-5 text-[var(--gold)]" fill="currentColor" viewBox="0 0 24 24"><path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 8.25 3c.89 0 1.765.176 2.58.5a7.126 7.126 0 00.995-1.077c.4-.492.793-1.066 1.054-1.63A1.125 1.125 0 0114.996 1a14.766 14.766 0 012.392 7.75c0 2.457-.655 4.757-1.785 6.643-1.258 2.096-2.923 3.51-3.958 4.228z"/></svg>
+                 {streak}
+               </span>
                <button onClick={toggleTheme} className="text-xl active:scale-95 transition-transform">{theme === 'light' ? '🌙' : '☀️'}</button>
             </div>
           </header>
