@@ -11,6 +11,6 @@ describe('TTS Utilities', () => {
   });
 
   it('should return ja-JP for unknown category', () => {
-    expect(langForCategory('unknown' as any)).toBe('ja-JP');
+    expect(langForCategory('unknown' as 'toeic' | 'n2')).toBe('ja-JP');
   });
 });

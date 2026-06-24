@@ -27,7 +27,7 @@ describe('Sound Utilities', () => {
       }),
     };
 
-    (globalThis as any).AudioContext = function () { return mockCtx; };
+    (globalThis as unknown as { AudioContext: unknown }).AudioContext = function () { return mockCtx; };
 
     expect(() => playCorrectSound()).not.toThrow();
     expect(mockCtx.createOscillator).toHaveBeenCalledTimes(2);
@@ -35,8 +35,8 @@ describe('Sound Utilities', () => {
   });
 
   it('should not throw when AudioContext is unavailable', () => {
-    delete (globalThis as any).AudioContext;
-    delete (globalThis as any).webkitAudioContext;
+    delete (globalThis as unknown as { AudioContext?: unknown }).AudioContext;
+    delete (globalThis as unknown as { webkitAudioContext?: unknown }).webkitAudioContext;
 
     expect(() => playCorrectSound()).not.toThrow();
   });

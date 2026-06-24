@@ -1,3 +1,5 @@
+import { memo } from 'react';
+import { motion } from 'framer-motion';
 import type { CurriculumUnit } from '../data/curriculums';
 import type { Difficulty } from '../types';
 
@@ -47,7 +49,7 @@ function buildUnitData(unit: CurriculumUnit, startIndex: number) {
   return { unitNodes, sectionHeight, fullPathD, VIEWBOX_WIDTH };
 }
 
-export function GamifiedPath({ curriculum, currentUnlocked, onStartSession }: GamifiedPathProps) {
+export const GamifiedPath = memo(function GamifiedPath({ curriculum, currentUnlocked, onStartSession }: GamifiedPathProps) {
   let nextStartIndex = 0;
 
   return (
@@ -91,10 +93,10 @@ export function GamifiedPath({ curriculum, currentUnlocked, onStartSession }: Ga
                 <svg width="100%" height="100%" viewBox={`0 0 ${VIEWBOX_WIDTH} ${sectionHeight}`} preserveAspectRatio="none" className="overflow-visible">
                   <path d={fullPathD} fill="none" style={{ stroke: 'var(--locked-path-shadow)' }} strokeWidth="28" strokeLinecap="round" strokeLinejoin="round" transform="translate(0, 8)" />
                   <path d={fullPathD} fill="none" style={{ stroke: 'var(--locked-path-bg)' }} strokeWidth="28" strokeLinecap="round" strokeLinejoin="round" />
-                  {activePathD && <path d={activePathD} fill="none" style={{ stroke: unit.pathShadow }} strokeWidth="28" strokeLinecap="round" strokeLinejoin="round" transform="translate(0, 8)" />}
-                  {activePathD && <path d={activePathD} fill="none" style={{ stroke: unit.pathColor }} strokeWidth="28" strokeLinecap="round" strokeLinejoin="round" />}
+                  {activePathD && <motion.path initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1.5, ease: "easeInOut" }} d={activePathD} fill="none" style={{ stroke: unit.pathShadow }} strokeWidth="28" strokeLinecap="round" strokeLinejoin="round" transform="translate(0, 8)" />}
+                  {activePathD && <motion.path initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1.5, ease: "easeInOut" }} d={activePathD} fill="none" style={{ stroke: unit.pathColor }} strokeWidth="28" strokeLinecap="round" strokeLinejoin="round" />}
                   <path d={fullPathD} fill="none" style={{ stroke: 'var(--locked-path-shadow)' }} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" strokeDasharray="1 16" opacity="0.4" />
-                  {activePathD && <path d={activePathD} fill="none" style={{ stroke: unit.pathShadow }} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" strokeDasharray="1 16" opacity="0.4" />}
+                  {activePathD && <motion.path initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1.5, ease: "easeInOut" }} d={activePathD} fill="none" style={{ stroke: unit.pathShadow }} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" strokeDasharray="1 16" opacity="0.4" />}
                 </svg>
               </div>
 
@@ -156,4 +158,4 @@ export function GamifiedPath({ curriculum, currentUnlocked, onStartSession }: Ga
       })}
     </>
   );
-}
+});

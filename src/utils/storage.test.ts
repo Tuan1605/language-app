@@ -1,138 +1,48 @@
-import { describe, it, expect, beforeEach, vi, afterEach } from 'vitest';
-import { 
-  loadCards, saveCards, 
-  loadProgress, saveProgress, 
-  loadExamResults, saveExamResults,
-  loadTheme, saveTheme,
-  loadMistakes, saveMistakes,
-  exportData, importData
-} from './storage';
-import type { Flashcard, ExamResult } from '../types';
+import { describe, it, expect, beforeEach } from 'vitest';
+import 'fake-indexeddb/auto';
+import { db } from '../data/db';
 
 describe('Storage Utilities', () => {
-  beforeEach(() => {
-    localStorage.clear();
-    vi.clearAllMocks();
+  beforeEach(async () => {
+    await db.cards.clear();
+    await db.examResults.clear();
+    await db.mistakes.clear();
+    await db.customExams.clear();
+    await db.questions.clear();
+    await db.grammar.clear();
+    await db.kanji.clear();
+    await db.meta.clear();
   });
 
-  afterEach(() => {
-    vi.restoreAllMocks();
-  });
-
-  describe('Cards Storage', () => {
-    it('should return null if no cards in storage', () => {
-      expect(loadCards()).toBeNull();
+  describe('Dexie Database', () => {
+    it('should store and retrieve cards', async () => {
+      const card = { id: 'test-1', word: 'hello', definition: 'xin chào', user_id: 'guest', language: 'english' as const, category: 'toeic' as const, difficulty: 'beginner' as const, status: 'new' as const, repetition: 0, interval: 0, easiness: 2.5, next_review: null, created_at: new Date().toISOString() };
+      await db.cards.add(card);
+      const cards = await db.cards.toArray();
+      expect(cards).toHaveLength(1);
+      expect(cards[0].word).toBe('hello');
     });
 
-    it('should save and load cards correctly', () => {
-      const cards: Flashcard[] = [{ id: '1', word: 'test' } as Flashcard];
-      saveCards(cards);
-      expect(loadCards()).toEqual(cards);
-    });
-  });
-
-  describe('Progress Storage', () => {
-    it('should return default progress if empty', () => {
-      const p = loadProgress();
-      expect(p.unlocked_en).toBe(0);
-      expect(p.unlocked_ja).toBe(0);
+    it('should store and retrieve exam results', async () => {
+      const result = { id: 'e1', date: new Date().toISOString(), score: 90, totalQuestions: 100, category: 'toeic' as const, difficulty: 'beginner' as const };
+      await db.examResults.add(result);
+      const results = await db.examResults.toArray();
+      expect(results).toHaveLength(1);
+      expect(results[0].score).toBe(90);
     });
 
-    it('should save and load progress correctly', () => {
-      const p = { unlocked_en: 5, unlocked_ja: 3 };
-      saveProgress(p);
-      const loaded = loadProgress();
-      expect(loaded.unlocked_en).toBe(5);
-      expect(loaded.unlocked_ja).toBe(3);
-    });
-  });
-
-  describe('Exam Results Storage', () => {
-    it('should return empty array if no results', () => {
-      expect(loadExamResults()).toEqual([]);
+    it('should store and retrieve mistakes', async () => {
+      const mistake = { id: 'm1', type: 'question' as const, wrongAnswer: 'A', data: { id: 'q1', text: 'test', options: ['A'], correctAnswer: 0, category: 'toeic' as const, difficulty: 'beginner' as const }, timestamp: new Date().toISOString() };
+      await db.mistakes.add(mistake);
+      const mistakes = await db.mistakes.toArray();
+      expect(mistakes).toHaveLength(1);
     });
 
-    it('should save and load exam results', () => {
-      const results: ExamResult[] = [{ id: 'e1', score: 90, totalQuestions: 100 } as ExamResult];
-      saveExamResults(results);
-      expect(loadExamResults()).toEqual(results);
-    });
-  });
-
-  describe('Theme Storage', () => {
-    it('should return light theme as default', () => {
-      expect(loadTheme()).toBe('light');
-    });
-
-    it('should save and load theme', () => {
-      saveTheme('dark');
-      expect(loadTheme()).toBe('dark');
-      saveTheme('light');
-      expect(loadTheme()).toBe('light');
-    });
-  });
-
-  describe('Mistakes Storage', () => {
-    it('should return empty array by default', () => {
-      expect(loadMistakes()).toEqual([]);
-    });
-
-    it('should save and load mistakes correctly', () => {
-      const mistakes: any[] = [{ id: 'm1', type: 'question', wrongAnswer: 'A' }];
-      saveMistakes(mistakes);
-      expect(loadMistakes()).toEqual(mistakes);
-    });
-  });
-
-  describe('Data Import/Export', () => {
-    it('should export all data correctly by creating a blob and triggering download', () => {
-      // Mock DOM methods
-      const mockCreateObjectURL = vi.fn().mockReturnValue('blob:test-url');
-      const mockRevokeObjectURL = vi.fn();
-      (globalThis as any).URL.createObjectURL = mockCreateObjectURL;
-      (globalThis as any).URL.revokeObjectURL = mockRevokeObjectURL;
-
-      const mockClick = vi.fn();
-      const mockCreateElement = vi.spyOn(document, 'createElement').mockReturnValue({
-        click: mockClick,
-        href: '',
-        download: ''
-      } as any);
-
-      saveTheme('dark');
-      const cards: Flashcard[] = [{ id: 'c1' } as Flashcard];
-      saveCards(cards);
-      
-      exportData();
-      
-      expect(mockCreateObjectURL).toHaveBeenCalled();
-      expect(mockClick).toHaveBeenCalled();
-      expect(mockRevokeObjectURL).toHaveBeenCalled();
-      
-      mockCreateElement.mockRestore();
-    });
-
-    it('should import data from file and overwrite existing', async () => {
-      const mockData = JSON.stringify({
-        cards: [{ id: 'imported' }],
-        progress: { unlocked_en: 999, unlocked_ja: 10 },
-        examResults: [{ id: 'r1' }],
-        mistakes: [{ id: 'm1' }]
-      });
-
-      const file = new File([mockData], "backup.json", { type: "application/json" });
-
-      await expect(importData(file)).resolves.toBeUndefined();
-
-      expect(loadCards()).toEqual([{ id: 'imported' }]);
-      expect(loadProgress().unlocked_en).toBe(999);
-      expect(loadExamResults()).toEqual([{ id: 'r1' }]);
-      expect(loadMistakes()).toEqual([{ id: 'm1' }]);
-    });
-
-    it('should fail gracefully on invalid file content', async () => {
-      const file = new File(["invalid-json"], "backup.json", { type: "application/json" });
-      await expect(importData(file)).rejects.toThrow();
+    it('should store and retrieve grammar', async () => {
+      const grammar = { id: 'g1', track: 'n2' as const, pattern: 'test', meaning: 'test meaning', example: 'test example', exampleTranslation: 'test trans', difficulty: 'beginner' as const };
+      await db.grammar.add(grammar);
+      const items = await db.grammar.where('track').equals('n2').toArray();
+      expect(items).toHaveLength(1);
     });
   });
 });

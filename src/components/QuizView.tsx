@@ -1,6 +1,7 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import type { Question, ExamResult, Mistake } from '../types';
-import { playCorrectSound } from '../utils/sound';
+import { playCorrectSound, playIncorrectSound } from '../utils/sound';
+import { SessionEndOverlay } from './SessionEndOverlay';
 
 interface QuizViewProps {
   questions: Question[];
@@ -19,7 +20,8 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
   
   // --- TIMER STATE ---
-  const [timeLeft, setTimeLeft] = useState(15);
+  const getInitialTime = useCallback(() => questions[currentIndex]?.subCategory === 'Reading' ? 120 : 45, [questions, currentIndex]);
+  const [timeLeft, setTimeLeft] = useState(getInitialTime());
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   // Reset answer states when moving to a new question
@@ -31,7 +33,7 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
   useEffect(() => {
     if (isFinished || isAnswered) return;
     
-    setTimeLeft(15);
+    setTimeLeft(getInitialTime());
     if (timerRef.current) clearInterval(timerRef.current);
     
     timerRef.current = setInterval(() => {
@@ -47,7 +49,7 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
     return () => {
       if (timerRef.current) clearInterval(timerRef.current);
     };
-  }, [currentIndex, isFinished, isAnswered]);
+  }, [currentIndex, isFinished, isAnswered, getInitialTime]);
 
   useEffect(() => {
     if (timeLeft === 0 && !isFinished && !isAnswered) {
@@ -72,14 +74,17 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
 
     if (selectedOption === questions[currentIndex].correctAnswer) {
       playCorrectSound();
-    } else if (onSaveMistake) {
-      onSaveMistake({
-        id: `mistake-${questions[currentIndex].id}-${Date.now()}`,
-        type: 'question',
-        data: questions[currentIndex],
-        wrongAnswer: selectedOption !== null ? questions[currentIndex].options[selectedOption] : 'Skipped',
-        timestamp: new Date().toISOString()
-      });
+    } else {
+      playIncorrectSound();
+      if (onSaveMistake) {
+        onSaveMistake({
+          id: `mistake-${questions[currentIndex].id}-${Date.now()}`,
+          type: 'question',
+          data: questions[currentIndex],
+          wrongAnswer: selectedOption !== null ? questions[currentIndex].options[selectedOption] : 'Skipped',
+          timestamp: new Date().toISOString()
+        });
+      }
     }
   };
 
@@ -118,44 +123,25 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
 
   if (isFinished) {
     const finalScore = calculateScore(selectedAnswers);
-    const percent = (finalScore / questions.length) * 100;
     
     return (
-      <div className="bg-[var(--bg-card)] lingo-card text-center max-w-lg w-full mx-auto animate-in zoom-in-95 duration-500">
-        <div className="w-24 h-24 bg-[var(--tint-blue)] rounded-full flex items-center justify-center mx-auto mb-8 shadow-inner">
-          <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-[var(--blue)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-          </svg>
-        </div>
-        <h2 className="text-3xl font-black text-[var(--text-main)] mb-2 uppercase tracking-tight">Quest Complete!</h2>
-        <p className="text-[10px] font-black text-[var(--text-muted)] mb-10 uppercase tracking-[0.2em]">{category} Practice Exam</p>
-        
-        <div className="relative w-48 h-48 mx-auto mb-10">
-          <svg className="w-full h-full transform -rotate-90">
-            <circle cx="96" cy="96" r="86" stroke="currentColor" strokeWidth="12" fill="transparent" className="text-[var(--gray-path)]" />
-            <circle cx="96" cy="96" r="86" stroke="currentColor" strokeWidth="12" fill="transparent" className={percent >= 80 ? 'text-[var(--green)]' : 'text-[var(--gold)]'} strokeDasharray={540.3} strokeDashoffset={540.3 - (540.3 * percent) / 100} strokeLinecap="round" />
-          </svg>
-          <div className="absolute inset-0 flex flex-col items-center justify-center">
-            <span className="text-5xl font-black text-[var(--text-main)]">{finalScore}</span>
-            <span className="text-[10px] font-black text-[var(--text-muted)] uppercase tracking-widest">Score / {questions.length}</span>
-          </div>
-        </div>
-
-        <button
-          onClick={() => onComplete({
-            id: crypto.randomUUID(),
-            date: new Date().toISOString(),
-            score: finalScore,
-            totalQuestions: questions.length,
-            category,
-            difficulty: questions[0].difficulty,
-            type: 'mini-quiz'
-          })}
-          className="w-full btn-3d btn-blue h-14"
-        >
-          CLAIM REWARDS
-        </button>
-      </div>
+      <SessionEndOverlay 
+        type="quiz"
+        title="Quest Complete!"
+        subtitle={`${category} Practice Exam`}
+        score={finalScore}
+        totalScore={questions.length}
+        buttonText="CLAIM REWARDS"
+        onContinue={() => onComplete({
+          id: crypto.randomUUID(),
+          date: new Date().toISOString(),
+          score: finalScore,
+          totalQuestions: questions.length,
+          category,
+          difficulty: questions[0].difficulty,
+          type: 'mini-quiz'
+        })}
+      />
     );
   }
 
@@ -168,7 +154,7 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
         <div className="absolute top-0 left-0 right-0 h-1.5 bg-[var(--bg-hover)] overflow-hidden">
           <div 
             className={`h-full transition-all duration-1000 ease-linear ${timeLeft <= 5 ? 'bg-[var(--red)] animate-pulse' : 'bg-[var(--blue)]'}`}
-            style={{ width: `${(timeLeft / 15) * 100}%` }}
+            style={{ width: `${(timeLeft / getInitialTime()) * 100}%` }}
           ></div>
         </div>
       )}
@@ -270,7 +256,11 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
 
       <div className="flex justify-between items-center pt-8 border-t-2 border-[var(--quiz-divider)]">
         <button
-          onClick={onCancel}
+          onClick={() => {
+            if (window.confirm('Bạn có chắc muốn thoát? Tiến trình sẽ bị mất.')) {
+              onCancel();
+            }
+          }}
           className="text-[var(--text-muted)] font-black hover:text-[var(--red)] transition-colors uppercase tracking-[0.2em] text-[9px]"
         >
           Quit Quest

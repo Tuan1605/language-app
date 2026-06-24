@@ -19,12 +19,14 @@ declare module 'hanzi-writer' {
     drawingWidth?: number;
     showHintAfterMisses?: number;
     highlightOnComplete?: boolean;
-    onComplete?: (data: any) => void;
+    onComplete?: (data: unknown) => void;
+    charDataLoader?: (char: string, onLoad: (data: unknown) => void, onError: (err?: unknown) => void) => void;
+    leniency?: number;
   }
 
   export default class HanziWriter {
     static create(element: string | HTMLElement, character: string, options?: HanziWriterOptions): HanziWriter;
-    quiz(options?: any): void;
+    quiz(options?: { onComplete?: (data: unknown) => void }): void;
     cancelQuiz(): void;
     animateCharacter(): void;
     hideCharacter(): void;

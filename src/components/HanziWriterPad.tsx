@@ -38,7 +38,21 @@ export function HanziWriterPad({ character, size = 200, mode = 'quiz' }: HanziWr
         drawingColor: '#334155', // Dark slate
         showCharacter: false,
         showOutline: true,
-        showHintAfterMisses: 3,
+        showHintAfterMisses: 1, // Reduced to 1 to help users know where to write
+        leniency: 2.0, // Make stroke matching much more forgiving
+        charDataLoader: (char, onLoad, onError) => {
+          fetch(`https://cdn.jsdelivr.net/gh/MadLadSquad/hanzi-writer-data-youyin@master/data/${char}.json`)
+            .then(res => {
+              if (!res.ok) throw new Error('Network response was not ok');
+              return res.json();
+            })
+            .then(onLoad)
+            .catch(onError);
+        },
+        // @ts-expect-error: missing onLoadCharDataError in types
+        onLoadCharDataError: () => {
+          setError(true);
+        }
       });
 
       writerRef.current = writer;
@@ -57,8 +71,7 @@ export function HanziWriterPad({ character, size = 200, mode = 'quiz' }: HanziWr
           }
         });
       }
-    } catch (err) {
-      console.error("HanziWriter Error:", err);
+    } catch {
       setError(true);
     }
 

@@ -1,507 +1,4042 @@
 [
-  {"id": "nf-1", "word": "研究 (けんきゅう)", "definition": "nghiên cứu", "example": "この大学では新しい研究が行われています。", "topic": "Academic"},
-  {"id": "nf-2", "word": "論文 (ろんぶん)", "definition": "luận văn", "example": "彼は有名な雑誌に論文を発表した。", "topic": "Academic"},
-  {"id": "nf-3", "word": "学者 (がくしゃ)", "definition": "học giả", "example": "その学者は歴史について多くの本を書いた。", "topic": "Academic"},
-  {"id": "nf-4", "word": "発表 (はっぴょう)", "definition": "trình bày, công bố", "example": "研究の結果を発表しました。", "topic": "Academic"},
-  {"id": "nf-5", "word": "仮説 (かせつ)", "definition": "giả thuyết", "example": "新しい仮説を立てる必要がある。", "topic": "Academic"},
-  {"id": "nf-6", "word": "実験 (じっけん)", "definition": "thí nghiệm", "example": "labで化学の実験を行った。", "topic": "Academic"},
-  {"id": "nf-7", "word": "調査 (ちょうさ)", "definition": "điều tra, khảo sát", "example": "市場調査を実施した。", "topic": "Academic"},
-  {"id": "nf-8", "word": "データ (データ)", "definition": "dữ liệu", "example": "データを集めて分析した。", "topic": "Academic"},
-  {"id": "nf-9", "word": "分析 (ぶんせき)", "definition": "phân tích", "example": "結果を詳しく分析する必要がある。", "topic": "Academic"},
-  {"id": "nf-10", "word": "結論 (けつろん)", "definition": "kết luận", "example": "実験の結論は予想通りだった。", "topic": "Academic"},
-  {"id": "nf-11", "word": "仮定 (かてい)", "definition": "giả định", "example": "この仮定の上で計算を行う。", "topic": "Academic"},
-  {"id": "nf-12", "word": "証拠 (しょうこ)", "definition": "chứng cứ", "example": "証拠を集めて事件を解明した。", "topic": "Academic"},
-  {"id": "nf-13", "word": "推論 (すいろん)", "definition": "suy luận", "example": "論理的な推論を行う必要がある。", "topic": "Academic"},
-  {"id": "nf-14", "word": "概念 (がいねん)", "definition": "khái niệm", "example": "新しい概念を理解するのは難しい。", "topic": "Academic"},
-  {"id": "nf-15", "word": "体系 (たいけい)", "definition": "hệ thống", "example": "この学問には独自の体系がある。", "topic": "Academic"},
-  {"id": "nf-16", "word": "法則 (ほうそく)", "definition": "pháp tắc, quy luật", "example": "自然の法則を発見した。", "topic": "Academic"},
-  {"id": "nf-17", "word": "観察 (かんさつ)", "definition": "quan sát", "example": "正確な観察が科学に欠かせない。", "topic": "Academic"},
-  {"id": "nf-18", "word": "仮説 (かせつ)", "definition": "giả thuyết", "example": "仮説を検証する実験を行った。", "topic": "Academic"},
-  {"id": "nf-19", "word": "検証 (けんしょう)", "definition": "kiểm chứng", "example": "理論の検証が必要だ。", "topic": "Academic"},
-  {"id": "nf-20", "word": "予測 (よそく)", "definition": "dự đoán", "example": "未来を予測することは難しい。", "topic": "Academic"},
-  {"id": "nf-21", "word": "原理 (げんり)", "definition": "nguyên lý", "example": "この機械の原理を説明してください。", "topic": "Academic"},
-  {"id": "nf-22", "word": "定義 (ていぎ)", "definition": "định nghĩa", "example": "言葉の定義を明確にする。", "topic": "Academic"},
-  {"id": "nf-23", "word": "課題 (かだい)", "definition": "đề tài, nhiệm vụ", "example": "今回の課題は難しい。", "topic": "Academic"},
-  {"id": "nf-24", "word": "到達 (とうたつ)", "definition": "đạt được", "example": "新しいレベルに到達した。", "topic": "Academic"},
-  {"id": "nf-25", "word": "探求 (たんきゅう)", "definition": "khám phá, tìm kiếm", "example": "真実を探求する姿勢が大切だ。", "topic": "Academic"},
-  {"id": "nf-26", "word": "前提 (ぜんてい)", "definition": "tiền đề", "example": "この議論の前提を確認しよう。", "topic": "Academic"},
-  {"id": "nf-27", "word": "根拠 (こんきょ)", "definition": "căn cứ, cơ sở", "example": "発言には根拠が必要だ。", "topic": "Academic"},
-  {"id": "nf-28", "word": "論理 (ろんり)", "definition": "luận lý", "example": "論理的な考え方を身につけよう。", "topic": "Academic"},
-  {"id": "nf-29", "word": "洞察 (どうさつ)", "definition": "sự thấu hiểu", "example": "彼は深い洞察力を持っている。", "topic": "Academic"},
-  {"id": "nf-30", "word": "仮説 (かせつ)", "definition": "giả thuyết", "example": "仮説を立てるのが第一歩だ。", "topic": "Academic"},
-  {"id": "nf-31", "word": "学説 (がくせつ)", "definition": "học thuyết", "example": "この学説は広く受け入れられている。", "topic": "Academic"},
-  {"id": "nf-32", "word": "研究 (けんきゅう)", "definition": "nghiên cứu", "example": "研究チームを率いて新しい発見をした。", "topic": "Academic"},
-  {"id": "nf-33", "word": "学会 (がっかい)", "definition": "hội thảo học thuật", "example": "学会で研究を発表する。", "topic": "Academic"},
-  {"id": "nf-34", "word": "学位 (がくい)", "definition": "bằng cấp học thuật", "example": "修士の学位を取得した。", "topic": "Academic"},
-  {"id": "nf-35", "word": "教授 (きょうじゅ)", "definition": "giáo sư", "example": "教授に質問をした。", "topic": "Academic"},
-  {"id": "nf-36", "word": "専攻 (せんこう)", "definition": "chuyên ngành", "example": "何を専攻していますか。", "topic": "Academic"},
-  {"id": "nf-37", "word": "講義 (こうぎ)", "definition": "bài giảng", "example": " professorの講義を受ける。", "topic": "Academic"},
-  {"id": "nf-38", "word": "演習 (えんしゅう)", "definition": "bài tập thực hành", "example": "演習の問題を解いた。", "topic": "Academic"},
-  {"id": "nf-39", "word": "文献 (ぶんけん)", "definition": "tài liệu văn bản", "example": "文献を查阅してレポートを書いた。", "topic": "Academic"},
-  {"id": "nf-40", "word": "抄録 (しょうろく)", "definition": "tóm tắt", "example": "論文の抄録を読んだ。", "topic": "Academic"},
-  {"id": "nf-41", "word": "刊行 (かんこう)", "definition": "xuất bản", "example": "新しい本を刊行した。", "topic": "Academic"},
-  {"id": "nf-42", "word": "寄稿 (きこう)", "definition": "đóng góp bài viết", "example": "雑誌に寄稿する機会を得た。", "topic": "Academic"},
-  {"id": "nf-43", "word": "学位 (がくい)", "definition": "bằng cấp", "example": "博士の学位を授与された。", "topic": "Academic"},
-  {"id": "nf-44", "word": "研究室 (けんきゅうしつ)", "definition": "phòng nghiên cứu", "example": "研究室で実験をする。", "topic": "Academic"},
-  {"id": "nf-45", "word": "大学院 (だいがくいん)", "definition": "trường sau đại học", "example": "大学院に進学する。", "topic": "Academic"},
-  {"id": "nf-46", "word": "修士 (しゅうし)", "definition": "thạc sĩ", "example": "修士課程を修了した。", "topic": "Academic"},
-  {"id": "nf-47", "word": "博士 (はかせ)", "definition": "tiến sĩ", "example": "博士号を取得した。", "topic": "Academic"},
-  {"id": "nf-48", "word": "学位論文 (がくいろんぶん)", "definition": "luận văn tốt nghiệp", "example": "学位論文を提出した。", "topic": "Academic"},
-  {"id": "nf-49", "word": "答辩 (べんろん)", "definition": "bảo vệ luận văn", "example": "学位論文の答辩を行った。", "topic": "Academic"},
-  {"id": "nf-50", "word": "学位 (がくい)", "definition": "bằng cấp học thuật", "example": "学位を取得するために勉強する。", "topic": "Academic"},
-  {"id": "nf-51", "word": "企画 (きかく)", "definition": "kế hoạch, dự án", "example": "新しい企画を立てた。", "topic": "Work"},
-  {"id": "nf-52", "word": "資料 (しりょう)", "definition": "tài liệu", "example": "資料をまとめて報告した。", "topic": "Work"},
-  {"id": "nf-53", "word": "会議 (かいぎ)", "definition": "họp, cuộc họp", "example": "明日会議があります。", "topic": "Work"},
-  {"id": "nf-54", "word": "報告 (ほうこく)", "definition": "báo cáo", "example": "進捗を報告する。", "topic": "Work"},
-  {"id": "nf-55", "word": "議題 (ぎだい)", "definition": "chủ đề thảo luận", "example": "今日の議題は新企画です。", "topic": "Work"},
-  {"id": "nf-56", "word": "決議 (けつぎ)", "definition": "nghị quyết", "example": "会議で決議が行われた。", "topic": "Work"},
-  {"id": "nf-57", "word": "契約 (けいやく)", "definition": "hợp đồng", "example": "新しい契約を結んだ。", "topic": "Work"},
-  {"id": "nf-58", "word": "取引 (とりひき)", "definition": "giao dịch", "example": "新しい取引先と取引を始めた。", "topic": "Work"},
-  {"id": "nf-59", "word": "納品 (のうひん)", "definition": "giao hàng", "example": "商品を納品した。", "topic": "Work"},
-  {"id": "nf-60", "word": "請求 (せいきゅう)", "definition": "tính phí, yêu cầu", "example": "請求書を送った。", "topic": "Work"},
-  {"id": "nf-61", "word": "経費 (けいひ)", "definition": "chi phí", "example": "経費を削減する必要がある。", "topic": "Work"},
-  {"id": "nf-62", "word": "予算 (よさん)", "definition": "ngân sách", "example": "予算を立てて支出を管理する。", "topic": "Work"},
-  {"id": "nf-63", "word": "決算 (けっさん)", "definition": "quyết toán", "example": "決算報告を確認した。", "topic": "Work"},
-  {"id": "nf-64", "word": "収益 (しゅうえき)", "definition": "thu nhập, lợi nhuận", "example": "今期の収益は好調だ。", "topic": "Work"},
-  {"id": "nf-65", "word": "売上 (うりあげ)", "definition": "doanh thu", "example": "売上が昨年を上回った。", "topic": "Work"},
-  {"id": "nf-66", "word": "販売 (はんばい)", "definition": "bán hàng", "example": "新製品の販売を開始した。", "topic": "Work"},
-  {"id": "nf-67", "word": "営業 (えいぎょう)", "definition": "kinh doanh", "example": "営業部で働いている。", "topic": "Work"},
-  {"id": "nf-68", "word": "企画 (きかく)", "definition": "lên kế hoạch", "example": "新しい企画を提案する。", "topic": "Work"},
-  {"id": "nf-69", "word": "戦略 (せんりゃく)", "definition": "chiến lược", "example": "戦略を練って市場に参入する。", "topic": "Work"},
-  {"id": "nf-70", "word": "開発 (かいはつ)", "definition": "phát triển", "example": "新しい製品を開発する。", "topic": "Work"},
-  {"id": "nf-71", "word": "品質 (ひんしつ)", "definition": "chất lượng", "example": "品質管理を徹底する。", "topic": "Work"},
-  {"id": "nf-72", "word": "納入 (のうにゅう)", "definition": "giao hàng", "example": "機械を納入した。", "topic": "Work"},
-  {"id": "nf-73", "word": "検品 (けんぴん)", "definition": "kiểm tra hàng hóa", "example": "納品された商品を検品する。", "topic": "Work"},
-  {"id": "nf-74", "word": "在庫 (ざいこ)", "definition": "hàng tồn kho", "example": "在庫がない商品を発注する。", "topic": "Work"},
-  {"id": "nf-75", "word": "発注 (はっちゅう)", "definition": "đặt hàng", "example": "新しい材料を発注した。", "topic": "Work"},
-  {"id": "nf-76", "word": "出荷 (しゅっか)", "definition": "xuất hàng", "example": "明日出荷する予定です。", "topic": "Work"},
-  {"id": "nf-77", "word": "輸送 (ゆそう)", "definition": "vận chuyển", "example": "商品を輸送する。", "topic": "Work"},
-  {"id": "nf-78", "word": "物流 (ぶつりゅう)", "definition": "hậu cần, logistics", "example": "物流を効率化する。", "topic": "Work"},
-  {"id": "nf-79", "word": "倉庫 (そうこ)", "definition": "nhà kho", "example": "倉庫に商品を保管する。", "topic": "Work"},
-  {"id": "nf-80", "word": "梱包 (こんぽう)", "definition": "đóng gói", "example": "商品を梱包して発送する。", "topic": "Work"},
-  {"id": "nf-81", "word": "届け (とどけ)", "definition": "tờ khai, giấy báo", "example": "納品書を届けに出す。", "topic": "Work"},
-  {"id": "nf-82", "word": "書類 (しょるい)", "definition": "giấy tờ", "example": "書類を整えて提出する。", "topic": "Work"},
-  {"id": "nf-83", "word": "帳簿 (ちょうぼ)", "definition": "sổ sách kế toán", "example": "帳簿を正確につける。", "topic": "Work"},
-  {"id": "nf-84", "word": "経理 (けいり)", "definition": "kế toán", "example": "経理部で働いている。", "topic": "Work"},
-  {"id": "nf-85", "word": "総務 (そうむ)", "definition": "tổng vụ", "example": "総務部に連絡してください。", "topic": "Work"},
-  {"id": "nf-86", "word": "人事 (じんじ)", "definition": "nhân sự", "example": "人事部に履歴書を提出する。", "topic": "Work"},
-  {"id": "nf-87", "word": "採用 (さいよう)", "definition": "tuyển dụng", "example": "新しい社員を採用する。", "topic": "Work"},
-  {"id": "nf-88", "word": "研修 (けんしゅう)", "definition": "đào tạo", "example": "新人研修が始まった。", "topic": "Work"},
-  {"id": "nf-89", "word": "評価 (ひょうか)", "definition": "đánh giá", "example": "仕事の評価を受ける。", "topic": "Work"},
-  {"id": "nf-90", "word": "昇進 (しょうしん)", "definition": "thăng chức", "example": "来月から部長に昇進する。", "topic": "Work"},
-  {"id": "nf-91", "word": "定年 (ていねん)", "definition": "nghỉ hưu", "example": "来年定年を迎える。", "topic": "Work"},
-  {"id": "nf-92", "word": "残業 (ざんぎょう)", "definition": "tăng ca", "example": "毎晩残業している。", "topic": "Work"},
-  {"id": "nf-93", "word": "有給 (ゆうきゅう)", "definition": "nghỉ phép có lương", "example": "有給休暇を取った。", "topic": "Work"},
-  {"id": "nf-94", "word": "遅刻 (ちこく)", "definition": "đến muộn", "example": "遅刻しないように早く出かけた。", "topic": "Work"},
-  {"id": "nf-95", "word": "出勤 (しゅっきん)", "definition": "đi làm", "example": "毎朝八時に出勤する。", "topic": "Work"},
-  {"id": "nf-96", "word": "退勤 (たいきん)", "definition": "tan làm", "example": "五時に退勤する。", "topic": "Work"},
-  {"id": "nf-97", "word": "通勤 (つうきん)", "definition": "đi làm hàng ngày", "example": "電車で通勤している。", "topic": "Work"},
-  {"id": "nf-98", "word": "役職 (やくしょく)", "definition": "chức vụ", "example": "役職を担う責任は大きい。", "topic": "Work"},
-  {"id": "nf-99", "word": "上司 (じょうし)", "definition": "sếp, cấp trên", "example": "上司に報告する。", "topic": "Work"},
-  {"id": "nf-100", "word": "部下 (ぶか)", "definition": "cấp dưới", "example": "部下を指導する。", "topic": "Work"},
-  {"id": "nf-101", "word": "掃除 (そうじ)", "definition": "dọn dẹp", "example": "毎日部屋を掃除する。", "topic": "Daily Life"},
-  {"id": "nf-102", "word": "洗濯 (せんたく)", "definition": "giặt giũ", "example": "週末に洗濯する。", "topic": "Daily Life"},
-  {"id": "nf-103", "word": "買い物 (かいもの)", "definition": "mua sắm", "example": "スーパーで買い物をする。", "topic": "Daily Life"},
-  {"id": "nf-104", "word": "料理 (りょうり)", "definition": "nấu ăn, món ăn", "example": "母は料理が上手だ。", "topic": "Daily Life"},
-  {"id": "nf-105", "word": "片付け (かたづけ)", "definition": "dọn dẹp, sắp xếp", "example": "部屋を片付ける。", "topic": "Daily Life"},
-  {"id": "nf-106", "word": "準備 (じゅんび)", "definition": "chuẩn bị", "example": "朝ごはんの準備をする。", "topic": "Daily Life"},
-  {"id": "nf-107", "word": "連絡 (れんらく)", "definition": "liên lạc", "example": "友達に連絡した。", "topic": "Daily Life"},
-  {"id": "nf-108", "word": "約束 (やくそく)", "definition": "lời hứa", "example": "約束を守るのが大切だ。", "topic": "Daily Life"},
-  {"id": "nf-109", "word": "散歩 (さんぽ)", "definition": "đi dạo", "example": "公園を散歩する。", "topic": "Daily Life"},
-  {"id": "nf-110", "word": "休息 (きゅうそく)", "definition": "nghỉ ngơi", "example": "少し休息を取った。", "topic": "Daily Life"},
-  {"id": "nf-111", "word": "睡眠 (すいみん)", "definition": "giấc ngủ", "example": "十分な睡眠を取る必要がある。", "topic": "Daily Life"},
-  {"id": "nf-112", "word": "朝食 (ちょうしょく)", "definition": "bữa sáng", "example": "毎朝朝食を食べる。", "topic": "Daily Life"},
-  {"id": "nf-113", "word": "昼食 (ちゅうしょく)", "definition": "bữa trưa", "example": "会社で昼食を取る。", "topic": "Daily Life"},
-  {"id": "nf-114", "word": "夕食 (ゆうしょく)", "definition": "bữa tối", "example": "家族と夕食を食べる。", "topic": "Daily Life"},
-  {"id": "nf-115", "word": "昼寝 (ひるね)", "definition": "ngủ trưa", "example": "昼寝をして元気を回復した。", "topic": "Daily Life"},
-  {"id": "nf-116", "word": "起居 (きょ)", "definition": "sinh hoạt hàng ngày", "example": "一人で起居している。", "topic": "Daily Life"},
-  {"id": "nf-117", "word": "日課 (にっか)", "definition": "thói quen hàng ngày", "example": "読書は私の日課です。", "topic": "Daily Life"},
-  {"id": "nf-118", "word": "習慣 (しゅうかん)", "definition": "thói quen", "example": "良い習慣を身につけたい。", "topic": "Daily Life"},
-  {"id": "nf-119", "word": "支度 (したく)", "definition": "chuẩn bị", "example": "出かけの支度をする。", "topic": "Daily Life"},
-  {"id": "nf-120", "word": "着替え (きがえ)", "definition": "thay đồ", "example": "外出前に着替えをする。", "topic": "Daily Life"},
-  {"id": "nf-121", "word": "化粧 (けしょう)", "definition": "trang điểm", "example": "毎朝化粧をする。", "topic": "Daily Life"},
-  {"id": "nf-122", "word": "風呂 (ふろ)", "definition": "bồn tắm", "example": "寝る前に風呂に入る。", "topic": "Daily Life"},
-  {"id": "nf-123", "word": "歯磨き (はみがき)", "definition": "đánh răng", "example": "毎晩歯磨きをする。", "topic": "Daily Life"},
-  {"id": "nf-124", "word": "洗面 (せんめん)", "definition": "rửa mặt", "example": "起きたらすぐに洗面する。", "topic": "Daily Life"},
-  {"id": "nf-125", "word": "洗い物 (あらいもの)", "definition": "rửa bát", "example": "食事の後は洗い物をする。", "topic": "Daily Life"},
-  {"id": "nf-126", "word": "ゴミ出し (ごみだ)", "definition": "đổ rác", "example": "火曜日と金曜日はゴミ出しの日だ。", "topic": "Daily Life"},
-  {"id": "nf-127", "word": "布団 (ふとん)", "definition": "chăn, nệm", "example": "布団を干す。", "topic": "Daily Life"},
-  {"id": "nf-128", "word": "洗濯機 (せんたくき)", "definition": "máy giặt", "example": "洗濯機で洗濯する。", "topic": "Daily Life"},
-  {"id": "nf-129", "word": "冷蔵庫 (れいぞうこ)", "definition": "tủ lạnh", "example": "冷蔵庫に食材をしまう。", "topic": "Daily Life"},
-  {"id": "nf-130", "word": "電子レンジ (でんしレンジ)", "definition": "lò vi sóng", "example": "電子レンジで加熱する。", "topic": "Daily Life"},
-  {"id": "nf-131", "word": "食器 (しょっき)", "definition": "bát đĩa", "example": "食器を洗う。", "topic": "Daily Life"},
-  {"id": "nf-132", "word": "調味料 (ちょうみりょう)", "definition": "gia vị", "example": "調味料を加えて味を整える。", "topic": "Daily Life"},
-  {"id": "nf-133", "word": "食材 (しょくざい)", "definition": "nguyên liệu nấu ăn", "example": "新鮮な食材を買う。", "topic": "Daily Life"},
-  {"id": "nf-134", "word": "精肉店 (せいにくてん)", "definition": "cửa hàng thịt", "example": "精肉店で肉を買う。", "topic": "Daily Life"},
-  {"id": "nf-135", "word": "魚屋 (さかなや)", "definition": "cửa hàng cá", "example": "魚屋で新鮮な魚を買った。", "topic": "Daily Life"},
-  {"id": "nf-136", "word": "八百屋 (やおや)", "definition": "cửa hàng rau củ", "example": "八百屋で野菜を買う。", "topic": "Daily Life"},
-  {"id": "nf-137", "word": "パン屋 (ぱんや)", "definition": "tiệm bánh mì", "example": "パン屋でパンを買った。", "topic": "Daily Life"},
-  {"id": "nf-138", "word": "喫茶店 (きっさてん)", "definition": "quán cà phê", "example": "喫茶店でコーヒーを飲む。", "topic": "Daily Life"},
-  {"id": "nf-139", "word": "快適 (かいてき)", "definition": "thoải mái", "example": "快適な生活を送りたい。", "topic": "Daily Life"},
-  {"id": "nf-140", "word": "手間 (てま)", "definition": "công sức, thời gian", "example": "料理には手間がかかる。", "topic": "Daily Life"},
-  {"id": "nf-141", "word": "慣れる (なれる)", "definition": "quen thuộc", "example": "新しい環境に慣れる。", "topic": "Daily Life"},
-  {"id": "nf-142", "word": "不慣れ (ふなれ)", "definition": "không quen", "example": "仕事に不慣れだ。", "topic": "Daily Life"},
-  {"id": "nf-143", "word": "手軽 (てがる)", "definition": "tiện lợi, đơn giản", "example": "手軽な食事が人気だ。", "topic": "Daily Life"},
-  {"id": "nf-144", "word": "無理 (むり)", "definition": "quá sức, không thể", "example": "無理をしないでください。", "topic": "Daily Life"},
-  {"id": "nf-145", "word": "都合 (つごう)", "definition": "thuận tiện", "example": "明日は都合が悪い。", "topic": "Daily Life"},
-  {"id": "nf-146", "word": "暇 (ひま)", "definition": "rảnh rỗi", "example": "今暇ですか。", "topic": "Daily Life"},
-  {"id": "nf-147", "word": "退屈 (たいくつ)", "definition": "buồn chán", "example": "映画が退屈だった。", "topic": "Daily Life"},
-  {"id": "nf-148", "word": "娯楽 (ごらく)", "definition": "giải trí", "example": "娯楽のない生活はつまらない。", "topic": "Daily Life"},
-  {"id": "nf-149", "word": "趣味 (しゅみ)", "definition": "sở thích", "example": "趣味は何ですか。", "topic": "Daily Life"},
-  {"id": "nf-150", "word": "日曜日 (にちようび)", "definition": "Chủ nhật", "example": "日曜日は家族で過ごす。", "topic": "Daily Life"},
-  {"id": "nf-151", "word": "予約 (よやく)", "definition": "đặt chỗ", "example": "ホテルを予約した。", "topic": "Travel"},
-  {"id": "nf-152", "word": "観光 (かんこう)", "definition": "tham quan", "example": "京都を観光する。", "topic": "Travel"},
-  {"id": "nf-153", "word": "宿泊 (しゅくはく)", "definition": "lưu trú", "example": "宿泊施設を予約する。", "topic": "Travel"},
-  {"id": "nf-154", "word": "電車 (でんしゃ)", "definition": "tàu điện", "example": "電車で会社に行く。", "topic": "Travel"},
-  {"id": "nf-155", "word": "飛行機 (ひこうき)", "definition": "máy bay", "example": "飛行機で東京に行く。", "topic": "Travel"},
-  {"id": "nf-156", "word": "空港 (くうこう)", "definition": "sân bay", "example": "空港に向かう。", "topic": "Travel"},
-  {"id": "nf-157", "word": "駅 (えき)", "definition": "ga tàu", "example": "駅まで歩く。", "topic": "Travel"},
-  {"id": "nf-158", "word": "切符 (きっぷ)", "definition": "vé", "example": "切符を買った。", "topic": "Travel"},
-  {"id": "nf-159", "word": "乗り換え (のりかえ)", "definition": "đổi tàu", "example": "ここで乗り換えをする。", "topic": "Travel"},
-  {"id": "nf-160", "word": "片道 (かたみち)", "definition": "một chiều", "example": "片道切符を買った。", "topic": "Travel"},
-  {"id": "nf-161", "word": "往復 (おうふく)", "definition": "khứ hồi", "example": "往復切符を買った。", "topic": "Travel"},
-  {"id": "nf-162", "word": "旅程 (りょてい)", "definition": "lịch trình", "example": "旅程を立てた。", "topic": "Travel"},
-  {"id": "nf-163", "word": "観光客 (かんこうきゃく)", "definition": "khách du lịch", "example": "この街には観光客が多い。", "topic": "Travel"},
-  {"id": "nf-164", "word": "土産 (みやげ)", "definition": "quà tặng", "example": "土産を買った。", "topic": "Travel"},
-  {"id": "nf-165", "word": "旅行 (りょこう)", "definition": "du lịch", "example": "夏に旅行に行く。", "topic": "Travel"},
-  {"id": "nf-166", "word": "旅館 (りょかん)", "definition": "khách sạn Nhật Bản", "example": "旅館に泊まった。", "topic": "Travel"},
-  {"id": "nf-167", "word": "ホテル (ホテル)", "definition": "khách sạn", "example": "ホテルを予約した。", "topic": "Travel"},
-  {"id": "nf-168", "word": "民宿 (みんしゅく)", "definition": "nhà nghỉ", "example": "民宿に泊まった。", "topic": "Travel"},
-  {"id": "nf-169", "word": "露営 (ろえい)", "definition": "cắm trại", "example": "山で露営をした。", "topic": "Travel"},
-  {"id": "nf-170", "word": "登山 (とざん)", "definition": "leo núi", "example": "週末に登山をする。", "topic": "Travel"},
-  {"id": "nf-171", "word": "海水浴 (かいすいよく)", "definition": "tắm biển", "example": "夏に海水浴に行く。", "topic": "Travel"},
-  {"id": "nf-172", "word": "散策 (さんさく)", "definition": "đi dạo", "example": "街を散策する。", "topic": "Travel"},
-  {"id": "nf-173", "word": "周遊 (しゅうゆう)", "definition": "tham quan", "example": "都市を周遊する。", "topic": "Travel"},
-  {"id": "nf-174", "word": "滞在 (たいざい)", "definition": "lưu trú", "example": "日本に一週間滞在した。", "topic": "Travel"},
-  {"id": "nf-175", "word": "出国 (しゅっこく)", "definition": "rời quốc gia", "example": "出国の手続きをする。", "topic": "Travel"},
-  {"id": "nf-176", "word": "入国 (にゅうこく)", "definition": "nhập quốc gia", "example": "日本に入国した。", "topic": "Travel"},
-  {"id": "nf-177", "word": "通関 (つうかん)", "definition": "hải quan", "example": "通関の手続きを済ませた。", "topic": "Travel"},
-  {"id": "nf-178", "word": "パスポート (パスポート)", "definition": "hộ chiếu", "example": "パスポートを忘れないでください。", "topic": "Travel"},
-  {"id": "nf-179", "word": "ビザ (ビザ)", "definition": "thị thực", "example": "ビザを申請した。", "topic": "Travel"},
-  {"id": "nf-180", "word": "両替 (りょうがえ)", "definition": "đổi tiền", "example": "空港で両替をする。", "topic": "Travel"},
-  {"id": "nf-181", "word": "観光地 (かんこうち)", "definition": "điểm tham quan", "example": "この町は有名な観光地だ。", "topic": "Travel"},
-  {"id": "nf-182", "word": "名所 (めいしょ)", "definition": "địa danh nổi tiếng", "example": "この橋は名所として知られている。", "topic": "Travel"},
-  {"id": "nf-183", "word": "歴史的 (れきしてき)", "definition": "lịch sử", "example": "歴史的な建物を見学した。", "topic": "Travel"},
-  {"id": "nf-184", "word": "見学 (けんがく)", "definition": "tham quan", "example": "工場見学をする。", "topic": "Travel"},
-  {"id": "nf-185", "word": "ガイド (ガイド)", "definition": "hướng dẫn viên", "example": "ガイドに案内してもらった。", "topic": "Travel"},
-  {"id": "nf-186", "word": "ツアー (ツアー)", "definition": "chuyến du lịch", "example": "ツアーに参加した。", "topic": "Travel"},
-  {"id": "nf-187", "word": "宿泊施設 (しゅくはくしせつ)", "definition": "cơ sở lưu trú", "example": "宿泊施設を予約する。", "topic": "Travel"},
-  {"id": "nf-188", "word": "交通 (こうつう)", "definition": "giao thông", "example": "交通が便利なところに住みたい。", "topic": "Travel"},
-  {"id": "nf-189", "word": "混雑 (こんざつ)", "definition": "tấp nập, đông đúc", "example": "朝は電車が混雑する。", "topic": "Travel"},
-  {"id": "nf-190", "word": "渋滞 (じゅうたい)", "definition": "tắc đường", "example": "渋滞に巻き込まれた。", "topic": "Travel"},
-  {"id": "nf-191", "word": "目的地 (もくてきち)", "definition": "điểm đến", "example": "目的地に着いた。", "topic": "Travel"},
-  {"id": "nf-192", "word": "出発 (しゅっぱつ)", "definition": "khởi hành", "example": "明日の朝出発する。", "topic": "Travel"},
-  {"id": "nf-193", "word": "到着 (とうちゃく)", "definition": "đến nơi", "example": "無事に到着した。", "topic": "Travel"},
-  {"id": "nf-194", "word": "遅れ (おくれ)", "definition": "trễ, muộn", "example": "電車が遅れた。", "topic": "Travel"},
-  {"id": "nf-195", "word": "乗り物 (のりもの)", "definition": "phương tiện giao thông", "example": "乗り物に酔う。", "topic": "Travel"},
-  {"id": "nf-196", "word": "タクシー (タクシー)", "definition": "xe taxi", "example": "タクシーを呼んだ。", "topic": "Travel"},
-  {"id": "nf-197", "word": "バス (バス)", "definition": "xe buýt", "example": "バスで市内を回る。", "topic": "Travel"},
-  {"id": "nf-198", "word": "地下鉄 (ちかてつ)", "definition": "tàu điện ngầm", "example": "地下鉄で移動する。", "topic": "Travel"},
-  {"id": "nf-199", "word": "新幹線 (しんかんせん)", "definition": "tàu siêu tốc Shinkansen", "example": "新幹線で大阪に行く。", "topic": "Travel"},
-  {"id": "nf-200", "word": "定期券 (ていきけん)", "definition": "vé tháng", "example": "定期券を買った。", "topic": "Travel"},
-  {"id": "nf-201", "word": "文化 (ぶんか)", "definition": "văn hóa", "example": "日本の文化に興味がある。", "topic": "Culture"},
-  {"id": "nf-202", "word": "伝統 (でんとう)", "definition": "truyền thống", "example": "伝統を守ることは大切だ。", "topic": "Culture"},
-  {"id": "nf-203", "word": "習慣 (しゅうかん)", "definition": "phong tục", "example": "日本の習慣を学ぶ。", "topic": "Culture"},
-  {"id": "nf-204", "word": "歴史 (れきし)", "definition": "lịch sử", "example": "この町には長い歴史がある。", "topic": "Culture"},
-  {"id": "nf-205", "word": "芸術 (げいじゅつ)", "definition": "nghệ thuật", "example": "芸術に興味がある。", "topic": "Culture"},
-  {"id": "nf-206", "word": "祝祭 (しゅくさい)", "definition": "lễ hội", "example": "祝祭に参加する。", "topic": "Culture"},
-  {"id": "nf-207", "word": "祭り (まつり)", "definition": "lễ hội", "example": "夏祭りに行った。", "topic": "Culture"},
-  {"id": "nf-208", "word": "行事 (ぎょうじ)", "definition": "sự kiện", "example": "学校の行事に参加する。", "topic": "Culture"},
-  {"id": "nf-209", "word": "儀式 (ぎしき)", "definition": "nghi lễ", "example": "結婚の儀式を行った。", "topic": "Culture"},
-  {"id": "nf-210", "word": "伝説 (でんせつ)", "definition": "huyền thoại", "example": "この山には伝説がある。", "topic": "Culture"},
-  {"id": "nf-211", "word": "風俗 (ふうぞく)", "definition": "phong tục tập quán", "example": "地方の風俗を紹介する。", "topic": "Culture"},
-  {"id": "nf-212", "word": "風情 (ふぜい)", "definition": "phong vị, ý thơ", "example": "この町には風情がある。", "topic": "Culture"},
-  {"id": "nf-213", "word": "情緒 (じょうちょ)", "definition": "tình cảm, tâm trạng", "example": "情緒豊かな景色だ。", "topic": "Culture"},
-  {"id": "nf-214", "word": "風景 (ふうけい)", "definition": "cảnh quan", "example": "美しい風景が広がっている。", "topic": "Culture"},
-  {"id": "nf-215", "word": "芸能 (げいのう)", "definition": "giải trí, showbiz", "example": "芸能界で働く。", "topic": "Culture"},
-  {"id": "nf-216", "word": "舞台 (ぶたい)", "definition": "sân khấu", "example": "舞台で演じる。", "topic": "Culture"},
-  {"id": "nf-217", "word": "美術 (びじゅつ)", "definition": "mỹ thuật", "example": "美術館に行った。", "topic": "Culture"},
-  {"id": "nf-218", "word": "音楽 (おんがく)", "definition": "âm nhạc", "example": "音楽を聴くのが好きだ。", "topic": "Culture"},
-  {"id": "nf-219", "word": "文学 (ぶんがく)", "definition": "văn học", "example": "彼は文学を研究している。", "topic": "Culture"},
-  {"id": "nf-220", "word": "演劇 (げんげき)", "definition": "kịch", "example": "演劇を観に行った。", "topic": "Culture"},
-  {"id": "nf-221", "word": "書道 (しょどう)", "definition": "thư pháp", "example": "書道を習っている。", "topic": "Culture"},
-  {"id": "nf-222", "word": "茶道 (さどう)", "definition": "trà đạo", "example": "茶道を学ぶ。", "topic": "Culture"},
-  {"id": "nf-223", "word": "華道 (かどう)", "definition": "hoa đạo", "example": "華道を習っている。", "topic": "Culture"},
-  {"id": "nf-224", "word": "武道 (ぶどう)", "definition": "võ đạo", "example": "武道を練習する。", "topic": "Culture"},
-  {"id": "nf-225", "word": "柔道 (じゅうどう)", "definition": "judo", "example": "柔道を習っている。", "topic": "Culture"},
-  {"id": "nf-226", "word": "剣道 (けんどう)", "definition": "kendo", "example": "剣道を練習する。", "topic": "Culture"},
-  {"id": "nf-227", "word": "相撲 (すもう)", "definition": "sumo", "example": "相撲を観に行った。", "topic": "Culture"},
-  {"id": "nf-228", "word": "空手 (からて)", "definition": "karate", "example": "空手を習っている。", "topic": "Culture"},
-  {"id": "nf-229", "word": "弓道 (きゅうどう)", "definition": "cung đạo", "example": "弓道を練習する。", "topic": "Culture"},
-  {"id": "nf-230", "word": "民俗 (みんぞく)", "definition": "dân gian", "example": "民俗芸能を見学した。", "topic": "Culture"},
-  {"id": "nf-231", "word": "伝承 (でんしょう)", "definition": "truyền thừa", "example": "伝承を守る。", "topic": "Culture"},
-  {"id": "nf-232", "word": "遺産 (いさん)", "definition": "di sản", "example": "世界遺産に登録された。", "topic": "Culture"},
-  {"id": "nf-233", "word": "国宝 (こくほう)", "definition": "quốc bảo", "example": "この寺院は国宝だ。", "topic": "Culture"},
-  {"id": "nf-234", "word": "博物館 (はくぶつかん)", "definition": "bảo tàng", "example": "博物館を訪れた。", "topic": "Culture"},
-  {"id": "nf-235", "word": "美術館 (びじゅつかん)", "definition": "phòng trưng bày mỹ thuật", "example": "美術館で絵画を見た。", "topic": "Culture"},
-  {"id": "nf-236", "word": "展示会 (てんじかい)", "definition": "triển lãm", "example": "展示会に参加した。", "topic": "Culture"},
-  {"id": "nf-237", "word": "見本市 (みほんまち)", "definition": "hội chợ triển lãm", "example": "見本市で新製品を展示する。", "topic": "Culture"},
-  {"id": "nf-238", "word": "開催 (かいさい)", "definition": "tổ chức", "example": "イベントを開催する。", "topic": "Culture"},
-  {"id": "nf-239", "word": "催し (もよおし)", "definition": "sự kiện", "example": "地区の催しに参加する。", "topic": "Culture"},
-  {"id": "nf-240", "word": "伝統的 (でんとうてき)", "definition": "truyền thống", "example": "伝統的な祭りを行った。", "topic": "Culture"},
-  {"id": "nf-241", "word": "近代的 (きんだいてき)", "definition": "hiện đại", "example": "近代的な建物が並ぶ。", "topic": "Culture"},
-  {"id": "nf-242", "word": "保守的 (ほしゅてき)", "definition": "bảo thủ", "example": "彼は保守的な考えを持っている。", "topic": "Culture"},
-  {"id": "nf-243", "word": "革新 (かくしん)", "definition": "cải cách, đổi mới", "example": "技術革新が進む。", "topic": "Culture"},
-  {"id": "nf-244", "word": "風潮 (ふうちょう)", "definition": "xu hướng", "example": "最近の風潮に疑問を感じる。", "topic": "Culture"},
-  {"id": "nf-245", "word": "傾向 (けいこう)", "definition": "xu hướng", "example": "最近の傾向として...。", "topic": "Culture"},
-  {"id": "nf-246", "word": "世の中 (よのなか)", "definition": "thế giới", "example": "世の中が変わった。", "topic": "Culture"},
-  {"id": "nf-247", "word": "社会 (しゃかい)", "definition": "xã hội", "example": "社会に貢献したい。", "topic": "Culture"},
-  {"id": "nf-248", "word": "現代 (げんだい)", "definition": "hiện đại", "example": "現代の若者の考え方を理解する。", "topic": "Culture"},
-  {"id": "nf-249", "word": "文明 (ぶんめい)", "definition": "văn minh", "example": "古代文明を研究する。", "topic": "Culture"},
-  {"id": "nf-250", "word": "遺物 (いぶつ)", "definition": "di vật", "example": "古代の遺物を発見した。", "topic": "Culture"},
-  {"id": "nf-251", "word": "病気 (びょうき)", "definition": "bệnh", "example": "病気にかかった。", "topic": "Health"},
-  {"id": "nf-252", "word": "治療 (ちりょう)", "definition": "điều trị", "example": "治療を受けた。", "topic": "Health"},
-  {"id": "nf-253", "word": "運動 (うんどう)", "definition": "tập thể dục", "example": "毎日運動する。", "topic": "Health"},
-  {"id": "nf-254", "word": "栄養 (えいよう)", "definition": "dinh dưỡng", "example": "栄養のある食事をする。", "topic": "Health"},
-  {"id": "nf-255", "word": "健康 (けんこう)", "definition": "sức khỏe", "example": "健康が一番大切だ。", "topic": "Health"},
-  {"id": "nf-256", "word": "病院 (びょういん)", "definition": "bệnh viện", "example": "病院に行った。", "topic": "Health"},
-  {"id": "nf-257", "word": "薬 (くすり)", "definition": "thuốc", "example": "薬を飲んだ。", "topic": "Health"},
-  {"id": "nf-258", "word": "手術 (しゅじゅつ)", "definition": "phẫu thuật", "example": "手術を受けた。", "topic": "Health"},
-  {"id": "nf-259", "word": "診察 (しんさつ)", "definition": "khám bệnh", "example": "医者に診察してもらった。", "topic": "Health"},
-  {"id": "nf-260", "word": "検査 (けんさ)", "definition": "kiểm tra y tế", "example": "健康検査を受けた。", "topic": "Health"},
-  {"id": "nf-261", "word": "症状 (しょうじょう)", "definition": "triệu chứng", "example": "症状が悪化した。", "topic": "Health"},
-  {"id": "nf-262", "word": "診断 (しんだん)", "definition": "chẩn đoán", "example": "病気を診断された。", "topic": "Health"},
-  {"id": "nf-263", "word": "感染 (かんせん)", "definition": "nhiễm bệnh", "example": "ウイルスに感染した。", "topic": "Health"},
-  {"id": "nf-264", "word": "伝染病 (でんせんびょう)", "definition": "bệnh truyền nhiễm", "example": "伝染病が流行した。", "topic": "Health"},
-  {"id": "nf-265", "word": "予防 (よぼう)", "definition": "phòng ngừa", "example": "病気を予防する。", "topic": "Health"},
-  {"id": "nf-266", "word": "免疫 (めんえき)", "definition": "miễn dịch", "example": "免疫を高める。", "topic": "Health"},
-  {"id": "nf-267", "word": "アレルギー (アレルギー)", "definition": "dị ứng", "example": "花粉アレルギーがある。", "topic": "Health"},
-  {"id": "nf-268", "word": "慢性 (まんせい)", "definition": "mạn tính", "example": "慢性の病気に罹った。", "topic": "Health"},
-  {"id": "nf-269", "word": "急性 (きゅうせい)", "definition": "cấp tính", "example": "急性の病気にかかった。", "topic": "Health"},
-  {"id": "nf-270", "word": "後遺症 (こういしょう)", "definition": "di chứng", "example": "事故の後遺症が残った。", "topic": "Health"},
-  {"id": "nf-271", "word": "副作用 (ふくよう)", "definition": "tác dụng phụ", "example": "薬の副作用が出た。", "topic": "Health"},
-  {"id": "nf-272", "word": "処方箋 (しょほうせん)", "definition": "đơn thuốc", "example": "処方箋をもらった。", "topic": "Health"},
-  {"id": "nf-273", "word": "調子 (ちょうし)", "definition": "tình trạng sức khỏe", "example": "今日の調子はいかがですか。", "topic": "Health"},
-  {"id": "nf-274", "word": "体力 (たいりょく)", "definition": "sức khỏe thể chất", "example": "体力をつけるために運動する。", "topic": "Health"},
-  {"id": "nf-275", "word": "疲労 (ひろう)", "definition": "mệt mỏi", "example": "疲労がたまった。", "topic": "Health"},
-  {"id": "nf-276", "word": "ストレス (ストレス)", "definition": "căng thẳng", "example": "ストレスを解消する。", "topic": "Health"},
-  {"id": "nf-277", "word": "リラックス (リラックス)", "definition": "thư giãn", "example": "リラックスするために温泉に行く。", "topic": "Health"},
-  {"id": "nf-278", "word": "睡眠 (すいみん)", "definition": "giấc ngủ", "example": "睡眠を十分に取る。", "topic": "Health"},
-  {"id": "nf-279", "word": "食欲 (しょくよく)", "definition": "sự thèm ăn", "example": "食欲がない。", "topic": "Health"},
-  {"id": "nf-280", "word": "消化 (しょうか)", "definition": "tiêu hóa", "example": "消化が悪い。", "topic": "Health"},
-  {"id": "nf-281", "word": "血圧 (けつあつ)", "definition": "huyết áp", "example": "血圧を測った。", "topic": "Health"},
-  {"id": "nf-282", "word": "体温 (たいおん)", "definition": "nhiệt độ cơ thể", "example": "体温を測った。", "topic": "Health"},
-  {"id": "nf-283", "word": "脈拍 (みゃくはく)", "definition": "mạch đập", "example": "脈拍が速い。", "topic": "Health"},
-  {"id": "nf-284", "word": "リハビリ (リハビリ)", "definition": "phục hồi chức năng", "example": "リハビリを続ける。", "topic": "Health"},
-  {"id": "nf-285", "word": "通院 (つういん)", "definition": "đi khám bệnh định kỳ", "example": "毎週通院している。", "topic": "Health"},
-  {"id": "nf-286", "word": "入院 (にゅういん)", "definition": "nhập viện", "example": "病気で入院した。", "topic": "Health"},
-  {"id": "nf-287", "word": "退院 (たいいん)", "definition": "xuất viện", "example": "来週退院する予定だ。", "topic": "Health"},
-  {"id": "nf-288", "word": "救急車 (きゅうきゅうしゃ)", "definition": "xe cấp cứu", "example": "救急車を呼んだ。", "topic": "Health"},
-  {"id": "nf-289", "word": "救急 (きゅうきゅう)", "definition": "cấp cứu", "example": "救急処置を受けた。", "topic": "Health"},
-  {"id": "nf-290", "word": "心臓 (しんぞう)", "definition": "trái tim", "example": "心臓が弱い。", "topic": "Health"},
-  {"id": "nf-291", "word": "肺 (はい)", "definition": "phổi", "example": "肺に問題がある。", "topic": "Health"},
-  {"id": "nf-292", "word": "胃 (い)", "definition": "dạ dày", "example": "胃が痛い。", "topic": "Health"},
-  {"id": "nf-293", "word": "肝臓 (かんぞう)", "definition": "gan", "example": "肝臓に気をつける。", "topic": "Health"},
-  {"id": "nf-294", "word": "腎臓 (じんぞう)", "definition": "thận", "example": "腎臓の病気に罹った。", "topic": "Health"},
-  {"id": "nf-295", "word": "骨 (ほね)", "definition": "xương", "example": "骨を折った。", "topic": "Health"},
-  {"id": "nf-296", "word": "関節 (かんせつ)", "definition": "khớp", "example": "関節が痛い。", "topic": "Health"},
-  {"id": "nf-297", "word": "筋肉 (きんにく)", "definition": "cơ bắp", "example": "筋肉を鍛える。", "topic": "Health"},
-  {"id": "nf-298", "word": "神経 (しんけい)", "definition": "dây thần kinh", "example": "神経が痛む。", "topic": "Health"},
-  {"id": "nf-299", "word": "免疫 (めんえき)", "definition": "hệ miễn dịch", "example": "免疫が低下した。", "topic": "Health"},
-  {"id": "nf-300", "word": "衛生 (えいせい)", "definition": "vệ sinh", "example": "衛生に気をつける。", "topic": "Health"},
-  {"id": "nf-301", "word": "データ (データ)", "definition": "dữ liệu", "example": "データを分析する。", "topic": "Technology"},
-  {"id": "nf-302", "word": "システム (システム)", "definition": "hệ thống", "example": "新しいシステムを開発した。", "topic": "Technology"},
-  {"id": "nf-303", "word": "機械 (きかい)", "definition": "máy móc", "example": "機械を操作する。", "topic": "Technology"},
-  {"id": "nf-304", "word": "開発 (かいはつ)", "definition": "phát triển", "example": "新技術を開発する。", "topic": "Technology"},
-  {"id": "nf-305", "word": "技術 (ぎじゅつ)", "definition": "công nghệ", "example": "技術が進歩している。", "topic": "Technology"},
-  {"id": "nf-306", "word": "コンピューター (コンピューター)", "definition": "máy tính", "example": "コンピューターで作業する。", "topic": "Technology"},
-  {"id": "nf-307", "word": "インターネット (インターネット)", "definition": "mạng internet", "example": "インターネットで情報を調べる。", "topic": "Technology"},
-  {"id": "nf-308", "word": "ソフトウェア (ソフトウェア)", "definition": "phần mềm", "example": "新しいソフトウェアをインストールした。", "topic": "Technology"},
-  {"id": "nf-309", "word": "ハードウェア (ハードウェア)", "definition": "phần cứng", "example": "ハードウェアを更新した。", "topic": "Technology"},
-  {"id": "nf-310", "word": "プログラミング (プログラミング)", "definition": "lập trình", "example": "プログラミングを学んでいる。", "topic": "Technology"},
-  {"id": "nf-311", "word": "ネットワーク (ネットワーク)", "definition": "mạng lưới", "example": "ネットワークを構築する。", "topic": "Technology"},
-  {"id": "nf-312", "word": "サーバー (サーバー)", "definition": "máy chủ", "example": "サーバーがダウンした。", "topic": "Technology"},
-  {"id": "nf-313", "word": "クラウド (クラウド)", "definition": "đám mây (cloud)", "example": "クラウドにデータを保存する。", "topic": "Technology"},
-  {"id": "nf-314", "word": "セキュリティ (セキュリティ)", "definition": "an ninh, bảo mật", "example": "セキュリティを強化する。", "topic": "Technology"},
-  {"id": "nf-315", "word": "ウイルス (ウイルス)", "definition": "vi rút", "example": "コンピウーターにウイルスが入った。", "topic": "Technology"},
-  {"id": "nf-316", "word": "バグ (バグ)", "definition": "lỗi phần mềm", "example": "ソフトウェアにバグがある。", "topic": "Technology"},
-  {"id": "nf-317", "word": "アップデート (アップデート)", "definition": "cập nhật", "example": "アプリをアップデートした。", "topic": "Technology"},
-  {"id": "nf-318", "word": "ダウンロード (ダウンロード)", "definition": "tải xuống", "example": "ファイルをダウンロードした。", "topic": "Technology"},
-  {"id": "nf-319", "word": "インストール (インストール)", "definition": "cài đặt", "example": "新しいアプリをインストールした。", "topic": "Technology"},
-  {"id": "nf-320", "word": "パソコン (パソコン)", "definition": "máy tính cá nhân", "example": "パソコンで仕事をする。", "topic": "Technology"},
-  {"id": "nf-321", "word": "スマートフォン (スマートフォン)", "definition": "điện thoại thông minh", "example": "スマートフォンで連絡する。", "topic": "Technology"},
-  {"id": "nf-322", "word": "タブレット (タブレット)", "definition": "máy tính bảng", "example": "タブレットで資料を見る。", "topic": "Technology"},
-  {"id": "nf-323", "word": "電子 (でんし)", "definition": "điện tử", "example": "電子機器を使う。", "topic": "Technology"},
-  {"id": "nf-324", "word": "ロボット (ロボット)", "definition": "người máy", "example": "ロボットが工場で働く。", "topic": "Technology"},
-  {"id": "nf-325", "word": "AI (エーアイ)", "definition": "trí tuệ nhân tạo", "example": "AI技術を活用する。", "topic": "Technology"},
-  {"id": "nf-326", "word": "自動化 (じどうか)", "definition": "tự động hóa", "example": "工程を自動化する。", "topic": "Technology"},
-  {"id": "nf-327", "word": "機械 (きかい)", "definition": "máy móc", "example": "機械を修理する。", "topic": "Technology"},
-  {"id": "nf-328", "word": "装置 (そうち)", "definition": "thiết bị", "example": "新しい装置を導入した。", "topic": "Technology"},
-  {"id": "nf-329", "word": "電気 (でんき)", "definition": "điện", "example": "電気が止まった。", "topic": "Technology"},
-  {"id": "nf-330", "word": "信号 (しんごう)", "definition": "tín hiệu", "example": "信号が変わった。", "topic": "Technology"},
-  {"id": "nf-331", "word": "通信 (つうしん)", "definition": "thông tin liên lạc", "example": "通信が途切れた。", "topic": "Technology"},
-  {"id": "nf-332", "word": "放送 (ほうそう)", "definition": "phát sóng", "example": "テレビで放送された。", "topic": "Technology"},
-  {"id": "nf-333", "word": "受信 (じゅしん)", "definition": "nhận tín hiệu", "example": "ラジオの受信が悪い。", "topic": "Technology"},
-  {"id": "nf-334", "word": "送信 (そうしん)", "definition": "gửi tín hiệu", "example": "データを送信する。", "topic": "Technology"},
-  {"id": "nf-335", "word": "解析 (かいせき)", "definition": "phân tích", "example": "データを解析する。", "topic": "Technology"},
-  {"id": "nf-336", "word": "処理 (しょり)", "definition": "xử lý", "example": "情報を処理する。", "topic": "Technology"},
-  {"id": "nf-337", "word": "蓄積 (ちくせき)", "definition": "tích lũy", "example": "データを蓄積する。", "topic": "Technology"},
-  {"id": "nf-338", "word": "運用 (うんよう)", "definition": "vận hành", "example": "システムを運用する。", "topic": "Technology"},
-  {"id": "nf-339", "word": "保守 (ほしゅ)", "definition": "bảo trì", "example": "機械の保守をする。", "topic": "Technology"},
-  {"id": "nf-340", "word": "修理 (しゅうり)", "definition": "sửa chữa", "example": "パソコンを修理した。", "topic": "Technology"},
-  {"id": "nf-341", "word": "故障 (こしょう)", "definition": "hỏng hóc", "example": "機械が故障した。", "topic": "Technology"},
-  {"id": "nf-342", "word": "復旧 (ふっきゅう)", "definition": "khôi phục", "example": "システムが復旧した。", "topic": "Technology"},
-  {"id": "nf-343", "word": "更新 (こうしん)", "definition": "cập nhật", "example": "ソフトウェアを更新する。", "topic": "Technology"},
-  {"id": "nf-344", "word": "バージョン (バージョン)", "definition": "phiên bản", "example": "新しいバージョンをリリースした。", "topic": "Technology"},
-  {"id": "nf-345", "word": "互換性 (ごかんせい)", "definition": "tính tương thích", "example": "互換性を確保する。", "topic": "Technology"},
-  {"id": "nf-346", "word": "省エネ (省エネ)", "definition": "tiết kiệm năng lượng", "example": "省エネ家電を買った。", "topic": "Technology"},
-  {"id": "nf-347", "word": "再生可能 (さいせいかのう)", "definition": "tái tạo", "example": "再生可能エネルギーを使う。", "topic": "Technology"},
-  {"id": "nf-348", "word": "デジタル (デジ털)", "definition": "kỹ thuật số", "example": "デジタル化が進む。", "topic": "Technology"},
-  {"id": "nf-349", "word": "アナログ (アナログ)", "definition": "tương tự", "example": "アナログな方式を使っている。", "topic": "Technology"},
-  {"id": "nf-350", "word": "クラウド (クラウド)", "definition": "điện toán đám mây", "example": "クラウドサービスを利用する。", "topic": "Technology"},
-  {"id": "nf-351", "word": "怒り (いかり)", "definition": "sự tức giận", "example": "彼の怒りを買った。", "topic": "Emotions"},
-  {"id": "nf-352", "word": "喜び (よろこび)", "definition": "sự vui mừng", "example": "成功の喜びを分かち合う。", "topic": "Emotions"},
-  {"id": "nf-353", "word": "悲しみ (かなしみ)", "definition": "sự buồn bã", "example": "悲しみを乗り越えた。", "topic": "Emotions"},
-  {"id": "nf-354", "word": "恐怖 (きょうふ)", "definition": "nỗi sợ hãi", "example": "恐怖を感じた。", "topic": "Emotions"},
-  {"id": "nf-355", "word": "安心 (あんしん)", "definition": "yên tâm", "example": "試験に受かって安心した。", "topic": "Emotions"},
-  {"id": "nf-356", "word": "不安 (ふあん)", "definition": "lo lắng, bất an", "example": "将来が不安だ。", "topic": "Emotions"},
-  {"id": "nf-357", "word": "緊張 (きんちょう)", "definition": "căng thẳng", "example": "試験前は緊張する。", "topic": "Emotions"},
-  {"id": "nf-358", "word": "リラックス (リラックス)", "definition": "thư giãn", "example": "リラックスして過ごす。", "topic": "Emotions"},
-  {"id": "nf-359", "word": "感謝 (かんしゃ)", "definition": "lòng biết ơn", "example": "助けてくれて感謝する。", "topic": "Emotions"},
-  {"id": "nf-360", "word": "悔しい (くやしい)", "definition": "tiếc nuối", "example": "負けが悔しい。", "topic": "Emotions"},
-  {"id": "nf-361", "word": "照れ (てれ)", "definition": "sự ngại ngùng", "example": "褒められて照れた。", "topic": "Emotions"},
-  {"id": "nf-362", "word": "恥ずかしい (はずかしい)", "definition": "xấu hổ", "example": "失敗して恥ずかしい。", "topic": "Emotions"},
-  {"id": "nf-363", "word": "寂しい (さびしい)", "definition": "cô đơn", "example": "一人暮らしは寂しい。", "topic": "Emotions"},
-  {"id": "nf-364", "word": "懐かしい (なつかしい)", "definition": "đậm chất xưa cũ", "example": "懐かしい景色だ。", "topic": "Emotions"},
-  {"id": "nf-365", "word": "嬉しい (うれしい)", "definition": "vui vẻ", "example": "プレゼントをもらって嬉しい。", "topic": "Emotions"},
-  {"id": "nf-366", "word": "悲しい (かなしい)", "definition": "buồn bã", "example": "映画を見て悲しくなった。", "topic": "Emotions"},
-  {"id": "nf-367", "word": "楽しい (たのしい)", "definition": "vui vẻ, thú vị", "example": "旅行は楽しい。", "topic": "Emotions"},
-  {"id": "nf-368", "word": "つまらない (つまらない)", "definition": "buồn chán", "example": "つまらない映画だった。", "topic": "Emotions"},
-  {"id": "nf-369", "word": "興奮 (こうふん)", "definition": "sự kích thích, hào hứng", "example": "興奮して眠れなかった。", "topic": "Emotions"},
-  {"id": "nf-370", "word": "落胆 (らくたん)", "definition": "sự thất vọng", "example": "結果に落胆した。", "topic": "Emotions"},
-  {"id": "nf-371", "word": "期待 (きたい)", "definition": "sự kỳ vọng", "example": "新しいプロジェクトに期待している。", "topic": "Emotions"},
-  {"id": "nf-372", "word": "失望 (しつぼう)", "definition": "sự thất vọng", "example": "結果に失望した。", "topic": "Emotions"},
-  {"id": "nf-373", "word": "信頼 (しんらい)", "definition": "sự tin tưởng", "example": "彼を信頼している。", "topic": "Emotions"},
-  {"id": "nf-374", "word": "疑い (うたがい)", "definition": "nghi ngờ", "example": "疑いを持たれた。", "topic": "Emotions"},
-  {"id": "nf-375", "word": "嫉妒 (しっと)", "definition": "ghen tị", "example": "彼の成功を嫉妒した。", "topic": "Emotions"},
-  {"id": "nf-376", "word": "同情 (どうじょう)", "definition": "sự thông cảm", "example": "彼に同情する。", "topic": "Emotions"},
-  {"id": "nf-377", "word": "感動 (かんどう)", "definition": "sự xúc động", "example": "映画に感動した。", "topic": "Emotions"},
-  {"id": "nf-378", "word": "衝動 (しょうどう)", "definition": "sự thôi thúc", "example": "衝動的に買い物をした。", "topic": "Emotions"},
-  {"id": "nf-379", "word": "情熱 (じょうねつ)", "definition": "nhiệt huyết", "example": "仕事に情熱を注ぐ。", "topic": "Emotions"},
-  {"id": "nf-380", "word": "無気力 (むきりょく)", "definition": "thiếu sức sống", "example": "彼は無気力な様子だ。", "topic": "Emotions"},
-  {"id": "nf-381", "word": "愛情 (あいじょう)", "definition": "tình yêu", "example": "子供への愛情が深い。", "topic": "Emotions"},
-  {"id": "nf-382", "word": "友情 (ゆうじょう)", "definition": "tình bạn", "example": "友情を大切にする。", "topic": "Emotions"},
-  {"id": "nf-383", "word": "親切 (しんせつ)", "definition": "tử tế, tốt bụng", "example": "彼はとても親切だ。", "topic": "Emotions"},
-  {"id": "nf-384", "word": "冷酷 (れいこく)", "definition": "tàn nhẫn", "example": "彼は冷酷な人だ。", "topic": "Emotions"},
-  {"id": "nf-385", "word": "優しい (やさしい)", "definition": "hiền lành", "example": "彼女は優しい人だ。", "topic": "Emotions"},
-  {"id": "き", "word": "厳しい (きびしい)", "definition": "nghiêm khắc", "example": "先生は厳しい人だ。", "topic": "Emotions"},
-  {"id": "nf-387", "word": "宽容 (かんよう)", "definition": "khoan dung", "example": "彼は宽容な人だ。", "topic": "Emotions"},
-  {"id": "nf-388", "word": "謙虚 (けんきょ)", "definition": "khiêm tốn", "example": "謙虚な態度をとりたい。", "topic": "Emotions"},
-  {"id": "nf-389", "word": "自慢 (じまん)", "definition": "khoe khoang", "example": "彼は自慢が好きだ。", "topic": "Emotions"},
-  {"id": "nf-390", "word": "虚栄心 (きょえいしん)", "definition": "tính phù phiếm", "example": "虚栄心が強い。", "topic": "Emotions"},
-  {"id": "nf-391", "word": "責任感 (せきにんかん)", "definition": "tính trách nhiệm", "example": "責任感が強い。", "topic": "Emotions"},
-  {"id": "nf-392", "word": "素直 (すなお)", "definition": "thẳng thắn", "example": "素直な子供だ。", "topic": "Emotions"},
-  {"id": "nf-393", "word": "素朴 (そぼく)", "definition": "giản dị", "example": "素朴な性格だ。", "topic": "Emotions"},
-  {"id": "nf-394", "word": "気質 (きしつ)", "definition": "tính khí", "example": "芸術家の気質がある。", "topic": "Emotions"},
-  {"id": "nf-395", "word": "性格 (せいかく)", "definition": "tính cách", "example": "彼女の性格は明るい。", "topic": "Emotions"},
-  {"id": "nf-396", "word": "気性 (きしょう)", "definition": "tính khí", "example": "気性が荒い。", "topic": "Emotions"},
-  {"id": "nf-397", "word": "我慢 (がまん)", "definition": "kiên nhẫn, chịu đựng", "example": "我慢して待った。", "topic": "Emotions"},
-  {"id": "nf-398", "word": "辛抱 (しんぼう)", "definition": "kiên nhẫn", "example": "辛抱強く待った。", "topic": "Emotions"},
-  {"id": "nf-399", "word": "忍耐 (にんたい)", "definition": "sự kiên nhẫn", "example": "忍耐強く仕事をする。", "topic": "Emotions"},
-  {"id": "nf-400", "word": "感情 (かんじょう)", "definition": "cảm xúc", "example": "感情を抑える。", "topic": "Emotions"},
-  {"id": "nf-401", "word": "天気 (てんき)", "definition": "thời tiết", "example": "明日の天気は晴れです。", "topic": "Nature"},
-  {"id": "nf-402", "word": "地震 (じしん)", "definition": "động đất", "example": "大きな地震があった。", "topic": "Nature"},
-  {"id": "nf-403", "word": "汚染 (おせん)", "definition": "ô nhiễm", "example": "河川が汚染している。", "topic": "Nature"},
-  {"id": "nf-404", "word": "資源 (しげん)", "definition": "tài nguyên", "example": "天然資源を大切にする。", "topic": "Nature"},
-  {"id": "nf-405", "word": "環境 (かんきょう)", "definition": "môi trường", "example": "環境を守ろう。", "topic": "Nature"},
-  {"id": "nf-406", "word": "自然 (しぜん)", "definition": "thiên nhiên", "example": "自然の中で過ごす。", "topic": "Nature"},
-  {"id": "nf-407", "word": "気候 (きこう)", "definition": "khí hậu", "example": "日本は気候がいい。", "topic": "Nature"},
-  {"id": "nf-408", "word": "季節 (きせつ)", "definition": "mùa", "example": "四季の季節がある。", "topic": "Nature"},
-  {"id": "nf-409", "word": "春 (はる)", "definition": "mùa xuân", "example": "春になると桜が咲く。", "topic": "Nature"},
-  {"id": "nf-410", "word": "夏 (なつ)", "definition": "mùa hè", "example": "夏は暑い。", "topic": "Nature"},
-  {"id": "nf-411", "word": "秋 (あき)", "definition": "mùa thu", "example": "秋は紅葉が美しい。", "topic": "Nature"},
-  {"id": "nf-412", "word": "冬 (ふゆ)", "definition": "mùa đông", "example": "冬は雪が降る。", "topic": "Nature"},
-  {"id": "nf-413", "word": "台風 (たいふう)", "definition": "bão", "example": "台風が来ている。", "topic": "Nature"},
-  {"id": "nf-414", "word": "豪雨 (ごうう)", "definition": "mưa lớn", "example": "豪雨で川が増水した。", "topic": "Nature"},
-  {"id": "nf-415", "word": "旱害 (かんがい)", "definition": "hạn hán", "example": "旱害が続いている。", "topic": "Nature"},
-  {"id": "nf-416", "word": "水害 (すいがい)", "definition": "lũ lụt", "example": "水害で家が流れた。", "topic": "Nature"},
-  {"id": "nf-417", "word": "火災 (かさい)", "definition": "hỏa hoạn", "example": "火災が起きた。", "topic": "Nature"},
-  {"id": "nf-418", "word": "噴火 (ふんか)", "definition": "phun trào", "example": "火山が噴火した。", "topic": "Nature"},
-  {"id": "nf-419", "word": "火山 (かざん)", "definition": "núi lửa", "example": "火山が噴火する。", "topic": "Nature"},
-  {"id": "nf-420", "word": "山脈 (さんみゃく)", "definition": "dãy núi", "example": "山脈が連なっている。", "topic": "Nature"},
-  {"id": "nf-421", "word": "高原 (こうげん)", "definition": "cao nguyên", "example": "高原でバーベキューをする。", "topic": "Nature"},
-  {"id": "nf-422", "word": "平原 (へいげん)", "definition": "đồng bằng", "example": "広い平原が広がっている。", "topic": "Nature"},
-  {"id": "nf-423", "word": "森林 (しんりん)", "definition": "rừng", "example": "森林を保護する。", "topic": "Nature"},
-  {"id": "nf-424", "word": "植林 (しょくりん)", "definition": "trồng rừng", "example": "植林活動に参加する。", "topic": "Nature"},
-  {"id": "nf-425", "word": "伐採 (ばっさい)", "definition": "khai thác gỗ", "example": "森林の伐採が進む。", "topic": "Nature"},
-  {"id": "nf-426", "word": "砂漠 (さばく)", "definition": "sa mạc", "example": "砂漠が広がっている。", "topic": "Nature"},
-  {"id": "nf-427", "word": "湖 (みずうみ)", "definition": "hồ", "example": "湖で魚釣りをした。", "topic": "Nature"},
-  {"id": "nf-428", "word": "川 (かわ)", "definition": "sông", "example": "川で泳ぐ。", "topic": "Nature"},
-  {"id": "nf-429", "word": "海 (うみ)", "definition": "biển", "example": "海で泳ぐ。", "topic": "Nature"},
-  {"id": "nf-430", "word": "島 (しま)", "definition": "đảo", "example": "島に住んでいる。", "topic": "Nature"},
-  {"id": "nf-431", "word": "海岸 (かいがん)", "definition": "bờ biển", "example": "海岸を歩く。", "topic": "Nature"},
-  {"id": "nf-432", "word": "砂浜 (すなはま)", "definition": "bãi cát", "example": "砂浜で遊ぶ。", "topic": "Nature"},
-  {"id": "nf-433", "word": "波 (なみ)", "definition": "sóng", "example": "波が高くなった。", "topic": "Nature"},
-  {"id": "nf-434", "word": "潮 (しお)", "definition": "thủy triều", "example": "潮が満ちる。", "topic": "Nature"},
-  {"id": "nf-435", "word": "花 (はな)", "definition": "hoa", "example": "花が咲いている。", "topic": "Nature"},
-  {"id": "nf-436", "word": "木 (き)", "definition": "cây", "example": "木を植える。", "topic": "Nature"},
-  {"id": "nf-437", "word": "草 (くさ)", "definition": "cỏ", "example": "草を刈る。", "topic": "Nature"},
-  {"id": "nf-438", "word": "葉 (は)", "definition": "lá", "example": "木の葉が落ちる。", "topic": "Nature"},
-  {"id": "nf-439", "word": "実 (み)", "definition": "quả", "example": "木に実がなった。", "topic": "Nature"},
-  {"id": "nf-440", "word": "根 (ね)", "definition": "rễ", "example": "木の根が深い。", "topic": "Nature"},
-  {"id": "nf-441", "word": "動物 (どうぶつ)", "definition": "động vật", "example": "動物園で動物を見る。", "topic": "Nature"},
-  {"id": "nf-442", "word": "植物 (しょくぶつ)", "definition": "thực vật", "example": "植物を育てる。", "topic": "Nature"},
-  {"id": "nf-443", "word": "鳥 (とり)", "definition": "chim", "example": "鳥が空を飛ぶ。", "topic": "Nature"},
-  {"id": "nf-444", "word": "魚 (さかな)", "definition": "cá", "example": "川で魚を釣る。", "topic": "Nature"},
-  {"id": "nf-445", "word": "虫 (むし)", "definition": "côn trùng", "example": "虫の声が聞こえる。", "topic": "Nature"},
-  {"id": "nf-446", "word": "空 (そら)", "definition": "bầu trời", "example": "空が青い。", "topic": "Nature"},
-  {"id": "nf-447", "word": "雲 (くも)", "definition": "mây", "example": "雲が厚い。", "topic": "Nature"},
-  {"id": "nf-448", "word": "雨 (あめ)", "definition": "mưa", "example": "雨が降っている。", "topic": "Nature"},
-  {"id": "nf-449", "word": "雪 (ゆき)", "definition": "tuyết", "example": "雪が降っている。", "topic": "Nature"},
-  {"id": "nf-450", "word": "風 (かぜ)", "definition": "gió", "example": "風が強い。", "topic": "Nature"},
-  {"id": "nf-451", "word": "法律 (ほうりつ)", "definition": "pháp luật", "example": "法律を守る。", "topic": "Government"},
-  {"id": "nf-452", "word": "選挙 (せんきょ)", "definition": "bầu cử", "example": "選挙で議員を選ぶ。", "topic": "Government"},
-  {"id": "nf-453", "word": "裁判 (さいばん)", "definition": "phiên tòa", "example": "裁判を受けた。", "topic": "Government"},
-  {"id": "nf-454", "word": "税金 (ぜいきん)", "definition": "thuế", "example": "税金を納める。", "topic": "Government"},
-  {"id": "nf-455", "word": "政治 (せいじ)", "definition": "chính trị", "example": "政治に関心がある。", "topic": "Government"},
-  {"id": "nf-456", "word": "政府 (せいふ)", "definition": "chính phủ", "example": "政府が新しい政策を発表した。", "topic": "Government"},
-  {"id": "nf-457", "word": "国会 (こっかい)", "definition": "Quốc hội", "example": "国会で法案が審議された。", "topic": "Government"},
-  {"id": "nf-458", "word": "議会 (ぎかい)", "definition": "Quốc hội, Nghị viện", "example": "議会で討論が行われた。", "topic": "Government"},
-  {"id": "nf-459", "word": "議員 (ぎいん)", "definition": "nghị sĩ", "example": "議員に質問する。", "topic": "Government"},
-  {"id": "nf-460", "word": "首相 (しゅしょう)", "definition": "Thủ tướng", "example": "首相が会見を開いた。", "topic": "Government"},
-  {"id": "nf-461", "word": "大臣 (だいじん)", "definition": "Bộ trưởng", "example": "外務大臣が発言した。", "topic": "Government"},
-  {"id": "nf-462", "word": "官僚 (かんりょう)", "definition": "quan chức", "example": "官僚が政策を実行する。", "topic": "Government"},
-  {"id": "nf-463", "word": "公務員 (こうむいん)", "definition": "công chức", "example": "公務員として働く。", "topic": "Government"},
-  {"id": "nf-464", "word": "条例 (じょうれい)", "definition": "điều lệ", "example": "地方の条例を遵守する。", "topic": "Government"},
-  {"id": "nf-465", "word": "規制 (きせい)", "definition": "quy định", "example": "排ガス規制を強化する。", "topic": "Government"},
-  {"id": "nf-466", "word": "法令 (ほうれい)", "definition": "pháp lệnh", "example": "法令に従う。", "topic": "Government"},
-  {"id": "nf-467", "word": "違反 (いはん)", "definition": "vi phạm", "example": "交通規則に違反した。", "topic": "Government"},
-  {"id": "nf-468", "word": "罰則 (ばっそく)", "definition": "hình phạt", "example": "罰則を設ける。", "topic": "Government"},
-  {"id": "nf-469", "word": "刑罰 (けいばつ)", "definition": "hình phạt", "example": "刑罰を受けた。", "topic": "Government"},
-  {"id": "nf-470", "word": "逮捕 (たいほ)", "definition": "bắt giữ", "example": "容疑者が逮捕された。", "topic": "Government"},
-  {"id": "nf-471", "word": "起訴 (きそ)", "definition": "truy tố", "example": "検察官が起訴した。", "topic": "Government"},
-  {"id": "nf-472", "word": "判決 (はんけつ)", "definition": "phán quyết", "example": "判決が下された。", "topic": "Government"},
-  {"id": "nf-473", "word": "有罪 (ゆうざい)", "definition": "có tội", "example": "有罪判決を受けた。", "topic": "Government"},
-  {"id": "nf-474", "word": "無罪 (むざい)", "definition": "vô tội", "example": "無罪判決を受けた。", "topic": "Government"},
-  {"id": "nf-475", "word": "弁護 (べんご)", "definition": "bào chữa", "example": "弁護士に弁護を依頼した。", "topic": "Government"},
-  {"id": "nf-476", "word": "弁護士 (べんごし)", "definition": "luật sư", "example": "弁護士に相談する。", "topic": "Government"},
-  {"id": "nf-477", "word": "検察 (けんさつ)", "definition": "kiểm sát", "example": "検察が捜査する。", "topic": "Government"},
-  {"id": "nf-478", "word": "警察 (けいさつ)", "definition": "cảnh sát", "example": "警察に通報した。", "topic": "Government"},
-  {"id": "nf-479", "word": "捜査 (そうさ)", "definition": "điều tra", "example": "警察が捜査を行った。", "topic": "Government"},
-  {"id": "nf-480", "word": "容疑者 (ようぎしゃ)", "definition": "nghi phạm", "example": "容疑者が逮捕された。", "topic": "Government"},
-  {"id": "nf-481", "word": "証人 (しょうにん)", "definition": "nhân chứng", "example": "証人として出廷した。", "topic": "Government"},
-  {"id": "nf-482", "word": "裁判所 (さいばんしょ)", "definition": "tòa án", "example": "裁判所に行く。", "topic": "Government"},
-  {"id": "nf-483", "word": "法廷 (ほうてい)", "definition": "phiên tòa", "example": "法廷で審理が行われる。", "topic": "Government"},
-  {"id": "nf-484", "word": "契約書 (けいやくしょ)", "definition": "hợp đồng", "example": "契約書に署名する。", "topic": "Government"},
-  {"id": "nf-485", "word": "所有権 (しょゆうけん)", "definition": "quyền sở hữu", "example": "土地の所有権を主張する。", "topic": "Government"},
-  {"id": "nf-486", "word": "特権 (とっけん)", "definition": "đặc quyền", "example": "特権を享受する。", "topic": "Government"},
-  {"id": "nf-487", "word": "義務 (ぎむ)", "definition": "nghĩa vụ", "example": "納税は義務だ。", "topic": "Government"},
-  {"id": "nf-488", "word": "権利 (けんり)", "definition": "quyền lợi", "example": "人間の権利を守る。", "topic": "Government"},
-  {"id": "nf-489", "word": "民主主義 (みんしゅしゅぎ)", "definition": "dân chủ", "example": "民主主義を守る。", "topic": "Government"},
-  {"id": "nf-490", "word": "自由 (じゆう)", "definition": "tự do", "example": "自由を求める。", "topic": "Government"},
-  {"id": "nf-491", "word": "平等 (びょうどう)", "definition": "bình đẳng", "example": "平等な権利を求める。", "topic": "Government"},
-  {"id": "nf-492", "word": "公正 (こうせい)", "definition": "công bằng", "example": "公正な裁判を望む。", "topic": "Government"},
-  {"id": "nf-493", "word": "中立 (ちゅうりつ)", "definition": "trung lập", "example": "中立を保つ。", "topic": "Government"},
-  {"id": "nf-494", "word": "外交 (がいこう)", "definition": "ngoại giao", "example": "外交関係を結ぶ。", "topic": "Government"},
-  {"id": "nf-495", "word": "条約 (じょうやく)", "definition": "hiệp ước", "example": "条約を締結する。", "topic": "Government"},
-  {"id": "nf-496", "word": "国際 (こくさい)", "definition": "quốc tế", "example": "国際的な問題を解決する。", "topic": "Government"},
-  {"id": "nf-497", "word": "連合 (れんごう)", "definition": "liên minh", "example": "連合を結成する。", "topic": "Government"},
-  {"id": "nf-498", "word": "同盟 (どうめい)", "definition": "liên minh", "example": "同盟を結んだ。", "topic": "Government"},
-  {"id": "nf-499", "word": "協定 (きょうてい)", "definition": "hiệp định", "example": "二国間協定を結んだ。", "topic": "Government"},
-  {"id": "nf-500", "word": "承認 (しょうにん)", "definition": "sự chấp thuận", "example": "議会が承認した。", "topic": "Government"},
-  {"id": "nf-501", "word": "批准 (ひじゅん)", "definition": "phê chuẩn", "example": "条約を批准した。", "topic": "Government"},
-  {"id": "nf-502", "word": "撤回 (てっかい)", "definition": "rút lại", "example": "法案を撤回した。", "topic": "Government"},
-  {"id": "nf-503", "word": "改正 (かいせい)", "definition": "sửa đổi", "example": "法律を改正する。", "topic": "Government"},
-  {"id": "nf-504", "word": "施行 (しこう)", "definition": "ban hành", "example": "新しい法律が施行された。", "topic": "Government"},
-  {"id": "nf-505", "word": "適用 (てきよう)", "definition": "áp dụng", "example": "この規則は適用されない。", "topic": "Government"}
+  {
+    "id": "nf-1",
+    "word": "研究 (けんきゅう)",
+    "definition": "nghiên cứu",
+    "example": "この大学では新しい研究が行われています。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E7%A0%94%E7%A9%B6%20(%E3%81%91%E3%82%93%E3%81%8D%E3%82%85%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-2",
+    "word": "論文 (ろんぶん)",
+    "definition": "luận văn",
+    "example": "彼は有名な雑誌に論文を発表した。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E8%AB%96%E6%96%87%20(%E3%82%8D%E3%82%93%E3%81%B6%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-3",
+    "word": "学者 (がくしゃ)",
+    "definition": "học giả",
+    "example": "その学者は歴史について多くの本を書いた。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E5%AD%A6%E8%80%85%20(%E3%81%8C%E3%81%8F%E3%81%97%E3%82%83)/400/300"
+  },
+  {
+    "id": "nf-4",
+    "word": "発表 (はっぴょう)",
+    "definition": "trình bày, công bố",
+    "example": "研究の結果を発表しました。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E7%99%BA%E8%A1%A8%20(%E3%81%AF%E3%81%A3%E3%81%B4%E3%82%87%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-5",
+    "word": "仮説 (かせつ)",
+    "definition": "giả thuyết",
+    "example": "新しい仮説を立てる必要がある。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E4%BB%AE%E8%AA%AC%20(%E3%81%8B%E3%81%9B%E3%81%A4)/400/300"
+  },
+  {
+    "id": "nf-6",
+    "word": "実験 (じっけん)",
+    "definition": "thí nghiệm",
+    "example": "labで化学の実験を行った。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E5%AE%9F%E9%A8%93%20(%E3%81%98%E3%81%A3%E3%81%91%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-7",
+    "word": "調査 (ちょうさ)",
+    "definition": "điều tra, khảo sát",
+    "example": "市場調査を実施した。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E8%AA%BF%E6%9F%BB%20(%E3%81%A1%E3%82%87%E3%81%86%E3%81%95)/400/300"
+  },
+  {
+    "id": "nf-8",
+    "word": "データ (データ)",
+    "definition": "dữ liệu",
+    "example": "データを集めて分析した。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E3%83%87%E3%83%BC%E3%82%BF%20(%E3%83%87%E3%83%BC%E3%82%BF)/400/300"
+  },
+  {
+    "id": "nf-9",
+    "word": "分析 (ぶんせき)",
+    "definition": "phân tích",
+    "example": "結果を詳しく分析する必要がある。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E5%88%86%E6%9E%90%20(%E3%81%B6%E3%82%93%E3%81%9B%E3%81%8D)/400/300"
+  },
+  {
+    "id": "nf-10",
+    "word": "結論 (けつろん)",
+    "definition": "kết luận",
+    "example": "実験の結論は予想通りだった。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E7%B5%90%E8%AB%96%20(%E3%81%91%E3%81%A4%E3%82%8D%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-11",
+    "word": "仮定 (かてい)",
+    "definition": "giả định",
+    "example": "この仮定の上で計算を行う。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E4%BB%AE%E5%AE%9A%20(%E3%81%8B%E3%81%A6%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-12",
+    "word": "証拠 (しょうこ)",
+    "definition": "chứng cứ",
+    "example": "証拠を集めて事件を解明した。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E8%A8%BC%E6%8B%A0%20(%E3%81%97%E3%82%87%E3%81%86%E3%81%93)/400/300"
+  },
+  {
+    "id": "nf-13",
+    "word": "推論 (すいろん)",
+    "definition": "suy luận",
+    "example": "論理的な推論を行う必要がある。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E6%8E%A8%E8%AB%96%20(%E3%81%99%E3%81%84%E3%82%8D%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-14",
+    "word": "概念 (がいねん)",
+    "definition": "khái niệm",
+    "example": "新しい概念を理解するのは難しい。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E6%A6%82%E5%BF%B5%20(%E3%81%8C%E3%81%84%E3%81%AD%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-15",
+    "word": "体系 (たいけい)",
+    "definition": "hệ thống",
+    "example": "この学問には独自の体系がある。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E4%BD%93%E7%B3%BB%20(%E3%81%9F%E3%81%84%E3%81%91%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-16",
+    "word": "法則 (ほうそく)",
+    "definition": "pháp tắc, quy luật",
+    "example": "自然の法則を発見した。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E6%B3%95%E5%89%87%20(%E3%81%BB%E3%81%86%E3%81%9D%E3%81%8F)/400/300"
+  },
+  {
+    "id": "nf-17",
+    "word": "観察 (かんさつ)",
+    "definition": "quan sát",
+    "example": "正確な観察が科学に欠かせない。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E8%A6%B3%E5%AF%9F%20(%E3%81%8B%E3%82%93%E3%81%95%E3%81%A4)/400/300"
+  },
+  {
+    "id": "nf-18",
+    "word": "仮説 (かせつ)",
+    "definition": "giả thuyết",
+    "example": "仮説を検証する実験を行った。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E4%BB%AE%E8%AA%AC%20(%E3%81%8B%E3%81%9B%E3%81%A4)/400/300"
+  },
+  {
+    "id": "nf-19",
+    "word": "検証 (けんしょう)",
+    "definition": "kiểm chứng",
+    "example": "理論の検証が必要だ。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E6%A4%9C%E8%A8%BC%20(%E3%81%91%E3%82%93%E3%81%97%E3%82%87%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-20",
+    "word": "予測 (よそく)",
+    "definition": "dự đoán",
+    "example": "未来を予測することは難しい。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E4%BA%88%E6%B8%AC%20(%E3%82%88%E3%81%9D%E3%81%8F)/400/300"
+  },
+  {
+    "id": "nf-21",
+    "word": "原理 (げんり)",
+    "definition": "nguyên lý",
+    "example": "この機械の原理を説明してください。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E5%8E%9F%E7%90%86%20(%E3%81%92%E3%82%93%E3%82%8A)/400/300"
+  },
+  {
+    "id": "nf-22",
+    "word": "定義 (ていぎ)",
+    "definition": "định nghĩa",
+    "example": "言葉の定義を明確にする。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E5%AE%9A%E7%BE%A9%20(%E3%81%A6%E3%81%84%E3%81%8E)/400/300"
+  },
+  {
+    "id": "nf-23",
+    "word": "課題 (かだい)",
+    "definition": "đề tài, nhiệm vụ",
+    "example": "今回の課題は難しい。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E8%AA%B2%E9%A1%8C%20(%E3%81%8B%E3%81%A0%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-24",
+    "word": "到達 (とうたつ)",
+    "definition": "đạt được",
+    "example": "新しいレベルに到達した。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E5%88%B0%E9%81%94%20(%E3%81%A8%E3%81%86%E3%81%9F%E3%81%A4)/400/300"
+  },
+  {
+    "id": "nf-25",
+    "word": "探求 (たんきゅう)",
+    "definition": "khám phá, tìm kiếm",
+    "example": "真実を探求する姿勢が大切だ。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E6%8E%A2%E6%B1%82%20(%E3%81%9F%E3%82%93%E3%81%8D%E3%82%85%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-26",
+    "word": "前提 (ぜんてい)",
+    "definition": "tiền đề",
+    "example": "この議論の前提を確認しよう。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E5%89%8D%E6%8F%90%20(%E3%81%9C%E3%82%93%E3%81%A6%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-27",
+    "word": "根拠 (こんきょ)",
+    "definition": "căn cứ, cơ sở",
+    "example": "発言には根拠が必要だ。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E6%A0%B9%E6%8B%A0%20(%E3%81%93%E3%82%93%E3%81%8D%E3%82%87)/400/300"
+  },
+  {
+    "id": "nf-28",
+    "word": "論理 (ろんり)",
+    "definition": "luận lý",
+    "example": "論理的な考え方を身につけよう。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E8%AB%96%E7%90%86%20(%E3%82%8D%E3%82%93%E3%82%8A)/400/300"
+  },
+  {
+    "id": "nf-29",
+    "word": "洞察 (どうさつ)",
+    "definition": "sự thấu hiểu",
+    "example": "彼は深い洞察力を持っている。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E6%B4%9E%E5%AF%9F%20(%E3%81%A9%E3%81%86%E3%81%95%E3%81%A4)/400/300"
+  },
+  {
+    "id": "nf-30",
+    "word": "仮説 (かせつ)",
+    "definition": "giả thuyết",
+    "example": "仮説を立てるのが第一歩だ。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E4%BB%AE%E8%AA%AC%20(%E3%81%8B%E3%81%9B%E3%81%A4)/400/300"
+  },
+  {
+    "id": "nf-31",
+    "word": "学説 (がくせつ)",
+    "definition": "học thuyết",
+    "example": "この学説は広く受け入れられている。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E5%AD%A6%E8%AA%AC%20(%E3%81%8C%E3%81%8F%E3%81%9B%E3%81%A4)/400/300"
+  },
+  {
+    "id": "nf-32",
+    "word": "研究 (けんきゅう)",
+    "definition": "nghiên cứu",
+    "example": "研究チームを率いて新しい発見をした。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E7%A0%94%E7%A9%B6%20(%E3%81%91%E3%82%93%E3%81%8D%E3%82%85%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-33",
+    "word": "学会 (がっかい)",
+    "definition": "hội thảo học thuật",
+    "example": "学会で研究を発表する。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E5%AD%A6%E4%BC%9A%20(%E3%81%8C%E3%81%A3%E3%81%8B%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-34",
+    "word": "学位 (がくい)",
+    "definition": "bằng cấp học thuật",
+    "example": "修士の学位を取得した。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E5%AD%A6%E4%BD%8D%20(%E3%81%8C%E3%81%8F%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-35",
+    "word": "教授 (きょうじゅ)",
+    "definition": "giáo sư",
+    "example": "教授に質問をした。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E6%95%99%E6%8E%88%20(%E3%81%8D%E3%82%87%E3%81%86%E3%81%98%E3%82%85)/400/300"
+  },
+  {
+    "id": "nf-36",
+    "word": "専攻 (せんこう)",
+    "definition": "chuyên ngành",
+    "example": "何を専攻していますか。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E5%B0%82%E6%94%BB%20(%E3%81%9B%E3%82%93%E3%81%93%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-37",
+    "word": "講義 (こうぎ)",
+    "definition": "bài giảng",
+    "example": " professorの講義を受ける。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E8%AC%9B%E7%BE%A9%20(%E3%81%93%E3%81%86%E3%81%8E)/400/300"
+  },
+  {
+    "id": "nf-38",
+    "word": "演習 (えんしゅう)",
+    "definition": "bài tập thực hành",
+    "example": "演習の問題を解いた。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E6%BC%94%E7%BF%92%20(%E3%81%88%E3%82%93%E3%81%97%E3%82%85%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-39",
+    "word": "文献 (ぶんけん)",
+    "definition": "tài liệu văn bản",
+    "example": "文献を查阅してレポートを書いた。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E6%96%87%E7%8C%AE%20(%E3%81%B6%E3%82%93%E3%81%91%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-40",
+    "word": "抄録 (しょうろく)",
+    "definition": "tóm tắt",
+    "example": "論文の抄録を読んだ。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E6%8A%84%E9%8C%B2%20(%E3%81%97%E3%82%87%E3%81%86%E3%82%8D%E3%81%8F)/400/300"
+  },
+  {
+    "id": "nf-41",
+    "word": "刊行 (かんこう)",
+    "definition": "xuất bản",
+    "example": "新しい本を刊行した。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E5%88%8A%E8%A1%8C%20(%E3%81%8B%E3%82%93%E3%81%93%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-42",
+    "word": "寄稿 (きこう)",
+    "definition": "đóng góp bài viết",
+    "example": "雑誌に寄稿する機会を得た。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E5%AF%84%E7%A8%BF%20(%E3%81%8D%E3%81%93%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-43",
+    "word": "学位 (がくい)",
+    "definition": "bằng cấp",
+    "example": "博士の学位を授与された。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E5%AD%A6%E4%BD%8D%20(%E3%81%8C%E3%81%8F%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-44",
+    "word": "研究室 (けんきゅうしつ)",
+    "definition": "phòng nghiên cứu",
+    "example": "研究室で実験をする。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E7%A0%94%E7%A9%B6%E5%AE%A4%20(%E3%81%91%E3%82%93%E3%81%8D%E3%82%85%E3%81%86%E3%81%97%E3%81%A4)/400/300"
+  },
+  {
+    "id": "nf-45",
+    "word": "大学院 (だいがくいん)",
+    "definition": "trường sau đại học",
+    "example": "大学院に進学する。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E5%A4%A7%E5%AD%A6%E9%99%A2%20(%E3%81%A0%E3%81%84%E3%81%8C%E3%81%8F%E3%81%84%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-46",
+    "word": "修士 (しゅうし)",
+    "definition": "thạc sĩ",
+    "example": "修士課程を修了した。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E4%BF%AE%E5%A3%AB%20(%E3%81%97%E3%82%85%E3%81%86%E3%81%97)/400/300"
+  },
+  {
+    "id": "nf-47",
+    "word": "博士 (はかせ)",
+    "definition": "tiến sĩ",
+    "example": "博士号を取得した。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E5%8D%9A%E5%A3%AB%20(%E3%81%AF%E3%81%8B%E3%81%9B)/400/300"
+  },
+  {
+    "id": "nf-48",
+    "word": "学位論文 (がくいろんぶん)",
+    "definition": "luận văn tốt nghiệp",
+    "example": "学位論文を提出した。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E5%AD%A6%E4%BD%8D%E8%AB%96%E6%96%87%20(%E3%81%8C%E3%81%8F%E3%81%84%E3%82%8D%E3%82%93%E3%81%B6%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-49",
+    "word": "答辩 (べんろん)",
+    "definition": "bảo vệ luận văn",
+    "example": "学位論文の答辩を行った。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E7%AD%94%E8%BE%A9%20(%E3%81%B9%E3%82%93%E3%82%8D%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-50",
+    "word": "学位 (がくい)",
+    "definition": "bằng cấp học thuật",
+    "example": "学位を取得するために勉強する。",
+    "topic": "Academic",
+    "imageUrl": "https://picsum.photos/seed/%E5%AD%A6%E4%BD%8D%20(%E3%81%8C%E3%81%8F%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-51",
+    "word": "企画 (きかく)",
+    "definition": "kế hoạch, dự án",
+    "example": "新しい企画を立てた。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E4%BC%81%E7%94%BB%20(%E3%81%8D%E3%81%8B%E3%81%8F)/400/300"
+  },
+  {
+    "id": "nf-52",
+    "word": "資料 (しりょう)",
+    "definition": "tài liệu",
+    "example": "資料をまとめて報告した。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E8%B3%87%E6%96%99%20(%E3%81%97%E3%82%8A%E3%82%87%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-53",
+    "word": "会議 (かいぎ)",
+    "definition": "họp, cuộc họp",
+    "example": "明日会議があります。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E4%BC%9A%E8%AD%B0%20(%E3%81%8B%E3%81%84%E3%81%8E)/400/300"
+  },
+  {
+    "id": "nf-54",
+    "word": "報告 (ほうこく)",
+    "definition": "báo cáo",
+    "example": "進捗を報告する。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E5%A0%B1%E5%91%8A%20(%E3%81%BB%E3%81%86%E3%81%93%E3%81%8F)/400/300"
+  },
+  {
+    "id": "nf-55",
+    "word": "議題 (ぎだい)",
+    "definition": "chủ đề thảo luận",
+    "example": "今日の議題は新企画です。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E8%AD%B0%E9%A1%8C%20(%E3%81%8E%E3%81%A0%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-56",
+    "word": "決議 (けつぎ)",
+    "definition": "nghị quyết",
+    "example": "会議で決議が行われた。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E6%B1%BA%E8%AD%B0%20(%E3%81%91%E3%81%A4%E3%81%8E)/400/300"
+  },
+  {
+    "id": "nf-57",
+    "word": "契約 (けいやく)",
+    "definition": "hợp đồng",
+    "example": "新しい契約を結んだ。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E5%A5%91%E7%B4%84%20(%E3%81%91%E3%81%84%E3%82%84%E3%81%8F)/400/300"
+  },
+  {
+    "id": "nf-58",
+    "word": "取引 (とりひき)",
+    "definition": "giao dịch",
+    "example": "新しい取引先と取引を始めた。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E5%8F%96%E5%BC%95%20(%E3%81%A8%E3%82%8A%E3%81%B2%E3%81%8D)/400/300"
+  },
+  {
+    "id": "nf-59",
+    "word": "納品 (のうひん)",
+    "definition": "giao hàng",
+    "example": "商品を納品した。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E7%B4%8D%E5%93%81%20(%E3%81%AE%E3%81%86%E3%81%B2%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-60",
+    "word": "請求 (せいきゅう)",
+    "definition": "tính phí, yêu cầu",
+    "example": "請求書を送った。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E8%AB%8B%E6%B1%82%20(%E3%81%9B%E3%81%84%E3%81%8D%E3%82%85%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-61",
+    "word": "経費 (けいひ)",
+    "definition": "chi phí",
+    "example": "経費を削減する必要がある。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E7%B5%8C%E8%B2%BB%20(%E3%81%91%E3%81%84%E3%81%B2)/400/300"
+  },
+  {
+    "id": "nf-62",
+    "word": "予算 (よさん)",
+    "definition": "ngân sách",
+    "example": "予算を立てて支出を管理する。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E4%BA%88%E7%AE%97%20(%E3%82%88%E3%81%95%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-63",
+    "word": "決算 (けっさん)",
+    "definition": "quyết toán",
+    "example": "決算報告を確認した。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E6%B1%BA%E7%AE%97%20(%E3%81%91%E3%81%A3%E3%81%95%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-64",
+    "word": "収益 (しゅうえき)",
+    "definition": "thu nhập, lợi nhuận",
+    "example": "今期の収益は好調だ。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E5%8F%8E%E7%9B%8A%20(%E3%81%97%E3%82%85%E3%81%86%E3%81%88%E3%81%8D)/400/300"
+  },
+  {
+    "id": "nf-65",
+    "word": "売上 (うりあげ)",
+    "definition": "doanh thu",
+    "example": "売上が昨年を上回った。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E5%A3%B2%E4%B8%8A%20(%E3%81%86%E3%82%8A%E3%81%82%E3%81%92)/400/300"
+  },
+  {
+    "id": "nf-66",
+    "word": "販売 (はんばい)",
+    "definition": "bán hàng",
+    "example": "新製品の販売を開始した。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E8%B2%A9%E5%A3%B2%20(%E3%81%AF%E3%82%93%E3%81%B0%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-67",
+    "word": "営業 (えいぎょう)",
+    "definition": "kinh doanh",
+    "example": "営業部で働いている。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E5%96%B6%E6%A5%AD%20(%E3%81%88%E3%81%84%E3%81%8E%E3%82%87%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-68",
+    "word": "企画 (きかく)",
+    "definition": "lên kế hoạch",
+    "example": "新しい企画を提案する。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E4%BC%81%E7%94%BB%20(%E3%81%8D%E3%81%8B%E3%81%8F)/400/300"
+  },
+  {
+    "id": "nf-69",
+    "word": "戦略 (せんりゃく)",
+    "definition": "chiến lược",
+    "example": "戦略を練って市場に参入する。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E6%88%A6%E7%95%A5%20(%E3%81%9B%E3%82%93%E3%82%8A%E3%82%83%E3%81%8F)/400/300"
+  },
+  {
+    "id": "nf-70",
+    "word": "開発 (かいはつ)",
+    "definition": "phát triển",
+    "example": "新しい製品を開発する。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E9%96%8B%E7%99%BA%20(%E3%81%8B%E3%81%84%E3%81%AF%E3%81%A4)/400/300"
+  },
+  {
+    "id": "nf-71",
+    "word": "品質 (ひんしつ)",
+    "definition": "chất lượng",
+    "example": "品質管理を徹底する。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E5%93%81%E8%B3%AA%20(%E3%81%B2%E3%82%93%E3%81%97%E3%81%A4)/400/300"
+  },
+  {
+    "id": "nf-72",
+    "word": "納入 (のうにゅう)",
+    "definition": "giao hàng",
+    "example": "機械を納入した。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E7%B4%8D%E5%85%A5%20(%E3%81%AE%E3%81%86%E3%81%AB%E3%82%85%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-73",
+    "word": "検品 (けんぴん)",
+    "definition": "kiểm tra hàng hóa",
+    "example": "納品された商品を検品する。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E6%A4%9C%E5%93%81%20(%E3%81%91%E3%82%93%E3%81%B4%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-74",
+    "word": "在庫 (ざいこ)",
+    "definition": "hàng tồn kho",
+    "example": "在庫がない商品を発注する。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E5%9C%A8%E5%BA%AB%20(%E3%81%96%E3%81%84%E3%81%93)/400/300"
+  },
+  {
+    "id": "nf-75",
+    "word": "発注 (はっちゅう)",
+    "definition": "đặt hàng",
+    "example": "新しい材料を発注した。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E7%99%BA%E6%B3%A8%20(%E3%81%AF%E3%81%A3%E3%81%A1%E3%82%85%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-76",
+    "word": "出荷 (しゅっか)",
+    "definition": "xuất hàng",
+    "example": "明日出荷する予定です。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E5%87%BA%E8%8D%B7%20(%E3%81%97%E3%82%85%E3%81%A3%E3%81%8B)/400/300"
+  },
+  {
+    "id": "nf-77",
+    "word": "輸送 (ゆそう)",
+    "definition": "vận chuyển",
+    "example": "商品を輸送する。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E8%BC%B8%E9%80%81%20(%E3%82%86%E3%81%9D%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-78",
+    "word": "物流 (ぶつりゅう)",
+    "definition": "hậu cần, logistics",
+    "example": "物流を効率化する。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E7%89%A9%E6%B5%81%20(%E3%81%B6%E3%81%A4%E3%82%8A%E3%82%85%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-79",
+    "word": "倉庫 (そうこ)",
+    "definition": "nhà kho",
+    "example": "倉庫に商品を保管する。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E5%80%89%E5%BA%AB%20(%E3%81%9D%E3%81%86%E3%81%93)/400/300"
+  },
+  {
+    "id": "nf-80",
+    "word": "梱包 (こんぽう)",
+    "definition": "đóng gói",
+    "example": "商品を梱包して発送する。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E6%A2%B1%E5%8C%85%20(%E3%81%93%E3%82%93%E3%81%BD%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-81",
+    "word": "届け (とどけ)",
+    "definition": "tờ khai, giấy báo",
+    "example": "納品書を届けに出す。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E5%B1%8A%E3%81%91%20(%E3%81%A8%E3%81%A9%E3%81%91)/400/300"
+  },
+  {
+    "id": "nf-82",
+    "word": "書類 (しょるい)",
+    "definition": "giấy tờ",
+    "example": "書類を整えて提出する。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E6%9B%B8%E9%A1%9E%20(%E3%81%97%E3%82%87%E3%82%8B%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-83",
+    "word": "帳簿 (ちょうぼ)",
+    "definition": "sổ sách kế toán",
+    "example": "帳簿を正確につける。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E5%B8%B3%E7%B0%BF%20(%E3%81%A1%E3%82%87%E3%81%86%E3%81%BC)/400/300"
+  },
+  {
+    "id": "nf-84",
+    "word": "経理 (けいり)",
+    "definition": "kế toán",
+    "example": "経理部で働いている。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E7%B5%8C%E7%90%86%20(%E3%81%91%E3%81%84%E3%82%8A)/400/300"
+  },
+  {
+    "id": "nf-85",
+    "word": "総務 (そうむ)",
+    "definition": "tổng vụ",
+    "example": "総務部に連絡してください。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E7%B7%8F%E5%8B%99%20(%E3%81%9D%E3%81%86%E3%82%80)/400/300"
+  },
+  {
+    "id": "nf-86",
+    "word": "人事 (じんじ)",
+    "definition": "nhân sự",
+    "example": "人事部に履歴書を提出する。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E4%BA%BA%E4%BA%8B%20(%E3%81%98%E3%82%93%E3%81%98)/400/300"
+  },
+  {
+    "id": "nf-87",
+    "word": "採用 (さいよう)",
+    "definition": "tuyển dụng",
+    "example": "新しい社員を採用する。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E6%8E%A1%E7%94%A8%20(%E3%81%95%E3%81%84%E3%82%88%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-88",
+    "word": "研修 (けんしゅう)",
+    "definition": "đào tạo",
+    "example": "新人研修が始まった。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E7%A0%94%E4%BF%AE%20(%E3%81%91%E3%82%93%E3%81%97%E3%82%85%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-89",
+    "word": "評価 (ひょうか)",
+    "definition": "đánh giá",
+    "example": "仕事の評価を受ける。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E8%A9%95%E4%BE%A1%20(%E3%81%B2%E3%82%87%E3%81%86%E3%81%8B)/400/300"
+  },
+  {
+    "id": "nf-90",
+    "word": "昇進 (しょうしん)",
+    "definition": "thăng chức",
+    "example": "来月から部長に昇進する。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E6%98%87%E9%80%B2%20(%E3%81%97%E3%82%87%E3%81%86%E3%81%97%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-91",
+    "word": "定年 (ていねん)",
+    "definition": "nghỉ hưu",
+    "example": "来年定年を迎える。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E5%AE%9A%E5%B9%B4%20(%E3%81%A6%E3%81%84%E3%81%AD%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-92",
+    "word": "残業 (ざんぎょう)",
+    "definition": "tăng ca",
+    "example": "毎晩残業している。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E6%AE%8B%E6%A5%AD%20(%E3%81%96%E3%82%93%E3%81%8E%E3%82%87%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-93",
+    "word": "有給 (ゆうきゅう)",
+    "definition": "nghỉ phép có lương",
+    "example": "有給休暇を取った。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E6%9C%89%E7%B5%A6%20(%E3%82%86%E3%81%86%E3%81%8D%E3%82%85%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-94",
+    "word": "遅刻 (ちこく)",
+    "definition": "đến muộn",
+    "example": "遅刻しないように早く出かけた。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E9%81%85%E5%88%BB%20(%E3%81%A1%E3%81%93%E3%81%8F)/400/300"
+  },
+  {
+    "id": "nf-95",
+    "word": "出勤 (しゅっきん)",
+    "definition": "đi làm",
+    "example": "毎朝八時に出勤する。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E5%87%BA%E5%8B%A4%20(%E3%81%97%E3%82%85%E3%81%A3%E3%81%8D%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-96",
+    "word": "退勤 (たいきん)",
+    "definition": "tan làm",
+    "example": "五時に退勤する。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E9%80%80%E5%8B%A4%20(%E3%81%9F%E3%81%84%E3%81%8D%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-97",
+    "word": "通勤 (つうきん)",
+    "definition": "đi làm hàng ngày",
+    "example": "電車で通勤している。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E9%80%9A%E5%8B%A4%20(%E3%81%A4%E3%81%86%E3%81%8D%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-98",
+    "word": "役職 (やくしょく)",
+    "definition": "chức vụ",
+    "example": "役職を担う責任は大きい。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E5%BD%B9%E8%81%B7%20(%E3%82%84%E3%81%8F%E3%81%97%E3%82%87%E3%81%8F)/400/300"
+  },
+  {
+    "id": "nf-99",
+    "word": "上司 (じょうし)",
+    "definition": "sếp, cấp trên",
+    "example": "上司に報告する。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E4%B8%8A%E5%8F%B8%20(%E3%81%98%E3%82%87%E3%81%86%E3%81%97)/400/300"
+  },
+  {
+    "id": "nf-100",
+    "word": "部下 (ぶか)",
+    "definition": "cấp dưới",
+    "example": "部下を指導する。",
+    "topic": "Work",
+    "imageUrl": "https://picsum.photos/seed/%E9%83%A8%E4%B8%8B%20(%E3%81%B6%E3%81%8B)/400/300"
+  },
+  {
+    "id": "nf-101",
+    "word": "掃除 (そうじ)",
+    "definition": "dọn dẹp",
+    "example": "毎日部屋を掃除する。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E6%8E%83%E9%99%A4%20(%E3%81%9D%E3%81%86%E3%81%98)/400/300"
+  },
+  {
+    "id": "nf-102",
+    "word": "洗濯 (せんたく)",
+    "definition": "giặt giũ",
+    "example": "週末に洗濯する。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E6%B4%97%E6%BF%AF%20(%E3%81%9B%E3%82%93%E3%81%9F%E3%81%8F)/400/300"
+  },
+  {
+    "id": "nf-103",
+    "word": "買い物 (かいもの)",
+    "definition": "mua sắm",
+    "example": "スーパーで買い物をする。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E8%B2%B7%E3%81%84%E7%89%A9%20(%E3%81%8B%E3%81%84%E3%82%82%E3%81%AE)/400/300"
+  },
+  {
+    "id": "nf-104",
+    "word": "料理 (りょうり)",
+    "definition": "nấu ăn, món ăn",
+    "example": "母は料理が上手だ。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E6%96%99%E7%90%86%20(%E3%82%8A%E3%82%87%E3%81%86%E3%82%8A)/400/300"
+  },
+  {
+    "id": "nf-105",
+    "word": "片付け (かたづけ)",
+    "definition": "dọn dẹp, sắp xếp",
+    "example": "部屋を片付ける。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E7%89%87%E4%BB%98%E3%81%91%20(%E3%81%8B%E3%81%9F%E3%81%A5%E3%81%91)/400/300"
+  },
+  {
+    "id": "nf-106",
+    "word": "準備 (じゅんび)",
+    "definition": "chuẩn bị",
+    "example": "朝ごはんの準備をする。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E6%BA%96%E5%82%99%20(%E3%81%98%E3%82%85%E3%82%93%E3%81%B3)/400/300"
+  },
+  {
+    "id": "nf-107",
+    "word": "連絡 (れんらく)",
+    "definition": "liên lạc",
+    "example": "友達に連絡した。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E9%80%A3%E7%B5%A1%20(%E3%82%8C%E3%82%93%E3%82%89%E3%81%8F)/400/300"
+  },
+  {
+    "id": "nf-108",
+    "word": "約束 (やくそく)",
+    "definition": "lời hứa",
+    "example": "約束を守るのが大切だ。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E7%B4%84%E6%9D%9F%20(%E3%82%84%E3%81%8F%E3%81%9D%E3%81%8F)/400/300"
+  },
+  {
+    "id": "nf-109",
+    "word": "散歩 (さんぽ)",
+    "definition": "đi dạo",
+    "example": "公園を散歩する。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E6%95%A3%E6%AD%A9%20(%E3%81%95%E3%82%93%E3%81%BD)/400/300"
+  },
+  {
+    "id": "nf-110",
+    "word": "休息 (きゅうそく)",
+    "definition": "nghỉ ngơi",
+    "example": "少し休息を取った。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E4%BC%91%E6%81%AF%20(%E3%81%8D%E3%82%85%E3%81%86%E3%81%9D%E3%81%8F)/400/300"
+  },
+  {
+    "id": "nf-111",
+    "word": "睡眠 (すいみん)",
+    "definition": "giấc ngủ",
+    "example": "十分な睡眠を取る必要がある。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E7%9D%A1%E7%9C%A0%20(%E3%81%99%E3%81%84%E3%81%BF%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-112",
+    "word": "朝食 (ちょうしょく)",
+    "definition": "bữa sáng",
+    "example": "毎朝朝食を食べる。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E6%9C%9D%E9%A3%9F%20(%E3%81%A1%E3%82%87%E3%81%86%E3%81%97%E3%82%87%E3%81%8F)/400/300"
+  },
+  {
+    "id": "nf-113",
+    "word": "昼食 (ちゅうしょく)",
+    "definition": "bữa trưa",
+    "example": "会社で昼食を取る。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E6%98%BC%E9%A3%9F%20(%E3%81%A1%E3%82%85%E3%81%86%E3%81%97%E3%82%87%E3%81%8F)/400/300"
+  },
+  {
+    "id": "nf-114",
+    "word": "夕食 (ゆうしょく)",
+    "definition": "bữa tối",
+    "example": "家族と夕食を食べる。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E5%A4%95%E9%A3%9F%20(%E3%82%86%E3%81%86%E3%81%97%E3%82%87%E3%81%8F)/400/300"
+  },
+  {
+    "id": "nf-115",
+    "word": "昼寝 (ひるね)",
+    "definition": "ngủ trưa",
+    "example": "昼寝をして元気を回復した。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E6%98%BC%E5%AF%9D%20(%E3%81%B2%E3%82%8B%E3%81%AD)/400/300"
+  },
+  {
+    "id": "nf-116",
+    "word": "起居 (きょ)",
+    "definition": "sinh hoạt hàng ngày",
+    "example": "一人で起居している。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E8%B5%B7%E5%B1%85%20(%E3%81%8D%E3%82%87)/400/300"
+  },
+  {
+    "id": "nf-117",
+    "word": "日課 (にっか)",
+    "definition": "thói quen hàng ngày",
+    "example": "読書は私の日課です。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E6%97%A5%E8%AA%B2%20(%E3%81%AB%E3%81%A3%E3%81%8B)/400/300"
+  },
+  {
+    "id": "nf-118",
+    "word": "習慣 (しゅうかん)",
+    "definition": "thói quen",
+    "example": "良い習慣を身につけたい。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E7%BF%92%E6%85%A3%20(%E3%81%97%E3%82%85%E3%81%86%E3%81%8B%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-119",
+    "word": "支度 (したく)",
+    "definition": "chuẩn bị",
+    "example": "出かけの支度をする。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E6%94%AF%E5%BA%A6%20(%E3%81%97%E3%81%9F%E3%81%8F)/400/300"
+  },
+  {
+    "id": "nf-120",
+    "word": "着替え (きがえ)",
+    "definition": "thay đồ",
+    "example": "外出前に着替えをする。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E7%9D%80%E6%9B%BF%E3%81%88%20(%E3%81%8D%E3%81%8C%E3%81%88)/400/300"
+  },
+  {
+    "id": "nf-121",
+    "word": "化粧 (けしょう)",
+    "definition": "trang điểm",
+    "example": "毎朝化粧をする。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E5%8C%96%E7%B2%A7%20(%E3%81%91%E3%81%97%E3%82%87%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-122",
+    "word": "風呂 (ふろ)",
+    "definition": "bồn tắm",
+    "example": "寝る前に風呂に入る。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E9%A2%A8%E5%91%82%20(%E3%81%B5%E3%82%8D)/400/300"
+  },
+  {
+    "id": "nf-123",
+    "word": "歯磨き (はみがき)",
+    "definition": "đánh răng",
+    "example": "毎晩歯磨きをする。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E6%AD%AF%E7%A3%A8%E3%81%8D%20(%E3%81%AF%E3%81%BF%E3%81%8C%E3%81%8D)/400/300"
+  },
+  {
+    "id": "nf-124",
+    "word": "洗面 (せんめん)",
+    "definition": "rửa mặt",
+    "example": "起きたらすぐに洗面する。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E6%B4%97%E9%9D%A2%20(%E3%81%9B%E3%82%93%E3%82%81%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-125",
+    "word": "洗い物 (あらいもの)",
+    "definition": "rửa bát",
+    "example": "食事の後は洗い物をする。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E6%B4%97%E3%81%84%E7%89%A9%20(%E3%81%82%E3%82%89%E3%81%84%E3%82%82%E3%81%AE)/400/300"
+  },
+  {
+    "id": "nf-126",
+    "word": "ゴミ出し (ごみだ)",
+    "definition": "đổ rác",
+    "example": "火曜日と金曜日はゴミ出しの日だ。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E3%82%B4%E3%83%9F%E5%87%BA%E3%81%97%20(%E3%81%94%E3%81%BF%E3%81%A0)/400/300"
+  },
+  {
+    "id": "nf-127",
+    "word": "布団 (ふとん)",
+    "definition": "chăn, nệm",
+    "example": "布団を干す。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E5%B8%83%E5%9B%A3%20(%E3%81%B5%E3%81%A8%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-128",
+    "word": "洗濯機 (せんたくき)",
+    "definition": "máy giặt",
+    "example": "洗濯機で洗濯する。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E6%B4%97%E6%BF%AF%E6%A9%9F%20(%E3%81%9B%E3%82%93%E3%81%9F%E3%81%8F%E3%81%8D)/400/300"
+  },
+  {
+    "id": "nf-129",
+    "word": "冷蔵庫 (れいぞうこ)",
+    "definition": "tủ lạnh",
+    "example": "冷蔵庫に食材をしまう。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E5%86%B7%E8%94%B5%E5%BA%AB%20(%E3%82%8C%E3%81%84%E3%81%9E%E3%81%86%E3%81%93)/400/300"
+  },
+  {
+    "id": "nf-130",
+    "word": "電子レンジ (でんしレンジ)",
+    "definition": "lò vi sóng",
+    "example": "電子レンジで加熱する。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E9%9B%BB%E5%AD%90%E3%83%AC%E3%83%B3%E3%82%B8%20(%E3%81%A7%E3%82%93%E3%81%97%E3%83%AC%E3%83%B3%E3%82%B8)/400/300"
+  },
+  {
+    "id": "nf-131",
+    "word": "食器 (しょっき)",
+    "definition": "bát đĩa",
+    "example": "食器を洗う。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E9%A3%9F%E5%99%A8%20(%E3%81%97%E3%82%87%E3%81%A3%E3%81%8D)/400/300"
+  },
+  {
+    "id": "nf-132",
+    "word": "調味料 (ちょうみりょう)",
+    "definition": "gia vị",
+    "example": "調味料を加えて味を整える。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E8%AA%BF%E5%91%B3%E6%96%99%20(%E3%81%A1%E3%82%87%E3%81%86%E3%81%BF%E3%82%8A%E3%82%87%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-133",
+    "word": "食材 (しょくざい)",
+    "definition": "nguyên liệu nấu ăn",
+    "example": "新鮮な食材を買う。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E9%A3%9F%E6%9D%90%20(%E3%81%97%E3%82%87%E3%81%8F%E3%81%96%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-134",
+    "word": "精肉店 (せいにくてん)",
+    "definition": "cửa hàng thịt",
+    "example": "精肉店で肉を買う。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E7%B2%BE%E8%82%89%E5%BA%97%20(%E3%81%9B%E3%81%84%E3%81%AB%E3%81%8F%E3%81%A6%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-135",
+    "word": "魚屋 (さかなや)",
+    "definition": "cửa hàng cá",
+    "example": "魚屋で新鮮な魚を買った。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E9%AD%9A%E5%B1%8B%20(%E3%81%95%E3%81%8B%E3%81%AA%E3%82%84)/400/300"
+  },
+  {
+    "id": "nf-136",
+    "word": "八百屋 (やおや)",
+    "definition": "cửa hàng rau củ",
+    "example": "八百屋で野菜を買う。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E5%85%AB%E7%99%BE%E5%B1%8B%20(%E3%82%84%E3%81%8A%E3%82%84)/400/300"
+  },
+  {
+    "id": "nf-137",
+    "word": "パン屋 (ぱんや)",
+    "definition": "tiệm bánh mì",
+    "example": "パン屋でパンを買った。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E3%83%91%E3%83%B3%E5%B1%8B%20(%E3%81%B1%E3%82%93%E3%82%84)/400/300"
+  },
+  {
+    "id": "nf-138",
+    "word": "喫茶店 (きっさてん)",
+    "definition": "quán cà phê",
+    "example": "喫茶店でコーヒーを飲む。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E5%96%AB%E8%8C%B6%E5%BA%97%20(%E3%81%8D%E3%81%A3%E3%81%95%E3%81%A6%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-139",
+    "word": "快適 (かいてき)",
+    "definition": "thoải mái",
+    "example": "快適な生活を送りたい。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E5%BF%AB%E9%81%A9%20(%E3%81%8B%E3%81%84%E3%81%A6%E3%81%8D)/400/300"
+  },
+  {
+    "id": "nf-140",
+    "word": "手間 (てま)",
+    "definition": "công sức, thời gian",
+    "example": "料理には手間がかかる。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E6%89%8B%E9%96%93%20(%E3%81%A6%E3%81%BE)/400/300"
+  },
+  {
+    "id": "nf-141",
+    "word": "慣れる (なれる)",
+    "definition": "quen thuộc",
+    "example": "新しい環境に慣れる。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E6%85%A3%E3%82%8C%E3%82%8B%20(%E3%81%AA%E3%82%8C%E3%82%8B)/400/300"
+  },
+  {
+    "id": "nf-142",
+    "word": "不慣れ (ふなれ)",
+    "definition": "không quen",
+    "example": "仕事に不慣れだ。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E4%B8%8D%E6%85%A3%E3%82%8C%20(%E3%81%B5%E3%81%AA%E3%82%8C)/400/300"
+  },
+  {
+    "id": "nf-143",
+    "word": "手軽 (てがる)",
+    "definition": "tiện lợi, đơn giản",
+    "example": "手軽な食事が人気だ。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E6%89%8B%E8%BB%BD%20(%E3%81%A6%E3%81%8C%E3%82%8B)/400/300"
+  },
+  {
+    "id": "nf-144",
+    "word": "無理 (むり)",
+    "definition": "quá sức, không thể",
+    "example": "無理をしないでください。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E7%84%A1%E7%90%86%20(%E3%82%80%E3%82%8A)/400/300"
+  },
+  {
+    "id": "nf-145",
+    "word": "都合 (つごう)",
+    "definition": "thuận tiện",
+    "example": "明日は都合が悪い。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E9%83%BD%E5%90%88%20(%E3%81%A4%E3%81%94%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-146",
+    "word": "暇 (ひま)",
+    "definition": "rảnh rỗi",
+    "example": "今暇ですか。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E6%9A%87%20(%E3%81%B2%E3%81%BE)/400/300"
+  },
+  {
+    "id": "nf-147",
+    "word": "退屈 (たいくつ)",
+    "definition": "buồn chán",
+    "example": "映画が退屈だった。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E9%80%80%E5%B1%88%20(%E3%81%9F%E3%81%84%E3%81%8F%E3%81%A4)/400/300"
+  },
+  {
+    "id": "nf-148",
+    "word": "娯楽 (ごらく)",
+    "definition": "giải trí",
+    "example": "娯楽のない生活はつまらない。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E5%A8%AF%E6%A5%BD%20(%E3%81%94%E3%82%89%E3%81%8F)/400/300"
+  },
+  {
+    "id": "nf-149",
+    "word": "趣味 (しゅみ)",
+    "definition": "sở thích",
+    "example": "趣味は何ですか。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E8%B6%A3%E5%91%B3%20(%E3%81%97%E3%82%85%E3%81%BF)/400/300"
+  },
+  {
+    "id": "nf-150",
+    "word": "日曜日 (にちようび)",
+    "definition": "Chủ nhật",
+    "example": "日曜日は家族で過ごす。",
+    "topic": "Daily Life",
+    "imageUrl": "https://picsum.photos/seed/%E6%97%A5%E6%9B%9C%E6%97%A5%20(%E3%81%AB%E3%81%A1%E3%82%88%E3%81%86%E3%81%B3)/400/300"
+  },
+  {
+    "id": "nf-151",
+    "word": "予約 (よやく)",
+    "definition": "đặt chỗ",
+    "example": "ホテルを予約した。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E4%BA%88%E7%B4%84%20(%E3%82%88%E3%82%84%E3%81%8F)/400/300"
+  },
+  {
+    "id": "nf-152",
+    "word": "観光 (かんこう)",
+    "definition": "tham quan",
+    "example": "京都を観光する。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E8%A6%B3%E5%85%89%20(%E3%81%8B%E3%82%93%E3%81%93%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-153",
+    "word": "宿泊 (しゅくはく)",
+    "definition": "lưu trú",
+    "example": "宿泊施設を予約する。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E5%AE%BF%E6%B3%8A%20(%E3%81%97%E3%82%85%E3%81%8F%E3%81%AF%E3%81%8F)/400/300"
+  },
+  {
+    "id": "nf-154",
+    "word": "電車 (でんしゃ)",
+    "definition": "tàu điện",
+    "example": "電車で会社に行く。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E9%9B%BB%E8%BB%8A%20(%E3%81%A7%E3%82%93%E3%81%97%E3%82%83)/400/300"
+  },
+  {
+    "id": "nf-155",
+    "word": "飛行機 (ひこうき)",
+    "definition": "máy bay",
+    "example": "飛行機で東京に行く。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E9%A3%9B%E8%A1%8C%E6%A9%9F%20(%E3%81%B2%E3%81%93%E3%81%86%E3%81%8D)/400/300"
+  },
+  {
+    "id": "nf-156",
+    "word": "空港 (くうこう)",
+    "definition": "sân bay",
+    "example": "空港に向かう。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E7%A9%BA%E6%B8%AF%20(%E3%81%8F%E3%81%86%E3%81%93%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-157",
+    "word": "駅 (えき)",
+    "definition": "ga tàu",
+    "example": "駅まで歩く。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E9%A7%85%20(%E3%81%88%E3%81%8D)/400/300"
+  },
+  {
+    "id": "nf-158",
+    "word": "切符 (きっぷ)",
+    "definition": "vé",
+    "example": "切符を買った。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E5%88%87%E7%AC%A6%20(%E3%81%8D%E3%81%A3%E3%81%B7)/400/300"
+  },
+  {
+    "id": "nf-159",
+    "word": "乗り換え (のりかえ)",
+    "definition": "đổi tàu",
+    "example": "ここで乗り換えをする。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E4%B9%97%E3%82%8A%E6%8F%9B%E3%81%88%20(%E3%81%AE%E3%82%8A%E3%81%8B%E3%81%88)/400/300"
+  },
+  {
+    "id": "nf-160",
+    "word": "片道 (かたみち)",
+    "definition": "một chiều",
+    "example": "片道切符を買った。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E7%89%87%E9%81%93%20(%E3%81%8B%E3%81%9F%E3%81%BF%E3%81%A1)/400/300"
+  },
+  {
+    "id": "nf-161",
+    "word": "往復 (おうふく)",
+    "definition": "khứ hồi",
+    "example": "往復切符を買った。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E5%BE%80%E5%BE%A9%20(%E3%81%8A%E3%81%86%E3%81%B5%E3%81%8F)/400/300"
+  },
+  {
+    "id": "nf-162",
+    "word": "旅程 (りょてい)",
+    "definition": "lịch trình",
+    "example": "旅程を立てた。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E6%97%85%E7%A8%8B%20(%E3%82%8A%E3%82%87%E3%81%A6%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-163",
+    "word": "観光客 (かんこうきゃく)",
+    "definition": "khách du lịch",
+    "example": "この街には観光客が多い。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E8%A6%B3%E5%85%89%E5%AE%A2%20(%E3%81%8B%E3%82%93%E3%81%93%E3%81%86%E3%81%8D%E3%82%83%E3%81%8F)/400/300"
+  },
+  {
+    "id": "nf-164",
+    "word": "土産 (みやげ)",
+    "definition": "quà tặng",
+    "example": "土産を買った。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E5%9C%9F%E7%94%A3%20(%E3%81%BF%E3%82%84%E3%81%92)/400/300"
+  },
+  {
+    "id": "nf-165",
+    "word": "旅行 (りょこう)",
+    "definition": "du lịch",
+    "example": "夏に旅行に行く。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E6%97%85%E8%A1%8C%20(%E3%82%8A%E3%82%87%E3%81%93%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-166",
+    "word": "旅館 (りょかん)",
+    "definition": "khách sạn Nhật Bản",
+    "example": "旅館に泊まった。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E6%97%85%E9%A4%A8%20(%E3%82%8A%E3%82%87%E3%81%8B%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-167",
+    "word": "ホテル (ホテル)",
+    "definition": "khách sạn",
+    "example": "ホテルを予約した。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E3%83%9B%E3%83%86%E3%83%AB%20(%E3%83%9B%E3%83%86%E3%83%AB)/400/300"
+  },
+  {
+    "id": "nf-168",
+    "word": "民宿 (みんしゅく)",
+    "definition": "nhà nghỉ",
+    "example": "民宿に泊まった。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E6%B0%91%E5%AE%BF%20(%E3%81%BF%E3%82%93%E3%81%97%E3%82%85%E3%81%8F)/400/300"
+  },
+  {
+    "id": "nf-169",
+    "word": "露営 (ろえい)",
+    "definition": "cắm trại",
+    "example": "山で露営をした。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E9%9C%B2%E5%96%B6%20(%E3%82%8D%E3%81%88%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-170",
+    "word": "登山 (とざん)",
+    "definition": "leo núi",
+    "example": "週末に登山をする。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E7%99%BB%E5%B1%B1%20(%E3%81%A8%E3%81%96%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-171",
+    "word": "海水浴 (かいすいよく)",
+    "definition": "tắm biển",
+    "example": "夏に海水浴に行く。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E6%B5%B7%E6%B0%B4%E6%B5%B4%20(%E3%81%8B%E3%81%84%E3%81%99%E3%81%84%E3%82%88%E3%81%8F)/400/300"
+  },
+  {
+    "id": "nf-172",
+    "word": "散策 (さんさく)",
+    "definition": "đi dạo",
+    "example": "街を散策する。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E6%95%A3%E7%AD%96%20(%E3%81%95%E3%82%93%E3%81%95%E3%81%8F)/400/300"
+  },
+  {
+    "id": "nf-173",
+    "word": "周遊 (しゅうゆう)",
+    "definition": "tham quan",
+    "example": "都市を周遊する。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E5%91%A8%E9%81%8A%20(%E3%81%97%E3%82%85%E3%81%86%E3%82%86%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-174",
+    "word": "滞在 (たいざい)",
+    "definition": "lưu trú",
+    "example": "日本に一週間滞在した。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E6%BB%9E%E5%9C%A8%20(%E3%81%9F%E3%81%84%E3%81%96%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-175",
+    "word": "出国 (しゅっこく)",
+    "definition": "rời quốc gia",
+    "example": "出国の手続きをする。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E5%87%BA%E5%9B%BD%20(%E3%81%97%E3%82%85%E3%81%A3%E3%81%93%E3%81%8F)/400/300"
+  },
+  {
+    "id": "nf-176",
+    "word": "入国 (にゅうこく)",
+    "definition": "nhập quốc gia",
+    "example": "日本に入国した。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E5%85%A5%E5%9B%BD%20(%E3%81%AB%E3%82%85%E3%81%86%E3%81%93%E3%81%8F)/400/300"
+  },
+  {
+    "id": "nf-177",
+    "word": "通関 (つうかん)",
+    "definition": "hải quan",
+    "example": "通関の手続きを済ませた。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E9%80%9A%E9%96%A2%20(%E3%81%A4%E3%81%86%E3%81%8B%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-178",
+    "word": "パスポート (パスポート)",
+    "definition": "hộ chiếu",
+    "example": "パスポートを忘れないでください。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E3%83%91%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%88%20(%E3%83%91%E3%82%B9%E3%83%9D%E3%83%BC%E3%83%88)/400/300"
+  },
+  {
+    "id": "nf-179",
+    "word": "ビザ (ビザ)",
+    "definition": "thị thực",
+    "example": "ビザを申請した。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E3%83%93%E3%82%B6%20(%E3%83%93%E3%82%B6)/400/300"
+  },
+  {
+    "id": "nf-180",
+    "word": "両替 (りょうがえ)",
+    "definition": "đổi tiền",
+    "example": "空港で両替をする。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E4%B8%A1%E6%9B%BF%20(%E3%82%8A%E3%82%87%E3%81%86%E3%81%8C%E3%81%88)/400/300"
+  },
+  {
+    "id": "nf-181",
+    "word": "観光地 (かんこうち)",
+    "definition": "điểm tham quan",
+    "example": "この町は有名な観光地だ。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E8%A6%B3%E5%85%89%E5%9C%B0%20(%E3%81%8B%E3%82%93%E3%81%93%E3%81%86%E3%81%A1)/400/300"
+  },
+  {
+    "id": "nf-182",
+    "word": "名所 (めいしょ)",
+    "definition": "địa danh nổi tiếng",
+    "example": "この橋は名所として知られている。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E5%90%8D%E6%89%80%20(%E3%82%81%E3%81%84%E3%81%97%E3%82%87)/400/300"
+  },
+  {
+    "id": "nf-183",
+    "word": "歴史的 (れきしてき)",
+    "definition": "lịch sử",
+    "example": "歴史的な建物を見学した。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E6%AD%B4%E5%8F%B2%E7%9A%84%20(%E3%82%8C%E3%81%8D%E3%81%97%E3%81%A6%E3%81%8D)/400/300"
+  },
+  {
+    "id": "nf-184",
+    "word": "見学 (けんがく)",
+    "definition": "tham quan",
+    "example": "工場見学をする。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E8%A6%8B%E5%AD%A6%20(%E3%81%91%E3%82%93%E3%81%8C%E3%81%8F)/400/300"
+  },
+  {
+    "id": "nf-185",
+    "word": "ガイド (ガイド)",
+    "definition": "hướng dẫn viên",
+    "example": "ガイドに案内してもらった。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E3%82%AC%E3%82%A4%E3%83%89%20(%E3%82%AC%E3%82%A4%E3%83%89)/400/300"
+  },
+  {
+    "id": "nf-186",
+    "word": "ツアー (ツアー)",
+    "definition": "chuyến du lịch",
+    "example": "ツアーに参加した。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E3%83%84%E3%82%A2%E3%83%BC%20(%E3%83%84%E3%82%A2%E3%83%BC)/400/300"
+  },
+  {
+    "id": "nf-187",
+    "word": "宿泊施設 (しゅくはくしせつ)",
+    "definition": "cơ sở lưu trú",
+    "example": "宿泊施設を予約する。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E5%AE%BF%E6%B3%8A%E6%96%BD%E8%A8%AD%20(%E3%81%97%E3%82%85%E3%81%8F%E3%81%AF%E3%81%8F%E3%81%97%E3%81%9B%E3%81%A4)/400/300"
+  },
+  {
+    "id": "nf-188",
+    "word": "交通 (こうつう)",
+    "definition": "giao thông",
+    "example": "交通が便利なところに住みたい。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E4%BA%A4%E9%80%9A%20(%E3%81%93%E3%81%86%E3%81%A4%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-189",
+    "word": "混雑 (こんざつ)",
+    "definition": "tấp nập, đông đúc",
+    "example": "朝は電車が混雑する。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E6%B7%B7%E9%9B%91%20(%E3%81%93%E3%82%93%E3%81%96%E3%81%A4)/400/300"
+  },
+  {
+    "id": "nf-190",
+    "word": "渋滞 (じゅうたい)",
+    "definition": "tắc đường",
+    "example": "渋滞に巻き込まれた。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E6%B8%8B%E6%BB%9E%20(%E3%81%98%E3%82%85%E3%81%86%E3%81%9F%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-191",
+    "word": "目的地 (もくてきち)",
+    "definition": "điểm đến",
+    "example": "目的地に着いた。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E7%9B%AE%E7%9A%84%E5%9C%B0%20(%E3%82%82%E3%81%8F%E3%81%A6%E3%81%8D%E3%81%A1)/400/300"
+  },
+  {
+    "id": "nf-192",
+    "word": "出発 (しゅっぱつ)",
+    "definition": "khởi hành",
+    "example": "明日の朝出発する。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E5%87%BA%E7%99%BA%20(%E3%81%97%E3%82%85%E3%81%A3%E3%81%B1%E3%81%A4)/400/300"
+  },
+  {
+    "id": "nf-193",
+    "word": "到着 (とうちゃく)",
+    "definition": "đến nơi",
+    "example": "無事に到着した。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E5%88%B0%E7%9D%80%20(%E3%81%A8%E3%81%86%E3%81%A1%E3%82%83%E3%81%8F)/400/300"
+  },
+  {
+    "id": "nf-194",
+    "word": "遅れ (おくれ)",
+    "definition": "trễ, muộn",
+    "example": "電車が遅れた。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E9%81%85%E3%82%8C%20(%E3%81%8A%E3%81%8F%E3%82%8C)/400/300"
+  },
+  {
+    "id": "nf-195",
+    "word": "乗り物 (のりもの)",
+    "definition": "phương tiện giao thông",
+    "example": "乗り物に酔う。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E4%B9%97%E3%82%8A%E7%89%A9%20(%E3%81%AE%E3%82%8A%E3%82%82%E3%81%AE)/400/300"
+  },
+  {
+    "id": "nf-196",
+    "word": "タクシー (タクシー)",
+    "definition": "xe taxi",
+    "example": "タクシーを呼んだ。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E3%82%BF%E3%82%AF%E3%82%B7%E3%83%BC%20(%E3%82%BF%E3%82%AF%E3%82%B7%E3%83%BC)/400/300"
+  },
+  {
+    "id": "nf-197",
+    "word": "バス (バス)",
+    "definition": "xe buýt",
+    "example": "バスで市内を回る。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E3%83%90%E3%82%B9%20(%E3%83%90%E3%82%B9)/400/300"
+  },
+  {
+    "id": "nf-198",
+    "word": "地下鉄 (ちかてつ)",
+    "definition": "tàu điện ngầm",
+    "example": "地下鉄で移動する。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E5%9C%B0%E4%B8%8B%E9%89%84%20(%E3%81%A1%E3%81%8B%E3%81%A6%E3%81%A4)/400/300"
+  },
+  {
+    "id": "nf-199",
+    "word": "新幹線 (しんかんせん)",
+    "definition": "tàu siêu tốc Shinkansen",
+    "example": "新幹線で大阪に行く。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E6%96%B0%E5%B9%B9%E7%B7%9A%20(%E3%81%97%E3%82%93%E3%81%8B%E3%82%93%E3%81%9B%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-200",
+    "word": "定期券 (ていきけん)",
+    "definition": "vé tháng",
+    "example": "定期券を買った。",
+    "topic": "Travel",
+    "imageUrl": "https://picsum.photos/seed/%E5%AE%9A%E6%9C%9F%E5%88%B8%20(%E3%81%A6%E3%81%84%E3%81%8D%E3%81%91%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-201",
+    "word": "文化 (ぶんか)",
+    "definition": "văn hóa",
+    "example": "日本の文化に興味がある。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E6%96%87%E5%8C%96%20(%E3%81%B6%E3%82%93%E3%81%8B)/400/300"
+  },
+  {
+    "id": "nf-202",
+    "word": "伝統 (でんとう)",
+    "definition": "truyền thống",
+    "example": "伝統を守ることは大切だ。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E4%BC%9D%E7%B5%B1%20(%E3%81%A7%E3%82%93%E3%81%A8%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-203",
+    "word": "習慣 (しゅうかん)",
+    "definition": "phong tục",
+    "example": "日本の習慣を学ぶ。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E7%BF%92%E6%85%A3%20(%E3%81%97%E3%82%85%E3%81%86%E3%81%8B%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-204",
+    "word": "歴史 (れきし)",
+    "definition": "lịch sử",
+    "example": "この町には長い歴史がある。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E6%AD%B4%E5%8F%B2%20(%E3%82%8C%E3%81%8D%E3%81%97)/400/300"
+  },
+  {
+    "id": "nf-205",
+    "word": "芸術 (げいじゅつ)",
+    "definition": "nghệ thuật",
+    "example": "芸術に興味がある。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E8%8A%B8%E8%A1%93%20(%E3%81%92%E3%81%84%E3%81%98%E3%82%85%E3%81%A4)/400/300"
+  },
+  {
+    "id": "nf-206",
+    "word": "祝祭 (しゅくさい)",
+    "definition": "lễ hội",
+    "example": "祝祭に参加する。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E7%A5%9D%E7%A5%AD%20(%E3%81%97%E3%82%85%E3%81%8F%E3%81%95%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-207",
+    "word": "祭り (まつり)",
+    "definition": "lễ hội",
+    "example": "夏祭りに行った。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E7%A5%AD%E3%82%8A%20(%E3%81%BE%E3%81%A4%E3%82%8A)/400/300"
+  },
+  {
+    "id": "nf-208",
+    "word": "行事 (ぎょうじ)",
+    "definition": "sự kiện",
+    "example": "学校の行事に参加する。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E8%A1%8C%E4%BA%8B%20(%E3%81%8E%E3%82%87%E3%81%86%E3%81%98)/400/300"
+  },
+  {
+    "id": "nf-209",
+    "word": "儀式 (ぎしき)",
+    "definition": "nghi lễ",
+    "example": "結婚の儀式を行った。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E5%84%80%E5%BC%8F%20(%E3%81%8E%E3%81%97%E3%81%8D)/400/300"
+  },
+  {
+    "id": "nf-210",
+    "word": "伝説 (でんせつ)",
+    "definition": "huyền thoại",
+    "example": "この山には伝説がある。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E4%BC%9D%E8%AA%AC%20(%E3%81%A7%E3%82%93%E3%81%9B%E3%81%A4)/400/300"
+  },
+  {
+    "id": "nf-211",
+    "word": "風俗 (ふうぞく)",
+    "definition": "phong tục tập quán",
+    "example": "地方の風俗を紹介する。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E9%A2%A8%E4%BF%97%20(%E3%81%B5%E3%81%86%E3%81%9E%E3%81%8F)/400/300"
+  },
+  {
+    "id": "nf-212",
+    "word": "風情 (ふぜい)",
+    "definition": "phong vị, ý thơ",
+    "example": "この町には風情がある。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E9%A2%A8%E6%83%85%20(%E3%81%B5%E3%81%9C%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-213",
+    "word": "情緒 (じょうちょ)",
+    "definition": "tình cảm, tâm trạng",
+    "example": "情緒豊かな景色だ。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E6%83%85%E7%B7%92%20(%E3%81%98%E3%82%87%E3%81%86%E3%81%A1%E3%82%87)/400/300"
+  },
+  {
+    "id": "nf-214",
+    "word": "風景 (ふうけい)",
+    "definition": "cảnh quan",
+    "example": "美しい風景が広がっている。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E9%A2%A8%E6%99%AF%20(%E3%81%B5%E3%81%86%E3%81%91%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-215",
+    "word": "芸能 (げいのう)",
+    "definition": "giải trí, showbiz",
+    "example": "芸能界で働く。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E8%8A%B8%E8%83%BD%20(%E3%81%92%E3%81%84%E3%81%AE%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-216",
+    "word": "舞台 (ぶたい)",
+    "definition": "sân khấu",
+    "example": "舞台で演じる。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E8%88%9E%E5%8F%B0%20(%E3%81%B6%E3%81%9F%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-217",
+    "word": "美術 (びじゅつ)",
+    "definition": "mỹ thuật",
+    "example": "美術館に行った。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E7%BE%8E%E8%A1%93%20(%E3%81%B3%E3%81%98%E3%82%85%E3%81%A4)/400/300"
+  },
+  {
+    "id": "nf-218",
+    "word": "音楽 (おんがく)",
+    "definition": "âm nhạc",
+    "example": "音楽を聴くのが好きだ。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E9%9F%B3%E6%A5%BD%20(%E3%81%8A%E3%82%93%E3%81%8C%E3%81%8F)/400/300"
+  },
+  {
+    "id": "nf-219",
+    "word": "文学 (ぶんがく)",
+    "definition": "văn học",
+    "example": "彼は文学を研究している。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E6%96%87%E5%AD%A6%20(%E3%81%B6%E3%82%93%E3%81%8C%E3%81%8F)/400/300"
+  },
+  {
+    "id": "nf-220",
+    "word": "演劇 (げんげき)",
+    "definition": "kịch",
+    "example": "演劇を観に行った。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E6%BC%94%E5%8A%87%20(%E3%81%92%E3%82%93%E3%81%92%E3%81%8D)/400/300"
+  },
+  {
+    "id": "nf-221",
+    "word": "書道 (しょどう)",
+    "definition": "thư pháp",
+    "example": "書道を習っている。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E6%9B%B8%E9%81%93%20(%E3%81%97%E3%82%87%E3%81%A9%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-222",
+    "word": "茶道 (さどう)",
+    "definition": "trà đạo",
+    "example": "茶道を学ぶ。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E8%8C%B6%E9%81%93%20(%E3%81%95%E3%81%A9%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-223",
+    "word": "華道 (かどう)",
+    "definition": "hoa đạo",
+    "example": "華道を習っている。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E8%8F%AF%E9%81%93%20(%E3%81%8B%E3%81%A9%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-224",
+    "word": "武道 (ぶどう)",
+    "definition": "võ đạo",
+    "example": "武道を練習する。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E6%AD%A6%E9%81%93%20(%E3%81%B6%E3%81%A9%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-225",
+    "word": "柔道 (じゅうどう)",
+    "definition": "judo",
+    "example": "柔道を習っている。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E6%9F%94%E9%81%93%20(%E3%81%98%E3%82%85%E3%81%86%E3%81%A9%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-226",
+    "word": "剣道 (けんどう)",
+    "definition": "kendo",
+    "example": "剣道を練習する。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E5%89%A3%E9%81%93%20(%E3%81%91%E3%82%93%E3%81%A9%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-227",
+    "word": "相撲 (すもう)",
+    "definition": "sumo",
+    "example": "相撲を観に行った。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E7%9B%B8%E6%92%B2%20(%E3%81%99%E3%82%82%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-228",
+    "word": "空手 (からて)",
+    "definition": "karate",
+    "example": "空手を習っている。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E7%A9%BA%E6%89%8B%20(%E3%81%8B%E3%82%89%E3%81%A6)/400/300"
+  },
+  {
+    "id": "nf-229",
+    "word": "弓道 (きゅうどう)",
+    "definition": "cung đạo",
+    "example": "弓道を練習する。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E5%BC%93%E9%81%93%20(%E3%81%8D%E3%82%85%E3%81%86%E3%81%A9%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-230",
+    "word": "民俗 (みんぞく)",
+    "definition": "dân gian",
+    "example": "民俗芸能を見学した。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E6%B0%91%E4%BF%97%20(%E3%81%BF%E3%82%93%E3%81%9E%E3%81%8F)/400/300"
+  },
+  {
+    "id": "nf-231",
+    "word": "伝承 (でんしょう)",
+    "definition": "truyền thừa",
+    "example": "伝承を守る。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E4%BC%9D%E6%89%BF%20(%E3%81%A7%E3%82%93%E3%81%97%E3%82%87%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-232",
+    "word": "遺産 (いさん)",
+    "definition": "di sản",
+    "example": "世界遺産に登録された。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E9%81%BA%E7%94%A3%20(%E3%81%84%E3%81%95%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-233",
+    "word": "国宝 (こくほう)",
+    "definition": "quốc bảo",
+    "example": "この寺院は国宝だ。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E5%9B%BD%E5%AE%9D%20(%E3%81%93%E3%81%8F%E3%81%BB%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-234",
+    "word": "博物館 (はくぶつかん)",
+    "definition": "bảo tàng",
+    "example": "博物館を訪れた。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E5%8D%9A%E7%89%A9%E9%A4%A8%20(%E3%81%AF%E3%81%8F%E3%81%B6%E3%81%A4%E3%81%8B%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-235",
+    "word": "美術館 (びじゅつかん)",
+    "definition": "phòng trưng bày mỹ thuật",
+    "example": "美術館で絵画を見た。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E7%BE%8E%E8%A1%93%E9%A4%A8%20(%E3%81%B3%E3%81%98%E3%82%85%E3%81%A4%E3%81%8B%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-236",
+    "word": "展示会 (てんじかい)",
+    "definition": "triển lãm",
+    "example": "展示会に参加した。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E5%B1%95%E7%A4%BA%E4%BC%9A%20(%E3%81%A6%E3%82%93%E3%81%98%E3%81%8B%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-237",
+    "word": "見本市 (みほんまち)",
+    "definition": "hội chợ triển lãm",
+    "example": "見本市で新製品を展示する。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E8%A6%8B%E6%9C%AC%E5%B8%82%20(%E3%81%BF%E3%81%BB%E3%82%93%E3%81%BE%E3%81%A1)/400/300"
+  },
+  {
+    "id": "nf-238",
+    "word": "開催 (かいさい)",
+    "definition": "tổ chức",
+    "example": "イベントを開催する。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E9%96%8B%E5%82%AC%20(%E3%81%8B%E3%81%84%E3%81%95%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-239",
+    "word": "催し (もよおし)",
+    "definition": "sự kiện",
+    "example": "地区の催しに参加する。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E5%82%AC%E3%81%97%20(%E3%82%82%E3%82%88%E3%81%8A%E3%81%97)/400/300"
+  },
+  {
+    "id": "nf-240",
+    "word": "伝統的 (でんとうてき)",
+    "definition": "truyền thống",
+    "example": "伝統的な祭りを行った。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E4%BC%9D%E7%B5%B1%E7%9A%84%20(%E3%81%A7%E3%82%93%E3%81%A8%E3%81%86%E3%81%A6%E3%81%8D)/400/300"
+  },
+  {
+    "id": "nf-241",
+    "word": "近代的 (きんだいてき)",
+    "definition": "hiện đại",
+    "example": "近代的な建物が並ぶ。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E8%BF%91%E4%BB%A3%E7%9A%84%20(%E3%81%8D%E3%82%93%E3%81%A0%E3%81%84%E3%81%A6%E3%81%8D)/400/300"
+  },
+  {
+    "id": "nf-242",
+    "word": "保守的 (ほしゅてき)",
+    "definition": "bảo thủ",
+    "example": "彼は保守的な考えを持っている。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E4%BF%9D%E5%AE%88%E7%9A%84%20(%E3%81%BB%E3%81%97%E3%82%85%E3%81%A6%E3%81%8D)/400/300"
+  },
+  {
+    "id": "nf-243",
+    "word": "革新 (かくしん)",
+    "definition": "cải cách, đổi mới",
+    "example": "技術革新が進む。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E9%9D%A9%E6%96%B0%20(%E3%81%8B%E3%81%8F%E3%81%97%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-244",
+    "word": "風潮 (ふうちょう)",
+    "definition": "xu hướng",
+    "example": "最近の風潮に疑問を感じる。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E9%A2%A8%E6%BD%AE%20(%E3%81%B5%E3%81%86%E3%81%A1%E3%82%87%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-245",
+    "word": "傾向 (けいこう)",
+    "definition": "xu hướng",
+    "example": "最近の傾向として...。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E5%82%BE%E5%90%91%20(%E3%81%91%E3%81%84%E3%81%93%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-246",
+    "word": "世の中 (よのなか)",
+    "definition": "thế giới",
+    "example": "世の中が変わった。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E4%B8%96%E3%81%AE%E4%B8%AD%20(%E3%82%88%E3%81%AE%E3%81%AA%E3%81%8B)/400/300"
+  },
+  {
+    "id": "nf-247",
+    "word": "社会 (しゃかい)",
+    "definition": "xã hội",
+    "example": "社会に貢献したい。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E7%A4%BE%E4%BC%9A%20(%E3%81%97%E3%82%83%E3%81%8B%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-248",
+    "word": "現代 (げんだい)",
+    "definition": "hiện đại",
+    "example": "現代の若者の考え方を理解する。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E7%8F%BE%E4%BB%A3%20(%E3%81%92%E3%82%93%E3%81%A0%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-249",
+    "word": "文明 (ぶんめい)",
+    "definition": "văn minh",
+    "example": "古代文明を研究する。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E6%96%87%E6%98%8E%20(%E3%81%B6%E3%82%93%E3%82%81%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-250",
+    "word": "遺物 (いぶつ)",
+    "definition": "di vật",
+    "example": "古代の遺物を発見した。",
+    "topic": "Culture",
+    "imageUrl": "https://picsum.photos/seed/%E9%81%BA%E7%89%A9%20(%E3%81%84%E3%81%B6%E3%81%A4)/400/300"
+  },
+  {
+    "id": "nf-251",
+    "word": "病気 (びょうき)",
+    "definition": "bệnh",
+    "example": "病気にかかった。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E7%97%85%E6%B0%97%20(%E3%81%B3%E3%82%87%E3%81%86%E3%81%8D)/400/300"
+  },
+  {
+    "id": "nf-252",
+    "word": "治療 (ちりょう)",
+    "definition": "điều trị",
+    "example": "治療を受けた。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E6%B2%BB%E7%99%82%20(%E3%81%A1%E3%82%8A%E3%82%87%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-253",
+    "word": "運動 (うんどう)",
+    "definition": "tập thể dục",
+    "example": "毎日運動する。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E9%81%8B%E5%8B%95%20(%E3%81%86%E3%82%93%E3%81%A9%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-254",
+    "word": "栄養 (えいよう)",
+    "definition": "dinh dưỡng",
+    "example": "栄養のある食事をする。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E6%A0%84%E9%A4%8A%20(%E3%81%88%E3%81%84%E3%82%88%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-255",
+    "word": "健康 (けんこう)",
+    "definition": "sức khỏe",
+    "example": "健康が一番大切だ。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E5%81%A5%E5%BA%B7%20(%E3%81%91%E3%82%93%E3%81%93%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-256",
+    "word": "病院 (びょういん)",
+    "definition": "bệnh viện",
+    "example": "病院に行った。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E7%97%85%E9%99%A2%20(%E3%81%B3%E3%82%87%E3%81%86%E3%81%84%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-257",
+    "word": "薬 (くすり)",
+    "definition": "thuốc",
+    "example": "薬を飲んだ。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E8%96%AC%20(%E3%81%8F%E3%81%99%E3%82%8A)/400/300"
+  },
+  {
+    "id": "nf-258",
+    "word": "手術 (しゅじゅつ)",
+    "definition": "phẫu thuật",
+    "example": "手術を受けた。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E6%89%8B%E8%A1%93%20(%E3%81%97%E3%82%85%E3%81%98%E3%82%85%E3%81%A4)/400/300"
+  },
+  {
+    "id": "nf-259",
+    "word": "診察 (しんさつ)",
+    "definition": "khám bệnh",
+    "example": "医者に診察してもらった。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E8%A8%BA%E5%AF%9F%20(%E3%81%97%E3%82%93%E3%81%95%E3%81%A4)/400/300"
+  },
+  {
+    "id": "nf-260",
+    "word": "検査 (けんさ)",
+    "definition": "kiểm tra y tế",
+    "example": "健康検査を受けた。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E6%A4%9C%E6%9F%BB%20(%E3%81%91%E3%82%93%E3%81%95)/400/300"
+  },
+  {
+    "id": "nf-261",
+    "word": "症状 (しょうじょう)",
+    "definition": "triệu chứng",
+    "example": "症状が悪化した。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E7%97%87%E7%8A%B6%20(%E3%81%97%E3%82%87%E3%81%86%E3%81%98%E3%82%87%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-262",
+    "word": "診断 (しんだん)",
+    "definition": "chẩn đoán",
+    "example": "病気を診断された。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E8%A8%BA%E6%96%AD%20(%E3%81%97%E3%82%93%E3%81%A0%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-263",
+    "word": "感染 (かんせん)",
+    "definition": "nhiễm bệnh",
+    "example": "ウイルスに感染した。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E6%84%9F%E6%9F%93%20(%E3%81%8B%E3%82%93%E3%81%9B%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-264",
+    "word": "伝染病 (でんせんびょう)",
+    "definition": "bệnh truyền nhiễm",
+    "example": "伝染病が流行した。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E4%BC%9D%E6%9F%93%E7%97%85%20(%E3%81%A7%E3%82%93%E3%81%9B%E3%82%93%E3%81%B3%E3%82%87%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-265",
+    "word": "予防 (よぼう)",
+    "definition": "phòng ngừa",
+    "example": "病気を予防する。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E4%BA%88%E9%98%B2%20(%E3%82%88%E3%81%BC%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-266",
+    "word": "免疫 (めんえき)",
+    "definition": "miễn dịch",
+    "example": "免疫を高める。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E5%85%8D%E7%96%AB%20(%E3%82%81%E3%82%93%E3%81%88%E3%81%8D)/400/300"
+  },
+  {
+    "id": "nf-267",
+    "word": "アレルギー (アレルギー)",
+    "definition": "dị ứng",
+    "example": "花粉アレルギーがある。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E3%82%A2%E3%83%AC%E3%83%AB%E3%82%AE%E3%83%BC%20(%E3%82%A2%E3%83%AC%E3%83%AB%E3%82%AE%E3%83%BC)/400/300"
+  },
+  {
+    "id": "nf-268",
+    "word": "慢性 (まんせい)",
+    "definition": "mạn tính",
+    "example": "慢性の病気に罹った。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E6%85%A2%E6%80%A7%20(%E3%81%BE%E3%82%93%E3%81%9B%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-269",
+    "word": "急性 (きゅうせい)",
+    "definition": "cấp tính",
+    "example": "急性の病気にかかった。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E6%80%A5%E6%80%A7%20(%E3%81%8D%E3%82%85%E3%81%86%E3%81%9B%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-270",
+    "word": "後遺症 (こういしょう)",
+    "definition": "di chứng",
+    "example": "事故の後遺症が残った。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E5%BE%8C%E9%81%BA%E7%97%87%20(%E3%81%93%E3%81%86%E3%81%84%E3%81%97%E3%82%87%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-271",
+    "word": "副作用 (ふくよう)",
+    "definition": "tác dụng phụ",
+    "example": "薬の副作用が出た。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E5%89%AF%E4%BD%9C%E7%94%A8%20(%E3%81%B5%E3%81%8F%E3%82%88%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-272",
+    "word": "処方箋 (しょほうせん)",
+    "definition": "đơn thuốc",
+    "example": "処方箋をもらった。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E5%87%A6%E6%96%B9%E7%AE%8B%20(%E3%81%97%E3%82%87%E3%81%BB%E3%81%86%E3%81%9B%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-273",
+    "word": "調子 (ちょうし)",
+    "definition": "tình trạng sức khỏe",
+    "example": "今日の調子はいかがですか。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E8%AA%BF%E5%AD%90%20(%E3%81%A1%E3%82%87%E3%81%86%E3%81%97)/400/300"
+  },
+  {
+    "id": "nf-274",
+    "word": "体力 (たいりょく)",
+    "definition": "sức khỏe thể chất",
+    "example": "体力をつけるために運動する。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E4%BD%93%E5%8A%9B%20(%E3%81%9F%E3%81%84%E3%82%8A%E3%82%87%E3%81%8F)/400/300"
+  },
+  {
+    "id": "nf-275",
+    "word": "疲労 (ひろう)",
+    "definition": "mệt mỏi",
+    "example": "疲労がたまった。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E7%96%B2%E5%8A%B4%20(%E3%81%B2%E3%82%8D%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-276",
+    "word": "ストレス (ストレス)",
+    "definition": "căng thẳng",
+    "example": "ストレスを解消する。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E3%82%B9%E3%83%88%E3%83%AC%E3%82%B9%20(%E3%82%B9%E3%83%88%E3%83%AC%E3%82%B9)/400/300"
+  },
+  {
+    "id": "nf-277",
+    "word": "リラックス (リラックス)",
+    "definition": "thư giãn",
+    "example": "リラックスするために温泉に行く。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E3%83%AA%E3%83%A9%E3%83%83%E3%82%AF%E3%82%B9%20(%E3%83%AA%E3%83%A9%E3%83%83%E3%82%AF%E3%82%B9)/400/300"
+  },
+  {
+    "id": "nf-278",
+    "word": "睡眠 (すいみん)",
+    "definition": "giấc ngủ",
+    "example": "睡眠を十分に取る。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E7%9D%A1%E7%9C%A0%20(%E3%81%99%E3%81%84%E3%81%BF%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-279",
+    "word": "食欲 (しょくよく)",
+    "definition": "sự thèm ăn",
+    "example": "食欲がない。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E9%A3%9F%E6%AC%B2%20(%E3%81%97%E3%82%87%E3%81%8F%E3%82%88%E3%81%8F)/400/300"
+  },
+  {
+    "id": "nf-280",
+    "word": "消化 (しょうか)",
+    "definition": "tiêu hóa",
+    "example": "消化が悪い。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E6%B6%88%E5%8C%96%20(%E3%81%97%E3%82%87%E3%81%86%E3%81%8B)/400/300"
+  },
+  {
+    "id": "nf-281",
+    "word": "血圧 (けつあつ)",
+    "definition": "huyết áp",
+    "example": "血圧を測った。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E8%A1%80%E5%9C%A7%20(%E3%81%91%E3%81%A4%E3%81%82%E3%81%A4)/400/300"
+  },
+  {
+    "id": "nf-282",
+    "word": "体温 (たいおん)",
+    "definition": "nhiệt độ cơ thể",
+    "example": "体温を測った。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E4%BD%93%E6%B8%A9%20(%E3%81%9F%E3%81%84%E3%81%8A%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-283",
+    "word": "脈拍 (みゃくはく)",
+    "definition": "mạch đập",
+    "example": "脈拍が速い。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E8%84%88%E6%8B%8D%20(%E3%81%BF%E3%82%83%E3%81%8F%E3%81%AF%E3%81%8F)/400/300"
+  },
+  {
+    "id": "nf-284",
+    "word": "リハビリ (リハビリ)",
+    "definition": "phục hồi chức năng",
+    "example": "リハビリを続ける。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E3%83%AA%E3%83%8F%E3%83%93%E3%83%AA%20(%E3%83%AA%E3%83%8F%E3%83%93%E3%83%AA)/400/300"
+  },
+  {
+    "id": "nf-285",
+    "word": "通院 (つういん)",
+    "definition": "đi khám bệnh định kỳ",
+    "example": "毎週通院している。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E9%80%9A%E9%99%A2%20(%E3%81%A4%E3%81%86%E3%81%84%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-286",
+    "word": "入院 (にゅういん)",
+    "definition": "nhập viện",
+    "example": "病気で入院した。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E5%85%A5%E9%99%A2%20(%E3%81%AB%E3%82%85%E3%81%86%E3%81%84%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-287",
+    "word": "退院 (たいいん)",
+    "definition": "xuất viện",
+    "example": "来週退院する予定だ。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E9%80%80%E9%99%A2%20(%E3%81%9F%E3%81%84%E3%81%84%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-288",
+    "word": "救急車 (きゅうきゅうしゃ)",
+    "definition": "xe cấp cứu",
+    "example": "救急車を呼んだ。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E6%95%91%E6%80%A5%E8%BB%8A%20(%E3%81%8D%E3%82%85%E3%81%86%E3%81%8D%E3%82%85%E3%81%86%E3%81%97%E3%82%83)/400/300"
+  },
+  {
+    "id": "nf-289",
+    "word": "救急 (きゅうきゅう)",
+    "definition": "cấp cứu",
+    "example": "救急処置を受けた。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E6%95%91%E6%80%A5%20(%E3%81%8D%E3%82%85%E3%81%86%E3%81%8D%E3%82%85%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-290",
+    "word": "心臓 (しんぞう)",
+    "definition": "trái tim",
+    "example": "心臓が弱い。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E5%BF%83%E8%87%93%20(%E3%81%97%E3%82%93%E3%81%9E%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-291",
+    "word": "肺 (はい)",
+    "definition": "phổi",
+    "example": "肺に問題がある。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E8%82%BA%20(%E3%81%AF%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-292",
+    "word": "胃 (い)",
+    "definition": "dạ dày",
+    "example": "胃が痛い。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E8%83%83%20(%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-293",
+    "word": "肝臓 (かんぞう)",
+    "definition": "gan",
+    "example": "肝臓に気をつける。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E8%82%9D%E8%87%93%20(%E3%81%8B%E3%82%93%E3%81%9E%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-294",
+    "word": "腎臓 (じんぞう)",
+    "definition": "thận",
+    "example": "腎臓の病気に罹った。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E8%85%8E%E8%87%93%20(%E3%81%98%E3%82%93%E3%81%9E%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-295",
+    "word": "骨 (ほね)",
+    "definition": "xương",
+    "example": "骨を折った。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E9%AA%A8%20(%E3%81%BB%E3%81%AD)/400/300"
+  },
+  {
+    "id": "nf-296",
+    "word": "関節 (かんせつ)",
+    "definition": "khớp",
+    "example": "関節が痛い。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E9%96%A2%E7%AF%80%20(%E3%81%8B%E3%82%93%E3%81%9B%E3%81%A4)/400/300"
+  },
+  {
+    "id": "nf-297",
+    "word": "筋肉 (きんにく)",
+    "definition": "cơ bắp",
+    "example": "筋肉を鍛える。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E7%AD%8B%E8%82%89%20(%E3%81%8D%E3%82%93%E3%81%AB%E3%81%8F)/400/300"
+  },
+  {
+    "id": "nf-298",
+    "word": "神経 (しんけい)",
+    "definition": "dây thần kinh",
+    "example": "神経が痛む。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E7%A5%9E%E7%B5%8C%20(%E3%81%97%E3%82%93%E3%81%91%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-299",
+    "word": "免疫 (めんえき)",
+    "definition": "hệ miễn dịch",
+    "example": "免疫が低下した。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E5%85%8D%E7%96%AB%20(%E3%82%81%E3%82%93%E3%81%88%E3%81%8D)/400/300"
+  },
+  {
+    "id": "nf-300",
+    "word": "衛生 (えいせい)",
+    "definition": "vệ sinh",
+    "example": "衛生に気をつける。",
+    "topic": "Health",
+    "imageUrl": "https://picsum.photos/seed/%E8%A1%9B%E7%94%9F%20(%E3%81%88%E3%81%84%E3%81%9B%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-301",
+    "word": "データ (データ)",
+    "definition": "dữ liệu",
+    "example": "データを分析する。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E3%83%87%E3%83%BC%E3%82%BF%20(%E3%83%87%E3%83%BC%E3%82%BF)/400/300"
+  },
+  {
+    "id": "nf-302",
+    "word": "システム (システム)",
+    "definition": "hệ thống",
+    "example": "新しいシステムを開発した。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%20(%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0)/400/300"
+  },
+  {
+    "id": "nf-303",
+    "word": "機械 (きかい)",
+    "definition": "máy móc",
+    "example": "機械を操作する。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E6%A9%9F%E6%A2%B0%20(%E3%81%8D%E3%81%8B%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-304",
+    "word": "開発 (かいはつ)",
+    "definition": "phát triển",
+    "example": "新技術を開発する。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E9%96%8B%E7%99%BA%20(%E3%81%8B%E3%81%84%E3%81%AF%E3%81%A4)/400/300"
+  },
+  {
+    "id": "nf-305",
+    "word": "技術 (ぎじゅつ)",
+    "definition": "công nghệ",
+    "example": "技術が進歩している。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E6%8A%80%E8%A1%93%20(%E3%81%8E%E3%81%98%E3%82%85%E3%81%A4)/400/300"
+  },
+  {
+    "id": "nf-306",
+    "word": "コンピューター (コンピューター)",
+    "definition": "máy tính",
+    "example": "コンピューターで作業する。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF%E3%83%BC%20(%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF%E3%83%BC)/400/300"
+  },
+  {
+    "id": "nf-307",
+    "word": "インターネット (インターネット)",
+    "definition": "mạng internet",
+    "example": "インターネットで情報を調べる。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88%20(%E3%82%A4%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8D%E3%83%83%E3%83%88)/400/300"
+  },
+  {
+    "id": "nf-308",
+    "word": "ソフトウェア (ソフトウェア)",
+    "definition": "phần mềm",
+    "example": "新しいソフトウェアをインストールした。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2%20(%E3%82%BD%E3%83%95%E3%83%88%E3%82%A6%E3%82%A7%E3%82%A2)/400/300"
+  },
+  {
+    "id": "nf-309",
+    "word": "ハードウェア (ハードウェア)",
+    "definition": "phần cứng",
+    "example": "ハードウェアを更新した。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E3%83%8F%E3%83%BC%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2%20(%E3%83%8F%E3%83%BC%E3%83%89%E3%82%A6%E3%82%A7%E3%82%A2)/400/300"
+  },
+  {
+    "id": "nf-310",
+    "word": "プログラミング (プログラミング)",
+    "definition": "lập trình",
+    "example": "プログラミングを学んでいる。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0%20(%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0)/400/300"
+  },
+  {
+    "id": "nf-311",
+    "word": "ネットワーク (ネットワーク)",
+    "definition": "mạng lưới",
+    "example": "ネットワークを構築する。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%20(%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF)/400/300"
+  },
+  {
+    "id": "nf-312",
+    "word": "サーバー (サーバー)",
+    "definition": "máy chủ",
+    "example": "サーバーがダウンした。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%20(%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC)/400/300"
+  },
+  {
+    "id": "nf-313",
+    "word": "クラウド (クラウド)",
+    "definition": "đám mây (cloud)",
+    "example": "クラウドにデータを保存する。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89%20(%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89)/400/300"
+  },
+  {
+    "id": "nf-314",
+    "word": "セキュリティ (セキュリティ)",
+    "definition": "an ninh, bảo mật",
+    "example": "セキュリティを強化する。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%20(%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3)/400/300"
+  },
+  {
+    "id": "nf-315",
+    "word": "ウイルス (ウイルス)",
+    "definition": "vi rút",
+    "example": "コンピウーターにウイルスが入った。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9%20(%E3%82%A6%E3%82%A4%E3%83%AB%E3%82%B9)/400/300"
+  },
+  {
+    "id": "nf-316",
+    "word": "バグ (バグ)",
+    "definition": "lỗi phần mềm",
+    "example": "ソフトウェアにバグがある。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E3%83%90%E3%82%B0%20(%E3%83%90%E3%82%B0)/400/300"
+  },
+  {
+    "id": "nf-317",
+    "word": "アップデート (アップデート)",
+    "definition": "cập nhật",
+    "example": "アプリをアップデートした。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88%20(%E3%82%A2%E3%83%83%E3%83%97%E3%83%87%E3%83%BC%E3%83%88)/400/300"
+  },
+  {
+    "id": "nf-318",
+    "word": "ダウンロード (ダウンロード)",
+    "definition": "tải xuống",
+    "example": "ファイルをダウンロードした。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89%20(%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89)/400/300"
+  },
+  {
+    "id": "nf-319",
+    "word": "インストール (インストール)",
+    "definition": "cài đặt",
+    "example": "新しいアプリをインストールした。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%20(%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)/400/300"
+  },
+  {
+    "id": "nf-320",
+    "word": "パソコン (パソコン)",
+    "definition": "máy tính cá nhân",
+    "example": "パソコンで仕事をする。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B3%20(%E3%83%91%E3%82%BD%E3%82%B3%E3%83%B3)/400/300"
+  },
+  {
+    "id": "nf-321",
+    "word": "スマートフォン (スマートフォン)",
+    "definition": "điện thoại thông minh",
+    "example": "スマートフォンで連絡する。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E3%82%B9%E3%83%9E%E3%83%BC%E3%83%88%E3%83%95%E3%82%A9%E3%83%B3%20(%E3%82%B9%E3%83%9E%E3%83%BC%E3%83%88%E3%83%95%E3%82%A9%E3%83%B3)/400/300"
+  },
+  {
+    "id": "nf-322",
+    "word": "タブレット (タブレット)",
+    "definition": "máy tính bảng",
+    "example": "タブレットで資料を見る。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E3%82%BF%E3%83%96%E3%83%AC%E3%83%83%E3%83%88%20(%E3%82%BF%E3%83%96%E3%83%AC%E3%83%83%E3%83%88)/400/300"
+  },
+  {
+    "id": "nf-323",
+    "word": "電子 (でんし)",
+    "definition": "điện tử",
+    "example": "電子機器を使う。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E9%9B%BB%E5%AD%90%20(%E3%81%A7%E3%82%93%E3%81%97)/400/300"
+  },
+  {
+    "id": "nf-324",
+    "word": "ロボット (ロボット)",
+    "definition": "người máy",
+    "example": "ロボットが工場で働く。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88%20(%E3%83%AD%E3%83%9C%E3%83%83%E3%83%88)/400/300"
+  },
+  {
+    "id": "nf-325",
+    "word": "AI (エーアイ)",
+    "definition": "trí tuệ nhân tạo",
+    "example": "AI技術を活用する。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/AI%20(%E3%82%A8%E3%83%BC%E3%82%A2%E3%82%A4)/400/300"
+  },
+  {
+    "id": "nf-326",
+    "word": "自動化 (じどうか)",
+    "definition": "tự động hóa",
+    "example": "工程を自動化する。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E8%87%AA%E5%8B%95%E5%8C%96%20(%E3%81%98%E3%81%A9%E3%81%86%E3%81%8B)/400/300"
+  },
+  {
+    "id": "nf-327",
+    "word": "機械 (きかい)",
+    "definition": "máy móc",
+    "example": "機械を修理する。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E6%A9%9F%E6%A2%B0%20(%E3%81%8D%E3%81%8B%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-328",
+    "word": "装置 (そうち)",
+    "definition": "thiết bị",
+    "example": "新しい装置を導入した。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E8%A3%85%E7%BD%AE%20(%E3%81%9D%E3%81%86%E3%81%A1)/400/300"
+  },
+  {
+    "id": "nf-329",
+    "word": "電気 (でんき)",
+    "definition": "điện",
+    "example": "電気が止まった。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E9%9B%BB%E6%B0%97%20(%E3%81%A7%E3%82%93%E3%81%8D)/400/300"
+  },
+  {
+    "id": "nf-330",
+    "word": "信号 (しんごう)",
+    "definition": "tín hiệu",
+    "example": "信号が変わった。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E4%BF%A1%E5%8F%B7%20(%E3%81%97%E3%82%93%E3%81%94%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-331",
+    "word": "通信 (つうしん)",
+    "definition": "thông tin liên lạc",
+    "example": "通信が途切れた。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E9%80%9A%E4%BF%A1%20(%E3%81%A4%E3%81%86%E3%81%97%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-332",
+    "word": "放送 (ほうそう)",
+    "definition": "phát sóng",
+    "example": "テレビで放送された。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E6%94%BE%E9%80%81%20(%E3%81%BB%E3%81%86%E3%81%9D%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-333",
+    "word": "受信 (じゅしん)",
+    "definition": "nhận tín hiệu",
+    "example": "ラジオの受信が悪い。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E5%8F%97%E4%BF%A1%20(%E3%81%98%E3%82%85%E3%81%97%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-334",
+    "word": "送信 (そうしん)",
+    "definition": "gửi tín hiệu",
+    "example": "データを送信する。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E9%80%81%E4%BF%A1%20(%E3%81%9D%E3%81%86%E3%81%97%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-335",
+    "word": "解析 (かいせき)",
+    "definition": "phân tích",
+    "example": "データを解析する。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E8%A7%A3%E6%9E%90%20(%E3%81%8B%E3%81%84%E3%81%9B%E3%81%8D)/400/300"
+  },
+  {
+    "id": "nf-336",
+    "word": "処理 (しょり)",
+    "definition": "xử lý",
+    "example": "情報を処理する。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E5%87%A6%E7%90%86%20(%E3%81%97%E3%82%87%E3%82%8A)/400/300"
+  },
+  {
+    "id": "nf-337",
+    "word": "蓄積 (ちくせき)",
+    "definition": "tích lũy",
+    "example": "データを蓄積する。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E8%93%84%E7%A9%8D%20(%E3%81%A1%E3%81%8F%E3%81%9B%E3%81%8D)/400/300"
+  },
+  {
+    "id": "nf-338",
+    "word": "運用 (うんよう)",
+    "definition": "vận hành",
+    "example": "システムを運用する。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E9%81%8B%E7%94%A8%20(%E3%81%86%E3%82%93%E3%82%88%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-339",
+    "word": "保守 (ほしゅ)",
+    "definition": "bảo trì",
+    "example": "機械の保守をする。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E4%BF%9D%E5%AE%88%20(%E3%81%BB%E3%81%97%E3%82%85)/400/300"
+  },
+  {
+    "id": "nf-340",
+    "word": "修理 (しゅうり)",
+    "definition": "sửa chữa",
+    "example": "パソコンを修理した。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E4%BF%AE%E7%90%86%20(%E3%81%97%E3%82%85%E3%81%86%E3%82%8A)/400/300"
+  },
+  {
+    "id": "nf-341",
+    "word": "故障 (こしょう)",
+    "definition": "hỏng hóc",
+    "example": "機械が故障した。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E6%95%85%E9%9A%9C%20(%E3%81%93%E3%81%97%E3%82%87%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-342",
+    "word": "復旧 (ふっきゅう)",
+    "definition": "khôi phục",
+    "example": "システムが復旧した。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E5%BE%A9%E6%97%A7%20(%E3%81%B5%E3%81%A3%E3%81%8D%E3%82%85%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-343",
+    "word": "更新 (こうしん)",
+    "definition": "cập nhật",
+    "example": "ソフトウェアを更新する。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E6%9B%B4%E6%96%B0%20(%E3%81%93%E3%81%86%E3%81%97%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-344",
+    "word": "バージョン (バージョン)",
+    "definition": "phiên bản",
+    "example": "新しいバージョンをリリースした。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3%20(%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3)/400/300"
+  },
+  {
+    "id": "nf-345",
+    "word": "互換性 (ごかんせい)",
+    "definition": "tính tương thích",
+    "example": "互換性を確保する。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E4%BA%92%E6%8F%9B%E6%80%A7%20(%E3%81%94%E3%81%8B%E3%82%93%E3%81%9B%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-346",
+    "word": "省エネ (省エネ)",
+    "definition": "tiết kiệm năng lượng",
+    "example": "省エネ家電を買った。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E7%9C%81%E3%82%A8%E3%83%8D%20(%E7%9C%81%E3%82%A8%E3%83%8D)/400/300"
+  },
+  {
+    "id": "nf-347",
+    "word": "再生可能 (さいせいかのう)",
+    "definition": "tái tạo",
+    "example": "再生可能エネルギーを使う。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E5%86%8D%E7%94%9F%E5%8F%AF%E8%83%BD%20(%E3%81%95%E3%81%84%E3%81%9B%E3%81%84%E3%81%8B%E3%81%AE%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-348",
+    "word": "デジタル (デジ털)",
+    "definition": "kỹ thuật số",
+    "example": "デジタル化が進む。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E3%83%87%E3%82%B8%E3%82%BF%E3%83%AB%20(%E3%83%87%E3%82%B8%ED%84%B8)/400/300"
+  },
+  {
+    "id": "nf-349",
+    "word": "アナログ (アナログ)",
+    "definition": "tương tự",
+    "example": "アナログな方式を使っている。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E3%82%A2%E3%83%8A%E3%83%AD%E3%82%B0%20(%E3%82%A2%E3%83%8A%E3%83%AD%E3%82%B0)/400/300"
+  },
+  {
+    "id": "nf-350",
+    "word": "クラウド (クラウド)",
+    "definition": "điện toán đám mây",
+    "example": "クラウドサービスを利用する。",
+    "topic": "Technology",
+    "imageUrl": "https://picsum.photos/seed/%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89%20(%E3%82%AF%E3%83%A9%E3%82%A6%E3%83%89)/400/300"
+  },
+  {
+    "id": "nf-351",
+    "word": "怒り (いかり)",
+    "definition": "sự tức giận",
+    "example": "彼の怒りを買った。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E6%80%92%E3%82%8A%20(%E3%81%84%E3%81%8B%E3%82%8A)/400/300"
+  },
+  {
+    "id": "nf-352",
+    "word": "喜び (よろこび)",
+    "definition": "sự vui mừng",
+    "example": "成功の喜びを分かち合う。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E5%96%9C%E3%81%B3%20(%E3%82%88%E3%82%8D%E3%81%93%E3%81%B3)/400/300"
+  },
+  {
+    "id": "nf-353",
+    "word": "悲しみ (かなしみ)",
+    "definition": "sự buồn bã",
+    "example": "悲しみを乗り越えた。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E6%82%B2%E3%81%97%E3%81%BF%20(%E3%81%8B%E3%81%AA%E3%81%97%E3%81%BF)/400/300"
+  },
+  {
+    "id": "nf-354",
+    "word": "恐怖 (きょうふ)",
+    "definition": "nỗi sợ hãi",
+    "example": "恐怖を感じた。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E6%81%90%E6%80%96%20(%E3%81%8D%E3%82%87%E3%81%86%E3%81%B5)/400/300"
+  },
+  {
+    "id": "nf-355",
+    "word": "安心 (あんしん)",
+    "definition": "yên tâm",
+    "example": "試験に受かって安心した。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E5%AE%89%E5%BF%83%20(%E3%81%82%E3%82%93%E3%81%97%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-356",
+    "word": "不安 (ふあん)",
+    "definition": "lo lắng, bất an",
+    "example": "将来が不安だ。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E4%B8%8D%E5%AE%89%20(%E3%81%B5%E3%81%82%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-357",
+    "word": "緊張 (きんちょう)",
+    "definition": "căng thẳng",
+    "example": "試験前は緊張する。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E7%B7%8A%E5%BC%B5%20(%E3%81%8D%E3%82%93%E3%81%A1%E3%82%87%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-358",
+    "word": "リラックス (リラックス)",
+    "definition": "thư giãn",
+    "example": "リラックスして過ごす。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E3%83%AA%E3%83%A9%E3%83%83%E3%82%AF%E3%82%B9%20(%E3%83%AA%E3%83%A9%E3%83%83%E3%82%AF%E3%82%B9)/400/300"
+  },
+  {
+    "id": "nf-359",
+    "word": "感謝 (かんしゃ)",
+    "definition": "lòng biết ơn",
+    "example": "助けてくれて感謝する。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E6%84%9F%E8%AC%9D%20(%E3%81%8B%E3%82%93%E3%81%97%E3%82%83)/400/300"
+  },
+  {
+    "id": "nf-360",
+    "word": "悔しい (くやしい)",
+    "definition": "tiếc nuối",
+    "example": "負けが悔しい。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E6%82%94%E3%81%97%E3%81%84%20(%E3%81%8F%E3%82%84%E3%81%97%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-361",
+    "word": "照れ (てれ)",
+    "definition": "sự ngại ngùng",
+    "example": "褒められて照れた。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E7%85%A7%E3%82%8C%20(%E3%81%A6%E3%82%8C)/400/300"
+  },
+  {
+    "id": "nf-362",
+    "word": "恥ずかしい (はずかしい)",
+    "definition": "xấu hổ",
+    "example": "失敗して恥ずかしい。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E6%81%A5%E3%81%9A%E3%81%8B%E3%81%97%E3%81%84%20(%E3%81%AF%E3%81%9A%E3%81%8B%E3%81%97%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-363",
+    "word": "寂しい (さびしい)",
+    "definition": "cô đơn",
+    "example": "一人暮らしは寂しい。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E5%AF%82%E3%81%97%E3%81%84%20(%E3%81%95%E3%81%B3%E3%81%97%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-364",
+    "word": "懐かしい (なつかしい)",
+    "definition": "đậm chất xưa cũ",
+    "example": "懐かしい景色だ。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E6%87%90%E3%81%8B%E3%81%97%E3%81%84%20(%E3%81%AA%E3%81%A4%E3%81%8B%E3%81%97%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-365",
+    "word": "嬉しい (うれしい)",
+    "definition": "vui vẻ",
+    "example": "プレゼントをもらって嬉しい。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E5%AC%89%E3%81%97%E3%81%84%20(%E3%81%86%E3%82%8C%E3%81%97%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-366",
+    "word": "悲しい (かなしい)",
+    "definition": "buồn bã",
+    "example": "映画を見て悲しくなった。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E6%82%B2%E3%81%97%E3%81%84%20(%E3%81%8B%E3%81%AA%E3%81%97%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-367",
+    "word": "楽しい (たのしい)",
+    "definition": "vui vẻ, thú vị",
+    "example": "旅行は楽しい。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E6%A5%BD%E3%81%97%E3%81%84%20(%E3%81%9F%E3%81%AE%E3%81%97%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-368",
+    "word": "つまらない (つまらない)",
+    "definition": "buồn chán",
+    "example": "つまらない映画だった。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E3%81%A4%E3%81%BE%E3%82%89%E3%81%AA%E3%81%84%20(%E3%81%A4%E3%81%BE%E3%82%89%E3%81%AA%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-369",
+    "word": "興奮 (こうふん)",
+    "definition": "sự kích thích, hào hứng",
+    "example": "興奮して眠れなかった。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E8%88%88%E5%A5%AE%20(%E3%81%93%E3%81%86%E3%81%B5%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-370",
+    "word": "落胆 (らくたん)",
+    "definition": "sự thất vọng",
+    "example": "結果に落胆した。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E8%90%BD%E8%83%86%20(%E3%82%89%E3%81%8F%E3%81%9F%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-371",
+    "word": "期待 (きたい)",
+    "definition": "sự kỳ vọng",
+    "example": "新しいプロジェクトに期待している。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E6%9C%9F%E5%BE%85%20(%E3%81%8D%E3%81%9F%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-372",
+    "word": "失望 (しつぼう)",
+    "definition": "sự thất vọng",
+    "example": "結果に失望した。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E5%A4%B1%E6%9C%9B%20(%E3%81%97%E3%81%A4%E3%81%BC%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-373",
+    "word": "信頼 (しんらい)",
+    "definition": "sự tin tưởng",
+    "example": "彼を信頼している。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E4%BF%A1%E9%A0%BC%20(%E3%81%97%E3%82%93%E3%82%89%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-374",
+    "word": "疑い (うたがい)",
+    "definition": "nghi ngờ",
+    "example": "疑いを持たれた。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E7%96%91%E3%81%84%20(%E3%81%86%E3%81%9F%E3%81%8C%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-375",
+    "word": "嫉妒 (しっと)",
+    "definition": "ghen tị",
+    "example": "彼の成功を嫉妒した。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E5%AB%89%E5%A6%92%20(%E3%81%97%E3%81%A3%E3%81%A8)/400/300"
+  },
+  {
+    "id": "nf-376",
+    "word": "同情 (どうじょう)",
+    "definition": "sự thông cảm",
+    "example": "彼に同情する。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E5%90%8C%E6%83%85%20(%E3%81%A9%E3%81%86%E3%81%98%E3%82%87%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-377",
+    "word": "感動 (かんどう)",
+    "definition": "sự xúc động",
+    "example": "映画に感動した。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E6%84%9F%E5%8B%95%20(%E3%81%8B%E3%82%93%E3%81%A9%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-378",
+    "word": "衝動 (しょうどう)",
+    "definition": "sự thôi thúc",
+    "example": "衝動的に買い物をした。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E8%A1%9D%E5%8B%95%20(%E3%81%97%E3%82%87%E3%81%86%E3%81%A9%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-379",
+    "word": "情熱 (じょうねつ)",
+    "definition": "nhiệt huyết",
+    "example": "仕事に情熱を注ぐ。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E6%83%85%E7%86%B1%20(%E3%81%98%E3%82%87%E3%81%86%E3%81%AD%E3%81%A4)/400/300"
+  },
+  {
+    "id": "nf-380",
+    "word": "無気力 (むきりょく)",
+    "definition": "thiếu sức sống",
+    "example": "彼は無気力な様子だ。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E7%84%A1%E6%B0%97%E5%8A%9B%20(%E3%82%80%E3%81%8D%E3%82%8A%E3%82%87%E3%81%8F)/400/300"
+  },
+  {
+    "id": "nf-381",
+    "word": "愛情 (あいじょう)",
+    "definition": "tình yêu",
+    "example": "子供への愛情が深い。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E6%84%9B%E6%83%85%20(%E3%81%82%E3%81%84%E3%81%98%E3%82%87%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-382",
+    "word": "友情 (ゆうじょう)",
+    "definition": "tình bạn",
+    "example": "友情を大切にする。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E5%8F%8B%E6%83%85%20(%E3%82%86%E3%81%86%E3%81%98%E3%82%87%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-383",
+    "word": "親切 (しんせつ)",
+    "definition": "tử tế, tốt bụng",
+    "example": "彼はとても親切だ。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E8%A6%AA%E5%88%87%20(%E3%81%97%E3%82%93%E3%81%9B%E3%81%A4)/400/300"
+  },
+  {
+    "id": "nf-384",
+    "word": "冷酷 (れいこく)",
+    "definition": "tàn nhẫn",
+    "example": "彼は冷酷な人だ。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E5%86%B7%E9%85%B7%20(%E3%82%8C%E3%81%84%E3%81%93%E3%81%8F)/400/300"
+  },
+  {
+    "id": "nf-385",
+    "word": "優しい (やさしい)",
+    "definition": "hiền lành",
+    "example": "彼女は優しい人だ。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E5%84%AA%E3%81%97%E3%81%84%20(%E3%82%84%E3%81%95%E3%81%97%E3%81%84)/400/300"
+  },
+  {
+    "id": "き",
+    "word": "厳しい (きびしい)",
+    "definition": "nghiêm khắc",
+    "example": "先生は厳しい人だ。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E5%8E%B3%E3%81%97%E3%81%84%20(%E3%81%8D%E3%81%B3%E3%81%97%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-387",
+    "word": "宽容 (かんよう)",
+    "definition": "khoan dung",
+    "example": "彼は宽容な人だ。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E5%AE%BD%E5%AE%B9%20(%E3%81%8B%E3%82%93%E3%82%88%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-388",
+    "word": "謙虚 (けんきょ)",
+    "definition": "khiêm tốn",
+    "example": "謙虚な態度をとりたい。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E8%AC%99%E8%99%9A%20(%E3%81%91%E3%82%93%E3%81%8D%E3%82%87)/400/300"
+  },
+  {
+    "id": "nf-389",
+    "word": "自慢 (じまん)",
+    "definition": "khoe khoang",
+    "example": "彼は自慢が好きだ。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E8%87%AA%E6%85%A2%20(%E3%81%98%E3%81%BE%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-390",
+    "word": "虚栄心 (きょえいしん)",
+    "definition": "tính phù phiếm",
+    "example": "虚栄心が強い。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E8%99%9A%E6%A0%84%E5%BF%83%20(%E3%81%8D%E3%82%87%E3%81%88%E3%81%84%E3%81%97%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-391",
+    "word": "責任感 (せきにんかん)",
+    "definition": "tính trách nhiệm",
+    "example": "責任感が強い。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E8%B2%AC%E4%BB%BB%E6%84%9F%20(%E3%81%9B%E3%81%8D%E3%81%AB%E3%82%93%E3%81%8B%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-392",
+    "word": "素直 (すなお)",
+    "definition": "thẳng thắn",
+    "example": "素直な子供だ。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E7%B4%A0%E7%9B%B4%20(%E3%81%99%E3%81%AA%E3%81%8A)/400/300"
+  },
+  {
+    "id": "nf-393",
+    "word": "素朴 (そぼく)",
+    "definition": "giản dị",
+    "example": "素朴な性格だ。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E7%B4%A0%E6%9C%B4%20(%E3%81%9D%E3%81%BC%E3%81%8F)/400/300"
+  },
+  {
+    "id": "nf-394",
+    "word": "気質 (きしつ)",
+    "definition": "tính khí",
+    "example": "芸術家の気質がある。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E6%B0%97%E8%B3%AA%20(%E3%81%8D%E3%81%97%E3%81%A4)/400/300"
+  },
+  {
+    "id": "nf-395",
+    "word": "性格 (せいかく)",
+    "definition": "tính cách",
+    "example": "彼女の性格は明るい。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E6%80%A7%E6%A0%BC%20(%E3%81%9B%E3%81%84%E3%81%8B%E3%81%8F)/400/300"
+  },
+  {
+    "id": "nf-396",
+    "word": "気性 (きしょう)",
+    "definition": "tính khí",
+    "example": "気性が荒い。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E6%B0%97%E6%80%A7%20(%E3%81%8D%E3%81%97%E3%82%87%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-397",
+    "word": "我慢 (がまん)",
+    "definition": "kiên nhẫn, chịu đựng",
+    "example": "我慢して待った。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E6%88%91%E6%85%A2%20(%E3%81%8C%E3%81%BE%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-398",
+    "word": "辛抱 (しんぼう)",
+    "definition": "kiên nhẫn",
+    "example": "辛抱強く待った。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E8%BE%9B%E6%8A%B1%20(%E3%81%97%E3%82%93%E3%81%BC%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-399",
+    "word": "忍耐 (にんたい)",
+    "definition": "sự kiên nhẫn",
+    "example": "忍耐強く仕事をする。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E5%BF%8D%E8%80%90%20(%E3%81%AB%E3%82%93%E3%81%9F%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-400",
+    "word": "感情 (かんじょう)",
+    "definition": "cảm xúc",
+    "example": "感情を抑える。",
+    "topic": "Emotions",
+    "imageUrl": "https://picsum.photos/seed/%E6%84%9F%E6%83%85%20(%E3%81%8B%E3%82%93%E3%81%98%E3%82%87%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-401",
+    "word": "天気 (てんき)",
+    "definition": "thời tiết",
+    "example": "明日の天気は晴れです。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E5%A4%A9%E6%B0%97%20(%E3%81%A6%E3%82%93%E3%81%8D)/400/300"
+  },
+  {
+    "id": "nf-402",
+    "word": "地震 (じしん)",
+    "definition": "động đất",
+    "example": "大きな地震があった。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E5%9C%B0%E9%9C%87%20(%E3%81%98%E3%81%97%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-403",
+    "word": "汚染 (おせん)",
+    "definition": "ô nhiễm",
+    "example": "河川が汚染している。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E6%B1%9A%E6%9F%93%20(%E3%81%8A%E3%81%9B%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-404",
+    "word": "資源 (しげん)",
+    "definition": "tài nguyên",
+    "example": "天然資源を大切にする。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E8%B3%87%E6%BA%90%20(%E3%81%97%E3%81%92%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-405",
+    "word": "環境 (かんきょう)",
+    "definition": "môi trường",
+    "example": "環境を守ろう。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E7%92%B0%E5%A2%83%20(%E3%81%8B%E3%82%93%E3%81%8D%E3%82%87%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-406",
+    "word": "自然 (しぜん)",
+    "definition": "thiên nhiên",
+    "example": "自然の中で過ごす。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E8%87%AA%E7%84%B6%20(%E3%81%97%E3%81%9C%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-407",
+    "word": "気候 (きこう)",
+    "definition": "khí hậu",
+    "example": "日本は気候がいい。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E6%B0%97%E5%80%99%20(%E3%81%8D%E3%81%93%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-408",
+    "word": "季節 (きせつ)",
+    "definition": "mùa",
+    "example": "四季の季節がある。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E5%AD%A3%E7%AF%80%20(%E3%81%8D%E3%81%9B%E3%81%A4)/400/300"
+  },
+  {
+    "id": "nf-409",
+    "word": "春 (はる)",
+    "definition": "mùa xuân",
+    "example": "春になると桜が咲く。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E6%98%A5%20(%E3%81%AF%E3%82%8B)/400/300"
+  },
+  {
+    "id": "nf-410",
+    "word": "夏 (なつ)",
+    "definition": "mùa hè",
+    "example": "夏は暑い。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E5%A4%8F%20(%E3%81%AA%E3%81%A4)/400/300"
+  },
+  {
+    "id": "nf-411",
+    "word": "秋 (あき)",
+    "definition": "mùa thu",
+    "example": "秋は紅葉が美しい。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E7%A7%8B%20(%E3%81%82%E3%81%8D)/400/300"
+  },
+  {
+    "id": "nf-412",
+    "word": "冬 (ふゆ)",
+    "definition": "mùa đông",
+    "example": "冬は雪が降る。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E5%86%AC%20(%E3%81%B5%E3%82%86)/400/300"
+  },
+  {
+    "id": "nf-413",
+    "word": "台風 (たいふう)",
+    "definition": "bão",
+    "example": "台風が来ている。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E5%8F%B0%E9%A2%A8%20(%E3%81%9F%E3%81%84%E3%81%B5%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-414",
+    "word": "豪雨 (ごうう)",
+    "definition": "mưa lớn",
+    "example": "豪雨で川が増水した。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E8%B1%AA%E9%9B%A8%20(%E3%81%94%E3%81%86%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-415",
+    "word": "旱害 (かんがい)",
+    "definition": "hạn hán",
+    "example": "旱害が続いている。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E6%97%B1%E5%AE%B3%20(%E3%81%8B%E3%82%93%E3%81%8C%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-416",
+    "word": "水害 (すいがい)",
+    "definition": "lũ lụt",
+    "example": "水害で家が流れた。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E6%B0%B4%E5%AE%B3%20(%E3%81%99%E3%81%84%E3%81%8C%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-417",
+    "word": "火災 (かさい)",
+    "definition": "hỏa hoạn",
+    "example": "火災が起きた。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E7%81%AB%E7%81%BD%20(%E3%81%8B%E3%81%95%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-418",
+    "word": "噴火 (ふんか)",
+    "definition": "phun trào",
+    "example": "火山が噴火した。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E5%99%B4%E7%81%AB%20(%E3%81%B5%E3%82%93%E3%81%8B)/400/300"
+  },
+  {
+    "id": "nf-419",
+    "word": "火山 (かざん)",
+    "definition": "núi lửa",
+    "example": "火山が噴火する。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E7%81%AB%E5%B1%B1%20(%E3%81%8B%E3%81%96%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-420",
+    "word": "山脈 (さんみゃく)",
+    "definition": "dãy núi",
+    "example": "山脈が連なっている。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E5%B1%B1%E8%84%88%20(%E3%81%95%E3%82%93%E3%81%BF%E3%82%83%E3%81%8F)/400/300"
+  },
+  {
+    "id": "nf-421",
+    "word": "高原 (こうげん)",
+    "definition": "cao nguyên",
+    "example": "高原でバーベキューをする。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E9%AB%98%E5%8E%9F%20(%E3%81%93%E3%81%86%E3%81%92%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-422",
+    "word": "平原 (へいげん)",
+    "definition": "đồng bằng",
+    "example": "広い平原が広がっている。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E5%B9%B3%E5%8E%9F%20(%E3%81%B8%E3%81%84%E3%81%92%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-423",
+    "word": "森林 (しんりん)",
+    "definition": "rừng",
+    "example": "森林を保護する。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E6%A3%AE%E6%9E%97%20(%E3%81%97%E3%82%93%E3%82%8A%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-424",
+    "word": "植林 (しょくりん)",
+    "definition": "trồng rừng",
+    "example": "植林活動に参加する。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E6%A4%8D%E6%9E%97%20(%E3%81%97%E3%82%87%E3%81%8F%E3%82%8A%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-425",
+    "word": "伐採 (ばっさい)",
+    "definition": "khai thác gỗ",
+    "example": "森林の伐採が進む。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E4%BC%90%E6%8E%A1%20(%E3%81%B0%E3%81%A3%E3%81%95%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-426",
+    "word": "砂漠 (さばく)",
+    "definition": "sa mạc",
+    "example": "砂漠が広がっている。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E7%A0%82%E6%BC%A0%20(%E3%81%95%E3%81%B0%E3%81%8F)/400/300"
+  },
+  {
+    "id": "nf-427",
+    "word": "湖 (みずうみ)",
+    "definition": "hồ",
+    "example": "湖で魚釣りをした。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E6%B9%96%20(%E3%81%BF%E3%81%9A%E3%81%86%E3%81%BF)/400/300"
+  },
+  {
+    "id": "nf-428",
+    "word": "川 (かわ)",
+    "definition": "sông",
+    "example": "川で泳ぐ。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E5%B7%9D%20(%E3%81%8B%E3%82%8F)/400/300"
+  },
+  {
+    "id": "nf-429",
+    "word": "海 (うみ)",
+    "definition": "biển",
+    "example": "海で泳ぐ。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E6%B5%B7%20(%E3%81%86%E3%81%BF)/400/300"
+  },
+  {
+    "id": "nf-430",
+    "word": "島 (しま)",
+    "definition": "đảo",
+    "example": "島に住んでいる。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E5%B3%B6%20(%E3%81%97%E3%81%BE)/400/300"
+  },
+  {
+    "id": "nf-431",
+    "word": "海岸 (かいがん)",
+    "definition": "bờ biển",
+    "example": "海岸を歩く。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E6%B5%B7%E5%B2%B8%20(%E3%81%8B%E3%81%84%E3%81%8C%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-432",
+    "word": "砂浜 (すなはま)",
+    "definition": "bãi cát",
+    "example": "砂浜で遊ぶ。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E7%A0%82%E6%B5%9C%20(%E3%81%99%E3%81%AA%E3%81%AF%E3%81%BE)/400/300"
+  },
+  {
+    "id": "nf-433",
+    "word": "波 (なみ)",
+    "definition": "sóng",
+    "example": "波が高くなった。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E6%B3%A2%20(%E3%81%AA%E3%81%BF)/400/300"
+  },
+  {
+    "id": "nf-434",
+    "word": "潮 (しお)",
+    "definition": "thủy triều",
+    "example": "潮が満ちる。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E6%BD%AE%20(%E3%81%97%E3%81%8A)/400/300"
+  },
+  {
+    "id": "nf-435",
+    "word": "花 (はな)",
+    "definition": "hoa",
+    "example": "花が咲いている。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E8%8A%B1%20(%E3%81%AF%E3%81%AA)/400/300"
+  },
+  {
+    "id": "nf-436",
+    "word": "木 (き)",
+    "definition": "cây",
+    "example": "木を植える。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E6%9C%A8%20(%E3%81%8D)/400/300"
+  },
+  {
+    "id": "nf-437",
+    "word": "草 (くさ)",
+    "definition": "cỏ",
+    "example": "草を刈る。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E8%8D%89%20(%E3%81%8F%E3%81%95)/400/300"
+  },
+  {
+    "id": "nf-438",
+    "word": "葉 (は)",
+    "definition": "lá",
+    "example": "木の葉が落ちる。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E8%91%89%20(%E3%81%AF)/400/300"
+  },
+  {
+    "id": "nf-439",
+    "word": "実 (み)",
+    "definition": "quả",
+    "example": "木に実がなった。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E5%AE%9F%20(%E3%81%BF)/400/300"
+  },
+  {
+    "id": "nf-440",
+    "word": "根 (ね)",
+    "definition": "rễ",
+    "example": "木の根が深い。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E6%A0%B9%20(%E3%81%AD)/400/300"
+  },
+  {
+    "id": "nf-441",
+    "word": "動物 (どうぶつ)",
+    "definition": "động vật",
+    "example": "動物園で動物を見る。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E5%8B%95%E7%89%A9%20(%E3%81%A9%E3%81%86%E3%81%B6%E3%81%A4)/400/300"
+  },
+  {
+    "id": "nf-442",
+    "word": "植物 (しょくぶつ)",
+    "definition": "thực vật",
+    "example": "植物を育てる。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E6%A4%8D%E7%89%A9%20(%E3%81%97%E3%82%87%E3%81%8F%E3%81%B6%E3%81%A4)/400/300"
+  },
+  {
+    "id": "nf-443",
+    "word": "鳥 (とり)",
+    "definition": "chim",
+    "example": "鳥が空を飛ぶ。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E9%B3%A5%20(%E3%81%A8%E3%82%8A)/400/300"
+  },
+  {
+    "id": "nf-444",
+    "word": "魚 (さかな)",
+    "definition": "cá",
+    "example": "川で魚を釣る。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E9%AD%9A%20(%E3%81%95%E3%81%8B%E3%81%AA)/400/300"
+  },
+  {
+    "id": "nf-445",
+    "word": "虫 (むし)",
+    "definition": "côn trùng",
+    "example": "虫の声が聞こえる。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E8%99%AB%20(%E3%82%80%E3%81%97)/400/300"
+  },
+  {
+    "id": "nf-446",
+    "word": "空 (そら)",
+    "definition": "bầu trời",
+    "example": "空が青い。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E7%A9%BA%20(%E3%81%9D%E3%82%89)/400/300"
+  },
+  {
+    "id": "nf-447",
+    "word": "雲 (くも)",
+    "definition": "mây",
+    "example": "雲が厚い。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E9%9B%B2%20(%E3%81%8F%E3%82%82)/400/300"
+  },
+  {
+    "id": "nf-448",
+    "word": "雨 (あめ)",
+    "definition": "mưa",
+    "example": "雨が降っている。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E9%9B%A8%20(%E3%81%82%E3%82%81)/400/300"
+  },
+  {
+    "id": "nf-449",
+    "word": "雪 (ゆき)",
+    "definition": "tuyết",
+    "example": "雪が降っている。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E9%9B%AA%20(%E3%82%86%E3%81%8D)/400/300"
+  },
+  {
+    "id": "nf-450",
+    "word": "風 (かぜ)",
+    "definition": "gió",
+    "example": "風が強い。",
+    "topic": "Nature",
+    "imageUrl": "https://picsum.photos/seed/%E9%A2%A8%20(%E3%81%8B%E3%81%9C)/400/300"
+  },
+  {
+    "id": "nf-451",
+    "word": "法律 (ほうりつ)",
+    "definition": "pháp luật",
+    "example": "法律を守る。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E6%B3%95%E5%BE%8B%20(%E3%81%BB%E3%81%86%E3%82%8A%E3%81%A4)/400/300"
+  },
+  {
+    "id": "nf-452",
+    "word": "選挙 (せんきょ)",
+    "definition": "bầu cử",
+    "example": "選挙で議員を選ぶ。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E9%81%B8%E6%8C%99%20(%E3%81%9B%E3%82%93%E3%81%8D%E3%82%87)/400/300"
+  },
+  {
+    "id": "nf-453",
+    "word": "裁判 (さいばん)",
+    "definition": "phiên tòa",
+    "example": "裁判を受けた。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E8%A3%81%E5%88%A4%20(%E3%81%95%E3%81%84%E3%81%B0%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-454",
+    "word": "税金 (ぜいきん)",
+    "definition": "thuế",
+    "example": "税金を納める。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E7%A8%8E%E9%87%91%20(%E3%81%9C%E3%81%84%E3%81%8D%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-455",
+    "word": "政治 (せいじ)",
+    "definition": "chính trị",
+    "example": "政治に関心がある。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E6%94%BF%E6%B2%BB%20(%E3%81%9B%E3%81%84%E3%81%98)/400/300"
+  },
+  {
+    "id": "nf-456",
+    "word": "政府 (せいふ)",
+    "definition": "chính phủ",
+    "example": "政府が新しい政策を発表した。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E6%94%BF%E5%BA%9C%20(%E3%81%9B%E3%81%84%E3%81%B5)/400/300"
+  },
+  {
+    "id": "nf-457",
+    "word": "国会 (こっかい)",
+    "definition": "Quốc hội",
+    "example": "国会で法案が審議された。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E5%9B%BD%E4%BC%9A%20(%E3%81%93%E3%81%A3%E3%81%8B%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-458",
+    "word": "議会 (ぎかい)",
+    "definition": "Quốc hội, Nghị viện",
+    "example": "議会で討論が行われた。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E8%AD%B0%E4%BC%9A%20(%E3%81%8E%E3%81%8B%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-459",
+    "word": "議員 (ぎいん)",
+    "definition": "nghị sĩ",
+    "example": "議員に質問する。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E8%AD%B0%E5%93%A1%20(%E3%81%8E%E3%81%84%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-460",
+    "word": "首相 (しゅしょう)",
+    "definition": "Thủ tướng",
+    "example": "首相が会見を開いた。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E9%A6%96%E7%9B%B8%20(%E3%81%97%E3%82%85%E3%81%97%E3%82%87%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-461",
+    "word": "大臣 (だいじん)",
+    "definition": "Bộ trưởng",
+    "example": "外務大臣が発言した。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E5%A4%A7%E8%87%A3%20(%E3%81%A0%E3%81%84%E3%81%98%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-462",
+    "word": "官僚 (かんりょう)",
+    "definition": "quan chức",
+    "example": "官僚が政策を実行する。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E5%AE%98%E5%83%9A%20(%E3%81%8B%E3%82%93%E3%82%8A%E3%82%87%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-463",
+    "word": "公務員 (こうむいん)",
+    "definition": "công chức",
+    "example": "公務員として働く。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E5%85%AC%E5%8B%99%E5%93%A1%20(%E3%81%93%E3%81%86%E3%82%80%E3%81%84%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-464",
+    "word": "条例 (じょうれい)",
+    "definition": "điều lệ",
+    "example": "地方の条例を遵守する。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E6%9D%A1%E4%BE%8B%20(%E3%81%98%E3%82%87%E3%81%86%E3%82%8C%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-465",
+    "word": "規制 (きせい)",
+    "definition": "quy định",
+    "example": "排ガス規制を強化する。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E8%A6%8F%E5%88%B6%20(%E3%81%8D%E3%81%9B%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-466",
+    "word": "法令 (ほうれい)",
+    "definition": "pháp lệnh",
+    "example": "法令に従う。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E6%B3%95%E4%BB%A4%20(%E3%81%BB%E3%81%86%E3%82%8C%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-467",
+    "word": "違反 (いはん)",
+    "definition": "vi phạm",
+    "example": "交通規則に違反した。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E9%81%95%E5%8F%8D%20(%E3%81%84%E3%81%AF%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-468",
+    "word": "罰則 (ばっそく)",
+    "definition": "hình phạt",
+    "example": "罰則を設ける。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E7%BD%B0%E5%89%87%20(%E3%81%B0%E3%81%A3%E3%81%9D%E3%81%8F)/400/300"
+  },
+  {
+    "id": "nf-469",
+    "word": "刑罰 (けいばつ)",
+    "definition": "hình phạt",
+    "example": "刑罰を受けた。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E5%88%91%E7%BD%B0%20(%E3%81%91%E3%81%84%E3%81%B0%E3%81%A4)/400/300"
+  },
+  {
+    "id": "nf-470",
+    "word": "逮捕 (たいほ)",
+    "definition": "bắt giữ",
+    "example": "容疑者が逮捕された。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E9%80%AE%E6%8D%95%20(%E3%81%9F%E3%81%84%E3%81%BB)/400/300"
+  },
+  {
+    "id": "nf-471",
+    "word": "起訴 (きそ)",
+    "definition": "truy tố",
+    "example": "検察官が起訴した。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E8%B5%B7%E8%A8%B4%20(%E3%81%8D%E3%81%9D)/400/300"
+  },
+  {
+    "id": "nf-472",
+    "word": "判決 (はんけつ)",
+    "definition": "phán quyết",
+    "example": "判決が下された。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E5%88%A4%E6%B1%BA%20(%E3%81%AF%E3%82%93%E3%81%91%E3%81%A4)/400/300"
+  },
+  {
+    "id": "nf-473",
+    "word": "有罪 (ゆうざい)",
+    "definition": "có tội",
+    "example": "有罪判決を受けた。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E6%9C%89%E7%BD%AA%20(%E3%82%86%E3%81%86%E3%81%96%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-474",
+    "word": "無罪 (むざい)",
+    "definition": "vô tội",
+    "example": "無罪判決を受けた。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E7%84%A1%E7%BD%AA%20(%E3%82%80%E3%81%96%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-475",
+    "word": "弁護 (べんご)",
+    "definition": "bào chữa",
+    "example": "弁護士に弁護を依頼した。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E5%BC%81%E8%AD%B7%20(%E3%81%B9%E3%82%93%E3%81%94)/400/300"
+  },
+  {
+    "id": "nf-476",
+    "word": "弁護士 (べんごし)",
+    "definition": "luật sư",
+    "example": "弁護士に相談する。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E5%BC%81%E8%AD%B7%E5%A3%AB%20(%E3%81%B9%E3%82%93%E3%81%94%E3%81%97)/400/300"
+  },
+  {
+    "id": "nf-477",
+    "word": "検察 (けんさつ)",
+    "definition": "kiểm sát",
+    "example": "検察が捜査する。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E6%A4%9C%E5%AF%9F%20(%E3%81%91%E3%82%93%E3%81%95%E3%81%A4)/400/300"
+  },
+  {
+    "id": "nf-478",
+    "word": "警察 (けいさつ)",
+    "definition": "cảnh sát",
+    "example": "警察に通報した。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E8%AD%A6%E5%AF%9F%20(%E3%81%91%E3%81%84%E3%81%95%E3%81%A4)/400/300"
+  },
+  {
+    "id": "nf-479",
+    "word": "捜査 (そうさ)",
+    "definition": "điều tra",
+    "example": "警察が捜査を行った。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E6%8D%9C%E6%9F%BB%20(%E3%81%9D%E3%81%86%E3%81%95)/400/300"
+  },
+  {
+    "id": "nf-480",
+    "word": "容疑者 (ようぎしゃ)",
+    "definition": "nghi phạm",
+    "example": "容疑者が逮捕された。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E5%AE%B9%E7%96%91%E8%80%85%20(%E3%82%88%E3%81%86%E3%81%8E%E3%81%97%E3%82%83)/400/300"
+  },
+  {
+    "id": "nf-481",
+    "word": "証人 (しょうにん)",
+    "definition": "nhân chứng",
+    "example": "証人として出廷した。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E8%A8%BC%E4%BA%BA%20(%E3%81%97%E3%82%87%E3%81%86%E3%81%AB%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-482",
+    "word": "裁判所 (さいばんしょ)",
+    "definition": "tòa án",
+    "example": "裁判所に行く。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E8%A3%81%E5%88%A4%E6%89%80%20(%E3%81%95%E3%81%84%E3%81%B0%E3%82%93%E3%81%97%E3%82%87)/400/300"
+  },
+  {
+    "id": "nf-483",
+    "word": "法廷 (ほうてい)",
+    "definition": "phiên tòa",
+    "example": "法廷で審理が行われる。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E6%B3%95%E5%BB%B7%20(%E3%81%BB%E3%81%86%E3%81%A6%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-484",
+    "word": "契約書 (けいやくしょ)",
+    "definition": "hợp đồng",
+    "example": "契約書に署名する。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E5%A5%91%E7%B4%84%E6%9B%B8%20(%E3%81%91%E3%81%84%E3%82%84%E3%81%8F%E3%81%97%E3%82%87)/400/300"
+  },
+  {
+    "id": "nf-485",
+    "word": "所有権 (しょゆうけん)",
+    "definition": "quyền sở hữu",
+    "example": "土地の所有権を主張する。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E6%89%80%E6%9C%89%E6%A8%A9%20(%E3%81%97%E3%82%87%E3%82%86%E3%81%86%E3%81%91%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-486",
+    "word": "特権 (とっけん)",
+    "definition": "đặc quyền",
+    "example": "特権を享受する。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E7%89%B9%E6%A8%A9%20(%E3%81%A8%E3%81%A3%E3%81%91%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-487",
+    "word": "義務 (ぎむ)",
+    "definition": "nghĩa vụ",
+    "example": "納税は義務だ。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E7%BE%A9%E5%8B%99%20(%E3%81%8E%E3%82%80)/400/300"
+  },
+  {
+    "id": "nf-488",
+    "word": "権利 (けんり)",
+    "definition": "quyền lợi",
+    "example": "人間の権利を守る。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E6%A8%A9%E5%88%A9%20(%E3%81%91%E3%82%93%E3%82%8A)/400/300"
+  },
+  {
+    "id": "nf-489",
+    "word": "民主主義 (みんしゅしゅぎ)",
+    "definition": "dân chủ",
+    "example": "民主主義を守る。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E6%B0%91%E4%B8%BB%E4%B8%BB%E7%BE%A9%20(%E3%81%BF%E3%82%93%E3%81%97%E3%82%85%E3%81%97%E3%82%85%E3%81%8E)/400/300"
+  },
+  {
+    "id": "nf-490",
+    "word": "自由 (じゆう)",
+    "definition": "tự do",
+    "example": "自由を求める。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E8%87%AA%E7%94%B1%20(%E3%81%98%E3%82%86%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-491",
+    "word": "平等 (びょうどう)",
+    "definition": "bình đẳng",
+    "example": "平等な権利を求める。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E5%B9%B3%E7%AD%89%20(%E3%81%B3%E3%82%87%E3%81%86%E3%81%A9%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-492",
+    "word": "公正 (こうせい)",
+    "definition": "công bằng",
+    "example": "公正な裁判を望む。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E5%85%AC%E6%AD%A3%20(%E3%81%93%E3%81%86%E3%81%9B%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-493",
+    "word": "中立 (ちゅうりつ)",
+    "definition": "trung lập",
+    "example": "中立を保つ。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E4%B8%AD%E7%AB%8B%20(%E3%81%A1%E3%82%85%E3%81%86%E3%82%8A%E3%81%A4)/400/300"
+  },
+  {
+    "id": "nf-494",
+    "word": "外交 (がいこう)",
+    "definition": "ngoại giao",
+    "example": "外交関係を結ぶ。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E5%A4%96%E4%BA%A4%20(%E3%81%8C%E3%81%84%E3%81%93%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-495",
+    "word": "条約 (じょうやく)",
+    "definition": "hiệp ước",
+    "example": "条約を締結する。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E6%9D%A1%E7%B4%84%20(%E3%81%98%E3%82%87%E3%81%86%E3%82%84%E3%81%8F)/400/300"
+  },
+  {
+    "id": "nf-496",
+    "word": "国際 (こくさい)",
+    "definition": "quốc tế",
+    "example": "国際的な問題を解決する。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E5%9B%BD%E9%9A%9B%20(%E3%81%93%E3%81%8F%E3%81%95%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-497",
+    "word": "連合 (れんごう)",
+    "definition": "liên minh",
+    "example": "連合を結成する。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E9%80%A3%E5%90%88%20(%E3%82%8C%E3%82%93%E3%81%94%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-498",
+    "word": "同盟 (どうめい)",
+    "definition": "liên minh",
+    "example": "同盟を結んだ。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E5%90%8C%E7%9B%9F%20(%E3%81%A9%E3%81%86%E3%82%81%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-499",
+    "word": "協定 (きょうてい)",
+    "definition": "hiệp định",
+    "example": "二国間協定を結んだ。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E5%8D%94%E5%AE%9A%20(%E3%81%8D%E3%82%87%E3%81%86%E3%81%A6%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-500",
+    "word": "承認 (しょうにん)",
+    "definition": "sự chấp thuận",
+    "example": "議会が承認した。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E6%89%BF%E8%AA%8D%20(%E3%81%97%E3%82%87%E3%81%86%E3%81%AB%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-501",
+    "word": "批准 (ひじゅん)",
+    "definition": "phê chuẩn",
+    "example": "条約を批准した。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E6%89%B9%E5%87%86%20(%E3%81%B2%E3%81%98%E3%82%85%E3%82%93)/400/300"
+  },
+  {
+    "id": "nf-502",
+    "word": "撤回 (てっかい)",
+    "definition": "rút lại",
+    "example": "法案を撤回した。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E6%92%A4%E5%9B%9E%20(%E3%81%A6%E3%81%A3%E3%81%8B%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-503",
+    "word": "改正 (かいせい)",
+    "definition": "sửa đổi",
+    "example": "法律を改正する。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E6%94%B9%E6%AD%A3%20(%E3%81%8B%E3%81%84%E3%81%9B%E3%81%84)/400/300"
+  },
+  {
+    "id": "nf-504",
+    "word": "施行 (しこう)",
+    "definition": "ban hành",
+    "example": "新しい法律が施行された。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E6%96%BD%E8%A1%8C%20(%E3%81%97%E3%81%93%E3%81%86)/400/300"
+  },
+  {
+    "id": "nf-505",
+    "word": "適用 (てきよう)",
+    "definition": "áp dụng",
+    "example": "この規則は適用されない。",
+    "topic": "Government",
+    "imageUrl": "https://picsum.photos/seed/%E9%81%A9%E7%94%A8%20(%E3%81%A6%E3%81%8D%E3%82%88%E3%81%86)/400/300"
+  }
 ]

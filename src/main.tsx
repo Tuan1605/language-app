@@ -5,21 +5,21 @@ import { registerSW } from 'virtual:pwa-register'
 import './index.css'
 import App from './App.tsx'
 import { ErrorBoundary } from './components/ErrorBoundary'
+import { HashRouter } from 'react-router-dom'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <ErrorBoundary>
-      <App />
+      <HashRouter>
+        <App />
+      </HashRouter>
     </ErrorBoundary>
   </StrictMode>,
 )
 
 const updateSW = registerSW({
   onNeedRefresh() {
-    // Show an update banner if needed. For now, just reload to update.
     updateSW(true)
   },
-  onOfflineReady() {
-    console.log("App is ready to work offline.")
-  },
+  onOfflineReady() {},
 })

@@ -13,10 +13,11 @@ export interface Flashcard {
   topic?: string;
   
   // SM-2 Algorithm fields
+  status: 'new' | 'learning' | 'review';
   repetition: number;
   interval: number;
   easiness: number;
-  next_review: string;
+  next_review: string | null;
   created_at: string;
 }
 
@@ -41,7 +42,7 @@ export interface ExamResult {
   totalQuestions: number;
   category: 'toeic' | 'n2';
   difficulty: Difficulty;
-  type?: 'mini-quiz' | 'full-exam';
+  type?: 'mini-quiz' | 'full-exam' | 'mock-exam';
 }
 
 export interface ListeningLesson {
@@ -138,7 +139,7 @@ export interface FullExam {
 export interface Mistake {
   id: string;
   type: 'question' | 'dictation' | 'speaking' | 'writing';
-  data: any;
+  data: Question | DictationLesson | SpeakingLesson | WritingLesson;
   wrongAnswer: string;
   timestamp: string;
 }

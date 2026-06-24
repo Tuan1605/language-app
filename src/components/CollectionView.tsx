@@ -194,11 +194,11 @@ export function CollectionView({ cards, activeTrack, onDelete, onDeleteBulk, onE
       {editingCard && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-in fade-in">
           <div className="bg-[var(--bg-main)] w-full max-w-md rounded-[2rem] border-2 border-[var(--gray-path)] shadow-2xl flex flex-col overflow-hidden relative p-8">
-            <h3 className="font-black text-2xl text-[var(--text-main)] mb-6">Sửa Thẻ</h3>
+            <h3 className="font-black text-2xl text-[var(--text-main)] mb-6">Edit Card</h3>
             
             <div className="space-y-4">
               <div>
-                <label className="block text-xs font-bold text-[var(--text-muted)] uppercase mb-2">Từ vựng (Word)</label>
+                <label className="block text-xs font-bold text-[var(--text-muted)] uppercase mb-2">Word or Phrase</label>
                 <input 
                   type="text" 
                   value={editForm.word}
@@ -207,7 +207,7 @@ export function CollectionView({ cards, activeTrack, onDelete, onDeleteBulk, onE
                 />
               </div>
               <div>
-                <label className="block text-xs font-bold text-[var(--text-muted)] uppercase mb-2">Định nghĩa (Definition)</label>
+                <label className="block text-xs font-bold text-[var(--text-muted)] uppercase mb-2">Meaning / Definition</label>
                 <input 
                   type="text" 
                   value={editForm.definition}
@@ -216,7 +216,7 @@ export function CollectionView({ cards, activeTrack, onDelete, onDeleteBulk, onE
                 />
               </div>
               <div>
-                <label className="block text-xs font-bold text-[var(--text-muted)] uppercase mb-2">Ví dụ (Example - Tùy chọn)</label>
+                <label className="block text-xs font-bold text-[var(--text-muted)] uppercase mb-2">Example Sentence (optional)</label>
                 <input 
                   type="text" 
                   value={editForm.example}
@@ -231,13 +231,13 @@ export function CollectionView({ cards, activeTrack, onDelete, onDeleteBulk, onE
                 onClick={() => setEditingCard(null)}
                 className="flex-1 py-3 rounded-xl font-bold text-[var(--text-muted)] hover:bg-[var(--gray-path)] transition-colors border-2 border-transparent hover:border-[var(--border-main)] uppercase"
               >
-                Hủy
+                Cancel
               </button>
               <button 
                 onClick={handleSaveEdit}
                 className="flex-1 py-3 rounded-xl font-black text-white bg-[var(--green)] hover:bg-[#1eb040] shadow-[0_4px_0_#189935] hover:shadow-[0_2px_0_#189935] hover:translate-y-[2px] transition-all uppercase"
               >
-                Lưu
+                Save
               </button>
             </div>
           </div>

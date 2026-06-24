@@ -141,8 +141,6 @@ function speakViaAudio(
     const chunk = chunks[chunkIdx];
     const url = `https://lingva.ml/api/v1/audio/${langCode}/${encodeURIComponent(chunk)}`;
 
-    console.log('[TTS] Fetching Audio from Lingva URL:', url);
-
     fetch(url)
       .then((res) => {
         if (!res.ok) throw new Error(`Lỗi HTTP ${res.status}`);
@@ -178,7 +176,6 @@ function speakViaAudio(
           currentAudioSource = source;
 
           source.onended = () => {
-            console.log('[TTS] AudioContext chunk finished.');
             chunkIdx++;
             playNextChunk();
           };
@@ -188,8 +185,6 @@ function speakViaAudio(
           }
 
           source.start(0);
-          console.log('[TTS] AudioContext started playing successfully.');
-          
           if (!started) {
             started = true;
             onStart?.();
@@ -278,7 +273,6 @@ export function speak(text: string, options: SpeakOptions = {}): boolean {
     }
 
     if (premiumVoice) {
-      console.log('[TTS] Using premium voice:', premiumVoice.name);
       const utterance = new SpeechSynthesisUtterance(text);
       utterance.voice = premiumVoice;
       utterance.lang = lang;
@@ -295,7 +289,6 @@ export function speak(text: string, options: SpeakOptions = {}): boolean {
   }
 
   // Fallback if no premium voice is found, to ensure the user ALWAYS hears sound.
-  console.log('[TTS] No premium voice found, using Audio fallback.');
   speakViaAudio(text, lang, onStart, onEnd);
 
   return true;

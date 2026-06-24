@@ -9,9 +9,10 @@ const stripHtml = (s: string) => s.replace(/<[^>]*>/g, '').replace(/&nbsp;/g, ' 
 interface FlashcardViewProps {
   card: Flashcard;
   onRate: (grade: ReviewGrade) => void;
+  onArchive?: () => void;
 }
 
-export function FlashcardView({ card, onRate }: FlashcardViewProps) {
+export function FlashcardView({ card, onRate, onArchive }: FlashcardViewProps) {
   const [isFlipped, setIsFlipped] = useState(false);
   const [isSpeaking, setIsSpeaking] = useState(false);
 
@@ -44,6 +45,19 @@ export function FlashcardView({ card, onRate }: FlashcardViewProps) {
   useEffect(() => {
     setIsFlipped(false);
   }, [card.id]);
+
+  // Keyboard shortcuts for rating (1-4 keys)
+  useEffect(() => {
+    if (!isFlipped) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === '1') { setIsFlipped(false); setTimeout(() => onRate(0), 300); }
+      else if (e.key === '2') { setIsFlipped(false); setTimeout(() => onRate(2), 300); }
+      else if (e.key === '3') { setIsFlipped(false); setTimeout(() => onRate(4), 300); }
+      else if (e.key === '4') { setIsFlipped(false); setTimeout(() => onRate(5), 300); }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isFlipped, onRate]);
 
   return (
     <div className="flex flex-col items-center space-y-12 w-full max-w-lg mx-auto">
@@ -139,29 +153,39 @@ export function FlashcardView({ card, onRate }: FlashcardViewProps) {
         </div>
       </div>
 
-      {/* Rating Controls - SIMPLIFIED TO 3 LEVELS */}
+      {/* Rating Controls - 4 LEVELS FOR BETTER SM-2 ACCURACY */}
       <div className={`w-full space-y-6 transition-all duration-500 ${isFlipped ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4 pointer-events-none'}`}>
         <h3 className="text-center text-[10px] font-black text-[var(--text-muted)] uppercase tracking-[0.2em]">Mức độ thuộc từ?</h3>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid grid-cols-4 gap-2">
           <button
             onClick={(e) => {
               e.stopPropagation();
               setIsFlipped(false);
               setTimeout(() => onRate(0), 300);
             }}
-            className="h-16 btn-3d btn-red text-sm font-black flex items-center justify-center p-0"
+            className="h-14 btn-3d bg-[var(--tint-red)] text-[var(--red)] border-2 border-[var(--red)] shadow-[0_4px_0_var(--red)] active:shadow-[0_0_0_var(--red)] active:translate-y-1 text-[10px] sm:text-xs font-black flex items-center justify-center p-0"
           >
-            KHÓ
+            AGAIN
           </button>
           <button
             onClick={(e) => {
               e.stopPropagation();
               setIsFlipped(false);
-              setTimeout(() => onRate(3), 300);
+              setTimeout(() => onRate(2), 300);
             }}
-            className="h-16 btn-3d btn-blue text-sm font-black flex items-center justify-center p-0"
+            className="h-14 btn-3d bg-[var(--tint-gold)] text-[var(--gold)] border-2 border-[var(--gold)] shadow-[0_4px_0_var(--gold)] active:shadow-[0_0_0_var(--gold)] active:translate-y-1 text-[10px] sm:text-xs font-black flex items-center justify-center p-0"
           >
-            VỪA
+            HARD
+          </button>
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              setIsFlipped(false);
+              setTimeout(() => onRate(4), 300);
+            }}
+            className="h-14 btn-3d bg-[var(--tint-blue)] text-[var(--blue)] border-2 border-[var(--blue)] shadow-[0_4px_0_var(--blue)] active:shadow-[0_0_0_var(--blue)] active:translate-y-1 text-[10px] sm:text-xs font-black flex items-center justify-center p-0"
+          >
+            GOOD
           </button>
           <button
             onClick={(e) => {
@@ -169,9 +193,9 @@ export function FlashcardView({ card, onRate }: FlashcardViewProps) {
               setIsFlipped(false);
               setTimeout(() => onRate(5), 300);
             }}
-            className="h-16 btn-3d btn-green text-sm font-black flex items-center justify-center p-0"
+            className="h-14 btn-3d bg-[var(--tint-green)] text-[var(--green)] border-2 border-[var(--green)] shadow-[0_4px_0_var(--green)] active:shadow-[0_0_0_var(--green)] active:translate-y-1 text-[10px] sm:text-xs font-black flex items-center justify-center p-0"
           >
-            DỄ
+            EASY
           </button>
         </div>
         <div className="flex flex-col items-center gap-2 mt-4">
@@ -182,7 +206,10 @@ export function FlashcardView({ card, onRate }: FlashcardViewProps) {
             onClick={(e) => {
               e.stopPropagation();
               setIsFlipped(false);
-              setTimeout(() => onRate(5), 300); // Treating suspend as "Super Easy"
+              setTimeout(() => {
+                if (onArchive) onArchive();
+                else onRate(5);
+              }, 300);
             }}
             className="text-[10px] font-black uppercase text-[var(--text-muted)] hover:text-[var(--red)] transition-colors tracking-widest border-2 border-transparent hover:border-[var(--red)] px-3 py-1 rounded-lg"
           >

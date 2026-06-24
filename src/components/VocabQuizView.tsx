@@ -1,6 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
 import type { Flashcard } from '../types';
-import { playCorrectSound } from '../utils/sound';
+import { playCorrectSound, playIncorrectSound } from '../utils/sound';
+import { speak, langForCategory } from '../utils/tts';
+import { Volume2 } from 'lucide-react';
 
 /** Strip HTML tags that may come from Anki-imported data. */
 const stripHtml = (s: string) => s.replace(/<[^>]*>/g, '').replace(/&nbsp;/g, ' ').trim();
@@ -15,7 +17,8 @@ export function VocabQuizView({ word, allCards, onComplete }: VocabQuizViewProps
   const [options, setOptions] = useState<string[]>([]);
   const [selectedIdx, setSelectedIdx] = useState<number | null>(null);
   const [isAnswered, setIsAnswered] = useState(false);
-  const [timeLeft, setTimeLeft] = useState(15);
+  const initialTime = 45;
+  const [timeLeft, setTimeLeft] = useState(initialTime);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   useEffect(() => {
@@ -43,7 +46,7 @@ export function VocabQuizView({ word, allCards, onComplete }: VocabQuizViewProps
     setOptions(combined);
     
     // Start timer
-    setTimeLeft(15);
+    setTimeLeft(initialTime);
     setIsAnswered(false);
     setSelectedIdx(null);
     timerRef.current = setInterval(() => {
@@ -77,6 +80,8 @@ export function VocabQuizView({ word, allCards, onComplete }: VocabQuizViewProps
     setIsAnswered(true);
     if (idx === correctIdx) {
       playCorrectSound();
+    } else {
+      playIncorrectSound();
     }
   };
 
@@ -87,7 +92,7 @@ export function VocabQuizView({ word, allCards, onComplete }: VocabQuizViewProps
         <div className="absolute top-0 left-0 right-0 h-1.5 bg-[var(--bg-hover)]">
           <div 
             className={`h-full transition-all duration-1000 ease-linear ${timeLeft <= 5 ? 'bg-[var(--red)] animate-pulse' : 'bg-[var(--green)]'}`}
-            style={{ width: `${(timeLeft / 15) * 100}%` }}
+            style={{ width: `${(timeLeft / initialTime) * 100}%` }}
           ></div>
         </div>
       )}
@@ -109,9 +114,18 @@ export function VocabQuizView({ word, allCards, onComplete }: VocabQuizViewProps
 
       <div className="text-center space-y-4 mb-12">
         <p className="text-[10px] font-black text-[var(--blue)] uppercase tracking-[0.2em]">Select the correct meaning:</p>
-        <h3 className="text-5xl font-black text-[var(--text-main)] leading-tight">
-          {word.word}
-        </h3>
+        <div className="flex items-center justify-center gap-3">
+          <h3 className="text-5xl font-black text-[var(--text-main)] leading-tight">
+            {word.word}
+          </h3>
+          <button 
+            onClick={() => speak(word.word, { lang: langForCategory(word.language) })} 
+            className="w-10 h-10 rounded-full bg-[var(--tint-blue)] text-[var(--blue)] flex items-center justify-center hover:bg-[var(--blue)] hover:text-white transition-colors active:scale-95"
+            aria-label="Listen"
+          >
+            <Volume2 size={20} />
+          </button>
+        </div>
         {word.imageUrl && (
            <div className="w-40 h-40 mx-auto rounded-2xl overflow-hidden border-2 border-[var(--border-main)] shadow-sm">
               <img src={word.imageUrl} alt={word.word} className="w-full h-full object-cover" />

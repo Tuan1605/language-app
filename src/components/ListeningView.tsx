@@ -179,6 +179,7 @@ export function ListeningView({ lesson, onBack, hideBackButton }: ListeningViewP
         <audio
           ref={audioRef}
           src={lesson.audioUrl}
+          preload="auto"
           onTimeUpdate={handleTimeUpdate}
           onEnded={() => setIsPlaying(false)}
           className="hidden"

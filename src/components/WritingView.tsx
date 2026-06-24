@@ -12,38 +12,51 @@ interface WritingViewProps {
 export function WritingView({ lesson, onComplete, onCancel, onSaveMistake }: WritingViewProps) {
   const [userInput, setUserInput] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [feedback, setFeedback] = useState<{score: number, diff: {text: string, isError: boolean}[]} | null>(null);
+  const [feedback, setFeedback] = useState<{
+    score: number;
+    vocabScore: number;
+    completenessScore: number;
+    diff: { text: string; isError: boolean }[];
+    userDiff: { text: string; isError: boolean }[];
+  } | null>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
 
   useEffect(() => {
-    // Focus input on mount
     inputRef.current?.focus();
   }, []);
 
   const handleSubmit = () => {
     if (!userInput.trim()) return;
     setIsSubmitting(true);
-    
-    // Evaluate score
+
     const target = lesson.targetText;
     const score = calculateSimilarity(target, userInput);
-    
-    // Generate diff
-    const userWords = userInput.split(/\s+/);
-    const targetWords = target.split(/\s+/);
-    
-    // Very simple diff logic for visual feedback
-    const diff = targetWords.map(word => {
-      // Clean punctuation for comparison
+
+    // Vocabulary score: how many target words appear in user input
+    const targetWords = target.toLowerCase().split(/\s+/).map(w => w.replace(/[.,!?]/g, ''));
+    const userWords = userInput.toLowerCase().split(/\s+/).map(w => w.replace(/[.,!?]/g, ''));
+    const matchedWords = targetWords.filter(tw => userWords.some(uw => uw === tw));
+    const vocabScore = targetWords.length > 0 ? (matchedWords.length / targetWords.length) * 100 : 0;
+
+    // Completeness score: based on length ratio
+    const lengthRatio = Math.min(userWords.length / targetWords.length, 1.5);
+    const completenessScore = Math.min(lengthRatio * 100, 100);
+
+    // Diff for target sentence (words user missed)
+    const diff = target.split(/\s+/).map(word => {
       const cleanWord = word.replace(/[.,!?]/g, '').toLowerCase();
-      const matchFound = userWords.some(uw => uw.replace(/[.,!?]/g, '').toLowerCase() === cleanWord);
-      return {
-        text: word,
-        isError: !matchFound
-      };
+      const matchFound = userWords.some(uw => uw === cleanWord);
+      return { text: word, isError: !matchFound };
     });
 
-    setFeedback({ score, diff });
+    // Diff for user input (words not in target)
+    const userDiff = userInput.split(/\s+/).map(word => {
+      const cleanWord = word.replace(/[.,!?]/g, '').toLowerCase();
+      const matchFound = targetWords.some(tw => tw === cleanWord);
+      return { text: word, isError: !matchFound };
+    });
+
+    setFeedback({ score, vocabScore, completenessScore, diff, userDiff });
 
     if (score < 80 && onSaveMistake) {
       onSaveMistake({
@@ -54,10 +67,6 @@ export function WritingView({ lesson, onComplete, onCancel, onSaveMistake }: Wri
         timestamp: new Date().toISOString()
       });
     }
-
-    setTimeout(() => {
-      onComplete(score);
-    }, 3000); // Wait 3 seconds to show feedback before proceeding
   };
 
   return (
@@ -77,7 +86,6 @@ export function WritingView({ lesson, onComplete, onCancel, onSaveMistake }: Wri
           <span className="absolute -top-3 left-4 bg-[var(--blue)] text-white text-[10px] font-black uppercase px-2 py-1 rounded">Source</span>
           <p className="text-xl font-bold text-[var(--text-main)]">{lesson.sourceText}</p>
         </div>
-        
         {lesson.hint && (
           <p className="text-xs text-[var(--text-muted)] font-bold mt-2 ml-2 italic">Hint: {lesson.hint}</p>
         )}
@@ -103,38 +111,83 @@ export function WritingView({ lesson, onComplete, onCancel, onSaveMistake }: Wri
       {feedback && (
         <div className="mb-8 animate-in fade-in zoom-in duration-300">
           <div className={`p-6 rounded-2xl border-2 ${feedback.score >= 80 ? 'bg-[var(--tint-green)] border-[var(--green)]' : 'bg-[var(--tint-red)] border-[var(--red)]'}`}>
-            <h3 className={`font-black text-lg mb-2 ${feedback.score >= 80 ? 'text-[var(--green)]' : 'text-[var(--red)]'}`}>
+            <h3 className={`font-black text-lg mb-4 ${feedback.score >= 80 ? 'text-[var(--green)]' : 'text-[var(--red)]'}`}>
               {feedback.score >= 80 ? 'Excellent Translation!' : 'Needs Improvement'} ({Math.round(feedback.score)}%)
             </h3>
-            
-            <p className="text-sm font-bold text-[var(--text-main)] leading-relaxed mt-4">
-              <span className="block text-xs uppercase tracking-wider text-[var(--text-muted)] mb-1">Target Sentence:</span>
-              {feedback.diff.map((wordObj, i) => (
-                <span key={i} className={`mr-1 ${wordObj.isError ? 'text-[var(--red)] underline decoration-2 decoration-[var(--red)] underline-offset-2' : 'text-[var(--green)]'}`}>
-                  {wordObj.text}
-                </span>
-              ))}
-            </p>
+
+            {/* Score breakdown */}
+            <div className="grid grid-cols-3 gap-3 mb-4">
+              <div className="text-center p-3 bg-white/50 rounded-xl">
+                <div className="text-lg font-black" style={{ color: feedback.vocabScore >= 80 ? 'var(--green)' : feedback.vocabScore >= 50 ? 'var(--gold)' : 'var(--red)' }}>
+                  {Math.round(feedback.vocabScore)}%
+                </div>
+                <div className="text-[10px] font-bold text-[var(--text-muted)] uppercase">Vocabulary</div>
+              </div>
+              <div className="text-center p-3 bg-white/50 rounded-xl">
+                <div className="text-lg font-black" style={{ color: feedback.completenessScore >= 80 ? 'var(--green)' : feedback.completenessScore >= 50 ? 'var(--gold)' : 'var(--red)' }}>
+                  {Math.round(feedback.completenessScore)}%
+                </div>
+                <div className="text-[10px] font-bold text-[var(--text-muted)] uppercase">Completeness</div>
+              </div>
+              <div className="text-center p-3 bg-white/50 rounded-xl">
+                <div className="text-lg font-black" style={{ color: feedback.score >= 80 ? 'var(--green)' : feedback.score >= 50 ? 'var(--gold)' : 'var(--red)' }}>
+                  {Math.round(feedback.score)}%
+                </div>
+                <div className="text-[10px] font-bold text-[var(--text-muted)] uppercase">Overall</div>
+              </div>
+            </div>
+
+            {/* Target sentence with word highlights */}
+            <div className="mb-3">
+              <span className="block text-xs uppercase tracking-wider text-[var(--text-muted)] mb-1">Target:</span>
+              <p className="text-sm font-bold text-[var(--text-main)] leading-relaxed">
+                {feedback.diff.map((wordObj, i) => (
+                  <span key={i} className={`mr-1 ${wordObj.isError ? 'text-[var(--red)] underline decoration-2 decoration-[var(--red)] underline-offset-2' : 'text-[var(--green)]'}`}>
+                    {wordObj.text}
+                  </span>
+                ))}
+              </p>
+            </div>
+
+            {/* User input with highlights */}
+            <div className="mb-3">
+              <span className="block text-xs uppercase tracking-wider text-[var(--text-muted)] mb-1">Your answer:</span>
+              <p className="text-sm font-bold text-[var(--text-main)] leading-relaxed">
+                {feedback.userDiff.map((wordObj, i) => (
+                  <span key={i} className={`mr-1 ${wordObj.isError ? 'text-[var(--gold)] underline decoration-2 decoration-[var(--gold)] underline-offset-2' : 'text-[var(--green)]'}`}>
+                    {wordObj.text}
+                  </span>
+                ))}
+              </p>
+            </div>
 
             {feedback.score < 80 && (
               <div className="mt-4 flex justify-center">
                 <button
                   onClick={() => {
-                    setFeedback({ score: 100, diff: feedback.diff.map(w => ({ ...w, isError: false })) });
-                    setTimeout(() => onComplete(100), 1000);
+                    setFeedback({ ...feedback, score: 100, vocabScore: 100, completenessScore: 100, diff: feedback.diff.map(w => ({ ...w, isError: false })) });
                   }}
                   className="text-[10px] font-bold text-[var(--text-muted)] hover:text-[var(--green)] underline underline-offset-4 decoration-dotted"
                 >
-                  Câu trả lời của tôi đồng nghĩa / đúng! (Bỏ qua chấm điểm)
+                  My answer is correct/synonymous (skip scoring)
                 </button>
               </div>
             )}
+
+            <div className="mt-6 flex justify-center animate-in slide-in-from-bottom-2">
+              <button
+                onClick={() => onComplete(feedback.score)}
+                className="btn-3d btn-green px-8 py-3 rounded-xl text-sm font-black w-full max-w-[200px]"
+              >
+                CONTINUE
+              </button>
+            </div>
           </div>
         </div>
       )}
 
       {!feedback && (
-        <button 
+        <button
           onClick={handleSubmit}
           disabled={!userInput.trim() || isSubmitting}
           className="w-full btn-duo btn-blue py-4 text-sm font-black disabled:opacity-50"

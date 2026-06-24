@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, memo } from 'react';
 import type { Mistake, Question, DictationLesson, SpeakingLesson, WritingLesson } from '../types';
 
 interface MistakeBookViewProps {
@@ -7,13 +7,23 @@ interface MistakeBookViewProps {
   onReview: () => void;
 }
 
-export function MistakeBookView({ mistakes, onRemoveMistake, onReview }: MistakeBookViewProps) {
+export const MistakeBookView = memo(function MistakeBookView({ mistakes, onRemoveMistake, onReview }: MistakeBookViewProps) {
   const [searchTerm, setSearchTerm] = useState('');
+  const [typeFilter, setTypeFilter] = useState<string>('all');
   
   const filteredMistakes = mistakes.filter(m => {
+    if (typeFilter !== 'all' && m.type !== typeFilter) return false;
     const dataStr = JSON.stringify(m.data).toLowerCase();
     return dataStr.includes(searchTerm.toLowerCase());
   }).sort((a, b) => new Date(b.timestamp).getTime() - new Date(a.timestamp).getTime());
+
+  const typeFilters = [
+    { value: 'all', label: 'All', count: mistakes.length },
+    { value: 'question', label: 'Quiz', count: mistakes.filter(m => m.type === 'question').length },
+    { value: 'dictation', label: 'Dictation', count: mistakes.filter(m => m.type === 'dictation').length },
+    { value: 'speaking', label: 'Speaking', count: mistakes.filter(m => m.type === 'speaking').length },
+    { value: 'writing', label: 'Writing', count: mistakes.filter(m => m.type === 'writing').length },
+  ];
 
   const renderMistakeContent = (mistake: Mistake) => {
     if (mistake.type === 'question') {
@@ -95,6 +105,22 @@ export function MistakeBookView({ mistakes, onRemoveMistake, onReview }: Mistake
             Review Mistakes
           </button>
           
+          <div className="flex gap-2 overflow-x-auto">
+            {typeFilters.map(f => (
+              <button
+                key={f.value}
+                onClick={() => setTypeFilter(f.value)}
+                className={`px-3 py-1.5 rounded-xl text-xs font-black uppercase whitespace-nowrap transition-all border-2 ${
+                  typeFilter === f.value
+                    ? 'bg-[var(--blue)] text-white border-[var(--blue)]'
+                    : 'bg-[var(--gray-bg)] text-[var(--text-muted)] border-[var(--border-main)] hover:border-[var(--blue)]'
+                }`}
+              >
+                {f.label} ({f.count})
+              </button>
+            ))}
+          </div>
+          
           <div className="w-full sm:w-64 relative">
             <input 
               type="text"
@@ -140,4 +166,4 @@ export function MistakeBookView({ mistakes, onRemoveMistake, onReview }: Mistake
       </div>
     </div>
   );
-}
+});

@@ -93,7 +93,7 @@ export function DictationView({ lesson, onComplete }: DictationViewProps) {
         )}
       </div>
 
-      <audio ref={audioRef} src={lesson.audioUrl} className="hidden" />
+      <audio ref={audioRef} src={lesson.audioUrl} preload="auto" className="hidden" />
 
       <div className="w-full space-y-8">
         <div className="flex justify-center items-end gap-4">

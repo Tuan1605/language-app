@@ -103,7 +103,7 @@ describe('Mock Data Integrity', () => {
         expect(typeof card.repetition).toBe('number');
         expect(typeof card.interval).toBe('number');
         expect(typeof card.easiness).toBe('number');
-        expect(typeof card.next_review).toBe('string');
+        expect(typeof card.next_review === 'string' || card.next_review === null).toBe(true);
         expect(typeof card.created_at).toBe('string');
       });
     });

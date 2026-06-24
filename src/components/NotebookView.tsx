@@ -1,6 +1,7 @@
 import { useState, useMemo } from 'react';
 import { KanjiPlayer } from './KanjiPlayer';
 import { HanziWriterPad } from './HanziWriterPad';
+import { FreeDrawingPad } from './FreeDrawingPad';
 import type { GrammarPoint, KanjiEntry } from '../types';
 import { HIRAGANA, KATAKANA } from '../data/kana';
 import type { KanaChar } from '../data/kana';
@@ -189,10 +190,7 @@ export function NotebookView({ activeTrack, n2Grammar, n2Kanji, toeicGrammar }: 
                 kanjiList.map(entry => (
                   <div 
                     key={entry.id} 
-                    onClick={() => {
-                      console.log('Kanji clicked:', entry.kanji);
-                      setSelectedKanji(entry);
-                    }}
+                    onClick={() => setSelectedKanji(entry)}
                     className="lingo-card p-5 border-l-8 border-l-[var(--red)] cursor-pointer hover:scale-[1.02] transition-transform relative z-50"
                   >
                     <div className="flex items-start gap-4">
@@ -319,13 +317,12 @@ export function NotebookView({ activeTrack, n2Grammar, n2Kanji, toeicGrammar }: 
               <div className="space-y-3 bg-[var(--gray-bg)] p-4 rounded-2xl border-2 border-[var(--gray-path)]">
                 <div className="flex items-center justify-between mb-2">
                   <h4 className="font-black text-[var(--text-main)] flex items-center gap-2">
-                    Bảng tập viết thông minh
-                    <span className="text-[9px] bg-[var(--gold)] text-white px-2 py-0.5 rounded uppercase tracking-wider">AI</span>
+                    Bảng tập viết
                   </h4>
                 </div>
                 <div className="flex flex-col items-center gap-4">
-                  <HanziWriterPad character={selectedKana.kana} size={200} mode="quiz" />
-                  <p className="text-center text-xs font-bold text-[var(--text-muted)]">Hãy viết theo đúng thứ tự nét chữ. Hệ thống sẽ tự động chấm điểm!</p>
+                  <FreeDrawingPad character={selectedKana.kana} size={200} />
+                  <p className="text-center text-xs font-bold text-[var(--text-muted)]">Hãy dùng ngón tay hoặc chuột để luyện viết đồ theo nét chữ mờ!</p>
                 </div>
               </div>
             </div>

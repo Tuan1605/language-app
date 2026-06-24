@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import type { AuthenticExam, Mistake } from '../types';
+import type { AuthenticExam, Mistake, Question } from '../types';
 import { ExamTimer } from './ExamTimer';
 import { ExamReviewView } from './ExamReviewView';
 import { Modal } from './Modal';
@@ -21,7 +21,7 @@ export function RealExamView({ exam, onCancel, onComplete, onSaveMistake }: Real
   const [initialTime, setInitialTime] = useState(exam.timeLimitMinutes * 60);
 
   const currentTimeLeftRef = useRef(exam.timeLimitMinutes * 60);
-  const backupDataRef = useRef<any>(null);
+  const backupDataRef = useRef<{ examId: string, timeLeft: number, answers: Record<string, number>, currentSectionIndex: number } | null>(null);
 
   useEffect(() => {
     const saved = localStorage.getItem('real_exam_backup');
@@ -33,19 +33,26 @@ export function RealExamView({ exam, onCancel, onComplete, onSaveMistake }: Real
           setShowResumeModal(true);
           return;
         }
-      } catch (e) {}
+      } catch { /* ignore */ }
     }
     setBackupLoaded(true);
   }, [exam.id]);
 
   useEffect(() => {
     if (!isFinished && backupLoaded) {
-      localStorage.setItem('real_exam_backup', JSON.stringify({
-        examId: exam.id,
-        timeLeft: currentTimeLeftRef.current,
-        answers,
-        currentSectionIndex
-      }));
+      const saveState = () => {
+        localStorage.setItem('real_exam_backup', JSON.stringify({
+          examId: exam.id,
+          timeLeft: currentTimeLeftRef.current,
+          answers,
+          currentSectionIndex
+        }));
+      };
+      // Save immediately on changes
+      saveState();
+      // Also save every 5 seconds to persist time
+      const interval = setInterval(saveState, 5000);
+      return () => clearInterval(interval);
     }
   }, [exam.id, answers, currentSectionIndex, isFinished, backupLoaded]);
 
@@ -79,7 +86,7 @@ export function RealExamView({ exam, onCancel, onComplete, onSaveMistake }: Real
           onSaveMistake({
             id: `mistake-${q.id}-${Date.now()}`,
             type: 'question',
-            data: q,
+            data: q as Question,
             wrongAnswer: answers[q.id] !== undefined ? q.options[answers[q.id]] : 'Skipped',
             timestamp: new Date().toISOString()
           });
@@ -112,10 +119,12 @@ export function RealExamView({ exam, onCancel, onComplete, onSaveMistake }: Real
         onConfirm={() => {
           // Accept resume
           const parsed = backupDataRef.current;
-          setInitialTime(parsed.timeLeft);
-          currentTimeLeftRef.current = parsed.timeLeft;
-          setAnswers(parsed.answers || {});
-          setCurrentSectionIndex(parsed.currentSectionIndex || 0);
+          if (parsed) {
+            setInitialTime(parsed.timeLeft);
+            currentTimeLeftRef.current = parsed.timeLeft;
+            setAnswers(parsed.answers || {});
+            setCurrentSectionIndex(parsed.currentSectionIndex || 0);
+          }
           setShowResumeModal(false);
           setBackupLoaded(true);
         }}

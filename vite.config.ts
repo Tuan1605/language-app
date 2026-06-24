@@ -7,6 +7,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 export default defineConfig({
   test: {
     environment: 'jsdom',
+    setupFiles: ['./src/test-setup.ts'],
   },
   plugins: [
     react(),
@@ -48,6 +49,17 @@ export default defineConfig({
     watch: {
       usePolling: true,
       interval: 1000,
+    }
+  },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'vendor-react': ['react', 'react-dom', 'react-router-dom'],
+          'vendor-dexie': ['dexie', 'dexie-react-hooks'],
+          'vendor-ui': ['framer-motion', 'react-hot-toast', 'lucide-react'],
+        }
+      }
     }
   }
 })
