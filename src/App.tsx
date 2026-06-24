@@ -43,17 +43,15 @@ function App() {
     async function init() {
       try {
         await initializeDatabase();
-        // optionally load mock data
-        import('./utils/mockData').then(({ MOCK_LISTENING_LESSONS, MOCK_SPEAKING_LESSONS, MOCK_DICTATION_LESSONS, MOCK_FULL_EXAMS }) => {
-          if (!mounted) return;
+        const { MOCK_LISTENING_LESSONS, MOCK_SPEAKING_LESSONS, MOCK_DICTATION_LESSONS, MOCK_FULL_EXAMS } = await import('./utils/mockData');
+        if (mounted) {
           setMockData({
             mockListeningLessons: MOCK_LISTENING_LESSONS,
             mockSpeakingLessons: MOCK_SPEAKING_LESSONS,
             mockDictationLessons: MOCK_DICTATION_LESSONS,
             mockFullExams: MOCK_FULL_EXAMS
           });
-        });
-        
+        }
       } catch(err) {
         console.error(err);
       } finally {

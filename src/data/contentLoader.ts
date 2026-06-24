@@ -54,7 +54,7 @@ export async function initializeDatabase() {
     ]);
     const toeicCards = (toeicRaw.default as RawFlashcard[]).map(r => rawToFlashcard(r, 'english', 'toeic'));
     const n2Cards = (n2Raw.default as RawFlashcard[]).map(r => rawToFlashcard(r, 'japanese', 'n2'));
-    await db.cards.bulkAdd([...toeicCards, ...n2Cards]);
+    await db.cards.bulkPut([...toeicCards, ...n2Cards]);
 
     // 2. Load Questions
     const [q1, q2, q3, q4] = await Promise.all([
@@ -78,7 +78,7 @@ export async function initializeDatabase() {
       difficulty: q.difficulty,
       subCategory: q.subCategory,
     }));
-    await db.questions.bulkAdd(allQuestions);
+    await db.questions.bulkPut(allQuestions);
 
     // 3. Load Kanji
     const [k1, k2, k3] = await Promise.all([
@@ -86,7 +86,7 @@ export async function initializeDatabase() {
       import('./n2/kanji-supplement-batch1.json').catch(() => ({ default: [] })),
       import('./n2/kanji-supplement-batch2.json').catch(() => ({ default: [] })),
     ]);
-    await db.kanji.bulkAdd([
+    await db.kanji.bulkPut([
       ...(k1.default as KanjiEntry[]),
       ...(k2.default as KanjiEntry[]),
       ...(k3.default as KanjiEntry[]),
@@ -101,7 +101,7 @@ export async function initializeDatabase() {
       ...(gN2.default as GrammarPoint[]).map(g => ({ ...g, track: 'n2' as const })),
       ...(gToeic.default as GrammarPoint[]).map(g => ({ ...g, track: 'toeic' as const }))
     ];
-    await db.grammar.bulkAdd(grammarPoints);
+    await db.grammar.bulkPut(grammarPoints);
 
     await db.meta.put({ id: 'initialized', value: true });
   } catch (error) {
