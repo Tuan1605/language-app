@@ -121,9 +121,6 @@ export function PdfViewer({ url, className = '' }: PdfViewerProps) {
       <div className={`flex items-center justify-center bg-gray-50 ${className}`}>
         <div className="text-center p-4">
           <p className="text-sm text-red-500 mb-2">{error}</p>
-          <a href={url} target="_blank" rel="noopener noreferrer" className="text-xs text-blue-500 underline">
-            Open in new tab
-          </a>
         </div>
       </div>
     );
@@ -134,6 +131,7 @@ export function PdfViewer({ url, className = '' }: PdfViewerProps) {
       ref={containerRef}
       className={`overflow-y-auto bg-gray-50 ${className}`}
       style={{ scrollBehavior: 'smooth' }}
+      onContextMenu={(e) => e.preventDefault()}
     />
   );
 }
