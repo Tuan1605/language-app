@@ -109,3 +109,46 @@ export async function initializeDatabase() {
     throw error;
   }
 }
+
+export async function resetDatabase() {
+  // 1. Back up user progress (cards that are not 'new' or have been modified)
+  const existingCards = await db.cards.toArray();
+  const progressMap = new Map();
+  for (const card of existingCards) {
+    if (card.status !== 'new' || card.repetition > 0) {
+      progressMap.set(card.id, {
+        status: card.status,
+        repetition: card.repetition,
+        interval: card.interval,
+        easiness: card.easiness,
+        next_review: card.next_review
+      });
+    }
+  }
+
+  // 2. Clear content tables
+  await db.cards.clear();
+  await db.questions.clear();
+  await db.kanji.clear();
+  await db.grammar.clear();
+  
+  // 3. Re-initialize from JSON source files
+  await db.meta.put({ id: 'initialized', value: false });
+  await initializeDatabase();
+
+  // 4. Restore SM-2 progress to the freshly loaded cards
+  const newlyLoadedCards = await db.cards.toArray();
+  const cardsToUpdate = [];
+  for (const card of newlyLoadedCards) {
+    if (progressMap.has(card.id)) {
+      cardsToUpdate.push({
+        ...card,
+        ...progressMap.get(card.id)
+      });
+    }
+  }
+  
+  if (cardsToUpdate.length > 0) {
+    await db.cards.bulkPut(cardsToUpdate);
+  }
+}

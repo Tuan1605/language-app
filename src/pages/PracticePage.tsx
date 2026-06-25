@@ -83,7 +83,20 @@ export function PracticePage() {
         </button>
       </div>
 
-      <div className="mt-8">
+      <div className="mt-8 flex flex-col gap-4">
+        <h3 className="font-bold text-gray-700 text-lg">TOEIC 2024 PDF Exams (Study4 Style)</h3>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
+          {Array.from({ length: 10 }).map((_, i) => (
+            <button
+              key={i}
+              onClick={() => navigate(`/pdf-exam/toeic-2024-pdf-${i + 1}`)}
+              className="btn-3d bg-blue-600 border-blue-700 text-white h-12 rounded-xl font-bold text-sm hover:bg-blue-500 transition-colors flex items-center justify-center"
+            >
+              Test {i + 1}
+            </button>
+          ))}
+        </div>
+
         <button
           onClick={handleCreateExam}
           className="w-full btn-3d bg-[var(--gray-bg)] border-[var(--gray-path-dark)] text-[var(--text-main)] h-16 rounded-2xl font-black text-sm tracking-wide uppercase hover:bg-[var(--gray-path)] transition-colors flex items-center justify-center gap-3"

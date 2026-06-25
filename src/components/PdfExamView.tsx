@@ -1,0 +1,239 @@
+import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { ArrowLeft, CheckCircle, XCircle, FileText } from 'lucide-react';
+import { TOEIC_2024_PDF_EXAMS } from '../data/toeic2024Pdf';
+
+type ExamMode = 'FULL' | 'PART_1' | 'PART_2' | 'PART_3' | 'PART_4' | 'PART_5' | 'PART_6' | 'PART_7';
+
+const PART_RANGES: Record<ExamMode, [number, number]> = {
+  'FULL': [1, 200],
+  'PART_1': [1, 6],
+  'PART_2': [7, 31],
+  'PART_3': [32, 70],
+  'PART_4': [71, 100],
+  'PART_5': [101, 130],
+  'PART_6': [131, 146],
+  'PART_7': [147, 200],
+};
+
+export function PdfExamView({ examId }: { examId: string }) {
+  const navigate = useNavigate();
+  const exam = TOEIC_2024_PDF_EXAMS.find(e => e.id === examId);
+  const testNumber = examId.split('-').pop(); // e.g., '1'
+
+  const [activePdf, setActivePdf] = useState<'LC' | 'RC'>('LC');
+  const [mode, setMode] = useState<ExamMode>('FULL');
+  const [showScript, setShowScript] = useState(false);
+  const [answers, setAnswers] = useState<Record<string, number>>({});
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [score, setScore] = useState(0);
+
+  useEffect(() => {
+    if (['PART_1', 'PART_2', 'PART_3', 'PART_4'].includes(mode)) setActivePdf('LC');
+    else if (['PART_5', 'PART_6', 'PART_7'].includes(mode)) setActivePdf('RC');
+
+    setAnswers({});
+    setIsSubmitted(false);
+    setShowScript(false);
+    setScore(0);
+  }, [mode]);
+
+  if (!exam) {
+    return <div className="p-8 text-center">Exam not found</div>;
+  }
+
+  const handleSelectOption = (qId: string, optionIndex: number) => {
+    if (isSubmitted) return;
+    setAnswers(prev => ({ ...prev, [qId]: optionIndex }));
+  };
+
+  const currentQuestions = exam.answers.filter(ans => {
+    const qNum = parseInt(ans.id);
+    const [start, end] = PART_RANGES[mode];
+    return qNum >= start && qNum <= end;
+  });
+
+  const handleSubmit = () => {
+    if (window.confirm('Are you sure you want to submit your exam?')) {
+      let correctCount = 0;
+      currentQuestions.forEach(ans => {
+        if (answers[ans.id] === ans.correctAnswer) {
+          correctCount++;
+        }
+      });
+      setScore(correctCount);
+      setIsSubmitted(true);
+    }
+  };
+
+  const optionLabels = ['A', 'B', 'C', 'D'];
+
+  // Determine current Audio URL
+  let currentAudioUrl = exam.audioUrl;
+  if (mode !== 'FULL' && ['PART_1', 'PART_2', 'PART_3', 'PART_4'].includes(mode)) {
+    const partNum = mode.split('_')[1];
+    currentAudioUrl = `/audio/toeic_2024/parts/PART ${partNum} - TEST ${testNumber}.mp3`;
+  } else if (['PART_5', 'PART_6', 'PART_7'].includes(mode)) {
+    currentAudioUrl = undefined; // Reading has no audio
+  }
+
+  // Determine iframe SRC
+  let iframeSrc = activePdf === 'LC' ? exam.pdfUrl_LC : exam.pdfUrl_RC;
+  if (showScript) {
+    iframeSrc = activePdf === 'LC' ? exam.scriptUrl_LC : exam.scriptUrl_RC;
+  }
+
+  return (
+    <div className="flex flex-col h-[calc(100vh-60px)] bg-gray-100">
+      {/* Header */}
+      <div className="flex items-center justify-between p-4 bg-white border-b border-gray-200 shrink-0">
+        <div className="flex items-center gap-4">
+          <button 
+            onClick={() => navigate(-1)}
+            className="flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors"
+          >
+            <ArrowLeft className="w-5 h-5" />
+          </button>
+          <h1 className="text-xl font-bold">{exam.title}</h1>
+          <select 
+            className="ml-4 p-2 border border-gray-300 rounded-lg text-sm font-semibold bg-gray-50 outline-none focus:border-blue-500"
+            value={mode}
+            onChange={(e) => setMode(e.target.value as ExamMode)}
+            disabled={isSubmitted}
+          >
+            <option value="FULL">Full Exam (200Qs)</option>
+            <option value="PART_1">Part 1: Photographs (6Qs)</option>
+            <option value="PART_2">Part 2: Question-Response (25Qs)</option>
+            <option value="PART_3">Part 3: Conversations (39Qs)</option>
+            <option value="PART_4">Part 4: Talks (30Qs)</option>
+            <option value="PART_5">Part 5: Incomplete Sentences (30Qs)</option>
+            <option value="PART_6">Part 6: Text Completion (16Qs)</option>
+            <option value="PART_7">Part 7: Reading Comprehension (54Qs)</option>
+          </select>
+        </div>
+
+        <div className="flex items-center gap-3">
+          {isSubmitted && (
+            <button 
+              onClick={() => setShowScript(!showScript)}
+              className={`flex items-center gap-2 px-4 py-2 font-bold rounded-xl transition-colors border-2 ${showScript ? 'bg-blue-100 text-blue-700 border-blue-200' : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-50'}`}
+            >
+              <FileText className="w-5 h-5" />
+              {showScript ? 'Hide Script' : 'View Script'}
+            </button>
+          )}
+
+          {!isSubmitted ? (
+            <button 
+              onClick={handleSubmit}
+              className="px-6 py-2 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition-colors"
+            >
+              Submit Exam
+            </button>
+          ) : (
+            <div className="px-6 py-2 bg-green-100 text-green-800 font-bold rounded-xl border border-green-200">
+              Score: {score} / {currentQuestions.length}
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* Split View */}
+      <div className="flex flex-1 overflow-hidden">
+        
+        {/* Left Side: PDF Viewer */}
+        <div className="w-2/3 h-full border-r border-gray-300 flex flex-col bg-gray-200 relative">
+          <div className="absolute top-4 left-1/2 -translate-x-1/2 flex bg-white rounded-full shadow-lg p-1 z-10">
+            <button
+              onClick={() => setActivePdf('LC')}
+              className={`px-4 py-1 rounded-full text-sm font-semibold transition-colors ${activePdf === 'LC' ? 'bg-blue-600 text-white' : 'text-gray-600 hover:bg-gray-100'}`}
+            >
+              Listening {showScript ? 'Script' : 'Section'}
+            </button>
+            <button
+              onClick={() => setActivePdf('RC')}
+              className={`px-4 py-1 rounded-full text-sm font-semibold transition-colors ${activePdf === 'RC' ? 'bg-blue-600 text-white' : 'text-gray-600 hover:bg-gray-100'}`}
+            >
+              Reading {showScript ? 'Explanations' : 'Section'}
+            </button>
+          </div>
+          
+          <iframe 
+            src={iframeSrc} 
+            className="w-full h-full border-none"
+            title="PDF Exam Viewer"
+          />
+        </div>
+
+        {/* Right Side: Answer Sheet & Audio */}
+        <div className="w-1/3 h-full bg-white flex flex-col">
+          {/* Audio Player (Sticky) */}
+          {currentAudioUrl && (
+            <div className="p-4 border-b border-gray-200 bg-gray-50 shrink-0">
+              <h3 className="font-semibold text-gray-700 mb-2">
+                Listening Audio {mode !== 'FULL' && `(${mode.replace('_', ' ')})`}
+              </h3>
+              <audio 
+                controls 
+                className="w-full"
+                src={currentAudioUrl}
+              />
+            </div>
+          )}
+
+          {/* Bubble Sheet */}
+          <div className="flex-1 overflow-y-auto p-4 space-y-2">
+            {currentQuestions.map((ans) => {
+              const userAnswer = answers[ans.id];
+              const isCorrect = userAnswer === ans.correctAnswer;
+              
+              return (
+                <div key={ans.id} className="flex items-center justify-between p-2 rounded hover:bg-gray-50">
+                  <span className="w-8 font-bold text-gray-500 text-sm">{ans.id}.</span>
+                  <div className="flex gap-2">
+                    {optionLabels.map((lbl, optIdx) => {
+                      const isSelected = userAnswer === optIdx;
+                      const isActualCorrect = isSubmitted && ans.correctAnswer === optIdx;
+                      const isWrongSelected = isSubmitted && isSelected && !isCorrect;
+
+                      // Part 2 has only 3 options (A, B, C)
+                      if (mode === 'PART_2' && optIdx === 3 || (mode === 'FULL' && parseInt(ans.id) >= 7 && parseInt(ans.id) <= 31 && optIdx === 3)) {
+                        return null; 
+                      }
+
+                      let bgClass = "bg-gray-100 border-gray-300 text-gray-600";
+                      
+                      if (isSubmitted) {
+                        if (isActualCorrect) bgClass = "bg-green-500 border-green-600 text-white";
+                        else if (isWrongSelected) bgClass = "bg-red-500 border-red-600 text-white";
+                        else bgClass = "bg-gray-100 border-gray-200 text-gray-400 opacity-50";
+                      } else {
+                        if (isSelected) bgClass = "bg-blue-600 border-blue-700 text-white";
+                      }
+
+                      return (
+                        <button
+                          key={lbl}
+                          onClick={() => handleSelectOption(ans.id, optIdx)}
+                          disabled={isSubmitted}
+                          className={`w-8 h-8 rounded-full border flex items-center justify-center text-sm font-semibold transition-all ${bgClass} ${!isSubmitted && 'hover:bg-blue-100 hover:border-blue-300 hover:text-blue-600 cursor-pointer'}`}
+                        >
+                          {lbl}
+                        </button>
+                      );
+                    })}
+                  </div>
+                  {isSubmitted && (
+                    <div className="w-6 flex justify-end">
+                      {isCorrect ? <CheckCircle className="w-5 h-5 text-green-500" /> : <XCircle className="w-5 h-5 text-red-500" />}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

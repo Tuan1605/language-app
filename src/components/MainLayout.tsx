@@ -2,8 +2,9 @@ import { NavLink, Outlet, useLocation } from 'react-router-dom';
 import { useUserStore } from '../stores/useUserStore';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { db } from '../data/db';
-import { useTransition } from 'react';
+import { useTransition, useState } from 'react';
 import { OnboardingOverlay } from './OnboardingOverlay';
+import { resetDatabase } from '../data/contentLoader';
 
 const NAV_ITEMS = [
   {
@@ -101,6 +102,19 @@ export function MainLayout() {
 
   const [, startTransition] = useTransition();
   const location = useLocation();
+  const [isResetting, setIsResetting] = useState(false);
+
+  const handleResetData = async () => {
+    if (!window.confirm('Reset all learning data and reload from source files?\nYour progress (SM-2 scores, mistakes, exam results) will be preserved.')) return;
+    setIsResetting(true);
+    try {
+      await resetDatabase();
+      window.location.reload();
+    } catch (e) {
+      console.error('Reset failed:', e);
+      setIsResetting(false);
+    }
+  };
 
   // Due review count logic memoized to prevent O(N) recalculation on every render
   const dueCount = useLiveQuery(async () => {
@@ -165,14 +179,51 @@ export function MainLayout() {
                  {streak}
                </span>
                <button onClick={toggleTheme} className="text-xl active:scale-95 transition-transform">{theme === 'light' ? '🌙' : '☀️'}</button>
+               <button
+                 onClick={handleResetData}
+                 disabled={isResetting}
+                 className="text-xs text-[var(--text-muted)] hover:text-[var(--red)] transition-colors active:scale-95"
+                 title="Reset & reload content data"
+               >
+                 {isResetting ? '⏳' : '🔄'}
+               </button>
             </div>
           </header>
         )}
 
-        <div className="w-full max-w-[600px] flex flex-col items-center p-6 md:p-10 pb-40">
+        <div className="w-full max-w-[600px] flex flex-col items-center p-6 md:p-10 pb-28 lg:pb-40">
           <Outlet />
         </div>
       </main>
+
+      {/* Mobile Bottom Navigation */}
+      {!(location.pathname === '/session' || location.pathname === '/real-exam') && (
+        <nav className="flex lg:hidden fixed bottom-0 left-0 right-0 h-16 bg-[var(--bg-main)]/95 backdrop-blur-md border-t-2 border-[var(--gray-path)] z-50 px-2 pb-[env(safe-area-inset-bottom)]">
+          <div className="flex items-center justify-around w-full h-full">
+            {NAV_ITEMS.filter(item => ['/', '/practice', '/review', '/collection', '/analytics'].includes(item.to)).map((item) => (
+              <NavLink 
+                key={item.to} 
+                to={item.to} 
+                end={item.end}
+                aria-label={item.label} 
+                className={({isActive}) => {
+                  const activeStyle = item.activeClass || 'text-[var(--blue)]';
+                  return `flex flex-col items-center justify-center w-full h-full gap-1 transition-all active:scale-95 ${isActive ? activeStyle : 'text-[var(--gray-path-dark)] hover:text-[var(--text-main)]'}`;
+                }}
+              >
+                <div className="relative">
+                  {item.icon}
+                  {item.showDueCount && dueCount > 0 && (
+                    <span className="absolute -top-2 -right-3 bg-[var(--gold)] text-white text-[9px] font-black rounded-full w-4 h-4 flex items-center justify-center">
+                      {dueCount > 99 ? '99+' : dueCount}
+                    </span>
+                  )}
+                </div>
+              </NavLink>
+            ))}
+          </div>
+        </nav>
+      )}
     </div>
   );
 }

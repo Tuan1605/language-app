@@ -144,4 +144,23 @@ export interface Mistake {
   timestamp: string;
 }
 
+export interface PdfExamAnswer {
+  id: string;
+  correctAnswer: 0 | 1 | 2 | 3;
+}
+
+export interface PdfExam {
+  id: string;
+  title: string;
+  year: number;
+  category: 'toeic' | 'n2';
+  timeLimitMinutes: number;
+  pdfUrl_LC?: string;
+  pdfUrl_RC?: string;
+  scriptUrl_LC?: string;
+  scriptUrl_RC?: string;
+  audioUrl?: string;
+  answers: PdfExamAnswer[];
+}
+
 export * from './authentic';

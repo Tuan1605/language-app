@@ -3742,5 +3742,5 @@ export const AUTHENTIC_EXAMS: AuthenticExam[] = [
         ]
       }
     ]
-  },
+  }
 ];

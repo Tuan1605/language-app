@@ -13,7 +13,7 @@ const UnitIcon = ({ id, className = "" }: { id: number; className?: string }) =>
 interface GamifiedPathProps {
   curriculum: CurriculumUnit[];
   currentUnlocked: number;
-  onStartSession: (nodeIdx: number, difficulty: Difficulty) => void;
+  onStartSession: (nodeIdx: number, difficulty: Difficulty, topics: string[]) => void;
 }
 
 const organicOffsets = [0, 50, 85, 100, 85, 50, 0, -50, -85, -100, -85, -50];
@@ -129,7 +129,7 @@ export const GamifiedPath = memo(function GamifiedPath({ curriculum, currentUnlo
                     
                     <button 
                       disabled={isLocked}
-                      onClick={() => onStartSession(idx, unit.difficulty as Difficulty)}
+                      onClick={() => onStartSession(idx, unit.difficulty as Difficulty, unit.topics)}
                       className={`duo-node ${isLocked ? 'locked' : ''} ${isCurrent ? 'current' : ''} ${isCracked ? 'cracked scale-95 opacity-90 border-dashed border-4 border-white' : ''} relative group`}
                       style={!isLocked ? { 
                         '--node-bg': isCrown ? 'var(--gold)' : unit.color, 

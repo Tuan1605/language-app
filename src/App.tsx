@@ -19,6 +19,7 @@ const AddWordsPage = lazy(() => import('./pages/AddWordsPage').then(m => ({ defa
 const RealExamPage = lazy(() => import('./pages/RealExamPage').then(m => ({ default: m.RealExamPage })));
 const CreateExamPage = lazy(() => import('./pages/CreateExamPage').then(m => ({ default: m.CreateExamPage })));
 const ReviewDashboardPage = lazy(() => import('./pages/ReviewDashboardPage').then(m => ({ default: m.ReviewDashboardPage })));
+const PdfExamPage = lazy(() => import('./pages/PdfExamPage').then(m => ({ default: m.PdfExamPage })));
 
 function PageLoader() {
   return (
@@ -90,6 +91,7 @@ function App() {
           <Route path="/real-exam" element={<Suspense fallback={<PageLoader />}><RealExamPage /></Suspense>} />
           <Route path="/create-exam" element={<Suspense fallback={<PageLoader />}><CreateExamPage /></Suspense>} />
           <Route path="/review-dashboard" element={<Suspense fallback={<PageLoader />}><ReviewDashboardPage /></Suspense>} />
+          <Route path="/pdf-exam/:examId" element={<Suspense fallback={<PageLoader />}><PdfExamPage /></Suspense>} />
         </Route>
       </Routes>
     </AnimatePresence>

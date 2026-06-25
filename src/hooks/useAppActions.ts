@@ -44,31 +44,53 @@ export function useAppActions() {
     return sortByDifficulty(sampled);
   };
 
-  const startSession = async (nodeIdx: number, unitDifficulty: Difficulty) => {
+  const startSession = async (nodeIdx: number, unitDifficulty: Difficulty, unitTopics: string[]) => {
     const activeTrack = useUserStore.getState().activeTrack;
     const cat = trackCategory(activeTrack);
-    
+
     // Fetch from Dexie
     const allCards = await db.cards.where('language').equals(activeTrack).toArray();
     const allQuestions = await db.questions.where('category').equals(cat).toArray();
-    
+
     // Fetch from AppStore
     const appState = useAppStore.getState();
 
-    const filteredVocab = allCards.filter(c => c.difficulty === unitDifficulty);
-    const filteredQuizzes = allQuestions.filter(q => q.difficulty === unitDifficulty);
-    const filteredListen = appState.mockListeningLessons.filter(l => l.category === cat && l.difficulty === unitDifficulty);
-    const filteredSpeak = appState.mockSpeakingLessons.filter(s => s.category === cat && s.difficulty === unitDifficulty);
-    const filteredDict = appState.mockDictationLessons.filter(d => d.category === cat && d.difficulty === unitDifficulty);
+    // Filter by unit topics first, then by difficulty
+    const topicSet = new Set(unitTopics.map(t => t.toLowerCase()));
 
+    const topicVocab = allCards.filter(c => c.topic && topicSet.has(c.topic.toLowerCase()));
+    const filteredVocab = topicVocab.length > 0
+      ? topicVocab.filter(c => c.difficulty === unitDifficulty)
+      : allCards.filter(c => c.difficulty === unitDifficulty);
     const vList = filteredVocab.length > 0 ? filteredVocab : allCards;
+
+    const topicQuizzes = allQuestions.filter(q => q.subCategory && topicSet.has(q.subCategory.toLowerCase()));
+    const filteredQuizzes = topicQuizzes.length > 0
+      ? topicQuizzes.filter(q => q.difficulty === unitDifficulty)
+      : allQuestions.filter(q => q.difficulty === unitDifficulty);
     const qList = filteredQuizzes.length > 0 ? filteredQuizzes : allQuestions;
+
+    const filteredListen = appState.mockListeningLessons.filter(l => l.category === cat && l.difficulty === unitDifficulty);
     const lList = filteredListen.length > 0 ? filteredListen : appState.mockListeningLessons.filter(l => l.category === cat);
+
+    const filteredSpeak = appState.mockSpeakingLessons.filter(s => s.category === cat && s.difficulty === unitDifficulty);
     const sList = filteredSpeak.length > 0 ? filteredSpeak : appState.mockSpeakingLessons.filter(s => s.category === cat);
+
+    const filteredDict = appState.mockDictationLessons.filter(d => d.category === cat && d.difficulty === unitDifficulty);
     const dList = filteredDict.length > 0 ? filteredDict : appState.mockDictationLessons.filter(d => d.category === cat);
 
+    // Shuffle and pick based on nodeIdx for progressive content
+    const shuffle = <T,>(arr: T[]): T[] => {
+      const a = [...arr];
+      for (let i = a.length - 1; i > 0; i--) {
+        const j = (nodeIdx * 7 + i * 13) % (i + 1);
+        [a[i], a[j]] = [a[j], a[i]];
+      }
+      return a;
+    };
+
     const pick = <T,>(list: T[]): T | undefined =>
-      list.length > 0 ? list[nodeIdx % list.length] : undefined;
+      list.length > 0 ? shuffle(list)[nodeIdx % list.length] : undefined;
 
     const candidates: (SessionTask | null)[] = [
       vList.length ? { type: 'vocab-quiz', data: pick(vList)! } : null,
@@ -85,8 +107,8 @@ export function useAppActions() {
     }
 
     appState.setSessionTasks(newTasks);
-    appState.setCurrentTaskIndex(0); 
-    appState.setIsSessionFinished(false); 
+    appState.setCurrentTaskIndex(0);
+    appState.setIsSessionFinished(false);
     navigate('/session');
   };
 
