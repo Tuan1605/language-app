@@ -79,7 +79,8 @@ export function PdfExamView({ examId }: { examId: string }) {
 
   let pdfSrc = activePdf === 'LC' ? assetUrl(exam.pdfUrl_LC || '') : assetUrl(exam.pdfUrl_RC || '');
   if (showScript) {
-    pdfSrc = activePdf === 'LC' ? assetUrl(exam.scriptUrl_LC || '') : assetUrl(exam.scriptUrl_RC || '');
+    // Script_LC.pdf is 191MB (too large for iframe), only Script_RC.pdf (177KB) works
+    pdfSrc = assetUrl(exam.scriptUrl_RC || '');
   }
 
   return (
@@ -122,7 +123,7 @@ export function PdfExamView({ examId }: { examId: string }) {
               className={`flex items-center gap-1 px-3 py-1.5 text-xs font-bold rounded-lg border ${showScript ? 'bg-blue-100 text-blue-700 border-blue-200' : 'bg-white text-gray-600 border-gray-300'}`}
             >
               <FileText className="w-4 h-4" />
-              {showScript ? 'Hide' : 'Script'}
+              {showScript ? 'Hide' : 'Script RC'}
             </button>
           )}
           {!isSubmitted ? (
