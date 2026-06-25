@@ -50,10 +50,9 @@ export function PdfViewer({ url, className = '' }: PdfViewerProps) {
     if (!container || !url) return;
 
     let finalUrl = url;
-    if (url.includes('github.com/Tuan1605/language-app/releases')) {
-      const parts = url.split('/');
-      const filename = parts[parts.length - 1];
-      finalUrl = `/api/proxy?file=${encodeURIComponent(filename)}`;
+    // Use CORS proxy for GitHub Releases URLs
+    if (url.includes('github.com')) {
+      finalUrl = `https://corsproxy.io/?url=${encodeURIComponent(url)}`;
     }
 
     const loadPdf = async () => {
@@ -62,7 +61,7 @@ export function PdfViewer({ url, className = '' }: PdfViewerProps) {
       container.innerHTML = '';
 
       try {
-        const response = await fetch(finalUrl, { credentials: 'include' });
+        const response = await fetch(finalUrl);
         if (!response.ok) throw new Error(`Failed to load PDF: ${response.status} ${response.statusText}`);
         
         const contentType = response.headers.get('content-type');

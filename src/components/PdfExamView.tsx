@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { ArrowLeft, CheckCircle, XCircle, FileText } from 'lucide-react';
 import { TOEIC_2024_PDF_EXAMS } from '../data/toeic2024Pdf';
 import { assetUrl } from '../config/assets';
+import { PdfViewer } from './PdfViewer';
 
 type ExamMode = 'FULL' | 'PART_1' | 'PART_2' | 'PART_3' | 'PART_4' | 'PART_5' | 'PART_6' | 'PART_7';
 
@@ -212,11 +213,7 @@ export function PdfExamView({ examId }: { examId: string }) {
               Xem trang {pageRange[0]}-{pageRange[1]}
             </div>
           )}
-          <iframe
-            src={`https://docs.google.com/gview?url=${encodeURIComponent(pdfSrc)}&embedded=true`}
-            className="w-full h-full border-none"
-            title="PDF Exam Viewer"
-          />
+          <PdfViewer url={pdfSrc} className="flex-1" />
         </div>
 
         {/* Right: Audio + Answers */}
