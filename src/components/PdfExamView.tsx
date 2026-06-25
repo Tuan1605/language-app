@@ -17,19 +17,6 @@ const PART_RANGES: Record<ExamMode, [number, number]> = {
   'PART_7': [147, 200],
 };
 
-// PDF page ranges for each part (LC: 13 pages, RC: 29 pages)
-const LC_PART_PAGES: Record<string, [number, number]> = {
-  'PART_1': [1, 2],
-  'PART_2': [2, 3],
-  'PART_3': [4, 6],
-  'PART_4': [7, 8],
-};
-const RC_PART_PAGES: Record<string, [number, number]> = {
-  'PART_5': [1, 10],
-  'PART_6': [11, 16],
-  'PART_7': [17, 29],
-};
-
 export function PdfExamView({ examId }: { examId: string }) {
   const navigate = useNavigate();
   const exam = TOEIC_2024_PDF_EXAMS.find(e => e.id === examId);
@@ -41,27 +28,6 @@ export function PdfExamView({ examId }: { examId: string }) {
   const [answers, setAnswers] = useState<Record<string, number>>({});
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [score, setScore] = useState(0);
-  const [targetPage, setTargetPage] = useState('');
-
-  // Get page range for current mode
-  const getPageRange = (): [number, number] | null => {
-    if (mode === 'FULL') return null;
-    return activePdf === 'LC' ? (LC_PART_PAGES[mode] || null) : (RC_PART_PAGES[mode] || null);
-  };
-
-  const pageRange = getPageRange();
-
-  const handlePageJump = () => {
-    const page = parseInt(targetPage);
-    if (page > 0) {
-      const iframe = document.querySelector('iframe[title="PDF Exam Viewer"]') as HTMLIFrameElement;
-      if (iframe?.contentWindow) {
-        // Google Docs Viewer supports postMessage for page navigation
-        iframe.contentWindow.postMessage({ type: 'scrollToPage', page }, '*');
-      }
-    }
-    setTargetPage('');
-  };
 
   useEffect(() => {
     if (['PART_1', 'PART_2', 'PART_3', 'PART_4'].includes(mode)) setActivePdf('LC');
@@ -143,30 +109,8 @@ export function PdfExamView({ examId }: { examId: string }) {
             <option value="PART_6">Part 6 (16Qs)</option>
             <option value="PART_7">Part 7 (54Qs)</option>
           </select>
-          {pageRange && (
-            <span className="hidden sm:inline ml-2 px-2 py-0.5 bg-blue-50 text-blue-700 text-[10px] font-bold rounded-full border border-blue-200">
-              PDF: {pageRange[0]}-{pageRange[1]}
-            </span>
-          )}
         </div>
         <div className="flex items-center gap-2 shrink-0">
-          {pageRange && (
-            <div className="hidden sm:flex items-center gap-1">
-              <input
-                type="number"
-                min={1}
-                max={activePdf === 'LC' ? 13 : 29}
-                value={targetPage}
-                onChange={(e) => setTargetPage(e.target.value)}
-                onKeyDown={(e) => e.key === 'Enter' && handlePageJump()}
-                placeholder="Pg"
-                className="w-10 p-1 text-[10px] border border-gray-300 rounded text-center outline-none focus:border-blue-400"
-              />
-              <button onClick={handlePageJump} className="px-1.5 py-1 text-[10px] font-bold bg-gray-100 rounded hover:bg-gray-200">
-                Go
-              </button>
-            </div>
-          )}
           {isSubmitted && (
             <button
               onClick={() => setShowScript(!showScript)}
@@ -206,14 +150,8 @@ export function PdfExamView({ examId }: { examId: string }) {
               RC
             </button>
           </div>
-          {/* Page range hint */}
-          {pageRange && (
-            <div className="absolute bottom-2 left-1/2 -translate-x-1/2 bg-black/70 text-white text-[10px] font-bold px-3 py-1 rounded-full z-10">
-              Xem trang {pageRange[0]}-{pageRange[1]}
-            </div>
-          )}
           <iframe
-            src={pdfSrc}
+            src={`https://docs.google.com/gview?url=${encodeURIComponent(pdfSrc)}&embedded=true`}
             className="w-full h-full border-none"
             title="PDF Exam Viewer"
           />
