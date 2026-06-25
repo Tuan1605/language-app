@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import { ArrowLeft, CheckCircle, XCircle, FileText } from 'lucide-react';
 import { TOEIC_2024_PDF_EXAMS } from '../data/toeic2024Pdf';
 import { assetUrl } from '../config/assets';
-import { PdfViewer } from './PdfViewer';
 
 type ExamMode = 'FULL' | 'PART_1' | 'PART_2' | 'PART_3' | 'PART_4' | 'PART_5' | 'PART_6' | 'PART_7';
 
@@ -29,6 +28,7 @@ export function PdfExamView({ examId }: { examId: string }) {
   const [answers, setAnswers] = useState<Record<string, number>>({});
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [score, setScore] = useState(0);
+  const [mobileTab, setMobileTab] = useState<'pdf' | 'answers'>('pdf');
 
   useEffect(() => {
     if (['PART_1', 'PART_2', 'PART_3', 'PART_4'].includes(mode)) setActivePdf('LC');
@@ -133,10 +133,26 @@ export function PdfExamView({ examId }: { examId: string }) {
         </div>
       </div>
 
+      {/* Mobile Tab Toggle */}
+      <div className="flex lg:hidden border-b border-gray-200 bg-white shrink-0">
+        <button
+          onClick={() => setMobileTab('pdf')}
+          className={`flex-1 py-2 text-xs font-bold transition-colors ${mobileTab === 'pdf' ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-500'}`}
+        >
+          De thi
+        </button>
+        <button
+          onClick={() => setMobileTab('answers')}
+          className={`flex-1 py-2 text-xs font-bold transition-colors ${mobileTab === 'answers' ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-500'}`}
+        >
+          Dap an
+        </button>
+      </div>
+
       {/* Main Content */}
       <div className="flex flex-row flex-1 overflow-hidden">
         {/* Left: PDF Viewer */}
-        <div className="flex w-[60%] lg:w-[60%] h-full border-r border-gray-300 flex-col bg-gray-50 relative shadow-inner">
+        <div className={`${mobileTab === 'pdf' ? 'flex' : 'hidden'} lg:flex w-full lg:w-[60%] h-full border-r border-gray-300 flex-col bg-gray-50 relative shadow-inner`}>
           <div className="absolute top-2 left-1/2 -translate-x-1/2 flex bg-white rounded-full shadow p-0.5 z-10">
             <button
               onClick={() => setActivePdf('LC')}
@@ -151,11 +167,15 @@ export function PdfExamView({ examId }: { examId: string }) {
               RC
             </button>
           </div>
-          <PdfViewer url={pdfSrc} className="flex-1" />
+          <iframe
+            src={`https://docs.google.com/gview?url=${encodeURIComponent(pdfSrc)}&embedded=true`}
+            className="w-full h-full border-none"
+            title="PDF Exam Viewer"
+          />
         </div>
 
         {/* Right: Audio + Answers */}
-        <div className="flex w-[40%] lg:w-[40%] h-full bg-white flex-col overflow-hidden shadow-xl z-10">
+        <div className={`${mobileTab === 'answers' ? 'flex' : 'hidden'} lg:flex w-full lg:w-[40%] h-full bg-white flex-col overflow-hidden shadow-xl z-10`}>
           {currentAudioUrl && (
             <div className="p-3 border-b border-gray-200 bg-gray-50 shrink-0">
               <audio controls className="w-full" src={currentAudioUrl} />
