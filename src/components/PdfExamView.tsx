@@ -85,19 +85,19 @@ export function PdfExamView({ examId }: { examId: string }) {
   }
 
   return (
-    <div className="flex flex-col h-[calc(100vh-60px)] bg-gray-100">
+    <div className="flex flex-col h-[calc(100vh-60px)] lg:h-screen bg-gray-100">
       {/* Header */}
-      <div className="flex items-center justify-between p-4 bg-white border-b border-gray-200 shrink-0">
-        <div className="flex items-center gap-4">
+      <div className="flex items-center justify-between p-3 lg:p-4 bg-white border-b border-gray-200 shrink-0">
+        <div className="flex items-center gap-2 lg:gap-4 min-w-0">
           <button 
             onClick={() => navigate(-1)}
-            className="flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors"
+            className="flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors shrink-0"
           >
             <ArrowLeft className="w-5 h-5" />
           </button>
-          <h1 className="text-xl font-bold">{exam.title}</h1>
+          <h1 className="text-sm lg:text-xl font-bold truncate">{exam.title}</h1>
           <select 
-            className="ml-4 p-2 border border-gray-300 rounded-lg text-sm font-semibold bg-gray-50 outline-none focus:border-blue-500"
+            className="hidden sm:block ml-2 lg:ml-4 p-1.5 lg:p-2 border border-gray-300 rounded-lg text-xs lg:text-sm font-semibold bg-gray-50 outline-none focus:border-blue-500"
             value={mode}
             onChange={(e) => setMode(e.target.value as ExamMode)}
             disabled={isSubmitted}
@@ -140,20 +140,20 @@ export function PdfExamView({ examId }: { examId: string }) {
       </div>
 
       {/* Split View */}
-      <div className="flex flex-1 overflow-hidden">
+      <div className="flex flex-col lg:flex-row flex-1 overflow-hidden pb-16 lg:pb-0">
         
         {/* Left Side: PDF Viewer */}
-        <div className="w-2/3 h-full border-r border-gray-300 flex flex-col bg-gray-200 relative">
-          <div className="absolute top-4 left-1/2 -translate-x-1/2 flex bg-white rounded-full shadow-lg p-1 z-10">
+        <div className="w-full lg:w-2/3 h-[40vh] lg:h-full border-b lg:border-b-0 lg:border-r border-gray-300 flex flex-col bg-gray-200 relative">
+          <div className="absolute top-2 lg:top-4 left-1/2 -translate-x-1/2 flex bg-white rounded-full shadow-lg p-0.5 lg:p-1 z-10">
             <button
               onClick={() => setActivePdf('LC')}
-              className={`px-4 py-1 rounded-full text-sm font-semibold transition-colors ${activePdf === 'LC' ? 'bg-blue-600 text-white' : 'text-gray-600 hover:bg-gray-100'}`}
+              className={`px-3 lg:px-4 py-0.5 lg:py-1 rounded-full text-xs lg:text-sm font-semibold transition-colors ${activePdf === 'LC' ? 'bg-blue-600 text-white' : 'text-gray-600 hover:bg-gray-100'}`}
             >
               Listening {showScript ? 'Script' : 'Section'}
             </button>
             <button
               onClick={() => setActivePdf('RC')}
-              className={`px-4 py-1 rounded-full text-sm font-semibold transition-colors ${activePdf === 'RC' ? 'bg-blue-600 text-white' : 'text-gray-600 hover:bg-gray-100'}`}
+              className={`px-3 lg:px-4 py-0.5 lg:py-1 rounded-full text-xs lg:text-sm font-semibold transition-colors ${activePdf === 'RC' ? 'bg-blue-600 text-white' : 'text-gray-600 hover:bg-gray-100'}`}
             >
               Reading {showScript ? 'Explanations' : 'Section'}
             </button>
@@ -167,7 +167,7 @@ export function PdfExamView({ examId }: { examId: string }) {
         </div>
 
         {/* Right Side: Answer Sheet & Audio */}
-        <div className="w-1/3 h-full bg-white flex flex-col">
+        <div className="w-full lg:w-1/3 flex-1 bg-white flex flex-col overflow-hidden">
           {/* Audio Player (Sticky) */}
           {currentAudioUrl && (
             <div className="p-4 border-b border-gray-200 bg-gray-50 shrink-0">
