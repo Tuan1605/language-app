@@ -77,6 +77,7 @@ function App() {
   return (
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
+        <Route path="/pdf-exam/:examId" element={<Suspense fallback={<PageLoader />}><PdfExamPage /></Suspense>} />
         <Route element={<MainLayout />}>
           <Route path="/" element={<PathPage />} />
           <Route path="/practice" element={<Suspense fallback={<PageLoader />}><PracticePage /></Suspense>} />
@@ -91,7 +92,6 @@ function App() {
           <Route path="/real-exam" element={<Suspense fallback={<PageLoader />}><RealExamPage /></Suspense>} />
           <Route path="/create-exam" element={<Suspense fallback={<PageLoader />}><CreateExamPage /></Suspense>} />
           <Route path="/review-dashboard" element={<Suspense fallback={<PageLoader />}><ReviewDashboardPage /></Suspense>} />
-          <Route path="/pdf-exam/:examId" element={<Suspense fallback={<PageLoader />}><PdfExamPage /></Suspense>} />
         </Route>
       </Routes>
     </AnimatePresence>

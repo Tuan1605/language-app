@@ -126,7 +126,7 @@ export function MainLayout() {
       <main className="flex-1 w-full flex flex-col items-center min-h-screen lg:pl-64">
         
         {/* Top Header Bar */}
-        {!(location.pathname === '/session' || location.pathname === '/real-exam' || location.pathname.startsWith('/pdf-exam')) && (
+        {!(location.pathname === '/session' || location.pathname === '/real-exam') && (
           <header className="w-full h-16 border-b-2 border-[var(--gray-path)] flex items-center justify-between px-6 sticky top-0 bg-[var(--bg-main)]/90 backdrop-blur-md z-40">
             <div className="flex items-center gap-6">
                <button onClick={() => startTransition(() => setActiveTrack('english'))} className={`font-black text-sm flex items-center gap-2 transition-all ${activeTrack === 'english' ? 'text-[var(--blue)] border-b-4 border-[var(--blue)] pb-1' : 'text-[var(--text-muted)] hover:text-[var(--gray-path-dark)]'}`}>
@@ -154,13 +154,13 @@ export function MainLayout() {
           </header>
         )}
 
-        <div className={`w-full flex flex-col ${location.pathname.startsWith('/pdf-exam') ? 'flex-1 h-full' : 'items-center max-w-[600px] p-6 md:p-10 pb-28 lg:pb-40'}`}>
+        <div className="w-full max-w-[600px] flex flex-col items-center p-6 md:p-10 pb-28 lg:pb-40">
           <Outlet />
         </div>
       </main>
 
       {/* Mobile Bottom Navigation */}
-      {!(location.pathname === '/session' || location.pathname === '/real-exam' || location.pathname.startsWith('/pdf-exam')) && (
+      {!(location.pathname === '/session' || location.pathname === '/real-exam') && (
         <nav className="flex lg:hidden fixed bottom-0 left-0 right-0 h-16 bg-[var(--bg-main)]/95 backdrop-blur-md border-t-2 border-[var(--gray-path)] z-50 px-2 pb-[env(safe-area-inset-bottom)]">
           <div className="flex items-center justify-around w-full h-full">
             {NAV_ITEMS.filter(item => ['/', '/practice', '/review', '/collection', '/analytics'].includes(item.to)).map((item) => (

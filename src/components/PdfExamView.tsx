@@ -85,7 +85,7 @@ export function PdfExamView({ examId }: { examId: string }) {
   }
 
   return (
-    <div className="flex flex-col w-full h-[calc(100vh-60px)] lg:h-screen bg-gray-100">
+    <div className="flex flex-col w-full h-screen bg-gray-100">
       {/* Header */}
       <div className="flex items-center justify-between p-3 lg:p-4 bg-white border-b border-gray-200 shrink-0">
         <div className="flex items-center gap-2 lg:gap-4 min-w-0">
