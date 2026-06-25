@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import * as pdfjsLib from 'pdfjs-dist';
-import pdfWorkerUrl from 'pdfjs-dist/build/pdf.worker.min.mjs?url';
+import pdfWorkerUrl from 'pdfjs-dist/build/pdf.worker.min.js?url';
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = pdfWorkerUrl;
 
@@ -26,7 +26,7 @@ export function PdfViewer({ url, className = '' }: PdfViewerProps) {
     canvas.height = viewport.height;
     canvas.width = viewport.width;
 
-    await page.render({ canvasContext: ctx, canvas, viewport }).promise;
+    await page.render({ canvasContext: ctx, viewport }).promise;
   };
 
   const processQueue = async () => {
@@ -62,11 +62,26 @@ export function PdfViewer({ url, className = '' }: PdfViewerProps) {
       container.innerHTML = '';
 
       try {
-        const response = await fetch(finalUrl);
-        if (!response.ok) throw new Error(`Failed to load PDF: ${response.status}`);
+        const response = await fetch(finalUrl, { credentials: 'include' });
+        if (!response.ok) throw new Error(`Failed to load PDF: ${response.status} ${response.statusText}`);
+        
+        const contentType = response.headers.get('content-type');
+        if (contentType && contentType.includes('text/html')) {
+          throw new Error('Received an HTML page instead of a PDF. This might be due to Vercel SSO or a broken URL.');
+        }
+
         const arrayBuffer = await response.arrayBuffer();
 
-        const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
+        // Add a timeout to prevent infinite spinner if pdf.js worker hangs
+        const timeoutPromise = new Promise<never>((_, reject) => 
+          setTimeout(() => reject(new Error('PDF loading timed out. The worker might have failed to initialize.')), 15000)
+        );
+
+        const pdf = await Promise.race([
+          pdfjsLib.getDocument({ data: arrayBuffer }).promise,
+          timeoutPromise
+        ]);
+
         if (cancelled) return;
 
         pdfRef.current = pdf;
