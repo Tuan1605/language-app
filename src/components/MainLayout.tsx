@@ -154,7 +154,7 @@ export function MainLayout() {
           </header>
         )}
 
-        <div className={`w-full flex flex-col items-center ${location.pathname.startsWith('/pdf-exam') ? '' : 'max-w-[600px] p-6 md:p-10 pb-28 lg:pb-40'}`}>
+        <div className={`w-full flex flex-col ${location.pathname.startsWith('/pdf-exam') ? 'flex-1 h-full' : 'items-center max-w-[600px] p-6 md:p-10 pb-28 lg:pb-40'}`}>
           <Outlet />
         </div>
       </main>
