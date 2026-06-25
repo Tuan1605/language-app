@@ -73,7 +73,7 @@ export function PdfExamView({ examId }: { examId: string }) {
   let currentAudioUrl = exam.audioUrl ? assetUrl(exam.audioUrl) : undefined;
   if (mode !== 'FULL' && ['PART_1', 'PART_2', 'PART_3', 'PART_4'].includes(mode)) {
     const partNum = mode.split('_')[1];
-    currentAudioUrl = assetUrl(`/audio/toeic_2024/parts/PART ${partNum} - TEST ${testNumber}.mp3`);
+    currentAudioUrl = assetUrl(`/audio/toeic_2024/parts/PART.${partNum}.-.TEST.${testNumber}.mp3`);
   } else if (['PART_5', 'PART_6', 'PART_7'].includes(mode)) {
     currentAudioUrl = undefined; // Reading has no audio
   }
