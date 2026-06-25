@@ -58,6 +58,7 @@ export default defineConfig({
           'vendor-react': ['react', 'react-dom', 'react-router-dom'],
           'vendor-dexie': ['dexie', 'dexie-react-hooks'],
           'vendor-ui': ['framer-motion', 'react-hot-toast', 'lucide-react'],
+          'vendor-pdfjs': ['pdfjs-dist'],
         }
       }
     }

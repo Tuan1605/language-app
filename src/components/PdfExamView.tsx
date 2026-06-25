@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { ArrowLeft, CheckCircle, XCircle, FileText } from 'lucide-react';
 import { TOEIC_2024_PDF_EXAMS } from '../data/toeic2024Pdf';
 import { assetUrl } from '../config/assets';
+import { PdfViewer } from './PdfViewer';
 
 type ExamMode = 'FULL' | 'PART_1' | 'PART_2' | 'PART_3' | 'PART_4' | 'PART_5' | 'PART_6' | 'PART_7';
 
@@ -20,7 +21,7 @@ const PART_RANGES: Record<ExamMode, [number, number]> = {
 export function PdfExamView({ examId }: { examId: string }) {
   const navigate = useNavigate();
   const exam = TOEIC_2024_PDF_EXAMS.find(e => e.id === examId);
-  const testNumber = examId.split('-').pop(); // e.g., '1'
+  const testNumber = examId.split('-').pop();
 
   const [activePdf, setActivePdf] = useState<'LC' | 'RC'>('LC');
   const [mode, setMode] = useState<ExamMode>('FULL');
@@ -28,6 +29,7 @@ export function PdfExamView({ examId }: { examId: string }) {
   const [answers, setAnswers] = useState<Record<string, number>>({});
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [score, setScore] = useState(0);
+  const [mobileTab, setMobileTab] = useState<'pdf' | 'answers'>('pdf');
 
   useEffect(() => {
     if (['PART_1', 'PART_2', 'PART_3', 'PART_4'].includes(mode)) setActivePdf('LC');
@@ -69,147 +71,139 @@ export function PdfExamView({ examId }: { examId: string }) {
 
   const optionLabels = ['A', 'B', 'C', 'D'];
 
-  // Determine current Audio URL
   let currentAudioUrl = exam.audioUrl ? assetUrl(exam.audioUrl) : undefined;
   if (mode !== 'FULL' && ['PART_1', 'PART_2', 'PART_3', 'PART_4'].includes(mode)) {
     const partNum = mode.split('_')[1];
     currentAudioUrl = assetUrl(`/audio/toeic_2024/parts/PART.${partNum}.-.TEST.${testNumber}.mp3`);
   } else if (['PART_5', 'PART_6', 'PART_7'].includes(mode)) {
-    currentAudioUrl = undefined; // Reading has no audio
+    currentAudioUrl = undefined;
   }
 
-  // Determine iframe SRC
-  let iframeSrc = activePdf === 'LC' ? assetUrl(exam.pdfUrl_LC || '') : assetUrl(exam.pdfUrl_RC || '');
+  let pdfSrc = activePdf === 'LC' ? assetUrl(exam.pdfUrl_LC || '') : assetUrl(exam.pdfUrl_RC || '');
   if (showScript) {
-    iframeSrc = activePdf === 'LC' ? assetUrl(exam.scriptUrl_LC || '') : assetUrl(exam.scriptUrl_RC || '');
+    pdfSrc = activePdf === 'LC' ? assetUrl(exam.scriptUrl_LC || '') : assetUrl(exam.scriptUrl_RC || '');
   }
 
   return (
     <div className="flex flex-col w-full h-screen bg-gray-100">
       {/* Header */}
-      <div className="flex items-center justify-between p-3 lg:p-4 bg-white border-b border-gray-200 shrink-0">
-        <div className="flex items-center gap-2 lg:gap-4 min-w-0">
-          <button 
+      <div className="flex items-center justify-between p-2 lg:p-3 bg-white border-b border-gray-200 shrink-0">
+        <div className="flex items-center gap-2 min-w-0">
+          <button
             onClick={() => navigate(-1)}
-            className="flex items-center gap-2 text-gray-600 hover:text-gray-900 transition-colors shrink-0"
+            className="flex items-center text-gray-600 hover:text-gray-900 transition-colors shrink-0"
           >
             <ArrowLeft className="w-5 h-5" />
           </button>
-          <h1 className="text-sm lg:text-xl font-bold truncate">{exam.title}</h1>
-          <select 
-            className="hidden sm:block ml-2 lg:ml-4 p-1.5 lg:p-2 border border-gray-300 rounded-lg text-xs lg:text-sm font-semibold bg-gray-50 outline-none focus:border-blue-500"
+          <h1 className="text-xs lg:text-base font-bold truncate">{exam.title}</h1>
+          <select
+            className="hidden sm:block ml-2 p-1 border border-gray-300 rounded-lg text-xs font-semibold bg-gray-50 outline-none"
             value={mode}
             onChange={(e) => setMode(e.target.value as ExamMode)}
             disabled={isSubmitted}
           >
-            <option value="FULL">Full Exam (200Qs)</option>
-            <option value="PART_1">Part 1: Photographs (6Qs)</option>
-            <option value="PART_2">Part 2: Question-Response (25Qs)</option>
-            <option value="PART_3">Part 3: Conversations (39Qs)</option>
-            <option value="PART_4">Part 4: Talks (30Qs)</option>
-            <option value="PART_5">Part 5: Incomplete Sentences (30Qs)</option>
-            <option value="PART_6">Part 6: Text Completion (16Qs)</option>
-            <option value="PART_7">Part 7: Reading Comprehension (54Qs)</option>
+            <option value="FULL">Full (200Qs)</option>
+            <option value="PART_1">Part 1 (6Qs)</option>
+            <option value="PART_2">Part 2 (25Qs)</option>
+            <option value="PART_3">Part 3 (39Qs)</option>
+            <option value="PART_4">Part 4 (30Qs)</option>
+            <option value="PART_5">Part 5 (30Qs)</option>
+            <option value="PART_6">Part 6 (16Qs)</option>
+            <option value="PART_7">Part 7 (54Qs)</option>
           </select>
         </div>
-
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 shrink-0">
           {isSubmitted && (
-            <button 
+            <button
               onClick={() => setShowScript(!showScript)}
-              className={`flex items-center gap-2 px-4 py-2 font-bold rounded-xl transition-colors border-2 ${showScript ? 'bg-blue-100 text-blue-700 border-blue-200' : 'bg-white text-gray-700 border-gray-300 hover:bg-gray-50'}`}
+              className={`flex items-center gap-1 px-3 py-1.5 text-xs font-bold rounded-lg border ${showScript ? 'bg-blue-100 text-blue-700 border-blue-200' : 'bg-white text-gray-600 border-gray-300'}`}
             >
-              <FileText className="w-5 h-5" />
-              {showScript ? 'Hide Script' : 'View Script'}
+              <FileText className="w-4 h-4" />
+              {showScript ? 'Hide' : 'Script'}
             </button>
           )}
-
           {!isSubmitted ? (
-            <button 
-              onClick={handleSubmit}
-              className="px-6 py-2 bg-blue-600 text-white font-semibold rounded-xl hover:bg-blue-700 transition-colors"
-            >
-              Submit Exam
+            <button onClick={handleSubmit} className="px-4 py-1.5 bg-blue-600 text-white text-xs font-bold rounded-lg">
+              Submit
             </button>
           ) : (
-            <div className="px-6 py-2 bg-green-100 text-green-800 font-bold rounded-xl border border-green-200">
-              Score: {score} / {currentQuestions.length}
+            <div className="px-4 py-1.5 bg-green-100 text-green-800 text-xs font-bold rounded-lg">
+              {score}/{currentQuestions.length}
             </div>
           )}
         </div>
       </div>
 
-      {/* Split View */}
-      <div className="flex flex-col lg:flex-row flex-1 overflow-hidden pb-16 lg:pb-0">
-        
-        {/* Left Side: PDF Viewer */}
-        <div className="w-full lg:w-2/3 h-[40vh] lg:h-full border-b lg:border-b-0 lg:border-r border-gray-300 flex flex-col bg-gray-200 relative">
-          <div className="absolute top-2 lg:top-4 left-1/2 -translate-x-1/2 flex bg-white rounded-full shadow-lg p-0.5 lg:p-1 z-10">
+      {/* Mobile Tab Toggle */}
+      <div className="flex lg:hidden border-b border-gray-200 bg-white shrink-0">
+        <button
+          onClick={() => setMobileTab('pdf')}
+          className={`flex-1 py-2 text-xs font-bold transition-colors ${mobileTab === 'pdf' ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-500'}`}
+        >
+          De thi
+        </button>
+        <button
+          onClick={() => setMobileTab('answers')}
+          className={`flex-1 py-2 text-xs font-bold transition-colors ${mobileTab === 'answers' ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-500'}`}
+        >
+          Dap an
+        </button>
+      </div>
+
+      {/* Main Content */}
+      <div className="flex flex-1 overflow-hidden">
+        {/* Left: PDF Viewer */}
+        <div className={`${mobileTab === 'pdf' ? 'flex' : 'hidden'} lg:flex w-full lg:w-[55%] h-full border-r border-gray-200 flex-col bg-gray-50 relative`}>
+          <div className="absolute top-2 left-1/2 -translate-x-1/2 flex bg-white rounded-full shadow p-0.5 z-10">
             <button
               onClick={() => setActivePdf('LC')}
-              className={`px-3 lg:px-4 py-0.5 lg:py-1 rounded-full text-xs lg:text-sm font-semibold transition-colors ${activePdf === 'LC' ? 'bg-blue-600 text-white' : 'text-gray-600 hover:bg-gray-100'}`}
+              className={`px-3 py-0.5 rounded-full text-[10px] font-bold transition-colors ${activePdf === 'LC' ? 'bg-blue-600 text-white' : 'text-gray-500'}`}
             >
-              Listening {showScript ? 'Script' : 'Section'}
+              LC
             </button>
             <button
               onClick={() => setActivePdf('RC')}
-              className={`px-3 lg:px-4 py-0.5 lg:py-1 rounded-full text-xs lg:text-sm font-semibold transition-colors ${activePdf === 'RC' ? 'bg-blue-600 text-white' : 'text-gray-600 hover:bg-gray-100'}`}
+              className={`px-3 py-0.5 rounded-full text-[10px] font-bold transition-colors ${activePdf === 'RC' ? 'bg-blue-600 text-white' : 'text-gray-500'}`}
             >
-              Reading {showScript ? 'Explanations' : 'Section'}
+              RC
             </button>
           </div>
-          
-          <iframe 
-            src={iframeSrc} 
-            className="w-full h-full border-none"
-            title="PDF Exam Viewer"
-          />
+          <PdfViewer url={pdfSrc} className="flex-1" />
         </div>
 
-        {/* Right Side: Answer Sheet & Audio */}
-        <div className="w-full lg:w-1/3 flex-1 bg-white flex flex-col overflow-hidden">
-          {/* Audio Player (Sticky) */}
+        {/* Right: Audio + Answers */}
+        <div className={`${mobileTab === 'answers' ? 'flex' : 'hidden'} lg:flex w-full lg:w-[45%] h-full bg-white flex-col overflow-hidden`}>
           {currentAudioUrl && (
-            <div className="p-4 border-b border-gray-200 bg-gray-50 shrink-0">
-              <h3 className="font-semibold text-gray-700 mb-2">
-                Listening Audio {mode !== 'FULL' && `(${mode.replace('_', ' ')})`}
-              </h3>
-              <audio 
-                controls 
-                className="w-full"
-                src={currentAudioUrl}
-              />
+            <div className="p-3 border-b border-gray-200 bg-gray-50 shrink-0">
+              <audio controls className="w-full" src={currentAudioUrl} />
             </div>
           )}
-
-          {/* Bubble Sheet */}
-          <div className="flex-1 overflow-y-auto p-4 space-y-2">
+          <div className="flex-1 overflow-y-auto p-3 space-y-1.5">
             {currentQuestions.map((ans) => {
               const userAnswer = answers[ans.id];
               const isCorrect = userAnswer === ans.correctAnswer;
-              
+
               return (
-                <div key={ans.id} className="flex items-center justify-between p-2 rounded hover:bg-gray-50">
-                  <span className="w-8 font-bold text-gray-500 text-sm">{ans.id}.</span>
-                  <div className="flex gap-2">
+                <div key={ans.id} className="flex items-center justify-between py-1.5 px-2 rounded hover:bg-gray-50">
+                  <span className="w-7 font-bold text-gray-400 text-xs">{ans.id}.</span>
+                  <div className="flex gap-1.5">
                     {optionLabels.map((lbl, optIdx) => {
                       const isSelected = userAnswer === optIdx;
                       const isActualCorrect = isSubmitted && ans.correctAnswer === optIdx;
                       const isWrongSelected = isSubmitted && isSelected && !isCorrect;
 
-                      // Part 2 has only 3 options (A, B, C)
                       if (mode === 'PART_2' && optIdx === 3 || (mode === 'FULL' && parseInt(ans.id) >= 7 && parseInt(ans.id) <= 31 && optIdx === 3)) {
-                        return null; 
+                        return null;
                       }
 
-                      let bgClass = "bg-gray-100 border-gray-300 text-gray-600";
-                      
+                      let bgClass = "bg-gray-100 border-gray-300 text-gray-500";
+
                       if (isSubmitted) {
                         if (isActualCorrect) bgClass = "bg-green-500 border-green-600 text-white";
-                        else if (isWrongSelected) bgClass = "bg-red-500 border-red-600 text-white";
-                        else bgClass = "bg-gray-100 border-gray-200 text-gray-400 opacity-50";
-                      } else {
-                        if (isSelected) bgClass = "bg-blue-600 border-blue-700 text-white";
+                        else if (isWrongSelected) bgClass = "bg-red-500 border-red-500 text-white";
+                        else bgClass = "bg-gray-50 border-gray-200 text-gray-300";
+                      } else if (isSelected) {
+                        bgClass = "bg-blue-600 border-blue-700 text-white";
                       }
 
                       return (
@@ -217,7 +211,7 @@ export function PdfExamView({ examId }: { examId: string }) {
                           key={lbl}
                           onClick={() => handleSelectOption(ans.id, optIdx)}
                           disabled={isSubmitted}
-                          className={`w-8 h-8 rounded-full border flex items-center justify-center text-sm font-semibold transition-all ${bgClass} ${!isSubmitted && 'hover:bg-blue-100 hover:border-blue-300 hover:text-blue-600 cursor-pointer'}`}
+                          className={`w-7 h-7 rounded-full border text-xs font-bold transition-all ${bgClass} ${!isSubmitted && 'cursor-pointer active:scale-90'}`}
                         >
                           {lbl}
                         </button>
@@ -225,8 +219,8 @@ export function PdfExamView({ examId }: { examId: string }) {
                     })}
                   </div>
                   {isSubmitted && (
-                    <div className="w-6 flex justify-end">
-                      {isCorrect ? <CheckCircle className="w-5 h-5 text-green-500" /> : <XCircle className="w-5 h-5 text-red-500" />}
+                    <div className="w-5 flex justify-end">
+                      {isCorrect ? <CheckCircle className="w-4 h-4 text-green-500" /> : <XCircle className="w-4 h-4 text-red-500" />}
                     </div>
                   )}
                 </div>
