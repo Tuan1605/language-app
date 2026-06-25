@@ -107,7 +107,7 @@ export function MainLayout() {
               end={item.end}
               aria-label={item.label} 
               className={({isActive}) => {
-                const activeStyle = item.activeClass || 'bg-[var(--tint-blue)] text-[var(--blue)] border-[var(--tint-blue)]';
+                const activeStyle = 'bg-[var(--tint-blue)] text-[var(--blue)] border-[var(--tint-blue)]';
                 return `w-full flex items-center gap-4 px-4 py-3 rounded-2xl font-black text-xs tracking-wider transition-all border-2 active:scale-98 ${isActive ? activeStyle : 'border-transparent text-[var(--text-main)] hover:bg-[var(--gray-bg)]'}`;
               }}
             >
@@ -170,7 +170,7 @@ export function MainLayout() {
                 end={item.end}
                 aria-label={item.label} 
                 className={({isActive}) => {
-                  const activeStyle = item.activeClass || 'text-[var(--blue)]';
+                  const activeStyle = 'text-[var(--blue)]';
                   return `flex flex-col items-center justify-center gap-0.5 transition-all active:scale-95 ${isActive ? activeStyle : 'text-[var(--gray-path-dark)] hover:text-[var(--text-main)]'}`;
                 }}
               >
