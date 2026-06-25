@@ -54,43 +54,6 @@ const NAV_ITEMS = [
       </svg>
     ),
   },
-  {
-    to: '/mistakes',
-    label: 'MISTAKES',
-    activeClass: 'bg-[var(--tint-red)] text-[var(--red)] border-[var(--tint-red)]',
-    icon: (
-      <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M12 9v3.75m0-10.036A11.959 11.959 0 0112 3.75c-4.437 0-8.283 2.39-10.456 5.964M12 9v3.75m0 0v3.75m0-3.75h3.75m-3.75 0H8.25" />
-      </svg>
-    ),
-  },
-  {
-    to: '/analytics',
-    label: 'STATS',
-    icon: (
-      <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v5.25c0 .621-.504 1.125-1.125 1.125h-2.25A1.125 1.125 0 013 18.375v-5.25zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125v-9.75zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v14.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
-      </svg>
-    ),
-  },
-  {
-    to: '/add',
-    label: 'ADD WORDS',
-    icon: (
-      <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-      </svg>
-    ),
-  },
-  {
-    to: '/review-dashboard',
-    label: 'DASHBOARD',
-    icon: (
-      <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v5.25c0 .621-.504 1.125-1.125 1.125h-2.25A1.125 1.125 0 013 18.375v-5.25zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125v-9.75zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v14.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z" />
-      </svg>
-    ),
-  },
 ];
 
 export function MainLayout() {
@@ -208,7 +171,7 @@ export function MainLayout() {
                 aria-label={item.label} 
                 className={({isActive}) => {
                   const activeStyle = item.activeClass || 'text-[var(--blue)]';
-                  return `flex flex-col items-center justify-center w-full h-full gap-1 transition-all active:scale-95 ${isActive ? activeStyle : 'text-[var(--gray-path-dark)] hover:text-[var(--text-main)]'}`;
+                  return `flex flex-col items-center justify-center gap-0.5 transition-all active:scale-95 ${isActive ? activeStyle : 'text-[var(--gray-path-dark)] hover:text-[var(--text-main)]'}`;
                 }}
               >
                 <div className="relative">
@@ -219,6 +182,7 @@ export function MainLayout() {
                     </span>
                   )}
                 </div>
+                <span className="text-[9px] font-bold">{item.label}</span>
               </NavLink>
             ))}
           </div>
