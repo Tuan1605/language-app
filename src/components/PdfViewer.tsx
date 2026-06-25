@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import * as pdfjsLib from 'pdfjs-dist';
 
-pdfjsLib.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@${pdfjsLib.version}/build/pdf.worker.min.mjs`;
+pdfjsLib.GlobalWorkerOptions.workerSrc = `https://unpkg.com/pdfjs-dist@6.0.227/build/pdf.worker.min.mjs`;
 
 interface PdfViewerProps {
   url: string;
@@ -48,13 +48,20 @@ export function PdfViewer({ url, className = '' }: PdfViewerProps) {
     const container = containerRef.current;
     if (!container || !url) return;
 
+    let finalUrl = url;
+    if (url.includes('github.com/Tuan1605/language-app/releases')) {
+      const parts = url.split('/');
+      const filename = parts[parts.length - 1];
+      finalUrl = `/api/proxy?file=${encodeURIComponent(filename)}`;
+    }
+
     const loadPdf = async () => {
       setLoading(true);
       setError(null);
       container.innerHTML = '';
 
       try {
-        const response = await fetch(url);
+        const response = await fetch(finalUrl);
         if (!response.ok) throw new Error(`Failed to load PDF: ${response.status}`);
         const arrayBuffer = await response.arrayBuffer();
 
