@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ArrowLeft, CheckCircle, XCircle, FileText } from 'lucide-react';
 import { TOEIC_2024_PDF_EXAMS } from '../data/toeic2024Pdf';
+import { assetUrl } from '../config/assets';
 
 type ExamMode = 'FULL' | 'PART_1' | 'PART_2' | 'PART_3' | 'PART_4' | 'PART_5' | 'PART_6' | 'PART_7';
 
@@ -69,18 +70,18 @@ export function PdfExamView({ examId }: { examId: string }) {
   const optionLabels = ['A', 'B', 'C', 'D'];
 
   // Determine current Audio URL
-  let currentAudioUrl = exam.audioUrl;
+  let currentAudioUrl = exam.audioUrl ? assetUrl(exam.audioUrl) : undefined;
   if (mode !== 'FULL' && ['PART_1', 'PART_2', 'PART_3', 'PART_4'].includes(mode)) {
     const partNum = mode.split('_')[1];
-    currentAudioUrl = `/audio/toeic_2024/parts/PART ${partNum} - TEST ${testNumber}.mp3`;
+    currentAudioUrl = assetUrl(`/audio/toeic_2024/parts/PART ${partNum} - TEST ${testNumber}.mp3`);
   } else if (['PART_5', 'PART_6', 'PART_7'].includes(mode)) {
     currentAudioUrl = undefined; // Reading has no audio
   }
 
   // Determine iframe SRC
-  let iframeSrc = activePdf === 'LC' ? exam.pdfUrl_LC : exam.pdfUrl_RC;
+  let iframeSrc = activePdf === 'LC' ? assetUrl(exam.pdfUrl_LC || '') : assetUrl(exam.pdfUrl_RC || '');
   if (showScript) {
-    iframeSrc = activePdf === 'LC' ? exam.scriptUrl_LC : exam.scriptUrl_RC;
+    iframeSrc = activePdf === 'LC' ? assetUrl(exam.scriptUrl_LC || '') : assetUrl(exam.scriptUrl_RC || '');
   }
 
   return (
