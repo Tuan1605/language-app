@@ -109,6 +109,11 @@ export function PdfExamView({ examId }: { examId: string }) {
             <option value="PART_6">Part 6 (16Qs)</option>
             <option value="PART_7">Part 7 (54Qs)</option>
           </select>
+          {mode !== 'FULL' && (
+            <span className="hidden sm:inline ml-2 px-2 py-0.5 bg-blue-50 text-blue-700 text-[10px] font-bold rounded-full border border-blue-200">
+              Cau {PART_RANGES[mode][0]}-{PART_RANGES[mode][1]}
+            </span>
+          )}
         </div>
         <div className="flex items-center gap-2 shrink-0">
           {isSubmitted && (
