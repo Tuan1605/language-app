@@ -40,15 +40,15 @@ export class LocalErrorBoundary extends Component<Props, State> {
       }
 
       return (
-        <div className="w-full p-6 bg-[var(--bg-card)] rounded-2xl border-2 border-[var(--red)] flex flex-col items-center justify-center text-center space-y-4">
-          <AlertTriangle size={48} className="text-[var(--red)] mb-2" />
-          <h2 className="text-xl font-black text-[var(--red)] uppercase tracking-tight">Something went wrong</h2>
-          <p className="text-sm font-bold text-[var(--text-muted)]">
+        <div className="w-full p-6 bg-bg-card rounded-2xl border-2 border-red flex flex-col items-center justify-center text-center space-y-4">
+          <AlertTriangle size={48} className="text-red mb-2" />
+          <h2 className="text-xl font-black text-red uppercase tracking-tight">Something went wrong</h2>
+          <p className="text-sm font-bold text-text-muted">
             We encountered an unexpected error loading this section.
           </p>
           <button
             onClick={this.handleReset}
-            className="mt-4 px-6 py-2 bg-[var(--tint-red)] text-[var(--red)] font-bold rounded-xl hover:bg-[var(--red)] hover:text-white transition-colors"
+            className="mt-4 px-6 py-2 bg-tint-red text-red font-bold rounded-xl hover:bg-red hover:text-white transition-colors"
           >
             Try Again
           </button>

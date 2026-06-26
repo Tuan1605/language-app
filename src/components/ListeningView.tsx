@@ -153,18 +153,18 @@ export function ListeningView({ lesson, onBack, hideBackButton }: ListeningViewP
       : isPlaying ? 100 : 0;
 
   return (
-    <div className="bg-[var(--bg-card)] lingo-card p-10 max-w-3xl mx-auto w-full animate-in slide-in-from-bottom-8 duration-500">
+    <div className="bg-bg-card lingo-card p-10 max-w-3xl mx-auto w-full animate-in slide-in-from-bottom-8 duration-500">
       <div className="flex justify-between items-center mb-10">
         {!hideBackButton ? (
-          <button onClick={onBack} aria-label="Go back" className="text-[var(--text-muted)] hover:text-[var(--text-main)] transition-colors">
+          <button onClick={onBack} aria-label="Go back" className="text-text-muted hover:text-text-main transition-colors">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M15 19l-7-7 7-7" />
             </svg>
           </button>
         ) : <div className="w-10"></div>}
         <div className="flex items-center gap-3">
-          <div className={`w-3 h-3 rounded-full ${lesson.category === 'toeic' ? 'bg-[var(--blue)]' : 'bg-[var(--red)]'}`}></div>
-          <span className="text-[10px] font-black text-[var(--text-muted)] uppercase tracking-[0.2em]">{lesson.category} Audio Lesson</span>
+          <div className={`w-3 h-3 rounded-full ${lesson.category === 'toeic' ? 'bg-blue' : 'bg-red'}`}></div>
+          <span className="text-[10px] font-black text-text-muted uppercase tracking-[0.2em]">{lesson.category} Audio Lesson</span>
         </div>
         {!hideBackButton ? <div className="w-10"></div> : (
           <button onClick={onBack} className="btn-3d btn-green py-2 px-4 text-[10px]">
@@ -173,9 +173,9 @@ export function ListeningView({ lesson, onBack, hideBackButton }: ListeningViewP
         )}
       </div>
 
-      <h2 className="text-3xl font-black text-[var(--text-main)] mb-10 text-center leading-tight">{lesson.title}</h2>
+      <h2 className="text-3xl font-black text-text-main mb-10 text-center leading-tight">{lesson.title}</h2>
 
-      <div className="bg-[var(--bg-hover)] p-8 rounded-[2rem] border-2 border-[var(--border-main)] mb-12 shadow-inner">
+      <div className="bg-bg-hover p-8 rounded-[2rem] border-2 border-border-main mb-12 shadow-inner">
         <audio
           ref={audioRef}
           src={lesson.audioUrl}
@@ -189,7 +189,7 @@ export function ListeningView({ lesson, onBack, hideBackButton }: ListeningViewP
           <div className="flex items-center gap-6">
             <button
               onClick={togglePlay}
-              className={`w-16 h-16 rounded-full flex items-center justify-center text-white shadow-xl transition-all active:scale-95 shrink-0 ${isPlaying ? 'bg-[var(--red)]' : 'bg-[var(--green)]'}`}
+              className={`w-16 h-16 rounded-full flex items-center justify-center text-white shadow-xl transition-all active:scale-95 shrink-0 ${isPlaying ? 'bg-red' : 'bg-green'}`}
               aria-label={isPlaying ? 'Pause' : 'Play'}
             >
               {isPlaying ? (
@@ -199,7 +199,7 @@ export function ListeningView({ lesson, onBack, hideBackButton }: ListeningViewP
               )}
             </button>
 
-            <div className="flex-1 h-4 bg-[var(--bg-card)] border-2 border-[var(--border-main)] rounded-full overflow-hidden cursor-pointer" onClick={(e) => {
+            <div className="flex-1 h-4 bg-bg-card border-2 border-border-main rounded-full overflow-hidden cursor-pointer" onClick={(e) => {
               if (lesson.audioUrl && audioRef.current && audioRef.current.duration) {
                 const rect = e.currentTarget.getBoundingClientRect();
                 const x = e.clientX - rect.left;
@@ -208,29 +208,29 @@ export function ListeningView({ lesson, onBack, hideBackButton }: ListeningViewP
               }
             }}>
               <div
-                className="h-full bg-[var(--green)] transition-all duration-300"
+                className="h-full bg-green transition-all duration-300"
                 style={{ width: `${progressPercent}%` }}
               />
             </div>
 
-            <span className="text-xs font-black text-[var(--text-muted)] w-10 text-right tabular-nums shrink-0">
+            <span className="text-xs font-black text-text-muted w-10 text-right tabular-nums shrink-0">
               {Math.floor(currentTime)}s
             </span>
           </div>
 
           {lesson.audioUrl && (
-            <div className="flex items-center justify-center gap-4 pt-2 border-t-2 border-[var(--border-main)] border-dashed">
-              <button onClick={() => skipTime(-5)} className="p-3 rounded-full hover:bg-[var(--gray-path)] transition-colors text-[var(--text-muted)] hover:text-[var(--text-main)] flex flex-col items-center gap-1 active:scale-95" aria-label="Rewind 5s">
+            <div className="flex items-center justify-center gap-4 pt-2 border-t-2 border-border-main border-dashed">
+              <button onClick={() => skipTime(-5)} className="p-3 rounded-full hover:bg-gray-path transition-colors text-text-muted hover:text-text-main flex flex-col items-center gap-1 active:scale-95" aria-label="Rewind 5s">
                 <Rewind size={20} />
                 <span className="text-[10px] font-black tracking-widest">-5s</span>
               </button>
               
-              <button onClick={cyclePlaybackRate} className="p-3 rounded-xl hover:bg-[var(--gray-path)] transition-colors text-[var(--text-muted)] hover:text-[var(--text-main)] flex items-center gap-2 active:scale-95" aria-label="Change Speed">
+              <button onClick={cyclePlaybackRate} className="p-3 rounded-xl hover:bg-gray-path transition-colors text-text-muted hover:text-text-main flex items-center gap-2 active:scale-95" aria-label="Change Speed">
                 <Gauge size={20} />
                 <span className="text-xs font-black w-8 text-center">{playbackRate}x</span>
               </button>
 
-              <button onClick={() => skipTime(5)} className="p-3 rounded-full hover:bg-[var(--gray-path)] transition-colors text-[var(--text-muted)] hover:text-[var(--text-main)] flex flex-col items-center gap-1 active:scale-95" aria-label="Forward 5s">
+              <button onClick={() => skipTime(5)} className="p-3 rounded-full hover:bg-gray-path transition-colors text-text-muted hover:text-text-main flex flex-col items-center gap-1 active:scale-95" aria-label="Forward 5s">
                 <FastForward size={20} />
                 <span className="text-[10px] font-black tracking-widest">+5s</span>
               </button>
@@ -240,13 +240,13 @@ export function ListeningView({ lesson, onBack, hideBackButton }: ListeningViewP
       </div>
 
       {!lesson.audioUrl && !voiceReady && (
-        <p className="text-xs text-[var(--blue)] font-bold text-center mb-6 flex items-center justify-center gap-2">
+        <p className="text-xs text-blue font-bold text-center mb-6 flex items-center justify-center gap-2">
           <Volume2 size={16} /> Sẽ dùng giọng đọc online. Bấm Play để nghe.
         </p>
       )}
 
       <div className="space-y-6 max-h-[500px] overflow-y-auto pr-4 custom-scrollbar">
-        <p className="text-[10px] font-black text-[var(--text-muted)] uppercase tracking-[0.2em] mb-4">Transcript & Translation</p>
+        <p className="text-[10px] font-black text-text-muted uppercase tracking-[0.2em] mb-4">Transcript & Translation</p>
         {lesson.transcript.map((item, index) => {
           const isActive = lesson.audioUrl
             ? (currentTime >= item.time && (index === lesson.transcript.length - 1 || currentTime < lesson.transcript[index + 1].time))
@@ -260,17 +260,17 @@ export function ListeningView({ lesson, onBack, hideBackButton }: ListeningViewP
                   seekToTime(item.time);
                 }
               }}
-              className={`p-6 rounded-2xl transition-all border-2 ${lesson.audioUrl ? 'cursor-pointer hover:border-[var(--blue)]/50 hover:bg-[var(--tint-blue)]' : ''} ${
+              className={`p-6 rounded-2xl transition-all border-2 ${lesson.audioUrl ? 'cursor-pointer hover:border-blue/50 hover:bg-tint-blue' : ''} ${
                 isActive
-                ? 'bg-[var(--bg-card)] border-[var(--blue)] shadow-md scale-[1.02]'
+                ? 'bg-bg-card border-blue shadow-md scale-[1.02]'
                 : 'bg-transparent border-transparent opacity-50'
               }`}
             >
-              <p className={`text-xl leading-relaxed font-bold ${isActive ? 'text-[var(--text-main)]' : 'text-[var(--text-muted)]'}`}>
+              <p className={`text-xl leading-relaxed font-bold ${isActive ? 'text-text-main' : 'text-text-muted'}`}>
                 {item.text}
               </p>
               {item.translation && (
-                <p className="text-sm text-[var(--text-muted)] mt-3 italic font-medium">{item.translation}</p>
+                <p className="text-sm text-text-muted mt-3 italic font-medium">{item.translation}</p>
               )}
             </div>
           );

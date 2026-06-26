@@ -2,6 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script>
+      (function() {
+        try {
+          var state = localStorage.getItem('lingo-user-prefs');
+          if (state) {
+            var parsed = JSON.parse(state);
+            var theme = parsed.state?.theme || 'light';
+            var track = parsed.state?.activeTrack || 'english';
+            document.documentElement.setAttribute('data-theme', theme);
+            document.documentElement.setAttribute('data-track', track);
+          }
+        } catch (e) {}
+      })();
+    </script>
     <link rel="icon" type="image/png" href="/logo.png" />
     <link rel="manifest" href="/manifest.json" />
     <meta name="theme-color" content="#58cc02" />

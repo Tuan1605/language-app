@@ -37,7 +37,7 @@ export function ExamTimer({ initialTime, onTimeTick, onTimeUp, isFinished }: Exa
   };
 
   return (
-    <div className={`font-black text-xl tracking-wider ${timeLeft < 300 ? 'text-[var(--red)] animate-pulse' : 'text-[var(--blue)]'}`}>
+    <div className={`font-black text-xl tracking-wider ${timeLeft < 300 ? 'text-red animate-pulse' : 'text-blue'}`}>
       ⏱ {formatTime(timeLeft)}
     </div>
   );

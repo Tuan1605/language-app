@@ -7,9 +7,9 @@ export function ReviewReminder({ dueCount, onStartReview }: ReviewReminderProps)
   if (dueCount === 0) return null;
 
   return (
-    <div className="w-full lingo-card p-6 border-2 border-[var(--gold)] bg-[var(--tint-gold)] text-[var(--gold-shadow)] mb-6 flex items-center justify-between gap-4">
+    <div className="w-full lingo-card p-6 border-2 border-gold bg-tint-gold text-gold-shadow mb-6 flex items-center justify-between gap-4">
       <div className="flex items-center gap-4">
-        <div className="w-12 h-12 rounded-2xl bg-[var(--gold)]/20 flex items-center justify-center text-2xl">
+        <div className="w-12 h-12 rounded-2xl bg-gold/20 flex items-center justify-center text-2xl">
           🔔
         </div>
         <div>

@@ -50,7 +50,7 @@ export function ReviewDashboard() {
   }, [activeTrack]);
 
   if (!stats) {
-    return <div className="w-full flex items-center justify-center py-20"><div className="w-8 h-8 border-3 border-[var(--blue)] border-t-transparent rounded-full animate-spin"></div></div>;
+    return <div className="w-full flex items-center justify-center py-20"><div className="w-8 h-8 border-3 border-blue border-t-transparent rounded-full animate-spin"></div></div>;
   }
 
   const statusCards = [
@@ -71,7 +71,7 @@ export function ReviewDashboard() {
       <div className="w-full view-enter space-y-8">
         <div className="text-center">
           <h2 className="text-3xl font-black text-gradient uppercase tracking-tight mb-2">Review Dashboard</h2>
-          <p className="text-sm font-bold text-[var(--text-muted)]">Track your spaced repetition progress</p>
+          <p className="text-sm font-bold text-text-muted">Track your spaced repetition progress</p>
         </div>
 
         {/* Upcoming Reviews */}
@@ -79,11 +79,11 @@ export function ReviewDashboard() {
           <h3 className="font-black text-lg mb-4">Upcoming Reviews</h3>
           <div className="grid grid-cols-3 gap-4">
             {upcomingCards.map(item => (
-              <div key={item.label} className={`text-center p-4 rounded-2xl border-2 ${item.urgent && item.count > 0 ? 'border-[var(--gold)] bg-[var(--tint-gold)]' : 'border-[var(--border-main)] bg-[var(--gray-bg)]'}`}>
-                <div className={`text-3xl font-black ${item.urgent && item.count > 0 ? 'text-[var(--gold)]' : 'text-[var(--text-main)]'}`}>
+              <div key={item.label} className={`text-center p-4 rounded-2xl border-2 ${item.urgent && item.count > 0 ? 'border-gold bg-tint-gold' : 'border-border-main bg-gray-bg'}`}>
+                <div className={`text-3xl font-black ${item.urgent && item.count > 0 ? 'text-gold' : 'text-text-main'}`}>
                   {item.count}
                 </div>
-                <div className="text-xs font-bold text-[var(--text-muted)] mt-1">{item.label}</div>
+                <div className="text-xs font-bold text-text-muted mt-1">{item.label}</div>
               </div>
             ))}
           </div>
@@ -103,8 +103,8 @@ export function ReviewDashboard() {
           <div className="space-y-3">
             {statusCards.map(item => (
               <div key={item.label} className="flex items-center gap-3">
-                <div className="w-20 text-xs font-bold text-[var(--text-muted)]">{item.label}</div>
-                <div className="flex-1 h-6 bg-[var(--gray-bg)] rounded-full overflow-hidden">
+                <div className="w-20 text-xs font-bold text-text-muted">{item.label}</div>
+                <div className="flex-1 h-6 bg-gray-bg rounded-full overflow-hidden">
                   <div
                     className="h-full rounded-full transition-all duration-500"
                     style={{
@@ -123,11 +123,11 @@ export function ReviewDashboard() {
 
         {/* Quick Actions */}
         <div className="grid grid-cols-2 gap-4">
-          <button onClick={() => navigate('/review')} className="lingo-card p-4 text-center hover:border-[var(--blue)] transition-colors">
+          <button onClick={() => navigate('/review')} className="lingo-card p-4 text-center hover:border-blue transition-colors">
             <div className="text-2xl mb-2">📖</div>
             <div className="text-xs font-black uppercase">Review Now</div>
           </button>
-          <button onClick={() => navigate('/collection')} className="lingo-card p-4 text-center hover:border-[var(--blue)] transition-colors">
+          <button onClick={() => navigate('/collection')} className="lingo-card p-4 text-center hover:border-blue transition-colors">
             <div className="text-2xl mb-2">📚</div>
             <div className="text-xs font-black uppercase">Browse Library</div>
           </button>

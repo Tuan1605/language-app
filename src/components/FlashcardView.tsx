@@ -71,8 +71,8 @@ export function FlashcardView({ card, onRate, onArchive }: FlashcardViewProps) {
       >
         {/* Front Side */}
         <div className="absolute inset-0 w-full h-full backface-hidden">
-          <div className="w-full h-full lingo-card flex flex-col items-center justify-center text-center bg-[var(--bg-card)] relative">
-            <span className="absolute top-6 text-[10px] font-black text-[var(--blue)] uppercase tracking-[0.2em] bg-[var(--tint-blue)] px-4 py-1.5 rounded-full">
+          <div className="w-full h-full lingo-card flex flex-col items-center justify-center text-center bg-bg-card relative">
+            <span className="absolute top-6 text-[10px] font-black text-blue uppercase tracking-[0.2em] bg-tint-blue px-4 py-1.5 rounded-full">
               Question
             </span>
             
@@ -82,26 +82,26 @@ export function FlashcardView({ card, onRate, onArchive }: FlashcardViewProps) {
                 speakText(card.word);
               }}
               disabled={isSpeaking}
-              className="absolute top-5 right-6 w-10 h-10 rounded-xl bg-[var(--gray-bg)] flex items-center justify-center text-xl hover:bg-[var(--blue-light)] hover:text-[var(--blue)] transition-colors border-2 border-[var(--gray-path)] active:translate-y-1 disabled:opacity-60"
+              className="absolute top-5 right-6 w-10 h-10 rounded-xl bg-gray-bg flex items-center justify-center text-xl hover:bg-blue-light hover:text-blue transition-colors border-2 border-gray-path active:translate-y-1 disabled:opacity-60"
             >
               <Volume2 size={24} className={isSpeaking ? 'animate-pulse' : ''} />
             </button>
 
             {card.imageUrl ? (
               <div className="flex flex-col items-center gap-4 w-full px-6">
-                <div className="w-full h-40 rounded-2xl overflow-hidden border-2 border-[var(--border-main)] shadow-inner">
+                <div className="w-full h-40 rounded-2xl overflow-hidden border-2 border-border-main shadow-inner">
                   <img src={card.imageUrl} alt={card.word} className="w-full h-full object-cover" />
                 </div>
-                <h2 className="text-3xl font-black text-[var(--text-main)] leading-tight break-words">
+                <h2 className="text-3xl font-black text-text-main leading-tight break-words">
                   {card.word}
                 </h2>
               </div>
             ) : (
-              <h2 className="text-4xl font-black text-[var(--text-main)] leading-tight px-6 break-words">
+              <h2 className="text-4xl font-black text-text-main leading-tight px-6 break-words">
                 {card.word}
               </h2>
             )}
-            <div className="absolute bottom-6 flex items-center gap-2 text-[var(--text-muted)] font-black text-[10px] uppercase tracking-widest">
+            <div className="absolute bottom-6 flex items-center gap-2 text-text-muted font-black text-[10px] uppercase tracking-widest">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
               </svg>
@@ -112,7 +112,7 @@ export function FlashcardView({ card, onRate, onArchive }: FlashcardViewProps) {
 
         {/* Back Side */}
         <div className="absolute inset-0 w-full h-full backface-hidden rotate-y-180">
-          <div className="w-full h-full lingo-card bg-[var(--blue)] border-[#1899d6] flex flex-col items-center justify-center text-center text-white relative">
+          <div className="w-full h-full lingo-card bg-blue border-[#1899d6] flex flex-col items-center justify-center text-center text-white relative">
             <span className="absolute top-6 text-[10px] font-black text-white/50 uppercase tracking-[0.2em] bg-white/20 px-4 py-1.5 rounded-full">
               Meaning
             </span>
@@ -155,7 +155,7 @@ export function FlashcardView({ card, onRate, onArchive }: FlashcardViewProps) {
 
       {/* Rating Controls - 4 LEVELS FOR BETTER SM-2 ACCURACY */}
       <div className={`w-full space-y-6 transition-all duration-500 ${isFlipped ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4 pointer-events-none'}`}>
-        <h3 className="text-center text-[10px] font-black text-[var(--text-muted)] uppercase tracking-[0.2em]">Mức độ thuộc từ?</h3>
+        <h3 className="text-center text-[10px] font-black text-text-muted uppercase tracking-[0.2em]">Mức độ thuộc từ?</h3>
         <div className="grid grid-cols-4 gap-2">
           <button
             onClick={(e) => {
@@ -163,7 +163,7 @@ export function FlashcardView({ card, onRate, onArchive }: FlashcardViewProps) {
               setIsFlipped(false);
               setTimeout(() => onRate(0), 300);
             }}
-            className="h-14 btn-3d bg-[var(--tint-red)] text-[var(--red)] border-2 border-[var(--red)] shadow-[0_4px_0_var(--red)] active:shadow-[0_0_0_var(--red)] active:translate-y-1 text-[10px] sm:text-xs font-black flex items-center justify-center p-0"
+            className="h-14 btn-3d bg-tint-red text-red border-2 border-red shadow-[0_4px_0_var(--red)] active:shadow-[0_0_0_var(--red)] active:translate-y-1 text-[10px] sm:text-xs font-black flex items-center justify-center p-0"
           >
             AGAIN
           </button>
@@ -173,7 +173,7 @@ export function FlashcardView({ card, onRate, onArchive }: FlashcardViewProps) {
               setIsFlipped(false);
               setTimeout(() => onRate(2), 300);
             }}
-            className="h-14 btn-3d bg-[var(--tint-gold)] text-[var(--gold)] border-2 border-[var(--gold)] shadow-[0_4px_0_var(--gold)] active:shadow-[0_0_0_var(--gold)] active:translate-y-1 text-[10px] sm:text-xs font-black flex items-center justify-center p-0"
+            className="h-14 btn-3d bg-tint-gold text-gold border-2 border-gold shadow-[0_4px_0_var(--gold)] active:shadow-[0_0_0_var(--gold)] active:translate-y-1 text-[10px] sm:text-xs font-black flex items-center justify-center p-0"
           >
             HARD
           </button>
@@ -183,7 +183,7 @@ export function FlashcardView({ card, onRate, onArchive }: FlashcardViewProps) {
               setIsFlipped(false);
               setTimeout(() => onRate(4), 300);
             }}
-            className="h-14 btn-3d bg-[var(--tint-blue)] text-[var(--blue)] border-2 border-[var(--blue)] shadow-[0_4px_0_var(--blue)] active:shadow-[0_0_0_var(--blue)] active:translate-y-1 text-[10px] sm:text-xs font-black flex items-center justify-center p-0"
+            className="h-14 btn-3d bg-tint-blue text-blue border-2 border-blue shadow-[0_4px_0_var(--blue)] active:shadow-[0_0_0_var(--blue)] active:translate-y-1 text-[10px] sm:text-xs font-black flex items-center justify-center p-0"
           >
             GOOD
           </button>
@@ -193,13 +193,13 @@ export function FlashcardView({ card, onRate, onArchive }: FlashcardViewProps) {
               setIsFlipped(false);
               setTimeout(() => onRate(5), 300);
             }}
-            className="h-14 btn-3d bg-[var(--tint-green)] text-[var(--green)] border-2 border-[var(--green)] shadow-[0_4px_0_var(--green)] active:shadow-[0_0_0_var(--green)] active:translate-y-1 text-[10px] sm:text-xs font-black flex items-center justify-center p-0"
+            className="h-14 btn-3d bg-tint-green text-green border-2 border-green shadow-[0_4px_0_var(--green)] active:shadow-[0_0_0_var(--green)] active:translate-y-1 text-[10px] sm:text-xs font-black flex items-center justify-center p-0"
           >
             EASY
           </button>
         </div>
         <div className="flex flex-col items-center gap-2 mt-4">
-          <p className="text-center text-[9px] font-bold text-[var(--text-muted)] italic">
+          <p className="text-center text-[9px] font-bold text-text-muted italic">
             Dễ: ôn lại sau lâu hơn • Khó: ôn lại sớm hơn
           </p>
           <button
@@ -211,7 +211,7 @@ export function FlashcardView({ card, onRate, onArchive }: FlashcardViewProps) {
                 else onRate(5);
               }, 300);
             }}
-            className="text-[10px] font-black uppercase text-[var(--text-muted)] hover:text-[var(--red)] transition-colors tracking-widest border-2 border-transparent hover:border-[var(--red)] px-3 py-1 rounded-lg"
+            className="text-[10px] font-black uppercase text-text-muted hover:text-red transition-colors tracking-widest border-2 border-transparent hover:border-red px-3 py-1 rounded-lg"
           >
             🚫 Đã thuộc (Bỏ qua vĩnh viễn)
           </button>
@@ -219,7 +219,7 @@ export function FlashcardView({ card, onRate, onArchive }: FlashcardViewProps) {
       </div>
 
       {!voiceReady && (
-        <p className="text-xs text-[var(--blue)] font-bold text-center flex items-center justify-center gap-2">
+        <p className="text-xs text-blue font-bold text-center flex items-center justify-center gap-2">
           <Volume2 size={16} /> Bấm nút loa để nghe phát âm online.
         </p>
       )}

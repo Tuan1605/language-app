@@ -3,11 +3,88 @@ import { useUserStore } from '../stores/useUserStore';
 import { useAppStore } from '../stores/useAppStore';
 import { db } from '../data/db';
 import { calculateSM2, getNextReviewDate } from '../utils/sm2';
-import type { ReviewGrade, Flashcard, SessionTask, FullExam, AuthenticExam, ExamResult, Difficulty } from '../types';
+import type { ReviewGrade, Flashcard, SessionTask, FullExam, AuthenticExam, ExamResult, Difficulty, GrammarPoint } from '../types';
 import toast from 'react-hot-toast';
 
 const trackCategory = (track: 'english' | 'japanese'): 'toeic' | 'n2' =>
   track === 'english' ? 'toeic' : 'n2';
+
+// Generate fill-in-the-blank options for grammar questions
+function generateGrammarOptions(point: GrammarPoint): { correctAnswer: string; distractors: string[] } {
+  const blanked = point.blankedExample || '';
+  
+  // Extract the blank content from blankedExample (text between parentheses)
+  const blankMatch = blanked.match(/\(([^)]+)\)/);
+  const blankContent = blankMatch ? blankMatch[1] : '';
+  
+  // Try to extract the correct answer from the example by finding what fills the blank
+  let correctAnswer = '';
+  
+  // Common grammar patterns and their expected answers
+  const patternAnswers: Record<string, string[]> = {
+    'Present Perfect': ['have worked', 'has worked', 'have finished', 'has finished', 'have seen', 'has seen'],
+    'Past Perfect': ['had left', 'had finished', 'had already left', 'had gone', 'had been'],
+    'Future Perfect': ['will have completed', 'will have finished', 'will have done', 'will have gone'],
+    'Present Perfect Continuous': ['have been working', 'has been working', 'have been studying', 'has been waiting'],
+    'Passive Voice': ['was written', 'was made', 'was called', 'were built', 'was sent'],
+    'Modal Verbs': ['must', 'should', 'can', 'could', 'would', 'might', 'may'],
+    'Conditionals': ['will cancel', 'would go', 'would have gone', 'will happen'],
+    'Reported Speech': ['said that he was', 'told me that she had', 'asked if the'],
+    'Gerunds vs. Infinitives': ['enjoy reading', 'want to read', 'finished writing', 'decided to go'],
+    'Simple Present': ['holds', 'goes', 'works', 'takes', 'makes'],
+    'Simple Past': ['submitted', 'visited', 'called', 'finished', 'started'],
+    'Simple Future': ['will launch', 'will start', 'will go', 'will meet'],
+    'Present Continuous': ['is preparing', 'is working', 'is writing', 'is making'],
+    'Past Continuous': ['was working', 'was reading', 'was waiting', 'was cooking'],
+    'Comparatives': ['more interesting', 'better than', 'more efficient', 'faster than'],
+    'Prepositions': ['on', 'at', 'in', 'by', 'with'],
+    'Articles': ['a', 'an', 'the'],
+    'Quantifiers': ['some', 'many', 'much', 'a few', 'a lot of'],
+    'Wish': ['had', 'were', 'could', 'would'],
+  };
+  
+  // Find matching pattern
+  for (const [pattern, answers] of Object.entries(patternAnswers)) {
+    if (point.pattern.includes(pattern)) {
+      correctAnswer = answers[Math.floor(Math.random() * answers.length)];
+      break;
+    }
+  }
+  
+  // Fallback: extract from example
+  if (!correctAnswer && blankContent) {
+    const blankWords = blankContent.split(' ');
+    if (blankWords.length > 0) {
+      correctAnswer = blankWords[0];
+    }
+  }
+  
+  // Ultimate fallback
+  if (!correctAnswer) {
+    correctAnswer = 'the correct answer';
+  }
+  
+  // Generate distractors (wrong answers)
+  const allVerbForms = [
+    'worked', 'have worked', 'was working', 'will work', 'is working',
+    'had worked', 'would work', 'could work', 'should work', 'might work',
+    'goes', 'went', 'have gone', 'was going', 'will go', 'is going',
+    'takes', 'took', 'has taken', 'was taking', 'will take', 'is taking',
+    'makes', 'made', 'has made', 'was making', 'will make', 'is making',
+    'writes', 'wrote', 'has written', 'was writing', 'will write', 'is writing',
+    'says', 'said', 'has said', 'was saying', 'will say', 'is saying',
+  ];
+  
+  const distractors: string[] = [];
+  while (distractors.length < 3) {
+    const rand = allVerbForms[Math.floor(Math.random() * allVerbForms.length)];
+    if (rand !== correctAnswer && !distractors.includes(rand)) {
+      distractors.push(rand);
+    }
+  }
+  
+  return { correctAnswer, distractors };
+}
 
 export function useAppActions() {
   const navigate = useNavigate();
@@ -131,21 +208,15 @@ export function useAppActions() {
       }
       const sampled = sampleAcrossDifficulties(grammarPool, 10);
       const newTasks: SessionTask[] = sampled.map(point => {
-        const options = [point.pattern];
-        const sameDifficultyGrammar = grammarPool.filter(g => g.difficulty === point.difficulty && g.pattern !== point.pattern);
-        const distractorPool = sameDifficultyGrammar.length >= 3 ? sameDifficultyGrammar : grammarPool;
-
-        while (options.length < 4 && options.length < grammarPool.length) {
-          const randomPattern = distractorPool[Math.floor(Math.random() * distractorPool.length)].pattern;
-          if (!options.includes(randomPattern)) {
-            options.push(randomPattern);
-          }
-        }
+        // Generate fill-in-the-blank options based on grammar pattern
+        const { correctAnswer, distractors } = generateGrammarOptions(point);
+        const options = [correctAnswer, ...distractors];
+        // Shuffle options
         for (let i = options.length - 1; i > 0; i--) {
           const j = Math.floor(Math.random() * (i + 1));
           [options[i], options[j]] = [options[j], options[i]];
         }
-        const correctIndex = options.indexOf(point.pattern);
+        const correctIndex = options.indexOf(correctAnswer);
         return { type: 'grammar', data: { id: `grammar-${point.id}`, point, options, correctIndex } };
       });
       appState.setSessionTasks(newTasks);

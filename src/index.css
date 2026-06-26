@@ -328,6 +328,35 @@ body {
 
 @theme {
   --perspective-1000: 1000px;
+  --color-green: var(--green);
+  --color-green-shadow: var(--green-shadow);
+  --color-green-light: var(--green-light);
+  --color-blue: var(--blue);
+  --color-blue-shadow: var(--blue-shadow);
+  --color-blue-light: var(--blue-light);
+  --color-purple: var(--purple);
+  --color-purple-shadow: var(--purple-shadow);
+  --color-red: var(--red);
+  --color-red-shadow: var(--red-shadow);
+  --color-gold: var(--gold);
+  --color-gold-shadow: var(--gold-shadow);
+  --color-gray-bg: var(--gray-bg);
+  --color-gray-path: var(--gray-path);
+  --color-gray-path-dark: var(--gray-path-dark);
+  --color-text-main: var(--text-main);
+  --color-text-muted: var(--text-muted);
+  --color-bg-main: var(--bg-main);
+  --color-bg-card: var(--bg-card);
+  --color-border-main: var(--border-main);
+  --color-bg-hover: var(--bg-hover);
+  --color-tint-blue: var(--tint-blue);
+  --color-tint-green: var(--tint-green);
+  --color-tint-red: var(--tint-red);
+  --color-tint-amber: var(--tint-amber);
+  --color-text-on-tint: var(--text-on-tint);
+  --color-card-input-bg: var(--card-input-bg);
+  --color-card-input-border: var(--card-input-border);
+  --color-quiz-divider: var(--quiz-divider);
 }
 
 /* --- FLASHCARD 3D FLIP ---

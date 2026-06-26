@@ -1,4 +1,5 @@
 import { useState, useMemo } from 'react';
+import { Pencil, Trash2 } from 'lucide-react';
 import type { Flashcard } from '../types';
 
 interface CollectionViewProps {
@@ -75,11 +76,11 @@ export function CollectionView({ cards, activeTrack, onDelete, onDeleteBulk, onE
   };
 
   return (
-    <div className="bg-[var(--bg-card)] lingo-card p-10 max-w-5xl mx-auto w-full animate-in slide-in-from-bottom-8 duration-500">
-      <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-10 border-b-2 border-[var(--gray-path)] pb-6">
+    <div className="bg-bg-card lingo-card p-10 max-w-5xl mx-auto w-full animate-in slide-in-from-bottom-8 duration-500">
+      <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-10 border-b-2 border-gray-path pb-6">
         <div>
-          <h2 className="text-3xl font-black text-[var(--text-main)] uppercase tracking-tight">Personal Library</h2>
-          <p className="text-[10px] font-black text-[var(--text-muted)] uppercase tracking-[0.2em] mt-2">
+          <h2 className="text-3xl font-black text-text-main uppercase tracking-tight">Personal Library</h2>
+          <p className="text-[10px] font-black text-text-muted uppercase tracking-[0.2em] mt-2">
             Managing {activeTrack === 'english' ? 'TOEIC' : 'N2'} Vocabulary
           </p>
         </div>
@@ -88,7 +89,7 @@ export function CollectionView({ cards, activeTrack, onDelete, onDeleteBulk, onE
           {filteredAndSorted.length > 0 && searchTerm && (
             <button 
               onClick={handleBulkDelete}
-              className="px-4 py-3 bg-[var(--tint-red)] text-[var(--red)] border-2 border-[var(--red)] font-black text-xs rounded-2xl uppercase whitespace-nowrap hover:bg-[var(--red)] hover:text-white transition-all shadow-sm"
+              className="px-4 py-3 bg-tint-red text-red border-2 border-red font-black text-xs rounded-2xl uppercase whitespace-nowrap hover:bg-red hover:text-white transition-all shadow-sm"
             >
               Delete Found ({filteredAndSorted.length})
             </button>
@@ -98,7 +99,7 @@ export function CollectionView({ cards, activeTrack, onDelete, onDeleteBulk, onE
             <select 
               value={selectedTopic}
               onChange={(e) => setSelectedTopic(e.target.value)}
-              className="bg-[var(--bg-hover)] border-2 border-[var(--border-main)] rounded-2xl py-3 px-4 font-bold outline-none focus:border-[var(--blue)] transition-all text-[var(--text-main)] cursor-pointer appearance-none"
+              className="bg-bg-hover border-2 border-border-main rounded-2xl py-3 px-4 font-bold outline-none focus:border-blue transition-all text-text-main cursor-pointer appearance-none"
               style={{ backgroundImage: `url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e")`, backgroundRepeat: 'no-repeat', backgroundPosition: 'right 1rem center', backgroundSize: '1em', paddingRight: '2.5rem' }}
             >
               <option value="all">All Topics</option>
@@ -111,7 +112,7 @@ export function CollectionView({ cards, activeTrack, onDelete, onDeleteBulk, onE
           <select 
             value={sortBy}
             onChange={(e) => setSortBy(e.target.value as 'newest' | 'hardest' | 'needs_review')}
-            className="bg-[var(--bg-hover)] border-2 border-[var(--border-main)] rounded-2xl py-3 px-4 font-bold outline-none focus:border-[var(--blue)] transition-all text-[var(--text-main)] cursor-pointer appearance-none"
+            className="bg-bg-hover border-2 border-border-main rounded-2xl py-3 px-4 font-bold outline-none focus:border-blue transition-all text-text-main cursor-pointer appearance-none"
             style={{ backgroundImage: `url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e")`, backgroundRepeat: 'no-repeat', backgroundPosition: 'right 1rem center', backgroundSize: '1em', paddingRight: '2.5rem' }}
           >
             <option value="newest">Newest First</option>
@@ -128,7 +129,7 @@ export function CollectionView({ cards, activeTrack, onDelete, onDeleteBulk, onE
                 setSearchTerm(e.target.value);
                 setLimit(50); // Reset pagination on new search
               }}
-              className="w-full bg-[var(--bg-hover)] border-2 border-[var(--border-main)] rounded-2xl py-3 px-10 font-bold outline-none focus:border-[var(--blue)] transition-all text-[var(--text-main)]"
+              className="w-full bg-bg-hover border-2 border-border-main rounded-2xl py-3 px-10 font-bold outline-none focus:border-blue transition-all text-text-main"
             />
             <span className="absolute left-4 top-1/2 -translate-y-1/2 opacity-30">🔍</span>
           </div>
@@ -139,16 +140,16 @@ export function CollectionView({ cards, activeTrack, onDelete, onDeleteBulk, onE
         {paginatedCards.length > 0 ? (
           <>
             {paginatedCards.map(card => (
-              <div key={card.id} className="p-6 bg-[var(--bg-hover)] border-2 border-[var(--border-main)] rounded-2xl flex justify-between items-center group hover:border-[var(--blue)] transition-all">
+              <div key={card.id} className="p-6 bg-bg-hover border-2 border-border-main rounded-2xl flex justify-between items-center group hover:border-blue transition-all">
                 <div className="flex-1">
-                  <p className="text-lg font-black text-[var(--text-main)]">{card.word}</p>
-                  <p className="text-sm font-bold text-[var(--text-muted)] mt-1">{card.definition}</p>
+                  <p className="text-lg font-black text-text-main">{card.word}</p>
+                  <p className="text-sm font-bold text-text-muted mt-1">{card.definition}</p>
                   <div className="flex gap-2 mt-3">
-                     <span className={`text-[9px] font-black uppercase px-2 py-0.5 rounded-md ${card.easiness < 2.0 ? 'bg-[var(--tint-red)] text-[var(--red)]' : 'bg-[var(--blue)]/10 text-[var(--blue)]'}`}>
+                     <span className={`text-[9px] font-black uppercase px-2 py-0.5 rounded-md ${card.easiness < 2.0 ? 'bg-tint-red text-red' : 'bg-blue/10 text-blue'}`}>
                        {card.easiness < 2.0 ? 'Hard' : 'Known'}
                      </span>
                      {new Date(card.next_review) <= new Date() && (
-                       <span className="text-[9px] font-black uppercase bg-[var(--tint-gold)] text-[var(--gold-shadow)] px-2 py-0.5 rounded-md">
+                       <span className="text-[9px] font-black uppercase bg-tint-gold text-gold-shadow px-2 py-0.5 rounded-md">
                          Due Review
                        </span>
                      )}
@@ -157,17 +158,17 @@ export function CollectionView({ cards, activeTrack, onDelete, onDeleteBulk, onE
                 <div className="flex flex-col gap-2">
                   <button 
                     onClick={() => handleEditClick(card)}
-                    className="w-10 h-10 rounded-xl flex items-center justify-center hover:bg-[var(--blue)]/10 text-[var(--blue)] opacity-0 group-hover:opacity-100 transition-all"
+                    className="w-10 h-10 rounded-xl flex items-center justify-center hover:bg-blue/10 text-blue opacity-0 group-hover:opacity-100 transition-all"
                     title="Edit flashcard"
                   >
-                    ✏️
+                    <Pencil size={20} />
                   </button>
                   <button 
                     onClick={() => onDelete(card.id)}
-                    className="w-10 h-10 rounded-xl flex items-center justify-center hover:bg-[var(--red)]/10 text-[var(--red)] opacity-0 group-hover:opacity-100 transition-all"
+                    className="w-10 h-10 rounded-xl flex items-center justify-center hover:bg-red/10 text-red opacity-0 group-hover:opacity-100 transition-all"
                     title="Remove from collection"
                   >
-                    🗑️
+                    <Trash2 size={20} />
                   </button>
                 </div>
               </div>
@@ -186,42 +187,42 @@ export function CollectionView({ cards, activeTrack, onDelete, onDeleteBulk, onE
         ) : (
           <div className="col-span-full py-20 text-center space-y-4">
              <div className="text-5xl opacity-20">📚</div>
-             <p className="font-bold text-[var(--text-muted)]">No words found in this track.</p>
+             <p className="font-bold text-text-muted">No words found in this track.</p>
           </div>
         )}
       </div>
 
       {editingCard && (
         <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-in fade-in">
-          <div className="bg-[var(--bg-main)] w-full max-w-md rounded-[2rem] border-2 border-[var(--gray-path)] shadow-2xl flex flex-col overflow-hidden relative p-8">
-            <h3 className="font-black text-2xl text-[var(--text-main)] mb-6">Edit Card</h3>
+          <div className="bg-bg-main w-full max-w-md rounded-[2rem] border-2 border-gray-path shadow-2xl flex flex-col overflow-hidden relative p-8">
+            <h3 className="font-black text-2xl text-text-main mb-6">Edit Card</h3>
             
             <div className="space-y-4">
               <div>
-                <label className="block text-xs font-bold text-[var(--text-muted)] uppercase mb-2">Word or Phrase</label>
+                <label className="block text-xs font-bold text-text-muted uppercase mb-2">Word or Phrase</label>
                 <input 
                   type="text" 
                   value={editForm.word}
                   onChange={(e) => setEditForm(prev => ({ ...prev, word: e.target.value }))}
-                  className="w-full bg-[var(--bg-hover)] border-2 border-[var(--border-main)] rounded-xl py-3 px-4 font-bold outline-none focus:border-[var(--blue)] transition-all text-[var(--text-main)]"
+                  className="w-full bg-bg-hover border-2 border-border-main rounded-xl py-3 px-4 font-bold outline-none focus:border-blue transition-all text-text-main"
                 />
               </div>
               <div>
-                <label className="block text-xs font-bold text-[var(--text-muted)] uppercase mb-2">Meaning / Definition</label>
+                <label className="block text-xs font-bold text-text-muted uppercase mb-2">Meaning / Definition</label>
                 <input 
                   type="text" 
                   value={editForm.definition}
                   onChange={(e) => setEditForm(prev => ({ ...prev, definition: e.target.value }))}
-                  className="w-full bg-[var(--bg-hover)] border-2 border-[var(--border-main)] rounded-xl py-3 px-4 font-bold outline-none focus:border-[var(--blue)] transition-all text-[var(--text-main)]"
+                  className="w-full bg-bg-hover border-2 border-border-main rounded-xl py-3 px-4 font-bold outline-none focus:border-blue transition-all text-text-main"
                 />
               </div>
               <div>
-                <label className="block text-xs font-bold text-[var(--text-muted)] uppercase mb-2">Example Sentence (optional)</label>
+                <label className="block text-xs font-bold text-text-muted uppercase mb-2">Example Sentence (optional)</label>
                 <input 
                   type="text" 
                   value={editForm.example}
                   onChange={(e) => setEditForm(prev => ({ ...prev, example: e.target.value }))}
-                  className="w-full bg-[var(--bg-hover)] border-2 border-[var(--border-main)] rounded-xl py-3 px-4 font-bold outline-none focus:border-[var(--blue)] transition-all text-[var(--text-main)]"
+                  className="w-full bg-bg-hover border-2 border-border-main rounded-xl py-3 px-4 font-bold outline-none focus:border-blue transition-all text-text-main"
                 />
               </div>
             </div>
@@ -229,13 +230,13 @@ export function CollectionView({ cards, activeTrack, onDelete, onDeleteBulk, onE
             <div className="flex gap-4 mt-8">
               <button 
                 onClick={() => setEditingCard(null)}
-                className="flex-1 py-3 rounded-xl font-bold text-[var(--text-muted)] hover:bg-[var(--gray-path)] transition-colors border-2 border-transparent hover:border-[var(--border-main)] uppercase"
+                className="flex-1 py-3 rounded-xl font-bold text-text-muted hover:bg-gray-path transition-colors border-2 border-transparent hover:border-border-main uppercase"
               >
                 Cancel
               </button>
               <button 
                 onClick={handleSaveEdit}
-                className="flex-1 py-3 rounded-xl font-black text-white bg-[var(--green)] hover:bg-[#1eb040] shadow-[0_4px_0_#189935] hover:shadow-[0_2px_0_#189935] hover:translate-y-[2px] transition-all uppercase"
+                className="flex-1 py-3 rounded-xl font-black text-white bg-green hover:bg-[#1eb040] shadow-[0_4px_0_#189935] hover:shadow-[0_2px_0_#189935] hover:translate-y-[2px] transition-all uppercase"
               >
                 Save
               </button>

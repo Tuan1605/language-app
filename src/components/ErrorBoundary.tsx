@@ -35,14 +35,14 @@ export class ErrorBoundary extends Component<Props, State> {
   render() {
     if (this.state.hasError) {
       return (
-        <div className="min-h-screen w-full flex flex-col items-center justify-center bg-[var(--bg-main)] text-[var(--text-main)] p-8 gap-6">
+        <div className="min-h-screen w-full flex flex-col items-center justify-center bg-bg-main text-text-main p-8 gap-6">
           <div className="text-6xl">😵</div>
           <h1 className="text-2xl font-black uppercase tracking-tight">Something went wrong</h1>
-          <p className="text-sm font-bold text-[var(--text-muted)] text-center max-w-md">
+          <p className="text-sm font-bold text-text-muted text-center max-w-md">
             An unexpected error crashed this view. This has been logged to the console.
           </p>
           {this.state.error && (
-            <pre className="text-xs text-[var(--text-muted)] bg-[var(--gray-bg)] p-4 rounded-2xl border-2 border-[var(--gray-path)] max-w-lg overflow-auto max-h-40">
+            <pre className="text-xs text-text-muted bg-gray-bg p-4 rounded-2xl border-2 border-gray-path max-w-lg overflow-auto max-h-40">
               {this.state.error.message}
             </pre>
           )}

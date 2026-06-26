@@ -4512,7 +4512,8 @@
       "A woman is talking on the phone."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì mô tả chính xác hình ảnh: một phụ nữ ngồi tại bàn làm việc trong văn phòng."
+    "explanation": "Đáp án đúng là B vì mô tả chính xác hình ảnh: một phụ nữ ngồi tại bàn làm việc trong văn phòng.",
+    "imageUrl": "https://picsum.photos/seed/woman-desk/400/300"
   },
   {
     "id": "toeic-l-002",
@@ -4527,7 +4528,8 @@
       "Two men are walking away."
     ],
     "correctAnswer": 2,
-    "explanation": "Đáp án đúng là C vì hình ảnh cho thấy hai người đàn ông đang bắt tay nhau."
+    "explanation": "Đáp án đúng là C vì hình ảnh cho thấy hai người đàn ông đang bắt tay nhau.",
+    "imageUrl": "https://picsum.photos/seed/shaking-hands/400/300"
   },
   {
     "id": "toeic-l-003",
@@ -4542,7 +4544,8 @@
       "A group of people are looking at a presentation screen."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì hình ảnh mô tả một nhóm người ngồi quanh bàn hội nghị."
+    "explanation": "Đáp án đúng là B vì hình ảnh mô tả một nhóm người ngồi quanh bàn hội nghị.",
+    "imageUrl": "https://picsum.photos/seed/meeting-room/400/300"
   },
   {
     "id": "toeic-l-004",
@@ -4557,7 +4560,8 @@
       "A woman is closing a door."
     ],
     "correctAnswer": 2,
-    "explanation": "Đáp án đúng là C vì hình ảnh cho thấy phụ nữ đang nghe điện thoại."
+    "explanation": "Đáp án đúng là C vì hình ảnh cho thấy phụ nữ đang nghe điện thoại.",
+    "imageUrl": "https://picsum.photos/seed/woman-desk/400/300"
   },
   {
     "id": "toeic-l-005",
@@ -4572,7 +4576,8 @@
       "A man is drinking water."
     ],
     "correctAnswer": 0,
-    "explanation": "Đáp án đúng là A vì hình ảnh cho thấy một người đàn ông đang cầm cặp tài liệu."
+    "explanation": "Đáp án đúng là A vì hình ảnh cho thấy một người đàn ông đang cầm cặp tài liệu.",
+    "imageUrl": "https://picsum.photos/seed/parking/400/300"
   },
   {
     "id": "toeic-l-006",
@@ -4587,7 +4592,8 @@
       "Several cars are in a traffic jam."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì hình ảnh cho thấy nhiều ô tô đang đậu trong bãi đỗ xe."
+    "explanation": "Đáp án đúng là B vì hình ảnh cho thấy nhiều ô tô đang đậu trong bãi đỗ xe.",
+    "imageUrl": "https://picsum.photos/seed/parking/400/300"
   },
   {
     "id": "toeic-l-007",
@@ -4602,7 +4608,8 @@
       "A receptionist is eating lunch."
     ],
     "correctAnswer": 0,
-    "explanation": "Đáp án đúng là A vì hình ảnh cho thấy lễ tân đang chào đón khách."
+    "explanation": "Đáp án đúng là A vì hình ảnh cho thấy lễ tân đang chào đón khách.",
+    "imageUrl": "https://picsum.photos/seed/reception/400/300"
   },
   {
     "id": "toeic-l-008",
@@ -4617,7 +4624,8 @@
       "Workers are having a meeting."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì hình ảnh cho thấy công nhân đang lắp ráp sản phẩm trên dây chuyền sản xuất."
+    "explanation": "Đáp án đúng là B vì hình ảnh cho thấy công nhân đang lắp ráp sản phẩm trên dây chuyền sản xuất.",
+    "imageUrl": "https://picsum.photos/seed/workshop/400/300"
   },
   {
     "id": "toeic-l-009",
@@ -4632,7 +4640,8 @@
       "A waiter is taking an order."
     ],
     "correctAnswer": 2,
-    "explanation": "Đáp án đúng là C vì hình ảnh cho thấy người phục vụ đang bưng đồ ăn cho khách."
+    "explanation": "Đáp án đúng là C vì hình ảnh cho thấy người phục vụ đang bưng đồ ăn cho khách.",
+    "imageUrl": "https://picsum.photos/seed/part1-8/400/300"
   },
   {
     "id": "toeic-l-010",
@@ -4647,7 +4656,8 @@
       "A woman is reading a book on the grass."
     ],
     "correctAnswer": 2,
-    "explanation": "Đáp án đúng là C vì hình ảnh cho thấy phụ nữ đang dắt chó đi dạo trong công viên."
+    "explanation": "Đáp án đúng là C vì hình ảnh cho thấy phụ nữ đang dắt chó đi dạo trong công viên.",
+    "imageUrl": "https://picsum.photos/seed/woman-desk/400/300"
   },
   {
     "id": "toeic-l-011",
@@ -4662,7 +4672,8 @@
       "The sales representative is making a phone call."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì hình ảnh cho thấy nhân viên bán hàng đang trình bày sản phẩm mới cho khách hàng tiềm năng."
+    "explanation": "Đáp án đúng là B vì hình ảnh cho thấy nhân viên bán hàng đang trình bày sản phẩm mới cho khách hàng tiềm năng.",
+    "imageUrl": "https://picsum.photos/seed/presentation/400/300"
   },
   {
     "id": "toeic-l-012",
@@ -4677,7 +4688,8 @@
       "The technician is cleaning glassware."
     ],
     "correctAnswer": 2,
-    "explanation": "Đáp án đúng là C vì hình ảnh cho thấy kỹ thuật viên đang sửa chữa thiết bị trong phòng thí nghiệm."
+    "explanation": "Đáp án đúng là C vì hình ảnh cho thấy kỹ thuật viên đang sửa chữa thiết bị trong phòng thí nghiệm.",
+    "imageUrl": "https://picsum.photos/seed/shaking-hands/400/300"
   },
   {
     "id": "toeic-l-013",
@@ -4692,7 +4704,8 @@
       "Passengers are going through customs."
     ],
     "correctAnswer": 2,
-    "explanation": "Đáp án đúng là C vì hình ảnh cho thấy hành khách đang lên máy bay tại cổng."
+    "explanation": "Đáp án đúng là C vì hình ảnh cho thấy hành khách đang lên máy bay tại cổng.",
+    "imageUrl": "https://picsum.photos/seed/airport/400/300"
   },
   {
     "id": "toeic-l-014",
@@ -4707,7 +4720,8 @@
       "The architect is presenting to clients."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì hình ảnh cho thấy kiến trúc sư đang xem xét bản thiết kế với đồng nghiệp."
+    "explanation": "Đáp án đúng là B vì hình ảnh cho thấy kiến trúc sư đang xem xét bản thiết kế với đồng nghiệp.",
+    "imageUrl": "https://picsum.photos/seed/part1-13/400/300"
   },
   {
     "id": "toeic-l-015",
@@ -4722,7 +4736,8 @@
       "Employees are leaving the building."
     ],
     "correctAnswer": 2,
-    "explanation": "Đáp án đúng là C vì hình ảnh cho thấy nhân viên đang tham dự buổi tập huấn an toàn."
+    "explanation": "Đáp án đúng là C vì hình ảnh cho thấy nhân viên đang tham dự buổi tập huấn an toàn.",
+    "imageUrl": "https://picsum.photos/seed/part1-14/400/300"
   },
   {
     "id": "toeic-l-016",
@@ -4737,7 +4752,8 @@
       "The warehouse workers are taking inventory."
     ],
     "correctAnswer": 2,
-    "explanation": "Đáp án đúng là C vì hình ảnh cho thấy công nhân kho đang xếp thùng lên xe tải."
+    "explanation": "Đáp án đúng là C vì hình ảnh cho thấy công nhân kho đang xếp thùng lên xe tải.",
+    "imageUrl": "https://picsum.photos/seed/warehouse/400/300"
   },
   {
     "id": "toeic-l-017",
@@ -4752,7 +4768,8 @@
       "The dentist is cleaning equipment."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì hình ảnh cho thấy nha sĩ đang kiểm tra răng của bệnh nhân."
+    "explanation": "Đáp án đúng là B vì hình ảnh cho thấy nha sĩ đang kiểm tra răng của bệnh nhân.",
+    "imageUrl": "https://picsum.photos/seed/part1-16/400/300"
   },
   {
     "id": "toeic-l-018",
@@ -4767,7 +4784,8 @@
       "The chef is washing dishes."
     ],
     "correctAnswer": 2,
-    "explanation": "Đáp án đúng là C vì hình ảnh cho thấy đầu bếp đang thái rau trong bếp."
+    "explanation": "Đáp án đúng là C vì hình ảnh cho thấy đầu bếp đang thái rau trong bếp.",
+    "imageUrl": "https://picsum.photos/seed/kitchen/400/300"
   },
   {
     "id": "toeic-l-019",
@@ -4782,7 +4800,8 @@
       "A pharmacist is reviewing prescriptions."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì hình ảnh cho thấy dược sĩ đang phát thuốc cho khách hàng."
+    "explanation": "Đáp án đúng là B vì hình ảnh cho thấy dược sĩ đang phát thuốc cho khách hàng.",
+    "imageUrl": "https://picsum.photos/seed/part1-18/400/300"
   },
   {
     "id": "toeic-l-020",
@@ -4797,7 +4816,8 @@
       "The flight attendant is opening the overhead compartments."
     ],
     "correctAnswer": 2,
-    "explanation": "Đáp án đúng là C vì hình ảnh cho thấy tiếp viên hàng không đang hướng dẫn quy trình an toàn."
+    "explanation": "Đáp án đúng là C vì hình ảnh cho thấy tiếp viên hàng không đang hướng dẫn quy trình an toàn.",
+    "imageUrl": "https://picsum.photos/seed/part1-19/400/300"
   },
   {
     "id": "toeic-l-021",
@@ -6868,5 +6888,325 @@
     ],
     "correctAnswer": 1,
     "explanation": "Báo cáo ghi rõ: 'Overall compliance rate: 74%, below the 90% target'."
+  },
+  {
+    "id": "toeic-img-001",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture.",
+    "options": [
+      "A group of people are having a meeting.",
+      "A woman is filing documents.",
+      "Two men are shaking hands.",
+      "A person is typing on a laptop."
+    ],
+    "correctAnswer": 0,
+    "imageUrl": "https://picsum.photos/seed/toeic-meeting1/400/300",
+    "explanation": "Hình ảnh cho thấy một nhóm người đang ngồi quanh bàn họp."
+  },
+  {
+    "id": "toeic-img-002",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture.",
+    "options": [
+      "The man is repairing a car.",
+      "A worker is operating machinery.",
+      "People are waiting in line.",
+      "A woman is serving customers."
+    ],
+    "correctAnswer": 1,
+    "imageUrl": "https://picsum.photos/seed/toeic-factory1/400/300",
+    "explanation": "Hình ảnh cho thấy công nhân đang vận hành máy móc trong nhà máy."
+  },
+  {
+    "id": "toeic-img-003",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture.",
+    "options": [
+      "A chef is preparing food.",
+      "Boxes are stacked in a warehouse.",
+      "Customers are shopping.",
+      "A delivery truck is parked outside."
+    ],
+    "correctAnswer": 1,
+    "imageUrl": "https://picsum.photos/seed/toeic-warehouse1/400/300",
+    "explanation": "Hình ảnh cho thấy các thùng hàng được xếp chồng trong kho."
+  },
+  {
+    "id": "toeic-img-004",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture.",
+    "options": [
+      "A plane is taking off.",
+      "Passengers are boarding the aircraft.",
+      "A luggage cart is being loaded.",
+      "Pilots are walking to the cockpit."
+    ],
+    "correctAnswer": 1,
+    "imageUrl": "https://picsum.photos/seed/toeic-airport1/400/300",
+    "explanation": "Hình ảnh cho thấy hành khách đang lên máy bay."
+  },
+  {
+    "id": "toeic-img-005",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture.",
+    "options": [
+      "A receptionist is answering the phone.",
+      "People are checking in at the front desk.",
+      "A bellhop is carrying luggage.",
+      "Guests are waiting in the lobby."
+    ],
+    "correctAnswer": 1,
+    "imageUrl": "https://picsum.photos/seed/toeic-hotel1/400/300",
+    "explanation": "Hình ảnh cho thấy khách đang làm thủ tục check-in tại quầy lễ tân."
+  },
+  {
+    "id": "toeic-img-006",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture.",
+    "options": [
+      "Workers are installing solar panels.",
+      "A crane is lifting construction materials.",
+      "Engineers are reviewing blueprints.",
+      "The building foundation is being poured."
+    ],
+    "correctAnswer": 1,
+    "imageUrl": "https://picsum.photos/seed/toeic-construction1/400/300",
+    "explanation": "Hình ảnh cho thấy cần trục đang nâng vật liệu xây dựng."
+  },
+  {
+    "id": "toeic-img-007",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture.",
+    "options": [
+      "A chef is plating a dish.",
+      "Diners are enjoying their meal.",
+      "Waiters are clearing tables.",
+      "A bartender is mixing drinks."
+    ],
+    "correctAnswer": 1,
+    "imageUrl": "https://picsum.photos/seed/toeic-restaurant1/400/300",
+    "explanation": "Hình ảnh cho thấy thực khách đang thưởng thức bữa ăn."
+  },
+  {
+    "id": "toeic-img-008",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture.",
+    "options": [
+      "A gardener is mowing the lawn.",
+      "Flowers are blooming in the garden.",
+      "Children are playing on the grass.",
+      "A fountain is spraying water."
+    ],
+    "correctAnswer": 1,
+    "imageUrl": "https://picsum.photos/seed/toeic-garden1/400/300",
+    "explanation": "Hình ảnh cho thấy hoa đang nở trong vườn."
+  },
+  {
+    "id": "toeic-img-009",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture.",
+    "options": [
+      "A librarian is shelving books.",
+      "Students are studying at tables.",
+      "Books are arranged on shelves.",
+      "A person is borrowing a book."
+    ],
+    "correctAnswer": 2,
+    "imageUrl": "https://picsum.photos/seed/toeic-library1/400/300",
+    "explanation": "Hình ảnh cho thấy sách được sắp xếp trên kệ."
+  },
+  {
+    "id": "toeic-img-010",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture.",
+    "options": [
+      "People are exercising.",
+      "A trainer is demonstrating.",
+      "Weights are placed on racks.",
+      "Someone is running on a treadmill."
+    ],
+    "correctAnswer": 2,
+    "imageUrl": "https://picsum.photos/seed/toeic-gym1/400/300",
+    "explanation": "Hình ảnh cho thấy tạ được đặt trên giá."
+  },
+  {
+    "id": "toeic-img-011",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture.",
+    "options": [
+      "A person is typing on a laptop.",
+      "Documents are spread on the desk.",
+      "A phone is ringing.",
+      "A clock shows the time."
+    ],
+    "correctAnswer": 1,
+    "imageUrl": "https://picsum.photos/seed/toeic-desk1/400/300",
+    "explanation": "Hình ảnh cho thấy tài liệu được bày trên bàn làm việc."
+  },
+  {
+    "id": "toeic-img-012",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture.",
+    "options": [
+      "A taxi is parked outside.",
+      "Passengers are getting off a bus.",
+      "A train is arriving at the station.",
+      "Cyclists are riding on the road."
+    ],
+    "correctAnswer": 2,
+    "imageUrl": "https://picsum.photos/seed/toeic-train1/400/300",
+    "explanation": "Hình ảnh cho thấy tàu đang đến ga."
+  },
+  {
+    "id": "toeic-img-013",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture.",
+    "options": [
+      "A doctor is examining a patient.",
+      "Nurses are checking vitals.",
+      "Medical equipment is displayed.",
+      "A patient is resting in bed."
+    ],
+    "correctAnswer": 2,
+    "imageUrl": "https://picsum.photos/seed/toeic-hospital1/400/300",
+    "explanation": "Hình ảnh cho thấy thiết bị y tế được trưng bày."
+  },
+  {
+    "id": "toeic-img-014",
+    "category": "toeic",
+    "difficulty": "intermediate",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture.",
+    "options": [
+      "Workers are assembling products.",
+      "A conveyor belt is moving items.",
+      "Managers are inspecting quality.",
+      "Boxes are being packaged."
+    ],
+    "correctAnswer": 1,
+    "imageUrl": "https://picsum.photos/seed/toeic-assembly1/400/300",
+    "explanation": "Hình ảnh cho thấy dây chuyền đang vận chuyển sản phẩm."
+  },
+  {
+    "id": "toeic-img-015",
+    "category": "toeic",
+    "difficulty": "beginner",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture.",
+    "options": [
+      "A receptionist is greeting visitors.",
+      "A sign displays office hours.",
+      "Plants are decorating the entrance.",
+      "People are walking through the door."
+    ],
+    "correctAnswer": 1,
+    "imageUrl": "https://picsum.photos/seed/toeic-sign1/400/300",
+    "explanation": "Hình ảnh cho thấy biển hiệu hiển thị giờ làm việc."
+  },
+  {
+    "id": "toeic-img-016",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture.",
+    "options": [
+      "Engineers are testing equipment.",
+      "Solar panels are installed on the roof.",
+      "Workers are painting the building.",
+      "Scaffolding surrounds the structure."
+    ],
+    "correctAnswer": 1,
+    "imageUrl": "https://picsum.photos/seed/toeic-solar1/400/300",
+    "explanation": "Hình ảnh cho thấy tấm pin năng lượng mặt trời được lắp trên mái."
+  },
+  {
+    "id": "toeic-img-017",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture.",
+    "options": [
+      "A chef is cooking in the kitchen.",
+      "Dishes are being served to customers.",
+      "The kitchen is clean and organized.",
+      "A waiter is taking an order."
+    ],
+    "correctAnswer": 2,
+    "imageUrl": "https://picsum.photos/seed/toeic-kitchen1/400/300",
+    "explanation": "Hình ảnh cho thấy nhà bếp sạch sẽ và ngăn nắp."
+  },
+  {
+    "id": "toeic-img-018",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture.",
+    "options": [
+      "A forklift is lifting pallets.",
+      "Workers are loading a truck.",
+      "Inventory is being counted.",
+      "Shelves are fully stocked."
+    ],
+    "correctAnswer": 0,
+    "imageUrl": "https://picsum.photos/seed/toeic-forklift1/400/300",
+    "explanation": "Hình ảnh cho thấy xe nâng đang nâng kiện hàng."
+  },
+  {
+    "id": "toeic-img-019",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture.",
+    "options": [
+      "A conference room is being set up.",
+      "Attendees are finding their seats.",
+      "A projector displays a presentation.",
+      "Refreshments are on the table."
+    ],
+    "correctAnswer": 2,
+    "imageUrl": "https://picsum.photos/seed/toeic-projector1/400/300",
+    "explanation": "Hình ảnh cho thấy máy chiếu đang trình chiếu bài thuyết trình."
+  },
+  {
+    "id": "toeic-img-020",
+    "category": "toeic",
+    "difficulty": "advanced",
+    "subCategory": "Part 1 - Photographs",
+    "text": "Look at the picture.",
+    "options": [
+      "A gardener is trimming bushes.",
+      "Trees line the walkway.",
+      "Benches are placed along the path.",
+      "Flowers are planted in rows."
+    ],
+    "correctAnswer": 1,
+    "imageUrl": "https://picsum.photos/seed/toeic-trees1/400/300",
+    "explanation": "Hình ảnh cho thấy hàng cây dọc lối đi."
   }
 ]

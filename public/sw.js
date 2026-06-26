@@ -2,12 +2,11 @@
 // Keeps the app shell available offline by caching same-origin GET requests
 // with a network-first strategy for navigations (so users get updates quickly)
 // and a cache-first strategy for hashed build assets.
-//
-// The app is deployed under a base path (e.g. /tuan/ on GitLab Pages), so all
-// paths are resolved relative to registration scope rather than hard-coded.
+// External assets (audio, PDF from GitHub Releases) use stale-while-revalidate.
 
-const CACHE_VERSION = 'lingo-v1';
+const CACHE_VERSION = 'lingo-v2';
 const RUNTIME_CACHE = `${CACHE_VERSION}-runtime`;
+const EXTERNAL_CACHE = `${CACHE_VERSION}-external`;
 
 self.addEventListener('install', (event) => {
   self.skipWaiting();
@@ -29,10 +28,34 @@ self.addEventListener('activate', (event) => {
 self.addEventListener('fetch', (event) => {
   const { request } = event;
 
-  // Only handle same-origin GET requests; let everything else pass through.
-  if (request.method !== 'GET' || new URL(request.url).origin !== self.location.origin) {
+  if (request.method !== 'GET') return;
+
+  const url = new URL(request.url);
+  const isSameOrigin = url.origin === self.location.origin;
+
+  // Stale-while-revalidate for external assets (GitHub Releases audio/PDF)
+  if (!isSameOrigin && url.hostname.includes('github.com')) {
+    event.respondWith(
+      caches.open(EXTERNAL_CACHE).then((cache) =>
+        cache.match(request).then((cached) => {
+          const fetchPromise = fetch(request)
+            .then((response) => {
+              if (response && response.status === 200) {
+                cache.put(request, response.clone()).catch(() => {});
+              }
+              return response;
+            })
+            .catch(() => cached);
+
+          return cached || fetchPromise;
+        })
+      )
+    );
     return;
   }
+
+  // Skip non-same-origin requests that aren't GitHub
+  if (!isSameOrigin) return;
 
   // Network-first for navigations so new deploys appear on next reload.
   if (request.mode === 'navigate') {
@@ -54,7 +77,6 @@ self.addEventListener('fetch', (event) => {
       (cached) =>
         cached ||
         fetch(request).then((response) => {
-          // Only cache successful, basic responses to avoid storing errors.
           if (response && response.status === 200 && response.type === 'basic') {
             const copy = response.clone();
             caches.open(RUNTIME_CACHE).then((cache) => cache.put(request, copy)).catch(() => {});

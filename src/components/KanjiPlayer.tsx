@@ -78,24 +78,24 @@ export function KanjiPlayer({ kanji }: KanjiPlayerProps) {
 
   if (error) {
     return (
-      <div className="flex flex-col items-center justify-center w-32 h-32 bg-[var(--tint-red)] rounded-[2rem] border-4 border-[var(--red)]">
-        <span className="text-4xl font-black text-[var(--red)] font-[serif]">{kanji}</span>
-        <span className="text-[10px] font-bold text-[var(--red)] mt-2">Thiếu dữ liệu vẽ</span>
+      <div className="flex flex-col items-center justify-center w-32 h-32 bg-tint-red rounded-[2rem] border-4 border-red">
+        <span className="text-4xl font-black text-red font-[serif]">{kanji}</span>
+        <span className="text-[10px] font-bold text-red mt-2">Thiếu dữ liệu vẽ</span>
       </div>
     );
   }
 
   if (strokes.length === 0) {
     return (
-      <div className="flex items-center justify-center w-32 h-32 bg-[var(--tint-red)] rounded-[2rem] border-4 border-[var(--red)]">
-        <span className="text-5xl font-black text-[var(--red)] opacity-50 animate-pulse">...</span>
+      <div className="flex items-center justify-center w-32 h-32 bg-tint-red rounded-[2rem] border-4 border-red">
+        <span className="text-5xl font-black text-red opacity-50 animate-pulse">...</span>
       </div>
     );
   }
 
   return (
     <div className="flex flex-col items-center gap-4 w-full">
-      <div className="relative w-32 h-32 bg-white rounded-[2rem] border-4 border-[var(--gray-path)] overflow-hidden shadow-inner flex items-center justify-center p-2">
+      <div className="relative w-32 h-32 bg-white rounded-[2rem] border-4 border-gray-path overflow-hidden shadow-inner flex items-center justify-center p-2">
         {/* Grid lines */}
         <div className="absolute inset-0 pointer-events-none border-b border-dashed border-gray-200 top-1/2"></div>
         <div className="absolute inset-0 pointer-events-none border-r border-dashed border-gray-200 left-1/2"></div>

@@ -65,29 +65,29 @@ export function CreateExamView({ onSave, onCancel, allQuestions, allListening, a
     <div className="w-full flex flex-col gap-6 p-2 md:p-4">
       <div className="flex justify-between items-center">
         <h2 className="text-3xl font-black">Create Exam</h2>
-        <button onClick={onCancel} className="text-2xl text-[var(--text-muted)] hover:text-[var(--text-main)] active:scale-90">✖</button>
+        <button onClick={onCancel} className="text-2xl text-text-muted hover:text-text-main active:scale-90">✖</button>
       </div>
       
       {/* Exam Metadata */}
       <div className="flex flex-col md:flex-row gap-4">
         <div className="flex-1">
-          <label htmlFor="exam-title" className="font-bold text-sm text-[var(--text-muted)]">Exam Title</label>
+          <label htmlFor="exam-title" className="font-bold text-sm text-text-muted">Exam Title</label>
           <input
             id="exam-title"
             type="text"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
-            className="w-full p-3 border-2 border-[var(--gray-path)] rounded-lg mt-1 bg-transparent"
+            className="w-full p-3 border-2 border-gray-path rounded-lg mt-1 bg-transparent"
             placeholder="e.g., My Awesome TOEIC Practice"
           />
         </div>
         <div className="flex-1 md:max-w-[180px]">
-          <label htmlFor="exam-category" className="font-bold text-sm text-[var(--text-muted)]">Category</label>
+          <label htmlFor="exam-category" className="font-bold text-sm text-text-muted">Category</label>
           <select
             id="exam-category"
             value={category}
             onChange={(e) => setCategory(e.target.value as 'toeic' | 'n2')}
-            className="w-full p-3 border-2 border-[var(--gray-path)] rounded-lg mt-1 bg-transparent"
+            className="w-full p-3 border-2 border-gray-path rounded-lg mt-1 bg-transparent"
           >
             <option value="toeic">TOEIC</option>
             <option value="n2">JLPT N2</option>
@@ -103,7 +103,7 @@ export function CreateExamView({ onSave, onCancel, allQuestions, allListening, a
             type="text"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full p-3 border-2 border-[var(--gray-path)] rounded-lg bg-transparent"
+            className="w-full p-3 border-2 border-gray-path rounded-lg bg-transparent"
             placeholder="🔍 Search tasks..."
           />
           <div className="max-h-[50vh] overflow-y-auto flex flex-col gap-2 pr-2">
@@ -112,7 +112,7 @@ export function CreateExamView({ onSave, onCancel, allQuestions, allListening, a
               const task: SessionTask = { type: 'quiz', data: q };
               const added = isTaskAdded(task);
               return (
-                <div key={`q-${q.id}`} className="flex items-center justify-between p-3 bg-[var(--gray-bg)] rounded-lg gap-2">
+                <div key={`q-${q.id}`} className="flex items-center justify-between p-3 bg-gray-bg rounded-lg gap-2">
                   <p className="text-sm truncate" title={q.text}>{getTaskDescription(task)}</p>
                   <button onClick={() => addTask(task)} disabled={added} className={`btn-duo h-8 w-16 text-xs ${added ? 'btn-gray' : 'btn-blue'}`}>{added ? 'ADDED' : 'ADD'}</button>
                 </div>
@@ -123,7 +123,7 @@ export function CreateExamView({ onSave, onCancel, allQuestions, allListening, a
               const task: SessionTask = { type: 'listening', data: l };
               const added = isTaskAdded(task);
               return (
-                <div key={`l-${l.id}`} className="flex items-center justify-between p-3 bg-[var(--gray-bg)] rounded-lg gap-2">
+                <div key={`l-${l.id}`} className="flex items-center justify-between p-3 bg-gray-bg rounded-lg gap-2">
                   <p className="text-sm truncate" title={l.title}>{getTaskDescription(task)}</p>
                   <button onClick={() => addTask(task)} disabled={added} className={`btn-duo h-8 w-16 text-xs ${added ? 'btn-gray' : 'btn-purple'}`}>{added ? 'ADDED' : 'ADD'}</button>
                 </div>
@@ -134,7 +134,7 @@ export function CreateExamView({ onSave, onCancel, allQuestions, allListening, a
               const task: SessionTask = { type: 'speaking', data: s };
               const added = isTaskAdded(task);
               return (
-                <div key={`s-${s.id}`} className="flex items-center justify-between p-3 bg-[var(--gray-bg)] rounded-lg gap-2">
+                <div key={`s-${s.id}`} className="flex items-center justify-between p-3 bg-gray-bg rounded-lg gap-2">
                   <p className="text-sm truncate" title={s.targetSentence}>{getTaskDescription(task)}</p>
                   <button onClick={() => addTask(task)} disabled={added} className={`btn-duo h-8 w-16 text-xs ${added ? 'btn-gray' : 'btn-green'}`}>{added ? 'ADDED' : 'ADD'}</button>
                 </div>
@@ -145,7 +145,7 @@ export function CreateExamView({ onSave, onCancel, allQuestions, allListening, a
               const task: SessionTask = { type: 'dictation', data: d };
               const added = isTaskAdded(task);
               return (
-                <div key={`d-${d.id}`} className="flex items-center justify-between p-3 bg-[var(--gray-bg)] rounded-lg gap-2">
+                <div key={`d-${d.id}`} className="flex items-center justify-between p-3 bg-gray-bg rounded-lg gap-2">
                   <p className="text-sm truncate" title={d.targetText}>{getTaskDescription(task)}</p>
                   <button onClick={() => addTask(task)} disabled={added} className={`btn-duo h-8 w-16 text-xs ${added ? 'btn-gray' : 'btn-red'}`}>{added ? 'ADDED' : 'ADD'}</button>
                 </div>
@@ -157,12 +157,12 @@ export function CreateExamView({ onSave, onCancel, allQuestions, allListening, a
         {/* Selected Tasks Column */}
         <div className="flex flex-col gap-4">
           <h3 className="text-xl font-black">Selected Tasks ({tasks.length})</h3>
-           <div className="max-h-[60vh] overflow-y-auto flex flex-col gap-2 pr-2 p-4 border-2 border-dashed border-[var(--gray-path)] rounded-xl">
+           <div className="max-h-[60vh] overflow-y-auto flex flex-col gap-2 pr-2 p-4 border-2 border-dashed border-gray-path rounded-xl">
              {tasks.length === 0 ? (
-               <p className="text-center text-[var(--text-muted)] py-10">Add tasks from the left panel to build your exam.</p>
+               <p className="text-center text-text-muted py-10">Add tasks from the left panel to build your exam.</p>
              ) : (
                 tasks.map((task, index) => (
-                  <div key={`${task.data.id}-${index}`} className="flex items-center justify-between p-3 bg-[var(--bg-main)] border-2 border-[var(--gray-path)] rounded-lg gap-2">
+                  <div key={`${task.data.id}-${index}`} className="flex items-center justify-between p-3 bg-bg-main border-2 border-gray-path rounded-lg gap-2">
                     <p className="text-sm font-semibold truncate">{getTaskDescription(task)}</p>
                     <button onClick={() => removeTask(index)} className="text-red-500 font-bold text-xl">🗑️</button>
                   </div>

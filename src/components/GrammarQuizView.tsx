@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import type { GrammarQuizTaskData } from '../types';
+import type { GrammarQuizTaskData, Mistake } from '../types';
 import { playCorrectSound, playIncorrectSound } from '../utils/sound';
 
 function generateChunks(example: string, pattern: string): string[] {
@@ -30,9 +30,10 @@ interface GrammarQuizViewProps {
   task: GrammarQuizTaskData;
   onComplete: () => void;
   onCancel: () => void;
+  onSaveMistake?: (mistake: Mistake) => void;
 }
 
-export function GrammarQuizView({ task, onComplete, onCancel }: GrammarQuizViewProps) {
+export function GrammarQuizView({ task, onComplete, onCancel, onSaveMistake }: GrammarQuizViewProps) {
   const [isAnswered, setIsAnswered] = useState(false);
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
   
@@ -119,6 +120,18 @@ export function GrammarQuizView({ task, onComplete, onCancel }: GrammarQuizViewP
       playCorrectSound();
     } else {
       playIncorrectSound();
+      if (onSaveMistake) {
+        const userAnswer = mode === 'multiple-choice'
+          ? task.options[selectedOption!]
+          : selectedChunks.map(i => shuffledChunks[i]).join(' ');
+        onSaveMistake({
+          id: crypto.randomUUID(),
+          type: 'question',
+          data: { id: task.point.id, text: task.point.pattern, options: task.options, correctAnswer: task.correctIndex, category: 'toeic', difficulty: 'intermediate' },
+          wrongAnswer: userAnswer,
+          timestamp: new Date().toISOString()
+        });
+      }
     }
   };
 
@@ -153,7 +166,7 @@ export function GrammarQuizView({ task, onComplete, onCancel }: GrammarQuizViewP
       return example.split(pattern).map((part, i, arr) => (
         <span key={i}>
           {part}
-          {i < arr.length - 1 && <span className="text-[var(--gold)] border-b-2 border-[var(--gold)]">{blank}</span>}
+          {i < arr.length - 1 && <span className="text-gold border-b-2 border-gold">{blank}</span>}
         </span>
       ));
     }
@@ -166,12 +179,12 @@ export function GrammarQuizView({ task, onComplete, onCancel }: GrammarQuizViewP
   };
 
   return (
-    <div className="bg-[var(--bg-card)] lingo-card max-w-3xl w-full mx-auto relative overflow-hidden view-enter">
+    <div className="bg-bg-card lingo-card max-w-3xl w-full mx-auto relative overflow-hidden view-enter">
       {/* Visual Timer Bar */}
       {!isAnswered && (
-        <div className="absolute top-0 left-0 right-0 h-1.5 bg-[var(--bg-hover)] overflow-hidden">
+        <div className="absolute top-0 left-0 right-0 h-1.5 bg-bg-hover overflow-hidden">
           <div 
-            className={`h-full transition-all duration-1000 ease-linear ${timeLeft <= 5 ? 'bg-[var(--red)] animate-pulse' : 'bg-[var(--blue)]'}`}
+            className={`h-full transition-all duration-1000 ease-linear ${timeLeft <= 5 ? 'bg-red animate-pulse' : 'bg-blue'}`}
             style={{ width: `${(timeLeft / initialTime) * 100}%` }}
           ></div>
         </div>
@@ -179,10 +192,10 @@ export function GrammarQuizView({ task, onComplete, onCancel }: GrammarQuizViewP
 
       <div className="flex justify-between items-center mb-10 mt-2">
         <div className="flex items-center gap-3">
-          <div className="w-3 h-3 rounded-full bg-[var(--purple)]"></div>
-          <span className="text-[10px] font-black text-[var(--text-muted)] uppercase tracking-[0.2em]">Grammar Quiz</span>
+          <div className="w-3 h-3 rounded-full bg-purple"></div>
+          <span className="text-[10px] font-black text-text-muted uppercase tracking-[0.2em]">Grammar Quiz</span>
           {!isAnswered && (
-            <span className={`text-[10px] font-black uppercase px-2 py-0.5 rounded-md border-2 ${timeLeft <= 5 ? 'text-[var(--red)] border-[var(--red)] animate-pulse' : 'text-[var(--purple)] border-[var(--purple)]'}`}>
+            <span className={`text-[10px] font-black uppercase px-2 py-0.5 rounded-md border-2 ${timeLeft <= 5 ? 'text-red border-red animate-pulse' : 'text-purple border-purple'}`}>
               {timeLeft}s
             </span>
           )}
@@ -190,14 +203,14 @@ export function GrammarQuizView({ task, onComplete, onCancel }: GrammarQuizViewP
       </div>
 
       <div className="mb-10 text-center">
-        <p className="text-sm font-bold text-[var(--text-muted)] mb-4">
+        <p className="text-sm font-bold text-text-muted mb-4">
           {mode === 'multiple-choice' ? 'Fill in the blank with the correct grammar pattern:' : 'Arrange the pieces to form the correct sentence:'}
         </p>
-        <h3 className="text-3xl font-black text-[var(--text-main)] leading-relaxed mb-4">
+        <h3 className="text-3xl font-black text-text-main leading-relaxed mb-4">
           {mode === 'multiple-choice' ? renderBlankedExample() : task.point.exampleTranslation}
         </h3>
         {mode === 'multiple-choice' && (
-          <p className="text-lg font-bold text-[var(--blue)]">
+          <p className="text-lg font-bold text-blue">
             "{task.point.exampleTranslation}"
           </p>
         )}
@@ -211,22 +224,22 @@ export function GrammarQuizView({ task, onComplete, onCancel }: GrammarQuizViewP
             
             if (isAnswered) {
               if (idx === task.correctIndex) {
-                btnClass = "border-[var(--green)] bg-[var(--tint-green)] text-[var(--green)] shadow-sm";
-                badgeClass = "bg-[var(--green)] text-white border-transparent";
+                btnClass = "border-green bg-tint-green text-green shadow-sm";
+                badgeClass = "bg-green text-white border-transparent";
               } else if (idx === selectedOption) {
-                btnClass = "border-[var(--red)] bg-[var(--tint-red)] text-[var(--red)]";
-                badgeClass = "bg-[var(--red)] text-white border-transparent";
+                btnClass = "border-red bg-tint-red text-red";
+                badgeClass = "bg-red text-white border-transparent";
               } else {
-                btnClass = "opacity-40 border-[var(--border-main)] bg-[var(--bg-card)] text-[var(--text-main)]";
-                badgeClass = "bg-[var(--bg-card)] text-[var(--text-muted)] border-[var(--border-main)]";
+                btnClass = "opacity-40 border-border-main bg-bg-card text-text-main";
+                badgeClass = "bg-bg-card text-text-muted border-border-main";
               }
             } else {
               if (selectedOption === idx) {
-                btnClass = "border-[var(--purple)] bg-[var(--tint-blue)] text-[var(--purple)]";
-                badgeClass = "bg-[var(--purple)] text-white border-transparent";
+                btnClass = "border-purple bg-tint-blue text-purple";
+                badgeClass = "bg-purple text-white border-transparent";
               } else {
-                btnClass = "border-[var(--border-main)] hover:border-[var(--text-muted)] bg-[var(--bg-card)] text-[var(--text-main)]";
-                badgeClass = "bg-[var(--bg-card)] text-[var(--text-muted)] border-[var(--border-main)]";
+                btnClass = "border-border-main hover:border-text-muted bg-bg-card text-text-main";
+                badgeClass = "bg-bg-card text-text-muted border-border-main";
               }
             }
 
@@ -248,7 +261,7 @@ export function GrammarQuizView({ task, onComplete, onCancel }: GrammarQuizViewP
       ) : (
         <div className="mb-8">
           {/* Answer Area */}
-          <div className="min-h-[120px] p-4 rounded-2xl border-2 border-dashed border-[var(--border-main)] bg-[var(--gray-bg)] mb-6 flex flex-wrap gap-2 content-start">
+          <div className="min-h-[120px] p-4 rounded-2xl border-2 border-dashed border-border-main bg-gray-bg mb-6 flex flex-wrap gap-2 content-start">
             {selectedChunks.map((chunkIdx, i) => (
               <button
                 key={`ans-${i}`}
@@ -256,7 +269,7 @@ export function GrammarQuizView({ task, onComplete, onCancel }: GrammarQuizViewP
                 onClick={() => {
                   setSelectedChunks(prev => prev.filter((_, idx) => idx !== i));
                 }}
-                className={`px-4 py-2 rounded-xl font-bold text-lg shadow-sm active:scale-95 transition-transform ${isAnswered ? (isSentenceBuilderCorrect() ? 'bg-[var(--green)] text-white' : 'bg-[var(--red)] text-white') : 'bg-[var(--bg-card)] border-2 border-[var(--border-main)] text-[var(--text-main)] hover:border-[var(--text-muted)]'}`}
+                className={`px-4 py-2 rounded-xl font-bold text-lg shadow-sm active:scale-95 transition-transform ${isAnswered ? (isSentenceBuilderCorrect() ? 'bg-green text-white' : 'bg-red text-white') : 'bg-bg-card border-2 border-border-main text-text-main hover:border-text-muted'}`}
               >
                 {shuffledChunks[chunkIdx]}
               </button>
@@ -274,7 +287,7 @@ export function GrammarQuizView({ task, onComplete, onCancel }: GrammarQuizViewP
                   onClick={() => {
                     setSelectedChunks(prev => [...prev, idx]);
                   }}
-                  className={`px-4 py-2 rounded-xl font-bold text-lg transition-all active:scale-95 ${isSelected ? 'bg-[var(--gray-path)] text-[var(--gray-path-dark)] shadow-none opacity-50' : 'bg-[var(--bg-card)] text-[var(--text-main)] border-b-4 border-[var(--border-main)] shadow-sm hover:-translate-y-1'}`}
+                  className={`px-4 py-2 rounded-xl font-bold text-lg transition-all active:scale-95 ${isSelected ? 'bg-gray-path text-gray-path-dark shadow-none opacity-50' : 'bg-bg-card text-text-main border-b-4 border-border-main shadow-sm hover:-translate-y-1'}`}
                 >
                   {chunk}
                 </button>
@@ -288,8 +301,8 @@ export function GrammarQuizView({ task, onComplete, onCancel }: GrammarQuizViewP
       {isAnswered && (
         <div className={`p-6 rounded-2xl border-2 mb-8 animate-in slide-in-from-bottom-4 duration-300 ${
           (mode === 'multiple-choice' ? selectedOption === task.correctIndex : isSentenceBuilderCorrect())
-            ? 'bg-[var(--tint-green)] border-[var(--green)] text-[var(--text-on-tint)]' 
-            : 'bg-[var(--tint-red)] border-[var(--red)] text-[var(--text-on-tint)]'
+            ? 'bg-tint-green border-green text-text-on-tint' 
+            : 'bg-tint-red border-red text-text-on-tint'
         }`}>
           <h4 className="font-black text-lg mb-2 flex items-center gap-2">
             {(mode === 'multiple-choice' ? selectedOption === task.correctIndex : isSentenceBuilderCorrect()) ? '🎉 Correct!' : '❌ Incorrect'}
@@ -301,21 +314,21 @@ export function GrammarQuizView({ task, onComplete, onCancel }: GrammarQuizViewP
             Structure: {task.point.structure || 'N/A'}
           </p>
           {mode === 'sentence-builder' && !(isSentenceBuilderCorrect()) && (
-             <p className="text-sm font-medium leading-relaxed border-t border-current/10 pt-2 mt-2 text-[var(--red)]">
+             <p className="text-sm font-medium leading-relaxed border-t border-current/10 pt-2 mt-2 text-red">
                Correct: {chunks.join(task.point.example.includes(' ') ? ' ' : '')}
              </p>
           )}
         </div>
       )}
 
-      <div className="flex justify-between items-center pt-8 border-t-2 border-[var(--quiz-divider)]">
+      <div className="flex justify-between items-center pt-8 border-t-2 border-quiz-divider">
         <button
           onClick={() => {
             if (window.confirm('Bạn có chắc muốn thoát? Tiến trình sẽ bị mất.')) {
               onCancel();
             }
           }}
-          className="text-[var(--text-muted)] font-black hover:text-[var(--red)] transition-colors uppercase tracking-[0.2em] text-[9px]"
+          className="text-text-muted font-black hover:text-red transition-colors uppercase tracking-[0.2em] text-[9px]"
         >
           Quit Quest
         </button>
@@ -327,7 +340,7 @@ export function GrammarQuizView({ task, onComplete, onCancel }: GrammarQuizViewP
             className={`px-10 h-14 rounded-2xl font-black transition-all ${
               (mode === 'multiple-choice' ? selectedOption !== null : selectedChunks.length === chunks.length)
                 ? 'btn-3d btn-purple'
-                : 'bg-[var(--gray-path)] cursor-not-allowed text-[var(--text-muted)] border-b-4 border-[var(--gray-path-dark)]'
+                : 'bg-gray-path cursor-not-allowed text-text-muted border-b-4 border-gray-path-dark'
             }`}
           >
             Check Answer

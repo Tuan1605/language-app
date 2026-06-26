@@ -30,7 +30,7 @@ export function MistakeReviewView({ mistakes, onComplete, onCancel, onRemoveMist
 
   if (tasks.length === 0) {
     return (
-      <div className="bg-[var(--bg-card)] lingo-card p-10 max-w-2xl mx-auto w-full text-center">
+      <div className="bg-bg-card lingo-card p-10 max-w-2xl mx-auto w-full text-center">
         <h2 className="text-2xl font-black mb-4">No Mistakes to Review!</h2>
         <button onClick={onCancel} className="btn-duo btn-blue px-8 py-3">Go Back</button>
       </div>
@@ -69,19 +69,19 @@ export function MistakeReviewView({ mistakes, onComplete, onCancel, onRemoveMist
   return (
     <div className="w-full max-w-4xl mx-auto animate-in fade-in duration-300">
       <div className="flex items-center gap-4 mb-6">
-        <button onClick={onCancel} className="text-[var(--text-muted)] font-black hover:text-[var(--red)] transition-colors">
+        <button onClick={onCancel} className="text-text-muted font-black hover:text-red transition-colors">
           ✕ CANCEL
         </button>
-        <div className="flex-1 bg-[var(--bg-hover)] h-4 rounded-full overflow-hidden border-2 border-[var(--border-main)]">
+        <div className="flex-1 bg-bg-hover h-4 rounded-full overflow-hidden border-2 border-border-main">
           <div 
-            className="h-full bg-[var(--green)] transition-all duration-300" 
+            className="h-full bg-green transition-all duration-300" 
             style={{ width: `${progressPercent}%` }}
           />
         </div>
-        <span className="text-[var(--text-muted)] font-black text-sm">{currentTaskIndex + 1}/{tasks.length}</span>
+        <span className="text-text-muted font-black text-sm">{currentTaskIndex + 1}/{tasks.length}</span>
       </div>
 
-      <div className="bg-[var(--tint-gold)] text-[var(--gold-shadow)] font-black uppercase text-xs text-center py-2 rounded-xl mb-4 animate-pulse">
+      <div className="bg-tint-gold text-gold-shadow font-black uppercase text-xs text-center py-2 rounded-xl mb-4 animate-pulse">
         Reviewing Mistakes Mode
       </div>
 

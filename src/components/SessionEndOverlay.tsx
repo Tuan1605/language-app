@@ -25,7 +25,7 @@ export function SessionEndOverlay({
   const percent = score !== undefined && totalScore !== undefined ? (score / totalScore) * 100 : 0;
 
   return (
-    <div className={`text-center max-w-lg w-full mx-auto animate-in zoom-in-95 duration-500 ${isQuiz ? 'bg-[var(--bg-card)] lingo-card' : 'space-y-8 pop-in pt-10 relative'}`}>
+    <div className={`text-center max-w-lg w-full mx-auto animate-in zoom-in-95 duration-500 ${isQuiz ? 'bg-bg-card lingo-card' : 'space-y-8 pop-in pt-10 relative'}`}>
       
       {!isQuiz && (
         <>
@@ -37,30 +37,30 @@ export function SessionEndOverlay({
           <div className="text-[120px] select-none animate-bounce">🎉</div>
           <div className="space-y-2">
             <h2 className="text-4xl font-black text-gradient">{title}</h2>
-            {xpEarned !== undefined && <p className="text-base font-bold text-[var(--text-muted)]">You earned +{xpEarned} XP</p>}
+            {xpEarned !== undefined && <p className="text-base font-bold text-text-muted">You earned +{xpEarned} XP</p>}
           </div>
         </>
       )}
 
       {isQuiz && (
         <>
-          <div className="w-24 h-24 bg-[var(--tint-blue)] rounded-full flex items-center justify-center mx-auto mb-8 shadow-inner">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-[var(--blue)]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <div className="w-24 h-24 bg-tint-blue rounded-full flex items-center justify-center mx-auto mb-8 shadow-inner">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
           </div>
-          <h2 className="text-3xl font-black text-[var(--text-main)] mb-2 uppercase tracking-tight">{title}</h2>
-          {subtitle && <p className="text-[10px] font-black text-[var(--text-muted)] mb-10 uppercase tracking-[0.2em]">{subtitle}</p>}
+          <h2 className="text-3xl font-black text-text-main mb-2 uppercase tracking-tight">{title}</h2>
+          {subtitle && <p className="text-[10px] font-black text-text-muted mb-10 uppercase tracking-[0.2em]">{subtitle}</p>}
           
           {score !== undefined && totalScore !== undefined && (
             <div className="relative w-48 h-48 mx-auto mb-10">
               <svg className="w-full h-full transform -rotate-90">
-                <circle cx="96" cy="96" r="86" stroke="currentColor" strokeWidth="12" fill="transparent" className="text-[var(--gray-path)]" />
-                <circle cx="96" cy="96" r="86" stroke="currentColor" strokeWidth="12" fill="transparent" className={percent >= 80 ? 'text-[var(--green)]' : 'text-[var(--gold)]'} strokeDasharray={540.3} strokeDashoffset={540.3 - (540.3 * percent) / 100} strokeLinecap="round" />
+                <circle cx="96" cy="96" r="86" stroke="currentColor" strokeWidth="12" fill="transparent" className="text-gray-path" />
+                <circle cx="96" cy="96" r="86" stroke="currentColor" strokeWidth="12" fill="transparent" className={percent >= 80 ? 'text-green' : 'text-gold'} strokeDasharray={540.3} strokeDashoffset={540.3 - (540.3 * percent) / 100} strokeLinecap="round" />
               </svg>
               <div className="absolute inset-0 flex flex-col items-center justify-center">
-                <span className="text-5xl font-black text-[var(--text-main)]">{score}</span>
-                <span className="text-[10px] font-black text-[var(--text-muted)] uppercase tracking-widest">Score / {totalScore}</span>
+                <span className="text-5xl font-black text-text-main">{score}</span>
+                <span className="text-[10px] font-black text-text-muted uppercase tracking-widest">Score / {totalScore}</span>
               </div>
             </div>
           )}

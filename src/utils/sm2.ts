@@ -25,10 +25,13 @@ export function calculateSM2(
       interval = 6;
     } else {
       repetition = previousRepetition + 1;
-      interval = Math.round(previousInterval * previousEasiness);
+      const exactInterval = previousInterval * previousEasiness;
+      const fuzz = 0.95 + Math.random() * 0.1; // +/- 5%
+      interval = Math.round(exactInterval * fuzz);
     }
     
     easiness = previousEasiness + (0.1 - (5 - grade) * (0.08 + (5 - grade) * 0.02));
+    if (interval > 365) interval = 365;
   } else {
     repetition = 0;
     interval = 1;

@@ -70,24 +70,24 @@ export function WritingView({ lesson, onComplete, onCancel, onSaveMistake }: Wri
   };
 
   return (
-    <div className="bg-[var(--bg-card)] lingo-card p-6 sm:p-10 max-w-2xl mx-auto w-full animate-in slide-in-from-bottom-8 duration-500">
-      <div className="flex justify-between items-center mb-8 pb-4 border-b-2 border-[var(--gray-path)]">
+    <div className="bg-bg-card lingo-card p-6 sm:p-10 max-w-2xl mx-auto w-full animate-in slide-in-from-bottom-8 duration-500">
+      <div className="flex justify-between items-center mb-8 pb-4 border-b-2 border-gray-path">
         <div>
-          <h2 className="text-2xl font-black text-[var(--text-main)] uppercase tracking-tight">Translation Writing</h2>
-          <p className="text-[10px] font-black text-[var(--text-muted)] uppercase tracking-[0.2em] mt-1">Translate the following sentence</p>
+          <h2 className="text-2xl font-black text-text-main uppercase tracking-tight">Translation Writing</h2>
+          <p className="text-[10px] font-black text-text-muted uppercase tracking-[0.2em] mt-1">Translate the following sentence</p>
         </div>
-        <button onClick={onCancel} className="w-10 h-10 flex items-center justify-center rounded-xl bg-[var(--gray-bg)] text-[var(--text-muted)] font-black hover:bg-[var(--tint-red)] hover:text-[var(--red)] transition-colors">
+        <button onClick={onCancel} className="w-10 h-10 flex items-center justify-center rounded-xl bg-gray-bg text-text-muted font-black hover:bg-tint-red hover:text-red transition-colors">
           ✕
         </button>
       </div>
 
       <div className="mb-8">
-        <div className="p-6 bg-[var(--bg-hover)] border-2 border-[var(--border-main)] rounded-2xl relative">
-          <span className="absolute -top-3 left-4 bg-[var(--blue)] text-white text-[10px] font-black uppercase px-2 py-1 rounded">Source</span>
-          <p className="text-xl font-bold text-[var(--text-main)]">{lesson.sourceText}</p>
+        <div className="p-6 bg-bg-hover border-2 border-border-main rounded-2xl relative">
+          <span className="absolute -top-3 left-4 bg-blue text-white text-[10px] font-black uppercase px-2 py-1 rounded">Source</span>
+          <p className="text-xl font-bold text-text-main">{lesson.sourceText}</p>
         </div>
         {lesson.hint && (
-          <p className="text-xs text-[var(--text-muted)] font-bold mt-2 ml-2 italic">Hint: {lesson.hint}</p>
+          <p className="text-xs text-text-muted font-bold mt-2 ml-2 italic">Hint: {lesson.hint}</p>
         )}
       </div>
 
@@ -98,7 +98,7 @@ export function WritingView({ lesson, onComplete, onCancel, onSaveMistake }: Wri
           onChange={(e) => setUserInput(e.target.value)}
           disabled={isSubmitting}
           placeholder="Type your translation here..."
-          className="w-full bg-[var(--bg-hover)] border-2 border-[var(--border-main)] rounded-2xl p-4 font-bold text-[var(--text-main)] min-h-[120px] outline-none focus:border-[var(--blue)] transition-all resize-none disabled:opacity-50"
+          className="w-full bg-bg-hover border-2 border-border-main rounded-2xl p-4 font-bold text-text-main min-h-[120px] outline-none focus:border-blue transition-all resize-none disabled:opacity-50"
           onKeyDown={(e) => {
             if (e.key === 'Enter' && !e.shiftKey) {
               e.preventDefault();
@@ -110,8 +110,8 @@ export function WritingView({ lesson, onComplete, onCancel, onSaveMistake }: Wri
 
       {feedback && (
         <div className="mb-8 animate-in fade-in zoom-in duration-300">
-          <div className={`p-6 rounded-2xl border-2 ${feedback.score >= 80 ? 'bg-[var(--tint-green)] border-[var(--green)]' : 'bg-[var(--tint-red)] border-[var(--red)]'}`}>
-            <h3 className={`font-black text-lg mb-4 ${feedback.score >= 80 ? 'text-[var(--green)]' : 'text-[var(--red)]'}`}>
+          <div className={`p-6 rounded-2xl border-2 ${feedback.score >= 80 ? 'bg-tint-green border-green' : 'bg-tint-red border-red'}`}>
+            <h3 className={`font-black text-lg mb-4 ${feedback.score >= 80 ? 'text-green' : 'text-red'}`}>
               {feedback.score >= 80 ? 'Excellent Translation!' : 'Needs Improvement'} ({Math.round(feedback.score)}%)
             </h3>
 
@@ -121,28 +121,28 @@ export function WritingView({ lesson, onComplete, onCancel, onSaveMistake }: Wri
                 <div className="text-lg font-black" style={{ color: feedback.vocabScore >= 80 ? 'var(--green)' : feedback.vocabScore >= 50 ? 'var(--gold)' : 'var(--red)' }}>
                   {Math.round(feedback.vocabScore)}%
                 </div>
-                <div className="text-[10px] font-bold text-[var(--text-muted)] uppercase">Vocabulary</div>
+                <div className="text-[10px] font-bold text-text-muted uppercase">Vocabulary</div>
               </div>
               <div className="text-center p-3 bg-white/50 rounded-xl">
                 <div className="text-lg font-black" style={{ color: feedback.completenessScore >= 80 ? 'var(--green)' : feedback.completenessScore >= 50 ? 'var(--gold)' : 'var(--red)' }}>
                   {Math.round(feedback.completenessScore)}%
                 </div>
-                <div className="text-[10px] font-bold text-[var(--text-muted)] uppercase">Completeness</div>
+                <div className="text-[10px] font-bold text-text-muted uppercase">Completeness</div>
               </div>
               <div className="text-center p-3 bg-white/50 rounded-xl">
                 <div className="text-lg font-black" style={{ color: feedback.score >= 80 ? 'var(--green)' : feedback.score >= 50 ? 'var(--gold)' : 'var(--red)' }}>
                   {Math.round(feedback.score)}%
                 </div>
-                <div className="text-[10px] font-bold text-[var(--text-muted)] uppercase">Overall</div>
+                <div className="text-[10px] font-bold text-text-muted uppercase">Overall</div>
               </div>
             </div>
 
             {/* Target sentence with word highlights */}
             <div className="mb-3">
-              <span className="block text-xs uppercase tracking-wider text-[var(--text-muted)] mb-1">Target:</span>
-              <p className="text-sm font-bold text-[var(--text-main)] leading-relaxed">
+              <span className="block text-xs uppercase tracking-wider text-text-muted mb-1">Target:</span>
+              <p className="text-sm font-bold text-text-main leading-relaxed">
                 {feedback.diff.map((wordObj, i) => (
-                  <span key={i} className={`mr-1 ${wordObj.isError ? 'text-[var(--red)] underline decoration-2 decoration-[var(--red)] underline-offset-2' : 'text-[var(--green)]'}`}>
+                  <span key={i} className={`mr-1 ${wordObj.isError ? 'text-red underline decoration-2 decoration-red underline-offset-2' : 'text-green'}`}>
                     {wordObj.text}
                   </span>
                 ))}
@@ -151,10 +151,10 @@ export function WritingView({ lesson, onComplete, onCancel, onSaveMistake }: Wri
 
             {/* User input with highlights */}
             <div className="mb-3">
-              <span className="block text-xs uppercase tracking-wider text-[var(--text-muted)] mb-1">Your answer:</span>
-              <p className="text-sm font-bold text-[var(--text-main)] leading-relaxed">
+              <span className="block text-xs uppercase tracking-wider text-text-muted mb-1">Your answer:</span>
+              <p className="text-sm font-bold text-text-main leading-relaxed">
                 {feedback.userDiff.map((wordObj, i) => (
-                  <span key={i} className={`mr-1 ${wordObj.isError ? 'text-[var(--gold)] underline decoration-2 decoration-[var(--gold)] underline-offset-2' : 'text-[var(--green)]'}`}>
+                  <span key={i} className={`mr-1 ${wordObj.isError ? 'text-gold underline decoration-2 decoration-gold underline-offset-2' : 'text-green'}`}>
                     {wordObj.text}
                   </span>
                 ))}
@@ -167,7 +167,7 @@ export function WritingView({ lesson, onComplete, onCancel, onSaveMistake }: Wri
                   onClick={() => {
                     setFeedback({ ...feedback, score: 100, vocabScore: 100, completenessScore: 100, diff: feedback.diff.map(w => ({ ...w, isError: false })) });
                   }}
-                  className="text-[10px] font-bold text-[var(--text-muted)] hover:text-[var(--green)] underline underline-offset-4 decoration-dotted"
+                  className="text-[10px] font-bold text-text-muted hover:text-green underline underline-offset-4 decoration-dotted"
                 >
                   My answer is correct/synonymous (skip scoring)
                 </button>

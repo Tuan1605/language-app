@@ -148,12 +148,12 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
   const currentQuestion = questions[currentIndex];
 
   return (
-    <div className="bg-[var(--bg-card)] lingo-card max-w-3xl w-full mx-auto relative overflow-hidden">
+    <div className="bg-bg-card lingo-card max-w-3xl w-full mx-auto relative overflow-hidden">
       {/* Visual Timer Bar */}
       {!isFinished && !isAnswered && (
-        <div className="absolute top-0 left-0 right-0 h-1.5 bg-[var(--bg-hover)] overflow-hidden">
+        <div className="absolute top-0 left-0 right-0 h-1.5 bg-bg-hover overflow-hidden">
           <div 
-            className={`h-full transition-all duration-1000 ease-linear ${timeLeft <= 5 ? 'bg-[var(--red)] animate-pulse' : 'bg-[var(--blue)]'}`}
+            className={`h-full transition-all duration-1000 ease-linear ${timeLeft <= 5 ? 'bg-red animate-pulse' : 'bg-blue'}`}
             style={{ width: `${(timeLeft / getInitialTime()) * 100}%` }}
           ></div>
         </div>
@@ -161,32 +161,32 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
 
       <div className="flex justify-between items-center mb-10 mt-2">
         <div className="flex items-center gap-3">
-          <div className={`w-3 h-3 rounded-full ${category === 'toeic' ? 'bg-[var(--blue)]' : 'bg-[var(--red)]'}`}></div>
-          <span className="text-[10px] font-black text-[var(--text-muted)] uppercase tracking-[0.2em]">{category} Mock Exam</span>
+          <div className={`w-3 h-3 rounded-full ${category === 'toeic' ? 'bg-blue' : 'bg-red'}`}></div>
+          <span className="text-[10px] font-black text-text-muted uppercase tracking-[0.2em]">{category} Mock Exam</span>
           {!isFinished && !isAnswered && (
-            <span className={`text-[10px] font-black uppercase px-2 py-0.5 rounded-md border-2 ${timeLeft <= 5 ? 'text-[var(--red)] border-[var(--red)] animate-pulse' : 'text-[var(--blue)] border-[var(--blue)]'}`}>
+            <span className={`text-[10px] font-black uppercase px-2 py-0.5 rounded-md border-2 ${timeLeft <= 5 ? 'text-red border-red animate-pulse' : 'text-blue border-blue'}`}>
               {timeLeft}s
             </span>
           )}
           {isAnswered && (
-            <span className="text-[10px] font-black uppercase px-2 py-0.5 rounded-md border-2 text-[var(--text-muted)] border-[var(--border-main)] bg-[var(--bg-hover)]">
+            <span className="text-[10px] font-black uppercase px-2 py-0.5 rounded-md border-2 text-text-muted border-border-main bg-bg-hover">
               Answered
             </span>
           )}
         </div>
-        <div className="bg-[var(--bg-hover)] px-4 py-1.5 rounded-xl text-[9px] font-black text-[var(--text-muted)] uppercase tracking-widest border-2 border-[var(--border-main)]">
+        <div className="bg-bg-hover px-4 py-1.5 rounded-xl text-[9px] font-black text-text-muted uppercase tracking-widest border-2 border-border-main">
           Question {currentIndex + 1} of {questions.length}
         </div>
       </div>
 
       {currentQuestion.imageUrl && (
-        <div className="w-full mb-8 rounded-2xl overflow-hidden border-2 border-[var(--border-main)] shadow-sm max-h-[300px]">
+        <div className="w-full mb-8 rounded-2xl overflow-hidden border-2 border-border-main shadow-sm max-h-[300px]">
           <img src={currentQuestion.imageUrl} alt="Question illustration" className="w-full h-full object-cover" />
         </div>
       )}
 
       <div className="mb-10">
-        <h3 className="text-2xl font-black text-[var(--text-main)] leading-tight">
+        <h3 className="text-2xl font-black text-text-main leading-tight">
           {currentQuestion.text}
         </h3>
       </div>
@@ -198,22 +198,22 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
           
           if (isAnswered) {
             if (idx === currentQuestion.correctAnswer) {
-              btnClass = "border-[var(--green)] bg-[var(--tint-green)] text-[var(--green)] shadow-sm";
-              badgeClass = "bg-[var(--green)] text-white border-transparent";
+              btnClass = "border-green bg-tint-green text-green shadow-sm";
+              badgeClass = "bg-green text-white border-transparent";
             } else if (idx === selectedOption) {
-              btnClass = "border-[var(--red)] bg-[var(--tint-red)] text-[var(--red)]";
-              badgeClass = "bg-[var(--red)] text-white border-transparent";
+              btnClass = "border-red bg-tint-red text-red";
+              badgeClass = "bg-red text-white border-transparent";
             } else {
-              btnClass = "opacity-40 border-[var(--border-main)] bg-[var(--bg-card)] text-[var(--text-main)]";
-              badgeClass = "bg-[var(--bg-card)] text-[var(--text-muted)] border-[var(--border-main)]";
+              btnClass = "opacity-40 border-border-main bg-bg-card text-text-main";
+              badgeClass = "bg-bg-card text-text-muted border-border-main";
             }
           } else {
             if (selectedOption === idx) {
-              btnClass = "border-[var(--blue)] bg-[var(--tint-blue)] text-[var(--blue)]";
-              badgeClass = "bg-[var(--blue)] text-white border-transparent";
+              btnClass = "border-blue bg-tint-blue text-blue";
+              badgeClass = "bg-blue text-white border-transparent";
             } else {
-              btnClass = "border-[var(--border-main)] hover:border-[var(--text-muted)] bg-[var(--bg-card)] text-[var(--text-main)]";
-              badgeClass = "bg-[var(--bg-card)] text-[var(--text-muted)] border-[var(--border-main)]";
+              btnClass = "border-border-main hover:border-text-muted bg-bg-card text-text-main";
+              badgeClass = "bg-bg-card text-text-muted border-border-main";
             }
           }
 
@@ -237,8 +237,8 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
       {isAnswered && (
         <div className={`p-6 rounded-2xl border-2 mb-8 animate-in slide-in-from-bottom-4 duration-300 ${
           selectedOption === currentQuestion.correctAnswer 
-            ? 'bg-[var(--tint-green)] border-[var(--green)] text-[var(--text-on-tint)]' 
-            : 'bg-[var(--tint-red)] border-[var(--red)] text-[var(--text-on-tint)]'
+            ? 'bg-tint-green border-green text-text-on-tint' 
+            : 'bg-tint-red border-red text-text-on-tint'
         }`}>
           <h4 className="font-black text-lg mb-2 flex items-center gap-2">
             {selectedOption === currentQuestion.correctAnswer ? '🎉 Correct!' : '❌ Incorrect'}
@@ -254,14 +254,14 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
         </div>
       )}
 
-      <div className="flex justify-between items-center pt-8 border-t-2 border-[var(--quiz-divider)]">
+      <div className="flex justify-between items-center pt-8 border-t-2 border-quiz-divider">
         <button
           onClick={() => {
             if (window.confirm('Bạn có chắc muốn thoát? Tiến trình sẽ bị mất.')) {
               onCancel();
             }
           }}
-          className="text-[var(--text-muted)] font-black hover:text-[var(--red)] transition-colors uppercase tracking-[0.2em] text-[9px]"
+          className="text-text-muted font-black hover:text-red transition-colors uppercase tracking-[0.2em] text-[9px]"
         >
           Quit Quest
         </button>
@@ -273,7 +273,7 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
             className={`px-10 h-14 rounded-2xl font-black transition-all ${
               selectedOption !== null
                 ? 'btn-3d btn-blue'
-                : 'bg-[var(--gray-path)] cursor-not-allowed text-[var(--text-muted)] border-b-4 border-[var(--gray-path-dark)]'
+                : 'bg-gray-path cursor-not-allowed text-text-muted border-b-4 border-gray-path-dark'
             }`}
           >
             Check Answer

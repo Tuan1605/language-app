@@ -30,17 +30,17 @@ export const MistakeBookView = memo(function MistakeBookView({ mistakes, onRemov
       const q = mistake.data as Question;
       return (
         <div className="space-y-2">
-          <p className="font-bold text-lg text-[var(--text-main)]">{q.text}</p>
-          <div className="bg-[var(--tint-red)] border border-[var(--red)] p-2 rounded-lg">
-            <span className="text-xs font-black text-[var(--red)] uppercase">You chose:</span>
-            <p className="text-[var(--red)] font-bold">{mistake.wrongAnswer || 'Skipped'}</p>
+          <p className="font-bold text-lg text-text-main">{q.text}</p>
+          <div className="bg-tint-red border border-red p-2 rounded-lg">
+            <span className="text-xs font-black text-red uppercase">You chose:</span>
+            <p className="text-red font-bold">{mistake.wrongAnswer || 'Skipped'}</p>
           </div>
-          <div className="bg-[var(--tint-green)] border border-[var(--green)] p-2 rounded-lg">
-            <span className="text-xs font-black text-[var(--green)] uppercase">Correct:</span>
-            <p className="text-[var(--green)] font-bold">{q.options[q.correctAnswer]}</p>
+          <div className="bg-tint-green border border-green p-2 rounded-lg">
+            <span className="text-xs font-black text-green uppercase">Correct:</span>
+            <p className="text-green font-bold">{q.options[q.correctAnswer]}</p>
           </div>
           {q.explanation && (
-            <p className="text-xs text-[var(--text-muted)] italic mt-2 border-l-2 border-[var(--gray-path)] pl-2">{q.explanation}</p>
+            <p className="text-xs text-text-muted italic mt-2 border-l-2 border-gray-path pl-2">{q.explanation}</p>
           )}
         </div>
       );
@@ -48,10 +48,10 @@ export const MistakeBookView = memo(function MistakeBookView({ mistakes, onRemov
       const d = mistake.data as DictationLesson;
       return (
         <div className="space-y-2">
-          <p className="font-bold text-lg text-[var(--text-main)]">{d.targetText}</p>
-          <div className="bg-[var(--tint-red)] border border-[var(--red)] p-2 rounded-lg">
-            <span className="text-xs font-black text-[var(--red)] uppercase">You typed:</span>
-            <p className="text-[var(--red)] font-bold">{mistake.wrongAnswer}</p>
+          <p className="font-bold text-lg text-text-main">{d.targetText}</p>
+          <div className="bg-tint-red border border-red p-2 rounded-lg">
+            <span className="text-xs font-black text-red uppercase">You typed:</span>
+            <p className="text-red font-bold">{mistake.wrongAnswer}</p>
           </div>
         </div>
       );
@@ -59,11 +59,11 @@ export const MistakeBookView = memo(function MistakeBookView({ mistakes, onRemov
       const s = mistake.data as SpeakingLesson;
       return (
         <div className="space-y-2">
-          <p className="font-bold text-lg text-[var(--text-main)]">{s.targetSentence}</p>
-          <p className="text-xs text-[var(--text-muted)]">{s.translation}</p>
-          <div className="bg-[var(--tint-red)] border border-[var(--red)] p-2 rounded-lg">
-            <span className="text-xs font-black text-[var(--red)] uppercase">You said:</span>
-            <p className="text-[var(--red)] font-bold">{mistake.wrongAnswer}</p>
+          <p className="font-bold text-lg text-text-main">{s.targetSentence}</p>
+          <p className="text-xs text-text-muted">{s.translation}</p>
+          <div className="bg-tint-red border border-red p-2 rounded-lg">
+            <span className="text-xs font-black text-red uppercase">You said:</span>
+            <p className="text-red font-bold">{mistake.wrongAnswer}</p>
           </div>
         </div>
       );
@@ -71,14 +71,14 @@ export const MistakeBookView = memo(function MistakeBookView({ mistakes, onRemov
       const w = mistake.data as WritingLesson;
       return (
         <div className="space-y-2">
-          <p className="font-bold text-lg text-[var(--text-main)]">{w.sourceText}</p>
-          <div className="bg-[var(--tint-green)] border border-[var(--green)] p-2 rounded-lg">
-            <span className="text-xs font-black text-[var(--green)] uppercase">Correct translation:</span>
-            <p className="text-[var(--green)] font-bold">{w.targetText}</p>
+          <p className="font-bold text-lg text-text-main">{w.sourceText}</p>
+          <div className="bg-tint-green border border-green p-2 rounded-lg">
+            <span className="text-xs font-black text-green uppercase">Correct translation:</span>
+            <p className="text-green font-bold">{w.targetText}</p>
           </div>
-          <div className="bg-[var(--tint-red)] border border-[var(--red)] p-2 rounded-lg">
-            <span className="text-xs font-black text-[var(--red)] uppercase">Your answer:</span>
-            <p className="text-[var(--red)] font-bold">{mistake.wrongAnswer}</p>
+          <div className="bg-tint-red border border-red p-2 rounded-lg">
+            <span className="text-xs font-black text-red uppercase">Your answer:</span>
+            <p className="text-red font-bold">{mistake.wrongAnswer}</p>
           </div>
         </div>
       );
@@ -87,11 +87,11 @@ export const MistakeBookView = memo(function MistakeBookView({ mistakes, onRemov
   };
 
   return (
-    <div className="bg-[var(--bg-card)] lingo-card p-6 sm:p-10 max-w-4xl mx-auto w-full animate-in slide-in-from-bottom-8 duration-500">
-      <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-10 border-b-2 border-[var(--gray-path)] pb-6">
+    <div className="bg-bg-card lingo-card p-6 sm:p-10 max-w-4xl mx-auto w-full animate-in slide-in-from-bottom-8 duration-500">
+      <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-10 border-b-2 border-gray-path pb-6">
         <div>
-          <h2 className="text-3xl font-black text-[var(--text-main)] uppercase tracking-tight">Mistake Book</h2>
-          <p className="text-[10px] font-black text-[var(--text-muted)] uppercase tracking-[0.2em] mt-2">
+          <h2 className="text-3xl font-black text-text-main uppercase tracking-tight">Mistake Book</h2>
+          <p className="text-[10px] font-black text-text-muted uppercase tracking-[0.2em] mt-2">
             Learn from your errors
           </p>
         </div>
@@ -100,7 +100,7 @@ export const MistakeBookView = memo(function MistakeBookView({ mistakes, onRemov
           <button 
             onClick={onReview}
             disabled={mistakes.length === 0}
-            className="px-6 py-3 bg-[var(--tint-gold)] text-[var(--gold-shadow)] border-2 border-[var(--gold-shadow)] font-black text-sm rounded-2xl uppercase whitespace-nowrap hover:bg-[var(--gold-shadow)] hover:text-white transition-all shadow-sm disabled:opacity-50"
+            className="px-6 py-3 bg-tint-gold text-gold-shadow border-2 border-gold-shadow font-black text-sm rounded-2xl uppercase whitespace-nowrap hover:bg-gold-shadow hover:text-white transition-all shadow-sm disabled:opacity-50"
           >
             Review Mistakes
           </button>
@@ -112,8 +112,8 @@ export const MistakeBookView = memo(function MistakeBookView({ mistakes, onRemov
                 onClick={() => setTypeFilter(f.value)}
                 className={`px-3 py-1.5 rounded-xl text-xs font-black uppercase whitespace-nowrap transition-all border-2 ${
                   typeFilter === f.value
-                    ? 'bg-[var(--blue)] text-white border-[var(--blue)]'
-                    : 'bg-[var(--gray-bg)] text-[var(--text-muted)] border-[var(--border-main)] hover:border-[var(--blue)]'
+                    ? 'bg-blue text-white border-blue'
+                    : 'bg-gray-bg text-text-muted border-border-main hover:border-blue'
                 }`}
               >
                 {f.label} ({f.count})
@@ -127,7 +127,7 @@ export const MistakeBookView = memo(function MistakeBookView({ mistakes, onRemov
               placeholder="Search mistakes..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              className="w-full bg-[var(--bg-hover)] border-2 border-[var(--border-main)] rounded-2xl py-3 px-10 font-bold outline-none focus:border-[var(--blue)] transition-all text-[var(--text-main)]"
+              className="w-full bg-bg-hover border-2 border-border-main rounded-2xl py-3 px-10 font-bold outline-none focus:border-blue transition-all text-text-main"
             />
             <span className="absolute left-4 top-1/2 -translate-y-1/2 opacity-30">🔍</span>
           </div>
@@ -137,13 +137,13 @@ export const MistakeBookView = memo(function MistakeBookView({ mistakes, onRemov
       <div className="space-y-4 max-h-[600px] overflow-y-auto pr-2 custom-scrollbar">
         {filteredMistakes.length > 0 ? (
           filteredMistakes.map(mistake => (
-            <div key={`${mistake.id}-${mistake.timestamp}`} className="p-6 bg-[var(--bg-hover)] border-2 border-[var(--border-main)] rounded-2xl flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 group hover:border-[var(--red)] transition-all">
+            <div key={`${mistake.id}-${mistake.timestamp}`} className="p-6 bg-bg-hover border-2 border-border-main rounded-2xl flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 group hover:border-red transition-all">
               <div className="flex-1 w-full">
                 <div className="flex items-center gap-2 mb-3">
-                  <span className={`px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider ${mistake.type === 'question' ? 'bg-[var(--tint-blue)] text-[var(--blue)]' : mistake.type === 'dictation' ? 'bg-[var(--tint-purple)] text-[var(--purple)]' : 'bg-[var(--tint-gold)] text-[var(--gold-shadow)]'}`}>
+                  <span className={`px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider ${mistake.type === 'question' ? 'bg-tint-blue text-blue' : mistake.type === 'dictation' ? 'bg-tint-purple text-purple' : 'bg-tint-gold text-gold-shadow'}`}>
                     {mistake.type}
                   </span>
-                  <span className="text-[10px] font-bold text-[var(--text-muted)]">
+                  <span className="text-[10px] font-bold text-text-muted">
                     {new Date(mistake.timestamp).toLocaleString()}
                   </span>
                 </div>
@@ -151,7 +151,7 @@ export const MistakeBookView = memo(function MistakeBookView({ mistakes, onRemov
               </div>
               <button 
                 onClick={() => onRemoveMistake(mistake.id)}
-                className="w-full sm:w-auto px-4 py-2 bg-[var(--gray-bg)] hover:bg-[var(--tint-green)] hover:text-[var(--green)] text-[var(--text-muted)] rounded-xl font-bold transition-all border-2 border-transparent hover:border-[var(--green)] flex items-center justify-center gap-2"
+                className="w-full sm:w-auto px-4 py-2 bg-gray-bg hover:bg-tint-green hover:text-green text-text-muted rounded-xl font-bold transition-all border-2 border-transparent hover:border-green flex items-center justify-center gap-2"
               >
                 <span>✓</span> <span className="text-sm">Got it</span>
               </button>
@@ -160,7 +160,7 @@ export const MistakeBookView = memo(function MistakeBookView({ mistakes, onRemov
         ) : (
           <div className="py-20 text-center space-y-4">
              <div className="text-5xl opacity-20">🎯</div>
-             <p className="font-bold text-[var(--text-muted)]">No mistakes found. Great job!</p>
+             <p className="font-bold text-text-muted">No mistakes found. Great job!</p>
           </div>
         )}
       </div>

@@ -4,7 +4,6 @@ import { LocalErrorBoundary } from '../components/LocalErrorBoundary';
 import { useNavigate } from 'react-router-dom';
 import { db } from '../data/db';
 import { useAppStore } from '../stores/useAppStore';
-import { AUTHENTIC_EXAMS } from '../data/authenticExams';
 import { useEffect, useState } from 'react';
 
 export function RealExamPage() {
@@ -19,10 +18,12 @@ export function RealExamPage() {
       if (saved) {
         try {
           const parsed = JSON.parse(saved);
-          const found = AUTHENTIC_EXAMS.find(e => e.id === parsed.examId);
-          if (found) {
-            setCurrentAuthenticExam(found);
-          }
+          import('../data/authenticExams').then(({ AUTHENTIC_EXAMS }) => {
+            const found = AUTHENTIC_EXAMS.find(e => e.id === parsed.examId);
+            if (found) {
+              setCurrentAuthenticExam(found);
+            }
+          });
         } catch { /* ignore */ }
       }
     }
@@ -34,7 +35,7 @@ export function RealExamPage() {
   };
 
   if (isRestoring) {
-    return <div className="w-full text-center pt-10 text-[var(--text-muted)] font-bold">Restoring exam session...</div>;
+    return <div className="w-full text-center pt-10 text-text-muted font-bold">Restoring exam session...</div>;
   }
 
   if (!currentAuthenticExam) {

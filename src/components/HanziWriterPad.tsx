@@ -86,9 +86,9 @@ export function HanziWriterPad({ character, size = 200, mode = 'quiz' }: HanziWr
     return (
       <div 
         style={{ width: size, height: size }} 
-        className="flex items-center justify-center bg-[var(--gray-bg)] rounded-xl border-2 border-[var(--gray-path)]"
+        className="flex items-center justify-center bg-gray-bg rounded-xl border-2 border-gray-path"
       >
-        <span className="text-xs text-[var(--text-muted)] font-bold">Không có dữ liệu</span>
+        <span className="text-xs text-text-muted font-bold">Không có dữ liệu</span>
       </div>
     );
   }
@@ -96,7 +96,7 @@ export function HanziWriterPad({ character, size = 200, mode = 'quiz' }: HanziWr
   return (
     <div className="relative">
       {/* Background grid lines */}
-      <div style={{ width: size, height: size }} className="absolute inset-0 pointer-events-none rounded-xl border-2 border-[var(--gray-path)] overflow-hidden">
+      <div style={{ width: size, height: size }} className="absolute inset-0 pointer-events-none rounded-xl border-2 border-gray-path overflow-hidden">
         <div className="absolute inset-0 pointer-events-none border-b border-dashed border-gray-300 top-1/2"></div>
         <div className="absolute inset-0 pointer-events-none border-r border-dashed border-gray-300 left-1/2"></div>
       </div>
@@ -111,7 +111,7 @@ export function HanziWriterPad({ character, size = 200, mode = 'quiz' }: HanziWr
       {success && (
         <div className="absolute inset-0 flex items-center justify-center bg-white/80 rounded-xl z-20 pointer-events-none animate-in fade-in zoom-in">
           <span className="text-4xl">✨</span>
-          <span className="text-xl font-black text-[var(--green)] ml-2">Đúng!</span>
+          <span className="text-xl font-black text-green ml-2">Đúng!</span>
         </div>
       )}
     </div>

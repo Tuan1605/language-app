@@ -24,7 +24,7 @@ const PdfExamPage = lazy(() => import('./pages/PdfExamPage').then(m => ({ defaul
 function PageLoader() {
   return (
     <div className="w-full flex items-center justify-center py-20">
-      <div className="w-8 h-8 border-3 border-[var(--blue)] border-t-transparent rounded-full animate-spin"></div>
+      <div className="w-8 h-8 border-3 border-blue border-t-transparent rounded-full animate-spin"></div>
     </div>
   );
 }
@@ -65,10 +65,10 @@ function App() {
 
   if (isLoadingData) {
     return (
-      <div className="min-h-screen bg-[var(--bg-main)] text-[var(--text-main)] flex items-center justify-center">
+      <div className="min-h-screen bg-bg-main text-text-main flex items-center justify-center">
         <div className="flex flex-col items-center gap-4">
-          <div className="w-12 h-12 border-4 border-[var(--blue)] border-t-transparent rounded-full animate-spin"></div>
-          <p className="font-bold text-[var(--text-muted)] animate-pulse">Loading language data...</p>
+          <div className="w-12 h-12 border-4 border-blue border-t-transparent rounded-full animate-spin"></div>
+          <p className="font-bold text-text-muted animate-pulse">Loading language data...</p>
         </div>
       </div>
     );

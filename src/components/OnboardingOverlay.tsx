@@ -25,20 +25,20 @@ export function OnboardingOverlay() {
 
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/60 backdrop-blur-sm p-4 animate-in fade-in duration-300">
-      <div className="bg-[var(--bg-card)] rounded-[2rem] w-full max-w-md p-8 shadow-2xl relative overflow-hidden flex flex-col items-center text-center animate-in zoom-in-95 duration-500">
+      <div className="bg-bg-card rounded-[2rem] w-full max-w-md p-8 shadow-2xl relative overflow-hidden flex flex-col items-center text-center animate-in zoom-in-95 duration-500">
         
         {/* Decorative elements */}
-        <div className="absolute -top-20 -right-20 w-40 h-40 bg-[var(--tint-blue)] rounded-full blur-3xl opacity-50"></div>
-        <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-[var(--tint-gold)] rounded-full blur-3xl opacity-50"></div>
+        <div className="absolute -top-20 -right-20 w-40 h-40 bg-tint-blue rounded-full blur-3xl opacity-50"></div>
+        <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-tint-gold rounded-full blur-3xl opacity-50"></div>
 
         {step === 0 && (
           <div className="space-y-6 relative z-10 animate-in slide-in-from-right-8 duration-300 w-full flex flex-col items-center">
-            <div className="w-24 h-24 bg-[var(--tint-blue)] rounded-full flex items-center justify-center text-5xl mb-2 shadow-inner border-4 border-[var(--bg-card)]">
+            <div className="w-24 h-24 bg-tint-blue rounded-full flex items-center justify-center text-5xl mb-2 shadow-inner border-4 border-bg-card">
               👋
             </div>
             <div>
-              <h2 className="text-3xl font-black text-[var(--text-main)] mb-3 leading-tight">Welcome to<br/><span className="text-[var(--blue)]">Lingomaster</span></h2>
-              <p className="text-sm font-bold text-[var(--text-muted)] leading-relaxed">
+              <h2 className="text-3xl font-black text-text-main mb-3 leading-tight">Welcome to<br/><span className="text-blue">Lingomaster</span></h2>
+              <p className="text-sm font-bold text-text-muted leading-relaxed">
                 Your ultimate language learning companion. No internet required, all progress is saved directly on your device!
               </p>
             </div>
@@ -47,12 +47,12 @@ export function OnboardingOverlay() {
 
         {step === 1 && (
           <div className="space-y-6 relative z-10 animate-in slide-in-from-right-8 duration-300 w-full flex flex-col items-center">
-            <div className="w-24 h-24 bg-[var(--tint-gold)] rounded-full flex items-center justify-center text-5xl mb-2 shadow-inner border-4 border-[var(--bg-card)] text-[var(--gold)]">
+            <div className="w-24 h-24 bg-tint-gold rounded-full flex items-center justify-center text-5xl mb-2 shadow-inner border-4 border-bg-card text-gold">
               🎯
             </div>
             <div>
-              <h2 className="text-2xl font-black text-[var(--text-main)] mb-3 leading-tight">Track Your<br/>Mistakes</h2>
-              <p className="text-sm font-bold text-[var(--text-muted)] leading-relaxed">
+              <h2 className="text-2xl font-black text-text-main mb-3 leading-tight">Track Your<br/>Mistakes</h2>
+              <p className="text-sm font-bold text-text-muted leading-relaxed">
                 Every wrong answer is saved in your Mistake Book. Review them regularly to achieve true mastery.
               </p>
             </div>
@@ -61,12 +61,12 @@ export function OnboardingOverlay() {
 
         {step === 2 && (
           <div className="space-y-6 relative z-10 animate-in slide-in-from-right-8 duration-300 w-full flex flex-col items-center">
-             <div className="w-24 h-24 bg-[var(--tint-green)] rounded-full flex items-center justify-center text-5xl mb-2 shadow-inner border-4 border-[var(--bg-card)] text-[var(--green)]">
+             <div className="w-24 h-24 bg-tint-green rounded-full flex items-center justify-center text-5xl mb-2 shadow-inner border-4 border-bg-card text-green">
               <Sparkles size={48} />
             </div>
             <div>
-              <h2 className="text-2xl font-black text-[var(--text-main)] mb-3 leading-tight">Export Your<br/>Data Anytime</h2>
-              <p className="text-sm font-bold text-[var(--text-muted)] leading-relaxed">
+              <h2 className="text-2xl font-black text-text-main mb-3 leading-tight">Export Your<br/>Data Anytime</h2>
+              <p className="text-sm font-bold text-text-muted leading-relaxed">
                 Since everything is saved on your device, you can export your data as a JSON file to keep it safe or move to another device.
               </p>
             </div>
@@ -76,7 +76,7 @@ export function OnboardingOverlay() {
         <div className="w-full mt-10 flex flex-col items-center gap-4 relative z-10">
           <div className="flex gap-2 mb-2">
             {[0, 1, 2].map((s) => (
-              <div key={s} className={`w-2 h-2 rounded-full transition-all duration-300 ${step === s ? 'bg-[var(--blue)] w-6' : 'bg-[var(--gray-path-dark)]'}`} />
+              <div key={s} className={`w-2 h-2 rounded-full transition-all duration-300 ${step === s ? 'bg-blue w-6' : 'bg-gray-path-dark'}`} />
             ))}
           </div>
           <button 

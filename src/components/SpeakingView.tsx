@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
-import type { SpeakingLesson } from '../types';
+import type { SpeakingLesson, Mistake } from '../types';
 import { calculateSimilarity } from '../utils/stringSimilarity';
 import { speak, langForCategory, isSpeechRecognitionSupported } from '../utils/tts';
 import { Volume2, Volume1, Mic, Sparkles, RefreshCw, AlertTriangle, Square, Play, CheckCircle } from 'lucide-react';
@@ -23,9 +23,10 @@ interface SpeechRecognitionInstance {
 interface SpeakingViewProps {
   lesson: SpeakingLesson;
   onComplete: () => void;
+  onSaveMistake?: (mistake: Mistake) => void;
 }
 
-export function SpeakingView({ lesson, onComplete }: SpeakingViewProps) {
+export function SpeakingView({ lesson, onComplete, onSaveMistake }: SpeakingViewProps) {
   const [isRecording, setIsRecording] = useState(false);
   const [isPlayingExample, setIsPlayingExample] = useState(false);
   const [isPlayingMyVoice, setIsPlayingMyVoice] = useState(false);
@@ -158,23 +159,23 @@ export function SpeakingView({ lesson, onComplete }: SpeakingViewProps) {
   };
 
   return (
-    <div className="bg-[var(--bg-card)] lingo-card p-10 max-w-2xl mx-auto w-full animate-in slide-in-from-bottom-8 duration-500 flex flex-col items-center">
+    <div className="bg-bg-card lingo-card p-10 max-w-2xl mx-auto w-full animate-in slide-in-from-bottom-8 duration-500 flex flex-col items-center">
       <div className="w-full flex justify-between items-center mb-10">
         <div className="flex items-center gap-3">
-          <div className={`w-3 h-3 rounded-full ${lesson.category === 'toeic' ? 'bg-[var(--blue)]' : 'bg-[var(--red)]'}`}></div>
-          <span className="text-[10px] font-black text-[var(--text-muted)] uppercase tracking-[0.2em]">Speaking Practice</span>
+          <div className={`w-3 h-3 rounded-full ${lesson.category === 'toeic' ? 'bg-blue' : 'bg-red'}`}></div>
+          <span className="text-[10px] font-black text-text-muted uppercase tracking-[0.2em]">Speaking Practice</span>
         </div>
-        <div className="bg-[var(--bg-hover)] px-4 py-1.5 rounded-xl text-[9px] font-black text-[var(--text-muted)] uppercase tracking-widest border-2 border-[var(--border-main)]">
+        <div className="bg-bg-hover px-4 py-1.5 rounded-xl text-[9px] font-black text-text-muted uppercase tracking-widest border-2 border-border-main">
           Record & Compare
         </div>
       </div>
 
       <div className="text-center space-y-6 mb-10">
-        <p className="text-[10px] font-black text-[var(--blue)] uppercase tracking-[0.2em] mb-2">Speak this sentence:</p>
-        <h3 className="text-3xl font-black text-[var(--text-main)] leading-tight px-4">
+        <p className="text-[10px] font-black text-blue uppercase tracking-[0.2em] mb-2">Speak this sentence:</p>
+        <h3 className="text-3xl font-black text-text-main leading-tight px-4">
           {lesson.targetSentence}
         </h3>
-        <p className="text-sm font-bold text-[var(--text-muted)] italic">
+        <p className="text-sm font-bold text-text-muted italic">
           "{lesson.translation}"
         </p>
       </div>
@@ -200,51 +201,62 @@ export function SpeakingView({ lesson, onComplete }: SpeakingViewProps) {
         ) : (
           <button
             onClick={stopRecording}
-            className="w-24 h-24 rounded-full flex items-center justify-center text-4xl shadow-xl transition-all bg-[var(--red)] text-white hover:bg-[#ff3b30] border-b-4 border-[#cc2d23] active:scale-95 active:border-b-0 active:translate-y-1 animate-pulse"
+            className="w-24 h-24 rounded-full flex items-center justify-center text-4xl shadow-xl transition-all bg-red text-white hover:bg-[#ff3b30] border-b-4 border-[#cc2d23] active:scale-95 active:border-b-0 active:translate-y-1 animate-pulse"
             aria-label="Stop recording"
           >
             <Square size={32} className="fill-current" />
           </button>
         )}
 
-        <p className="text-[10px] font-black text-[var(--text-muted)] uppercase tracking-widest">
+        <p className="text-[10px] font-black text-text-muted uppercase tracking-widest">
           {isRecording ? 'Recording... Tap to stop' : 'Tap to record your voice'}
         </p>
 
         {errorMsg && (
-          <div className="w-full p-4 rounded-xl border-2 border-[var(--red)] bg-[var(--tint-red)] text-center text-sm font-bold text-[var(--red)]">
+          <div className="w-full p-4 rounded-xl border-2 border-red bg-tint-red text-center text-sm font-bold text-red">
              <AlertTriangle size={16} className="inline mr-2" /> {errorMsg}
           </div>
         )}
       </div>
 
       {audioUrl && (
-        <div className="w-full p-6 rounded-3xl border-2 border-[var(--border-main)] bg-[var(--bg-hover)] flex flex-col items-center animate-in zoom-in-95 duration-300">
-           <p className="text-[10px] font-black uppercase text-[var(--text-muted)] mb-4">Your Recording</p>
+        <div className="w-full p-6 rounded-3xl border-2 border-border-main bg-bg-hover flex flex-col items-center animate-in zoom-in-95 duration-300">
+           <p className="text-[10px] font-black uppercase text-text-muted mb-4">Your Recording</p>
            
            <button
              onClick={playMyVoice}
              disabled={isPlayingMyVoice}
-             className="w-full h-12 bg-white text-[var(--blue)] border-2 border-[var(--blue)] rounded-xl font-black mb-6 flex items-center justify-center gap-2 hover:bg-[var(--tint-blue)] transition-colors disabled:opacity-50"
+             className="w-full h-12 bg-white text-blue border-2 border-blue rounded-xl font-black mb-6 flex items-center justify-center gap-2 hover:bg-tint-blue transition-colors disabled:opacity-50"
            >
              {isPlayingMyVoice ? <Volume2 size={20} /> : <Play size={20} className="fill-current" />}
              {isPlayingMyVoice ? 'Playing...' : 'PLAY MY VOICE'}
            </button>
 
-           <div className="w-full border-t-2 border-[var(--border-main)] pt-6">
+           <div className="w-full border-t-2 border-border-main pt-6">
               <p className="text-sm font-black text-center mb-4">Did you sound like the example?</p>
               
               {transcript && feedback !== 'none' && (
                  <div className="text-center mb-4">
-                    <p className="text-xs font-bold text-[var(--text-muted)]">AI Recognized:</p>
-                    <p className={`text-lg font-bold ${feedback === 'success' ? 'text-[var(--green)]' : 'text-[var(--red)]'}`}>{transcript}</p>
+                    <p className="text-xs font-bold text-text-muted">AI Recognized:</p>
+                    <p className={`text-lg font-bold ${feedback === 'success' ? 'text-green' : 'text-red'}`}>{transcript}</p>
                  </div>
               )}
 
               <div className="flex gap-4 justify-center">
                  <button
-                   onClick={() => setFeedback('retry')}
-                   className="flex-1 max-w-[140px] py-3 rounded-xl border-2 border-[var(--red)] bg-[var(--tint-red)] text-[var(--red)] font-black text-sm hover:bg-[var(--red)] hover:text-white transition-colors flex items-center justify-center gap-2"
+                   onClick={() => {
+                     setFeedback('retry');
+                     if (onSaveMistake) {
+                       onSaveMistake({
+                         id: crypto.randomUUID(),
+                         type: 'speaking',
+                         data: lesson,
+                         wrongAnswer: transcript || '',
+                         timestamp: new Date().toISOString()
+                       });
+                     }
+                   }}
+                   className="flex-1 max-w-[140px] py-3 rounded-xl border-2 border-red bg-tint-red text-red font-black text-sm hover:bg-red hover:text-white transition-colors flex items-center justify-center gap-2"
                  >
                    <RefreshCw size={16} /> TRY AGAIN
                  </button>
@@ -253,7 +265,7 @@ export function SpeakingView({ lesson, onComplete }: SpeakingViewProps) {
                      setFeedback('success');
                      setTimeout(onComplete, 500); // give time for success effect
                    }}
-                   className="flex-1 max-w-[140px] py-3 rounded-xl border-2 border-[var(--green)] bg-[var(--tint-green)] text-[var(--green)] font-black text-sm hover:bg-[var(--green)] hover:text-white transition-colors flex items-center justify-center gap-2"
+                   className="flex-1 max-w-[140px] py-3 rounded-xl border-2 border-green bg-tint-green text-green font-black text-sm hover:bg-green hover:text-white transition-colors flex items-center justify-center gap-2"
                  >
                    <CheckCircle size={16} /> I DID GOOD
                  </button>
@@ -265,7 +277,7 @@ export function SpeakingView({ lesson, onComplete }: SpeakingViewProps) {
       {/* Success Effect Overlay */}
       {feedback === 'success' && audioUrl && (
          <div className="absolute inset-0 pointer-events-none flex items-center justify-center z-50 animate-in fade-in zoom-in duration-300">
-            <div className="text-[var(--green)] animate-bounce drop-shadow-md">
+            <div className="text-green animate-bounce drop-shadow-md">
                <Sparkles size={80} />
             </div>
          </div>
@@ -275,7 +287,7 @@ export function SpeakingView({ lesson, onComplete }: SpeakingViewProps) {
       {!audioUrl && (
         <button
           onClick={onComplete}
-          className="mt-4 text-[var(--text-muted)] font-black hover:text-[var(--text-main)] transition-colors uppercase tracking-[0.2em] text-[10px]"
+          className="mt-4 text-text-muted font-black hover:text-text-main transition-colors uppercase tracking-[0.2em] text-[10px]"
         >
           Skip this exercise →
         </button>

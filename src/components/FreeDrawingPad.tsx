@@ -69,7 +69,7 @@ export function FreeDrawingPad({ character, size = 200 }: FreeDrawingPadProps) {
     <div className="relative flex flex-col items-center">
       <div 
         style={{ width: size, height: size }} 
-        className="relative bg-[var(--gray-bg)] rounded-xl border-2 border-[var(--gray-path)] overflow-hidden touch-none"
+        className="relative bg-gray-bg rounded-xl border-2 border-gray-path overflow-hidden touch-none"
       >
         {/* Background grid lines */}
         <div className="absolute inset-0 pointer-events-none border-b border-dashed border-gray-300 top-1/2"></div>
@@ -100,7 +100,7 @@ export function FreeDrawingPad({ character, size = 200 }: FreeDrawingPadProps) {
       <div className="mt-4 flex gap-2 h-10 items-center">
         <button
           onClick={handleClear}
-          className="px-4 py-2 bg-[var(--gray-path)] hover:bg-[var(--gray-path-dark)] text-[var(--text-main)] rounded-lg text-xs font-bold transition-colors"
+          className="px-4 py-2 bg-gray-path hover:bg-gray-path-dark text-text-main rounded-lg text-xs font-bold transition-colors"
         >
           Xóa (Clear)
         </button>

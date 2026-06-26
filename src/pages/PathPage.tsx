@@ -33,10 +33,10 @@ export function PathPage() {
       <div className="w-full view-enter flex flex-col items-center">
       <ReviewReminder dueCount={dueCount} onStartReview={() => startDrill('review')} />
         <div className="w-full max-w-xl animate-pulse space-y-12">
-          <div className="h-32 bg-[var(--gray-bg)] rounded-3xl w-full"></div>
-          <div className="h-24 bg-[var(--gray-bg)] rounded-full w-24 mx-auto"></div>
-          <div className="h-24 bg-[var(--gray-bg)] rounded-full w-24 mx-auto translate-x-12"></div>
-          <div className="h-24 bg-[var(--gray-bg)] rounded-full w-24 mx-auto -translate-x-12"></div>
+          <div className="h-32 bg-gray-bg rounded-3xl w-full"></div>
+          <div className="h-24 bg-gray-bg rounded-full w-24 mx-auto"></div>
+          <div className="h-24 bg-gray-bg rounded-full w-24 mx-auto translate-x-12"></div>
+          <div className="h-24 bg-gray-bg rounded-full w-24 mx-auto -translate-x-12"></div>
         </div>
       </div>
     </AnimatedPage>

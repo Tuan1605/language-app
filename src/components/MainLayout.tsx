@@ -1,4 +1,5 @@
 import { NavLink, Outlet, useLocation } from 'react-router-dom';
+import { Moon, Sun, Loader, RefreshCw } from 'lucide-react';
 import { useUserStore } from '../stores/useUserStore';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { db } from '../data/db';
@@ -61,7 +62,6 @@ export function MainLayout() {
   const setActiveTrack = useUserStore(s => s.setActiveTrack);
   const theme = useUserStore(s => s.theme);
   const toggleTheme = useUserStore(s => s.toggleTheme);
-  const streak = useUserStore(s => s.streak);
 
   const [, startTransition] = useTransition();
   const location = useLocation();
@@ -89,14 +89,14 @@ export function MainLayout() {
   }, [activeTrack]) || 0;
 
   return (
-    <div className="min-h-screen bg-[var(--bg-main)] text-[var(--text-main)] flex flex-col md:flex-row font-sans selection:bg-[var(--blue)] selection:text-white transition-colors duration-300" data-track={activeTrack}>
+    <div className="min-h-screen bg-bg-main text-text-main flex flex-col md:flex-row font-sans selection:bg-blue selection:text-white transition-colors duration-300" data-track={activeTrack}>
       <OnboardingOverlay />
       
       {/* Duolingo-style Sidebar */}
-      <aside className="hidden lg:flex flex-col w-64 border-r-2 border-[var(--gray-path)] p-6 fixed left-0 top-0 bottom-0 bg-[var(--bg-main)] z-50">
+      <aside className="hidden lg:flex flex-col w-64 border-r-2 border-gray-path p-6 fixed left-0 top-0 bottom-0 bg-bg-main z-50">
         <div className="mb-10 pl-2 flex items-center gap-3">
            <img src="/logo.png" alt="Lingomaster Logo" className="w-8 h-8 rounded-[8px] shadow-sm" />
-           <h1 className="text-3xl font-black text-[var(--green)] tracking-tighter">lingo</h1>
+           <h1 className="text-3xl font-black text-green tracking-tighter">lingo</h1>
         </div>
         
         <nav className="flex-1 space-y-2" aria-label="Main navigation">
@@ -107,14 +107,14 @@ export function MainLayout() {
               end={item.end}
               aria-label={item.label} 
               className={({isActive}) => {
-                const activeStyle = 'bg-[var(--tint-blue)] text-[var(--blue)] border-[var(--tint-blue)]';
-                return `w-full flex items-center gap-4 px-4 py-3 rounded-2xl font-black text-xs tracking-wider transition-all border-2 active:scale-98 ${isActive ? activeStyle : 'border-transparent text-[var(--text-main)] hover:bg-[var(--gray-bg)]'}`;
+                const activeStyle = 'bg-tint-blue text-blue border-tint-blue';
+                return `w-full flex items-center gap-4 px-4 py-3 rounded-2xl font-black text-xs tracking-wider transition-all border-2 active:scale-98 ${isActive ? activeStyle : 'border-transparent text-text-main hover:bg-gray-bg'}`;
               }}
             >
               {item.icon}
               {item.label}
               {item.showDueCount && dueCount > 0 && (
-                <span className="ml-auto bg-[var(--gold)] text-white text-[10px] font-black rounded-full w-6 h-6 flex items-center justify-center">
+                <span className="ml-auto bg-gold text-white text-[10px] font-black rounded-full w-6 h-6 flex items-center justify-center">
                   {dueCount}
                 </span>
               )}
@@ -127,28 +127,27 @@ export function MainLayout() {
         
         {/* Top Header Bar */}
         {!(location.pathname === '/session' || location.pathname === '/real-exam') && (
-          <header className="w-full h-16 border-b-2 border-[var(--gray-path)] flex items-center justify-between px-6 sticky top-0 bg-[var(--bg-main)]/90 backdrop-blur-md z-40">
+          <header className="w-full h-16 border-b-2 border-gray-path flex items-center justify-between px-6 sticky top-0 bg-bg-main/90 backdrop-blur-md z-40">
             <div className="flex items-center gap-6">
-               <button onClick={() => startTransition(() => setActiveTrack('english'))} className={`font-black text-sm flex items-center gap-2 transition-all ${activeTrack === 'english' ? 'text-[var(--blue)] border-b-4 border-[var(--blue)] pb-1' : 'text-[var(--text-muted)] hover:text-[var(--gray-path-dark)]'}`}>
+               <button onClick={() => startTransition(() => setActiveTrack('english'))} className={`font-black text-sm flex items-center gap-2 transition-all ${activeTrack === 'english' ? 'text-blue border-b-4 border-blue pb-1' : 'text-text-muted hover:text-gray-path-dark'}`}>
                  🇺🇸 EN
                </button>
-               <button onClick={() => startTransition(() => setActiveTrack('japanese'))} className={`font-black text-sm flex items-center gap-2 transition-all ${activeTrack === 'japanese' ? 'text-[var(--blue)] border-b-4 border-[var(--blue)] pb-1' : 'text-[var(--text-muted)] hover:text-[var(--gray-path-dark)]'}`}>
+               <button onClick={() => startTransition(() => setActiveTrack('japanese'))} className={`font-black text-sm flex items-center gap-2 transition-all ${activeTrack === 'japanese' ? 'text-blue border-b-4 border-blue pb-1' : 'text-text-muted hover:text-gray-path-dark'}`}>
                  🇯🇵 JP
                </button>
             </div>
             <div className="flex items-center gap-4 font-black">
-               <span className="text-[var(--gold)] flex items-center gap-1" title={`Chuỗi học liên tục: ${streak} ngày`}>
-                 <svg className="w-5 h-5 text-[var(--gold)]" fill="currentColor" viewBox="0 0 24 24"><path d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 8.25 3c.89 0 1.765.176 2.58.5a7.126 7.126 0 00.995-1.077c.4-.492.793-1.066 1.054-1.63A1.125 1.125 0 0114.996 1a14.766 14.766 0 012.392 7.75c0 2.457-.655 4.757-1.785 6.643-1.258 2.096-2.923 3.51-3.958 4.228z"/></svg>
-                 {streak}
-               </span>
-               <button onClick={toggleTheme} className="text-xl active:scale-95 transition-transform">{theme === 'light' ? '🌙' : '☀️'}</button>
+
+               <button onClick={toggleTheme} className="text-xl active:scale-95 transition-transform hover:text-blue">
+                 {theme === 'light' ? <Moon className="w-5 h-5" /> : <Sun className="w-5 h-5" />}
+               </button>
                <button
                  onClick={handleResetData}
                  disabled={isResetting}
-                 className="text-xs text-[var(--text-muted)] hover:text-[var(--red)] transition-colors active:scale-95"
+                 className="text-xs text-text-muted hover:text-red transition-colors active:scale-95"
                  title="Reset & reload content data"
                >
-                 {isResetting ? '⏳' : '🔄'}
+                 {isResetting ? <Loader className="w-4 h-4 animate-spin" /> : <RefreshCw className="w-4 h-4" />}
                </button>
             </div>
           </header>
@@ -161,7 +160,7 @@ export function MainLayout() {
 
       {/* Mobile Bottom Navigation */}
       {!(location.pathname === '/session' || location.pathname === '/real-exam') && (
-        <nav className="flex lg:hidden fixed bottom-0 left-0 right-0 h-16 bg-[var(--bg-main)]/95 backdrop-blur-md border-t-2 border-[var(--gray-path)] z-50 px-2 pb-[env(safe-area-inset-bottom)]">
+        <nav className="flex lg:hidden fixed bottom-0 left-0 right-0 h-16 bg-bg-main/95 backdrop-blur-md border-t-2 border-gray-path z-50 px-2 pb-[env(safe-area-inset-bottom)]">
           <div className="flex items-center justify-around w-full h-full">
             {NAV_ITEMS.filter(item => ['/', '/practice', '/review', '/collection', '/analytics'].includes(item.to)).map((item) => (
               <NavLink 
@@ -170,14 +169,14 @@ export function MainLayout() {
                 end={item.end}
                 aria-label={item.label} 
                 className={({isActive}) => {
-                  const activeStyle = 'text-[var(--blue)]';
-                  return `flex flex-col items-center justify-center gap-0.5 transition-all active:scale-95 ${isActive ? activeStyle : 'text-[var(--gray-path-dark)] hover:text-[var(--text-main)]'}`;
+                  const activeStyle = 'text-blue';
+                  return `flex flex-col items-center justify-center gap-0.5 transition-all active:scale-95 ${isActive ? activeStyle : 'text-gray-path-dark hover:text-text-main'}`;
                 }}
               >
                 <div className="relative">
                   {item.icon}
                   {item.showDueCount && dueCount > 0 && (
-                    <span className="absolute -top-2 -right-3 bg-[var(--gold)] text-white text-[9px] font-black rounded-full w-4 h-4 flex items-center justify-center">
+                    <span className="absolute -top-2 -right-3 bg-gold text-white text-[9px] font-black rounded-full w-4 h-4 flex items-center justify-center">
                       {dueCount > 99 ? '99+' : dueCount}
                     </span>
                   )}

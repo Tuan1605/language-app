@@ -43,13 +43,13 @@ export function ReviewPage() {
       <div className="w-full view-enter">
       <div className="w-full mb-8">
         <div className="flex items-center justify-between mb-3">
-          <button onClick={() => navigate('/')} className="w-10 h-10 rounded-full flex items-center justify-center text-[var(--text-muted)] hover:bg-[var(--gray-bg)] transition-colors active:scale-95">
+          <button onClick={() => navigate('/')} className="w-10 h-10 rounded-full flex items-center justify-center text-text-muted hover:bg-gray-bg transition-colors active:scale-95">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
           </button>
           <div className="flex-1 mx-4">
-            <div className="h-3 w-full bg-[var(--gray-path)] rounded-full overflow-hidden">
+            <div className="h-3 w-full bg-gray-path rounded-full overflow-hidden">
               <div
-                className="h-full bg-[var(--green)] transition-all duration-500 ease-out"
+                className="h-full bg-green transition-all duration-500 ease-out"
                 style={{ width: `${progress}%` }}
               />
             </div>

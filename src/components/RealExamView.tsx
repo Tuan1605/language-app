@@ -103,7 +103,7 @@ export function RealExamView({ exam, onCancel, onComplete, onSaveMistake }: Real
   }
 
   return (
-    <div className="w-full h-[85vh] flex flex-col view-enter bg-[var(--bg-main)] rounded-2xl border-2 border-[var(--gray-path)] overflow-hidden shadow-xl">
+    <div className="w-full h-[85vh] flex flex-col view-enter bg-bg-main rounded-2xl border-2 border-gray-path overflow-hidden shadow-xl">
       
       <Modal 
         isOpen={showResumeModal} 
@@ -145,9 +145,9 @@ export function RealExamView({ exam, onCancel, onComplete, onSaveMistake }: Real
       </Modal>
 
       {/* Header */}
-      <div className="h-16 border-b-2 border-[var(--gray-path)] bg-[var(--gray-bg)] flex items-center justify-between px-6 shrink-0">
+      <div className="h-16 border-b-2 border-gray-path bg-gray-bg flex items-center justify-between px-6 shrink-0">
         <div className="flex items-center gap-4">
-          <button onClick={onCancel} className="text-xl font-black text-[var(--text-muted)] hover:text-[var(--text-main)] transition-colors">
+          <button onClick={onCancel} className="text-xl font-black text-text-muted hover:text-text-main transition-colors">
             ✕
           </button>
           <h2 className="text-lg font-black">{exam.title}</h2>
@@ -165,8 +165,8 @@ export function RealExamView({ exam, onCancel, onComplete, onSaveMistake }: Real
 
       <div className="flex flex-1 overflow-hidden">
         {/* Sidebar Navigation */}
-        <div className="w-48 border-r-2 border-[var(--gray-path)] bg-[var(--gray-bg)] p-4 overflow-y-auto hidden md:block">
-          <h3 className="font-black text-sm uppercase tracking-widest text-[var(--text-muted)] mb-4">Sections</h3>
+        <div className="w-48 border-r-2 border-gray-path bg-gray-bg p-4 overflow-y-auto hidden md:block">
+          <h3 className="font-black text-sm uppercase tracking-widest text-text-muted mb-4">Sections</h3>
           <div className="space-y-2">
             {exam.sections.map((sec, idx) => {
               const isActive = idx === currentSectionIndex;
@@ -176,9 +176,9 @@ export function RealExamView({ exam, onCancel, onComplete, onSaveMistake }: Real
                   key={sec.id}
                   onClick={() => setCurrentSectionIndex(idx)}
                   className={`w-full text-left px-3 py-2 rounded-xl text-xs font-bold transition-all border-2 ${
-                    isActive ? 'bg-[var(--tint-blue)] text-[var(--blue)] border-[var(--tint-blue)]' :
-                    isCompleted ? 'bg-[var(--tint-green)] text-[var(--green-shadow)] border-[var(--tint-green)]' :
-                    'bg-transparent border-transparent hover:bg-[var(--gray-path)] text-[var(--text-main)]'
+                    isActive ? 'bg-tint-blue text-blue border-tint-blue' :
+                    isCompleted ? 'bg-tint-green text-green-shadow border-tint-green' :
+                    'bg-transparent border-transparent hover:bg-gray-path text-text-main'
                   }`}
                 >
                   {sec.title}
@@ -189,30 +189,30 @@ export function RealExamView({ exam, onCancel, onComplete, onSaveMistake }: Real
         </div>
 
         {/* Main Content */}
-        <div className="flex-1 overflow-y-auto p-6 scroll-smooth bg-[var(--bg-main)]">
+        <div className="flex-1 overflow-y-auto p-6 scroll-smooth bg-bg-main">
           <div className="max-w-2xl mx-auto space-y-8 pb-32">
             <div className="space-y-2">
-              <h2 className="text-2xl font-black text-[var(--text-main)]">{currentSection.title}</h2>
+              <h2 className="text-2xl font-black text-text-main">{currentSection.title}</h2>
               {currentSection.description && (
-                <p className="text-sm font-bold text-[var(--text-muted)]">{currentSection.description}</p>
+                <p className="text-sm font-bold text-text-muted">{currentSection.description}</p>
               )}
             </div>
 
             <div className="space-y-10">
               {currentSection.questions.map((q, qIndex) => (
-                <div key={q.id} className="p-6 rounded-[1.5rem] border-2 border-[var(--gray-path)] bg-[var(--bg-main)] shadow-sm space-y-6">
+                <div key={q.id} className="p-6 rounded-[1.5rem] border-2 border-gray-path bg-bg-main shadow-sm space-y-6">
                   <div className="flex items-start gap-4">
-                    <span className="flex items-center justify-center w-8 h-8 rounded-full bg-[var(--gray-path)] text-[var(--text-main)] font-black text-sm shrink-0">
+                    <span className="flex items-center justify-center w-8 h-8 rounded-full bg-gray-path text-text-main font-black text-sm shrink-0">
                       {qIndex + 1}
                     </span>
                     <div className="space-y-4 w-full">
                       {q.passage && (
-                        <div className="p-4 bg-[var(--gray-bg)] rounded-xl border border-[var(--gray-path)] whitespace-pre-wrap text-sm font-medium">
+                        <div className="p-4 bg-gray-bg rounded-xl border border-gray-path whitespace-pre-wrap text-sm font-medium">
                           {q.passage}
                         </div>
                       )}
                       {q.imageUrl && (
-                        <img src={q.imageUrl} alt="Question figure" className="max-w-full h-auto rounded-xl border-2 border-[var(--gray-path)]" />
+                        <img src={q.imageUrl} alt="Question figure" className="max-w-full h-auto rounded-xl border-2 border-gray-path" />
                       )}
                       {q.audioUrl && (
                         <audio controls src={q.audioUrl} className="w-full outline-none" />
@@ -233,12 +233,12 @@ export function RealExamView({ exam, onCancel, onComplete, onSaveMistake }: Real
                           onClick={() => handleSelectAnswer(q.id, oIdx)}
                           className={`w-full flex items-center gap-4 p-4 rounded-xl border-2 transition-all active:scale-[0.98] ${
                             isSelected 
-                              ? 'bg-[var(--tint-blue)] border-[var(--blue)] text-[var(--blue)]' 
-                              : 'bg-[var(--bg-main)] border-[var(--gray-path)] hover:bg-[var(--gray-bg)] text-[var(--text-main)]'
+                              ? 'bg-tint-blue border-blue text-blue' 
+                              : 'bg-bg-main border-gray-path hover:bg-gray-bg text-text-main'
                           }`}
                         >
                           <span className={`flex items-center justify-center w-8 h-8 rounded-lg font-black text-sm border-2 ${
-                            isSelected ? 'border-[var(--blue)] bg-[var(--blue)] text-white' : 'border-[var(--gray-path)]'
+                            isSelected ? 'border-blue bg-blue text-white' : 'border-gray-path'
                           }`}>
                             {labels[oIdx]}
                           </span>
@@ -252,7 +252,7 @@ export function RealExamView({ exam, onCancel, onComplete, onSaveMistake }: Real
             </div>
 
             {/* Navigation Footer */}
-            <div className="flex items-center justify-between pt-8 border-t-2 border-[var(--gray-path)] mt-8">
+            <div className="flex items-center justify-between pt-8 border-t-2 border-gray-path mt-8">
               <button
                 disabled={currentSectionIndex === 0}
                 onClick={() => setCurrentSectionIndex(prev => prev - 1)}
