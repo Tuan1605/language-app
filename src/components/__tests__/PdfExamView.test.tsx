@@ -1,5 +1,5 @@
 import { describe, it, expect, vi } from 'vitest';
-import { render } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 
 // Mock the TOEIC_2024_PDF_EXAMS data
 vi.mock('../../data/toeic2024Pdf', () => ({
@@ -51,5 +51,23 @@ describe('PdfExamView', () => {
     const { PdfExamView } = await import('../PdfExamView');
     const { container } = render(<PdfExamView examId="invalid-id" />);
     expect(container.textContent).toContain('Exam not found');
+  });
+
+  it('should display exam title', async () => {
+    const { PdfExamView } = await import('../PdfExamView');
+    render(<PdfExamView examId="toeic-2024-pdf-1" />);
+    expect(screen.getAllByText(/TOEIC ETS 2024/).length).toBeGreaterThan(0);
+  });
+
+  it('should render exam content', async () => {
+    const { PdfExamView } = await import('../PdfExamView');
+    const { container } = render(<PdfExamView examId="toeic-2024-pdf-1" />);
+    expect(container.textContent).toContain('TOEIC');
+  });
+
+  it('should show submit button', async () => {
+    const { PdfExamView } = await import('../PdfExamView');
+    render(<PdfExamView examId="toeic-2024-pdf-1" />);
+    expect(screen.getAllByText(/Submit|submit/).length).toBeGreaterThan(0);
   });
 });

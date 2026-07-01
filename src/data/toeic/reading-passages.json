@@ -1,0 +1,1542 @@
+[
+  {
+    "id": "toeic-r-001",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "difficulty": "beginner",
+    "passage": "Dear Valued Customer,\n\nWe are writing to inform you that our store will be undergoing renovations from March 15 to April 30. During this period, our ground floor will be closed to the public. However, our second floor and online services will remain fully operational.\n\nWe apologize for any inconvenience this may cause. All existing orders will be processed as normal, and our customer service team is available to assist you with any questions.\n\nWe look forward to welcoming you to our newly renovated space in May.\n\nSincerely,\nThe Management Team",
+    "questions": [
+      {
+        "id": "toeic-r-001-q1",
+        "text": "What is the purpose of this letter?",
+        "options": [
+          "To announce a store opening",
+          "To inform about renovations",
+          "To advertise a sale",
+          "To introduce new products"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Thư thông báo về việc tu sửa cửa hàng."
+      },
+      {
+        "id": "toeic-r-001-q2",
+        "text": "Which part of the store will be closed?",
+        "options": [
+          "The entire building",
+          "The ground floor only",
+          "The second floor",
+          "The parking area"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Tầng trệt sẽ đóng cửa."
+      },
+      {
+        "id": "toeic-r-001-q3",
+        "text": "When will the renovations be completed?",
+        "options": [
+          "March 15",
+          "April 30",
+          "May",
+          "June"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Sẽ mở cửa trở lại vào tháng 5."
+      }
+    ]
+  },
+  {
+    "id": "toeic-r-002",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "difficulty": "intermediate",
+    "passage": "MEMORANDUM\n\nTo: All Staff\nFrom: Human Resources Department\nDate: January 10, 2024\nSubject: Annual Performance Reviews\n\nPlease be reminded that annual performance reviews will take place from February 1 to February 28. Your manager will schedule a one-on-one meeting with you during this period.\n\nBefore your review, please complete the self-assessment form available on the company intranet. This should be submitted to your manager at least three days before your scheduled meeting.\n\nIf you have any questions about the review process, please contact the HR department at extension 2500.\n\nThank you for your cooperation.",
+    "questions": [
+      {
+        "id": "toeic-r-002-q1",
+        "text": "What is the main topic of this memo?",
+        "options": [
+          "New company policies",
+          "Annual performance reviews",
+          "Office renovations",
+          "Holiday schedule"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Bản ghi nhớ về đánh giá hiệu suất hàng năm."
+      },
+      {
+        "id": "toeic-r-002-q2",
+        "text": "When should the self-assessment be submitted?",
+        "options": [
+          "By January 31",
+          "At least three days before the meeting",
+          "On the day of the review",
+          "By February 28"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Nộp trước ít nhất 3 ngày so với lịch họp."
+      },
+      {
+        "id": "toeic-r-002-q3",
+        "text": "Who should employees contact with questions?",
+        "options": [
+          "Their manager",
+          "The IT department",
+          "The HR department",
+          "The finance department"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Liên hệ phòng Nhân sự."
+      }
+    ]
+  },
+  {
+    "id": "toeic-r-003",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "difficulty": "intermediate",
+    "passage": "GreenTech Solutions — Job Posting\n\nPosition: Marketing Coordinator\nLocation: Downtown Office\nEmployment Type: Full-time\n\nWe are seeking a motivated Marketing Coordinator to join our growing team. The successful candidate will assist in developing marketing campaigns, managing social media accounts, and coordinating promotional events.\n\nRequirements:\n- Bachelor's degree in Marketing or related field\n- 2+ years of marketing experience\n- Proficiency in social media platforms\n- Excellent communication skills\n- Experience with Microsoft Office Suite\n\nWe offer competitive salary, health benefits, and opportunities for professional development.\n\nInterested candidates should submit their resume and cover letter to careers@greentech.com by January 31.",
+    "questions": [
+      {
+        "id": "toeic-r-003-q1",
+        "text": "What position is being advertised?",
+        "options": [
+          "Sales Manager",
+          "Marketing Coordinator",
+          "IT Specialist",
+          "Financial Analyst"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Vị trí là Marketing Coordinator."
+      },
+      {
+        "id": "toeic-r-003-q2",
+        "text": "What is NOT listed as a requirement?",
+        "options": [
+          "Bachelor's degree",
+          "2+ years experience",
+          "Driver's license",
+          "Social media proficiency"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Bằng lái xe không yêu cầu."
+      },
+      {
+        "id": "toeic-r-003-q3",
+        "text": "How should candidates apply?",
+        "options": [
+          "Visit the office in person",
+          "Call the HR department",
+          "Email resume and cover letter",
+          "Apply through the website"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Gửi email resume và cover letter."
+      }
+    ]
+  },
+  {
+    "id": "toeic-r-004",
+    "subCategory": "Part 6 - Text Completion",
+    "difficulty": "beginner",
+    "passage": "Dear Mr. Tanaka,\n\nThank you for your inquiry about our training program. We are pleased to offer a comprehensive course that covers all aspects of project management.\n\nThe program will run for eight weeks, with classes held every Tuesday and Thursday evening from 6:00 PM to 9:00 PM. The total cost is $1,500, which includes all materials and a certificate of completion.\n\nPlease confirm your attendance by filling out the registration form attached to this email.\n\nBest regards,\nTraining Department",
+    "questions": [
+      {
+        "id": "toeic-r-004-q1",
+        "text": "How long is the training program?",
+        "options": [
+          "4 weeks",
+          "6 weeks",
+          "8 weeks",
+          "10 weeks"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Chương trình kéo dài 8 tuần."
+      },
+      {
+        "id": "toeic-r-004-q2",
+        "text": "What does the fee include?",
+        "options": [
+          "Only textbooks",
+          "Materials and certificate",
+          "Meals and accommodation",
+          "Transportation"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Học phí bao gồm tài liệu và chứng chỉ."
+      },
+      {
+        "id": "toeic-r-004-q3",
+        "text": "How should Mr. Tanaka confirm his attendance?",
+        "options": [
+          "Call the office",
+          "Send an email",
+          "Fill out the attached form",
+          "Visit in person"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Điền vào biểu mẫu đính kèm."
+      }
+    ]
+  },
+  {
+    "id": "toeic-r-005",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "difficulty": "advanced",
+    "passage": "Annual Report Excerpt — Meridian Corporation\n\nFiscal Year 2023 Highlights\n\nMeridian Corporation achieved record revenue of $2.3 billion in fiscal year 2023, representing a 12% increase over the previous year. This growth was driven primarily by our expansion into Asian markets, which now account for 35% of total revenue.\n\nOur operating margin improved to 18.5%, up from 16.2% in 2022, reflecting successful cost optimization initiatives. Net income reached $425 million, a 15% year-over-year increase.\n\nLooking ahead, we project revenue growth of 10-14% for fiscal year 2024, supported by ongoing investments in research and development.",
+    "questions": [
+      {
+        "id": "toeic-r-005-q1",
+        "text": "What was Meridian's total revenue in 2023?",
+        "options": [
+          "$1.5 billion",
+          "$2.0 billion",
+          "$2.3 billion",
+          "$2.8 billion"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Doanh thu 2023 là 2,3 tỷ đô la."
+      },
+      {
+        "id": "toeic-r-005-q2",
+        "text": "What percentage of revenue comes from Asian markets?",
+        "options": [
+          "25%",
+          "30%",
+          "35%",
+          "40%"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Thị trường châu Á chiếm 35%."
+      },
+      {
+        "id": "toeic-r-005-q3",
+        "text": "What is the projected revenue growth for 2024?",
+        "options": [
+          "5-8%",
+          "8-10%",
+          "10-14%",
+          "15-20%"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Dự kiến tăng trưởng 10-14%."
+      }
+    ]
+  },
+  {
+    "id": "toeic-r-006",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "difficulty": "advanced",
+    "passage": "INVOICE\n\nFrom: Pacific Logistics Inc.\nTo: Summit Electronics Ltd.\nInvoice Number: PL-2024-0892\nDate: February 15, 2024\n\nDescription:\n- Freight services (Shanghai to Los Angeles): $4,500\n- Customs clearance fees: $850\n- Warehousing (7 days): $1,200\n- Insurance: $350\n- Documentation fees: $150\n\nSubtotal: $7,050\nTax (8%): $564\nTotal Due: $7,614\n\nPayment Terms: Net 30\nDue Date: March 16, 2024",
+    "questions": [
+      {
+        "id": "toeic-r-006-q1",
+        "text": "What is the total amount due?",
+        "options": [
+          "$7,050",
+          "$7,564",
+          "$7,614",
+          "$8,214"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Tổng số tiền là $7,614."
+      },
+      {
+        "id": "toeic-r-006-q2",
+        "text": "When is the payment due?",
+        "options": [
+          "February 15",
+          "February 28",
+          "March 16",
+          "March 30"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Hạn thanh toán là 16 tháng 3."
+      },
+      {
+        "id": "toeic-r-006-q3",
+        "text": "Which service had the highest individual cost?",
+        "options": [
+          "Warehousing",
+          "Freight services",
+          "Customs clearance",
+          "Insurance"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Dịch vụ vận chuyển cao nhất ($4,500)."
+      }
+    ]
+  },
+  {
+    "id": "toeic-r-007",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "difficulty": "intermediate",
+    "passage": "Job Advertisement — Marketing Manager\n\nApex Solutions is looking for an experienced Marketing Manager to lead our marketing team. The ideal candidate will have at least 5 years of experience in digital marketing and a proven track record of successful campaigns.\n\nSalary: $85,000 - $100,000 annually\nBenefits: Health insurance, 401(k), flexible work schedule\n\nTo apply, send your resume and cover letter to careers@apexsolutions.com",
+    "questions": [
+      {
+        "id": "toeic-r-007-q1",
+        "text": "What position is being advertised?",
+        "options": [
+          "Sales Manager",
+          "Marketing Manager",
+          "IT Director",
+          "Financial Analyst"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Vị trí Marketing Manager."
+      },
+      {
+        "id": "toeic-r-007-q2",
+        "text": "How many years of experience are required?",
+        "options": [
+          "3 years",
+          "5 years",
+          "7 years",
+          "10 years"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Yêu cầu 5 năm kinh nghiệm."
+      },
+      {
+        "id": "toeic-r-007-q3",
+        "text": "What is the salary range?",
+        "options": [
+          "$65,000-$80,000",
+          "$85,000-$100,000",
+          "$105,000-$120,000",
+          "$125,000-$150,000"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Mức lương $85,000-$100,000/năm."
+      }
+    ]
+  },
+  {
+    "id": "toeic-r-008",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "difficulty": "intermediate",
+    "passage": "Company Newsletter — Q3 Results\n\nWe are pleased to announce that Q3 results exceeded expectations. Revenue grew by 15% compared to the same period last year, driven primarily by strong performance in our Asian markets.\n\nKey highlights:\n- Total revenue: $45.2 million (up from $39.3 million)\n- New customer acquisitions: 2,500 (up 20%)\n- Customer retention rate: 92%",
+    "questions": [
+      {
+        "id": "toeic-r-008-q1",
+        "text": "By how much did revenue grow?",
+        "options": [
+          "10%",
+          "15%",
+          "20%",
+          "25%"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Doanh thu tăng 15%."
+      },
+      {
+        "id": "toeic-r-008-q2",
+        "text": "How many new customers were acquired?",
+        "options": [
+          "1,500",
+          "2,000",
+          "2,500",
+          "3,000"
+        ],
+        "correctAnswer": 2,
+        "explanation": "2,500 khách hàng mới."
+      },
+      {
+        "id": "toeic-r-008-q3",
+        "text": "What is the customer retention rate?",
+        "options": [
+          "85%",
+          "88%",
+          "92%",
+          "95%"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Tỷ lệ giữ khách là 92%."
+      }
+    ]
+  },
+  {
+    "id": "toeic-r-009",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "difficulty": "advanced",
+    "passage": "Industry Report — Electric Vehicles\n\nThe global electric vehicle market is projected to reach $800 billion by 2027, growing at a CAGR of 22%. Key factors driving this growth include government incentives, declining battery costs, and increasing environmental awareness.\n\nChina leads the market with 50% of global EV sales, followed by Europe (25%) and North America (18%).",
+    "questions": [
+      {
+        "id": "toeic-r-009-q1",
+        "text": "What is the projected market size by 2027?",
+        "options": [
+          "$500 billion",
+          "$600 billion",
+          "$700 billion",
+          "$800 billion"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Thị trường EV dự kiến 800 tỷ đô la."
+      },
+      {
+        "id": "toeic-r-009-q2",
+        "text": "Which region leads in EV sales?",
+        "options": [
+          "Europe",
+          "North America",
+          "China",
+          "Japan"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Trung Quốc dẫn đầu 50%."
+      },
+      {
+        "id": "toeic-r-009-q3",
+        "text": "What is the CAGR growth rate?",
+        "options": [
+          "15%",
+          "18%",
+          "22%",
+          "25%"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Tốc độ tăng trưởng 22%."
+      }
+    ]
+  },
+  {
+    "id": "toeic-r-010",
+    "subCategory": "Part 6 - Text Completion",
+    "difficulty": "beginner",
+    "passage": "Dear Team,\n\nAs we approach the end of the fiscal year, I want to remind everyone about our upcoming budget review meeting. The meeting will be held on Friday, December 15th at 10:00 AM in Conference Room A.\n\nPlease prepare your department's annual budget report.\n\nThank you for your cooperation.\n\nBest regards,\nCFO",
+    "questions": [
+      {
+        "id": "toeic-r-010-q1",
+        "text": "When is the budget review meeting?",
+        "options": [
+          "December 10th",
+          "December 15th",
+          "December 20th",
+          "December 25th"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Cuộc họp ngày 15 tháng 12."
+      },
+      {
+        "id": "toeic-r-010-q2",
+        "text": "What should attendees prepare?",
+        "options": [
+          "Marketing plans",
+          "Budget reports",
+          "Employee reviews",
+          "Project proposals"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Chuẩn bị báo cáo ngân sách."
+      },
+      {
+        "id": "toeic-r-010-q3",
+        "text": "Where will the meeting be held?",
+        "options": [
+          "Conference Room A",
+          "Conference Room B",
+          "The CEO's office",
+          "The main auditorium"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Cuộc họp tại Phòng họp A."
+      }
+    ]
+  },
+  {
+    "id": "toeic-r-011",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "difficulty": "beginner",
+    "passage": "Restaurant Menu — Sakura Japanese Restaurant\n\nAppetizers:\n- Edamame: $5.99\n- Miso Soup: $3.99\n- Gyoza (6 pieces): $7.99\n\nMain Courses:\n- Chicken Teriyaki: $14.99\n- Salmon Sashimi: $18.99\n- Beef Yakiniku: $16.99\n\nOpen: Tuesday-Sunday, 11:30 AM - 10:00 PM\nClosed: Monday",
+    "questions": [
+      {
+        "id": "toeic-r-011-q1",
+        "text": "What is the most expensive appetizer?",
+        "options": [
+          "Edamame",
+          "Miso Soup",
+          "Gyoza",
+          "All the same price"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Gyoza đắt nhất ($7.99)."
+      },
+      {
+        "id": "toeic-r-011-q2",
+        "text": "How much is the Chicken Teriyaki?",
+        "options": [
+          "$12.99",
+          "$14.99",
+          "$16.99",
+          "$18.99"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Chicken Teriyaki $14.99."
+      },
+      {
+        "id": "toeic-r-011-q3",
+        "text": "What day is the restaurant closed?",
+        "options": [
+          "Sunday",
+          "Monday",
+          "Tuesday",
+          "Wednesday"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Đóng cửa thứ Hai."
+      }
+    ]
+  },
+  {
+    "id": "toeic-r-012",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "difficulty": "intermediate",
+    "passage": "Health Insurance Benefits Guide\n\nMedical Coverage:\n- Doctor visits: $25 copay\n- Specialist visits: $50 copay\n- Emergency room: $150 copay\n\nPreventive Care:\n- Annual physical: No cost\n- Vaccinations: No cost\n\nDental Coverage:\n- Cleanings: 100% covered\n- Fillings: 80% covered\n\nFor questions, contact Human Resources at ext. 2500.",
+    "questions": [
+      {
+        "id": "toeic-r-012-q1",
+        "text": "What is the copay for a specialist visit?",
+        "options": [
+          "$25",
+          "$50",
+          "$100",
+          "$150"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Phí khám chuyên khoa $50."
+      },
+      {
+        "id": "toeic-r-012-q2",
+        "text": "What preventive care services have no cost?",
+        "options": [
+          "Only annual physical",
+          "Annual physical and vaccinations",
+          "All preventive services",
+          "Only health screenings"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Tất cả dịch vụ phòng ngừa miễn phí."
+      },
+      {
+        "id": "toeic-r-012-q3",
+        "text": "What percentage of dental fillings is covered?",
+        "options": [
+          "50%",
+          "70%",
+          "80%",
+          "100%"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Bảo hiểm chi trả 80% trám răng."
+      }
+    ]
+  },
+  {
+    "id": "toeic-r-013",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "difficulty": "advanced",
+    "passage": "Environmental Sustainability Report 2024\n\nGlobalTech Inc. is proud to announce significant progress in our sustainability initiatives.\n\nCarbon Emissions:\n- Total emissions reduced by 25% compared to 2023\n- 40% of energy now comes from renewable sources\n- Carbon neutrality target: 2030\n\nWaste Reduction:\n- 30% decrease in landfill waste\n- 90% of electronic waste properly recycled",
+    "questions": [
+      {
+        "id": "toeic-r-013-q1",
+        "text": "By how much were carbon emissions reduced?",
+        "options": [
+          "15%",
+          "20%",
+          "25%",
+          "30%"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Phát thải giảm 25%."
+      },
+      {
+        "id": "toeic-r-013-q2",
+        "text": "When is the carbon neutrality target?",
+        "options": [
+          "2025",
+          "2027",
+          "2030",
+          "2035"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Mục tiêu trung hòa carbon 2030."
+      },
+      {
+        "id": "toeic-r-013-q3",
+        "text": "What percentage of energy is from renewable sources?",
+        "options": [
+          "30%",
+          "35%",
+          "40%",
+          "45%"
+        ],
+        "correctAnswer": 2,
+        "explanation": "40% năng lượng từ nguồn tái tạo."
+      }
+    ]
+  },
+  {
+    "id": "toeic-r-014",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "difficulty": "beginner",
+    "passage": "Travel Guide — Weekend in Seattle\n\nDay 1:\n- Morning: Visit Pike Place Market\n- Afternoon: Explore Seattle Art Museum\n- Evening: Dinner at waterfront restaurant\n\nDay 2:\n- Morning: Space Needle observation deck\n- Afternoon: Museum of Pop Culture\n- Evening: Show at Paramount Theatre\n\nTips:\n- Purchase a CityPASS for discounted attractions\n- Use public transportation",
+    "questions": [
+      {
+        "id": "toeic-r-014-q1",
+        "text": "What is the first activity on Day 1?",
+        "options": [
+          "Visit the Space Needle",
+          "Visit Pike Place Market",
+          "Walk through Discovery Park",
+          "Watch a show"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Thăm Pike Place Market."
+      },
+      {
+        "id": "toeic-r-014-q2",
+        "text": "What is recommended for discounted attractions?",
+        "options": [
+          "CityPASS",
+          "Hotel package",
+          "Online tickets",
+          "Group discount"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Mua CityPASS để giảm giá."
+      },
+      {
+        "id": "toeic-r-014-q3",
+        "text": "What transportation is recommended?",
+        "options": [
+          "Rental car",
+          "Taxi",
+          "Public transportation",
+          "Bicycle"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Sử dụng giao thông công cộng."
+      }
+    ]
+  },
+  {
+    "id": "toeic-r-015",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "difficulty": "intermediate",
+    "passage": "Employee Benefits Summary\n\nFull-time employees enjoy:\n- Medical, dental, and vision insurance\n- 401(k) with 4% company match\n- 20 days PTO + 10 holidays\n- $2,000 annual learning budget\n- Flexible work hours\n- Remote work option (2 days/week)\n\nAll benefits begin on the first day of employment.",
+    "questions": [
+      {
+        "id": "toeic-r-015-q1",
+        "text": "What is the 401(k) company match?",
+        "options": [
+          "2%",
+          "3%",
+          "4%",
+          "5%"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Công ty match 4%."
+      },
+      {
+        "id": "toeic-r-015-q2",
+        "text": "How many days of PTO are offered?",
+        "options": [
+          "15 days",
+          "18 days",
+          "20 days",
+          "25 days"
+        ],
+        "correctAnswer": 2,
+        "explanation": "20 ngày nghỉ phép."
+      },
+      {
+        "id": "toeic-r-015-q3",
+        "text": "What is the annual learning budget?",
+        "options": [
+          "$1,000",
+          "$1,500",
+          "$2,000",
+          "$2,500"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Ngân sách học tập $2,000/năm."
+      }
+    ]
+  },
+  {
+    "id": "toeic-r-016",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "difficulty": "advanced",
+    "passage": "Real Estate Market Analysis Q3 2024\n\nKey Metrics:\n- Median home price: $425,000 (up 3% YoY)\n- Inventory levels: 2.5 months supply\n- Days on market: 28 days\n- Mortgage rates: 6.2%\n\nOutlook: Analysts expect modest price growth of 2-4% in 2025.",
+    "questions": [
+      {
+        "id": "toeic-r-016-q1",
+        "text": "What is the median home price?",
+        "options": [
+          "$375,000",
+          "$400,000",
+          "$425,000",
+          "$450,000"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Giá nhà trung bình $425,000."
+      },
+      {
+        "id": "toeic-r-016-q2",
+        "text": "What is the predicted price growth for 2025?",
+        "options": [
+          "0-2%",
+          "2-4%",
+          "4-6%",
+          "6-8%"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Dự kiến tăng 2-4%."
+      },
+      {
+        "id": "toeic-r-016-q3",
+        "text": "What is the current mortgage rate?",
+        "options": [
+          "5.2%",
+          "5.7%",
+          "6.2%",
+          "6.7%"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Lãi suất thế chấp 6.2%."
+      }
+    ]
+  },
+  {
+    "id": "toeic-r-017",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "difficulty": "intermediate",
+    "passage": "Product Return Policy\n\nAt TechGadgets, we want you to be completely satisfied with your purchase. If you are not satisfied, you may return most items within 30 days of purchase for a full refund.\n\nReturn Conditions:\n- Items must be in original packaging\n- Receipt or proof of purchase required\n- Electronics must be unopened or defective\n- Software cannot be returned once opened\n\nRefund Method:\n- Credit card purchases: refund to original card\n- Cash purchases: refund in cash\n- Gift card purchases: refund to gift card\n\nFor online purchases, please contact our customer service at support@techgadgets.com to initiate a return.",
+    "questions": [
+      {
+        "id": "toeic-r-017-q1",
+        "text": "How many days do customers have to return items?",
+        "options": [
+          "15 days",
+          "30 days",
+          "45 days",
+          "60 days"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Khách hàng có 30 ngày để trả hàng."
+      },
+      {
+        "id": "toeic-r-017-q2",
+        "text": "What is required for a return?",
+        "options": [
+          "Only the item",
+          "Original packaging and receipt",
+          "Just a receipt",
+          "Nothing special"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Cần bao bì gốc và hóa đơn."
+      },
+      {
+        "id": "toeic-r-017-q3",
+        "text": "Can opened software be returned?",
+        "options": [
+          "Yes, always",
+          "No, once opened",
+          "Only if defective",
+          "Only within 7 days"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Phần mềm đã mở không thể trả."
+      }
+    ]
+  },
+  {
+    "id": "toeic-r-018",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "difficulty": "advanced",
+    "passage": "Quarterly Financial Summary\n\nRevenue Summary:\n- Q1: $12.3 million\n- Q2: $14.1 million\n- Q3: $15.8 million\n- Q4: $18.2 million\n- Total: $60.4 million (up 18% from previous year)\n\nKey Achievements:\n- Launched 3 new product lines\n- Expanded into 2 new markets\n- Reduced operating costs by 12%\n- Increased customer base by 25%\n\nChallenges:\n- Supply chain disruptions in Q2\n- Increased competition in domestic market\n- Rising raw material costs\n\nOutlook: Management projects continued growth of 15-20% for next fiscal year.",
+    "questions": [
+      {
+        "id": "toeic-r-018-q1",
+        "text": "What was the total revenue for the year?",
+        "options": [
+          "$50 million",
+          "$55 million",
+          "$60.4 million",
+          "$65 million"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Tổng doanh thu là $60.4 triệu."
+      },
+      {
+        "id": "toeic-r-018-q2",
+        "text": "By how much did revenue increase from previous year?",
+        "options": [
+          "12%",
+          "15%",
+          "18%",
+          "25%"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Doanh thu tăng 18% so với năm trước."
+      },
+      {
+        "id": "toeic-r-018-q3",
+        "text": "What challenge is mentioned?",
+        "options": [
+          "Staff shortages",
+          "Supply chain disruptions",
+          "Technology failures",
+          "Legal issues"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Gián đoạn chuỗi cung ứng được đề cập."
+      }
+    ]
+  },
+  {
+    "id": "toeic-r-019",
+    "subCategory": "Part 6 - Text Completion",
+    "difficulty": "intermediate",
+    "passage": "Company Update — New Office Location\n\nWe are excited to announce that our company will be relocating to a new office space starting next month. The new location offers modern facilities, more meeting rooms, and improved accessibility.\n\nKey Information:\n- New Address: 500 Innovation Drive, Suite 200\n- Move Date: February 15, 2024\n- Current office closes: February 14 at 5:00 PM\n- New office opens: February 15 at 8:00 AM\n\nPlease update your contact information and calendars accordingly. The IT department will ensure all systems are migrated seamlessly.\n\nFor questions, contact facilities@company.com",
+    "questions": [
+      {
+        "id": "toeic-r-019-q1",
+        "text": "When does the move take place?",
+        "options": [
+          "January 15",
+          "February 14",
+          "February 15",
+          "March 1"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Di chuyển vào ngày 15 tháng 2."
+      },
+      {
+        "id": "toeic-r-019-q2",
+        "text": "What is the new address?",
+        "options": [
+          "500 Main Street",
+          "500 Innovation Drive",
+          "100 Office Park",
+          "200 Business Ave"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Địa chỉ mới là 500 Innovation Drive."
+      },
+      {
+        "id": "toeic-r-019-q3",
+        "text": "Who should employees contact for questions?",
+        "options": [
+          "HR department",
+          "IT department",
+          "Facilities",
+          "The CEO"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Liên hệ bộ phận Facilities."
+      }
+    ]
+  },
+  {
+    "id": "toeic-r-020",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "difficulty": "beginner",
+    "passage": "Community Event Flyer\n\nSpring Festival 2024\n\nJoin us for our annual Spring Festival celebration!\n\nDate: Saturday, April 20th\nTime: 10:00 AM - 4:00 PM\nLocation: Central Park Pavilion\n\nActivities:\n- Live music performances\n- Food trucks and local vendors\n- Kids' craft workshop\n- Raffle prizes (free!)\n- Community art display\n\nAdmission: FREE for all ages\nParking: Available at the municipal lot on Oak Street\n\nFor more information, visit www.springfestival.com or call (555) 123-4567.",
+    "questions": [
+      {
+        "id": "toeic-r-020-q1",
+        "text": "When is the Spring Festival?",
+        "options": [
+          "April 15th",
+          "April 20th",
+          "April 25th",
+          "May 1st"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Lễ hội mùa xuân ngày 20 tháng 4."
+      },
+      {
+        "id": "toeic-r-020-q2",
+        "text": "Is there an admission fee?",
+        "options": [
+          "Yes, $5",
+          "Yes, $10",
+          "No, it's free",
+          "Only for adults"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Vào cửa miễn phí."
+      },
+      {
+        "id": "toeic-r-020-q3",
+        "text": "Where is parking available?",
+        "options": [
+          "At the park",
+          "Municipal lot on Oak Street",
+          "Behind the pavilion",
+          "No parking available"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Bãi đỗ xe tại municipal lot trên Oak Street."
+      }
+    ]
+  },
+  {
+    "id": "toeic-r-021",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "difficulty": "intermediate",
+    "passage": "Training Workshop Invitation\n\nDear Team Members,\n\nWe are pleased to invite you to a professional development workshop on Effective Communication Skills.\n\nWorkshop Details:\n- Date: March 8, 2024\n- Time: 9:00 AM - 4:00 PM\n- Location: Conference Room B, 3rd Floor\n- Instructor: Dr. Sarah Johnson, Communication Expert\n\nTopics Covered:\n- Active listening techniques\n- Public speaking fundamentals\n- Written communication best practices\n- Cross-cultural communication\n\nPlease register by March 1st through the HR portal. Lunch will be provided.\n\nBest regards,\nLearning & Development Team",
+    "questions": [
+      {
+        "id": "toeic-r-021-q1",
+        "text": "What is the workshop about?",
+        "options": [
+          "Project management",
+          "Effective communication skills",
+          "Financial planning",
+          "Leadership development"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Workshop về kỹ năng giao tiếp hiệu quả."
+      },
+      {
+        "id": "toeic-r-021-q2",
+        "text": "When is the registration deadline?",
+        "options": [
+          "March 1st",
+          "March 8th",
+          "March 15th",
+          "March 31st"
+        ],
+        "correctAnswer": 0,
+        "explanation": "Hạn đăng ký là ngày 1 tháng 3."
+      },
+      {
+        "id": "toeic-r-021-q3",
+        "text": "What is provided for attendees?",
+        "options": [
+          "Breakfast only",
+          "Lunch",
+          "Dinner",
+          "Snacks only"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Bữa trưa được cung cấp."
+      }
+    ]
+  },
+  {
+    "id": "toeic-r-022",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "difficulty": "advanced",
+    "passage": "Sustainability Report Summary\n\nGreenCorp's 2024 Sustainability Report highlights our progress toward environmental goals.\n\nCarbon Footprint:\n- Reduced by 30% compared to 2023\n- On track for carbon neutrality by 2035\n- Invested $5M in renewable energy projects\n\nWater Conservation:\n- 25% reduction in water usage\n- Installed water recycling systems at 3 facilities\n- Zero liquid discharge achieved at main plant\n\nWaste Management:\n- 95% waste diversion rate\n- Zero waste to landfill goal by 2028\n- Launched employee recycling program\n\nCommunity Impact:\n- $2M donated to local environmental charities\n- 5,000 volunteer hours logged\n- Partnered with 10 local schools for eco-education",
+    "questions": [
+      {
+        "id": "toeic-r-022-q1",
+        "text": "By how much was the carbon footprint reduced?",
+        "options": [
+          "20%",
+          "25%",
+          "30%",
+          "35%"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Giảm 30% foot print carbon."
+      },
+      {
+        "id": "toeic-r-022-q2",
+        "text": "What is the waste diversion rate?",
+        "options": [
+          "85%",
+          "90%",
+          "95%",
+          "100%"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Tỷ lệ chuyển hướng chất thải là 95%."
+      },
+      {
+        "id": "toeic-r-022-q3",
+        "text": "How much was donated to environmental charities?",
+        "options": [
+          "$1M",
+          "$1.5M",
+          "$2M",
+          "$2.5M"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Quyên góp $2 triệu cho từ thiện môi trường."
+      }
+    ]
+  },
+  {
+    "id": "toeic-r-023",
+    "subCategory": "Part 6 - Text Completion",
+    "difficulty": "beginner",
+    "passage": "Welcome to BrightFuture Academy\n\nProgram Overview:\nBrightFuture Academy offers comprehensive English language courses for all levels. Our experienced instructors use modern teaching methods to help you achieve your language goals.\n\nCourse Schedule:\n- Beginner: Monday/Wednesday, 6:00-8:00 PM\n- Intermediate: Tuesday/Thursday, 6:00-8:30 PM\n- Advanced: Monday/Wednesday/Friday, 7:00-9:00 PM\n\nRegistration:\n- New students: January 15-31\n- Returning students: January 10-31\n- Classes begin: February 5, 2024\n\nContact: info@brightfuture.edu | (555) 987-6543",
+    "questions": [
+      {
+        "id": "toeic-r-023-q1",
+        "text": "What does the academy offer?",
+        "options": [
+          "Math courses",
+          "English language courses",
+          "Computer training",
+          "Music lessons"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Học viện cung cấp khóa học ngôn ngữ Anh."
+      },
+      {
+        "id": "toeic-r-023-q2",
+        "text": "When do classes begin?",
+        "options": [
+          "January 15",
+          "January 31",
+          "February 5",
+          "February 15"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Các lớp học bắt đầu ngày 5 tháng 2."
+      },
+      {
+        "id": "toeic-r-023-q3",
+        "text": "What is the advanced course schedule?",
+        "options": [
+          "Monday only",
+          "Tuesday/Thursday",
+          "Monday/Wednesday/Friday",
+          "Daily"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Lớp nâng cao: Thứ 2/4/6."
+      }
+    ]
+  },
+  {
+    "id": "toeic-r-024",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "difficulty": "intermediate",
+    "passage": "Employee Wellness Program\n\nOur company is committed to supporting employee health and well-being. The following wellness programs are available to all full-time employees:\n\nFitness Benefits:\n- Gym membership reimbursement: $50/month\n- On-site fitness classes: Yoga, Pilates, Zumba\n- Annual health screening: No cost\n\nMental Health Support:\n- Employee Assistance Program (EAP): Free counseling\n- Stress management workshops: Quarterly\n- Meditation room available\n\nNutrition Programs:\n- Healthy snack options in break rooms\n- Nutrition counseling: $25/session\n- Healthy cooking classes: Monthly\n\nTo enroll, visit the wellness portal or contact wellness@company.com",
+    "questions": [
+      {
+        "id": "toeic-r-024-q1",
+        "text": "What is the gym membership reimbursement?",
+        "options": [
+          "$25/month",
+          "$50/month",
+          "$75/month",
+          "$100/month"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Trợ cấp phòng tập $50/tháng."
+      },
+      {
+        "id": "toeic-r-024-q2",
+        "text": "What mental health services are free?",
+        "options": [
+          "All services",
+          "EAP counseling only",
+          "Stress workshops only",
+          "Nothing is free"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Tư vấn EAP miễn phí."
+      },
+      {
+        "id": "toeic-r-024-q3",
+        "text": "How often are healthy cooking classes held?",
+        "options": [
+          "Weekly",
+          "Bi-weekly",
+          "Monthly",
+          "Quarterly"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Lớp nấu ăn healthy hàng tháng."
+      }
+    ]
+  },
+  {
+    "id": "toeic-r-025",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "difficulty": "advanced",
+    "passage": "Technology Industry Report 2024\n\nThe global technology sector continued its strong growth trajectory in 2024, with several key trends shaping the industry.\n\nCloud Computing:\n- Market size reached $500 billion\n- 85% of enterprises now use cloud services\n- Hybrid cloud adoption increased by 40%\n\nArtificial Intelligence:\n- AI spending grew 35% year-over-year\n- 60% of companies implementing AI solutions\n- Generative AI became mainstream in business applications\n\nCybersecurity:\n- Cyber attacks increased by 25%\n- Average cost of data breach: $4.5 million\n- Zero-trust architecture adoption doubled\n\nRemote Work Technology:\n- Collaboration tool usage up 50%\n- Virtual meeting platforms became essential infrastructure\n- Hybrid work models adopted by 70% of companies",
+    "questions": [
+      {
+        "id": "toeic-r-025-q1",
+        "text": "What is the cloud computing market size?",
+        "options": [
+          "$300 billion",
+          "$400 billion",
+          "$500 billion",
+          "$600 billion"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Thị trường cloud computing đạt $500 tỷ."
+      },
+      {
+        "id": "toeic-r-025-q2",
+        "text": "By how much did AI spending grow?",
+        "options": [
+          "25%",
+          "30%",
+          "35%",
+          "40%"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Chi tiêu AI tăng 35%."
+      },
+      {
+        "id": "toeic-r-025-q3",
+        "text": "What is the average cost of a data breach?",
+        "options": [
+          "$2.5 million",
+          "$3.5 million",
+          "$4.5 million",
+          "$5.5 million"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Chi phí trung bình của vi phạm dữ liệu là $4.5 triệu."
+      }
+    ]
+  },
+  {
+    "id": "toeic-r-026",
+    "subCategory": "Part 6 - Text Completion",
+    "difficulty": "intermediate",
+    "passage": "Customer Service Update\n\nWe value your feedback and are constantly working to improve our services. Here are some recent updates:\n\nExtended Hours:\n- Phone support: Now available 7 days a week, 8 AM - 8 PM\n- Live chat: 24/7 availability\n- Email response time: Within 4 hours during business hours\n\nNew Features:\n- Online appointment scheduling\n- Real-time order tracking\n- Mobile app support\n- Video call assistance for complex issues\n\nWe appreciate your patience as we continue to enhance your experience.\n\nThank you for choosing us!\nCustomer Experience Team",
+    "questions": [
+      {
+        "id": "toeic-r-026-q1",
+        "text": "What are the new phone support hours?",
+        "options": [
+          "Monday-Friday, 9-5",
+          "Monday-Saturday, 8-6",
+          "7 days a week, 8 AM - 8 PM",
+          "24/7"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Hỗ trợ điện thoại: 7 ngày/tuần, 8 giờ sáng - 8 giờ tối."
+      },
+      {
+        "id": "toeic-r-026-q2",
+        "text": "What is the email response time?",
+        "options": [
+          "Within 1 hour",
+          "Within 4 hours",
+          "Within 24 hours",
+          "Within 48 hours"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Phản hồi email trong vòng 4 giờ."
+      },
+      {
+        "id": "toeic-r-026-q3",
+        "text": "What new feature is mentioned?",
+        "options": [
+          "In-store pickup only",
+          "Online appointment scheduling",
+          "Phone ordering",
+          "Fax support"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Đặt lịch hẹn trực tuyến là tính năng mới."
+      }
+    ]
+  },
+  {
+    "id": "toeic-r-027",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "difficulty": "beginner",
+    "passage": "Office Supply Order Form\n\nPlease complete this form to order office supplies. All orders must be submitted by Friday of each week.\n\nItem Name: _______________________\nQuantity: _______________________\nDepartment: _______________________\nRequired By: _______________________\n\nNote: Orders over $500 require manager approval.",
+    "questions": [
+      {
+        "id": "toeic-r-027-q1",
+        "text": "When must orders be submitted?",
+        "options": [
+          "Monday",
+          "Wednesday",
+          "Friday",
+          "Sunday"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Đơn hàng phải nộp trước thứ Sáu."
+      },
+      {
+        "id": "toeic-r-027-q2",
+        "text": "What requires manager approval?",
+        "options": [
+          "All orders",
+          "Orders under $100",
+          "Orders over $500",
+          "Orders over $1000"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Đơn hàng trên $500 cần phê duyệt quản lý."
+      },
+      {
+        "id": "toeic-r-027-q3",
+        "text": "What information is needed on the form?",
+        "options": [
+          "Only item name",
+          "Item name, quantity, department, required date",
+          "Just the department",
+          "Only the quantity"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Cần tên mặt hàng, số lượng, bộ phận, ngày cần."
+      }
+    ]
+  },
+  {
+    "id": "toeic-r-028",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "difficulty": "intermediate",
+    "passage": "Company Policy — Remote Work\n\nEffective January 1, 2024, employees may work remotely up to 3 days per week with manager approval. Guidelines:\n- Must be available during core hours (10 AM - 4 PM)\n- Must attend all mandatory meetings in person\n- Must have a stable internet connection\n- Must complete all assigned tasks on time\n- Manager must approve remote work schedule\n\nViolations may result in revocation of remote work privileges.",
+    "questions": [
+      {
+        "id": "toeic-r-028-q1",
+        "text": "How many days per week can employees work remotely?",
+        "options": [
+          "1 day",
+          "2 days",
+          "3 days",
+          "4 days"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Nhân viên có thể làm việc từ xa tối đa 3 ngày/tuần."
+      },
+      {
+        "id": "toeic-r-028-q2",
+        "text": "What are the core hours?",
+        "options": [
+          "9 AM - 5 PM",
+          "10 AM - 4 PM",
+          "8 AM - 6 PM",
+          "11 AM - 3 PM"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Giờ làm việc cốt lõi là 10 giờ sáng đến 4 giờ chiều."
+      },
+      {
+        "id": "toeic-r-028-q3",
+        "text": "What may happen for policy violations?",
+        "options": [
+          "Written warning",
+          "Salary reduction",
+          "Revocation of remote work privileges",
+          "Termination"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Vi phạm có thể bị tước quyền làm việc từ xa."
+      }
+    ]
+  },
+  {
+    "id": "toeic-r-029",
+    "subCategory": "Part 6 - Text Completion",
+    "difficulty": "intermediate",
+    "passage": "Customer Feedback Survey Results\n\nThank you for participating in our customer satisfaction survey. Here are the key findings:\n\nOverall Satisfaction: 4.2 out of 5.0\n\nTop 3 Areas of Strength:\n1. Product quality (4.5/5.0)\n2. Customer service (4.3/5.0)\n3. Delivery speed (4.1/5.0)\n\nAreas for Improvement:\n1. Website usability (3.2/5.0)\n2. Return process (3.5/5.0)\n3. Product variety (3.8/5.0)\n\nWe will address these areas in the coming months.",
+    "questions": [
+      {
+        "id": "toeic-r-029-q1",
+        "text": "What is the overall satisfaction score?",
+        "options": [
+          "3.5/5.0",
+          "3.8/5.0",
+          "4.0/5.0",
+          "4.2/5.0"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Điểm hài lòng tổng thể là 4.2/5.0."
+      },
+      {
+        "id": "toeic-r-029-q2",
+        "text": "Which area scored lowest?",
+        "options": [
+          "Product quality",
+          "Customer service",
+          "Website usability",
+          "Delivery speed"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Khả năng sử dụng website thấp nhất (3.2/5.0)."
+      },
+      {
+        "id": "toeic-r-029-q3",
+        "text": "What is the top area of strength?",
+        "options": [
+          "Customer service",
+          "Delivery speed",
+          "Product quality",
+          "Return process"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Chất lượng sản phẩm là điểm mạnh nhất (4.5/5.0)."
+      }
+    ]
+  },
+  {
+    "id": "toeic-r-030",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "difficulty": "advanced",
+    "passage": "Market Research Report — Consumer Trends 2024\n\nKey Findings:\n\n1. Sustainability Matters: 78% of consumers prefer eco-friendly products\n2. Digital Shopping: Online sales grew 25% year-over-year\n3. Brand Loyalty: 65% of customers remain loyal to brands they trust\n4. Social Influence: 45% of purchases are influenced by social media\n5. Price Sensitivity: 82% compare prices before buying\n\nRecommendations:\n- Invest in sustainable product lines\n- Enhance e-commerce platform\n- Build stronger brand relationships\n- Increase social media presence\n- Offer competitive pricing",
+    "questions": [
+      {
+        "id": "toeic-r-030-q1",
+        "text": "What percentage prefer eco-friendly products?",
+        "options": [
+          "65%",
+          "70%",
+          "78%",
+          "82%"
+        ],
+        "correctAnswer": 2,
+        "explanation": "78% người tiêu dùng thích sản phẩm thân thiện môi trường."
+      },
+      {
+        "id": "toeic-r-030-q2",
+        "text": "How much did online sales grow?",
+        "options": [
+          "15%",
+          "20%",
+          "25%",
+          "30%"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Bán hàng online tăng 25%."
+      },
+      {
+        "id": "toeic-r-030-q3",
+        "text": "What percentage compare prices before buying?",
+        "options": [
+          "70%",
+          "75%",
+          "80%",
+          "82%"
+        ],
+        "correctAnswer": 3,
+        "explanation": "82% so sánh giá trước khi mua."
+      }
+    ]
+  },
+  {
+    "id": "toeic-r-031",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "difficulty": "beginner",
+    "passage": "Weekly Meeting Agenda\n\nDate: Monday, March 4, 2024\nTime: 10:00 AM - 11:30 AM\nLocation: Conference Room A\n\nAgenda Items:\n1. Welcome and introductions (10:00 - 10:10)\n2. Review of last week's action items (10:10 - 10:30)\n3. Project status updates (10:30 - 11:00)\n4. Budget review (11:00 - 11:20)\n5. Open discussion (11:20 - 11:30)\n\nPlease bring your department reports.",
+    "questions": [
+      {
+        "id": "toeic-r-031-q1",
+        "text": "When does the meeting start?",
+        "options": [
+          "9:30 AM",
+          "10:00 AM",
+          "10:30 AM",
+          "11:00 AM"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Cuộc họp bắt đầu lúc 10 giờ sáng."
+      },
+      {
+        "id": "toeic-r-031-q2",
+        "text": "How long is the budget review?",
+        "options": [
+          "10 minutes",
+          "20 minutes",
+          "30 minutes",
+          "40 minutes"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Xem xét ngân sách kéo dài 20 phút."
+      },
+      {
+        "id": "toeic-r-031-q3",
+        "text": "What should attendees bring?",
+        "options": [
+          "Laptops only",
+          "Department reports",
+          "Presentation slides",
+          "Meeting notes"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Người tham dự nên mang báo cáo bộ phận."
+      }
+    ]
+  },
+  {
+    "id": "toeic-r-032",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "difficulty": "intermediate",
+    "passage": "Training Certificate\n\nThis certifies that\nJane Smith\nhas successfully completed the\nAdvanced Project Management Course\nDuration: 40 hours\nDate: February 15-28, 2024\nInstructor: Dr. Michael Brown\n\nSkills Covered:\n- Project planning and scheduling\n- Risk management\n- Budget management\n- Team leadership\n- Stakeholder communication\n\nThis certificate is valid for professional development purposes.",
+    "questions": [
+      {
+        "id": "toeic-r-032-q1",
+        "text": "Who received the certificate?",
+        "options": [
+          "Michael Brown",
+          "Jane Smith",
+          "John Doe",
+          "Sarah Wilson"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Jane Smith nhận chứng chỉ."
+      },
+      {
+        "id": "toeic-r-032-q2",
+        "text": "How many hours was the course?",
+        "options": [
+          "20 hours",
+          "30 hours",
+          "40 hours",
+          "50 hours"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Khóa học kéo dài 40 giờ."
+      },
+      {
+        "id": "toeic-r-032-q3",
+        "text": "What skill is NOT listed?",
+        "options": [
+          "Risk management",
+          "Budget management",
+          "Public speaking",
+          "Team leadership"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Hội thảo trước công chúng không được liệt kê."
+      }
+    ]
+  },
+  {
+    "id": "toeic-r-033",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "difficulty": "advanced",
+    "passage": "Annual Charity Gala Invitation\n\nYou are cordially invited to the Annual Charity Gala\nBenefiting: Children's Education Foundation\nDate: Saturday, April 12, 2024\nTime: 6:00 PM - 11:00 PM\nVenue: Grand Ballroom, Hilton Hotel\n\nEvent Highlights:\n- Welcome reception with cocktails\n- Dinner and live entertainment\n- Silent auction\n- Keynote speaker: Dr. Amanda Lee\n\nDress Code: Black Tie\nRSVP by March 25, 2024\nTickets: $150 per person",
+    "questions": [
+      {
+        "id": "toeic-r-033-q1",
+        "text": "What is the event for?",
+        "options": [
+          "Company party",
+          "Charity fundraiser",
+          "Product launch",
+          "Award ceremony"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Sự kiện gây quỹ từ thiện."
+      },
+      {
+        "id": "toeic-r-033-q2",
+        "text": "How much is a ticket?",
+        "options": [
+          "$100",
+          "$125",
+          "$150",
+          "$200"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Vé $150/người."
+      },
+      {
+        "id": "toeic-r-033-q3",
+        "text": "What is the dress code?",
+        "options": [
+          "Business casual",
+          "Formal",
+          "Black tie",
+          "Casual"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Trang phục là Black Tie."
+      }
+    ]
+  },
+  {
+    "id": "toeic-r-034",
+    "subCategory": "Part 6 - Text Completion",
+    "difficulty": "advanced",
+    "passage": "Business Travel Policy Update\n\nNew travel guidelines effective March 1, 2024:\n\nAir Travel:\n- Economy class for flights under 4 hours\n- Business class for flights over 4 hours\n- Advance booking required (minimum 14 days)\n\nAccommodation:\n- Up to $200/night for domestic travel\n- Up to $350/night for international travel\n- Preferred hotel chain: Marriott\n\nExpenses:\n- Meals: $75/day maximum\n- Ground transportation: Receipts required\n- Internet: Reimbursable up to $10/day\n\nAll expenses must be submitted within 30 days of travel.",
+    "questions": [
+      {
+        "id": "toeic-r-034-q1",
+        "text": "What class is required for flights under 4 hours?",
+        "options": [
+          "First class",
+          "Business class",
+          "Economy class",
+          "Premium economy"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Chuyến bay dưới 4 giờ đi hạng Economy."
+      },
+      {
+        "id": "toeic-r-034-q2",
+        "text": "What is the hotel limit for international travel?",
+        "options": [
+          "$200/night",
+          "$250/night",
+          "$300/night",
+          "$350/night"
+        ],
+        "correctAnswer": 3,
+        "explanation": "Giới hạn khách sạn quốc tế là $350/đêm."
+      },
+      {
+        "id": "toeic-r-034-q3",
+        "text": "How long do employees have to submit expenses?",
+        "options": [
+          "14 days",
+          "21 days",
+          "30 days",
+          "45 days"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Nhân viên có 30 ngày để nộp chi phí."
+      }
+    ]
+  },
+  {
+    "id": "toeic-r-035",
+    "subCategory": "Part 7 - Reading Comprehension",
+    "difficulty": "intermediate",
+    "passage": "Product Warranty Information\n\nStandard Warranty: 1 year from date of purchase\nExtended Warranty: Available for purchase (additional 2 years)\n\nWhat's Covered:\n- Manufacturing defects\n- Hardware failures\n- Battery issues (first year only)\n\nWhat's NOT Covered:\n- Physical damage\n- Water damage\n- Unauthorized modifications\n- Normal wear and tear\n\nWarranty Claims:\n1. Contact customer support\n2. Provide proof of purchase\n3. Ship product to designated center\n4. Allow 5-7 business days for repair\n\nFor warranty inquiries: warranty@techstore.com",
+    "questions": [
+      {
+        "id": "toeic-r-035-q1",
+        "text": "How long is the standard warranty?",
+        "options": [
+          "6 months",
+          "1 year",
+          "2 years",
+          "3 years"
+        ],
+        "correctAnswer": 1,
+        "explanation": "Bảo hành tiêu chuẩn là 1 năm."
+      },
+      {
+        "id": "toeic-r-035-q2",
+        "text": "What is NOT covered under warranty?",
+        "options": [
+          "Manufacturing defects",
+          "Hardware failures",
+          "Physical damage",
+          "Battery issues"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Thiệt hại vật lý không được bảo hành."
+      },
+      {
+        "id": "toeic-r-035-q3",
+        "text": "How long does repair take?",
+        "options": [
+          "1-3 days",
+          "3-5 days",
+          "5-7 business days",
+          "7-10 business days"
+        ],
+        "correctAnswer": 2,
+        "explanation": "Sửa chữa mất 5-7 ngày làm việc."
+      }
+    ]
+  }
+]

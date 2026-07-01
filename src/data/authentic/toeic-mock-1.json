@@ -1,0 +1,148 @@
+{
+  "id": "toeic-mock-1",
+  "title": "TOEIC Mock Exam - ETS Format",
+  "year": 2024,
+  "category": "toeic",
+  "timeLimitMinutes": 120,
+  "sections": [
+    {
+      "id": "sec-t-1",
+      "title": "Part 1: Photographs",
+      "description": "Listen to 4 statements about a picture and choose the best one.",
+      "questions": [
+        {
+          "id": "t-1-1",
+          "text": "Look at the picture and choose the correct statement.",
+          "imageUrl": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&q=80&w=400",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)",
+            "(D)"
+          ],
+          "correctAnswer": 1,
+          "explanation": "B is correct because the people are sitting at a conference table.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        }
+      ]
+    },
+    {
+      "id": "sec-t-2",
+      "title": "Part 2: Question-Response",
+      "description": "Listen to a question and 3 possible responses. Choose the best response.",
+      "questions": [
+        {
+          "id": "t-2-1",
+          "text": "When is the project deadline?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 1,
+          "explanation": "The question asks for a time (When).",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        }
+      ]
+    },
+    {
+      "id": "sec-t-3",
+      "title": "Part 3: Conversations",
+      "description": "Listen to a conversation and answer 3 questions.",
+      "questions": [
+        {
+          "id": "t-3-1",
+          "text": "Where does this conversation likely take place?",
+          "options": [
+            "A. At a restaurant",
+            "B. At a clinic",
+            "C. At a bank",
+            "D. At a post office"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\n[Audio Transcript Mock] \nMan: Hi, I have an appointment with Dr. Smith at 3 PM.\nWoman: Please take a seat. He is finishing up with a patient.\n\nThe mention of \"Dr. Smith\" and \"patient\" suggests a clinic.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        }
+      ]
+    },
+    {
+      "id": "sec-t-4",
+      "title": "Part 4: Talks",
+      "description": "Listen to a short talk and answer questions.",
+      "questions": [
+        {
+          "id": "t-4-1",
+          "text": "Who is the intended audience of this announcement?",
+          "options": [
+            "A. Train commuters",
+            "B. Airline passengers",
+            "C. Hotel guests",
+            "D. Store customers"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nAttention all passengers. Flight 402 to Tokyo is now boarding at Gate 12.\n\nThe announcement mentions \"Flight 402\" and \"boarding\".",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        }
+      ]
+    },
+    {
+      "id": "sec-t-5",
+      "title": "Part 5: Incomplete Sentences",
+      "description": "Choose the word that best completes the sentence.",
+      "questions": [
+        {
+          "id": "t-5-1",
+          "text": "The new software is _____ easier to use than the old version.",
+          "options": [
+            "A. much",
+            "B. many",
+            "C. more",
+            "D. most"
+          ],
+          "correctAnswer": 0,
+          "explanation": "\"Much\" is used to emphasize comparative adjectives."
+        }
+      ]
+    },
+    {
+      "id": "sec-t-6",
+      "title": "Part 6: Text Completion",
+      "description": "Choose the best word or phrase to complete the text.",
+      "questions": [
+        {
+          "id": "t-6-1",
+          "passage": "To all staff:\nPlease note that the cafeteria will be _____ for renovations next week.",
+          "text": "Choose the correct word.",
+          "options": [
+            "A. close",
+            "B. closed",
+            "C. closing",
+            "D. closes"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Passive voice: will be + V3/ed."
+        }
+      ]
+    },
+    {
+      "id": "sec-t-7",
+      "title": "Part 7: Reading Comprehension",
+      "description": "Read the passage and answer the questions.",
+      "questions": [
+        {
+          "id": "t-7-1",
+          "passage": "We are pleased to announce that Mr. John Doe has been promoted to Vice President of Sales. He has been with the company for 10 years and has consistently exceeded his targets.",
+          "text": "How long has Mr. Doe worked at the company?",
+          "options": [
+            "A. 5 years",
+            "B. 10 years",
+            "C. 15 years",
+            "D. 20 years"
+          ],
+          "correctAnswer": 1,
+          "explanation": "The text states: \"He has been with the company for 10 years\"."
+        }
+      ]
+    }
+  ]
+}

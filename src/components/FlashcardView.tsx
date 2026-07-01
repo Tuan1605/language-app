@@ -90,7 +90,7 @@ export function FlashcardView({ card, onRate, onArchive }: FlashcardViewProps) {
             {card.imageUrl ? (
               <div className="flex flex-col items-center gap-4 w-full px-6">
                 <div className="w-full h-40 rounded-2xl overflow-hidden border-2 border-border-main shadow-inner">
-                  <img src={card.imageUrl} alt={card.word} className="w-full h-full object-cover" />
+                  <img src={card.imageUrl} alt={card.word} className="w-full h-full object-cover" loading="lazy" />
                 </div>
                 <h2 className="text-3xl font-black text-text-main leading-tight break-words">
                   {card.word}

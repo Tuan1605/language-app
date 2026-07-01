@@ -26,10 +26,12 @@ export type ReviewGrade = 0 | 1 | 2 | 3 | 4 | 5;
 export interface Question {
   id: string;
   text: string;
+  passage?: string;
   options: string[];
   correctAnswer: number;
   explanation?: string;
   imageUrl?: string;
+  audioUrl?: string;
   category: 'toeic' | 'n2';
   difficulty: Difficulty;
   subCategory?: string;

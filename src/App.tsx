@@ -3,10 +3,12 @@ import { Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import { MainLayout } from './components/MainLayout';
 import { PathPage } from './pages/PathPage';
+import { ErrorBoundary } from './components/ErrorBoundary';
 import { useAppStore } from './stores/useAppStore';
 import { useUserStore } from './stores/useUserStore';
 import { initializeDatabase } from './data/contentLoader';
 
+// Lazy load with preload support for smooth animations
 const PracticePage = lazy(() => import('./pages/PracticePage').then(m => ({ default: m.PracticePage })));
 const SessionPage = lazy(() => import('./pages/SessionPage').then(m => ({ default: m.SessionPage })));
 const NotebookPage = lazy(() => import('./pages/NotebookPage').then(m => ({ default: m.NotebookPage })));
@@ -20,6 +22,13 @@ const RealExamPage = lazy(() => import('./pages/RealExamPage').then(m => ({ defa
 const CreateExamPage = lazy(() => import('./pages/CreateExamPage').then(m => ({ default: m.CreateExamPage })));
 const ReviewDashboardPage = lazy(() => import('./pages/ReviewDashboardPage').then(m => ({ default: m.ReviewDashboardPage })));
 const PdfExamPage = lazy(() => import('./pages/PdfExamPage').then(m => ({ default: m.PdfExamPage })));
+
+// Preload common pages after initial load for smoother navigation
+setTimeout(() => {
+  import('./pages/PracticePage');
+  import('./pages/ReviewPage');
+  import('./pages/CollectionPage');
+}, 2000);
 
 function PageLoader() {
   return (
@@ -75,26 +84,28 @@ function App() {
   }
 
   return (
-    <AnimatePresence mode="wait">
-      <Routes location={location} key={location.pathname}>
-        <Route path="/pdf-exam/:examId" element={<Suspense fallback={<PageLoader />}><PdfExamPage /></Suspense>} />
-        <Route element={<MainLayout />}>
-          <Route path="/" element={<PathPage />} />
-          <Route path="/practice" element={<Suspense fallback={<PageLoader />}><PracticePage /></Suspense>} />
-          <Route path="/notebook" element={<Suspense fallback={<PageLoader />}><NotebookPage /></Suspense>} />
-          <Route path="/review" element={<Suspense fallback={<PageLoader />}><ReviewPage /></Suspense>} />
-          <Route path="/collection" element={<Suspense fallback={<PageLoader />}><CollectionPage /></Suspense>} />
-          <Route path="/mistakes" element={<Suspense fallback={<PageLoader />}><MistakesPage /></Suspense>} />
-          <Route path="/review-mistakes" element={<Suspense fallback={<PageLoader />}><MistakeReviewPage /></Suspense>} />
-          <Route path="/analytics" element={<Suspense fallback={<PageLoader />}><AnalyticsPage /></Suspense>} />
-          <Route path="/add" element={<Suspense fallback={<PageLoader />}><AddWordsPage /></Suspense>} />
-          <Route path="/session" element={<Suspense fallback={<PageLoader />}><SessionPage /></Suspense>} />
-          <Route path="/real-exam" element={<Suspense fallback={<PageLoader />}><RealExamPage /></Suspense>} />
-          <Route path="/create-exam" element={<Suspense fallback={<PageLoader />}><CreateExamPage /></Suspense>} />
-          <Route path="/review-dashboard" element={<Suspense fallback={<PageLoader />}><ReviewDashboardPage /></Suspense>} />
-        </Route>
-      </Routes>
-    </AnimatePresence>
+    <ErrorBoundary>
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
+          <Route path="/pdf-exam/:examId" element={<Suspense fallback={<PageLoader />}><PdfExamPage /></Suspense>} />
+          <Route element={<MainLayout />}>
+            <Route path="/" element={<PathPage />} />
+            <Route path="/practice" element={<Suspense fallback={<PageLoader />}><PracticePage /></Suspense>} />
+            <Route path="/notebook" element={<Suspense fallback={<PageLoader />}><NotebookPage /></Suspense>} />
+            <Route path="/review" element={<Suspense fallback={<PageLoader />}><ReviewPage /></Suspense>} />
+            <Route path="/collection" element={<Suspense fallback={<PageLoader />}><CollectionPage /></Suspense>} />
+            <Route path="/mistakes" element={<Suspense fallback={<PageLoader />}><MistakesPage /></Suspense>} />
+            <Route path="/review-mistakes" element={<Suspense fallback={<PageLoader />}><MistakeReviewPage /></Suspense>} />
+            <Route path="/analytics" element={<Suspense fallback={<PageLoader />}><AnalyticsPage /></Suspense>} />
+            <Route path="/add" element={<Suspense fallback={<PageLoader />}><AddWordsPage /></Suspense>} />
+            <Route path="/session" element={<Suspense fallback={<PageLoader />}><SessionPage /></Suspense>} />
+            <Route path="/real-exam" element={<Suspense fallback={<PageLoader />}><RealExamPage /></Suspense>} />
+            <Route path="/create-exam" element={<Suspense fallback={<PageLoader />}><CreateExamPage /></Suspense>} />
+            <Route path="/review-dashboard" element={<Suspense fallback={<PageLoader />}><ReviewDashboardPage /></Suspense>} />
+          </Route>
+        </Routes>
+      </AnimatePresence>
+    </ErrorBoundary>
   );
 }
 

@@ -1,6 +1,6 @@
 import { describe, it, expect, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
-import { FlashcardView } from '../components/FlashcardView';
+import { FlashcardView } from '../FlashcardView';
 import type { Flashcard } from '../types';
 
 const mockCard: Flashcard = {

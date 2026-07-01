@@ -1,0 +1,3722 @@
+[
+  {
+    "id": "nq-101",
+    "type": "kanji",
+    "question": "彼は【著名】な作家だ。",
+    "options": [
+      "ちょめい",
+      "しめい",
+      "ちょみょう",
+      "しもょう"
+    ],
+    "correctAnswer": "ちょめい",
+    "explanation": "Cách đọc đúng của từ trong ngoặc là ちょめい.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "reading"
+    ]
+  },
+  {
+    "id": "nq-102",
+    "type": "kanji",
+    "question": "【深刻】な問題が発生した。",
+    "options": [
+      "しんこく",
+      "しんきょく",
+      "じんこく",
+      "じんきょく"
+    ],
+    "correctAnswer": "しんこく",
+    "explanation": "Cách đọc đúng của từ trong ngoặc là しんこく.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "reading"
+    ]
+  },
+  {
+    "id": "nq-103",
+    "type": "kanji",
+    "question": "技術が【急速】に発展している。",
+    "options": [
+      "きゅうそく",
+      "きゅうそっき",
+      "きゅうじく",
+      "きゅうそぐ"
+    ],
+    "correctAnswer": "きゅうそく",
+    "explanation": "Cách đọc đúng của từ trong ngoặc là きゅうそく.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "reading"
+    ]
+  },
+  {
+    "id": "nq-104",
+    "type": "kanji",
+    "question": "【豊富】な経験を持つ。",
+    "options": [
+      "ほうふ",
+      "ほうふう",
+      "ぼうふ",
+      "ぼうふう"
+    ],
+    "correctAnswer": "ほうふ",
+    "explanation": "Cách đọc đúng của từ trong ngoặc là ほうふ.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "reading"
+    ]
+  },
+  {
+    "id": "nq-105",
+    "type": "kanji",
+    "question": "【妥当】な判断だと思う。",
+    "options": [
+      "だとう",
+      "たとう",
+      "だどう",
+      "たどう"
+    ],
+    "correctAnswer": "だとう",
+    "explanation": "Cách đọc đúng của từ trong ngoặc là だとう.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "reading"
+    ]
+  },
+  {
+    "id": "nq-106",
+    "type": "kanji",
+    "question": "【莫大】な費用がかかる。",
+    "options": [
+      "ばくだい",
+      "ばくたい",
+      "まくだい",
+      "まくたい"
+    ],
+    "correctAnswer": "ばくだい",
+    "explanation": "Cách đọc đúng của từ trong ngoặc là ばくだい.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "reading"
+    ]
+  },
+  {
+    "id": "nq-107",
+    "type": "kanji",
+    "question": "【柔軟】な対応が求められる。",
+    "options": [
+      "じゅうなん",
+      "じゅなん",
+      "じゅうだん",
+      "じゅだん"
+    ],
+    "correctAnswer": "じゅうなん",
+    "explanation": "Cách đọc đúng của từ trong ngoặc là じゅうなん.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "reading"
+    ]
+  },
+  {
+    "id": "nq-108",
+    "type": "kanji",
+    "question": "【顕著】な効果が現れた。",
+    "options": [
+      "けんちょ",
+      "けんしょ",
+      "げんちょ",
+      "げんしょ"
+    ],
+    "correctAnswer": "けんちょ",
+    "explanation": "Cách đọc đúng của từ trong ngoặc là けんちょ.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "reading"
+    ]
+  },
+  {
+    "id": "nq-109",
+    "type": "kanji",
+    "question": "【迅速】に行動する。",
+    "options": [
+      "じんそく",
+      "しんそく",
+      "じんぞく",
+      "しんぞく"
+    ],
+    "correctAnswer": "じんそく",
+    "explanation": "Cách đọc đúng của từ trong ngoặc là じんそく.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "reading"
+    ]
+  },
+  {
+    "id": "nq-110",
+    "type": "kanji",
+    "question": "【円滑】に会議が進む。",
+    "options": [
+      "えんかつ",
+      "えんがつ",
+      "えんかん",
+      "えんがん"
+    ],
+    "correctAnswer": "えんかつ",
+    "explanation": "Cách đọc đúng của từ trong ngoặc là えんかつ.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "reading"
+    ]
+  },
+  {
+    "id": "nq-111",
+    "type": "kanji",
+    "question": "【頻繁】に連絡を取り合う。",
+    "options": [
+      "ひんぱん",
+      "ひんぱて",
+      "ひんばん",
+      "ひんぱて"
+    ],
+    "correctAnswer": "ひんぱん",
+    "explanation": "Cách đọc đúng của từ trong ngoặc là ひんぱん.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "reading"
+    ]
+  },
+  {
+    "id": "nq-112",
+    "type": "kanji",
+    "question": "【漠然】とした不安。",
+    "options": [
+      "ばくぜん",
+      "ばくねん",
+      "まくぜん",
+      "まくねん"
+    ],
+    "correctAnswer": "ばくぜん",
+    "explanation": "Cách đọc đúng của từ trong ngoặc là ばくぜん.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "reading"
+    ]
+  },
+  {
+    "id": "nq-113",
+    "type": "kanji",
+    "question": "【純粋】な気持ち。",
+    "options": [
+      "じゅんすい",
+      "じゅんす",
+      "じゅんぜい",
+      "じゅんぜ"
+    ],
+    "correctAnswer": "じゅんすい",
+    "explanation": "Cách đọc đúng của từ trong ngoặc là じゅんすい.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "reading"
+    ]
+  },
+  {
+    "id": "nq-114",
+    "type": "kanji",
+    "question": "【矛盾】した発言。",
+    "options": [
+      "むじゅん",
+      "むしゅん",
+      "むじゅん",
+      "むしゅん"
+    ],
+    "correctAnswer": "むじゅん",
+    "explanation": "Cách đọc đúng của từ trong ngoặc là むじゅん.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "reading"
+    ]
+  },
+  {
+    "id": "nq-115",
+    "type": "kanji",
+    "question": "【潔い】態度。",
+    "options": [
+      "いさぎよい",
+      "いざぎよい",
+      "いさきよい",
+      "いざきよい"
+    ],
+    "correctAnswer": "いさぎよい",
+    "explanation": "Cách đọc đúng của từ trong ngoặc là いさぎよい.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "reading"
+    ]
+  },
+  {
+    "id": "nq-116",
+    "type": "kanji",
+    "question": "【傾向】を分析する。",
+    "options": [
+      "けいこう",
+      "けいごう",
+      "けこう",
+      "けごう"
+    ],
+    "correctAnswer": "けいこう",
+    "explanation": "Cách đọc đúng của từ trong ngoặc là けいこう.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "reading"
+    ]
+  },
+  {
+    "id": "nq-117",
+    "type": "kanji",
+    "question": "【根拠】を示す。",
+    "options": [
+      "こんきょ",
+      "こんご",
+      "こんきょう",
+      "こんごう"
+    ],
+    "correctAnswer": "こんきょ",
+    "explanation": "Cách đọc đúng của từ trong ngoặc là こんきょ.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "reading"
+    ]
+  },
+  {
+    "id": "nq-118",
+    "type": "kanji",
+    "question": "【指標】となるデータ。",
+    "options": [
+      "しひょう",
+      "しびょう",
+      "しひょう",
+      "しびょう"
+    ],
+    "correctAnswer": "しひょう",
+    "explanation": "Cách đọc đúng của từ trong ngoặc là しひょう.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "reading"
+    ]
+  },
+  {
+    "id": "nq-119",
+    "type": "kanji",
+    "question": "【意図】を理解する。",
+    "options": [
+      "いと",
+      "いどう",
+      "いとう",
+      "いど"
+    ],
+    "correctAnswer": "いと",
+    "explanation": "Cách đọc đúng của từ trong ngoặc là いと.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "reading"
+    ]
+  },
+  {
+    "id": "nq-120",
+    "type": "kanji",
+    "question": "【葛藤】を抱える。",
+    "options": [
+      "かっとう",
+      "かっどう",
+      "がっとう",
+      "がっどう"
+    ],
+    "correctAnswer": "かっとう",
+    "explanation": "Cách đọc đúng của từ trong ngoặc là かっとう.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "reading"
+    ]
+  },
+  {
+    "id": "nq-121",
+    "type": "kanji",
+    "question": "【恩恵】を受ける。",
+    "options": [
+      "おんけい",
+      "おんげい",
+      "おんけ",
+      "おんげ"
+    ],
+    "correctAnswer": "おんけい",
+    "explanation": "Cách đọc đúng của từ trong ngoặc là おんけい.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "reading"
+    ]
+  },
+  {
+    "id": "nq-122",
+    "type": "kanji",
+    "question": "【趣旨】を説明する。",
+    "options": [
+      "しゅし",
+      "しゅじ",
+      "すし",
+      "すじ"
+    ],
+    "correctAnswer": "しゅし",
+    "explanation": "Cách đọc đúng của từ trong ngoặc là しゅし.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "reading"
+    ]
+  },
+  {
+    "id": "nq-123",
+    "type": "kanji",
+    "question": "【概要】をまとめる。",
+    "options": [
+      "がいよう",
+      "かいよう",
+      "がいよう",
+      "かいよう"
+    ],
+    "correctAnswer": "がいよう",
+    "explanation": "Cách đọc đúng của từ trong ngoặc là がいよう.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "reading"
+    ]
+  },
+  {
+    "id": "nq-124",
+    "type": "kanji",
+    "question": "【詳細】な報告書。",
+    "options": [
+      "しょうさい",
+      "しょうざい",
+      "しょうさい",
+      "しょうざい"
+    ],
+    "correctAnswer": "しょうさい",
+    "explanation": "Cách đọc đúng của từ trong ngoặc là しょうさい.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "reading"
+    ]
+  },
+  {
+    "id": "nq-125",
+    "type": "kanji",
+    "question": "【大いに】期待している。",
+    "options": [
+      "おおいに",
+      "おおい",
+      "おおに",
+      "おおに"
+    ],
+    "correctAnswer": "おおいに",
+    "explanation": "Cách đọc đúng của từ trong ngoặc là おおいに.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "reading"
+    ]
+  },
+  {
+    "id": "nq-126",
+    "type": "kanji",
+    "question": "【概ね】順調だ。",
+    "options": [
+      "おおむね",
+      "おおね",
+      "おおむね",
+      "おおね"
+    ],
+    "correctAnswer": "おおむね",
+    "explanation": "Cách đọc đúng của từ trong ngoặc là おおむね.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "reading"
+    ]
+  },
+  {
+    "id": "nq-127",
+    "type": "kanji",
+    "question": "【直ちに】出発する。",
+    "options": [
+      "ただちに",
+      "たちに",
+      "ただちに",
+      "たちに"
+    ],
+    "correctAnswer": "ただちに",
+    "explanation": "Cách đọc đúng của từ trong ngoặc là ただちに.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "reading"
+    ]
+  },
+  {
+    "id": "nq-128",
+    "type": "kanji",
+    "question": "【速やかに】対応する。",
+    "options": [
+      "すみやかに",
+      "はややかに",
+      "すみやかに",
+      "はややかに"
+    ],
+    "correctAnswer": "すみやかに",
+    "explanation": "Cách đọc đúng của từ trong ngoặc là すみやかに.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "reading"
+    ]
+  },
+  {
+    "id": "nq-129",
+    "type": "kanji",
+    "question": "【若干】の修正。",
+    "options": [
+      "じゃっかん",
+      "じゃっかん",
+      "ざっかん",
+      "ざっかん"
+    ],
+    "correctAnswer": "じゃっかん",
+    "explanation": "Cách đọc đúng của từ trong ngoặc là じゃっかん.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "reading"
+    ]
+  },
+  {
+    "id": "nq-130",
+    "type": "kanji",
+    "question": "【一斉に】立ち上がる。",
+    "options": [
+      "いっせいに",
+      "いっせい",
+      "いっせに",
+      "いっせ"
+    ],
+    "correctAnswer": "いっせいに",
+    "explanation": "Cách đọc đúng của từ trong ngoặc là いっせいに.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "reading"
+    ]
+  },
+  {
+    "id": "nq-131",
+    "type": "kanji",
+    "question": "【絶えず】努力する。",
+    "options": [
+      "たえず",
+      "たえず",
+      "たえず",
+      "たえず"
+    ],
+    "correctAnswer": "たえず",
+    "explanation": "Cách đọc đúng của từ trong ngoặc là たえず.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "reading"
+    ]
+  },
+  {
+    "id": "nq-132",
+    "type": "kanji",
+    "question": "【案外】難しかった。",
+    "options": [
+      "あんがい",
+      "あんがい",
+      "あんがい",
+      "あんがい"
+    ],
+    "correctAnswer": "あんがい",
+    "explanation": "Cách đọc đúng của từ trong ngoặc là あんがい.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "reading"
+    ]
+  },
+  {
+    "id": "nq-133",
+    "type": "kanji",
+    "question": "【風習】を守る。",
+    "options": [
+      "ふうしゅう",
+      "ふうじゅう",
+      "ふしゅう",
+      "ふじゅう"
+    ],
+    "correctAnswer": "ふうしゅう",
+    "explanation": "Cách đọc đúng của từ trong ngoặc là ふうしゅう.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "reading"
+    ]
+  },
+  {
+    "id": "nq-134",
+    "type": "kanji",
+    "question": "【模範】となる行動。",
+    "options": [
+      "もはん",
+      "もばん",
+      "もはん",
+      "もばん"
+    ],
+    "correctAnswer": "もはん",
+    "explanation": "Cách đọc đúng của từ trong ngoặc là もはん.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "reading"
+    ]
+  },
+  {
+    "id": "nq-135",
+    "type": "kanji",
+    "question": "【倫理】的な問題。",
+    "options": [
+      "りんり",
+      "りんり",
+      "りんり",
+      "りんり"
+    ],
+    "correctAnswer": "りんり",
+    "explanation": "Cách đọc đúng của từ trong ngoặc là りんり.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "reading"
+    ]
+  },
+  {
+    "id": "nq-136",
+    "type": "kanji",
+    "question": "【参拝】する。",
+    "options": [
+      "さんぱい",
+      "さんばい",
+      "さんぱい",
+      "さんばい"
+    ],
+    "correctAnswer": "さんぱい",
+    "explanation": "Cách đọc đúng của từ trong ngoặc là さんぱい.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "reading"
+    ]
+  },
+  {
+    "id": "nq-137",
+    "type": "kanji",
+    "question": "【謙虚】な態度。",
+    "options": [
+      "けんきょ",
+      "けんご",
+      "けんきょう",
+      "けんごう"
+    ],
+    "correctAnswer": "けんきょ",
+    "explanation": "Cách đọc đúng của từ trong ngoặc là けんきょ.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "reading"
+    ]
+  },
+  {
+    "id": "nq-138",
+    "type": "kanji",
+    "question": "【出世】を望む。",
+    "options": [
+      "しゅっせ",
+      "しゅっせ",
+      "しゅっせ",
+      "しゅっせ"
+    ],
+    "correctAnswer": "しゅっせ",
+    "explanation": "Cách đọc đúng của từ trong ngoặc là しゅっせ.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "reading"
+    ]
+  },
+  {
+    "id": "nq-139",
+    "type": "kanji",
+    "question": "【需要】と供給。",
+    "options": [
+      "じゅよう",
+      "じゅよう",
+      "じゅよう",
+      "じゅよう"
+    ],
+    "correctAnswer": "じゅよう",
+    "explanation": "Cách đọc đúng của từ trong ngoặc là じゅよう.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "reading"
+    ]
+  },
+  {
+    "id": "nq-140",
+    "type": "kanji",
+    "question": "【画期的】な発明。",
+    "options": [
+      "かっきてき",
+      "かっきてき",
+      "かっきてき",
+      "かっきてき"
+    ],
+    "correctAnswer": "かっきてき",
+    "explanation": "Cách đọc đúng của từ trong ngoặc là かっきてき.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "reading"
+    ]
+  },
+  {
+    "id": "nq-141",
+    "type": "kanji",
+    "question": "技術の（いちじるしい）進歩。",
+    "options": [
+      "著しい",
+      "顕しい",
+      "著るしい",
+      "顕るしい"
+    ],
+    "correctAnswer": "著しい",
+    "explanation": "Kanji đúng của từ trong ngoặc là 著しい.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "writing"
+    ]
+  },
+  {
+    "id": "nq-142",
+    "type": "kanji",
+    "question": "（あいまい）な返事。",
+    "options": [
+      "曖昧",
+      "暗昧",
+      "曖味",
+      "暗味"
+    ],
+    "correctAnswer": "曖昧",
+    "explanation": "Kanji đúng của từ trong ngoặc là 曖昧.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "writing"
+    ]
+  },
+  {
+    "id": "nq-143",
+    "type": "kanji",
+    "question": "（ささい）なことで怒る。",
+    "options": [
+      "些細",
+      "小細",
+      "些際",
+      "小際"
+    ],
+    "correctAnswer": "些細",
+    "explanation": "Kanji đúng của từ trong ngoặc là 些細.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "writing"
+    ]
+  },
+  {
+    "id": "nq-144",
+    "type": "kanji",
+    "question": "（がんじょう）な建物。",
+    "options": [
+      "頑丈",
+      "頑状",
+      "健丈",
+      "健状"
+    ],
+    "correctAnswer": "頑丈",
+    "explanation": "Kanji đúng của từ trong ngoặc là 頑丈.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "writing"
+    ]
+  },
+  {
+    "id": "nq-145",
+    "type": "kanji",
+    "question": "（みっせつ）な関係。",
+    "options": [
+      "密接",
+      "密設",
+      "密節",
+      "密切"
+    ],
+    "correctAnswer": "密接",
+    "explanation": "Kanji đúng của từ trong ngoặc là 密接.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "writing"
+    ]
+  },
+  {
+    "id": "nq-146",
+    "type": "kanji",
+    "question": "（ふかけつ）な要素。",
+    "options": [
+      "不可欠",
+      "不可決",
+      "不可結",
+      "不可血"
+    ],
+    "correctAnswer": "不可欠",
+    "explanation": "Kanji đúng của từ trong ngoặc là 不可欠.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "writing"
+    ]
+  },
+  {
+    "id": "nq-147",
+    "type": "kanji",
+    "question": "（けんぜん）な精神。",
+    "options": [
+      "健全",
+      "健前",
+      "建全",
+      "建前"
+    ],
+    "correctAnswer": "健全",
+    "explanation": "Kanji đúng của từ trong ngoặc là 健全.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "writing"
+    ]
+  },
+  {
+    "id": "nq-148",
+    "type": "kanji",
+    "question": "（たくみ）な話術。",
+    "options": [
+      "巧み",
+      "工み",
+      "功み",
+      "巧み"
+    ],
+    "correctAnswer": "巧み",
+    "explanation": "Kanji đúng của từ trong ngoặc là 巧み.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "writing"
+    ]
+  },
+  {
+    "id": "nq-149",
+    "type": "kanji",
+    "question": "（むなしい）努力。",
+    "options": [
+      "空しい",
+      "虚しい",
+      "空しい",
+      "虚しい"
+    ],
+    "correctAnswer": "空しい",
+    "explanation": "Kanji đúng của từ trong ngoặc là 空しい.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "writing"
+    ]
+  },
+  {
+    "id": "nq-150",
+    "type": "kanji",
+    "question": "（わずらわしい）手続き。",
+    "options": [
+      "煩わしい",
+      "煩しい",
+      "煩わしい",
+      "煩しい"
+    ],
+    "correctAnswer": "煩わしい",
+    "explanation": "Kanji đúng của từ trong ngoặc là 煩わしい.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "writing"
+    ]
+  },
+  {
+    "id": "nq-151",
+    "type": "kanji",
+    "question": "（はいけい）を調べる。",
+    "options": [
+      "背景",
+      "背径",
+      "背形",
+      "背景"
+    ],
+    "correctAnswer": "背景",
+    "explanation": "Kanji đúng của từ trong ngoặc là 背景.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "writing"
+    ]
+  },
+  {
+    "id": "nq-152",
+    "type": "kanji",
+    "question": "（ぜんてい）条件。",
+    "options": [
+      "前提",
+      "前底",
+      "前程",
+      "前提"
+    ],
+    "correctAnswer": "前提",
+    "explanation": "Kanji đúng của từ trong ngoặc là 前提.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "writing"
+    ]
+  },
+  {
+    "id": "nq-153",
+    "type": "kanji",
+    "question": "（かてい）を重視する。",
+    "options": [
+      "過程",
+      "過程",
+      "過程",
+      "過程"
+    ],
+    "correctAnswer": "過程",
+    "explanation": "Kanji đúng của từ trong ngoặc là 過程.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "writing"
+    ]
+  },
+  {
+    "id": "nq-154",
+    "type": "kanji",
+    "question": "（そち）をとる。",
+    "options": [
+      "措置",
+      "阻置",
+      "措置",
+      "阻置"
+    ],
+    "correctAnswer": "措置",
+    "explanation": "Kanji đúng của từ trong ngoặc là 措置.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "writing"
+    ]
+  },
+  {
+    "id": "nq-155",
+    "type": "kanji",
+    "question": "（かくご）を決める。",
+    "options": [
+      "覚悟",
+      "覚語",
+      "覚護",
+      "覚悟"
+    ],
+    "correctAnswer": "覚悟",
+    "explanation": "Kanji đúng của từ trong ngoặc là 覚悟.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "writing"
+    ]
+  },
+  {
+    "id": "nq-156",
+    "type": "kanji",
+    "question": "（へんけん）を持つ。",
+    "options": [
+      "偏見",
+      "変見",
+      "編見",
+      "偏見"
+    ],
+    "correctAnswer": "偏見",
+    "explanation": "Kanji đúng của từ trong ngoặc là 偏見.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "writing"
+    ]
+  },
+  {
+    "id": "nq-157",
+    "type": "kanji",
+    "question": "（だきょう）する。",
+    "options": [
+      "妥協",
+      "妥協",
+      "妥協",
+      "妥協"
+    ],
+    "correctAnswer": "妥協",
+    "explanation": "Kanji đúng của từ trong ngoặc là 妥協.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "writing"
+    ]
+  },
+  {
+    "id": "nq-158",
+    "type": "kanji",
+    "question": "（じゃくてん）を克服する。",
+    "options": [
+      "弱点",
+      "弱展",
+      "若点",
+      "若展"
+    ],
+    "correctAnswer": "弱点",
+    "explanation": "Kanji đúng của từ trong ngoặc là 弱点.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "writing"
+    ]
+  },
+  {
+    "id": "nq-159",
+    "type": "kanji",
+    "question": "（ほうわ）状態。",
+    "options": [
+      "飽和",
+      "保和",
+      "豊和",
+      "飽和"
+    ],
+    "correctAnswer": "飽和",
+    "explanation": "Kanji đúng của từ trong ngoặc là 飽和.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "writing"
+    ]
+  },
+  {
+    "id": "nq-160",
+    "type": "kanji",
+    "question": "（はもん）を呼ぶ。",
+    "options": [
+      "波紋",
+      "波門",
+      "派紋",
+      "派門"
+    ],
+    "correctAnswer": "波紋",
+    "explanation": "Kanji đúng của từ trong ngoặc là 波紋.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "writing"
+    ]
+  },
+  {
+    "id": "nq-161",
+    "type": "kanji",
+    "question": "（いちがいに）言えない。",
+    "options": [
+      "一概に",
+      "一慨に",
+      "一概に",
+      "一慨に"
+    ],
+    "correctAnswer": "一概に",
+    "explanation": "Kanji đúng của từ trong ngoặc là 一概に.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "writing"
+    ]
+  },
+  {
+    "id": "nq-162",
+    "type": "kanji",
+    "question": "（おおむね）良好だ。",
+    "options": [
+      "概ね",
+      "概ね",
+      "概ね",
+      "概ね"
+    ],
+    "correctAnswer": "概ね",
+    "explanation": "Kanji đúng của từ trong ngoặc là 概ね.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "writing"
+    ]
+  },
+  {
+    "id": "nq-163",
+    "type": "kanji",
+    "question": "（しばしば）起こる。",
+    "options": [
+      "しばしば",
+      "しばしば",
+      "しばしば",
+      "しばしば"
+    ],
+    "correctAnswer": "しばしば",
+    "explanation": "Kanji đúng của từ trong ngoặc là しばしば.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "writing"
+    ]
+  },
+  {
+    "id": "nq-164",
+    "type": "kanji",
+    "question": "（すくなくとも）３日はかかる。",
+    "options": [
+      "少なくとも",
+      "少なくとも",
+      "少なくとも",
+      "少なくとも"
+    ],
+    "correctAnswer": "少なくとも",
+    "explanation": "Kanji đúng của từ trong ngoặc là 少なくとも.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "writing"
+    ]
+  },
+  {
+    "id": "nq-165",
+    "type": "kanji",
+    "question": "（あらかじめ）連絡する。",
+    "options": [
+      "予め",
+      "予め",
+      "予め",
+      "予め"
+    ],
+    "correctAnswer": "予め",
+    "explanation": "Kanji đúng của từ trong ngoặc là 予め.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "writing"
+    ]
+  },
+  {
+    "id": "nq-166",
+    "type": "kanji",
+    "question": "（ことごとく）失敗した。",
+    "options": [
+      "悉く",
+      "尽く",
+      "悉く",
+      "尽く"
+    ],
+    "correctAnswer": "悉く",
+    "explanation": "Kanji đúng của từ trong ngoặc là 悉く.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "writing"
+    ]
+  },
+  {
+    "id": "nq-167",
+    "type": "kanji",
+    "question": "（ひたすら）走る。",
+    "options": [
+      "ひたすら",
+      "ひたすら",
+      "ひたすら",
+      "ひたすら"
+    ],
+    "correctAnswer": "ひたすら",
+    "explanation": "Kanji đúng của từ trong ngoặc là ひたすら.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "writing"
+    ]
+  },
+  {
+    "id": "nq-168",
+    "type": "kanji",
+    "question": "（せっかく）の機会。",
+    "options": [
+      "折角",
+      "切角",
+      "接角",
+      "説角"
+    ],
+    "correctAnswer": "折角",
+    "explanation": "Kanji đúng của từ trong ngoặc là 折角.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "writing"
+    ]
+  },
+  {
+    "id": "nq-169",
+    "type": "kanji",
+    "question": "（しょせん）無理だ。",
+    "options": [
+      "所詮",
+      "初戦",
+      "初詮",
+      "所戦"
+    ],
+    "correctAnswer": "所詮",
+    "explanation": "Kanji đúng của từ trong ngoặc là 所詮.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "writing"
+    ]
+  },
+  {
+    "id": "nq-170",
+    "type": "kanji",
+    "question": "（とうてい）信じられない。",
+    "options": [
+      "到底",
+      "到底",
+      "到底",
+      "到底"
+    ],
+    "correctAnswer": "到底",
+    "explanation": "Kanji đúng của từ trong ngoặc là 到底.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "writing"
+    ]
+  },
+  {
+    "id": "nq-171",
+    "type": "kanji",
+    "question": "（めんえき）を高める。",
+    "options": [
+      "免疫",
+      "免役",
+      "免液",
+      "免疫"
+    ],
+    "correctAnswer": "免疫",
+    "explanation": "Kanji đúng của từ trong ngoặc là 免疫.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "writing"
+    ]
+  },
+  {
+    "id": "nq-172",
+    "type": "kanji",
+    "question": "（ふくさよう）がある。",
+    "options": [
+      "副作用",
+      "副作用",
+      "副作用",
+      "副作用"
+    ],
+    "correctAnswer": "副作用",
+    "explanation": "Kanji đúng của từ trong ngoặc là 副作用.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "writing"
+    ]
+  },
+  {
+    "id": "nq-173",
+    "type": "kanji",
+    "question": "（はいしゅつ）ガス。",
+    "options": [
+      "排出",
+      "輩出",
+      "排除",
+      "排出"
+    ],
+    "correctAnswer": "排出",
+    "explanation": "Kanji đúng của từ trong ngoặc là 排出.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "writing"
+    ]
+  },
+  {
+    "id": "nq-174",
+    "type": "kanji",
+    "question": "（はいきぶつ）の処理。",
+    "options": [
+      "廃棄物",
+      "廃企物",
+      "排棄物",
+      "排企物"
+    ],
+    "correctAnswer": "廃棄物",
+    "explanation": "Kanji đúng của từ trong ngoặc là 廃棄物.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "writing"
+    ]
+  },
+  {
+    "id": "nq-175",
+    "type": "kanji",
+    "question": "（かんそく）データ。",
+    "options": [
+      "観測",
+      "観側",
+      "感測",
+      "感側"
+    ],
+    "correctAnswer": "観測",
+    "explanation": "Kanji đúng của từ trong ngoặc là 観測.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "writing"
+    ]
+  },
+  {
+    "id": "nq-176",
+    "type": "kanji",
+    "question": "（すうち）を計算する。",
+    "options": [
+      "数値",
+      "数知",
+      "数血",
+      "数値"
+    ],
+    "correctAnswer": "数値",
+    "explanation": "Kanji đúng của từ trong ngoặc là 数値.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "writing"
+    ]
+  },
+  {
+    "id": "nq-177",
+    "type": "kanji",
+    "question": "（たいせき）を求める。",
+    "options": [
+      "体積",
+      "体責",
+      "退積",
+      "退責"
+    ],
+    "correctAnswer": "体積",
+    "explanation": "Kanji đúng của từ trong ngoặc là 体積.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "writing"
+    ]
+  },
+  {
+    "id": "nq-178",
+    "type": "kanji",
+    "question": "（ごうきん）を作る。",
+    "options": [
+      "合金",
+      "合筋",
+      "合近",
+      "合金"
+    ],
+    "correctAnswer": "合金",
+    "explanation": "Kanji đúng của từ trong ngoặc là 合金.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "writing"
+    ]
+  },
+  {
+    "id": "nq-179",
+    "type": "kanji",
+    "question": "（のうど）が高い。",
+    "options": [
+      "濃度",
+      "濃渡",
+      "能度",
+      "能渡"
+    ],
+    "correctAnswer": "濃度",
+    "explanation": "Kanji đúng của từ trong ngoặc là 濃度.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "writing"
+    ]
+  },
+  {
+    "id": "nq-180",
+    "type": "kanji",
+    "question": "友人に本を（すすめる）。",
+    "options": [
+      "勧める",
+      "進める",
+      "薦める",
+      "辞める"
+    ],
+    "correctAnswer": "勧める",
+    "explanation": "Kanji đúng của từ trong ngoặc là 勧める.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "kanji",
+      "writing"
+    ]
+  },
+  {
+    "id": "nq-181",
+    "type": "grammar",
+    "question": "お金がある_____、幸せとは限らない。",
+    "options": [
+      "からといって",
+      "からには",
+      "からして",
+      "からこそ"
+    ],
+    "correctAnswer": "からといって",
+    "explanation": "Không phải vì... mà chắc chắn...",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar"
+    ]
+  },
+  {
+    "id": "nq-182",
+    "type": "grammar",
+    "question": "買った_____、一度も使っていない。",
+    "options": [
+      "ものの",
+      "ものを",
+      "ものか",
+      "ものなら"
+    ],
+    "correctAnswer": "ものの",
+    "explanation": "Mặc dù... nhưng...",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar"
+    ]
+  },
+  {
+    "id": "nq-183",
+    "type": "grammar",
+    "question": "彼とは去年会った_____、連絡がない。",
+    "options": [
+      "きり",
+      "ばかり",
+      "だけ",
+      "のみ"
+    ],
+    "correctAnswer": "きり",
+    "explanation": "Chỉ... rồi thôi, kể từ đó không... nữa.",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar"
+    ]
+  },
+  {
+    "id": "nq-184",
+    "type": "grammar",
+    "question": "彼の成功は努力の結果_____。",
+    "options": [
+      "にほかならない",
+      "にすぎない",
+      "にちがいない",
+      "にきまっている"
+    ],
+    "correctAnswer": "にほかならない",
+    "explanation": "Không gì khác ngoài...",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar"
+    ]
+  },
+  {
+    "id": "nq-185",
+    "type": "grammar",
+    "question": "この本は初心者_____です。",
+    "options": [
+      "向き",
+      "向け",
+      "っぽい",
+      "ぎみ"
+    ],
+    "correctAnswer": "向き",
+    "explanation": "Phù hợp cho...",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar"
+    ]
+  },
+  {
+    "id": "nq-186",
+    "type": "grammar",
+    "question": "予想_____、試験は簡単だった。",
+    "options": [
+      "に反して",
+      "にくらべて",
+      "にしたがって",
+      "につれて"
+    ],
+    "correctAnswer": "に反して",
+    "explanation": "Trái ngược với...",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar"
+    ]
+  },
+  {
+    "id": "nq-187",
+    "type": "grammar",
+    "question": "健康_____大切なものはない。",
+    "options": [
+      "くらい",
+      "ばかり",
+      "ほど",
+      "だけ"
+    ],
+    "correctAnswer": "くらい",
+    "explanation": "Không có gì... bằng...",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar"
+    ]
+  },
+  {
+    "id": "nq-188",
+    "type": "grammar",
+    "question": "地球の気温は上昇_____。",
+    "options": [
+      "しつつある",
+      "している",
+      "してならない",
+      "してたまらない"
+    ],
+    "correctAnswer": "しつつある",
+    "explanation": "Đang dần...",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar"
+    ]
+  },
+  {
+    "id": "nq-189",
+    "type": "grammar",
+    "question": "彼は頭がいい_____、スポーツもできる。",
+    "options": [
+      "うえに",
+      "うちに",
+      "うえで",
+      "かわりに"
+    ],
+    "correctAnswer": "うえに",
+    "explanation": "Không chỉ... mà còn...",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar"
+    ]
+  },
+  {
+    "id": "nq-190",
+    "type": "grammar",
+    "question": "長い話し合いの_____、結論が出た。",
+    "options": [
+      "末に",
+      "あげく",
+      "ばかりに",
+      "あまり"
+    ],
+    "correctAnswer": "末に",
+    "explanation": "Sau khi... cuối cùng thì...",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar"
+    ]
+  },
+  {
+    "id": "nq-191",
+    "type": "grammar",
+    "question": "先生の_____、N2に合格できた。",
+    "options": [
+      "おかげで",
+      "せいで",
+      "ために",
+      "から"
+    ],
+    "correctAnswer": "おかげで",
+    "explanation": "Nhờ có...",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar"
+    ]
+  },
+  {
+    "id": "nq-192",
+    "type": "grammar",
+    "question": "私は留学生_____日本に来ました。",
+    "options": [
+      "として",
+      "にとって",
+      "に対して",
+      "について"
+    ],
+    "correctAnswer": "として",
+    "explanation": "Với tư cách là...",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar"
+    ]
+  },
+  {
+    "id": "nq-193",
+    "type": "grammar",
+    "question": "料理_____、彼女に勝てる人はいない。",
+    "options": [
+      "にかけては",
+      "にこたえて",
+      "にそって",
+      "にもとづいて"
+    ],
+    "correctAnswer": "にかけては",
+    "explanation": "Nói về mặt... thì...",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar"
+    ]
+  },
+  {
+    "id": "nq-194",
+    "type": "grammar",
+    "question": "もし留学する_____、どこに行きたいですか。",
+    "options": [
+      "としたら",
+      "にしても",
+      "としては",
+      "からすると"
+    ],
+    "correctAnswer": "としたら",
+    "explanation": "Nếu giả sử... thì...",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar"
+    ]
+  },
+  {
+    "id": "nq-195",
+    "type": "grammar",
+    "question": "忙しくて、食事をする時間_____ない。",
+    "options": [
+      "さえ",
+      "こそ",
+      "すら",
+      "など"
+    ],
+    "correctAnswer": "さえ",
+    "explanation": "Ngay cả...",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar"
+    ]
+  },
+  {
+    "id": "nq-196",
+    "type": "grammar",
+    "question": "今から走った_____、もう間に合わない。",
+    "options": [
+      "ところで",
+      "ばかりに",
+      "からには",
+      "以上は"
+    ],
+    "correctAnswer": "ところで",
+    "explanation": "Cho dù có... cũng...",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar"
+    ]
+  },
+  {
+    "id": "nq-197",
+    "type": "grammar",
+    "question": "あんなに食べたら、太る_____。",
+    "options": [
+      "に決まっている",
+      "にすぎない",
+      "にほかならない",
+      "かねない"
+    ],
+    "correctAnswer": "に決まっている",
+    "explanation": "Chắc chắn là...",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar"
+    ]
+  },
+  {
+    "id": "nq-198",
+    "type": "grammar",
+    "question": "そんな難しい試験、受かり_____。",
+    "options": [
+      "っこない",
+      "かねない",
+      "がたい",
+      "つつある"
+    ],
+    "correctAnswer": "っこない",
+    "explanation": "Không thể nào...",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar"
+    ]
+  },
+  {
+    "id": "nq-199",
+    "type": "grammar",
+    "question": "いつまでも泣いて_____。前を向こう。",
+    "options": [
+      "はいられない",
+      "はすまない",
+      "はならない",
+      "はいない"
+    ],
+    "correctAnswer": "はいられない",
+    "explanation": "Không thể cứ... mãi được.",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar"
+    ]
+  },
+  {
+    "id": "nq-200",
+    "type": "grammar",
+    "question": "心を_____手紙を書いた。",
+    "options": [
+      "こめて",
+      "つうじて",
+      "めぐって",
+      "とって"
+    ],
+    "correctAnswer": "こめて",
+    "explanation": "Với tất cả... / dồn hết... vào",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar"
+    ]
+  },
+  {
+    "id": "nq-201",
+    "type": "grammar",
+    "question": "日本語_____、英語も話せる。",
+    "options": [
+      "はもちろん",
+      "はともかく",
+      "のみならず",
+      "ばかりか"
+    ],
+    "correctAnswer": "はもちろん",
+    "explanation": "...thì đương nhiên rồi, ...cũng",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar"
+    ]
+  },
+  {
+    "id": "nq-202",
+    "type": "grammar",
+    "question": "結果_____、一生懸命やったことが大事だ。",
+    "options": [
+      "はともかく",
+      "はおろか",
+      "はもとより",
+      "はもちろん"
+    ],
+    "correctAnswer": "はともかく",
+    "explanation": "...tạm gác sang một bên, ...",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar"
+    ]
+  },
+  {
+    "id": "nq-203",
+    "type": "grammar",
+    "question": "晴れた_____、急に雨が降り出した。",
+    "options": [
+      "かと思ったら",
+      "とたんに",
+      "かぎり",
+      "からには"
+    ],
+    "correctAnswer": "かと思ったら",
+    "explanation": "Vừa mới... thì đã bất ngờ...",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar"
+    ]
+  },
+  {
+    "id": "nq-204",
+    "type": "grammar",
+    "question": "賛成_____反対_____、意見を言ってください。",
+    "options": [
+      "にしろ／にしろ",
+      "につけ／につけ",
+      "なり／なり",
+      "とか／とか"
+    ],
+    "correctAnswer": "にしろ／にしろ",
+    "explanation": "Dù là... hay...",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar"
+    ]
+  },
+  {
+    "id": "nq-205",
+    "type": "grammar",
+    "question": "急いでいる時に_____、電車が遅れる。",
+    "options": [
+      "限って",
+      "限らず",
+      "限り",
+      "限りでは"
+    ],
+    "correctAnswer": "限って",
+    "explanation": "Cứ hễ vào lúc... thì... (điều xui xẻo)",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar"
+    ]
+  },
+  {
+    "id": "nq-206",
+    "type": "grammar",
+    "question": "本日に_____、全品半額です。",
+    "options": [
+      "限り",
+      "限らず",
+      "限って",
+      "限りの"
+    ],
+    "correctAnswer": "限り",
+    "explanation": "Chỉ giới hạn ở...",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar"
+    ]
+  },
+  {
+    "id": "nq-207",
+    "type": "grammar",
+    "question": "眠くて_____。",
+    "options": [
+      "しょうがない",
+      "たまらない",
+      "ならない",
+      "すぎない"
+    ],
+    "correctAnswer": "しょうがない",
+    "explanation": "...không chịu nổi (cảm giác)",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar"
+    ]
+  },
+  {
+    "id": "nq-208",
+    "type": "grammar",
+    "question": "故郷のことが懐かしくて_____。",
+    "options": [
+      "ならない",
+      "たまらない",
+      "しょうがない",
+      "すぎない"
+    ],
+    "correctAnswer": "ならない",
+    "explanation": "...vô cùng (cảm xúc tự nhiên nảy sinh)",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar"
+    ]
+  },
+  {
+    "id": "nq-209",
+    "type": "grammar",
+    "question": "形が富士山に似ている_____、この名前がついた。",
+    "options": [
+      "ことから",
+      "ことだから",
+      "ことになっている",
+      "ことにしている"
+    ],
+    "correctAnswer": "ことから",
+    "explanation": "Bởi vì... (nguồn gốc)",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar"
+    ]
+  },
+  {
+    "id": "nq-210",
+    "type": "grammar",
+    "question": "彼は諦める_____、最後まで頑張った。",
+    "options": [
+      "ことなく",
+      "ことなしに",
+      "ことだから",
+      "ことか"
+    ],
+    "correctAnswer": "ことなく",
+    "explanation": "Mà không...",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar"
+    ]
+  },
+  {
+    "id": "nq-211",
+    "type": "grammar",
+    "question": "できる_____、もう一度やり直したい。",
+    "options": [
+      "ものなら",
+      "ものの",
+      "ものか",
+      "ものだ"
+    ],
+    "correctAnswer": "ものなら",
+    "explanation": "Nếu có thể... thì...",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar"
+    ]
+  },
+  {
+    "id": "nq-212",
+    "type": "grammar",
+    "question": "あの店は外観_____高級そうだ。",
+    "options": [
+      "からして",
+      "からすると",
+      "からいって",
+      "からみれば"
+    ],
+    "correctAnswer": "からして",
+    "explanation": "Ngay từ... đã...",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar"
+    ]
+  },
+  {
+    "id": "nq-213",
+    "type": "grammar",
+    "question": "友達との約束があるから、休む_____。",
+    "options": [
+      "わけにはいかない",
+      "わけではない",
+      "わけがない",
+      "わけだ"
+    ],
+    "correctAnswer": "わけにはいかない",
+    "explanation": "Không thể... được (lý do đạo đức)",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar"
+    ]
+  },
+  {
+    "id": "nq-214",
+    "type": "grammar",
+    "question": "あんなに練習したのに、負ける_____。",
+    "options": [
+      "わけがない",
+      "わけではない",
+      "わけにはいかない",
+      "わけだ"
+    ],
+    "correctAnswer": "わけがない",
+    "explanation": "Không thể nào... (phủ định mạnh)",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar"
+    ]
+  },
+  {
+    "id": "nq-215",
+    "type": "grammar",
+    "question": "招待されたのだから、行かない_____。",
+    "options": [
+      "わけにはいかない",
+      "わけではない",
+      "わけがない",
+      "わけだ"
+    ],
+    "correctAnswer": "わけにはいかない",
+    "explanation": "Không thể không...",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar"
+    ]
+  },
+  {
+    "id": "nq-216",
+    "type": "grammar",
+    "question": "彼は日本に住んでいた_____。日本語がとても上手だ。",
+    "options": [
+      "に違いない",
+      "に決まっている",
+      "にすぎない",
+      "にほかならない"
+    ],
+    "correctAnswer": "に違いない",
+    "explanation": "Chắc chắn là... (suy luận)",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar"
+    ]
+  },
+  {
+    "id": "nq-217",
+    "type": "grammar",
+    "question": "最近、風邪_____なので、早く寝ます。",
+    "options": [
+      "気味",
+      "がち",
+      "っぽい",
+      "だらけ"
+    ],
+    "correctAnswer": "気味",
+    "explanation": "Có vẻ, có cảm giác...",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar"
+    ]
+  },
+  {
+    "id": "nq-218",
+    "type": "grammar",
+    "question": "この部屋はほこり_____だ。",
+    "options": [
+      "だらけ",
+      "まみれ",
+      "ずくめ",
+      "ばかり"
+    ],
+    "correctAnswer": "だらけ",
+    "explanation": "Đầy... (tiêu cực)",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar"
+    ]
+  },
+  {
+    "id": "nq-219",
+    "type": "grammar",
+    "question": "法律_____判断する。",
+    "options": [
+      "に基づいて",
+      "をめぐって",
+      "を通じて",
+      "にわたって"
+    ],
+    "correctAnswer": "に基づいて",
+    "explanation": "Dựa trên...",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar"
+    ]
+  },
+  {
+    "id": "nq-220",
+    "type": "grammar",
+    "question": "10年に_____研究を続けてきた。",
+    "options": [
+      "わたって",
+      "通じて",
+      "めぐって",
+      "したがって"
+    ],
+    "correctAnswer": "わたって",
+    "explanation": "Trải qua, trong suốt (thời gian/không gian)",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar"
+    ]
+  },
+  {
+    "id": "nq-221",
+    "type": "vocabulary",
+    "question": "昨夜は_____眠れた。",
+    "options": [
+      "ぐっすり",
+      "ぼんやり",
+      "すっきり",
+      "のんびり"
+    ],
+    "correctAnswer": "ぐっすり",
+    "explanation": "Từ phù hợp nhất để điền vào chỗ trống là ぐっすり.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "nq-222",
+    "type": "vocabulary",
+    "question": "試験の結果に_____した。",
+    "options": [
+      "がっかり",
+      "うっかり",
+      "ぴったり",
+      "そっくり"
+    ],
+    "correctAnswer": "がっかり",
+    "explanation": "Từ phù hợp nhất để điền vào chỗ trống là がっかり.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "nq-223",
+    "type": "vocabulary",
+    "question": "頭が_____回っている。",
+    "options": [
+      "ぐるぐる",
+      "ばらばら",
+      "ぶらぶら",
+      "ぺらぺら"
+    ],
+    "correctAnswer": "ぐるぐる",
+    "explanation": "Từ phù hợp nhất để điền vào chỗ trống là ぐるぐる.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "nq-224",
+    "type": "vocabulary",
+    "question": "休みの日は街を_____する。",
+    "options": [
+      "ぶらぶら",
+      "うろうろ",
+      "ぞろぞろ",
+      "のろのろ"
+    ],
+    "correctAnswer": "ぶらぶら",
+    "explanation": "Từ phù hợp nhất để điền vào chỗ trống là ぶらぶら.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "nq-225",
+    "type": "vocabulary",
+    "question": "彼女は英語が_____だ。",
+    "options": [
+      "ぺらぺら",
+      "ぺこぺこ",
+      "くたくた",
+      "にこにこ"
+    ],
+    "correctAnswer": "ぺらぺら",
+    "explanation": "Từ phù hợp nhất để điền vào chỗ trống là ぺらぺら.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "nq-226",
+    "type": "vocabulary",
+    "question": "資料を_____拝見しました。",
+    "options": [
+      "ざっと",
+      "じっと",
+      "そっと",
+      "ちゃんと"
+    ],
+    "correctAnswer": "ざっと",
+    "explanation": "Từ phù hợp nhất để điền vào chỗ trống là ざっと.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "nq-227",
+    "type": "vocabulary",
+    "question": "一日中働いて_____になった。",
+    "options": [
+      "くたくた",
+      "ぺこぺこ",
+      "へとへと",
+      "ぼろぼろ"
+    ],
+    "correctAnswer": "くたくた",
+    "explanation": "Từ phù hợp nhất để điền vào chỗ trống là くたくた.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "nq-228",
+    "type": "vocabulary",
+    "question": "古い本が_____になった。",
+    "options": [
+      "ぼろぼろ",
+      "めちゃくちゃ",
+      "ごちゃごちゃ",
+      "ぎっしり"
+    ],
+    "correctAnswer": "ぼろぼろ",
+    "explanation": "Từ phù hợp nhất để điền vào chỗ trống là ぼろぼろ.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "nq-229",
+    "type": "vocabulary",
+    "question": "スケジュールが_____詰まっている。",
+    "options": [
+      "ぎっしり",
+      "たっぷり",
+      "ぴったり",
+      "しっかり"
+    ],
+    "correctAnswer": "ぎっしり",
+    "explanation": "Từ phù hợp nhất để điền vào chỗ trống là ぎっしり.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "nq-230",
+    "type": "vocabulary",
+    "question": "恐れ入りますが、お名前を_____。",
+    "options": [
+      "お聞かせください",
+      "聞かせてください",
+      "聞いてください",
+      "お聞きください"
+    ],
+    "correctAnswer": "お聞かせください",
+    "explanation": "Từ phù hợp nhất để điền vào chỗ trống là お聞かせください.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "nq-231",
+    "type": "vocabulary",
+    "question": "差し支えなければ、ご連絡先を_____。",
+    "options": [
+      "教えてください",
+      "教えなさい",
+      "教えましょう",
+      "教えるべきだ"
+    ],
+    "correctAnswer": "教えてください",
+    "explanation": "Từ phù hợp nhất để điền vào chỗ trống là 教えてください.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "nq-232",
+    "type": "vocabulary",
+    "question": "報告書の_____は金曜日です。",
+    "options": [
+      "締め切り",
+      "打ち合わせ",
+      "手続き",
+      "見積もり"
+    ],
+    "correctAnswer": "締め切り",
+    "explanation": "Từ phù hợp nhất để điền vào chỗ trống là 締め切り.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "nq-233",
+    "type": "vocabulary",
+    "question": "新商品の_____を立てる。",
+    "options": [
+      "企画",
+      "営業",
+      "人事",
+      "総務"
+    ],
+    "correctAnswer": "企画",
+    "explanation": "Từ phù hợp nhất để điền vào chỗ trống là 企画.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "nq-234",
+    "type": "vocabulary",
+    "question": "3年連続で_____が続いている。",
+    "options": [
+      "赤字",
+      "黒字",
+      "利益",
+      "損失"
+    ],
+    "correctAnswer": "赤字",
+    "explanation": "Từ phù hợp nhất để điền vào chỗ trống là 赤字.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "nq-235",
+    "type": "vocabulary",
+    "question": "不況で多くの企業が_____した。",
+    "options": [
+      "倒産",
+      "破産",
+      "退職",
+      "昇進"
+    ],
+    "correctAnswer": "倒産",
+    "explanation": "Từ phù hợp nhất để điền vào chỗ trống là 倒産.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "nq-236",
+    "type": "vocabulary",
+    "question": "マスコミが事件を_____した。",
+    "options": [
+      "報道",
+      "世論",
+      "権利",
+      "義務"
+    ],
+    "correctAnswer": "報道",
+    "explanation": "Từ phù hợp nhất để điền vào chỗ trống là 報道.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "nq-237",
+    "type": "vocabulary",
+    "question": "地球_____を防ぐ努力が必要だ。",
+    "options": [
+      "温暖化",
+      "汚染",
+      "少子化",
+      "高齢化"
+    ],
+    "correctAnswer": "温暖化",
+    "explanation": "Từ phù hợp nhất để điền vào chỗ trống là 温暖化.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "nq-238",
+    "type": "vocabulary",
+    "question": "環境問題に_____。",
+    "options": [
+      "取り組む",
+      "打ち合わせる",
+      "見直す",
+      "思い切る"
+    ],
+    "correctAnswer": "取り組む",
+    "explanation": "Từ phù hợp nhất để điền vào chỗ trống là 取り組む.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "nq-239",
+    "type": "vocabulary",
+    "question": "気持ちを_____頑張る。",
+    "options": [
+      "切り替えて",
+      "引き受けて",
+      "立ち上がって",
+      "取り消して"
+    ],
+    "correctAnswer": "切り替えて",
+    "explanation": "Từ phù hợp nhất để điền vào chỗ trống là 切り替えて.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "nq-240",
+    "type": "vocabulary",
+    "question": "なくした財布が_____。",
+    "options": [
+      "見つかった",
+      "思いついた",
+      "気づいた",
+      "片付けた"
+    ],
+    "correctAnswer": "見つかった",
+    "explanation": "Từ phù hợp nhất để điền vào chỗ trống là 見つかった.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "nq-241",
+    "type": "vocabulary",
+    "question": "東京駅で_____ください。",
+    "options": [
+      "乗り換えて",
+      "乗り越えて",
+      "受け取って",
+      "受け入れて"
+    ],
+    "correctAnswer": "乗り換えて",
+    "explanation": "Từ phù hợp nhất để điền vào chỗ trống là 乗り換えて.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "nq-242",
+    "type": "vocabulary",
+    "question": "メディアがこの問題を_____。",
+    "options": [
+      "取り上げた",
+      "売り切れた",
+      "追い込んだ",
+      "巻き込んだ"
+    ],
+    "correctAnswer": "取り上げた",
+    "explanation": "Từ phù hợp nhất để điền vào chỗ trống là 取り上げた.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "nq-243",
+    "type": "vocabulary",
+    "question": "目標に向かって_____。",
+    "options": [
+      "突き進む",
+      "飛び込む",
+      "吸い込む",
+      "振り向く"
+    ],
+    "correctAnswer": "突き進む",
+    "explanation": "Từ phù hợp nhất để điền vào chỗ trống là 突き進む.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "nq-244",
+    "type": "vocabulary",
+    "question": "新しい分野を_____。",
+    "options": [
+      "切り開く",
+      "盛り上がる",
+      "取り除く",
+      "落ち込む"
+    ],
+    "correctAnswer": "切り開く",
+    "explanation": "Từ phù hợp nhất để điền vào chỗ trống là 切り開く.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "nq-245",
+    "type": "vocabulary",
+    "question": "原因を_____。",
+    "options": [
+      "突き止めた",
+      "食い止めた",
+      "見極めた",
+      "思い込んだ"
+    ],
+    "correctAnswer": "突き止めた",
+    "explanation": "Từ phù hợp nhất để điền vào chỗ trống là 突き止めた.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "nq-246",
+    "type": "vocabulary",
+    "question": "曖昧な表現は_____べきだ。",
+    "options": [
+      "避ける",
+      "受ける",
+      "続ける",
+      "逃げる"
+    ],
+    "correctAnswer": "避ける",
+    "explanation": "Từ phù hợp nhất để điền vào chỗ trống là 避ける.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "nq-247",
+    "type": "vocabulary",
+    "question": "経験が_____な人材を求めている。",
+    "options": [
+      "豊富",
+      "莫大",
+      "膨大",
+      "著明"
+    ],
+    "correctAnswer": "豊富",
+    "explanation": "Từ phù hợp nhất để điền vào chỗ trống là 豊富.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "nq-248",
+    "type": "vocabulary",
+    "question": "_____な規則に従う。",
+    "options": [
+      "厳格",
+      "寛大",
+      "柔軟",
+      "頑丈"
+    ],
+    "correctAnswer": "厳格",
+    "explanation": "Từ phù hợp nhất để điền vào chỗ trống là 厳格.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "nq-249",
+    "type": "vocabulary",
+    "question": "経済と環境は_____に関係している。",
+    "options": [
+      "密接",
+      "独自",
+      "多彩",
+      "顕著"
+    ],
+    "correctAnswer": "密接",
+    "explanation": "Từ phù hợp nhất để điền vào chỗ trống là 密接.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "nq-250",
+    "type": "vocabulary",
+    "question": "意見が_____した。",
+    "options": [
+      "一致",
+      "矛盾",
+      "相互",
+      "余分"
+    ],
+    "correctAnswer": "一致",
+    "explanation": "Từ phù hợp nhất để điền vào chỗ trống là 一致.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "nq-251",
+    "type": "vocabulary",
+    "question": "事件の_____を調べる。",
+    "options": [
+      "背景",
+      "要因",
+      "根拠",
+      "前提"
+    ],
+    "correctAnswer": "背景",
+    "explanation": "Từ phù hợp nhất để điền vào chỗ trống là 背景.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "nq-252",
+    "type": "vocabulary",
+    "question": "調査の_____を広げる。",
+    "options": [
+      "範囲",
+      "対象",
+      "観点",
+      "側面"
+    ],
+    "correctAnswer": "範囲",
+    "explanation": "Từ phù hợp nhất để điền vào chỗ trống là 範囲.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "nq-253",
+    "type": "vocabulary",
+    "question": "安全_____を満たす。",
+    "options": [
+      "基準",
+      "指標",
+      "成果",
+      "手段"
+    ],
+    "correctAnswer": "基準",
+    "explanation": "Từ phù hợp nhất để điền vào chỗ trống là 基準.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "nq-254",
+    "type": "vocabulary",
+    "question": "需要と供給の_____を保つ。",
+    "options": [
+      "均衡",
+      "連鎖",
+      "循環",
+      "飽和"
+    ],
+    "correctAnswer": "均衡",
+    "explanation": "Từ phù hợp nhất để điền vào chỗ trống là 均衡.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "nq-255",
+    "type": "vocabulary",
+    "question": "薬を飲んだら、_____悪くなった。",
+    "options": [
+      "かえって",
+      "あえて",
+      "むしろ",
+      "いっそ"
+    ],
+    "correctAnswer": "かえって",
+    "explanation": "Từ phù hợp nhất để điền vào chỗ trống là かえって.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "nq-256",
+    "type": "vocabulary",
+    "question": "_____彼は来るだろうか。",
+    "options": [
+      "果たして",
+      "仮に",
+      "極めて",
+      "さすがに"
+    ],
+    "correctAnswer": "果たして",
+    "explanation": "Từ phù hợp nhất để điền vào chỗ trống là 果たして.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "nq-257",
+    "type": "vocabulary",
+    "question": "噂は_____広がった。",
+    "options": [
+      "たちまち",
+      "すなわち",
+      "単に",
+      "とにかく"
+    ],
+    "correctAnswer": "たちまち",
+    "explanation": "Từ phù hợp nhất để điền vào chỗ trống là たちまち.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "nq-258",
+    "type": "vocabulary",
+    "question": "_____結果が出るだろう。",
+    "options": [
+      "いずれ",
+      "あらかじめ",
+      "もっぱら",
+      "やがて"
+    ],
+    "correctAnswer": "いずれ",
+    "explanation": "Từ phù hợp nhất để điền vào chỗ trống là いずれ.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "nq-259",
+    "type": "vocabulary",
+    "question": "高いものが_____良いとは限らない。",
+    "options": [
+      "必ずしも",
+      "明らかに",
+      "何気なく",
+      "所詮"
+    ],
+    "correctAnswer": "必ずしも",
+    "explanation": "Từ phù hợp nhất để điền vào chỗ trống là 必ずしも.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "nq-260",
+    "type": "vocabulary",
+    "question": "_____、雨が降り出した。",
+    "options": [
+      "案の定",
+      "幸い",
+      "あえて",
+      "いわば"
+    ],
+    "correctAnswer": "案の定",
+    "explanation": "Từ phù hợp nhất để điền vào chỗ trống là 案の定.",
+    "difficulty": "intermediate",
+    "tags": [
+      "N2",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "nq-261",
+    "type": "grammar",
+    "question": "Sắp xếp các từ sau thành câu hoàn chỉnh: この店は、[A.安くて] [B.美味しい] [C.ことから] [D.いつも] 混んでいる。",
+    "options": [
+      "A B C D",
+      "B A C D",
+      "C D A B",
+      "D C B A"
+    ],
+    "correctAnswer": "A B C D",
+    "explanation": "Thứ tự đúng là A B C D.",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar",
+      "ordering"
+    ]
+  },
+  {
+    "id": "nq-262",
+    "type": "grammar",
+    "question": "Sắp xếp các từ sau thành câu hoàn chỉnh: 彼は、[A.スポーツが] [B.できる] [C.うえに] [D.頭もいい]。",
+    "options": [
+      "A B C D",
+      "B C A D",
+      "D C A B",
+      "A C B D"
+    ],
+    "correctAnswer": "A B C D",
+    "explanation": "Thứ tự đúng là A B C D.",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar",
+      "ordering"
+    ]
+  },
+  {
+    "id": "nq-263",
+    "type": "grammar",
+    "question": "Sắp xếp các từ sau thành câu hoàn chỉnh: お金が[A.ある] [B.からといって] [C.幸せだ] [D.とは限らない]。",
+    "options": [
+      "A B C D",
+      "B A C D",
+      "C D A B",
+      "A C B D"
+    ],
+    "correctAnswer": "A B C D",
+    "explanation": "Thứ tự đúng là A B C D.",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar",
+      "ordering"
+    ]
+  },
+  {
+    "id": "nq-264",
+    "type": "grammar",
+    "question": "Sắp xếp các từ sau thành câu hoàn chỉnh: 彼とは[A.去年] [B.会った] [C.きり] [D.連絡がない]。",
+    "options": [
+      "A B C D",
+      "B A C D",
+      "A C B D",
+      "D C B A"
+    ],
+    "correctAnswer": "A B C D",
+    "explanation": "Thứ tự đúng là A B C D.",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar",
+      "ordering"
+    ]
+  },
+  {
+    "id": "nq-265",
+    "type": "grammar",
+    "question": "Sắp xếp các từ sau thành câu hoàn chỉnh: こんなに[A.練習した] [B.のだから] [C.負ける] [D.わけがない]。",
+    "options": [
+      "A B C D",
+      "B A C D",
+      "A C B D",
+      "D C B A"
+    ],
+    "correctAnswer": "A B C D",
+    "explanation": "Thứ tự đúng là A B C D.",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar",
+      "ordering"
+    ]
+  },
+  {
+    "id": "nq-266",
+    "type": "grammar",
+    "question": "Sắp xếp các từ sau thành câu hoàn chỉnh: これは[A.私個人の] [B.意見に] [C.すぎない] [D.ので、気にしないでください]。",
+    "options": [
+      "A B C D",
+      "B A C D",
+      "A C B D",
+      "C D A B"
+    ],
+    "correctAnswer": "A B C D",
+    "explanation": "Thứ tự đúng là A B C D.",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar",
+      "ordering"
+    ]
+  },
+  {
+    "id": "nq-267",
+    "type": "grammar",
+    "question": "Sắp xếp các từ sau thành câu hoàn chỉnh: 急いでいる[A.時に] [B.限って] [C.電車が] [D.遅れる]。",
+    "options": [
+      "A B C D",
+      "B A C D",
+      "A C B D",
+      "C D A B"
+    ],
+    "correctAnswer": "A B C D",
+    "explanation": "Thứ tự đúng là A B C D.",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar",
+      "ordering"
+    ]
+  },
+  {
+    "id": "nq-268",
+    "type": "grammar",
+    "question": "Sắp xếp các từ sau thành câu hoàn chỉnh: あの店は[A.外観] [B.からして] [C.高級そう] [D.だ]。",
+    "options": [
+      "A B C D",
+      "B A C D",
+      "A C B D",
+      "C D A B"
+    ],
+    "correctAnswer": "A B C D",
+    "explanation": "Thứ tự đúng là A B C D.",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar",
+      "ordering"
+    ]
+  },
+  {
+    "id": "nq-269",
+    "type": "grammar",
+    "question": "Sắp xếp các từ sau thành câu hoàn chỉnh: 彼は[A.歌手] [B.というより] [C.俳優] [D.だ]。",
+    "options": [
+      "A B C D",
+      "B A C D",
+      "A C B D",
+      "C D A B"
+    ],
+    "correctAnswer": "A B C D",
+    "explanation": "Thứ tự đúng là A B C D.",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar",
+      "ordering"
+    ]
+  },
+  {
+    "id": "nq-270",
+    "type": "grammar",
+    "question": "Sắp xếp các từ sau thành câu hoàn chỉnh: 結果は[A.ともかく] [B.一生懸命] [C.やったことが] [D.大事だ]。",
+    "options": [
+      "A B C D",
+      "B A C D",
+      "A C B D",
+      "C D A B"
+    ],
+    "correctAnswer": "A B C D",
+    "explanation": "Thứ tự đúng là A B C D.",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar",
+      "ordering"
+    ]
+  },
+  {
+    "id": "nq-271",
+    "type": "grammar",
+    "question": "Sắp xếp các từ sau thành câu hoàn chỉnh: この店は、[A.安くて] [B.美味しい] [C.ことから] [D.いつも] 混んでいる。",
+    "options": [
+      "A B C D",
+      "B A C D",
+      "C D A B",
+      "D C B A"
+    ],
+    "correctAnswer": "A B C D",
+    "explanation": "Thứ tự đúng là A B C D.",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar",
+      "ordering"
+    ]
+  },
+  {
+    "id": "nq-272",
+    "type": "grammar",
+    "question": "Sắp xếp các từ sau thành câu hoàn chỉnh: 彼は、[A.スポーツが] [B.できる] [C.うえに] [D.頭もいい]。",
+    "options": [
+      "A B C D",
+      "B C A D",
+      "D C A B",
+      "A C B D"
+    ],
+    "correctAnswer": "A B C D",
+    "explanation": "Thứ tự đúng là A B C D.",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar",
+      "ordering"
+    ]
+  },
+  {
+    "id": "nq-273",
+    "type": "grammar",
+    "question": "Sắp xếp các từ sau thành câu hoàn chỉnh: お金が[A.ある] [B.からといって] [C.幸せだ] [D.とは限らない]。",
+    "options": [
+      "A B C D",
+      "B A C D",
+      "C D A B",
+      "A C B D"
+    ],
+    "correctAnswer": "A B C D",
+    "explanation": "Thứ tự đúng là A B C D.",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar",
+      "ordering"
+    ]
+  },
+  {
+    "id": "nq-274",
+    "type": "grammar",
+    "question": "Sắp xếp các từ sau thành câu hoàn chỉnh: 彼とは[A.去年] [B.会った] [C.きり] [D.連絡がない]。",
+    "options": [
+      "A B C D",
+      "B A C D",
+      "A C B D",
+      "D C B A"
+    ],
+    "correctAnswer": "A B C D",
+    "explanation": "Thứ tự đúng là A B C D.",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar",
+      "ordering"
+    ]
+  },
+  {
+    "id": "nq-275",
+    "type": "grammar",
+    "question": "Sắp xếp các từ sau thành câu hoàn chỉnh: こんなに[A.練習した] [B.のだから] [C.負ける] [D.わけがない]。",
+    "options": [
+      "A B C D",
+      "B A C D",
+      "A C B D",
+      "D C B A"
+    ],
+    "correctAnswer": "A B C D",
+    "explanation": "Thứ tự đúng là A B C D.",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar",
+      "ordering"
+    ]
+  },
+  {
+    "id": "nq-276",
+    "type": "grammar",
+    "question": "Sắp xếp các từ sau thành câu hoàn chỉnh: これは[A.私個人の] [B.意見に] [C.すぎない] [D.ので、気にしないでください]。",
+    "options": [
+      "A B C D",
+      "B A C D",
+      "A C B D",
+      "C D A B"
+    ],
+    "correctAnswer": "A B C D",
+    "explanation": "Thứ tự đúng là A B C D.",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar",
+      "ordering"
+    ]
+  },
+  {
+    "id": "nq-277",
+    "type": "grammar",
+    "question": "Sắp xếp các từ sau thành câu hoàn chỉnh: 急いでいる[A.時に] [B.限って] [C.電車が] [D.遅れる]。",
+    "options": [
+      "A B C D",
+      "B A C D",
+      "A C B D",
+      "C D A B"
+    ],
+    "correctAnswer": "A B C D",
+    "explanation": "Thứ tự đúng là A B C D.",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar",
+      "ordering"
+    ]
+  },
+  {
+    "id": "nq-278",
+    "type": "grammar",
+    "question": "Sắp xếp các từ sau thành câu hoàn chỉnh: あの店は[A.外観] [B.からして] [C.高級そう] [D.だ]。",
+    "options": [
+      "A B C D",
+      "B A C D",
+      "A C B D",
+      "C D A B"
+    ],
+    "correctAnswer": "A B C D",
+    "explanation": "Thứ tự đúng là A B C D.",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar",
+      "ordering"
+    ]
+  },
+  {
+    "id": "nq-279",
+    "type": "grammar",
+    "question": "Sắp xếp các từ sau thành câu hoàn chỉnh: 彼は[A.歌手] [B.というより] [C.俳優] [D.だ]。",
+    "options": [
+      "A B C D",
+      "B A C D",
+      "A C B D",
+      "C D A B"
+    ],
+    "correctAnswer": "A B C D",
+    "explanation": "Thứ tự đúng là A B C D.",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar",
+      "ordering"
+    ]
+  },
+  {
+    "id": "nq-280",
+    "type": "grammar",
+    "question": "Sắp xếp các từ sau thành câu hoàn chỉnh: 結果は[A.ともかく] [B.一生懸命] [C.やったことが] [D.大事だ]。",
+    "options": [
+      "A B C D",
+      "B A C D",
+      "A C B D",
+      "C D A B"
+    ],
+    "correctAnswer": "A B C D",
+    "explanation": "Thứ tự đúng là A B C D.",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar",
+      "ordering"
+    ]
+  },
+  {
+    "id": "nq-281",
+    "type": "grammar",
+    "question": "Sắp xếp các từ sau thành câu hoàn chỉnh: この店は、[A.安くて] [B.美味しい] [C.ことから] [D.いつも] 混んでいる。",
+    "options": [
+      "A B C D",
+      "B A C D",
+      "C D A B",
+      "D C B A"
+    ],
+    "correctAnswer": "A B C D",
+    "explanation": "Thứ tự đúng là A B C D.",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar",
+      "ordering"
+    ]
+  },
+  {
+    "id": "nq-282",
+    "type": "grammar",
+    "question": "Sắp xếp các từ sau thành câu hoàn chỉnh: 彼は、[A.スポーツが] [B.できる] [C.うえに] [D.頭もいい]。",
+    "options": [
+      "A B C D",
+      "B C A D",
+      "D C A B",
+      "A C B D"
+    ],
+    "correctAnswer": "A B C D",
+    "explanation": "Thứ tự đúng là A B C D.",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar",
+      "ordering"
+    ]
+  },
+  {
+    "id": "nq-283",
+    "type": "grammar",
+    "question": "Sắp xếp các từ sau thành câu hoàn chỉnh: お金が[A.ある] [B.からといって] [C.幸せだ] [D.とは限らない]。",
+    "options": [
+      "A B C D",
+      "B A C D",
+      "C D A B",
+      "A C B D"
+    ],
+    "correctAnswer": "A B C D",
+    "explanation": "Thứ tự đúng là A B C D.",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar",
+      "ordering"
+    ]
+  },
+  {
+    "id": "nq-284",
+    "type": "grammar",
+    "question": "Sắp xếp các từ sau thành câu hoàn chỉnh: 彼とは[A.去年] [B.会った] [C.きり] [D.連絡がない]。",
+    "options": [
+      "A B C D",
+      "B A C D",
+      "A C B D",
+      "D C B A"
+    ],
+    "correctAnswer": "A B C D",
+    "explanation": "Thứ tự đúng là A B C D.",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar",
+      "ordering"
+    ]
+  },
+  {
+    "id": "nq-285",
+    "type": "grammar",
+    "question": "Sắp xếp các từ sau thành câu hoàn chỉnh: こんなに[A.練習した] [B.のだから] [C.負ける] [D.わけがない]。",
+    "options": [
+      "A B C D",
+      "B A C D",
+      "A C B D",
+      "D C B A"
+    ],
+    "correctAnswer": "A B C D",
+    "explanation": "Thứ tự đúng là A B C D.",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar",
+      "ordering"
+    ]
+  },
+  {
+    "id": "nq-286",
+    "type": "grammar",
+    "question": "Sắp xếp các từ sau thành câu hoàn chỉnh: これは[A.私個人の] [B.意見に] [C.すぎない] [D.ので、気にしないでください]。",
+    "options": [
+      "A B C D",
+      "B A C D",
+      "A C B D",
+      "C D A B"
+    ],
+    "correctAnswer": "A B C D",
+    "explanation": "Thứ tự đúng là A B C D.",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar",
+      "ordering"
+    ]
+  },
+  {
+    "id": "nq-287",
+    "type": "grammar",
+    "question": "Sắp xếp các từ sau thành câu hoàn chỉnh: 急いでいる[A.時に] [B.限って] [C.電車が] [D.遅れる]。",
+    "options": [
+      "A B C D",
+      "B A C D",
+      "A C B D",
+      "C D A B"
+    ],
+    "correctAnswer": "A B C D",
+    "explanation": "Thứ tự đúng là A B C D.",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar",
+      "ordering"
+    ]
+  },
+  {
+    "id": "nq-288",
+    "type": "grammar",
+    "question": "Sắp xếp các từ sau thành câu hoàn chỉnh: あの店は[A.外観] [B.からして] [C.高級そう] [D.だ]。",
+    "options": [
+      "A B C D",
+      "B A C D",
+      "A C B D",
+      "C D A B"
+    ],
+    "correctAnswer": "A B C D",
+    "explanation": "Thứ tự đúng là A B C D.",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar",
+      "ordering"
+    ]
+  },
+  {
+    "id": "nq-289",
+    "type": "grammar",
+    "question": "Sắp xếp các từ sau thành câu hoàn chỉnh: 彼は[A.歌手] [B.というより] [C.俳優] [D.だ]。",
+    "options": [
+      "A B C D",
+      "B A C D",
+      "A C B D",
+      "C D A B"
+    ],
+    "correctAnswer": "A B C D",
+    "explanation": "Thứ tự đúng là A B C D.",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar",
+      "ordering"
+    ]
+  },
+  {
+    "id": "nq-290",
+    "type": "grammar",
+    "question": "Sắp xếp các từ sau thành câu hoàn chỉnh: 結果は[A.ともかく] [B.一生懸命] [C.やったことが] [D.大事だ]。",
+    "options": [
+      "A B C D",
+      "B A C D",
+      "A C B D",
+      "C D A B"
+    ],
+    "correctAnswer": "A B C D",
+    "explanation": "Thứ tự đúng là A B C D.",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar",
+      "ordering"
+    ]
+  },
+  {
+    "id": "nq-291",
+    "type": "grammar",
+    "question": "Sắp xếp các từ sau thành câu hoàn chỉnh: この店は、[A.安くて] [B.美味しい] [C.ことから] [D.いつも] 混んでいる。",
+    "options": [
+      "A B C D",
+      "B A C D",
+      "C D A B",
+      "D C B A"
+    ],
+    "correctAnswer": "A B C D",
+    "explanation": "Thứ tự đúng là A B C D.",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar",
+      "ordering"
+    ]
+  },
+  {
+    "id": "nq-292",
+    "type": "grammar",
+    "question": "Sắp xếp các từ sau thành câu hoàn chỉnh: 彼は、[A.スポーツが] [B.できる] [C.うえに] [D.頭もいい]。",
+    "options": [
+      "A B C D",
+      "B C A D",
+      "D C A B",
+      "A C B D"
+    ],
+    "correctAnswer": "A B C D",
+    "explanation": "Thứ tự đúng là A B C D.",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar",
+      "ordering"
+    ]
+  },
+  {
+    "id": "nq-293",
+    "type": "grammar",
+    "question": "Sắp xếp các từ sau thành câu hoàn chỉnh: お金が[A.ある] [B.からといって] [C.幸せだ] [D.とは限らない]。",
+    "options": [
+      "A B C D",
+      "B A C D",
+      "C D A B",
+      "A C B D"
+    ],
+    "correctAnswer": "A B C D",
+    "explanation": "Thứ tự đúng là A B C D.",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar",
+      "ordering"
+    ]
+  },
+  {
+    "id": "nq-294",
+    "type": "grammar",
+    "question": "Sắp xếp các từ sau thành câu hoàn chỉnh: 彼とは[A.去年] [B.会った] [C.きり] [D.連絡がない]。",
+    "options": [
+      "A B C D",
+      "B A C D",
+      "A C B D",
+      "D C B A"
+    ],
+    "correctAnswer": "A B C D",
+    "explanation": "Thứ tự đúng là A B C D.",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar",
+      "ordering"
+    ]
+  },
+  {
+    "id": "nq-295",
+    "type": "grammar",
+    "question": "Sắp xếp các từ sau thành câu hoàn chỉnh: こんなに[A.練習した] [B.のだから] [C.負ける] [D.わけがない]。",
+    "options": [
+      "A B C D",
+      "B A C D",
+      "A C B D",
+      "D C B A"
+    ],
+    "correctAnswer": "A B C D",
+    "explanation": "Thứ tự đúng là A B C D.",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar",
+      "ordering"
+    ]
+  },
+  {
+    "id": "nq-296",
+    "type": "grammar",
+    "question": "Sắp xếp các từ sau thành câu hoàn chỉnh: これは[A.私個人の] [B.意見に] [C.すぎない] [D.ので、気にしないでください]。",
+    "options": [
+      "A B C D",
+      "B A C D",
+      "A C B D",
+      "C D A B"
+    ],
+    "correctAnswer": "A B C D",
+    "explanation": "Thứ tự đúng là A B C D.",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar",
+      "ordering"
+    ]
+  },
+  {
+    "id": "nq-297",
+    "type": "grammar",
+    "question": "Sắp xếp các từ sau thành câu hoàn chỉnh: 急いでいる[A.時に] [B.限って] [C.電車が] [D.遅れる]。",
+    "options": [
+      "A B C D",
+      "B A C D",
+      "A C B D",
+      "C D A B"
+    ],
+    "correctAnswer": "A B C D",
+    "explanation": "Thứ tự đúng là A B C D.",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar",
+      "ordering"
+    ]
+  },
+  {
+    "id": "nq-298",
+    "type": "grammar",
+    "question": "Sắp xếp các từ sau thành câu hoàn chỉnh: あの店は[A.外観] [B.からして] [C.高級そう] [D.だ]。",
+    "options": [
+      "A B C D",
+      "B A C D",
+      "A C B D",
+      "C D A B"
+    ],
+    "correctAnswer": "A B C D",
+    "explanation": "Thứ tự đúng là A B C D.",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar",
+      "ordering"
+    ]
+  },
+  {
+    "id": "nq-299",
+    "type": "grammar",
+    "question": "Sắp xếp các từ sau thành câu hoàn chỉnh: 彼は[A.歌手] [B.というより] [C.俳優] [D.だ]。",
+    "options": [
+      "A B C D",
+      "B A C D",
+      "A C B D",
+      "C D A B"
+    ],
+    "correctAnswer": "A B C D",
+    "explanation": "Thứ tự đúng là A B C D.",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar",
+      "ordering"
+    ]
+  },
+  {
+    "id": "nq-300",
+    "type": "grammar",
+    "question": "Sắp xếp các từ sau thành câu hoàn chỉnh: 結果は[A.ともかく] [B.一生懸命] [C.やったことが] [D.大事だ]。",
+    "options": [
+      "A B C D",
+      "B A C D",
+      "A C B D",
+      "C D A B"
+    ],
+    "correctAnswer": "A B C D",
+    "explanation": "Thứ tự đúng là A B C D.",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "grammar",
+      "ordering"
+    ]
+  }
+]

@@ -4506,14 +4506,15 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture. A woman is sitting at a desk in an office.",
     "options": [
-      "A woman is typing on a computer.",
-      "A woman is sitting at a desk in an office.",
-      "A woman is standing near a window.",
-      "A woman is talking on the phone."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 1,
     "explanation": "Đáp án đúng là B vì mô tả chính xác hình ảnh: một phụ nữ ngồi tại bàn làm việc trong văn phòng.",
-    "imageUrl": "https://picsum.photos/seed/woman-desk/400/300"
+    "imageUrl": "https://picsum.photos/seed/woman-desk/400/300",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-002",
@@ -4522,14 +4523,15 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture. Two men are shaking hands.",
     "options": [
-      "Two men are arguing.",
-      "Two men are sitting down.",
-      "Two men are shaking hands.",
-      "Two men are walking away."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 2,
     "explanation": "Đáp án đúng là C vì hình ảnh cho thấy hai người đàn ông đang bắt tay nhau.",
-    "imageUrl": "https://picsum.photos/seed/shaking-hands/400/300"
+    "imageUrl": "https://picsum.photos/seed/shaking-hands/400/300",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-003",
@@ -4538,14 +4540,15 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture. A group of people are sitting around a conference table.",
     "options": [
-      "A group of people are eating lunch.",
-      "A group of people are sitting around a conference table.",
-      "A group of people are standing in a hallway.",
-      "A group of people are looking at a presentation screen."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 1,
     "explanation": "Đáp án đúng là B vì hình ảnh mô tả một nhóm người ngồi quanh bàn hội nghị.",
-    "imageUrl": "https://picsum.photos/seed/meeting-room/400/300"
+    "imageUrl": "https://picsum.photos/seed/meeting-room/400/300",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-004",
@@ -4554,14 +4557,15 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture. A woman is answering a telephone.",
     "options": [
-      "A woman is writing a letter.",
-      "A woman is drinking coffee.",
-      "A woman is answering a telephone.",
-      "A woman is closing a door."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 2,
     "explanation": "Đáp án đúng là C vì hình ảnh cho thấy phụ nữ đang nghe điện thoại.",
-    "imageUrl": "https://picsum.photos/seed/woman-desk/400/300"
+    "imageUrl": "https://picsum.photos/seed/woman-desk/400/300",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-005",
@@ -4570,14 +4574,15 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture. A man is carrying a briefcase.",
     "options": [
-      "A man is carrying a briefcase.",
-      "A man is holding an umbrella.",
-      "A man is reading a newspaper.",
-      "A man is drinking water."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 0,
     "explanation": "Đáp án đúng là A vì hình ảnh cho thấy một người đàn ông đang cầm cặp tài liệu.",
-    "imageUrl": "https://picsum.photos/seed/parking/400/300"
+    "imageUrl": "https://picsum.photos/seed/parking/400/300",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-006",
@@ -4586,14 +4591,15 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture. Several cars are parked in a parking lot.",
     "options": [
-      "Several cars are driving on a highway.",
-      "Several cars are parked in a parking lot.",
-      "Several cars are at a car wash.",
-      "Several cars are in a traffic jam."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 1,
     "explanation": "Đáp án đúng là B vì hình ảnh cho thấy nhiều ô tô đang đậu trong bãi đỗ xe.",
-    "imageUrl": "https://picsum.photos/seed/parking/400/300"
+    "imageUrl": "https://picsum.photos/seed/parking/400/300",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-007",
@@ -4602,14 +4608,15 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture. A receptionist is greeting a visitor.",
     "options": [
-      "A receptionist is greeting a visitor.",
-      "A receptionist is making a phone call.",
-      "A receptionist is typing on a keyboard.",
-      "A receptionist is eating lunch."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 0,
     "explanation": "Đáp án đúng là A vì hình ảnh cho thấy lễ tân đang chào đón khách.",
-    "imageUrl": "https://picsum.photos/seed/reception/400/300"
+    "imageUrl": "https://picsum.photos/seed/reception/400/300",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-008",
@@ -4618,14 +4625,15 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture. Workers are assembling products on a production line.",
     "options": [
-      "Workers are taking a break.",
-      "Workers are assembling products on a production line.",
-      "Workers are cleaning the factory.",
-      "Workers are having a meeting."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 1,
     "explanation": "Đáp án đúng là B vì hình ảnh cho thấy công nhân đang lắp ráp sản phẩm trên dây chuyền sản xuất.",
-    "imageUrl": "https://picsum.photos/seed/workshop/400/300"
+    "imageUrl": "https://picsum.photos/seed/workshop/400/300",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-009",
@@ -4634,14 +4642,15 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture. A waiter is serving food to customers.",
     "options": [
-      "A waiter is cooking in the kitchen.",
-      "A waiter is cleaning tables.",
-      "A waiter is serving food to customers.",
-      "A waiter is taking an order."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 2,
     "explanation": "Đáp án đúng là C vì hình ảnh cho thấy người phục vụ đang bưng đồ ăn cho khách.",
-    "imageUrl": "https://picsum.photos/seed/part1-8/400/300"
+    "imageUrl": "https://picsum.photos/seed/part1-8/400/300",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-010",
@@ -4650,14 +4659,15 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture. A woman is walking her dog in the park.",
     "options": [
-      "A woman is jogging in the park.",
-      "A woman is sitting on a bench.",
-      "A woman is walking her dog in the park.",
-      "A woman is reading a book on the grass."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 2,
     "explanation": "Đáp án đúng là C vì hình ảnh cho thấy phụ nữ đang dắt chó đi dạo trong công viên.",
-    "imageUrl": "https://picsum.photos/seed/woman-desk/400/300"
+    "imageUrl": "https://picsum.photos/seed/woman-desk/400/300",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-011",
@@ -4666,14 +4676,15 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture. The sales representative is presenting new products to potential clients.",
     "options": [
-      "The sales representative is closing a deal.",
-      "The sales representative is presenting new products to potential clients.",
-      "The sales representative is packing boxes.",
-      "The sales representative is making a phone call."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 1,
     "explanation": "Đáp án đúng là B vì hình ảnh cho thấy nhân viên bán hàng đang trình bày sản phẩm mới cho khách hàng tiềm năng.",
-    "imageUrl": "https://picsum.photos/seed/presentation/400/300"
+    "imageUrl": "https://picsum.photos/seed/presentation/400/300",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-012",
@@ -4682,14 +4693,15 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture. The technician is repairing equipment in the laboratory.",
     "options": [
-      "The technician is conducting an experiment.",
-      "The technician is writing a report.",
-      "The technician is repairing equipment in the laboratory.",
-      "The technician is cleaning glassware."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 2,
     "explanation": "Đáp án đúng là C vì hình ảnh cho thấy kỹ thuật viên đang sửa chữa thiết bị trong phòng thí nghiệm.",
-    "imageUrl": "https://picsum.photos/seed/shaking-hands/400/300"
+    "imageUrl": "https://picsum.photos/seed/shaking-hands/400/300",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-013",
@@ -4698,14 +4710,15 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture. Passengers are boarding an airplane at the gate.",
     "options": [
-      "Passengers are waiting in the terminal.",
-      "Passengers are collecting their luggage.",
-      "Passengers are boarding an airplane at the gate.",
-      "Passengers are going through customs."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 2,
     "explanation": "Đáp án đúng là C vì hình ảnh cho thấy hành khách đang lên máy bay tại cổng.",
-    "imageUrl": "https://picsum.photos/seed/airport/400/300"
+    "imageUrl": "https://picsum.photos/seed/airport/400/300",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-014",
@@ -4714,14 +4727,15 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture. The architect is reviewing blueprints with colleagues.",
     "options": [
-      "The architect is drawing sketches.",
-      "The architect is reviewing blueprints with colleagues.",
-      "The architect is visiting a construction site.",
-      "The architect is presenting to clients."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 1,
     "explanation": "Đáp án đúng là B vì hình ảnh cho thấy kiến trúc sư đang xem xét bản thiết kế với đồng nghiệp.",
-    "imageUrl": "https://picsum.photos/seed/part1-13/400/300"
+    "imageUrl": "https://picsum.photos/seed/part1-13/400/300",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-015",
@@ -4730,14 +4744,15 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture. Employees are attending a safety training session.",
     "options": [
-      "Employees are working at their desks.",
-      "Employees are having a coffee break.",
-      "Employees are attending a safety training session.",
-      "Employees are leaving the building."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 2,
     "explanation": "Đáp án đúng là C vì hình ảnh cho thấy nhân viên đang tham dự buổi tập huấn an toàn.",
-    "imageUrl": "https://picsum.photos/seed/part1-14/400/300"
+    "imageUrl": "https://picsum.photos/seed/part1-14/400/300",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-016",
@@ -4746,14 +4761,15 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture. The warehouse workers are loading boxes onto a truck.",
     "options": [
-      "The warehouse workers are organizing shelves.",
-      "The warehouse workers are unloading a shipment.",
-      "The warehouse workers are loading boxes onto a truck.",
-      "The warehouse workers are taking inventory."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 2,
     "explanation": "Đáp án đúng là C vì hình ảnh cho thấy công nhân kho đang xếp thùng lên xe tải.",
-    "imageUrl": "https://picsum.photos/seed/warehouse/400/300"
+    "imageUrl": "https://picsum.photos/seed/warehouse/400/300",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-017",
@@ -4762,14 +4778,15 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture. The dentist is examining a patient's teeth.",
     "options": [
-      "The dentist is giving an injection.",
-      "The dentist is examining a patient's teeth.",
-      "The dentist is taking an X-ray.",
-      "The dentist is cleaning equipment."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 1,
     "explanation": "Đáp án đúng là B vì hình ảnh cho thấy nha sĩ đang kiểm tra răng của bệnh nhân.",
-    "imageUrl": "https://picsum.photos/seed/part1-16/400/300"
+    "imageUrl": "https://picsum.photos/seed/part1-16/400/300",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-018",
@@ -4778,14 +4795,15 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture. The chef is chopping vegetables in the kitchen.",
     "options": [
-      "The chef is grilling meat.",
-      "The chef is plating a dish.",
-      "The chef is chopping vegetables in the kitchen.",
-      "The chef is washing dishes."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 2,
     "explanation": "Đáp án đúng là C vì hình ảnh cho thấy đầu bếp đang thái rau trong bếp.",
-    "imageUrl": "https://picsum.photos/seed/kitchen/400/300"
+    "imageUrl": "https://picsum.photos/seed/kitchen/400/300",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-019",
@@ -4794,14 +4812,15 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture. A pharmacist is dispensing medication to a customer.",
     "options": [
-      "A pharmacist is stocking shelves.",
-      "A pharmacist is dispensing medication to a customer.",
-      "A pharmacist is answering the phone.",
-      "A pharmacist is reviewing prescriptions."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 1,
     "explanation": "Đáp án đúng là B vì hình ảnh cho thấy dược sĩ đang phát thuốc cho khách hàng.",
-    "imageUrl": "https://picsum.photos/seed/part1-18/400/300"
+    "imageUrl": "https://picsum.photos/seed/part1-18/400/300",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-020",
@@ -4810,14 +4829,15 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture. The flight attendant is demonstrating safety procedures.",
     "options": [
-      "The flight attendant is serving beverages.",
-      "The flight attendant is checking tickets.",
-      "The flight attendant is demonstrating safety procedures.",
-      "The flight attendant is opening the overhead compartments."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 2,
     "explanation": "Đáp án đúng là C vì hình ảnh cho thấy tiếp viên hàng không đang hướng dẫn quy trình an toàn.",
-    "imageUrl": "https://picsum.photos/seed/part1-19/400/300"
+    "imageUrl": "https://picsum.photos/seed/part1-19/400/300",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-021",
@@ -4826,13 +4846,14 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture. The project manager is leading a brainstorming session with the team.",
     "options": [
-      "The project manager is reviewing project deadlines.",
-      "The project manager is leading a brainstorming session with the team.",
-      "The project manager is presenting quarterly results.",
-      "The project manager is interviewing job candidates."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì hình ảnh cho thấy quản lý dự án đang điều hành buổi brainstorming với nhóm."
+    "explanation": "Đáp án đúng là B vì hình ảnh cho thấy quản lý dự án đang điều hành buổi brainstorming với nhóm.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-022",
@@ -4841,13 +4862,14 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture. The surgeon is performing a laparoscopic procedure.",
     "options": [
-      "The surgeon is examining a patient.",
-      "The surgeon is reviewing medical records.",
-      "The surgeon is performing a laparoscopic procedure.",
-      "The surgeon is consulting with colleagues."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 2,
-    "explanation": "Đáp án đúng là C vì hình ảnh cho thấy bác sĩ phẫu thuật đang thực hiện phẫu thuật nội soi."
+    "explanation": "Đáp án đúng là C vì hình ảnh cho thấy bác sĩ phẫu thuật đang thực hiện phẫu thuật nội soi.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-023",
@@ -4856,13 +4878,14 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture. The pilot is communicating with air traffic control.",
     "options": [
-      "The pilot is reviewing the flight plan.",
-      "The pilot is communicating with air traffic control.",
-      "The pilot is conducting pre-flight checks.",
-      "The pilot is greeting passengers."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì hình ảnh cho thấy phi công đang liên lạc với kiểm soát không lưu."
+    "explanation": "Đáp án đúng là B vì hình ảnh cho thấy phi công đang liên lạc với kiểm soát không lưu.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-024",
@@ -4871,13 +4894,14 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture. The accountant is reconciling financial statements.",
     "options": [
-      "The accountant is filing tax documents.",
-      "The accountant is reconciling financial statements.",
-      "The accountant is meeting with the auditor.",
-      "The accountant is using a calculator."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì hình ảnh cho thấy kế toán đang đối chiếu báo cáo tài chính."
+    "explanation": "Đáp án đúng là B vì hình ảnh cho thấy kế toán đang đối chiếu báo cáo tài chính.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-025",
@@ -4886,13 +4910,14 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture. The real estate agent is showing a property to prospective buyers.",
     "options": [
-      "The real estate agent is negotiating a contract.",
-      "The real estate agent is showing a property to prospective buyers.",
-      "The real estate agent is taking photos of a house.",
-      "The real estate agent is meeting with a mortgage broker."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì hình ảnh cho thấy nhân viên bất động sản đang giới thiệu nhà cho khách hàng tiềm năng."
+    "explanation": "Đáp án đúng là B vì hình ảnh cho thấy nhân viên bất động sản đang giới thiệu nhà cho khách hàng tiềm năng.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-026",
@@ -4901,13 +4926,14 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture. The electrician is installing wiring in a new building.",
     "options": [
-      "The electrician is troubleshooting an outage.",
-      "The electrician is inspecting a circuit breaker.",
-      "The electrician is installing wiring in a new building.",
-      "The electrician is reading technical manuals."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 2,
-    "explanation": "Đáp án đúng là C vì hình ảnh cho thấy thợ điện đang lắp đặt hệ thống dây điện trong tòa nhà mới."
+    "explanation": "Đáp án đúng là C vì hình ảnh cho thấy thợ điện đang lắp đặt hệ thống dây điện trong tòa nhà mới.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-027",
@@ -4916,13 +4942,14 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture. The marketing director is analyzing campaign metrics on a dashboard.",
     "options": [
-      "The marketing director is creating a presentation.",
-      "The marketing director is analyzing campaign metrics on a dashboard.",
-      "The marketing director is meeting with advertisers.",
-      "The marketing director is reviewing a budget proposal."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì hình ảnh cho thấy giám đốc marketing đang phân tích các chỉ số chiến dịch trên bảng điều khiển."
+    "explanation": "Đáp án đúng là B vì hình ảnh cho thấy giám đốc marketing đang phân tích các chỉ số chiến dịch trên bảng điều khiển.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-028",
@@ -4931,13 +4958,14 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture. The pharmacist is labeling prescriptions in the dispensary.",
     "options": [
-      "The pharmacist is consulting with a doctor.",
-      "The pharmacist is labeling prescriptions in the dispensary.",
-      "The pharmacist is taking inventory.",
-      "The pharmacist is answering customer questions."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì hình ảnh cho thấy dược sĩ đang dán nhãn đơn thuốc trong phòng phát thuốc."
+    "explanation": "Đáp án đúng là B vì hình ảnh cho thấy dược sĩ đang dán nhãn đơn thuốc trong phòng phát thuốc.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-029",
@@ -4946,13 +4974,14 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture. The forensic analyst is examining evidence under a microscope.",
     "options": [
-      "The forensic analyst is photographing evidence.",
-      "The forensic analyst is writing a report.",
-      "The forensic analyst is examining evidence under a microscope.",
-      "The forensic analyst is interviewing a witness."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 2,
-    "explanation": "Đáp án đúng là C vì hình ảnh cho thấy chuyên viên pháp y đang kiểm tra bằng chứng dưới kính hiển vi."
+    "explanation": "Đáp án đúng là C vì hình ảnh cho thấy chuyên viên pháp y đang kiểm tra bằng chứng dưới kính hiển vi.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-030",
@@ -4961,13 +4990,14 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture. The conference attendees are networking during a coffee break.",
     "options": [
-      "The conference attendees are listening to a keynote speech.",
-      "The conference attendees are networking during a coffee break.",
-      "The conference attendees are signing registration forms.",
-      "The conference attendees are setting up displays."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì hình ảnh cho thấy người tham dự hội nghị đang giao lưu trong giờ nghỉ giải lao."
+    "explanation": "Đáp án đúng là B vì hình ảnh cho thấy người tham dự hội nghị đang giao lưu trong giờ nghỉ giải lao.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-031",
@@ -4976,12 +5006,13 @@
     "subCategory": "Part 2 - Question-Response",
     "text": "Where is the copy machine?",
     "options": [
-      "It's made by Canon.",
-      "In the supply room down the hall.",
-      "We need more paper."
+      "(A)",
+      "(B)",
+      "(C)"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì đây là câu trả lời hợp lý cho câu hỏi hỏi về vị trí máy photocopy: 'Ở phòng tiếp vật tư cuối hành lang'."
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời hợp lý cho câu hỏi hỏi về vị trí máy photocopy: 'Ở phòng tiếp vật tư cuối hành lang'.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-032",
@@ -4990,12 +5021,13 @@
     "subCategory": "Part 2 - Question-Response",
     "text": "What time does the meeting start?",
     "options": [
-      "In the conference room.",
-      "About twenty people.",
-      "At two o'clock."
+      "(A)",
+      "(B)",
+      "(C)"
     ],
     "correctAnswer": 2,
-    "explanation": "Đáp án đúng là C vì đây là câu trả lời cho câu hỏi hỏi về giờ bắt đầu cuộc họp: 'Lúc hai giờ'."
+    "explanation": "Đáp án đúng là C vì đây là câu trả lời cho câu hỏi hỏi về giờ bắt đầu cuộc họp: 'Lúc hai giờ'.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-033",
@@ -5004,12 +5036,13 @@
     "subCategory": "Part 2 - Question-Response",
     "text": "Who is the new manager?",
     "options": [
-      "She started last week.",
-      "Mr. Thompson from the Chicago office.",
-      "The manager's office is on the third floor."
+      "(A)",
+      "(B)",
+      "(C)"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về danh tính quản lý mới: 'Ông Thompson từ văn phòng Chicago'."
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về danh tính quản lý mới: 'Ông Thompson từ văn phòng Chicago'.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-034",
@@ -5018,12 +5051,13 @@
     "subCategory": "Part 2 - Question-Response",
     "text": "Is the report finished?",
     "options": [
-      "Yes, I'll send it to you.",
-      "It's about twenty pages long.",
-      "I finished it yesterday."
+      "(A)",
+      "(B)",
+      "(C)"
     ],
     "correctAnswer": 2,
-    "explanation": "Đáp án đúng là C vì đây là câu trả lời hợp lý cho câu hỏi hỏi về việc hoàn thành báo cáo: 'Tôi đã hoàn thành nó hôm qua'."
+    "explanation": "Đáp án đúng là C vì đây là câu trả lời hợp lý cho câu hỏi hỏi về việc hoàn thành báo cáo: 'Tôi đã hoàn thành nó hôm qua'.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-035",
@@ -5032,12 +5066,13 @@
     "subCategory": "Part 2 - Question-Response",
     "text": "How much does this cost?",
     "options": [
-      "It's on sale.",
-      "About fifty dollars.",
-      "We have three colors."
+      "(A)",
+      "(B)",
+      "(C)"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về giá: 'Khoảng năm mươi đô la'."
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về giá: 'Khoảng năm mươi đô la'.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-036",
@@ -5046,12 +5081,13 @@
     "subCategory": "Part 2 - Question-Response",
     "text": "Can you help me with this form?",
     "options": [
-      "I filled it out already.",
-      "Sure, what do you need?",
-      "The forms are on the desk."
+      "(A)",
+      "(B)",
+      "(C)"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì đây là câu trả lời lịch sự khi được nhờ giúp đỡ: 'Được thôi, bạn cần gì?'"
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời lịch sự khi được nhờ giúp đỡ: 'Được thôi, bạn cần gì?'",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-037",
@@ -5060,12 +5096,13 @@
     "subCategory": "Part 2 - Question-Response",
     "text": "When is the deadline?",
     "options": [
-      "The deadline has been extended.",
-      "By next Friday.",
-      "I need more time."
+      "(A)",
+      "(B)",
+      "(C)"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về hạn chót: 'Trước thứ Sáu tuần sau'."
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về hạn chót: 'Trước thứ Sáu tuần sau'.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-038",
@@ -5074,12 +5111,13 @@
     "subCategory": "Part 2 - Question-Response",
     "text": "Do you have the client's phone number?",
     "options": [
-      "I'll call them tomorrow.",
-      "Yes, it's in my contact list.",
-      "The client was very satisfied."
+      "(A)",
+      "(B)",
+      "(C)"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì đây là câu trả lời hợp lý cho câu hỏi về số điện thoại khách hàng: 'Có, nó trong danh bạ của tôi'."
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời hợp lý cho câu hỏi về số điện thoại khách hàng: 'Có, nó trong danh bạ của tôi'.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-039",
@@ -5088,12 +5126,13 @@
     "subCategory": "Part 2 - Question-Response",
     "text": "Where should I park?",
     "options": [
-      "I drive a sedan.",
-      "In the visitor lot behind the building.",
-      "Parking is free on weekends."
+      "(A)",
+      "(B)",
+      "(C)"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về nơi đỗ xe: 'Ở bãi đỗ khách phía sau tòa nhà'."
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về nơi đỗ xe: 'Ở bãi đỗ khách phía sau tòa nhà'.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-040",
@@ -5102,12 +5141,13 @@
     "subCategory": "Part 2 - Question-Response",
     "text": "Is this seat taken?",
     "options": [
-      "I'm saving it for someone.",
-      "The seats are very comfortable.",
-      "I've been waiting for twenty minutes."
+      "(A)",
+      "(B)",
+      "(C)"
     ],
     "correctAnswer": 0,
-    "explanation": "Đáp án đúng là A vì đây là câu trả lời hợp lý cho câu hỏi hỏi về chỗ ngồi: 'Tôi đang giữ nó cho ai đó'."
+    "explanation": "Đáp án đúng là A vì đây là câu trả lời hợp lý cho câu hỏi hỏi về chỗ ngồi: 'Tôi đang giữ nó cho ai đó'.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-041",
@@ -5116,12 +5156,13 @@
     "subCategory": "Part 2 - Question-Response",
     "text": "Have you reviewed the contract yet?",
     "options": [
-      "The contract is very detailed.",
-      "I need to go over it one more time.",
-      "Yes, we signed it last Tuesday."
+      "(A)",
+      "(B)",
+      "(C)"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì đây là câu trả lời hợp lý cho câu hỏi hỏi về việc xem xét hợp đồng: 'Tôi cần xem lại nó thêm một lần nữa'."
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời hợp lý cho câu hỏi hỏi về việc xem xét hợp đồng: 'Tôi cần xem lại nó thêm một lần nữa'.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-042",
@@ -5130,12 +5171,13 @@
     "subCategory": "Part 2 - Question-Response",
     "text": "Which vendor offers the best pricing?",
     "options": [
-      "The vendor is located downtown.",
-      "Supplier B has the most competitive rates.",
-      "We've been using them for years."
+      "(A)",
+      "(B)",
+      "(C)"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về nhà cung cấp tốt nhất: 'Nhà cung cấp B có mức giá cạnh tranh nhất'."
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về nhà cung cấp tốt nhất: 'Nhà cung cấp B có mức giá cạnh tranh nhất'.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-043",
@@ -5144,12 +5186,13 @@
     "subCategory": "Part 2 - Question-Response",
     "text": "Why was the shipment delayed?",
     "options": [
-      "The shipment arrived this morning.",
-      "There were issues with customs clearance.",
-      "We ship to over thirty countries."
+      "(A)",
+      "(B)",
+      "(C)"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về lý do lô hàng bị trì hoãn: 'Có vấn đề với thủ tục hải quan'."
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về lý do lô hàng bị trì hoãn: 'Có vấn đề với thủ tục hải quan'.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-044",
@@ -5158,12 +5201,13 @@
     "subCategory": "Part 2 - Question-Response",
     "text": "Could you forward me that email?",
     "options": [
-      "I already deleted it.",
-      "Sure, I'll send it right over.",
-      "The email address is on the website."
+      "(A)",
+      "(B)",
+      "(C)"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì đây là câu trả lời lịch sự khi được nhờ chuyển tiếp email: 'Được, tôi sẽ gửi ngay'."
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời lịch sự khi được nhờ chuyển tiếp email: 'Được, tôi sẽ gửi ngay'.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-045",
@@ -5172,12 +5216,13 @@
     "subCategory": "Part 2 - Question-Response",
     "text": "What's causing the increase in customer complaints?",
     "options": [
-      "We hired more support staff.",
-      "The new software update has several bugs.",
-      "Customers can submit complaints online."
+      "(A)",
+      "(B)",
+      "(C)"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về nguyên nhân tăng khiếu nại: 'Bản cập nhật phần mềm mới có nhiều lỗi'."
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về nguyên nhân tăng khiếu nại: 'Bản cập nhật phần mềm mới có nhiều lỗi'.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-046",
@@ -5186,12 +5231,13 @@
     "subCategory": "Part 2 - Question-Response",
     "text": "Do we need to register in advance?",
     "options": [
-      "Registration is required for all attendees.",
-      "The event is next Saturday.",
-      "I'm not sure, let me check."
+      "(A)",
+      "(B)",
+      "(C)"
     ],
     "correctAnswer": 2,
-    "explanation": "Đáp án đúng là C vì đây là câu trả lời hợp lý khi chưa chắc chắn: 'Tôi không chắc, để tôi kiểm tra'."
+    "explanation": "Đáp án đúng là C vì đây là câu trả lời hợp lý khi chưa chắc chắn: 'Tôi không chắc, để tôi kiểm tra'.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-047",
@@ -5200,12 +5246,13 @@
     "subCategory": "Part 2 - Question-Response",
     "text": "How do I access the company database?",
     "options": [
-      "The database is updated daily.",
-      "Use your employee ID and password to log in.",
-      "We migrated to a new system last month."
+      "(A)",
+      "(B)",
+      "(C)"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì đây là câu trả lời hướng dẫn cách truy cập: 'Sử dụng mã nhân viên và mật khẩu để đăng nhập'."
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời hướng dẫn cách truy cập: 'Sử dụng mã nhân viên và mật khẩu để đăng nhập'.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-048",
@@ -5214,12 +5261,13 @@
     "subCategory": "Part 2 - Question-Response",
     "text": "Who should I contact about the travel arrangements?",
     "options": [
-      "I'll be traveling with my colleague.",
-      "The travel department handles all bookings.",
-      "The trip is scheduled for next month."
+      "(A)",
+      "(B)",
+      "(C)"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về người liên hệ: 'Bộ phận du lịch xử lý tất cả các đặt chỗ'."
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về người liên hệ: 'Bộ phận du lịch xử lý tất cả các đặt chỗ'.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-049",
@@ -5228,12 +5276,13 @@
     "subCategory": "Part 2 - Question-Response",
     "text": "Will the workshop be held online or in person?",
     "options": [
-      "The workshop is about leadership skills.",
-      "It's being offered in a hybrid format.",
-      "I signed up last week."
+      "(A)",
+      "(B)",
+      "(C)"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về hình thức tổ chức: 'Nó được tổ chức theo hình thức kết hợp'."
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về hình thức tổ chức: 'Nó được tổ chức theo hình thức kết hợp'.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-050",
@@ -5242,12 +5291,13 @@
     "subCategory": "Part 2 - Question-Response",
     "text": "Can I get a refund if I'm not satisfied?",
     "options": [
-      "We have a thirty-day return policy.",
-      "The product comes in two sizes.",
-      "You can exchange it for another item."
+      "(A)",
+      "(B)",
+      "(C)"
     ],
     "correctAnswer": 0,
-    "explanation": "Đáp án đúng là A vì đây là câu trả lời trực tiếp cho câu hỏi hỏi về hoàn tiền: 'Chúng tôi có chính sách hoàn tiền trong ba mươi ngày'."
+    "explanation": "Đáp án đúng là A vì đây là câu trả lời trực tiếp cho câu hỏi hỏi về hoàn tiền: 'Chúng tôi có chính sách hoàn tiền trong ba mươi ngày'.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-051",
@@ -5256,12 +5306,13 @@
     "subCategory": "Part 2 - Question-Response",
     "text": "What measures are being taken to reduce operational costs?",
     "options": [
-      "The company has been profitable for five years.",
-      "We're implementing automation and renegotiating supplier contracts.",
-      "Costs have increased due to inflation."
+      "(A)",
+      "(B)",
+      "(C)"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì đây là câu trả lời hợp lý cho câu hỏi hỏi về biện pháp giảm chi phí: 'Chúng tôi đang triển khai tự động hóa và đàm phán lại hợp đồng nhà cung cấp'."
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời hợp lý cho câu hỏi hỏi về biện pháp giảm chi phí: 'Chúng tôi đang triển khai tự động hóa và đàm phán lại hợp đồng nhà cung cấp'.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-052",
@@ -5270,12 +5321,13 @@
     "subCategory": "Part 2 - Question-Response",
     "text": "When will the results of the audit be available?",
     "options": [
-      "The audit was conducted by an external firm.",
-      "We expect to have the final report by the end of the month.",
-      "The auditors reviewed three years of financial records."
+      "(A)",
+      "(B)",
+      "(C)"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về thời gian có kết quả kiểm toán: 'Chúng tôi mong có báo cáo cuối cùng vào cuối tháng'."
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về thời gian có kết quả kiểm toán: 'Chúng tôi mong có báo cáo cuối cùng vào cuối tháng'.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-053",
@@ -5284,12 +5336,13 @@
     "subCategory": "Part 2 - Question-Response",
     "text": "How did the company manage to exceed its quarterly targets?",
     "options": [
-      "The targets were set at the beginning of the fiscal year.",
-      "Strong sales in the Asia-Pacific region drove the growth.",
-      "We're aiming to maintain this momentum next quarter."
+      "(A)",
+      "(B)",
+      "(C)"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về lý do vượt mục tiêu: 'Doanh số mạnh ở khu vực châu Á-Thái Bình Dương thúc đẩy tăng trưởng'."
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về lý do vượt mục tiêu: 'Doanh số mạnh ở khu vực châu Á-Thái Bình Dương thúc đẩy tăng trưởng'.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-054",
@@ -5298,12 +5351,13 @@
     "subCategory": "Part 2 - Question-Response",
     "text": "What qualifications are required for the senior analyst position?",
     "options": [
-      "The position reports to the CFO.",
-      "A master's degree and at least five years of experience.",
-      "The salary is very competitive."
+      "(A)",
+      "(B)",
+      "(C)"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về yêu cầu qualifications: 'Bằng thạc sĩ và ít nhất năm năm kinh nghiệm'."
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về yêu cầu qualifications: 'Bằng thạc sĩ và ít nhất năm năm kinh nghiệm'.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-055",
@@ -5312,12 +5366,13 @@
     "subCategory": "Part 2 - Question-Response",
     "text": "Why did the board decide to postpone the product launch?",
     "options": [
-      "The board meets quarterly.",
-      "Regulatory approval is still pending in several markets.",
-      "The product was well-received at the trade show."
+      "(A)",
+      "(B)",
+      "(C)"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về lý do hoãn ra mắt sản phẩm: 'Phê duyệt quy định vẫn đang chờ xử lý ở nhiều thị trường'."
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về lý do hoãn ra mắt sản phẩm: 'Phê duyệt quy định vẫn đang chờ xử lý ở nhiều thị trường'.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-056",
@@ -5326,12 +5381,13 @@
     "subCategory": "Part 2 - Question-Response",
     "text": "What steps are we taking to improve employee retention?",
     "options": [
-      "Turnover has been higher in the sales department.",
-      "We've introduced flexible work arrangements and professional development programs.",
-      "Retention rates are measured quarterly."
+      "(A)",
+      "(B)",
+      "(C)"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì đây là câu trả lời hợp lý cho câu hỏi hỏi về cải thiện tỷ lệ giữ chân nhân viên: 'Chúng tôi đã giới thiệu các sắp xếp làm việc linh hoạt và chương trình phát triển nghề nghiệp'."
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời hợp lý cho câu hỏi hỏi về cải thiện tỷ lệ giữ chân nhân viên: 'Chúng tôi đã giới thiệu các sắp xếp làm việc linh hoạt và chương trình phát triển nghề nghiệp'.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-057",
@@ -5340,12 +5396,13 @@
     "subCategory": "Part 2 - Question-Response",
     "text": "Can you explain the discrepancy in the financial statements?",
     "options": [
-      "The discrepancy was due to a data entry error.",
-      "The statements were prepared by the accounting team.",
-      "We'll need to consult with the auditors."
+      "(A)",
+      "(B)",
+      "(C)"
     ],
     "correctAnswer": 0,
-    "explanation": "Đáp án đúng là A vì đây là câu trả lời giải thích sự khác biệt: 'Sự khác biệt là do lỗi nhập liệu'."
+    "explanation": "Đáp án đúng là A vì đây là câu trả lời giải thích sự khác biệt: 'Sự khác biệt là do lỗi nhập liệu'.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-058",
@@ -5354,12 +5411,13 @@
     "subCategory": "Part 2 - Question-Response",
     "text": "How will the merger affect current employees?",
     "options": [
-      "The merger was announced last week.",
-      "There will be some restructuring, but most positions will be retained.",
-      "The combined company will have over 5,000 employees."
+      "(A)",
+      "(B)",
+      "(C)"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về tác động của sáp nhập: 'Sẽ có một số tái cơ cấu, nhưng hầu hết các vị trí sẽ được giữ lại'."
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về tác động của sáp nhập: 'Sẽ có một số tái cơ cấu, nhưng hầu hết các vị trí sẽ được giữ lại'.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-059",
@@ -5368,12 +5426,13 @@
     "subCategory": "Part 2 - Question-Response",
     "text": "What's the projected return on investment for this initiative?",
     "options": [
-      "The initiative was approved by the executive committee.",
-      "We're forecasting a fifteen percent ROI within the first year.",
-      "The initial investment is substantial."
+      "(A)",
+      "(B)",
+      "(C)"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về lợi nhuận đầu tư: 'Chúng tôi dự báo lợi nhuận mười lăm phần trăm trong năm đầu tiên'."
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về lợi nhuận đầu tư: 'Chúng tôi dự báo lợi nhuận mười lăm phần trăm trong năm đầu tiên'.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-060",
@@ -5382,12 +5441,13 @@
     "subCategory": "Part 2 - Question-Response",
     "text": "Who is responsible for overseeing compliance with the new regulations?",
     "options": [
-      "The new regulations take effect next quarter.",
-      "The compliance officer and the legal department will jointly manage it.",
-      "We've already updated our training materials."
+      "(A)",
+      "(B)",
+      "(C)"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về người chịu trách nhiệm: 'Giám đốc tuân thủ và bộ phận pháp lý sẽ cùng quản lý'."
+    "explanation": "Đáp án đúng là B vì đây là câu trả lời cho câu hỏi hỏi về người chịu trách nhiệm: 'Giám đốc tuân thủ và bộ phận pháp lý sẽ cùng quản lý'.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-061",
@@ -5402,7 +5462,8 @@
       "The reception desk"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì người đàn ông hỏi về vị trí nhà vệ sinh."
+    "explanation": "Đáp án đúng là B vì người đàn ông hỏi về vị trí nhà vệ sinh.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-062",
@@ -5417,7 +5478,8 @@
       "A client presentation"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì hai người phụ nữ đang nói về buổi đào tạo."
+    "explanation": "Đáp án đúng là B vì hai người phụ nữ đang nói về buổi đào tạo.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-063",
@@ -5432,7 +5494,8 @@
       "She's on a diet."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì người phụ nữ nói cô ấy có cuộc họp lúc 12 giờ."
+    "explanation": "Đáp án đúng là B vì người phụ nữ nói cô ấy có cuộc họp lúc 12 giờ.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-064",
@@ -5447,7 +5510,8 @@
       "She got upgraded."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì người phụ nữ đề cập đến sự rung lắc gần cuối chuyến bay."
+    "explanation": "Đáp án đúng là B vì người phụ nữ đề cập đến sự rung lắc gần cuối chuyến bay.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-065",
@@ -5462,7 +5526,8 @@
       "On First Avenue"
     ],
     "correctAnswer": 0,
-    "explanation": "Đáp án đúng là A vì quán cà phê mới nằm trên đường Oak Street."
+    "explanation": "Đáp án đúng là A vì quán cà phê mới nằm trên đường Oak Street.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-066",
@@ -5477,7 +5542,8 @@
       "Office supplies"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì người phụ nữ xác nhận đã nhận được tài liệu."
+    "explanation": "Đáp án đúng là B vì người phụ nữ xác nhận đã nhận được tài liệu.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-067",
@@ -5492,7 +5558,8 @@
       "The printer is too slow."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì người phụ nữ nói máy in ở tầng hai không hoạt động."
+    "explanation": "Đáp án đúng là B vì người phụ nữ nói máy in ở tầng hai không hoạt động.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-068",
@@ -5507,7 +5574,8 @@
       "A delivery schedule"
     ],
     "correctAnswer": 0,
-    "explanation": "Đáp án đúng là A vì họ đang thảo luận về thời điểm tốt nhất để tham quan nhà máy."
+    "explanation": "Đáp án đúng là A vì họ đang thảo luận về thời điểm tốt nhất để tham quan nhà máy.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-069",
@@ -5522,7 +5590,8 @@
       "At nine o'clock"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì bữa tiệc bắt đầu lúc 7 giờ."
+    "explanation": "Đáp án đúng là B vì bữa tiệc bắt đầu lúc 7 giờ.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-070",
@@ -5537,7 +5606,8 @@
       "A ruler"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì người đàn ông muốn mượn ghim dập."
+    "explanation": "Đáp án đúng là B vì người đàn ông muốn mượn ghim dập.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-071",
@@ -5552,7 +5622,8 @@
       "The deadline has passed."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì người đàn ông lo ngại chi phí marketing cao hơn khoảng 20% so với quý trước."
+    "explanation": "Đáp án đúng là B vì người đàn ông lo ngại chi phí marketing cao hơn khoảng 20% so với quý trước.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-072",
@@ -5567,7 +5638,8 @@
       "Relieved"
     ],
     "correctAnswer": 2,
-    "explanation": "Đáp án đúng là C vì Woman A nói điều đó sẽ bất tiện cho những người sống ở ngoại ô, cho thấy sự không hài lòng."
+    "explanation": "Đáp án đúng là C vì Woman A nói điều đó sẽ bất tiện cho những người sống ở ngoại ô, cho thấy sự không hài lòng.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-073",
@@ -5582,7 +5654,8 @@
       "A transportation strike"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì người đàn ông nói có vấn đề ở hải quan."
+    "explanation": "Đáp án đúng là B vì người đàn ông nói có vấn đề ở hải quan.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-074",
@@ -5597,7 +5670,8 @@
       "On the thirteenth"
     ],
     "correctAnswer": 0,
-    "explanation": "Đáp án đúng là A vì hội nghị bắt đầu ngày 15 và cô ấy nên đến trước một ngày, tức là ngày 14."
+    "explanation": "Đáp án đúng là A vì hội nghị bắt đầu ngày 15 và cô ấy nên đến trước một ngày, tức là ngày 14.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-075",
@@ -5612,7 +5686,8 @@
       "A promotion decision"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì họ đang thảo luận về hiệu suất của nhân viên mới."
+    "explanation": "Đáp án đúng là B vì họ đang thảo luận về hiệu suất của nhân viên mới.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-076",
@@ -5627,7 +5702,8 @@
       "Cancel the project"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì Woman B nói họ sẽ cần làm thêm giờ để hoàn thành đúng hạn."
+    "explanation": "Đáp án đúng là B vì Woman B nói họ sẽ cần làm thêm giờ để hoàn thành đúng hạn.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-077",
@@ -5642,7 +5718,8 @@
       "The website has the wrong prices."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì người đàn ông nói thông tin cũ đang gây hiểu lầm cho khách hàng."
+    "explanation": "Đáp án đúng là B vì người đàn ông nói thông tin cũ đang gây hiểu lầm cho khách hàng.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-078",
@@ -5657,7 +5734,8 @@
       "4 PM"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì người phụ nữ ghi danh người đàn ông cho buổi lúc 10 giờ sáng."
+    "explanation": "Đáp án đúng là B vì người phụ nữ ghi danh người đàn ông cho buổi lúc 10 giờ sáng.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-079",
@@ -5672,7 +5750,8 @@
       "Call technical support"
     ],
     "correctAnswer": 2,
-    "explanation": "Đáp án đúng là C vì người đàn ông nói có lẽ anh ấy cần một máy mới."
+    "explanation": "Đáp án đúng là C vì người đàn ông nói có lẽ anh ấy cần một máy mới.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-080",
@@ -5687,7 +5766,8 @@
       "Send an email"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì Woman A cần đăng ký cho buổi đào tạo bắt buộc."
+    "explanation": "Đáp án đúng là B vì Woman A cần đăng ký cho buổi đào tạo bắt buộc.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-080b",
@@ -5702,7 +5782,8 @@
       "Hire more staff"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì người đàn ông đề xuất tìm nhà cung cấp thay thế để tránh hết hàng."
+    "explanation": "Đáp án đúng là B vì người đàn ông đề xuất tìm nhà cung cấp thay thế để tránh hết hàng.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-080c",
@@ -5717,7 +5798,8 @@
       "Skip the survey"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì Woman A gợi ý hoàn thành khảo sát hôm nay."
+    "explanation": "Đáp án đúng là B vì Woman A gợi ý hoàn thành khảo sát hôm nay.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-081",
@@ -5732,7 +5814,8 @@
       "Launching a new product"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì người đàn ông nói họ cần xem xét lại chiến lược ở châu Á."
+    "explanation": "Đáp án đúng là B vì người đàn ông nói họ cần xem xét lại chiến lược ở châu Á.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-082",
@@ -5747,7 +5830,8 @@
       "It's already been resolved"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì người phụ nữ nói vấn đề có vẻ mang tính hệ thống, không phải sự cố isolated."
+    "explanation": "Đáp án đúng là B vì người phụ nữ nói vấn đề có vẻ mang tính hệ thống, không phải sự cố isolated.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-083",
@@ -5762,7 +5846,8 @@
       "He's angry about the offer."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì người đàn ông nói anh ấy muốn nghe đề nghị nhưng cũng hài lòng ở đây, cho thấy sự phân vân."
+    "explanation": "Đáp án đúng là B vì người đàn ông nói anh ấy muốn nghe đề nghị nhưng cũng hài lòng ở đây, cho thấy sự phân vân.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-084",
@@ -5777,7 +5862,8 @@
       "Updating software"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì Woman A nói họ cần mua nguyên liệu từ nhà cung cấp khác để tuân thủ tiêu chuẩn mới."
+    "explanation": "Đáp án đúng là B vì Woman A nói họ cần mua nguyên liệu từ nhà cung cấp khác để tuân thủ tiêu chuẩn mới.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-085",
@@ -5792,7 +5878,8 @@
       "Contract price"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì người đàn ông nói khách hàng cho rằng thời gian giao hàng quá lâu."
+    "explanation": "Đáp án đúng là B vì người đàn ông nói khách hàng cho rằng thời gian giao hàng quá lâu.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-086",
@@ -5807,7 +5894,8 @@
       "Difficult working conditions"
     ],
     "correctAnswer": 2,
-    "explanation": "Đáp án đúng là C vì người phụ nữ nói nhân viên rời đi vì thiếu cơ hội phát triển."
+    "explanation": "Đáp án đúng là C vì người phụ nữ nói nhân viên rời đi vì thiếu cơ hội phát triển.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-087",
@@ -5822,7 +5910,8 @@
       "They'll face legal issues"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì người đàn ông nói họ có thể tụt hậu so với đối thủ và mất lợi thế cạnh tranh."
+    "explanation": "Đáp án đúng là B vì người đàn ông nói họ có thể tụt hậu so với đối thủ và mất lợi thế cạnh tranh.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-088",
@@ -5837,7 +5926,8 @@
       "The company's branding"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì người phụ nữ lo ngại các dự báo tăng trưởng có vẻ quá lạc quan."
+    "explanation": "Đáp án đúng là B vì người phụ nữ lo ngại các dự báo tăng trưởng có vẻ quá lạc quan.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-089",
@@ -5852,7 +5942,8 @@
       "Technical limitations"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì người đàn ông nói chi phí ban đầu rất lớn."
+    "explanation": "Đáp án đúng là B vì người đàn ông nói chi phí ban đầu rất lớn.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-090",
@@ -5867,7 +5958,8 @@
       "The customer support"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì người phụ nữ nói người tham gia thấy giao diện khó hiểu và quy trình đăng ký quá dài."
+    "explanation": "Đáp án đúng là B vì người phụ nữ nói người tham gia thấy giao diện khó hiểu và quy trình đăng ký quá dài.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-090b",
@@ -5882,7 +5974,8 @@
       "Regulatory compliance"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì ban giám đốc lo ngại về biên lợi nhuận giảm."
+    "explanation": "Đáp án đúng là B vì ban giám đốc lo ngại về biên lợi nhuận giảm.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-090c",
@@ -5897,7 +5990,8 @@
       "Brand names"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì Woman A nói điểm bế tắc chính là định giá tài sản sở hữu trí tuệ."
+    "explanation": "Đáp án đúng là B vì Woman A nói điểm bế tắc chính là định giá tài sản sở hữu trí tuệ.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-090d",
@@ -5912,7 +6006,8 @@
       "Customer service"
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì người đàn ông nói khách hàng không tham gia chương trình giới thiệu có khả năng hủy cao gấp ba lần."
+    "explanation": "Đáp án đúng là B vì người đàn ông nói khách hàng không tham gia chương trình giới thiệu có khả năng hủy cao gấp ba lần.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-091",
@@ -5927,7 +6022,8 @@
       "The parking lot will be repaved."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì thông báo nói công ty sẽ đóng cửa vào thứ Hai."
+    "explanation": "Đáp án đúng là B vì thông báo nói công ty sẽ đóng cửa vào thứ Hai.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-092",
@@ -5942,7 +6038,8 @@
       "Employees must bring their own food."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì thông báo nói nhân viên và gia đình được hoan nghênh tham dự."
+    "explanation": "Đáp án đúng là B vì thông báo nói nhân viên và gia đình được hoan nghênh tham dự.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-093",
@@ -5957,7 +6054,8 @@
       " Sarah is transferring departments."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì thông báo chào đón Sarah, thành viên mới của nhóm."
+    "explanation": "Đáp án đúng là B vì thông báo chào đón Sarah, thành viên mới của nhóm.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-094",
@@ -5972,7 +6070,8 @@
       "The store has moved to a new location."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì thông báo nói cửa hàng sẽ đóng cửa trong mười lăm phút."
+    "explanation": "Đáp án đúng là B vì thông báo nói cửa hàng sẽ đóng cửa trong mười lăm phút.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-095",
@@ -5987,7 +6086,8 @@
       "The flight has been canceled."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì thông báo nói chuyến bay đang lên máy bay."
+    "explanation": "Đáp án đúng là B vì thông báo nói chuyến bay đang lên máy bay.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-096",
@@ -6002,7 +6102,8 @@
       "The elevator is out of service."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì thông báo nói hệ thống điều hòa sẽ tắt từ 10 giờ tối đến 6 giờ sáng."
+    "explanation": "Đáp án đúng là B vì thông báo nói hệ thống điều hòa sẽ tắt từ 10 giờ tối đến 6 giờ sáng.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-097",
@@ -6017,7 +6118,8 @@
       "A new expense policy is in effect."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì thông báo nhắc nhở rằng tất cả báo cáo chi phí phải nộp trước cuối tháng."
+    "explanation": "Đáp án đúng là B vì thông báo nhắc nhở rằng tất cả báo cáo chi phí phải nộp trước cuối tháng.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-098",
@@ -6032,7 +6134,8 @@
       "The library is open for a special event."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì thông báo nói thư viện sẽ đóng cửa cuối tuần này."
+    "explanation": "Đáp án đúng là B vì thông báo nói thư viện sẽ đóng cửa cuối tuần này.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-099",
@@ -6047,7 +6150,8 @@
       "New computers are being distributed."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì thông báo yêu cầu nhân viên nộp phiếu hỗ trợ trực tuyến khi gặp sự cố."
+    "explanation": "Đáp án đúng là B vì thông báo yêu cầu nhân viên nộp phiếu hỗ trợ trực tuyến khi gặp sự cố.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-100",
@@ -6062,7 +6166,8 @@
       "Certificates will be awarded."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì thông báo yêu cầu người tham dự điền phiếu đánh giá trước khi rời đi."
+    "explanation": "Đáp án đúng là B vì thông báo yêu cầu người tham dự điền phiếu đánh giá trước khi rời đi.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-101",
@@ -6077,7 +6182,8 @@
       "HR is hiring new staff."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì thông báo nói đăng ký mở cho bảo hiểm sức khỏe bắt đầu vào thứ Hai tuần sau."
+    "explanation": "Đáp án đúng là B vì thông báo nói đăng ký mở cho bảo hiểm sức khỏe bắt đầu vào thứ Hai tuần sau.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-102",
@@ -6092,7 +6198,8 @@
       "New parking spaces are being added."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì thông báo nói bãi đậu xe sẽ được sửa chữa bắt đầu từ tuần sau."
+    "explanation": "Đáp án đúng là B vì thông báo nói bãi đậu xe sẽ được sửa chữa bắt đầu từ tuần sau.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-103",
@@ -6107,7 +6214,8 @@
       "The restaurant is fully booked."
     ],
     "correctAnswer": 2,
-    "explanation": "Đáp án đúng là C vì thông báo nói thời gian chờ có thể lâu hơn bình thường."
+    "explanation": "Đáp án đúng là C vì thông báo nói thời gian chờ có thể lâu hơn bình thường.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-104",
@@ -6122,7 +6230,8 @@
       "The meeting is in Conference Room B."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì thông báo nói cuộc họp bán hàng quý diễn ra hôm nay lúc 2 giờ chiều."
+    "explanation": "Đáp án đúng là B vì thông báo nói cuộc họp bán hàng quý diễn ra hôm nay lúc 2 giờ chiều.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-105",
@@ -6137,7 +6246,8 @@
       "New water pipes are being installed."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì thông báo nói cư dân có thể trải qua thay đổi áp lực nước tạm thời."
+    "explanation": "Đáp án đúng là B vì thông báo nói cư dân có thể trải qua thay đổi áp lực nước tạm thời.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-106",
@@ -6152,7 +6262,8 @@
       "Reviews will be conducted next month."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì thông báo nói bài tự đánh giá phải nộp cho trưởng phòng trước thứ Sáu."
+    "explanation": "Đáp án đúng là B vì thông báo nói bài tự đánh giá phải nộp cho trưởng phòng trước thứ Sáu.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-107",
@@ -6167,7 +6278,8 @@
       "The stairs have been repaired."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì thông báo nói thang máy ở Tòa nhà C sẽ ngừng hoạt động."
+    "explanation": "Đáp án đúng là B vì thông báo nói thang máy ở Tòa nhà C sẽ ngừng hoạt động.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-108",
@@ -6182,7 +6294,8 @@
       "The company is launching a new product."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì thông báo nói công ty được vinh danh là một trong những nhà tuyển dụng hàng đầu."
+    "explanation": "Đáp án đúng là B vì thông báo nói công ty được vinh danh là một trong những nhà tuyển dụng hàng đầu.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-109",
@@ -6197,7 +6310,8 @@
       "Visitor passes are no longer required."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì thông báo nói tất cả nhân viên phải đeo thẻ nhận dạng mọi lúc."
+    "explanation": "Đáp án đúng là B vì thông báo nói tất cả nhân viên phải đeo thẻ nhận dạng mọi lúc.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-110",
@@ -6212,7 +6326,8 @@
       "The session has been moved."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì thông báo nói đã thêm một buổi họp nhóm bổ sung về chiến lược tiếp thị kỹ thuật số."
+    "explanation": "Đáp án đúng là B vì thông báo nói đã thêm một buổi họp nhóm bổ sung về chiến lược tiếp thị kỹ thuật số.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-111",
@@ -6227,7 +6342,8 @@
       "The company is launching a new product line."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì thông báo nói công ty sẽ chuyển sang sử dụng năng lượng tái tạo 100%."
+    "explanation": "Đáp án đúng là B vì thông báo nói công ty sẽ chuyển sang sử dụng năng lượng tái tạo 100%.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-112",
@@ -6242,7 +6358,8 @@
       "The board has been dissolved."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì thông báo nói kế hoạch tái cơ cấu bao gồm hợp nhất ba văn phòng khu vực."
+    "explanation": "Đáp án đúng là B vì thông báo nói kế hoạch tái cơ cấu bao gồm hợp nhất ba văn phòng khu vực.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-113",
@@ -6257,7 +6374,8 @@
       "New employees are exempt from training."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì thông báo nói tất cả nhân viên phải hoàn thành mô-đun đào tạo an ninh mạng cập nhật trước cuối tháng."
+    "explanation": "Đáp án đúng là B vì thông báo nói tất cả nhân viên phải hoàn thành mô-đun đào tạo an ninh mạng cập nhật trước cuối tháng.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-114",
@@ -6272,7 +6390,8 @@
       "Service quality has declined."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì thông báo nói khảo sát hài lòng khách hàng cho thấy cải thiện 15% so với quý trước."
+    "explanation": "Đáp án đúng là B vì thông báo nói khảo sát hài lòng khách hàng cho thấy cải thiện 15% so với quý trước.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-115",
@@ -6287,7 +6406,8 @@
       "R&D has been shut down."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì thông báo nói dòng sản phẩm mới đã nhận được phê duyệt quy định."
+    "explanation": "Đáp án đúng là B vì thông báo nói dòng sản phẩm mới đã nhận được phê duyệt quy định.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-116",
@@ -6302,7 +6422,8 @@
       "The transformation has been canceled."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì thông báo nói hệ thống ERP mới sẽ được triển khai trong sáu tháng tới."
+    "explanation": "Đáp án đúng là B vì thông báo nói hệ thống ERP mới sẽ được triển khai trong sáu tháng tới.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-117",
@@ -6317,7 +6438,8 @@
       "Orientation is optional."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì thông báo nói các quy trình an toàn mới đang được giới thiệu."
+    "explanation": "Đáp án đúng là B vì thông báo nói các quy trình an toàn mới đang được giới thiệu.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-118",
@@ -6332,7 +6454,8 @@
       "Membership is by invitation only."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì thông báo nói thành lập ủy ban đa số và hòa nhập mới."
+    "explanation": "Đáp án đúng là B vì thông báo nói thành lập ủy ban đa số và hòa nhập mới.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-119",
@@ -6347,7 +6470,8 @@
       "The review has been postponed."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì thông báo nói các phòng ban vượt quá mục tiêu chi tiêu cần nộp ngân sách修订."
+    "explanation": "Đáp án đúng là B vì thông báo nói các phòng ban vượt quá mục tiêu chi tiêu cần nộp ngân sách修订.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-120",
@@ -6362,7 +6486,8 @@
       "Training is optional."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì thông báo nói công ty đang chuyển sang phương pháp quản lý dự án agile."
+    "explanation": "Đáp án đúng là B vì thông báo nói công ty đang chuyển sang phương pháp quản lý dự án agile.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-121",
@@ -6377,7 +6502,8 @@
       "All orders now require approval."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì thông báo nói đơn đặt hàng trên mười nghìn đô la cần sự chấp thuận của hai quản lý cấp cao."
+    "explanation": "Đáp án đúng là B vì thông báo nói đơn đặt hàng trên mười nghìn đô la cần sự chấp thuận của hai quản lý cấp cao.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-122",
@@ -6392,7 +6518,8 @@
       "Revenue targets have been lowered."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì thông báo nói việc mở rộng quốc tế đang tiến triển tốt."
+    "explanation": "Đáp án đúng là B vì thông báo nói việc mở rộng quốc tế đang tiến triển tốt.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-123",
@@ -6407,7 +6534,8 @@
       "The compliance team is disbanding."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì thông báo nói các yêu cầu bảo mật dữ liệu mới đang có hiệu lực."
+    "explanation": "Đáp án đúng là B vì thông báo nói các yêu cầu bảo mật dữ liệu mới đang có hiệu lực.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-124",
@@ -6422,7 +6550,8 @@
       "Career development is satisfactory."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì thông báo nói sự cân bằng công việc-cuộc sống vẫn cần được chú ý."
+    "explanation": "Đáp án đúng là B vì thông báo nói sự cân bằng công việc-cuộc sống vẫn cần được chú ý.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-l-125",
@@ -6437,7 +6566,8 @@
       "QA team is being eliminated."
     ],
     "correctAnswer": 1,
-    "explanation": "Đáp án đúng là B vì thông báo nói đang đề xuất áp dụng nguyên tắc sản xuất tinh gọn."
+    "explanation": "Đáp án đúng là B vì thông báo nói đang đề xuất áp dụng nguyên tắc sản xuất tinh gọn.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "tp7-d1",
@@ -6896,14 +7026,15 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture.",
     "options": [
-      "A group of people are having a meeting.",
-      "A woman is filing documents.",
-      "Two men are shaking hands.",
-      "A person is typing on a laptop."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 0,
     "imageUrl": "https://picsum.photos/seed/toeic-meeting1/400/300",
-    "explanation": "Hình ảnh cho thấy một nhóm người đang ngồi quanh bàn họp."
+    "explanation": "Hình ảnh cho thấy một nhóm người đang ngồi quanh bàn họp.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-img-002",
@@ -6912,14 +7043,15 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture.",
     "options": [
-      "The man is repairing a car.",
-      "A worker is operating machinery.",
-      "People are waiting in line.",
-      "A woman is serving customers."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 1,
     "imageUrl": "https://picsum.photos/seed/toeic-factory1/400/300",
-    "explanation": "Hình ảnh cho thấy công nhân đang vận hành máy móc trong nhà máy."
+    "explanation": "Hình ảnh cho thấy công nhân đang vận hành máy móc trong nhà máy.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-img-003",
@@ -6928,14 +7060,15 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture.",
     "options": [
-      "A chef is preparing food.",
-      "Boxes are stacked in a warehouse.",
-      "Customers are shopping.",
-      "A delivery truck is parked outside."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 1,
     "imageUrl": "https://picsum.photos/seed/toeic-warehouse1/400/300",
-    "explanation": "Hình ảnh cho thấy các thùng hàng được xếp chồng trong kho."
+    "explanation": "Hình ảnh cho thấy các thùng hàng được xếp chồng trong kho.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-img-004",
@@ -6944,14 +7077,15 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture.",
     "options": [
-      "A plane is taking off.",
-      "Passengers are boarding the aircraft.",
-      "A luggage cart is being loaded.",
-      "Pilots are walking to the cockpit."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 1,
     "imageUrl": "https://picsum.photos/seed/toeic-airport1/400/300",
-    "explanation": "Hình ảnh cho thấy hành khách đang lên máy bay."
+    "explanation": "Hình ảnh cho thấy hành khách đang lên máy bay.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-img-005",
@@ -6960,14 +7094,15 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture.",
     "options": [
-      "A receptionist is answering the phone.",
-      "People are checking in at the front desk.",
-      "A bellhop is carrying luggage.",
-      "Guests are waiting in the lobby."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 1,
     "imageUrl": "https://picsum.photos/seed/toeic-hotel1/400/300",
-    "explanation": "Hình ảnh cho thấy khách đang làm thủ tục check-in tại quầy lễ tân."
+    "explanation": "Hình ảnh cho thấy khách đang làm thủ tục check-in tại quầy lễ tân.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-img-006",
@@ -6976,14 +7111,15 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture.",
     "options": [
-      "Workers are installing solar panels.",
-      "A crane is lifting construction materials.",
-      "Engineers are reviewing blueprints.",
-      "The building foundation is being poured."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 1,
     "imageUrl": "https://picsum.photos/seed/toeic-construction1/400/300",
-    "explanation": "Hình ảnh cho thấy cần trục đang nâng vật liệu xây dựng."
+    "explanation": "Hình ảnh cho thấy cần trục đang nâng vật liệu xây dựng.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-img-007",
@@ -6992,14 +7128,15 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture.",
     "options": [
-      "A chef is plating a dish.",
-      "Diners are enjoying their meal.",
-      "Waiters are clearing tables.",
-      "A bartender is mixing drinks."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 1,
     "imageUrl": "https://picsum.photos/seed/toeic-restaurant1/400/300",
-    "explanation": "Hình ảnh cho thấy thực khách đang thưởng thức bữa ăn."
+    "explanation": "Hình ảnh cho thấy thực khách đang thưởng thức bữa ăn.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-img-008",
@@ -7008,14 +7145,15 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture.",
     "options": [
-      "A gardener is mowing the lawn.",
-      "Flowers are blooming in the garden.",
-      "Children are playing on the grass.",
-      "A fountain is spraying water."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 1,
     "imageUrl": "https://picsum.photos/seed/toeic-garden1/400/300",
-    "explanation": "Hình ảnh cho thấy hoa đang nở trong vườn."
+    "explanation": "Hình ảnh cho thấy hoa đang nở trong vườn.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-img-009",
@@ -7024,14 +7162,15 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture.",
     "options": [
-      "A librarian is shelving books.",
-      "Students are studying at tables.",
-      "Books are arranged on shelves.",
-      "A person is borrowing a book."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 2,
     "imageUrl": "https://picsum.photos/seed/toeic-library1/400/300",
-    "explanation": "Hình ảnh cho thấy sách được sắp xếp trên kệ."
+    "explanation": "Hình ảnh cho thấy sách được sắp xếp trên kệ.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-img-010",
@@ -7040,14 +7179,15 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture.",
     "options": [
-      "People are exercising.",
-      "A trainer is demonstrating.",
-      "Weights are placed on racks.",
-      "Someone is running on a treadmill."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 2,
     "imageUrl": "https://picsum.photos/seed/toeic-gym1/400/300",
-    "explanation": "Hình ảnh cho thấy tạ được đặt trên giá."
+    "explanation": "Hình ảnh cho thấy tạ được đặt trên giá.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-img-011",
@@ -7056,14 +7196,15 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture.",
     "options": [
-      "A person is typing on a laptop.",
-      "Documents are spread on the desk.",
-      "A phone is ringing.",
-      "A clock shows the time."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 1,
     "imageUrl": "https://picsum.photos/seed/toeic-desk1/400/300",
-    "explanation": "Hình ảnh cho thấy tài liệu được bày trên bàn làm việc."
+    "explanation": "Hình ảnh cho thấy tài liệu được bày trên bàn làm việc.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-img-012",
@@ -7072,14 +7213,15 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture.",
     "options": [
-      "A taxi is parked outside.",
-      "Passengers are getting off a bus.",
-      "A train is arriving at the station.",
-      "Cyclists are riding on the road."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 2,
     "imageUrl": "https://picsum.photos/seed/toeic-train1/400/300",
-    "explanation": "Hình ảnh cho thấy tàu đang đến ga."
+    "explanation": "Hình ảnh cho thấy tàu đang đến ga.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-img-013",
@@ -7088,14 +7230,15 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture.",
     "options": [
-      "A doctor is examining a patient.",
-      "Nurses are checking vitals.",
-      "Medical equipment is displayed.",
-      "A patient is resting in bed."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 2,
     "imageUrl": "https://picsum.photos/seed/toeic-hospital1/400/300",
-    "explanation": "Hình ảnh cho thấy thiết bị y tế được trưng bày."
+    "explanation": "Hình ảnh cho thấy thiết bị y tế được trưng bày.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-img-014",
@@ -7104,14 +7247,15 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture.",
     "options": [
-      "Workers are assembling products.",
-      "A conveyor belt is moving items.",
-      "Managers are inspecting quality.",
-      "Boxes are being packaged."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 1,
     "imageUrl": "https://picsum.photos/seed/toeic-assembly1/400/300",
-    "explanation": "Hình ảnh cho thấy dây chuyền đang vận chuyển sản phẩm."
+    "explanation": "Hình ảnh cho thấy dây chuyền đang vận chuyển sản phẩm.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-img-015",
@@ -7120,14 +7264,15 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture.",
     "options": [
-      "A receptionist is greeting visitors.",
-      "A sign displays office hours.",
-      "Plants are decorating the entrance.",
-      "People are walking through the door."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 1,
     "imageUrl": "https://picsum.photos/seed/toeic-sign1/400/300",
-    "explanation": "Hình ảnh cho thấy biển hiệu hiển thị giờ làm việc."
+    "explanation": "Hình ảnh cho thấy biển hiệu hiển thị giờ làm việc.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-img-016",
@@ -7136,14 +7281,15 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture.",
     "options": [
-      "Engineers are testing equipment.",
-      "Solar panels are installed on the roof.",
-      "Workers are painting the building.",
-      "Scaffolding surrounds the structure."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 1,
     "imageUrl": "https://picsum.photos/seed/toeic-solar1/400/300",
-    "explanation": "Hình ảnh cho thấy tấm pin năng lượng mặt trời được lắp trên mái."
+    "explanation": "Hình ảnh cho thấy tấm pin năng lượng mặt trời được lắp trên mái.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-img-017",
@@ -7152,14 +7298,15 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture.",
     "options": [
-      "A chef is cooking in the kitchen.",
-      "Dishes are being served to customers.",
-      "The kitchen is clean and organized.",
-      "A waiter is taking an order."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 2,
     "imageUrl": "https://picsum.photos/seed/toeic-kitchen1/400/300",
-    "explanation": "Hình ảnh cho thấy nhà bếp sạch sẽ và ngăn nắp."
+    "explanation": "Hình ảnh cho thấy nhà bếp sạch sẽ và ngăn nắp.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-img-018",
@@ -7168,14 +7315,15 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture.",
     "options": [
-      "A forklift is lifting pallets.",
-      "Workers are loading a truck.",
-      "Inventory is being counted.",
-      "Shelves are fully stocked."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 0,
     "imageUrl": "https://picsum.photos/seed/toeic-forklift1/400/300",
-    "explanation": "Hình ảnh cho thấy xe nâng đang nâng kiện hàng."
+    "explanation": "Hình ảnh cho thấy xe nâng đang nâng kiện hàng.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-img-019",
@@ -7184,14 +7332,15 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture.",
     "options": [
-      "A conference room is being set up.",
-      "Attendees are finding their seats.",
-      "A projector displays a presentation.",
-      "Refreshments are on the table."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 2,
     "imageUrl": "https://picsum.photos/seed/toeic-projector1/400/300",
-    "explanation": "Hình ảnh cho thấy máy chiếu đang trình chiếu bài thuyết trình."
+    "explanation": "Hình ảnh cho thấy máy chiếu đang trình chiếu bài thuyết trình.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   },
   {
     "id": "toeic-img-020",
@@ -7200,13 +7349,14 @@
     "subCategory": "Part 1 - Photographs",
     "text": "Look at the picture.",
     "options": [
-      "A gardener is trimming bushes.",
-      "Trees line the walkway.",
-      "Benches are placed along the path.",
-      "Flowers are planted in rows."
+      "(A)",
+      "(B)",
+      "(C)",
+      "(D)"
     ],
     "correctAnswer": 1,
     "imageUrl": "https://picsum.photos/seed/toeic-trees1/400/300",
-    "explanation": "Hình ảnh cho thấy hàng cây dọc lối đi."
+    "explanation": "Hình ảnh cho thấy hàng cây dọc lối đi.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
   }
 ]

@@ -1,0 +1,2610 @@
+{
+  "id": "toeic-auth-3",
+  "title": "TOEIC Practice Exam 3",
+  "difficulty": "advanced",
+  "year": 2024,
+  "category": "toeic",
+  "timeLimitMinutes": 120,
+  "sections": [
+    {
+      "id": "t3-sec-1",
+      "title": "Part 1: Photographs",
+      "description": "Look at the photograph and choose the statement that best describes it.",
+      "questions": [
+        {
+          "id": "t3-p1-1",
+          "text": "Look at the picture and choose the correct statement.",
+          "imageUrl": "https://images.unsplash.com/photo-1560179707-f14e90ef3623?auto=format&fit=crop&q=80&w=400",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)",
+            "(D)"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Một doanh nhân đang đi về phía lối vào tòa nhà.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p1-2",
+          "text": "Look at the picture and choose the correct statement.",
+          "imageUrl": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=400",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)",
+            "(D)"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Một nhóm đang phối hợp làm việc xung quanh máy tính xách tay.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p1-3",
+          "text": "Look at the picture and choose the correct statement.",
+          "imageUrl": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=400",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)",
+            "(D)"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Các kệ được trưng bày đầy đủ sản phẩm.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p1-4",
+          "text": "Look at the picture and choose the correct statement.",
+          "imageUrl": "https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&q=80&w=400",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)",
+            "(D)"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Một nhân viên đang viết trên bảng trắng.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p1-5",
+          "text": "Look at the picture and choose the correct statement.",
+          "imageUrl": "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&q=80&w=400",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)",
+            "(D)"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Hai đồng nghiệp đang bắt tay.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p1-6",
+          "text": "Look at the picture and choose the correct statement.",
+          "imageUrl": "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&q=80&w=400",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)",
+            "(D)"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Một quản lý đang thuyết trình.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        }
+      ]
+    },
+    {
+      "id": "t3-sec-2",
+      "title": "Part 2: Question-Response",
+      "description": "Listen to a question and 3 possible responses. Choose the best response.",
+      "questions": [
+        {
+          "id": "t3-p2-1",
+          "text": "What qualifications are needed for the senior analyst position?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Câu hỏi \"What qualifications\" yêu cầu bằng cấp/kinh nghiệm.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p2-2",
+          "text": "When will the quarterly earnings report be released?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Câu hỏi \"When\" yêu cầu thời gian.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p2-3",
+          "text": "How do I apply for the employee discount program?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Câu hỏi \"How\" yêu cầu phương pháp.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p2-4",
+          "text": "Who oversees the compliance department?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Câu hỏi \"Who\" yêu cầu người.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p2-5",
+          "text": "Where can I find the employee handbook?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Câu hỏi \"Where\" yêu cầu nơi chốn.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p2-6",
+          "text": "Did the board approve the merger?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Đáp án B xác nhận hội đồng đã phê duyệt sáp nhập.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p2-7",
+          "text": "What prompted the change in company policy?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Đáp án A giải thích lý do thay đổi chính sách.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p2-8",
+          "text": "How many delegates are expected at the conference?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Câu hỏi \"How many\" yêu cầu số lượng.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p2-9",
+          "text": "Which department handles international shipping?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Câu hỏi \"Which department\" yêu cầu bộ phận.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p2-10",
+          "text": "Could you clarify the reimbursement process?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Đáp án B giải thích quy trình hoàn tiền.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p2-11",
+          "text": "Will the company be attending the trade show in Berlin?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Đáp án B xác nhận công ty sẽ tham dự.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p2-12",
+          "text": "What are the main deliverables for this project?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Câu hỏi \"What\" yêu cầu sản phẩm cần bàn giao.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p2-13",
+          "text": "Where should I park when visiting the downtown office?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Đáp án B hướng dẫn nơi đỗ xe.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p2-14",
+          "text": "How long is the probationary period for new managers?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Câu hỏi \"How long\" yêu cầu thời gian.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p2-15",
+          "text": "Do we have exclusivity rights for this product in the region?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Đáp án B xác nhận có quyền phân phối độc quyền.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p2-16",
+          "text": "Why was the marketing campaign postponed?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Câu hỏi \"Why\" yêu cầu lý do. Đáp án A giải thích nguyên nhân.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p2-17",
+          "text": "What is the turnaround time for the audit report?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Câu hỏi yêu cầu thời gian xử lý.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p2-18",
+          "text": "Can you brief me on the status of the Henderson account?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Đáp án B cập nhật tình trạng tài khoản Henderson.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p2-19",
+          "text": "Who should coordinate the press release?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Câu hỏi \"Who\" yêu cầu người phụ trách.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p2-20",
+          "text": "Where are the expense receipts stored after processing?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Câu hỏi \"Where\" yêu cầu nơi lưu trữ.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p2-21",
+          "text": "How does the company determine employee bonuses?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Đáp án B giải thích cách tính thưởng.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p2-22",
+          "text": "When is the deadline for submitting the annual budget?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Câu hỏi \"When\" yêu cầu hạn chót.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p2-23",
+          "text": "What security measures are in place for remote access?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Đáp án B liệt kê các biện pháp bảo mật.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p2-24",
+          "text": "Has the new ERP system been fully implemented?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Đáp án B xác nhận hệ thống ERP đã được triển khai đầy đủ.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p2-25",
+          "text": "Which vendors are approved for the procurement list?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Đáp án B cho biết chỉ nhà cung cấp trong danh sách được phê duyệt.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        }
+      ]
+    },
+    {
+      "id": "t3-sec-3",
+      "title": "Part 3: Conversations",
+      "description": "Listen to a conversation and answer 3 questions.",
+      "questions": [
+        {
+          "id": "t3-p3-1",
+          "text": "What is the man reviewing?",
+          "options": [
+            "A. An employee contract",
+            "B. The quarterly financial report",
+            "C. A marketing proposal",
+            "D. A client invoice"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nMan: I've reviewed the quarterly financial report, and there are some discrepancies in the operating expenses.\nWoman: Where did you find the issues?\nMan: The travel expenses for the sales team seem inflated compared to last quarter.\nWoman: Let me cross-reference with the receipts. I may have miscategorized some entries.\n\nÔng ấy đang xem xét báo cáo tài trợ quý.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p3-2",
+          "text": "Which expenses seem inflated?",
+          "options": [
+            "A. Office supplies",
+            "B. Employee salaries",
+            "C. Travel expenses for the sales team",
+            "D. Marketing costs"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nMan: I've reviewed the quarterly financial report, and there are some discrepancies in the operating expenses.\nWoman: Where did you find the issues?\nMan: The travel expenses for the sales team seem inflated compared to last quarter.\nWoman: Let me cross-reference with the receipts. I may have miscategorized some entries.\n\nChi phí đi lại của đội bán hàng có vẻ cao bất thường.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p3-3",
+          "text": "What might have caused the discrepancy?",
+          "options": [
+            "A. Fraudulent spending",
+            "B. A system error",
+            "C. Miscategorized entries",
+            "D. A budget increase"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nMan: I've reviewed the quarterly financial report, and there are some discrepancies in the operating expenses.\nWoman: Where did you find the issues?\nMan: The travel expenses for the sales team seem inflated compared to last quarter.\nWoman: Let me cross-reference with the receipts. I may have miscategorized some entries.\n\nCó thể do phân loại sai mục nhập.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p3-4",
+          "text": "What did the man compare?",
+          "options": [
+            "A. Two different products",
+            "B. Pricing from four suppliers",
+            "C. Last year's budget vs. this year's",
+            "D. Online vs. in-store prices"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nWoman: Have you had a chance to look at the new vendor proposal?\nMan: Yes, I compared their pricing with three other suppliers.\nWoman: And?\nMan: Their unit cost is 12% lower, but the lead time is longer. We need to weigh the trade-off.\n\nÔng ấy so sánh giá từ bốn nhà cung cấp.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p3-5",
+          "text": "How much cheaper is the new vendor?",
+          "options": [
+            "A. 5%",
+            "B. 8%",
+            "C. 12%",
+            "D. 15%"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nWoman: Have you had a chance to look at the new vendor proposal?\nMan: Yes, I compared their pricing with three other suppliers.\nWoman: And?\nMan: Their unit cost is 12% lower, but the lead time is longer. We need to weigh the trade-off.\n\nĐơn giá thấp hơn 12%.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p3-6",
+          "text": "What is the disadvantage of the new vendor?",
+          "options": [
+            "A. Higher prices",
+            "B. Poor quality",
+            "C. Longer lead time",
+            "D. Limited product range"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nWoman: Have you had a chance to look at the new vendor proposal?\nMan: Yes, I compared their pricing with three other suppliers.\nWoman: And?\nMan: Their unit cost is 12% lower, but the lead time is longer. We need to weigh the trade-off.\n\nNhược điểm là thời gian giao hàng lâu hơn.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p3-7",
+          "text": "What does the client want?",
+          "options": [
+            "A. To cancel the agreement",
+            "B. Lower pricing and expanded services",
+            "C. A longer contract term",
+            "D. More frequent meetings"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nMan: The client wants to renegotiate the terms of our service agreement.\nWoman: What specific changes are they requesting?\nMan: They want a 10% reduction in pricing and an expanded scope of services.\nWoman: That's going to affect our margins significantly. We should prepare a counter-offer.\n\nKhách hàng muốn giảm giá 10% và mở rộng phạm vi dịch vụ.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p3-8",
+          "text": "What is the woman concerned about?",
+          "options": [
+            "A. Losing the client",
+            "B. The impact on profit margins",
+            "C. Legal implications",
+            "D. Employee workload"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nMan: The client wants to renegotiate the terms of our service agreement.\nWoman: What specific changes are they requesting?\nMan: They want a 10% reduction in pricing and an expanded scope of services.\nWoman: That's going to affect our margins significantly. We should prepare a counter-offer.\n\nCô ấy lo ngại về tác động đến biên lợi nhuận.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p3-9",
+          "text": "What do they plan to do?",
+          "options": [
+            "A. Accept the terms",
+            "B. Prepare a counter-offer",
+            "C. Reject the request immediately",
+            "D. Hire a mediator"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nMan: The client wants to renegotiate the terms of our service agreement.\nWoman: What specific changes are they requesting?\nMan: They want a 10% reduction in pricing and an expanded scope of services.\nWoman: That's going to affect our margins significantly. We should prepare a counter-offer.\n\nHọ dự định chuẩn bị đề nghị phản biện.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p3-10",
+          "text": "What metric has worsened?",
+          "options": [
+            "A. Conversion rate",
+            "B. Website bounce rate",
+            "C. Social media engagement",
+            "D. Email open rate"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nWoman: I noticed our website bounce rate has increased significantly this month.\nMan: By how much?\nWoman: It went up from 35% to 52%.\nMan: That's alarming. Let's check if the site speed has degraded or if there's an issue with the landing page.\n\nTỷ lệ thoát website đã tăng đáng kể.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p3-11",
+          "text": "What was the previous bounce rate?",
+          "options": [
+            "A. 25%",
+            "B. 35%",
+            "C. 42%",
+            "D. 52%"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nWoman: I noticed our website bounce rate has increased significantly this month.\nMan: By how much?\nWoman: It went up from 35% to 52%.\nMan: That's alarming. Let's check if the site speed has degraded or if there's an issue with the landing page.\n\nTỷ lệ thoát trước đó là 35%.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p3-12",
+          "text": "What two things do they plan to investigate?",
+          "options": [
+            "A. Content quality and SEO",
+            "B. Site speed and landing page issues",
+            "C. Server location and hosting provider",
+            "D. Ad campaigns and email marketing"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nWoman: I noticed our website bounce rate has increased significantly this month.\nMan: By how much?\nWoman: It went up from 35% to 52%.\nMan: That's alarming. Let's check if the site speed has degraded or if there's an issue with the landing page.\n\nHọ sẽ kiểm tra tốc độ trang web và vấn đề trang đích.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p3-13",
+          "text": "What are they planning?",
+          "options": [
+            "A. A company retreat",
+            "B. An annual conference",
+            "C. A product launch",
+            "D. A training workshop"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nMan: We need to finalize the speaker lineup for the annual conference.\nWoman: I've confirmed two keynote speakers so far. Dr. Rivera and Mr. Tanaka.\nMan: Good. We still need someone from the technology sector.\nWoman: I'll reach out to some contacts at the major tech firms this week.\n\nHọ đang lên kế hoạch hội nghị thường niên.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p3-14",
+          "text": "Who are the confirmed speakers?",
+          "options": [
+            "A. Dr. Rivera and Ms. Lee",
+            "B. Mr. Tanaka and Dr. Park",
+            "C. Dr. Rivera and Mr. Tanaka",
+            "D. Ms. Lee and Mr. Tanaka"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nMan: We need to finalize the speaker lineup for the annual conference.\nWoman: I've confirmed two keynote speakers so far. Dr. Rivera and Mr. Tanaka.\nMan: Good. We still need someone from the technology sector.\nWoman: I'll reach out to some contacts at the major tech firms this week.\n\nHai diễn giả đã xác nhận là Dr. Rivera và Mr. Tanaka.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p3-15",
+          "text": "What type of speaker do they still need?",
+          "options": [
+            "A. A finance expert",
+            "B. A marketing professional",
+            "C. A technology sector representative",
+            "D. A government official"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nMan: We need to finalize the speaker lineup for the annual conference.\nWoman: I've confirmed two keynote speakers so far. Dr. Rivera and Mr. Tanaka.\nMan: Good. We still need someone from the technology sector.\nWoman: I'll reach out to some contacts at the major tech firms this week.\n\nHọ vẫn cần một người từ ngành công nghệ.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p3-16",
+          "text": "What happened to the satisfaction score?",
+          "options": [
+            "A. It increased",
+            "B. It stayed the same",
+            "C. It dropped by 8 points",
+            "D. It dropped by 15 points"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nMan: Have you seen the latest customer satisfaction survey results?\nWoman: Yes, the overall score dropped by 8 points.\nMan: What were the main complaints?\nWoman: Long wait times and unresolved issues were the top two concerns.\n\nĐiểm hài lòng giảm 8 điểm.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p3-17",
+          "text": "What was the number one complaint?",
+          "options": [
+            "A. Product quality",
+            "B. High prices",
+            "C. Long wait times",
+            "D. Rude staff"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nMan: Have you seen the latest customer satisfaction survey results?\nWoman: Yes, the overall score dropped by 8 points.\nMan: What were the main complaints?\nWoman: Long wait times and unresolved issues were the top two concerns.\n\nPhản hồi số một là thời gian chờ đợi lâu.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p3-18",
+          "text": "What was the second main complaint?",
+          "options": [
+            "A. Website errors",
+            "B. Unresolved issues",
+            "C. Missing features",
+            "D. Delivery delays"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nMan: Have you seen the latest customer satisfaction survey results?\nWoman: Yes, the overall score dropped by 8 points.\nMan: What were the main complaints?\nWoman: Long wait times and unresolved issues were the top two concerns.\n\nPhản hồi thứ hai là vấn đề chưa được giải quyết.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p3-19",
+          "text": "What is the woman preparing?",
+          "options": [
+            "A. A budget report",
+            "B. A contract renewal proposal",
+            "C. A marketing plan",
+            "D. An employee review"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nWoman: I'm preparing the proposal for the Johnson account renewal.\nMan: What's the proposed contract value?\nWoman: $1.2 million for a three-year term. That's a 15% increase from the current contract.\nMan: Make sure to highlight the ROI metrics from the past two years.\n\nCô ấy đang chuẩn bị đề nghị gia hạn hợp đồng.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p3-20",
+          "text": "How long is the proposed contract term?",
+          "options": [
+            "A. One year",
+            "B. Two years",
+            "C. Three years",
+            "D. Five years"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nWoman: I'm preparing the proposal for the Johnson account renewal.\nMan: What's the proposed contract value?\nWoman: $1.2 million for a three-year term. That's a 15% increase from the current contract.\nMan: Make sure to highlight the ROI metrics from the past two years.\n\nThời hạn hợp đồng đề xuất là ba năm.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p3-21",
+          "text": "What does the man suggest including?",
+          "options": [
+            "A. Competitor pricing",
+            "B. Employee testimonials",
+            "C. ROI metrics from the past two years",
+            "D. A new product roadmap"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nWoman: I'm preparing the proposal for the Johnson account renewal.\nMan: What's the proposed contract value?\nWoman: $1.2 million for a three-year term. That's a 15% increase from the current contract.\nMan: Make sure to highlight the ROI metrics from the past two years.\n\nÔng ấy gợi ý bao gồm các chỉ số ROI hai năm qua.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p3-22",
+          "text": "What is happening on Saturday?",
+          "options": [
+            "A. A fire drill",
+            "B. A power outage",
+            "C. A building inspection",
+            "D. A holiday closure"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nMan: The building management notified us about a power outage this Saturday.\nWoman: From what time?\nMan: From 6 AM to 2 PM. We need to make sure all servers are backed up.\nWoman: I'll contact IT to arrange an uninterruptible power supply for the server room.\n\nSẽ có mất điện vào thứ Bảy.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p3-23",
+          "text": "How long will the power outage last?",
+          "options": [
+            "A. 4 hours",
+            "B. 6 hours",
+            "C. 8 hours",
+            "D. 10 hours"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nMan: The building management notified us about a power outage this Saturday.\nWoman: From what time?\nMan: From 6 AM to 2 PM. We need to make sure all servers are backed up.\nWoman: I'll contact IT to arrange an uninterruptible power supply for the server room.\n\nMất điện từ 6h sáng đến 2h chiều, tổng cộng 8 tiếng.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p3-24",
+          "text": "What will the woman arrange?",
+          "options": [
+            "A. A backup generator",
+            "B. An uninterruptible power supply",
+            "C. A server migration",
+            "D. Off-site data storage"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nMan: The building management notified us about a power outage this Saturday.\nWoman: From what time?\nMan: From 6 AM to 2 PM. We need to make sure all servers are backed up.\nWoman: I'll contact IT to arrange an uninterruptible power supply for the server room.\n\nCô ấy sẽ sắp xếp nguồn điện dự phòng (UPS).",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p3-25",
+          "text": "What is the man working on?",
+          "options": [
+            "A. A financial forecast",
+            "B. A sustainability report",
+            "C. An employee handbook",
+            "D. A product catalog"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nWoman: Have you started working on the sustainability report?\nMan: Yes, I've gathered data on energy consumption and waste reduction.\nWoman: The board wants to see concrete targets for the next five years.\nMan: I'll draft a section on carbon neutrality goals and renewable energy adoption.\n\nÔng ấy đang làm báo cáo phát triển bền vững.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p3-26",
+          "text": "What timeframe does the board want targets for?",
+          "options": [
+            "A. One year",
+            "B. Three years",
+            "C. Five years",
+            "D. Ten years"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nWoman: Have you started working on the sustainability report?\nMan: Yes, I've gathered data on energy consumption and waste reduction.\nWoman: The board wants to see concrete targets for the next five years.\nMan: I'll draft a section on carbon neutrality goals and renewable energy adoption.\n\nHội đồng muốn thấy mục tiêu cho năm năm tới.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p3-27",
+          "text": "What topics will the man cover?",
+          "options": [
+            "A. Employee wellness and benefits",
+            "B. Carbon neutrality and renewable energy",
+            "C. Market expansion and sales growth",
+            "D. Technology upgrades and IT infrastructure"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nWoman: Have you started working on the sustainability report?\nMan: Yes, I've gathered data on energy consumption and waste reduction.\nWoman: The board wants to see concrete targets for the next five years.\nMan: I'll draft a section on carbon neutrality goals and renewable energy adoption.\n\nÔng ấy sẽ viết về mục tiêu trung hòa carbon và năng lượng tái tạo.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p3-28",
+          "text": "What is changing?",
+          "options": [
+            "A. The company logo",
+            "B. Data handling regulations",
+            "C. Employee benefits",
+            "D. Office locations"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nMan: The new regulatory framework will affect how we handle customer data.\nWoman: Do we need to update our privacy policy?\nMan: Yes, and we also need to implement consent tracking for all data collection.\nWoman: I'll schedule a meeting with the legal team to review the requirements.\n\nQuy định xử lý dữ liệu khách hàng đang thay đổi.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p3-29",
+          "text": "What else needs to be implemented?",
+          "options": [
+            "A. A new IT system",
+            "B. Consent tracking for data collection",
+            "C. A customer loyalty program",
+            "D. An employee training module"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nMan: The new regulatory framework will affect how we handle customer data.\nWoman: Do we need to update our privacy policy?\nMan: Yes, and we also need to implement consent tracking for all data collection.\nWoman: I'll schedule a meeting with the legal team to review the requirements.\n\nCần triển khai theo dõi sự đồng ý cho việc thu thập dữ liệu.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p3-30",
+          "text": "Who will the woman meet with?",
+          "options": [
+            "A. The IT department",
+            "B. The marketing team",
+            "C. The legal team",
+            "D. The customer support team"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nMan: The new regulatory framework will affect how we handle customer data.\nWoman: Do we need to update our privacy policy?\nMan: Yes, and we also need to implement consent tracking for all data collection.\nWoman: I'll schedule a meeting with the legal team to review the requirements.\n\nCô ấy sẽ gặp nhóm pháp lý.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p3-31",
+          "text": "What are they discussing?",
+          "options": [
+            "A. A new product design",
+            "B. Results from an A/B test",
+            "C. Customer feedback",
+            "D. Employee performance"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nWoman: The results from the A/B test are in.\nMan: Which version performed better?\nWoman: Version B had a 23% higher conversion rate than Version A.\nMan: Excellent. Let's roll out Version B across all our campaigns.\n\nHọ đang thảo luận kết quả thử nghiệm A/B.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p3-32",
+          "text": "How much better did Version B perform?",
+          "options": [
+            "A. 13% higher",
+            "B. 18% higher",
+            "C. 23% higher",
+            "D. 30% higher"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nWoman: The results from the A/B test are in.\nMan: Which version performed better?\nWoman: Version B had a 23% higher conversion rate than Version A.\nMan: Excellent. Let's roll out Version B across all our campaigns.\n\nPhiên bản B tốt hơn 23%.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p3-33",
+          "text": "What decision do they make?",
+          "options": [
+            "A. Run another test",
+            "B. Use Version A instead",
+            "C. Roll out Version B across all campaigns",
+            "D. Discard both versions"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nWoman: The results from the A/B test are in.\nMan: Which version performed better?\nWoman: Version B had a 23% higher conversion rate than Version A.\nMan: Excellent. Let's roll out Version B across all our campaigns.\n\nHọ quyết định triển khai phiên bản B cho tất cả chiến dịch.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p3-34",
+          "text": "What is causing the delay?",
+          "options": [
+            "A. Weather conditions",
+            "B. New inspection requirements",
+            "C. Labor shortage",
+            "D. Documentation errors"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nMan: Have you had any updates from the customs broker about the shipment?\nWoman: Yes, there's a delay. The container is stuck at port due to new inspection requirements.\nMan: How long is the delay?\nWoman: They estimate an additional 5 to 7 business days.\n\nSự chậm trễ do yêu cầu kiểm tra mới.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p3-35",
+          "text": "How long is the estimated additional delay?",
+          "options": [
+            "A. 1 to 3 days",
+            "B. 3 to 5 days",
+            "C. 5 to 7 business days",
+            "D. 7 to 10 business days"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nMan: Have you had any updates from the customs broker about the shipment?\nWoman: Yes, there's a delay. The container is stuck at port due to new inspection requirements.\nMan: How long is the delay?\nWoman: They estimate an additional 5 to 7 business days.\n\nSự chậm trễ ước tính thêm 5 đến 7 ngày làm việc.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p3-36",
+          "text": "Where is the container currently located?",
+          "options": [
+            "A. At the warehouse",
+            "B. On a cargo ship",
+            "C. At port",
+            "D. At the customs office"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nMan: Have you had any updates from the customs broker about the shipment?\nWoman: Yes, there's a delay. The container is stuck at port due to new inspection requirements.\nMan: How long is the delay?\nWoman: They estimate an additional 5 to 7 business days.\n\nContainer đang bị mắc kẹt tại cảng.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p3-37",
+          "text": "What prompted their discussion?",
+          "options": [
+            "A. An internal audit",
+            "B. A competitor's data breach",
+            "C. A new cybersecurity law",
+            "D. A customer complaint"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nWoman: I'm concerned about the data breach that happened at our competitor.\nMan: We should review our own cybersecurity protocols.\nWoman: Agreed. I'll have the IT team conduct a vulnerability assessment.\nMan: Let's also brief all staff on phishing awareness.\n\nCuộc thảo luận được kích hoạt bởi vụ vi phạm dữ liệu của đối thủ.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p3-38",
+          "text": "What will the IT team conduct?",
+          "options": [
+            "A. A security audit",
+            "B. A vulnerability assessment",
+            "C. A penetration test",
+            "D. A compliance review"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nWoman: I'm concerned about the data breach that happened at our competitor.\nMan: We should review our own cybersecurity protocols.\nWoman: Agreed. I'll have the IT team conduct a vulnerability assessment.\nMan: Let's also brief all staff on phishing awareness.\n\nNhóm IT sẽ tiến hành đánh giá lỗ hổng.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p3-39",
+          "text": "What additional action do they plan?",
+          "options": [
+            "A. Hire a security consultant",
+            "B. Upgrade all hardware",
+            "C. Brief staff on phishing awareness",
+            "D. Implement two-factor authentication"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nWoman: I'm concerned about the data breach that happened at our competitor.\nMan: We should review our own cybersecurity protocols.\nWoman: Agreed. I'll have the IT team conduct a vulnerability assessment.\nMan: Let's also brief all staff on phishing awareness.\n\nHọ cũng sẽ hướng dẫn nhân viên nhận biết lừa đảo trực tuyến.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        }
+      ]
+    },
+    {
+      "id": "t3-sec-4",
+      "title": "Part 4: Short Talks",
+      "description": "Listen to a short talk and answer questions.",
+      "questions": [
+        {
+          "id": "t3-p4-1",
+          "text": "What was the company recognized for?",
+          "options": [
+            "A. Highest revenue",
+            "B. Being a top employer",
+            "C. Innovation award",
+            "D. Environmental leadership"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nGood afternoon, employees. I'm pleased to announce that our company has been named one of the Top 50 Employers in the country by Business Weekly magazine. This recognition reflects our commitment to fostering a positive workplace culture, offering competitive benefits, and investing in employee development. Congratulations to all of you for making this possible.\n\nCông ty được công nhận là một trong những nhà tuyển dụng hàng đầu.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p4-2",
+          "text": "Who gave the company this recognition?",
+          "options": [
+            "A. The government",
+            "B. A customer association",
+            "C. Business Weekly magazine",
+            "D. An industry board"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nGood afternoon, employees. I'm pleased to announce that our company has been named one of the Top 50 Employers in the country by Business Weekly magazine. This recognition reflects our commitment to fostering a positive workplace culture, offering competitive benefits, and investing in employee development. Congratulations to all of you for making this possible.\n\nTạp chí Business Weekly đã trao giải thưởng.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p4-3",
+          "text": "What factors contributed to the recognition?",
+          "options": [
+            "A. Low prices and fast delivery",
+            "B. Workplace culture, benefits, and employee development",
+            "C. High stock prices and profit margins",
+            "D. International expansion and partnerships"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nGood afternoon, employees. I'm pleased to announce that our company has been named one of the Top 50 Employers in the country by Business Weekly magazine. This recognition reflects our commitment to fostering a positive workplace culture, offering competitive benefits, and investing in employee development. Congratulations to all of you for making this possible.\n\nVăn hóa làm việc, phúc lợi và phát triển nhân viên là yếu tố đóng góp.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p4-4",
+          "text": "What will happen on Saturday?",
+          "options": [
+            "A. A network outage",
+            "B. A software update",
+            "C. A security breach",
+            "D. A hardware replacement"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nThis is a notice from the IT department. We will be performing a system-wide software update this Saturday between 2 AM and 6 AM. During this time, all internal systems including email, the intranet, and the project management platform will be temporarily unavailable. Please save your work before leaving the office on Friday.\n\nSẽ có cập nhật phần mềm toàn hệ thống vào thứ Bảy.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p4-5",
+          "text": "How long will systems be unavailable?",
+          "options": [
+            "A. 2 hours",
+            "B. 4 hours",
+            "C. 6 hours",
+            "D. 8 hours"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nThis is a notice from the IT department. We will be performing a system-wide software update this Saturday between 2 AM and 6 AM. During this time, all internal systems including email, the intranet, and the project management platform will be temporarily unavailable. Please save your work before leaving the office on Friday.\n\nHệ thống sẽ không khả dụng trong 4 tiếng (từ 2h đến 6h).",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p4-6",
+          "text": "What are employees asked to do on Friday?",
+          "options": [
+            "A. Work overtime",
+            "B. Update their passwords",
+            "C. Save their work",
+            "D. Restart their computers"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nThis is a notice from the IT department. We will be performing a system-wide software update this Saturday between 2 AM and 6 AM. During this time, all internal systems including email, the intranet, and the project management platform will be temporarily unavailable. Please save your work before leaving the office on Friday.\n\nNhân viên được yêu cầu lưu công việc trước khi rời văn phòng.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p4-7",
+          "text": "When is the rescheduled meeting?",
+          "options": [
+            "A. March 5th",
+            "B. March 12th",
+            "C. March 19th",
+            "D. March 26th"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nAttention all sales representatives. Our quarterly sales kickoff meeting has been rescheduled from March 12th to March 19th. The agenda will include a review of Q1 performance, the introduction of new product lines, and a training session on our updated CRM system. Attendance is mandatory for all sales staff.\n\nCuộc họp dời sang ngày 19 tháng 3.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p4-8",
+          "text": "Which topic will NOT be covered?",
+          "options": [
+            "A. Q1 performance review",
+            "B. New product lines",
+            "C. CRM system training",
+            "D. Budget allocation for next year"
+          ],
+          "correctAnswer": 3,
+          "explanation": "[Transcript]\nAttention all sales representatives. Our quarterly sales kickoff meeting has been rescheduled from March 12th to March 19th. The agenda will include a review of Q1 performance, the introduction of new product lines, and a training session on our updated CRM system. Attendance is mandatory for all sales staff.\n\nPhân bổ ngân sách cho năm tới không được đề cập.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p4-9",
+          "text": "Who must attend the meeting?",
+          "options": [
+            "A. Only managers",
+            "B. All sales staff",
+            "C. The executive team",
+            "D. External partners"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nAttention all sales representatives. Our quarterly sales kickoff meeting has been rescheduled from March 12th to March 19th. The agenda will include a review of Q1 performance, the introduction of new product lines, and a training session on our updated CRM system. Attendance is mandatory for all sales staff.\n\nTất cả nhân viên bán hàng phải tham dự.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p4-10",
+          "text": "Why will the offices be closed?",
+          "options": [
+            "A. Building maintenance",
+            "B. A national holiday",
+            "C. A team-building event",
+            "D. Power outage"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nThank you for calling GreenEarth Consulting. Our offices will be closed on Monday, April 15th, in observance of the national holiday. Normal operations will resume on Tuesday. For urgent inquiries during the closure, please email support@greenearth.com and we will respond within 24 hours.\n\nVăn phòng đóng cửa nghỉ lễ quốc gia.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p4-11",
+          "text": "How should urgent inquiries be directed?",
+          "options": [
+            "A. By phone",
+            "B. By email",
+            "C. Through social media",
+            "D. In person"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nThank you for calling GreenEarth Consulting. Our offices will be closed on Monday, April 15th, in observance of the national holiday. Normal operations will resume on Tuesday. For urgent inquiries during the closure, please email support@greenearth.com and we will respond within 24 hours.\n\nCâu hỏi khẩn cấp nên được gửi qua email.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p4-12",
+          "text": "When will normal operations resume?",
+          "options": [
+            "A. Monday afternoon",
+            "B. Tuesday",
+            "C. Wednesday",
+            "D. The following Monday"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nThank you for calling GreenEarth Consulting. Our offices will be closed on Monday, April 15th, in observance of the national holiday. Normal operations will resume on Tuesday. For urgent inquiries during the closure, please email support@greenearth.com and we will respond within 24 hours.\n\nHoạt động bình thường trở lại vào thứ Ba.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p4-13",
+          "text": "Why is the rooftop pool closing?",
+          "options": [
+            "A. Bad weather",
+            "B. A private event",
+            "C. Routine maintenance",
+            "D. Safety concerns"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nLadies and gentlemen, welcome to the Meridian Hotel. This is your front desk manager speaking. I'd like to inform all guests that the rooftop pool will be closed tomorrow from 9 AM to noon for routine maintenance. The indoor pool on the second floor remains open and available for your use. We apologize for any inconvenience.\n\nHồ bơi trên sân thượng đóng cửa để bảo trì định kỳ.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p4-14",
+          "text": "Which alternative is available?",
+          "options": [
+            "A. The gym",
+            "B. The indoor pool",
+            "C. The spa",
+            "D. The sauna"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nLadies and gentlemen, welcome to the Meridian Hotel. This is your front desk manager speaking. I'd like to inform all guests that the rooftop pool will be closed tomorrow from 9 AM to noon for routine maintenance. The indoor pool on the second floor remains open and available for your use. We apologize for any inconvenience.\n\nHồ bơi trong nhà vẫn mở cửa.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p4-15",
+          "text": "Until what time will the rooftop pool be closed?",
+          "options": [
+            "A. 9 AM",
+            "B. 10 AM",
+            "C. Noon",
+            "D. 2 PM"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nLadies and gentlemen, welcome to the Meridian Hotel. This is your front desk manager speaking. I'd like to inform all guests that the rooftop pool will be closed tomorrow from 9 AM to noon for routine maintenance. The indoor pool on the second floor remains open and available for your use. We apologize for any inconvenience.\n\nHồ bơi đóng cửa đến trưa.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p4-16",
+          "text": "What must warehouse staff now wear?",
+          "options": [
+            "A. Hard hats",
+            "B. High-visibility vests",
+            "C. Steel-toed boots",
+            "D. Gloves"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nThis is an important announcement for all warehouse staff. Effective immediately, all personnel working in the warehouse must wear high-visibility vests at all times while on the floor. This policy has been implemented in response to recent safety audits. Vests can be picked up from the safety office on the ground floor.\n\nNhân viên kho phải mặc áo phản quang mọi lúc.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p4-17",
+          "text": "Why was this policy implemented?",
+          "options": [
+            "A. Customer request",
+            "B. Government regulation",
+            "C. Recent safety audits",
+            "D. Insurance requirements"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nThis is an important announcement for all warehouse staff. Effective immediately, all personnel working in the warehouse must wear high-visibility vests at all times while on the floor. This policy has been implemented in response to recent safety audits. Vests can be picked up from the safety office on the ground floor.\n\nChính sách được thực hiện do các đợt kiểm tra an toàn gần đây.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p4-18",
+          "text": "Where can staff get their vests?",
+          "options": [
+            "A. From their supervisor",
+            "B. From the safety office",
+            "C. From the HR department",
+            "D. From the security desk"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nThis is an important announcement for all warehouse staff. Effective immediately, all personnel working in the warehouse must wear high-visibility vests at all times while on the floor. This policy has been implemented in response to recent safety audits. Vests can be picked up from the safety office on the ground floor.\n\nNhân viên có thể nhận áo tại văn phòng an toàn.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p4-19",
+          "text": "What time does breakfast end?",
+          "options": [
+            "A. 8:00 AM",
+            "B. 9:00 AM",
+            "C. 10:00 AM",
+            "D. 11:00 AM"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nGood evening. This is your hotel operator. I'd like to remind all guests that the complimentary breakfast buffet is served daily from 6:30 AM to 10:00 AM in the Garden Room on the first floor. Room service is also available 24 hours a day for an additional charge. Enjoy your stay.\n\nBữa sáng tự chọn kết thúc lúc 10 giờ sáng.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p4-20",
+          "text": "Where is breakfast served?",
+          "options": [
+            "A. In the guest rooms",
+            "B. On the rooftop",
+            "C. In the Garden Room",
+            "D. By the pool"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nGood evening. This is your hotel operator. I'd like to remind all guests that the complimentary breakfast buffet is served daily from 6:30 AM to 10:00 AM in the Garden Room on the first floor. Room service is also available 24 hours a day for an additional charge. Enjoy your stay.\n\nBữa sáng được phục vụ tại Garden Room ở tầng một.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p4-21",
+          "text": "Is room service free of charge?",
+          "options": [
+            "A. Yes, it is included in the room rate.",
+            "B. No, there is an additional charge.",
+            "C. Only for suite guests.",
+            "D. Only on weekdays."
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nGood evening. This is your hotel operator. I'd like to remind all guests that the complimentary breakfast buffet is served daily from 6:30 AM to 10:00 AM in the Garden Room on the first floor. Room service is also available 24 hours a day for an additional charge. Enjoy your stay.\n\nDịch vụ phòng có phụ phí.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p4-22",
+          "text": "What was extended?",
+          "options": [
+            "A. The project timeline",
+            "B. The Q2 proposal deadline",
+            "C. The budget approval",
+            "D. The hiring process"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nThis is a reminder to all project managers. The deadline for submitting your Q2 project proposals has been extended to April 28th. All proposals must include a detailed budget breakdown, a project timeline, and a risk assessment. Submissions should be made through the project management portal.\n\nHạn chót nộp đề xuất dự án Q2 đã được gia hạn.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p4-23",
+          "text": "What must all proposals include?",
+          "options": [
+            "A. Employee biographies",
+            "B. Budget breakdown, timeline, and risk assessment",
+            "C. Marketing materials",
+            "D. Client testimonials"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nThis is a reminder to all project managers. The deadline for submitting your Q2 project proposals has been extended to April 28th. All proposals must include a detailed budget breakdown, a project timeline, and a risk assessment. Submissions should be made through the project management portal.\n\nTất cả đề xuất phải bao gồm phân tích ngân sách, lịch trình và đánh giá rủi ro.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p4-24",
+          "text": "How should proposals be submitted?",
+          "options": [
+            "A. By email",
+            "B. In person",
+            "C. Through the project management portal",
+            "D. By postal mail"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nThis is a reminder to all project managers. The deadline for submitting your Q2 project proposals has been extended to April 28th. All proposals must include a detailed budget breakdown, a project timeline, and a risk assessment. Submissions should be made through the project management portal.\n\nĐề xuất phải được nộp qua cổng quản lý dự án.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p4-25",
+          "text": "Why are flights delayed?",
+          "options": [
+            "A. A security threat",
+            "B. Staff shortage",
+            "C. Severe weather conditions",
+            "D. A system outage"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nAttention all travelers. Due to severe weather conditions, all flights departing from Terminal 3 have been delayed until further notice. Passengers should check the departure boards for updated gate information and times. We recommend contacting your airline for rebooking options.\n\nChuyến bay bị trì hoãn do điều kiện thời tiết khắc nghiệt.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p4-26",
+          "text": "Which terminal is affected?",
+          "options": [
+            "A. Terminal 1",
+            "B. Terminal 2",
+            "C. Terminal 3",
+            "D. Terminal 4"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nAttention all travelers. Due to severe weather conditions, all flights departing from Terminal 3 have been delayed until further notice. Passengers should check the departure boards for updated gate information and times. We recommend contacting your airline for rebooking options.\n\nGa 3 bị ảnh hưởng.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p4-27",
+          "text": "What should passengers do?",
+          "options": [
+            "A. Leave the airport",
+            "B. Check departure boards and contact their airline",
+            "C. Go to the lost luggage counter",
+            "D. Proceed to their gate immediately"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nAttention all travelers. Due to severe weather conditions, all flights departing from Terminal 3 have been delayed until further notice. Passengers should check the departure boards for updated gate information and times. We recommend contacting your airline for rebooking options.\n\nHành khách nên kiểm tra bảng thông báo và liên hệ hãng hàng không.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p4-28",
+          "text": "What new benefit is being introduced?",
+          "options": [
+            "A. Life insurance",
+            "B. A dental plan",
+            "C. Stock options",
+            "D. Retirement matching"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nThis is the HR department. We are pleased to announce that enrollment for the 2024 employee benefits program is now open. This year, we are introducing a new dental plan, expanded vision coverage, and a wellness reimbursement account. Please review the benefits guide sent to your email and make your selections by May 15th.\n\nKế hoạch nha khoa mới được giới thiệu.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p4-29",
+          "text": "What is the enrollment deadline?",
+          "options": [
+            "A. April 30th",
+            "B. May 1st",
+            "C. May 15th",
+            "D. May 31st"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nThis is the HR department. We are pleased to announce that enrollment for the 2024 employee benefits program is now open. This year, we are introducing a new dental plan, expanded vision coverage, and a wellness reimbursement account. Please review the benefits guide sent to your email and make your selections by May 15th.\n\nHạn chót đăng ký là ngày 15 tháng 5.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t3-p4-30",
+          "text": "Where can employees find the benefits guide?",
+          "options": [
+            "A. On the company intranet",
+            "B. In their email",
+            "C. At the HR office",
+            "D. In the employee handbook"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nThis is the HR department. We are pleased to announce that enrollment for the 2024 employee benefits program is now open. This year, we are introducing a new dental plan, expanded vision coverage, and a wellness reimbursement account. Please review the benefits guide sent to your email and make your selections by May 15th.\n\nHướng dẫn phúc lợi được gửi qua email.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        }
+      ]
+    },
+    {
+      "id": "t3-sec-5",
+      "title": "Part 5: Incomplete Sentences",
+      "description": "Choose the word that best completes the sentence.",
+      "questions": [
+        {
+          "id": "t3-p5-1",
+          "text": "The board of directors unanimously _____ the proposed acquisition during yesterday's meeting.",
+          "options": [
+            "A. rejected",
+            "B. approved",
+            "C. ignored",
+            "D. delayed"
+          ],
+          "correctAnswer": 1,
+          "explanation": "\"Approved\" = phê duyệt, hợp lý nhất với \"unanimously\"."
+        },
+        {
+          "id": "t3-p5-2",
+          "text": "The company's market share has been _____ steadily over the past five years.",
+          "options": [
+            "A. declining",
+            "B. decline",
+            "C. declined",
+            "D. declines"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Cấu trúc hiện tại tiếp diễn bị động: has been + V-ing."
+        },
+        {
+          "id": "t3-p5-3",
+          "text": "The contract was _____ to a third party without the client's consent.",
+          "options": [
+            "A. assigned",
+            "B. assign",
+            "C. assigning",
+            "D. assignment"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Cấu trúc bị động: was + V3 (assigned)."
+        },
+        {
+          "id": "t3-p5-4",
+          "text": "We need to _____ the feasibility of expanding into the Asian market.",
+          "options": [
+            "A. assess",
+            "B. accessed",
+            "C. accessing",
+            "D. assessment"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Động từ nguyên形 sau \"need to\"."
+        },
+        {
+          "id": "t3-p5-5",
+          "text": "The CEO's resignation came as a _____ to many employees.",
+          "options": [
+            "A. surprise",
+            "B. surprised",
+            "C. surprising",
+            "D. surprisingly"
+          ],
+          "correctAnswer": 0,
+          "explanation": "\"Came as a surprise\" = gây bất ngờ."
+        },
+        {
+          "id": "t3-p5-6",
+          "text": "All employees are required to complete the _____ training program before their first day.",
+          "options": [
+            "A. orientation",
+            "B. oriented",
+            "C. orient",
+            "D. orienting"
+          ],
+          "correctAnswer": 0,
+          "explanation": "\"Orientation training\" = chương trình đào tạo định hướng."
+        },
+        {
+          "id": "t3-p5-7",
+          "text": "The new regulations will have a significant _____ on the way we conduct business.",
+          "options": [
+            "A. affect",
+            "B. effect",
+            "C. effort",
+            "D. afford"
+          ],
+          "correctAnswer": 1,
+          "explanation": "\"Effect\" = tác động (danh từ). \"Have an effect on\" = có tác động đến."
+        },
+        {
+          "id": "t3-p5-8",
+          "text": "Despite the economic downturn, the company managed to _____ a profit this quarter.",
+          "options": [
+            "A. generate",
+            "B. generated",
+            "C. generating",
+            "D. generation"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Động từ nguyên形 sau \"managed to\"."
+        },
+        {
+          "id": "t3-p5-9",
+          "text": "The marketing department has developed an _____ campaign to promote the new product.",
+          "options": [
+            "A. innovate",
+            "B. innovative",
+            "C. innovation",
+            "D. innovatively"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Tính từ \"innovative\"修饰名词 \"campaign\"."
+        },
+        {
+          "id": "t3-p5-10",
+          "text": "The project was completed _____ schedule and under budget.",
+          "options": [
+            "A. behind",
+            "B. ahead of",
+            "C. beneath",
+            "D. outside of"
+          ],
+          "correctAnswer": 1,
+          "explanation": "\"Ahead of schedule\" = trước lịch trình."
+        },
+        {
+          "id": "t3-p5-11",
+          "text": "The company has decided to _____ the manufacturing process to reduce waste.",
+          "options": [
+            "A. streamline",
+            "B. stricten",
+            "C. strengthen",
+            "D. shorten"
+          ],
+          "correctAnswer": 0,
+          "explanation": "\"Streamline\" = tinh giản."
+        },
+        {
+          "id": "t3-p5-12",
+          "text": "The annual general meeting will be held _____ the last week of March.",
+          "options": [
+            "A. at",
+            "B. on",
+            "C. during",
+            "D. by"
+          ],
+          "correctAnswer": 2,
+          "explanation": "\"During\" = trong suốt, dùng với khoảng thời gian."
+        },
+        {
+          "id": "t3-p5-13",
+          "text": "The firm has a reputation for providing _____ customer service.",
+          "options": [
+            "A. exceptionally",
+            "B. exceptional",
+            "C. except",
+            "D. exception"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Tính từ \"exceptional\"修饰名词 \"customer service\"."
+        },
+        {
+          "id": "t3-p5-14",
+          "text": "The new employee demonstrated a high level of _____ during her first week.",
+          "options": [
+            "A. competence",
+            "B. competent",
+            "C. competently",
+            "D. competing"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Danh từ \"competence\" = năng lực."
+        },
+        {
+          "id": "t3-p5-15",
+          "text": "Please submit your expense reports _____ the end of each month.",
+          "options": [
+            "A. in",
+            "B. on",
+            "C. at",
+            "D. by"
+          ],
+          "correctAnswer": 3,
+          "explanation": "\"By the end of\" = trước cuối tháng."
+        },
+        {
+          "id": "t3-p5-16",
+          "text": "The acquisition was valued at approximately $450 million, making it the largest deal in the company's _____.",
+          "options": [
+            "A. history",
+            "B. historic",
+            "C. historian",
+            "D. historically"
+          ],
+          "correctAnswer": 0,
+          "explanation": "\"In the company's history\" = trong lịch sử công ty."
+        },
+        {
+          "id": "t3-p5-17",
+          "text": "The audit revealed several _____ that needed to be addressed immediately.",
+          "options": [
+            "A. discrepancies",
+            "B. discrete",
+            "C. discretion",
+            "D. discrete"
+          ],
+          "correctAnswer": 0,
+          "explanation": "\"Discrepancies\" = sự khác biệt/bất thường."
+        },
+        {
+          "id": "t3-p5-18",
+          "text": "We are looking for candidates who are both _____ and team-oriented.",
+          "options": [
+            "A. self-motivated",
+            "B. self-motivate",
+            "C. self-motivating",
+            "D. self-motivation"
+          ],
+          "correctAnswer": 0,
+          "explanation": "\"Self-motivated\" = tự chủ động (tính từ)."
+        },
+        {
+          "id": "t3-p5-19",
+          "text": "The manager's _____ approach to problem-solving has earned her the respect of her peers.",
+          "options": [
+            "A. methodical",
+            "B. method",
+            "C. methodology",
+            "D. methods"
+          ],
+          "correctAnswer": 0,
+          "explanation": "\"Methodical\" = có phương pháp, có hệ thống."
+        },
+        {
+          "id": "t3-p5-20",
+          "text": "The results of the feasibility study were _____ with the management team on Friday.",
+          "options": [
+            "A. shared",
+            "B. share",
+            "C. sharing",
+            "D. shares"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Cấu trúc bị động: were + V3 (shared)."
+        },
+        {
+          "id": "t3-p5-21",
+          "text": "The company plans to _____ its workforce by 15% over the next two years.",
+          "options": [
+            "A. downsize",
+            "B. upsize",
+            "C. resize",
+            "D. revise"
+          ],
+          "correctAnswer": 0,
+          "explanation": "\"Downsize\" = cắt giảm nhân sự."
+        },
+        {
+          "id": "t3-p5-22",
+          "text": "The proposal was _____ by the committee after a thorough review.",
+          "options": [
+            "A. turned down",
+            "B. turned up",
+            "C. turned off",
+            "D. turned out"
+          ],
+          "correctAnswer": 0,
+          "explanation": "\"Turned down\" = bị từ chối."
+        },
+        {
+          "id": "t3-p5-23",
+          "text": "Our competitive _____ is what sets us apart from other firms in the industry.",
+          "options": [
+            "A. advantage",
+            "B. advance",
+            "C. adventure",
+            "D. adversary"
+          ],
+          "correctAnswer": 0,
+          "explanation": "\"Competitive advantage\" = lợi thế cạnh tranh."
+        },
+        {
+          "id": "t3-p5-24",
+          "text": "The firm has implemented a new _____ management system to track employee performance.",
+          "options": [
+            "A. talent",
+            "B. talented",
+            "C. talentless",
+            "D. talenting"
+          ],
+          "correctAnswer": 0,
+          "explanation": "\"Talent management\" = quản lý nhân tài."
+        },
+        {
+          "id": "t3-p5-25",
+          "text": "All contractors must _____ to the company's code of conduct while on-site.",
+          "options": [
+            "A. adhere",
+            "B. adhere to",
+            "C. adhered",
+            "D. adhering"
+          ],
+          "correctAnswer": 0,
+          "explanation": "\"Adhere to\" = tuân thủ. Câu đã có \"to\" nên chọn \"adhere\"."
+        },
+        {
+          "id": "t3-p5-26",
+          "text": "The firm was recognized for its _____ to corporate social responsibility.",
+          "options": [
+            "A. commitment",
+            "B. committed",
+            "C. committing",
+            "D. commits"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Danh từ \"commitment\" = cam kết."
+        },
+        {
+          "id": "t3-p5-27",
+          "text": "The company's stock price surged following the _____ of the quarterly earnings report.",
+          "options": [
+            "A. release",
+            "B. released",
+            "C. releasing",
+            "D. releases"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Danh từ \"release\" = sự phát hành."
+        },
+        {
+          "id": "t3-p5-28",
+          "text": "The new regulations require companies to _____ their carbon emissions by 30% by 2030.",
+          "options": [
+            "A. reduce",
+            "B. produce",
+            "C. deduce",
+            "D. induce"
+          ],
+          "correctAnswer": 0,
+          "explanation": "\"Reduce\" = giảm. \"Carbon emissions\" cần được giảm."
+        },
+        {
+          "id": "t3-p5-29",
+          "text": "The board is expected to _____ the appointment at the next meeting.",
+          "options": [
+            "A. ratify",
+            "B. verify",
+            "C. certify",
+            "D. justify"
+          ],
+          "correctAnswer": 0,
+          "explanation": "\"Ratify\" = phê chuẩn, hợp lý với bối cảnh hội đồng."
+        },
+        {
+          "id": "t3-p5-30",
+          "text": "The company has seen a _____ increase in online sales since launching the new website.",
+          "options": [
+            "A. substantial",
+            "B. substance",
+            "C. substantive",
+            "D. substantially"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Tính từ \"substantial\" = đáng kể,修饰名词 \"increase\"."
+        }
+      ]
+    },
+    {
+      "id": "t3-sec-6",
+      "title": "Part 6: Text Completion",
+      "description": "Choose the best word or phrase to complete the text.",
+      "questions": [
+        {
+          "id": "t3-p6-1",
+          "passage": "Dear Valued Investor,\n\nWe are writing to provide you with an update on our company's strategic initiatives for the coming fiscal year. Our primary objective is to _____ growth through innovation and strategic partnerships.",
+          "text": "Choose the correct word.",
+          "options": [
+            "A. sustain",
+            "B. sustainably",
+            "C. sustained",
+            "D. sustainability"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Động từ nguyên形 sau \"is to\"."
+        },
+        {
+          "id": "t3-p6-2",
+          "passage": "Dear Valued Investor,\n\nWe are writing to provide you with an update on our company's strategic initiatives for the coming fiscal year. Our primary objective is to sustain growth through innovation and strategic partnerships. To achieve this, we plan to invest $200 million in research and development over the next three years, focusing on artificial intelligence and sustainable energy solutions.",
+          "text": "Choose the correct word.",
+          "options": [
+            "A. invest",
+            "B. invested",
+            "C. investing",
+            "D. investment"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Động từ nguyên形 sau \"plan to\"."
+        },
+        {
+          "id": "t3-p6-3",
+          "passage": "Dear Valued Investor,\n\nWe are writing to provide you with an update on our company's strategic initiatives for the coming fiscal year. Our primary objective is to sustain growth through innovation and strategic partnerships. To achieve this, we plan to invest $200 million in research and development over the next three years, focusing on artificial intelligence and sustainable energy solutions. These investments are expected to drive significant revenue growth and strengthen our _____ in key markets.",
+          "text": "Choose the correct word.",
+          "options": [
+            "A. position",
+            "B. positioned",
+            "C. positioning",
+            "D. positions"
+          ],
+          "correctAnswer": 0,
+          "explanation": "\"Strengthen our position\" = củng cố vị thế."
+        },
+        {
+          "id": "t3-p6-4",
+          "passage": "Dear Valued Investor,\n\nWe are writing to provide you with an update on our company's strategic initiatives for the coming fiscal year. Our primary objective is to sustain growth through innovation and strategic partnerships. To achieve this, we plan to invest $200 million in research and development over the next three years, focusing on artificial intelligence and sustainable energy solutions. These investments are expected to drive significant revenue growth and strengthen our position in key markets. We are confident that these initiatives will deliver long-term value to our shareholders.",
+          "text": "Choose the correct word.",
+          "options": [
+            "A. confident",
+            "B. confidence",
+            "C. confidently",
+            "D. confide"
+          ],
+          "correctAnswer": 0,
+          "explanation": "\"Are confident that\" = tin tưởng rằng."
+        },
+        {
+          "id": "t3-p6-5",
+          "passage": "EMPLOYEE MEMORANDUM\n\nThe Executive Committee has approved a new remote work policy effective April 1st. Under this policy, eligible employees may work from home up to three days per week, subject to manager _____.",
+          "text": "Choose the correct word.",
+          "options": [
+            "A. approval",
+            "B. approve",
+            "C. approved",
+            "D. approving"
+          ],
+          "correctAnswer": 0,
+          "explanation": "\"Subject to manager approval\" = cần sự phê duyệt của quản lý."
+        },
+        {
+          "id": "t3-p6-6",
+          "passage": "EMPLOYEE MEMORANDUM\n\nThe Executive Committee has approved a new remote work policy effective April 1st. Under this policy, eligible employees may work from home up to three days per week, subject to manager approval. To qualify, employees must have completed their probationary period and maintained a satisfactory performance rating for at least _____.",
+          "text": "Choose the correct word.",
+          "options": [
+            "A. one year",
+            "B. six months",
+            "C. three months",
+            "D. two years"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Yêu cầu duy trì đánh giá hiệu suất satisfactory ít nhất sáu tháng."
+        },
+        {
+          "id": "t3-p6-7",
+          "passage": "EMPLOYEE MEMORANDUM\n\nThe Executive Committee has approved a new remote work policy effective April 1st. Under this policy, eligible employees may work from home up to three days per week, subject to manager approval. To qualify, employees must have completed their probationary period and maintained a satisfactory performance rating for at least six months. Employees are expected to remain _____ during core business hours and be available for virtual meetings.",
+          "text": "Choose the correct word.",
+          "options": [
+            "A. responsive",
+            "B. responded",
+            "C. responding",
+            "D. response"
+          ],
+          "correctAnswer": 0,
+          "explanation": "\"Remain responsive\" = duy trì khả năng phản hồi."
+        },
+        {
+          "id": "t3-p6-8",
+          "passage": "NOTICE TO ALL DEPARTMENTS\n\nAs part of our ongoing efforts to improve operational efficiency, the company will be transitioning to a new enterprise resource planning (ERP) system. The migration is scheduled to begin on May 15th and will be completed in three phases. During the transition, some _____ may experience temporary disruptions.",
+          "text": "Choose the correct word.",
+          "options": [
+            "A. processes",
+            "B. process",
+            "C. processed",
+            "D. processing"
+          ],
+          "correctAnswer": 0,
+          "explanation": "\"Some processes\" = một số quy trình."
+        },
+        {
+          "id": "t3-p6-9",
+          "passage": "NOTICE TO ALL DEPARTMENTS\n\nAs part of our ongoing efforts to improve operational efficiency, the company will be transitioning to a new enterprise resource planning (ERP) system. The migration is scheduled to begin on May 15th and will be completed in three phases. During the transition, some processes may experience temporary disruptions. Department heads are asked to identify critical tasks and develop contingency plans to minimize any _____ to business operations.",
+          "text": "Choose the correct word.",
+          "options": [
+            "A. impact",
+            "B. impact on",
+            "C. impacts",
+            "D. impacted"
+          ],
+          "correctAnswer": 2,
+          "explanation": "\"Any impacts to\" = bất kỳ tác động nào đến."
+        },
+        {
+          "id": "t3-p6-10",
+          "passage": "NOTICE TO ALL DEPARTMENTS\n\nAs part of our ongoing efforts to improve operational efficiency, the company will be transitioning to a new enterprise resource planning (ERP) system. The migration is scheduled to begin on May 15th and will be completed in three phases. During the transition, some processes may experience temporary disruptions. Department heads are asked to identify critical tasks and develop contingency plans to minimize any impacts to business operations. Comprehensive training sessions for the new system will be provided by the IT department beginning April 20th. Attendance is _____ for all users.",
+          "text": "Choose the correct word.",
+          "options": [
+            "A. required",
+            "B. requiring",
+            "C. requirement",
+            "D. requires"
+          ],
+          "correctAnswer": 0,
+          "explanation": "\"Attendance is required\" = việc tham dự là bắt buộc."
+        },
+        {
+          "id": "t3-p6-11",
+          "passage": "NEWSLETTER ARTICLE\n\nOur company's annual charity fundraiser was a resounding success, raising over $500,000 for local education programs. The event, held at the Riverside Convention Center, attracted more than 800 attendees and featured live entertainment, a silent auction, and keynote remarks from renowned educator Dr. Michelle Adams.",
+          "text": "Choose the correct word.",
+          "options": [
+            "A. raising",
+            "B. raised",
+            "C. raise",
+            "D. raises"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Hiện tại phân từ \"raising\" bổ nghĩa cho sự kiện."
+        },
+        {
+          "id": "t3-p6-12",
+          "passage": "NEWSLETTER ARTICLE\n\nOur company's annual charity fundraiser was a resounding success, raising over $500,000 for local education programs. The event, held at the Riverside Convention Center, attracted more than 800 attendees and featured live entertainment, a silent auction, and keynote remarks from renowned educator Dr. Michelle Adams. All proceeds will be _____ to five local schools and two scholarship funds.",
+          "text": "Choose the correct word.",
+          "options": [
+            "A. distributed",
+            "B. distribute",
+            "C. distributing",
+            "D. distribution"
+          ],
+          "correctAnswer": 0,
+          "explanation": "\"Will be distributed\" = sẽ được phân phối (bị động)."
+        },
+        {
+          "id": "t3-p6-13",
+          "passage": "NEWSLETTER ARTICLE\n\nOur company's annual charity fundraiser was a resounding success, raising over $500,000 for local education programs. The event, held at the Riverside Convention Center, attracted more than 800 attendees and featured live entertainment, a silent auction, and keynote remarks from renowned educator Dr. Michelle Adams. All proceeds will be distributed to five local schools and two scholarship funds. We are grateful for the _____ support of our employees, partners, and community members.",
+          "text": "Choose the correct word.",
+          "options": [
+            "A. generous",
+            "B. generosity",
+            "C. generously",
+            "D. generate"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Tính từ \"generous\" = hào phóng,修饰 \"support\"."
+        },
+        {
+          "id": "t3-p6-14",
+          "passage": "CUSTOMER LETTER\n\nWe regret to inform you that due to unforeseen supply chain disruptions, delivery of your order may be _____ by 5 to 10 business days. We sincerely apologize for the inconvenience and are working diligently to resolve the situation.",
+          "text": "Choose the correct word.",
+          "options": [
+            "A. delayed",
+            "B. delay",
+            "C. delaying",
+            "D. delays"
+          ],
+          "correctAnswer": 0,
+          "explanation": "\"May be delayed\" = có thể bị trì hoãn (bị động)."
+        },
+        {
+          "id": "t3-p6-15",
+          "passage": "CUSTOMER LETTER\n\nWe regret to inform you that due to unforeseen supply chain disruptions, delivery of your order may be delayed by 5 to 10 business days. We sincerely apologize for the inconvenience and are working diligently to resolve the situation. As a gesture of goodwill, we would like to offer you a 10% discount on your next purchase. Please use the promo code BELOW10 at _____ time.",
+          "text": "Choose the correct word.",
+          "options": [
+            "A. any",
+            "B. every",
+            "C. each",
+            "D. some"
+          ],
+          "correctAnswer": 0,
+          "explanation": "\"At any time\" = bất cứ lúc nào."
+        },
+        {
+          "id": "t3-p6-16",
+          "passage": "CUSTOMER LETTER\n\nWe regret to inform you that due to unforeseen supply chain disruptions, delivery of your order may be delayed by 5 to 10 business days. We sincerely apologize for the inconvenience and are working diligently to resolve the situation. As a gesture of goodwill, we would like to offer you a 10% discount on your next purchase. Please use the promo code BELOW10 at any time. We value your _____ and look forward to continuing to serve you.",
+          "text": "Choose the correct word.",
+          "options": [
+            "A. loyalty",
+            "B. loyal",
+            "C. loyally",
+            "D. loyalist"
+          ],
+          "correctAnswer": 0,
+          "explanation": "\"Your loyalty\" = sự trung thành của bạn."
+        }
+      ]
+    },
+    {
+      "id": "t3-sec-7",
+      "title": "Part 7: Reading Comprehension",
+      "description": "Read the passage and answer the questions.",
+      "questions": [
+        {
+          "id": "t3-p7-1",
+          "passage": "Pacific Rim Holdings has announced a strategic partnership with European tech firm Nordic Innovations. The collaboration, valued at approximately $780 million, aims to develop next-generation cloud computing solutions for the financial services industry. Under the terms of the agreement, both companies will contribute proprietary technology and share intellectual property rights. The partnership is expected to create approximately 200 new jobs across both companies within the first two years.",
+          "text": "What is the total value of the partnership?",
+          "options": [
+            "A. $280 million",
+            "B. $580 million",
+            "C. $780 million",
+            "D. $980 million"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Tổng giá trị partnership là khoảng 780 triệu đô la."
+        },
+        {
+          "id": "t3-p7-2",
+          "passage": "Pacific Rim Holdings has announced a strategic partnership with European tech firm Nordic Innovations. The collaboration, valued at approximately $780 million, aims to develop next-generation cloud computing solutions for the financial services industry. Under the terms of the agreement, both companies will contribute proprietary technology and share intellectual property rights. The partnership is expected to create approximately 200 new jobs across both companies within the first two years.",
+          "text": "What industry will the solutions target?",
+          "options": [
+            "A. Healthcare",
+            "B. Financial services",
+            "C. Retail",
+            "D. Manufacturing"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Các giải pháp nhắm vào ngành dịch vụ tài chính."
+        },
+        {
+          "id": "t3-p7-3",
+          "passage": "Pacific Rim Holdings has announced a strategic partnership with European tech firm Nordic Innovations. The collaboration, valued at approximately $780 million, aims to develop next-generation cloud computing solutions for the financial services industry. Under the terms of the agreement, both companies will contribute proprietary technology and share intellectual property rights. The partnership is expected to create approximately 200 new jobs across both companies within the first two years.",
+          "text": "How many new jobs are expected to be created?",
+          "options": [
+            "A. Approximately 100",
+            "B. Approximately 150",
+            "C. Approximately 200",
+            "D. Approximately 300"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Dự kiến tạo ra khoảng 200 việc làm mới."
+        },
+        {
+          "id": "t3-p7-4",
+          "passage": "NORTHERN TRUST BANK\nImportant Notice Regarding Account Security\n\nIn our ongoing commitment to protecting your financial information, Northern Trust Bank is implementing enhanced security measures for all online banking accounts, effective immediately.\n\nAll customers will be required to:\n1. Update passwords to meet new complexity requirements (minimum 12 characters, including uppercase, lowercase, numbers, and special characters)\n2. Enable two-factor authentication for all online transactions\n3. Register trusted devices through the mobile app\n\nCustomers who do not comply within 30 days will have their online banking access temporarily suspended until the requirements are met. For assistance, contact our dedicated support line at 1-800-555-0147.",
+          "text": "What is the minimum password length required?",
+          "options": [
+            "A. 8 characters",
+            "B. 10 characters",
+            "C. 12 characters",
+            "D. 16 characters"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Độ dài mật khẩu tối thiểu là 12 ký tự."
+        },
+        {
+          "id": "t3-p7-5",
+          "passage": "NORTHERN TRUST BANK\nImportant Notice Regarding Account Security\n\nIn our ongoing commitment to protecting your financial information, Northern Trust Bank is implementing enhanced security measures for all online banking accounts, effective immediately.\n\nAll customers will be required to:\n1. Update passwords to meet new complexity requirements (minimum 12 characters, including uppercase, lowercase, numbers, and special characters)\n2. Enable two-factor authentication for all online transactions\n3. Register trusted devices through the mobile app\n\nCustomers who do not comply within 30 days will have their online banking access temporarily suspended until the requirements are met. For assistance, contact our dedicated support line at 1-800-555-0147.",
+          "text": "What happens to customers who do not comply within 30 days?",
+          "options": [
+            "A. Their accounts will be closed",
+            "B. Their online banking access will be temporarily suspended",
+            "C. They will be charged a fee",
+            "D. They will be required to visit a branch"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Truy cập ngân hàng trực tuyến sẽ bị tạm đình chỉ."
+        },
+        {
+          "id": "t3-p7-6",
+          "passage": "NORTHERN TRUST BANK\nImportant Notice Regarding Account Security\n\nIn our ongoing commitment to protecting your financial information, Northern Trust Bank is implementing enhanced security measures for all online banking accounts, effective immediately.\n\nAll customers will be required to:\n1. Update passwords to meet new complexity requirements (minimum 12 characters, including uppercase, lowercase, numbers, and special characters)\n2. Enable two-factor authentication for all online transactions\n3. Register trusted devices through the mobile app\n\nCustomers who do not comply within 30 days will have their online banking access temporarily suspended until the requirements are met. For assistance, contact our dedicated support line at 1-800-555-0147.",
+          "text": "Which of the following is NOT a new requirement?",
+          "options": [
+            "A. Updated passwords",
+            "B. Two-factor authentication",
+            "C. Biometric login",
+            "D. Device registration"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Đăng nhập sinh trắc học không phải yêu cầu mới."
+        },
+        {
+          "id": "t3-p7-7",
+          "passage": "MERIDIAN CONSULTING GROUP\nCareer Opportunities\n\nMeridian Consulting Group is expanding its operations and seeking experienced professionals for the following roles:\n\nSenior Management Consultant\nRequirements: MBA or equivalent; 7+ years of consulting experience; strong analytical and leadership skills; willingness to travel up to 50%.\n\nData Analytics Lead\nRequirements: Master's degree in data science or related field; 5+ years of experience with Python, SQL, and visualization tools; experience managing a team of analysts.\n\nBusiness Development Manager\nRequirements: Bachelor's degree required; 5+ years of B2B sales experience; proven track record of meeting revenue targets; strong networking skills.\n\nCompetitive salary, performance bonuses, and comprehensive benefits package included. Submit applications to careers@meridianconsulting.com.",
+          "text": "How many positions are being advertised?",
+          "options": [
+            "A. Two",
+            "B. Three",
+            "C. Four",
+            "D. Five"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Có ba vị trí đang tuyển dụng."
+        },
+        {
+          "id": "t3-p7-8",
+          "passage": "MERIDIAN CONSULTING GROUP\nCareer Opportunities\n\nMeridian Consulting Group is expanding its operations and seeking experienced professionals for the following roles:\n\nSenior Management Consultant\nRequirements: MBA or equivalent; 7+ years of consulting experience; strong analytical and leadership skills; willingness to travel up to 50%.\n\nData Analytics Lead\nRequirements: Master's degree in data science or related field; 5+ years of experience with Python, SQL, and visualization tools; experience managing a team of analysts.\n\nBusiness Development Manager\nRequirements: Bachelor's degree required; 5+ years of B2B sales experience; proven track record of meeting revenue targets; strong networking skills.\n\nCompetitive salary, performance bonuses, and comprehensive benefits package included. Submit applications to careers@meridianconsulting.com.",
+          "text": "What is required for the Senior Management Consultant position?",
+          "options": [
+            "A. A Bachelor's degree",
+            "B. An MBA or equivalent",
+            "C. A PhD",
+            "D. No degree required"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Vị trí yêu cầu MBA hoặc tương đương."
+        },
+        {
+          "id": "t3-p7-9",
+          "passage": "MERIDIAN CONSULTING GROUP\nCareer Opportunities\n\nMeridian Consulting Group is expanding its operations and seeking experienced professionals for the following roles:\n\nSenior Management Consultant\nRequirements: MBA or equivalent; 7+ years of consulting experience; strong analytical and leadership skills; willingness to travel up to 50%.\n\nData Analytics Lead\nRequirements: Master's degree in data science or related field; 5+ years of experience with Python, SQL, and visualization tools; experience managing a team of analysts.\n\nBusiness Development Manager\nRequirements: Bachelor's degree required; 5+ years of B2B sales experience; proven track record of meeting revenue targets; strong networking skills.\n\nCompetitive salary, performance bonuses, and comprehensive benefits package included. Submit applications to careers@meridianconsulting.com.",
+          "text": "How much travel is required for the Senior Management Consultant?",
+          "options": [
+            "A. Up to 25%",
+            "B. Up to 50%",
+            "C. Up to 75%",
+            "D. No travel required"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Yêu cầu đi công tác lên đến 50%."
+        },
+        {
+          "id": "t3-p7-10",
+          "passage": "GLOBAL TECH INDUSTRY REPORT\n\nCloud Computing Market to Reach $1.2 Trillion by 2028\n\nThe global cloud computing market is projected to grow from $591 billion in 2023 to $1.2 trillion by 2028, representing a compound annual growth rate (CAGR) of 16.2%. The growth is being driven by increasing digital transformation across industries, the expansion of artificial intelligence applications, and the growing adoption of hybrid cloud strategies.\n\nNorth America currently accounts for 38% of the global market, followed by Europe at 25% and Asia-Pacific at 22%. Enterprise adoption of multi-cloud environments is accelerating, with 76% of organizations now using two or more cloud providers.",
+          "text": "What is the projected market size by 2028?",
+          "options": [
+            "A. $591 billion",
+            "B. $800 billion",
+            "C. $1 trillion",
+            "D. $1.2 trillion"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Quy mô thị trường dự kiến đạt 1,2 nghìn tỷ đô la."
+        },
+        {
+          "id": "t3-p7-11",
+          "passage": "GLOBAL TECH INDUSTRY REPORT\n\nCloud Computing Market to Reach $1.2 Trillion by 2028\n\nThe global cloud computing market is projected to grow from $591 billion in 2023 to $1.2 trillion by 2028, representing a compound annual growth rate (CAGR) of 16.2%. The growth is being driven by increasing digital transformation across industries, the expansion of artificial intelligence applications, and the growing adoption of hybrid cloud strategies.\n\nNorth America currently accounts for 38% of the global market, followed by Europe at 25% and Asia-Pacific at 22%. Enterprise adoption of multi-cloud environments is accelerating, with 76% of organizations now using two or more cloud providers.",
+          "text": "Which region has the largest market share?",
+          "options": [
+            "A. Europe",
+            "B. Asia-Pacific",
+            "C. North America",
+            "D. Latin America"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Bắc Mỹ chiếm thị phần lớn nhất: 38%."
+        },
+        {
+          "id": "t3-p7-12",
+          "passage": "GLOBAL TECH INDUSTRY REPORT\n\nCloud Computing Market to Reach $1.2 Trillion by 2028\n\nThe global cloud computing market is projected to grow from $591 billion in 2023 to $1.2 trillion by 2028, representing a compound annual growth rate (CAGR) of 16.2%. The growth is being driven by increasing digital transformation across industries, the expansion of artificial intelligence applications, and the growing adoption of hybrid cloud strategies.\n\nNorth America currently accounts for 38% of the global market, followed by Europe at 25% and Asia-Pacific at 22%. Enterprise adoption of multi-cloud environments is accelerating, with 76% of organizations now using two or more cloud providers.",
+          "text": "What percentage of organizations use multiple cloud providers?",
+          "options": [
+            "A. 56%",
+            "B. 66%",
+            "C. 76%",
+            "D. 86%"
+          ],
+          "correctAnswer": 2,
+          "explanation": "76% tổ chức sử dụng nhiều hơn một nhà cung cấp đám mây."
+        },
+        {
+          "id": "t3-p7-13",
+          "passage": "CITY BUSINESS TRIBUNE\nInnovatech Wins Landmark Patent Case\n\nInnovatech, a leading biotech company, has won a major patent infringement lawsuit against rival BioPharm Solutions. The federal court ruled that BioPharm's gene therapy technology infringed on two of Innovatech's patented processes. BioPharm has been ordered to pay $340 million in damages and cease the use of the disputed technology.\n\nInnovatech's CEO, Dr. Amanda Chen, stated that the ruling \"validates years of research and innovation.\" BioPharm's legal team has indicated they plan to appeal the decision.",
+          "text": "Who won the lawsuit?",
+          "options": [
+            "A. BioPharm Solutions",
+            "B. Innovatech",
+            "C. Both companies",
+            "D. The ruling was undecided"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Innovatech đã thắng vụ kiện."
+        },
+        {
+          "id": "t3-p7-14",
+          "passage": "CITY BUSINESS TRIBUNE\nInnovatech Wins Landmark Patent Case\n\nInnovatech, a leading biotech company, has won a major patent infringement lawsuit against rival BioPharm Solutions. The federal court ruled that BioPharm's gene therapy technology infringed on two of Innovatech's patented processes. BioPharm has been ordered to pay $340 million in damages and cease the use of the disputed technology.\n\nInnovatech's CEO, Dr. Amanda Chen, stated that the ruling \"validates years of research and innovation.\" BioPharm's legal team has indicated they plan to appeal the decision.",
+          "text": "How much must BioPharm pay in damages?",
+          "options": [
+            "A. $240 million",
+            "B. $340 million",
+            "C. $440 million",
+            "D. $540 million"
+          ],
+          "correctAnswer": 1,
+          "explanation": "BioPharm phải bồi thường 340 triệu đô la."
+        },
+        {
+          "id": "t3-p7-15",
+          "passage": "CITY BUSINESS TRIBUNE\nInnovatech Wins Landmark Patent Case\n\nInnovatech, a leading biotech company, has won a major patent infringement lawsuit against rival BioPharm Solutions. The federal court ruled that BioPharm's gene therapy technology infringed on two of Innovatech's patented processes. BioPharm has been ordered to pay $340 million in damages and cease the use of the disputed technology.\n\nInnovatech's CEO, Dr. Amanda Chen, stated that the ruling \"validates years of research and innovation.\" BioPharm's legal team has indicated they plan to appeal the decision.",
+          "text": "What does BioPharm plan to do?",
+          "options": [
+            "A. Accept the ruling",
+            "B. Appeal the decision",
+            "C. Settle out of court",
+            "D. File for bankruptcy"
+          ],
+          "correctAnswer": 1,
+          "explanation": "BioPharm có kế hoạch kháng cáo quyết định."
+        },
+        {
+          "id": "t3-p7-16",
+          "passage": "INTERNATIONAL TRADE PUBLICATION\n\nEU Implements New Carbon Border Tax\n\nThe European Union has officially implemented its Carbon Border Adjustment Mechanism (CBAM), imposing a levy on carbon-intensive imports from countries with less stringent climate policies. The tax applies to imports of steel, aluminum, cement, fertilizers, and electricity.\n\nUnder the new framework, importers must purchase carbon certificates corresponding to the carbon price that would have been paid under the EU's emissions trading system. The phased implementation began in October 2023 with reporting requirements, with full financial charges starting in 2026.",
+          "text": "What is the CBAM?",
+          "options": [
+            "A. A trade agreement",
+            "B. A carbon border tax",
+            "C. An environmental subsidy",
+            "D. A certification program"
+          ],
+          "correctAnswer": 1,
+          "explanation": "CBAM là thuế biên giới carbon."
+        },
+        {
+          "id": "t3-p7-17",
+          "passage": "INTERNATIONAL TRADE PUBLICATION\n\nEU Implements New Carbon Border Tax\n\nThe European Union has officially implemented its Carbon Border Adjustment Mechanism (CBAM), imposing a levy on carbon-intensive imports from countries with less stringent climate policies. The tax applies to imports of steel, aluminum, cement, fertilizers, and electricity.\n\nUnder the new framework, importers must purchase carbon certificates corresponding to the carbon price that would have been paid under the EU's emissions trading system. The phased implementation began in October 2023 with reporting requirements, with full financial charges starting in 2026.",
+          "text": "Which products are affected by the CBAM?",
+          "options": [
+            "A. Electronics and textiles",
+            "B. Steel, aluminum, cement, fertilizers, and electricity",
+            "C. Agricultural products and food",
+            "D. Vehicles and machinery"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Các sản phẩm bị ảnh hưởng gồm thép, nhôm, xi măng, phân bón và điện."
+        },
+        {
+          "id": "t3-p7-18",
+          "passage": "INTERNATIONAL TRADE PUBLICATION\n\nEU Implements New Carbon Border Tax\n\nThe European Union has officially implemented its Carbon Border Adjustment Mechanism (CBAM), imposing a levy on carbon-intensive imports from countries with less stringent climate policies. The tax applies to imports of steel, aluminum, cement, fertilizers, and electricity.\n\nUnder the new framework, importers must purchase carbon certificates corresponding to the carbon price that would have been paid under the EU's emissions trading system. The phased implementation began in October 2023 with reporting requirements, with full financial charges starting in 2026.",
+          "text": "When do full financial charges begin?",
+          "options": [
+            "A. October 2023",
+            "B. January 2024",
+            "C. 2025",
+            "D. 2026"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Phí tài chính đầy đủ bắt đầu từ năm 2026."
+        },
+        {
+          "id": "t3-p7-19",
+          "passage": "BRIDGEPORT MANUFACTURING\nAnnual Quality Report Summary\n\nBridgeport Manufacturing achieved a 99.7% product defect rate reduction over the past year through the implementation of Six Sigma methodology and advanced quality control systems. Key metrics include:\n\n• Customer complaints reduced by 45%\n• Product returns decreased by 38%\n• Production yield improved to 98.2%\n• Average time to resolution: 4.2 hours\n• Employee quality training hours: 12,000+ annually\n\nThe company attributes its success to investment in employee training, automation of inspection processes, and a commitment to continuous improvement.",
+          "text": "What was the defect rate reduction?",
+          "options": [
+            "A. 38%",
+            "B. 45%",
+            "C. 98.2%",
+            "D. 99.7%"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Tỷ lệ lỗi sản phẩm giảm 99,7%."
+        },
+        {
+          "id": "t3-p7-20",
+          "passage": "BRIDGEPORT MANUFACTURING\nAnnual Quality Report Summary\n\nBridgeport Manufacturing achieved a 99.7% product defect rate reduction over the past year through the implementation of Six Sigma methodology and advanced quality control systems. Key metrics include:\n\n• Customer complaints reduced by 45%\n• Product returns decreased by 38%\n• Production yield improved to 98.2%\n• Average time to resolution: 4.2 hours\n• Employee quality training hours: 12,000+ annually\n\nThe company attributes its success to investment in employee training, automation of inspection processes, and a commitment to continuous improvement.",
+          "text": "What methodology was implemented?",
+          "options": [
+            "A. Lean manufacturing",
+            "B. Total Quality Management",
+            "C. Six Sigma",
+            "D. Kaizen"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Phương pháp Six Sigma đã được triển khai."
+        },
+        {
+          "id": "t3-p7-21",
+          "passage": "BRIDGEPORT MANUFACTURING\nAnnual Quality Report Summary\n\nBridgeport Manufacturing achieved a 99.7% product defect rate reduction over the past year through the implementation of Six Sigma methodology and advanced quality control systems. Key metrics include:\n\n• Customer complaints reduced by 45%\n• Product returns decreased by 38%\n• Production yield improved to 98.2%\n• Average time to resolution: 4.2 hours\n• Employee quality training hours: 12,000+ annually\n\nThe company attributes its success to investment in employee training, automation of inspection processes, and a commitment to continuous improvement.",
+          "text": "How many training hours were logged annually?",
+          "options": [
+            "A. 5,000+",
+            "B. 8,000+",
+            "C. 10,000+",
+            "D. 12,000+"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Hơn 12.000 giờ đào tạo mỗi năm."
+        },
+        {
+          "id": "t3-p7-22",
+          "passage": "METROPOLITAN BUSINESS JOURNAL\nReal Estate Market Update\n\nCommercial real estate in the metropolitan area has shown resilience despite economic headwinds. Office vacancy rates declined to 12.3% in Q3, down from 14.8% a year ago. The strongest demand came from technology and healthcare companies seeking modern, flexible workspaces.\n\nRent prices remained stable, averaging $38.50 per square foot for Class A office space. The industrial sector continued to outperform, with warehouse vacancy rates at a historic low of 3.2%. Analysts predict continued strength in logistics and data center demand.",
+          "text": "What is the current office vacancy rate?",
+          "options": [
+            "A. 3.2%",
+            "B. 12.3%",
+            "C. 14.8%",
+            "D. 38.5%"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Tỷ lệ văn phòng trống hiện tại là 12,3%."
+        },
+        {
+          "id": "t3-p7-23",
+          "passage": "METROPOLITAN BUSINESS JOURNAL\nReal Estate Market Update\n\nCommercial real estate in the metropolitan area has shown resilience despite economic headwinds. Office vacancy rates declined to 12.3% in Q3, down from 14.8% a year ago. The strongest demand came from technology and healthcare companies seeking modern, flexible workspaces.\n\nRent prices remained stable, averaging $38.50 per square foot for Class A office space. The industrial sector continued to outperform, with warehouse vacancy rates at a historic low of 3.2%. Analysts predict continued strength in logistics and data center demand.",
+          "text": "Which sectors are driving demand?",
+          "options": [
+            "A. Finance and retail",
+            "B. Technology and healthcare",
+            "C. Manufacturing and agriculture",
+            "D. Education and government"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Công nghệ và chăm sóc sức khỏe đang thúc đẩy nhu cầu."
+        },
+        {
+          "id": "t3-p7-24",
+          "passage": "METROPOLITAN BUSINESS JOURNAL\nReal Estate Market Update\n\nCommercial real estate in the metropolitan area has shown resilience despite economic headwinds. Office vacancy rates declined to 12.3% in Q3, down from 14.8% a year ago. The strongest demand came from technology and healthcare companies seeking modern, flexible workspaces.\n\nRent prices remained stable, averaging $38.50 per square foot for Class A office space. The industrial sector continued to outperform, with warehouse vacancy rates at a historic low of 3.2%. Analysts predict continued strength in logistics and data center demand.",
+          "text": "What is the warehouse vacancy rate?",
+          "options": [
+            "A. 3.2%",
+            "B. 12.3%",
+            "C. 14.8%",
+            "D. 38.5%"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Tỷ lệ kho trống là 3,2% - mức thấp lịch sử."
+        },
+        {
+          "id": "t3-p7-25",
+          "passage": "WORLDWIDE INSURANCE REVIEW\nCyber Insurance Premiums Set to Double\n\nThe global cyber insurance market is expected to see premiums double by 2027, driven by the increasing frequency and severity of cyberattacks. According to industry estimates, cybercrime damages will exceed $10.5 trillion annually by 2025.\n\nCompanies with robust cybersecurity frameworks — including multi-factor authentication, endpoint detection, and incident response plans — may qualify for premium reductions of up to 15%. Insurers are increasingly requiring risk assessments before issuing policies.",
+          "text": "By how much are cyber insurance premiums expected to increase?",
+          "options": [
+            "A. 50%",
+            "B. 75%",
+            "C. Double",
+            "D. Triple"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Phí bảo hiểm mạng dự kiến tăng gấp đôi."
+        },
+        {
+          "id": "t3-p7-26",
+          "passage": "WORLDWIDE INSURANCE REVIEW\nCyber Insurance Premiums Set to Double\n\nThe global cyber insurance market is expected to see premiums double by 2027, driven by the increasing frequency and severity of cyberattacks. According to industry estimates, cybercrime damages will exceed $10.5 trillion annually by 2025.\n\nCompanies with robust cybersecurity frameworks — including multi-factor authentication, endpoint detection, and incident response plans — may qualify for premium reductions of up to 15%. Insurers are increasingly requiring risk assessments before issuing policies.",
+          "text": "How much could companies save on premiums with strong security?",
+          "options": [
+            "A. Up to 5%",
+            "B. Up to 10%",
+            "C. Up to 15%",
+            "D. Up to 20%"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Công ty có thể tiết kiệm đến 15% phí bảo hiểm."
+        },
+        {
+          "id": "t3-p7-27",
+          "passage": "WORLDWIDE INSURANCE REVIEW\nCyber Insurance Premiums Set to Double\n\nThe global cyber insurance market is expected to see premiums double by 2027, driven by the increasing frequency and severity of cyberattacks. According to industry estimates, cybercrime damages will exceed $10.5 trillion annually by 2025.\n\nCompanies with robust cybersecurity frameworks — including multi-factor authentication, endpoint detection, and incident response plans — may qualify for premium reductions of up to 15%. Insurers are increasingly requiring risk assessments before issuing policies.",
+          "text": "What are insurers increasingly requiring?",
+          "options": [
+            "A. Annual audits",
+            "B. Risk assessments",
+            "C. Employee background checks",
+            "D. Board-level approval"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Công ty bảo hiểm ngày càng yêu cầu đánh giá rủi ro."
+        },
+        {
+          "id": "t3-p7-28",
+          "passage": "SILICON VALLEY BUSINESS TIMES\nVenture Capital Funding Rebounds\n\nAfter a challenging 2023, venture capital funding in the technology sector rebounded strongly in Q1 2024, with total investments reaching $48.2 billion — a 35% increase from the previous quarter. AI startups attracted the largest share, accounting for 42% of total funding.\n\nNotable deals include a $2.1 billion Series D round for autonomous vehicle company AutoDrive and a $800 million Series C for AI-powered drug discovery platform BioGenix. Early-stage funding also showed improvement, with seed and Series A rounds increasing by 28%.",
+          "text": "How much VC funding was invested in Q1 2024?",
+          "options": [
+            "A. $35.7 billion",
+            "B. $48.2 billion",
+            "C. $52.5 billion",
+            "D. $65.8 billion"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Tổng đầu tư VC Q1 2024 là 48,2 tỷ đô la."
+        },
+        {
+          "id": "t3-p7-29",
+          "passage": "SILICON VALLEY BUSINESS TIMES\nVenture Capital Funding Rebounds\n\nAfter a challenging 2023, venture capital funding in the technology sector rebounded strongly in Q1 2024, with total investments reaching $48.2 billion — a 35% increase from the previous quarter. AI startups attracted the largest share, accounting for 42% of total funding.\n\nNotable deals include a $2.1 billion Series D round for autonomous vehicle company AutoDrive and a $800 million Series C for AI-powered drug discovery platform BioGenix. Early-stage funding also showed improvement, with seed and Series A rounds increasing by 28%.",
+          "text": "What percentage of funding went to AI startups?",
+          "options": [
+            "A. 28%",
+            "B. 35%",
+            "C. 42%",
+            "D. 50%"
+          ],
+          "correctAnswer": 2,
+          "explanation": "AI startup chiếm 42% tổng vốn đầu tư."
+        },
+        {
+          "id": "t3-p7-30",
+          "passage": "SILICON VALLEY BUSINESS TIMES\nVenture Capital Funding Rebounds\n\nAfter a challenging 2023, venture capital funding in the technology sector rebounded strongly in Q1 2024, with total investments reaching $48.2 billion — a 35% increase from the previous quarter. AI startups attracted the largest share, accounting for 42% of total funding.\n\nNotable deals include a $2.1 billion Series D round for autonomous vehicle company AutoDrive and a $800 million Series C for AI-powered drug discovery platform BioGenix. Early-stage funding also showed improvement, with seed and Series A rounds increasing by 28%.",
+          "text": "How much did AutoDrive raise?",
+          "options": [
+            "A. $800 million",
+            "B. $1.2 billion",
+            "C. $2.1 billion",
+            "D. $3.5 billion"
+          ],
+          "correctAnswer": 2,
+          "explanation": "AutoDrive huy động được 2,1 tỷ đô la."
+        },
+        {
+          "id": "t3-p7-31",
+          "passage": "PUBLIC WORKS DEPARTMENT\nRoad Improvement Project Update\n\nPhase 2 of the Downtown Road Improvement Project is now 60% complete. The project, which includes resurfacing Main Street from 1st to 12th Avenue, adding protected bike lanes, and upgrading traffic signals, is on track for completion by September 2024.\n\nResidents should be aware of the following traffic changes:\n• Main Street between 5th and 8th Avenue will be reduced to one lane in each direction starting Monday\n• Temporary signal lights have been installed at the intersection of Main and 6th\n• Night work will be conducted between 10 PM and 5 AM on weekdays\n\nThe total project cost is $18.5 million, funded through a combination of federal infrastructure grants and local bonds.",
+          "text": "What phase is the project currently in?",
+          "options": [
+            "A. Phase 1",
+            "B. Phase 2",
+            "C. Phase 3",
+            "D. Phase 4"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Dự án đang trong Giai đoạn 2."
+        },
+        {
+          "id": "t3-p7-32",
+          "passage": "PUBLIC WORKS DEPARTMENT\nRoad Improvement Project Update\n\nPhase 2 of the Downtown Road Improvement Project is now 60% complete. The project, which includes resurfacing Main Street from 1st to 12th Avenue, adding protected bike lanes, and upgrading traffic signals, is on track for completion by September 2024.\n\nResidents should be aware of the following traffic changes:\n• Main Street between 5th and 8th Avenue will be reduced to one lane in each direction starting Monday\n• Temporary signal lights have been installed at the intersection of Main and 6th\n• Night work will be conducted between 10 PM and 5 AM on weekdays\n\nThe total project cost is $18.5 million, funded through a combination of federal infrastructure grants and local bonds.",
+          "text": "When is the project expected to be completed?",
+          "options": [
+            "A. June 2024",
+            "B. July 2024",
+            "C. September 2024",
+            "D. December 2024"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Dự án dự kiến hoàn thành tháng 9 năm 2024."
+        },
+        {
+          "id": "t3-p7-33",
+          "passage": "PUBLIC WORKS DEPARTMENT\nRoad Improvement Project Update\n\nPhase 2 of the Downtown Road Improvement Project is now 60% complete. The project, which includes resurfacing Main Street from 1st to 12th Avenue, adding protected bike lanes, and upgrading traffic signals, is on track for completion by September 2024.\n\nResidents should be aware of the following traffic changes:\n• Main Street between 5th and 8th Avenue will be reduced to one lane in each direction starting Monday\n• Temporary signal lights have been installed at the intersection of Main and 6th\n• Night work will be conducted between 10 PM and 5 AM on weekdays\n\nThe total project cost is $18.5 million, funded through a combination of federal infrastructure grants and local bonds.",
+          "text": "What is the total cost of the project?",
+          "options": [
+            "A. $8.5 million",
+            "B. $12.5 million",
+            "C. $18.5 million",
+            "D. $25 million"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Tổng chi phí dự án là 18,5 triệu đô la."
+        },
+        {
+          "id": "t3-p7-34",
+          "passage": "PREMIUM RETAIL GROUP\nQuarterly Earnings Summary\n\nPremium Retail Group reported record Q3 earnings, with revenue of $8.3 billion — up 14% year-over-year. Same-store sales grew by 9.2%, driven by strong performance in the luxury apparel and home goods categories.\n\nKey highlights:\n• E-commerce sales grew 28%, representing 32% of total revenue\n• Customer acquisition cost decreased by 12%\n• Customer retention rate improved to 78%\n• Opened 15 new stores in emerging markets\n\nCEO Robert Harrison attributed the growth to \"our omnichannel strategy and focus on premium customer experiences.\"",
+          "text": "What was the total revenue for Q3?",
+          "options": [
+            "A. $5.3 billion",
+            "B. $6.8 billion",
+            "C. $8.3 billion",
+            "D. $9.7 billion"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Tổng doanh thu Q3 là 8,3 tỷ đô la."
+        },
+        {
+          "id": "t3-p7-35",
+          "passage": "PREMIUM RETAIL GROUP\nQuarterly Earnings Summary\n\nPremium Retail Group reported record Q3 earnings, with revenue of $8.3 billion — up 14% year-over-year. Same-store sales grew by 9.2%, driven by strong performance in the luxury apparel and home goods categories.\n\nKey highlights:\n• E-commerce sales grew 28%, representing 32% of total revenue\n• Customer acquisition cost decreased by 12%\n• Customer retention rate improved to 78%\n• Opened 15 new stores in emerging markets\n\nCEO Robert Harrison attributed the growth to \"our omnichannel strategy and focus on premium customer experiences.\"",
+          "text": "How many new stores were opened?",
+          "options": [
+            "A. 5",
+            "B. 10",
+            "C. 15",
+            "D. 20"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Đã mở 15 cửa hàng mới."
+        },
+        {
+          "id": "t3-p7-36",
+          "passage": "PREMIUM RETAIL GROUP\nQuarterly Earnings Summary\n\nPremium Retail Group reported record Q3 earnings, with revenue of $8.3 billion — up 14% year-over-year. Same-store sales grew by 9.2%, driven by strong performance in the luxury apparel and home goods categories.\n\nKey highlights:\n• E-commerce sales grew 28%, representing 32% of total revenue\n• Customer acquisition cost decreased by 12%\n• Customer retention rate improved to 78%\n• Opened 15 new stores in emerging markets\n\nCEO Robert Harrison attributed the growth to \"our omnichannel strategy and focus on premium customer experiences.\"",
+          "text": "What percentage of revenue came from e-commerce?",
+          "options": [
+            "A. 14%",
+            "B. 28%",
+            "C. 32%",
+            "D. 42%"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Thương mại điện tử chiếm 32% tổng doanh thu."
+        },
+        {
+          "id": "t3-p7-37",
+          "passage": "HEALTH & WELLNESS NEWS\nCorporate Wellness Programs Show ROI\n\nA comprehensive study by the Health Economics Institute found that companies with employee wellness programs see an average return on investment of $3.27 for every $1 spent. The study, which analyzed data from 450 companies over five years, found that wellness programs led to:\n\n• 25% reduction in sick days\n• 32% decrease in workers' compensation claims\n• 18% improvement in employee satisfaction scores\n• 15% reduction in healthcare costs\n\nThe most effective programs included mental health support, fitness incentives, and nutritional counseling.",
+          "text": "What is the average ROI for wellness programs?",
+          "options": [
+            "A. $1.50 per $1",
+            "B. $2.27 per $1",
+            "C. $3.27 per $1",
+            "D. $4.27 per $1"
+          ],
+          "correctAnswer": 2,
+          "explanation": "ROI trung bình là 3,27 đô la cho mỗi 1 đô la đầu tư."
+        },
+        {
+          "id": "t3-p7-38",
+          "passage": "HEALTH & WELLNESS NEWS\nCorporate Wellness Programs Show ROI\n\nA comprehensive study by the Health Economics Institute found that companies with employee wellness programs see an average return on investment of $3.27 for every $1 spent. The study, which analyzed data from 450 companies over five years, found that wellness programs led to:\n\n• 25% reduction in sick days\n• 32% decrease in workers' compensation claims\n• 18% improvement in employee satisfaction scores\n• 15% reduction in healthcare costs\n\nThe most effective programs included mental health support, fitness incentives, and nutritional counseling.",
+          "text": "By how much did healthcare costs decrease?",
+          "options": [
+            "A. 10%",
+            "B. 15%",
+            "C. 18%",
+            "D. 25%"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Chi phí chăm sóc sức khỏe giảm 15%."
+        },
+        {
+          "id": "t3-p7-39",
+          "passage": "HEALTH & WELLNESS NEWS\nCorporate Wellness Programs Show ROI\n\nA comprehensive study by the Health Economics Institute found that companies with employee wellness programs see an average return on investment of $3.27 for every $1 spent. The study, which analyzed data from 450 companies over five years, found that wellness programs led to:\n\n• 25% reduction in sick days\n• 32% decrease in workers' compensation claims\n• 18% improvement in employee satisfaction scores\n• 15% reduction in healthcare costs\n\nThe most effective programs included mental health support, fitness incentives, and nutritional counseling.",
+          "text": "Which type of program was NOT mentioned as most effective?",
+          "options": [
+            "A. Mental health support",
+            "B. Fitness incentives",
+            "C. On-site childcare",
+            "D. Nutritional counseling"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Chăm sóc trẻ em tại chỗ không được đề cập."
+        },
+        {
+          "id": "t3-p7-40",
+          "passage": "URGENT: SECURITY ADVISORY\n\nTo: All Employees\nFrom: Chief Information Security Officer\n\nA sophisticated phishing campaign targeting our industry has been detected. Several companies have already reported compromised email accounts. Please be vigilant for emails that:\n\n• Request immediate action or threaten account suspension\n• Contain suspicious links or attachments\n• Come from addresses that closely resemble known contacts but with subtle differences\n\nIf you receive a suspicious email, do not click any links or download attachments. Report it immediately to security@ourcompany.com or by calling the IT security hotline at ext. 5555.\n\nAll employees are required to complete the updated phishing awareness training module by Friday.",
+          "text": "What is the main threat described?",
+          "options": [
+            "A. A ransomware attack",
+            "B. A phishing campaign",
+            "C. A data center outage",
+            "D. An insider threat"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Mối đe dọa chính là chiến dịch lừa đảo trực tuyến."
+        },
+        {
+          "id": "t3-p7-41",
+          "passage": "URGENT: SECURITY ADVISORY\n\nTo: All Employees\nFrom: Chief Information Security Officer\n\nA sophisticated phishing campaign targeting our industry has been detected. Several companies have already reported compromised email accounts. Please be vigilant for emails that:\n\n• Request immediate action or threaten account suspension\n• Contain suspicious links or attachments\n• Come from addresses that closely resemble known contacts but with subtle differences\n\nIf you receive a suspicious email, do not click any links or download attachments. Report it immediately to security@ourcompany.com or by calling the IT security hotline at ext. 5555.\n\nAll employees are required to complete the updated phishing awareness training module by Friday.",
+          "text": "What should you do if you receive a suspicious email?",
+          "options": [
+            "A. Forward it to your manager",
+            "B. Delete it immediately",
+            "C. Report it to security",
+            "D. Reply to the sender"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Báo cáo cho bộ phận an ninh."
+        },
+        {
+          "id": "t3-p7-42",
+          "passage": "URGENT: SECURITY ADVISORY\n\nTo: All Employees\nFrom: Chief Information Security Officer\n\nA sophisticated phishing campaign targeting our industry has been detected. Several companies have already reported compromised email accounts. Please be vigilant for emails that:\n\n• Request immediate action or threaten account suspension\n• Contain suspicious links or attachments\n• Come from addresses that closely resemble known contacts but with subtle differences\n\nIf you receive a suspicious email, do not click any links or download attachments. Report it immediately to security@ourcompany.com or by calling the IT security hotline at ext. 5555.\n\nAll employees are required to complete the updated phishing awareness training module by Friday.",
+          "text": "By when must the training module be completed?",
+          "options": [
+            "A. Today",
+            "B. By the end of the week",
+            "C. By the end of the month",
+            "D. Within 30 days"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Module đào tạo phải hoàn thành vào cuối tuần (thứ Sáu)."
+        },
+        {
+          "id": "t3-p7-43",
+          "passage": "HARBOUR VIEW HOTEL\nGuest Satisfaction Survey Results\n\nOur most recent guest satisfaction survey received over 2,400 responses, with an overall satisfaction score of 4.6 out of 5. Key findings:\n\n• Room cleanliness: 4.8/5\n• Staff friendliness: 4.7/5\n• Check-in/check-out efficiency: 4.3/5\n• Dining quality: 4.5/5\n• Value for money: 4.1/5\n\nThe most common suggestions for improvement were faster Wi-Fi speeds, more variety in the breakfast menu, and extended checkout times. Management has already begun implementing these changes.",
+          "text": "How many survey responses were received?",
+          "options": [
+            "A. Over 1,000",
+            "B. Over 1,500",
+            "C. Over 2,000",
+            "D. Over 2,400"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Hơn 2.400 phản hồi khảo sát đã được nhận."
+        },
+        {
+          "id": "t3-p7-44",
+          "passage": "HARBOUR VIEW HOTEL\nGuest Satisfaction Survey Results\n\nOur most recent guest satisfaction survey received over 2,400 responses, with an overall satisfaction score of 4.6 out of 5. Key findings:\n\n• Room cleanliness: 4.8/5\n• Staff friendliness: 4.7/5\n• Check-in/check-out efficiency: 4.3/5\n• Dining quality: 4.5/5\n• Value for money: 4.1/5\n\nThe most common suggestions for improvement were faster Wi-Fi speeds, more variety in the breakfast menu, and extended checkout times. Management has already begun implementing these changes.",
+          "text": "Which category scored the highest?",
+          "options": [
+            "A. Staff friendliness",
+            "B. Room cleanliness",
+            "C. Dining quality",
+            "D. Value for money"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Vệ sinh phòng đạt điểm cao nhất: 4,8/5."
+        },
+        {
+          "id": "t3-p7-45",
+          "passage": "HARBOUR VIEW HOTEL\nGuest Satisfaction Survey Results\n\nOur most recent guest satisfaction survey received over 2,400 responses, with an overall satisfaction score of 4.6 out of 5. Key findings:\n\n• Room cleanliness: 4.8/5\n• Staff friendliness: 4.7/5\n• Check-in/check-out efficiency: 4.3/5\n• Dining quality: 4.5/5\n• Value for money: 4.1/5\n\nThe most common suggestions for improvement were faster Wi-Fi speeds, more variety in the breakfast menu, and extended checkout times. Management has already begun implementing these changes.",
+          "text": "What was the lowest-scoring category?",
+          "options": [
+            "A. Dining quality",
+            "B. Check-in/check-out efficiency",
+            "C. Value for money",
+            "D. Staff friendliness"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Giá trị đồng tiền đạt điểm thấp nhất: 4,1/5."
+        },
+        {
+          "id": "t3-p7-46",
+          "passage": "TECH INNOVATION DAILY\nStartup Funding Trends: AI Dominates\n\nArtificial intelligence startups dominated the venture capital landscape in 2024, attracting $67.3 billion in total funding — a 78% increase from 2023. The surge was fueled by breakthroughs in generative AI, large language models, and AI-powered automation tools.\n\nThe top five funded AI subsectors were:\n1. Enterprise AI tools: $18.2B\n2. Healthcare AI: $14.7B\n3. Autonomous systems: $12.1B\n4. AI security: $8.9B\n5. AI-powered content creation: $7.4B\n\nIndustry experts note that while funding is abundant, investor expectations for revenue generation and path to profitability have become more stringent.",
+          "text": "How much did AI startups raise in total?",
+          "options": [
+            "A. $35.6 billion",
+            "B. $52.1 billion",
+            "C. $67.3 billion",
+            "D. $82.5 billion"
+          ],
+          "correctAnswer": 2,
+          "explanation": "AI startup huy động tổng cộng 67,3 tỷ đô la."
+        },
+        {
+          "id": "t3-p7-47",
+          "passage": "TECH INNOVATION DAILY\nStartup Funding Trends: AI Dominates\n\nArtificial intelligence startups dominated the venture capital landscape in 2024, attracting $67.3 billion in total funding — a 78% increase from 2023. The surge was fueled by breakthroughs in generative AI, large language models, and AI-powered automation tools.\n\nThe top five funded AI subsectors were:\n1. Enterprise AI tools: $18.2B\n2. Healthcare AI: $14.7B\n3. Autonomous systems: $12.1B\n4. AI security: $8.9B\n5. AI-powered content creation: $7.4B\n\nIndustry experts note that while funding is abundant, investor expectations for revenue generation and path to profitability have become more stringent.",
+          "text": "Which AI subsector received the most funding?",
+          "options": [
+            "A. Healthcare AI",
+            "B. Enterprise AI tools",
+            "C. Autonomous systems",
+            "D. AI security"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Công cụ AI doanh nghiệp nhận nhiều vốn nhất: 18,2 tỷ."
+        },
+        {
+          "id": "t3-p7-48",
+          "passage": "TECH INNOVATION DAILY\nStartup Funding Trends: AI Dominates\n\nArtificial intelligence startups dominated the venture capital landscape in 2024, attracting $67.3 billion in total funding — a 78% increase from 2023. The surge was fueled by breakthroughs in generative AI, large language models, and AI-powered automation tools.\n\nThe top five funded AI subsectors were:\n1. Enterprise AI tools: $18.2B\n2. Healthcare AI: $14.7B\n3. Autonomous systems: $12.1B\n4. AI security: $8.9B\n5. AI-powered content creation: $7.4B\n\nIndustry experts note that while funding is abundant, investor expectations for revenue generation and path to profitability have become more stringent.",
+          "text": "What have investor expectations become?",
+          "options": [
+            "A. More relaxed",
+            "B. More stringent",
+            "C. Less focused on revenue",
+            "D. More diverse"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Kỳ vọng của nhà đầu tư đã trở nên khắt khe hơn."
+        },
+        {
+          "id": "t3-p7-49",
+          "passage": "CHAMBER OF COMMERCE\nAnnual Economic Outlook Report\n\nThe local Chamber of Commerce released its 2024 Economic Outlook Report, projecting 3.8% GDP growth for the region. Key economic indicators include:\n\n• Unemployment rate: 4.1% (down from 4.8% in 2023)\n• New business registrations: Up 22% year-over-year\n• Average household income: $72,500 (up 4.3%)\n• Consumer confidence index: 112 (up from 98)\n\nThe report highlights technology, healthcare, and renewable energy as the fastest-growing sectors, while traditional retail and hospitality continue to face challenges from shifting consumer behavior.",
+          "text": "What is the projected GDP growth?",
+          "options": [
+            "A. 2.5%",
+            "B. 3.2%",
+            "C. 3.8%",
+            "D. 4.5%"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Tăng trưởng GDP dự kiến là 3,8%."
+        },
+        {
+          "id": "t3-p7-50",
+          "passage": "CHAMBER OF COMMERCE\nAnnual Economic Outlook Report\n\nThe local Chamber of Commerce released its 2024 Economic Outlook Report, projecting 3.8% GDP growth for the region. Key economic indicators include:\n\n• Unemployment rate: 4.1% (down from 4.8% in 2023)\n• New business registrations: Up 22% year-over-year\n• Average household income: $72,500 (up 4.3%)\n• Consumer confidence index: 112 (up from 98)\n\nThe report highlights technology, healthcare, and renewable energy as the fastest-growing sectors, while traditional retail and hospitality continue to face challenges from shifting consumer behavior.",
+          "text": "How much did new business registrations increase?",
+          "options": [
+            "A. 12%",
+            "B. 18%",
+            "C. 22%",
+            "D. 28%"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Đăng ký doanh nghiệp mới tăng 22%."
+        },
+        {
+          "id": "t3-p7-51",
+          "passage": "CHAMBER OF COMMERCE\nAnnual Economic Outlook Report\n\nThe local Chamber of Commerce released its 2024 Economic Outlook Report, projecting 3.8% GDP growth for the region. Key economic indicators include:\n\n• Unemployment rate: 4.1% (down from 4.8% in 2023)\n• New business registrations: Up 22% year-over-year\n• Average household income: $72,500 (up 4.3%)\n• Consumer confidence index: 112 (up from 98)\n\nThe report highlights technology, healthcare, and renewable energy as the fastest-growing sectors, while traditional retail and hospitality continue to face challenges from shifting consumer behavior.",
+          "text": "Which sectors are growing the fastest?",
+          "options": [
+            "A. Retail and hospitality",
+            "B. Manufacturing and agriculture",
+            "C. Technology, healthcare, and renewable energy",
+            "D. Finance and real estate"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Công nghệ, chăm sóc sức khỏe và năng lượng tái tạo tăng trưởng nhanh nhất."
+        },
+        {
+          "id": "t3-p7-52",
+          "passage": "SUPPLY CHAIN WEEKLY\nLogistics Costs Expected to Stabilize\n\nAfter two years of significant volatility, global logistics costs are expected to stabilize in 2024, with ocean freight rates declining 28% from their 2022 peaks. However, air freight rates remain elevated due to limited cargo capacity.\n\nKey trends affecting supply chains:\n• Near-shoring is accelerating, with 43% of companies diversifying manufacturing away from single-country dependence\n• Automation in warehouses is increasing productivity by 35%\n• Last-mile delivery costs have risen 18% due to labor shortages\n• Sustainable packaging adoption has grown 42% year-over-year",
+          "text": "By how much have ocean freight rates declined?",
+          "options": [
+            "A. 18%",
+            "B. 28%",
+            "C. 35%",
+            "D. 42%"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Cước vận tải biển giảm 28%."
+        },
+        {
+          "id": "t3-p7-53",
+          "passage": "SUPPLY CHAIN WEEKLY\nLogistics Costs Expected to Stabilize\n\nAfter two years of significant volatility, global logistics costs are expected to stabilize in 2024, with ocean freight rates declining 28% from their 2022 peaks. However, air freight rates remain elevated due to limited cargo capacity.\n\nKey trends affecting supply chains:\n• Near-shoring is accelerating, with 43% of companies diversifying manufacturing away from single-country dependence\n• Automation in warehouses is increasing productivity by 35%\n• Last-mile delivery costs have risen 18% due to labor shortages\n• Sustainable packaging adoption has grown 42% year-over-year",
+          "text": "What percentage of companies are diversifying manufacturing?",
+          "options": [
+            "A. 23%",
+            "B. 33%",
+            "C. 43%",
+            "D. 53%"
+          ],
+          "correctAnswer": 2,
+          "explanation": "43% công ty đang đa dạng hóa sản xuất."
+        },
+        {
+          "id": "t3-p7-54",
+          "passage": "SUPPLY CHAIN WEEKLY\nLogistics Costs Expected to Stabilize\n\nAfter two years of significant volatility, global logistics costs are expected to stabilize in 2024, with ocean freight rates declining 28% from their 2022 peaks. However, air freight rates remain elevated due to limited cargo capacity.\n\nKey trends affecting supply chains:\n• Near-shoring is accelerating, with 43% of companies diversifying manufacturing away from single-country dependence\n• Automation in warehouses is increasing productivity by 35%\n• Last-mile delivery costs have risen 18% due to labor shortages\n• Sustainable packaging adoption has grown 42% year-over-year",
+          "text": "Why have last-mile delivery costs risen?",
+          "options": [
+            "A. Fuel price increases",
+            "B. Labor shortages",
+            "C. Regulatory changes",
+            "D. Infrastructure damage"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Chi phí giao hàng chặng cuối tăng do thiếu hụt lao động."
+        }
+      ]
+    }
+  ]
+}

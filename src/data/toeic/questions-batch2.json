@@ -1,0 +1,3932 @@
+[
+  {
+    "id": "tq-101",
+    "type": "multiple-choice",
+    "question": "The new model is _____ efficient as the previous one.",
+    "options": [
+      "so",
+      "very",
+      "as",
+      "too"
+    ],
+    "correctAnswer": "as",
+    "explanation": "So sánh bằng: as + adj/adv + as.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "grammar"
+    ]
+  },
+  {
+    "id": "tq-102",
+    "type": "multiple-choice",
+    "question": "This quarter's revenue was significantly _____ than last quarter's.",
+    "options": [
+      "high",
+      "higher",
+      "highest",
+      "highly"
+    ],
+    "correctAnswer": "higher",
+    "explanation": "So sánh hơn đi với than.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "grammar"
+    ]
+  },
+  {
+    "id": "tq-103",
+    "type": "multiple-choice",
+    "question": "We had the contract _____ by our legal team.",
+    "options": [
+      "review",
+      "reviews",
+      "reviewing",
+      "reviewed"
+    ],
+    "correctAnswer": "reviewed",
+    "explanation": "Cấu trúc sai khiến: have + O + V3/ed (nhờ ai làm gì, bị động).",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "grammar"
+    ]
+  },
+  {
+    "id": "tq-104",
+    "type": "multiple-choice",
+    "question": "Please get the report _____ before Friday.",
+    "options": [
+      "finish",
+      "finishing",
+      "finished",
+      "to finish"
+    ],
+    "correctAnswer": "finished",
+    "explanation": "Cấu trúc sai khiến: get + O + V3/ed.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "grammar"
+    ]
+  },
+  {
+    "id": "tq-105",
+    "type": "multiple-choice",
+    "question": "The manager let the employees _____ early on Friday.",
+    "options": [
+      "leave",
+      "to leave",
+      "leaving",
+      "left"
+    ],
+    "correctAnswer": "leave",
+    "explanation": "make/let/have + O + V-bare.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "grammar"
+    ]
+  },
+  {
+    "id": "tq-106",
+    "type": "multiple-choice",
+    "question": "_____ completed the training, she was promoted to manager.",
+    "options": [
+      "Have",
+      "Having",
+      "Had",
+      "Has"
+    ],
+    "correctAnswer": "Having",
+    "explanation": "Mệnh đề phân từ: Having V3/ed chỉ hành động xảy ra trước hành động chính.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "grammar"
+    ]
+  },
+  {
+    "id": "tq-107",
+    "type": "multiple-choice",
+    "question": "_____ in 1990, the company has grown into a global leader.",
+    "options": [
+      "Founding",
+      "Find",
+      "Founded",
+      "To found"
+    ],
+    "correctAnswer": "Founded",
+    "explanation": "Mệnh đề phân từ quá khứ mang nghĩa bị động.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "grammar"
+    ]
+  },
+  {
+    "id": "tq-108",
+    "type": "multiple-choice",
+    "question": "Not only _____ the product exceed expectations, but it also won an award.",
+    "options": [
+      "does",
+      "did",
+      "do",
+      "doing"
+    ],
+    "correctAnswer": "did",
+    "explanation": "Đảo ngữ với Not only: Not only + trơ động từ + S + V.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "grammar"
+    ]
+  },
+  {
+    "id": "tq-109",
+    "type": "multiple-choice",
+    "question": "Hardly _____ the meeting started when the fire alarm went off.",
+    "options": [
+      "has",
+      "have",
+      "had",
+      "was"
+    ],
+    "correctAnswer": "had",
+    "explanation": "Đảo ngữ với Hardly: Hardly + had + S + V3/ed + when...",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "grammar"
+    ]
+  },
+  {
+    "id": "tq-110",
+    "type": "multiple-choice",
+    "question": "The board recommended that the company _____ in new technology.",
+    "options": [
+      "invests",
+      "invested",
+      "invest",
+      "investing"
+    ],
+    "correctAnswer": "invest",
+    "explanation": "Thức giả định: recommend that S + V-bare.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "grammar"
+    ]
+  },
+  {
+    "id": "tq-111",
+    "type": "multiple-choice",
+    "question": "It is essential that every employee _____ the safety briefing.",
+    "options": [
+      "attend",
+      "attends",
+      "attended",
+      "attending"
+    ],
+    "correctAnswer": "attend",
+    "explanation": "Thức giả định: It is essential that S + V-bare.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "grammar"
+    ]
+  },
+  {
+    "id": "tq-112",
+    "type": "multiple-choice",
+    "question": "The new policy will be _____ to all employees.",
+    "options": [
+      "benefit",
+      "benefits",
+      "beneficial",
+      "beneficially"
+    ],
+    "correctAnswer": "beneficial",
+    "explanation": "Tính từ (beneficial) theo sau động từ to be.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "grammar"
+    ]
+  },
+  {
+    "id": "tq-113",
+    "type": "multiple-choice",
+    "question": "The _____ of the new system will take three months.",
+    "options": [
+      "implement",
+      "implements",
+      "implementing",
+      "implementation"
+    ],
+    "correctAnswer": "implementation",
+    "explanation": "Danh từ (implementation) đóng vai trò chủ ngữ.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "grammar"
+    ]
+  },
+  {
+    "id": "tq-114",
+    "type": "multiple-choice",
+    "question": "The project was completed _____ ahead of the deadline.",
+    "options": [
+      "successful",
+      "successfully",
+      "success",
+      "succeed"
+    ],
+    "correctAnswer": "successfully",
+    "explanation": "Trạng từ (successfully) bổ nghĩa cho động từ completed.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "grammar"
+    ]
+  },
+  {
+    "id": "tq-115",
+    "type": "multiple-choice",
+    "question": "_____ the heavy rain, the event proceeded as planned.",
+    "options": [
+      "Although",
+      "Even though",
+      "Because",
+      "Despite"
+    ],
+    "correctAnswer": "Despite",
+    "explanation": "Despite + N/V-ing: Mặc dù.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "grammar"
+    ]
+  },
+  {
+    "id": "tq-116",
+    "type": "multiple-choice",
+    "question": "_____ the project was behind schedule, the quality was excellent.",
+    "options": [
+      "Despite",
+      "In spite of",
+      "Although",
+      "Due to"
+    ],
+    "correctAnswer": "Although",
+    "explanation": "Although + Clause (S+V): Mặc dù.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "grammar"
+    ]
+  },
+  {
+    "id": "tq-117",
+    "type": "multiple-choice",
+    "question": "Please confirm _____ you will attend the meeting or not.",
+    "options": [
+      "if",
+      "whether",
+      "that",
+      "when"
+    ],
+    "correctAnswer": "whether",
+    "explanation": "whether... or not: liệu... hay không.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "grammar"
+    ]
+  },
+  {
+    "id": "tq-118",
+    "type": "multiple-choice",
+    "question": "We hired additional staff _____ we could meet the deadline.",
+    "options": [
+      "so that",
+      "in order to",
+      "because of",
+      "due to"
+    ],
+    "correctAnswer": "so that",
+    "explanation": "so that + Clause: để mà.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "grammar"
+    ]
+  },
+  {
+    "id": "tq-119",
+    "type": "multiple-choice",
+    "question": "I wish I _____ accepted the job offer last month.",
+    "options": [
+      "have",
+      "has",
+      "had",
+      "will have"
+    ],
+    "correctAnswer": "had",
+    "explanation": "Điều ước ở quá khứ: wish + S + had V3/ed.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "grammar"
+    ]
+  },
+  {
+    "id": "tq-120",
+    "type": "multiple-choice",
+    "question": "It's time the company _____ its IT infrastructure.",
+    "options": [
+      "updates",
+      "updated",
+      "update",
+      "updating"
+    ],
+    "correctAnswer": "updated",
+    "explanation": "It's time + S + V(past): đã đến lúc làm gì đó.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "grammar"
+    ]
+  },
+  {
+    "id": "tq-121",
+    "type": "multiple-choice",
+    "question": "The new model is _____ efficient as the previous one.",
+    "options": [
+      "so",
+      "very",
+      "as",
+      "too"
+    ],
+    "correctAnswer": "as",
+    "explanation": "So sánh bằng: as + adj/adv + as.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "grammar"
+    ]
+  },
+  {
+    "id": "tq-122",
+    "type": "multiple-choice",
+    "question": "This quarter's revenue was significantly _____ than last quarter's.",
+    "options": [
+      "high",
+      "higher",
+      "highest",
+      "highly"
+    ],
+    "correctAnswer": "higher",
+    "explanation": "So sánh hơn đi với than.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "grammar"
+    ]
+  },
+  {
+    "id": "tq-123",
+    "type": "multiple-choice",
+    "question": "We had the contract _____ by our legal team.",
+    "options": [
+      "review",
+      "reviews",
+      "reviewing",
+      "reviewed"
+    ],
+    "correctAnswer": "reviewed",
+    "explanation": "Cấu trúc sai khiến: have + O + V3/ed (nhờ ai làm gì, bị động).",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "grammar"
+    ]
+  },
+  {
+    "id": "tq-124",
+    "type": "multiple-choice",
+    "question": "Please get the report _____ before Friday.",
+    "options": [
+      "finish",
+      "finishing",
+      "finished",
+      "to finish"
+    ],
+    "correctAnswer": "finished",
+    "explanation": "Cấu trúc sai khiến: get + O + V3/ed.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "grammar"
+    ]
+  },
+  {
+    "id": "tq-125",
+    "type": "multiple-choice",
+    "question": "The manager let the employees _____ early on Friday.",
+    "options": [
+      "leave",
+      "to leave",
+      "leaving",
+      "left"
+    ],
+    "correctAnswer": "leave",
+    "explanation": "make/let/have + O + V-bare.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "grammar"
+    ]
+  },
+  {
+    "id": "tq-126",
+    "type": "multiple-choice",
+    "question": "_____ completed the training, she was promoted to manager.",
+    "options": [
+      "Have",
+      "Having",
+      "Had",
+      "Has"
+    ],
+    "correctAnswer": "Having",
+    "explanation": "Mệnh đề phân từ: Having V3/ed chỉ hành động xảy ra trước hành động chính.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "grammar"
+    ]
+  },
+  {
+    "id": "tq-127",
+    "type": "multiple-choice",
+    "question": "_____ in 1990, the company has grown into a global leader.",
+    "options": [
+      "Founding",
+      "Find",
+      "Founded",
+      "To found"
+    ],
+    "correctAnswer": "Founded",
+    "explanation": "Mệnh đề phân từ quá khứ mang nghĩa bị động.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "grammar"
+    ]
+  },
+  {
+    "id": "tq-128",
+    "type": "multiple-choice",
+    "question": "Not only _____ the product exceed expectations, but it also won an award.",
+    "options": [
+      "does",
+      "did",
+      "do",
+      "doing"
+    ],
+    "correctAnswer": "did",
+    "explanation": "Đảo ngữ với Not only: Not only + trơ động từ + S + V.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "grammar"
+    ]
+  },
+  {
+    "id": "tq-129",
+    "type": "multiple-choice",
+    "question": "Hardly _____ the meeting started when the fire alarm went off.",
+    "options": [
+      "has",
+      "have",
+      "had",
+      "was"
+    ],
+    "correctAnswer": "had",
+    "explanation": "Đảo ngữ với Hardly: Hardly + had + S + V3/ed + when...",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "grammar"
+    ]
+  },
+  {
+    "id": "tq-130",
+    "type": "multiple-choice",
+    "question": "The board recommended that the company _____ in new technology.",
+    "options": [
+      "invests",
+      "invested",
+      "invest",
+      "investing"
+    ],
+    "correctAnswer": "invest",
+    "explanation": "Thức giả định: recommend that S + V-bare.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "grammar"
+    ]
+  },
+  {
+    "id": "tq-131",
+    "type": "multiple-choice",
+    "question": "It is essential that every employee _____ the safety briefing.",
+    "options": [
+      "attend",
+      "attends",
+      "attended",
+      "attending"
+    ],
+    "correctAnswer": "attend",
+    "explanation": "Thức giả định: It is essential that S + V-bare.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "grammar"
+    ]
+  },
+  {
+    "id": "tq-132",
+    "type": "multiple-choice",
+    "question": "The new policy will be _____ to all employees.",
+    "options": [
+      "benefit",
+      "benefits",
+      "beneficial",
+      "beneficially"
+    ],
+    "correctAnswer": "beneficial",
+    "explanation": "Tính từ (beneficial) theo sau động từ to be.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "grammar"
+    ]
+  },
+  {
+    "id": "tq-133",
+    "type": "multiple-choice",
+    "question": "The _____ of the new system will take three months.",
+    "options": [
+      "implement",
+      "implements",
+      "implementing",
+      "implementation"
+    ],
+    "correctAnswer": "implementation",
+    "explanation": "Danh từ (implementation) đóng vai trò chủ ngữ.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "grammar"
+    ]
+  },
+  {
+    "id": "tq-134",
+    "type": "multiple-choice",
+    "question": "The project was completed _____ ahead of the deadline.",
+    "options": [
+      "successful",
+      "successfully",
+      "success",
+      "succeed"
+    ],
+    "correctAnswer": "successfully",
+    "explanation": "Trạng từ (successfully) bổ nghĩa cho động từ completed.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "grammar"
+    ]
+  },
+  {
+    "id": "tq-135",
+    "type": "multiple-choice",
+    "question": "_____ the heavy rain, the event proceeded as planned.",
+    "options": [
+      "Although",
+      "Even though",
+      "Because",
+      "Despite"
+    ],
+    "correctAnswer": "Despite",
+    "explanation": "Despite + N/V-ing: Mặc dù.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "grammar"
+    ]
+  },
+  {
+    "id": "tq-136",
+    "type": "multiple-choice",
+    "question": "_____ the project was behind schedule, the quality was excellent.",
+    "options": [
+      "Despite",
+      "In spite of",
+      "Although",
+      "Due to"
+    ],
+    "correctAnswer": "Although",
+    "explanation": "Although + Clause (S+V): Mặc dù.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "grammar"
+    ]
+  },
+  {
+    "id": "tq-137",
+    "type": "multiple-choice",
+    "question": "Please confirm _____ you will attend the meeting or not.",
+    "options": [
+      "if",
+      "whether",
+      "that",
+      "when"
+    ],
+    "correctAnswer": "whether",
+    "explanation": "whether... or not: liệu... hay không.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "grammar"
+    ]
+  },
+  {
+    "id": "tq-138",
+    "type": "multiple-choice",
+    "question": "We hired additional staff _____ we could meet the deadline.",
+    "options": [
+      "so that",
+      "in order to",
+      "because of",
+      "due to"
+    ],
+    "correctAnswer": "so that",
+    "explanation": "so that + Clause: để mà.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "grammar"
+    ]
+  },
+  {
+    "id": "tq-139",
+    "type": "multiple-choice",
+    "question": "I wish I _____ accepted the job offer last month.",
+    "options": [
+      "have",
+      "has",
+      "had",
+      "will have"
+    ],
+    "correctAnswer": "had",
+    "explanation": "Điều ước ở quá khứ: wish + S + had V3/ed.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "grammar"
+    ]
+  },
+  {
+    "id": "tq-140",
+    "type": "multiple-choice",
+    "question": "It's time the company _____ its IT infrastructure.",
+    "options": [
+      "updates",
+      "updated",
+      "update",
+      "updating"
+    ],
+    "correctAnswer": "updated",
+    "explanation": "It's time + S + V(past): đã đến lúc làm gì đó.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "grammar"
+    ]
+  },
+  {
+    "id": "tq-141",
+    "type": "multiple-choice",
+    "question": "All employees must _____ with the company's safety regulations.",
+    "options": [
+      "comply",
+      "adhere",
+      "observe",
+      "follow"
+    ],
+    "correctAnswer": "comply",
+    "explanation": "comply with: tuân thủ.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "tq-142",
+    "type": "multiple-choice",
+    "question": "All orders are _____ to availability.",
+    "options": [
+      "subject",
+      "subjected",
+      "subjecting",
+      "subjects"
+    ],
+    "correctAnswer": "subject",
+    "explanation": "be subject to: phụ thuộc vào, chịu sự.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "tq-143",
+    "type": "multiple-choice",
+    "question": "Please submit the form _____ to the deadline.",
+    "options": [
+      "before",
+      "prior",
+      "ahead",
+      "previous"
+    ],
+    "correctAnswer": "prior",
+    "explanation": "prior to: trước khi.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "tq-144",
+    "type": "multiple-choice",
+    "question": "Employees who have worked for 5 years are _____ for a bonus.",
+    "options": [
+      "eligible",
+      "qualified",
+      "suitable",
+      "entitled"
+    ],
+    "correctAnswer": "eligible",
+    "explanation": "be eligible for: đủ điều kiện cho.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "tq-145",
+    "type": "multiple-choice",
+    "question": "The company's success is _____ to its innovative products.",
+    "options": [
+      "attributed",
+      "contributed",
+      "distributed",
+      "resulted"
+    ],
+    "correctAnswer": "attributed",
+    "explanation": "be attributed to: được cho là do.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "tq-146",
+    "type": "multiple-choice",
+    "question": "You can work remotely _____ you meet the targets.",
+    "options": [
+      "as long as",
+      "so that",
+      "in order that",
+      "as well as"
+    ],
+    "correctAnswer": "as long as",
+    "explanation": "as long as: miễn là.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "tq-147",
+    "type": "multiple-choice",
+    "question": "The policy applies to all staff _____ of their position.",
+    "options": [
+      "regarding",
+      "regardless",
+      "respecting",
+      "despite"
+    ],
+    "correctAnswer": "regardless",
+    "explanation": "regardless of: bất kể.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "tq-148",
+    "type": "multiple-choice",
+    "question": "The HR department is _____ for processing all applications.",
+    "options": [
+      "charge",
+      "responsible",
+      "duty",
+      "accountable"
+    ],
+    "correctAnswer": "responsible",
+    "explanation": "be responsible for: chịu trách nhiệm về.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "tq-149",
+    "type": "multiple-choice",
+    "question": "We need to _____ a solution to this problem immediately.",
+    "options": [
+      "find out",
+      "look for",
+      "come up with",
+      "get over"
+    ],
+    "correctAnswer": "come up with",
+    "explanation": "come up with: nghĩ ra, tìm ra (giải pháp).",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "tq-150",
+    "type": "multiple-choice",
+    "question": "The CEO _____ the merger during the press conference.",
+    "options": [
+      "told",
+      "said",
+      "announced",
+      "spoke"
+    ],
+    "correctAnswer": "announced",
+    "explanation": "announce: công bố, thông báo (+ N).",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "tq-151",
+    "type": "multiple-choice",
+    "question": "All employees must _____ with the company's safety regulations.",
+    "options": [
+      "comply",
+      "adhere",
+      "observe",
+      "follow"
+    ],
+    "correctAnswer": "comply",
+    "explanation": "comply with: tuân thủ.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "tq-152",
+    "type": "multiple-choice",
+    "question": "All orders are _____ to availability.",
+    "options": [
+      "subject",
+      "subjected",
+      "subjecting",
+      "subjects"
+    ],
+    "correctAnswer": "subject",
+    "explanation": "be subject to: phụ thuộc vào, chịu sự.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "tq-153",
+    "type": "multiple-choice",
+    "question": "Please submit the form _____ to the deadline.",
+    "options": [
+      "before",
+      "prior",
+      "ahead",
+      "previous"
+    ],
+    "correctAnswer": "prior",
+    "explanation": "prior to: trước khi.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "tq-154",
+    "type": "multiple-choice",
+    "question": "Employees who have worked for 5 years are _____ for a bonus.",
+    "options": [
+      "eligible",
+      "qualified",
+      "suitable",
+      "entitled"
+    ],
+    "correctAnswer": "eligible",
+    "explanation": "be eligible for: đủ điều kiện cho.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "tq-155",
+    "type": "multiple-choice",
+    "question": "The company's success is _____ to its innovative products.",
+    "options": [
+      "attributed",
+      "contributed",
+      "distributed",
+      "resulted"
+    ],
+    "correctAnswer": "attributed",
+    "explanation": "be attributed to: được cho là do.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "tq-156",
+    "type": "multiple-choice",
+    "question": "You can work remotely _____ you meet the targets.",
+    "options": [
+      "as long as",
+      "so that",
+      "in order that",
+      "as well as"
+    ],
+    "correctAnswer": "as long as",
+    "explanation": "as long as: miễn là.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "tq-157",
+    "type": "multiple-choice",
+    "question": "The policy applies to all staff _____ of their position.",
+    "options": [
+      "regarding",
+      "regardless",
+      "respecting",
+      "despite"
+    ],
+    "correctAnswer": "regardless",
+    "explanation": "regardless of: bất kể.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "tq-158",
+    "type": "multiple-choice",
+    "question": "The HR department is _____ for processing all applications.",
+    "options": [
+      "charge",
+      "responsible",
+      "duty",
+      "accountable"
+    ],
+    "correctAnswer": "responsible",
+    "explanation": "be responsible for: chịu trách nhiệm về.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "tq-159",
+    "type": "multiple-choice",
+    "question": "We need to _____ a solution to this problem immediately.",
+    "options": [
+      "find out",
+      "look for",
+      "come up with",
+      "get over"
+    ],
+    "correctAnswer": "come up with",
+    "explanation": "come up with: nghĩ ra, tìm ra (giải pháp).",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "tq-160",
+    "type": "multiple-choice",
+    "question": "The CEO _____ the merger during the press conference.",
+    "options": [
+      "told",
+      "said",
+      "announced",
+      "spoke"
+    ],
+    "correctAnswer": "announced",
+    "explanation": "announce: công bố, thông báo (+ N).",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "tq-161",
+    "type": "multiple-choice",
+    "question": "All employees must _____ with the company's safety regulations.",
+    "options": [
+      "comply",
+      "adhere",
+      "observe",
+      "follow"
+    ],
+    "correctAnswer": "comply",
+    "explanation": "comply with: tuân thủ.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "tq-162",
+    "type": "multiple-choice",
+    "question": "All orders are _____ to availability.",
+    "options": [
+      "subject",
+      "subjected",
+      "subjecting",
+      "subjects"
+    ],
+    "correctAnswer": "subject",
+    "explanation": "be subject to: phụ thuộc vào, chịu sự.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "tq-163",
+    "type": "multiple-choice",
+    "question": "Please submit the form _____ to the deadline.",
+    "options": [
+      "before",
+      "prior",
+      "ahead",
+      "previous"
+    ],
+    "correctAnswer": "prior",
+    "explanation": "prior to: trước khi.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "tq-164",
+    "type": "multiple-choice",
+    "question": "Employees who have worked for 5 years are _____ for a bonus.",
+    "options": [
+      "eligible",
+      "qualified",
+      "suitable",
+      "entitled"
+    ],
+    "correctAnswer": "eligible",
+    "explanation": "be eligible for: đủ điều kiện cho.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "tq-165",
+    "type": "multiple-choice",
+    "question": "The company's success is _____ to its innovative products.",
+    "options": [
+      "attributed",
+      "contributed",
+      "distributed",
+      "resulted"
+    ],
+    "correctAnswer": "attributed",
+    "explanation": "be attributed to: được cho là do.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "tq-166",
+    "type": "multiple-choice",
+    "question": "You can work remotely _____ you meet the targets.",
+    "options": [
+      "as long as",
+      "so that",
+      "in order that",
+      "as well as"
+    ],
+    "correctAnswer": "as long as",
+    "explanation": "as long as: miễn là.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "tq-167",
+    "type": "multiple-choice",
+    "question": "The policy applies to all staff _____ of their position.",
+    "options": [
+      "regarding",
+      "regardless",
+      "respecting",
+      "despite"
+    ],
+    "correctAnswer": "regardless",
+    "explanation": "regardless of: bất kể.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "tq-168",
+    "type": "multiple-choice",
+    "question": "The HR department is _____ for processing all applications.",
+    "options": [
+      "charge",
+      "responsible",
+      "duty",
+      "accountable"
+    ],
+    "correctAnswer": "responsible",
+    "explanation": "be responsible for: chịu trách nhiệm về.",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "tq-169",
+    "type": "multiple-choice",
+    "question": "We need to _____ a solution to this problem immediately.",
+    "options": [
+      "find out",
+      "look for",
+      "come up with",
+      "get over"
+    ],
+    "correctAnswer": "come up with",
+    "explanation": "come up with: nghĩ ra, tìm ra (giải pháp).",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "tq-170",
+    "type": "multiple-choice",
+    "question": "The CEO _____ the merger during the press conference.",
+    "options": [
+      "told",
+      "said",
+      "announced",
+      "spoke"
+    ],
+    "correctAnswer": "announced",
+    "explanation": "announce: công bố, thông báo (+ N).",
+    "difficulty": "intermediate",
+    "tags": [
+      "TOEIC",
+      "Part 5",
+      "vocabulary"
+    ]
+  },
+  {
+    "id": "tq-171",
+    "type": "multiple-choice",
+    "passage": "Dear Valued Customer,\n\nWe would like to inform you about some changes to our rewards program. Starting next month, points will no longer expire after one year. (1)_____, they will remain valid as long as your account is active. \n\n(2)_____, we are introducing a new 'Platinum' tier for our most frequent shoppers. Members who reach this tier will enjoy free shipping on all orders. \n\nWe hope these changes will make your shopping experience even more rewarding. Please (3)_____ our website for more details.\n\nSincerely,\nThe Rewards Team",
+    "question": "What is the best choice for (1)?",
+    "options": [
+      "Instead",
+      "However",
+      "Therefore",
+      "Furthermore"
+    ],
+    "correctAnswer": "Instead",
+    "explanation": "Instead (Thay vào đó) phù hợp để chỉ ra sự thay thế cho việc điểm hết hạn.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 6",
+      "Passage 1"
+    ]
+  },
+  {
+    "id": "tq-172",
+    "type": "multiple-choice",
+    "passage": "Dear Valued Customer,\n\nWe would like to inform you about some changes to our rewards program. Starting next month, points will no longer expire after one year. (1)_____, they will remain valid as long as your account is active. \n\n(2)_____, we are introducing a new 'Platinum' tier for our most frequent shoppers. Members who reach this tier will enjoy free shipping on all orders. \n\nWe hope these changes will make your shopping experience even more rewarding. Please (3)_____ our website for more details.\n\nSincerely,\nThe Rewards Team",
+    "question": "What is the best choice for (2)?",
+    "options": [
+      "In addition",
+      "On the contrary",
+      "For example",
+      "As a result"
+    ],
+    "correctAnswer": "In addition",
+    "explanation": "In addition (Thêm vào đó) để bổ sung thông tin mới (hạng Platinum).",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 6",
+      "Passage 1"
+    ]
+  },
+  {
+    "id": "tq-173",
+    "type": "multiple-choice",
+    "passage": "Dear Valued Customer,\n\nWe would like to inform you about some changes to our rewards program. Starting next month, points will no longer expire after one year. (1)_____, they will remain valid as long as your account is active. \n\n(2)_____, we are introducing a new 'Platinum' tier for our most frequent shoppers. Members who reach this tier will enjoy free shipping on all orders. \n\nWe hope these changes will make your shopping experience even more rewarding. Please (3)_____ our website for more details.\n\nSincerely,\nThe Rewards Team",
+    "question": "What is the best choice for (3)?",
+    "options": [
+      "visit",
+      "visiting",
+      "to visit",
+      "visited"
+    ],
+    "correctAnswer": "visit",
+    "explanation": "Câu mệnh lệnh: Please + V-bare.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 6",
+      "Passage 1"
+    ]
+  },
+  {
+    "id": "tq-174",
+    "type": "multiple-choice",
+    "passage": "Dear Valued Customer,\n\nWe would like to inform you about some changes to our rewards program. Starting next month, points will no longer expire after one year. (1)_____, they will remain valid as long as your account is active. \n\n(2)_____, we are introducing a new 'Platinum' tier for our most frequent shoppers. Members who reach this tier will enjoy free shipping on all orders. \n\nWe hope these changes will make your shopping experience even more rewarding. Please (3)_____ our website for more details.\n\nSincerely,\nThe Rewards Team",
+    "question": "What is the best choice for (1)?",
+    "options": [
+      "Instead",
+      "However",
+      "Therefore",
+      "Furthermore"
+    ],
+    "correctAnswer": "Instead",
+    "explanation": "Instead (Thay vào đó) phù hợp để chỉ ra sự thay thế cho việc điểm hết hạn.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 6",
+      "Passage 2"
+    ]
+  },
+  {
+    "id": "tq-175",
+    "type": "multiple-choice",
+    "passage": "Dear Valued Customer,\n\nWe would like to inform you about some changes to our rewards program. Starting next month, points will no longer expire after one year. (1)_____, they will remain valid as long as your account is active. \n\n(2)_____, we are introducing a new 'Platinum' tier for our most frequent shoppers. Members who reach this tier will enjoy free shipping on all orders. \n\nWe hope these changes will make your shopping experience even more rewarding. Please (3)_____ our website for more details.\n\nSincerely,\nThe Rewards Team",
+    "question": "What is the best choice for (2)?",
+    "options": [
+      "In addition",
+      "On the contrary",
+      "For example",
+      "As a result"
+    ],
+    "correctAnswer": "In addition",
+    "explanation": "In addition (Thêm vào đó) để bổ sung thông tin mới (hạng Platinum).",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 6",
+      "Passage 2"
+    ]
+  },
+  {
+    "id": "tq-176",
+    "type": "multiple-choice",
+    "passage": "Dear Valued Customer,\n\nWe would like to inform you about some changes to our rewards program. Starting next month, points will no longer expire after one year. (1)_____, they will remain valid as long as your account is active. \n\n(2)_____, we are introducing a new 'Platinum' tier for our most frequent shoppers. Members who reach this tier will enjoy free shipping on all orders. \n\nWe hope these changes will make your shopping experience even more rewarding. Please (3)_____ our website for more details.\n\nSincerely,\nThe Rewards Team",
+    "question": "What is the best choice for (3)?",
+    "options": [
+      "visit",
+      "visiting",
+      "to visit",
+      "visited"
+    ],
+    "correctAnswer": "visit",
+    "explanation": "Câu mệnh lệnh: Please + V-bare.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 6",
+      "Passage 2"
+    ]
+  },
+  {
+    "id": "tq-177",
+    "type": "multiple-choice",
+    "passage": "Dear Valued Customer,\n\nWe would like to inform you about some changes to our rewards program. Starting next month, points will no longer expire after one year. (1)_____, they will remain valid as long as your account is active. \n\n(2)_____, we are introducing a new 'Platinum' tier for our most frequent shoppers. Members who reach this tier will enjoy free shipping on all orders. \n\nWe hope these changes will make your shopping experience even more rewarding. Please (3)_____ our website for more details.\n\nSincerely,\nThe Rewards Team",
+    "question": "What is the best choice for (1)?",
+    "options": [
+      "Instead",
+      "However",
+      "Therefore",
+      "Furthermore"
+    ],
+    "correctAnswer": "Instead",
+    "explanation": "Instead (Thay vào đó) phù hợp để chỉ ra sự thay thế cho việc điểm hết hạn.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 6",
+      "Passage 3"
+    ]
+  },
+  {
+    "id": "tq-178",
+    "type": "multiple-choice",
+    "passage": "Dear Valued Customer,\n\nWe would like to inform you about some changes to our rewards program. Starting next month, points will no longer expire after one year. (1)_____, they will remain valid as long as your account is active. \n\n(2)_____, we are introducing a new 'Platinum' tier for our most frequent shoppers. Members who reach this tier will enjoy free shipping on all orders. \n\nWe hope these changes will make your shopping experience even more rewarding. Please (3)_____ our website for more details.\n\nSincerely,\nThe Rewards Team",
+    "question": "What is the best choice for (2)?",
+    "options": [
+      "In addition",
+      "On the contrary",
+      "For example",
+      "As a result"
+    ],
+    "correctAnswer": "In addition",
+    "explanation": "In addition (Thêm vào đó) để bổ sung thông tin mới (hạng Platinum).",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 6",
+      "Passage 3"
+    ]
+  },
+  {
+    "id": "tq-179",
+    "type": "multiple-choice",
+    "passage": "Dear Valued Customer,\n\nWe would like to inform you about some changes to our rewards program. Starting next month, points will no longer expire after one year. (1)_____, they will remain valid as long as your account is active. \n\n(2)_____, we are introducing a new 'Platinum' tier for our most frequent shoppers. Members who reach this tier will enjoy free shipping on all orders. \n\nWe hope these changes will make your shopping experience even more rewarding. Please (3)_____ our website for more details.\n\nSincerely,\nThe Rewards Team",
+    "question": "What is the best choice for (3)?",
+    "options": [
+      "visit",
+      "visiting",
+      "to visit",
+      "visited"
+    ],
+    "correctAnswer": "visit",
+    "explanation": "Câu mệnh lệnh: Please + V-bare.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 6",
+      "Passage 3"
+    ]
+  },
+  {
+    "id": "tq-180",
+    "type": "multiple-choice",
+    "passage": "Dear Valued Customer,\n\nWe would like to inform you about some changes to our rewards program. Starting next month, points will no longer expire after one year. (1)_____, they will remain valid as long as your account is active. \n\n(2)_____, we are introducing a new 'Platinum' tier for our most frequent shoppers. Members who reach this tier will enjoy free shipping on all orders. \n\nWe hope these changes will make your shopping experience even more rewarding. Please (3)_____ our website for more details.\n\nSincerely,\nThe Rewards Team",
+    "question": "What is the best choice for (1)?",
+    "options": [
+      "Instead",
+      "However",
+      "Therefore",
+      "Furthermore"
+    ],
+    "correctAnswer": "Instead",
+    "explanation": "Instead (Thay vào đó) phù hợp để chỉ ra sự thay thế cho việc điểm hết hạn.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 6",
+      "Passage 4"
+    ]
+  },
+  {
+    "id": "tq-181",
+    "type": "multiple-choice",
+    "passage": "Dear Valued Customer,\n\nWe would like to inform you about some changes to our rewards program. Starting next month, points will no longer expire after one year. (1)_____, they will remain valid as long as your account is active. \n\n(2)_____, we are introducing a new 'Platinum' tier for our most frequent shoppers. Members who reach this tier will enjoy free shipping on all orders. \n\nWe hope these changes will make your shopping experience even more rewarding. Please (3)_____ our website for more details.\n\nSincerely,\nThe Rewards Team",
+    "question": "What is the best choice for (2)?",
+    "options": [
+      "In addition",
+      "On the contrary",
+      "For example",
+      "As a result"
+    ],
+    "correctAnswer": "In addition",
+    "explanation": "In addition (Thêm vào đó) để bổ sung thông tin mới (hạng Platinum).",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 6",
+      "Passage 4"
+    ]
+  },
+  {
+    "id": "tq-182",
+    "type": "multiple-choice",
+    "passage": "Dear Valued Customer,\n\nWe would like to inform you about some changes to our rewards program. Starting next month, points will no longer expire after one year. (1)_____, they will remain valid as long as your account is active. \n\n(2)_____, we are introducing a new 'Platinum' tier for our most frequent shoppers. Members who reach this tier will enjoy free shipping on all orders. \n\nWe hope these changes will make your shopping experience even more rewarding. Please (3)_____ our website for more details.\n\nSincerely,\nThe Rewards Team",
+    "question": "What is the best choice for (3)?",
+    "options": [
+      "visit",
+      "visiting",
+      "to visit",
+      "visited"
+    ],
+    "correctAnswer": "visit",
+    "explanation": "Câu mệnh lệnh: Please + V-bare.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 6",
+      "Passage 4"
+    ]
+  },
+  {
+    "id": "tq-183",
+    "type": "multiple-choice",
+    "passage": "Dear Valued Customer,\n\nWe would like to inform you about some changes to our rewards program. Starting next month, points will no longer expire after one year. (1)_____, they will remain valid as long as your account is active. \n\n(2)_____, we are introducing a new 'Platinum' tier for our most frequent shoppers. Members who reach this tier will enjoy free shipping on all orders. \n\nWe hope these changes will make your shopping experience even more rewarding. Please (3)_____ our website for more details.\n\nSincerely,\nThe Rewards Team",
+    "question": "What is the best choice for (1)?",
+    "options": [
+      "Instead",
+      "However",
+      "Therefore",
+      "Furthermore"
+    ],
+    "correctAnswer": "Instead",
+    "explanation": "Instead (Thay vào đó) phù hợp để chỉ ra sự thay thế cho việc điểm hết hạn.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 6",
+      "Passage 5"
+    ]
+  },
+  {
+    "id": "tq-184",
+    "type": "multiple-choice",
+    "passage": "Dear Valued Customer,\n\nWe would like to inform you about some changes to our rewards program. Starting next month, points will no longer expire after one year. (1)_____, they will remain valid as long as your account is active. \n\n(2)_____, we are introducing a new 'Platinum' tier for our most frequent shoppers. Members who reach this tier will enjoy free shipping on all orders. \n\nWe hope these changes will make your shopping experience even more rewarding. Please (3)_____ our website for more details.\n\nSincerely,\nThe Rewards Team",
+    "question": "What is the best choice for (2)?",
+    "options": [
+      "In addition",
+      "On the contrary",
+      "For example",
+      "As a result"
+    ],
+    "correctAnswer": "In addition",
+    "explanation": "In addition (Thêm vào đó) để bổ sung thông tin mới (hạng Platinum).",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 6",
+      "Passage 5"
+    ]
+  },
+  {
+    "id": "tq-185",
+    "type": "multiple-choice",
+    "passage": "Dear Valued Customer,\n\nWe would like to inform you about some changes to our rewards program. Starting next month, points will no longer expire after one year. (1)_____, they will remain valid as long as your account is active. \n\n(2)_____, we are introducing a new 'Platinum' tier for our most frequent shoppers. Members who reach this tier will enjoy free shipping on all orders. \n\nWe hope these changes will make your shopping experience even more rewarding. Please (3)_____ our website for more details.\n\nSincerely,\nThe Rewards Team",
+    "question": "What is the best choice for (3)?",
+    "options": [
+      "visit",
+      "visiting",
+      "to visit",
+      "visited"
+    ],
+    "correctAnswer": "visit",
+    "explanation": "Câu mệnh lệnh: Please + V-bare.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 6",
+      "Passage 5"
+    ]
+  },
+  {
+    "id": "tq-186",
+    "type": "multiple-choice",
+    "passage": "Dear Valued Customer,\n\nWe would like to inform you about some changes to our rewards program. Starting next month, points will no longer expire after one year. (1)_____, they will remain valid as long as your account is active. \n\n(2)_____, we are introducing a new 'Platinum' tier for our most frequent shoppers. Members who reach this tier will enjoy free shipping on all orders. \n\nWe hope these changes will make your shopping experience even more rewarding. Please (3)_____ our website for more details.\n\nSincerely,\nThe Rewards Team",
+    "question": "What is the best choice for (1)?",
+    "options": [
+      "Instead",
+      "However",
+      "Therefore",
+      "Furthermore"
+    ],
+    "correctAnswer": "Instead",
+    "explanation": "Instead (Thay vào đó) phù hợp để chỉ ra sự thay thế cho việc điểm hết hạn.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 6",
+      "Passage 6"
+    ]
+  },
+  {
+    "id": "tq-187",
+    "type": "multiple-choice",
+    "passage": "Dear Valued Customer,\n\nWe would like to inform you about some changes to our rewards program. Starting next month, points will no longer expire after one year. (1)_____, they will remain valid as long as your account is active. \n\n(2)_____, we are introducing a new 'Platinum' tier for our most frequent shoppers. Members who reach this tier will enjoy free shipping on all orders. \n\nWe hope these changes will make your shopping experience even more rewarding. Please (3)_____ our website for more details.\n\nSincerely,\nThe Rewards Team",
+    "question": "What is the best choice for (2)?",
+    "options": [
+      "In addition",
+      "On the contrary",
+      "For example",
+      "As a result"
+    ],
+    "correctAnswer": "In addition",
+    "explanation": "In addition (Thêm vào đó) để bổ sung thông tin mới (hạng Platinum).",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 6",
+      "Passage 6"
+    ]
+  },
+  {
+    "id": "tq-188",
+    "type": "multiple-choice",
+    "passage": "Dear Valued Customer,\n\nWe would like to inform you about some changes to our rewards program. Starting next month, points will no longer expire after one year. (1)_____, they will remain valid as long as your account is active. \n\n(2)_____, we are introducing a new 'Platinum' tier for our most frequent shoppers. Members who reach this tier will enjoy free shipping on all orders. \n\nWe hope these changes will make your shopping experience even more rewarding. Please (3)_____ our website for more details.\n\nSincerely,\nThe Rewards Team",
+    "question": "What is the best choice for (3)?",
+    "options": [
+      "visit",
+      "visiting",
+      "to visit",
+      "visited"
+    ],
+    "correctAnswer": "visit",
+    "explanation": "Câu mệnh lệnh: Please + V-bare.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 6",
+      "Passage 6"
+    ]
+  },
+  {
+    "id": "tq-189",
+    "type": "multiple-choice",
+    "passage": "Dear Valued Customer,\n\nWe would like to inform you about some changes to our rewards program. Starting next month, points will no longer expire after one year. (1)_____, they will remain valid as long as your account is active. \n\n(2)_____, we are introducing a new 'Platinum' tier for our most frequent shoppers. Members who reach this tier will enjoy free shipping on all orders. \n\nWe hope these changes will make your shopping experience even more rewarding. Please (3)_____ our website for more details.\n\nSincerely,\nThe Rewards Team",
+    "question": "What is the best choice for (1)?",
+    "options": [
+      "Instead",
+      "However",
+      "Therefore",
+      "Furthermore"
+    ],
+    "correctAnswer": "Instead",
+    "explanation": "Instead (Thay vào đó) phù hợp để chỉ ra sự thay thế cho việc điểm hết hạn.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 6",
+      "Passage 7"
+    ]
+  },
+  {
+    "id": "tq-190",
+    "type": "multiple-choice",
+    "passage": "Dear Valued Customer,\n\nWe would like to inform you about some changes to our rewards program. Starting next month, points will no longer expire after one year. (1)_____, they will remain valid as long as your account is active. \n\n(2)_____, we are introducing a new 'Platinum' tier for our most frequent shoppers. Members who reach this tier will enjoy free shipping on all orders. \n\nWe hope these changes will make your shopping experience even more rewarding. Please (3)_____ our website for more details.\n\nSincerely,\nThe Rewards Team",
+    "question": "What is the best choice for (2)?",
+    "options": [
+      "In addition",
+      "On the contrary",
+      "For example",
+      "As a result"
+    ],
+    "correctAnswer": "In addition",
+    "explanation": "In addition (Thêm vào đó) để bổ sung thông tin mới (hạng Platinum).",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 6",
+      "Passage 7"
+    ]
+  },
+  {
+    "id": "tq-191",
+    "type": "multiple-choice",
+    "passage": "Dear Valued Customer,\n\nWe would like to inform you about some changes to our rewards program. Starting next month, points will no longer expire after one year. (1)_____, they will remain valid as long as your account is active. \n\n(2)_____, we are introducing a new 'Platinum' tier for our most frequent shoppers. Members who reach this tier will enjoy free shipping on all orders. \n\nWe hope these changes will make your shopping experience even more rewarding. Please (3)_____ our website for more details.\n\nSincerely,\nThe Rewards Team",
+    "question": "What is the best choice for (3)?",
+    "options": [
+      "visit",
+      "visiting",
+      "to visit",
+      "visited"
+    ],
+    "correctAnswer": "visit",
+    "explanation": "Câu mệnh lệnh: Please + V-bare.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 6",
+      "Passage 7"
+    ]
+  },
+  {
+    "id": "tq-192",
+    "type": "multiple-choice",
+    "passage": "Dear Valued Customer,\n\nWe would like to inform you about some changes to our rewards program. Starting next month, points will no longer expire after one year. (1)_____, they will remain valid as long as your account is active. \n\n(2)_____, we are introducing a new 'Platinum' tier for our most frequent shoppers. Members who reach this tier will enjoy free shipping on all orders. \n\nWe hope these changes will make your shopping experience even more rewarding. Please (3)_____ our website for more details.\n\nSincerely,\nThe Rewards Team",
+    "question": "What is the best choice for (1)?",
+    "options": [
+      "Instead",
+      "However",
+      "Therefore",
+      "Furthermore"
+    ],
+    "correctAnswer": "Instead",
+    "explanation": "Instead (Thay vào đó) phù hợp để chỉ ra sự thay thế cho việc điểm hết hạn.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 6",
+      "Passage 8"
+    ]
+  },
+  {
+    "id": "tq-193",
+    "type": "multiple-choice",
+    "passage": "Dear Valued Customer,\n\nWe would like to inform you about some changes to our rewards program. Starting next month, points will no longer expire after one year. (1)_____, they will remain valid as long as your account is active. \n\n(2)_____, we are introducing a new 'Platinum' tier for our most frequent shoppers. Members who reach this tier will enjoy free shipping on all orders. \n\nWe hope these changes will make your shopping experience even more rewarding. Please (3)_____ our website for more details.\n\nSincerely,\nThe Rewards Team",
+    "question": "What is the best choice for (2)?",
+    "options": [
+      "In addition",
+      "On the contrary",
+      "For example",
+      "As a result"
+    ],
+    "correctAnswer": "In addition",
+    "explanation": "In addition (Thêm vào đó) để bổ sung thông tin mới (hạng Platinum).",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 6",
+      "Passage 8"
+    ]
+  },
+  {
+    "id": "tq-194",
+    "type": "multiple-choice",
+    "passage": "Dear Valued Customer,\n\nWe would like to inform you about some changes to our rewards program. Starting next month, points will no longer expire after one year. (1)_____, they will remain valid as long as your account is active. \n\n(2)_____, we are introducing a new 'Platinum' tier for our most frequent shoppers. Members who reach this tier will enjoy free shipping on all orders. \n\nWe hope these changes will make your shopping experience even more rewarding. Please (3)_____ our website for more details.\n\nSincerely,\nThe Rewards Team",
+    "question": "What is the best choice for (3)?",
+    "options": [
+      "visit",
+      "visiting",
+      "to visit",
+      "visited"
+    ],
+    "correctAnswer": "visit",
+    "explanation": "Câu mệnh lệnh: Please + V-bare.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 6",
+      "Passage 8"
+    ]
+  },
+  {
+    "id": "tq-195",
+    "type": "multiple-choice",
+    "passage": "Dear Valued Customer,\n\nWe would like to inform you about some changes to our rewards program. Starting next month, points will no longer expire after one year. (1)_____, they will remain valid as long as your account is active. \n\n(2)_____, we are introducing a new 'Platinum' tier for our most frequent shoppers. Members who reach this tier will enjoy free shipping on all orders. \n\nWe hope these changes will make your shopping experience even more rewarding. Please (3)_____ our website for more details.\n\nSincerely,\nThe Rewards Team",
+    "question": "What is the best choice for (1)?",
+    "options": [
+      "Instead",
+      "However",
+      "Therefore",
+      "Furthermore"
+    ],
+    "correctAnswer": "Instead",
+    "explanation": "Instead (Thay vào đó) phù hợp để chỉ ra sự thay thế cho việc điểm hết hạn.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 6",
+      "Passage 9"
+    ]
+  },
+  {
+    "id": "tq-196",
+    "type": "multiple-choice",
+    "passage": "Dear Valued Customer,\n\nWe would like to inform you about some changes to our rewards program. Starting next month, points will no longer expire after one year. (1)_____, they will remain valid as long as your account is active. \n\n(2)_____, we are introducing a new 'Platinum' tier for our most frequent shoppers. Members who reach this tier will enjoy free shipping on all orders. \n\nWe hope these changes will make your shopping experience even more rewarding. Please (3)_____ our website for more details.\n\nSincerely,\nThe Rewards Team",
+    "question": "What is the best choice for (2)?",
+    "options": [
+      "In addition",
+      "On the contrary",
+      "For example",
+      "As a result"
+    ],
+    "correctAnswer": "In addition",
+    "explanation": "In addition (Thêm vào đó) để bổ sung thông tin mới (hạng Platinum).",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 6",
+      "Passage 9"
+    ]
+  },
+  {
+    "id": "tq-197",
+    "type": "multiple-choice",
+    "passage": "Dear Valued Customer,\n\nWe would like to inform you about some changes to our rewards program. Starting next month, points will no longer expire after one year. (1)_____, they will remain valid as long as your account is active. \n\n(2)_____, we are introducing a new 'Platinum' tier for our most frequent shoppers. Members who reach this tier will enjoy free shipping on all orders. \n\nWe hope these changes will make your shopping experience even more rewarding. Please (3)_____ our website for more details.\n\nSincerely,\nThe Rewards Team",
+    "question": "What is the best choice for (3)?",
+    "options": [
+      "visit",
+      "visiting",
+      "to visit",
+      "visited"
+    ],
+    "correctAnswer": "visit",
+    "explanation": "Câu mệnh lệnh: Please + V-bare.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 6",
+      "Passage 9"
+    ]
+  },
+  {
+    "id": "tq-198",
+    "type": "multiple-choice",
+    "passage": "Dear Valued Customer,\n\nWe would like to inform you about some changes to our rewards program. Starting next month, points will no longer expire after one year. (1)_____, they will remain valid as long as your account is active. \n\n(2)_____, we are introducing a new 'Platinum' tier for our most frequent shoppers. Members who reach this tier will enjoy free shipping on all orders. \n\nWe hope these changes will make your shopping experience even more rewarding. Please (3)_____ our website for more details.\n\nSincerely,\nThe Rewards Team",
+    "question": "What is the best choice for (1)?",
+    "options": [
+      "Instead",
+      "However",
+      "Therefore",
+      "Furthermore"
+    ],
+    "correctAnswer": "Instead",
+    "explanation": "Instead (Thay vào đó) phù hợp để chỉ ra sự thay thế cho việc điểm hết hạn.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 6",
+      "Passage 10"
+    ]
+  },
+  {
+    "id": "tq-199",
+    "type": "multiple-choice",
+    "passage": "Dear Valued Customer,\n\nWe would like to inform you about some changes to our rewards program. Starting next month, points will no longer expire after one year. (1)_____, they will remain valid as long as your account is active. \n\n(2)_____, we are introducing a new 'Platinum' tier for our most frequent shoppers. Members who reach this tier will enjoy free shipping on all orders. \n\nWe hope these changes will make your shopping experience even more rewarding. Please (3)_____ our website for more details.\n\nSincerely,\nThe Rewards Team",
+    "question": "What is the best choice for (2)?",
+    "options": [
+      "In addition",
+      "On the contrary",
+      "For example",
+      "As a result"
+    ],
+    "correctAnswer": "In addition",
+    "explanation": "In addition (Thêm vào đó) để bổ sung thông tin mới (hạng Platinum).",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 6",
+      "Passage 10"
+    ]
+  },
+  {
+    "id": "tq-200",
+    "type": "multiple-choice",
+    "passage": "Dear Valued Customer,\n\nWe would like to inform you about some changes to our rewards program. Starting next month, points will no longer expire after one year. (1)_____, they will remain valid as long as your account is active. \n\n(2)_____, we are introducing a new 'Platinum' tier for our most frequent shoppers. Members who reach this tier will enjoy free shipping on all orders. \n\nWe hope these changes will make your shopping experience even more rewarding. Please (3)_____ our website for more details.\n\nSincerely,\nThe Rewards Team",
+    "question": "What is the best choice for (3)?",
+    "options": [
+      "visit",
+      "visiting",
+      "to visit",
+      "visited"
+    ],
+    "correctAnswer": "visit",
+    "explanation": "Câu mệnh lệnh: Please + V-bare.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 6",
+      "Passage 10"
+    ]
+  },
+  {
+    "id": "tq-201",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When is the deadline to pack personal belongings?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 23",
+    "explanation": "Bài đọc ghi: 'pack your personal belongings... by Friday, Oct 23'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 1"
+    ]
+  },
+  {
+    "id": "tq-202",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What should employees do with their computers?",
+    "options": [
+      "Pack them in boxes",
+      "Take them home",
+      "Leave them for IT",
+      "Throw them away"
+    ],
+    "correctAnswer": "Leave them for IT",
+    "explanation": "Bài đọc ghi: 'The IT department will handle all computers... Do not pack your computer'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 1"
+    ]
+  },
+  {
+    "id": "tq-203",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When will the new office open?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 26",
+    "explanation": "Bài đọc ghi: 'The new office will be open... starting Monday, Oct 26'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 1"
+    ]
+  },
+  {
+    "id": "tq-204",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What is attached to the email?",
+    "options": [
+      "A list of rules",
+      "A map and desk assignments",
+      "A parking pass",
+      "A schedule"
+    ],
+    "correctAnswer": "A map and desk assignments",
+    "explanation": "Bài đọc ghi: 'A map of the new layout and your desk assignments is attached' it.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 1"
+    ]
+  },
+  {
+    "id": "tq-205",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When is the deadline to pack personal belongings?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 23",
+    "explanation": "Bài đọc ghi: 'pack your personal belongings... by Friday, Oct 23'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 2"
+    ]
+  },
+  {
+    "id": "tq-206",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What should employees do with their computers?",
+    "options": [
+      "Pack them in boxes",
+      "Take them home",
+      "Leave them for IT",
+      "Throw them away"
+    ],
+    "correctAnswer": "Leave them for IT",
+    "explanation": "Bài đọc ghi: 'The IT department will handle all computers... Do not pack your computer'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 2"
+    ]
+  },
+  {
+    "id": "tq-207",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When will the new office open?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 26",
+    "explanation": "Bài đọc ghi: 'The new office will be open... starting Monday, Oct 26'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 2"
+    ]
+  },
+  {
+    "id": "tq-208",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What is attached to the email?",
+    "options": [
+      "A list of rules",
+      "A map and desk assignments",
+      "A parking pass",
+      "A schedule"
+    ],
+    "correctAnswer": "A map and desk assignments",
+    "explanation": "Bài đọc ghi: 'A map of the new layout and your desk assignments is attached' it.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 2"
+    ]
+  },
+  {
+    "id": "tq-209",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When is the deadline to pack personal belongings?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 23",
+    "explanation": "Bài đọc ghi: 'pack your personal belongings... by Friday, Oct 23'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 3"
+    ]
+  },
+  {
+    "id": "tq-210",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What should employees do with their computers?",
+    "options": [
+      "Pack them in boxes",
+      "Take them home",
+      "Leave them for IT",
+      "Throw them away"
+    ],
+    "correctAnswer": "Leave them for IT",
+    "explanation": "Bài đọc ghi: 'The IT department will handle all computers... Do not pack your computer'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 3"
+    ]
+  },
+  {
+    "id": "tq-211",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When will the new office open?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 26",
+    "explanation": "Bài đọc ghi: 'The new office will be open... starting Monday, Oct 26'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 3"
+    ]
+  },
+  {
+    "id": "tq-212",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What is attached to the email?",
+    "options": [
+      "A list of rules",
+      "A map and desk assignments",
+      "A parking pass",
+      "A schedule"
+    ],
+    "correctAnswer": "A map and desk assignments",
+    "explanation": "Bài đọc ghi: 'A map of the new layout and your desk assignments is attached' it.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 3"
+    ]
+  },
+  {
+    "id": "tq-213",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When is the deadline to pack personal belongings?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 23",
+    "explanation": "Bài đọc ghi: 'pack your personal belongings... by Friday, Oct 23'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 4"
+    ]
+  },
+  {
+    "id": "tq-214",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What should employees do with their computers?",
+    "options": [
+      "Pack them in boxes",
+      "Take them home",
+      "Leave them for IT",
+      "Throw them away"
+    ],
+    "correctAnswer": "Leave them for IT",
+    "explanation": "Bài đọc ghi: 'The IT department will handle all computers... Do not pack your computer'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 4"
+    ]
+  },
+  {
+    "id": "tq-215",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When will the new office open?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 26",
+    "explanation": "Bài đọc ghi: 'The new office will be open... starting Monday, Oct 26'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 4"
+    ]
+  },
+  {
+    "id": "tq-216",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What is attached to the email?",
+    "options": [
+      "A list of rules",
+      "A map and desk assignments",
+      "A parking pass",
+      "A schedule"
+    ],
+    "correctAnswer": "A map and desk assignments",
+    "explanation": "Bài đọc ghi: 'A map of the new layout and your desk assignments is attached' it.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 4"
+    ]
+  },
+  {
+    "id": "tq-217",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When is the deadline to pack personal belongings?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 23",
+    "explanation": "Bài đọc ghi: 'pack your personal belongings... by Friday, Oct 23'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 5"
+    ]
+  },
+  {
+    "id": "tq-218",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What should employees do with their computers?",
+    "options": [
+      "Pack them in boxes",
+      "Take them home",
+      "Leave them for IT",
+      "Throw them away"
+    ],
+    "correctAnswer": "Leave them for IT",
+    "explanation": "Bài đọc ghi: 'The IT department will handle all computers... Do not pack your computer'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 5"
+    ]
+  },
+  {
+    "id": "tq-219",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When will the new office open?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 26",
+    "explanation": "Bài đọc ghi: 'The new office will be open... starting Monday, Oct 26'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 5"
+    ]
+  },
+  {
+    "id": "tq-220",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What is attached to the email?",
+    "options": [
+      "A list of rules",
+      "A map and desk assignments",
+      "A parking pass",
+      "A schedule"
+    ],
+    "correctAnswer": "A map and desk assignments",
+    "explanation": "Bài đọc ghi: 'A map of the new layout and your desk assignments is attached' it.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 5"
+    ]
+  },
+  {
+    "id": "tq-221",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When is the deadline to pack personal belongings?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 23",
+    "explanation": "Bài đọc ghi: 'pack your personal belongings... by Friday, Oct 23'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 6"
+    ]
+  },
+  {
+    "id": "tq-222",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What should employees do with their computers?",
+    "options": [
+      "Pack them in boxes",
+      "Take them home",
+      "Leave them for IT",
+      "Throw them away"
+    ],
+    "correctAnswer": "Leave them for IT",
+    "explanation": "Bài đọc ghi: 'The IT department will handle all computers... Do not pack your computer'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 6"
+    ]
+  },
+  {
+    "id": "tq-223",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When will the new office open?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 26",
+    "explanation": "Bài đọc ghi: 'The new office will be open... starting Monday, Oct 26'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 6"
+    ]
+  },
+  {
+    "id": "tq-224",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What is attached to the email?",
+    "options": [
+      "A list of rules",
+      "A map and desk assignments",
+      "A parking pass",
+      "A schedule"
+    ],
+    "correctAnswer": "A map and desk assignments",
+    "explanation": "Bài đọc ghi: 'A map of the new layout and your desk assignments is attached' it.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 6"
+    ]
+  },
+  {
+    "id": "tq-225",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When is the deadline to pack personal belongings?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 23",
+    "explanation": "Bài đọc ghi: 'pack your personal belongings... by Friday, Oct 23'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 7"
+    ]
+  },
+  {
+    "id": "tq-226",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What should employees do with their computers?",
+    "options": [
+      "Pack them in boxes",
+      "Take them home",
+      "Leave them for IT",
+      "Throw them away"
+    ],
+    "correctAnswer": "Leave them for IT",
+    "explanation": "Bài đọc ghi: 'The IT department will handle all computers... Do not pack your computer'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 7"
+    ]
+  },
+  {
+    "id": "tq-227",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When will the new office open?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 26",
+    "explanation": "Bài đọc ghi: 'The new office will be open... starting Monday, Oct 26'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 7"
+    ]
+  },
+  {
+    "id": "tq-228",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What is attached to the email?",
+    "options": [
+      "A list of rules",
+      "A map and desk assignments",
+      "A parking pass",
+      "A schedule"
+    ],
+    "correctAnswer": "A map and desk assignments",
+    "explanation": "Bài đọc ghi: 'A map of the new layout and your desk assignments is attached' it.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 7"
+    ]
+  },
+  {
+    "id": "tq-229",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When is the deadline to pack personal belongings?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 23",
+    "explanation": "Bài đọc ghi: 'pack your personal belongings... by Friday, Oct 23'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 8"
+    ]
+  },
+  {
+    "id": "tq-230",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What should employees do with their computers?",
+    "options": [
+      "Pack them in boxes",
+      "Take them home",
+      "Leave them for IT",
+      "Throw them away"
+    ],
+    "correctAnswer": "Leave them for IT",
+    "explanation": "Bài đọc ghi: 'The IT department will handle all computers... Do not pack your computer'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 8"
+    ]
+  },
+  {
+    "id": "tq-231",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When will the new office open?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 26",
+    "explanation": "Bài đọc ghi: 'The new office will be open... starting Monday, Oct 26'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 8"
+    ]
+  },
+  {
+    "id": "tq-232",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What is attached to the email?",
+    "options": [
+      "A list of rules",
+      "A map and desk assignments",
+      "A parking pass",
+      "A schedule"
+    ],
+    "correctAnswer": "A map and desk assignments",
+    "explanation": "Bài đọc ghi: 'A map of the new layout and your desk assignments is attached' it.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 8"
+    ]
+  },
+  {
+    "id": "tq-233",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When is the deadline to pack personal belongings?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 23",
+    "explanation": "Bài đọc ghi: 'pack your personal belongings... by Friday, Oct 23'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 9"
+    ]
+  },
+  {
+    "id": "tq-234",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What should employees do with their computers?",
+    "options": [
+      "Pack them in boxes",
+      "Take them home",
+      "Leave them for IT",
+      "Throw them away"
+    ],
+    "correctAnswer": "Leave them for IT",
+    "explanation": "Bài đọc ghi: 'The IT department will handle all computers... Do not pack your computer'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 9"
+    ]
+  },
+  {
+    "id": "tq-235",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When will the new office open?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 26",
+    "explanation": "Bài đọc ghi: 'The new office will be open... starting Monday, Oct 26'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 9"
+    ]
+  },
+  {
+    "id": "tq-236",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What is attached to the email?",
+    "options": [
+      "A list of rules",
+      "A map and desk assignments",
+      "A parking pass",
+      "A schedule"
+    ],
+    "correctAnswer": "A map and desk assignments",
+    "explanation": "Bài đọc ghi: 'A map of the new layout and your desk assignments is attached' it.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 9"
+    ]
+  },
+  {
+    "id": "tq-237",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When is the deadline to pack personal belongings?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 23",
+    "explanation": "Bài đọc ghi: 'pack your personal belongings... by Friday, Oct 23'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 10"
+    ]
+  },
+  {
+    "id": "tq-238",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What should employees do with their computers?",
+    "options": [
+      "Pack them in boxes",
+      "Take them home",
+      "Leave them for IT",
+      "Throw them away"
+    ],
+    "correctAnswer": "Leave them for IT",
+    "explanation": "Bài đọc ghi: 'The IT department will handle all computers... Do not pack your computer'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 10"
+    ]
+  },
+  {
+    "id": "tq-239",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When will the new office open?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 26",
+    "explanation": "Bài đọc ghi: 'The new office will be open... starting Monday, Oct 26'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 10"
+    ]
+  },
+  {
+    "id": "tq-240",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What is attached to the email?",
+    "options": [
+      "A list of rules",
+      "A map and desk assignments",
+      "A parking pass",
+      "A schedule"
+    ],
+    "correctAnswer": "A map and desk assignments",
+    "explanation": "Bài đọc ghi: 'A map of the new layout and your desk assignments is attached' it.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 10"
+    ]
+  },
+  {
+    "id": "tq-241",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When is the deadline to pack personal belongings?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 23",
+    "explanation": "Bài đọc ghi: 'pack your personal belongings... by Friday, Oct 23'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 11"
+    ]
+  },
+  {
+    "id": "tq-242",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What should employees do with their computers?",
+    "options": [
+      "Pack them in boxes",
+      "Take them home",
+      "Leave them for IT",
+      "Throw them away"
+    ],
+    "correctAnswer": "Leave them for IT",
+    "explanation": "Bài đọc ghi: 'The IT department will handle all computers... Do not pack your computer'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 11"
+    ]
+  },
+  {
+    "id": "tq-243",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When will the new office open?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 26",
+    "explanation": "Bài đọc ghi: 'The new office will be open... starting Monday, Oct 26'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 11"
+    ]
+  },
+  {
+    "id": "tq-244",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What is attached to the email?",
+    "options": [
+      "A list of rules",
+      "A map and desk assignments",
+      "A parking pass",
+      "A schedule"
+    ],
+    "correctAnswer": "A map and desk assignments",
+    "explanation": "Bài đọc ghi: 'A map of the new layout and your desk assignments is attached' it.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 11"
+    ]
+  },
+  {
+    "id": "tq-245",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When is the deadline to pack personal belongings?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 23",
+    "explanation": "Bài đọc ghi: 'pack your personal belongings... by Friday, Oct 23'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 12"
+    ]
+  },
+  {
+    "id": "tq-246",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What should employees do with their computers?",
+    "options": [
+      "Pack them in boxes",
+      "Take them home",
+      "Leave them for IT",
+      "Throw them away"
+    ],
+    "correctAnswer": "Leave them for IT",
+    "explanation": "Bài đọc ghi: 'The IT department will handle all computers... Do not pack your computer'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 12"
+    ]
+  },
+  {
+    "id": "tq-247",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When will the new office open?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 26",
+    "explanation": "Bài đọc ghi: 'The new office will be open... starting Monday, Oct 26'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 12"
+    ]
+  },
+  {
+    "id": "tq-248",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What is attached to the email?",
+    "options": [
+      "A list of rules",
+      "A map and desk assignments",
+      "A parking pass",
+      "A schedule"
+    ],
+    "correctAnswer": "A map and desk assignments",
+    "explanation": "Bài đọc ghi: 'A map of the new layout and your desk assignments is attached' it.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 12"
+    ]
+  },
+  {
+    "id": "tq-249",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When is the deadline to pack personal belongings?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 23",
+    "explanation": "Bài đọc ghi: 'pack your personal belongings... by Friday, Oct 23'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 13"
+    ]
+  },
+  {
+    "id": "tq-250",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What should employees do with their computers?",
+    "options": [
+      "Pack them in boxes",
+      "Take them home",
+      "Leave them for IT",
+      "Throw them away"
+    ],
+    "correctAnswer": "Leave them for IT",
+    "explanation": "Bài đọc ghi: 'The IT department will handle all computers... Do not pack your computer'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 13"
+    ]
+  },
+  {
+    "id": "tq-251",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When will the new office open?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 26",
+    "explanation": "Bài đọc ghi: 'The new office will be open... starting Monday, Oct 26'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 13"
+    ]
+  },
+  {
+    "id": "tq-252",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What is attached to the email?",
+    "options": [
+      "A list of rules",
+      "A map and desk assignments",
+      "A parking pass",
+      "A schedule"
+    ],
+    "correctAnswer": "A map and desk assignments",
+    "explanation": "Bài đọc ghi: 'A map of the new layout and your desk assignments is attached' it.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 13"
+    ]
+  },
+  {
+    "id": "tq-253",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When is the deadline to pack personal belongings?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 23",
+    "explanation": "Bài đọc ghi: 'pack your personal belongings... by Friday, Oct 23'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 14"
+    ]
+  },
+  {
+    "id": "tq-254",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What should employees do with their computers?",
+    "options": [
+      "Pack them in boxes",
+      "Take them home",
+      "Leave them for IT",
+      "Throw them away"
+    ],
+    "correctAnswer": "Leave them for IT",
+    "explanation": "Bài đọc ghi: 'The IT department will handle all computers... Do not pack your computer'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 14"
+    ]
+  },
+  {
+    "id": "tq-255",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When will the new office open?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 26",
+    "explanation": "Bài đọc ghi: 'The new office will be open... starting Monday, Oct 26'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 14"
+    ]
+  },
+  {
+    "id": "tq-256",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What is attached to the email?",
+    "options": [
+      "A list of rules",
+      "A map and desk assignments",
+      "A parking pass",
+      "A schedule"
+    ],
+    "correctAnswer": "A map and desk assignments",
+    "explanation": "Bài đọc ghi: 'A map of the new layout and your desk assignments is attached' it.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 14"
+    ]
+  },
+  {
+    "id": "tq-257",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When is the deadline to pack personal belongings?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 23",
+    "explanation": "Bài đọc ghi: 'pack your personal belongings... by Friday, Oct 23'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 15"
+    ]
+  },
+  {
+    "id": "tq-258",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What should employees do with their computers?",
+    "options": [
+      "Pack them in boxes",
+      "Take them home",
+      "Leave them for IT",
+      "Throw them away"
+    ],
+    "correctAnswer": "Leave them for IT",
+    "explanation": "Bài đọc ghi: 'The IT department will handle all computers... Do not pack your computer'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 15"
+    ]
+  },
+  {
+    "id": "tq-259",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When will the new office open?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 26",
+    "explanation": "Bài đọc ghi: 'The new office will be open... starting Monday, Oct 26'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 15"
+    ]
+  },
+  {
+    "id": "tq-260",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What is attached to the email?",
+    "options": [
+      "A list of rules",
+      "A map and desk assignments",
+      "A parking pass",
+      "A schedule"
+    ],
+    "correctAnswer": "A map and desk assignments",
+    "explanation": "Bài đọc ghi: 'A map of the new layout and your desk assignments is attached' it.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 15"
+    ]
+  },
+  {
+    "id": "tq-261",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When is the deadline to pack personal belongings?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 23",
+    "explanation": "Bài đọc ghi: 'pack your personal belongings... by Friday, Oct 23'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 16"
+    ]
+  },
+  {
+    "id": "tq-262",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What should employees do with their computers?",
+    "options": [
+      "Pack them in boxes",
+      "Take them home",
+      "Leave them for IT",
+      "Throw them away"
+    ],
+    "correctAnswer": "Leave them for IT",
+    "explanation": "Bài đọc ghi: 'The IT department will handle all computers... Do not pack your computer'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 16"
+    ]
+  },
+  {
+    "id": "tq-263",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When will the new office open?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 26",
+    "explanation": "Bài đọc ghi: 'The new office will be open... starting Monday, Oct 26'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 16"
+    ]
+  },
+  {
+    "id": "tq-264",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What is attached to the email?",
+    "options": [
+      "A list of rules",
+      "A map and desk assignments",
+      "A parking pass",
+      "A schedule"
+    ],
+    "correctAnswer": "A map and desk assignments",
+    "explanation": "Bài đọc ghi: 'A map of the new layout and your desk assignments is attached' it.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 16"
+    ]
+  },
+  {
+    "id": "tq-265",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When is the deadline to pack personal belongings?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 23",
+    "explanation": "Bài đọc ghi: 'pack your personal belongings... by Friday, Oct 23'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 17"
+    ]
+  },
+  {
+    "id": "tq-266",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What should employees do with their computers?",
+    "options": [
+      "Pack them in boxes",
+      "Take them home",
+      "Leave them for IT",
+      "Throw them away"
+    ],
+    "correctAnswer": "Leave them for IT",
+    "explanation": "Bài đọc ghi: 'The IT department will handle all computers... Do not pack your computer'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 17"
+    ]
+  },
+  {
+    "id": "tq-267",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When will the new office open?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 26",
+    "explanation": "Bài đọc ghi: 'The new office will be open... starting Monday, Oct 26'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 17"
+    ]
+  },
+  {
+    "id": "tq-268",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What is attached to the email?",
+    "options": [
+      "A list of rules",
+      "A map and desk assignments",
+      "A parking pass",
+      "A schedule"
+    ],
+    "correctAnswer": "A map and desk assignments",
+    "explanation": "Bài đọc ghi: 'A map of the new layout and your desk assignments is attached' it.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 17"
+    ]
+  },
+  {
+    "id": "tq-269",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When is the deadline to pack personal belongings?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 23",
+    "explanation": "Bài đọc ghi: 'pack your personal belongings... by Friday, Oct 23'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 18"
+    ]
+  },
+  {
+    "id": "tq-270",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What should employees do with their computers?",
+    "options": [
+      "Pack them in boxes",
+      "Take them home",
+      "Leave them for IT",
+      "Throw them away"
+    ],
+    "correctAnswer": "Leave them for IT",
+    "explanation": "Bài đọc ghi: 'The IT department will handle all computers... Do not pack your computer'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 18"
+    ]
+  },
+  {
+    "id": "tq-271",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When will the new office open?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 26",
+    "explanation": "Bài đọc ghi: 'The new office will be open... starting Monday, Oct 26'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 18"
+    ]
+  },
+  {
+    "id": "tq-272",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What is attached to the email?",
+    "options": [
+      "A list of rules",
+      "A map and desk assignments",
+      "A parking pass",
+      "A schedule"
+    ],
+    "correctAnswer": "A map and desk assignments",
+    "explanation": "Bài đọc ghi: 'A map of the new layout and your desk assignments is attached' it.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 18"
+    ]
+  },
+  {
+    "id": "tq-273",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When is the deadline to pack personal belongings?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 23",
+    "explanation": "Bài đọc ghi: 'pack your personal belongings... by Friday, Oct 23'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 19"
+    ]
+  },
+  {
+    "id": "tq-274",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What should employees do with their computers?",
+    "options": [
+      "Pack them in boxes",
+      "Take them home",
+      "Leave them for IT",
+      "Throw them away"
+    ],
+    "correctAnswer": "Leave them for IT",
+    "explanation": "Bài đọc ghi: 'The IT department will handle all computers... Do not pack your computer'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 19"
+    ]
+  },
+  {
+    "id": "tq-275",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When will the new office open?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 26",
+    "explanation": "Bài đọc ghi: 'The new office will be open... starting Monday, Oct 26'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 19"
+    ]
+  },
+  {
+    "id": "tq-276",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What is attached to the email?",
+    "options": [
+      "A list of rules",
+      "A map and desk assignments",
+      "A parking pass",
+      "A schedule"
+    ],
+    "correctAnswer": "A map and desk assignments",
+    "explanation": "Bài đọc ghi: 'A map of the new layout and your desk assignments is attached' it.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 19"
+    ]
+  },
+  {
+    "id": "tq-277",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When is the deadline to pack personal belongings?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 23",
+    "explanation": "Bài đọc ghi: 'pack your personal belongings... by Friday, Oct 23'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 20"
+    ]
+  },
+  {
+    "id": "tq-278",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What should employees do with their computers?",
+    "options": [
+      "Pack them in boxes",
+      "Take them home",
+      "Leave them for IT",
+      "Throw them away"
+    ],
+    "correctAnswer": "Leave them for IT",
+    "explanation": "Bài đọc ghi: 'The IT department will handle all computers... Do not pack your computer'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 20"
+    ]
+  },
+  {
+    "id": "tq-279",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When will the new office open?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 26",
+    "explanation": "Bài đọc ghi: 'The new office will be open... starting Monday, Oct 26'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 20"
+    ]
+  },
+  {
+    "id": "tq-280",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What is attached to the email?",
+    "options": [
+      "A list of rules",
+      "A map and desk assignments",
+      "A parking pass",
+      "A schedule"
+    ],
+    "correctAnswer": "A map and desk assignments",
+    "explanation": "Bài đọc ghi: 'A map of the new layout and your desk assignments is attached' it.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 20"
+    ]
+  },
+  {
+    "id": "tq-281",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When is the deadline to pack personal belongings?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 23",
+    "explanation": "Bài đọc ghi: 'pack your personal belongings... by Friday, Oct 23'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 21"
+    ]
+  },
+  {
+    "id": "tq-282",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What should employees do with their computers?",
+    "options": [
+      "Pack them in boxes",
+      "Take them home",
+      "Leave them for IT",
+      "Throw them away"
+    ],
+    "correctAnswer": "Leave them for IT",
+    "explanation": "Bài đọc ghi: 'The IT department will handle all computers... Do not pack your computer'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 21"
+    ]
+  },
+  {
+    "id": "tq-283",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When will the new office open?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 26",
+    "explanation": "Bài đọc ghi: 'The new office will be open... starting Monday, Oct 26'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 21"
+    ]
+  },
+  {
+    "id": "tq-284",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What is attached to the email?",
+    "options": [
+      "A list of rules",
+      "A map and desk assignments",
+      "A parking pass",
+      "A schedule"
+    ],
+    "correctAnswer": "A map and desk assignments",
+    "explanation": "Bài đọc ghi: 'A map of the new layout and your desk assignments is attached' it.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 21"
+    ]
+  },
+  {
+    "id": "tq-285",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When is the deadline to pack personal belongings?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 23",
+    "explanation": "Bài đọc ghi: 'pack your personal belongings... by Friday, Oct 23'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 22"
+    ]
+  },
+  {
+    "id": "tq-286",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What should employees do with their computers?",
+    "options": [
+      "Pack them in boxes",
+      "Take them home",
+      "Leave them for IT",
+      "Throw them away"
+    ],
+    "correctAnswer": "Leave them for IT",
+    "explanation": "Bài đọc ghi: 'The IT department will handle all computers... Do not pack your computer'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 22"
+    ]
+  },
+  {
+    "id": "tq-287",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When will the new office open?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 26",
+    "explanation": "Bài đọc ghi: 'The new office will be open... starting Monday, Oct 26'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 22"
+    ]
+  },
+  {
+    "id": "tq-288",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What is attached to the email?",
+    "options": [
+      "A list of rules",
+      "A map and desk assignments",
+      "A parking pass",
+      "A schedule"
+    ],
+    "correctAnswer": "A map and desk assignments",
+    "explanation": "Bài đọc ghi: 'A map of the new layout and your desk assignments is attached' it.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 22"
+    ]
+  },
+  {
+    "id": "tq-289",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When is the deadline to pack personal belongings?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 23",
+    "explanation": "Bài đọc ghi: 'pack your personal belongings... by Friday, Oct 23'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 23"
+    ]
+  },
+  {
+    "id": "tq-290",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What should employees do with their computers?",
+    "options": [
+      "Pack them in boxes",
+      "Take them home",
+      "Leave them for IT",
+      "Throw them away"
+    ],
+    "correctAnswer": "Leave them for IT",
+    "explanation": "Bài đọc ghi: 'The IT department will handle all computers... Do not pack your computer'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 23"
+    ]
+  },
+  {
+    "id": "tq-291",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When will the new office open?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 26",
+    "explanation": "Bài đọc ghi: 'The new office will be open... starting Monday, Oct 26'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 23"
+    ]
+  },
+  {
+    "id": "tq-292",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What is attached to the email?",
+    "options": [
+      "A list of rules",
+      "A map and desk assignments",
+      "A parking pass",
+      "A schedule"
+    ],
+    "correctAnswer": "A map and desk assignments",
+    "explanation": "Bài đọc ghi: 'A map of the new layout and your desk assignments is attached' it.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 23"
+    ]
+  },
+  {
+    "id": "tq-293",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When is the deadline to pack personal belongings?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 23",
+    "explanation": "Bài đọc ghi: 'pack your personal belongings... by Friday, Oct 23'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 24"
+    ]
+  },
+  {
+    "id": "tq-294",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What should employees do with their computers?",
+    "options": [
+      "Pack them in boxes",
+      "Take them home",
+      "Leave them for IT",
+      "Throw them away"
+    ],
+    "correctAnswer": "Leave them for IT",
+    "explanation": "Bài đọc ghi: 'The IT department will handle all computers... Do not pack your computer'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 24"
+    ]
+  },
+  {
+    "id": "tq-295",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When will the new office open?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 26",
+    "explanation": "Bài đọc ghi: 'The new office will be open... starting Monday, Oct 26'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 24"
+    ]
+  },
+  {
+    "id": "tq-296",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What is attached to the email?",
+    "options": [
+      "A list of rules",
+      "A map and desk assignments",
+      "A parking pass",
+      "A schedule"
+    ],
+    "correctAnswer": "A map and desk assignments",
+    "explanation": "Bài đọc ghi: 'A map of the new layout and your desk assignments is attached' it.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 24"
+    ]
+  },
+  {
+    "id": "tq-297",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When is the deadline to pack personal belongings?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 23",
+    "explanation": "Bài đọc ghi: 'pack your personal belongings... by Friday, Oct 23'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 25"
+    ]
+  },
+  {
+    "id": "tq-298",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What should employees do with their computers?",
+    "options": [
+      "Pack them in boxes",
+      "Take them home",
+      "Leave them for IT",
+      "Throw them away"
+    ],
+    "correctAnswer": "Leave them for IT",
+    "explanation": "Bài đọc ghi: 'The IT department will handle all computers... Do not pack your computer'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 25"
+    ]
+  },
+  {
+    "id": "tq-299",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "When will the new office open?",
+    "options": [
+      "October 15",
+      "October 23",
+      "October 24",
+      "October 26"
+    ],
+    "correctAnswer": "October 26",
+    "explanation": "Bài đọc ghi: 'The new office will be open... starting Monday, Oct 26'.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 25"
+    ]
+  },
+  {
+    "id": "tq-300",
+    "type": "reading-comprehension",
+    "passage": "Memo: Office Relocation\n\nTo: All Staff\nFrom: HR Department\nDate: October 15\nSubject: Office Relocation Details\n\nAs previously announced, we will be moving to our new office building in the downtown area next weekend (Oct 24-25). Please pack your personal belongings in the provided boxes by Friday, Oct 23 at 5:00 PM. \n\nThe IT department will handle all computers and electronic equipment. Do not pack your computer or phone. Just label them with your name and new desk number.\n\nThe new office will be open for regular business hours starting Monday, Oct 26. A map of the new layout and your desk assignments is attached to this email. \n\nThank you for your cooperation.",
+    "question": "What is attached to the email?",
+    "options": [
+      "A list of rules",
+      "A map and desk assignments",
+      "A parking pass",
+      "A schedule"
+    ],
+    "correctAnswer": "A map and desk assignments",
+    "explanation": "Bài đọc ghi: 'A map of the new layout and your desk assignments is attached' it.",
+    "difficulty": "advanced",
+    "tags": [
+      "TOEIC",
+      "Part 7",
+      "Passage 25"
+    ]
+  }
+]

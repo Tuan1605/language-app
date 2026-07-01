@@ -14,17 +14,24 @@ export function RealExamPage() {
 
   useEffect(() => {
     if (!currentAuthenticExam) {
-      const saved = localStorage.getItem('real_exam_backup');
-      if (saved) {
-        try {
-          const parsed = JSON.parse(saved);
-          import('../data/authenticExams').then(({ AUTHENTIC_EXAMS }) => {
-            const found = AUTHENTIC_EXAMS.find(e => e.id === parsed.examId);
-            if (found) {
-              setCurrentAuthenticExam(found);
+      // Check for any backup with the new key format
+      for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        if (key && key.startsWith('real_exam_backup_')) {
+          try {
+            const saved = localStorage.getItem(key);
+            if (saved) {
+              const parsed = JSON.parse(saved);
+              import('../data/authenticExams').then(({ AUTHENTIC_EXAMS }) => {
+                const found = AUTHENTIC_EXAMS.find(e => e.id === parsed.examId);
+                if (found) {
+                  setCurrentAuthenticExam(found);
+                }
+              });
+              break;
             }
-          });
-        } catch { /* ignore */ }
+          } catch { /* ignore */ }
+        }
       }
     }
     setIsRestoring(false);

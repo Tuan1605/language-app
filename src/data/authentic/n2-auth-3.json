@@ -1,0 +1,1891 @@
+{
+  "id": "n2-auth-3",
+  "title": "JLPT N2 Practice Exam 3",
+  "difficulty": "advanced",
+  "year": 2024,
+  "category": "n2",
+  "timeLimitMinutes": 105,
+  "sections": [
+    {
+      "id": "n2a3-sec-1",
+      "title": "言語知識（文字・語彙）",
+      "description": "Kiến thức ngôn ngữ: Chữ Hán và Từ vựng (60 câu hỏi, 25 phút)",
+      "questions": [
+        {
+          "id": "n2a3-v1",
+          "text": "彼の【卓越】した技術には誰もが感嘆した。",
+          "options": [
+            "A. たくえつ",
+            "B. じょうえつ",
+            "C. たつえつ",
+            "D. じゅくえつ"
+          ],
+          "correctAnswer": 0,
+          "explanation": "卓越 = たくえつ (xuất sắc)."
+        },
+        {
+          "id": "n2a3-v2",
+          "text": "彼女は職場で【謙虚】な態度を保っている。",
+          "options": [
+            "A. けんきょ",
+            "B. けんぎょ",
+            "C. けんきょう",
+            "D. けんぎょう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "謙虚 = けんきょ (khiêm tốn)."
+        },
+        {
+          "id": "n2a3-v3",
+          "text": "この地域は【脆弱】なインフラが課題となっている。",
+          "options": [
+            "A. ぜいじゃく",
+            "B. ぜいじゃくう",
+            "C. ぜいじゃく",
+            "D. ぜいじゃくう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "脆弱 = ぜいじゃく (mong manh)."
+        },
+        {
+          "id": "n2a3-v4",
+          "text": "彼は非常に【思慮】深い人物だ。",
+          "options": [
+            "A. しりょ",
+            "B. しりょう",
+            "C. しりょ",
+            "D. しりょう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "思慮深い = しりょぶかい (sâu sắc)."
+        },
+        {
+          "id": "n2a3-v5",
+          "text": "政府は経済【低迷】からの脱却を目指している。",
+          "options": [
+            "A. ていたい",
+            "B. ていたいう",
+            "C. ていたい",
+            "D. ていたいう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "低迷 = ていたい (suy thoái)."
+        },
+        {
+          "id": "n2a3-v6",
+          "text": "彼の【独創】的なアイデアは高く評価された。",
+          "options": [
+            "A. どくそう",
+            "B. どくそうう",
+            "C. どくそう",
+            "D. どくそうう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "独創 = どくそう (độc đáo)."
+        },
+        {
+          "id": "n2a3-v7",
+          "text": "この計画の【実行】に当たっては、多くの協力が必要だ。",
+          "options": [
+            "A. じっこう",
+            "B. じっこうう",
+            "C. じっこう",
+            "D. じっこうう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "実行 = じっこう (thực hiện)."
+        },
+        {
+          "id": "n2a3-v8",
+          "text": "彼女は【繊細】な感性の持ち主だ。",
+          "options": [
+            "A. せんさい",
+            "B. せんさいう",
+            "C. せんさい",
+            "D. せんさいう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "繊細 = せんさい (tinh tế)."
+        },
+        {
+          "id": "n2a3-v9",
+          "text": "この問題に対する【解決策】を提案してほしい。",
+          "options": [
+            "A. かいけつさく",
+            "B. かいけつさくう",
+            "C. かいけつさく",
+            "D. かいけつさくう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "解決策 = かいけつさく (giải pháp)."
+        },
+        {
+          "id": "n2a3-v10",
+          "text": "彼は会議で自分の【見解】を述べた。",
+          "options": [
+            "A. けんかい",
+            "B. けんかいう",
+            "C. けんかい",
+            "D. けんかいう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "見解 = けんかい (quan điểm)."
+        },
+        {
+          "id": "n2a3-v11",
+          "text": "この技術の【応用】範囲は非常に広い。",
+          "options": [
+            "A. おうよう",
+            "B. おうようう",
+            "C. おうよう",
+            "D. おうようう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "応用 = おうよう (ứng dụng)."
+        },
+        {
+          "id": "n2a3-v12",
+          "text": "彼は常日頃から【研鑽】を怠らない。",
+          "options": [
+            "A. けんさん",
+            "B. けんさんう",
+            "C. けんさん",
+            "D. けんさんう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "研鑽 = けんさん (nghiên cứu)."
+        },
+        {
+          "id": "n2a3-v13",
+          "text": "彼女の【発想】はいつも斬新だ。",
+          "options": [
+            "A. はっそう",
+            "B. はっそうう",
+            "C. はっそう",
+            "D. はっそうう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "発想 = はっそう (ý tưởng)."
+        },
+        {
+          "id": "n2a3-v14",
+          "text": "この仕事には【忍耐】力が求められる。",
+          "options": [
+            "A. にんたい",
+            "B. にんたいう",
+            "C. にんだい",
+            "D. にんだいう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "忍耐 = にんたい (kiên nhẫn)."
+        },
+        {
+          "id": "n2a3-v15",
+          "text": "彼はその分野で【権威】的存在だ。",
+          "options": [
+            "A. けんい",
+            "B. けんいう",
+            "C. けんい",
+            "D. けんいう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "権威 = けんい (uy quyền)."
+        },
+        {
+          "id": "n2a3-v16",
+          "text": "この会社は【革新】を重視している。",
+          "options": [
+            "A. かくしん",
+            "B. かくしんう",
+            "C. かくしん",
+            "D. かくしんう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "革新 = かくしん (đổi mới)."
+        },
+        {
+          "id": "n2a3-v17",
+          "text": "彼は自分の【怠慢】を認めた。",
+          "options": [
+            "A. たいまん",
+            "B. たいまんう",
+            "C. たいまん",
+            "D. たいまんう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "怠慢 = たいまん (lười biếng)."
+        },
+        {
+          "id": "n2a3-v18",
+          "text": "彼女は常に【前向き】な姿勢を保っている。",
+          "options": [
+            "A. まえむき",
+            "B. まえむきう",
+            "C. まえむき",
+            "D. まえむきう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "前向き = まえむき (tích cực)."
+        },
+        {
+          "id": "n2a3-v19",
+          "text": "この地域の【景観】を守ることが重要だ。",
+          "options": [
+            "A. けいかん",
+            "B. けいかんう",
+            "C. けいかん",
+            "D. けいかんう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "景観 = けいかん (phong cảnh)."
+        },
+        {
+          "id": "n2a3-v20",
+          "text": "彼は非常に【器用】な人だ。",
+          "options": [
+            "A. きよう",
+            "B. きようう",
+            "C. きよう",
+            "D. きようう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "器用 = きよう (khéo léo)."
+        },
+        {
+          "id": "n2a3-v21",
+          "text": "彼の【持論】は多くの人に支持されている。",
+          "options": [
+            "A. じろん",
+            "B. じろんう",
+            "C. じろん",
+            "D. じろんう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "持論 = じろん (luận điểm)."
+        },
+        {
+          "id": "n2a3-v22",
+          "text": "この仕事は【地道】な努力が必要だ。",
+          "options": [
+            "A. じみち",
+            "B. じみちう",
+            "C. じみち",
+            "D. じみちう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "地道 = じみち (tích lũy dần)."
+        },
+        {
+          "id": "n2a3-v23",
+          "text": "彼女は【冷静】な対応で問題を解決した。",
+          "options": [
+            "A. れいせい",
+            "B. れいせいう",
+            "C. れいせい",
+            "D. れいせいう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "冷静 = れいせい (bình tĩnh)."
+        },
+        {
+          "id": "n2a3-v24",
+          "text": "彼は【慎重】な判断を下した。",
+          "options": [
+            "A. しんちょう",
+            "B. しんちょうう",
+            "C. しんちょう",
+            "D. しんちょうう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "慎重 = しんちょう (cẩn trọng)."
+        },
+        {
+          "id": "n2a3-v25",
+          "text": "彼女は常に【誠実】な対応をしている。",
+          "options": [
+            "A. せいじつ",
+            "B. せいじつう",
+            "C. せいじつ",
+            "D. せいじつう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "誠実 = せいじつ (chính trực)."
+        },
+        {
+          "id": "n2a3-v26",
+          "text": "彼は非常に【優秀】な人材だ。",
+          "options": [
+            "A. ゆうしゅう",
+            "B. ゆうしゅうう",
+            "C. ゆうしゅう",
+            "D. ゆうしゅうう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "優秀 = ゆうしゅう (xuất sắc)."
+        },
+        {
+          "id": "n2a3-v27",
+          "text": "彼は【大胆】な計画を立てた。",
+          "options": [
+            "A. だいたん",
+            "B. だいたんう",
+            "C. だいたん",
+            "D. だいたんう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "大胆 = だいたん (táo bạo)."
+        },
+        {
+          "id": "n2a3-v28",
+          "text": "彼女は常に【柔軟】な対応ができる。",
+          "options": [
+            "A. じゅうなん",
+            "B. じゅうなんう",
+            "C. じゅうなん",
+            "D. じゅうなんう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "柔軟 = じゅうなん (linh hoạt)."
+        },
+        {
+          "id": "n2a3-v29",
+          "text": "彼はその仕事に【情熱】を注いでいる。",
+          "options": [
+            "A. じょうねつ",
+            "B. じょうねつう",
+            "C. じょうねつ",
+            "D. じょうねつう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "情熱 = じょうねつ (nhiệt huyết)."
+        },
+        {
+          "id": "n2a3-v30",
+          "text": "彼女は【豊富】な経験を持っている。",
+          "options": [
+            "A. ほうふ",
+            "B. ほうふう",
+            "C. ほうふ",
+            "D. ほうふう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "豊富 = ほうふ (phong phú)."
+        },
+        {
+          "id": "n2a3-v31",
+          "text": "この地域は【急速】な成長を遂げた。",
+          "options": [
+            "A. きゅうそく",
+            "B. きゅうそくう",
+            "C. きゅうそく",
+            "D. きゅうそくう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "急速 = きゅうそく (nhanh chóng)."
+        },
+        {
+          "id": "n2a3-v32",
+          "text": "彼はその【先見】の明がある。",
+          "options": [
+            "A. せんけん",
+            "B. せんけんう",
+            "C. せんけん",
+            "D. せんけんう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "先見 = せんけん (nhìn xa)."
+        },
+        {
+          "id": "n2a3-v33",
+          "text": "この件については慎重な【判断】が必要だ。",
+          "options": [
+            "A. はんだん",
+            "B. はんだんう",
+            "C. はんだん",
+            "D. はんだんう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "判断 = はんだん (phán đoán)."
+        },
+        {
+          "id": "n2a3-v34",
+          "text": "彼は自らの【信念】に従って行動した。",
+          "options": [
+            "A. しんねん",
+            "B. しんねんう",
+            "C. しんねん",
+            "D. しんねんう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "信念 = しんねん (tín niệm)."
+        },
+        {
+          "id": "n2a3-v35",
+          "text": "彼女の【発想】は斬新で、いつも驚かされる。",
+          "options": [
+            "A. はっそう",
+            "B. はっそうう",
+            "C. はっそう",
+            "D. はっそうう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "発想 = はっそう (ý tưởng)."
+        },
+        {
+          "id": "n2a3-v36",
+          "text": "彼は【堅実】な仕事ぶりで信頼を得ている。",
+          "options": [
+            "A. けんじつ",
+            "B. けんじつう",
+            "C. けんじつ",
+            "D. けんじつう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "堅実 = けんじつ (lâu bền)."
+        },
+        {
+          "id": "n2a3-v37",
+          "text": "この計画は【実現】可能性が高い。",
+          "options": [
+            "A. じつげん",
+            "B. じつげんう",
+            "C. じつげん",
+            "D. じつげんう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "実現 = じつげん (hiện thực hóa)."
+        },
+        {
+          "id": "n2a3-v38",
+          "text": "彼は自分の過ちを【率直】に認めた。",
+          "options": [
+            "A. そっちょく",
+            "B. そっちょくう",
+            "C. そっちょく",
+            "D. そっちょくう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "率直 = そっちょく (thẳng thắn)."
+        },
+        {
+          "id": "n2a3-v39",
+          "text": "彼女は【勤勉】に働いている。",
+          "options": [
+            "A. きんべん",
+            "B. きんべんう",
+            "C. きんべん",
+            "D. きんべんう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "勤勉 = きんべん (siêng năng)."
+        },
+        {
+          "id": "n2a3-v40",
+          "text": "このプロジェクトは【成果】を上げた。",
+          "options": [
+            "A. せいか",
+            "B. せいかう",
+            "C. せいか",
+            "D. せいかう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "成果 = せいか (thành quả)."
+        },
+        {
+          "id": "n2a3-v41",
+          "text": "彼は非常に【繊細】な仕事をする。",
+          "options": [
+            "A. せんさい",
+            "B. せんさいう",
+            "C. せんさい",
+            "D. せんさいう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "繊細 = せんさい (tinh tế)."
+        },
+        {
+          "id": "n2a3-v42",
+          "text": "彼女の【洞察】力は素晴らしい。",
+          "options": [
+            "A. どうさつ",
+            "B. どうさつう",
+            "C. どうさつ",
+            "D. どうさつう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "洞察 = どうさつ (sâu sắc)."
+        },
+        {
+          "id": "n2a3-v43",
+          "text": "この件について【慎重】な対応が必要だ。",
+          "options": [
+            "A. しんちょう",
+            "B. しんちょうう",
+            "C. しんちょう",
+            "D. しんちょうう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "慎重 = しんちょう (cẩn trọng)."
+        },
+        {
+          "id": "n2a3-v44",
+          "text": "彼は【熱心】に勉強している。",
+          "options": [
+            "A. ねっしん",
+            "B. ねっしんう",
+            "C. ねっしん",
+            "D. ねっしんう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "熱心 = ねっしん (nhiệt tình)."
+        },
+        {
+          "id": "n2a3-v45",
+          "text": "彼女は【有能】な幹部だ。",
+          "options": [
+            "A. ゆうのう",
+            "B. ゆうのうう",
+            "C. ゆうのう",
+            "D. ゆうのうう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "有能 = ゆうのう (có năng lực)."
+        },
+        {
+          "id": "n2a3-v46",
+          "text": "彼は【誠実】に仕事をこなす。",
+          "options": [
+            "A. せいじつ",
+            "B. せいじつう",
+            "C. せいじつ",
+            "D. せいじつう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "誠実 = せいじつ (chính trực)."
+        },
+        {
+          "id": "n2a3-v47",
+          "text": "この問題の【解決策】を考えてください。",
+          "options": [
+            "A. かいけつさく",
+            "B. かいけつさくう",
+            "C. かいけつさく",
+            "D. かいけつさくう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "解決策 = かいけつさく (giải pháp)."
+        },
+        {
+          "id": "n2a3-v48",
+          "text": "彼女は【優雅】な振る舞いをする。",
+          "options": [
+            "A. ゆうが",
+            "B. ゆうがう",
+            "C. ゆうが",
+            "D. ゆうがう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "優雅 = ゆうが (thanh nhã)."
+        },
+        {
+          "id": "n2a3-v49",
+          "text": "彼は【大胆】なアイデアを出した。",
+          "options": [
+            "A. だいたん",
+            "B. だいたんう",
+            "C. だいたん",
+            "D. だいたんう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "大胆 = だいたん (táo bạo)."
+        },
+        {
+          "id": "n2a3-v50",
+          "text": "この地域は【安全】で住みやすい。",
+          "options": [
+            "A. あんぜん",
+            "B. あんぜんう",
+            "C. あんぜん",
+            "D. あんぜんう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "安全 = あんぜん (an toàn)."
+        },
+        {
+          "id": "n2a3-v51",
+          "text": "彼女は【正確】なデータを提供した。",
+          "options": [
+            "A. せいかく",
+            "B. せいかくう",
+            "C. せいかく",
+            "D. せいかくう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "正確 = せいかく (chính xác)."
+        },
+        {
+          "id": "n2a3-v52",
+          "text": "彼は【迅速】な対応をした。",
+          "options": [
+            "A. じんそく",
+            "B. じんそくう",
+            "C. じんそく",
+            "D. じんそくう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "迅速 = じんそく (nhanh chóng)."
+        },
+        {
+          "id": "n2a3-v53",
+          "text": "彼女は【穏や】かな口調で話した。",
+          "options": [
+            "A. おだや",
+            "B. おだやう",
+            "C. おだや",
+            "D. おだやう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "穏やか = おだやか (ôn hòa)."
+        },
+        {
+          "id": "n2a3-v54",
+          "text": "この計画は【実現】した。",
+          "options": [
+            "A. じつげん",
+            "B. じつげんう",
+            "C. じつげん",
+            "D. じつげんう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "実現 = じつげん (hiện thực hóa)."
+        },
+        {
+          "id": "n2a3-v55",
+          "text": "彼は【謙虚】な姿勢を忘れない。",
+          "options": [
+            "A. けんきょ",
+            "B. けんぎょ",
+            "C. けんきょう",
+            "D. けんぎょう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "謙虚 = けんきょ (khiêm tốn)."
+        },
+        {
+          "id": "n2a3-v56",
+          "text": "彼女は【繊細】な感覚を持っている。",
+          "options": [
+            "A. せんさい",
+            "B. せんさいう",
+            "C. せんさい",
+            "D. せんさいう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "繊細 = せんさい (tinh tế)."
+        },
+        {
+          "id": "n2a3-v57",
+          "text": "この仕事は【地道】に積み上げる必要がある。",
+          "options": [
+            "A. じみち",
+            "B. じみちう",
+            "C. じみち",
+            "D. じみちう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "地道 = じみち (tích lũy dần)."
+        },
+        {
+          "id": "n2a3-v58",
+          "text": "彼は【大胆】に改革を進めた。",
+          "options": [
+            "A. だいたん",
+            "B. だいたんう",
+            "C. だいたん",
+            "D. だいたんう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "大胆 = だいたん (táo bạo)."
+        },
+        {
+          "id": "n2a3-v59",
+          "text": "彼女は【柔軟】に問題に対処する。",
+          "options": [
+            "A. じゅうなん",
+            "B. じゅうなんう",
+            "C. じゅうなん",
+            "D. じゅうなんう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "柔軟 = じゅうなん (linh hoạt)."
+        },
+        {
+          "id": "n2a3-v60",
+          "text": "彼は【情熱】を持って取り組んでいる。",
+          "options": [
+            "A. じょうねつ",
+            "B. じょうねつう",
+            "C. じょうねつ",
+            "D. じょうねつう"
+          ],
+          "correctAnswer": 0,
+          "explanation": "情熱 = じょうねつ (nhiệt huyết)."
+        }
+      ]
+    },
+    {
+      "id": "n2a3-sec-2",
+      "title": "言語知識（文法）・読解",
+      "description": "Kiến thức ngôn ngữ: Ngữ pháp và Đọc hiểu (60 câu hỏi, 50 phút)",
+      "questions": [
+        {
+          "id": "n2a3-g1",
+          "text": "この政策は多くの市民から【批判】を受けた。",
+          "options": [
+            "A. 批判を",
+            "B. 批判に",
+            "C. 批判の",
+            "D. 批判と"
+          ],
+          "correctAnswer": 0,
+          "explanation": "批判を受けた = nhận phê bình."
+        },
+        {
+          "id": "n2a3-g2",
+          "text": "彼の発言は会議の【雰囲気】を変えた。",
+          "options": [
+            "A. 雰囲気",
+            "B. 雰囲気を",
+            "C. 雰囲気に",
+            "D. 雰囲気の"
+          ],
+          "correctAnswer": 0,
+          "explanation": "会議の雰囲気を変えた = thay đổi không khí."
+        },
+        {
+          "id": "n2a3-g3",
+          "text": "新しいシステムの【導入】には時間がかかる。",
+          "options": [
+            "A. 導入",
+            "B. 導入を",
+            "C. 導入に",
+            "D. 導入の"
+          ],
+          "correctAnswer": 0,
+          "explanation": "システムの導入 = giới thiệu hệ thống."
+        },
+        {
+          "id": "n2a3-g4",
+          "text": "彼はその【困難】をものともせず、挑戦し続けた。",
+          "options": [
+            "A. 困難を",
+            "B. 困難に",
+            "C. 困難の",
+            "D. 困難と"
+          ],
+          "correctAnswer": 0,
+          "explanation": "困難をものともせず = không nản chí."
+        },
+        {
+          "id": "n2a3-g5",
+          "text": "この地域は地震に対する【対策】が不十分だ。",
+          "options": [
+            "A. 対策",
+            "B. 対策を",
+            "C. 対策に",
+            "D. 対策の"
+          ],
+          "correctAnswer": 0,
+          "explanation": "地震に対する対策 = biện pháp phòng chống."
+        },
+        {
+          "id": "n2a3-g6",
+          "text": "彼女の【努力】にはいつも感心させられる。",
+          "options": [
+            "A. 努力",
+            "B. 努力を",
+            "C. 努力に",
+            "D. 努力の"
+          ],
+          "correctAnswer": 0,
+          "explanation": "彼女の努力 = sự nỗ lực."
+        },
+        {
+          "id": "n2a3-g7",
+          "text": "この件については社長の【許可】を仰ぐ必要がある。",
+          "options": [
+            "A. 許可",
+            "B. 許可を",
+            "C. 許可に",
+            "D. 許可の"
+          ],
+          "correctAnswer": 0,
+          "explanation": "社長の許可を仰ぐ = xin phép chủ tịch."
+        },
+        {
+          "id": "n2a3-g8",
+          "text": "この法律は来年から【施行】される予定だ。",
+          "options": [
+            "A. 施行",
+            "B. 施行を",
+            "C. 施行に",
+            "D. 施行の"
+          ],
+          "correctAnswer": 0,
+          "explanation": "法律が施行される = luật được thực thi."
+        },
+        {
+          "id": "n2a3-g9",
+          "text": "彼は会議で活発な【議論】を展開した。",
+          "options": [
+            "A. 議論",
+            "B. 議論を",
+            "C. 議論に",
+            "D. 議論の"
+          ],
+          "correctAnswer": 0,
+          "explanation": "活発な議論 = tranh luận sôi nổi."
+        },
+        {
+          "id": "n2a3-g10",
+          "text": "このプロジェクトの【成否】は、チーム全体に影響する。",
+          "options": [
+            "A. 成否",
+            "B. 成否を",
+            "C. 成否に",
+            "D. 成否の"
+          ],
+          "correctAnswer": 0,
+          "explanation": "プロジェクトの成否 = thành bại."
+        },
+        {
+          "id": "n2a3-g11",
+          "text": "環境問題に対する【意識】が高まっている。",
+          "options": [
+            "A. 意識",
+            "B. 意識を",
+            "C. 意識に",
+            "D. 意識の"
+          ],
+          "correctAnswer": 0,
+          "explanation": "環境問題への意識 = ý thức môi trường."
+        },
+        {
+          "id": "n2a3-g12",
+          "text": "彼はその【実績】を買って、昇進した。",
+          "options": [
+            "A. 実績",
+            "B. 実績を",
+            "C. 実績に",
+            "D. 実績の"
+          ],
+          "correctAnswer": 0,
+          "explanation": "実績を買って = dựa trên thành tích."
+        },
+        {
+          "id": "n2a3-g13",
+          "text": "彼女の【先見】は非常に素晴らしい。",
+          "options": [
+            "A. 先見",
+            "B. 先見を",
+            "C. 先見に",
+            "D. 先見の"
+          ],
+          "correctAnswer": 0,
+          "explanation": "先見の明 = con mắt nhìn xa."
+        },
+        {
+          "id": "n2a3-g14",
+          "text": "この件については慎重な【判断】が必要だ。",
+          "options": [
+            "A. 判断",
+            "B. 判断を",
+            "C. 判断に",
+            "D. 判断の"
+          ],
+          "correctAnswer": 0,
+          "explanation": "慎重な判断 = phán đoán cẩn thận."
+        },
+        {
+          "id": "n2a3-g15",
+          "text": "彼は自らの【信念】に従って行動した。",
+          "options": [
+            "A. 信念",
+            "B. 信念を",
+            "C. 信念に",
+            "D. 信念の"
+          ],
+          "correctAnswer": 0,
+          "explanation": "自らの信念に従って = theo tín niệm."
+        },
+        {
+          "id": "n2a3-g16",
+          "text": "会議では、各部門の【成果】が報告された。",
+          "options": [
+            "A. 成果",
+            "B. 成果を",
+            "C. 成果に",
+            "D. 成果の"
+          ],
+          "correctAnswer": 0,
+          "explanation": "各部門の成果 = thành quả bộ phận."
+        },
+        {
+          "id": "n2a3-g17",
+          "text": "この問題については、専門家に【意見】を仰ぐべきだ。",
+          "options": [
+            "A. 意見",
+            "B. 意見を",
+            "C. 意見に",
+            "D. 意見の"
+          ],
+          "correctAnswer": 0,
+          "explanation": "専門家の意見を仰ぐ = xin ý kiến."
+        },
+        {
+          "id": "n2a3-g18",
+          "text": "彼は会議で自分の【立場】を述べた。",
+          "options": [
+            "A. 立場",
+            "B. 立場を",
+            "C. 立場に",
+            "D. 立場の"
+          ],
+          "correctAnswer": 0,
+          "explanation": "自分の立場を述べた = nêu quan điểm."
+        },
+        {
+          "id": "n2a3-g19",
+          "text": "新しいシステムの【導入】には時間がかかる。",
+          "options": [
+            "A. 導入",
+            "B. 導入を",
+            "C. 導入に",
+            "D. 導入の"
+          ],
+          "correctAnswer": 0,
+          "explanation": "システムの導入 = giới thiệu hệ thống."
+        },
+        {
+          "id": "n2a3-g20",
+          "text": "彼はその【困難】をものともせず、挑戦し続けた。",
+          "options": [
+            "A. 困難を",
+            "B. 困難に",
+            "C. 困難の",
+            "D. 困難と"
+          ],
+          "correctAnswer": 0,
+          "explanation": "困難をものともせず = không nản chí."
+        },
+        {
+          "id": "n2a3-g21",
+          "text": "この地域は地震に対する【対策】が不十分だ。",
+          "options": [
+            "A. 対策",
+            "B. 対策を",
+            "C. 対策に",
+            "D. 対策の"
+          ],
+          "correctAnswer": 0,
+          "explanation": "地震に対する対策 = biện pháp phòng chống."
+        },
+        {
+          "id": "n2a3-g22",
+          "text": "この件については社長の【許可】を仰ぐ必要がある。",
+          "options": [
+            "A. 許可",
+            "B. 許可を",
+            "C. 許可に",
+            "D. 許可の"
+          ],
+          "correctAnswer": 0,
+          "explanation": "社長の許可を仰ぐ = xin phép chủ tịch."
+        },
+        {
+          "id": "n2a3-g23",
+          "text": "この法律は来年から【施行】される予定だ。",
+          "options": [
+            "A. 施行",
+            "B. 施行を",
+            "C. 施行に",
+            "D. 施行の"
+          ],
+          "correctAnswer": 0,
+          "explanation": "法律が施行される = luật được thực thi."
+        },
+        {
+          "id": "n2a3-g24",
+          "text": "彼は会議で活発な【議論】を展開した。",
+          "options": [
+            "A. 議論",
+            "B. 議論を",
+            "C. 議論に",
+            "D. 議論の"
+          ],
+          "correctAnswer": 0,
+          "explanation": "活発な議論 = tranh luận sôi nổi."
+        },
+        {
+          "id": "n2a3-g25",
+          "text": "このプロジェクトの【成否】は、チーム全体に影響する。",
+          "options": [
+            "A. 成否",
+            "B. 成否を",
+            "C. 成否に",
+            "D. 成否の"
+          ],
+          "correctAnswer": 0,
+          "explanation": "プロジェクトの成否 = thành bại."
+        },
+        {
+          "id": "n2a3-g26",
+          "text": "環境問題に対する【意識】が高まっている。",
+          "options": [
+            "A. 意識",
+            "B. 意識を",
+            "C. 意識に",
+            "D. 意識の"
+          ],
+          "correctAnswer": 0,
+          "explanation": "環境問題への意識 = ý thức môi trường."
+        },
+        {
+          "id": "n2a3-g27",
+          "text": "彼はその【実績】を買って、昇進した。",
+          "options": [
+            "A. 実績",
+            "B. 実績を",
+            "C. 実績に",
+            "D. 実績の"
+          ],
+          "correctAnswer": 0,
+          "explanation": "実績を買って = dựa trên thành tích."
+        },
+        {
+          "id": "n2a3-g28",
+          "text": "彼女の【先見】は非常に素晴らしい。",
+          "options": [
+            "A. 先見",
+            "B. 先見を",
+            "C. 先見に",
+            "D. 先見の"
+          ],
+          "correctAnswer": 0,
+          "explanation": "先見の明 = con mắt nhìn xa."
+        },
+        {
+          "id": "n2a3-g29",
+          "text": "この件については慎重な【判断】が必要だ。",
+          "options": [
+            "A. 判断",
+            "B. 判断を",
+            "C. 判断に",
+            "D. 判断の"
+          ],
+          "correctAnswer": 0,
+          "explanation": "慎重な判断 = phán đoán cẩn thận."
+        },
+        {
+          "id": "n2a3-g30",
+          "text": "彼は自らの【信念】に従って行動した。",
+          "options": [
+            "A. 信念",
+            "B. 信念を",
+            "C. 信念に",
+            "D. 信念の"
+          ],
+          "correctAnswer": 0,
+          "explanation": "自らの信念に従って = theo tín niệm."
+        },
+        {
+          "id": "n2a3-r1",
+          "passage": "近年、データドリブンな意思決定が企業の間で急速に広がっている。大量のデータを分析することで、感覚に頼らない客観的な判断が可能になる。しかし、データに過度に依存すると、創造性や直感力が失われる危険もある。",
+          "text": "筆者が最も伝えたいことは何か。",
+          "options": [
+            "A. データ分析は万能だ",
+            "B. データに頼るべきではない",
+            "C. データ活用と創造性のバランスが重要だ",
+            "D. 感覚的な判断は不要だ"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Cân bằng giữa dữ liệu và sáng tạo."
+        },
+        {
+          "id": "n2a3-r2",
+          "passage": "持続可能な開発目標（SDGs）は、各国が2030年までに達成を目指す17の目標からなる。",
+          "text": "SDGsの特徴として正しいものはどれか。",
+          "options": [
+            "A. 1つの目標だけに焦点を当てている",
+            "B. 2025年が達成期限だ",
+            "C. 17の目標からなる包括的な枠組みだ",
+            "D. 日本だけが参加している"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Khung toàn diện với 17 mục tiêu."
+        },
+        {
+          "id": "n2a3-r3",
+          "passage": "組織におけるリーダーシップの形態は時代とともに変化してきた。メンバーの自律性を重視するスタイルへの移行が進んでいる。",
+          "text": "現代のリーダーシップの傾向として正しいものはどれか。",
+          "options": [
+            "A. 権威型が主流だ",
+            "B. メンバーの自律性を重視するスタイルが増加している",
+            "C. リーダーは不要だ",
+            "D. すべてのリーダーが同じスタイルだ"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Xu hướng coi trọng tính tự chủ."
+        },
+        {
+          "id": "n2a3-r4",
+          "passage": "人間の寿命が延伸する中で、リタイア後の人生をどう設計するかが重要な課題となっている。",
+          "text": "本文で強調されていることは何か。",
+          "options": [
+            "A. 定年を早くすべきだ",
+            "B. 人の寿命は短くなるべきだ",
+            "C. 健康寿命の延伸が社会の持続可能性に重要だ",
+            "D. 老後の蓄えは不要だ"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Kéo dài tuổi thọ khỏe mạnh quan trọng."
+        },
+        {
+          "id": "n2a3-r5",
+          "passage": "自動運転技術の開発が進む中、それがもたらす社会変化への備えが問われている。",
+          "text": "自動運転技術について筆者はどう述べているか。",
+          "options": [
+            "A. 技術は完璧だ",
+            "B. 開発をやめるべきだ",
+            "C. 利点だけでなく課題もある",
+            "D. すべての問題が解決済みだ"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Cả ưu điểm lẫn thách thức."
+        },
+        {
+          "id": "n2a3-r6",
+          "passage": "日本の人口減少が加速する中、地方でのまちづくりは困難を極めている。しかし、ITの活用によって、人口減少に負けない地域運営が模索されている。",
+          "text": "筆者が言いたいことは何か。",
+          "options": [
+            "A. 地方は衰退するしかない",
+            "B. ITで地方の問題を解決できる可能性がある",
+            "C. 都会の方が優れている",
+            "D. 人口増加は不可能だ"
+          ],
+          "correctAnswer": 1,
+          "explanation": "IT có thể giải quyết vấn đề vùng quê."
+        },
+        {
+          "id": "n2a3-r7",
+          "passage": "消費者の意識が環境配慮型の製品に傾倒する中、企業はサプライチェーン全体での環境負荷削減に取り組むことが求められている。",
+          "text": "グリーンサプライチェーンの構築が重要である理由は何か。",
+          "options": [
+            "A. コスト削減のため",
+            "B. 企業の競争力に影響するから",
+            "C. 法律で義務付けられているから",
+            "D. 消費者は関心がないから"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Ảnh hưởng đến năng lực cạnh tranh."
+        },
+        {
+          "id": "n2a3-r8",
+          "passage": "知識経済の時代において、個人の学習能力がますます重要になっている。生涯学習を通じて知識とスキルを更新し続けることが不可欠だ。",
+          "text": "筆者は何を提案しているか。",
+          "options": [
+            "A. 学校教育を廃止すべきだ",
+            "B. 社会人になっても学び続ける必要がある",
+            "C. 学校の教育だけで十分だ",
+            "D. 技術的なスキルは不要だ"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Cần học hỏi suốt đời."
+        },
+        {
+          "id": "n2a3-r9",
+          "passage": "文化の多様性は、社会の創造性を高める重要な要素である。異なる文化的背景を持つ人々が交流することで、新しいアイデアや視点が生まれる。",
+          "text": "文化の多様性がもたらす効果は何か。",
+          "options": [
+            "A. コストの増加",
+            "B. コミュニケーションの困難",
+            "C. 社会の創造性の向上",
+            "D. 意思決定の遅延"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Nâng cao sáng tạo."
+        },
+        {
+          "id": "n2a3-r10",
+          "passage": "都市の緑化は、ヒートアイランド現象の緩和、生物多様性の保全、住民の健康増進など、多くのメリットをもたらす。",
+          "text": "都市の緑化のメリットとして挙げられていないものはどれか。",
+          "options": [
+            "A. ヒートアイランド現象の緩和",
+            "B. 生物多様性の保全",
+            "C. 経済成長の加速",
+            "D. 住民の健康増進"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Tăng trưởng kinh tế không được đề cập."
+        },
+        {
+          "id": "n2a3-r11",
+          "passage": "サイバーセキュリティの重要性が高まる中、企業は組織全体で情報セキュリティ意識を向上させることが急務となっている。",
+          "text": "企業が取るべき対策として正しいものはどれか。",
+          "options": [
+            "A. 技術対策だけに集中する",
+            "B. 従業員の意識向上も含めた包括的な対策を講じる",
+            "C. セキュリティ対策は不要だ",
+            "D. 外部の専門家に任せる"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Biện pháp toàn diện."
+        },
+        {
+          "id": "n2a3-r12",
+          "passage": "クラウドコンピューティングの普及により、企業の情報システムの構築・運用方法は大きく変わった。",
+          "text": "クラウドコンピューティングの利点として正しいものはどれか。",
+          "options": [
+            "A. セキュリティリスクがゼロになる",
+            "B. コスト削減と柔軟性の向上",
+            "C. インターネットが不要になる",
+            "D. ハードウェアの購入が必要になる"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Giảm chi phí, tăng linh hoạt."
+        },
+        {
+          "id": "n2a3-r13",
+          "passage": "社会の高齢化に伴い、介護ロボットの開発が進んでいる。ロボットによって介護者の負担軽減が期待される一方、人間関係の希薄化への懸念もなされている。",
+          "text": "介護ロボットについての本文の内容として正しいものはどれか。",
+          "options": [
+            "A. 介護ロボットは完全に人間の介護を置き換える",
+            "B. 介護ロボットには利点だけでなく課題もある",
+            "C. 介護ロボットは普及していない",
+            "D. 介護ロボットは高齢者にとって不要だ"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Cả ưu điểm lẫn thách thức."
+        },
+        {
+          "id": "n2a3-r14",
+          "passage": "オープンイノベーションは、企業が外部の知識や技術を取り入れてイノベーションを生み出す手法である。",
+          "text": "オープンイノベーションの特徴として正しいものはどれか。",
+          "options": [
+            "A. すべて自社内で完結させる",
+            "B. 外部の知識を活用する",
+            "C. 新製品は開発しない",
+            "D. 競合他社とは絶対に連携しない"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Tận dụng kiến thức bên ngoài."
+        },
+        {
+          "id": "n2a3-r15",
+          "passage": "DXは、企業のビジネスモデルや業務プロセスをデジタル技術を活用して変革することを意味する。価値創造を伴う変革が求められている。",
+          "text": "DXの本質として正しいものはどれか。",
+          "options": [
+            "A. データを蓄積すること",
+            "B. ペーパーレス化を進めること",
+            "C. デジタル技術による価値創造を伴う変革",
+            "D. IT予算を増やすこと"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Bản chất là đổi mới sáng tạo."
+        },
+        {
+          "id": "n2a3-r16",
+          "passage": "DX推進において、技術導入だけでなく、組織文化の変革も不可欠である。",
+          "text": "DX推進において不可欠なことは何か。",
+          "options": [
+            "A. 技術導入だけ",
+            "B. 組織文化の変革",
+            "C. コスト削減",
+            "D. 人員増加"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Cần thay đổi văn hóa tổ chức."
+        },
+        {
+          "id": "n2a3-r17",
+          "passage": "サステナビリティが企業経営の重要なテーマとなっている。環境負荷の低減だけでなく、社会貢献やガバナンスも含めた取り組みが求められている。",
+          "text": "サステナビリティに含まれる要素として正しいものはどれか。",
+          "options": [
+            "A. 環境負荷の低減のみ",
+            "B. 社会貢献とガバナンス",
+            "C. 利益追求のみ",
+            "D. 技術革新のみ"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Bao gồm đóng góp xã hội và quản trị."
+        },
+        {
+          "id": "n2a3-r18",
+          "passage": "ペーパーレス化を推進する企業が増えている。コスト削減や業務効率化のメリットがある一方、情報セキュリティの確保も重要な課題となっている。",
+          "text": "ペーパーレス化の課題として挙げられているのは何か。",
+          "options": [
+            "A. コスト増加",
+            "B. 業務効率の低下",
+            "C. 情報セキュリティの確保",
+            "D. 従業員の反対"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Đảm bảo an ninh thông tin."
+        },
+        {
+          "id": "n2a3-r19",
+          "passage": "日本の製造業は高品質で信頼性の高い製品を生み出してきた。しかし、コスト競争力の維持が大きな課題となっている。",
+          "text": "日本の製造業の課題として正しいものはどれか。",
+          "options": [
+            "A. 品質の低下",
+            "B. コスト競争力の維持",
+            "C. 人材不足",
+            "D. 技術力の不足"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Duy trì năng lực cạnh tranh chi phí."
+        },
+        {
+          "id": "n2a3-r20",
+          "passage": "社会貢献活動に積極的な企業は、従業員のエンゲージメント向上にもつながると言われている。",
+          "text": "社会貢献活動の効果として正しいものはどれか。",
+          "options": [
+            "A. 短期的な利益増加",
+            "B. 従業員のエンゲージメント向上",
+            "C. コスト削減",
+            "D. 規制緩和"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Cải thiện sự gắn kết nhân viên."
+        },
+        {
+          "id": "n2a3-r21",
+          "passage": "日本の人口減少が加速する中、地方でのまちづくりは困難を極めている。しかし、ITの活用によって、地域運営が模索されている。",
+          "text": "筆者が言いたいことは何か。",
+          "options": [
+            "A. 地方は衰退するしかない",
+            "B. ITで地方の問題を解決できる可能性がある",
+            "C. 都会の方が優れている",
+            "D. 人口増加は不可能だ"
+          ],
+          "correctAnswer": 1,
+          "explanation": "IT có thể giải quyết vấn đề vùng quê."
+        },
+        {
+          "id": "n2a3-r22",
+          "passage": "企業はサプライチェーン全体での環境負荷削減に取り組むことが求められている。グリーンサプライチェーンの構築は、企業の競争力にも直結する。",
+          "text": "グリーンサプライチェーンの構築が重要である理由は何か。",
+          "options": [
+            "A. コスト削減のため",
+            "B. 企業の競争力に影響するから",
+            "C. 法律で義務付けられているから",
+            "D. 消費者は関心がないから"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Ảnh hưởng đến năng lực cạnh tranh."
+        },
+        {
+          "id": "n2a3-r23",
+          "passage": "個人の学習能力がますます重要になっている。生涯学習を通じて知識とスキルを更新し続けることが不可欠だ。",
+          "text": "筆者は何を提案しているか。",
+          "options": [
+            "A. 学校教育を廃止すべきだ",
+            "B. 社会人になっても学び続ける必要がある",
+            "C. 学校の教育だけで十分だ",
+            "D. 技術的なスキルは不要だ"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Cần học hỏi suốt đời."
+        },
+        {
+          "id": "n2a3-r24",
+          "passage": "文化の多様性は、社会の創造性を高める重要な要素である。異なる文化的背景を持つ人々が交流することで、新しいアイデアや視点が生まれる。",
+          "text": "文化の多様性がもたらす効果は何か。",
+          "options": [
+            "A. コストの増加",
+            "B. コミュニケーションの困難",
+            "C. 社会の創造性の向上",
+            "D. 意思決定の遅延"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Nâng cao sáng tạo."
+        },
+        {
+          "id": "n2a3-r25",
+          "passage": "都市の緑化は多くのメリットをもたらす。都市における緑地の確保は、持続可能なまちづくりの重要な柱となっている。",
+          "text": "都市の緑化のメリットとして挙げられていないものはどれか。",
+          "options": [
+            "A. ヒートアイランド現象の緩和",
+            "B. 生物多様性の保全",
+            "C. 経済成長の加速",
+            "D. 住民の健康増進"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Tăng trưởng kinh tế không được đề公民。"
+        },
+        {
+          "id": "n2a3-r26",
+          "passage": "企業は組織全体で情報セキュリティ意識を向上させることが急務となっている。技術的な対策だけでなく、人的な脆弱性への対処も不可欠だ。",
+          "text": "企業が取るべき対策として正しいものはどれか。",
+          "options": [
+            "A. 技術対策だけに集中する",
+            "B. 従業員の意識向上も含めた包括的な対策を講じる",
+            "C. セキュリティ対策は不要だ",
+            "D. 外部の専門家に任せる"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Biện pháp toàn diện."
+        },
+        {
+          "id": "n2a3-r27",
+          "passage": "クラウドコンピューティングにより、企業の情報システムの構築・運用方法は大きく変わった。",
+          "text": "クラウドコンピューティングの利点として正しいものはどれか。",
+          "options": [
+            "A. セキュリティリスクがゼロになる",
+            "B. コスト削減と柔軟性の向上",
+            "C. インターネットが不要になる",
+            "D. ハードウェアの購入が必要になる"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Giảm chi phí, tăng linh hoạt."
+        },
+        {
+          "id": "n2a3-r28",
+          "passage": "介護ロボットの開発が進んでいる。ロボットによって介護者の負担軽減が期待される一方、人間関係の希薄化への懸念もなされている。",
+          "text": "介護ロボットについての本文の内容として正しいものはどれか。",
+          "options": [
+            "A. 介護ロボットは完全に人間の介護を置き換える",
+            "B. 介護ロボットには利点だけでなく課題もある",
+            "C. 介護ロボットは普及していない",
+            "D. 介護ロボットは高齢者にとって不要だ"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Cả ưu điểm lẫn thách thức."
+        },
+        {
+          "id": "n2a3-r29",
+          "passage": "オープンイノベーションは、企業が外部の知識や技術を取り入れてイノベーションを生み出す手法である。",
+          "text": "オープンイノベーションの特徴として正しいものはどれか。",
+          "options": [
+            "A. すべて自社内で完結させる",
+            "B. 外部の知識を活用する",
+            "C. 新製品は開発しない",
+            "D. 競合他社とは絶対に連携しない"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Tận dụng kiến thức bên ngoài."
+        },
+        {
+          "id": "n2a3-r30",
+          "passage": "DXは、企業のビジネスモデルや業務プロセスをデジタル技術を活用して変革することを意味する。価値創造を伴う変革が求められている。",
+          "text": "DXの本質として正しいものはどれか。",
+          "options": [
+            "A. データを蓄積すること",
+            "B. ペーパーレス化を進めること",
+            "C. デジタル技術による価値創造を伴う変革",
+            "D. IT予算を増やすこと"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Bản chất là đổi mới sáng tạo."
+        }
+      ]
+    },
+    {
+      "id": "n2a3-sec-3",
+      "title": "聴解",
+      "description": "Nghe hiểu (30 câu hỏi, 30 phút)",
+      "questions": [
+        {
+          "id": "n2a3-l1",
+          "passage": "男：来月の新人研修、今年はオンラインで行うことになったそうです。\n女：えっ、前は対面でしたよね。変更になった理由は何ですか。",
+          "text": "新人研修はどのように行われるか。",
+          "options": [
+            "A. 対面で行われる",
+            "B. オンラインで行われる",
+            "C. 電話で行われる",
+            "D. メールで行われる"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Đào tạo trực tuyến."
+        },
+        {
+          "id": "n2a3-l2",
+          "passage": "女：この書類、期限までに完成できますか。\n男：正直なところ、一人では無理です。でも、田中さんに手伝ってもらえれば大丈夫だと思います。",
+          "text": "男の人はどうするつもりか。",
+          "options": [
+            "A. 一人で頑張る",
+            "B. 田中さんに手伝ってもらう",
+            "C. 期限を延ばしてもらう",
+            "D. 書類を諦める"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Nhờ田中 giúp đỡ."
+        },
+        {
+          "id": "n2a3-l3",
+          "passage": "男：来週の打ち合わせ、場所が変更になりました。3階の会議室から2階のラウンジに移動です。",
+          "text": "打ち合わせはどこで行われるか。",
+          "options": [
+            "A. 3階の会議室",
+            "B. 2階のラウンジ",
+            "C. 1階のカフェ",
+            "D. 地下一階の食堂"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Phòng chờ tầng 2."
+        },
+        {
+          "id": "n2a3-l4",
+          "passage": "女：新しいクライアントとの契約、締結されましたか。\n男：はい、昨日正式にサインしました。来月からプロジェクトが始まります。",
+          "text": "プロジェクトはいつ始まるか。",
+          "options": [
+            "A. 今日から",
+            "B. 来週から",
+            "C. 来月から",
+            "D. 来年から"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Tháng sau."
+        },
+        {
+          "id": "n2a3-l5",
+          "passage": "男：この商品、在庫がもうないんですが。次の入荷はいつですか。\n女：確認しますが、おそらく来週の水曜日に入荷する予定です。",
+          "text": "商品はいつ入荷するか。",
+          "options": [
+            "A. 今日",
+            "B. 明日",
+            "C. 来週の水曜日",
+            "D. 来月"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Thứ Tư tuần sau."
+        },
+        {
+          "id": "n2a3-l6",
+          "passage": "女：会社のウェブサイト、デザインが変わったんですね。\n男：はい、先月リニューアルしました。ユーザビリティも向上したとのことです。",
+          "text": "ウェブサイトについて正しいことは何か。",
+          "options": [
+            "A. 元に戻った",
+            "B. 先月リニューアルされた",
+            "C. 閉鎖された",
+            "D. 新しく作られた"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Website đã được nâng cấp."
+        },
+        {
+          "id": "n2a3-l7",
+          "passage": "男：明日の会議、資料をもう少し修正したいのですが。",
+          "text": "男の人はどうしたいと言っているか。",
+          "options": [
+            "A. 資料を書き直す",
+            "B. 資料を修正したい",
+            "C. 資料を捨てたい",
+            "D. 資料をコピーしたい"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Muốn chỉnh sửa tài liệu."
+        },
+        {
+          "id": "n2a3-l8",
+          "passage": "女：来年度の予算について、各部署からの提案をまとめています。\n男：いつまでにまとめればいいですか。",
+          "text": "予算の提案のまとめの締め切りはいつか。",
+          "options": [
+            "A. 今月末",
+            "B. 来月末",
+            "C. 来月の半ば",
+            "D. 今週末"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Cuối tháng này."
+        },
+        {
+          "id": "n2a3-l9",
+          "passage": "男：このプロジェクトは、三つのフェーズに分けて進める予定です。最初のフェーズは来月から始まります。",
+          "text": "プロジェクトは何つのフェーズに分かれるか。",
+          "options": [
+            "A. 二つ",
+            "B. 三つ",
+            "C. 四つ",
+            "D. 五つ"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Ba giai đoạn."
+        },
+        {
+          "id": "n2a3-l10",
+          "passage": "女：クライアントからのフィードバック、ご覧になりましたか。\n男：はい、先ほどメールで届きました。全体的にポジティブな評価です。",
+          "text": "クライアントのフィードバックはどうだったか。",
+          "options": [
+            "A. 全体的にネガティブ",
+            "B. 混合した反応",
+            "C. 全体的にポジティブ",
+            "D. フィードバックはない"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Nhìn chung tích cực."
+        },
+        {
+          "id": "n2a3-l11",
+          "passage": "男：来月の社員旅行の行き先、決まりましたか。",
+          "text": "社員旅行の行き先はどうなっているか。",
+          "options": [
+            "A. 決まった",
+            "B. 決まっていない",
+            "C. 決まったが変更された",
+            "D. 中止された"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Chưa quyết định."
+        },
+        {
+          "id": "n2a3-l12",
+          "passage": "女：この書類、部長に見ていただけますか。\n男：部長は今出張中なので、戻り次第見ていただきます。",
+          "text": "部長はいつ書類を見られるか。",
+          "options": [
+            "A. 今すぐ",
+            "B. 出張から戻り次第",
+            "C. 明日",
+            "D. 来週"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Sau khi trở về."
+        },
+        {
+          "id": "n2a3-l13",
+          "passage": "男：新製品の発売日、いつになりましたか。",
+          "text": "新製品はいつ発売されるか。",
+          "options": [
+            "A. 今月の末",
+            "B. 来月の初め",
+            "C. 来月の半ば",
+            "D. 来月末"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Giữa tháng sau."
+        },
+        {
+          "id": "n2a3-l14",
+          "passage": "女：このプロジェクトの進捗状況、報告していただけますか。",
+          "text": "女の人は何と言っているか。",
+          "options": [
+            "A. プロジェクトを中止してほしい",
+            "B. 進捗状況を報告してほしい",
+            "C. プロジェクトを開始してほしい",
+            "D. プロジェクトのメンバーを変えたい"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Yêu cầu báo cáo tiến độ."
+        },
+        {
+          "id": "n2a3-l15",
+          "passage": "男：来週の会議、参加人数は何人ですか。",
+          "text": "会議には何人が参加するか。",
+          "options": [
+            "A. 5人",
+            "B. 8人",
+            "C. 10人",
+            "D. 12人"
+          ],
+          "correctAnswer": 2,
+          "explanation": "10 người."
+        },
+        {
+          "id": "n2a3-l16",
+          "passage": "女：来年の新人研修、今年はどうしますか。\n男：去年は3日間の研修でしたけど、今年は1週間に延長する方針です。",
+          "text": "新人研修は何日間か。",
+          "options": [
+            "A. 2日間",
+            "B. 3日間",
+            "C. 5日間",
+            "D. 1週間"
+          ],
+          "correctAnswer": 3,
+          "explanation": "1 tuần."
+        },
+        {
+          "id": "n2a3-l17",
+          "passage": "男：このプロジェクトのメンバー、追加で2人増やしていただけますか。\n女：承知しました。人事部に相談して、来週までに対応します。",
+          "text": "女の人はどうすると言っているか。",
+          "options": [
+            "A. メンバーを減らす",
+            "B. 人事部に相談する",
+            "C. プロジェクトを中止する",
+            "D. 自分で対応する"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Liên hệ nhân sự."
+        },
+        {
+          "id": "n2a3-l18",
+          "passage": "女：先日の会議の議事録、確認していただけますか。\n男：はい、午後中には確認します。修正点があればメールで連絡しますね。",
+          "text": "男の人はどうすると言っているか。",
+          "options": [
+            "A. 議事録を書き直す",
+            "B. 午後中に確認する",
+            "C. 明日確認する",
+            "D. 議事録を見ない"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Xác nhận buổi chiều."
+        },
+        {
+          "id": "n2a3-l19",
+          "passage": "女：クライアントからの要望を整理したメール、送りましたよ。\n男：ありがとうございます。確認して、明日までに返信します。",
+          "text": "男の人はいつ返信すると言っているか。",
+          "options": [
+            "A. 今日中に",
+            "B. 明日までに",
+            "C. 来週までに",
+            "D. 今週末までに"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Trước ngày mai."
+        },
+        {
+          "id": "n2a3-l20",
+          "passage": "男：来月の忘年会、場所はどこにしますか。\n女：去年と同じレストランはどうですか。予約を取りますよ。",
+          "text": "女の人はどうすると言っているか。",
+          "options": [
+            "A. 場所を変える",
+            "B. 予約を取る",
+            "C. 忘年会を中止する",
+            "D. 男の人に任せる"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Đặt chỗ."
+        },
+        {
+          "id": "n2a3-l21",
+          "passage": "男：この企画の予算、削減する余地はありますか。\n女：交通費と交際費を見直せば、10%は削減できると思います。",
+          "text": "予算をどれくらい削減できるか。",
+          "options": [
+            "A. 5%",
+            "B. 10%",
+            "C. 15%",
+            "D. 20%"
+          ],
+          "correctAnswer": 1,
+          "explanation": "10%."
+        },
+        {
+          "id": "n2a3-l22",
+          "passage": "女：今度のセミナー、参加者数はどのくらい見込んでいますか。\n男：去年は100人でしたけど、今年は120人くらいになると思います。",
+          "text": "今年のセミナーの参加者はどのくらいか。",
+          "options": [
+            "A. 80人",
+            "B. 100人",
+            "C. 120人",
+            "D. 150人"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Khoảng 120 người."
+        },
+        {
+          "id": "n2a3-l23",
+          "passage": "男：この書類、明日の午前中に提出できますか。\n女：はい、大丈夫です。今仕上げているところです。",
+          "text": "書類はいつ提出するか。",
+          "options": [
+            "A. 今日中に",
+            "B. 明日の午前中",
+            "C. 明日の午後",
+            "D. 明後日"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Buổi sáng ngày mai."
+        },
+        {
+          "id": "n2a3-l24",
+          "passage": "女：来月の出張、航空券はもう予約しましたか。\n男：まだです。来週の初めに予約する予定です。",
+          "text": "航空券はいつ予約するか。",
+          "options": [
+            "A. 今日中に",
+            "B. 来週の初め",
+            "C. 来月に",
+            "D. 出張の直前"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Đầu tuần sau."
+        },
+        {
+          "id": "n2a3-l25",
+          "passage": "男：このプロジェクトの完了予定日、いつですか。\n女：来月の末を目標にしていますが、早まる可能性もあります。",
+          "text": "プロジェクトはいつ終わる見込みか。",
+          "options": [
+            "A. 今月の末",
+            "B. 来月の半ば",
+            "C. 来月の末",
+            "D. 来月の初め"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Cuối tháng sau."
+        },
+        {
+          "id": "n2a3-l26",
+          "passage": "女：会議の参加者に確認メールを送りましたか。\n男：はい、全員から返信が来ました。全員参加です。",
+          "text": "会議の参加状況はどうなっているか。",
+          "options": [
+            "A. 一部の人が欠席する",
+            "B. 全員が参加する",
+            "C. 参加者が未定",
+            "D. 中止になった"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Tất cả tham gia."
+        },
+        {
+          "id": "n2a3-l27",
+          "passage": "男：来月のセミナー、資料はいつまでに準備すればいいですか。\n女：2週間前までに完成させてください。",
+          "text": "資料の完成期限はいつか。",
+          "options": [
+            "A. 1週間前",
+            "B. 2週間前",
+            "C. 3週間前",
+            "D. セミナー当日"
+          ],
+          "correctAnswer": 1,
+          "explanation": "2 tuần trước."
+        },
+        {
+          "id": "n2a3-l28",
+          "passage": "女：この書類、部長のサインをもらう必要がありますか。\n男：はい、必ず部長のサインがあってから提出してください。",
+          "text": "書類を提出する条件は何か。",
+          "options": [
+            "A. 女の人のサインがあればいい",
+            "B. 部長のサインが必要",
+            "C. サインは不要",
+            "D. 誰のサインでもいい"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Cần chữ ký trưởng phòng."
+        },
+        {
+          "id": "n2a3-l29",
+          "passage": "男：来月の新人研修、場所はどこですか。\n女：3階の研修室で行います。朝9時から午後4時までです。",
+          "text": "研修は何時から何時までか。",
+          "options": [
+            "A. 8時から3時まで",
+            "B. 9時から4時まで",
+            "C. 10時から5時まで",
+            "D. 9時から5時まで"
+          ],
+          "correctAnswer": 1,
+          "explanation": "9h đến 16h."
+        },
+        {
+          "id": "n2a3-l30",
+          "passage": "女：来年の予算案、いつまでに完成させればいいですか。\n男：今年度末までに完成させてください。12月半ばを目安にしています。",
+          "text": "予算案の完成期限はいつか。",
+          "options": [
+            "A. 10月末",
+            "B. 11月末",
+            "C. 12月半ば",
+            "D. 年明け"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Giữa tháng 12."
+        }
+      ]
+    }
+  ]
+}

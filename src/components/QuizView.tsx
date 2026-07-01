@@ -146,9 +146,10 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
   }
 
   const currentQuestion = questions[currentIndex];
+  const hasMedia = !!(currentQuestion.passage || currentQuestion.imageUrl || currentQuestion.audioUrl);
 
   return (
-    <div className="bg-bg-card lingo-card max-w-3xl w-full mx-auto relative overflow-hidden">
+    <div className={`bg-bg-card lingo-card w-full mx-auto relative overflow-hidden flex flex-col transition-all duration-300 ${hasMedia ? 'max-w-6xl' : 'max-w-3xl'}`}>
       {/* Visual Timer Bar */}
       {!isFinished && !isAnswered && (
         <div className="absolute top-0 left-0 right-0 h-1.5 bg-bg-hover overflow-hidden">
@@ -174,24 +175,36 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
             </span>
           )}
         </div>
-        <div className="bg-bg-hover px-4 py-1.5 rounded-xl text-[9px] font-black text-text-muted uppercase tracking-widest border-2 border-border-main">
+        <div className="bg-bg-hover px-4 py-1.5 rounded-xl text-[9px] font-black text-text-muted uppercase tracking-widest border-2 border-border-main shrink-0">
           Question {currentIndex + 1} of {questions.length}
         </div>
       </div>
 
-      {currentQuestion.imageUrl && (
-        <div className="w-full mb-8 rounded-2xl overflow-hidden border-2 border-border-main shadow-sm max-h-[300px]">
-          <img src={currentQuestion.imageUrl} alt="Question illustration" className="w-full h-full object-cover" />
-        </div>
-      )}
+      <div className={`flex flex-col ${hasMedia ? 'md:flex-row md:gap-8' : ''}`}>
+        {hasMedia && (
+          <div className="w-full md:w-1/2 flex flex-col gap-6 overflow-y-auto max-h-[60vh] pr-2 md:pr-6 border-b-2 md:border-b-0 md:border-r-2 border-gray-path pb-6 md:pb-0 mb-6 md:mb-0 scroll-smooth">
+            {currentQuestion.passage && (
+              <div className="whitespace-pre-wrap text-sm md:text-base font-medium bg-gray-bg p-5 rounded-2xl border-2 border-gray-path leading-relaxed">
+                {currentQuestion.passage}
+              </div>
+            )}
+            {currentQuestion.imageUrl && (
+              <img src={currentQuestion.imageUrl} alt="Question illustration" className="w-full h-auto object-contain rounded-2xl border-2 border-gray-path" loading="lazy" />
+            )}
+            {currentQuestion.audioUrl && (
+              <audio controls src={currentQuestion.audioUrl} className="w-full focus:outline-none focus:ring-2 focus:ring-blue-500 rounded" />
+            )}
+          </div>
+        )}
 
-      <div className="mb-10">
-        <h3 className="text-2xl font-black text-text-main leading-tight">
-          {currentQuestion.text}
-        </h3>
-      </div>
+        <div className={`w-full flex flex-col ${hasMedia ? 'md:w-1/2' : ''}`}>
+          <div className="mb-8">
+            <h3 className="text-2xl font-black text-text-main leading-snug">
+              {currentQuestion.text}
+            </h3>
+          </div>
 
-      <div className="grid grid-cols-1 gap-3 mb-8">
+          <div className="grid grid-cols-1 gap-3 mb-8">
         {currentQuestion.options.map((option, idx) => {
           let btnClass = "";
           let badgeClass = "";
@@ -253,8 +266,10 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
           )}
         </div>
       )}
+      </div>
+      </div>
 
-      <div className="flex justify-between items-center pt-8 border-t-2 border-quiz-divider">
+      <div className="flex justify-between items-center pt-8 border-t-2 border-quiz-divider mt-auto">
         <button
           onClick={() => {
             if (window.confirm('Bạn có chắc muốn thoát? Tiến trình sẽ bị mất.')) {

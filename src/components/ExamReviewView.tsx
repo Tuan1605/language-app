@@ -112,10 +112,10 @@ export function ExamReviewView({ exam, answers, onClose }: ExamReviewViewProps) 
                           </div>
                         )}
                         {q.imageUrl && (
-                          <img src={q.imageUrl} alt="Question figure" className="max-w-full h-auto rounded-xl border-2 border-gray-path" />
+                          <img src={q.imageUrl} alt="Question figure" className="max-w-full h-auto rounded-xl border-2 border-gray-path" loading="lazy" />
                         )}
                         {q.audioUrl && (
-                          <audio controls src={q.audioUrl} className="w-full outline-none" />
+                          <audio controls src={q.audioUrl} className="w-full focus:outline-none focus:ring-2 focus:ring-blue-500 rounded" />
                         )}
                         {q.text && (
                           <h3 className="text-lg font-bold">{q.text}</h3>

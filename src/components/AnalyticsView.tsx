@@ -172,6 +172,85 @@ export function AnalyticsView({ results, cards, activeTrack }: AnalyticsViewProp
           )}
         </div>
       </div>
+
+      {/* Skill Breakdown */}
+      <div className="mb-12">
+        <h3 className="text-lg font-black uppercase tracking-widest text-text-main mb-6">Skill Breakdown</h3>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+          {activeTrack === 'english' ? (
+            <>
+              <SkillCard
+                label="Vocabulary"
+                learned={trackCards.filter(c => c.topic && !['Part 1', 'Part 2', 'Part 3', 'Part 4'].includes(c.topic)).length}
+                total={trackCards.length}
+                icon="📚"
+              />
+              <SkillCard
+                label="Listening"
+                learned={trackCards.filter(c => c.topic?.includes('Listening')).length}
+                total={trackCards.length}
+                icon="🎧"
+              />
+              <SkillCard
+                label="Reading"
+                learned={trackCards.filter(c => c.topic?.includes('Reading')).length}
+                total={trackCards.length}
+                icon="📖"
+              />
+              <SkillCard
+                label="Grammar"
+                learned={trackCards.filter(c => c.topic?.includes('Grammar')).length}
+                total={trackCards.length}
+                icon="✍️"
+              />
+            </>
+          ) : (
+            <>
+              <SkillCard
+                label="Vocabulary"
+                learned={trackCards.filter(c => c.category === 'n2').length}
+                total={trackCards.length}
+                icon="📚"
+              />
+              <SkillCard
+                label="Kanji"
+                learned={trackCards.filter(c => c.topic?.includes('Kanji')).length}
+                total={trackCards.length}
+                icon="🔤"
+              />
+              <SkillCard
+                label="Grammar"
+                learned={trackCards.filter(c => c.topic?.includes('Grammar')).length}
+                total={trackCards.length}
+                icon="✍️"
+              />
+              <SkillCard
+                label="Reading"
+                learned={trackCards.filter(c => c.topic?.includes('Reading')).length}
+                total={trackCards.length}
+                icon="📖"
+              />
+            </>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function SkillCard({ label, learned, total, icon }: { label: string; learned: number; total: number; icon: string }) {
+  const percentage = total > 0 ? Math.round((learned / total) * 100) : 0;
+  return (
+    <div className="bg-gray-bg border-2 border-gray-path rounded-2xl p-4 text-center">
+      <div className="text-2xl mb-2">{icon}</div>
+      <p className="text-[10px] font-black text-text-muted uppercase tracking-wider mb-1">{label}</p>
+      <p className="text-xl font-black text-text-main">{percentage}%</p>
+      <div className="w-full h-2 bg-border-main rounded-full mt-2 overflow-hidden">
+        <div
+          className={`h-full rounded-full transition-all duration-500 ${percentage >= 80 ? 'bg-green' : percentage >= 50 ? 'bg-gold' : 'bg-red'}`}
+          style={{ width: `${percentage}%` }}
+        />
+      </div>
     </div>
   );
 }

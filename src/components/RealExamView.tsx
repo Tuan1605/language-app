@@ -1,8 +1,9 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import type { AuthenticExam, Mistake, Question } from '../types';
 import { ExamTimer } from './ExamTimer';
 import { ExamReviewView } from './ExamReviewView';
 import { Modal } from './Modal';
+import { FullQuestionCard } from './FullQuestionCard';
 
 interface RealExamViewProps {
   exam: AuthenticExam;
@@ -14,6 +15,7 @@ interface RealExamViewProps {
 export function RealExamView({ exam, onCancel, onComplete, onSaveMistake }: RealExamViewProps) {
   const [currentSectionIndex, setCurrentSectionIndex] = useState(0);
   const [answers, setAnswers] = useState<Record<string, number>>({});
+  const [markedForReview, setMarkedForReview] = useState<Record<string, boolean>>({});
   const [isFinished, setIsFinished] = useState(false);
   const [showResumeModal, setShowResumeModal] = useState(false);
   const [showConfirmSubmitModal, setShowConfirmSubmitModal] = useState(false);
@@ -21,57 +23,74 @@ export function RealExamView({ exam, onCancel, onComplete, onSaveMistake }: Real
   const [initialTime, setInitialTime] = useState(exam.timeLimitMinutes * 60);
 
   const currentTimeLeftRef = useRef(exam.timeLimitMinutes * 60);
-  const backupDataRef = useRef<{ examId: string, timeLeft: number, answers: Record<string, number>, currentSectionIndex: number } | null>(null);
+  const backupDataRef = useRef<{ examId: string, timeLeft: number, answers: Record<string, number>, currentSectionIndex: number, markedForReview?: Record<string, boolean> } | null>(null);
+  const answersRef = useRef(answers);
+  const sectionIndexRef = useRef(currentSectionIndex);
+  const markedRef = useRef(markedForReview);
+
+  // Keep refs in sync with state
+  useEffect(() => { answersRef.current = answers; }, [answers]);
+  useEffect(() => { sectionIndexRef.current = currentSectionIndex; }, [currentSectionIndex]);
+  useEffect(() => { markedRef.current = markedForReview; }, [markedForReview]);
+
+  const backupKey = `real_exam_backup_${exam.id}`;
 
   useEffect(() => {
-    const saved = localStorage.getItem('real_exam_backup');
-    if (saved) {
-      try {
+    try {
+      const saved = localStorage.getItem(backupKey);
+      if (saved) {
         const parsed = JSON.parse(saved);
         if (parsed.examId === exam.id) {
           backupDataRef.current = parsed;
           setShowResumeModal(true);
           return;
         }
-      } catch { /* ignore */ }
-    }
+      }
+    } catch { /* ignore corrupted data */ }
     setBackupLoaded(true);
-  }, [exam.id]);
+  }, [exam.id, backupKey]);
 
+  // Auto-save every 5 seconds using refs to avoid stale closure
   useEffect(() => {
-    if (!isFinished && backupLoaded) {
-      const saveState = () => {
-        localStorage.setItem('real_exam_backup', JSON.stringify({
+    if (isFinished || !backupLoaded) return;
+    const interval = setInterval(() => {
+      try {
+        localStorage.setItem(backupKey, JSON.stringify({
           examId: exam.id,
           timeLeft: currentTimeLeftRef.current,
-          answers,
-          currentSectionIndex
+          answers: answersRef.current,
+          currentSectionIndex: sectionIndexRef.current,
+          markedForReview: markedRef.current
         }));
-      };
-      // Save immediately on changes
-      saveState();
-      // Also save every 5 seconds to persist time
-      const interval = setInterval(saveState, 5000);
-      return () => clearInterval(interval);
-    }
-  }, [exam.id, answers, currentSectionIndex, isFinished, backupLoaded]);
+      } catch { /* ignore QuotaExceededError */ }
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [exam.id, backupKey, isFinished, backupLoaded]);
 
   const handleTimeTick = (time: number) => {
     currentTimeLeftRef.current = time;
   };
 
-  const handleSelectAnswer = (questionId: string, optionIndex: number) => {
+  const handleSelectAnswer = useCallback((questionId: string, optionIndex: number) => {
     if (isFinished) return;
     setAnswers(prev => ({
       ...prev,
       [questionId]: optionIndex
     }));
-  };
+  }, [isFinished]);
+
+  const toggleMarkForReview = useCallback((questionId: string) => {
+    if (isFinished) return;
+    setMarkedForReview(prev => ({
+      ...prev,
+      [questionId]: !prev[questionId]
+    }));
+  }, [isFinished]);
 
   const handleFinish = () => {
     setIsFinished(true);
     setShowConfirmSubmitModal(false);
-    localStorage.removeItem('real_exam_backup');
+    try { localStorage.removeItem(backupKey); } catch { /* ignore */ }
   };
 
   const handleCloseReview = () => {
@@ -103,15 +122,17 @@ export function RealExamView({ exam, onCancel, onComplete, onSaveMistake }: Real
   }
 
   return (
-    <div className="w-full h-[85vh] flex flex-col view-enter bg-bg-main rounded-2xl border-2 border-gray-path overflow-hidden shadow-xl">
+    <div className="w-full h-[calc(100vh-8rem)] min-h-[500px] flex flex-col view-enter bg-bg-main rounded-2xl border-2 border-gray-path overflow-hidden shadow-xl">
       
-      <Modal 
-        isOpen={showResumeModal} 
+      <Modal
+        isOpen={showResumeModal}
         onClose={() => {
-          // Decline resume
-          setShowResumeModal(false);
-          setBackupLoaded(true);
-          localStorage.removeItem('real_exam_backup');
+          // Start Fresh with confirmation
+          if (window.confirm('Start fresh? This will delete your saved progress and cannot be undone.')) {
+            setShowResumeModal(false);
+            setBackupLoaded(true);
+            try { localStorage.removeItem(backupKey); } catch { /* ignore */ }
+          }
         }}
         title="Resume Previous Attempt?"
         confirmText="Yes, Resume"
@@ -124,6 +145,7 @@ export function RealExamView({ exam, onCancel, onComplete, onSaveMistake }: Real
             currentTimeLeftRef.current = parsed.timeLeft;
             setAnswers(parsed.answers || {});
             setCurrentSectionIndex(parsed.currentSectionIndex || 0);
+            setMarkedForReview(parsed.markedForReview || {});
           }
           setShowResumeModal(false);
           setBackupLoaded(true);
@@ -141,7 +163,18 @@ export function RealExamView({ exam, onCancel, onComplete, onSaveMistake }: Real
         onConfirm={handleFinish}
       >
         <p>Are you sure you want to submit your exam now?</p>
-        <p>You cannot change your answers after submission.</p>
+        {(() => {
+          const totalQ = exam.sections.reduce((a, s) => a + s.questions.length, 0);
+          const answeredQ = Object.keys(answers).length;
+          const unanswered = totalQ - answeredQ;
+          return unanswered > 0 ? (
+            <p className="text-amber-600 font-bold mt-2">
+              ⚠️ You have {unanswered} unanswered question{unanswered > 1 ? 's' : ''} that will be marked wrong.
+            </p>
+          ) : (
+            <p className="text-green-600 font-bold mt-2">✓ All questions answered.</p>
+          );
+        })()}
       </Modal>
 
       {/* Header */}
@@ -165,26 +198,57 @@ export function RealExamView({ exam, onCancel, onComplete, onSaveMistake }: Real
 
       <div className="flex flex-1 overflow-hidden">
         {/* Sidebar Navigation */}
-        <div className="w-48 border-r-2 border-gray-path bg-gray-bg p-4 overflow-y-auto hidden md:block">
-          <h3 className="font-black text-sm uppercase tracking-widest text-text-muted mb-4">Sections</h3>
-          <div className="space-y-2">
-            {exam.sections.map((sec, idx) => {
-              const isActive = idx === currentSectionIndex;
-              const isCompleted = sec.questions.every(q => answers[q.id] !== undefined);
-              return (
-                <button
-                  key={sec.id}
-                  onClick={() => setCurrentSectionIndex(idx)}
-                  className={`w-full text-left px-3 py-2 rounded-xl text-xs font-bold transition-all border-2 ${
-                    isActive ? 'bg-tint-blue text-blue border-tint-blue' :
-                    isCompleted ? 'bg-tint-green text-green-shadow border-tint-green' :
-                    'bg-transparent border-transparent hover:bg-gray-path text-text-main'
-                  }`}
-                >
-                  {sec.title}
-                </button>
-              );
-            })}
+        <div className="w-64 shrink-0 border-r-2 border-gray-path bg-gray-bg p-4 overflow-y-auto hidden md:flex flex-col gap-8">
+          <div>
+            <h3 className="font-black text-sm uppercase tracking-widest text-text-muted mb-4">Sections</h3>
+            <div className="space-y-2">
+              {exam.sections.map((sec, idx) => {
+                const isActive = idx === currentSectionIndex;
+                const isCompleted = sec.questions.every(q => answers[q.id] !== undefined);
+                return (
+                  <button
+                    key={sec.id}
+                    onClick={() => setCurrentSectionIndex(idx)}
+                    className={`w-full text-left px-3 py-2 rounded-xl text-xs font-bold transition-all border-2 ${
+                      isActive ? 'bg-tint-blue text-blue border-tint-blue' :
+                      isCompleted ? 'bg-tint-green text-green-shadow border-tint-green' :
+                      'bg-transparent border-transparent hover:bg-gray-path text-text-main'
+                    }`}
+                  >
+                    {sec.title}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+          
+          <div>
+            <div className="flex items-center justify-between mb-4">
+               <h3 className="font-black text-sm uppercase tracking-widest text-text-muted">Question Grid</h3>
+            </div>
+            <div className="grid grid-cols-5 gap-2">
+               {currentSection.questions.map((q, qIndex) => {
+                  const isAnswered = answers[q.id] !== undefined;
+                  const isMarked = markedForReview[q.id];
+                  
+                  let btnClass = "bg-bg-main border-gray-path text-text-main";
+                  if (isMarked) btnClass = "bg-tint-yellow border-yellow text-yellow-shadow";
+                  else if (isAnswered) btnClass = "bg-tint-blue border-blue text-blue";
+                  
+                  return (
+                    <button
+                      key={q.id}
+                      onClick={() => {
+                         const el = document.getElementById(`question-${q.id}`);
+                         if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                      }}
+                      className={`w-full aspect-square flex items-center justify-center rounded-lg border-2 font-bold text-xs hover:opacity-80 transition-all ${btnClass}`}
+                    >
+                      {qIndex + 1}
+                    </button>
+                  );
+               })}
+            </div>
           </div>
         </div>
 
@@ -200,54 +264,15 @@ export function RealExamView({ exam, onCancel, onComplete, onSaveMistake }: Real
 
             <div className="space-y-10">
               {currentSection.questions.map((q, qIndex) => (
-                <div key={q.id} className="p-6 rounded-[1.5rem] border-2 border-gray-path bg-bg-main shadow-sm space-y-6">
-                  <div className="flex items-start gap-4">
-                    <span className="flex items-center justify-center w-8 h-8 rounded-full bg-gray-path text-text-main font-black text-sm shrink-0">
-                      {qIndex + 1}
-                    </span>
-                    <div className="space-y-4 w-full">
-                      {q.passage && (
-                        <div className="p-4 bg-gray-bg rounded-xl border border-gray-path whitespace-pre-wrap text-sm font-medium">
-                          {q.passage}
-                        </div>
-                      )}
-                      {q.imageUrl && (
-                        <img src={q.imageUrl} alt="Question figure" className="max-w-full h-auto rounded-xl border-2 border-gray-path" />
-                      )}
-                      {q.audioUrl && (
-                        <audio controls src={q.audioUrl} className="w-full outline-none" />
-                      )}
-                      {q.text && (
-                        <h3 className="text-lg font-bold">{q.text}</h3>
-                      )}
-                    </div>
-                  </div>
-
-                  <div className="space-y-3 pl-12">
-                    {q.options.map((opt, oIdx) => {
-                      const isSelected = answers[q.id] === oIdx;
-                      const labels = ['A', 'B', 'C', 'D'];
-                      return (
-                        <button
-                          key={oIdx}
-                          onClick={() => handleSelectAnswer(q.id, oIdx)}
-                          className={`w-full flex items-center gap-4 p-4 rounded-xl border-2 transition-all active:scale-[0.98] ${
-                            isSelected 
-                              ? 'bg-tint-blue border-blue text-blue' 
-                              : 'bg-bg-main border-gray-path hover:bg-gray-bg text-text-main'
-                          }`}
-                        >
-                          <span className={`flex items-center justify-center w-8 h-8 rounded-lg font-black text-sm border-2 ${
-                            isSelected ? 'border-blue bg-blue text-white' : 'border-gray-path'
-                          }`}>
-                            {labels[oIdx]}
-                          </span>
-                          <span className="font-bold text-left flex-1">{opt}</span>
-                        </button>
-                      );
-                    })}
-                  </div>
-                </div>
+                <FullQuestionCard
+                  key={q.id}
+                  question={q} // @ts-ignore - force IDE refresh
+                  questionIndex={qIndex}
+                  userAnswer={answers[q.id]}
+                  isMarked={markedForReview[q.id] || false}
+                  onSelect={handleSelectAnswer}
+                  onToggleMark={toggleMarkForReview}
+                />
               ))}
             </div>
 

@@ -138,7 +138,7 @@ export function VocabQuizView({ word, allCards, onComplete, onSaveMistake }: Voc
         </div>
         {word.imageUrl && (
            <div className="w-40 h-40 mx-auto rounded-2xl overflow-hidden border-2 border-border-main shadow-sm">
-              <img src={word.imageUrl} alt={word.word} className="w-full h-full object-cover" />
+               <img src={word.imageUrl} alt={word.word} className="w-full h-full object-cover" loading="lazy" />
            </div>
         )}
       </div>

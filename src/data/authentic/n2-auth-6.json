@@ -1,0 +1,87 @@
+{
+  "id": "n2-auth-6",
+  "title": "JLPT N2 Practice Test 6",
+  "difficulty": "intermediate",
+  "year": 2024,
+  "category": "n2",
+  "timeLimitMinutes": 105,
+  "sections": [
+    {
+      "id": "n2a6-sec-1",
+      "title": "言語知識（文字・語彙）",
+      "description": "Kiến thức ngôn ngữ",
+      "questions": [
+        {"id":"n2a6-v1","text":"環境問題の【解決策】を提案する。","options":["A. かいけつさく","B. かいけつさくう","C. かいけつさくお","D. かいけつさくい"],"correctAnswer":0,"explanation":"解決策 = かいけつさく (giải pháp)."},
+        {"id":"n2a6-v2","text":"技術の【可能性】を追求する。","options":["A. かのうせい","B. かのうせいう","C. かのうせいお","D. かのうせいい"],"correctAnswer":0,"explanation":"可能性 = かのうせい (khả năng)."},
+        {"id":"n2a6-v3","text":"社会の【変化】に適応する。","options":["A. へんか","B. へんかう","C. へんかお","D. へんかい"],"correctAnswer":0,"explanation":"変化 = へんか (thay đổi)."},
+        {"id":"n2a6-v4","text":"彼の【知識】は很有豊富だ。","options":["A. ちしき","B. ちしきう","C. ちしきお","D. ちしきい"],"correctAnswer":0,"explanation":"知識 = ちしき (kiến thức)."},
+        {"id":"n2a6-v5","text":"技術の【革新】を推進する。","options":["A. かくしん","B. かくしんう","C. かくしんお","D. かくしんい"],"correctAnswer":0,"explanation":"革新 = かくしん (đổi mới)."},
+        {"id":"n2a6-v6","text":"彼は很有【忍耐力】がある。","options":["A. にんたいりょく","B. にんたいりょくう","C. にんたいりょくお","D. にんたいりょくい"],"correctAnswer":0,"explanation":"忍耐力 = にんたいりょく (sức kiên nhẫn)."},
+        {"id":"n2a6-v7","text":"社会の【発展】に貢献する。","options":["A. はってん","B. はってんう","C. はってんお","D. はってんい"],"correctAnswer":0,"explanation":"発展 = はってん (phát triển)."},
+        {"id":"n2a6-v8","text":"技術の【進歩】を遂げる。","options":["A. しんぽ","B. しんぽう","C. しんぽお","D. しんぽい"],"correctAnswer":0,"explanation":"進歩 = しんぽ (tiến bộ)."},
+        {"id":"n2a6-v9","text":"彼の【主張】は很有説得力がある。","options":["A. しゅちょう","B. しゅちょうう","C. しゅちょうお","D. しゅちょうい"],"correctAnswer":0,"explanation":"主張 = しゅちょう (quan điểm)."},
+        {"id":"n2a6-v10","text":"社会の【変動】に備える。","options":["A. へんどう","B. へんどうう","C. へんどうお","D. へんどうい"],"correctAnswer":0,"explanation":"変動 = へんどう (biến động)."},
+        {"id":"n2a6-v11","text":"技術の【発展】に寄与する。","options":["A. はってん","B. はってんう","C. はってんお","D. はってんい"],"correctAnswer":0,"explanation":"発展 = はってん (phát triển)."},
+        {"id":"n2a6-v12","text":"彼の【創造性】は很有高い。","options":["A. そうぞうせい","B. そうぞうせいう","C. そうぞうせいお","D. そうぞうせいい"],"correctAnswer":0,"explanation":"創造性 = そうぞうせい (tính sáng tạo)."},
+        {"id":"n2a6-v13","text":"技術の【進化】が加速している。","options":["A. しんか","B. しんかう","C. しんかお","D. しんかい"],"correctAnswer":0,"explanation":"進化 = しんか (tiến hóa)."},
+        {"id":"n2a6-v14","text":"社会の【多様性】を尊重する。","options":["A. たようせい","B. たようせいう","C. たようせいお","D. たようせいい"],"correctAnswer":0,"explanation":"多様性 = たようせい (tính đa dạng)."},
+        {"id":"n2a6-v15","text":"彼の【分析力】は很有高い。","options":["A. ぶんせきりょく","B. ぶんせきりょくう","C. ぶんせきりょくお","D. ぶんせきりょくい"],"correctAnswer":0,"explanation":"分析力 = ぶんせきりょく (năng lực phân tích)."},
+        {"id":"n2a6-v16","text":"環境問題の【原因】を究明する。","options":["A. げんいん","B. げんし","C. げんすう","D. げんぞう"],"correctAnswer":0,"explanation":"原因 = げんいん (nguyên nhân)."},
+        {"id":"n2a6-v17","text":"彼は很有【想像力】がある。","options":["A. そうぞうりょく","B. そうぞうりょくう","C. そうぞうりょくお","D. そうぞうりょくい"],"correctAnswer":0,"explanation":"想像力 = そうぞうりょく (trí tưởng tượng)."},
+        {"id":"n2a6-v18","text":"技術の【可能性】を模索する。","options":["A. かのうせい","B. かのうせいう","C. かのうせいお","D. かのうせいい"],"correctAnswer":0,"explanation":"可能性 = かのうせい (khả năng)."},
+        {"id":"n2a6-v19","text":"社会の【変動】に対応する。","options":["A. へんどう","B. へんどうう","C. へんどうお","D. へんどうい"],"correctAnswer":0,"explanation":"変動 = へんどう (biến động)."},
+        {"id":"n2a6-v20","text":"技術の【革新】が進んでいる。","options":["A. かくしん","B. かくしんう","C. かくしんお","D. かくしんい"],"correctAnswer":0,"explanation":"革新 = かくしん (đổi mới)."},
+        {"id":"n2a6-v21","text":"彼は很有【協調性】がある。","options":["A. きょうちょうせい","B. きょうちょうせいう","C. きょうちょうせいお","D. きょうちょうせいい"],"correctAnswer":0,"explanation":"協調性 = きょうちょうせい (tính phối hợp)."},
+        {"id":"n2a6-v22","text":"環境問題の【重要性】を理解する。","options":["A. じゅうようせい","B. じゅうようしょう","C. じゅうようせいう","D. じゅうようせいお"],"correctAnswer":0,"explanation":"重要性 = じゅうようせい (tầm quan trọng)."},
+        {"id":"n2a6-v23","text":"彼は很有【計画性】がある。","options":["A. けいかくせい","B. けいかくせいう","C. けいかくせいお","D. けいかくせいい"],"correctAnswer":0,"explanation":"計画性 = けいかくせい (tính có kế hoạch)."},
+        {"id":"n2a6-v24","text":"技術の【発展】に貢献する。","options":["A. はってん","B. はってんう","C. はってんお","D. はってんい"],"correctAnswer":0,"explanation":"発展 = はってん (phát triển)."},
+        {"id":"n2a6-v25","text":"彼の【表現力】は很有豊かだ。","options":["A. ひょうげんりょく","B. ひょうげんりょくう","C. ひょうげんりょくお","D. ひょうげんりょくい"],"correctAnswer":0,"explanation":"表現力 = ひょうげんりょく (khả năng diễn đạt)."},
+        {"id":"n2a6-v26","text":"技術の【進化】を促進する。","options":["A. しんか","B. しんかう","C. しんかお","D. しんかい"],"correctAnswer":0,"explanation":"進化 = しんか (tiến hóa)."},
+        {"id":"n2a6-v27","text":"社会の【発展】に寄与する。","options":["A. はってん","B. はってんう","C. はってんお","D. はってんい"],"correctAnswer":0,"explanation":"発展 = はってん (phát triển)."},
+        {"id":"n2a6-v28","text":"技術の【可能性】を追求する。","options":["A. かのうせい","B. かのうせいう","C. かのうせいお","D. かのうせいい"],"correctAnswer":0,"explanation":"可能性 = かのうせい (khả năng)."},
+        {"id":"n2a6-v29","text":"彼の【主張】は很有説得力がある。","options":["A. しゅちょう","B. しゅちょうう","C. しゅちょうお","D. しゅちょうい"],"correctAnswer":0,"explanation":"主張 = しゅちょう (quan điểm)."},
+        {"id":"n2a6-v30","text":"社会の【変化】に適応する。","options":["A. へんか","B. へんかう","C. へんかお","D. へんかい"],"correctAnswer":0,"explanation":"変化 = へんか (thay đổi)."}
+      ]
+    },
+    {
+      "id": "n2a6-sec-2",
+      "title": "言語知識（文法）・読解",
+      "description": "Ngữ pháp & Đọc hiểu",
+      "questions": [
+        {"id":"n2a6-g1","text":"彼は努力した_____、成果が出なかった。","options":["A. にもかかわらず","B. ために","C. にとって","D. について"],"correctAnswer":0,"explanation":"にもかかわらず = mặc dù."},
+        {"id":"n2a6-g2","text":"この本は読む_____、很有勉強になる。","options":["A. たびに","B. つど","C. ごと","D. どおり"],"correctAnswer":0,"explanation":"たびに = mỗi khi."},
+        {"id":"n2a6-g3","text":"彼の意見に_____、反対する人はいない。","options":["A. 反して","B. 対して","C. して","D. について"],"correctAnswer":0,"explanation":"反して = trái ngược."},
+        {"id":"n2a6-g4","text":"新しい技術_____、製品の品質が向上した。","options":["A. によって","B. にとって","C. について","D. に対して"],"correctAnswer":0,"explanation":"によって = do, bởi."},
+        {"id":"n2a6-g5","text":"彼は会社_____、很有貢献している。","options":["A. に","B. を","C. で","D. が"],"correctAnswer":0,"explanation":"に = cho."},
+        {"id":"n2a6-g6","text":"環境問題_____、みんなで取り組むべきだ。","options":["A. に関して","B. に対して","C. について","D. にとって"],"correctAnswer":0,"explanation":"に関して = liên quan đến."},
+        {"id":"n2a6-g7","text":"彼の説明は_____、分かりやすかった。","options":["A. 具体的に","B. 抽象的に","C. 一般的に","D. 根本的に"],"correctAnswer":0,"explanation":"具体的に = một cách cụ thể."},
+        {"id":"n2a6-g8","text":"この問題_____、解決策を考える必要がある。","options":["A. をめぐって","B. について","C. に対して","D. にとって"],"correctAnswer":0,"explanation":"をめぐって = xung quanh."},
+        {"id":"n2a6-g9","text":"彼の成功_____、努力が実を結んだ。","options":["A. の背景には","B. の結果","C. の原因","D. の目的"],"correctAnswer":0,"explanation":"の背景には = đằng sau."},
+        {"id":"n2a6-g10","text":"技術の進歩_____、社会が変化している。","options":["A. に伴って","B. にとって","C. に対して","D. について"],"correctAnswer":0,"explanation":"に伴って = cùng với."},
+        {"id":"n2a6-r1","text":"以下の文章を読んで、質問に答えなさい。\n\nDX（デジタルトランスフォーメーション）が企業の業務改革を加速している。クラウドコンピューティング、AI、IoTなどの技術を活用し、従来の業務プロセスを根本から見直す取り組みが進んでいる。\n\nDXの成功には、技術導入だけでなく、組織文化の変革や人材育成が不可欠である。従業員のデジタルリテラシーを向上させ、新しい働き方を定着させることが重要だ。\n\n一方で、DX推進には課題もある。システム投資の費用対効果、セキュリティリスク、従業員の抵抗感など、解決すべき課題は多い。\n\n質問：DXの成功に必要なものは何か。","options":["A. 技術導入のみ","B. 組織文化の変革と人材育成","C. システム投資の削減","D. 従業員の减少"],"correctAnswer":1,"explanation":"本文に「技術導入だけでなく、組織文化の変革や人材育成が不可欠」とある。"},
+        {"id":"n2a6-r2","text":"質問：DX推進の課題として述べられていないものはどれか。","options":["A. システム投資の費用対効果","B. セキュリティリスク","C. 従業員の抵抗感","D. 顧客の満足度"],"correctAnswer":3,"explanation":"顧客の満足度については触れられていない。"},
+        {"id":"n2a6-r3","text":"質問：DXとは何か。","options":["A. 新製品の開発","B. デジタル技術を活用した業務改革","C. 海外市場への進出","D. 従業員の減量"],"correctAnswer":1,"explanation":"DXはデジタル技術を活用した業務改革。"},
+        {"id":"n2a6-r4","text":"以下の文章を読んで、質問に答えなさい。\n\n日本の食料自給率は48%と、先進国の中で非常に低い。多くの食料を海外に頼っている状態は、安全保障上も問題である。\n\n政府は、国内農業の振興、新規就農者の支援、農業技術の革新など、様々な対策を講じている。特にスマート農業の導入が進んでおり、ドローンやセンサー技術を活用した効率的な農業が注目されている。\n\nしかし、農業従事者の高齢化が深刻で、後継者不足が問題となっている。農業の担い手を確保することが急務である。\n\n質問：日本の食料自給率はいくらか。","options":["A. 38%","B. 48%","C. 58%","D. 68%"],"correctAnswer":1,"explanation":"本文に「食料自給率は48%」とある。"},
+        {"id":"n2a6-r5","text":"質問：スマート農業で使われている技術として述べられていないものはどれか。","options":["A. ドローン","B. センサー技術","C. AI","D. ロボット"],"correctAnswer":2,"explanation":"AIについては触れられていない。"},
+        {"id":"n2a6-r6","text":"質問：農業の最大の課題として述べられているのは何か。","options":["A. 技術の不足","B. 担い手の高齢化と後継者不足","C. 土地の不足","D. 気候変動"],"correctAnswer":1,"explanation":"本文に「農業従事者の高齢化が深刻で、後継者不足が問題」とある。"}
+      ]
+    },
+    {
+      "id": "n2a6-sec-3",
+      "title": "聴解",
+      "description": "Nghe hiểu",
+      "questions": [
+        {"id":"n2a6-l1","passage":"男：来月の社員旅行の行き先、決まりましたか。","text":"社員旅行の行き先はどうなっているか。","options":["A. 決まった","B. 決まっていない","C. 決まったが変更された","D. 中止された"],"correctAnswer":1,"explanation":"社員旅行の行き先はまだ決まっていない。"},
+        {"id":"n2a6-l2","passage":"女：この書類、部長に見ていただけますか。\n男：部長は今出張中なので、戻り次第見ていただきます。","text":"部長はいつ書類を見られるか。","options":["A. 今すぐ","B. 出張から戻り次第","C. 明日","D. 来週"],"correctAnswer":1,"explanation":"部長は出張から戻り次第書類を見る。"},
+        {"id":"n2a6-l3","passage":"男：新製品の発売日、いつになりましたか。","text":"新製品はいつ発売されるか。","options":["A. 今月の末","B. 来月の初め","C. 来月の半ば","D. 来月末"],"correctAnswer":2,"explanation":"新製品は来月の半ばに発売される。"},
+        {"id":"n2a6-l4","passage":"女：このプロジェクトの進捗状況、報告していただけますか。","text":"女の人は何と言っているか。","options":["A. プロジェクトを中止してほしい","B. 進捗状況を報告してほしい","C. プロジェクトを開始してほしい","D. プロジェクトのメンバーを変えたい"],"correctAnswer":1,"explanation":"女の人は進捗状況を報告してほしいと言っている。"},
+        {"id":"n2a6-l5","passage":"男：来週の会議、参加人数は何人ですか。","text":"会議には何人が参加するか。","options":["A. 5人","B. 8人","C. 10人","D. 12人"],"correctAnswer":2,"explanation":"会議には10人が参加する。"},
+        {"id":"n2a6-l6","passage":"女：来年の新人研修、今年はどうしますか。\n男：去年は3日間の研修でしたけど、今年は1週間に延長する方針です。","text":"新人研修は何日間か。","options":["A. 2日間","B. 3日間","C. 5日間","D. 1週間"],"correctAnswer":3,"explanation":"新人研修は1週間に延長される。"},
+        {"id":"n2a6-l7","passage":"男：このプロジェクトのメンバー、追加で2人増やしていただけますか。\n女：承知しました。人事部に相談して、来週までに対応します。","text":"女の人はどうすると言っているか。","options":["A. メンバーを減らす","B. 人事部に相談する","C. プロジェクトを中止する","D. 自分で対応する"],"correctAnswer":1,"explanation":"女の人は人事部に相談すると言っている。"},
+        {"id":"n2a6-l8","passage":"女：先日の会議の議事録、確認していただけますか。\n男：はい、午後中には確認します。修正点があればメールで連絡しますね。","text":"男の人はどうすると言っているか。","options":["A. 議事録を書き直す","B. 午後中に確認する","C. 明日確認する","D. 議事録を見ない"],"correctAnswer":1,"explanation":"男の人は午後中に確認すると言っている。"},
+        {"id":"n2a6-l9","passage":"女：クライアントからの要望を整理したメール、送りましたよ。\n男：ありがとうございます。確認して、明日までに返信します。","text":"男の人はいつ返信すると言っているか。","options":["A. 今日中に","B. 明日までに","C. 来週までに","D. 今週末までに"],"correctAnswer":1,"explanation":"男の人は明日までに返信すると言っている。"},
+        {"id":"n2a6-l10","passage":"男：来月の忘年会、場所はどこにしますか。\n女：去年と同じレストランはどうですか。予約を取りますよ。","text":"女の人はどうすると言っているか。","options":["A. 場所を変える","B. 予約を取る","C. 忘年会を中止する","D. 男の人に任せる"],"correctAnswer":1,"explanation":"女の人は予約を取ると言っている。"}
+      ]
+    }
+  ]
+}

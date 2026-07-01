@@ -1,0 +1,82 @@
+[
+  {
+    "id": "tq-adv-701",
+    "type": "reading-comprehension",
+    "category": "toeic",
+    "subCategory": "Đọc hiểu đoạn kép (Part 7)",
+    "passage": "\n[Email 1]\nTo: All Employees\nFrom: Human Resources\nDate: May 12\nSubject: Annual Health Check-up\n\nThis is a reminder that the annual company health check-up will take place next Wednesday, May 20, in the first-floor conference room from 9:00 AM to 3:00 PM. Please review the attached schedule to find your designated time slot. If you have a scheduling conflict, contact HR by May 15.\n\nAttachment: checkup_schedule.pdf\n\n---\n\n[Email 2]\nTo: Human Resources\nFrom: Sarah Jenkins\nDate: May 14\nSubject: Re: Annual Health Check-up\n\nI am scheduled for my health check-up at 10:30 AM on May 20. However, I have an important client meeting from 10:00 AM to 11:30 AM that I cannot reschedule. Is it possible for me to come in the afternoon instead? I am free any time after 1:00 PM.\n",
+    "question": "What is the purpose of the first email?",
+    "options": [
+      "To announce a new health insurance policy",
+      "To remind employees about an upcoming event",
+      "To request a meeting with the HR department",
+      "To provide the results of a medical exam"
+    ],
+    "correctAnswer": 1,
+    "explanation": "The first email states 'This is a reminder that the annual company health check-up will take place...'"
+  },
+  {
+    "id": "tq-adv-702",
+    "type": "reading-comprehension",
+    "category": "toeic",
+    "subCategory": "Đọc hiểu đoạn kép (Part 7)",
+    "passage": "\n[Email 1]\nTo: All Employees\nFrom: Human Resources\nDate: May 12\nSubject: Annual Health Check-up\n\nThis is a reminder that the annual company health check-up will take place next Wednesday, May 20, in the first-floor conference room from 9:00 AM to 3:00 PM. Please review the attached schedule to find your designated time slot. If you have a scheduling conflict, contact HR by May 15.\n\nAttachment: checkup_schedule.pdf\n\n---\n\n[Email 2]\nTo: Human Resources\nFrom: Sarah Jenkins\nDate: May 14\nSubject: Re: Annual Health Check-up\n\nI am scheduled for my health check-up at 10:30 AM on May 20. However, I have an important client meeting from 10:00 AM to 11:30 AM that I cannot reschedule. Is it possible for me to come in the afternoon instead? I am free any time after 1:00 PM.\n",
+    "question": "What does Sarah Jenkins want to do?",
+    "options": [
+      "Cancel her health check-up entirely",
+      "Change the time of her appointment",
+      "Reschedule her client meeting",
+      "Meet with the HR manager at 1:00 PM"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Sarah writes 'Is it possible for me to come in the afternoon instead?' indicating she wants to change her appointment time."
+  },
+  {
+    "id": "tq-adv-703",
+    "type": "reading-comprehension",
+    "category": "toeic",
+    "subCategory": "Đọc hiểu đoạn kép (Part 7)",
+    "passage": "\n[Email 1]\nTo: All Employees\nFrom: Human Resources\nDate: May 12\nSubject: Annual Health Check-up\n\nThis is a reminder that the annual company health check-up will take place next Wednesday, May 20, in the first-floor conference room from 9:00 AM to 3:00 PM. Please review the attached schedule to find your designated time slot. If you have a scheduling conflict, contact HR by May 15.\n\nAttachment: checkup_schedule.pdf\n\n---\n\n[Email 2]\nTo: Human Resources\nFrom: Sarah Jenkins\nDate: May 14\nSubject: Re: Annual Health Check-up\n\nI am scheduled for my health check-up at 10:30 AM on May 20. However, I have an important client meeting from 10:00 AM to 11:30 AM that I cannot reschedule. Is it possible for me to come in the afternoon instead? I am free any time after 1:00 PM.\n",
+    "question": "Did Sarah Jenkins contact HR before the deadline mentioned in the first email?",
+    "options": [
+      "Yes, because she sent her email on May 14.",
+      "Yes, because her meeting is on May 20.",
+      "No, because the deadline was May 12.",
+      "No, because she needs an afternoon slot."
+    ],
+    "correctAnswer": 0,
+    "explanation": "The first email says to contact HR by May 15. Sarah sent her email on May 14, so she met the deadline."
+  },
+  {
+    "id": "tq-adv-704",
+    "type": "multiple-choice",
+    "category": "toeic",
+    "subCategory": "Nghe hiểu có hình ảnh (Part 3)",
+    "question": "Look at the graphic. Which gate does the man need to go to?",
+    "options": [
+      "Gate 12",
+      "Gate 14",
+      "Gate 15",
+      "Gate 22"
+    ],
+    "correctAnswer": 3,
+    "explanation": "[Transcript]\n\n[Audio Transcript - For TTS System]\nMan: Hi, I'm looking for the departure gate for flight QZ442 to London. My ticket says Gate 15, but there's no one there.\nWoman: Let me check the system for you. Ah, I see. There was a gate change announced 10 minutes ago. Flight QZ442 has been moved due to a maintenance issue at Gate 15.\nMan: Oh, I see. Where do I need to go now?\nWoman: Please look at the departures board over there. It will show you the updated gate number. It's in Terminal B.\n\n[Graphic on Screen]\nDEPARTURES\nDestination | Flight | Time  | Gate\nParis       | AF102  | 10:00 | 12\nTokyo       | JL305  | 10:30 | 14\nLondon      | QZ442  | 11:00 | 22\nNew York    | UA998  | 11:15 | 18\n\n\nThe man is looking for flight QZ442 to London. The graphic shows that flight QZ442 departs from Gate 22.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+  },
+  {
+    "id": "tq-adv-705",
+    "type": "multiple-choice",
+    "category": "toeic",
+    "subCategory": "Nghe hiểu có hình ảnh (Part 3)",
+    "question": "Why was the gate changed?",
+    "options": [
+      "Because the flight was delayed",
+      "Because of a maintenance issue",
+      "Because the plane was too large",
+      "Because of bad weather"
+    ],
+    "correctAnswer": 1,
+    "explanation": "[Transcript]\n\n[Audio Transcript - For TTS System]\nMan: Hi, I'm looking for the departure gate for flight QZ442 to London. My ticket says Gate 15, but there's no one there.\nWoman: Let me check the system for you. Ah, I see. There was a gate change announced 10 minutes ago. Flight QZ442 has been moved due to a maintenance issue at Gate 15.\nMan: Oh, I see. Where do I need to go now?\nWoman: Please look at the departures board over there. It will show you the updated gate number. It's in Terminal B.\n\n[Graphic on Screen]\nDEPARTURES\nDestination | Flight | Time  | Gate\nParis       | AF102  | 10:00 | 12\nTokyo       | JL305  | 10:30 | 14\nLondon      | QZ442  | 11:00 | 22\nNew York    | UA998  | 11:15 | 18\n\n\nThe woman says the flight was moved 'due to a maintenance issue at Gate 15'.",
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+  }
+]

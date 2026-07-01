@@ -1,0 +1,2610 @@
+{
+  "id": "toeic-auth-2",
+  "title": "TOEIC Practice Exam 2",
+  "difficulty": "intermediate",
+  "year": 2024,
+  "category": "toeic",
+  "timeLimitMinutes": 120,
+  "sections": [
+    {
+      "id": "t2-sec-1",
+      "title": "Part 1: Photographs",
+      "description": "Look at the photograph and choose the statement that best describes it.",
+      "questions": [
+        {
+          "id": "t2-p1-1",
+          "text": "Look at the picture and choose the correct statement.",
+          "imageUrl": "https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&q=80&w=400",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)",
+            "(D)"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Mô tả đúng là người đàn ông đang trình bày trước khán giả.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p1-2",
+          "text": "Look at the picture and choose the correct statement.",
+          "imageUrl": "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=400",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)",
+            "(D)"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Hình ảnh cho thấy một nhóm người ngồi quanh bàn họp.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p1-3",
+          "text": "Look at the picture and choose the correct statement.",
+          "imageUrl": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=400",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)",
+            "(D)"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Các kệ hàng được trưng bày đầy đủ sản phẩm.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p1-4",
+          "text": "Look at the picture and choose the correct statement.",
+          "imageUrl": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&q=80&w=400",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)",
+            "(D)"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Nhân viên đang trò chuyện gần máy nước uống.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p1-5",
+          "text": "Look at the picture and choose the correct statement.",
+          "imageUrl": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&q=80&w=400",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)",
+            "(D)"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Người lao động đang xem xét tài liệu trên bàn.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p1-6",
+          "text": "Look at the picture and choose the correct statement.",
+          "imageUrl": "https://images.unsplash.com/photo-1497215842964-222b430dc094?auto=format&fit=crop&q=80&w=400",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)",
+            "(D)"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Sảnh có nội thất và trang trí hiện đại.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        }
+      ]
+    },
+    {
+      "id": "t2-sec-2",
+      "title": "Part 2: Question-Response",
+      "description": "Listen to a question and 3 possible responses. Choose the best response.",
+      "questions": [
+        {
+          "id": "t2-p2-1",
+          "text": "Where should I submit the quarterly report?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Câu hỏi \"Where\" yêu cầu nơi chốn. Đáp án A nêu rõ địa điểm.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p2-2",
+          "text": "Who is responsible for the marketing budget?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Câu hỏi \"Who\" yêu cầu người. Đáp án B nêu người phụ trách.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p2-3",
+          "text": "How often are performance reviews conducted?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Câu hỏi \"How often\" yêu cầu tần suất.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p2-4",
+          "text": "Can you send me the updated client list?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Đáp án B chấp nhận yêu cầu và hứa gửi ngay.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p2-5",
+          "text": "What time does the training session start?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Câu hỏi \"What time\" yêu cầu thời gian.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p2-6",
+          "text": "Has the shipment arrived yet?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Đáp án A trả lời về thời gian lô hàng đến.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p2-7",
+          "text": "Why was the meeting postponed?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Câu hỏi \"Why\" yêu cầu lý do. Đáp án B đưa ra nguyên nhân.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p2-8",
+          "text": "Do you know when the office closes today?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Đáp án A cho biết giờ đóng cửa.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p2-9",
+          "text": "Which department should handle this complaint?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Câu hỏi \"Which department\" yêu cầu bộ phận. Đáp án B nêu rõ.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p2-10",
+          "text": "Are there any vacancies for a sales associate?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Đáp án B trả lời trực tiếp \"yes\" và cho biết số vị trí trống.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p2-11",
+          "text": "How much does the annual subscription cost?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Câu hỏi \"How much\" yêu cầu giá tiền.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p2-12",
+          "text": "Would you like to attend the workshop?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Đáp án C chấp nhận lời mời một cách lịch sự.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p2-13",
+          "text": "When is the deadline for the proposal?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Câu hỏi \"When\" yêu cầu thời hạn.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p2-14",
+          "text": "Who approved the purchase order?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Câu hỏi \"Who\" yêu cầu người. Đáp án A nêu rõ người phê duyệt.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p2-15",
+          "text": "Is there a parking garage near the office?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Đáp án A xác nhận có bãi đỗ xe và cho biết vị trí.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p2-16",
+          "text": "How do I connect to the office Wi-Fi?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Đáp án B hướng dẫn cách kết nối.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p2-17",
+          "text": "What will the new software update include?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Câu hỏi \"What\" yêu cầu thông tin. Đáp án A mô tả nội dung cập nhật.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p2-18",
+          "text": "Where can I find the supply closet?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Câu hỏi \"Where\" yêu cầu nơi chốn.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p2-19",
+          "text": "Did you receive the contract revisions?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Đáp án A xác nhận đã nhận và xem xét.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p2-20",
+          "text": "Why was the order canceled?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Câu hỏi \"Why\" yêu cầu lý do. Đáp án A đưa ra nguyên nhân.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p2-21",
+          "text": "How long is the probationary period?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Câu hỏi \"How long\" yêu cầu thời gian. Đáp án B cho biết 3 tháng.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p2-22",
+          "text": "Can the vendor deliver by Friday?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Đáp án B trả lời về khả năng giao hàng.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p2-23",
+          "text": "Where did you put the filing cabinet?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Câu hỏi \"Where\" yêu cầu nơi đặt tủ hồ sơ.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p2-24",
+          "text": "Have the taxes been filed yet?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Đáp án B xác nhận đã nộp thuế và cho biết thời gian.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p2-25",
+          "text": "Who should I contact about the invoice error?",
+          "options": [
+            "(A)",
+            "(B)",
+            "(C)"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Đáp án B hướng dẫn liên hệ bộ phận kế toán thanh toán.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        }
+      ]
+    },
+    {
+      "id": "t2-sec-3",
+      "title": "Part 3: Conversations",
+      "description": "Listen to a conversation and answer 3 questions.",
+      "questions": [
+        {
+          "id": "t2-p3-1",
+          "text": "What are the speakers discussing?",
+          "options": [
+            "A. A client meeting",
+            "B. New project guidelines",
+            "C. A printing error",
+            "D. The office schedule"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nMan: Have you seen the new project guidelines? They arrived this morning.\nWoman: Yes, I printed them out. There are some significant changes to the timeline.\nMan: Really? I thought we were on schedule.\nWoman: The client wants to move the launch date up by two weeks.\n\nHọ đang thảo luận về các hướng dẫn dự án mới.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p3-2",
+          "text": "What change does the client want?",
+          "options": [
+            "A. A bigger budget",
+            "B. A different team",
+            "C. An earlier launch date",
+            "D. More testing time"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nMan: Have you seen the new project guidelines? They arrived this morning.\nWoman: Yes, I printed them out. There are some significant changes to the timeline.\nMan: Really? I thought we were on schedule.\nWoman: The client wants to move the launch date up by two weeks.\n\nKhách hàng muốn đẩy ngày ra mắt lên sớm hơn hai tuần.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p3-3",
+          "text": "How does the man initially react?",
+          "options": [
+            "A. He is excited about the changes.",
+            "B. He is surprised by the news.",
+            "C. He already knew about it.",
+            "D. He is angry at the client."
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nMan: Have you seen the new project guidelines? They arrived this morning.\nWoman: Yes, I printed them out. There are some significant changes to the timeline.\nMan: Really? I thought we were on schedule.\nWoman: The client wants to move the launch date up by two weeks.\n\nNgười đàn ông tỏ ra ngạc nhiên vì nghĩ rằng dự án đang đúng tiến độ.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p3-4",
+          "text": "What is the man's purpose?",
+          "options": [
+            "A. To check in at the hotel",
+            "B. To cancel a reservation",
+            "C. To reserve a conference room",
+            "D. To order room service"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nWoman: Good morning, this is Greenfield Hotel. How may I help you?\nMan: I'd like to book a conference room for next Thursday, please.\nWoman: For how many people?\nMan: About thirty. We also need a projector and a microphone.\n\nNgười đàn ông muốn đặt phòng hội nghị.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p3-5",
+          "text": "What equipment does the man need?",
+          "options": [
+            "A. A printer and scanner",
+            "B. A projector and microphone",
+            "C. A whiteboard and markers",
+            "D. A coffee machine and cups"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nWoman: Good morning, this is Greenfield Hotel. How may I help you?\nMan: I'd like to book a conference room for next Thursday, please.\nWoman: For how many people?\nMan: About thirty. We also need a projector and a microphone.\n\nÔng ấy cần máy chiếu và micro.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p3-6",
+          "text": "How many people will attend?",
+          "options": [
+            "A. About ten",
+            "B. About twenty",
+            "C. About thirty",
+            "D. About forty"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nWoman: Good morning, this is Greenfield Hotel. How may I help you?\nMan: I'd like to book a conference room for next Thursday, please.\nWoman: For how many people?\nMan: About thirty. We also need a projector and a microphone.\n\nÔng ấy nói có khoảng ba mươi người.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p3-7",
+          "text": "What is the man calling about?",
+          "options": [
+            "A. Placing a new order",
+            "B. A late delivery",
+            "C. A billing issue",
+            "D. Returning a product"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nMan: Hi, I'm calling about my order number 5520. It was supposed to arrive yesterday.\nWoman: Let me look that up for you. It seems there was a delay at the shipping facility.\nMan: I need it by tomorrow. Can you expedite the delivery?\nWoman: I'll see what I can do. Can you hold for a moment?\n\nÔng ấy gọi về việc giao hàng bị trễ.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p3-8",
+          "text": "Why was the order delayed?",
+          "options": [
+            "A. The item was out of stock.",
+            "B. There was a shipping facility delay.",
+            "C. The man entered the wrong address.",
+            "D. The courier lost the package."
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nMan: Hi, I'm calling about my order number 5520. It was supposed to arrive yesterday.\nWoman: Let me look that up for you. It seems there was a delay at the shipping facility.\nMan: I need it by tomorrow. Can you expedite the delivery?\nWoman: I'll see what I can do. Can you hold for a moment?\n\nĐơn hàng bị trễ do chậm trễ tại cơ sở vận chuyển.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p3-9",
+          "text": "What does the woman ask the man to do?",
+          "options": [
+            "A. Provide his credit card number",
+            "B. Wait on the line",
+            "C. Call back later",
+            "D. Visit the store in person"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nMan: Hi, I'm calling about my order number 5520. It was supposed to arrive yesterday.\nWoman: Let me look that up for you. It seems there was a delay at the shipping facility.\nMan: I need it by tomorrow. Can you expedite the delivery?\nWoman: I'll see what I can do. Can you hold for a moment?\n\nNgười phụ nữ yêu cầu người đàn ông giữ máy trong giây lát.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p3-10",
+          "text": "Where can the woman find the figures?",
+          "options": [
+            "A. In the Finance folder on the shared drive",
+            "B. On the company's website",
+            "C. In the marketing department",
+            "D. In the printed newsletter"
+          ],
+          "correctAnswer": 0,
+          "explanation": "[Transcript]\nWoman: Do you have the sales figures for last quarter?\nMan: Yes, they are in the shared drive under the Finance folder.\nWoman: Great. I need to include them in my presentation for the board meeting.\nMan: The numbers look good. Revenue is up twelve percent.\n\nSố liệu nằm trong thư mục Finance trên ổ đĩa chung.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p3-11",
+          "text": "What is the revenue change?",
+          "options": [
+            "A. Down 12%",
+            "B. Up 12%",
+            "C. Up 20%",
+            "D. No change"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nWoman: Do you have the sales figures for last quarter?\nMan: Yes, they are in the shared drive under the Finance folder.\nWoman: Great. I need to include them in my presentation for the board meeting.\nMan: The numbers look good. Revenue is up twelve percent.\n\nDoanh thu tăng 12%.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p3-12",
+          "text": "Why does the woman need the figures?",
+          "options": [
+            "A. To file taxes",
+            "B. To prepare for a board meeting",
+            "C. To update the website",
+            "D. To train new employees"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nWoman: Do you have the sales figures for last quarter?\nMan: Yes, they are in the shared drive under the Finance folder.\nWoman: Great. I need to include them in my presentation for the board meeting.\nMan: The numbers look good. Revenue is up twelve percent.\n\nCô ấy cần số liệu cho bài thuyết trình họp hội đồng quản trị.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p3-13",
+          "text": "What is the problem?",
+          "options": [
+            "A. The man was overpaid.",
+            "B. The paycheck is missing overtime hours.",
+            "C. The paycheck was lost.",
+            "D. The man did not work this week."
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nMan: Excuse me, I think there's a mistake on my paycheck.\nWoman: What seems to be the problem?\nMan: I was paid for forty hours, but I worked fifty this week.\nWoman: I'll have to check with the payroll department. Can you submit a timesheet correction form?\n\nPhiếu lương thiếu giờ làm thêm.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p3-14",
+          "text": "How many hours did the man actually work?",
+          "options": [
+            "A. 40 hours",
+            "B. 50 hours",
+            "C. 60 hours",
+            "D. 45 hours"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nMan: Excuse me, I think there's a mistake on my paycheck.\nWoman: What seems to be the problem?\nMan: I was paid for forty hours, but I worked fifty this week.\nWoman: I'll have to check with the payroll department. Can you submit a timesheet correction form?\n\nÔng ấy đã làm việc 50 giờ.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p3-15",
+          "text": "What does the woman ask the man to do?",
+          "options": [
+            "A. Call the bank",
+            "B. Submit a timesheet correction form",
+            "C. Wait for his next paycheck",
+            "D. Speak to his manager"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nMan: Excuse me, I think there's a mistake on my paycheck.\nWoman: What seems to be the problem?\nMan: I was paid for forty hours, but I worked fifty this week.\nWoman: I'll have to check with the payroll department. Can you submit a timesheet correction form?\n\nCô ấy yêu cầu ông ấy nộp đơn chỉnh sửa bảng chấm công.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p3-16",
+          "text": "What is the purpose of this conversation?",
+          "options": [
+            "A. A job interview",
+            "B. A team meeting",
+            "C. A performance review",
+            "D. A client presentation"
+          ],
+          "correctAnswer": 0,
+          "explanation": "[Transcript]\nWoman: Welcome to the interview. Please have a seat.\nMan: Thank you. I'm very excited about this opportunity.\nWoman: Let's start. Tell me about your previous experience in project management.\nMan: I managed a team of ten people for three years at my last company.\n\nĐây là một cuộc phỏng vấn việc làm.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p3-17",
+          "text": "How long did the man manage a team?",
+          "options": [
+            "A. One year",
+            "B. Two years",
+            "C. Three years",
+            "D. Five years"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nWoman: Welcome to the interview. Please have a seat.\nMan: Thank you. I'm very excited about this opportunity.\nWoman: Let's start. Tell me about your previous experience in project management.\nMan: I managed a team of ten people for three years at my last company.\n\nÔng ấy quản lý đội nhóm trong ba năm.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p3-18",
+          "text": "How large was the team the man managed?",
+          "options": [
+            "A. 5 people",
+            "B. 8 people",
+            "C. 10 people",
+            "D. 15 people"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nWoman: Welcome to the interview. Please have a seat.\nMan: Thank you. I'm very excited about this opportunity.\nWoman: Let's start. Tell me about your previous experience in project management.\nMan: I managed a team of ten people for three years at my last company.\n\nÔng ấy quản lý một đội gồm mười người.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p3-19",
+          "text": "Why does the man want to return the printer?",
+          "options": [
+            "A. It was too expensive.",
+            "B. It is not working properly.",
+            "C. He found a better one.",
+            "D. He does not need it anymore."
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nMan: Hi, I need to return this printer. It's been malfunctioning since I bought it.\nWoman: I'm sorry to hear that. Do you have the receipt?\nMan: Yes, here it is. I purchased it last week.\nWoman: I can offer you a replacement or a full refund. Which would you prefer?\n\nMáy in gặp sự cố từ khi mua.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p3-20",
+          "text": "What does the woman offer?",
+          "options": [
+            "A. A discount on a new purchase",
+            "B. A store credit",
+            "C. A replacement or full refund",
+            "D. A repair service"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nMan: Hi, I need to return this printer. It's been malfunctioning since I bought it.\nWoman: I'm sorry to hear that. Do you have the receipt?\nMan: Yes, here it is. I purchased it last week.\nWoman: I can offer you a replacement or a full refund. Which would you prefer?\n\nCô ấy đề xuất đổi hàng hoặc hoàn tiền.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p3-21",
+          "text": "When did the man purchase the printer?",
+          "options": [
+            "A. Today",
+            "B. Last week",
+            "C. Last month",
+            "D. Two weeks ago"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nMan: Hi, I need to return this printer. It's been malfunctioning since I bought it.\nWoman: I'm sorry to hear that. Do you have the receipt?\nMan: Yes, here it is. I purchased it last week.\nWoman: I can offer you a replacement or a full refund. Which would you prefer?\n\nÔng ấy mua máy in vào tuần trước.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p3-22",
+          "text": "What is the man working on?",
+          "options": [
+            "A. A marketing plan",
+            "B. A budget proposal",
+            "C. A customer survey",
+            "D. An employee handbook"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nWoman: Have you finished the budget proposal for next year?\nMan: Almost. I'm still working on the research and development section.\nWoman: The deadline is Friday. Can you have it done by then?\nMan: Yes, I just need to verify the numbers with the accounting team.\n\nÔng ấy đang làm bản đề xuất ngân sách.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p3-23",
+          "text": "When is the deadline?",
+          "options": [
+            "A. Monday",
+            "B. Wednesday",
+            "C. Friday",
+            "D. Next week"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nWoman: Have you finished the budget proposal for next year?\nMan: Almost. I'm still working on the research and development section.\nWoman: The deadline is Friday. Can you have it done by then?\nMan: Yes, I just need to verify the numbers with the accounting team.\n\nHạn chót là thứ Sáu.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p3-24",
+          "text": "Who does the man need to check the numbers with?",
+          "options": [
+            "A. The marketing team",
+            "B. The HR department",
+            "C. The accounting team",
+            "D. The legal department"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nWoman: Have you finished the budget proposal for next year?\nMan: Almost. I'm still working on the research and development section.\nWoman: The deadline is Friday. Can you have it done by then?\nMan: Yes, I just need to verify the numbers with the accounting team.\n\nÔng ấy cần xác nhận số liệu với đội kế toán.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p3-25",
+          "text": "What type of room was reserved?",
+          "options": [
+            "A. Standard room",
+            "B. Deluxe suite",
+            "C. Penthouse",
+            "D. Twin room"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nMan: Good afternoon, I have a reservation under the name Martinez.\nWoman: Welcome, Mr. Martinez. We have you in a deluxe suite on the eighth floor.\nMan: Wonderful. Is the gym open late tonight?\nWoman: Yes, the fitness center is open until midnight.\n\nPhòng đặt là phòng hạng sang (deluxe suite).",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p3-26",
+          "text": "What floor is the room on?",
+          "options": [
+            "A. Fifth",
+            "B. Sixth",
+            "C. Eighth",
+            "D. Tenth"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nMan: Good afternoon, I have a reservation under the name Martinez.\nWoman: Welcome, Mr. Martinez. We have you in a deluxe suite on the eighth floor.\nMan: Wonderful. Is the gym open late tonight?\nWoman: Yes, the fitness center is open until midnight.\n\nPhòng ở tầng tám.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p3-27",
+          "text": "Until what time is the gym open?",
+          "options": [
+            "A. 10:00 PM",
+            "B. 11:00 PM",
+            "C. Midnight",
+            "D. 1:00 AM"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nMan: Good afternoon, I have a reservation under the name Martinez.\nWoman: Welcome, Mr. Martinez. We have you in a deluxe suite on the eighth floor.\nMan: Wonderful. Is the gym open late tonight?\nWoman: Yes, the fitness center is open until midnight.\n\nPhòng tập mở cửa đến nửa đêm.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p3-28",
+          "text": "What is the company planning?",
+          "options": [
+            "A. A merger",
+            "B. Overseas expansion",
+            "C. A new product launch",
+            "D. Office relocation"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nWoman: I heard the company is planning to expand overseas.\nMan: Yes, the CEO announced it at the all-hands meeting.\nWoman: Will there be positions available for employees to transfer?\nMan: They said internal candidates will get priority.\n\nCông ty đang lên kế hoạch mở rộng ra nước ngoài.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p3-29",
+          "text": "Who will have priority for transfer positions?",
+          "options": [
+            "A. External applicants",
+            "B. Recent graduates",
+            "C. Internal employees",
+            "D. Managers only"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nWoman: I heard the company is planning to expand overseas.\nMan: Yes, the CEO announced it at the all-hands meeting.\nWoman: Will there be positions available for employees to transfer?\nMan: They said internal candidates will get priority.\n\nỨng viên nội bộ sẽ được ưu tiên.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p3-30",
+          "text": "Where was this announced?",
+          "options": [
+            "A. In an email",
+            "B. At an all-hands meeting",
+            "C. On the company website",
+            "D. In a press release"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nWoman: I heard the company is planning to expand overseas.\nMan: Yes, the CEO announced it at the all-hands meeting.\nWoman: Will there be positions available for employees to transfer?\nMan: They said internal candidates will get priority.\n\nThông báo được đưa ra tại cuộc họp toàn công ty.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p3-31",
+          "text": "What is being set up?",
+          "options": [
+            "A. A break room",
+            "B. A conference room",
+            "C. A training area",
+            "D. A reception desk"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nMan: Could you help me set up the conference room for the 3 o'clock meeting?\nWoman: Sure. How many attendees are expected?\nMan: About fifteen. We'll need a projector screen and some water bottles.\nWoman: I'll also set up name tags and notepads at each seat.\n\nHọ đang chuẩn bị phòng họp.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p3-32",
+          "text": "What additional items will the woman set up?",
+          "options": [
+            "A. Coffee cups and snacks",
+            "B. Name tags and notepads",
+            "C. Chairs and tables",
+            "D. Microphones and speakers"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nMan: Could you help me set up the conference room for the 3 o'clock meeting?\nWoman: Sure. How many attendees are expected?\nMan: About fifteen. We'll need a projector screen and some water bottles.\nWoman: I'll also set up name tags and notepads at each seat.\n\nCô ấy sẽ chuẩn bị thẻ tên và sổ tay.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p3-33",
+          "text": "What time is the meeting?",
+          "options": [
+            "A. 2:00 PM",
+            "B. 2:30 PM",
+            "C. 3:00 PM",
+            "D. 3:30 PM"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nMan: Could you help me set up the conference room for the 3 o'clock meeting?\nWoman: Sure. How many attendees are expected?\nMan: About fifteen. We'll need a projector screen and some water bottles.\nWoman: I'll also set up name tags and notepads at each seat.\n\nCuộc họp lúc 3 giờ chiều.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p3-34",
+          "text": "What has increased?",
+          "options": [
+            "A. Product sales",
+            "B. Website traffic",
+            "C. Employee count",
+            "D. Office space"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nWoman: Our website traffic has increased by thirty percent this month.\nMan: That's great news! What do you think caused the increase?\nWoman: The new SEO strategy is working, and the social media campaign helped too.\nMan: We should keep investing in digital marketing.\n\nLưu lượng truy cập website đã tăng.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p3-35",
+          "text": "What strategies contributed to the increase?",
+          "options": [
+            "A. TV advertising and radio spots",
+            "B. Email marketing and direct mail",
+            "C. SEO strategy and social media campaign",
+            "D. Billboard ads and print media"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nWoman: Our website traffic has increased by thirty percent this month.\nMan: That's great news! What do you think caused the increase?\nWoman: The new SEO strategy is working, and the social media campaign helped too.\nMan: We should keep investing in digital marketing.\n\nChiến lược SEO và chiến dịch mạng xã hội đã giúp tăng.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p3-36",
+          "text": "What does the man suggest?",
+          "options": [
+            "A. Reduce the marketing budget",
+            "B. Hire more staff",
+            "C. Continue investing in digital marketing",
+            "D. Focus on traditional advertising"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nWoman: Our website traffic has increased by thirty percent this month.\nMan: That's great news! What do you think caused the increase?\nWoman: The new SEO strategy is working, and the social media campaign helped too.\nMan: We should keep investing in digital marketing.\n\nÔng ấy đề xuất tiếp tục đầu tư vào tiếp thị kỹ thuật số.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p3-37",
+          "text": "What is the man trying to do?",
+          "options": [
+            "A. Repair the pipe",
+            "B. File an insurance claim",
+            "C. Move to a new office",
+            "D. Replace the storage room"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nMan: I need to file an insurance claim for the water damage in the office.\nWoman: What happened?\nMan: A pipe burst over the weekend and flooded the storage room.\nWoman: I'll contact the insurance company right away. Do you have photos of the damage?\n\nÔng ấy đang cố nộp yêu cầu bảo hiểm.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p3-38",
+          "text": "When did the incident occur?",
+          "options": [
+            "A. Yesterday",
+            "B. Over the weekend",
+            "C. Last month",
+            "D. This morning"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nMan: I need to file an insurance claim for the water damage in the office.\nWoman: What happened?\nMan: A pipe burst over the weekend and flooded the storage room.\nWoman: I'll contact the insurance company right away. Do you have photos of the damage?\n\nSự cố xảy ra vào cuối tuần.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p3-39",
+          "text": "What does the woman ask for?",
+          "options": [
+            "A. A written report",
+            "B. Photos of the damage",
+            "C. A doctor's note",
+            "D. The maintenance log"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nMan: I need to file an insurance claim for the water damage in the office.\nWoman: What happened?\nMan: A pipe burst over the weekend and flooded the storage room.\nWoman: I'll contact the insurance company right away. Do you have photos of the damage?\n\nCô ấy yêu cầu ảnh chụp thiệt hại.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        }
+      ]
+    },
+    {
+      "id": "t2-sec-4",
+      "title": "Part 4: Short Talks",
+      "description": "Listen to a short talk and answer questions.",
+      "questions": [
+        {
+          "id": "t2-p4-1",
+          "text": "When will the picnic be held?",
+          "options": [
+            "A. This Friday",
+            "B. This Saturday",
+            "C. Next Saturday",
+            "D. Next Sunday"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nGood morning, everyone. I'd like to remind you that the annual company picnic will be held this Saturday at Riverside Park. Activities will begin at 10 AM and include a barbecue, games, and a raffle. Please bring your families. We look forward to seeing you there.\n\nĐi dã ngoại sẽ được tổ chức vào thứ Bảy này.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p4-2",
+          "text": "What activity is NOT mentioned?",
+          "options": [
+            "A. A barbecue",
+            "B. Games",
+            "C. Swimming",
+            "D. A raffle"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nGood morning, everyone. I'd like to remind you that the annual company picnic will be held this Saturday at Riverside Park. Activities will begin at 10 AM and include a barbecue, games, and a raffle. Please bring your families. We look forward to seeing you there.\n\nBơi lội không được đề cập.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p4-3",
+          "text": "Who is invited to attend?",
+          "options": [
+            "A. Only managers",
+            "B. Only new employees",
+            "C. Employees and their families",
+            "D. External clients only"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nGood morning, everyone. I'd like to remind you that the annual company picnic will be held this Saturday at Riverside Park. Activities will begin at 10 AM and include a barbecue, games, and a raffle. Please bring your families. We look forward to seeing you there.\n\nNhân viên và gia đình được mời tham dự.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p4-4",
+          "text": "Why are the elevators out of service?",
+          "options": [
+            "A. A power outage",
+            "B. Scheduled maintenance",
+            "C. Overcrowding",
+            "D. An elevator accident"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nAttention all employees. The elevators on the east side of the building will be out of service tomorrow from 8 AM to 4 PM for scheduled maintenance. Please use the west elevators during this time. We apologize for the inconvenience.\n\nThang máy dừng hoạt động để bảo trì theo lịch.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p4-5",
+          "text": "Until what time will the elevators be unavailable?",
+          "options": [
+            "A. 2 PM",
+            "B. 3 PM",
+            "C. 4 PM",
+            "D. 5 PM"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nAttention all employees. The elevators on the east side of the building will be out of service tomorrow from 8 AM to 4 PM for scheduled maintenance. Please use the west elevators during this time. We apologize for the inconvenience.\n\nThang máy sẽ không hoạt động đến 4 giờ chiều.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p4-6",
+          "text": "Which elevators should employees use?",
+          "options": [
+            "A. The east elevators",
+            "B. The west elevators",
+            "C. The freight elevator",
+            "D. The stairs only"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nAttention all employees. The elevators on the east side of the building will be out of service tomorrow from 8 AM to 4 PM for scheduled maintenance. Please use the west elevators during this time. We apologize for the inconvenience.\n\nNhân viên nên sử dụng thang máy phía tây.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p4-7",
+          "text": "When is the office open?",
+          "options": [
+            "A. Monday to Saturday, 9 to 5",
+            "B. Monday to Friday, 9 AM to 6 PM",
+            "C. Weekends only",
+            "D. 24 hours a day"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nThank you for calling Tech Solutions. Our office is currently closed. Our regular business hours are Monday through Friday, 9 AM to 6 PM. If you have an urgent matter, please press 1 to leave a message, or visit our website for online support.\n\nGiờ làm việc từ thứ Hai đến thứ Sáu, 9 giờ sáng đến 6 giờ tối.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p4-8",
+          "text": "What should callers do for urgent matters?",
+          "options": [
+            "A. Call back during business hours",
+            "B. Send a fax",
+            "C. Press 1 to leave a message",
+            "D. Visit the office in person"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nThank you for calling Tech Solutions. Our office is currently closed. Our regular business hours are Monday through Friday, 9 AM to 6 PM. If you have an urgent matter, please press 1 to leave a message, or visit our website for online support.\n\nNgười gọi nên nhấn 1 để để lại tin nhắn cho vấn đề khẩn cấp.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p4-9",
+          "text": "What is the name of the company?",
+          "options": [
+            "A. Tech World",
+            "B. Tech Solutions",
+            "C. Tech Support",
+            "D. Tech Services"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nThank you for calling Tech Solutions. Our office is currently closed. Our regular business hours are Monday through Friday, 9 AM to 6 PM. If you have an urgent matter, please press 1 to leave a message, or visit our website for online support.\n\nTên công ty là Tech Solutions.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p4-10",
+          "text": "Why is the parking lot closing?",
+          "options": [
+            "A. A special event",
+            "B. Road construction",
+            "C. Resurfacing",
+            "D. Safety inspection"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nThis is a reminder that the parking lot on Oak Street will be closed this weekend for resurfacing. Employees who normally park there should use the garage on Pine Avenue instead. Sorry for any inconvenience.\n\nBãi đỗ xe đóng cửa để trải lại bề mặt.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p4-11",
+          "text": "Where should employees park instead?",
+          "options": [
+            "A. On Oak Street",
+            "B. On Elm Street",
+            "C. The garage on Pine Avenue",
+            "D. In the visitor lot"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nThis is a reminder that the parking lot on Oak Street will be closed this weekend for resurfacing. Employees who normally park there should use the garage on Pine Avenue instead. Sorry for any inconvenience.\n\nNhân viên nên đỗ xe tại gara trên đại lộ Pine.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p4-12",
+          "text": "When will the parking lot be closed?",
+          "options": [
+            "A. This week",
+            "B. This weekend",
+            "C. Next week",
+            "D. All month"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nThis is a reminder that the parking lot on Oak Street will be closed this weekend for resurfacing. Employees who normally park there should use the garage on Pine Avenue instead. Sorry for any inconvenience.\n\nBãi đỗ xe sẽ đóng cửa vào cuối tuần này.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p4-13",
+          "text": "What does the wellness program include?",
+          "options": [
+            "A. Free lunch and parking",
+            "B. Gym memberships, counseling, and consultations",
+            "C. Travel vouchers and discounts",
+            "D. Childcare and tutoring services"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nGood afternoon. I'm pleased to announce that starting next month, all employees will have access to our new wellness program. The program includes gym memberships, mental health counseling, and nutritional consultations. Sign-up details will be sent by email this Friday.\n\nChương trình bao gồm thẻ tập gym, tư vấn tâm lý và tư vấn dinh dưỡng.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p4-14",
+          "text": "When will the program start?",
+          "options": [
+            "A. This month",
+            "B. Next month",
+            "C. Next quarter",
+            "D. Next year"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nGood afternoon. I'm pleased to announce that starting next month, all employees will have access to our new wellness program. The program includes gym memberships, mental health counseling, and nutritional consultations. Sign-up details will be sent by email this Friday.\n\nChương trình bắt đầu từ tháng sau.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p4-15",
+          "text": "How will sign-up information be distributed?",
+          "options": [
+            "A. Through a company meeting",
+            "B. By email",
+            "C. On the company bulletin board",
+            "D. Through the HR office"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nGood afternoon. I'm pleased to announce that starting next month, all employees will have access to our new wellness program. The program includes gym memberships, mental health counseling, and nutritional consultations. Sign-up details will be sent by email this Friday.\n\nThông tin đăng ký sẽ được gửi qua email.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p4-16",
+          "text": "What is being announced?",
+          "options": [
+            "A. A new store opening",
+            "B. A clearance sale",
+            "C. A product recall",
+            "D. A change in store hours"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nAttention shoppers. We are having a store-wide clearance sale this weekend. All items are twenty to fifty percent off. This is a great opportunity to get holiday gifts at reduced prices. The sale ends Sunday at closing time.\n\nĐang thông báo về chương trình khuyến mãi thanh lý.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p4-17",
+          "text": "How much can customers save?",
+          "options": [
+            "A. 10 to 20%",
+            "B. 20 to 50%",
+            "C. 50 to 70%",
+            "D. Up to 90%"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nAttention shoppers. We are having a store-wide clearance sale this weekend. All items are twenty to fifty percent off. This is a great opportunity to get holiday gifts at reduced prices. The sale ends Sunday at closing time.\n\nKhách hàng tiết kiệm từ 20 đến 50%.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p4-18",
+          "text": "When does the sale end?",
+          "options": [
+            "A. Saturday evening",
+            "B. Sunday morning",
+            "C. Sunday at closing time",
+            "D. Monday morning"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nAttention shoppers. We are having a store-wide clearance sale this weekend. All items are twenty to fifty percent off. This is a great opportunity to get holiday gifts at reduced prices. The sale ends Sunday at closing time.\n\nChương trình kết thúc vào lúc đóng cửa chủ nhật.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p4-19",
+          "text": "Where is the flight headed?",
+          "options": [
+            "A. Paris",
+            "B. London Heathrow",
+            "C. Tokyo",
+            "D. Dubai"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nThis is your captain speaking. We have just taken off from JFK Airport and are headed to London Heathrow. Our flight time will be approximately seven hours. We expect some turbulence over the Atlantic, so please keep your seatbelts fastened when the sign is on.\n\nChuyến bay đang hướng đến London Heathrow.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p4-20",
+          "text": "How long is the flight expected to take?",
+          "options": [
+            "A. 5 hours",
+            "B. 6 hours",
+            "C. 7 hours",
+            "D. 8 hours"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nThis is your captain speaking. We have just taken off from JFK Airport and are headed to London Heathrow. Our flight time will be approximately seven hours. We expect some turbulence over the Atlantic, so please keep your seatbelts fastened when the sign is on.\n\nThời gian bay dự kiến khoảng bảy tiếng.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p4-21",
+          "text": "What does the captain ask passengers to do?",
+          "options": [
+            "A. Close their window shades",
+            "B. Fasten their seatbelts",
+            "C. Return to their seats",
+            "D. Turn off all devices"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nThis is your captain speaking. We have just taken off from JFK Airport and are headed to London Heathrow. Our flight time will be approximately seven hours. We expect some turbulence over the Atlantic, so please keep your seatbelts fastened when the sign is on.\n\nPhi công yêu cầu hành khách thắt dây an toàn.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p4-22",
+          "text": "What time does the keynote session start?",
+          "options": [
+            "A. 8:00 AM",
+            "B. 8:30 AM",
+            "C. 9:00 AM",
+            "D. 9:30 AM"
+          ],
+          "correctAnswer": 2,
+          "explanation": "[Transcript]\nLadies and gentlemen, welcome to the Grandview Conference Center. The keynote session will begin at 9 AM in the main ballroom. Workshop sessions will follow at 10:30 AM. A complimentary lunch will be served at noon in the dining hall. Please pick up your agenda at the registration desk.\n\nPhiên keynote bắt đầu lúc 9 giờ sáng.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p4-23",
+          "text": "Where will lunch be served?",
+          "options": [
+            "A. In the ballroom",
+            "B. In the dining hall",
+            "C. In the parking lot",
+            "D. At the registration desk"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nLadies and gentlemen, welcome to the Grandview Conference Center. The keynote session will begin at 9 AM in the main ballroom. Workshop sessions will follow at 10:30 AM. A complimentary lunch will be served at noon in the dining hall. Please pick up your agenda at the registration desk.\n\nBữa trưa sẽ được phục vụ tại hội trường ăn uống.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p4-24",
+          "text": "What can attendees pick up at the registration desk?",
+          "options": [
+            "A. Name badges",
+            "B. An agenda",
+            "C. A meal ticket",
+            "D. A parking pass"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nLadies and gentlemen, welcome to the Grandview Conference Center. The keynote session will begin at 9 AM in the main ballroom. Workshop sessions will follow at 10:30 AM. A complimentary lunch will be served at noon in the dining hall. Please pick up your agenda at the registration desk.\n\nNgười tham dự có thể nhận lịch trình tại quầy đăng ký.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p4-25",
+          "text": "What is being repaired?",
+          "options": [
+            "A. A road",
+            "B. A water main",
+            "C. A power line",
+            "D. A sewer system"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nThis is a public service announcement. The city will be conducting a water main repair on Elm Street starting Monday. Residents in the area may experience low water pressure for two to three days. Bottled water will be available at City Hall.\n\nĐang sửa chữa đường ống nước chính.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p4-26",
+          "text": "How long may residents experience low water pressure?",
+          "options": [
+            "A. One day",
+            "B. Two to three days",
+            "C. A week",
+            "D. Two weeks"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nThis is a public service announcement. The city will be conducting a water main repair on Elm Street starting Monday. Residents in the area may experience low water pressure for two to three days. Bottled water will be available at City Hall.\n\nCư dân có thể bị giảm áp suất nước trong hai đến ba ngày.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p4-27",
+          "text": "Where can residents get bottled water?",
+          "options": [
+            "A. At the local store",
+            "B. At City Hall",
+            "C. At the hospital",
+            "D. At the police station"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nThis is a public service announcement. The city will be conducting a water main repair on Elm Street starting Monday. Residents in the area may experience low water pressure for two to three days. Bottled water will be available at City Hall.\n\nCư dân có thể lấy nước đóng chai tại Tòa thị chính.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p4-28",
+          "text": "Why is the office closed?",
+          "options": [
+            "A. Due to bad weather",
+            "B. For a holiday",
+            "C. For employee training",
+            "D. Due to a building issue"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nHello, everyone. I'm calling to let you know that our office will be closed on Monday for the holiday. Regular business will resume on Tuesday. If you need emergency assistance, please call our after-hours hotline at 555-0199.\n\nVăn phòng đóng cửa nghỉ lễ.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p4-29",
+          "text": "What number should be called for emergencies?",
+          "options": [
+            "A. 555-0188",
+            "B. 555-0199",
+            "C. 555-0200",
+            "D. 555-0100"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nHello, everyone. I'm calling to let you know that our office will be closed on Monday for the holiday. Regular business will resume on Tuesday. If you need emergency assistance, please call our after-hours hotline at 555-0199.\n\nSố điện thoại khẩn cấp là 555-0199.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        },
+        {
+          "id": "t2-p4-30",
+          "text": "When will the office reopen?",
+          "options": [
+            "A. Monday",
+            "B. Tuesday",
+            "C. Wednesday",
+            "D. Thursday"
+          ],
+          "correctAnswer": 1,
+          "explanation": "[Transcript]\nHello, everyone. I'm calling to let you know that our office will be closed on Monday for the holiday. Regular business will resume on Tuesday. If you need emergency assistance, please call our after-hours hotline at 555-0199.\n\nVăn phòng mở cửa lại vào thứ Ba.",
+          "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+        }
+      ]
+    },
+    {
+      "id": "t2-sec-5",
+      "title": "Part 5: Incomplete Sentences",
+      "description": "Choose the word that best completes the sentence.",
+      "questions": [
+        {
+          "id": "t2-p5-1",
+          "text": "The manager asked the team to submit their reports _____ the end of the week.",
+          "options": [
+            "A. in",
+            "B. at",
+            "C. by",
+            "D. until"
+          ],
+          "correctAnswer": 2,
+          "explanation": "\"By\" có nghĩa \"trước thời điểm\", dùng với deadline."
+        },
+        {
+          "id": "t2-p5-2",
+          "text": "Due to the increase in demand, the factory has decided to _____ production by twenty percent.",
+          "options": [
+            "A. reduce",
+            "B. expand",
+            "C. delay",
+            "D. cancel"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Nhu cầu tăng nên cần mở rộng sản xuất."
+        },
+        {
+          "id": "t2-p5-3",
+          "text": "The company will _____ a new training program for all new hires.",
+          "options": [
+            "A. introduce",
+            "B. reduce",
+            "C. remove",
+            "D. decrease"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Giới thiệu chương trình đào tạo mới."
+        },
+        {
+          "id": "t2-p5-4",
+          "text": "Please make sure all documents are _____ before submitting them to the client.",
+          "options": [
+            "A. proofread",
+            "B. proofreading",
+            "C. proofreads",
+            "D. proofreaded"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Cấu trúc bị động: are + V3 (proofread)."
+        },
+        {
+          "id": "t2-p5-5",
+          "text": "The seminar was very _____; I learned several useful techniques.",
+          "options": [
+            "A. informative",
+            "B. inform",
+            "C. information",
+            "D. informally"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Cần tính từ \"informative\" sau động từ \"was\"."
+        },
+        {
+          "id": "t2-p5-6",
+          "text": "She has been working in the finance department _____ over ten years.",
+          "options": [
+            "A. since",
+            "B. for",
+            "C. during",
+            "D. while"
+          ],
+          "correctAnswer": 1,
+          "explanation": "\"For\" dùng với khoảng thời gian (over ten years)."
+        },
+        {
+          "id": "t2-p5-7",
+          "text": "The new policy will take _____ on the first of January.",
+          "options": [
+            "A. place",
+            "B. effect",
+            "C. part",
+            "D. action"
+          ],
+          "correctAnswer": 1,
+          "explanation": "\"Take effect\" nghĩa là \"có hiệu lực\"."
+        },
+        {
+          "id": "t2-p5-8",
+          "text": "All employees must wear _____ badges when entering the building.",
+          "options": [
+            "A. identifying",
+            "B. identified",
+            "C. identification",
+            "D. identify"
+          ],
+          "correctAnswer": 2,
+          "explanation": "\"Identification badges\" = thẻ nhận dạng."
+        },
+        {
+          "id": "t2-p5-9",
+          "text": "The board of directors will _____ the proposal at next month's meeting.",
+          "options": [
+            "A. consider",
+            "B. considering",
+            "C. consideration",
+            "D. considered"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Động từ nguyên形 sau \"will\"."
+        },
+        {
+          "id": "t2-p5-10",
+          "text": "We appreciate your _____ in completing the survey.",
+          "options": [
+            "A. participate",
+            "B. participating",
+            "C. participation",
+            "D. participant"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Cần danh từ sau possessive pronoun \"your\"."
+        },
+        {
+          "id": "t2-p5-11",
+          "text": "The shipment will arrive _____ than expected due to the weather.",
+          "options": [
+            "A. later",
+            "B. latest",
+            "C. late",
+            "D. latter"
+          ],
+          "correctAnswer": 0,
+          "explanation": "\"Later\" là so sánh hơn của \"late\"."
+        },
+        {
+          "id": "t2-p5-12",
+          "text": "Ms. Tanaka has been appointed _____ the head of the international division.",
+          "options": [
+            "A. for",
+            "B. as",
+            "C. to",
+            "D. with"
+          ],
+          "correctAnswer": 1,
+          "explanation": "\"Appointed as\" = được bổ nhiệm làm."
+        },
+        {
+          "id": "t2-p5-13",
+          "text": "Customers are advised to _____ their reservations at least 48 hours in advance.",
+          "options": [
+            "A. confirm",
+            "B. confirmly",
+            "C. confirmation",
+            "D. confirmed"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Động từ nguyên形 sau \"to\"."
+        },
+        {
+          "id": "t2-p5-14",
+          "text": "The annual report provides a _____ overview of the company's financial performance.",
+          "options": [
+            "A. comprehensively",
+            "B. comprehensive",
+            "C. comprehended",
+            "D. comprehending"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Cần tính từ \"comprehensive\"修饰 noun \"overview\"."
+        },
+        {
+          "id": "t2-p5-15",
+          "text": "The meeting was rescheduled _____ a conflict with the director's calendar.",
+          "options": [
+            "A. because",
+            "B. because of",
+            "C. since to",
+            "D. due"
+          ],
+          "correctAnswer": 1,
+          "explanation": "\"Because of\" + noun phrase."
+        },
+        {
+          "id": "t2-p5-16",
+          "text": "Please ensure that all equipment is _____ maintained and inspected regularly.",
+          "options": [
+            "A. proper",
+            "B. properly",
+            "C. propriety",
+            "D. properness"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Cần trạng từ \"properly\"修饰 động từ \"maintained\"."
+        },
+        {
+          "id": "t2-p5-17",
+          "text": "The conference room on the fifth floor is _____ for private meetings only.",
+          "options": [
+            "A. reserve",
+            "B. reserved",
+            "C. reserving",
+            "D. reservation"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Cấu trúc bị động: is + V3 (reserved)."
+        },
+        {
+          "id": "t2-p5-18",
+          "text": "If you have any questions, please do not hesitate to _____ us.",
+          "options": [
+            "A. contact",
+            "B. contacting",
+            "C. contacted",
+            "D. contacts"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Động từ nguyên形 sau \"do not hesitate to\"."
+        },
+        {
+          "id": "t2-p5-19",
+          "text": "The results of the survey were _____ with great interest by the management team.",
+          "options": [
+            "A. receive",
+            "B. received",
+            "C. receiving",
+            "D. receives"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Cấu trúc bị động: were + V3 (received)."
+        },
+        {
+          "id": "t2-p5-20",
+          "text": "Our company offers _____ benefits to all full-time employees.",
+          "options": [
+            "A. competitiveness",
+            "B. competitive",
+            "C. competed",
+            "D. competing"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Tính từ \"competitive\"修饰名词 \"benefits\"."
+        },
+        {
+          "id": "t2-p5-21",
+          "text": "The CEO will _____ step down at the end of this fiscal year.",
+          "options": [
+            "A. formal",
+            "B. formally",
+            "C. formality",
+            "D. formalized"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Trạng từ \"formally\"修饰 động từ \"step down\"."
+        },
+        {
+          "id": "t2-p5-22",
+          "text": "The company has a strict _____ regarding the use of personal devices at work.",
+          "options": [
+            "A. procedure",
+            "B. policy",
+            "C. agreement",
+            "D. contract"
+          ],
+          "correctAnswer": 1,
+          "explanation": "\"Policy\" = chính sách, quy định."
+        },
+        {
+          "id": "t2-p5-23",
+          "text": "We need to _____ the budget before we can proceed with the project.",
+          "options": [
+            "A. approve",
+            "B. approved",
+            "C. approving",
+            "D. approval"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Động từ nguyên形 sau \"need to\"."
+        },
+        {
+          "id": "t2-p5-24",
+          "text": "The supplier was unable to _____ the order on time.",
+          "options": [
+            "A. delivery",
+            "B. deliver",
+            "C. delivered",
+            "D. delivering"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Động từ nguyên形 sau \"was unable to\"."
+        },
+        {
+          "id": "t2-p5-25",
+          "text": "The office is equipped with state-of-the-art _____ to ensure a comfortable working environment.",
+          "options": [
+            "A. facilities",
+            "B. faculty",
+            "C. factors",
+            "D. favors"
+          ],
+          "correctAnswer": 0,
+          "explanation": "\"Facilities\" = cơ sở vật chất."
+        },
+        {
+          "id": "t2-p5-26",
+          "text": "Due to budget constraints, the project was _____ to a smaller team.",
+          "options": [
+            "A. assign",
+            "B. assigned",
+            "C. assigning",
+            "D. assignment"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Cấu trúc bị động: was + V3 (assigned)."
+        },
+        {
+          "id": "t2-p5-27",
+          "text": "The employee handbook contains _____ information about company procedures.",
+          "options": [
+            "A. detail",
+            "B. detailed",
+            "C. detailing",
+            "D. details"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Tính từ \"detailed\"修饰名词 \"information\"."
+        },
+        {
+          "id": "t2-p5-28",
+          "text": "_____ submitting your application, please attach your résumé and cover letter.",
+          "options": [
+            "A. Before",
+            "B. Since",
+            "C. Although",
+            "D. Unless"
+          ],
+          "correctAnswer": 0,
+          "explanation": "\"Before\" = trước khi, hợp lý nhất trong ngữ cảnh."
+        },
+        {
+          "id": "t2-p5-29",
+          "text": "The manager decided to _____ the meeting until the following week.",
+          "options": [
+            "A. postpone",
+            "B. cancel",
+            "C. advance",
+            "D. proceed"
+          ],
+          "correctAnswer": 0,
+          "explanation": "\"Postpone\" = hoãn lại."
+        },
+        {
+          "id": "t2-p5-30",
+          "text": "It is _____ that all staff members attend the mandatory safety training.",
+          "options": [
+            "A. required",
+            "B. requiring",
+            "C. requirement",
+            "D. requires"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Cấu trúc bị động: It is required that..."
+        }
+      ]
+    },
+    {
+      "id": "t2-sec-6",
+      "title": "Part 6: Text Completion",
+      "description": "Choose the best word or phrase to complete the text.",
+      "questions": [
+        {
+          "id": "t2-p6-1",
+          "passage": "To: All Employees\nFrom: Human Resources\n\nAll staff members are required to complete their annual performance self-evaluations by March 31st. Please log in to the company portal and _____ the self-assessment form.",
+          "text": "Choose the correct word.",
+          "options": [
+            "A. complete",
+            "B. completed",
+            "C. completing",
+            "D. completion"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Động từ nguyên形 sau \"and\" nối tiếp với \"log in\"."
+        },
+        {
+          "id": "t2-p6-2",
+          "passage": "To: All Employees\nFrom: Human Resources\n\nAll staff members are required to complete their annual performance self-evaluations by March 31st. Please log in to the company portal and complete the self-assessment form. _____ you need assistance, please contact the HR helpdesk.",
+          "text": "Choose the correct word.",
+          "options": [
+            "A. Unless",
+            "B. Although",
+            "C. If",
+            "D. While"
+          ],
+          "correctAnswer": 2,
+          "explanation": "\"If\" = nếu, tạo câu điều kiện hợp lý."
+        },
+        {
+          "id": "t2-p6-3",
+          "passage": "To: All Employees\nFrom: Human Resources\n\nAll staff members are required to complete their annual performance self-evaluations by March 31st. Please log in to the company portal and complete the self-assessment form. If you need assistance, please contact the HR helpdesk. Failure to submit on time may _____ your annual review.",
+          "text": "Choose the correct word.",
+          "options": [
+            "A. effect",
+            "B. affect",
+            "C. infect",
+            "D. perfect"
+          ],
+          "correctAnswer": 1,
+          "explanation": "\"Affect\" = ảnh hưởng (động từ). \"Effect\" là danh từ."
+        },
+        {
+          "id": "t2-p6-4",
+          "passage": "To: All Employees\nFrom: Human Resources\n\nAll staff members are required to complete their annual performance self-evaluations by March 31st. Please log in to the company portal and complete the self-assessment form. If you need assistance, please contact the HR helpdesk. Failure to submit on time may affect your annual review. Your cooperation is greatly _____.",
+          "text": "Choose the correct word.",
+          "options": [
+            "A. appreciate",
+            "B. appreciated",
+            "C. appreciating",
+            "D. appreciation"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Cấu trúc bị động: is + V3 (appreciated)."
+        },
+        {
+          "id": "t2-p6-5",
+          "passage": "Dear Valued Customer,\n\nThank you for your recent purchase. We are writing to inform you that your order has been shipped and is expected to arrive within 5-7 business days. You can track your package using the _____ number provided below.",
+          "text": "Choose the correct word.",
+          "options": [
+            "A. track",
+            "B. tracking",
+            "C. tracked",
+            "D. tracker"
+          ],
+          "correctAnswer": 1,
+          "explanation": "\"Tracking number\" = mã theo dõi."
+        },
+        {
+          "id": "t2-p6-6",
+          "passage": "Dear Valued Customer,\n\nThank you for your recent purchase. We are writing to inform you that your order has been shipped and is expected to arrive within 5-7 business days. You can track your package using the tracking number provided below. If you have any questions or concerns, please do not hesitate to contact our customer service team, _____ is available 24/7.",
+          "text": "Choose the correct word.",
+          "options": [
+            "A. who",
+            "B. whom",
+            "C. which",
+            "D. where"
+          ],
+          "correctAnswer": 2,
+          "explanation": "\"Which\" thay thế cho \"customer service team\" (vật/thứ)."
+        },
+        {
+          "id": "t2-p6-7",
+          "passage": "Dear Valued Customer,\n\nThank you for your recent purchase. We are writing to inform you that your order has been shipped and is expected to arrive within 5-7 business days. You can track your package using the tracking number provided below. If you have any questions or concerns, please do not hesitate to contact our customer service team, which is available 24/7. We _____ to serving you.",
+          "text": "Choose the correct word.",
+          "options": [
+            "A. look forward",
+            "B. look ahead",
+            "C. look up",
+            "D. look into"
+          ],
+          "correctAnswer": 0,
+          "explanation": "\"Look forward to\" = mong đợi."
+        },
+        {
+          "id": "t2-p6-8",
+          "passage": "Dear Valued Customer,\n\nThank you for your recent purchase. We are writing to inform you that your order has been shipped and is expected to arrive within 5-7 business days. You can track your package using the tracking number provided below. If you have any questions or concerns, please do not hesitate to contact our customer service team, which is available 24/7. We look forward to serving you. Thank you for choosing our _____.",
+          "text": "Choose the correct word.",
+          "options": [
+            "A. company",
+            "B. business",
+            "C. store",
+            "D. products"
+          ],
+          "correctAnswer": 1,
+          "explanation": "\"Choosing our business\" = chọn dịch vụ của chúng tôi."
+        },
+        {
+          "id": "t2-p6-9",
+          "passage": "MEMORANDUM\n\nTo: Department Managers\nFrom: Facilities Management\n\nPlease be advised that the building's heating system will undergo maintenance this weekend. As a _____, temperatures in the office may be lower than usual on Monday morning.",
+          "text": "Choose the correct word.",
+          "options": [
+            "A. result",
+            "B. fact",
+            "C. rule",
+            "D. chance"
+          ],
+          "correctAnswer": 0,
+          "explanation": "\"As a result\" = do đó."
+        },
+        {
+          "id": "t2-p6-10",
+          "passage": "MEMORANDUM\n\nTo: Department Managers\nFrom: Facilities Management\n\nPlease be advised that the building's heating system will undergo maintenance this weekend. As a result, temperatures in the office may be lower than usual on Monday morning. We recommend that employees _____ warm clothing.",
+          "text": "Choose the correct word.",
+          "options": [
+            "A. put on",
+            "B. wear",
+            "C. bring",
+            "D. carry"
+          ],
+          "correctAnswer": 1,
+          "explanation": "\"Wear warm clothing\" = mặc quần áo ấm."
+        },
+        {
+          "id": "t2-p6-11",
+          "passage": "MEMORANDUM\n\nTo: Department Managers\nFrom: Facilities Management\n\nPlease be advised that the building's heating system will undergo maintenance this weekend. As a result, temperatures in the office may be lower than usual on Monday morning. We recommend that employees wear warm clothing. The heating system is expected to be fully _____ by Tuesday.",
+          "text": "Choose the correct word.",
+          "options": [
+            "A. operate",
+            "B. operated",
+            "C. operating",
+            "D. operational"
+          ],
+          "correctAnswer": 3,
+          "explanation": "\"Fully operational\" = hoạt động đầy đủ (tính từ)."
+        },
+        {
+          "id": "t2-p6-12",
+          "passage": "NOTICE TO ALL STAFF\n\nThe company has recently upgraded its computer network to improve security and performance. All employees are _____ to update their passwords by the end of this month.",
+          "text": "Choose the correct word.",
+          "options": [
+            "A. request",
+            "B. requested",
+            "C. requesting",
+            "D. requests"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Cấu trúc bị động: are + V3 (requested)."
+        },
+        {
+          "id": "t2-p6-13",
+          "passage": "NOTICE TO ALL STAFF\n\nThe company has recently upgraded its computer network to improve security and performance. All employees are requested to update their passwords by the end of this month. New passwords must be at least eight characters long and include a _____ of letters, numbers, and symbols.",
+          "text": "Choose the correct word.",
+          "options": [
+            "A. mixing",
+            "B. mixture",
+            "C. mixed",
+            "D. mix"
+          ],
+          "correctAnswer": 1,
+          "explanation": "\"A mixture of\" = hỗn hợp của."
+        },
+        {
+          "id": "t2-p6-14",
+          "passage": "NOTICE TO ALL STAFF\n\nThe company has recently upgraded its computer network to improve security and performance. All employees are requested to update their passwords by the end of this month. New passwords must be at least eight characters long and include a mixture of letters, numbers, and symbols. Employees who fail to comply may _____ access to company systems.",
+          "text": "Choose the correct word.",
+          "options": [
+            "A. lose",
+            "B. loose",
+            "C. lost",
+            "D. losing"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Động từ \"lose\" = mất. \"Loose\" = lỏng lẻo."
+        },
+        {
+          "id": "t2-p6-15",
+          "passage": "INVITATION\n\nYou are cordially invited to attend the Grand Opening of our new branch office. The event will take place on Saturday, April 15th, from 2:00 PM to 5:00 PM at 123 Business Avenue. Light refreshments will be _____.",
+          "text": "Choose the correct word.",
+          "options": [
+            "A. provided",
+            "B. produce",
+            "C. profit",
+            "D. promote"
+          ],
+          "correctAnswer": 0,
+          "explanation": "\"Will be provided\" = sẽ được cung cấp (bị động)."
+        },
+        {
+          "id": "t2-p6-16",
+          "passage": "INVITATION\n\nYou are cordially invited to attend the Grand Opening of our new branch office. The event will take place on Saturday, April 15th, from 2:00 PM to 5:00 PM at 123 Business Avenue. Light refreshments will be provided. Please RSVP by April 10th to _____ your attendance.",
+          "text": "Choose the correct word.",
+          "options": [
+            "A. confirm",
+            "B. conform",
+            "C. confine",
+            "D. confide"
+          ],
+          "correctAnswer": 0,
+          "explanation": "\"Confirm your attendance\" = xác nhận sự tham dự."
+        }
+      ]
+    },
+    {
+      "id": "t2-sec-7",
+      "title": "Part 7: Reading Comprehension",
+      "description": "Read the passage and answer the questions.",
+      "questions": [
+        {
+          "id": "t2-p7-1",
+          "passage": "Greenfield Industries is pleased to announce the opening of its new regional office in Singapore. The new office, located in the central business district, will serve as the company's hub for Southeast Asian operations. The Singapore team will focus on business development, client relations, and regional marketing efforts. The office will initially employ 25 staff members, with plans to expand to 50 within the next two years.",
+          "text": "Where is the new office located?",
+          "options": [
+            "A. In Tokyo",
+            "B. In the central business district of Singapore",
+            "C. In Hong Kong",
+            "D. In downtown Sydney"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Văn phòng mới nằm ở trung tâm thương mại Singapore."
+        },
+        {
+          "id": "t2-p7-2",
+          "passage": "Greenfield Industries is pleased to announce the opening of its new regional office in Singapore. The new office, located in the central business district, will serve as the company's hub for Southeast Asian operations. The Singapore team will focus on business development, client relations, and regional marketing efforts. The office will initially employ 25 staff members, with plans to expand to 50 within the next two years.",
+          "text": "What will the Singapore team focus on?",
+          "options": [
+            "A. Manufacturing and production",
+            "B. Business development, client relations, and marketing",
+            "C. Human resources and training",
+            "D. Research and development"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Đội Singapore tập trung vào phát triển kinh doanh, quan hệ khách hàng và tiếp thị."
+        },
+        {
+          "id": "t2-p7-3",
+          "passage": "Greenfield Industries is pleased to announce the opening of its new regional office in Singapore. The new office, located in the central business district, will serve as the company's hub for Southeast Asian operations. The Singapore team will focus on business development, client relations, and regional marketing efforts. The office will initially employ 25 staff members, with plans to expand to 50 within the next two years.",
+          "text": "How many employees will the office have initially?",
+          "options": [
+            "A. 10",
+            "B. 25",
+            "C. 50",
+            "D. 75"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Văn phòng sẽ có ban đầu 25 nhân viên."
+        },
+        {
+          "id": "t2-p7-4",
+          "passage": "Dear Valued Partner,\n\nWe are writing to inform you of an important update to our terms of service, effective April 1st. The revised terms include adjustments to pricing structures for bulk orders, extended warranty coverage for select products, and new guidelines for return and exchange policies.\n\nA detailed summary of the changes has been attached to this email. We encourage you to review the document carefully before the new terms take effect. If you have questions, please contact your account representative.\n\nThank you for your continued partnership.",
+          "text": "When do the new terms take effect?",
+          "options": [
+            "A. March 1st",
+            "B. April 1st",
+            "C. May 1st",
+            "D. June 1st"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Điều khoản mới có hiệu lực từ ngày 1 tháng 4."
+        },
+        {
+          "id": "t2-p7-5",
+          "passage": "Dear Valued Partner,\n\nWe are writing to inform you of an important update to our terms of service, effective April 1st. The revised terms include adjustments to pricing structures for bulk orders, extended warranty coverage for select products, and new guidelines for return and exchange policies.\n\nA detailed summary of the changes has been attached to this email. We encourage you to review the document carefully before the new terms take effect. If you have questions, please contact your account representative.\n\nThank you for your continued partnership.",
+          "text": "Which of the following is NOT mentioned as a change?",
+          "options": [
+            "A. Pricing adjustments for bulk orders",
+            "B. Extended warranty coverage",
+            "C. New employee benefits",
+            "D. New return and exchange guidelines"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Quyền lợi nhân viên mới không được đề cập."
+        },
+        {
+          "id": "t2-p7-6",
+          "passage": "Dear Valued Partner,\n\nWe are writing to inform you of an important update to our terms of service, effective April 1st. The revised terms include adjustments to pricing structures for bulk orders, extended warranty coverage for select products, and new guidelines for return and exchange policies.\n\nA detailed summary of the changes has been attached to this email. We encourage you to review the document carefully before the new terms take effect. If you have questions, please contact your account representative.\n\nThank you for your continued partnership.",
+          "text": "Who should partners contact with questions?",
+          "options": [
+            "A. The CEO",
+            "B. The marketing department",
+            "C. Their account representative",
+            "D. The legal team"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Đối tác nên liên hệ với đại diện tài khoản."
+        },
+        {
+          "id": "t2-p7-7",
+          "passage": "Sunrise Hotel is currently seeking experienced hospitality professionals to join our team. We are hiring for the following positions:\n\n• Front Desk Agent: Requires 2+ years of customer service experience. Must be fluent in English and at least one other language.\n• Housekeeping Supervisor: Requires 3+ years of housekeeping experience and strong organizational skills.\n• Restaurant Server: Prior food service experience preferred. Must have flexible availability, including weekends and holidays.\n\nInterested candidates should submit a résumé and cover letter to careers@sunrisehotel.com by March 31st.",
+          "text": "How many positions are being advertised?",
+          "options": [
+            "A. Two",
+            "B. Three",
+            "C. Four",
+            "D. Five"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Có ba vị trí đang tuyển dụng."
+        },
+        {
+          "id": "t2-p7-8",
+          "passage": "Sunrise Hotel is currently seeking experienced hospitality professionals to join our team. We are hiring for the following positions:\n\n• Front Desk Agent: Requires 2+ years of customer service experience. Must be fluent in English and at least one other language.\n• Housekeeping Supervisor: Requires 3+ years of housekeeping experience and strong organizational skills.\n• Restaurant Server: Prior food service experience preferred. Must have flexible availability, including weekends and holidays.\n\nInterested candidates should submit a résumé and cover letter to careers@sunrisehotel.com by March 31st.",
+          "text": "What is required for the Front Desk Agent position?",
+          "options": [
+            "A. 3+ years of experience",
+            "B. Fluency in two languages",
+            "C. A college degree",
+            "D. Weekend availability only"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Vị trí lễ tần yêu cầu thành thạo hai ngôn ngữ."
+        },
+        {
+          "id": "t2-p7-9",
+          "passage": "Sunrise Hotel is currently seeking experienced hospitality professionals to join our team. We are hiring for the following positions:\n\n• Front Desk Agent: Requires 2+ years of customer service experience. Must be fluent in English and at least one other language.\n• Housekeeping Supervisor: Requires 3+ years of housekeeping experience and strong organizational skills.\n• Restaurant Server: Prior food service experience preferred. Must have flexible availability, including weekends and holidays.\n\nInterested candidates should submit a résumé and cover letter to careers@sunrisehotel.com by March 31st.",
+          "text": "By what date should applications be submitted?",
+          "options": [
+            "A. February 28th",
+            "B. March 31st",
+            "C. April 1st",
+            "D. May 15th"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Đơn phải nộp trước ngày 31 tháng 3."
+        },
+        {
+          "id": "t2-p7-10",
+          "passage": "City Times Weekly\nMarch 15, 2024\n\nTechCorp Announces Major Expansion\n\nTechCorp, a leading software company based in Portland, has announced plans to open three new offices across Europe. The expansion is expected to create over 500 new jobs in the coming year. CEO Sarah Mitchell stated that the move is driven by growing demand for the company's cloud computing services. The new offices will be located in Berlin, Amsterdam, and Dublin.",
+          "text": "What type of company is TechCorp?",
+          "options": [
+            "A. A manufacturing firm",
+            "B. A software company",
+            "C. A retail chain",
+            "D. A consulting firm"
+          ],
+          "correctAnswer": 1,
+          "explanation": "TechCorp là công ty phần mềm."
+        },
+        {
+          "id": "t2-p7-11",
+          "passage": "City Times Weekly\nMarch 15, 2024\n\nTechCorp Announces Major Expansion\n\nTechCorp, a leading software company based in Portland, has announced plans to open three new offices across Europe. The expansion is expected to create over 500 new jobs in the coming year. CEO Sarah Mitchell stated that the move is driven by growing demand for the company's cloud computing services. The new offices will be located in Berlin, Amsterdam, and Dublin.",
+          "text": "How many new jobs will be created?",
+          "options": [
+            "A. Over 200",
+            "B. Over 300",
+            "C. Over 500",
+            "D. Over 1,000"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Expansion sẽ tạo ra hơn 500 việc làm mới."
+        },
+        {
+          "id": "t2-p7-12",
+          "passage": "City Times Weekly\nMarch 15, 2024\n\nTechCorp Announces Major Expansion\n\nTechCorp, a leading software company based in Portland, has announced plans to open three new offices across Europe. The expansion is expected to create over 500 new jobs in the coming year. CEO Sarah Mitchell stated that the move is driven by growing demand for the company's cloud computing services. The new offices will be located in Berlin, Amsterdam, and Dublin.",
+          "text": "What is driving the expansion?",
+          "options": [
+            "A. Lower costs in Europe",
+            "B. Government incentives",
+            "C. Growing demand for cloud computing services",
+            "D. A merger with another company"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Sự mở rộng được thúc đẩy bởi nhu cầu tăng đối với dịch vụ điện toán đám mây."
+        },
+        {
+          "id": "t2-p7-13",
+          "passage": "Riverside Business Park\n\nOffice Space Available for Lease\n\nRiverside Business Park is offering newly renovated office spaces for lease. Units range from 500 to 5,000 square feet and are suitable for businesses of all sizes. Features include high-speed internet, 24-hour security, covered parking, and access to shared conference rooms. Located just five minutes from the interstate, the park offers convenient access to downtown.\n\nFor leasing inquiries, contact James Wright at (555) 234-5678 or jwright@riversidepark.com.",
+          "text": "What is the largest office space available?",
+          "options": [
+            "A. 500 square feet",
+            "B. 2,500 square feet",
+            "C. 5,000 square feet",
+            "D. 10,000 square feet"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Không gian văn phòng lớn nhất là 5.000 feet vuông."
+        },
+        {
+          "id": "t2-p7-14",
+          "passage": "Riverside Business Park\n\nOffice Space Available for Lease\n\nRiverside Business Park is offering newly renovated office spaces for lease. Units range from 500 to 5,000 square feet and are suitable for businesses of all sizes. Features include high-speed internet, 24-hour security, covered parking, and access to shared conference rooms. Located just five minutes from the interstate, the park offers convenient access to downtown.\n\nFor leasing inquiries, contact James Wright at (555) 234-5678 or jwright@riversidepark.com.",
+          "text": "Which amenity is NOT listed?",
+          "options": [
+            "A. High-speed internet",
+            "B. A gym and fitness center",
+            "C. 24-hour security",
+            "D. Covered parking"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Phòng tập thể dục không được liệt kê."
+        },
+        {
+          "id": "t2-p7-15",
+          "passage": "Riverside Business Park\n\nOffice Space Available for Lease\n\nRiverside Business Park is offering newly renovated office spaces for lease. Units range from 500 to 5,000 square feet and are suitable for businesses of all sizes. Features include high-speed internet, 24-hour security, covered parking, and access to shared conference rooms. Located just five minutes from the interstate, the park offers convenient access to downtown.\n\nFor leasing inquiries, contact James Wright at (555) 234-5678 or jwright@riversidepark.com.",
+          "text": "How far is the park from the interstate?",
+          "options": [
+            "A. One minute",
+            "B. Five minutes",
+            "C. Ten minutes",
+            "D. Fifteen minutes"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Khu công nghiệp cách xa đường cao tốc năm phút."
+        },
+        {
+          "id": "t2-p7-16",
+          "passage": "Global Logistics Weekly\n\nSupply Chain Disruptions Expected to Ease\n\nIndustry experts predict that global supply chain disruptions, which have plagued businesses since 2020, will begin to ease in the second half of 2024. According to a report released by the International Trade Association, port congestion has decreased by 35% compared to last year, and shipping costs have stabilized. However, the report also warns that geopolitical tensions and rising fuel prices remain potential risks.",
+          "text": "According to the report, by how much has port congestion decreased?",
+          "options": [
+            "A. 15%",
+            "B. 25%",
+            "C. 35%",
+            "D. 50%"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Tắc nghẽn cảng đã giảm 35% so với năm ngoái."
+        },
+        {
+          "id": "t2-p7-17",
+          "passage": "Global Logistics Weekly\n\nSupply Chain Disruptions Expected to Ease\n\nIndustry experts predict that global supply chain disruptions, which have plagued businesses since 2020, will begin to ease in the second half of 2024. According to a report released by the International Trade Association, port congestion has decreased by 35% compared to last year, and shipping costs have stabilized. However, the report also warns that geopolitical tensions and rising fuel prices remain potential risks.",
+          "text": "What are mentioned as potential risks?",
+          "options": [
+            "A. Labor strikes and new regulations",
+            "B. Geopolitical tensions and rising fuel prices",
+            "C. Natural disasters and pandemics",
+            "D. Currency fluctuations and tariffs"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Căng thẳng địa chính trị và giá nhiên liệu tăng là rủi ro tiềm ẩn."
+        },
+        {
+          "id": "t2-p7-18",
+          "passage": "Global Logistics Weekly\n\nSupply Chain Disruptions Expected to Ease\n\nIndustry experts predict that global supply chain disruptions, which have plagued businesses since 2020, will begin to ease in the second half of 2024. According to a report released by the International Trade Association, port congestion has decreased by 35% compared to last year, and shipping costs have stabilized. However, the report also warns that geopolitical tensions and rising fuel prices remain potential risks.",
+          "text": "What is the main topic of the article?",
+          "options": [
+            "A. New trade agreements",
+            "B. The recovery of global supply chains",
+            "C. Rising shipping costs",
+            "D. Port construction projects"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Chủ đề chính là sự phục hồi của chuỗi cung ứng toàn cầu."
+        },
+        {
+          "id": "t2-p7-19",
+          "passage": "Apex Marketing Group is pleased to announce the promotion of three valued team members:\n\n• Lisa Chen has been promoted to Senior Account Manager. Lisa has been with the company for seven years and has led several successful campaigns.\n• David Park has been promoted to Creative Director. David joined the company three years ago and has been recognized for his innovative design work.\n• Rachel Torres has been promoted to VP of Client Services. Rachel has been with the company for twelve years and has built lasting relationships with key clients.\n\nPlease join us in congratulating them on their well-deserved promotions.",
+          "text": "How many promotions are announced?",
+          "options": [
+            "A. Two",
+            "B. Three",
+            "C. Four",
+            "D. Five"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Có ba sự thăng chức được thông báo."
+        },
+        {
+          "id": "t2-p7-20",
+          "passage": "Apex Marketing Group is pleased to announce the promotion of three valued team members:\n\n• Lisa Chen has been promoted to Senior Account Manager. Lisa has been with the company for seven years and has led several successful campaigns.\n• David Park has been promoted to Creative Director. David joined the company three years ago and has been recognized for his innovative design work.\n• Rachel Torres has been promoted to VP of Client Services. Rachel has been with the company for twelve years and has built lasting relationships with key clients.\n\nPlease join us in congratulating them on their well-deserved promotions.",
+          "text": "Who has been at the company the longest?",
+          "options": [
+            "A. Lisa Chen",
+            "B. David Park",
+            "C. Rachel Torres",
+            "D. They all joined at the same time"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Rachel Torres đã làm việc ở công ty lâu nhất (12 năm)."
+        },
+        {
+          "id": "t2-p7-21",
+          "passage": "Apex Marketing Group is pleased to announce the promotion of three valued team members:\n\n• Lisa Chen has been promoted to Senior Account Manager. Lisa has been with the company for seven years and has led several successful campaigns.\n• David Park has been promoted to Creative Director. David joined the company three years ago and has been recognized for his innovative design work.\n• Rachel Torres has been promoted to VP of Client Services. Rachel has been with the company for twelve years and has built lasting relationships with key clients.\n\nPlease join us in congratulating them on their well-deserved promotions.",
+          "text": "What is David Park known for?",
+          "options": [
+            "A. Building client relationships",
+            "B. Leading successful campaigns",
+            "C. Innovative design work",
+            "D. Managing budgets"
+          ],
+          "correctAnswer": 2,
+          "explanation": "David Park nổi tiếng với công việc thiết kế sáng tạo."
+        },
+        {
+          "id": "t2-p7-22",
+          "passage": "IMPORTANT NOTICE\n\nTo: All Warehouse Employees\nFrom: Operations Department\n\nEffective immediately, the following changes will be implemented in our warehouse operations:\n\n1. All forklift operators must complete a safety refresher course by the end of this month.\n2. Loading dock procedures have been updated. Please review the new manual available on the intranet.\n3. The night shift schedule has been adjusted. Updated schedules are posted on the break room bulletin board.\n\nFailure to comply with these changes may result in disciplinary action.",
+          "text": "What must forklift operators do?",
+          "options": [
+            "A. Purchase new safety gear",
+            "B. Complete a safety refresher course",
+            "C. Work overtime",
+            "D. Transfer to another department"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Tất cả người vận hành xe nâng phải hoàn thành khóa học ôn tập an toàn."
+        },
+        {
+          "id": "t2-p7-23",
+          "passage": "IMPORTANT NOTICE\n\nTo: All Warehouse Employees\nFrom: Operations Department\n\nEffective immediately, the following changes will be implemented in our warehouse operations:\n\n1. All forklift operators must complete a safety refresher course by the end of this month.\n2. Loading dock procedures have been updated. Please review the new manual available on the intranet.\n3. The night shift schedule has been adjusted. Updated schedules are posted on the break room bulletin board.\n\nFailure to comply with these changes may result in disciplinary action.",
+          "text": "Where can employees find the updated loading dock procedures?",
+          "options": [
+            "A. In the HR office",
+            "B. On the intranet",
+            "C. In the break room",
+            "D. From their supervisor"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Quy trình cập nhật có trên mạng nội bộ (intranet)."
+        },
+        {
+          "id": "t2-p7-24",
+          "passage": "IMPORTANT NOTICE\n\nTo: All Warehouse Employees\nFrom: Operations Department\n\nEffective immediately, the following changes will be implemented in our warehouse operations:\n\n1. All forklift operators must complete a safety refresher course by the end of this month.\n2. Loading dock procedures have been updated. Please review the new manual available on the intranet.\n3. The night shift schedule has been adjusted. Updated schedules are posted on the break room bulletin board.\n\nFailure to comply with these changes may result in disciplinary action.",
+          "text": "What happens if employees do not comply?",
+          "options": [
+            "A. They will be fired",
+            "B. They may face disciplinary action",
+            "C. They will lose their bonuses",
+            "D. They will be moved to day shift"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Không tuân thủ có thể dẫn đến hành động kỷ luật."
+        },
+        {
+          "id": "t2-p7-25",
+          "passage": "MIDWEST MANUFACTURING NEWS\n\nPlant Expansion on Track\n\nMidwest Manufacturing Inc. has confirmed that its plant expansion project in Indiana is on schedule. The $15 million project, which broke ground last June, will add 50,000 square feet of production space to the existing facility. The expanded plant is expected to be operational by Q4 of this year and will create approximately 120 new jobs.",
+          "text": "When did construction begin?",
+          "options": [
+            "A. Last January",
+            "B. Last June",
+            "C. This March",
+            "D. This June"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Xây dựng bắt đầu vào tháng Sáu năm ngoái."
+        },
+        {
+          "id": "t2-p7-26",
+          "passage": "MIDWEST MANUFACTURING NEWS\n\nPlant Expansion on Track\n\nMidwest Manufacturing Inc. has confirmed that its plant expansion project in Indiana is on schedule. The $15 million project, which broke ground last June, will add 50,000 square feet of production space to the existing facility. The expanded plant is expected to be operational by Q4 of this year and will create approximately 120 new jobs.",
+          "text": "How much is the expansion project costing?",
+          "options": [
+            "A. $5 million",
+            "B. $10 million",
+            "C. $15 million",
+            "D. $20 million"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Dự án mở rộng tốn 15 triệu đô la."
+        },
+        {
+          "id": "t2-p7-27",
+          "passage": "MIDWEST MANUFACTURING NEWS\n\nPlant Expansion on Track\n\nMidwest Manufacturing Inc. has confirmed that its plant expansion project in Indiana is on schedule. The $15 million project, which broke ground last June, will add 50,000 square feet of production space to the existing facility. The expanded plant is expected to be operational by Q4 of this year and will create approximately 120 new jobs.",
+          "text": "How many jobs will the expansion create?",
+          "options": [
+            "A. About 50",
+            "B. About 80",
+            "C. About 120",
+            "D. About 200"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Mở rộng sẽ tạo ra khoảng 120 việc làm mới."
+        },
+        {
+          "id": "t2-p7-28",
+          "passage": "Summit Insurance Company\n\nNew Insurance Policy Features\n\nEffective May 1st, Summit Insurance will offer enhanced coverage options for small business clients. Key features of the new policies include:\n\n• Extended liability coverage up to $2 million\n• Cybersecurity insurance for data breach protection\n• Business interruption coverage for natural disasters\n• 24/7 claims support via phone and online portal\n\nSmall business owners interested in learning more can attend a free informational webinar on April 20th. Register at summitinsurance.com/webinar.",
+          "text": "When do the new policy features take effect?",
+          "options": [
+            "A. April 1st",
+            "B. April 20th",
+            "C. May 1st",
+            "D. June 1st"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Các tính năng mới có hiệu lực từ ngày 1 tháng 5."
+        },
+        {
+          "id": "t2-p7-29",
+          "passage": "Summit Insurance Company\n\nNew Insurance Policy Features\n\nEffective May 1st, Summit Insurance will offer enhanced coverage options for small business clients. Key features of the new policies include:\n\n• Extended liability coverage up to $2 million\n• Cybersecurity insurance for data breach protection\n• Business interruption coverage for natural disasters\n• 24/7 claims support via phone and online portal\n\nSmall business owners interested in learning more can attend a free informational webinar on April 20th. Register at summitinsurance.com/webinar.",
+          "text": "What is the maximum liability coverage?",
+          "options": [
+            "A. $500,000",
+            "B. $1 million",
+            "C. $2 million",
+            "D. $5 million"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Mức bảo hiểm trách nhiệm tối đa là 2 triệu đô la."
+        },
+        {
+          "id": "t2-p7-30",
+          "passage": "Summit Insurance Company\n\nNew Insurance Policy Features\n\nEffective May 1st, Summit Insurance will offer enhanced coverage options for small business clients. Key features of the new policies include:\n\n• Extended liability coverage up to $2 million\n• Cybersecurity insurance for data breach protection\n• Business interruption coverage for natural disasters\n• 24/7 claims support via phone and online portal\n\nSmall business owners interested in learning more can attend a free informational webinar on April 20th. Register at summitinsurance.com/webinar.",
+          "text": "How can business owners learn more about the new policies?",
+          "options": [
+            "A. By visiting the office",
+            "B. By attending a free webinar",
+            "C. By calling a hotline",
+            "D. By reading a newsletter"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Chủ doanh nghiệp có thể tìm hiểu thêm qua webinar miễn phí."
+        },
+        {
+          "id": "t2-p7-31",
+          "passage": "CITY COUNCIL MEETING MINUTES\nMarch 10, 2024\n\nThe city council approved a proposal to build a new public library in the Westwood neighborhood. The project, estimated at $8 million, will be funded through a combination of municipal bonds and private donations. Construction is expected to begin in fall 2024 and be completed by spring 2026. The library will feature a community meeting room, a children's section, and a digital media lab.",
+          "text": "How will the library project be funded?",
+          "options": [
+            "A. Only through taxes",
+            "B. Through municipal bonds and private donations",
+            "C. Through a federal grant",
+            "D. Through crowdfunding"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Dự án được tài trợ qua trái phiếu thành phố và đóng góp tư nhân."
+        },
+        {
+          "id": "t2-p7-32",
+          "passage": "CITY COUNCIL MEETING MINUTES\nMarch 10, 2024\n\nThe city council approved a proposal to build a new public library in the Westwood neighborhood. The project, estimated at $8 million, will be funded through a combination of municipal bonds and private donations. Construction is expected to begin in fall 2024 and be completed by spring 2026. The library will feature a community meeting room, a children's section, and a digital media lab.",
+          "text": "When is the library expected to be completed?",
+          "options": [
+            "A. Fall 2024",
+            "B. Spring 2025",
+            "C. Fall 2025",
+            "D. Spring 2026"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Thư viện dự kiến hoàn thành vào mùa xuân năm 2026."
+        },
+        {
+          "id": "t2-p7-33",
+          "passage": "CITY COUNCIL MEETING MINUTES\nMarch 10, 2024\n\nThe city council approved a proposal to build a new public library in the Westwood neighborhood. The project, estimated at $8 million, will be funded through a combination of municipal bonds and private donations. Construction is expected to begin in fall 2024 and be completed by spring 2026. The library will feature a community meeting room, a children's section, and a digital media lab.",
+          "text": "Which feature is NOT mentioned for the new library?",
+          "options": [
+            "A. A community meeting room",
+            "B. A digital media lab",
+            "C. A rooftop garden",
+            "D. A children's section"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Sân thượng có vườn không được đề cập."
+        },
+        {
+          "id": "t2-p7-34",
+          "passage": "FRESH MART GROCERY\nEmployment Opportunities\n\nFresh Mart is hiring for multiple positions at our three downtown locations:\n\n• Cashier: Part-time and full-time positions available. Must be 18 or older. Cash handling experience is a plus.\n• Deli Associate: Full-time position. Food handler's certification required.\n• Stock Clerk: Overnight shifts available. Must be able to lift up to 50 pounds.\n\nApply in person at any Fresh Mart location or online at freshmart.com/careers.",
+          "text": "How many locations does Fresh Mart have downtown?",
+          "options": [
+            "A. Two",
+            "B. Three",
+            "C. Four",
+            "D. Five"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Fresh Mart có ba chi nhánh ở trung tâm thành phố."
+        },
+        {
+          "id": "t2-p7-35",
+          "passage": "FRESH MART GROCERY\nEmployment Opportunities\n\nFresh Mart is hiring for multiple positions at our three downtown locations:\n\n• Cashier: Part-time and full-time positions available. Must be 18 or older. Cash handling experience is a plus.\n• Deli Associate: Full-time position. Food handler's certification required.\n• Stock Clerk: Overnight shifts available. Must be able to lift up to 50 pounds.\n\nApply in person at any Fresh Mart location or online at freshmart.com/careers.",
+          "text": "What is required for the Deli Associate position?",
+          "options": [
+            "A. Must be 18 or older",
+            "B. Food handler's certification",
+            "C. Ability to lift 50 pounds",
+            "D. Overnight availability"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Vị trí Deli Associate yêu cầu chứng chỉ xử lý thực phẩm."
+        },
+        {
+          "id": "t2-p7-36",
+          "passage": "FRESH MART GROCERY\nEmployment Opportunities\n\nFresh Mart is hiring for multiple positions at our three downtown locations:\n\n• Cashier: Part-time and full-time positions available. Must be 18 or older. Cash handling experience is a plus.\n• Deli Associate: Full-time position. Food handler's certification required.\n• Stock Clerk: Overnight shifts available. Must be able to lift up to 50 pounds.\n\nApply in person at any Fresh Mart location or online at freshmart.com/careers.",
+          "text": "How can interested applicants apply?",
+          "options": [
+            "A. By phone only",
+            "B. In person or online",
+            "C. By mail only",
+            "D. Through a job fair"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Ứng viên có thể nộp đơn trực tiếp hoặc trực tuyến."
+        },
+        {
+          "id": "t2-p7-37",
+          "passage": "Skyline Airlines is introducing a new loyalty program called SkyRewards, effective June 1st. Members will earn one point for every dollar spent on flights. Points can be redeemed for free flights, seat upgrades, and lounge access. Silver tier members (earned after 25,000 points) will enjoy priority boarding and extra baggage allowance. Gold tier members (earned after 50,000 points) will receive complimentary first-class upgrades and priority check-in.",
+          "text": "When does the new loyalty program begin?",
+          "options": [
+            "A. May 1st",
+            "B. June 1st",
+            "C. July 1st",
+            "D. August 1st"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Chương trình khách hàng thân thiết mới bắt đầu từ ngày 1 tháng 6."
+        },
+        {
+          "id": "t2-p7-38",
+          "passage": "Skyline Airlines is introducing a new loyalty program called SkyRewards, effective June 1st. Members will earn one point for every dollar spent on flights. Points can be redeemed for free flights, seat upgrades, and lounge access. Silver tier members (earned after 25,000 points) will enjoy priority boarding and extra baggage allowance. Gold tier members (earned after 50,000 points) will receive complimentary first-class upgrades and priority check-in.",
+          "text": "How many points are needed for Silver tier status?",
+          "options": [
+            "A. 10,000",
+            "B. 25,000",
+            "C. 50,000",
+            "D. 100,000"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Cần 25.000 điểm để đạt hạng Silver."
+        },
+        {
+          "id": "t2-p7-39",
+          "passage": "Skyline Airlines is introducing a new loyalty program called SkyRewards, effective June 1st. Members will earn one point for every dollar spent on flights. Points can be redeemed for free flights, seat upgrades, and lounge access. Silver tier members (earned after 25,000 points) will enjoy priority boarding and extra baggage allowance. Gold tier members (earned after 50,000 points) will receive complimentary first-class upgrades and priority check-in.",
+          "text": "What benefit do Gold tier members receive that Silver tier members do not?",
+          "options": [
+            "A. Extra baggage allowance",
+            "B. Priority boarding",
+            "C. Complimentary first-class upgrades",
+            "D. Lounge access"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Gold tier nhận nâng cấp hạng nhất miễn phí, Silver không có."
+        },
+        {
+          "id": "t2-p7-40",
+          "passage": "URGENT: PRODUCT RECALL NOTICE\n\nBrand: ProClean Washing Machines\nModel: PC-4500 and PC-4600\n\nProClean is voluntarily recalling all PC-4500 and PC-4600 washing machines manufactured between January and September 2023 due to a potential electrical defect. The defect may cause the machine to overheat during use, posing a fire risk.\n\nOwners of affected models should stop using the machine immediately and contact ProClean at 1-800-555-0123 for a free repair. Do not attempt to repair the machine yourself.\n\nFor more information, visit recall.proclean.com.",
+          "text": "Why are the washing machines being recalled?",
+          "options": [
+            "A. Water leakage issues",
+            "B. A potential electrical defect that may cause overheating",
+            "C. Excessive noise during operation",
+            "D. Failure to start"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Máy giặt bị thu hồi do lỗi điện có thể gây quá nhiệt."
+        },
+        {
+          "id": "t2-p7-41",
+          "passage": "URGENT: PRODUCT RECALL NOTICE\n\nBrand: ProClean Washing Machines\nModel: PC-4500 and PC-4600\n\nProClean is voluntarily recalling all PC-4500 and PC-4600 washing machines manufactured between January and September 2023 due to a potential electrical defect. The defect may cause the machine to overheat during use, posing a fire risk.\n\nOwners of affected models should stop using the machine immediately and contact ProClean at 1-800-555-0123 for a free repair. Do not attempt to repair the machine yourself.\n\nFor more information, visit recall.proclean.com.",
+          "text": "Which models are affected?",
+          "options": [
+            "A. PC-4400 and PC-4500",
+            "B. PC-4500 and PC-4600",
+            "C. PC-4600 and PC-4700",
+            "D. PC-4700 and PC-4800"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Các mẫu PC-4500 và PC-4600 bị ảnh hưởng."
+        },
+        {
+          "id": "t2-p7-42",
+          "passage": "URGENT: PRODUCT RECALL NOTICE\n\nBrand: ProClean Washing Machines\nModel: PC-4500 and PC-4600\n\nProClean is voluntarily recalling all PC-4500 and PC-4600 washing machines manufactured between January and September 2023 due to a potential electrical defect. The defect may cause the machine to overheat during use, posing a fire risk.\n\nOwners of affected models should stop using the machine immediately and contact ProClean at 1-800-555-0123 for a free repair. Do not attempt to repair the machine yourself.\n\nFor more information, visit recall.proclean.com.",
+          "text": "What should owners do with the affected machines?",
+          "options": [
+            "A. Return them to the store for a refund",
+            "B. Stop using them and contact ProClean for a free repair",
+            "C. Continue using them carefully",
+            "D. Dispose of them at a recycling center"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Chủ sở hữu nên ngừng sử dụng và liên hệ ProClean để sửa chữa miễn phí."
+        },
+        {
+          "id": "t2-p7-43",
+          "passage": "WESTEND BUSINESS JOURNAL\n\nCo-Working Space Trend Grows\n\nThe demand for co-working spaces in major cities has grown by 40% in the past year, according to a new industry report. The trend is being driven by freelancers, startups, and remote workers seeking flexible, affordable office solutions. Leading providers such as WeWork and Regus have reported record occupancy rates. Industry analysts predict the co-working market will continue to grow as more companies adopt hybrid work models.",
+          "text": "By how much has demand for co-working spaces grown?",
+          "options": [
+            "A. 20%",
+            "B. 30%",
+            "C. 40%",
+            "D. 50%"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Nhu cầu không gian làm việc chung tăng 40%."
+        },
+        {
+          "id": "t2-p7-44",
+          "passage": "WESTEND BUSINESS JOURNAL\n\nCo-Working Space Trend Grows\n\nThe demand for co-working spaces in major cities has grown by 40% in the past year, according to a new industry report. The trend is being driven by freelancers, startups, and remote workers seeking flexible, affordable office solutions. Leading providers such as WeWork and Regus have reported record occupancy rates. Industry analysts predict the co-working market will continue to grow as more companies adopt hybrid work models.",
+          "text": "Who is driving the demand for co-working spaces?",
+          "options": [
+            "A. Large corporations",
+            "B. Government agencies",
+            "C. Freelancers, startups, and remote workers",
+            "D. Real estate developers"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Freelancer, startup và nhân viên làm từ xa đang thúc đẩy nhu cầu."
+        },
+        {
+          "id": "t2-p7-45",
+          "passage": "WESTEND BUSINESS JOURNAL\n\nCo-Working Space Trend Grows\n\nThe demand for co-working spaces in major cities has grown by 40% in the past year, according to a new industry report. The trend is being driven by freelancers, startups, and remote workers seeking flexible, affordable office solutions. Leading providers such as WeWork and Regus have reported record occupancy rates. Industry analysts predict the co-working market will continue to grow as more companies adopt hybrid work models.",
+          "text": "What do analysts predict about the future of co-working?",
+          "options": [
+            "A. It will decline",
+            "B. It will stay the same",
+            "C. It will continue to grow",
+            "D. It will be replaced by remote work"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Nhà phân tích dự đoán thị trường không gian làm việc chung sẽ tiếp tục tăng."
+        },
+        {
+          "id": "t2-p7-46",
+          "passage": "Metro Transit Authority\n\nService Alert - Effective March 20\n\nDue to scheduled track maintenance, the Blue Line will operate on a modified schedule between Oakwood and Harbor stations from March 20 to April 5. During this period:\n\n• Trains will run every 15 minutes instead of the usual 8 minutes.\n• A free shuttle bus service will operate between affected stations.\n• Late-night service will end at 11 PM instead of midnight.\n\nWe apologize for the inconvenience and recommend allowing extra travel time.",
+          "text": "How long will the modified schedule be in effect?",
+          "options": [
+            "A. One week",
+            "B. Two weeks",
+            "C. About two and a half weeks",
+            "D. One month"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Lịch trình sửa đổi có hiệu lực từ 20/3 đến 5/4, khoảng 2,5 tuần."
+        },
+        {
+          "id": "t2-p7-47",
+          "passage": "Metro Transit Authority\n\nService Alert - Effective March 20\n\nDue to scheduled track maintenance, the Blue Line will operate on a modified schedule between Oakwood and Harbor stations from March 20 to April 5. During this period:\n\n• Trains will run every 15 minutes instead of the usual 8 minutes.\n• A free shuttle bus service will operate between affected stations.\n• Late-night service will end at 11 PM instead of midnight.\n\nWe apologize for the inconvenience and recommend allowing extra travel time.",
+          "text": "How often will trains run during the maintenance period?",
+          "options": [
+            "A. Every 5 minutes",
+            "B. Every 8 minutes",
+            "C. Every 15 minutes",
+            "D. Every 20 minutes"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Tàu sẽ chạy mỗi 15 phút thay vì mỗi 8 phút."
+        },
+        {
+          "id": "t2-p7-48",
+          "passage": "Metro Transit Authority\n\nService Alert - Effective March 20\n\nDue to scheduled track maintenance, the Blue Line will operate on a modified schedule between Oakwood and Harbor stations from March 20 to April 5. During this period:\n\n• Trains will run every 15 minutes instead of the usual 8 minutes.\n• A free shuttle bus service will operate between affected stations.\n• Late-night service will end at 11 PM instead of midnight.\n\nWe apologize for the inconvenience and recommend allowing extra travel time.",
+          "text": "What alternative transportation is provided?",
+          "options": [
+            "A. Free taxi service",
+            "B. Free shuttle bus service",
+            "C. Discounted ride-sharing",
+            "D. Bicycle rentals"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Dịch vụ xe buýt đưa đón miễn phí được cung cấp."
+        },
+        {
+          "id": "t2-p7-49",
+          "passage": "GREEN VALLEY ORGANICS\nProduct Catalog Update\n\nGreen Valley Organics is expanding its product line with five new organic food items launching next month:\n\n1. Organic Granola Clusters (12 oz) - $6.99\n2. Cold-Pressed Olive Oil (500 ml) - $12.99\n3. Raw Honey (16 oz) - $9.49\n4. Quinoa Pasta (8 oz) - $4.99\n5. Dark Chocolate Bars (3.5 oz) - $3.99\n\nAll products are USDA certified organic and will be available at participating retailers nationwide.",
+          "text": "How many new products are being launched?",
+          "options": [
+            "A. Three",
+            "B. Four",
+            "C. Five",
+            "D. Six"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Có năm sản phẩm mới được ra mắt."
+        },
+        {
+          "id": "t2-p7-50",
+          "passage": "GREEN VALLEY ORGANICS\nProduct Catalog Update\n\nGreen Valley Organics is expanding its product line with five new organic food items launching next month:\n\n1. Organic Granola Clusters (12 oz) - $6.99\n2. Cold-Pressed Olive Oil (500 ml) - $12.99\n3. Raw Honey (16 oz) - $9.49\n4. Quinoa Pasta (8 oz) - $4.99\n5. Dark Chocolate Bars (3.5 oz) - $3.99\n\nAll products are USDA certified organic and will be available at participating retailers nationwide.",
+          "text": "Which product is the most expensive?",
+          "options": [
+            "A. Organic Granola Clusters",
+            "B. Cold-Pressed Olive Oil",
+            "C. Raw Honey",
+            "D. Dark Chocolate Bars"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Dầu ô liu ép lạnh có giá cao nhất: $12.99."
+        },
+        {
+          "id": "t2-p7-51",
+          "passage": "GREEN VALLEY ORGANICS\nProduct Catalog Update\n\nGreen Valley Organics is expanding its product line with five new organic food items launching next month:\n\n1. Organic Granola Clusters (12 oz) - $6.99\n2. Cold-Pressed Olive Oil (500 ml) - $12.99\n3. Raw Honey (16 oz) - $9.49\n4. Quinoa Pasta (8 oz) - $4.99\n5. Dark Chocolate Bars (3.5 oz) - $3.99\n\nAll products are USDA certified organic and will be available at participating retailers nationwide.",
+          "text": "Where will the products be sold?",
+          "options": [
+            "A. Only online",
+            "B. At Green Valley stores only",
+            "C. At participating retailers nationwide",
+            "D. At farmers' markets only"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Sản phẩm sẽ được bán tại các cửa hàng tham gia trên toàn quốc."
+        },
+        {
+          "id": "t2-p7-52",
+          "passage": "PERFORMANCE REPORT Q3 2024\nBrightway Solutions Inc.\n\nRevenue: $12.5 million (up 18% from Q3 2023)\nNet Profit: $2.1 million (up 12%)\nNew Clients Acquired: 85\nEmployee Retention Rate: 94%\n\nHighlights:\n- Signed a multi-year contract with TechNova Inc., valued at $3.2 million.\n- Expanded into the healthcare sector with three new client partnerships.\n- Launched a redesigned customer portal that improved client satisfaction scores by 22%.",
+          "text": "What was the revenue for Q3 2024?",
+          "options": [
+            "A. $8.5 million",
+            "B. $10.5 million",
+            "C. $12.5 million",
+            "D. $15.5 million"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Doanh thu Q3 2024 là 12,5 triệu đô la."
+        },
+        {
+          "id": "t2-p7-53",
+          "passage": "PERFORMANCE REPORT Q3 2024\nBrightway Solutions Inc.\n\nRevenue: $12.5 million (up 18% from Q3 2023)\nNet Profit: $2.1 million (up 12%)\nNew Clients Acquired: 85\nEmployee Retention Rate: 94%\n\nHighlights:\n- Signed a multi-year contract with TechNova Inc., valued at $3.2 million.\n- Expanded into the healthcare sector with three new client partnerships.\n- Launched a redesigned customer portal that improved client satisfaction scores by 22%.",
+          "text": "What was the value of the TechNova contract?",
+          "options": [
+            "A. $1.2 million",
+            "B. $2.2 million",
+            "C. $3.2 million",
+            "D. $4.2 million"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Hợp đồng TechNova có giá trị 3,2 triệu đô la."
+        },
+        {
+          "id": "t2-p7-54",
+          "passage": "PERFORMANCE REPORT Q3 2024\nBrightway Solutions Inc.\n\nRevenue: $12.5 million (up 18% from Q3 2023)\nNet Profit: $2.1 million (up 12%)\nNew Clients Acquired: 85\nEmployee Retention Rate: 94%\n\nHighlights:\n- Signed a multi-year contract with TechNova Inc., valued at $3.2 million.\n- Expanded into the healthcare sector with three new client partnerships.\n- Launched a redesigned customer portal that improved client satisfaction scores by 22%.",
+          "text": "By how much did client satisfaction scores improve?",
+          "options": [
+            "A. 12%",
+            "B. 18%",
+            "C. 22%",
+            "D. 94%"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Điểm hài lòng khách hàng cải thiện 22%."
+        }
+      ]
+    }
+  ]
+}

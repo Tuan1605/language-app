@@ -1,0 +1,46 @@
+[
+  {
+    "id": "nq-l-601",
+    "type": "multiple-choice",
+    "category": "n2",
+    "subCategory": "Nghe hiểu (Choukai)",
+    "question": "男の人と女の人が話しています。男の人はこの後、まず何をしますか。\n男：会議の資料、コピー終わった？\n女：あ、ごめん。今やろうと思ってたんだけど、プリンターのトナーが切れちゃって。\n男：えっ、本当？予備のトナー、倉庫にあったかな。\n女：さっき探したんだけど、見当たらなくて。総務に電話して注文してもらわないと。\n男：わかった。じゃあ、俺が総務に連絡しておくよ。君は急いで会議室のセッティングをお願い。\n女：了解。あ、ついでにお茶も準備しておいた方がいいよね。\n男：そうだね、それも頼む。じゃあ、まずは総務だな。\n\n男の人はこの後、まず何をしますか。",
+    "options": [
+      "会議の資料をコピーする",
+      "プリンターのトナーを探す",
+      "総務に電話をしてトナーを注文する",
+      "会議室のセッティングをする"
+    ],
+    "correctAnswer": 2,
+    "explanation": "【Dịch nghĩa】\nNgười nam và người nữ đang nói chuyện. Người nam sau đây sẽ làm gì ĐẦU TIÊN?\nNam: Tài liệu họp, copy xong chưa?\nNữ: A, xin lỗi. Tôi đang định làm thì máy in hết mực.\nNam: Hả, thật á? Mực dự phòng trong kho còn không nhỉ?\nNữ: Nãy tôi tìm rồi nhưng không thấy. Chắc phải gọi điện cho bộ phận Tổng vụ nhờ họ đặt mua thôi.\nNam: Hiểu rồi. Vậy để tôi liên lạc với Tổng vụ cho. Cô nhanh chóng setup phòng họp giúp tôi nhé.\nNữ: Rõ rồi. À, tiện thể chuẩn bị sẵn trà luôn thì tốt nhỉ.\nNam: Đúng rồi, nhờ cô việc đó luôn. Vậy, trước tiên là (gọi) Tổng vụ đã.\n\nNgười nam sau đây sẽ làm gì ĐẦU TIÊN?\n\n【Giải thích】\nNgười nam nói '俺が総務に連絡しておくよ' (Tôi sẽ liên lạc với Tổng vụ) và chốt lại là 'まずは総務だな' (Trước tiên là Tổng vụ đã). Do đó việc đầu tiên anh ta làm là gọi Tổng vụ để đặt mực in.",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "listening",
+      "choukai"
+    ],
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+  },
+  {
+    "id": "nq-l-602",
+    "type": "multiple-choice",
+    "category": "n2",
+    "subCategory": "Nghe hiểu (Choukai)",
+    "question": "会社で女の人と男の人が話しています。男の人はなぜ遅刻しましたか。\n女：山田さん、今日は随分遅かったですね。会議、始まってますよ。\n男：本当にすみません。いつも乗る電車が人身事故で止まっちゃって。\n女：ああ、それで。でも、振替輸送のバスがあったんじゃないですか？\n男：はい、それに乗ろうと思ってバス停まで走ったんですけど、途中で財布を落としたことに気づいて...\n女：ええっ、見つかったんですか？\n男：ええ、駅の窓口に届けられていました。ただ、手続きに時間がかかってしまって。本当にご迷惑をおかけしました。\n\n男の人はなぜ遅刻しましたか。",
+    "options": [
+      "電車が事故で止まってしまったから",
+      "振替輸送のバスに乗り遅れたから",
+      "落とした財布を受け取るのに時間がかかったから",
+      "駅の窓口で道を聞いていたから"
+    ],
+    "correctAnswer": 2,
+    "explanation": "【Dịch nghĩa】\nNgười nữ và người nam đang nói chuyện ở công ty. Tại sao người nam lại đến muộn?\nNữ: Anh Yamada, hôm nay anh đến trễ quá đấy. Cuộc họp bắt đầu rồi.\nNam: Thành thật xin lỗi. Chuyến tàu tôi hay đi bị dừng do có tai nạn.\nNữ: À ra vậy. Nhưng chẳng phải có xe buýt chuyên chở thay thế sao?\nNam: Vâng, tôi cũng định lên chuyến đó nên đã chạy đến trạm xe buýt, nhưng giữa đường lại nhận ra mình làm rơi ví...\nNữ: Hả, thế có tìm thấy không?\nNam: Có, nó được giao đến quầy nhà ga rồi. Chỉ là làm thủ tục nhận lại tốn thời gian quá. Thực sự xin lỗi vì đã làm phiền.\n\nTại sao người nam lại đến muộn?\n\n【Giải thích】\nTuy ban đầu tàu bị dừng, nhưng lý do chính yếu khiến anh ta mất thời gian và đi trễ là vì phải làm thủ tục nhận lại chiếc ví bị rơi ('手続きに時間がかかってしまって'). Đáp án 2 mô tả đúng điều này.",
+    "difficulty": "advanced",
+    "tags": [
+      "N2",
+      "listening",
+      "choukai"
+    ],
+    "audioUrl": "https://actions.google.com/sounds/v1/alarms/beep_short.ogg"
+  }
+]
