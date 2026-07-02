@@ -1,5 +1,5 @@
 import Dexie, { type EntityTable } from 'dexie';
-import type { Flashcard, Mistake, ExamResult, FullExam, Question, GrammarPoint, KanjiEntry } from '../types';
+import type { Flashcard, Mistake, ExamResult, FullExam, Question, GrammarPoint, KanjiEntry, ReviewLog } from '../types';
 
 export const db = new Dexie('LingoDB') as Dexie & {
   cards: EntityTable<Flashcard, 'id'>;
@@ -10,6 +10,7 @@ export const db = new Dexie('LingoDB') as Dexie & {
   grammar: EntityTable<GrammarPoint & { track: 'toeic' | 'n2' }, 'id'>;
   kanji: EntityTable<KanjiEntry, 'id'>;
   meta: EntityTable<{ id: string; value: boolean }, 'id'>;
+  reviewLogs: EntityTable<ReviewLog, 'id'>;
 };
 
 db.version(1).stores({
@@ -20,5 +21,6 @@ db.version(1).stores({
   questions: 'id, category',
   grammar: 'id, track',
   kanji: 'id',
-  meta: 'id'
+  meta: 'id',
+  reviewLogs: 'id, cardId, review, [cardId+review]'
 });

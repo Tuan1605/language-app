@@ -2,10 +2,9 @@ import { useState, useEffect, useRef } from 'react';
 import type { Flashcard, Mistake } from '../types';
 import { playCorrectSound, playIncorrectSound } from '../utils/sound';
 import { speak, langForCategory } from '../utils/tts';
+import { stripHtml } from '../utils/text';
+import { VOCAB_QUIZ_TIME } from '../utils/constants';
 import { Volume2 } from 'lucide-react';
-
-/** Strip HTML tags that may come from Anki-imported data. */
-const stripHtml = (s: string) => s.replace(/<[^>]*>/g, '').replace(/&nbsp;/g, ' ').trim();
 
 interface VocabQuizViewProps {
   word: Flashcard;
@@ -18,7 +17,7 @@ export function VocabQuizView({ word, allCards, onComplete, onSaveMistake }: Voc
   const [options, setOptions] = useState<string[]>([]);
   const [selectedIdx, setSelectedIdx] = useState<number | null>(null);
   const [isAnswered, setIsAnswered] = useState(false);
-  const initialTime = 45;
+  const initialTime = VOCAB_QUIZ_TIME;
   const [timeLeft, setTimeLeft] = useState(initialTime);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 

@@ -2,124 +2,17 @@ import { useNavigate } from 'react-router-dom';
 import { useUserStore } from '../stores/useUserStore';
 import { useAppStore } from '../stores/useAppStore';
 import { db } from '../data/db';
-import { calculateSM2, getNextReviewDate } from '../utils/sm2';
-import type { ReviewGrade, Flashcard, SessionTask, FullExam, AuthenticExam, ExamResult, Difficulty, GrammarPoint } from '../types';
+import { generateGrammarOptions } from '../utils/grammarOptions';
+import { trackCategory, sampleAcrossDifficulties } from '../utils/sessionHelpers';
+import { validateImportSchema } from '../utils/sanitize';
+import { GRAMMAR_SAMPLE_SIZE, DRILL_SAMPLE_SIZE } from '../utils/constants';
+import type { SessionTask, FullExam, AuthenticExam, ExamResult, Difficulty, Flashcard, Mistake } from '../types';
 import toast from 'react-hot-toast';
 
-const trackCategory = (track: 'english' | 'japanese'): 'toeic' | 'n2' =>
-  track === 'english' ? 'toeic' : 'n2';
-
-// Generate fill-in-the-blank options for grammar questions
-function generateGrammarOptions(point: GrammarPoint): { correctAnswer: string; distractors: string[] } {
-  const blanked = point.blankedExample || '';
-  
-  // Extract the blank content from blankedExample (text between parentheses)
-  const blankMatch = blanked.match(/\(([^)]+)\)/);
-  const blankContent = blankMatch ? blankMatch[1] : '';
-  
-  // Try to extract the correct answer from the example by finding what fills the blank
-  let correctAnswer = '';
-  
-  // Common grammar patterns and their expected answers
-  const patternAnswers: Record<string, string[]> = {
-    'Present Perfect': ['have worked', 'has worked', 'have finished', 'has finished', 'have seen', 'has seen'],
-    'Past Perfect': ['had left', 'had finished', 'had already left', 'had gone', 'had been'],
-    'Future Perfect': ['will have completed', 'will have finished', 'will have done', 'will have gone'],
-    'Present Perfect Continuous': ['have been working', 'has been working', 'have been studying', 'has been waiting'],
-    'Passive Voice': ['was written', 'was made', 'was called', 'were built', 'was sent'],
-    'Modal Verbs': ['must', 'should', 'can', 'could', 'would', 'might', 'may'],
-    'Conditionals': ['will cancel', 'would go', 'would have gone', 'will happen'],
-    'Reported Speech': ['said that he was', 'told me that she had', 'asked if the'],
-    'Gerunds vs. Infinitives': ['enjoy reading', 'want to read', 'finished writing', 'decided to go'],
-    'Simple Present': ['holds', 'goes', 'works', 'takes', 'makes'],
-    'Simple Past': ['submitted', 'visited', 'called', 'finished', 'started'],
-    'Simple Future': ['will launch', 'will start', 'will go', 'will meet'],
-    'Present Continuous': ['is preparing', 'is working', 'is writing', 'is making'],
-    'Past Continuous': ['was working', 'was reading', 'was waiting', 'was cooking'],
-    'Comparatives': ['more interesting', 'better than', 'more efficient', 'faster than'],
-    'Prepositions': ['on', 'at', 'in', 'by', 'with'],
-    'Articles': ['a', 'an', 'the'],
-    'Quantifiers': ['some', 'many', 'much', 'a few', 'a lot of'],
-    'Wish': ['had', 'were', 'could', 'would'],
-  };
-  
-  // Find matching pattern
-  for (const [pattern, answers] of Object.entries(patternAnswers)) {
-    if (point.pattern.includes(pattern)) {
-      correctAnswer = answers[Math.floor(Math.random() * answers.length)];
-      break;
-    }
-  }
-  
-  // Fallback: extract from example
-  if (!correctAnswer && blankContent) {
-    const blankWords = blankContent.split(' ');
-    if (blankWords.length > 0) {
-      correctAnswer = blankWords[0];
-    }
-  }
-  
-  // Ultimate fallback
-  if (!correctAnswer) {
-    correctAnswer = 'the correct answer';
-  }
-  
-  // Generate distractors (wrong answers)
-  const allVerbForms = [
-    'worked', 'have worked', 'was working', 'will work', 'is working',
-    'had worked', 'would work', 'could work', 'should work', 'might work',
-    'goes', 'went', 'have gone', 'was going', 'will go', 'is going',
-    'takes', 'took', 'has taken', 'was taking', 'will take', 'is taking',
-    'makes', 'made', 'has made', 'was making', 'will make', 'is making',
-    'writes', 'wrote', 'has written', 'was writing', 'will write', 'is writing',
-    'says', 'said', 'has said', 'was saying', 'will say', 'is saying',
-  ];
-  
-  const distractors: string[] = [];
-  while (distractors.length < 3) {
-    const rand = allVerbForms[Math.floor(Math.random() * allVerbForms.length)];
-    if (rand !== correctAnswer && !distractors.includes(rand)) {
-      distractors.push(rand);
-    }
-  }
-  
-  return { correctAnswer, distractors };
-}
+export { trackCategory } from '../utils/sessionHelpers';
 
 export function useAppActions() {
   const navigate = useNavigate();
-
-  const handleRemoveCard = async (id: string) => {
-    await db.cards.delete(id);
-  };
-
-  const handleRemoveCards = async (ids: string[]) => {
-    await db.cards.bulkDelete(ids);
-  };
-
-  const handleRemoveMistake = async (id: string) => {
-    await db.mistakes.delete(id);
-  };
-
-  const handleEditCard = async (updatedCard: Flashcard) => {
-    await db.cards.put(updatedCard);
-  };
-
-  const difficultyOrder = (d: string) => d === 'beginner' ? 0 : d === 'intermediate' ? 1 : 2;
-  const sortByDifficulty = <T extends { difficulty: string }>(items: T[]): T[] =>
-    [...items].sort((a, b) => difficultyOrder(a.difficulty) - difficultyOrder(b.difficulty));
-
-  const sampleAcrossDifficulties = <T extends { difficulty: Difficulty }>(items: T[], total: number): T[] => {
-    const byDiff: Record<string, T[]> = { beginner: [], intermediate: [], advanced: [] };
-    items.forEach(item => { if (byDiff[item.difficulty]) byDiff[item.difficulty].push(item); });
-    const perLevel = Math.max(1, Math.floor(total / 3));
-    const sampled = [
-      ...byDiff.beginner.slice(0, perLevel),
-      ...byDiff.intermediate.slice(0, perLevel),
-      ...byDiff.advanced.slice(0, total - perLevel * 2),
-    ];
-    return sortByDifficulty(sampled);
-  };
 
   const startSession = async (nodeIdx: number, unitDifficulty: Difficulty, unitTopics: string[]) => {
     const activeTrack = useUserStore.getState().activeTrack;
@@ -156,6 +49,9 @@ export function useAppActions() {
     const filteredDict = appState.mockDictationLessons.filter(d => d.category === cat && d.difficulty === unitDifficulty);
     const dList = filteredDict.length > 0 ? filteredDict : appState.mockDictationLessons.filter(d => d.category === cat);
 
+    const filteredWrite = appState.mockWritingLessons.filter(w => w.category === cat && w.difficulty === unitDifficulty);
+    const wList = filteredWrite.length > 0 ? filteredWrite : appState.mockWritingLessons.filter(w => w.category === cat);
+
     // Shuffle and pick based on nodeIdx for progressive content
     const shuffle = <T,>(arr: T[]): T[] => {
       const a = [...arr];
@@ -175,6 +71,7 @@ export function useAppActions() {
       lList.length ? { type: 'listening', data: pick(lList)! } : null,
       dList.length ? { type: 'dictation', data: pick(dList)! } : null,
       sList.length ? { type: 'speaking', data: pick(sList)! } : null,
+      wList.length ? { type: 'writing', data: pick(wList)! } : null,
     ];
     const newTasks: SessionTask[] = candidates.filter((t): t is SessionTask => t !== null);
 
@@ -193,10 +90,10 @@ export function useAppActions() {
     const appState = useAppStore.getState();
     const activeTrack = useUserStore.getState().activeTrack;
 
-    if (type === 'review') { 
-      appState.setCurrentReviewIndex(0); 
-      navigate('/review'); 
-      return; 
+    if (type === 'review') {
+      appState.setCurrentReviewIndex(0);
+      navigate('/review');
+      return;
     }
     const cat = trackCategory(activeTrack);
 
@@ -206,7 +103,7 @@ export function useAppActions() {
         toast.error("No grammar content available.");
         return;
       }
-      const sampled = sampleAcrossDifficulties(grammarPool, 10);
+      const sampled = sampleAcrossDifficulties(grammarPool, GRAMMAR_SAMPLE_SIZE);
       const newTasks: SessionTask[] = sampled.map(point => {
         // Generate fill-in-the-blank options based on grammar pattern
         const { correctAnswer, distractors } = generateGrammarOptions(point);
@@ -220,8 +117,8 @@ export function useAppActions() {
         return { type: 'grammar', data: { id: `grammar-${point.id}`, point, options, correctIndex } };
       });
       appState.setSessionTasks(newTasks);
-      appState.setCurrentTaskIndex(0); 
-      appState.setIsSessionFinished(false); 
+      appState.setCurrentTaskIndex(0);
+      appState.setIsSessionFinished(false);
       navigate('/session');
       return;
     }
@@ -230,18 +127,19 @@ export function useAppActions() {
                      (type === 'quiz') ? await db.questions.where('category').equals(cat).toArray() :
                      (type === 'listening') ? appState.mockListeningLessons.filter(l => l.category === cat) :
                      (type === 'speaking') ? appState.mockSpeakingLessons.filter(s => s.category === cat) :
+                     (type === 'writing') ? appState.mockWritingLessons.filter(w => w.category === cat) :
                      appState.mockDictationLessons.filter(d => d.category === cat);
-    const sampled = sampleAcrossDifficulties(filtered as (typeof filtered[number] & { difficulty: string })[], 10);
+    const sampled = sampleAcrossDifficulties(filtered as (typeof filtered[number] & { difficulty: string })[], DRILL_SAMPLE_SIZE);
     const newTasks: SessionTask[] = sampled.map(item => ({ type, data: item }) as SessionTask);
-    
+
     if (newTasks.length === 0) {
       toast.error("No content available for this practice yet.");
       return;
     }
 
     appState.setSessionTasks(newTasks);
-    appState.setCurrentTaskIndex(0); 
-    appState.setIsSessionFinished(false); 
+    appState.setCurrentTaskIndex(0);
+    appState.setIsSessionFinished(false);
     navigate('/session');
   };
 
@@ -263,63 +161,14 @@ export function useAppActions() {
     await db.examResults.add(result);
   };
 
-  const handleSessionQuizComplete = (result: ExamResult) => {
-    recordExamResult(result);
-    nextTask();
-  };
-
-  const handleRateCard = async (grade: ReviewGrade) => {
-    const appState = useAppStore.getState();
-    const activeTrack = useUserStore.getState().activeTrack;
-    
-    const today = new Date().getTime();
-    const reviewQueue = await db.cards
-      .where('language').equals(activeTrack)
-      .and(c => c.next_review != null && new Date(c.next_review).getTime() <= today)
-      .toArray();
-      
-    const card = reviewQueue[appState.currentReviewIndex];
-    if (!card) { navigate('/'); return; }
-    
-    const { repetition, interval, easiness } = calculateSM2(grade, card.repetition, card.interval, card.easiness);
-    const updatedCard = {
-      ...card,
-      repetition,
-      interval,
-      easiness,
-      next_review: getNextReviewDate(interval),
-      status: 'review' as const
-    };
-
-    await db.cards.put(updatedCard);
-    nextReviewCard(reviewQueue.length);
-  };
-
-  const handleArchiveCard = async () => {
-    const appState = useAppStore.getState();
-    const activeTrack = useUserStore.getState().activeTrack;
-    
-    const today = new Date().getTime();
-    const reviewQueue = await db.cards
-      .where('language').equals(activeTrack)
-      .and(c => c.next_review != null && new Date(c.next_review).getTime() <= today)
-      .toArray();
-      
-    const card = reviewQueue[appState.currentReviewIndex];
-    if (!card) { navigate('/'); return; }
-    
-    await handleRemoveCard(card.id);
-    nextReviewCard(reviewQueue.length);
-  };
-
-  const nextReviewCard = (queueLength: number) => {
-    const appState = useAppStore.getState();
-    if (appState.currentReviewIndex < queueLength - 1) {
-      appState.setCurrentReviewIndex(appState.currentReviewIndex + 1);
-    } else {
-      toast.success("Review session complete!");
-      navigate('/');
+  const handleSessionQuizComplete = async (result: ExamResult) => {
+    try {
+      await recordExamResult(result);
+    } catch (e) {
+      console.error('Failed to save exam result:', e);
+      toast.error('Failed to save result.');
     }
+    nextTask();
   };
 
   const nextTask = () => {
@@ -334,43 +183,135 @@ export function useAppActions() {
   const finalizeSession = async () => {
     const appState = useAppStore.getState();
     const userStore = useUserStore.getState();
-    
+
     const cat = trackCategory(userStore.activeTrack);
-    await recordExamResult({
-      id: crypto.randomUUID(),
-      date: new Date().toISOString(),
-      score: 100,
-      totalQuestions: 100,
-      category: cat,
-      difficulty: 'beginner',
-      type: 'mock-exam'
-    });
+    const totalTasks = appState.sessionTasks.length;
+    const sessionScore = appState.sessionScore;
+
+    // Derive difficulty from first task's data if available
+    const firstTask = appState.sessionTasks[0];
+    const difficulty = (firstTask?.data as { difficulty?: string })?.difficulty || 'beginner';
+
+    try {
+      await recordExamResult({
+        id: crypto.randomUUID(),
+        date: new Date().toISOString(),
+        score: sessionScore,
+        totalQuestions: totalTasks,
+        category: cat,
+        difficulty: difficulty as 'beginner' | 'intermediate' | 'advanced',
+        type: 'mock-exam'
+      });
+    } catch (e) {
+      console.error('Failed to save session result:', e);
+    }
 
     if (userStore.activeTrack === 'english') {
-      userStore.setProgress([...userStore.unlockedEn, Math.max(...userStore.unlockedEn) + 1], userStore.unlockedJa, userStore.streak);
+      userStore.setProgress([...userStore.unlockedEn, Math.max(...userStore.unlockedEn) + 1], userStore.unlockedJa);
     } else {
-      userStore.setProgress(userStore.unlockedEn, [...userStore.unlockedJa, Math.max(...userStore.unlockedJa) + 1], userStore.streak);
+      userStore.setProgress(userStore.unlockedEn, [...userStore.unlockedJa, Math.max(...userStore.unlockedJa) + 1]);
     }
-    
+
+    userStore.recordStudyDay();
+
     appState.setSessionTasks([]);
     appState.setIsSessionFinished(false);
+    appState.setSessionScore(0);
     navigate('/');
   };
 
+  const incrementSessionScore = () => {
+    const appState = useAppStore.getState();
+    appState.setSessionScore(appState.sessionScore + 1);
+  };
+
+  /** Export all user data to a JSON file for backup */
+  const exportUserData = async () => {
+    try {
+      const [cards, mistakes, examResults, customExams] = await Promise.all([
+        db.cards.toArray(),
+        db.mistakes.toArray(),
+        db.examResults.toArray(),
+        db.customExams.toArray(),
+      ]);
+      const userPrefs = useUserStore.getState();
+      const exportData = {
+        version: 1,
+        exportDate: new Date().toISOString(),
+        userPrefs: {
+          theme: userPrefs.theme,
+          activeTrack: userPrefs.activeTrack,
+          unlockedEn: userPrefs.unlockedEn,
+          unlockedJa: userPrefs.unlockedJa,
+          dailyReviewLimit: userPrefs.dailyReviewLimit,
+        },
+        cards,
+        mistakes,
+        examResults,
+        customExams,
+      };
+      const blob = new Blob([JSON.stringify(exportData, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `lingo-backup-${new Date().toISOString().split('T')[0]}.json`;
+      a.click();
+      URL.revokeObjectURL(url);
+      toast.success('Backup exported successfully!');
+    } catch (e) {
+      console.error('Export failed:', e);
+      toast.error('Export failed.');
+    }
+  };
+
+  /** Import user data from a backup JSON file */
+  const importUserData = async (file: File) => {
+    try {
+      const text = await file.text();
+      const data = JSON.parse(text);
+      if (!validateImportSchema(data)) {
+        toast.error('Invalid backup file format.');
+        return;
+      }
+
+      // Restore user preferences
+      if (data.userPrefs) {
+        const userStore = useUserStore.getState();
+        userStore.setProgress(
+          data.userPrefs.unlockedEn || [1],
+          data.userPrefs.unlockedJa || [1]
+        );
+      }
+
+      // Restore database data
+      const cards = data.cards as Flashcard[] | undefined;
+      const mistakes = data.mistakes as Mistake[] | undefined;
+      const examResults = data.examResults as ExamResult[] | undefined;
+      const customExams = data.customExams as FullExam[] | undefined;
+
+      if (cards?.length) await db.cards.bulkPut(cards);
+      if (mistakes?.length) await db.mistakes.bulkPut(mistakes);
+      if (examResults?.length) await db.examResults.bulkPut(examResults);
+      if (customExams?.length) await db.customExams.bulkPut(customExams);
+
+      toast.success(`Imported ${cards?.length || 0} cards, ${examResults?.length || 0} exam results.`);
+    } catch (e) {
+      console.error('Import failed:', e);
+      toast.error('Import failed. Check file format.');
+    }
+  };
+
   return {
-    handleRemoveCard,
-    handleRemoveCards,
-    handleRemoveMistake,
-    handleEditCard,
     startSession,
     startDrill,
     startFullExam,
     startAuthenticExam,
     handleSessionQuizComplete,
-    handleRateCard,
-    handleArchiveCard,
     nextTask,
     finalizeSession,
+    incrementSessionScore,
+    exportUserData,
+    importUserData,
     trackCategory
   };
 }

@@ -1,4 +1,5 @@
 import { useState, useMemo } from 'react';
+import { Trash2 } from 'lucide-react';
 import type { FullExam, SessionTask, Question, ListeningLesson, SpeakingLesson, DictationLesson } from '../types';
 
 interface CreateExamViewProps {
@@ -164,7 +165,9 @@ export function CreateExamView({ onSave, onCancel, allQuestions, allListening, a
                 tasks.map((task, index) => (
                   <div key={`${task.data.id}-${index}`} className="flex items-center justify-between p-3 bg-bg-main border-2 border-gray-path rounded-lg gap-2">
                     <p className="text-sm font-semibold truncate">{getTaskDescription(task)}</p>
-                    <button onClick={() => removeTask(index)} className="text-red-500 font-bold text-xl">🗑️</button>
+                    <button onClick={() => removeTask(index)} className="text-red hover:text-red/80 transition-colors">
+                      <Trash2 size={20} />
+                    </button>
                   </div>
                 ))
              )}

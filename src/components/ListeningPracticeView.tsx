@@ -1,6 +1,6 @@
 import { useState, useCallback } from 'react';
-import { speak, stopSpeaking, isSpeechRecognitionSupported } from '../utils/tts';
-import { Volume2, Play, Pause, Eye, EyeOff, CheckCircle, XCircle } from 'lucide-react';
+import { speak, stopSpeaking } from '../utils/tts';
+import { Play, Pause, Eye, EyeOff, CheckCircle, XCircle } from 'lucide-react';
 
 interface ListeningExercise {
   id: string;

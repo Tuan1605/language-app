@@ -5,7 +5,7 @@ import { db } from '../data/db';
 import type { Flashcard } from '../types';
 import toast from 'react-hot-toast';
 
-type CardInput = { word: string; definition: string; example?: string; language: 'english' | 'japanese' };
+type CardInput = { word: string; definition: string; example?: string; phonetic?: string; pronunciation?: string; difficulty?: 'beginner' | 'intermediate' | 'advanced'; language: 'english' | 'japanese' };
 
 export function AddWordsPage() {
   const handleAddCard = async (card: CardInput) => {
@@ -15,14 +15,17 @@ export function AddWordsPage() {
       word: card.word,
       definition: card.definition,
       example: card.example,
+      phonetic: card.phonetic,
+      pronunciation: card.pronunciation,
       language: card.language,
       category: card.language === 'english' ? 'toeic' : 'n2',
-      difficulty: 'beginner',
-      status: 'new',
+      difficulty: card.difficulty || 'beginner',
+      state: 'New',
       next_review: null,
-      repetition: 0,
-      interval: 1,
-      easiness: 2.5,
+      reps: 0,
+      lapses: 0,
+      stability: 0,
+      fsrs_difficulty: 0,
       created_at: new Date().toISOString()
     };
     await db.cards.add(newCard);
@@ -36,14 +39,17 @@ export function AddWordsPage() {
       word: card.word,
       definition: card.definition,
       example: card.example,
+      phonetic: card.phonetic,
+      pronunciation: card.pronunciation,
       language: card.language,
       category: card.language === 'english' ? 'toeic' : 'n2',
-      difficulty: 'beginner',
-      status: 'new',
+      difficulty: card.difficulty || 'beginner',
+      state: 'New',
       next_review: null,
-      repetition: 0,
-      interval: 1,
-      easiness: 2.5,
+      reps: 0,
+      lapses: 0,
+      stability: 0,
+      fsrs_difficulty: 0,
       created_at: new Date().toISOString()
     }));
     await db.cards.bulkAdd(newCards);

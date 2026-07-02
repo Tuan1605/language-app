@@ -4,6 +4,7 @@ import { QuizView } from './QuizView';
 import { SpeakingView } from './SpeakingView';
 import { DictationView } from './DictationView';
 import { WritingView } from './WritingView';
+import { MISTAKE_REVIEW_PASS_THRESHOLD } from '../utils/constants';
 
 interface MistakeReviewViewProps {
   mistakes: Mistake[];
@@ -52,7 +53,7 @@ export function MistakeReviewView({ mistakes, onComplete, onCancel, onRemoveMist
     
     // If score is perfect or high enough, remove the mistake from the book!
     // We consider > 80% as mastered for speaking/dictation/writing
-    if (score >= 80) {
+    if (score >= MISTAKE_REVIEW_PASS_THRESHOLD) {
       onRemoveMistake(currentMistakeId);
     }
 

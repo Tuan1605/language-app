@@ -79,8 +79,8 @@ describe('GrammarQuizView', () => {
     expect(container.textContent).toContain('here for 5 years');
   });
 
-  it('should have quit and continue buttons', () => {
+  it('should have quit quiz button', () => {
     render(<GrammarQuizView task={mockTask} onComplete={mockOnComplete} onCancel={mockOnCancel} />);
-    expect(screen.getAllByText('Quit Quest').length).toBeGreaterThan(0);
+    expect(screen.getAllByText('Quit Quiz').length).toBeGreaterThan(0);
   });
 });

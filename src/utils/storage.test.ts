@@ -16,7 +16,7 @@ describe('Storage Utilities', () => {
 
   describe('Dexie Database', () => {
     it('should store and retrieve cards', async () => {
-      const card = { id: 'test-1', word: 'hello', definition: 'xin chào', user_id: 'guest', language: 'english' as const, category: 'toeic' as const, difficulty: 'beginner' as const, status: 'new' as const, repetition: 0, interval: 0, easiness: 2.5, next_review: null, created_at: new Date().toISOString() };
+      const card = { id: 'test-1', word: 'hello', definition: 'xin chào', user_id: 'guest', language: 'english' as const, category: 'toeic' as const, difficulty: 'beginner' as const, state: 'New' as const, reps: 0, lapses: 0, stability: 0, fsrs_difficulty: 0, next_review: null, created_at: new Date().toISOString() };
       await db.cards.add(card);
       const cards = await db.cards.toArray();
       expect(cards).toHaveLength(1);

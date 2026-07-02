@@ -1,5 +1,5 @@
 import { AnimatedPage } from '../components/AnimatedPage';
-import { useAppActions } from '../hooks/useAppActions';
+import { useCardActions } from '../hooks/useCardActions';
 import { MistakeBookView } from '../components/MistakeBookView';
 import { LocalErrorBoundary } from '../components/LocalErrorBoundary';
 import { LoadingSpinner } from '../components/LoadingSpinner';
@@ -9,7 +9,7 @@ import { db } from '../data/db';
 
 export function MistakesPage() {
   const mistakes = useLiveQuery(async () => await db.mistakes.toArray());
-  const { handleRemoveMistake } = useAppActions();
+  const { handleRemoveMistake } = useCardActions();
   const navigate = useNavigate();
 
   if (mistakes === undefined) return <LoadingSpinner />;

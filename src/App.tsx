@@ -7,6 +7,7 @@ import { ErrorBoundary } from './components/ErrorBoundary';
 import { useAppStore } from './stores/useAppStore';
 import { useUserStore } from './stores/useUserStore';
 import { initializeDatabase } from './data/contentLoader';
+import toast from 'react-hot-toast';
 
 // Lazy load with preload support for smooth animations
 const PracticePage = lazy(() => import('./pages/PracticePage').then(m => ({ default: m.PracticePage })));
@@ -53,17 +54,19 @@ function App() {
     async function init() {
       try {
         await initializeDatabase();
-        const { MOCK_LISTENING_LESSONS, MOCK_SPEAKING_LESSONS, MOCK_DICTATION_LESSONS, MOCK_FULL_EXAMS } = await import('./utils/mockData');
+        const { MOCK_LISTENING_LESSONS, MOCK_SPEAKING_LESSONS, MOCK_DICTATION_LESSONS, MOCK_WRITING_LESSONS, MOCK_FULL_EXAMS } = await import('./utils/mockData');
         if (mounted) {
           setMockData({
             mockListeningLessons: MOCK_LISTENING_LESSONS,
             mockSpeakingLessons: MOCK_SPEAKING_LESSONS,
             mockDictationLessons: MOCK_DICTATION_LESSONS,
+            mockWritingLessons: MOCK_WRITING_LESSONS,
             mockFullExams: MOCK_FULL_EXAMS
           });
         }
       } catch(err) {
-        console.error(err);
+        console.error('Initialization failed:', err);
+        toast.error('Failed to load language data. Some features may be unavailable.');
       } finally {
         if(mounted) setIsLoadingData(false);
       }

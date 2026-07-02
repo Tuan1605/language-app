@@ -168,8 +168,8 @@ export function RealExamView({ exam, onCancel, onComplete, onSaveMistake }: Real
           const answeredQ = Object.keys(answers).length;
           const unanswered = totalQ - answeredQ;
           return unanswered > 0 ? (
-            <p className="text-amber-600 font-bold mt-2">
-              ⚠️ You have {unanswered} unanswered question{unanswered > 1 ? 's' : ''} that will be marked wrong.
+            <p className="text-sm font-bold text-red mb-6">
+              You have {unanswered} unanswered question{unanswered > 1 ? 's' : ''} that will be marked wrong.
             </p>
           ) : (
             <p className="text-green-600 font-bold mt-2">✓ All questions answered.</p>
@@ -266,7 +266,7 @@ export function RealExamView({ exam, onCancel, onComplete, onSaveMistake }: Real
               {currentSection.questions.map((q, qIndex) => (
                 <FullQuestionCard
                   key={q.id}
-                  question={q} // @ts-ignore - force IDE refresh
+                  question={q}
                   questionIndex={qIndex}
                   userAnswer={answers[q.id]}
                   isMarked={markedForReview[q.id] || false}

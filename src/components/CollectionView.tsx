@@ -1,6 +1,7 @@
 import { useState, useMemo } from 'react';
-import { Pencil, Trash2 } from 'lucide-react';
+import { Pencil, Trash2, BookOpen } from 'lucide-react';
 import type { Flashcard } from '../types';
+import { ConfirmDialog } from './ConfirmDialog';
 
 interface CollectionViewProps {
   cards: Flashcard[];
@@ -15,8 +16,9 @@ export function CollectionView({ cards, activeTrack, onDelete, onDeleteBulk, onE
   const [sortBy, setSortBy] = useState<'newest' | 'hardest' | 'needs_review'>('newest');
   const [limit, setLimit] = useState(50);
   const [editingCard, setEditingCard] = useState<Flashcard | null>(null);
-  const [editForm, setEditForm] = useState({ word: '', definition: '', example: '' });
+  const [editForm, setEditForm] = useState({ word: '', definition: '', example: '', phonetic: '', pronunciation: '' });
   const [selectedTopic, setSelectedTopic] = useState<string>('all');
+  const [showBulkDeleteConfirm, setShowBulkDeleteConfirm] = useState(false);
   
   const topics = useMemo(() => {
     const ts = new Set<string>();
@@ -37,9 +39,13 @@ export function CollectionView({ cards, activeTrack, onDelete, onDeleteBulk, onE
     if (sortBy === 'newest') {
       result.sort((a, b) => new Date(b.created_at).getTime() - new Date(a.created_at).getTime());
     } else if (sortBy === 'hardest') {
-      result.sort((a, b) => a.easiness - b.easiness); // Lower easiness means harder
+      result.sort((a, b) => b.fsrs_difficulty - a.fsrs_difficulty); // Higher difficulty means harder
     } else if (sortBy === 'needs_review') {
-      result.sort((a, b) => new Date(a.next_review).getTime() - new Date(b.next_review).getTime());
+      result.sort((a, b) => {
+        const aTime = a.next_review ? new Date(a.next_review).getTime() : Infinity;
+        const bTime = b.next_review ? new Date(b.next_review).getTime() : Infinity;
+        return aTime - bTime;
+      });
     }
 
     return result;
@@ -52,7 +58,9 @@ export function CollectionView({ cards, activeTrack, onDelete, onDeleteBulk, onE
     setEditForm({
       word: card.word,
       definition: card.definition,
-      example: card.example || ''
+      example: card.example || '',
+      phonetic: card.phonetic || '',
+      pronunciation: card.pronunciation || ''
     });
   };
 
@@ -62,17 +70,18 @@ export function CollectionView({ cards, activeTrack, onDelete, onDeleteBulk, onE
         ...editingCard,
         word: editForm.word,
         definition: editForm.definition,
-        example: editForm.example
+        example: editForm.example,
+        phonetic: editForm.phonetic || undefined,
+        pronunciation: editForm.pronunciation || undefined
       });
       setEditingCard(null);
     }
   };
 
   const handleBulkDelete = () => {
-    if (window.confirm(`Are you sure you want to delete ${filteredAndSorted.length} words from your collection? This action cannot be undone.`)) {
-      onDeleteBulk(filteredAndSorted.map(c => c.id));
-      setSearchTerm('');
-    }
+    onDeleteBulk(filteredAndSorted.map(c => c.id));
+    setSearchTerm('');
+    setShowBulkDeleteConfirm(false);
   };
 
   return (
@@ -88,7 +97,7 @@ export function CollectionView({ cards, activeTrack, onDelete, onDeleteBulk, onE
         <div className="flex flex-col sm:flex-row w-full md:w-auto gap-4">
           {filteredAndSorted.length > 0 && searchTerm && (
             <button 
-              onClick={handleBulkDelete}
+              onClick={() => setShowBulkDeleteConfirm(true)}
               className="px-4 py-3 bg-tint-red text-red border-2 border-red font-black text-xs rounded-2xl uppercase whitespace-nowrap hover:bg-red hover:text-white transition-all shadow-sm"
             >
               Delete Found ({filteredAndSorted.length})
@@ -144,11 +153,11 @@ export function CollectionView({ cards, activeTrack, onDelete, onDeleteBulk, onE
                 <div className="flex-1">
                   <p className="text-lg font-black text-text-main">{card.word}</p>
                   <p className="text-sm font-bold text-text-muted mt-1">{card.definition}</p>
-                  <div className="flex gap-2 mt-3">
-                     <span className={`text-[9px] font-black uppercase px-2 py-0.5 rounded-md ${card.easiness < 2.0 ? 'bg-tint-red text-red' : 'bg-blue/10 text-blue'}`}>
-                       {card.easiness < 2.0 ? 'Hard' : 'Known'}
+                    <div className="flex gap-2 mt-3">
+                     <span className={`text-[9px] font-black uppercase px-2 py-0.5 rounded-md ${card.fsrs_difficulty > 7 ? 'bg-tint-red text-red' : 'bg-blue/10 text-blue'}`}>
+                       {card.fsrs_difficulty > 7 ? 'Hard' : 'Known'}
                      </span>
-                     {new Date(card.next_review) <= new Date() && (
+                     {card.next_review && new Date(card.next_review) <= new Date() && (
                        <span className="text-[9px] font-black uppercase bg-tint-gold text-gold-shadow px-2 py-0.5 rounded-md">
                          Due Review
                        </span>
@@ -186,8 +195,10 @@ export function CollectionView({ cards, activeTrack, onDelete, onDeleteBulk, onE
           </>
         ) : (
           <div className="col-span-full py-20 text-center space-y-4">
-             <div className="text-5xl opacity-20">📚</div>
-             <p className="font-bold text-text-muted">No words found in this track.</p>
+             <div className="w-24 h-24 mx-auto rounded-full text-text-muted flex items-center justify-center mb-6 shadow-[var(--shadow-inset-light)]">
+               <BookOpen size={48} strokeWidth={2.5} />
+             </div>
+             <p className="text-sm font-bold text-text-muted uppercase tracking-widest">Collection Empty</p>
           </div>
         )}
       </div>
@@ -218,12 +229,34 @@ export function CollectionView({ cards, activeTrack, onDelete, onDeleteBulk, onE
               </div>
               <div>
                 <label className="block text-xs font-bold text-text-muted uppercase mb-2">Example Sentence (optional)</label>
-                <input 
-                  type="text" 
+                <input
+                  type="text"
                   value={editForm.example}
                   onChange={(e) => setEditForm(prev => ({ ...prev, example: e.target.value }))}
                   className="w-full bg-bg-hover border-2 border-border-main rounded-xl py-3 px-4 font-bold outline-none focus:border-blue transition-all text-text-main"
                 />
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-xs font-bold text-text-muted uppercase mb-2">Phonetic / IPA (optional)</label>
+                  <input
+                    type="text"
+                    value={editForm.phonetic}
+                    onChange={(e) => setEditForm(prev => ({ ...prev, phonetic: e.target.value }))}
+                    className="w-full bg-bg-hover border-2 border-border-main rounded-xl py-3 px-4 font-bold outline-none focus:border-blue transition-all text-text-main"
+                    placeholder="/nəˈɡoʊʃieɪt/"
+                  />
+                </div>
+                <div>
+                  <label className="block text-xs font-bold text-text-muted uppercase mb-2">Pronunciation (optional)</label>
+                  <input
+                    type="text"
+                    value={editForm.pronunciation}
+                    onChange={(e) => setEditForm(prev => ({ ...prev, pronunciation: e.target.value }))}
+                    className="w-full bg-bg-hover border-2 border-border-main rounded-xl py-3 px-4 font-bold outline-none focus:border-blue transition-all text-text-main"
+                    placeholder="nuh-GOH-shee-eyt"
+                  />
+                </div>
               </div>
             </div>
 
@@ -244,6 +277,17 @@ export function CollectionView({ cards, activeTrack, onDelete, onDeleteBulk, onE
           </div>
         </div>
       )}
+
+      <ConfirmDialog
+        isOpen={showBulkDeleteConfirm}
+        title="Delete Words?"
+        message={`Are you sure you want to delete ${filteredAndSorted.length} words from your collection? This action cannot be undone.`}
+        confirmText="Delete"
+        cancelText="Cancel"
+        onConfirm={handleBulkDelete}
+        onCancel={() => setShowBulkDeleteConfirm(false)}
+        danger
+      />
     </div>
   );
 }

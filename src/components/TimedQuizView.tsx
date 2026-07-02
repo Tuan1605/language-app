@@ -2,7 +2,7 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import type { Question, ExamResult, Mistake } from '../types';
 import { playCorrectSound, playIncorrectSound } from '../utils/sound';
 import { SessionEndOverlay } from './SessionEndOverlay';
-import { Clock, Pause, Play, RotateCcw } from 'lucide-react';
+import { Clock, Pause, Play } from 'lucide-react';
 
 interface TimedQuizViewProps {
   questions: Question[];
@@ -91,6 +91,7 @@ export function TimedQuizView({
         setIsFinished(true);
       }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [totalTimeLeft, isFinished]);
 
   // Per-question timer

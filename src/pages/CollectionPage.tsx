@@ -1,5 +1,5 @@
 import { AnimatedPage } from '../components/AnimatedPage';
-import { useAppActions } from '../hooks/useAppActions';
+import { useCardActions } from '../hooks/useCardActions';
 import { CollectionView } from '../components/CollectionView';
 import { LocalErrorBoundary } from '../components/LocalErrorBoundary';
 import { LoadingSpinner } from '../components/LoadingSpinner';
@@ -9,8 +9,8 @@ import { useUserStore } from '../stores/useUserStore';
 
 export function CollectionPage() {
   const activeTrack = useUserStore(s => s.activeTrack);
-  const cards = useLiveQuery(async () => await db.cards.toArray());
-  const { handleRemoveCard, handleRemoveCards, handleEditCard } = useAppActions();
+  const cards = useLiveQuery(async () => await db.cards.where('language').equals(activeTrack).toArray(), [activeTrack]);
+  const { handleRemoveCard, handleRemoveCards, handleEditCard } = useCardActions();
 
   if (cards === undefined) return <LoadingSpinner />;
 

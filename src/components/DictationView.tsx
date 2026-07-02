@@ -3,6 +3,7 @@ import type { DictationLesson, Mistake } from '../types';
 import { speak, langForCategory, hasVoiceFor } from '../utils/tts';
 import { calculateSimilarity } from '../utils/stringSimilarity';
 import { playCorrectSound } from '../utils/sound';
+import { DICTATION_ACCURACY_THRESHOLD } from '../utils/constants';
 import { Volume2, RefreshCw } from 'lucide-react';
 
 interface DictationViewProps {
@@ -46,7 +47,7 @@ export function DictationView({ lesson, onComplete, onSaveMistake }: DictationVi
     const acc = calculateSimilarity(lesson.targetText, userInput);
     setAccuracy(acc);
 
-    if (acc >= 75) {
+    if (acc >= DICTATION_ACCURACY_THRESHOLD) {
       playCorrectSound();
       setFeedback('success');
       setIsFinished(true);

@@ -4,6 +4,7 @@ import { useAppStore } from '../stores/useAppStore';
 import { useAppActions } from '../hooks/useAppActions';
 import { ReviewReminder } from '../components/ReviewReminder';
 import { GamifiedPath } from '../components/GamifiedPath';
+import { StreakBadge } from '../components/StreakBadge';
 import { TOEIC_CURRICULUM, N2_CURRICULUM } from '../data/curriculums';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { db } from '../data/db';
@@ -46,7 +47,10 @@ export function PathPage() {
   return (
     <AnimatedPage>
       <div className="w-full view-enter flex flex-col items-center">
-      <ReviewReminder dueCount={dueCount} onStartReview={() => startDrill('review')} />
+      <div className="w-full flex justify-between items-center mb-4">
+        <ReviewReminder dueCount={dueCount} onStartReview={() => startDrill('review')} />
+        <StreakBadge />
+      </div>
       <GamifiedPath
         curriculum={currentCurriculum}
         currentUnlocked={currentUnlocked.length}

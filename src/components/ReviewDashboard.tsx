@@ -3,6 +3,8 @@ import { db } from '../data/db';
 import { useUserStore } from '../stores/useUserStore';
 import { useNavigate } from 'react-router-dom';
 import { AnimatedPage } from './AnimatedPage';
+import { BookOpen, Book } from 'lucide-react';
+import { MASTERY_STABILITY, MASTERY_REPS } from '../utils/constants';
 
 export function ReviewDashboard() {
   const activeTrack = useUserStore(s => s.activeTrack);
@@ -23,11 +25,11 @@ export function ReviewDashboard() {
     let masteredCards = 0;
 
     for (const card of allCards) {
-      if (card.status === 'new') newCards++;
-      else if (card.status === 'learning') learningCards++;
-      else if (card.status === 'review') reviewCards++;
+      if (card.state === 'New') newCards++;
+      else if (card.state === 'Learning' || card.state === 'Relearning') learningCards++;
+      else if (card.state === 'Review') reviewCards++;
 
-      if (card.repetition >= 5 && card.interval >= 21) masteredCards++;
+      if (card.reps >= MASTERY_REPS && card.stability >= MASTERY_STABILITY) masteredCards++;
 
       if (card.next_review) {
         const reviewTime = new Date(card.next_review).getTime();
@@ -79,11 +81,11 @@ export function ReviewDashboard() {
           <h3 className="font-black text-lg mb-4">Upcoming Reviews</h3>
           <div className="grid grid-cols-3 gap-4">
             {upcomingCards.map(item => (
-              <div key={item.label} className={`text-center p-4 rounded-2xl border-2 ${item.urgent && item.count > 0 ? 'border-gold bg-tint-gold' : 'border-border-main bg-gray-bg'}`}>
-                <div className={`text-3xl font-black ${item.urgent && item.count > 0 ? 'text-gold' : 'text-text-main'}`}>
+              <div key={item.label} className={`text-center p-4 rounded-2xl ${item.urgent && item.count > 0 ? 'text-gold shadow-[var(--shadow-inset-light)]' : 'text-text-main shadow-[var(--shadow-inset-light)]'}`}>
+                <div className="text-3xl font-black">
                   {item.count}
                 </div>
-                <div className="text-xs font-bold text-text-muted mt-1">{item.label}</div>
+                <div className="text-xs font-bold mt-1 opacity-70">{item.label}</div>
               </div>
             ))}
           </div>
@@ -123,13 +125,17 @@ export function ReviewDashboard() {
 
         {/* Quick Actions */}
         <div className="grid grid-cols-2 gap-4">
-          <button onClick={() => navigate('/review')} className="lingo-card p-4 text-center hover:border-blue transition-colors">
-            <div className="text-2xl mb-2">📖</div>
-            <div className="text-xs font-black uppercase">Review Now</div>
+          <button onClick={() => navigate('/review')} className="lingo-card p-4 text-center group">
+            <div className="mx-auto w-14 h-14 rounded-full text-blue flex items-center justify-center mb-3 shadow-[var(--shadow-outset)] group-active:shadow-[var(--shadow-inset-light)] transition-shadow">
+              <BookOpen size={28} strokeWidth={2.5} />
+            </div>
+            <div className="text-xs font-black uppercase tracking-wider text-text-main">Review Now</div>
           </button>
-          <button onClick={() => navigate('/collection')} className="lingo-card p-4 text-center hover:border-blue transition-colors">
-            <div className="text-2xl mb-2">📚</div>
-            <div className="text-xs font-black uppercase">Browse Library</div>
+          <button onClick={() => navigate('/collection')} className="lingo-card p-4 text-center group">
+            <div className="mx-auto w-14 h-14 rounded-full text-purple flex items-center justify-center mb-3 shadow-[var(--shadow-outset)] group-active:shadow-[var(--shadow-inset-light)] transition-shadow">
+              <Book size={28} strokeWidth={2.5} />
+            </div>
+            <div className="text-xs font-black uppercase tracking-wider text-text-main">Browse Library</div>
           </button>
         </div>
       </div>

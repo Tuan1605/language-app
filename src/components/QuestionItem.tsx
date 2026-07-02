@@ -3,8 +3,6 @@ import { CheckCircle, XCircle } from 'lucide-react';
 
 interface QuestionItemProps {
   questionId: string;
-  questionText: string;
-  options: string[];
   correctAnswer: number;
   userAnswer: number | undefined;
   isSubmitted: boolean;
@@ -14,8 +12,6 @@ interface QuestionItemProps {
 
 export const QuestionItem = memo(function QuestionItem({
   questionId,
-  questionText,
-  options,
   correctAnswer,
   userAnswer,
   isSubmitted,

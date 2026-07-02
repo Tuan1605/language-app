@@ -2,6 +2,8 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import type { Question, ExamResult, Mistake } from '../types';
 import { playCorrectSound, playIncorrectSound } from '../utils/sound';
 import { SessionEndOverlay } from './SessionEndOverlay';
+import { ConfirmDialog } from './ConfirmDialog';
+import { QUIZ_TIME_DEFAULT, QUIZ_TIME_READING } from '../utils/constants';
 
 interface QuizViewProps {
   questions: Question[];
@@ -18,9 +20,10 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
   const [isFinished, setIsFinished] = useState(false);
   const [isAnswered, setIsAnswered] = useState(false);
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
+  const [showQuitConfirm, setShowQuitConfirm] = useState(false);
   
   // --- TIMER STATE ---
-  const getInitialTime = useCallback(() => questions[currentIndex]?.subCategory === 'Reading' ? 120 : 45, [questions, currentIndex]);
+  const getInitialTime = useCallback(() => questions[currentIndex]?.subCategory === 'Reading' ? QUIZ_TIME_READING : QUIZ_TIME_DEFAULT, [questions, currentIndex]);
   const [timeLeft, setTimeLeft] = useState(getInitialTime());
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
@@ -127,7 +130,7 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
     return (
       <SessionEndOverlay 
         type="quiz"
-        title="Quest Complete!"
+        title="Quiz Complete!"
         subtitle={`${category} Practice Exam`}
         score={finalScore}
         totalScore={questions.length}
@@ -248,13 +251,17 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
 
       {/* Immediate feedback section */}
       {isAnswered && (
-        <div className={`p-6 rounded-2xl border-2 mb-8 animate-in slide-in-from-bottom-4 duration-300 ${
-          selectedOption === currentQuestion.correctAnswer 
-            ? 'bg-tint-green border-green text-text-on-tint' 
-            : 'bg-tint-red border-red text-text-on-tint'
-        }`}>
+        <div
+          className={`p-6 rounded-2xl border-2 mb-8 animate-in slide-in-from-bottom-4 duration-300 ${
+            selectedOption === currentQuestion.correctAnswer
+              ? 'bg-tint-green border-green text-text-on-tint'
+              : 'bg-tint-red border-red text-text-on-tint'
+          }`}
+          role="alert"
+          aria-live="assertive"
+        >
           <h4 className="font-black text-lg mb-2 flex items-center gap-2">
-            {selectedOption === currentQuestion.correctAnswer ? '🎉 Correct!' : '❌ Incorrect'}
+            {selectedOption === currentQuestion.correctAnswer ? 'Correct!' : 'Incorrect'}
           </h4>
           <p className="text-sm font-bold opacity-80 mb-2 uppercase tracking-wide">
             Correct Answer: {String.fromCharCode(65 + currentQuestion.correctAnswer)}. {currentQuestion.options[currentQuestion.correctAnswer]}
@@ -271,14 +278,10 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
 
       <div className="flex justify-between items-center pt-8 border-t-2 border-quiz-divider mt-auto">
         <button
-          onClick={() => {
-            if (window.confirm('Bạn có chắc muốn thoát? Tiến trình sẽ bị mất.')) {
-              onCancel();
-            }
-          }}
+          onClick={() => setShowQuitConfirm(true)}
           className="text-text-muted font-black hover:text-red transition-colors uppercase tracking-[0.2em] text-[9px]"
         >
-          Quit Quest
+          Quit Quiz
         </button>
         
         {!isAnswered ? (
@@ -298,10 +301,21 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
             onClick={handleNext}
             className="px-10 h-14 rounded-2xl font-black transition-all btn-3d btn-green"
           >
-            {currentIndex === questions.length - 1 ? 'Finish Quest' : 'Continue'}
+            {currentIndex === questions.length - 1 ? 'Finish Quiz' : 'Continue'}
           </button>
         )}
       </div>
+
+      <ConfirmDialog
+        isOpen={showQuitConfirm}
+        title="Quit Quiz?"
+        message="Your progress will be lost. Are you sure you want to quit?"
+        confirmText="Quit"
+        cancelText="Continue Quiz"
+        onConfirm={onCancel}
+        onCancel={() => setShowQuitConfirm(false)}
+        danger
+      />
     </div>
   );
 }

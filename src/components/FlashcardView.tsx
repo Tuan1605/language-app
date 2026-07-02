@@ -1,14 +1,12 @@
 import { useState, useEffect } from 'react';
-import type { Flashcard, ReviewGrade } from '../types';
+import type { Flashcard } from '../types';
 import { Volume2 } from 'lucide-react';
 import { speak, langForCategory, hasVoiceFor } from '../utils/tts';
-
-/** Strip HTML tags that may come from Anki-imported data (e.g. grammar-anki.json). */
-const stripHtml = (s: string) => s.replace(/<[^>]*>/g, '').replace(/&nbsp;/g, ' ').trim();
+import { stripHtml } from '../utils/text';
 
 interface FlashcardViewProps {
   card: Flashcard;
-  onRate: (grade: ReviewGrade) => void;
+  onRate: (rating: 'Again' | 'Hard' | 'Good' | 'Easy') => void;
   onArchive?: () => void;
 }
 
@@ -50,10 +48,10 @@ export function FlashcardView({ card, onRate, onArchive }: FlashcardViewProps) {
   useEffect(() => {
     if (!isFlipped) return;
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === '1') { setIsFlipped(false); setTimeout(() => onRate(0), 300); }
-      else if (e.key === '2') { setIsFlipped(false); setTimeout(() => onRate(2), 300); }
-      else if (e.key === '3') { setIsFlipped(false); setTimeout(() => onRate(4), 300); }
-      else if (e.key === '4') { setIsFlipped(false); setTimeout(() => onRate(5), 300); }
+      if (e.key === '1') { setIsFlipped(false); setTimeout(() => onRate('Again'), 300); }
+      else if (e.key === '2') { setIsFlipped(false); setTimeout(() => onRate('Hard'), 300); }
+      else if (e.key === '3') { setIsFlipped(false); setTimeout(() => onRate('Good'), 300); }
+      else if (e.key === '4') { setIsFlipped(false); setTimeout(() => onRate('Easy'), 300); }
     };
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
@@ -88,18 +86,26 @@ export function FlashcardView({ card, onRate, onArchive }: FlashcardViewProps) {
             </button>
 
             {card.imageUrl ? (
-              <div className="flex flex-col items-center gap-4 w-full px-6">
-                <div className="w-full h-40 rounded-2xl overflow-hidden border-2 border-border-main shadow-inner">
+              <div className="flex flex-col items-center gap-3 w-full px-6">
+                <div className="w-full h-36 rounded-2xl overflow-hidden border-2 border-border-main shadow-inner">
                   <img src={card.imageUrl} alt={card.word} className="w-full h-full object-cover" loading="lazy" />
                 </div>
                 <h2 className="text-3xl font-black text-text-main leading-tight break-words">
                   {card.word}
                 </h2>
+                {card.phonetic && (
+                  <p className="text-sm font-bold text-text-muted">{card.phonetic}</p>
+                )}
               </div>
             ) : (
-              <h2 className="text-4xl font-black text-text-main leading-tight px-6 break-words">
-                {card.word}
-              </h2>
+              <div className="flex flex-col items-center gap-2 px-6">
+                <h2 className="text-4xl font-black text-text-main leading-tight break-words">
+                  {card.word}
+                </h2>
+                {card.phonetic && (
+                  <p className="text-base font-bold text-text-muted">{card.phonetic}</p>
+                )}
+              </div>
             )}
             <div className="absolute bottom-6 flex items-center gap-2 text-text-muted font-black text-[10px] uppercase tracking-widest">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -161,7 +167,7 @@ export function FlashcardView({ card, onRate, onArchive }: FlashcardViewProps) {
             onClick={(e) => {
               e.stopPropagation();
               setIsFlipped(false);
-              setTimeout(() => onRate(0), 300);
+              setTimeout(() => onRate('Again'), 300);
             }}
             className="h-14 btn-3d bg-tint-red text-red border-2 border-red shadow-[0_4px_0_var(--red)] active:shadow-[0_0_0_var(--red)] active:translate-y-1 text-[10px] sm:text-xs font-black flex items-center justify-center p-0"
           >
@@ -171,7 +177,7 @@ export function FlashcardView({ card, onRate, onArchive }: FlashcardViewProps) {
             onClick={(e) => {
               e.stopPropagation();
               setIsFlipped(false);
-              setTimeout(() => onRate(2), 300);
+              setTimeout(() => onRate('Hard'), 300);
             }}
             className="h-14 btn-3d bg-tint-gold text-gold border-2 border-gold shadow-[0_4px_0_var(--gold)] active:shadow-[0_0_0_var(--gold)] active:translate-y-1 text-[10px] sm:text-xs font-black flex items-center justify-center p-0"
           >
@@ -181,7 +187,7 @@ export function FlashcardView({ card, onRate, onArchive }: FlashcardViewProps) {
             onClick={(e) => {
               e.stopPropagation();
               setIsFlipped(false);
-              setTimeout(() => onRate(4), 300);
+              setTimeout(() => onRate('Good'), 300);
             }}
             className="h-14 btn-3d bg-tint-blue text-blue border-2 border-blue shadow-[0_4px_0_var(--blue)] active:shadow-[0_0_0_var(--blue)] active:translate-y-1 text-[10px] sm:text-xs font-black flex items-center justify-center p-0"
           >
@@ -191,7 +197,7 @@ export function FlashcardView({ card, onRate, onArchive }: FlashcardViewProps) {
             onClick={(e) => {
               e.stopPropagation();
               setIsFlipped(false);
-              setTimeout(() => onRate(5), 300);
+              setTimeout(() => onRate('Easy'), 300);
             }}
             className="h-14 btn-3d bg-tint-green text-green border-2 border-green shadow-[0_4px_0_var(--green)] active:shadow-[0_0_0_var(--green)] active:translate-y-1 text-[10px] sm:text-xs font-black flex items-center justify-center p-0"
           >
@@ -208,12 +214,12 @@ export function FlashcardView({ card, onRate, onArchive }: FlashcardViewProps) {
               setIsFlipped(false);
               setTimeout(() => {
                 if (onArchive) onArchive();
-                else onRate(5);
+                else onRate('Easy');
               }, 300);
             }}
             className="text-[10px] font-black uppercase text-text-muted hover:text-red transition-colors tracking-widest border-2 border-transparent hover:border-red px-3 py-1 rounded-lg"
           >
-            🚫 Đã thuộc (Bỏ qua vĩnh viễn)
+            Đã thuộc (Bỏ qua vĩnh viễn)
           </button>
         </div>
       </div>

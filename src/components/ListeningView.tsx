@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
 import type { ListeningLesson } from '../types';
 import { speak, stopSpeaking, hasVoiceFor, langForCategory } from '../utils/tts';
+import { TTS_MS_PER_CHAR_JA, TTS_MS_PER_CHAR_EN } from '../utils/constants';
 import { Volume2, Play, Pause, Rewind, FastForward, Gauge } from 'lucide-react';
 
 interface ListeningViewProps {
@@ -101,7 +102,7 @@ export function ListeningView({ lesson, onBack, hideBackButton }: ListeningViewP
     clearTTSTimers();
 
     const transcript = lesson.transcript;
-    const estimatedMsPerChar = langForCategory(lesson.category) === 'ja-JP' ? 120 : 70;
+    const estimatedMsPerChar = langForCategory(lesson.category) === 'ja-JP' ? TTS_MS_PER_CHAR_JA : TTS_MS_PER_CHAR_EN;
     let accumulated = 0;
     const timers: ReturnType<typeof setTimeout>[] = [];
 

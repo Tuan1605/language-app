@@ -100,9 +100,9 @@ describe('Mock Data Integrity', () => {
         expect(card.id).toBeDefined();
         expect(card.word).toBeDefined();
         expect(card.definition).toBeDefined();
-        expect(typeof card.repetition).toBe('number');
-        expect(typeof card.interval).toBe('number');
-        expect(typeof card.easiness).toBe('number');
+        expect(typeof card.reps).toBe('number');
+        expect(typeof card.lapses).toBe('number');
+        expect(typeof card.stability).toBe('number');
         expect(typeof card.next_review === 'string' || card.next_review === null).toBe(true);
         expect(typeof card.created_at).toBe('string');
       });

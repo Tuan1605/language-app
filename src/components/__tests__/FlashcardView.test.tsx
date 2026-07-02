@@ -1,7 +1,7 @@
 import { describe, it, expect, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import { FlashcardView } from '../FlashcardView';
-import type { Flashcard } from '../types';
+import type { Flashcard } from '../../types';
 
 const mockCard: Flashcard = {
   id: 'test-1',
@@ -12,10 +12,11 @@ const mockCard: Flashcard = {
   language: 'english',
   category: 'toeic',
   difficulty: 'beginner',
-  status: 'new',
-  repetition: 0,
-  interval: 0,
-  easiness: 2.5,
+  state: 'New',
+  reps: 0,
+  lapses: 0,
+  stability: 0,
+  fsrs_difficulty: 0,
   next_review: null,
   created_at: new Date().toISOString(),
 };

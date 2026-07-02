@@ -10,8 +10,9 @@ export function AnalyticsPage() {
   const activeTrack = useUserStore(s => s.activeTrack);
   const examResults = useLiveQuery(async () => await db.examResults.toArray());
   const cards = useLiveQuery(async () => await db.cards.toArray());
+  const reviewLogs = useLiveQuery(async () => await db.reviewLogs.toArray());
 
-  if (examResults === undefined || cards === undefined) return <LoadingSpinner />;
+  if (examResults === undefined || cards === undefined || reviewLogs === undefined) return <LoadingSpinner />;
 
   return (
     <LocalErrorBoundary>
@@ -20,6 +21,7 @@ export function AnalyticsPage() {
         <AnalyticsView
           results={examResults}
           cards={cards}
+          reviewLogs={reviewLogs}
           activeTrack={activeTrack}
         />
         </div>

@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import type { WritingLesson, Mistake } from '../types';
 import { calculateSimilarity } from '../utils/stringSimilarity';
+import { WRITING_PASS_THRESHOLD } from '../utils/constants';
 
 interface WritingViewProps {
   lesson: WritingLesson;
@@ -58,7 +59,7 @@ export function WritingView({ lesson, onComplete, onCancel, onSaveMistake }: Wri
 
     setFeedback({ score, vocabScore, completenessScore, diff, userDiff });
 
-    if (score < 80 && onSaveMistake) {
+    if (score < WRITING_PASS_THRESHOLD && onSaveMistake) {
       onSaveMistake({
         id: crypto.randomUUID(),
         type: 'writing',
@@ -110,9 +111,9 @@ export function WritingView({ lesson, onComplete, onCancel, onSaveMistake }: Wri
 
       {feedback && (
         <div className="mb-8 animate-in fade-in zoom-in duration-300">
-          <div className={`p-6 rounded-2xl border-2 ${feedback.score >= 80 ? 'bg-tint-green border-green' : 'bg-tint-red border-red'}`}>
-            <h3 className={`font-black text-lg mb-4 ${feedback.score >= 80 ? 'text-green' : 'text-red'}`}>
-              {feedback.score >= 80 ? 'Excellent Translation!' : 'Needs Improvement'} ({Math.round(feedback.score)}%)
+          <div className={`p-6 rounded-2xl border-2 ${feedback.score >= WRITING_PASS_THRESHOLD ? 'bg-tint-green border-green' : 'bg-tint-red border-red'}`}>
+            <h3 className={`font-black text-lg mb-4 ${feedback.score >= WRITING_PASS_THRESHOLD ? 'text-green' : 'text-red'}`}>
+              {feedback.score >= WRITING_PASS_THRESHOLD ? 'Excellent Translation!' : 'Needs Improvement'} ({Math.round(feedback.score)}%)
             </h3>
 
             {/* Score breakdown */}
@@ -130,7 +131,7 @@ export function WritingView({ lesson, onComplete, onCancel, onSaveMistake }: Wri
                 <div className="text-[10px] font-bold text-text-muted uppercase">Completeness</div>
               </div>
               <div className="text-center p-3 bg-white/50 rounded-xl">
-                <div className="text-lg font-black" style={{ color: feedback.score >= 80 ? 'var(--green)' : feedback.score >= 50 ? 'var(--gold)' : 'var(--red)' }}>
+                <div className="text-lg font-black" style={{ color: feedback.score >= WRITING_PASS_THRESHOLD ? 'var(--green)' : feedback.score >= 50 ? 'var(--gold)' : 'var(--red)' }}>
                   {Math.round(feedback.score)}%
                 </div>
                 <div className="text-[10px] font-bold text-text-muted uppercase">Overall</div>
@@ -161,7 +162,7 @@ export function WritingView({ lesson, onComplete, onCancel, onSaveMistake }: Wri
               </p>
             </div>
 
-            {feedback.score < 80 && (
+            {feedback.score < WRITING_PASS_THRESHOLD && (
               <div className="mt-4 flex justify-center">
                 <button
                   onClick={() => {

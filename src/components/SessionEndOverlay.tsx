@@ -1,11 +1,10 @@
-
+import { Trophy } from 'lucide-react';
 
 interface SessionEndOverlayProps {
   title?: string;
   subtitle?: string;
   score?: number;
   totalScore?: number;
-  xpEarned?: number;
   onContinue: () => void;
   buttonText?: string;
   type?: 'lesson' | 'quiz';
@@ -16,7 +15,6 @@ export function SessionEndOverlay({
   subtitle,
   score,
   totalScore,
-  xpEarned,
   onContinue,
   buttonText = "CONTINUE",
   type = 'lesson'
@@ -34,10 +32,12 @@ export function SessionEndOverlay({
               <span key={i} className="confetti-dot" style={{ backgroundColor: c, left: `${(i - 4) * 22}px`, animationDelay: `${i * 0.06}s` }} />
             ))}
           </div>
-          <div className="text-[120px] select-none animate-bounce">🎉</div>
+          <div className="mx-auto w-32 h-32 rounded-[2rem] text-gold flex items-center justify-center mb-8 shadow-[var(--shadow-outset)] animate-bounce relative">
+            <Trophy size={64} strokeWidth={2.5} className="relative z-10" />
+          </div>
           <div className="space-y-2">
             <h2 className="text-4xl font-black text-gradient">{title}</h2>
-            {xpEarned !== undefined && <p className="text-base font-bold text-text-muted">You earned +{xpEarned} XP</p>}
+            {subtitle && <p className="text-xl font-bold opacity-80">{subtitle}</p>}
           </div>
         </>
       )}

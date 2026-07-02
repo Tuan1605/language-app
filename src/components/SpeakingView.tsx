@@ -2,7 +2,10 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import type { SpeakingLesson, Mistake } from '../types';
 import { calculateSimilarity } from '../utils/stringSimilarity';
 import { speak, langForCategory, isSpeechRecognitionSupported } from '../utils/tts';
-import { Volume2, Volume1, Mic, Sparkles, RefreshCw, AlertTriangle, Square, Play, CheckCircle } from 'lucide-react';
+import { gradeSpeakingWithAI } from '../utils/openai';
+import { AI_GRADING_PASS_THRESHOLD } from '../utils/constants';
+import { useUserStore } from '../stores/useUserStore';
+import { Volume2, Volume1, Mic, Sparkles, RefreshCw, AlertTriangle, Square, Play, CheckCircle, Loader } from 'lucide-react';
 
 interface SpeechRecognitionEvent {
   results: { [index: number]: { [index: number]: { transcript: string } } };
@@ -35,6 +38,8 @@ export function SpeakingView({ lesson, onComplete, onSaveMistake }: SpeakingView
   const [transcript, setTranscript] = useState('');
   const [feedback, setFeedback] = useState<'none' | 'success' | 'retry'>('none');
   const [errorMsg, setErrorMsg] = useState('');
+  const [isProcessing, setIsProcessing] = useState(false);
+  const [aiFeedback, setAiFeedback] = useState('');
   
   const [recognitionSupported] = useState(() => isSpeechRecognitionSupported());
   const recognitionRef = useRef<SpeechRecognitionInstance | null>(null);
@@ -48,7 +53,7 @@ export function SpeakingView({ lesson, onComplete, onSaveMistake }: SpeakingView
 
   const checkAccuracy = useCallback((text: string) => {
     const acc = calculateSimilarity(targetSentenceRef.current, text);
-    if (acc >= 70) {
+    if (acc >= AI_GRADING_PASS_THRESHOLD) {
       setFeedback('success');
     } else {
       setFeedback('retry');
@@ -106,11 +111,26 @@ export function SpeakingView({ lesson, onComplete, onSaveMistake }: SpeakingView
         if (e.data.size > 0) audioChunksRef.current.push(e.data);
       };
 
-      mediaRecorder.onstop = () => {
+      mediaRecorder.onstop = async () => {
         const audioBlob = new Blob(audioChunksRef.current, { type: 'audio/webm' });
         const url = URL.createObjectURL(audioBlob);
         setAudioUrl(url);
         stream.getTracks().forEach(track => track.stop());
+
+        const apiKey = useUserStore.getState().openAIApiKey;
+        if (apiKey) {
+          setIsProcessing(true);
+          try {
+            const aiResult = await gradeSpeakingWithAI(apiKey, audioBlob, lesson.targetSentence, lesson.category);
+            setTranscript(aiResult.transcript);
+            setAiFeedback(aiResult.feedback);
+            setFeedback(aiResult.isSuccess ? 'success' : 'retry');
+          } catch (err) {
+            setErrorMsg('AI API Error: ' + (err instanceof Error ? err.message : String(err)));
+          } finally {
+            setIsProcessing(false);
+          }
+        }
       };
 
       mediaRecorder.start();
@@ -122,7 +142,7 @@ export function SpeakingView({ lesson, onComplete, onSaveMistake }: SpeakingView
 
     } catch (e) {
       console.error('Microphone access error:', e);
-      setErrorMsg('🚫 Không thể truy cập micro. Hãy kiểm tra lại quyền (Permission).');
+      setErrorMsg('Không thể truy cập micro. Hãy kiểm tra lại quyền (Permission).');
     }
   };
 
@@ -235,10 +255,22 @@ export function SpeakingView({ lesson, onComplete, onSaveMistake }: SpeakingView
            <div className="w-full border-t-2 border-border-main pt-6">
               <p className="text-sm font-black text-center mb-4">Did you sound like the example?</p>
               
-              {transcript && feedback !== 'none' && (
-                 <div className="text-center mb-4">
-                    <p className="text-xs font-bold text-text-muted">AI Recognized:</p>
-                    <p className={`text-lg font-bold ${feedback === 'success' ? 'text-green' : 'text-red'}`}>{transcript}</p>
+              {isProcessing ? (
+                 <div className="flex flex-col items-center justify-center py-4 text-purple animate-pulse">
+                    <Loader className="w-8 h-8 animate-spin mb-2" />
+                    <p className="text-xs font-bold uppercase tracking-widest">AI is grading...</p>
+                 </div>
+              ) : transcript && feedback !== 'none' && (
+                 <div className="text-center mb-4 space-y-2">
+                    <div>
+                      <p className="text-xs font-bold text-text-muted">You said:</p>
+                      <p className={`text-lg font-bold ${feedback === 'success' ? 'text-green' : 'text-red'}`}>{transcript}</p>
+                    </div>
+                    {aiFeedback && (
+                      <div className="bg-bg-main p-3 rounded-lg border-2 border-border-main text-sm font-medium">
+                        🤖 <strong>AI Feedback:</strong> {aiFeedback}
+                      </div>
+                    )}
                  </div>
               )}
 

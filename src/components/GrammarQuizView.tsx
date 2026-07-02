@@ -1,6 +1,8 @@
 import { useState, useEffect, useRef } from 'react';
 import type { GrammarQuizTaskData, Mistake } from '../types';
 import { playCorrectSound, playIncorrectSound } from '../utils/sound';
+import { ConfirmDialog } from './ConfirmDialog';
+import { GRAMMAR_QUIZ_TIME } from '../utils/constants';
 
 function generateChunks(example: string, pattern: string): string[] {
   if (example.includes(' ')) {
@@ -36,9 +38,10 @@ interface GrammarQuizViewProps {
 export function GrammarQuizView({ task, onComplete, onCancel, onSaveMistake }: GrammarQuizViewProps) {
   const [isAnswered, setIsAnswered] = useState(false);
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
+  const [showQuitConfirm, setShowQuitConfirm] = useState(false);
   
   // Timer State
-  const initialTime = 45;
+  const initialTime = GRAMMAR_QUIZ_TIME;
   const [timeLeft, setTimeLeft] = useState(initialTime);
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
@@ -299,13 +302,17 @@ export function GrammarQuizView({ task, onComplete, onCancel, onSaveMistake }: G
 
       {/* Immediate feedback section */}
       {isAnswered && (
-        <div className={`p-6 rounded-2xl border-2 mb-8 animate-in slide-in-from-bottom-4 duration-300 ${
-          (mode === 'multiple-choice' ? selectedOption === task.correctIndex : isSentenceBuilderCorrect())
-            ? 'bg-tint-green border-green text-text-on-tint' 
-            : 'bg-tint-red border-red text-text-on-tint'
-        }`}>
+        <div
+          className={`p-6 rounded-2xl border-2 mb-8 animate-in slide-in-from-bottom-4 duration-300 ${
+            (mode === 'multiple-choice' ? selectedOption === task.correctIndex : isSentenceBuilderCorrect())
+              ? 'bg-tint-green border-green text-text-on-tint'
+              : 'bg-tint-red border-red text-text-on-tint'
+          }`}
+          role="alert"
+          aria-live="assertive"
+        >
           <h4 className="font-black text-lg mb-2 flex items-center gap-2">
-            {(mode === 'multiple-choice' ? selectedOption === task.correctIndex : isSentenceBuilderCorrect()) ? '🎉 Correct!' : '❌ Incorrect'}
+            {(mode === 'multiple-choice' ? selectedOption === task.correctIndex : isSentenceBuilderCorrect()) ? 'Correct!' : 'Incorrect'}
           </h4>
           <p className="text-sm font-bold opacity-80 mb-2 uppercase tracking-wide">
             Meaning: {task.point.meaning}
@@ -323,14 +330,10 @@ export function GrammarQuizView({ task, onComplete, onCancel, onSaveMistake }: G
 
       <div className="flex justify-between items-center pt-8 border-t-2 border-quiz-divider">
         <button
-          onClick={() => {
-            if (window.confirm('Bạn có chắc muốn thoát? Tiến trình sẽ bị mất.')) {
-              onCancel();
-            }
-          }}
+          onClick={() => setShowQuitConfirm(true)}
           className="text-text-muted font-black hover:text-red transition-colors uppercase tracking-[0.2em] text-[9px]"
         >
-          Quit Quest
+          Quit Quiz
         </button>
         
         {!isAnswered ? (
@@ -354,6 +357,17 @@ export function GrammarQuizView({ task, onComplete, onCancel, onSaveMistake }: G
           </button>
         )}
       </div>
+
+      <ConfirmDialog
+        isOpen={showQuitConfirm}
+        title="Quit Quiz?"
+        message="Your progress will be lost. Are you sure you want to quit?"
+        confirmText="Quit"
+        cancelText="Continue Quiz"
+        onConfirm={onCancel}
+        onCancel={() => setShowQuitConfirm(false)}
+        danger
+      />
     </div>
   );
 }

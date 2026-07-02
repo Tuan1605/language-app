@@ -1,11 +1,13 @@
 import { NavLink, Outlet, useLocation } from 'react-router-dom';
-import { Moon, Sun, Loader, RefreshCw, BookOpen, Dumbbell, NotebookPen, RotateCcw, Library } from 'lucide-react';
+import { Moon, Sun, Loader, RefreshCw, BookOpen, Dumbbell, NotebookPen, RotateCcw, Library, Download, Upload, Settings } from 'lucide-react';
 import { useUserStore } from '../stores/useUserStore';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { db } from '../data/db';
-import { useTransition, useState } from 'react';
+import { useTransition, useState, useRef } from 'react';
 import { OnboardingOverlay } from './OnboardingOverlay';
 import { resetDatabase } from '../data/contentLoader';
+import { useAppActions } from '../hooks/useAppActions';
+import { SettingsModal } from './SettingsModal';
 
 const NAV_ITEMS = [
   { to: '/', end: true, label: 'LEARN', icon: <BookOpen className="w-5 h-5" /> },
@@ -24,6 +26,10 @@ export function MainLayout() {
   const [, startTransition] = useTransition();
   const location = useLocation();
   const [isResetting, setIsResetting] = useState(false);
+  const [showSettings, setShowSettings] = useState(false);
+  const importFileRef = useRef<HTMLInputElement>(null);
+
+  const { exportUserData, importUserData } = useAppActions();
 
   const handleResetData = async () => {
     if (!window.confirm('Reset all learning data and reload from source files?\nYour progress (SM-2 scores, mistakes, exam results) will be preserved.')) return;
@@ -49,6 +55,7 @@ export function MainLayout() {
   return (
     <div className="min-h-screen bg-bg-main text-text-main flex flex-col md:flex-row font-sans selection:bg-blue selection:text-white transition-colors duration-300" data-track={activeTrack}>
       <OnboardingOverlay />
+      {showSettings && <SettingsModal onClose={() => setShowSettings(false)} />}
       
       {/* Duolingo-style Sidebar */}
       <aside className="hidden lg:flex flex-col w-64 border-r-2 border-gray-path p-6 fixed left-0 top-0 bottom-0 bg-bg-main z-50">
@@ -85,7 +92,7 @@ export function MainLayout() {
         
         {/* Top Header Bar */}
         {!(location.pathname === '/session' || location.pathname === '/real-exam') && (
-          <header className="w-full h-16 border-b-2 border-gray-path flex items-center justify-between px-6 sticky top-0 bg-bg-main/90 backdrop-blur-md z-40">
+          <header className="w-full h-16 border-b-2 border-gray-path flex items-center justify-between px-6 sticky top-0 bg-[var(--bg-main)] shadow-[var(--shadow-outset)] z-40">
             <div className="flex items-center gap-6">
                <button onClick={() => startTransition(() => setActiveTrack('english'))} className={`font-black text-sm flex items-center gap-2 transition-all ${activeTrack === 'english' ? 'text-blue border-b-4 border-blue pb-1' : 'text-text-muted hover:text-gray-path-dark'}`}>
                  🇺🇸 EN
@@ -95,6 +102,35 @@ export function MainLayout() {
                </button>
             </div>
             <div className="flex items-center gap-4 font-black">
+
+               {/* Backup Buttons */}
+               <button
+                 onClick={exportUserData}
+                 className="text-text-muted hover:text-green transition-colors active:scale-95"
+                 title="Export backup"
+               >
+                 <Download className="w-4 h-4" />
+               </button>
+               <button
+                 onClick={() => importFileRef.current?.click()}
+                 className="text-text-muted hover:text-blue transition-colors active:scale-95"
+                 title="Import backup"
+               >
+                 <Upload className="w-4 h-4" />
+               </button>
+               <input
+                 ref={importFileRef}
+                 type="file"
+                 accept=".json"
+                 className="hidden"
+                 onChange={(e) => {
+                   const file = e.target.files?.[0];
+                   if (file) {
+                     importUserData(file);
+                     e.target.value = '';
+                   }
+                 }}
+               />
 
                <button onClick={toggleTheme} className="text-xl active:scale-95 transition-transform hover:text-blue">
                  {theme === 'light' ? <Moon className="w-5 h-5" /> : <Sun className="w-5 h-5" />}
@@ -106,6 +142,13 @@ export function MainLayout() {
                  title="Reset & reload content data"
                >
                  {isResetting ? <Loader className="w-4 h-4 animate-spin" /> : <RefreshCw className="w-4 h-4" />}
+               </button>
+               <button
+                 onClick={() => setShowSettings(true)}
+                 className="text-xs text-text-muted hover:text-purple transition-colors active:scale-95"
+                 title="AI Settings"
+               >
+                 <Settings className="w-5 h-5" />
                </button>
             </div>
           </header>
@@ -120,7 +163,7 @@ export function MainLayout() {
       {!(location.pathname === '/session' || location.pathname === '/real-exam') && (
         <nav className="flex lg:hidden fixed bottom-0 left-0 right-0 h-16 bg-bg-main/95 backdrop-blur-md border-t-2 border-gray-path z-50 px-2 pb-[env(safe-area-inset-bottom)]">
           <div className="flex items-center justify-around w-full h-full">
-            {NAV_ITEMS.filter(item => ['/', '/practice', '/review', '/collection', '/analytics'].includes(item.to)).map((item) => (
+            {NAV_ITEMS.filter(item => ['/', '/practice', '/notebook', '/review', '/collection', '/analytics'].includes(item.to)).map((item) => (
               <NavLink 
                 key={item.to} 
                 to={item.to} 

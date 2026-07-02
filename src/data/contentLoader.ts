@@ -18,6 +18,9 @@ interface RawFlashcard {
   definition: string;
   example?: string;
   topic?: string;
+  difficulty?: 'beginner' | 'intermediate' | 'advanced';
+  phonetic?: string;
+  pronunciation?: string;
 }
 
 function rawToFlashcard(raw: RawFlashcard, language: 'english' | 'japanese', category: 'toeic' | 'n2'): Flashcard {
@@ -27,14 +30,17 @@ function rawToFlashcard(raw: RawFlashcard, language: 'english' | 'japanese', cat
     word: raw.word,
     definition: raw.definition,
     example: raw.example,
+    phonetic: raw.phonetic,
+    pronunciation: raw.pronunciation,
     language,
     category,
-    difficulty: 'beginner',
+    difficulty: raw.difficulty || 'beginner',
     topic: raw.topic,
-    status: 'new', // Fixed logic! Cards no longer immediately due
-    repetition: 0,
-    interval: 0,
-    easiness: 2.5,
+    state: 'New',
+    reps: 0,
+    lapses: 0,
+    stability: 0,
+    fsrs_difficulty: 0,
     next_review: null,
     created_at: new Date().toISOString(),
   };
@@ -47,46 +53,57 @@ export async function initializeDatabase() {
   }
 
   try {
-    // 1. Load Flashcards one at a time to avoid memory spike
-    const toeicRaw = await import('./toeic/flashcards.json').catch(() => ({ default: [] as RawFlashcard[] }));
-    await db.cards.bulkPut((toeicRaw.default as RawFlashcard[]).map(r => rawToFlashcard(r, 'english', 'toeic')));
+    // 1. Load Flashcards in parallel
+    const [toeicRaw, n2Raw] = await Promise.all([
+      import('./toeic/flashcards.json').catch(() => ({ default: [] as RawFlashcard[] })),
+      import('./n2/flashcards.json').catch(() => ({ default: [] as RawFlashcard[] })),
+    ]);
+    await Promise.all([
+      db.cards.bulkPut((toeicRaw.default as RawFlashcard[]).map(r => rawToFlashcard(r, 'english', 'toeic'))),
+      db.cards.bulkPut((n2Raw.default as RawFlashcard[]).map(r => rawToFlashcard(r, 'japanese', 'n2'))),
+    ]);
 
-    const n2Raw = await import('./n2/flashcards.json').catch(() => ({ default: [] as RawFlashcard[] }));
-    await db.cards.bulkPut((n2Raw.default as RawFlashcard[]).map(r => rawToFlashcard(r, 'japanese', 'n2')));
-
-    // 2. Load Questions in smaller batches
+    // 2. Load Questions in parallel
     const questionFiles = [
       './toeic/questions.json',
       './toeic/questions-listening.json',
+      './toeic/questions-batch2.json',
+      './toeic/questions-advanced.json',
       './n2/questions.json',
       './n2/questions-supplement.json',
+      './n2/questions-batch2.json',
+      './n2/questions-advanced.json',
+      './n2/questions-listening.json',
+      './n2/questions-reading.json',
     ];
-    for (const file of questionFiles) {
-      try {
-        const mod = await import(file);
+    const questionResults = await Promise.allSettled(
+      questionFiles.map(file => import(file).then(mod => {
         const questions = (mod.default as RawQuestion[]).map((q) => ({
           id: q.id, text: q.text, options: q.options,
           correctAnswer: q.correctAnswer, explanation: q.explanation,
           category: q.category, difficulty: q.difficulty, subCategory: q.subCategory,
         }));
-        await db.questions.bulkPut(questions);
-      } catch (e) {
-        console.warn(`Failed to load ${file}:`, e);
-      }
-    }
+        return db.questions.bulkPut(questions);
+      }))
+    );
+    questionResults.forEach((r, i) => {
+      if (r.status === 'rejected') console.warn(`Failed to load ${questionFiles[i]}:`, r.reason);
+    });
 
-    // 3. Load Kanji one at a time
-    const kanjiFiles = ['./n2/kanji.json', './n2/kanji-supplement-batch2.json'];
-    for (const file of kanjiFiles) {
-      try {
-        const mod = await import(file);
-        await db.kanji.bulkPut(mod.default as KanjiEntry[]);
-      } catch (e) {
-        console.warn(`Failed to load ${file}:`, e);
-      }
-    }
+    // 3. Load Kanji in parallel
+    const kanjiFiles = [
+      './n2/kanji.json',
+      './n2/kanji-supplement-batch1.json',
+      './n2/kanji-supplement-batch2.json',
+    ];
+    const kanjiResults = await Promise.allSettled(
+      kanjiFiles.map(file => import(file).then(mod => db.kanji.bulkPut(mod.default as KanjiEntry[])))
+    );
+    kanjiResults.forEach((r, i) => {
+      if (r.status === 'rejected') console.warn(`Failed to load ${kanjiFiles[i]}:`, r.reason);
+    });
 
-    // 4. Load Grammar
+    // 4. Load Grammar (already parallel)
     const [gN2, gToeic] = await Promise.all([
       import('./n2/grammar.json'),
       import('./toeic/grammar.json'),
@@ -106,23 +123,25 @@ export async function initializeDatabase() {
 export async function resetDatabase() {
   // 1. Back up only modified cards using IndexedDB query (not full toArray)
   const progressMap = new Map();
-  await db.cards.where('status').notEqual('new').each(card => {
+  await db.cards.where('state').notEqual('New').each(card => {
     progressMap.set(card.id, {
-      status: card.status,
-      repetition: card.repetition,
-      interval: card.interval,
-      easiness: card.easiness,
+      state: card.state,
+      reps: card.reps,
+      lapses: card.lapses,
+      stability: card.stability,
+      difficulty: card.difficulty,
       next_review: card.next_review
     });
   });
-  // Also check cards with repetition > 0 that are still 'new'
-  await db.cards.where('repetition').above(0).each(card => {
+  // Also check cards with reps > 0 that are still 'New'
+  await db.cards.where('reps').above(0).each(card => {
     if (!progressMap.has(card.id)) {
       progressMap.set(card.id, {
-        status: card.status,
-        repetition: card.repetition,
-        interval: card.interval,
-        easiness: card.easiness,
+        state: card.state,
+        reps: card.reps,
+        lapses: card.lapses,
+        stability: card.stability,
+        difficulty: card.difficulty,
         next_review: card.next_review
       });
     }
@@ -138,7 +157,7 @@ export async function resetDatabase() {
   await db.meta.put({ id: 'initialized', value: false });
   await initializeDatabase();
 
-  // 4. Restore SM-2 progress using bulkPut (not toArray + loop)
+  // 4. Restore FSRS progress using bulkPut (not toArray + loop)
   if (progressMap.size > 0) {
     const cardsToUpdate: Flashcard[] = [];
     await db.cards.where('id').anyOf([...progressMap.keys()]).each(card => {

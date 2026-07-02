@@ -11,14 +11,32 @@ export interface Flashcard {
   category: 'toeic' | 'n2';
   difficulty: Difficulty;
   topic?: string;
-  
-  // SM-2 Algorithm fields
-  status: 'new' | 'learning' | 'review';
-  repetition: number;
-  interval: number;
-  easiness: number;
+  phonetic?: string;      // IPA: /nəˈɡoʊʃieɪt/
+  pronunciation?: string;  // Cách đọc đơn giản: nuh-GOH-shee-eyt
+
+  // FSRS Algorithm fields
+  state: 'New' | 'Learning' | 'Review' | 'Relearning';
+  stability: number;
+  fsrs_difficulty: number;
+  reps: number;
+  lapses: number;
   next_review: string | null;
+  last_review?: string;
   created_at: string;
+}
+
+export interface ReviewLog {
+  id: string;
+  cardId: string;
+  rating: 'Again' | 'Hard' | 'Good' | 'Easy';
+  state: 'New' | 'Learning' | 'Review' | 'Relearning';
+  due: string;
+  stability: number;
+  difficulty: number;
+  elapsed_days: number;
+  last_review: string | null;
+  scheduled_days: number;
+  review: string;
 }
 
 export type ReviewGrade = 0 | 1 | 2 | 3 | 4 | 5;

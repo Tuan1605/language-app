@@ -22,7 +22,7 @@ export function SessionPage() {
   const currentTaskIndex = useAppStore(s => s.currentTaskIndex);
   const isSessionFinished = useAppStore(s => s.isSessionFinished);
   const activeTrack = useUserStore(s => s.activeTrack);
-  const cards = useLiveQuery(async () => await db.cards.toArray());
+  const cards = useLiveQuery(async () => await db.cards.where('language').equals(activeTrack).toArray(), [activeTrack]);
   
   const { 
     nextTask, finalizeSession, trackCategory, handleSessionQuizComplete
@@ -78,8 +78,7 @@ export function SessionPage() {
         ) : (
           <SessionEndOverlay 
             type="lesson"
-            title="Lesson Complete!"
-            xpEarned={10}
+            title="Session Complete!"
             onContinue={finalizeSession}
           />
         )}

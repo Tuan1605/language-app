@@ -16,6 +16,33 @@ export default defineConfig({
       workbox: {
         globPatterns: ['**/*.{js,css,html,ico,png,svg,webp,json}'],
         maximumFileSizeToCacheInBytes: 5000000,
+        runtimeCaching: [
+          {
+            // Cache flashcard images
+            urlPattern: /\.(?:png|jpg|jpeg|webp|gif|svg)$/,
+            handler: 'CacheFirst',
+            options: {
+              cacheName: 'image-cache',
+              expiration: {
+                maxEntries: 200,
+                maxAgeSeconds: 30 * 24 * 60 * 60, // 30 days
+              },
+            },
+          },
+          {
+            // Cache TTS audio responses
+            urlPattern: /lingva\.ml\/api/,
+            handler: 'NetworkFirst',
+            options: {
+              cacheName: 'tts-cache',
+              expiration: {
+                maxEntries: 50,
+                maxAgeSeconds: 7 * 24 * 60 * 60, // 7 days
+              },
+              networkTimeoutSeconds: 5,
+            },
+          },
+        ],
       },
       manifest: {
         name: 'LingoMaster',

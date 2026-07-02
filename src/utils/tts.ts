@@ -6,6 +6,8 @@
 //
 // The speak() function automatically picks the best available method.
 
+import toast from 'react-hot-toast';
+
 export function isTTSSupported(): boolean {
   // We always return true now because the Audio fallback works everywhere
   return typeof window !== 'undefined';
@@ -195,7 +197,7 @@ function speakViaAudio(
       })
       .catch((err) => {
         console.error('[TTS] Fetch/Play error:', err);
-        alert('Lỗi tải/phát âm thanh: ' + err.message);
+        toast.error('Audio playback failed. Please try again.');
         
         chunkIdx++;
         if (chunkIdx < chunks.length) {

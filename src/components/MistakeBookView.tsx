@@ -1,4 +1,5 @@
 import { useState, memo } from 'react';
+import { Target } from 'lucide-react';
 import type { Mistake, Question, DictationLesson, SpeakingLesson, WritingLesson } from '../types';
 
 interface MistakeBookViewProps {
@@ -159,8 +160,10 @@ export const MistakeBookView = memo(function MistakeBookView({ mistakes, onRemov
           ))
         ) : (
           <div className="py-20 text-center space-y-4">
-             <div className="text-5xl opacity-20">🎯</div>
-             <p className="font-bold text-text-muted">No mistakes found. Great job!</p>
+             <div className="w-24 h-24 mx-auto rounded-full text-text-muted flex items-center justify-center mb-6 shadow-[var(--shadow-inset-light)]">
+               <Target size={48} strokeWidth={2.5} />
+             </div>
+             <p className="text-sm font-bold opacity-80 uppercase tracking-widest text-text-muted">No Mistakes Yet</p>
           </div>
         )}
       </div>

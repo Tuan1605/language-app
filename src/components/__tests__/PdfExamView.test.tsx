@@ -1,5 +1,5 @@
 import { describe, it, expect, vi } from 'vitest';
-import { render, screen, fireEvent } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 
 // Mock the TOEIC_2024_PDF_EXAMS data
 vi.mock('../../data/toeic2024Pdf', () => ({

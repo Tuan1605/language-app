@@ -80,9 +80,9 @@ describe('QuizView', () => {
     expect(container.textContent).toContain('n2');
   });
 
-  it('should have quit quest button', () => {
+  it('should have quit quiz button', () => {
     render(<QuizView questions={mockQuestions} category="toeic" onComplete={mockOnComplete} onCancel={mockOnCancel} />);
-    expect(screen.getAllByText('Quit Quest').length).toBeGreaterThan(0);
+    expect(screen.getAllByText('Quit Quiz').length).toBeGreaterThan(0);
   });
 
   it('should show category indicator', () => {

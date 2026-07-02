@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import { toast } from 'react-hot-toast';
+import { sanitizeInput } from '../utils/sanitize';
 
 interface AddFlashcardProps {
-  onAdd: (card: { word: string; definition: string; example?: string; language: 'english' | 'japanese' }) => void;
-  onAddBulk?: (cards: Array<{ word: string; definition: string; example?: string; language: 'english' | 'japanese' }>) => void;
+  onAdd: (card: { word: string; definition: string; example?: string; phonetic?: string; pronunciation?: string; difficulty?: 'beginner' | 'intermediate' | 'advanced'; language: 'english' | 'japanese' }) => void;
+  onAddBulk?: (cards: Array<{ word: string; definition: string; example?: string; phonetic?: string; pronunciation?: string; difficulty?: 'beginner' | 'intermediate' | 'advanced'; language: 'english' | 'japanese' }>) => void;
 }
 
 export function AddFlashcard({ onAdd, onAddBulk }: AddFlashcardProps) {
@@ -13,6 +14,9 @@ export function AddFlashcard({ onAdd, onAddBulk }: AddFlashcardProps) {
   const [word, setWord] = useState('');
   const [definition, setDefinition] = useState('');
   const [example, setExample] = useState('');
+  const [phonetic, setPhonetic] = useState('');
+  const [pronunciation, setPronunciation] = useState('');
+  const [difficulty, setDifficulty] = useState<'beginner' | 'intermediate' | 'advanced'>('beginner');
   const [language, setLanguage] = useState<'english' | 'japanese'>('english');
 
   // Bulk card state
@@ -21,10 +25,20 @@ export function AddFlashcard({ onAdd, onAddBulk }: AddFlashcardProps) {
   const handleSubmitSingle = (e: React.FormEvent) => {
     e.preventDefault();
     if (!word || !definition) return;
-    onAdd({ word, definition, example: example || undefined, language });
+    onAdd({
+      word: sanitizeInput(word),
+      definition: sanitizeInput(definition),
+      example: example ? sanitizeInput(example) : undefined,
+      phonetic: phonetic || undefined,
+      pronunciation: pronunciation || undefined,
+      difficulty,
+      language
+    });
     setWord('');
     setDefinition('');
     setExample('');
+    setPhonetic('');
+    setPronunciation('');
   };
 
   const handleSubmitBulk = (e: React.FormEvent) => {
@@ -38,16 +52,13 @@ export function AddFlashcard({ onAdd, onAddBulk }: AddFlashcardProps) {
       const line = lines[i].trim();
       if (!line) continue;
 
-      // Basic CSV parsing: split by comma, ignoring commas inside quotes is complex but let's do a simple split first.
-      // For a robust one, we can just split by comma and take first 3 parts.
-      // Format: word, definition, example
       const parts = line.split(',').map(s => s.trim());
       
       if (parts.length >= 2) {
         parsedCards.push({
-          word: parts[0],
-          definition: parts[1],
-          example: parts[2] || undefined,
+          word: sanitizeInput(parts[0]),
+          definition: sanitizeInput(parts[1]),
+          example: parts[2] ? sanitizeInput(parts[2]) : undefined,
           language
         });
       } else {
@@ -117,25 +128,58 @@ export function AddFlashcard({ onAdd, onAddBulk }: AddFlashcardProps) {
         </div>
       </div>
 
+      <div className="space-y-3 mb-8">
+        <label className="text-[9px] font-black text-text-muted uppercase tracking-[0.2em] ml-1 block text-center">Difficulty</label>
+        <div className="grid grid-cols-3 gap-3">
+          <button
+            type="button"
+            onClick={() => setDifficulty('beginner')}
+            className={`h-14 btn-3d ${difficulty === 'beginner' ? 'btn-green' : 'btn-outline'}`}
+          >
+            BEGINNER
+          </button>
+          <button
+            type="button"
+            onClick={() => setDifficulty('intermediate')}
+            className={`h-14 btn-3d ${difficulty === 'intermediate' ? 'btn-blue' : 'btn-outline'}`}
+          >
+            INTERMEDIATE
+          </button>
+          <button
+            type="button"
+            onClick={() => setDifficulty('advanced')}
+            className={`h-14 btn-3d ${difficulty === 'advanced' ? 'btn-red' : 'btn-outline'}`}
+          >
+            ADVANCED
+          </button>
+        </div>
+      </div>
+
       {activeTab === 'single' ? (
-        <form onSubmit={handleSubmitSingle} className="space-y-6 animate-in fade-in">
+        <form onSubmit={handleSubmitSingle} className="space-y-6 animate-in fade-in" aria-label="Add single flashcard">
           <div className="space-y-2">
-            <label className="text-[9px] font-black text-text-muted uppercase tracking-[0.2em] ml-1">Word or Phrase</label>
+            <label htmlFor="card-word" className="text-[9px] font-black text-text-muted uppercase tracking-[0.2em] ml-1">Word or Phrase</label>
             <input
+              id="card-word"
               type="text"
               value={word}
               onChange={(e) => setWord(e.target.value)}
+              required
+              aria-required="true"
               className="w-full bg-card-input-bg border-2 border-card-input-border rounded-2xl px-5 h-14 text-lg font-bold focus:border-blue focus:bg-bg-card transition-all outline-none text-text-main placeholder:text-text-muted"
               placeholder="e.g. Approach / 接近"
             />
           </div>
 
           <div className="space-y-2">
-            <label className="text-[9px] font-black text-text-muted uppercase tracking-[0.2em] ml-1">Meaning / Definition</label>
+            <label htmlFor="card-definition" className="text-[9px] font-black text-text-muted uppercase tracking-[0.2em] ml-1">Meaning / Definition</label>
             <textarea
+              id="card-definition"
               value={definition}
               onChange={(e) => setDefinition(e.target.value)}
               rows={3}
+              required
+              aria-required="true"
               className="w-full bg-card-input-bg border-2 border-card-input-border rounded-2xl p-5 text-lg font-bold focus:border-blue focus:bg-bg-card transition-all outline-none resize-none text-text-main placeholder:text-text-muted"
               placeholder="What does it mean?..."
             />
@@ -150,6 +194,29 @@ export function AddFlashcard({ onAdd, onAddBulk }: AddFlashcardProps) {
               className="w-full bg-card-input-bg border-2 border-card-input-border rounded-2xl px-5 h-14 text-lg font-bold focus:border-blue focus:bg-bg-card transition-all outline-none text-text-main placeholder:text-text-muted"
               placeholder="e.g. The bonus serves as an incentive."
             />
+          </div>
+
+          <div className="grid grid-cols-2 gap-4">
+            <div className="space-y-2">
+              <label className="text-[9px] font-black text-text-muted uppercase tracking-[0.2em] ml-1">Phonetic / IPA (optional)</label>
+              <input
+                type="text"
+                value={phonetic}
+                onChange={(e) => setPhonetic(e.target.value)}
+                className="w-full bg-card-input-bg border-2 border-card-input-border rounded-2xl px-5 h-14 text-lg font-bold focus:border-blue focus:bg-bg-card transition-all outline-none text-text-main placeholder:text-text-muted"
+                placeholder="/nəˈɡoʊʃieɪt/"
+              />
+            </div>
+            <div className="space-y-2">
+              <label className="text-[9px] font-black text-text-muted uppercase tracking-[0.2em] ml-1">Pronunciation (optional)</label>
+              <input
+                type="text"
+                value={pronunciation}
+                onChange={(e) => setPronunciation(e.target.value)}
+                className="w-full bg-card-input-bg border-2 border-card-input-border rounded-2xl px-5 h-14 text-lg font-bold focus:border-blue focus:bg-bg-card transition-all outline-none text-text-main placeholder:text-text-muted"
+                placeholder="nuh-GOH-shee-eyt"
+              />
+            </div>
           </div>
 
           <button

@@ -22,11 +22,13 @@ export function RealExamPage() {
             const saved = localStorage.getItem(key);
             if (saved) {
               const parsed = JSON.parse(saved);
-              import('../data/authenticExams').then(({ AUTHENTIC_EXAMS }) => {
-                const found = AUTHENTIC_EXAMS.find(e => e.id === parsed.examId);
-                if (found) {
-                  setCurrentAuthenticExam(found);
-                }
+              import('../data/authenticExams').then(({ getAuthenticExams }) => {
+                getAuthenticExams().then(exams => {
+                  const found = exams.find(e => e.id === parsed.examId);
+                  if (found) {
+                    setCurrentAuthenticExam(found);
+                  }
+                });
               });
               break;
             }

@@ -1,101 +1,111 @@
 @import "tailwindcss";
 
 :root {
-  /* Premium Modern Palette */
-  --green: #10B981;
-  --green-shadow: #059669;
-  --green-light: #D1FAE5;
+  /* Matte Plastic Base - Light Theme */
+  --bg-main: #E0E5EC;
+  --bg-card: #E0E5EC;
+  --bg-hover: #D1D9E6;
   
-  --blue: #3B82F6;
-  --blue-shadow: #2563EB;
-  --blue-light: #DBEAFE;
+  --text-main: #2D3748;
+  --text-muted: #718096;
   
-  --purple: #8B5CF6;
-  --purple-shadow: #7C3AED;
+  /* Neumorphic Shadows (Light Mode) */
+  --shadow-light: rgba(255, 255, 255, 0.8);
+  --shadow-dark: rgba(163, 177, 198, 0.6);
+  --shadow-inset-light: inset 4px 4px 8px rgba(163, 177, 198, 0.6), inset -4px -4px 8px rgba(255, 255, 255, 0.8);
+  --shadow-outset: 6px 6px 12px var(--shadow-dark), -6px -6px 12px var(--shadow-light);
+  --shadow-outset-hover: 8px 8px 16px var(--shadow-dark), -8px -8px 16px var(--shadow-light);
   
-  --red: #EF4444;
-  --red-shadow: #DC2626;
+  /* Material Colors (Muted, tactile) */
+  --blue: #4A90E2; 
+  --blue-shadow: #357ABD;
+  --blue-light: #E0E5EC;
   
-  --gold: #F59E0B;
-  --gold-shadow: #D97706;
+  --green: #48BB78;
+  --green-shadow: #38A169;
+  --green-light: #E0E5EC;
+  
+  --red: #F56565;
+  --red-shadow: #E53E3E;
+  
+  --gold: #ED8936;
+  --gold-shadow: #DD6B20;
+  
+  --purple: #9F7AEA;
+  --purple-shadow: #805AD5;
 
-  --gray-bg: #F8FAFC;
-  --gray-path: #E2E8F0;
-  --gray-path-dark: #CBD5E1;
+  --gray-bg: #E0E5EC;
+  --gray-path: #CBD5E0;
+  --gray-path-dark: #A0AEC0;
   
-  --text-main: #334155;
-  --text-muted: #94A3B8;
-  --bg-main: #FFFFFF;
-  --bg-card: #FFFFFF;
-  --border-main: #E2E8F0;
-  --bg-hover: #F1F5F9;
+  --border-main: transparent;
+  
+  --active-path-bg: #E0E5EC;
+  --active-path-shadow: #A0AEC0;
+  --locked-path-bg: #E0E5EC;
+  --locked-path-shadow: #CBD5E0;
 
-  --active-path-bg: #b45309; /* Muted Amber */
-  --active-path-shadow: #92400e;
-  --locked-path-bg: #e2e8f0;
-  --locked-path-shadow: #cbd5e1;
-
-  --tint-blue: #EFF6FF;
-  --tint-green: #ECFDF5;
-  --tint-red: #FEF2F2;
-  --tint-amber: #FFFBEB;
-  --text-on-tint: #1E293B;
-  --card-input-bg: #F8FAFC;
-  --card-input-border: #E2E8F0;
-  --quiz-divider: #F1F5F9;
+  --tint-blue: #E0E5EC;
+  --tint-green: #E0E5EC;
+  --tint-red: #E0E5EC;
+  --tint-amber: #E0E5EC;
+  --tint-purple: #E0E5EC;
+  --text-on-tint: #2D3748;
+  
+  --card-input-bg: #E0E5EC;
+  --card-input-border: transparent;
+  --quiz-divider: #CBD5E0;
 }
 
 [data-track='japanese'] {
-  --blue: #E11D48; /* Rose red */
-  --blue-shadow: #BE123C;
-  --blue-light: #FFE4E6;
-  
-  --green: #F43F5E; /* Sakura pinkish red */
-  --green-shadow: #E11D48;
-  --green-light: #FFE4E6;
-  
-  --purple: #9F1239; /* Deep maroon */
-  --purple-shadow: #881337;
-
-  --tint-blue: #FFF1F2;
-  --tint-green: #FFF1F2;
+  --blue: #E53E3E;
+  --blue-shadow: #C53030;
+  --green: #F56565;
+  --green-shadow: #E53E3E;
+  --purple: #9B2C2C;
+  --purple-shadow: #742A2A;
 }
 
 [data-theme='dark'] {
-  --gray-bg: #0F172A;
-  --gray-path: #1E293B;
-  --gray-path-dark: #334155;
-  --text-main: #F8FAFC;
-  --text-muted: #94A3B8;
-  --bg-main: #020617;
-  --bg-card: #0F172A;
-  --border-main: #1E293B;
-  --bg-hover: #1E293B;
+  /* Matte Plastic Base - Dark Theme */
+  --bg-main: #2D3748;
+  --bg-card: #2D3748;
+  --bg-hover: #232B38;
+  
+  --text-main: #E2E8F0;
+  --text-muted: #A0AEC0;
+  
+  /* Neumorphic Shadows (Dark Mode) */
+  --shadow-light: rgba(74, 85, 104, 0.4);
+  --shadow-dark: rgba(26, 32, 44, 0.8);
+  --shadow-inset-light: inset 4px 4px 8px rgba(26, 32, 44, 0.8), inset -4px -4px 8px rgba(74, 85, 104, 0.4);
+  --shadow-outset: 6px 6px 12px var(--shadow-dark), -6px -6px 12px var(--shadow-light);
+  --shadow-outset-hover: 8px 8px 16px var(--shadow-dark), -8px -8px 16px var(--shadow-light);
+  
+  --gray-bg: #2D3748;
+  --gray-path: #1A202C;
+  --gray-path-dark: #121720;
+  
+  --border-main: transparent;
+  --card-input-bg: #2D3748;
+  --card-input-border: transparent;
+  --quiz-divider: #1A202C;
 
-  --active-path-bg: #b45309;
-  --active-path-shadow: #92400e;
-  --locked-path-bg: #1E293B;
-  --locked-path-shadow: #020617;
-
-  --tint-blue: #172554;
-  --tint-green: #064E3B;
-  --tint-red: #450A0A;
-  --tint-amber: #451A03;
-  --text-on-tint: #F8FAFC;
-  --card-input-bg: #020617;
-  --card-input-border: #1E293B;
-  --quiz-divider: #1E293B;
+  --tint-blue: #2D3748;
+  --tint-green: #2D3748;
+  --tint-red: #2D3748;
+  --tint-amber: #2D3748;
+  --tint-purple: #2D3748;
+  --text-on-tint: #E2E8F0;
 }
 
 [data-theme='dark'][data-track='japanese'] {
-  --blue: #E11D48;
-  --blue-shadow: #9F1239;
-  --green: #F43F5E;
-  --green-shadow: #BE123C;
-  --purple: #9F1239;
-  --purple-shadow: #4C0519;
-  --tint-blue: #4C0519;
-  --tint-green: #4C0519;
+  --blue: #E53E3E;
+  --blue-shadow: #C53030;
+  --green: #F56565;
+  --green-shadow: #E53E3E;
+  --purple: #9B2C2C;
+  --purple-shadow: #742A2A;
 }
 
 body {
@@ -109,7 +119,7 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* --- PREMIUM MODERN BUTTON SYSTEM --- */
+/* --- NEUMORPHIC BUTTON SYSTEM --- */
 .btn-duo, .btn-3d {
   display: inline-flex;
   align-items: center;
@@ -118,91 +128,67 @@ body {
   font-weight: 800;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  transition: transform 0.1s cubic-bezier(0, 0, 0.2, 1), box-shadow 0.1s cubic-bezier(0, 0, 0.2, 1), filter 0.2s ease;
+  transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
   cursor: pointer;
-  border: 2px solid transparent;
+  border: none;
   user-select: none;
-  box-shadow: 0 4px 0 var(--btn-shadow, rgba(0,0,0,0.1));
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  box-shadow: var(--shadow-outset);
   will-change: transform, box-shadow;
 }
 
 .btn-duo:hover:not(:disabled), .btn-3d:hover:not(:disabled) {
+  box-shadow: var(--shadow-outset-hover);
   transform: translateY(-2px);
-  box-shadow: 0 6px 0 var(--btn-shadow, rgba(0,0,0,0.1)), 0 8px 12px var(--btn-glow, rgba(0,0,0,0));
-  filter: brightness(1.05);
 }
 
 .btn-duo:active:not(:disabled), .btn-3d:active:not(:disabled) {
-  transform: translateY(4px);
-  box-shadow: 0 0px 0 var(--btn-shadow, rgba(0,0,0,0.1));
-  filter: brightness(0.95);
-  transition: transform 0.05s, box-shadow 0.05s, filter 0.05s;
+  box-shadow: var(--shadow-inset-light);
+  transform: translateY(2px);
 }
 
 .btn-duo:disabled, .btn-3d:disabled {
-  background-color: var(--gray-path);
-  color: var(--text-muted);
-  --btn-shadow: var(--gray-path-dark);
+  opacity: 0.6;
   cursor: not-allowed;
+  box-shadow: none;
   transform: none;
-  box-shadow: 0 4px 0 var(--btn-shadow);
 }
 
-[data-theme='dark'] .btn-duo:disabled, [data-theme='dark'] .btn-3d:disabled {
-  background-color: var(--gray-path);
-  color: var(--text-muted);
-  --btn-shadow: var(--border-main);
-  box-shadow: 0 4px 0 var(--btn-shadow);
-}
-
-/* Color Variants */
+/* Color Variants in Neumorphism often mean colored text or a subtle colored glow, 
+   but for primary buttons we can use the main color with normal shadows. */
 .btn-green {
   background-color: var(--green);
   color: white;
-  --btn-shadow: var(--green-shadow);
-  --btn-glow: rgba(16, 185, 129, 0.3);
 }
 
 .btn-blue {
   background-color: var(--blue);
   color: white;
-  --btn-shadow: var(--blue-shadow);
-  --btn-glow: rgba(59, 130, 246, 0.3);
 }
 
 .btn-purple {
   background-color: var(--purple);
   color: white;
-  --btn-shadow: var(--purple-shadow);
-  --btn-glow: rgba(139, 92, 246, 0.3);
 }
 
 .btn-red {
   background-color: var(--red);
   color: white;
-  --btn-shadow: var(--red-shadow);
-  --btn-glow: rgba(239, 68, 68, 0.3);
 }
 
 .btn-gold {
   background-color: var(--gold);
   color: white;
-  --btn-shadow: var(--gold-shadow);
-  --btn-glow: rgba(245, 158, 11, 0.3);
 }
 
 .btn-outline {
-  background-color: transparent;
+  background-color: var(--bg-main);
   color: var(--blue);
-  border: 2px solid var(--border-main);
-  --btn-shadow: var(--border-main);
-  --btn-glow: rgba(59, 130, 246, 0.1);
+  box-shadow: var(--shadow-inset-light);
 }
 .btn-outline:hover:not(:disabled) {
-  background-color: var(--bg-hover);
-  border-color: var(--blue);
-  color: var(--blue-shadow);
-  --btn-shadow: var(--blue);
+  box-shadow: var(--shadow-outset);
 }
 
 /* --- GLASSMORPHISM EFFECTS --- */
@@ -295,7 +281,7 @@ body {
   animation: progress-fill 1s ease-out forwards;
 }
 
-/* --- THE WINDING MAP NODE --- */
+/* --- THE TACTILE MAP NODE --- */
 .duo-node {
   width: 70px;
   height: 70px;
@@ -307,31 +293,34 @@ body {
   position: relative;
   font-size: 32px;
   background-color: var(--node-bg, var(--green));
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), inset 0 -4px 0 rgba(0,0,0,0.1);
+  color: white;
+  box-shadow: var(--shadow-outset);
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
+  border: none;
 }
 
 .duo-node:active:not(.locked) {
-  transform: translateY(4px) scale(0.95);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1), inset 0 -2px 0 rgba(0,0,0,0.1);
+  transform: translateY(2px) scale(0.95);
+  box-shadow: inset 4px 4px 8px rgba(0,0,0,0.2), inset -4px -4px 8px rgba(255,255,255,0.2);
 }
 
 .duo-node.locked {
   background-color: var(--gray-path);
-  box-shadow: inset 0 -4px 0 rgba(0,0,0,0.05);
+  color: var(--text-muted);
+  box-shadow: var(--shadow-inset-light);
   cursor: not-allowed;
   transform: none;
 }
 
 .duo-node.current {
-  box-shadow: 0 0 0 4px var(--bg-main), 0 0 0 8px var(--blue), inset 0 -4px 0 rgba(0,0,0,0.1);
+  box-shadow: 0 0 0 4px var(--bg-main), 0 0 0 8px var(--blue), var(--shadow-outset);
   animation: bounce-subtle 2s infinite ease-in-out;
 }
 
 .duo-node.current:active {
-  box-shadow: 0 0 0 4px var(--bg-main), 0 0 0 8px var(--blue), inset 0 -2px 0 rgba(0,0,0,0.1);
-  transform: translateY(4px);
+  box-shadow: 0 0 0 4px var(--bg-main), 0 0 0 8px var(--blue), var(--shadow-inset-light);
+  transform: translateY(2px);
 }
 
 @keyframes bounce-subtle {
@@ -389,13 +378,13 @@ body {
   margin: 0 auto;
 }
 
-/* --- CARD CONTAINER --- */
+/* --- TACTILE PANEL (formerly lingo-card) --- */
 .lingo-card {
   padding: 2rem;
   border-radius: 1.5rem;
-  border: 1px solid var(--border-main);
+  border: none;
   background-color: var(--bg-card);
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  box-shadow: var(--shadow-outset);
 }
 
 /* --- 3D BUTTON (alias for btn-duo style) --- */
@@ -476,17 +465,16 @@ body {
 .btn-duo:focus-visible,
 .btn-3d:focus-visible {
   outline: none;
-  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.35), 0 4px 0 var(--btn-shadow);
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.35), var(--shadow-outset);
 }
 
 /* Card hover lift */
 .lingo-card {
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 .lingo-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-  border-color: var(--blue-light);
+  box-shadow: var(--shadow-outset-hover);
 }
 
 /* Map node hover grows slightly before press */
