@@ -154,7 +154,7 @@ export function MainLayout() {
           </header>
         )}
 
-        <div className="w-full max-w-[600px] flex flex-col items-center p-6 md:p-10 pb-28 lg:pb-40">
+        <div className={`w-full flex flex-col items-center p-6 md:p-10 pb-28 lg:pb-40 ${location.pathname === '/review' ? 'max-w-[800px] lg:max-w-[960px]' : 'max-w-[600px] lg:max-w-[720px]'}`}>
           <Outlet />
         </div>
       </main>

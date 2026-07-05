@@ -85,31 +85,31 @@ export function CollectionView({ cards, activeTrack, onDelete, onDeleteBulk, onE
   };
 
   return (
-    <div className="bg-bg-card lingo-card p-10 max-w-5xl mx-auto w-full animate-in slide-in-from-bottom-8 duration-500">
-      <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-10 border-b-2 border-gray-path pb-6">
+    <div className="bg-bg-card lingo-card p-6 md:p-10 max-w-5xl mx-auto w-full animate-in slide-in-from-bottom-8 duration-500">
+      <div className="mb-8 border-b-2 border-gray-path pb-6 space-y-4">
         <div>
-          <h2 className="text-3xl font-black text-text-main uppercase tracking-tight">Personal Library</h2>
+          <h2 className="text-2xl md:text-3xl font-black text-text-main uppercase tracking-tight">Personal Library</h2>
           <p className="text-[10px] font-black text-text-muted uppercase tracking-[0.2em] mt-2">
             Managing {activeTrack === 'english' ? 'TOEIC' : 'N2'} Vocabulary
           </p>
         </div>
-        
-        <div className="flex flex-col sm:flex-row w-full md:w-auto gap-4">
+
+        <div className="flex flex-wrap items-center gap-3">
           {filteredAndSorted.length > 0 && searchTerm && (
-            <button 
+            <button
               onClick={() => setShowBulkDeleteConfirm(true)}
-              className="px-4 py-3 bg-tint-red text-red border-2 border-red font-black text-xs rounded-2xl uppercase whitespace-nowrap hover:bg-red hover:text-white transition-all shadow-sm"
+              className="px-4 py-2 bg-tint-red text-red border-2 border-red font-black text-xs rounded-2xl uppercase whitespace-nowrap hover:bg-red hover:text-white transition-all shadow-sm"
             >
               Delete Found ({filteredAndSorted.length})
             </button>
           )}
 
           {topics.length > 0 && (
-            <select 
+            <select
               value={selectedTopic}
               onChange={(e) => setSelectedTopic(e.target.value)}
-              className="bg-bg-hover border-2 border-border-main rounded-2xl py-3 px-4 font-bold outline-none focus:border-blue transition-all text-text-main cursor-pointer appearance-none"
-              style={{ backgroundImage: `url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e")`, backgroundRepeat: 'no-repeat', backgroundPosition: 'right 1rem center', backgroundSize: '1em', paddingRight: '2.5rem' }}
+              className="bg-bg-hover border-2 border-border-main rounded-2xl py-2 px-3 font-bold outline-none focus:border-blue transition-all text-text-main cursor-pointer appearance-none text-sm min-w-0"
+              style={{ backgroundImage: `url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e")`, backgroundRepeat: 'no-repeat', backgroundPosition: 'right 0.75rem center', backgroundSize: '1em', paddingRight: '2rem' }}
             >
               <option value="all">All Topics</option>
               {topics.map(t => (
@@ -118,29 +118,29 @@ export function CollectionView({ cards, activeTrack, onDelete, onDeleteBulk, onE
             </select>
           )}
 
-          <select 
+          <select
             value={sortBy}
             onChange={(e) => setSortBy(e.target.value as 'newest' | 'hardest' | 'needs_review')}
-            className="bg-bg-hover border-2 border-border-main rounded-2xl py-3 px-4 font-bold outline-none focus:border-blue transition-all text-text-main cursor-pointer appearance-none"
-            style={{ backgroundImage: `url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e")`, backgroundRepeat: 'no-repeat', backgroundPosition: 'right 1rem center', backgroundSize: '1em', paddingRight: '2.5rem' }}
+            className="bg-bg-hover border-2 border-border-main rounded-2xl py-2 px-3 font-bold outline-none focus:border-blue transition-all text-text-main cursor-pointer appearance-none text-sm min-w-0"
+            style={{ backgroundImage: `url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e")`, backgroundRepeat: 'no-repeat', backgroundPosition: 'right 0.75rem center', backgroundSize: '1em', paddingRight: '2rem' }}
           >
             <option value="newest">Newest First</option>
             <option value="hardest">Hardest First</option>
             <option value="needs_review">Needs Review</option>
           </select>
 
-          <div className="w-full sm:w-64 relative">
-            <input 
+          <div className="flex-1 min-w-[180px] relative">
+            <input
               type="text"
               placeholder="Search words..."
               value={searchTerm}
               onChange={(e) => {
                 setSearchTerm(e.target.value);
-                setLimit(50); // Reset pagination on new search
+                setLimit(50);
               }}
-              className="w-full bg-bg-hover border-2 border-border-main rounded-2xl py-3 px-10 font-bold outline-none focus:border-blue transition-all text-text-main"
+              className="w-full bg-bg-hover border-2 border-border-main rounded-2xl py-2 pl-9 pr-4 font-bold outline-none focus:border-blue transition-all text-text-main text-sm"
             />
-            <span className="absolute left-4 top-1/2 -translate-y-1/2 opacity-30">🔍</span>
+            <span className="absolute left-3 top-1/2 -translate-y-1/2 opacity-30 text-sm">🔍</span>
           </div>
         </div>
       </div>

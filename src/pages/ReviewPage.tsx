@@ -26,62 +26,63 @@ export function ReviewPage() {
       .toArray();
   }, [activeTrack]);
 
-  if (reviewQueue === undefined) return <LoadingSpinner />;
-
-  const limitedQueue = reviewQueue.slice(0, dailyReviewLimit);
-  const totalDue = reviewQueue.length;
+  const limitedQueue = reviewQueue?.slice(0, dailyReviewLimit) ?? [];
+  const totalDue = reviewQueue?.length ?? 0;
   const card = limitedQueue.find(c => !reviewedIds.has(c.id));
   const reviewedCount = limitedQueue.filter(c => reviewedIds.has(c.id)).length;
 
   useEffect(() => {
-    if (!card && !completedRef.current && reviewQueue.length > 0) {
+    if (reviewQueue && !card && !completedRef.current && reviewQueue.length > 0) {
       completedRef.current = true;
       toast.success("Review session complete!");
       navigate('/');
     }
-  }, [card, reviewQueue.length, navigate]);
+  }, [card, reviewQueue, navigate]);
 
+  if (reviewQueue === undefined) return <LoadingSpinner />;
   if (!card) return null;
 
   const progress = (reviewedCount / limitedQueue.length) * 100;
 
   return (
     <AnimatedPage>
-      <div className="w-full view-enter">
-      <div className="w-full mb-8">
+      <div className="w-full view-enter flex flex-col min-h-[calc(100vh-8rem)] lg:min-h-[calc(100vh-6rem)]">
+      <div className="w-full mb-6 lg:mb-8">
         <div className="flex items-center justify-between mb-3">
-          <button onClick={() => navigate('/')} className="w-10 h-10 rounded-full flex items-center justify-center text-text-muted hover:bg-gray-bg transition-colors active:scale-95">
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+          <button onClick={() => navigate('/')} className="w-10 h-10 lg:w-12 lg:h-12 rounded-full flex items-center justify-center text-text-muted hover:bg-gray-bg transition-colors active:scale-95">
+            <svg className="w-6 h-6 lg:w-7 lg:h-7" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
           </button>
           <div className="flex-1 mx-4">
-            <div className="h-3 w-full bg-gray-path rounded-full overflow-hidden">
+            <div className="h-3 lg:h-4 w-full bg-gray-path rounded-full overflow-hidden">
               <div
                 className="h-full bg-green transition-all duration-500 ease-out"
                 style={{ width: `${progress}%` }}
               />
             </div>
           </div>
-          <span className="text-[10px] font-black text-text-muted uppercase tracking-widest shrink-0">
+          <span className="text-[10px] lg:text-xs font-black text-text-muted uppercase tracking-widest shrink-0">
             {reviewedCount + 1}/{limitedQueue.length}
             {totalDue > dailyReviewLimit && <span className="text-gold ml-1">({totalDue} total)</span>}
           </span>
         </div>
       </div>
 
-      <div className="w-full max-w-xl mt-10 view-enter">
-        <LocalErrorBoundary key={`review-${card.id}`}>
-          <FlashcardView
-            card={card}
-            onRate={async (rating) => {
-              setReviewedIds(prev => new Set(prev).add(card.id));
-              await handleRateCard(card, rating);
-            }}
-            onArchive={async () => {
-              setReviewedIds(prev => new Set(prev).add(card.id));
-              await handleArchiveCard(card);
-            }}
-          />
-        </LocalErrorBoundary>
+      <div className="flex-1 flex items-center justify-center w-full">
+        <div className="w-full max-w-xl lg:max-w-2xl view-enter">
+          <LocalErrorBoundary key={`review-${card.id}`}>
+            <FlashcardView
+              card={card}
+              onRate={async (rating) => {
+                setReviewedIds(prev => new Set(prev).add(card.id));
+                await handleRateCard(card, rating);
+              }}
+              onArchive={async () => {
+                setReviewedIds(prev => new Set(prev).add(card.id));
+                await handleArchiveCard(card);
+              }}
+            />
+          </LocalErrorBoundary>
+        </div>
       </div>
       </div>
     </AnimatedPage>

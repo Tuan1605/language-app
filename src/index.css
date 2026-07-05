@@ -5,41 +5,41 @@
   --bg-main: #E0E5EC;
   --bg-card: #E0E5EC;
   --bg-hover: #D1D9E6;
-  
+
   --text-main: #2D3748;
   --text-muted: #718096;
-  
+
   /* Neumorphic Shadows (Light Mode) */
   --shadow-light: rgba(255, 255, 255, 0.8);
   --shadow-dark: rgba(163, 177, 198, 0.6);
   --shadow-inset-light: inset 4px 4px 8px rgba(163, 177, 198, 0.6), inset -4px -4px 8px rgba(255, 255, 255, 0.8);
   --shadow-outset: 6px 6px 12px var(--shadow-dark), -6px -6px 12px var(--shadow-light);
   --shadow-outset-hover: 8px 8px 16px var(--shadow-dark), -8px -8px 16px var(--shadow-light);
-  
+
   /* Material Colors (Muted, tactile) */
-  --blue: #4A90E2; 
+  --blue: #4A90E2;
   --blue-shadow: #357ABD;
   --blue-light: #E0E5EC;
-  
+
   --green: #48BB78;
   --green-shadow: #38A169;
   --green-light: #E0E5EC;
-  
+
   --red: #F56565;
   --red-shadow: #E53E3E;
-  
+
   --gold: #ED8936;
   --gold-shadow: #DD6B20;
-  
+
   --purple: #9F7AEA;
   --purple-shadow: #805AD5;
 
   --gray-bg: #E0E5EC;
   --gray-path: #CBD5E0;
   --gray-path-dark: #A0AEC0;
-  
+
   --border-main: transparent;
-  
+
   --active-path-bg: #E0E5EC;
   --active-path-shadow: #A0AEC0;
   --locked-path-bg: #E0E5EC;
@@ -51,10 +51,18 @@
   --tint-amber: #E0E5EC;
   --tint-purple: #E0E5EC;
   --text-on-tint: #2D3748;
-  
+
   --card-input-bg: #E0E5EC;
   --card-input-border: transparent;
   --quiz-divider: #CBD5E0;
+}
+
+/* Desktop: larger base font so all rem-based sizes scale up automatically */
+@media (min-width: 1024px) {
+  :root { font-size: 18px; }
+}
+@media (min-width: 1280px) {
+  :root { font-size: 20px; }
 }
 
 [data-track='japanese'] {
