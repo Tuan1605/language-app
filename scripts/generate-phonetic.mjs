@@ -55,6 +55,7 @@ function ipaToPronunciation(ipa) {
     .replace(/[/]/g, '')
     .replace(/ˈ/g, '')
     .replace(/ˌ/g, '')
+    .replace(/\(([^)]+)\)/g, '$1') // Strip parentheses from optional phonemes (e.g., (ɹ) → ɹ)
     .replace(/ː/g, '')
     .replace(/θ/g, 'th')
     .replace(/ð/g, 'th')

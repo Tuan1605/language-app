@@ -1,6 +1,6 @@
+import { useState, useEffect, useRef } from 'react';
 import { AnimatedPage } from '../components/AnimatedPage';
 import { useUserStore } from '../stores/useUserStore';
-import { useAppStore } from '../stores/useAppStore';
 import { db } from '../data/db';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { useReviewActions } from '../hooks/useReviewActions';
@@ -11,12 +11,12 @@ import { useNavigate } from 'react-router-dom';
 import toast from 'react-hot-toast';
 
 export function ReviewPage() {
-  const currentReviewIndex = useAppStore(s => s.currentReviewIndex);
-  const setCurrentReviewIndex = useAppStore(s => s.setCurrentReviewIndex);
   const activeTrack = useUserStore(s => s.activeTrack);
   const dailyReviewLimit = useUserStore(s => s.dailyReviewLimit);
   const { handleRateCard, handleArchiveCard } = useReviewActions();
   const navigate = useNavigate();
+  const [reviewedIds, setReviewedIds] = useState<Set<string>>(new Set());
+  const completedRef = useRef(false);
 
   const reviewQueue = useLiveQuery(async () => {
     const today = new Date().getTime();
@@ -28,37 +28,22 @@ export function ReviewPage() {
 
   if (reviewQueue === undefined) return <LoadingSpinner />;
 
-  // Apply daily review limit — only show up to `dailyReviewLimit` cards per session
   const limitedQueue = reviewQueue.slice(0, dailyReviewLimit);
   const totalDue = reviewQueue.length;
-  const card = limitedQueue[currentReviewIndex];
+  const card = limitedQueue.find(c => !reviewedIds.has(c.id));
+  const reviewedCount = limitedQueue.filter(c => reviewedIds.has(c.id)).length;
 
-  const advanceReviewCard = () => {
-    if (currentReviewIndex < limitedQueue.length - 1) {
-      setCurrentReviewIndex(currentReviewIndex + 1);
-    } else {
+  useEffect(() => {
+    if (!card && !completedRef.current && reviewQueue.length > 0) {
+      completedRef.current = true;
       toast.success("Review session complete!");
       navigate('/');
     }
-  };
+  }, [card, reviewQueue.length, navigate]);
 
-  if (!card) {
-    return (
-      <div className="w-full text-center space-y-8 pop-in pt-10">
-        <h2 className="text-2xl font-black">
-          {totalDue > dailyReviewLimit ? 'Daily limit reached!' : 'No cards to review!'}
-        </h2>
-        {totalDue > dailyReviewLimit && (
-          <p className="text-sm font-bold text-text-muted">
-            You reviewed {dailyReviewLimit} cards today. {totalDue - dailyReviewLimit} remaining for tomorrow.
-          </p>
-        )}
-        <button onClick={() => navigate('/')} className="btn-3d btn-blue px-6 py-3">Return Home</button>
-      </div>
-    );
-  }
+  if (!card) return null;
 
-  const progress = ((currentReviewIndex) / limitedQueue.length) * 100;
+  const progress = (reviewedCount / limitedQueue.length) * 100;
 
   return (
     <AnimatedPage>
@@ -77,7 +62,7 @@ export function ReviewPage() {
             </div>
           </div>
           <span className="text-[10px] font-black text-text-muted uppercase tracking-widest shrink-0">
-            {currentReviewIndex + 1}/{limitedQueue.length}
+            {reviewedCount + 1}/{limitedQueue.length}
             {totalDue > dailyReviewLimit && <span className="text-gold ml-1">({totalDue} total)</span>}
           </span>
         </div>
@@ -88,12 +73,12 @@ export function ReviewPage() {
           <FlashcardView
             card={card}
             onRate={async (rating) => {
+              setReviewedIds(prev => new Set(prev).add(card.id));
               await handleRateCard(card, rating);
-              advanceReviewCard();
             }}
             onArchive={async () => {
+              setReviewedIds(prev => new Set(prev).add(card.id));
               await handleArchiveCard(card);
-              advanceReviewCard();
             }}
           />
         </LocalErrorBoundary>
