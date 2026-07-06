@@ -63,11 +63,8 @@ Listening, dictation and speaking lessons use the browser **Web Speech API**
 
 ```bash
 # Clone the repository
-git clone https://gitlab.com/tuan-group2/tuan.git
-cd tuan
-
-# Install dependencies
-npm install
+git clone https://github.com/Tuan1605/language-app.git
+cd language-app
 ```
 
 ### Development
@@ -119,9 +116,11 @@ src/
 
 ## Deployment
 
-The app deploys to **GitLab Pages** via the included `.gitlab-ci.yml` pipeline.
-Set `base` in `vite.config.ts` to match your project's path on GitLab Pages
-(currently `/tuan/`).
+```bash
+npm run build
+```
+
+Then deploy the `dist/` folder to your hosting platform.
 
 ## License
 

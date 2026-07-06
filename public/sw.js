@@ -57,6 +57,14 @@ self.addEventListener('fetch', (event) => {
   // Skip non-same-origin requests that aren't GitHub
   if (!isSameOrigin) return;
 
+  // Always fetch PDF files from network (don't serve cached HTML)
+  if (url.pathname.endsWith('.pdf')) {
+    event.respondWith(
+      fetch(request).catch(() => caches.match(request))
+    );
+    return;
+  }
+
   // Network-first for navigations so new deploys appear on next reload.
   if (request.mode === 'navigate') {
     event.respondWith(
