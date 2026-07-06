@@ -2,7 +2,6 @@ import { AnimatedPage } from '../components/AnimatedPage';
 import { useUserStore } from '../stores/useUserStore';
 import { useAppStore } from '../stores/useAppStore';
 import { db } from '../data/db';
-import { useLiveQuery } from 'dexie-react-hooks';
 import { useAppActions } from '../hooks/useAppActions';
 import { VocabQuizView } from '../components/VocabQuizView';
 import { GrammarQuizView } from '../components/GrammarQuizView';
@@ -13,7 +12,6 @@ import { DictationView } from '../components/DictationView';
 import { WritingView } from '../components/WritingView';
 import { SessionEndOverlay } from '../components/SessionEndOverlay';
 import { LocalErrorBoundary } from '../components/LocalErrorBoundary';
-import { LoadingSpinner } from '../components/LoadingSpinner';
 import type { Flashcard, GrammarQuizTaskData, Question, ListeningLesson, SpeakingLesson, DictationLesson, WritingLesson } from '../types';
 import { useNavigate } from 'react-router-dom';
 
@@ -22,14 +20,11 @@ export function SessionPage() {
   const currentTaskIndex = useAppStore(s => s.currentTaskIndex);
   const isSessionFinished = useAppStore(s => s.isSessionFinished);
   const activeTrack = useUserStore(s => s.activeTrack);
-  const cards = useLiveQuery(async () => await db.cards.where('language').equals(activeTrack).toArray(), [activeTrack]);
   
   const { 
     nextTask, finalizeSession, trackCategory, handleSessionQuizComplete
   } = useAppActions();
   const navigate = useNavigate();
-
-  if (cards === undefined) return <LoadingSpinner />;
 
   if (sessionTasks.length === 0) {
     return (
@@ -49,7 +44,7 @@ export function SessionPage() {
         {/* Session Progress Bar */}
         <div className="w-full mb-8">
           <div className="flex items-center justify-between mb-3">
-            <button onClick={() => navigate('/')} className="w-10 h-10 rounded-full flex items-center justify-center text-text-muted hover:bg-gray-bg transition-colors active:scale-95">
+            <button onClick={() => navigate(-1)} className="w-10 h-10 rounded-full flex items-center justify-center text-text-muted hover:bg-gray-bg transition-colors active:scale-95">
               <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
             </button>
             <div className="flex-1 mx-4">
@@ -66,9 +61,9 @@ export function SessionPage() {
         {!isSessionFinished ? (
           <div key={currentTaskIndex} className="w-full flex flex-col items-center view-enter">
             <LocalErrorBoundary key={currentTask.type} onReset={() => nextTask()}>
-              {currentTask.type === 'vocab-quiz' && <VocabQuizView word={currentTask.data as Flashcard} allCards={cards} onComplete={nextTask} onSaveMistake={(m) => db.mistakes.add(m)} />}
+              {currentTask.type === 'vocab-quiz' && <VocabQuizView word={currentTask.data as Flashcard} onComplete={nextTask} onSaveMistake={(m) => db.mistakes.add(m)} />}
               {currentTask.type === 'grammar' && <GrammarQuizView task={currentTask.data as GrammarQuizTaskData} onComplete={nextTask} onCancel={finalizeSession} onSaveMistake={(m) => db.mistakes.add(m)} />}
-              {currentTask.type === 'quiz' && <QuizView questions={[currentTask.data as Question]} category={trackCategory(activeTrack)} onComplete={handleSessionQuizComplete} onCancel={() => navigate('/')} hideSummary={true} onSaveMistake={(m) => db.mistakes.add(m)} />}
+              {currentTask.type === 'quiz' && <QuizView questions={[currentTask.data as Question]} category={trackCategory(activeTrack)} onComplete={handleSessionQuizComplete} onCancel={() => navigate(-1)} hideSummary={true} onSaveMistake={(m) => db.mistakes.add(m)} />}
               {currentTask.type === 'listening' && <ListeningView lesson={currentTask.data as ListeningLesson} onBack={nextTask} hideBackButton={true} />}
               {currentTask.type === 'speaking' && <SpeakingView lesson={currentTask.data as SpeakingLesson} onComplete={nextTask} onSaveMistake={(m) => db.mistakes.add(m)} />}
               {currentTask.type === 'dictation' && <DictationView lesson={currentTask.data as DictationLesson} onComplete={nextTask} onSaveMistake={(m) => db.mistakes.add(m)} />}

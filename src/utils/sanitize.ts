@@ -15,7 +15,11 @@ export function validateImportSchema(data: unknown): data is {
   mistakes?: unknown[];
   examResults?: unknown[];
   customExams?: unknown[];
-  userPrefs?: { unlockedEn?: number[]; unlockedJa?: number[] };
+  userPrefs?: {
+    unlockedPaths?: Record<string, number[]>;
+    unlockedEn?: number[];
+    unlockedJa?: number[];
+  };
 } {
   if (typeof data !== 'object' || data === null) return false;
   const obj = data as Record<string, unknown>;

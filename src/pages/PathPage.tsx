@@ -3,22 +3,19 @@ import { useUserStore } from '../stores/useUserStore';
 import { useAppStore } from '../stores/useAppStore';
 import { useAppActions } from '../hooks/useAppActions';
 import { ReviewReminder } from '../components/ReviewReminder';
-import { GamifiedPath } from '../components/GamifiedPath';
-import { StreakBadge } from '../components/StreakBadge';
-import { TOEIC_CURRICULUM, N2_CURRICULUM } from '../data/curriculums';
+import { DailyStudyPlan } from '../components/DailyStudyPlan';
+import { WordOfDay } from '../components/WordOfDay';
+import { OverallProgress } from '../components/OverallProgress';
 import { useLiveQuery } from 'dexie-react-hooks';
+import { useNavigate } from 'react-router-dom';
 import { db } from '../data/db';
 
 export function PathPage() {
   const isLoadingData = useAppStore(s => s.isLoadingData);
   const activeTrack = useUserStore(s => s.activeTrack);
-  const unlockedEn = useUserStore(s => s.unlockedEn);
-  const unlockedJa = useUserStore(s => s.unlockedJa);
+  const navigate = useNavigate();
 
-  const { startSession, startDrill } = useAppActions();
-
-  const currentCurriculum = activeTrack === 'english' ? TOEIC_CURRICULUM : N2_CURRICULUM;
-  const currentUnlocked = activeTrack === 'english' ? unlockedEn : unlockedJa;
+  const { startDrill } = useAppActions();
 
   const dueCount = useLiveQuery(async () => {
     const today = new Date().getTime();
@@ -47,15 +44,24 @@ export function PathPage() {
   return (
     <AnimatedPage>
       <div className="w-full view-enter flex flex-col items-center">
-      <div className="w-full flex justify-between items-center mb-4">
-        <ReviewReminder dueCount={dueCount} onStartReview={() => startDrill('review')} />
-        <StreakBadge />
-      </div>
-      <GamifiedPath
-        curriculum={currentCurriculum}
-        currentUnlocked={currentUnlocked.length}
-        onStartSession={startSession}
-      />
+        <div className="w-full mb-4">
+          <ReviewReminder dueCount={dueCount} onStartReview={() => startDrill('review')} />
+        </div>
+
+        {/* Overall Progress */}
+        <div className="w-full max-w-xl mb-6">
+          <OverallProgress />
+        </div>
+
+        {/* Daily Study Plan */}
+        <div className="w-full max-w-xl mb-6">
+          <DailyStudyPlan onNavigate={navigate} />
+        </div>
+
+        {/* Word of the Day */}
+        <div className="w-full max-w-xl mb-6">
+          <WordOfDay />
+        </div>
       </div>
     </AnimatedPage>
   );

@@ -5,7 +5,7 @@ import { db } from '../data/db';
 import type { Flashcard } from '../types';
 import toast from 'react-hot-toast';
 
-type CardInput = { word: string; definition: string; example?: string; phonetic?: string; pronunciation?: string; difficulty?: 'beginner' | 'intermediate' | 'advanced'; language: 'english' | 'japanese' };
+type CardInput = { word: string; definition: string; example?: string; exampleTranslation?: string; phonetic?: string; pronunciation?: string; difficulty?: 'beginner' | 'intermediate' | 'advanced'; language: 'english' | 'japanese' };
 
 export function AddWordsPage() {
   const handleAddCard = async (card: CardInput) => {
@@ -15,6 +15,7 @@ export function AddWordsPage() {
       word: card.word,
       definition: card.definition,
       example: card.example,
+      exampleTranslation: card.exampleTranslation,
       phonetic: card.phonetic,
       pronunciation: card.pronunciation,
       language: card.language,
@@ -39,6 +40,7 @@ export function AddWordsPage() {
       word: card.word,
       definition: card.definition,
       example: card.example,
+      exampleTranslation: card.exampleTranslation,
       phonetic: card.phonetic,
       pronunciation: card.pronunciation,
       language: card.language,

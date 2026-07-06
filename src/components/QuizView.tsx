@@ -4,6 +4,9 @@ import { playCorrectSound, playIncorrectSound } from '../utils/sound';
 import { SessionEndOverlay } from './SessionEndOverlay';
 import { ConfirmDialog } from './ConfirmDialog';
 import { QUIZ_TIME_DEFAULT, QUIZ_TIME_READING } from '../utils/constants';
+import { recordQuizResult, getAccuracyStats } from '../utils/adaptiveDifficulty';
+import { useUserStore } from '../stores/useUserStore';
+import { Zap, TrendingUp, TrendingDown, Minus } from 'lucide-react';
 
 interface QuizViewProps {
   questions: Question[];
@@ -15,12 +18,14 @@ interface QuizViewProps {
 }
 
 export function QuizView({ questions, category, onComplete, onCancel, hideSummary = false, onSaveMistake }: QuizViewProps) {
+  const activeTrack = useUserStore(s => s.activeTrack);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedAnswers, setSelectedAnswers] = useState<(number | null)[]>(new Array(questions.length).fill(null));
   const [isFinished, setIsFinished] = useState(false);
   const [isAnswered, setIsAnswered] = useState(false);
   const [selectedOption, setSelectedOption] = useState<number | null>(null);
   const [showQuitConfirm, setShowQuitConfirm] = useState(false);
+  const [accuracyStats, setAccuracyStats] = useState(() => getAccuracyStats(activeTrack));
   
   // --- TIMER STATE ---
   const getInitialTime = useCallback(() => questions[currentIndex]?.subCategory === 'Reading' ? QUIZ_TIME_READING : QUIZ_TIME_DEFAULT, [questions, currentIndex]);
@@ -75,7 +80,9 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
     setIsAnswered(true);
     if (timerRef.current) clearInterval(timerRef.current);
 
-    if (selectedOption === questions[currentIndex].correctAnswer) {
+    const isCorrect = selectedOption === questions[currentIndex].correctAnswer;
+
+    if (isCorrect) {
       playCorrectSound();
     } else {
       playIncorrectSound();
@@ -89,6 +96,10 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
         });
       }
     }
+
+    // Record adaptive difficulty result
+    recordQuizResult(activeTrack, isCorrect);
+    setAccuracyStats(getAccuracyStats(activeTrack));
   };
 
   const handleNext = () => {
@@ -178,8 +189,33 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
             </span>
           )}
         </div>
-        <div className="bg-bg-hover px-4 py-1.5 rounded-xl text-[9px] font-black text-text-muted uppercase tracking-widest border-2 border-border-main shrink-0">
-          Question {currentIndex + 1} of {questions.length}
+        <div className="flex items-center gap-2">
+          {/* Adaptive Difficulty Indicator */}
+          {accuracyStats.recentTotal >= 3 && (
+            <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl border-2 bg-bg-hover" style={{
+              borderColor: accuracyStats.accuracy >= 0.7 ? 'var(--green)' : accuracyStats.accuracy >= 0.5 ? 'var(--gold)' : 'var(--red)'
+            }}>
+              {accuracyStats.accuracy >= 0.7 ? (
+                <TrendingUp size={12} className="text-green" />
+              ) : accuracyStats.accuracy >= 0.5 ? (
+                <Minus size={12} className="text-gold" />
+              ) : (
+                <TrendingDown size={12} className="text-red" />
+              )}
+              <span className="text-[9px] font-black uppercase" style={{
+                color: accuracyStats.accuracy >= 0.7 ? 'var(--green)' : accuracyStats.accuracy >= 0.5 ? 'var(--gold)' : 'var(--red)'
+              }}>
+                {Math.round(accuracyStats.accuracy * 100)}%
+              </span>
+              <Zap size={10} className="text-text-muted" />
+              <span className="text-[8px] font-bold text-text-muted uppercase">
+                {accuracyStats.difficulty}
+              </span>
+            </div>
+          )}
+          <div className="bg-bg-hover px-4 py-1.5 rounded-xl text-[9px] font-black text-text-muted uppercase tracking-widest border-2 border-border-main shrink-0">
+            Question {currentIndex + 1} of {questions.length}
+          </div>
         </div>
       </div>
 

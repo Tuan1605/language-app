@@ -38,6 +38,11 @@ export function calculateSimilarity(target: string, input: string): number {
   const maxLen = Math.max(normalizedTarget.length, normalizedInput.length);
   const charSimilarity = Math.round(((maxLen - distance) / maxLen) * 100);
 
+  const isJapanese = /[\u3000-\u303f\u3040-\u309f\u30a0-\u30ff\uff00-\uff9f\u4e00-\u9faf]/.test(normalizedTarget);
+  if (isJapanese) {
+    return charSimilarity;
+  }
+
   const targetWords = normalizedTarget.split(' ');
   const inputWords = normalizedInput.split(' ');
   let matchedWords = 0;

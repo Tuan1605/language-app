@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useMemo } from 'react';
 import { AnimatedPage } from '../components/AnimatedPage';
 import { useUserStore } from '../stores/useUserStore';
 import { db } from '../data/db';
@@ -17,6 +17,7 @@ export function ReviewPage() {
   const navigate = useNavigate();
   const [reviewedIds, setReviewedIds] = useState<Set<string>>(new Set());
   const completedRef = useRef(false);
+  const [selectedTopic, setSelectedTopic] = useState<string>('all');
 
   const reviewQueue = useLiveQuery(async () => {
     const today = new Date().getTime();
@@ -26,8 +27,21 @@ export function ReviewPage() {
       .toArray();
   }, [activeTrack]);
 
-  const limitedQueue = reviewQueue?.slice(0, dailyReviewLimit) ?? [];
-  const totalDue = reviewQueue?.length ?? 0;
+  const topics = useMemo(() => {
+    if (!reviewQueue) return [];
+    const ts = new Set<string>();
+    reviewQueue.forEach(c => { if (c.topic) ts.add(c.topic); });
+    return Array.from(ts).sort();
+  }, [reviewQueue]);
+
+  const filteredQueue = useMemo(() => {
+    if (!reviewQueue) return [];
+    if (selectedTopic === 'all') return reviewQueue;
+    return reviewQueue.filter(c => c.topic === selectedTopic);
+  }, [reviewQueue, selectedTopic]);
+
+  const limitedQueue = filteredQueue.slice(0, dailyReviewLimit);
+  const totalDue = filteredQueue.length;
   const card = limitedQueue.find(c => !reviewedIds.has(c.id));
   const reviewedCount = limitedQueue.filter(c => reviewedIds.has(c.id)).length;
 
@@ -47,25 +61,44 @@ export function ReviewPage() {
   return (
     <AnimatedPage>
       <div className="w-full view-enter flex flex-col min-h-[calc(100vh-8rem)] lg:min-h-[calc(100vh-6rem)]">
-      <div className="w-full mb-6 lg:mb-8">
-        <div className="flex items-center justify-between mb-3">
-          <button onClick={() => navigate('/')} className="w-10 h-10 lg:w-12 lg:h-12 rounded-full flex items-center justify-center text-text-muted hover:bg-gray-bg transition-colors active:scale-95">
-            <svg className="w-6 h-6 lg:w-7 lg:h-7" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
-          </button>
-          <div className="flex-1 mx-4">
-            <div className="h-3 lg:h-4 w-full bg-gray-path rounded-full overflow-hidden">
-              <div
-                className="h-full bg-green transition-all duration-500 ease-out"
-                style={{ width: `${progress}%` }}
-              />
+        <div className="w-full mb-6 lg:mb-8">
+          <div className="flex items-center justify-between mb-3">
+            <button onClick={() => navigate(-1)} className="w-10 h-10 lg:w-12 lg:h-12 rounded-full flex items-center justify-center text-text-muted hover:bg-gray-bg transition-colors active:scale-95">
+              <svg className="w-6 h-6 lg:w-7 lg:h-7" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+            </button>
+            <div className="flex-1 mx-4">
+              <div className="h-3 lg:h-4 w-full bg-gray-path rounded-full overflow-hidden">
+                <div
+                  className="h-full bg-green transition-all duration-500 ease-out"
+                  style={{ width: `${progress}%` }}
+                />
+              </div>
             </div>
+            <span className="text-[10px] lg:text-xs font-black text-text-muted uppercase tracking-widest shrink-0">
+              {reviewedCount + 1}/{limitedQueue.length}
+              {totalDue > dailyReviewLimit && <span className="text-gold ml-1">({totalDue} total)</span>}
+            </span>
           </div>
-          <span className="text-[10px] lg:text-xs font-black text-text-muted uppercase tracking-widest shrink-0">
-            {reviewedCount + 1}/{limitedQueue.length}
-            {totalDue > dailyReviewLimit && <span className="text-gold ml-1">({totalDue} total)</span>}
-          </span>
+          {topics.length > 1 && (
+            <div className="flex justify-center">
+              <select
+                value={selectedTopic}
+                onChange={(e) => {
+                  setSelectedTopic(e.target.value);
+                  setReviewedIds(new Set());
+                  completedRef.current = false;
+                }}
+                className="bg-bg-hover border-2 border-border-main rounded-2xl py-2 px-4 font-bold outline-none focus:border-blue transition-all text-text-main text-sm cursor-pointer"
+              >
+                <option value="all">All Topics ({reviewQueue.length})</option>
+                {topics.map(t => {
+                  const count = reviewQueue.filter(c => c.topic === t).length;
+                  return <option key={t} value={t}>{t} ({count})</option>;
+                })}
+              </select>
+            </div>
+          )}
         </div>
-      </div>
 
       <div className="flex-1 flex items-center justify-center w-full">
         <div className="w-full max-w-xl lg:max-w-2xl view-enter">

@@ -13,8 +13,7 @@ export async function exportData(): Promise<void> {
 
   const userState = useUserStore.getState();
   const progress = {
-    unlocked_en: userState.unlockedEn,
-    unlocked_ja: userState.unlockedJa,
+    unlockedPaths: userState.unlockedPaths,
   };
 
   const data = { cards, examResults, mistakes, customExams, progress };
@@ -41,12 +40,21 @@ export async function importData(file: File): Promise<boolean> {
     if (data.examResults?.length) await db.examResults.bulkPut(data.examResults as ExamResult[]);
     if (data.mistakes?.length) await db.mistakes.bulkPut(data.mistakes as Mistake[]);
     if (data.customExams?.length) await db.customExams.bulkPut(data.customExams as FullExam[]);
+
     if (data.userPrefs) {
       const s = useUserStore.getState();
-      s.setProgress(
-        data.userPrefs.unlockedEn || s.unlockedEn,
-        data.userPrefs.unlockedJa || s.unlockedJa
-      );
+      if (data.userPrefs.unlockedPaths) {
+        // v2 format
+        Object.entries(data.userPrefs.unlockedPaths).forEach(([track, paths]) => {
+          s.setUnlocked(track, paths as number[]);
+        });
+      } else if (data.userPrefs.unlockedEn || data.userPrefs.unlockedJa) {
+        // v1 format (legacy)
+        s.setProgress(
+          data.userPrefs.unlockedEn || [1],
+          data.userPrefs.unlockedJa || [1]
+        );
+      }
     }
     return true;
   } catch {

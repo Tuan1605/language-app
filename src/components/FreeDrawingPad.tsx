@@ -46,7 +46,7 @@ export function FreeDrawingPad({ character, size = 200 }: FreeDrawingPadProps) {
     const clientY = 'touches' in e ? e.touches[0].clientY : e.clientY;
 
     ctx.lineTo(clientX - rect.left, clientY - rect.top);
-    ctx.strokeStyle = '#334155'; // Dark slate matching HanziWriter drawingColor
+    ctx.strokeStyle = getComputedStyle(document.documentElement).getPropertyValue('--blue').trim() || '#3B82F6';
     ctx.lineWidth = size * 0.04;
     ctx.lineCap = 'round';
     ctx.lineJoin = 'round';
@@ -67,17 +67,18 @@ export function FreeDrawingPad({ character, size = 200 }: FreeDrawingPadProps) {
 
   return (
     <div className="relative flex flex-col items-center">
-      <div 
-        style={{ width: size, height: size }} 
-        className="relative bg-gray-bg rounded-xl border-2 border-gray-path overflow-hidden touch-none"
+      <div
+        style={{ width: size, height: size }}
+        className="relative rounded-xl border-2 overflow-hidden touch-none"
+        {...{style: { width: size, height: size, backgroundColor: 'var(--gray-bg)', borderColor: 'var(--gray-path)' }}}
       >
         {/* Background grid lines */}
-        <div className="absolute inset-0 pointer-events-none border-b border-dashed border-gray-300 top-1/2"></div>
-        <div className="absolute inset-0 pointer-events-none border-r border-dashed border-gray-300 left-1/2"></div>
+        <div className="absolute inset-0 pointer-events-none border-b border-dashed top-1/2" style={{ borderColor: 'var(--text-muted)' }}></div>
+        <div className="absolute inset-0 pointer-events-none border-r border-dashed left-1/2" style={{ borderColor: 'var(--text-muted)' }}></div>
         
         {/* Character outline to trace */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-20 select-none">
-          <span style={{ fontSize: size * 0.7, fontFamily: 'sans-serif' }}>{character}</span>
+          <span style={{ fontSize: size * 0.7, fontFamily: 'sans-serif', color: 'var(--text-main)' }}>{character}</span>
         </div>
 
         {/* Drawing canvas */}

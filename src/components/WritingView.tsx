@@ -32,28 +32,33 @@ export function WritingView({ lesson, onComplete, onCancel, onSaveMistake }: Wri
 
     const target = lesson.targetText;
     const score = calculateSimilarity(target, userInput);
+    
+    const isJapanese = /[\u3000-\u303f\u3040-\u309f\u30a0-\u30ff\uff00-\uff9f\u4e00-\u9faf]/.test(target);
+    const splitRegex = isJapanese ? /(?:)/ : /\s+/;
+    const cleanRegex = isJapanese ? /[。、！？「」『』\s]/g : /[.,!?]/g;
 
-    // Vocabulary score: how many target words appear in user input
-    const targetWords = target.toLowerCase().split(/\s+/).map(w => w.replace(/[.,!?]/g, ''));
-    const userWords = userInput.toLowerCase().split(/\s+/).map(w => w.replace(/[.,!?]/g, ''));
+    // Vocabulary score: how many target words/chars appear in user input
+    const targetWords = target.toLowerCase().split(splitRegex).map(w => w.replace(cleanRegex, '')).filter(Boolean);
+    const userWords = userInput.toLowerCase().split(splitRegex).map(w => w.replace(cleanRegex, '')).filter(Boolean);
     const matchedWords = targetWords.filter(tw => userWords.some(uw => uw === tw));
     const vocabScore = targetWords.length > 0 ? (matchedWords.length / targetWords.length) * 100 : 0;
 
     // Completeness score: based on length ratio
-    const lengthRatio = Math.min(userWords.length / targetWords.length, 1.5);
+    const lengthRatio = Math.min(userWords.length / (targetWords.length || 1), 1.5);
     const completenessScore = Math.min(lengthRatio * 100, 100);
 
     // Diff for target sentence (words user missed)
-    const diff = target.split(/\s+/).map(word => {
-      const cleanWord = word.replace(/[.,!?]/g, '').toLowerCase();
-      const matchFound = userWords.some(uw => uw === cleanWord);
+    const diff = target.split(splitRegex).map(word => {
+      const cleanWord = word.replace(cleanRegex, '').toLowerCase();
+      // Only mark as error if it has substantive content and wasn't found
+      const matchFound = cleanWord.length === 0 || userWords.some(uw => uw === cleanWord);
       return { text: word, isError: !matchFound };
     });
 
     // Diff for user input (words not in target)
-    const userDiff = userInput.split(/\s+/).map(word => {
-      const cleanWord = word.replace(/[.,!?]/g, '').toLowerCase();
-      const matchFound = targetWords.some(tw => tw === cleanWord);
+    const userDiff = userInput.split(splitRegex).map(word => {
+      const cleanWord = word.replace(cleanRegex, '').toLowerCase();
+      const matchFound = cleanWord.length === 0 || targetWords.some(tw => tw === cleanWord);
       return { text: word, isError: !matchFound };
     });
 

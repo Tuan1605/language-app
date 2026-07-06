@@ -3,8 +3,8 @@ import { toast } from 'react-hot-toast';
 import { sanitizeInput } from '../utils/sanitize';
 
 interface AddFlashcardProps {
-  onAdd: (card: { word: string; definition: string; example?: string; phonetic?: string; pronunciation?: string; difficulty?: 'beginner' | 'intermediate' | 'advanced'; language: 'english' | 'japanese' }) => void;
-  onAddBulk?: (cards: Array<{ word: string; definition: string; example?: string; phonetic?: string; pronunciation?: string; difficulty?: 'beginner' | 'intermediate' | 'advanced'; language: 'english' | 'japanese' }>) => void;
+  onAdd: (card: { word: string; definition: string; example?: string; exampleTranslation?: string; phonetic?: string; pronunciation?: string; difficulty?: 'beginner' | 'intermediate' | 'advanced'; language: 'english' | 'japanese' }) => void;
+  onAddBulk?: (cards: Array<{ word: string; definition: string; example?: string; exampleTranslation?: string; phonetic?: string; pronunciation?: string; difficulty?: 'beginner' | 'intermediate' | 'advanced'; language: 'english' | 'japanese' }>) => void;
 }
 
 export function AddFlashcard({ onAdd, onAddBulk }: AddFlashcardProps) {
@@ -14,6 +14,7 @@ export function AddFlashcard({ onAdd, onAddBulk }: AddFlashcardProps) {
   const [word, setWord] = useState('');
   const [definition, setDefinition] = useState('');
   const [example, setExample] = useState('');
+  const [exampleTranslation, setExampleTranslation] = useState('');
   const [phonetic, setPhonetic] = useState('');
   const [pronunciation, setPronunciation] = useState('');
   const [difficulty, setDifficulty] = useState<'beginner' | 'intermediate' | 'advanced'>('beginner');
@@ -24,11 +25,12 @@ export function AddFlashcard({ onAdd, onAddBulk }: AddFlashcardProps) {
 
   const handleSubmitSingle = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!word || !definition) return;
+    if (!word || !definition || !example) return;
     onAdd({
       word: sanitizeInput(word),
       definition: sanitizeInput(definition),
-      example: example ? sanitizeInput(example) : undefined,
+      example: sanitizeInput(example),
+      exampleTranslation: exampleTranslation ? sanitizeInput(exampleTranslation) : undefined,
       phonetic: phonetic || undefined,
       pronunciation: pronunciation || undefined,
       difficulty,
@@ -37,6 +39,7 @@ export function AddFlashcard({ onAdd, onAddBulk }: AddFlashcardProps) {
     setWord('');
     setDefinition('');
     setExample('');
+    setExampleTranslation('');
     setPhonetic('');
     setPronunciation('');
   };
@@ -193,6 +196,17 @@ export function AddFlashcard({ onAdd, onAddBulk }: AddFlashcardProps) {
               onChange={(e) => setExample(e.target.value)}
               className="w-full bg-card-input-bg border-2 border-card-input-border rounded-2xl px-5 h-14 text-lg font-bold focus:border-blue focus:bg-bg-card transition-all outline-none text-text-main placeholder:text-text-muted"
               placeholder="e.g. The bonus serves as an incentive."
+            />
+          </div>
+
+          <div className="space-y-2">
+            <label className="text-[9px] font-black text-text-muted uppercase tracking-[0.2em] ml-1">Example Translation (optional)</label>
+            <input
+              type="text"
+              value={exampleTranslation}
+              onChange={(e) => setExampleTranslation(e.target.value)}
+              className="w-full bg-card-input-bg border-2 border-card-input-border rounded-2xl px-5 h-14 text-lg font-bold focus:border-blue focus:bg-bg-card transition-all outline-none text-text-main placeholder:text-text-muted"
+              placeholder="e.g. Tiền thưởng đóng vai trò như sự khuyến khích."
             />
           </div>
 

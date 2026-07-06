@@ -1,18 +1,46 @@
 import type { ReactNode } from 'react';
 import React, { useState, useMemo } from 'react';
 import type { ExamResult, Flashcard, ReviewLog } from '../types';
-import { Book, Headphones, BookOpen, PenTool, Type, Activity, CalendarDays } from 'lucide-react';
+import { Book, Headphones, BookOpen, PenTool, Type, Activity, CalendarDays, Target, TrendingUp, Award } from 'lucide-react';
 import { MASTERY_STABILITY, MASTERY_REPS } from '../utils/constants';
+
+const GOAL_STORAGE_KEY = 'lingo_study_goal';
+
+interface StudyGoal {
+  dailyCards: number;
+  weeklyHours: number;
+  targetAccuracy: number;
+}
 
 interface AnalyticsViewProps {
   results: ExamResult[];
   cards: Flashcard[];
   reviewLogs: ReviewLog[];
   activeTrack: 'english' | 'japanese';
+  studyStreak: number;
 }
 
-export function AnalyticsView({ results, cards, reviewLogs, activeTrack }: AnalyticsViewProps) {
+export function AnalyticsView({ results, cards, reviewLogs, activeTrack, studyStreak }: AnalyticsViewProps) {
   const [filterType, setFilterType] = useState<'all' | 'full-exam' | 'mock-exam' | 'mini-quiz'>('all');
+  const [showGoalSettings, setShowGoalSettings] = useState(false);
+
+  // Load study goal from localStorage
+  const [studyGoal, setStudyGoal] = useState<StudyGoal>(() => {
+    try {
+      const saved = localStorage.getItem(`${GOAL_STORAGE_KEY}_${activeTrack}`);
+      return saved ? JSON.parse(saved) : { dailyCards: 20, weeklyHours: 5, targetAccuracy: 80 };
+    } catch {
+      return { dailyCards: 20, weeklyHours: 5, targetAccuracy: 80 };
+    }
+  });
+
+  const saveGoal = (goal: StudyGoal) => {
+    setStudyGoal(goal);
+    try {
+      localStorage.setItem(`${GOAL_STORAGE_KEY}_${activeTrack}`, JSON.stringify(goal));
+    } catch { /* ignore */ }
+    setShowGoalSettings(false);
+  };
 
   const filtered = useMemo(() => {
     const byLanguage = results.filter(r => (activeTrack === 'english' ? r.category === 'toeic' : r.category === 'n2'));
@@ -31,6 +59,54 @@ export function AnalyticsView({ results, cards, reviewLogs, activeTrack }: Analy
   const knownCards = useMemo(() => trackCards.filter(c => c.stability >= MASTERY_STABILITY && c.reps >= MASTERY_REPS).length, [trackCards]);
   const learningCards = totalCards - knownCards;
   const masteryPercentage = totalCards > 0 ? Math.round((knownCards / totalCards) * 100) : 0;
+
+  // Retention Rate (cards reviewed correctly in last 7 days)
+  const retentionRate = useMemo(() => {
+    const sevenDaysAgo = new Date();
+    sevenDaysAgo.setDate(sevenDaysAgo.getDate() - 7);
+    const trackCardIds = new Set(trackCards.map(c => c.id));
+
+    const recentLogs = reviewLogs.filter(log =>
+      trackCardIds.has(log.cardId) && new Date(log.review) >= sevenDaysAgo
+    );
+
+    if (recentLogs.length === 0) return 0;
+
+    const correctLogs = recentLogs.filter(log => log.rating === 'Good' || log.rating === 'Easy');
+    return Math.round((correctLogs.length / recentLogs.length) * 100);
+  }, [trackCards, reviewLogs]);
+
+  // Study Streak comes from props now
+
+  // Goal Progress
+  const goalProgress = useMemo(() => {
+    const today = new Date();
+    today.setHours(0, 0, 0, 0);
+    const trackCardIds = new Set(trackCards.map(c => c.id));
+
+    // Today's cards reviewed
+    const todayLogs = reviewLogs.filter(log => {
+      const logDate = new Date(log.review);
+      logDate.setHours(0, 0, 0, 0);
+      return logDate.getTime() === today.getTime() && trackCardIds.has(log.cardId);
+    });
+
+    // This week's study time (estimated: 30s per review)
+    const weekStart = new Date(today);
+    weekStart.setDate(today.getDate() - today.getDay());
+    const weekLogs = reviewLogs.filter(log =>
+      new Date(log.review) >= weekStart && trackCardIds.has(log.cardId)
+    );
+    const weeklyMinutes = Math.round((weekLogs.length * 30) / 60);
+
+    return {
+      dailyProgress: Math.min(100, Math.round((todayLogs.length / studyGoal.dailyCards) * 100)),
+      weeklyProgress: Math.min(100, Math.round((weeklyMinutes / (studyGoal.weeklyHours * 60)) * 100)),
+      accuracyProgress: retentionRate >= studyGoal.targetAccuracy ? 100 : Math.round((retentionRate / studyGoal.targetAccuracy) * 100),
+      todayCards: todayLogs.length,
+      weeklyMinutes,
+    };
+  }, [trackCards, reviewLogs, studyGoal, retentionRate]);
 
   // Forecasting Logic
   const forecastMessage = useMemo(() => {
@@ -153,6 +229,99 @@ export function AnalyticsView({ results, cards, reviewLogs, activeTrack }: Analy
           </div>
         </div>
       </div>
+
+      {/* Enhanced Analytics: Retention, Streak, Goals */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-12">
+        {/* Retention Rate */}
+        <div className="p-6 rounded-3xl shadow-[var(--shadow-inset-light)] text-center">
+          <div className="w-12 h-12 mx-auto rounded-xl bg-tint-green flex items-center justify-center mb-3">
+            <TrendingUp size={24} className="text-green" />
+          </div>
+          <p className="text-3xl font-black text-green mb-1">{retentionRate}%</p>
+          <p className="text-[10px] font-black text-text-muted uppercase tracking-wider">Retention Rate</p>
+          <p className="text-[9px] font-bold text-text-muted mt-1">Last 7 days</p>
+        </div>
+
+        {/* Study Streak */}
+        <div className="p-6 rounded-3xl shadow-[var(--shadow-inset-light)] text-center">
+          <div className="w-12 h-12 mx-auto rounded-xl bg-tint-gold flex items-center justify-center mb-3">
+            <Award size={24} className="text-gold" />
+          </div>
+          <p className="text-3xl font-black text-gold mb-1">{studyStreak}</p>
+          <p className="text-[10px] font-black text-text-muted uppercase tracking-wider">Day Streak</p>
+          <p className="text-[9px] font-bold text-text-muted mt-1">Consecutive days</p>
+        </div>
+
+        {/* Goal Progress */}
+        <div className="p-6 rounded-3xl shadow-[var(--shadow-inset-light)] text-center relative">
+          <div className="w-12 h-12 mx-auto rounded-xl bg-tint-blue flex items-center justify-center mb-3">
+            <Target size={24} className="text-blue" />
+          </div>
+          <p className="text-3xl font-black text-blue mb-1">{goalProgress.dailyProgress}%</p>
+          <p className="text-[10px] font-black text-text-muted uppercase tracking-wider">Daily Goal</p>
+          <p className="text-[9px] font-bold text-text-muted mt-1">{goalProgress.todayCards}/{studyGoal.dailyCards} cards</p>
+          <button
+            onClick={() => setShowGoalSettings(true)}
+            className="absolute top-3 right-3 text-[9px] font-bold text-text-muted hover:text-blue"
+          >
+            Edit
+          </button>
+        </div>
+      </div>
+
+      {/* Goal Settings Modal */}
+      {showGoalSettings && (
+        <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
+          <div className="bg-bg-main w-full max-w-md rounded-[2rem] border-2 border-gray-path shadow-2xl p-8">
+            <h3 className="font-black text-2xl text-text-main mb-6">Study Goals</h3>
+
+            <div className="space-y-4">
+              <div>
+                <label className="block text-xs font-bold text-text-muted uppercase mb-2">Daily Cards Target</label>
+                <input
+                  type="number"
+                  value={studyGoal.dailyCards}
+                  onChange={(e) => setStudyGoal(prev => ({ ...prev, dailyCards: parseInt(e.target.value) || 20 }))}
+                  className="w-full bg-bg-hover border-2 border-border-main rounded-xl py-3 px-4 font-bold outline-none focus:border-blue transition-all text-text-main"
+                />
+              </div>
+              <div>
+                <label className="block text-xs font-bold text-text-muted uppercase mb-2">Weekly Study Hours</label>
+                <input
+                  type="number"
+                  value={studyGoal.weeklyHours}
+                  onChange={(e) => setStudyGoal(prev => ({ ...prev, weeklyHours: parseInt(e.target.value) || 5 }))}
+                  className="w-full bg-bg-hover border-2 border-border-main rounded-xl py-3 px-4 font-bold outline-none focus:border-blue transition-all text-text-main"
+                />
+              </div>
+              <div>
+                <label className="block text-xs font-bold text-text-muted uppercase mb-2">Target Accuracy (%)</label>
+                <input
+                  type="number"
+                  value={studyGoal.targetAccuracy}
+                  onChange={(e) => setStudyGoal(prev => ({ ...prev, targetAccuracy: parseInt(e.target.value) || 80 }))}
+                  className="w-full bg-bg-hover border-2 border-border-main rounded-xl py-3 px-4 font-bold outline-none focus:border-blue transition-all text-text-main"
+                />
+              </div>
+            </div>
+
+            <div className="flex gap-4 mt-8">
+              <button
+                onClick={() => setShowGoalSettings(false)}
+                className="flex-1 py-3 rounded-xl font-bold text-text-muted hover:bg-gray-path transition-colors border-2 border-transparent hover:border-border-main"
+              >
+                Cancel
+              </button>
+              <button
+                onClick={() => saveGoal(studyGoal)}
+                className="flex-1 py-3 rounded-xl font-black text-white bg-blue hover:bg-[#2563EB] shadow-[0_4px_0_#1D4ED8] hover:shadow-[0_2px_0_#1D4ED8] hover:translate-y-[2px] transition-all"
+              >
+                Save Goals
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Heatmap Section */}
       <div className="mb-12">
@@ -360,7 +529,7 @@ function SkillCard({ label, learned, total, icon }: { label: string; learned: nu
   return (
     <div className="shadow-[var(--shadow-outset)] rounded-2xl p-4 text-center my-2 mx-1">
       <div className="mx-auto w-12 h-12 rounded-xl text-blue flex items-center justify-center mb-3 shadow-[var(--shadow-inset-light)]">
-        {React.cloneElement(icon as React.ReactElement<any>, { strokeWidth: 2.5 })}
+        {React.cloneElement(icon as React.ReactElement<{ strokeWidth?: number }>, { strokeWidth: 2.5 })}
       </div>
       <p className="text-[10px] font-black text-text-muted uppercase tracking-wider mb-1">{label}</p>
       <p className="text-xl font-black text-text-main">{percentage}%</p>

@@ -16,7 +16,7 @@ export function CollectionView({ cards, activeTrack, onDelete, onDeleteBulk, onE
   const [sortBy, setSortBy] = useState<'newest' | 'hardest' | 'needs_review'>('newest');
   const [limit, setLimit] = useState(50);
   const [editingCard, setEditingCard] = useState<Flashcard | null>(null);
-  const [editForm, setEditForm] = useState({ word: '', definition: '', example: '', phonetic: '', pronunciation: '' });
+  const [editForm, setEditForm] = useState({ word: '', definition: '', example: '', exampleTranslation: '', phonetic: '', pronunciation: '' });
   const [selectedTopic, setSelectedTopic] = useState<string>('all');
   const [showBulkDeleteConfirm, setShowBulkDeleteConfirm] = useState(false);
   
@@ -59,6 +59,7 @@ export function CollectionView({ cards, activeTrack, onDelete, onDeleteBulk, onE
       word: card.word,
       definition: card.definition,
       example: card.example || '',
+      exampleTranslation: card.exampleTranslation || '',
       phonetic: card.phonetic || '',
       pronunciation: card.pronunciation || ''
     });
@@ -71,6 +72,7 @@ export function CollectionView({ cards, activeTrack, onDelete, onDeleteBulk, onE
         word: editForm.word,
         definition: editForm.definition,
         example: editForm.example,
+        exampleTranslation: editForm.exampleTranslation || undefined,
         phonetic: editForm.phonetic || undefined,
         pronunciation: editForm.pronunciation || undefined
       });
@@ -234,6 +236,16 @@ export function CollectionView({ cards, activeTrack, onDelete, onDeleteBulk, onE
                   value={editForm.example}
                   onChange={(e) => setEditForm(prev => ({ ...prev, example: e.target.value }))}
                   className="w-full bg-bg-hover border-2 border-border-main rounded-xl py-3 px-4 font-bold outline-none focus:border-blue transition-all text-text-main"
+                />
+              </div>
+              <div>
+                <label className="block text-xs font-bold text-text-muted uppercase mb-2">Example Translation (optional)</label>
+                <input
+                  type="text"
+                  value={editForm.exampleTranslation}
+                  onChange={(e) => setEditForm(prev => ({ ...prev, exampleTranslation: e.target.value }))}
+                  className="w-full bg-bg-hover border-2 border-border-main rounded-xl py-3 px-4 font-bold outline-none focus:border-blue transition-all text-text-main"
+                  placeholder="Dịch nghĩa câu ví dụ"
                 />
               </div>
               <div className="grid grid-cols-2 gap-4">

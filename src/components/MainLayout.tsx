@@ -1,16 +1,15 @@
 import { NavLink, Outlet, useLocation } from 'react-router-dom';
-import { Moon, Sun, Loader, RefreshCw, BookOpen, Dumbbell, NotebookPen, RotateCcw, Library, Download, Upload, Settings } from 'lucide-react';
+import { Moon, Sun, BookOpen, Dumbbell, NotebookPen, RotateCcw, Library, Download, Upload, Settings, Layers } from 'lucide-react';
 import { useUserStore } from '../stores/useUserStore';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { db } from '../data/db';
 import { useTransition, useState, useRef } from 'react';
-import { OnboardingOverlay } from './OnboardingOverlay';
-import { resetDatabase } from '../data/contentLoader';
 import { useAppActions } from '../hooks/useAppActions';
 import { SettingsModal } from './SettingsModal';
 
 const NAV_ITEMS = [
   { to: '/', end: true, label: 'LEARN', icon: <BookOpen className="w-5 h-5" /> },
+  { to: '/flashcard', label: 'FLASHCARD', icon: <Layers className="w-5 h-5" /> },
   { to: '/practice', label: 'PRACTICE', icon: <Dumbbell className="w-5 h-5" /> },
   { to: '/notebook', label: 'NOTEBOOK', icon: <NotebookPen className="w-5 h-5" /> },
   { to: '/review', label: 'REVIEW', showDueCount: true, icon: <RotateCcw className="w-5 h-5" /> },
@@ -25,23 +24,10 @@ export function MainLayout() {
 
   const [, startTransition] = useTransition();
   const location = useLocation();
-  const [isResetting, setIsResetting] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
   const importFileRef = useRef<HTMLInputElement>(null);
 
   const { exportUserData, importUserData } = useAppActions();
-
-  const handleResetData = async () => {
-    if (!window.confirm('Reset all learning data and reload from source files?\nYour progress (SM-2 scores, mistakes, exam results) will be preserved.')) return;
-    setIsResetting(true);
-    try {
-      await resetDatabase();
-      window.location.reload();
-    } catch (e) {
-      console.error('Reset failed:', e);
-      setIsResetting(false);
-    }
-  };
 
   // Due review count logic memoized to prevent O(N) recalculation on every render
   const dueCount = useLiveQuery(async () => {
@@ -54,7 +40,6 @@ export function MainLayout() {
 
   return (
     <div className="min-h-screen bg-bg-main text-text-main flex flex-col md:flex-row font-sans selection:bg-blue selection:text-white transition-colors duration-300" data-track={activeTrack}>
-      <OnboardingOverlay />
       {showSettings && <SettingsModal onClose={() => setShowSettings(false)} />}
       
       {/* Duolingo-style Sidebar */}
@@ -135,15 +120,7 @@ export function MainLayout() {
                <button onClick={toggleTheme} className="text-xl active:scale-95 transition-transform hover:text-blue">
                  {theme === 'light' ? <Moon className="w-5 h-5" /> : <Sun className="w-5 h-5" />}
                </button>
-               <button
-                 onClick={handleResetData}
-                 disabled={isResetting}
-                 className="text-xs text-text-muted hover:text-red transition-colors active:scale-95"
-                 title="Reset & reload content data"
-               >
-                 {isResetting ? <Loader className="w-4 h-4 animate-spin" /> : <RefreshCw className="w-4 h-4" />}
-               </button>
-               <button
+                <button
                  onClick={() => setShowSettings(true)}
                  className="text-xs text-text-muted hover:text-purple transition-colors active:scale-95"
                  title="AI Settings"
@@ -163,7 +140,7 @@ export function MainLayout() {
       {!(location.pathname === '/session' || location.pathname === '/real-exam') && (
         <nav className="flex lg:hidden fixed bottom-0 left-0 right-0 h-16 bg-bg-main/95 backdrop-blur-md border-t-2 border-gray-path z-50 px-2 pb-[env(safe-area-inset-bottom)]">
           <div className="flex items-center justify-around w-full h-full">
-            {NAV_ITEMS.filter(item => ['/', '/practice', '/notebook', '/review', '/collection', '/analytics'].includes(item.to)).map((item) => (
+            {NAV_ITEMS.filter(item => ['/', '/flashcard', '/practice', '/notebook', '/review', '/collection'].includes(item.to)).map((item) => (
               <NavLink 
                 key={item.to} 
                 to={item.to} 

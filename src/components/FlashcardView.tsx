@@ -141,6 +141,9 @@ export function FlashcardView({ card, onRate, onArchive }: FlashcardViewProps) {
                   <p className="text-xs lg:text-sm font-bold italic text-text-muted">
                     "{stripHtml(card.example)}"
                   </p>
+                  <p className="text-[10px] font-bold text-blue mt-2">
+                    {card.exampleTranslation || `※ Từ khóa: ${stripHtml(card.definition)}`}
+                  </p>
                   <button
                     onClick={(e) => {
                       e.stopPropagation();

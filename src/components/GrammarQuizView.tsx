@@ -88,7 +88,7 @@ export function GrammarQuizView({ task, onComplete, onCancel, onSaveMistake }: G
     return () => {
       if (timerRef.current) clearInterval(timerRef.current);
     };
-  }, [task, isAnswered]);
+  }, [task, isAnswered, initialTime]);
 
   useEffect(() => {
     if (timeLeft === 0 && !isAnswered) {
@@ -165,8 +165,10 @@ export function GrammarQuizView({ task, onComplete, onCancel, onSaveMistake }: G
     }
 
     const blank = " ＿＿＿＿ ";
-    if (example.includes(pattern)) {
-      return example.split(pattern).map((part, i, arr) => (
+    const cleanPattern = pattern.replace(/～/g, '').trim();
+    
+    if (cleanPattern && example.includes(cleanPattern)) {
+      return example.split(cleanPattern).map((part, i, arr) => (
         <span key={i}>
           {part}
           {i < arr.length - 1 && <span className="text-gold border-b-2 border-gold">{blank}</span>}

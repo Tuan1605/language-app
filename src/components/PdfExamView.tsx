@@ -182,7 +182,7 @@ export function PdfExamView({ examId }: { examId: string }) {
   return (
     <div className="flex flex-col w-full h-screen bg-gray-50">
       {/* Header */}
-      <div className="bg-white shadow-sm shrink-0">
+      <div className="bg-white shadow-sm shrink-0 relative z-20">
         {/* Top row: nav + title + submit */}
         <div className="flex items-center justify-between px-4 py-3 border-b border-gray-100">
           <div className="flex items-center gap-3">

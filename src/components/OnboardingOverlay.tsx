@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { Sparkles, ArrowRight, Target } from 'lucide-react';
 
 export function OnboardingOverlay() {
@@ -18,6 +18,15 @@ export function OnboardingOverlay() {
     buttonRef.current?.focus();
   }, [isVisible, step]);
 
+  const handleNext = useCallback(() => {
+    if (step < 2) {
+      setStep(step + 1);
+    } else {
+      setIsVisible(false);
+      localStorage.setItem('lingomaster_onboarding', 'true');
+    }
+  }, [step]);
+
   useEffect(() => {
     if (!isVisible) return;
     const handleKeyDown = (e: KeyboardEvent) => {
@@ -31,16 +40,7 @@ export function OnboardingOverlay() {
     };
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [isVisible, step]);
-
-  const handleNext = () => {
-    if (step < 2) {
-      setStep(step + 1);
-    } else {
-      setIsVisible(false);
-      localStorage.setItem('lingomaster_onboarding', 'true');
-    }
-  };
+  }, [isVisible, handleNext]);
 
   if (!isVisible) return null;
 

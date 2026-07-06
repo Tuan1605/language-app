@@ -4,7 +4,7 @@
 // and a cache-first strategy for hashed build assets.
 // External assets (audio, PDF from GitHub Releases) use stale-while-revalidate.
 
-const CACHE_VERSION = 'lingo-v2';
+const CACHE_VERSION = 'lingo-v3';
 const RUNTIME_CACHE = `${CACHE_VERSION}-runtime`;
 const EXTERNAL_CACHE = `${CACHE_VERSION}-external`;
 

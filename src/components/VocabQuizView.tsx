@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import type { Flashcard, Mistake } from '../types';
+import { db } from '../data/db';
 import { playCorrectSound, playIncorrectSound } from '../utils/sound';
 import { speak, langForCategory } from '../utils/tts';
 import { stripHtml } from '../utils/text';
@@ -8,12 +9,11 @@ import { Volume2 } from 'lucide-react';
 
 interface VocabQuizViewProps {
   word: Flashcard;
-  allCards: Flashcard[];
   onComplete: (isCorrect: boolean) => void;
   onSaveMistake?: (mistake: Mistake) => void;
 }
 
-export function VocabQuizView({ word, allCards, onComplete, onSaveMistake }: VocabQuizViewProps) {
+export function VocabQuizView({ word, onComplete, onSaveMistake }: VocabQuizViewProps) {
   const [options, setOptions] = useState<string[]>([]);
   const [selectedIdx, setSelectedIdx] = useState<number | null>(null);
   const [isAnswered, setIsAnswered] = useState(false);
@@ -22,44 +22,49 @@ export function VocabQuizView({ word, allCards, onComplete, onSaveMistake }: Voc
   const timerRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   useEffect(() => {
-    // Generate 4 randomized options
-    // First, get all UNIQUE definitions that are NOT the correct answer
-    const answerDef = stripHtml(word.definition).toLowerCase().trim();
-    
-    // Create a pool of unique definitions (case-insensitive deduplication)
-    const uniqueDefs = new Map<string, string>();
-    allCards.forEach(c => {
-      if (c.language === word.language) {
-        const def = stripHtml(c.definition);
-        const lowerDef = def.toLowerCase().trim();
-        if (lowerDef !== answerDef && !uniqueDefs.has(lowerDef)) {
-          uniqueDefs.set(lowerDef, def); // Store the original cased version
+    const generateOptions = async () => {
+      const answerDef = stripHtml(word.definition).toLowerCase().trim();
+      const count = await db.cards.where('language').equals(word.language).count();
+      
+      const distractors = new Set<string>();
+      let attempts = 0;
+      
+      while (distractors.size < 3 && attempts < 20) {
+        attempts++;
+        const randIdx = Math.floor(Math.random() * count);
+        const c = await db.cards.where('language').equals(word.language).offset(randIdx).first();
+        if (c) {
+          const def = stripHtml(c.definition);
+          const lowerDef = def.toLowerCase().trim();
+          if (lowerDef !== answerDef) {
+            distractors.add(def);
+          }
         }
       }
-    });
 
-    const distractors = Array.from(uniqueDefs.values())
-      .sort(() => Math.random() - 0.5)
-      .slice(0, 3);
-    
-    const combined = [...distractors, stripHtml(word.definition)].sort(() => Math.random() - 0.5);
-    setOptions(combined);
-    
-    // Start timer
-    setTimeLeft(initialTime);
-    setIsAnswered(false);
-    setSelectedIdx(null);
-    timerRef.current = setInterval(() => {
-      setTimeLeft(prev => {
-        if (prev <= 1) {
-          clearInterval(timerRef.current);
-          return 0;
-        }
-        return prev - 1;
-      });
-    }, 1000);
+      const combined = [...Array.from(distractors), stripHtml(word.definition)].sort(() => Math.random() - 0.5);
+      setOptions(combined);
+      
+      // Start timer
+      setTimeLeft(initialTime);
+      setIsAnswered(false);
+      setSelectedIdx(null);
+      timerRef.current = setInterval(() => {
+        setTimeLeft(prev => {
+          if (prev <= 1) {
+            if (timerRef.current) clearInterval(timerRef.current);
+            return 0;
+          }
+          return prev - 1;
+        });
+      }, 1000);
+    };
 
-    return () => clearInterval(timerRef.current);
+    generateOptions();
+
+    return () => {
+      if (timerRef.current) clearInterval(timerRef.current);
+    };
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [word]);
 

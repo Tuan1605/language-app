@@ -2,31 +2,22 @@ import { create } from 'zustand';
 import { persist } from 'zustand/middleware';
 import { DEFAULT_DAILY_REVIEW_LIMIT } from '../utils/constants';
 
+type LanguageTrack = 'english' | 'japanese';
+
 interface UserState {
   theme: 'light' | 'dark';
-  activeTrack: 'english' | 'japanese';
-  unlockedEn: number[];
-  unlockedJa: number[];
+  activeTrack: LanguageTrack;
+  unlockedPaths: Record<string, number[]>;
   dailyReviewLimit: number;
   openAIApiKey: string | null;
-  lastStudyDate: string | null;
-  currentStreak: number;
-  longestStreak: number;
   toggleTheme: () => void;
-  setActiveTrack: (track: 'english' | 'japanese') => void;
+  setActiveTrack: (track: LanguageTrack) => void;
+  getUnlocked: (track: string) => number[];
+  setUnlocked: (track: string, paths: number[]) => void;
   setProgress: (unlockedEn: number[], unlockedJa: number[]) => void;
   initializeDOM: () => void;
   setDailyReviewLimit: (limit: number) => void;
   setOpenAIApiKey: (key: string | null) => void;
-  recordStudyDay: () => void;
-}
-
-function getDaysBetween(date1: string, date2: string): number {
-  const d1 = new Date(date1);
-  const d2 = new Date(date2);
-  d1.setHours(0, 0, 0, 0);
-  d2.setHours(0, 0, 0, 0);
-  return Math.round((d2.getTime() - d1.getTime()) / 86400000);
 }
 
 export const useUserStore = create<UserState>()(
@@ -34,13 +25,9 @@ export const useUserStore = create<UserState>()(
     (set, get) => ({
       theme: 'light',
       activeTrack: 'english',
-      unlockedEn: [1],
-      unlockedJa: [1],
+      unlockedPaths: { english: [1], japanese: [1] },
       dailyReviewLimit: DEFAULT_DAILY_REVIEW_LIMIT,
       openAIApiKey: null,
-      lastStudyDate: null,
-      currentStreak: 0,
-      longestStreak: 0,
 
       toggleTheme: () => set((state) => {
         const newTheme = state.theme === 'light' ? 'dark' : 'light';
@@ -53,7 +40,24 @@ export const useUserStore = create<UserState>()(
         return { activeTrack: track };
       }),
 
-      setProgress: (unlockedEn, unlockedJa) => set({ unlockedEn, unlockedJa }),
+      getUnlocked: (track) => {
+        const { unlockedPaths } = get();
+        return unlockedPaths[track] || [1];
+      },
+
+      setUnlocked: (track, paths) => set((state) => ({
+        unlockedPaths: {
+          ...state.unlockedPaths,
+          [track]: paths,
+        },
+      })),
+
+      setProgress: (unlockedEn, unlockedJa) => set({
+        unlockedPaths: {
+          english: unlockedEn,
+          japanese: unlockedJa,
+        },
+      }),
 
       initializeDOM: () => {
         const { theme, activeTrack } = get();
@@ -65,35 +69,15 @@ export const useUserStore = create<UserState>()(
       setDailyReviewLimit: (limit) => set({ dailyReviewLimit: limit }),
 
       setOpenAIApiKey: (key) => set({ openAIApiKey: key }),
-
-      recordStudyDay: () => {
-        const { lastStudyDate, currentStreak, longestStreak } = get();
-        const today = new Date().toISOString().split('T')[0];
-
-        if (lastStudyDate === today) {
-          // Already studied today, no change
-          return;
-        }
-
-        let newStreak = 1;
-        if (lastStudyDate) {
-          const daysDiff = getDaysBetween(lastStudyDate, today);
-          if (daysDiff === 1) {
-            // Consecutive day
-            newStreak = currentStreak + 1;
-          }
-          // else: gap > 1 day, streak resets to 1
-        }
-
-        set({
-          lastStudyDate: today,
-          currentStreak: newStreak,
-          longestStreak: Math.max(longestStreak, newStreak),
-        });
-      },
     }),
     {
       name: 'lingo-user-prefs',
+      // Migrate old format to new format
+      merge: (persistedState, currentState) => {
+        const state = { ...currentState, ...(persistedState as Partial<UserState>) };
+        return state as UserState;
+      },
     }
   )
 );
+

@@ -7,6 +7,7 @@ import { ErrorBoundary } from './components/ErrorBoundary';
 import { useAppStore } from './stores/useAppStore';
 import { useUserStore } from './stores/useUserStore';
 import { initializeDatabase } from './data/contentLoader';
+import { preloadMockData } from './utils/mockDataLoader';
 import toast from 'react-hot-toast';
 
 // Lazy load with preload support for smooth animations
@@ -23,13 +24,23 @@ const RealExamPage = lazy(() => import('./pages/RealExamPage').then(m => ({ defa
 const CreateExamPage = lazy(() => import('./pages/CreateExamPage').then(m => ({ default: m.CreateExamPage })));
 const ReviewDashboardPage = lazy(() => import('./pages/ReviewDashboardPage').then(m => ({ default: m.ReviewDashboardPage })));
 const PdfExamPage = lazy(() => import('./pages/PdfExamPage').then(m => ({ default: m.PdfExamPage })));
+const FlashcardPage = lazy(() => import('./pages/FlashcardPage').then(m => ({ default: m.FlashcardPage })));
+const CramModePage = lazy(() => import('./pages/CramModePage').then(m => ({ default: m.CramModePage })));
+const QuickReviewPage = lazy(() => import('./pages/QuickReviewPage').then(m => ({ default: m.QuickReviewPage })));
 
-// Preload common pages after initial load for smoother navigation
-setTimeout(() => {
+// Preload common pages when browser is idle (not blocking main thread)
+const preloadPages = () => {
   import('./pages/PracticePage');
   import('./pages/ReviewPage');
   import('./pages/CollectionPage');
-}, 2000);
+};
+
+if (typeof requestIdleCallback !== 'undefined') {
+  requestIdleCallback(preloadPages);
+} else {
+  // Fallback for browsers without requestIdleCallback
+  setTimeout(preloadPages, 0);
+}
 
 function PageLoader() {
   return (
@@ -42,7 +53,6 @@ function PageLoader() {
 function App() {
   const isLoadingData = useAppStore(s => s.isLoadingData);
   const setIsLoadingData = useAppStore(s => s.setIsLoadingData);
-  const setMockData = useAppStore(s => s.setMockData);
   const initializeDOM = useUserStore(s => s.initializeDOM);
 
   const location = useLocation();
@@ -50,20 +60,12 @@ function App() {
   useEffect(() => {
     let mounted = true;
     initializeDOM(); // apply theme and track immediately
-    
+
     async function init() {
       try {
         await initializeDatabase();
-        const { MOCK_LISTENING_LESSONS, MOCK_SPEAKING_LESSONS, MOCK_DICTATION_LESSONS, MOCK_WRITING_LESSONS, MOCK_FULL_EXAMS } = await import('./utils/mockData');
-        if (mounted) {
-          setMockData({
-            mockListeningLessons: MOCK_LISTENING_LESSONS,
-            mockSpeakingLessons: MOCK_SPEAKING_LESSONS,
-            mockDictationLessons: MOCK_DICTATION_LESSONS,
-            mockWritingLessons: MOCK_WRITING_LESSONS,
-            mockFullExams: MOCK_FULL_EXAMS
-          });
-        }
+        // Preload mock data in background (non-blocking)
+        preloadMockData();
       } catch(err) {
         console.error('Initialization failed:', err);
         toast.error('Failed to load language data. Some features may be unavailable.');
@@ -73,7 +75,7 @@ function App() {
     }
     init();
     return () => { mounted = false; };
-  }, [setIsLoadingData, initializeDOM, setMockData]);
+  }, [setIsLoadingData, initializeDOM]);
 
   if (isLoadingData) {
     return (
@@ -96,6 +98,7 @@ function App() {
             <Route path="/practice" element={<Suspense fallback={<PageLoader />}><PracticePage /></Suspense>} />
             <Route path="/notebook" element={<Suspense fallback={<PageLoader />}><NotebookPage /></Suspense>} />
             <Route path="/review" element={<Suspense fallback={<PageLoader />}><ReviewPage /></Suspense>} />
+            <Route path="/flashcard" element={<Suspense fallback={<PageLoader />}><FlashcardPage /></Suspense>} />
             <Route path="/collection" element={<Suspense fallback={<PageLoader />}><CollectionPage /></Suspense>} />
             <Route path="/mistakes" element={<Suspense fallback={<PageLoader />}><MistakesPage /></Suspense>} />
             <Route path="/review-mistakes" element={<Suspense fallback={<PageLoader />}><MistakeReviewPage /></Suspense>} />
@@ -105,6 +108,8 @@ function App() {
             <Route path="/real-exam" element={<Suspense fallback={<PageLoader />}><RealExamPage /></Suspense>} />
             <Route path="/create-exam" element={<Suspense fallback={<PageLoader />}><CreateExamPage /></Suspense>} />
             <Route path="/review-dashboard" element={<Suspense fallback={<PageLoader />}><ReviewDashboardPage /></Suspense>} />
+            <Route path="/cram" element={<Suspense fallback={<PageLoader />}><CramModePage /></Suspense>} />
+            <Route path="/quick-review" element={<Suspense fallback={<PageLoader />}><QuickReviewPage /></Suspense>} />
           </Route>
         </Routes>
       </AnimatePresence>

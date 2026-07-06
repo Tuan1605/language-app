@@ -17,6 +17,7 @@ interface RawFlashcard {
   word: string;
   definition: string;
   example?: string;
+  exampleTranslation?: string;
   topic?: string;
   difficulty?: 'beginner' | 'intermediate' | 'advanced';
   phonetic?: string;
@@ -30,6 +31,7 @@ function rawToFlashcard(raw: RawFlashcard, language: 'english' | 'japanese', cat
     word: raw.word,
     definition: raw.definition,
     example: raw.example,
+    exampleTranslation: raw.exampleTranslation,
     phonetic: raw.phonetic,
     pronunciation: raw.pronunciation,
     language,
@@ -49,7 +51,7 @@ function rawToFlashcard(raw: RawFlashcard, language: 'english' | 'japanese', cat
 export async function initializeDatabase() {
   const isInitialized = await db.meta.get('initialized');
   if (isInitialized?.value) {
-    return; // Already loaded into IndexedDB!
+    return;
   }
 
   try {
@@ -58,6 +60,8 @@ export async function initializeDatabase() {
       import('./toeic/flashcards.json').catch(() => ({ default: [] as RawFlashcard[] })),
       import('./n2/flashcards.json').catch(() => ({ default: [] as RawFlashcard[] })),
     ]);
+    console.log(`[init] TOEIC: ${toeicRaw.default.length}, N2: ${n2Raw.default.length}`);
+
     await Promise.all([
       db.cards.bulkPut((toeicRaw.default as RawFlashcard[]).map(r => rawToFlashcard(r, 'english', 'toeic'))),
       db.cards.bulkPut((n2Raw.default as RawFlashcard[]).map(r => rawToFlashcard(r, 'japanese', 'n2'))),
@@ -103,7 +107,7 @@ export async function initializeDatabase() {
       if (r.status === 'rejected') console.warn(`Failed to load ${kanjiFiles[i]}:`, r.reason);
     });
 
-    // 4. Load Grammar (already parallel)
+    // 4. Load Grammar
     const [gN2, gToeic] = await Promise.all([
       import('./n2/grammar.json'),
       import('./toeic/grammar.json'),
@@ -115,56 +119,67 @@ export async function initializeDatabase() {
 
     await db.meta.put({ id: 'initialized', value: true });
   } catch (error) {
-    console.error("Failed to initialize Dexie database:", error);
+    console.error("Failed to initialize database:", error);
     throw error;
   }
 }
 
 export async function resetDatabase() {
-  // 1. Back up only modified cards using IndexedDB query (not full toArray)
+  console.log('[reset] Starting database reset...');
+
+  // 1. Back up modified cards
   const progressMap = new Map();
   await db.cards.where('state').notEqual('New').each(card => {
     progressMap.set(card.id, {
-      state: card.state,
-      reps: card.reps,
-      lapses: card.lapses,
-      stability: card.stability,
-      difficulty: card.difficulty,
-      next_review: card.next_review
+      state: card.state, reps: card.reps, lapses: card.lapses,
+      stability: card.stability, difficulty: card.difficulty, next_review: card.next_review
     });
   });
-  // Also check cards with reps > 0 that are still 'New'
   await db.cards.where('reps').above(0).each(card => {
     if (!progressMap.has(card.id)) {
       progressMap.set(card.id, {
-        state: card.state,
-        reps: card.reps,
-        lapses: card.lapses,
-        stability: card.stability,
-        difficulty: card.difficulty,
-        next_review: card.next_review
+        state: card.state, reps: card.reps, lapses: card.lapses,
+        stability: card.stability, difficulty: card.difficulty, next_review: card.next_review
       });
     }
   });
+  console.log(`[reset] Backed up ${progressMap.size} cards`);
 
-  // 2. Clear content tables
+  // 2. Clear all content tables
+  console.log('[reset] Clearing tables...');
   await db.cards.clear();
   await db.questions.clear();
   await db.kanji.clear();
   await db.grammar.clear();
+  console.log('[reset] Tables cleared');
 
-  // 3. Re-initialize from JSON source files
+  // 3. Clear service worker + browser caches (non-blocking)
+  try {
+    if ('caches' in window) {
+      const names = await caches.keys();
+      await Promise.all(names.map(n => caches.delete(n)));
+    }
+  } catch { /* ignore cache errors */ }
+  try {
+    if ('serviceWorker' in navigator) {
+      const regs = await navigator.serviceWorker.getRegistrations();
+      await Promise.all(regs.map(r => r.unregister()));
+    }
+  } catch { /* ignore SW errors */ }
+
+  // 4. Force re-initialize
+  console.log('[reset] Re-initializing database...');
   await db.meta.put({ id: 'initialized', value: false });
   await initializeDatabase();
+  const cardCount = await db.cards.count();
+  console.log(`[reset] Database re-initialized. Total cards: ${cardCount}`);
 
-  // 4. Restore FSRS progress using bulkPut (not toArray + loop)
+  // 5. Restore progress
   if (progressMap.size > 0) {
     const cardsToUpdate: Flashcard[] = [];
     await db.cards.where('id').anyOf([...progressMap.keys()]).each(card => {
       const progress = progressMap.get(card.id);
-      if (progress) {
-        cardsToUpdate.push({ ...card, ...progress });
-      }
+      if (progress) cardsToUpdate.push({ ...card, ...progress });
     });
     if (cardsToUpdate.length > 0) {
       await db.cards.bulkPut(cardsToUpdate);

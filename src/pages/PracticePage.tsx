@@ -3,6 +3,7 @@ import { BookOpen, Mic, Headset, Edit3, Type } from 'lucide-react';
 import { useUserStore } from '../stores/useUserStore';
 import { useAppActions } from '../hooks/useAppActions';
 import { useNavigate } from 'react-router-dom';
+import { AchievementBadges } from '../components/AchievementBadges';
 
 export function PracticePage() {
   const activeTrack = useUserStore(s => s.activeTrack);
@@ -84,7 +85,7 @@ export function PracticePage() {
       </div>
 
       <div className="mt-8 flex flex-col gap-4">
-        <h3 className="font-bold text-gray-700 text-lg">TOEIC 2024 PDF Exams (Study4 Style)</h3>
+        <h3 className="font-bold text-text-main text-lg">TOEIC 2024 PDF Exams (Study4 Style)</h3>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
           {Array.from({ length: 10 }).map((_, i) => (
             <button
@@ -106,6 +107,11 @@ export function PracticePage() {
           </svg>
           Create Custom Exam
         </button>
+      </div>
+
+      {/* Achievement Badges */}
+      <div className="mt-8">
+        <AchievementBadges />
       </div>
       </div>
     </AnimatedPage>

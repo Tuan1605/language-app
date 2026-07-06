@@ -6,6 +6,7 @@ export interface Flashcard {
   word: string;
   definition: string;
   example?: string;
+  exampleTranslation?: string; // Translation of the example sentence
   imageUrl?: string;
   language: 'english' | 'japanese';
   category: 'toeic' | 'n2';

@@ -1,6 +1,5 @@
 import { db } from '../data/db';
 import { FSRS, type FSRSCard, type Rating } from '../utils/fsrs';
-import { useUserStore } from '../stores/useUserStore';
 import type { Flashcard } from '../types';
 import toast from 'react-hot-toast';
 
@@ -49,7 +48,6 @@ export function useReviewActions() {
         scheduled_days: reviewLog.scheduled_days,
         review: reviewLog.review.toISOString()
       });
-      useUserStore.getState().recordStudyDay();
     } catch (e) {
       console.error('Failed to save review:', e);
       toast.error('Failed to save review progress.');
