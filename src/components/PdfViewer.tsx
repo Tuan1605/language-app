@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { ExternalLink, Download, Loader } from 'lucide-react';
 
 interface PdfViewerProps {
@@ -6,29 +6,36 @@ interface PdfViewerProps {
   className?: string;
 }
 
+function isMobile(): boolean {
+  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
+
 export function PdfViewer({ url, className = '' }: PdfViewerProps) {
   const [isLoading, setIsLoading] = useState(true);
   const [hasError, setHasError] = useState(false);
-  const objectRef = useRef<HTMLObjectElement>(null);
+  const iframeRef = useRef<HTMLIFrameElement>(null);
+  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  const handleLoad = useCallback(() => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    setIsLoading(false);
+  }, []);
+
+  const handleError = useCallback(() => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+    setIsLoading(false);
+    setHasError(true);
+  }, []);
 
   useEffect(() => {
     setIsLoading(true);
     setHasError(false);
-  }, [url]);
-
-  useEffect(() => {
-    const obj = objectRef.current;
-    if (!obj) return;
-
-    const handleLoad = () => setIsLoading(false);
-    const handleError = () => { setIsLoading(false); setHasError(true); };
-
-    obj.addEventListener('load', handleLoad);
-    obj.addEventListener('error', handleError);
-    return () => {
-      obj.removeEventListener('load', handleLoad);
-      obj.removeEventListener('error', handleError);
-    };
+    // Timeout fallback: if PDF doesn't load in 30s, show error
+    timeoutRef.current = setTimeout(() => {
+      setIsLoading(false);
+      setHasError(true);
+    }, 30000);
+    return () => clearTimeout(timeoutRef.current);
   }, [url]);
 
   if (!url) {
@@ -68,6 +75,31 @@ export function PdfViewer({ url, className = '' }: PdfViewerProps) {
     );
   }
 
+  // Mobile: open in new tab (most reliable for large PDFs)
+  if (isMobile()) {
+    return (
+      <div className={`relative ${className}`}>
+        {isLoading && (
+          <div className="absolute inset-0 flex items-center justify-center bg-gray-50 z-10">
+            <div className="flex flex-col items-center gap-3">
+              <Loader className="w-8 h-8 text-blue-500 animate-spin" />
+              <p className="text-sm text-gray-500">Loading PDF...</p>
+            </div>
+          </div>
+        )}
+        <iframe
+          ref={iframeRef}
+          src={url}
+          onLoad={handleLoad}
+          onError={handleError}
+          className="w-full h-full border-none bg-gray-50"
+          title="PDF Viewer"
+        />
+      </div>
+    );
+  }
+
+  // Desktop: use iframe (more compatible than object tag)
   return (
     <div className={`relative ${className}`}>
       {isLoading && (
@@ -78,16 +110,14 @@ export function PdfViewer({ url, className = '' }: PdfViewerProps) {
           </div>
         </div>
       )}
-      <object
-        ref={objectRef}
-        data={url}
-        type="application/pdf"
+      <iframe
+        ref={iframeRef}
+        src={url}
+        onLoad={handleLoad}
+        onError={handleError}
         className="w-full h-full border-none bg-gray-50"
-      >
-        <div className="flex items-center justify-center h-full">
-          <a href={url} download className="text-blue-500 underline text-sm">Download PDF</a>
-        </div>
-      </object>
+        title="PDF Viewer"
+      />
     </div>
   );
 }

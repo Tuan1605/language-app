@@ -315,9 +315,9 @@ export function PdfExamView({ examId }: { examId: string }) {
       )}
 
       {/* Main Content */}
-      <div className="flex flex-row flex-1 overflow-hidden">
+      <div className="flex flex-col md:flex-row flex-1 overflow-hidden">
         {/* Left: PDF Viewer */}
-        <div className="flex w-[60%] h-full border-r border-gray-300 flex-col bg-gray-50 relative shadow-inner">
+        <div className="flex w-full md:w-[60%] h-[50vh] md:h-full border-b md:border-b-0 md:border-r border-gray-300 flex-col bg-gray-50 relative shadow-inner">
           <div className="absolute top-2 left-1/2 -translate-x-1/2 flex bg-white rounded-full shadow p-0.5 z-10">
             <button
               onClick={() => setActivePdf('LC')}
@@ -336,7 +336,7 @@ export function PdfExamView({ examId }: { examId: string }) {
         </div>
 
         {/* Right: Audio + Answers */}
-        <div className="flex w-[40%] h-full bg-white flex-col overflow-hidden shadow-xl z-10">
+        <div className="flex w-full md:w-[40%] h-[50vh] md:h-full bg-white flex-col overflow-hidden shadow-xl z-10">
           {currentAudioUrl && (
             <div className="p-3 border-b border-gray-200 bg-gray-50 shrink-0">
               <audio controls className="w-full" src={currentAudioUrl} />
