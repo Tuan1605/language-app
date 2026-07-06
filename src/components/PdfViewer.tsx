@@ -1,42 +1,64 @@
-import { useState, useEffect, useRef, useCallback } from 'react';
-import { ExternalLink, Download, Loader } from 'lucide-react';
+import { useEffect, useRef, useState, useCallback } from 'react';
+import * as pdfjsLib from 'pdfjs-dist';
+import { Download, AlertCircle } from 'lucide-react';
+
+pdfjsLib.GlobalWorkerOptions.workerSrc = new URL(
+  'pdfjs-dist/build/pdf.worker.js',
+  import.meta.url
+).toString();
 
 interface PdfViewerProps {
   url: string;
   className?: string;
 }
 
-function isMobile(): boolean {
-  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
-}
-
 export function PdfViewer({ url, className = '' }: PdfViewerProps) {
-  const [isLoading, setIsLoading] = useState(true);
-  const [hasError, setHasError] = useState(false);
-  const iframeRef = useRef<HTMLIFrameElement>(null);
-  const timeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [error, setError] = useState(false);
+  const [loading, setLoading] = useState(true);
 
-  const handleLoad = useCallback(() => {
-    if (timeoutRef.current) clearTimeout(timeoutRef.current);
-    setIsLoading(false);
-  }, []);
+  const renderPdf = useCallback(async () => {
+    if (!url || !containerRef.current) return;
 
-  const handleError = useCallback(() => {
-    if (timeoutRef.current) clearTimeout(timeoutRef.current);
-    setIsLoading(false);
-    setHasError(true);
-  }, []);
+    try {
+      setError(false);
+      setLoading(true);
+
+      const container = containerRef.current;
+      container.innerHTML = '';
+
+      const pdf = await pdfjsLib.getDocument(url).promise;
+      const totalPages = pdf.numPages;
+
+      for (let i = 1; i <= totalPages; i++) {
+        const page = await pdf.getPage(i);
+        const scale = 1.5;
+        const viewport = page.getViewport({ scale });
+
+        const canvas = document.createElement('canvas');
+        canvas.width = viewport.width;
+        canvas.height = viewport.height;
+        canvas.style.width = '100%';
+        canvas.style.height = 'auto';
+        canvas.style.display = 'block';
+
+        const ctx = canvas.getContext('2d')!;
+        await page.render({ canvasContext: ctx, viewport }).promise;
+
+        container.appendChild(canvas);
+      }
+
+      setLoading(false);
+    } catch (e) {
+      console.error('PDF render error:', e);
+      setLoading(false);
+      setError(true);
+    }
+  }, [url]);
 
   useEffect(() => {
-    setIsLoading(true);
-    setHasError(false);
-    // Timeout fallback: if PDF doesn't load in 30s, show error
-    timeoutRef.current = setTimeout(() => {
-      setIsLoading(false);
-      setHasError(true);
-    }, 30000);
-    return () => clearTimeout(timeoutRef.current);
-  }, [url]);
+    renderPdf();
+  }, [renderPdf]);
 
   if (!url) {
     return (
@@ -46,28 +68,27 @@ export function PdfViewer({ url, className = '' }: PdfViewerProps) {
     );
   }
 
-  if (hasError) {
+  if (error) {
     return (
       <div className={`flex items-center justify-center bg-gray-50 ${className}`}>
-        <div className="text-center p-4 max-w-md">
-          <p className="text-sm text-gray-500 mb-3">Cannot display PDF inline</p>
+        <div className="text-center p-6 max-w-sm">
+          <AlertCircle className="w-10 h-10 text-red-400 mx-auto mb-3" />
+          <p className="text-sm font-semibold text-gray-700 mb-1">Không thể tải PDF</p>
+          <p className="text-xs text-gray-400 mb-4">Vui lòng thử lại hoặc tải file về máy</p>
           <div className="flex gap-2 justify-center">
+            <button
+              onClick={renderPdf}
+              className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 text-white text-sm font-bold rounded-xl hover:bg-blue-700 transition-colors"
+            >
+              Thử lại
+            </button>
             <a
               href={url}
               download
-              className="inline-flex items-center gap-2 px-4 py-2 bg-blue-500 text-white text-sm font-bold rounded-lg hover:bg-blue-600 transition-colors"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-gray-200 text-gray-700 text-sm font-bold rounded-xl hover:bg-gray-300 transition-colors"
             >
               <Download className="w-4 h-4" />
-              Download PDF
-            </a>
-            <a
-              href={url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 bg-gray-200 text-gray-700 text-sm font-bold rounded-lg hover:bg-gray-300 transition-colors"
-            >
-              <ExternalLink className="w-4 h-4" />
-              Open in Tab
+              Tải về
             </a>
           </div>
         </div>
@@ -75,49 +96,17 @@ export function PdfViewer({ url, className = '' }: PdfViewerProps) {
     );
   }
 
-  // Mobile: open in new tab (most reliable for large PDFs)
-  if (isMobile()) {
-    return (
-      <div className={`relative ${className}`}>
-        {isLoading && (
-          <div className="absolute inset-0 flex items-center justify-center bg-gray-50 z-10">
-            <div className="flex flex-col items-center gap-3">
-              <Loader className="w-8 h-8 text-blue-500 animate-spin" />
-              <p className="text-sm text-gray-500">Loading PDF...</p>
-            </div>
-          </div>
-        )}
-        <iframe
-          ref={iframeRef}
-          src={url}
-          onLoad={handleLoad}
-          onError={handleError}
-          className="w-full h-full border-none bg-gray-50"
-          title="PDF Viewer"
-        />
-      </div>
-    );
-  }
-
-  // Desktop: use iframe (more compatible than object tag)
   return (
-    <div className={`relative ${className}`}>
-      {isLoading && (
-        <div className="absolute inset-0 flex items-center justify-center bg-gray-50 z-10">
+    <div className={`${className} overflow-auto`}>
+      {loading && (
+        <div className="flex items-center justify-center py-12">
           <div className="flex flex-col items-center gap-3">
-            <Loader className="w-8 h-8 text-blue-500 animate-spin" />
-            <p className="text-sm text-gray-500">Loading PDF...</p>
+            <div className="w-8 h-8 border-4 border-blue-500 border-t-transparent rounded-full animate-spin" />
+            <p className="text-sm text-gray-500">Đang tải PDF...</p>
           </div>
         </div>
       )}
-      <iframe
-        ref={iframeRef}
-        src={url}
-        onLoad={handleLoad}
-        onError={handleError}
-        className="w-full h-full border-none bg-gray-50"
-        title="PDF Viewer"
-      />
+      <div ref={containerRef} className="flex flex-col items-center" />
     </div>
   );
 }
