@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, useCallback } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import * as pdfjsLib from 'pdfjs-dist';
 import { Download, AlertCircle } from 'lucide-react';
 
@@ -12,115 +12,140 @@ interface PdfViewerProps {
 export function PdfViewer({ url, className = '' }: PdfViewerProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [error, setError] = useState<string | null>(null);
-  const [totalPages, setTotalPages] = useState(0);
+  const [loading, setLoading] = useState(true);
   const pdfDocRef = useRef<any>(null);
-  const renderedPages = useRef<Set<number>>(new Set());
-  const canvasMap = useRef<Map<number, HTMLCanvasElement>>(new Map());
+  const renderedRef = useRef<Set<number>>(new Set());
 
-  const renderPage = useCallback(async (pageNum: number) => {
-    if (!pdfDocRef.current || renderedPages.current.has(pageNum)) return;
-
-    const pdf = pdfDocRef.current;
-    const page = await pdf.getPage(pageNum);
-
-    const container = containerRef.current;
-    const containerWidth = container?.clientWidth || 800;
-    const viewport = page.getViewport({ scale: 1 });
-    const scale = (containerWidth - 16) / viewport.width;
-    const scaledViewport = page.getViewport({ scale });
-
-    const canvas = document.createElement('canvas');
-    canvas.width = scaledViewport.width;
-    canvas.height = scaledViewport.height;
-    canvas.style.width = '100%';
-    canvas.style.height = 'auto';
-    canvas.style.display = 'block';
-    canvas.style.marginBottom = '4px';
-
-    const ctx = canvas.getContext('2d')!;
-    await page.render({ canvasContext: ctx, viewport: scaledViewport }).promise;
-
-    renderedPages.current.add(pageNum);
-    canvasMap.current.set(pageNum, canvas);
-  }, []);
-
-  const loadPdf = useCallback(async () => {
+  useEffect(() => {
     if (!url || !containerRef.current) return;
 
-    try {
-      setError(null);
-      setTotalPages(0);
-      renderedPages.current.clear();
-      canvasMap.current.clear();
-      containerRef.current.innerHTML = '';
-
-      const response = await fetch(url);
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-
-      const buf = await response.arrayBuffer();
-      const data = new Uint8Array(buf);
-      const magic = String.fromCharCode(...data.slice(0, 4));
-      if (magic !== '%PDF') throw new Error('File không phải PDF hợp lệ');
-
-      const pdf = await pdfjsLib.getDocument({ data }).promise;
-      pdfDocRef.current = pdf;
-      setTotalPages(pdf.numPages);
-
-      // Lazy loading: render first 3 pages, rest on scroll
-      const pagesToInit = Math.min(3, pdf.numPages);
-      for (let i = 1; i <= pagesToInit; i++) {
-        await renderPage(i);
-        containerRef.current.appendChild(canvasMap.current.get(i)!);
-      }
-
-      // Add placeholder divs for remaining pages
-      for (let i = pagesToInit + 1; i <= pdf.numPages; i++) {
-        const placeholder = document.createElement('div');
-        placeholder.dataset.page = String(i);
-        placeholder.style.minHeight = '600px';
-        containerRef.current.appendChild(placeholder);
-      }
-    } catch (e: any) {
-      console.error('PDF error:', e);
-      setError(e.message || 'Lỗi không xác định');
-    }
-  }, [url, renderPage]);
-
-  // IntersectionObserver for lazy loading
-  useEffect(() => {
+    let cancelled = false;
     const container = containerRef.current;
-    if (!container || totalPages === 0) return;
+    container.innerHTML = '';
+    renderedRef.current.clear();
+    pdfDocRef.current = null;
+    setLoading(true);
+    setError(null);
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach(async (entry) => {
-          if (entry.isIntersecting) {
-            const pageNum = parseInt((entry.target as HTMLElement).dataset.page || '0');
-            if (pageNum > 0 && !renderedPages.current.has(pageNum)) {
-              await renderPage(pageNum);
-              const canvas = canvasMap.current.get(pageNum);
-              if (canvas) {
-                entry.target.replaceWith(canvas);
-                entry.target.remove();
-              }
-              observer.unobserve(entry.target);
+    async function load() {
+      try {
+        const response = await fetch(url);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+        const buf = await response.arrayBuffer();
+        const data = new Uint8Array(buf);
+        if (String.fromCharCode(...data.slice(0, 4)) !== '%PDF') {
+          throw new Error('File không phải PDF');
+        }
+
+        const pdf = await pdfjsLib.getDocument({ data }).promise;
+        if (cancelled) return;
+        pdfDocRef.current = pdf;
+
+        const containerWidth = container.clientWidth || 800;
+
+        // Pre-create all page slots
+        const slots: HTMLDivElement[] = [];
+        for (let i = 1; i <= pdf.numPages; i++) {
+          const slot = document.createElement('div');
+          slot.dataset.page = String(i);
+          slot.style.width = '100%';
+          // Estimate height based on first page ratio
+          if (i === 1) {
+            const firstPage = await pdf.getPage(1);
+            const vp = firstPage.getViewport({ scale: 1 });
+            const estHeight = (containerWidth / vp.width) * vp.height;
+            slot.style.minHeight = `${estHeight}px`;
+          } else {
+            slot.style.minHeight = '500px';
+          }
+          slot.style.background = '#f9fafb';
+          container.appendChild(slot);
+          slots.push(slot);
+        }
+
+        setLoading(false);
+
+        // Render pages visible in viewport
+        async function renderVisible() {
+          if (cancelled || !pdfDocRef.current) return;
+          const scrollEl = container.parentElement;
+          if (!scrollEl) return;
+
+          const viewTop = scrollEl.scrollTop;
+          const viewBottom = viewTop + scrollEl.clientHeight + 600;
+
+          for (let i = 0; i < slots.length; i++) {
+            const pageNum = i + 1;
+            if (renderedRef.current.has(pageNum)) continue;
+
+            const slot = slots[i];
+            if (!slot || !slot.parentNode) continue;
+
+            const slotTop = slot.offsetTop;
+            const slotBottom = slotTop + slot.offsetHeight;
+
+            if (slotTop < viewBottom && slotBottom > viewTop - 200) {
+              const page = await pdfDocRef.current.getPage(pageNum);
+              if (cancelled) return;
+
+              const viewport = page.getViewport({ scale: 1 });
+              const scale = (containerWidth - 16) / viewport.width;
+              const scaled = page.getViewport({ scale });
+
+              const canvas = document.createElement('canvas');
+              canvas.width = scaled.width;
+              canvas.height = scaled.height;
+              canvas.style.width = '100%';
+              canvas.style.height = 'auto';
+              canvas.style.display = 'block';
+
+              const ctx = canvas.getContext('2d')!;
+              await page.render({ canvasContext: ctx, viewport: scaled }).promise;
+
+              if (cancelled) return;
+              renderedRef.current.add(pageNum);
+              slot.replaceWith(canvas);
             }
           }
-        });
-      },
-      { root: container, rootMargin: '400px 0px' }
-    );
+        }
 
-    const placeholders = container.querySelectorAll<HTMLElement>('[data-page]');
-    placeholders.forEach((el) => observer.observe(el));
+        // Initial render
+        await renderVisible();
 
-    return () => observer.disconnect();
-  }, [totalPages, renderPage]);
+        // Listen to scroll on parent
+        const scrollEl = container.parentElement;
+        let ticking = false;
+        const onScroll = () => {
+          if (!ticking) {
+            ticking = true;
+            requestAnimationFrame(() => {
+              renderVisible();
+              ticking = false;
+            });
+          }
+        };
+        scrollEl?.addEventListener('scroll', onScroll, { passive: true });
 
-  useEffect(() => {
-    loadPdf();
-    return () => { pdfDocRef.current = null; };
-  }, [loadPdf]);
+        return () => {
+          scrollEl?.removeEventListener('scroll', onScroll);
+        };
+      } catch (e: any) {
+        if (!cancelled) {
+          console.error('PDF error:', e);
+          setLoading(false);
+          setError(e.message || 'Lỗi không xác định');
+        }
+      }
+    }
+
+    load();
+
+    return () => {
+      cancelled = true;
+      pdfDocRef.current = null;
+    };
+  }, [url]);
 
   if (!url) {
     return (
@@ -138,9 +163,6 @@ export function PdfViewer({ url, className = '' }: PdfViewerProps) {
           <p className="text-sm font-semibold text-gray-700 mb-1">Không thể hiển thị PDF</p>
           <p className="text-xs text-red-400 mb-4 break-all">{error}</p>
           <div className="flex gap-2 justify-center flex-wrap">
-            <button onClick={loadPdf} className="px-4 py-2 bg-blue-600 text-white text-sm font-bold rounded-xl">
-              Thử lại
-            </button>
             <a href={url} target="_blank" rel="noopener noreferrer"
               className="px-4 py-2 bg-gray-200 text-gray-700 text-sm font-bold rounded-xl">
               Mở tab mới
@@ -157,7 +179,7 @@ export function PdfViewer({ url, className = '' }: PdfViewerProps) {
 
   return (
     <div className={`${className} overflow-auto`}>
-      {totalPages === 0 && (
+      {loading && (
         <div className="flex items-center justify-center py-12">
           <div className="flex flex-col items-center gap-3">
             <div className="w-8 h-8 border-4 border-blue-500 border-t-transparent rounded-full animate-spin" />
