@@ -44,24 +44,57 @@ export function AddFlashcard({ onAdd, onAddBulk }: AddFlashcardProps) {
     setPronunciation('');
   };
 
+  const handleFileUpload = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    
+    const reader = new FileReader();
+    reader.onload = (event) => {
+      const text = event.target?.result as string;
+      if (text) setCsvText(text);
+    };
+    reader.onerror = () => {
+      toast.error('Failed to read file');
+    };
+    reader.readAsText(file);
+  };
+
   const handleSubmitBulk = (e: React.FormEvent) => {
     e.preventDefault();
     if (!csvText.trim()) return;
 
+    // Simple CSV parser that handles quotes properly
+    const parseCSVLine = (text: string) => {
+      const re_valid = /^\s*(?:'[^'\\]*(?:\\[\S\s][^'\\]*)*'|"[^"\\]*(?:\\[\S\s][^"\\]*)*"|[^,'"\s\\]*(?:\s+[^,'"\s\\]+)*)\s*(?:,\s*(?:'[^'\\]*(?:\\[\S\s][^'\\]*)*'|"[^"\\]*(?:\\[\S\s][^"\\]*)*"|[^,'"\s\\]*(?:\s+[^,'"\s\\]+)*)\s*)*$/;
+      const re_value = /(?!\s*$)\s*(?:'([^'\\]*(?:\\[\S\s][^'\\]*)*)'|"([^"\\]*(?:\\[\S\s][^"\\]*)*)"|([^,'"\s\\]*(?:\s+[^,'"\s\\]+)*))\s*(?:,|$)/g;
+      if (!re_valid.test(text)) return null;
+      const a: string[] = [];
+      text.replace(re_value, (_m0, m1, m2, m3) => {
+        if (m1 !== undefined) a.push(m1.replace(/\\'/g, "'"));
+        else if (m2 !== undefined) a.push(m2.replace(/\\"/g, '"'));
+        else if (m3 !== undefined) a.push(m3);
+        return '';
+      });
+      if (/,\s*$/.test(text)) a.push('');
+      return a;
+    };
+
     const lines = csvText.split('\n');
-    const parsedCards: Array<{ word: string; definition: string; example?: string; language: 'english' | 'japanese' }> = [];
+    const parsedCards: Array<{ word: string; definition: string; example?: string; exampleTranslation?: string; phonetic?: string; language: 'english' | 'japanese' }> = [];
 
     for (let i = 0; i < lines.length; i++) {
       const line = lines[i].trim();
       if (!line) continue;
 
-      const parts = line.split(',').map(s => s.trim());
+      const parts = parseCSVLine(line) || line.split(',').map(s => s.trim());
       
       if (parts.length >= 2) {
         parsedCards.push({
           word: sanitizeInput(parts[0]),
           definition: sanitizeInput(parts[1]),
           example: parts[2] ? sanitizeInput(parts[2]) : undefined,
+          exampleTranslation: parts[3] ? sanitizeInput(parts[3]) : undefined,
+          phonetic: parts[4] ? sanitizeInput(parts[4]) : undefined,
           language
         });
       } else {
@@ -248,17 +281,23 @@ export function AddFlashcard({ onAdd, onAddBulk }: AddFlashcardProps) {
       ) : (
         <form onSubmit={handleSubmitBulk} className="space-y-6 animate-in fade-in">
           <div className="space-y-2">
-            <label className="text-[9px] font-black text-text-muted uppercase tracking-[0.2em] ml-1">Paste CSV Data</label>
+            <label className="text-[9px] font-black text-text-muted uppercase tracking-[0.2em] ml-1">Upload CSV File</label>
             <p className="text-xs font-bold text-text-muted mb-2 px-1">
-              Format: <code>Word, Definition, Example (optional)</code>
-              <br/>One card per line.
+              Format: <code>Word, Definition, Example, Translation, Phonetic</code>
             </p>
+            <input 
+              type="file" 
+              accept=".csv"
+              onChange={handleFileUpload}
+              className="w-full bg-card-input-bg border-2 border-card-input-border rounded-2xl p-3 text-sm font-bold text-text-main file:mr-4 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-sm file:font-black file:uppercase file:tracking-wider file:bg-tint-blue file:text-blue hover:file:bg-blue hover:file:text-white transition-all cursor-pointer"
+            />
+            <div className="text-center text-[10px] font-black text-text-muted uppercase tracking-[0.2em] my-4 opacity-50">- OR PASTE DATA BELOW -</div>
             <textarea
               value={csvText}
               onChange={(e) => setCsvText(e.target.value)}
               rows={8}
               className="w-full bg-card-input-bg border-2 border-card-input-border rounded-2xl p-5 text-sm font-bold focus:border-blue focus:bg-bg-card transition-all outline-none resize-none text-text-main placeholder:text-text-muted leading-relaxed font-mono"
-              placeholder="Incentive, Sự khuyến khích, The bonus serves as an incentive.&#10;Delegate, Ủy thác, Managers must delegate tasks."
+              placeholder='Incentive, Sự khuyến khích, The bonus serves as an incentive., Tiền thưởng đóng vai trò khích lệ, /ɪnˈsɛntɪv/&#10;Delegate, Ủy thác, Managers must delegate tasks.'
             />
           </div>
 
