@@ -57,6 +57,9 @@ self.addEventListener('fetch', (event) => {
   // Skip non-same-origin requests that aren't GitHub
   if (!isSameOrigin) return;
 
+  // Never cache API proxy requests (PDF/audio streaming)
+  if (url.pathname.startsWith('/api/')) return;
+
   // Always fetch PDF files from network (don't serve cached HTML)
   if (url.pathname.endsWith('.pdf')) {
     event.respondWith(

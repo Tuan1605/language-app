@@ -18,6 +18,11 @@ export default defineConfig({
         maximumFileSizeToCacheInBytes: 5000000,
         runtimeCaching: [
           {
+            // Skip caching for API routes (proxy for PDF/audio)
+            urlPattern: /^https?:\/\/[^/]+\/api\//,
+            handler: 'NetworkOnly',
+          },
+          {
             // Cache flashcard images
             urlPattern: /\.(?:png|jpg|jpeg|webp|gif|svg)$/,
             handler: 'CacheFirst',
