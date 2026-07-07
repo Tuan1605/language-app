@@ -1,12 +1,11 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ArrowLeft, CheckCircle, XCircle, Clock, AlertTriangle, RotateCcw, ChevronUp, Download, Loader2 } from 'lucide-react';
+import { ArrowLeft, CheckCircle, XCircle, Clock, AlertTriangle, RotateCcw, ChevronUp } from 'lucide-react';
 import toast from 'react-hot-toast';
 import { TOEIC_2024_PDF_EXAMS } from '../data/toeic2024Pdf';
 import { assetUrl } from '../config/assets';
 import { db } from '../data/db';
 import { PdfViewer } from './PdfViewer';
-import { downloadFileFromUrl } from '../utils/download';
 
 type ExamMode = 'FULL' | 'PART_1' | 'PART_2' | 'PART_3' | 'PART_4' | 'PART_5' | 'PART_6' | 'PART_7';
 
@@ -47,7 +46,6 @@ export function PdfExamView({ examId }: { examId: string }) {
 
   const [activePdf, setActivePdf] = useState<'LC' | 'RC'>('LC');
   const [mode, setMode] = useState<ExamMode>('FULL');
-  const [isDownloading, setIsDownloading] = useState(false);
   const [answers, setAnswers] = useState<Record<string, number>>({});
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [score, setScore] = useState(0);
@@ -175,21 +173,6 @@ export function PdfExamView({ examId }: { examId: string }) {
   }
 
   const pdfSrc = activePdf === 'LC' ? assetUrl(exam.pdfUrl_LC || '') : assetUrl(exam.pdfUrl_RC || '');
-
-  const handleDownloadPdf = async () => {
-    if (!pdfSrc || isDownloading) return;
-    setIsDownloading(true);
-    const toastId = toast.loading('Đang tải PDF...');
-    try {
-      const filename = `${exam?.title.replace(/[^a-zA-Z0-9]/g, '_') || 'Exam'}_${activePdf}.pdf`;
-      await downloadFileFromUrl(pdfSrc, filename);
-      toast.success('Đã tải PDF thành công!', { id: toastId });
-    } catch (error) {
-      toast.error('Lỗi khi tải PDF', { id: toastId });
-    } finally {
-      setIsDownloading(false);
-    }
-  };
 
   const isPart2 = (qId: string) => {
     const qNum = parseInt(qId);
@@ -332,38 +315,28 @@ export function PdfExamView({ examId }: { examId: string }) {
       )}
 
       {/* Main Content */}
-      <div className="flex flex-row flex-1 overflow-hidden">
+      <div className="flex flex-col md:flex-row flex-1 overflow-hidden">
         {/* Left: PDF Viewer */}
-        <div className="flex w-[55%] md:w-[60%] h-full border-r border-gray-300 flex-col bg-gray-50 relative shadow-inner">
-          <div className="absolute top-2 left-1/2 -translate-x-1/2 flex items-center gap-2 z-10">
-            <div className="flex bg-white rounded-full shadow p-0.5">
-              <button
-                onClick={() => setActivePdf('LC')}
-                className={`px-3 py-0.5 rounded-full text-[10px] font-bold transition-colors ${activePdf === 'LC' ? 'bg-blue-600 text-white' : 'text-gray-500'}`}
-              >
-                LC
-              </button>
-              <button
-                onClick={() => setActivePdf('RC')}
-                className={`px-3 py-0.5 rounded-full text-[10px] font-bold transition-colors ${activePdf === 'RC' ? 'bg-blue-600 text-white' : 'text-gray-500'}`}
-              >
-                RC
-              </button>
-            </div>
+        <div className="flex w-full md:w-[60%] h-[50vh] md:h-full border-b md:border-b-0 md:border-r border-gray-300 flex-col bg-gray-50 relative shadow-inner">
+          <div className="absolute top-2 left-1/2 -translate-x-1/2 flex bg-white rounded-full shadow p-0.5 z-10">
             <button
-              onClick={handleDownloadPdf}
-              disabled={isDownloading}
-              className="flex items-center justify-center w-7 h-7 bg-white rounded-full shadow text-gray-500 hover:text-blue-600 disabled:opacity-50 transition-colors"
-              title="Tải PDF này"
+              onClick={() => setActivePdf('LC')}
+              className={`px-3 py-0.5 rounded-full text-[10px] font-bold transition-colors ${activePdf === 'LC' ? 'bg-blue-600 text-white' : 'text-gray-500'}`}
             >
-              {isDownloading ? <Loader2 className="w-3.5 h-3.5 animate-spin" /> : <Download className="w-3.5 h-3.5" />}
+              LC
+            </button>
+            <button
+              onClick={() => setActivePdf('RC')}
+              className={`px-3 py-0.5 rounded-full text-[10px] font-bold transition-colors ${activePdf === 'RC' ? 'bg-blue-600 text-white' : 'text-gray-500'}`}
+            >
+              RC
             </button>
           </div>
           <PdfViewer url={pdfSrc} className="w-full h-full pt-8" />
         </div>
 
         {/* Right: Audio + Answers */}
-        <div className="flex w-[45%] md:w-[40%] h-full bg-white flex-col overflow-hidden shadow-xl z-10">
+        <div className="flex w-full md:w-[40%] h-full bg-white flex-col overflow-hidden shadow-xl z-10">
           {currentAudioUrl && (
             <div className="p-3 border-b border-gray-200 bg-gray-50 shrink-0">
               <audio controls className="w-full" src={currentAudioUrl} />
