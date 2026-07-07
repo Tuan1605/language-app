@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState, useCallback } from 'react';
 import * as pdfjsLib from 'pdfjs-dist';
-import { Download, AlertCircle, ExternalLink } from 'lucide-react';
+import { Download, AlertCircle } from 'lucide-react';
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = '';
 
@@ -12,14 +12,46 @@ interface PdfViewerProps {
 export function PdfViewer({ url, className = '' }: PdfViewerProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [error, setError] = useState<string | null>(null);
-  const [loading, setLoading] = useState(true);
+  const [totalPages, setTotalPages] = useState(0);
+  const pdfDocRef = useRef<any>(null);
+  const renderedPages = useRef<Set<number>>(new Set());
+  const canvasMap = useRef<Map<number, HTMLCanvasElement>>(new Map());
 
-  const renderPdf = useCallback(async () => {
+  const renderPage = useCallback(async (pageNum: number) => {
+    if (!pdfDocRef.current || renderedPages.current.has(pageNum)) return;
+
+    const pdf = pdfDocRef.current;
+    const page = await pdf.getPage(pageNum);
+
+    const container = containerRef.current;
+    const containerWidth = container?.clientWidth || 800;
+    const viewport = page.getViewport({ scale: 1 });
+    const scale = (containerWidth - 16) / viewport.width;
+    const scaledViewport = page.getViewport({ scale });
+
+    const canvas = document.createElement('canvas');
+    canvas.width = scaledViewport.width;
+    canvas.height = scaledViewport.height;
+    canvas.style.width = '100%';
+    canvas.style.height = 'auto';
+    canvas.style.display = 'block';
+    canvas.style.marginBottom = '4px';
+
+    const ctx = canvas.getContext('2d')!;
+    await page.render({ canvasContext: ctx, viewport: scaledViewport }).promise;
+
+    renderedPages.current.add(pageNum);
+    canvasMap.current.set(pageNum, canvas);
+  }, []);
+
+  const loadPdf = useCallback(async () => {
     if (!url || !containerRef.current) return;
 
     try {
       setError(null);
-      setLoading(true);
+      setTotalPages(0);
+      renderedPages.current.clear();
+      canvasMap.current.clear();
       containerRef.current.innerHTML = '';
 
       const response = await fetch(url);
@@ -27,40 +59,68 @@ export function PdfViewer({ url, className = '' }: PdfViewerProps) {
 
       const buf = await response.arrayBuffer();
       const data = new Uint8Array(buf);
-
-      // Verify PDF magic bytes
       const magic = String.fromCharCode(...data.slice(0, 4));
       if (magic !== '%PDF') throw new Error('File không phải PDF hợp lệ');
 
       const pdf = await pdfjsLib.getDocument({ data }).promise;
+      pdfDocRef.current = pdf;
+      setTotalPages(pdf.numPages);
 
-      for (let i = 1; i <= pdf.numPages; i++) {
-        const page = await pdf.getPage(i);
-        const viewport = page.getViewport({ scale: 1.5 });
-
-        const canvas = document.createElement('canvas');
-        canvas.width = viewport.width;
-        canvas.height = viewport.height;
-        canvas.style.width = '100%';
-        canvas.style.height = 'auto';
-        canvas.style.display = 'block';
-
-        const ctx = canvas.getContext('2d')!;
-        await page.render({ canvasContext: ctx, viewport }).promise;
-        containerRef.current.appendChild(canvas);
+      // Lazy loading: render first 3 pages, rest on scroll
+      const pagesToInit = Math.min(3, pdf.numPages);
+      for (let i = 1; i <= pagesToInit; i++) {
+        await renderPage(i);
+        containerRef.current.appendChild(canvasMap.current.get(i)!);
       }
 
-      setLoading(false);
+      // Add placeholder divs for remaining pages
+      for (let i = pagesToInit + 1; i <= pdf.numPages; i++) {
+        const placeholder = document.createElement('div');
+        placeholder.dataset.page = String(i);
+        placeholder.style.minHeight = '600px';
+        containerRef.current.appendChild(placeholder);
+      }
     } catch (e: any) {
-      console.error('PDF render error:', e);
-      setLoading(false);
+      console.error('PDF error:', e);
       setError(e.message || 'Lỗi không xác định');
     }
-  }, [url]);
+  }, [url, renderPage]);
+
+  // IntersectionObserver for lazy loading
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container || totalPages === 0) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(async (entry) => {
+          if (entry.isIntersecting) {
+            const pageNum = parseInt((entry.target as HTMLElement).dataset.page || '0');
+            if (pageNum > 0 && !renderedPages.current.has(pageNum)) {
+              await renderPage(pageNum);
+              const canvas = canvasMap.current.get(pageNum);
+              if (canvas) {
+                entry.target.replaceWith(canvas);
+                entry.target.remove();
+              }
+              observer.unobserve(entry.target);
+            }
+          }
+        });
+      },
+      { root: container, rootMargin: '400px 0px' }
+    );
+
+    const placeholders = container.querySelectorAll<HTMLElement>('[data-page]');
+    placeholders.forEach((el) => observer.observe(el));
+
+    return () => observer.disconnect();
+  }, [totalPages, renderPage]);
 
   useEffect(() => {
-    renderPdf();
-  }, [renderPdf]);
+    loadPdf();
+    return () => { pdfDocRef.current = null; };
+  }, [loadPdf]);
 
   if (!url) {
     return (
@@ -78,16 +138,16 @@ export function PdfViewer({ url, className = '' }: PdfViewerProps) {
           <p className="text-sm font-semibold text-gray-700 mb-1">Không thể hiển thị PDF</p>
           <p className="text-xs text-red-400 mb-4 break-all">{error}</p>
           <div className="flex gap-2 justify-center flex-wrap">
-            <button onClick={renderPdf} className="px-4 py-2 bg-blue-600 text-white text-sm font-bold rounded-xl">
+            <button onClick={loadPdf} className="px-4 py-2 bg-blue-600 text-white text-sm font-bold rounded-xl">
               Thử lại
             </button>
             <a href={url} target="_blank" rel="noopener noreferrer"
-              className="inline-flex items-center gap-1 px-4 py-2 bg-gray-200 text-gray-700 text-sm font-bold rounded-xl">
-              <ExternalLink className="w-4 h-4" /> Mở tab mới
+              className="px-4 py-2 bg-gray-200 text-gray-700 text-sm font-bold rounded-xl">
+              Mở tab mới
             </a>
             <a href={url} download
-              className="inline-flex items-center gap-1 px-4 py-2 bg-gray-200 text-gray-700 text-sm font-bold rounded-xl">
-              <Download className="w-4 h-4" /> Tải về
+              className="px-4 py-2 bg-gray-200 text-gray-700 text-sm font-bold rounded-xl">
+              <Download className="w-4 h-4 inline mr-1" />Tải về
             </a>
           </div>
         </div>
@@ -97,7 +157,7 @@ export function PdfViewer({ url, className = '' }: PdfViewerProps) {
 
   return (
     <div className={`${className} overflow-auto`}>
-      {loading && (
+      {totalPages === 0 && (
         <div className="flex items-center justify-center py-12">
           <div className="flex flex-col items-center gap-3">
             <div className="w-8 h-8 border-4 border-blue-500 border-t-transparent rounded-full animate-spin" />
