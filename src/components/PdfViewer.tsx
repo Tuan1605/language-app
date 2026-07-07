@@ -4,11 +4,6 @@ import { Download, AlertCircle } from 'lucide-react';
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = '/pdf.worker.js';
 
-function isMobile(): boolean {
-  return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
-    || window.innerWidth < 768;
-}
-
 interface PdfViewerProps {
   url: string;
   className?: string;
@@ -18,10 +13,9 @@ export function PdfViewer({ url, className = '' }: PdfViewerProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
-  const [mobile] = useState(isMobile);
 
   useEffect(() => {
-    if (!url || !containerRef.current || mobile) return;
+    if (!url || !containerRef.current) return;
 
     let cancelled = false;
     const container = containerRef.current;
@@ -79,7 +73,7 @@ export function PdfViewer({ url, className = '' }: PdfViewerProps) {
 
     load();
     return () => { cancelled = true; };
-  }, [url, mobile]);
+  }, [url]);
 
   if (!url) {
     return (
@@ -89,32 +83,6 @@ export function PdfViewer({ url, className = '' }: PdfViewerProps) {
     );
   }
 
-  // Mobile: show download/open buttons (phone PDF viewers work better)
-  if (mobile) {
-    return (
-      <div className={`flex items-center justify-center bg-gray-50 ${className}`}>
-        <div className="text-center p-6 max-w-sm">
-          <div className="w-16 h-16 mx-auto mb-4 bg-blue-100 rounded-2xl flex items-center justify-center">
-            <Download className="w-8 h-8 text-blue-500" />
-          </div>
-          <p className="text-sm font-semibold text-gray-700 mb-1">PDF Exam</p>
-          <p className="text-xs text-gray-400 mb-4">Mở trong ứng dụng PDF để xem tốt nhất</p>
-          <div className="flex gap-2 justify-center">
-            <a href={url} target="_blank" rel="noopener noreferrer"
-              className="px-5 py-2.5 bg-blue-600 text-white text-sm font-bold rounded-xl">
-              Mở PDF
-            </a>
-            <a href={url} download
-              className="px-5 py-2.5 bg-gray-200 text-gray-700 text-sm font-bold rounded-xl">
-              <Download className="w-4 h-4 inline mr-1" />Tải về
-            </a>
-          </div>
-        </div>
-      </div>
-    );
-  }
-
-  // Desktop: render PDF inline with pdf.js
   if (error) {
     return (
       <div className={`flex items-center justify-center bg-gray-50 ${className}`}>
