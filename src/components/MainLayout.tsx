@@ -1,5 +1,5 @@
 import { NavLink, Outlet, useLocation } from 'react-router-dom';
-import { Moon, Sun, BookOpen, Dumbbell, NotebookPen, RotateCcw, Library, Download, Upload, Settings, Layers } from 'lucide-react';
+import { Moon, Sun, BookOpen, Dumbbell, NotebookPen, RotateCcw, Library, Download, Upload, Settings, Layers, Gamepad2 } from 'lucide-react';
 import { useUserStore } from '../stores/useUserStore';
 import { useLiveQuery } from 'dexie-react-hooks';
 import { db } from '../data/db';
@@ -13,6 +13,7 @@ const NAV_ITEMS = [
   { to: '/practice', label: 'PRACTICE', icon: <Dumbbell className="w-5 h-5" /> },
   { to: '/notebook', label: 'NOTEBOOK', icon: <NotebookPen className="w-5 h-5" /> },
   { to: '/review', label: 'REVIEW', showDueCount: true, icon: <RotateCcw className="w-5 h-5" /> },
+  { to: '/games', label: 'GAMES', icon: <Gamepad2 className="w-5 h-5" /> },
   { to: '/collection', label: 'LIBRARY', icon: <Library className="w-5 h-5" /> },
 ];
 
@@ -86,7 +87,9 @@ export function MainLayout() {
                  🇯🇵 JP
                </button>
             </div>
-            <div className="flex items-center gap-4 font-black">
+            
+            <div className="flex items-center gap-6">
+               <div className="flex items-center gap-4 font-black">
 
                {/* Backup Buttons */}
                <button
@@ -128,6 +131,7 @@ export function MainLayout() {
                  <Settings className="w-5 h-5" />
                </button>
             </div>
+            </div>
           </header>
         )}
 
@@ -140,7 +144,7 @@ export function MainLayout() {
       {!(location.pathname === '/session' || location.pathname === '/real-exam') && (
         <nav className="flex lg:hidden fixed bottom-0 left-0 right-0 h-16 bg-bg-main/95 backdrop-blur-md border-t-2 border-gray-path z-50 px-2 pb-[env(safe-area-inset-bottom)]">
           <div className="flex items-center justify-around w-full h-full">
-            {NAV_ITEMS.filter(item => ['/', '/flashcard', '/practice', '/notebook', '/review', '/collection'].includes(item.to)).map((item) => (
+            {NAV_ITEMS.filter(item => ['/', '/flashcard', '/practice', '/games', '/review'].includes(item.to)).map((item) => (
               <NavLink 
                 key={item.to} 
                 to={item.to} 

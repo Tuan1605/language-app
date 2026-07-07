@@ -27,6 +27,7 @@ const PdfExamPage = lazy(() => import('./pages/PdfExamPage').then(m => ({ defaul
 const FlashcardPage = lazy(() => import('./pages/FlashcardPage').then(m => ({ default: m.FlashcardPage })));
 const CramModePage = lazy(() => import('./pages/CramModePage').then(m => ({ default: m.CramModePage })));
 const QuickReviewPage = lazy(() => import('./pages/QuickReviewPage').then(m => ({ default: m.QuickReviewPage })));
+const GamesPage = lazy(() => import('./pages/GamesPage').then(m => ({ default: m.GamesPage })));
 
 // Preload common pages when browser is idle (not blocking main thread)
 const preloadPages = () => {
@@ -110,6 +111,7 @@ function App() {
             <Route path="/review-dashboard" element={<Suspense fallback={<PageLoader />}><ReviewDashboardPage /></Suspense>} />
             <Route path="/cram" element={<Suspense fallback={<PageLoader />}><CramModePage /></Suspense>} />
             <Route path="/quick-review" element={<Suspense fallback={<PageLoader />}><QuickReviewPage /></Suspense>} />
+            <Route path="/games" element={<Suspense fallback={<PageLoader />}><GamesPage /></Suspense>} />
           </Route>
         </Routes>
       </AnimatePresence>

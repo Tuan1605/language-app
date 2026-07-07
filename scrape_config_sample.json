@@ -1,0 +1,14 @@
+{
+  "url": "https://example.com/toeic/part5",
+  "mode": "listening",
+  "part": 5,
+  "subCategory": "Part 5 - Incomplete Sentences",
+  "selectors": {
+    "container": "div.question-item",
+    "text": "p.stem",
+    "options": "li.option",
+    "correct": "span.correct-answer",
+    "audio": "audio source",
+    "passage": ""
+  }
+}
