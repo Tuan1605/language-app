@@ -10,6 +10,7 @@ import { GameHUD } from './GameHUD';
 import { GameOverScreen } from './GameOverScreen';
 import { GameLoading } from './GameLoading';
 import { LevelCompleteScreen } from './LevelCompleteScreen';
+import { LevelSelector } from './LevelSelector';
 
 const WORDS_PER_LEVEL = 5;
 const HANGMAN_PARTS = 6;
@@ -36,7 +37,7 @@ function HangmanFigure({ wrongCount }: { wrongCount: number }) {
   );
 }
 
-export function HangmanScramble({ onComplete, difficulty = 'medium' }: { onComplete: () => void; difficulty?: 'easy' | 'medium' | 'hard' }) {
+export function HangmanScramble({ onComplete }: { onComplete: () => void; }) {
   const [deck, setDeck] = useState<Flashcard[]>([]);
   const [currentLevel, setCurrentLevel] = useState(1);
   const [levelCards, setLevelCards] = useState<Flashcard[]>([]);
@@ -46,23 +47,38 @@ export function HangmanScramble({ onComplete, difficulty = 'medium' }: { onCompl
   const [lives, setLives] = useState(HANGMAN_PARTS);
   const [score, setScore] = useState(0);
   const [levelCorrect, setLevelCorrect] = useState(0);
-  const [gameState, setGameState] = useState<'loading' | 'playing' | 'won_round' | 'gameover' | 'level_complete'>('loading');
+  const [gameState, setGameState] = useState<'loading' | 'ready' | 'playing' | 'won_round' | 'gameover' | 'level_complete'>('loading');
 
-  const { loadCards, finishGame } = useGameBase({ gameId: 'hangman', difficulty, onComplete });
-  const gameHighScores = useUserStore(s => s.gameHighScores);
+  const { loadCards } = useGameBase({ onComplete });
+  const updateGameProgress = useUserStore(s => s.updateGameProgress);
+  const addExp = useUserStore(s => s.addExp);
+  const gameProgress = useUserStore(s => s.gameProgress);
+  const currentProgress = gameProgress['hangman'] || { highScore: 0, maxLevel: 1 };
 
   const totalLevels = Math.ceil(deck.length / WORDS_PER_LEVEL);
 
   useEffect(() => { loadGame(); }, []);
+
+  const finishGame = (finalScore: number) => {
+    setGameState('gameover');
+    if (finalScore > 0) {
+      addExp(finalScore);
+      updateGameProgress('hangman', finalScore, currentLevel);
+    }
+  };
 
   const loadGame = async () => {
     const validCards = await loadCards(c => /^[a-zA-Z\s]+$/.test(c.word));
     if (validCards.length < 3) return;
     const shuffled = validCards.sort(() => 0.5 - Math.random());
     setDeck(shuffled);
-    setCurrentLevel(1);
+    setGameState('ready');
+  };
+
+  const startGame = (level: number = 1) => {
+    setCurrentLevel(level);
     setScore(0);
-    startLevel(shuffled, 1);
+    startLevel(deck, level);
   };
 
   const startLevel = (all: Flashcard[], level: number) => {
@@ -113,24 +129,39 @@ export function HangmanScramble({ onComplete, difficulty = 'medium' }: { onCompl
       setCardIndex(i => i + 1);
       startRound(levelCards[cardIndex + 1]);
     } else {
-      if (currentLevel < totalLevels) setGameState('level_complete');
+      if (currentLevel < totalLevels) {
+        updateGameProgress('hangman', score, currentLevel + 1);
+        setGameState('level_complete');
+      }
       else finishGame(score);
     }
   };
 
-  const nextLevel = () => { const next = currentLevel + 1; setCurrentLevel(next); startLevel(deck, next); setGameState('playing'); };
+  const nextLevel = () => { const next = currentLevel + 1; setCurrentLevel(next); startLevel(deck, next); };
 
   if (gameState === 'loading') return <GameLoading text="Loading words..." />;
 
-  if (gameState === 'gameover') return (<GameShell title="Hangman" icon={<HelpCircle className="w-5 h-5" />} onBack={onComplete} difficulty={difficulty}><GameOverScreen score={score} expEarned={score} highScore={gameHighScores.hangman[difficulty]} isWin={false} onRestart={loadGame} onMenu={onComplete} /></GameShell>);
-  if (gameState === 'level_complete') return (<GameShell title="Hangman" icon={<HelpCircle className="w-5 h-5" />} onBack={onComplete} difficulty={difficulty}><LevelCompleteScreen currentLevel={currentLevel} totalLevels={totalLevels} correct={levelCorrect} total={levelCards.length} score={score} onNextLevel={nextLevel} /></GameShell>);
+  if (gameState === 'ready') return (
+    <GameShell title="Hangman" icon={<HelpCircle className="w-5 h-5" />} onBack={onComplete}>
+      <div className="flex-1 flex flex-col items-center justify-center p-4">
+        <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} className="text-center w-full">
+          <h2 className="text-2xl font-black text-text-main mb-2">Hangman</h2>
+          <p className="text-sm font-bold text-text-muted mb-6">Đoán từ trước khi hình nộm bị treo cổ!</p>
+          <LevelSelector maxLevel={currentProgress.maxLevel} highScore={currentProgress.highScore} onSelect={startGame} />
+        </motion.div>
+      </div>
+    </GameShell>
+  );
+
+  if (gameState === 'gameover') return (<GameShell title="Hangman" icon={<HelpCircle className="w-5 h-5" />} onBack={onComplete}><GameOverScreen score={score} expEarned={score} highScore={currentProgress.highScore} isWin={false} onRestart={() => startGame(currentLevel)} onMenu={onComplete} /></GameShell>);
+  if (gameState === 'level_complete') return (<GameShell title="Hangman" icon={<HelpCircle className="w-5 h-5" />} onBack={onComplete}><LevelCompleteScreen currentLevel={currentLevel} totalLevels={totalLevels} correct={levelCorrect} total={levelCards.length} score={score} onNextLevel={nextLevel} /></GameShell>);
 
   const currentCard = levelCards[cardIndex];
   const keyboardRows = [['q','w','e','r','t','y','u','i','o','p'],['a','s','d','f','g','h','j','k','l'],['z','x','c','v','b','n','m']];
 
   return (
-    <GameShell title="Hangman" icon={<HelpCircle className="w-5 h-5" />} onBack={onComplete} difficulty={difficulty}>
-      <GameHUD score={score} lives={lives} maxLives={HANGMAN_PARTS} highScore={gameHighScores.hangman[difficulty]} progress={(cardIndex + 1) / levelCards.length} progressLabel={`Màn ${currentLevel} - ${cardIndex + 1}/${levelCards.length}`} />
+    <GameShell title="Hangman" icon={<HelpCircle className="w-5 h-5" />} onBack={onComplete}>
+      <GameHUD score={score} lives={lives} maxLives={HANGMAN_PARTS} highScore={currentProgress.highScore} progress={(cardIndex + 1) / levelCards.length} progressLabel={`Màn ${currentLevel} - ${cardIndex + 1}/${levelCards.length}`} />
       <div className="text-center mb-2 md:mb-3">
         <div className="inline-block bg-bg-card border-2 border-gray-path/60 rounded-xl md:rounded-2xl px-4 py-3 md:px-6 md:py-4">
           <p className="text-[10px] md:text-xs font-bold text-text-muted uppercase tracking-wider mb-0.5 md:mb-1">Definition</p>

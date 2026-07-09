@@ -5,11 +5,10 @@ interface GameShellProps {
   title: string;
   icon?: ReactNode;
   onBack: () => void;
-  difficulty?: string;
   children: ReactNode;
 }
 
-export function GameShell({ title, icon, onBack, difficulty, children }: GameShellProps) {
+export function GameShell({ title, icon, onBack, children }: GameShellProps) {
   return (
     <div className="flex-1 flex flex-col w-full h-full">
       {/* Game Header */}
@@ -26,11 +25,7 @@ export function GameShell({ title, icon, onBack, difficulty, children }: GameShe
             <h2 className="text-lg font-black text-text-main">{title}</h2>
           </div>
         </div>
-        {difficulty && (
-          <span className="px-3 py-1 bg-gray-bg border-2 border-gray-path rounded-full text-xs font-black uppercase tracking-wider text-text-muted">
-            {difficulty}
-          </span>
-        )}
+
       </div>
 
       {/* Game Content */}

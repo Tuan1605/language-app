@@ -5,11 +5,13 @@ import type { Flashcard } from '../../types';
 import { useUserStore } from '../../stores/useUserStore';
 import toast from 'react-hot-toast';
 import { Type, Heart, Pause, Play } from 'lucide-react';
-import { playCorrect, playWrong, playGameOver, playCombo, playLevelComplete } from '../../utils/sound';
+import { playCorrect, playWrong, playGameOver, playLevelComplete } from '../../utils/sound';
 import { GameShell } from './GameShell';
 import { GameOverScreen } from './GameOverScreen';
 import { GameLoading } from './GameLoading';
 import { LevelCompleteScreen } from './LevelCompleteScreen';
+import { LevelSelector } from './LevelSelector';
+import { COMMON_LIVES } from './gameBalancing';
 
 const WORDS_PER_LEVEL = 8;
 
@@ -20,25 +22,23 @@ interface FallingWord {
   xPos: number;
 }
 
-export function WordFalling({ onComplete, difficulty = 'medium' }: { onComplete: () => void; difficulty?: 'easy' | 'medium' | 'hard' }) {
+export function WordFalling({ onComplete }: { onComplete: () => void; }) {
   const [deck, setDeck] = useState<Flashcard[]>([]);
   const [currentLevel, setCurrentLevel] = useState(1);
   const [wordsTyped, setWordsTyped] = useState(0);
   const [activeWords, setActiveWords] = useState<FallingWord[]>([]);
   const [inputValue, setInputValue] = useState('');
   const [score, setScore] = useState(0);
-  const [lives, setLives] = useState(3);
-  const [gameState, setGameState] = useState<'loading' | 'playing' | 'paused' | 'gameover' | 'level_complete'>('loading');
+  const [lives, setLives] = useState(COMMON_LIVES);
+  const [gameState, setGameState] = useState<'loading' | 'ready' | 'playing' | 'paused' | 'gameover' | 'level_complete'>('loading');
   const [speed, setSpeed] = useState(10);
+  const [spawnInterval, setSpawnInterval] = useState(3000);
 
   const activeTrack = useUserStore(s => s.activeTrack);
   const addExp = useUserStore(s => s.addExp);
-  const setGameHighScore = useUserStore(s => s.setGameHighScore);
-  const gameHighScores = useUserStore(s => s.gameHighScores);
-
-  const LIVES_BY_DIFFICULTY = { easy: 5, medium: 3, hard: 2 };
-  const SPEED_BY_DIFFICULTY = { easy: 12, medium: 10, hard: 7 };
-  const SPAWN_BY_DIFFICULTY = { easy: 4000, medium: 3000, hard: 2000 };
+  const updateGameProgress = useUserStore(s => s.updateGameProgress);
+  const gameProgress = useUserStore(s => s.gameProgress);
+  const currentProgress = gameProgress['falling'] || { highScore: 0, maxLevel: 1 };
   const totalLevels = Math.ceil(deck.length / WORDS_PER_LEVEL);
 
   const containerRef = useRef<HTMLDivElement>(null);
@@ -74,9 +74,9 @@ export function WordFalling({ onComplete, difficulty = 'medium' }: { onComplete:
         }
         return prev;
       });
-    }, SPAWN_BY_DIFFICULTY[difficulty]);
+    }, spawnInterval);
     return () => clearInterval(interval);
-  }, [gameState, deck, difficulty]);
+  }, [gameState, deck, spawnInterval]);
 
   const loadGame = async () => {
     try {
@@ -84,30 +84,27 @@ export function WordFalling({ onComplete, difficulty = 'medium' }: { onComplete:
       if (allCards.length < 10) { toast.error('Need at least 10 flashcards.'); onComplete(); return; }
       const shuffled = allCards.sort(() => 0.5 - Math.random());
       setDeck(shuffled);
-      setCurrentLevel(1);
-      setScore(0);
-      setWordsTyped(0);
-      setLives(LIVES_BY_DIFFICULTY[difficulty]);
-      setActiveWords([]);
-      setSpeed(SPEED_BY_DIFFICULTY[difficulty]);
-      setInputValue('');
-      setGameState('playing');
+      setGameState('ready');
     } catch (e) { console.error(e); toast.error('Failed to load'); }
   };
 
-  const spawnWord = () => {
-    setDeck(prevDeck => {
-      const randomCard = prevDeck[Math.floor(Math.random() * prevDeck.length)];
-      const newWord: FallingWord = {
-        id: Math.random().toString(36).substr(2, 9),
-        word: randomCard.word.toLowerCase(),
-        definition: randomCard.definition,
-        xPos: Math.floor(Math.random() * 60) + 20, // 20% to 80% for better spacing
-      };
-      setActiveWords(prev => [...prev, newWord]);
-      return prevDeck;
-    });
+  const startGame = (level: number = 1) => {
+    setCurrentLevel(level);
+    setScore(0);
+    setWordsTyped(0);
+    setLives(COMMON_LIVES);
+    setActiveWords([]);
+    
+    // speed decreases (falls faster), min 4s
+    setSpeed(Math.max(4, 12 - (level - 1) * 1.5));
+    // spawn interval decreases, min 1500ms
+    setSpawnInterval(Math.max(1500, 3500 - (level - 1) * 300));
+    
+    setInputValue('');
+    setGameState('playing');
   };
+
+
 
   const togglePause = () => {
     setGameState(prev => prev === 'playing' ? 'paused' : 'playing');
@@ -133,6 +130,7 @@ export function WordFalling({ onComplete, difficulty = 'medium' }: { onComplete:
       setWordsTyped(prev => {
         const next = prev + 1;
         if (next >= WORDS_PER_LEVEL) {
+          updateGameProgress('falling', score + 10, currentLevel + 1); // Unlock next level
           if (currentLevel < totalLevels) {
             playLevelComplete();
             setActiveWords([]);
@@ -171,35 +169,49 @@ export function WordFalling({ onComplete, difficulty = 'medium' }: { onComplete:
       if (s > 0) {
         const expEarned = Math.floor(s / 2);
         addExp(expEarned);
-        setGameHighScore('falling', difficulty, s);
+        updateGameProgress('falling', s, currentLevel);
       }
       return s;
     });
   };
 
   const nextLevel = () => {
-    setCurrentLevel(l => l + 1);
+    const nextLvl = currentLevel + 1;
+    setCurrentLevel(nextLvl);
     setWordsTyped(0);
-    setLives(LIVES_BY_DIFFICULTY[difficulty]);
+    setLives(COMMON_LIVES);
     setActiveWords([]);
-    setSpeed(SPEED_BY_DIFFICULTY[difficulty]);
+    setSpeed(Math.max(4, 12 - (nextLvl - 1) * 1.5));
+    setSpawnInterval(Math.max(1500, 3500 - (nextLvl - 1) * 300));
     setInputValue('');
     setGameState('playing');
   };
 
   if (gameState === 'loading') return <GameLoading text="Loading cards..." />;
 
+  if (gameState === 'ready') return (
+    <GameShell title="Speed Typing" icon={<Type className="w-5 h-5" />} onBack={onComplete}>
+      <div className="flex-1 flex flex-col items-center justify-center p-4">
+        <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} className="text-center w-full">
+          <h2 className="text-2xl font-black text-text-main mb-2">Speed Typing</h2>
+          <p className="text-sm font-bold text-text-muted mb-6">Gõ nhanh từ tiếng Anh trước khi chạm đáy!</p>
+          <LevelSelector maxLevel={currentProgress.maxLevel} highScore={currentProgress.highScore} onSelect={startGame} />
+        </motion.div>
+      </div>
+    </GameShell>
+  );
+
   if (gameState === 'gameover') {
     const expEarned = Math.floor(score / 2);
-    return (<GameShell title="Speed Typing" icon={<Type className="w-5 h-5" />} onBack={onComplete} difficulty={difficulty}><GameOverScreen score={score} expEarned={expEarned} highScore={gameHighScores.falling[difficulty]} isWin={false} onRestart={loadGame} onMenu={onComplete} /></GameShell>);
+    return (<GameShell title="Speed Typing" icon={<Type className="w-5 h-5" />} onBack={onComplete}><GameOverScreen score={score} expEarned={expEarned} highScore={currentProgress.highScore} isWin={false} onRestart={() => startGame(currentLevel)} onMenu={onComplete} /></GameShell>);
   }
 
   if (gameState === 'level_complete') {
-    return (<GameShell title="Speed Typing" icon={<Type className="w-5 h-5" />} onBack={onComplete} difficulty={difficulty}><LevelCompleteScreen currentLevel={currentLevel} totalLevels={totalLevels} correct={wordsTyped} total={WORDS_PER_LEVEL} score={score} onNextLevel={nextLevel} /></GameShell>);
+    return (<GameShell title="Speed Typing" icon={<Type className="w-5 h-5" />} onBack={onComplete}><LevelCompleteScreen currentLevel={currentLevel} totalLevels={totalLevels} correct={wordsTyped} total={WORDS_PER_LEVEL} score={score} onNextLevel={nextLevel} /></GameShell>);
   }
 
   return (
-    <GameShell title="Speed Typing" icon={<Type className="w-5 h-5" />} onBack={onComplete} difficulty={difficulty}>
+    <GameShell title="Speed Typing" icon={<Type className="w-5 h-5" />} onBack={onComplete}>
       <div className="flex-1 flex flex-col w-full relative -mx-4 md:-mx-6 -mb-4 md:-mb-6" ref={containerRef}>
         {/* HUD */}
         <div className="absolute top-0 left-0 right-0 p-3 md:p-4 flex justify-between items-center z-10 pointer-events-none">
@@ -210,7 +222,7 @@ export function WordFalling({ onComplete, difficulty = 'medium' }: { onComplete:
           </div>
           <div className="flex items-center gap-2 md:gap-3">
             <div className="flex gap-0.5 md:gap-1">
-              {[...Array(LIVES_BY_DIFFICULTY[difficulty])].map((_, i) => (
+              {[...Array(COMMON_LIVES)].map((_, i) => (
                 <Heart key={i} className={`w-5 h-5 md:w-6 md:h-6 transition-all ${i < lives ? 'fill-red text-red scale-100' : 'text-gray-path-dark scale-90'}`} />
               ))}
             </div>

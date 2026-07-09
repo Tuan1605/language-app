@@ -97,7 +97,7 @@ function drawHpBar(container: PIXI.Container, x: number, y: number, w: number, h
   return bar;
 }
 
-function createParticle(container: PIXI.Container, x: number, y: number, type: string, time: number) {
+function createParticle(container: PIXI.Container, x: number, y: number, type: string) {
   const g = new PIXI.Graphics();
   const count = type === "thunder" ? 12 : type === "fire" ? 10 : 8;
   for (let i = 0; i < count; i++) {
@@ -147,14 +147,14 @@ export function PixiBattle({ width, height, player, enemy, effects, damagePopups
   const appRef = useRef<PIXI.Application | null>(null);
   const destroyedRef = useRef(false);
   
-  const spritesRef = useRef<any>({});
+  const spritesRef = useRef<{ playerSprite?: PIXI.Sprite, enemySprite?: PIXI.Sprite }>({});
   const effectsContainerRef = useRef<PIXI.Container | null>(null);
   const uiContainerRef = useRef<PIXI.Container | null>(null);
   const frameRef = useRef(0);
 
   const safeRemoveChildren = useCallback((container: PIXI.Container | null) => {
     if (!container || destroyedRef.current) return;
-    try { container.removeChildren(); } catch {}
+    try { container.removeChildren(); } catch (e) { void e; }
   }, []);
 
   useEffect(() => {
@@ -216,11 +216,11 @@ export function PixiBattle({ width, height, player, enemy, effects, damagePopups
 
     return () => {
       destroyedRef.current = true;
-      try { app.ticker.stop(); } catch {}
+      try { app.ticker.stop(); } catch (e) { void e; }
       effectsContainerRef.current = null;
       uiContainerRef.current = null;
       spritesRef.current = {};
-      try { app.destroy(true, { children: true, texture: true, baseTexture: true }); } catch {}
+      try { app.destroy(true, { children: true, texture: true, baseTexture: true }); } catch (e) { void e; }
       appRef.current = null;
     };
   }, [width, height]);
@@ -297,7 +297,7 @@ export function PixiBattle({ width, height, player, enemy, effects, damagePopups
     };
 
     app.ticker.add(ticker);
-    return () => { try { app.ticker.remove(ticker); } catch {} };
+    return () => { try { app.ticker.remove(ticker); } catch (e) { void e; } };
   }, [width, height, player, enemy, combo, safeRemoveChildren]);
 
   // Effects & Popups
@@ -305,7 +305,7 @@ export function PixiBattle({ width, height, player, enemy, effects, damagePopups
     const ec = effectsContainerRef.current;
     if (!ec || destroyedRef.current) return;
     safeRemoveChildren(ec);
-    effects.forEach(e => createParticle(ec, (e.x / 100) * width, (e.y / 100) * height, e.type, e.timestamp));
+    effects.forEach(e => createParticle(ec, (e.x / 100) * width, (e.y / 100) * height, e.type));
     const timeout = setTimeout(() => safeRemoveChildren(ec), 800);
     return () => clearTimeout(timeout);
   }, [effects, width, height, safeRemoveChildren]);
@@ -324,10 +324,10 @@ export function PixiBattle({ width, height, player, enemy, effects, damagePopups
         text.y -= 1.5;
         text.alpha = 1 - frame / 40;
         if (frame < 40) requestAnimationFrame(animate);
-        else try { uc.removeChild(text); } catch {}
+        else try { uc.removeChild(text); } catch (e) { void e; }
       };
       requestAnimationFrame(animate);
-      cleanup.push(() => { cancelled = true; try { uc.removeChild(text); } catch {} });
+      cleanup.push(() => { cancelled = true; try { uc.removeChild(text); } catch (e) { void e; } });
     });
     return () => cleanup.forEach(fn => fn());
   }, [damagePopups, width, height]);

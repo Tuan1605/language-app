@@ -15,6 +15,7 @@ interface UserState {
   streakDays: number;
   lastStudyDate: string | null;
   grammarMastery: Record<string, number>;
+  gameProgress: Record<string, { highScore: number; maxLevel: number }>;
   gameHighScores: Record<string, Record<string, number>>;
   
   toggleTheme: () => void;
@@ -29,7 +30,8 @@ interface UserState {
   addExp: (amount: number) => void;
   updateStreak: () => void;
   addGrammarMastery: (pointId: string, amount: number) => void;
-  setGameHighScore: (gameId: string, difficulty: string, score: number) => void;
+  updateGameProgress: (gameId: string, score: number, level: number) => void;
+  setGameHighScore: (gameId: string, diff: string, score: number) => void;
 }
 
 export const useUserStore = create<UserState>()(
@@ -45,19 +47,10 @@ export const useUserStore = create<UserState>()(
       streakDays: 0,
       lastStudyDate: null,
       grammarMastery: {},
+      gameProgress: {},
       gameHighScores: {
         memory: { easy: 0, medium: 0, hard: 0 },
-        falling: { easy: 0, medium: 0, hard: 0 },
-        hangman: { easy: 0, medium: 0, hard: 0 },
-        context: { easy: 0, medium: 0, hard: 0 },
-        scramble: { easy: 0, medium: 0, hard: 0 },
-        'grammar-gap': { easy: 0, medium: 0, hard: 0 },
-        'grammar-match': { easy: 0, medium: 0, hard: 0 },
-        'grammar-typing': { easy: 0, medium: 0, hard: 0 },
-        'grammar-detective': { easy: 0, medium: 0, hard: 0 },
-        'grammar-builder': { easy: 0, medium: 0, hard: 0 },
-        'vocab-rpg': { easy: 0, medium: 0, hard: 0 },
-        'escape': { easy: 0, medium: 0, hard: 0 },
+        'vocab-rpg': { easy: 0, medium: 0, hard: 0 }
       },
 
       toggleTheme: () => set((state) => {
@@ -138,25 +131,46 @@ export const useUserStore = create<UserState>()(
         };
       }),
 
-      setGameHighScore: (gameId, difficulty, score) => set((state) => {
-        const gameScores = state.gameHighScores[gameId] || { easy: 0, medium: 0, hard: 0 };
-        const currentScore = gameScores[difficulty] || 0;
-        if (score > currentScore) {
+      updateGameProgress: (gameId, score, level) => set((state) => {
+        const current = state.gameProgress[gameId] || { highScore: 0, maxLevel: 1 };
+        // Merge state from old gameHighScores if it exists and hasn't been migrated
+        let legacyScore = 0;
+        if (state.gameHighScores && state.gameHighScores[gameId]) {
+          legacyScore = Math.max(state.gameHighScores[gameId].medium || 0, state.gameHighScores[gameId].hard || 0);
+        }
+
+        const newHighScore = Math.max(score, current.highScore, legacyScore);
+        const newMaxLevel = Math.max(level, current.maxLevel);
+
+        if (newHighScore > current.highScore || newMaxLevel > current.maxLevel || current.maxLevel === 1) {
+          return {
+            gameProgress: {
+              ...state.gameProgress,
+              [gameId]: { highScore: newHighScore, maxLevel: newMaxLevel }
+            }
+          };
+        }
+        return {};
+      }),
+
+      setGameHighScore: (gameId, diff, score) => set((state) => {
+        const currentScores = state.gameHighScores[gameId] || { easy: 0, medium: 0, hard: 0 };
+        if (score > (currentScores[diff] || 0)) {
           return {
             gameHighScores: {
               ...state.gameHighScores,
               [gameId]: {
-                ...gameScores,
-                [difficulty]: score
+                ...currentScores,
+                [diff]: score
               }
             }
           };
         }
-        return state;
+        return {};
       }),
     }),
     {
-      name: 'lingo-user-prefs',
+      name: 'lingomaster-user-storage',
       // Migrate old format to new format
       merge: (persistedState, currentState) => {
         const state = { ...currentState, ...(persistedState as Partial<UserState>) };

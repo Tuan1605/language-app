@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Brain, Type, HelpCircle, FileText, Shuffle, BookOpen, Puzzle, Blocks, Search, PenTool, Trophy, Flame, Swords, Lock } from 'lucide-react';
+import { Brain, Type, HelpCircle, FileText, Shuffle, BookOpen, Puzzle, Blocks, Search, PenTool, Trophy, Flame, Swords, Lock, Target } from 'lucide-react';
 import { useUserStore } from '../stores/useUserStore';
 import { MemoryMatch } from '../components/games/MemoryMatch';
 import { WordFalling } from '../components/games/WordFalling';
@@ -14,21 +14,16 @@ import { PatternDetective } from '../components/games/PatternDetective';
 import { GrammarTyping } from '../components/games/GrammarTyping';
 import { VocabRPG } from '../components/games/VocabRPG';
 import { LanguageEscape } from '../components/games/LanguageEscape';
-import { GameLeaderboard } from '../components/games/GameLeaderboard';
-import { GrammarMasteryPanel } from '../components/games/GrammarMasteryPanel';
+import { WordBlitz } from '../components/games/WordDungeonCrawl';
 
-type Difficulty = 'easy' | 'medium' | 'hard';
-type GameTab = 'vocab' | 'grammar' | 'adventure' | 'leaderboard';
+import { GrammarMasteryPanel } from '../components/games/GrammarMasteryPanel';
+import { GameErrorBoundary } from '../components/games/GameErrorBoundary';
+
+type GameTab = 'vocab' | 'grammar' | 'adventure';
 type VocabGame = 'memory' | 'falling' | 'hangman' | 'context' | 'scramble';
 type GrammarGame = 'grammar-gap' | 'grammar-match' | 'grammar-builder' | 'grammar-detective' | 'grammar-typing';
-type AdventureGame = 'vocab-rpg' | 'escape';
+type AdventureGame = 'vocab-rpg' | 'escape' | 'word-blitz';
 type ActiveGame = 'menu' | VocabGame | GrammarGame | AdventureGame;
-
-const DIFFICULTY_OPTIONS: { value: Difficulty; label: string; emoji: string; desc: string }[] = [
-  { value: 'easy', label: 'Easy', emoji: '😊', desc: 'Nhiều mạng, thời gian dài' },
-  { value: 'medium', label: 'Medium', emoji: '⚡', desc: 'Cân bằng' },
-  { value: 'hard', label: 'Hard', emoji: '🔥', desc: 'Ít mạng, thời gian ngắn' },
-];
 
 const vocabGames = [
   { id: 'memory' as const, title: 'Memory Match', desc: 'Lật thẻ và tìm cặp từ vựng', icon: <Brain className="w-7 h-7" />, color: 'blue', gradient: 'from-blue/8 to-transparent' },
@@ -49,6 +44,7 @@ const grammarGames = [
 const adventureGames = [
   { id: 'vocab-rpg' as const, title: 'RPG Vocabulary', desc: 'Phép thuật từ vựng - đánh quái vật', icon: <Swords className="w-7 h-7" />, color: 'red', gradient: 'from-red/8 to-transparent' },
   { id: 'escape' as const, title: 'Language Escape', desc: 'Giải mật mã thoát phòng', icon: <Lock className="w-7 h-7" />, color: 'purple', gradient: 'from-purple/8 to-transparent' },
+  { id: 'word-blitz' as const, title: 'Word Blitz', desc: 'Bong bóng bay — chạm đúng từ siêu nhanh!', icon: <Target className="w-7 h-7" />, color: 'gold', gradient: 'from-gold/8 to-transparent' },
 ];
 
 const COLOR_MAP: Record<string, string> = {
@@ -84,9 +80,9 @@ const itemVariants = {
 
 export function GamesPage() {
   const [activeGame, setActiveGame] = useState<ActiveGame>('menu');
-  const [difficulty, setDifficulty] = useState<Difficulty>('medium');
   const [activeTab, setActiveTab] = useState<GameTab>('vocab');
   const streakDays = useUserStore(s => s.streakDays);
+  const gameProgress = useUserStore(s => s.gameProgress);
   const gameHighScores = useUserStore(s => s.gameHighScores);
 
   const goBack = () => setActiveGame('menu');
@@ -103,18 +99,19 @@ export function GamesPage() {
               exit={{ opacity: 0, x: -20 }}
               className="flex-1 flex flex-col"
             >
-              {activeGame === 'memory' && <MemoryMatch onComplete={goBack} difficulty={difficulty} />}
-              {activeGame === 'falling' && <WordFalling onComplete={goBack} difficulty={difficulty} />}
-              {activeGame === 'hangman' && <HangmanScramble onComplete={goBack} difficulty={difficulty} />}
-              {activeGame === 'context' && <ContextFill onComplete={goBack} difficulty={difficulty} />}
-              {activeGame === 'scramble' && <WordScramble onComplete={goBack} difficulty={difficulty} />}
-              {activeGame === 'grammar-gap' && <GrammarGapFill onComplete={goBack} difficulty={difficulty} />}
-              {activeGame === 'grammar-match' && <GrammarMatch onComplete={goBack} difficulty={difficulty} />}
-              {activeGame === 'grammar-builder' && <SentenceBuilder onComplete={goBack} difficulty={difficulty} />}
-              {activeGame === 'grammar-detective' && <PatternDetective onComplete={goBack} difficulty={difficulty} />}
-              {activeGame === 'grammar-typing' && <GrammarTyping onComplete={goBack} difficulty={difficulty} />}
-              {activeGame === 'vocab-rpg' && <VocabRPG onComplete={goBack} difficulty={difficulty} />}
-              {activeGame === 'escape' && <LanguageEscape onComplete={goBack} difficulty={difficulty} />}
+              {activeGame === 'memory' && <GameErrorBoundary onBack={goBack} gameName="Memory Match"><MemoryMatch onComplete={goBack} /></GameErrorBoundary>}
+              {activeGame === 'falling' && <GameErrorBoundary onBack={goBack} gameName="Speed Typing"><WordFalling onComplete={goBack} /></GameErrorBoundary>}
+              {activeGame === 'hangman' && <GameErrorBoundary onBack={goBack} gameName="Hangman"><HangmanScramble onComplete={goBack} /></GameErrorBoundary>}
+              {activeGame === 'context' && <GameErrorBoundary onBack={goBack} gameName="Fill in Blanks"><ContextFill onComplete={goBack} /></GameErrorBoundary>}
+              {activeGame === 'scramble' && <GameErrorBoundary onBack={goBack} gameName="Word Scramble"><WordScramble onComplete={goBack} /></GameErrorBoundary>}
+              {activeGame === 'grammar-gap' && <GameErrorBoundary onBack={goBack} gameName="Grammar Gap Fill"><GrammarGapFill onComplete={goBack} /></GameErrorBoundary>}
+              {activeGame === 'grammar-match' && <GameErrorBoundary onBack={goBack} gameName="Grammar Match"><GrammarMatch onComplete={goBack} /></GameErrorBoundary>}
+              {activeGame === 'grammar-builder' && <GameErrorBoundary onBack={goBack} gameName="Sentence Builder"><SentenceBuilder onComplete={goBack} /></GameErrorBoundary>}
+              {activeGame === 'grammar-detective' && <GameErrorBoundary onBack={goBack} gameName="Pattern Detective"><PatternDetective onComplete={goBack} /></GameErrorBoundary>}
+              {activeGame === 'grammar-typing' && <GameErrorBoundary onBack={goBack} gameName="Grammar Typing"><GrammarTyping onComplete={goBack} /></GameErrorBoundary>}
+              {activeGame === 'vocab-rpg' && <GameErrorBoundary onBack={goBack} gameName="Vocab RPG"><VocabRPG onComplete={goBack} /></GameErrorBoundary>}
+              {activeGame === 'escape' && <GameErrorBoundary onBack={goBack} gameName="Language Escape"><LanguageEscape onComplete={goBack} /></GameErrorBoundary>}
+              {activeGame === 'word-blitz' && <GameErrorBoundary onBack={goBack} gameName="Word Blitz"><WordBlitz onComplete={goBack} /></GameErrorBoundary>}
             </motion.div>
           </AnimatePresence>
         </div>
@@ -146,7 +143,6 @@ export function GamesPage() {
           { key: 'vocab' as const, label: 'Từ Vựng', color: 'blue' },
           { key: 'grammar' as const, label: 'Ngữ Pháp', color: 'purple' },
           { key: 'adventure' as const, label: 'Phiêu Lưu', color: 'red', icon: <Swords className="w-3.5 h-3.5 md:w-4 md:h-4" /> },
-          { key: 'leaderboard' as const, label: 'Xếp hạng', color: 'gold', icon: <Trophy className="w-3.5 h-3.5 md:w-4 md:h-4" /> },
         ].map(tab => (
           <button
             key={tab.key}
@@ -163,33 +159,12 @@ export function GamesPage() {
         ))}
       </div>
 
-      {/* Difficulty Selector */}
-      <div className="flex gap-1 md:gap-1.5 mb-5 md:mb-8 bg-gray-bg rounded-xl md:rounded-2xl p-1 md:p-1.5 border-2 border-gray-path">
-        {DIFFICULTY_OPTIONS.map((opt) => (
-          <button
-            key={opt.value}
-            onClick={() => setDifficulty(opt.value)}
-            className={`flex items-center gap-1 md:gap-1.5 px-3 py-1.5 md:px-4 md:py-2 rounded-lg md:rounded-xl font-black text-xs md:text-sm transition-all ${
-              difficulty === opt.value
-                ? 'bg-blue text-white shadow-sm'
-                : 'text-text-muted hover:text-text-main'
-            }`}
-            title={opt.desc}
-          >
-            <span>{opt.emoji}</span>
-            {opt.label}
-          </button>
-        ))}
-      </div>
+
 
       {/* Grammar Mastery Panel */}
       {activeTab === 'grammar' && <GrammarMasteryPanel />}
 
-      {/* Leaderboard */}
-      {activeTab === 'leaderboard' && <GameLeaderboard />}
-
       {/* Games Grid */}
-      {activeTab !== 'leaderboard' && (
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -198,8 +173,15 @@ export function GamesPage() {
           className="grid grid-cols-2 md:grid-cols-2 gap-3 md:gap-5 w-full"
         >
           {currentGames.map((g) => {
-            const highScore = gameHighScores[g.id as keyof typeof gameHighScores];
-            const bestScore = highScore ? Math.max(highScore.easy, highScore.medium, highScore.hard) : 0;
+            const progress = gameProgress[g.id as keyof typeof gameProgress];
+            let bestScore = progress ? progress.highScore : 0;
+            
+            // Fallback for legacy games (memory, vocab-rpg)
+            if (gameHighScores && gameHighScores[g.id]) {
+              const legacyScores = gameHighScores[g.id];
+              const maxLegacy = Math.max(legacyScores.easy || 0, legacyScores.medium || 0, legacyScores.hard || 0);
+              bestScore = Math.max(bestScore, maxLegacy);
+            }
 
             return (
               <motion.button
@@ -212,7 +194,7 @@ export function GamesPage() {
               >
                 {/* Category badge */}
                 <span className="absolute top-2 right-2 md:top-3 md:right-3 px-1.5 py-0.5 md:px-2 bg-gray-bg border border-gray-path rounded-full text-[7px] md:text-[9px] font-black uppercase tracking-wider text-text-muted">
-                  {activeTab === 'vocab' ? 'Vocab' : 'Grammar'}
+                  {activeTab === 'vocab' ? 'Vocab' : activeTab === 'grammar' ? 'Grammar' : 'Adventure'}
                 </span>
 
                 {/* High score badge */}
@@ -235,7 +217,6 @@ export function GamesPage() {
             );
           })}
         </motion.div>
-      )}
     </div>
   );
 }

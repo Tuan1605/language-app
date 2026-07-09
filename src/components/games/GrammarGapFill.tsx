@@ -9,12 +9,13 @@ import { playCorrect, playWrong, playCombo, playTimerTick } from '../../utils/so
 import { GameShell } from './GameShell';
 import { GameHUD } from './GameHUD';
 import { GameOverScreen } from './GameOverScreen';
-import { GameLoading } from './GameLoading';
 import { LevelCompleteScreen } from './LevelCompleteScreen';
+import { LevelSelector } from './LevelSelector';
+import { GameLoading } from './GameLoading';
 
 const PER_LEVEL = 10;
 
-export function GrammarGapFill({ onComplete, difficulty = 'medium' }: { onComplete: () => void; difficulty?: 'easy' | 'medium' | 'hard' }) {
+export function GrammarGapFill({ onComplete }: { onComplete: () => void; }) {
   const [allPoints, setAllPoints] = useState<GrammarPoint[]>([]);
   const [currentLevel, setCurrentLevel] = useState(1);
   const [levelPoints, setLevelPoints] = useState<GrammarPoint[]>([]);
@@ -23,17 +24,17 @@ export function GrammarGapFill({ onComplete, difficulty = 'medium' }: { onComple
   const [score, setScore] = useState(0);
   const [combo, setCombo] = useState(0);
   const [timeLeft, setTimeLeft] = useState(60);
-  const [gameState, setGameState] = useState<'loading' | 'playing' | 'answered' | 'gameover' | 'level_complete'>('loading');
+  const [gameState, setGameState] = useState<'loading' | 'ready' | 'playing' | 'answered' | 'gameover' | 'level_complete'>('loading');
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [levelCorrect, setLevelCorrect] = useState(0);
 
   const activeTrack = useUserStore(s => s.activeTrack);
   const addExp = useUserStore(s => s.addExp);
-  const setGameHighScore = useUserStore(s => s.setGameHighScore);
   const addGrammarMastery = useUserStore(s => s.addGrammarMastery);
-  const gameHighScores = useUserStore(s => s.gameHighScores);
+  const updateGameProgress = useUserStore(s => s.updateGameProgress);
+  const gameProgress = useUserStore(s => s.gameProgress);
+  const currentProgress = gameProgress['grammar-gap'] || { highScore: 0, maxLevel: 1 };
 
-  const TIMER_BY_DIFFICULTY = { easy: 90, medium: 60, hard: 40 };
   const totalLevels = Math.ceil(allPoints.length / PER_LEVEL);
   const scoreRef = useRef(score);
   scoreRef.current = score;
@@ -71,14 +72,18 @@ export function GrammarGapFill({ onComplete, difficulty = 'medium' }: { onComple
       if (withBlank.length < 5) { toast.error('Not enough grammar points.'); onComplete(); return; }
       const shuffled = [...withBlank].sort(() => 0.5 - Math.random());
       setAllPoints(shuffled);
-      setCurrentLevel(1);
-      setScore(0);
-      startLevel(shuffled, 1);
-      setGameState('playing');
+      setGameState('ready');
     } catch (e) {
       console.error(e);
       toast.error('Failed to load game');
     }
+  };
+
+  const startGame = (level: number = 1) => {
+    setCurrentLevel(level);
+    setScore(0);
+    startLevel(allPoints, level);
+    setGameState('playing');
   };
 
   const startLevel = (all: GrammarPoint[], level: number) => {
@@ -89,7 +94,7 @@ export function GrammarGapFill({ onComplete, difficulty = 'medium' }: { onComple
     setCombo(0);
     setLevelCorrect(0);
     setSelectedAnswer(null);
-    setTimeLeft(TIMER_BY_DIFFICULTY[difficulty]);
+    setTimeLeft(Math.max(20, 60 - (level - 1) * 5));
     if (slice.length > 0) generateOptions(slice[0], all);
   };
 
@@ -125,7 +130,10 @@ export function GrammarGapFill({ onComplete, difficulty = 'medium' }: { onComple
       setGameState('playing');
       generateOptions(levelPoints[currentIndex + 1], allPoints);
     } else {
-      if (currentLevel < totalLevels) setGameState('level_complete');
+      if (currentLevel < totalLevels) {
+        updateGameProgress('grammar-gap', score, currentLevel + 1);
+        setGameState('level_complete');
+      }
       else finishGame(score);
     }
   };
@@ -139,22 +147,34 @@ export function GrammarGapFill({ onComplete, difficulty = 'medium' }: { onComple
 
   const finishGame = (finalScore: number) => {
     setGameState('gameover');
-    if (finalScore > 0) { addExp(finalScore); setGameHighScore('grammar-gap', difficulty, finalScore); }
+    if (finalScore > 0) { addExp(finalScore); updateGameProgress('grammar-gap', finalScore, currentLevel); }
   };
 
   if (gameState === 'loading') return <GameLoading text="Loading grammar..." />;
 
+  if (gameState === 'ready') return (
+    <GameShell title="Grammar Gap Fill" icon={<BookOpen className="w-5 h-5" />} onBack={onComplete}>
+      <div className="flex-1 flex flex-col items-center justify-center p-4">
+        <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} className="text-center w-full">
+          <h2 className="text-2xl font-black text-text-main mb-2">Grammar Gap Fill</h2>
+          <p className="text-sm font-bold text-text-muted mb-6">Chọn đáp án đúng điền vào chỗ trống</p>
+          <LevelSelector maxLevel={currentProgress.maxLevel} highScore={currentProgress.highScore} onSelect={startGame} />
+        </motion.div>
+      </div>
+    </GameShell>
+  );
+
   if (gameState === 'gameover') {
     return (
-      <GameShell title="Grammar Gap Fill" icon={<BookOpen className="w-5 h-5" />} onBack={onComplete} difficulty={difficulty}>
-        <GameOverScreen score={score} expEarned={score} highScore={gameHighScores['grammar-gap']?.[difficulty]} isWin={score > 0} onRestart={loadGame} onMenu={onComplete} />
+      <GameShell title="Grammar Gap Fill" icon={<BookOpen className="w-5 h-5" />} onBack={onComplete}>
+        <GameOverScreen score={score} expEarned={score} highScore={currentProgress.highScore} isWin={score > 0} onRestart={() => startGame(currentLevel)} onMenu={onComplete} />
       </GameShell>
     );
   }
 
   if (gameState === 'level_complete') {
     return (
-      <GameShell title="Grammar Gap Fill" icon={<BookOpen className="w-5 h-5" />} onBack={onComplete} difficulty={difficulty}>
+      <GameShell title="Grammar Gap Fill" icon={<BookOpen className="w-5 h-5" />} onBack={onComplete}>
         <LevelCompleteScreen currentLevel={currentLevel} totalLevels={totalLevels} correct={levelCorrect} total={levelPoints.length} score={score} onNextLevel={nextLevel} />
       </GameShell>
     );
@@ -163,8 +183,8 @@ export function GrammarGapFill({ onComplete, difficulty = 'medium' }: { onComple
   const current = levelPoints[currentIndex];
 
   return (
-    <GameShell title="Grammar Gap Fill" icon={<BookOpen className="w-5 h-5" />} onBack={onComplete} difficulty={difficulty}>
-      <GameHUD score={score} combo={combo} timer={timeLeft} highScore={gameHighScores['grammar-gap']?.[difficulty]} progress={(currentIndex + 1) / levelPoints.length} progressLabel={`Màn ${currentLevel} - ${currentIndex + 1}/${levelPoints.length}`} />
+    <GameShell title="Grammar Gap Fill" icon={<BookOpen className="w-5 h-5" />} onBack={onComplete}>
+      <GameHUD score={score} combo={combo} timer={timeLeft} highScore={currentProgress.highScore} progress={(currentIndex + 1) / levelPoints.length} progressLabel={`Màn ${currentLevel} - ${currentIndex + 1}/${levelPoints.length}`} />
       <div className="flex-1 flex flex-col items-center justify-center max-w-2xl mx-auto w-full">
         <AnimatePresence mode="wait">
           <motion.div key={currentIndex} initial={{ x: 50, opacity: 0 }} animate={{ x: 0, opacity: 1 }} exit={{ x: -50, opacity: 0 }} className="w-full">

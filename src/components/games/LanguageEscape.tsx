@@ -8,6 +8,7 @@ import { Lock, Key, Clock, ArrowRight, RotateCcw, Eye, EyeOff } from 'lucide-rea
 import { GameShell } from './GameShell';
 import { GameLoading } from './GameLoading';
 import { playCorrect, playWrong, playTap, playTimerTick, playLevelComplete, playCombo } from '../../utils/sound';
+import { LevelSelector } from './LevelSelector';
 
 // ─── Puzzle Types ───
 type PuzzleType = 'fill_blank' | 'context_fill' | 'unscramble' | 'match_def';
@@ -144,8 +145,9 @@ function LockProgress({ solved, total }: { solved: number; total: number }) {
 }
 
 // ─── Main Component ───
-export function LanguageEscape({ onComplete, difficulty = 'medium' }: { onComplete: () => void; difficulty?: 'easy' | 'medium' | 'hard' }) {
+export function LanguageEscape({ onComplete }: { onComplete: () => void; }) {
   const [deck, setDeck] = useState<Flashcard[]>([]);
+  const [campaignLevel, setCampaignLevel] = useState(1);
   const [currentRoom, setCurrentRoom] = useState(0);
   const [currentPuzzle, setCurrentPuzzle] = useState<Puzzle | null>(null);
   const [puzzlesSolved, setPuzzlesSolved] = useState(0);
@@ -156,7 +158,7 @@ export function LanguageEscape({ onComplete, difficulty = 'medium' }: { onComple
   const [inputValue, setInputValue] = useState('');
   const [showHint, setShowHint] = useState(false);
   const [hintUsedThisPuzzle, setHintUsedThisPuzzle] = useState(false);
-  const [gameState, setGameState] = useState<'loading' | 'playing' | 'answered_correct' | 'answered_wrong' | 'room_complete' | 'gameover' | 'escaped'>('loading');
+  const [gameState, setGameState] = useState<'loading' | 'ready' | 'playing' | 'answered_correct' | 'answered_wrong' | 'room_complete' | 'gameover' | 'escaped'>('loading');
   const [selectedOption, setSelectedOption] = useState<string | null>(null);
   const [missedWords, setMissedWords] = useState<{ word: string; definition: string }[]>([]);
   const [totalAnswers, setTotalAnswers] = useState(0);
@@ -164,23 +166,33 @@ export function LanguageEscape({ onComplete, difficulty = 'medium' }: { onComple
 
   const activeTrack = useUserStore(s => s.activeTrack);
   const addExp = useUserStore(s => s.addExp);
-  const setGameHighScore = useUserStore(s => s.setGameHighScore);
+  const updateGameProgress = useUserStore(s => s.updateGameProgress);
+  const gameProgress = useUserStore(s => s.gameProgress);
+  const currentProgress = gameProgress['escape'] || { highScore: 0, maxLevel: 1 };
+
   const inputRef = useRef<HTMLInputElement>(null);
   const scoreRef = useRef(score);
   scoreRef.current = score;
 
   const room = ROOMS[currentRoom];
-  const TIMER_SCALE = { easy: 1.5, medium: 1, hard: 0.7 };
 
   useEffect(() => { loadGame(); }, [activeTrack]);
   useEffect(() => { inputRef.current?.focus(); }, [gameState, currentPuzzle]);
+
+  const finishGame = (finalScore: number) => {
+    setGameState('gameover');
+    if (finalScore > 0) {
+      addExp(finalScore);
+      updateGameProgress('escape', finalScore, campaignLevel);
+    }
+  };
 
   // Timer
   useEffect(() => {
     if (gameState !== 'playing' || timeLeft <= 0) return;
     const timer = setInterval(() => {
       setTimeLeft(t => {
-        if (t <= 1) { clearInterval(timer); playWrong(); setGameState('gameover'); return 0; }
+        if (t <= 1) { clearInterval(timer); playWrong(); finishGame(scoreRef.current); return 0; }
         if (t <= 10) playTimerTick();
         return t - 1;
       });
@@ -193,15 +205,21 @@ export function LanguageEscape({ onComplete, difficulty = 'medium' }: { onComple
       const allCards = await db.cards.where('language').equals(activeTrack).toArray();
       if (allCards.length < 8) { toast.error('Need at least 8 flashcards.'); onComplete(); return; }
       setDeck(allCards.sort(() => 0.5 - Math.random()));
-      setCurrentRoom(0); setScore(0); setCombo(0); setTotalSolved(0);
-      setMissedWords([]); setTotalAnswers(0); setCorrectAnswers(0);
-      startRoom(allCards.sort(() => 0.5 - Math.random()), 0);
+      setGameState('ready');
     } catch (e) { console.error(e); toast.error('Failed to load'); }
   };
 
-  const startRoom = (cards: Flashcard[], roomIdx: number) => {
+  const startGame = (level: number = 1) => {
+    setCampaignLevel(level);
+    setCurrentRoom(0); setScore(0); setCombo(0); setTotalSolved(0);
+    setMissedWords([]); setTotalAnswers(0); setCorrectAnswers(0);
+    startRoom(deck, 0, level);
+  };
+
+  const startRoom = (cards: Flashcard[], roomIdx: number, level: number = campaignLevel) => {
     const r = ROOMS[roomIdx];
-    setTimeLeft(Math.round(r.timeLimit * TIMER_SCALE[difficulty]));
+    const timerScale = Math.max(0.4, 1 - (level - 1) * 0.1);
+    setTimeLeft(Math.round(r.timeLimit * timerScale));
     setPuzzlesSolved(0);
     generateNewPuzzle(cards, roomIdx);
     setGameState('playing');
@@ -246,6 +264,9 @@ export function LanguageEscape({ onComplete, difficulty = 'medium' }: { onComple
         if (newSolved >= room.puzzlesNeeded) {
           playLevelComplete();
           if (currentRoom >= ROOMS.length - 1) {
+            const finalScore = score + 100;
+            addExp(finalScore);
+            updateGameProgress('escape', finalScore, campaignLevel + 1);
             setGameState('escaped');
           } else {
             setGameState('room_complete');
@@ -284,10 +305,23 @@ export function LanguageEscape({ onComplete, difficulty = 'medium' }: { onComple
 
   if (gameState === 'loading') return <GameLoading text="Preparing escape rooms..." />;
 
+  // ─── READY SCREEN ───
+  if (gameState === 'ready') return (
+    <GameShell title="Language Escape" icon={<Lock className="w-5 h-5" />} onBack={onComplete}>
+      <div className="flex-1 flex flex-col items-center justify-center p-4">
+        <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} className="text-center w-full">
+          <h2 className="text-2xl font-black text-text-main mb-2">Language Escape</h2>
+          <p className="text-sm font-bold text-text-muted mb-6">Giải đố để thoát khỏi căn phòng bí ẩn!</p>
+          <LevelSelector maxLevel={currentProgress.maxLevel} highScore={currentProgress.highScore} onSelect={startGame} />
+        </motion.div>
+      </div>
+    </GameShell>
+  );
+
   // ─── GAME OVER ───
   if (gameState === 'gameover') {
     return (
-      <GameShell title="Language Escape" icon={<Lock className="w-5 h-5" />} onBack={onComplete} difficulty={difficulty}>
+      <GameShell title="Language Escape" icon={<Lock className="w-5 h-5" />} onBack={onComplete}>
         <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="flex-1 flex flex-col items-center justify-center py-6 overflow-y-auto custom-scrollbar">
           <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: 'spring', delay: 0.2 }}
             className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-red/10 flex items-center justify-center mb-4">
@@ -323,9 +357,9 @@ export function LanguageEscape({ onComplete, difficulty = 'medium' }: { onComple
             </div>
           )}
           <div className="flex gap-3">
-            <button onClick={() => { setScore(0); setCombo(0); setTotalSolved(0); setCurrentRoom(0); setMissedWords([]); setTotalAnswers(0); setCorrectAnswers(0); startRoom(deck, 0); }}
+            <button onClick={() => startGame(campaignLevel)}
               className="btn-duo btn-blue px-4 py-2.5 text-xs"><RotateCcw className="w-4 h-4 mr-2" />Try Again</button>
-            <button onClick={() => { if (score > 0) { addExp(score); setGameHighScore('escape', difficulty, score); } onComplete(); }}
+            <button onClick={onComplete}
               className="btn-duo btn-outline px-4 py-2.5 text-xs">Menu</button>
           </div>
         </motion.div>
@@ -336,7 +370,7 @@ export function LanguageEscape({ onComplete, difficulty = 'medium' }: { onComple
   // ─── ESCAPED (VICTORY) ───
   if (gameState === 'escaped') {
     return (
-      <GameShell title="Language Escape" icon={<Key className="w-5 h-5" />} onBack={onComplete} difficulty={difficulty}>
+      <GameShell title="Language Escape" icon={<Key className="w-5 h-5" />} onBack={onComplete}>
         <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="flex-1 flex flex-col items-center justify-center py-6 overflow-y-auto custom-scrollbar">
           <motion.div initial={{ scale: 0, rotate: -20 }} animate={{ scale: 1, rotate: 0 }} transition={{ type: 'spring', delay: 0.2 }}
             className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-gold/10 shadow-[0_0_40px_rgba(237,137,54,0.2)] flex items-center justify-center mb-4">
@@ -373,9 +407,9 @@ export function LanguageEscape({ onComplete, difficulty = 'medium' }: { onComple
             </div>
           )}
           <div className="flex gap-3">
-            <button onClick={() => { setScore(0); setCombo(0); setTotalSolved(0); setCurrentRoom(0); setMissedWords([]); setTotalAnswers(0); setCorrectAnswers(0); startRoom(deck, 0); }}
+            <button onClick={() => startGame(campaignLevel)}
               className="btn-duo btn-blue px-4 py-2.5 text-xs"><RotateCcw className="w-4 h-4 mr-2" />Play Again</button>
-            <button onClick={() => { addExp(score); setGameHighScore('escape', difficulty, score); onComplete(); }}
+            <button onClick={onComplete}
               className="btn-duo btn-outline px-4 py-2.5 text-xs">Menu</button>
           </div>
         </motion.div>
@@ -386,7 +420,7 @@ export function LanguageEscape({ onComplete, difficulty = 'medium' }: { onComple
   // ─── ROOM COMPLETE ───
   if (gameState === 'room_complete') {
     return (
-      <GameShell title="Language Escape" icon={<Key className="w-5 h-5" />} onBack={onComplete} difficulty={difficulty}>
+      <GameShell title="Language Escape" icon={<Key className="w-5 h-5" />} onBack={onComplete}>
         <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="flex-1 flex flex-col items-center justify-center py-8">
           <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ type: 'spring', delay: 0.2 }}
             className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-green/10 flex items-center justify-center mb-4">
@@ -416,7 +450,7 @@ export function LanguageEscape({ onComplete, difficulty = 'medium' }: { onComple
 
   // ─── MAIN GAME ───
   return (
-    <GameShell title="Language Escape" icon={<Lock className="w-5 h-5" />} onBack={onComplete} difficulty={difficulty}>
+    <GameShell title="Language Escape" icon={<Lock className="w-5 h-5" />} onBack={onComplete}>
       <div className="flex-1 flex flex-col w-full">
         {/* HUD */}
         <div className="flex justify-between items-center mb-2 md:mb-3 px-0.5 gap-2">

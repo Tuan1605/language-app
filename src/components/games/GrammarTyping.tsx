@@ -9,12 +9,13 @@ import { playCorrect, playWrong, playTap } from '../../utils/sound';
 import { GameShell } from './GameShell';
 import { GameHUD } from './GameHUD';
 import { GameOverScreen } from './GameOverScreen';
-import { GameLoading } from './GameLoading';
 import { LevelCompleteScreen } from './LevelCompleteScreen';
+import { LevelSelector } from './LevelSelector';
+import { GameLoading } from './GameLoading';
 
 const PER_LEVEL = 8;
 
-export function GrammarTyping({ onComplete, difficulty = 'medium' }: { onComplete: () => void; difficulty?: 'easy' | 'medium' | 'hard' }) {
+export function GrammarTyping({ onComplete }: { onComplete: () => void; }) {
   const [allPoints, setAllPoints] = useState<GrammarPoint[]>([]);
   const [currentLevel, setCurrentLevel] = useState(1);
   const [levelPoints, setLevelPoints] = useState<GrammarPoint[]>([]);
@@ -23,16 +24,16 @@ export function GrammarTyping({ onComplete, difficulty = 'medium' }: { onComplet
   const [score, setScore] = useState(0);
   const [hintsUsed, setHintsUsed] = useState(0);
   const [levelCorrect, setLevelCorrect] = useState(0);
-  const [gameState, setGameState] = useState<'loading' | 'playing' | 'gameover' | 'won_round' | 'level_complete'>('loading');
+  const [gameState, setGameState] = useState<'loading' | 'ready' | 'playing' | 'gameover' | 'won_round' | 'level_complete'>('loading');
 
   const activeTrack = useUserStore(s => s.activeTrack);
   const addExp = useUserStore(s => s.addExp);
-  const setGameHighScore = useUserStore(s => s.setGameHighScore);
   const addGrammarMastery = useUserStore(s => s.addGrammarMastery);
-  const gameHighScores = useUserStore(s => s.gameHighScores);
+  const updateGameProgress = useUserStore(s => s.updateGameProgress);
+  const gameProgress = useUserStore(s => s.gameProgress);
+  const currentProgress = gameProgress['grammar-typing'] || { highScore: 0, maxLevel: 1 };
   const inputRef = useRef<HTMLInputElement>(null);
 
-  const EXP_BY_DIFFICULTY = { easy: 10, medium: 15, hard: 20 };
   const HINT_PENALTY = 5;
   const totalLevels = Math.ceil(allPoints.length / PER_LEVEL);
 
@@ -46,10 +47,14 @@ export function GrammarTyping({ onComplete, difficulty = 'medium' }: { onComplet
       if (points.length < 5) { toast.error('Not enough grammar points.'); onComplete(); return; }
       const shuffled = [...points].sort(() => 0.5 - Math.random());
       setAllPoints(shuffled);
-      setCurrentLevel(1);
-      setScore(0);
-      startLevel(shuffled, 1);
+      setGameState('ready');
     } catch (e) { console.error(e); toast.error('Failed to load'); }
+  };
+
+  const startGame = (level: number = 1) => {
+    setCurrentLevel(level);
+    setScore(0);
+    startLevel(allPoints, level);
   };
 
   const startLevel = (all: GrammarPoint[], level: number) => {
@@ -71,7 +76,7 @@ export function GrammarTyping({ onComplete, difficulty = 'medium' }: { onComplet
     const correct = current.pattern.toLowerCase();
     if (guess === correct) {
       playCorrect();
-      const base = EXP_BY_DIFFICULTY[difficulty];
+      const base = 15;
       const hintPenalty = hintsUsed * HINT_PENALTY;
       setScore(s => s + Math.max(0, base - hintPenalty));
       setLevelCorrect(c => c + 1);
@@ -101,7 +106,10 @@ export function GrammarTyping({ onComplete, difficulty = 'medium' }: { onComplet
       setHintsUsed(0);
       setGameState('playing');
     } else {
-      if (currentLevel < totalLevels) setGameState('level_complete');
+      if (currentLevel < totalLevels) {
+        updateGameProgress('grammar-typing', score, currentLevel + 1);
+        setGameState('level_complete');
+      }
       else handleGameOver();
     }
   };
@@ -110,20 +118,33 @@ export function GrammarTyping({ onComplete, difficulty = 'medium' }: { onComplet
 
   const handleGameOver = () => {
     setGameState('gameover');
-    if (score > 0) { addExp(score); setGameHighScore('grammar-typing', difficulty, score); }
+    if (score > 0) { addExp(score); updateGameProgress('grammar-typing', score, currentLevel); }
   };
 
   if (gameState === 'loading') return <GameLoading text="Loading grammar..." />;
-  if (gameState === 'gameover') return (<GameShell title="Grammar Typing" icon={<PenTool className="w-5 h-5" />} onBack={onComplete} difficulty={difficulty}><GameOverScreen score={score} expEarned={score} highScore={gameHighScores['grammar-typing']?.[difficulty]} isWin={score > 0} onRestart={loadGame} onMenu={onComplete} /></GameShell>);
-  if (gameState === 'level_complete') return (<GameShell title="Grammar Typing" icon={<PenTool className="w-5 h-5" />} onBack={onComplete} difficulty={difficulty}><LevelCompleteScreen currentLevel={currentLevel} totalLevels={totalLevels} correct={levelCorrect} total={levelPoints.length} score={score} onNextLevel={nextLevel} /></GameShell>);
+  
+  if (gameState === 'ready') return (
+    <GameShell title="Grammar Typing" icon={<PenTool className="w-5 h-5" />} onBack={onComplete}>
+      <div className="flex-1 flex flex-col items-center justify-center p-4">
+        <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} className="text-center w-full">
+          <h2 className="text-2xl font-black text-text-main mb-2">Grammar Typing</h2>
+          <p className="text-sm font-bold text-text-muted mb-6">Gõ lại cấu trúc ngữ pháp tương ứng</p>
+          <LevelSelector maxLevel={currentProgress.maxLevel} highScore={currentProgress.highScore} onSelect={startGame} />
+        </motion.div>
+      </div>
+    </GameShell>
+  );
+
+  if (gameState === 'gameover') return (<GameShell title="Grammar Typing" icon={<PenTool className="w-5 h-5" />} onBack={onComplete}><GameOverScreen score={score} expEarned={score} highScore={currentProgress.highScore} isWin={score > 0} onRestart={() => startGame(currentLevel)} onMenu={onComplete} /></GameShell>);
+  if (gameState === 'level_complete') return (<GameShell title="Grammar Typing" icon={<PenTool className="w-5 h-5" />} onBack={onComplete}><LevelCompleteScreen currentLevel={currentLevel} totalLevels={totalLevels} correct={levelCorrect} total={levelPoints.length} score={score} onNextLevel={nextLevel} /></GameShell>);
 
   const current = levelPoints[currentIndex];
 
   return (
-    <GameShell title="Grammar Typing" icon={<PenTool className="w-5 h-5" />} onBack={onComplete} difficulty={difficulty}>
+    <GameShell title="Grammar Typing" icon={<PenTool className="w-5 h-5" />} onBack={onComplete}>
       <GameHUD
         score={score}
-        highScore={gameHighScores['grammar-typing']?.[difficulty]}
+        highScore={currentProgress.highScore}
         progress={(currentIndex + 1) / levelPoints.length}
         progressLabel={`Màn ${currentLevel} - ${currentIndex + 1}/${levelPoints.length}`}
       />

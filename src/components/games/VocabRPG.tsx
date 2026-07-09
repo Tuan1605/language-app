@@ -4,10 +4,11 @@ import { db } from '../../data/db';
 import type { Flashcard } from '../../types';
 import { useUserStore } from '../../stores/useUserStore';
 import toast from 'react-hot-toast';
-import { Swords, Zap, Flame, Skull, ArrowRight, RotateCcw, Map as MapIcon, Heart, Tent, Eye } from 'lucide-react';
+import { Swords, Zap, Flame, Skull, RotateCcw, Map as MapIcon, Heart, Tent, Eye } from 'lucide-react';
 import { GameShell } from './GameShell';
 import { GameLoading } from './GameLoading';
 import { playCorrect, playWrong, playCombo, playGameOver, playVictory, playTap } from '../../utils/sound';
+import { LevelSelector } from './LevelSelector';
 
 import { PixiBattle } from './rpg/PixiBattle';
 import type { ParticleEffect, DamagePopup } from './rpg/PixiBattle';
@@ -113,14 +114,15 @@ function HPBar({ current, max, label, color }: { current: number; max: number; l
 
 
 // ─── Main Component ───
-export function VocabRPG({ onComplete, difficulty = 'medium' }: { onComplete: () => void; difficulty?: 'easy' | 'medium' | 'hard' }) {
+export function VocabRPG({ onComplete }: { onComplete: () => void; }) {
   const [deck, setDeck] = useState<Flashcard[]>([]);
   const [cardIndex, setCardIndex] = useState(0);
-  const [gameState, setGameState] = useState<'loading' | 'map' | 'battle' | 'camp' | 'level_up' | 'gameover' | 'victory'>('loading');
+  const [gameState, setGameState] = useState<'loading' | 'ready' | 'map' | 'battle' | 'camp' | 'level_up' | 'gameover' | 'victory'>('loading');
+  const [campaignLevel, setCampaignLevel] = useState(1);
   
   // Turn-Based State
-  const TURN_TIME_LIMIT = difficulty === 'hard' ? 8 : difficulty === 'medium' ? 12 : 15;
-  const [timeLeft, setTimeLeft] = useState(TURN_TIME_LIMIT);
+  const [turnTimeLimit, setTurnTimeLimit] = useState(15);
+  const [timeLeft, setTimeLeft] = useState(15);
   const [showHint, setShowHint] = useState(false);
   const [frozenTurns, setFrozenTurns] = useState(0);
 
@@ -161,9 +163,13 @@ export function VocabRPG({ onComplete, difficulty = 'medium' }: { onComplete: ()
 
   const [showEnemyDeathLine, setShowEnemyDeathLine] = useState<string | null>(null);
 
+
   const activeTrack = useUserStore(s => s.activeTrack);
   const addExp = useUserStore(s => s.addExp);
-  const setGameHighScore = useUserStore(s => s.setGameHighScore);
+  const updateGameProgress = useUserStore(s => s.updateGameProgress);
+  const gameProgress = useUserStore(s => s.gameProgress);
+  const currentProgress = gameProgress['vocab-rpg'] || { highScore: 0, maxLevel: 1 };
+  
   const inputRef = useRef<HTMLInputElement>(null);
 
 
@@ -179,11 +185,11 @@ export function VocabRPG({ onComplete, difficulty = 'medium' }: { onComplete: ()
   const gameStateRef = useRef(gameState); gameStateRef.current = gameState;
   const timeLeftRef = useRef(timeLeft); timeLeftRef.current = timeLeft;
 
-  const BASE_HP = { easy: 140, medium: 110, hard: 80 };
-  const BASE_ATK = { easy: 18, medium: 14, hard: 10 };
+  const BASE_HP = 120;
+  const BASE_ATK = 15;
 
   const heroLevelData = HERO_LEVELS.find(h => h.level === heroLevel) || HERO_LEVELS[0];
-  const playerAtk = Math.round(BASE_ATK[difficulty] * (1 + heroLevelData.atkBonus / 100));
+  const playerAtk = Math.round(BASE_ATK * (1 + heroLevelData.atkBonus / 100));
   playerAtkRef.current = playerAtk;
 
   const getCard = useCallback(() => deck.length === 0 ? null : deck[cardIndex % deck.length], [deck, cardIndex]);
@@ -192,6 +198,16 @@ export function VocabRPG({ onComplete, difficulty = 'medium' }: { onComplete: ()
   useEffect(() => { loadGame(); }, [activeTrack]);
   useEffect(() => { if (gameState === 'battle') inputRef.current?.focus(); }, [gameState, cardIndex]);
 
+  // Save progress on game end
+  useEffect(() => {
+    if (gameState === 'gameover' || gameState === 'victory') {
+      if (score > 0) {
+        addExp(score);
+        updateGameProgress('vocab-rpg', score, campaignLevel);
+      }
+    }
+  }, [gameState]);
+
   // ─── Turn Timer Effect ───
   useEffect(() => {
     if (gameState !== 'battle' || !currentEnemy) return;
@@ -199,7 +215,7 @@ export function VocabRPG({ onComplete, difficulty = 'medium' }: { onComplete: ()
       setTimeLeft(prev => {
         if (prev <= 1) {
           executeEnemyTurn(true);
-          return TURN_TIME_LIMIT;
+          return turnTimeLimit;
         }
         return prev - 1;
       });
@@ -212,16 +228,23 @@ export function VocabRPG({ onComplete, difficulty = 'medium' }: { onComplete: ()
       const allCards = await db.cards.where('language').equals(activeTrack).toArray();
       if (allCards.length < 5) { toast.error('Not enough flashcards.'); onComplete(); return; }
       setDeck(allCards.sort(() => 0.5 - Math.random()));
-      setCardIndex(0); setScore(0); setCombo(0); setMaxCombo(0); setEnemiesDefeated(0);
-      setHeroXp(0); setHeroLevel(1); setUnlockedSkills([]); setRage(0);
-      setTotalAnswers(0); setCorrectAnswers(0); setMissedWords([]);
-      setCurrentNodeId(1);
-      
-      const maxHp = BASE_HP[difficulty];
-      setPlayerMaxHp(maxHp); setPlayerHp(maxHp);
-      
-      setGameState('map');
+      setGameState('ready');
     } catch (e) { console.error(e); toast.error('Failed to load'); }
+  };
+
+  const startGame = (level: number = 1) => {
+    setCampaignLevel(level);
+    const newTimer = Math.max(5, 15 - (level - 1) * 2);
+    setTurnTimeLimit(newTimer);
+    setTimeLeft(newTimer);
+    
+    setCardIndex(0); setScore(0); setCombo(0); setMaxCombo(0); setEnemiesDefeated(0);
+    setHeroXp(0); setHeroLevel(1); setUnlockedSkills([]); setRage(0);
+    setTotalAnswers(0); setCorrectAnswers(0); setMissedWords([]);
+    setCurrentNodeId(1);
+    
+    setPlayerMaxHp(BASE_HP); setPlayerHp(BASE_HP);
+    setGameState('map');
   };
 
   const enterNode = (node: MapNode) => {
@@ -231,10 +254,11 @@ export function VocabRPG({ onComplete, difficulty = 'medium' }: { onComplete: ()
     } else if (node.enemyIndex !== undefined) {
       const enemy = ENEMIES[node.enemyIndex];
       const isElite = node.type === 'elite';
+      const campMult = 1 + (campaignLevel - 1) * 0.3; // +30% stats per campaign level
       const scaled = { 
         ...enemy, 
-        hp: Math.round(enemy.hp * (isElite ? 1.5 : 1)), 
-        attack: Math.round(enemy.attack * (isElite ? 1.3 : 1)) 
+        hp: Math.round(enemy.hp * (isElite ? 1.5 : 1) * campMult), 
+        attack: Math.round(enemy.attack * (isElite ? 1.3 : 1) * campMult) 
       };
       setCurrentEnemy(scaled);
       setEnemyHp(scaled.hp);
@@ -242,7 +266,7 @@ export function VocabRPG({ onComplete, difficulty = 'medium' }: { onComplete: ()
       setFrozenTurns(0);
       setShieldCharges(0);
       setIsPoisoned(false);
-      setTimeLeft(TURN_TIME_LIMIT);
+      setTimeLeft(turnTimeLimit);
       setShowHint(false);
       setGameState('battle');
     }
@@ -256,7 +280,7 @@ export function VocabRPG({ onComplete, difficulty = 'medium' }: { onComplete: ()
       const nl = nextLevelData;
       setHeroLevel(nl.level);
       heroLevelRef.current = nl.level;
-      const newMaxHp = BASE_HP[difficulty] + nl.hpBonus;
+      const newMaxHp = BASE_HP + nl.hpBonus;
       setPlayerMaxHp(newMaxHp);
       setPlayerHp(prev => Math.min(newMaxHp, prev + nl.hpBonus));
       if (nl.skillUnlock) setUnlockedSkills(prev => [...prev, nl.skillUnlock!]);
@@ -267,9 +291,9 @@ export function VocabRPG({ onComplete, difficulty = 'medium' }: { onComplete: ()
       currentLvl = nl.level;
       nextLevelData = HERO_LEVELS.find(h => h.level === currentLvl + 1);
     }
-  }, [difficulty]);
+  }, []);
 
-  const useSkill = (skill: SkillDef) => {
+  const castSkill = (skill: SkillDef) => {
     if (rage < skill.rageCost) { toast.error(`Cần ${skill.rageCost} Rage!`); return; }
     playTap();
     setRage(prev => prev - skill.rageCost);
@@ -316,8 +340,6 @@ export function VocabRPG({ onComplete, difficulty = 'medium' }: { onComplete: ()
     inputRef.current?.focus();
   };
 
-  // Original dmg/particle functions removed in favor of Pixi Effects
-
   // ─── PixiJS Effects Dispatchers ───
   const pixiTimeoutRef = useRef<ReturnType<typeof setTimeout>[]>([]);
   const dispatchPixiEffect = useCallback((type: ParticleEffect['type'], x?: number, y?: number) => {
@@ -343,7 +365,7 @@ export function VocabRPG({ onComplete, difficulty = 'medium' }: { onComplete: ()
   const advanceTurn = () => {
     setInputValue('');
     setShowHint(false);
-    setTimeLeft(TURN_TIME_LIMIT);
+    setTimeLeft(turnTimeLimit);
     setCardIndex(i => i + 1);
     
     // Poison tick on new turn
@@ -443,6 +465,7 @@ export function VocabRPG({ onComplete, difficulty = 'medium' }: { onComplete: ()
     checkLevelUp(newXp);
 
     if (isBoss) {
+      updateGameProgress('vocab-rpg', score + 100, campaignLevel + 1);
       setTimeout(() => { playVictory(); setGameState('victory'); }, 1200);
     } else {
       setTimeout(() => {
@@ -551,14 +574,25 @@ export function VocabRPG({ onComplete, difficulty = 'medium' }: { onComplete: ()
   // Create hint text e.g., A P _ _ _
   const hintText = card ? card.word.split('').map((char, i) => (i < Math.max(2, Math.ceil(card.word.length / 3)) || char === ' ' ? char : '_')).join(' ') : '';
 
-  if (gameState === 'loading') return <GameLoading text="Summoning monsters..." />;
+  if (gameState === 'loading') return <GameLoading text="Loading map..." />;
 
-
+  // ─── Ready Screen ───
+  if (gameState === 'ready') return (
+    <GameShell title="Vocab RPG" icon={<Swords className="w-5 h-5" />} onBack={onComplete}>
+      <div className="flex-1 flex flex-col items-center justify-center p-4">
+        <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} className="text-center w-full">
+          <h2 className="text-2xl font-black text-text-main mb-2">Vocab RPG</h2>
+          <p className="text-sm font-bold text-text-muted mb-6">Đánh bại quái vật bằng sức mạnh từ vựng!</p>
+          <LevelSelector maxLevel={currentProgress.maxLevel} highScore={currentProgress.highScore} onSelect={startGame} />
+        </motion.div>
+      </div>
+    </GameShell>
+  );
 
   // ─── MAP NAVIGATION ───
   if (gameState === 'map') {
     return (
-      <GameShell title="World Map" icon={<MapIcon className="w-5 h-5" />} onBack={onComplete} difficulty={difficulty}>
+      <GameShell title="World Map" icon={<MapIcon className="w-5 h-5" />} onBack={onComplete}>
         <div className="flex-1 flex flex-col p-2">
           {/* Hero HUD on Map */}
           <div className="flex items-center gap-3 mb-6 p-3 bg-bg-card rounded-xl border-2 border-gray-path/60">
@@ -626,7 +660,7 @@ export function VocabRPG({ onComplete, difficulty = 'medium' }: { onComplete: ()
   // ─── CAMPFIRE ───
   if (gameState === 'camp') {
     return (
-      <GameShell title="Campfire" icon={<Tent className="w-5 h-5" />} onBack={onComplete} difficulty={difficulty}>
+      <GameShell title="Campfire" icon={<Tent className="w-5 h-5" />} onBack={onComplete}>
         <div className="flex-1 flex flex-col items-center justify-center p-4">
           <motion.div animate={{ scale: [1, 1.05, 1], filter: ['brightness(1)', 'brightness(1.2)', 'brightness(1)'] }} transition={{ duration: 2, repeat: Infinity }}
             className="text-8xl mb-8">⛺</motion.div>
@@ -652,8 +686,8 @@ export function VocabRPG({ onComplete, difficulty = 'medium' }: { onComplete: ()
   if (gameState === 'gameover' || gameState === 'victory') {
     const isWin = gameState === 'victory';
     return (
-      <GameShell title="RPG Vocabulary" icon={<Swords className="w-5 h-5" />} onBack={onComplete} difficulty={difficulty}>
-        <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} className="flex-1 flex flex-col items-center justify-center py-4 overflow-y-auto custom-scrollbar">
+      <GameShell title="Vocab RPG" icon={<Swords className="w-5 h-5" />} onBack={onComplete}>
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="flex-1 flex flex-col items-center justify-center p-6 bg-bg-main relative overflow-y-auto custom-scrollbar">
           <motion.div initial={{ scale: 0, rotate: isWin ? -20 : 0 }} animate={{ scale: 1, rotate: 0 }} transition={{ type: 'spring', delay: 0.2 }}
             className={`w-16 h-16 md:w-20 md:h-20 rounded-full flex items-center justify-center mb-3 ${isWin ? 'bg-gold/10 shadow-[0_0_40px_rgba(237,137,54,0.2)]' : 'bg-red/10'}`}>
             {isWin ? <Swords className="w-8 h-8 md:w-10 md:h-10 text-gold" /> : <Skull className="w-8 h-8 md:w-10 md:h-10 text-red" />}
@@ -683,9 +717,14 @@ export function VocabRPG({ onComplete, difficulty = 'medium' }: { onComplete: ()
               </div>
             </div>
           )}
-          <div className="flex gap-3">
-            <button onClick={loadGame} className="btn-duo btn-blue px-4 py-2 text-xs"><RotateCcw className="w-3.5 h-3.5 mr-1.5" />{isWin ? 'Again' : 'Retry'}</button>
-            <button onClick={() => { if (score > 0) { addExp(score); setGameHighScore('vocab-rpg', difficulty, score); } onComplete(); }} className="btn-duo btn-outline px-4 py-2 text-xs">Menu</button>
+          {/* Buttons */}
+          <div className="flex gap-4">
+            <button onClick={() => startGame(campaignLevel)} className="btn-duo btn-blue px-6 py-3 text-sm">
+              <RotateCcw className="w-4 h-4 mr-2" /> Chơi Lại {campaignLevel}
+            </button>
+            <button
+              onClick={onComplete}
+              className="btn-duo btn-outline px-4 py-2 text-xs">Menu</button>
           </div>
         </motion.div>
       </GameShell>
@@ -694,11 +733,11 @@ export function VocabRPG({ onComplete, difficulty = 'medium' }: { onComplete: ()
 
   // ─── BATTLE ───
   if (gameState === 'battle' && currentEnemy) {
-    const timePct = (timeLeft / TURN_TIME_LIMIT) * 100;
+    const timePct = (timeLeft / turnTimeLimit) * 100;
     
     return (
-      <GameShell title="RPG Vocabulary" icon={<Swords className="w-5 h-5" />} onBack={onComplete} difficulty={difficulty}>
-        <div className="flex-1 flex flex-col w-full">
+      <GameShell title="Vocab RPG" icon={<Swords className="w-5 h-5" />} onBack={onComplete}>
+        <div className="flex-1 flex flex-col bg-bg-main relative overflow-hidden">
           {/* HUD Row 1 */}
           <div className="flex justify-between items-center mb-1.5 px-1">
             <div className="flex items-center gap-2">
@@ -797,7 +836,7 @@ export function VocabRPG({ onComplete, difficulty = 'medium' }: { onComplete: ()
               {unlockedSkills.map(skill => {
                 const canUse = rage >= skill.rageCost;
                 return (
-                  <button key={skill.type} onClick={() => useSkill(skill)} disabled={!canUse} title={skill.desc}
+                  <button key={skill.type} onClick={() => castSkill(skill)} disabled={!canUse} title={skill.desc}
                     className={`flex items-center gap-1 px-2.5 py-1.5 rounded-xl font-black text-[10px] border-2 transition-all ${
                       canUse ? 'text-white border-white/20 cursor-pointer shadow-sm hover:scale-105' : 'bg-gray-bg text-text-muted border-gray-path/30 opacity-60 cursor-not-allowed'
                     }`}

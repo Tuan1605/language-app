@@ -10,8 +10,7 @@ import { GameHUD } from './GameHUD';
 import { GameOverScreen } from './GameOverScreen';
 import { GameLoading } from './GameLoading';
 import { LevelCompleteScreen } from './LevelCompleteScreen';
-
-const PAIRS_PER_LEVEL = 6;
+import { LevelSelector } from './LevelSelector';
 
 interface Tile {
   id: string;
@@ -22,7 +21,7 @@ interface Tile {
   isMatched: boolean;
 }
 
-export function MemoryMatch({ onComplete, difficulty = 'medium' }: { onComplete: () => void; difficulty?: 'easy' | 'medium' | 'hard' }) {
+export function MemoryMatch({ onComplete }: { onComplete: () => void; }) {
   const [allCardIds, setAllCardIds] = useState<string[]>([]);
   const [currentLevel, setCurrentLevel] = useState(1);
   const [tiles, setTiles] = useState<Tile[]>([]);
@@ -30,15 +29,16 @@ export function MemoryMatch({ onComplete, difficulty = 'medium' }: { onComplete:
   const [isLocked, setIsLocked] = useState(false);
   const [matches, setMatches] = useState(0);
   const [isLoading, setIsLoading] = useState(true);
-  const [gameState, setGameState] = useState<'loading' | 'playing' | 'gameover' | 'level_complete'>('loading');
+  const [gameState, setGameState] = useState<'loading' | 'ready' | 'playing' | 'gameover' | 'level_complete'>('loading');
 
+  const updateGameProgress = useUserStore(s => s.updateGameProgress);
   const addExp = useUserStore(s => s.addExp);
-  const setGameHighScore = useUserStore(s => s.setGameHighScore);
-  const gameHighScores = useUserStore(s => s.gameHighScores);
+  const gameProgress = useUserStore(s => s.gameProgress);
+  const currentProgress = gameProgress['memory'] || { highScore: 0, maxLevel: 1 };
   const activeTrack = useUserStore(s => s.activeTrack);
 
-  const requiredPairs = PAIRS_PER_LEVEL;
-  const totalLevels = Math.ceil(allCardIds.length / PAIRS_PER_LEVEL);
+  const requiredPairs = Math.min(3 + currentLevel, Math.floor(allCardIds.length / 2) || 4); // Max depends on available cards, starts at 4 pairs (8 tiles)
+  const [totalScore, setTotalScore] = useState(0);
 
   useEffect(() => { loadGame(); }, [activeTrack]);
 
@@ -49,16 +49,21 @@ export function MemoryMatch({ onComplete, difficulty = 'medium' }: { onComplete:
       if (allCards.length < 6) { toast.error('Not enough flashcards.'); onComplete(); return; }
       const ids = allCards.sort(() => 0.5 - Math.random()).map(c => c.id);
       setAllCardIds(ids);
-      setCurrentLevel(1);
-      setGameState('playing');
-      startLevel(ids, 1);
+      setGameState('ready');
     } catch (e) { console.error(e); toast.error('Failed to load'); }
     finally { setIsLoading(false); }
   };
 
+  const startGame = (level: number = 1) => {
+    setCurrentLevel(level);
+    setTotalScore(0);
+    startLevel(allCardIds, level);
+  };
+
   const startLevel = async (ids: string[], level: number) => {
-    const start = (level - 1) * PAIRS_PER_LEVEL;
-    const levelIds = ids.slice(start, start + PAIRS_PER_LEVEL);
+    const pairsCount = Math.min(3 + level, ids.length);
+    const shuffledIds = [...ids].sort(() => 0.5 - Math.random());
+    const levelIds = shuffledIds.slice(0, pairsCount);
     const cards = await Promise.all(levelIds.map(id => db.cards.get(id)));
     const validCards = cards.filter(Boolean);
     const newTiles: Tile[] = [];
@@ -99,7 +104,8 @@ export function MemoryMatch({ onComplete, difficulty = 'medium' }: { onComplete:
         setIsLocked(false);
         setMatches(prev => {
           const newMatches = prev + 1;
-          if (newMatches === requiredPairs) setTimeout(() => handleWin(), 0);
+          const targetPairs = Math.min(3 + currentLevel, allCardIds.length);
+          if (newMatches === targetPairs) setTimeout(() => handleWin(targetPairs), 0);
           return newMatches;
         });
       }, 500);
@@ -112,25 +118,45 @@ export function MemoryMatch({ onComplete, difficulty = 'medium' }: { onComplete:
     }
   };
 
-  const handleWin = () => {
+  const handleWin = (pairs: number) => {
     playLevelComplete();
-    const expGained = requiredPairs * 10;
+    const expGained = pairs * 10;
+    setTotalScore(s => s + expGained);
     addExp(expGained);
-    setGameHighScore('memory', difficulty, expGained);
-    if (currentLevel < totalLevels) setGameState('level_complete');
-    else setGameState('gameover');
+    updateGameProgress('memory', totalScore + expGained, currentLevel + 1);
+    setGameState('level_complete');
   };
 
   const nextLevel = () => { const next = currentLevel + 1; setCurrentLevel(next); startLevel(allCardIds, next); };
 
   if (isLoading) return <GameLoading text="Loading cards..." />;
-  if (gameState === 'gameover') return (<GameShell title="Memory Match" icon={<Brain className="w-5 h-5" />} onBack={onComplete} difficulty={difficulty}><GameOverScreen score={matches * 10} expEarned={matches * 10} highScore={gameHighScores.memory[difficulty]} isWin={true} onRestart={loadGame} onMenu={onComplete} /></GameShell>);
-  if (gameState === 'level_complete') return (<GameShell title="Memory Match" icon={<Brain className="w-5 h-5" />} onBack={onComplete} difficulty={difficulty}><LevelCompleteScreen currentLevel={currentLevel} totalLevels={totalLevels} correct={matches} total={requiredPairs} score={matches * 10} onNextLevel={nextLevel} /></GameShell>);
+  
+  if (gameState === 'ready') return (
+    <GameShell title="Memory Match" icon={<Brain className="w-5 h-5" />} onBack={onComplete}>
+      <div className="flex-1 flex flex-col items-center justify-center p-4">
+        <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} className="text-center w-full">
+          <h2 className="text-2xl font-black text-text-main mb-2">Memory Match</h2>
+          <p className="text-sm font-bold text-text-muted mb-6">Lật thẻ và tìm cặp từ vựng tương ứng!</p>
+          <LevelSelector maxLevel={currentProgress.maxLevel} highScore={currentProgress.highScore} onSelect={startGame} />
+        </motion.div>
+      </div>
+    </GameShell>
+  );
+
+  if (gameState === 'gameover') {
+    return (<GameShell title="Memory Match" icon={<Brain className="w-5 h-5" />} onBack={onComplete}><GameOverScreen score={totalScore} expEarned={totalScore} highScore={currentProgress.highScore} isWin={true} onRestart={() => startGame(currentLevel)} onMenu={onComplete} /></GameShell>);
+  }
+  
+  if (gameState === 'level_complete') {
+    return (<GameShell title="Memory Match" icon={<Brain className="w-5 h-5" />} onBack={onComplete}><LevelCompleteScreen currentLevel={currentLevel} totalLevels={100} correct={matches} total={requiredPairs} score={totalScore} onNextLevel={nextLevel} /></GameShell>);
+  }
+
+  const gridClass = tiles.length > 12 ? 'grid-cols-4 md:grid-cols-5' : tiles.length > 8 ? 'grid-cols-3 md:grid-cols-4' : 'grid-cols-2 md:grid-cols-3';
 
   return (
-    <GameShell title="Memory Match" icon={<Brain className="w-5 h-5" />} onBack={onComplete} difficulty={difficulty}>
-      <GameHUD score={matches * 10} progress={matches / requiredPairs} progressLabel={`Màn ${currentLevel} - ${matches}/${requiredPairs}`} />
-      <div className={`grid gap-3 md:gap-4 flex-1 ${difficulty === 'hard' ? 'grid-cols-4 md:grid-cols-5' : 'grid-cols-3 md:grid-cols-4'}`}>
+    <GameShell title="Memory Match" icon={<Brain className="w-5 h-5" />} onBack={onComplete}>
+      <GameHUD score={totalScore} progress={matches / requiredPairs} progressLabel={`Màn ${currentLevel} - ${matches}/${requiredPairs}`} />
+      <div className={`grid gap-3 md:gap-4 flex-1 ${gridClass}`}>
         {tiles.map(tile => (
           <div key={tile.id} className="relative w-full h-24 md:h-32 cursor-pointer perspective-1000" onClick={() => handleTileClick(tile.id)}>
             <motion.div className="w-full h-full relative transform-style-3d" initial={false} animate={{ rotateY: tile.isFlipped || tile.isMatched ? 180 : 0 }} transition={{ duration: 0.4, type: 'spring', stiffness: 300, damping: 25 }}>

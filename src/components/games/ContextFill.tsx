@@ -9,10 +9,11 @@ import { GameShell } from './GameShell';
 import { GameHUD } from './GameHUD';
 import { GameOverScreen } from './GameOverScreen';
 import { GameLoading } from './GameLoading';
+import { LevelSelector } from './LevelSelector';
 
 const QUESTIONS_PER_LEVEL = 10;
 
-export function ContextFill({ onComplete, difficulty = 'medium' }: { onComplete: () => void; difficulty?: 'easy' | 'medium' | 'hard' }) {
+export function ContextFill({ onComplete }: { onComplete: () => void; }) {
   const [allQuestions, setAllQuestions] = useState<Question[]>([]);
   const [currentLevel, setCurrentLevel] = useState(1);
   const [levelQuestions, setLevelQuestions] = useState<Question[]>([]);
@@ -22,10 +23,12 @@ export function ContextFill({ onComplete, difficulty = 'medium' }: { onComplete:
   const [combo, setCombo] = useState(0);
   const [levelCorrect, setLevelCorrect] = useState(0);
 
-  const { gameState, setGameState, loadQuestions, finishGame } = useGameBase({ gameId: 'context', difficulty, onComplete });
-  const gameHighScores = useUserStore(s => s.gameHighScores);
+  const { gameState, setGameState, loadQuestions } = useGameBase({ onComplete });
+  const updateGameProgress = useUserStore(s => s.updateGameProgress);
+  const addExp = useUserStore(s => s.addExp);
+  const gameProgress = useUserStore(s => s.gameProgress);
+  const currentProgress = gameProgress['context'] || { highScore: 0, maxLevel: 1 };
 
-  const TIMER_BY_DIFFICULTY = { easy: 90, medium: 60, hard: 40 };
   const totalLevels = Math.ceil(allQuestions.length / QUESTIONS_PER_LEVEL);
   const scoreRef = useRef(score);
   scoreRef.current = score;
@@ -57,6 +60,14 @@ export function ContextFill({ onComplete, difficulty = 'medium' }: { onComplete:
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [gameState, levelQuestions, currentIndex]);
 
+  const finishGame = (finalScore: number) => {
+    setGameState('gameover');
+    if (finalScore > 0) {
+      addExp(finalScore);
+      updateGameProgress('context', finalScore, currentLevel);
+    }
+  };
+
   const loadGame = async () => {
     const allQs = await loadQuestions();
     const validQs = allQs.filter(q =>
@@ -66,9 +77,13 @@ export function ContextFill({ onComplete, difficulty = 'medium' }: { onComplete:
     if (validQs.length < 5) return;
     const shuffled = validQs.sort(() => 0.5 - Math.random());
     setAllQuestions(shuffled);
-    setCurrentLevel(1);
-    startLevel(shuffled, 1);
+    setGameState('ready');
+  };
+
+  const startGame = (level: number = 1) => {
+    setCurrentLevel(level);
     setScore(0);
+    startLevel(allQuestions, level);
     setGameState('playing');
   };
 
@@ -80,7 +95,7 @@ export function ContextFill({ onComplete, difficulty = 'medium' }: { onComplete:
     setCurrentIndex(0);
     setCombo(0);
     setLevelCorrect(0);
-    setTimeLeft(TIMER_BY_DIFFICULTY[difficulty]);
+    setTimeLeft(Math.max(20, 60 - (level - 1) * 5));
   };
 
   function handleAnswer(optionIndex: number) {
@@ -103,6 +118,7 @@ export function ContextFill({ onComplete, difficulty = 'medium' }: { onComplete:
       } else {
         // Level complete
         if (currentLevel < totalLevels) {
+          updateGameProgress('context', newScore, currentLevel + 1);
           setGameState('level_complete');
         } else {
           finishGame(newScore);
@@ -124,15 +140,27 @@ export function ContextFill({ onComplete, difficulty = 'medium' }: { onComplete:
 
   if (gameState === 'loading') return <GameLoading text="Loading questions..." />;
 
+  if (gameState === 'ready') return (
+    <GameShell title="Fill in Blanks" icon={<FileText className="w-5 h-5" />} onBack={onComplete}>
+      <div className="flex-1 flex flex-col items-center justify-center p-4">
+        <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} className="text-center w-full">
+          <h2 className="text-2xl font-black text-text-main mb-2">Fill in Blanks</h2>
+          <p className="text-sm font-bold text-text-muted mb-6">Chọn từ thích hợp điền vào chỗ trống</p>
+          <LevelSelector maxLevel={currentProgress.maxLevel} highScore={currentProgress.highScore} onSelect={startGame} />
+        </motion.div>
+      </div>
+    </GameShell>
+  );
+
   if (gameState === 'gameover') {
     return (
-      <GameShell title="Fill in Blanks" icon={<FileText className="w-5 h-5" />} onBack={onComplete} difficulty={difficulty}>
+      <GameShell title="Fill in Blanks" icon={<FileText className="w-5 h-5" />} onBack={onComplete}>
         <GameOverScreen
           score={score}
           expEarned={score}
-          highScore={gameHighScores.context[difficulty]}
+          highScore={currentProgress.highScore}
           isWin={score > 0}
-          onRestart={loadGame}
+          onRestart={() => startGame(currentLevel)}
           onMenu={onComplete}
         />
       </GameShell>
@@ -142,7 +170,7 @@ export function ContextFill({ onComplete, difficulty = 'medium' }: { onComplete:
   // Level complete screen
   if (gameState === 'level_complete') {
     return (
-      <GameShell title="Fill in Blanks" icon={<FileText className="w-5 h-5" />} onBack={onComplete} difficulty={difficulty}>
+      <GameShell title="Fill in Blanks" icon={<FileText className="w-5 h-5" />} onBack={onComplete}>
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -173,12 +201,12 @@ export function ContextFill({ onComplete, difficulty = 'medium' }: { onComplete:
   const currentQ = levelQuestions[currentIndex];
 
   return (
-    <GameShell title="Fill in Blanks" icon={<FileText className="w-5 h-5" />} onBack={onComplete} difficulty={difficulty}>
+    <GameShell title="Fill in Blanks" icon={<FileText className="w-5 h-5" />} onBack={onComplete}>
       <GameHUD
         score={score}
         combo={combo}
         timer={timeLeft}
-        highScore={gameHighScores.context[difficulty]}
+        highScore={currentProgress.highScore}
         progress={(currentIndex + 1) / levelQuestions.length}
         progressLabel={`Màn ${currentLevel} - Câu ${currentIndex + 1}/${levelQuestions.length}`}
       />

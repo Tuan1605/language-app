@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
 import { db } from '../../data/db';
 import type { GrammarPoint } from '../../types';
@@ -9,10 +9,9 @@ import { playTap, playMatch, playLevelComplete } from '../../utils/sound';
 import { GameShell } from './GameShell';
 import { GameHUD } from './GameHUD';
 import { GameOverScreen } from './GameOverScreen';
-import { GameLoading } from './GameLoading';
 import { LevelCompleteScreen } from './LevelCompleteScreen';
-
-const PAIRS_PER_LEVEL = 5;
+import { LevelSelector } from './LevelSelector';
+import { GameLoading } from './GameLoading';
 
 interface MatchTile {
   id: string;
@@ -23,23 +22,26 @@ interface MatchTile {
   isMatched: boolean;
 }
 
-export function GrammarMatch({ onComplete, difficulty = 'medium' }: { onComplete: () => void; difficulty?: 'easy' | 'medium' | 'hard' }) {
+export function GrammarMatch({ onComplete }: { onComplete: () => void; }) {
   const [allPoints, setAllPoints] = useState<GrammarPoint[]>([]);
   const [currentLevel, setCurrentLevel] = useState(1);
   const [tiles, setTiles] = useState<MatchTile[]>([]);
   const [flippedIds, setFlippedIds] = useState<string[]>([]);
   const [isLocked, setIsLocked] = useState(false);
   const [matches, setMatches] = useState(0);
+  const matchesRef = useRef(0);
   const [isLoading, setIsLoading] = useState(true);
-  const [gameState, setGameState] = useState<'loading' | 'playing' | 'gameover' | 'level_complete'>('loading');
+  const [gameState, setGameState] = useState<'loading' | 'ready' | 'playing' | 'gameover' | 'level_complete'>('loading');
 
   const activeTrack = useUserStore(s => s.activeTrack);
-  const addExp = useUserStore(s => s.addExp);
-  const setGameHighScore = useUserStore(s => s.setGameHighScore);
-  const gameHighScores = useUserStore(s => s.gameHighScores);
+  const updateGameProgress = useUserStore(s => s.updateGameProgress);
+  const gameProgress = useUserStore(s => s.gameProgress);
+  const currentProgress = gameProgress['grammar-match'] || { highScore: 0, maxLevel: 1 };
 
-  const requiredPairs = PAIRS_PER_LEVEL;
-  const totalLevels = Math.ceil(allPoints.length / PAIRS_PER_LEVEL);
+  const requiredPairs = Math.min(3 + currentLevel, Math.floor(allPoints.length) || 4);
+  const [totalScore, setTotalScore] = useState(0);
+
+  useEffect(() => { matchesRef.current = matches; }, [matches]);
 
   useEffect(() => { loadGame(); }, []);
 
@@ -50,14 +52,21 @@ export function GrammarMatch({ onComplete, difficulty = 'medium' }: { onComplete
       if (points.length < 6) { toast.error('Not enough grammar points.'); onComplete(); return; }
       const shuffled = [...points].sort(() => 0.5 - Math.random());
       setAllPoints(shuffled);
-      setCurrentLevel(1);
-      startLevel(shuffled, 1);
+      setGameState('ready');
+      setIsLoading(false);
     } catch (e) { console.error(e); toast.error('Failed to load'); }
   };
 
+  const startGame = (level: number = 1) => {
+    setCurrentLevel(level);
+    setTotalScore(0);
+    startLevel(allPoints, level);
+  };
+
   const startLevel = (all: GrammarPoint[], level: number) => {
-    const start = (level - 1) * PAIRS_PER_LEVEL;
-    const slice = all.slice(start, start + PAIRS_PER_LEVEL);
+    const pairsCount = Math.min(3 + level, all.length);
+    const shuffledIds = [...all].sort(() => 0.5 - Math.random());
+    const slice = shuffledIds.slice(0, pairsCount);
     const newTiles: MatchTile[] = [];
     slice.forEach(p => {
       newTiles.push({ id: `${p.id}-pattern`, grammarId: p.id, type: 'pattern', text: p.pattern, isFlipped: false, isMatched: false });
@@ -92,15 +101,14 @@ export function GrammarMatch({ onComplete, difficulty = 'medium' }: { onComplete
         setTiles(prev => prev.map(t => (t.id === id1 || t.id === id2) ? { ...t, isMatched: true } : t));
         setFlippedIds([]);
         setIsLocked(false);
-        const newMatches = matches + 1;
+        const newMatches = matchesRef.current + 1;
         setMatches(newMatches);
-        if (newMatches === requiredPairs) {
+        if (newMatches === Math.min(3 + currentLevel, allPoints.length)) {
           playLevelComplete();
-          const exp = requiredPairs * 15;
-          addExp(exp);
-          setGameHighScore('grammar-match', difficulty, exp);
-          if (currentLevel < totalLevels) setGameState('level_complete');
-          else setGameState('gameover');
+          const exp = Math.min(3 + currentLevel, allPoints.length) * 15;
+          setTotalScore(s => s + exp);
+          updateGameProgress('grammar-match', totalScore + exp, currentLevel + 1);
+          setGameState('level_complete');
         }
       }, 500);
     } else {
@@ -111,14 +119,32 @@ export function GrammarMatch({ onComplete, difficulty = 'medium' }: { onComplete
   const nextLevel = () => { const next = currentLevel + 1; setCurrentLevel(next); startLevel(allPoints, next); };
 
   if (isLoading) return <GameLoading text="Loading grammar..." />;
-  if (gameState === 'gameover') return (<GameShell title="Grammar Match" icon={<Puzzle className="w-5 h-5" />} onBack={onComplete} difficulty={difficulty}><GameOverScreen score={matches * 15} expEarned={matches * 15} highScore={gameHighScores['grammar-match']?.[difficulty]} isWin={true} onRestart={loadGame} onMenu={onComplete} /></GameShell>);
-  if (gameState === 'level_complete') return (<GameShell title="Grammar Match" icon={<Puzzle className="w-5 h-5" />} onBack={onComplete} difficulty={difficulty}><LevelCompleteScreen currentLevel={currentLevel} totalLevels={totalLevels} correct={matches} total={requiredPairs} score={matches * 15} onNextLevel={nextLevel} /></GameShell>);
+  
+  if (gameState === 'ready') return (
+    <GameShell title="Grammar Match" icon={<Puzzle className="w-5 h-5" />} onBack={onComplete}>
+      <div className="flex-1 flex flex-col items-center justify-center p-4">
+        <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} className="text-center w-full">
+          <h2 className="text-2xl font-black text-text-main mb-2">Grammar Match</h2>
+          <p className="text-sm font-bold text-text-muted mb-6">Lật thẻ và tìm cặp cấu trúc - ý nghĩa tương ứng!</p>
+          <LevelSelector maxLevel={currentProgress.maxLevel} highScore={currentProgress.highScore} onSelect={startGame} />
+        </motion.div>
+      </div>
+    </GameShell>
+  );
+
+  if (gameState === 'gameover') {
+    return (<GameShell title="Grammar Match" icon={<Puzzle className="w-5 h-5" />} onBack={onComplete}><GameOverScreen score={totalScore} expEarned={totalScore} highScore={currentProgress.highScore} isWin={true} onRestart={() => startGame(currentLevel)} onMenu={onComplete} /></GameShell>);
+  }
+
+  if (gameState === 'level_complete') {
+    return (<GameShell title="Grammar Match" icon={<Puzzle className="w-5 h-5" />} onBack={onComplete}><LevelCompleteScreen currentLevel={currentLevel} totalLevels={100} correct={matches} total={requiredPairs} score={totalScore} onNextLevel={nextLevel} /></GameShell>);
+  }
 
   return (
-    <GameShell title="Grammar Match" icon={<Puzzle className="w-5 h-5" />} onBack={onComplete} difficulty={difficulty}>
-      <GameHUD score={matches * 15} progress={matches / requiredPairs} progressLabel={`Màn ${currentLevel} - ${matches}/${requiredPairs}`} />
+    <GameShell title="Grammar Match" icon={<Puzzle className="w-5 h-5" />} onBack={onComplete}>
+      <GameHUD score={totalScore} progress={matches / requiredPairs} progressLabel={`Màn ${currentLevel} - ${matches}/${requiredPairs}`} />
 
-      <div className={`grid gap-3 md:gap-4 flex-1 ${requiredPairs <= 5 ? 'grid-cols-3 md:grid-cols-4' : 'grid-cols-4 md:grid-cols-5'}`}>
+      <div className={`grid gap-3 md:gap-4 flex-1 ${tiles.length <= 10 ? 'grid-cols-3 md:grid-cols-4' : 'grid-cols-4 md:grid-cols-5'}`}>
         {tiles.map(tile => (
           <div
             key={tile.id}

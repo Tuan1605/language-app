@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { db } from '../../data/db';
 import type { GrammarPoint } from '../../types';
@@ -9,8 +9,9 @@ import { playTap, playCorrect, playWrong } from '../../utils/sound';
 import { GameShell } from './GameShell';
 import { GameHUD } from './GameHUD';
 import { GameOverScreen } from './GameOverScreen';
-import { GameLoading } from './GameLoading';
 import { LevelCompleteScreen } from './LevelCompleteScreen';
+import { LevelSelector } from './LevelSelector';
+import { GameLoading } from './GameLoading';
 
 const PER_LEVEL = 8;
 
@@ -21,27 +22,29 @@ interface Chunk {
   order: number;
 }
 
-export function SentenceBuilder({ onComplete, difficulty = 'medium' }: { onComplete: () => void; difficulty?: 'easy' | 'medium' | 'hard' }) {
+export function SentenceBuilder({ onComplete }: { onComplete: () => void; }) {
   const [allPoints, setAllPoints] = useState<GrammarPoint[]>([]);
   const [currentLevel, setCurrentLevel] = useState(1);
   const [levelPoints, setLevelPoints] = useState<GrammarPoint[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const currentIndexRef = useRef(0);
   const [chunks, setChunks] = useState<Chunk[]>([]);
   const [selectedChunks, setSelectedChunks] = useState<Chunk[]>([]);
   const [score, setScore] = useState(0);
   const [wrongAttempts, setWrongAttempts] = useState(0);
   const [levelCorrect, setLevelCorrect] = useState(0);
-  const [gameState, setGameState] = useState<'loading' | 'playing' | 'gameover' | 'won_round' | 'level_complete'>('loading');
+  const [gameState, setGameState] = useState<'loading' | 'ready' | 'playing' | 'gameover' | 'won_round' | 'level_complete'>('loading');
 
   const activeTrack = useUserStore(s => s.activeTrack);
   const addExp = useUserStore(s => s.addExp);
-  const setGameHighScore = useUserStore(s => s.setGameHighScore);
   const addGrammarMastery = useUserStore(s => s.addGrammarMastery);
-  const gameHighScores = useUserStore(s => s.gameHighScores);
+  const updateGameProgress = useUserStore(s => s.updateGameProgress);
+  const gameProgress = useUserStore(s => s.gameProgress);
+  const currentProgress = gameProgress['grammar-builder'] || { highScore: 0, maxLevel: 1 };
 
-  const MIN_STRUCT_LEN = { easy: 2, medium: 3, hard: 4 };
-  const EXP_BY_DIFFICULTY = { easy: 8, medium: 12, hard: 15 };
   const totalLevels = Math.ceil(allPoints.length / PER_LEVEL);
+
+  useEffect(() => { currentIndexRef.current = currentIndex; }, [currentIndex]);
 
   useEffect(() => { loadGame(); }, []);
 
@@ -49,14 +52,18 @@ export function SentenceBuilder({ onComplete, difficulty = 'medium' }: { onCompl
     try {
       const track = activeTrack === 'english' ? 'toeic' : 'n2';
       const points = await db.grammar.where('track').equals(track).toArray();
-      const withStructure = points.filter(p => p.structure && p.structure.split(/[\s+＋]+/).length >= MIN_STRUCT_LEN[difficulty]);
+      const withStructure = points.filter(p => p.structure && p.structure.split(/[\s+＋]+/).length >= 2);
       if (withStructure.length < 5) { toast.error('Not enough grammar points.'); onComplete(); return; }
       const shuffled = [...withStructure].sort(() => 0.5 - Math.random());
       setAllPoints(shuffled);
-      setCurrentLevel(1);
-      setScore(0);
-      startLevel(shuffled, 1);
+      setGameState('ready');
     } catch (e) { console.error(e); toast.error('Failed to load'); }
+  };
+
+  const startGame = (level: number = 1) => {
+    setCurrentLevel(level);
+    setScore(0);
+    startLevel(allPoints, level);
   };
 
   const startLevel = (all: GrammarPoint[], level: number) => {
@@ -94,14 +101,15 @@ export function SentenceBuilder({ onComplete, difficulty = 'medium' }: { onCompl
     setSelectedChunks(newSelected);
 
     if (newSelected.length === chunks.length) {
+      const idx = currentIndexRef.current;
       const guessed = newSelected.map(c => c.text).join(' + ');
-      const correct = levelPoints[currentIndex].structure!;
+      const correct = levelPoints[idx].structure!;
       if (guessed === correct) {
         playCorrect();
-        const base = EXP_BY_DIFFICULTY[difficulty];
+        const base = 12;
         const penalty = wrongAttempts * 3;
         setScore(s => s + Math.max(0, base - penalty));
-        addGrammarMastery(levelPoints[currentIndex].id, 6);
+        addGrammarMastery(levelPoints[idx].id, 6);
         setGameState('won_round');
       } else {
         playWrong();
@@ -116,33 +124,50 @@ export function SentenceBuilder({ onComplete, difficulty = 'medium' }: { onCompl
   };
 
   const nextRound = () => {
-    if (currentIndex + 1 < levelPoints.length) {
-      setCurrentIndex(i => i + 1);
-      startRound(levelPoints[currentIndex + 1]);
+    const idx = currentIndexRef.current;
+    if (idx + 1 < levelPoints.length) {
+      setCurrentIndex(idx + 1);
+      startRound(levelPoints[idx + 1]);
     } else {
-      if (currentLevel < totalLevels) setGameState('level_complete');
+      if (currentLevel < totalLevels) {
+        updateGameProgress('grammar-builder', score, currentLevel + 1);
+        setGameState('level_complete');
+      }
       else handleGameOver();
     }
   };
 
-  const nextLevel = () => { const next = currentLevel + 1; setCurrentLevel(next); startLevel(allPoints, next); setGameState('playing'); };
+  const nextLevel = () => { const next = currentLevel + 1; setCurrentLevel(next); startLevel(allPoints, next); };
 
   const handleGameOver = () => {
     setGameState('gameover');
-    if (score > 0) { addExp(score); setGameHighScore('grammar-builder', difficulty, score); }
+    if (score > 0) { addExp(score); updateGameProgress('grammar-builder', score, currentLevel); }
   };
 
   if (gameState === 'loading') return <GameLoading text="Loading grammar..." />;
-  if (gameState === 'gameover') return (<GameShell title="Sentence Builder" icon={<Blocks className="w-5 h-5" />} onBack={onComplete} difficulty={difficulty}><GameOverScreen score={score} expEarned={score} highScore={gameHighScores['grammar-builder']?.[difficulty]} isWin={score > 0} onRestart={loadGame} onMenu={onComplete} /></GameShell>);
-  if (gameState === 'level_complete') return (<GameShell title="Sentence Builder" icon={<Blocks className="w-5 h-5" />} onBack={onComplete} difficulty={difficulty}><LevelCompleteScreen currentLevel={currentLevel} totalLevels={totalLevels} correct={levelCorrect} total={levelPoints.length} score={score} onNextLevel={nextLevel} /></GameShell>);
+
+  if (gameState === 'ready') return (
+    <GameShell title="Sentence Builder" icon={<Blocks className="w-5 h-5" />} onBack={onComplete}>
+      <div className="flex-1 flex flex-col items-center justify-center p-4">
+        <motion.div initial={{ scale: 0.8, opacity: 0 }} animate={{ scale: 1, opacity: 1 }} className="text-center w-full">
+          <h2 className="text-2xl font-black text-text-main mb-2">Sentence Builder</h2>
+          <p className="text-sm font-bold text-text-muted mb-6">Sắp xếp các cụm từ để tạo thành cấu trúc ngữ pháp đúng</p>
+          <LevelSelector maxLevel={currentProgress.maxLevel} highScore={currentProgress.highScore} onSelect={startGame} />
+        </motion.div>
+      </div>
+    </GameShell>
+  );
+
+  if (gameState === 'gameover') return (<GameShell title="Sentence Builder" icon={<Blocks className="w-5 h-5" />} onBack={onComplete}><GameOverScreen score={score} expEarned={score} highScore={currentProgress.highScore} isWin={score > 0} onRestart={() => startGame(currentLevel)} onMenu={onComplete} /></GameShell>);
+  if (gameState === 'level_complete') return (<GameShell title="Sentence Builder" icon={<Blocks className="w-5 h-5" />} onBack={onComplete}><LevelCompleteScreen currentLevel={currentLevel} totalLevels={totalLevels} correct={levelCorrect} total={levelPoints.length} score={score} onNextLevel={nextLevel} /></GameShell>);
 
   const current = levelPoints[currentIndex];
 
   return (
-    <GameShell title="Sentence Builder" icon={<Blocks className="w-5 h-5" />} onBack={onComplete} difficulty={difficulty}>
+    <GameShell title="Sentence Builder" icon={<Blocks className="w-5 h-5" />} onBack={onComplete}>
       <GameHUD
         score={score}
-        highScore={gameHighScores['grammar-builder']?.[difficulty]}
+        highScore={currentProgress.highScore}
         progress={(currentIndex + 1) / levelPoints.length}
         progressLabel={`Màn ${currentLevel} - ${currentIndex + 1}/${levelPoints.length}`}
       />

@@ -11,7 +11,7 @@ interface GameOverScreenProps {
   onMenu: () => void;
 }
 
-function ConfettiParticle({ index, isWin }: { index: number; isWin: boolean }) {
+function ConfettiParticle({ index }: { index: number }) {
   const colors = ['var(--blue)', 'var(--green)', 'var(--gold)', 'var(--purple)', 'var(--red)', '#FF6B9D', '#00D2FF'];
   const color = colors[index % colors.length];
   const left = Math.random() * 100;
@@ -69,7 +69,7 @@ export function GameOverScreen({ score, expEarned, highScore, isWin, onRestart, 
       {showConfetti && (
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
           {[...Array(30)].map((_, i) => (
-            <ConfettiParticle key={i} index={i} isWin={isWin} />
+            <ConfettiParticle key={i} index={i} />
           ))}
         </div>
       )}
