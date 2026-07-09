@@ -1,163 +1,223 @@
-import { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import { useState, useEffect, useRef } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import type { Question } from '../../types';
 import { useGameBase } from '../../hooks/useGameBase';
 import { useUserStore } from '../../stores/useUserStore';
+import { FileText, ArrowRight, Trophy, Zap } from 'lucide-react';
+import { playCorrect, playWrong, playCombo, playTimerTick } from '../../utils/sound';
+import { GameShell } from './GameShell';
+import { GameHUD } from './GameHUD';
+import { GameOverScreen } from './GameOverScreen';
+import { GameLoading } from './GameLoading';
 
-import { Trophy, Timer, Zap } from 'lucide-react';
+const QUESTIONS_PER_LEVEL = 10;
 
 export function ContextFill({ onComplete, difficulty = 'medium' }: { onComplete: () => void; difficulty?: 'easy' | 'medium' | 'hard' }) {
-  const [questions, setQuestions] = useState<Question[]>([]);
+  const [allQuestions, setAllQuestions] = useState<Question[]>([]);
+  const [currentLevel, setCurrentLevel] = useState(1);
+  const [levelQuestions, setLevelQuestions] = useState<Question[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [timeLeft, setTimeLeft] = useState(60);
   const [score, setScore] = useState(0);
   const [combo, setCombo] = useState(0);
+  const [levelCorrect, setLevelCorrect] = useState(0);
 
   const { gameState, setGameState, loadQuestions, finishGame } = useGameBase({ gameId: 'context', difficulty, onComplete });
   const gameHighScores = useUserStore(s => s.gameHighScores);
 
   const TIMER_BY_DIFFICULTY = { easy: 90, medium: 60, hard: 40 };
+  const totalLevels = Math.ceil(allQuestions.length / QUESTIONS_PER_LEVEL);
+  const scoreRef = useRef(score);
+  scoreRef.current = score;
 
-  useEffect(() => {
-    loadGame();
-  }, []);
+  useEffect(() => { loadGame(); }, []);
 
   useEffect(() => {
     if (gameState !== 'playing' || timeLeft <= 0) return;
-
     const timer = setInterval(() => {
       setTimeLeft(t => {
-        if (t <= 1) {
-          clearInterval(timer);
-          finishGame(score);
-          return 0;
-        }
+        if (t <= 1) { clearInterval(timer); finishGame(scoreRef.current); return 0; }
+        if (t <= 10) playTimerTick();
         return t - 1;
       });
     }, 1000);
-
     return () => clearInterval(timer);
-  }, [gameState, timeLeft, score]);
+  }, [gameState, timeLeft]);
 
-  // Keyboard shortcuts: A/B/C/D
   useEffect(() => {
     const handleKeyDown = (e: KeyboardEvent) => {
       if (gameState !== 'playing') return;
-      const currentQ = questions[currentIndex];
+      const currentQ = levelQuestions[currentIndex];
       if (!currentQ) return;
       const key = e.key.toUpperCase();
       const idx = key.charCodeAt(0) - 65;
-      if (idx >= 0 && idx < (currentQ.options?.length ?? 0)) {
-        handleAnswer(idx);
-      }
+      if (idx >= 0 && idx < (currentQ.options?.length ?? 0)) handleAnswer(idx);
     };
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [gameState, questions, currentIndex, handleAnswer]);
+  }, [gameState, levelQuestions, currentIndex]);
 
   const loadGame = async () => {
     const allQs = await loadQuestions();
-    if (allQs.length < 5) return;
-
-    const shuffled = allQs.sort(() => 0.5 - Math.random());
-    setQuestions(shuffled);
-    setCurrentIndex(0);
+    const validQs = allQs.filter(q =>
+      q.options && q.options.length >= 2 &&
+      !q.options.every(opt => /^\([A-D]\)$/.test(opt.trim()))
+    );
+    if (validQs.length < 5) return;
+    const shuffled = validQs.sort(() => 0.5 - Math.random());
+    setAllQuestions(shuffled);
+    setCurrentLevel(1);
+    startLevel(shuffled, 1);
     setScore(0);
-    setCombo(0);
-    setTimeLeft(TIMER_BY_DIFFICULTY[difficulty]);
     setGameState('playing');
+  };
+
+  const startLevel = (allQs: Question[], level: number) => {
+    const startIdx = (level - 1) * QUESTIONS_PER_LEVEL;
+    const endIdx = Math.min(startIdx + QUESTIONS_PER_LEVEL, allQs.length);
+    const levelQs = allQs.slice(startIdx, endIdx);
+    setLevelQuestions(levelQs);
+    setCurrentIndex(0);
+    setCombo(0);
+    setLevelCorrect(0);
+    setTimeLeft(TIMER_BY_DIFFICULTY[difficulty]);
   };
 
   function handleAnswer(optionIndex: number) {
     if (gameState !== 'playing') return;
-
-    const currentQ = questions[currentIndex];
+    const currentQ = levelQuestions[currentIndex];
     const isCorrect = optionIndex === currentQ.correctAnswer;
 
     if (isCorrect) {
+      playCorrect();
+      const newCombo = combo + 1;
+      if (newCombo >= 3) playCombo(newCombo);
       const comboBonus = Math.floor(combo / 3) * 5;
       const newScore = score + 10 + comboBonus;
       setScore(newScore);
-      setCombo(c => c + 1);
+      setCombo(newCombo);
+      setLevelCorrect(c => c + 1);
 
-      if (currentIndex + 1 < questions.length) {
+      if (currentIndex + 1 < levelQuestions.length) {
         setCurrentIndex(i => i + 1);
       } else {
-        finishGame(newScore);
+        // Level complete
+        if (currentLevel < totalLevels) {
+          setGameState('level_complete');
+        } else {
+          finishGame(newScore);
+        }
       }
     } else {
+      playWrong();
       setCombo(0);
       setTimeLeft(t => Math.max(0, t - 5));
     }
+  }
+
+  const nextLevel = () => {
+    const next = currentLevel + 1;
+    setCurrentLevel(next);
+    startLevel(allQuestions, next);
+    setGameState('playing');
   };
 
-  if (gameState === 'loading') return <div className="flex-1 flex items-center justify-center font-bold">Loading...</div>;
+  if (gameState === 'loading') return <GameLoading text="Loading questions..." />;
 
   if (gameState === 'gameover') {
     return (
-      <div className="flex-1 flex flex-col items-center justify-center">
-        <Trophy className="w-16 h-16 text-gold mb-4" />
-        <h2 className="text-3xl font-black text-text-main mb-2">Game Over</h2>
-        <p className="text-xl font-bold text-text-muted mb-2">Final Score: {score}</p>
-        {gameHighScores.context[difficulty] > 0 && (
-          <p className="text-sm font-bold text-gold mb-8">Best: {gameHighScores.context[difficulty]}</p>
-        )}
-        <div className="flex gap-4">
-          <button onClick={loadGame} className="px-6 py-3 bg-blue text-white rounded-xl font-black">Play Again</button>
-          <button onClick={onComplete} className="px-6 py-3 bg-gray-bg text-text-main border-2 rounded-xl font-black">Menu</button>
-        </div>
-      </div>
+      <GameShell title="Fill in Blanks" icon={<FileText className="w-5 h-5" />} onBack={onComplete} difficulty={difficulty}>
+        <GameOverScreen
+          score={score}
+          expEarned={score}
+          highScore={gameHighScores.context[difficulty]}
+          isWin={score > 0}
+          onRestart={loadGame}
+          onMenu={onComplete}
+        />
+      </GameShell>
     );
   }
 
-  const currentQ = questions[currentIndex];
+  // Level complete screen
+  if (gameState === 'level_complete') {
+    return (
+      <GameShell title="Fill in Blanks" icon={<FileText className="w-5 h-5" />} onBack={onComplete} difficulty={difficulty}>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          className="flex-1 flex flex-col items-center justify-center py-8"
+        >
+          <div className="w-20 h-20 md:w-24 md:h-24 rounded-full bg-green/10 flex items-center justify-center mb-4 md:mb-6">
+            <Trophy className="w-10 h-10 md:w-12 md:h-12 text-green" />
+          </div>
+          <h2 className="text-2xl md:text-3xl font-black text-text-main mb-2">Màn {currentLevel} hoàn thành!</h2>
+          <p className="text-sm md:text-base text-text-muted font-bold mb-4">
+            Đúng {levelCorrect}/{levelQuestions.length} câu
+          </p>
+          <div className="flex items-center gap-2 px-4 py-2 bg-green/10 border-2 border-green/20 rounded-full mb-6">
+            <Zap className="w-4 h-4 text-green" />
+            <span className="font-black text-green text-sm">+{score} điểm tích lũy</span>
+          </div>
+          <p className="text-xs text-text-muted mb-6">
+            Còn {totalLevels - currentLevel} màn nữa
+          </p>
+          <button onClick={nextLevel} className="btn-duo btn-green px-8 py-4 text-base md:text-lg">
+            Màn tiếp theo <ArrowRight className="w-5 h-5 inline ml-2" />
+          </button>
+        </motion.div>
+      </GameShell>
+    );
+  }
+
+  const currentQ = levelQuestions[currentIndex];
 
   return (
-    <div className="flex-1 flex flex-col w-full h-full p-4 md:p-8">
-      {/* HUD */}
-      <div className="flex justify-between items-center mb-8">
-        <div className="flex items-center gap-2">
-          <div className={`flex items-center gap-2 px-4 py-2 rounded-xl font-black text-xl transition-colors ${combo >= 3 ? 'bg-gold/20 text-gold' : 'bg-gray-bg text-text-main'}`}>
-            <Zap className={`w-5 h-5 ${combo >= 3 ? 'fill-gold' : ''}`} />
-            x{combo}
-          </div>
-          <div className="text-2xl font-black text-blue">{score}</div>
-        </div>
-
-        <div className={`flex items-center gap-2 px-4 py-2 rounded-xl font-black text-xl ${timeLeft <= 10 ? 'bg-red/20 text-red animate-pulse' : 'bg-gray-bg text-text-main'}`}>
-          <Timer className="w-5 h-5" />
-          {timeLeft}s
-        </div>
-      </div>
+    <GameShell title="Fill in Blanks" icon={<FileText className="w-5 h-5" />} onBack={onComplete} difficulty={difficulty}>
+      <GameHUD
+        score={score}
+        combo={combo}
+        timer={timeLeft}
+        highScore={gameHighScores.context[difficulty]}
+        progress={(currentIndex + 1) / levelQuestions.length}
+        progressLabel={`Màn ${currentLevel} - Câu ${currentIndex + 1}/${levelQuestions.length}`}
+      />
 
       {/* Question */}
       <div className="flex-1 flex flex-col items-center justify-center max-w-2xl mx-auto w-full">
-        <motion.div
-          key={currentIndex}
-          initial={{ x: 50, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          className="w-full"
-        >
-          <h2 className="text-xl md:text-2xl font-bold text-text-main text-center mb-10 leading-relaxed">
-            {currentQ?.text || "Select the correct option to fill in the blank."}
-          </h2>
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={currentIndex}
+            initial={{ x: 50, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            exit={{ x: -50, opacity: 0 }}
+            className="w-full"
+          >
+            {/* Question card */}
+            <div className="bg-bg-card rounded-xl md:rounded-2xl p-4 md:p-6 border-2 border-gray-path/60 text-center mb-5 md:mb-8">
+              <p className="text-sm md:text-base lg:text-xl font-bold text-text-main leading-relaxed">
+                {currentQ?.text || "Select the correct option to fill in the blank."}
+              </p>
+            </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {currentQ?.options.map((opt, idx) => (
-              <button
-                key={idx}
-                onClick={() => handleAnswer(idx)}
-                className="w-full text-left p-4 rounded-xl border-2 border-gray-path bg-white hover:border-blue hover:bg-blue/5 hover:text-blue transition-colors font-bold text-lg active:scale-95 shadow-[0_4px_0_var(--color-gray-path)] active:translate-y-1 active:shadow-none"
-              >
-                <span className="inline-block w-8 font-black text-text-muted mr-2">
-                  {String.fromCharCode(65 + idx)}.
-                </span>
-                {opt}
-              </button>
-            ))}
-          </div>
-        </motion.div>
+            {/* Options */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-2 md:gap-3">
+              {currentQ?.options.map((opt, idx) => (
+                <button
+                  key={idx}
+                  onClick={() => handleAnswer(idx)}
+                  className="w-full text-left p-3 md:p-4 rounded-lg md:rounded-xl border-2 border-gray-path/60 bg-bg-card hover:border-blue/50 hover:bg-blue/5 transition-all font-bold text-sm md:text-base active:scale-[0.98] active:translate-y-[3px] active:shadow-none"
+                >
+                  <span className="inline-flex items-center justify-center w-6 h-6 md:w-7 md:h-7 rounded-lg bg-bg-hover font-black text-[10px] md:text-xs text-text-muted mr-2 md:mr-3">
+                    {String.fromCharCode(65 + idx)}
+                  </span>
+                  {opt}
+                </button>
+              ))}
+            </div>
+          </motion.div>
+        </AnimatePresence>
       </div>
-    </div>
+    </GameShell>
   );
 }

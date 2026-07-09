@@ -18,6 +18,8 @@ const GAMES: GameInfo[] = [
   { id: 'grammar-builder', name: 'Sentence Builder', category: 'grammar' },
   { id: 'grammar-detective', name: 'Pattern Detective', category: 'grammar' },
   { id: 'grammar-typing', name: 'Grammar Typing', category: 'grammar' },
+  { id: 'vocab-rpg', name: 'RPG Vocabulary', category: 'vocab' },
+  { id: 'escape', name: 'Language Escape', category: 'vocab' },
 ];
 
 const DIFFICULTIES = ['easy', 'medium', 'hard'] as const;

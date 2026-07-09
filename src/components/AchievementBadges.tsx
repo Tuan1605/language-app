@@ -74,27 +74,27 @@ export function AchievementBadges() {
   const displayAchievements = showAll ? allAchievements : allAchievements.filter(a => a.unlocked).slice(0, 6);
 
   return (
-    <div className="bg-bg-card lingo-card p-6 sm:p-8 max-w-4xl mx-auto w-full">
-      <div className="flex items-center justify-between mb-6">
-        <div className="flex items-center gap-3">
-          <div className="w-12 h-12 rounded-xl bg-tint-gold flex items-center justify-center">
-            <Trophy size={24} className="text-gold" />
+    <div className="bg-bg-card lingo-card p-4 md:p-6 lg:p-8 max-w-4xl mx-auto w-full">
+      <div className="flex items-center justify-between mb-4 md:mb-6">
+        <div className="flex items-center gap-2.5 md:gap-3">
+          <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-tint-gold flex items-center justify-center">
+            <Trophy size={20} className="text-gold md:w-6 md:h-6" />
           </div>
           <div>
-            <h3 className="font-black text-lg text-text-main">Achievements</h3>
-            <p className="text-[10px] font-bold text-text-muted">
+            <h3 className="font-black text-base md:text-lg text-text-main">Achievements</h3>
+            <p className="text-[9px] md:text-[10px] font-bold text-text-muted">
               {progress.unlocked}/{progress.total} unlocked
             </p>
           </div>
         </div>
         <div className="text-right">
-          <p className="text-2xl font-black text-gold">{progress.percentage}%</p>
-          <p className="text-[9px] font-bold text-text-muted">Complete</p>
+          <p className="text-xl md:text-2xl font-black text-gold">{progress.percentage}%</p>
+          <p className="text-[8px] md:text-[9px] font-bold text-text-muted">Complete</p>
         </div>
       </div>
 
       {/* Progress Bar */}
-      <div className="w-full h-3 bg-gray-path rounded-full overflow-hidden mb-6">
+      <div className="w-full h-2.5 md:h-3 bg-gray-path rounded-full overflow-hidden mb-4 md:mb-6">
         <div
           className="h-full bg-gradient-to-r from-gold to-yellow-400 transition-all duration-500"
           style={{ width: `${progress.percentage}%` }}
@@ -102,29 +102,29 @@ export function AchievementBadges() {
       </div>
 
       {/* Achievement Grid */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 md:gap-3">
         {displayAchievements.map((achievement) => (
           <div
             key={achievement.id}
-            className={`relative p-4 rounded-2xl border-2 text-center transition-all ${
+            className={`relative p-3 md:p-4 rounded-xl md:rounded-2xl border-2 text-center transition-all ${
               achievement.unlocked
                 ? 'border-gold bg-tint-gold shadow-md'
                 : 'border-border-main bg-bg-hover opacity-60'
             }`}
           >
             {achievement.unlocked ? (
-              <div className="absolute -top-2 -right-2 w-6 h-6 bg-green rounded-full flex items-center justify-center">
-                <span className="text-white text-[10px]">✓</span>
+              <div className="absolute -top-1.5 -right-1.5 md:-top-2 md:-right-2 w-5 h-5 md:w-6 md:h-6 bg-green rounded-full flex items-center justify-center">
+                <span className="text-white text-[8px] md:text-[10px]">✓</span>
               </div>
             ) : (
-              <div className="absolute -top-2 -right-2 w-6 h-6 bg-gray-path rounded-full flex items-center justify-center">
-                <Lock size={10} className="text-text-muted" />
+              <div className="absolute -top-1.5 -right-1.5 md:-top-2 md:-right-2 w-5 h-5 md:w-6 md:h-6 bg-gray-path rounded-full flex items-center justify-center">
+                <Lock size={8} className="text-text-muted md:w-2.5 md:h-2.5" />
               </div>
             )}
 
-            <div className="text-3xl mb-2">{achievement.icon}</div>
-            <p className="text-xs font-black text-text-main mb-1 leading-tight">{achievement.title}</p>
-            <p className="text-[9px] font-bold text-text-muted">{achievement.description}</p>
+            <div className="text-2xl md:text-3xl mb-1.5 md:mb-2">{achievement.icon}</div>
+            <p className="text-[10px] md:text-xs font-black text-text-main mb-0.5 md:mb-1 leading-tight">{achievement.title}</p>
+            <p className="text-[8px] md:text-[9px] font-bold text-text-muted">{achievement.description}</p>
           </div>
         ))}
       </div>
@@ -133,26 +133,26 @@ export function AchievementBadges() {
       {allAchievements.length > 6 && (
         <button
           onClick={() => setShowAll(!showAll)}
-          className="w-full mt-4 py-2 text-xs font-bold text-blue hover:text-blue/80 transition-colors"
+          className="w-full mt-3 md:mt-4 py-1.5 md:py-2 text-[10px] md:text-xs font-bold text-blue hover:text-blue/80 transition-colors"
         >
           {showAll ? 'Show Less' : `Show All (${allAchievements.length})`}
         </button>
       )}
 
       {/* Stats Summary */}
-      <div className="mt-6 p-4 rounded-xl bg-bg-hover border-2 border-border-main">
-        <div className="grid grid-cols-3 gap-4 text-center">
+      <div className="mt-4 md:mt-6 p-3 md:p-4 rounded-lg md:rounded-xl bg-bg-hover border-2 border-border-main">
+        <div className="grid grid-cols-3 gap-3 md:gap-4 text-center">
           <div>
-            <p className="text-lg font-black text-text-main">{stats.totalCards}</p>
-            <p className="text-[9px] font-bold text-text-muted">Words</p>
+            <p className="text-base md:text-lg font-black text-text-main">{stats.totalCards}</p>
+            <p className="text-[8px] md:text-[9px] font-bold text-text-muted">Words</p>
           </div>
           <div>
-            <p className="text-lg font-black text-green">{stats.masteredCards}</p>
-            <p className="text-[9px] font-bold text-text-muted">Mastered</p>
+            <p className="text-base md:text-lg font-black text-green">{stats.masteredCards}</p>
+            <p className="text-[8px] md:text-[9px] font-bold text-text-muted">Mastered</p>
           </div>
           <div>
-            <p className="text-lg font-black text-blue">{stats.avgAccuracy}%</p>
-            <p className="text-[9px] font-bold text-text-muted">Accuracy</p>
+            <p className="text-base md:text-lg font-black text-blue">{stats.avgAccuracy}%</p>
+            <p className="text-[8px] md:text-[9px] font-bold text-text-muted">Accuracy</p>
           </div>
         </div>
       </div>

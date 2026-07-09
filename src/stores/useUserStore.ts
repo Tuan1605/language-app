@@ -55,7 +55,9 @@ export const useUserStore = create<UserState>()(
         'grammar-match': { easy: 0, medium: 0, hard: 0 },
         'grammar-typing': { easy: 0, medium: 0, hard: 0 },
         'grammar-detective': { easy: 0, medium: 0, hard: 0 },
-        'grammar-builder': { easy: 0, medium: 0, hard: 0 }
+        'grammar-builder': { easy: 0, medium: 0, hard: 0 },
+        'vocab-rpg': { easy: 0, medium: 0, hard: 0 },
+        'escape': { easy: 0, medium: 0, hard: 0 },
       },
 
       toggleTheme: () => set((state) => {

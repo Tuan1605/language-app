@@ -174,25 +174,25 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
         </div>
       )}
 
-      <div className="flex justify-between items-center mb-10 mt-2">
-        <div className="flex items-center gap-3">
-          <div className={`w-3 h-3 rounded-full ${category === 'toeic' ? 'bg-blue' : 'bg-red'}`}></div>
-          <span className="text-[10px] font-black text-text-muted uppercase tracking-[0.2em]">{category} Mock Exam</span>
+      <div className="flex justify-between items-center mb-6 md:mb-10 mt-2">
+        <div className="flex items-center gap-2 md:gap-3">
+          <div className={`w-2.5 h-2.5 md:w-3 md:h-3 rounded-full ${category === 'toeic' ? 'bg-blue' : 'bg-red'}`}></div>
+          <span className="text-[8px] md:text-[10px] font-black text-text-muted uppercase tracking-[0.2em]">{category} Mock Exam</span>
           {!isFinished && !isAnswered && (
-            <span className={`text-[10px] font-black uppercase px-2 py-0.5 rounded-md border-2 ${timeLeft <= 5 ? 'text-red border-red animate-pulse' : 'text-blue border-blue'}`}>
+            <span className={`text-[8px] md:text-[10px] font-black uppercase px-1.5 py-0.5 md:px-2 rounded-md border-2 ${timeLeft <= 5 ? 'text-red border-red animate-pulse' : 'text-blue border-blue'}`}>
               {timeLeft}s
             </span>
           )}
           {isAnswered && (
-            <span className="text-[10px] font-black uppercase px-2 py-0.5 rounded-md border-2 text-text-muted border-border-main bg-bg-hover">
+            <span className="text-[8px] md:text-[10px] font-black uppercase px-1.5 py-0.5 md:px-2 rounded-md border-2 text-text-muted border-border-main bg-bg-hover">
               Answered
             </span>
           )}
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-1.5 md:gap-2">
           {/* Adaptive Difficulty Indicator */}
           {accuracyStats.recentTotal >= 3 && (
-            <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl border-2 bg-bg-hover" style={{
+            <div className="hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded-xl border-2 bg-bg-hover" style={{
               borderColor: accuracyStats.accuracy >= 0.7 ? 'var(--green)' : accuracyStats.accuracy >= 0.5 ? 'var(--gold)' : 'var(--red)'
             }}>
               {accuracyStats.accuracy >= 0.7 ? (
@@ -213,8 +213,8 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
               </span>
             </div>
           )}
-          <div className="bg-bg-hover px-4 py-1.5 rounded-xl text-[9px] font-black text-text-muted uppercase tracking-widest border-2 border-border-main shrink-0">
-            Question {currentIndex + 1} of {questions.length}
+          <div className="bg-bg-hover px-2.5 py-1 md:px-4 md:py-1.5 rounded-lg md:rounded-xl text-[8px] md:text-[9px] font-black text-text-muted uppercase tracking-widest border-2 border-border-main shrink-0">
+            {currentIndex + 1}/{questions.length}
           </div>
         </div>
       </div>
@@ -237,17 +237,17 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
         )}
 
         <div className={`w-full flex flex-col ${hasMedia ? 'md:w-1/2' : ''}`}>
-          <div className="mb-8">
-            <h3 className="text-2xl font-black text-text-main leading-snug">
+          <div className="mb-5 md:mb-8">
+            <h3 className="text-lg md:text-2xl font-black text-text-main leading-snug">
               {currentQuestion.text}
             </h3>
           </div>
 
-          <div className="grid grid-cols-1 gap-3 mb-8">
+          <div className="grid grid-cols-1 gap-2 md:gap-3 mb-5 md:mb-8">
         {currentQuestion.options.map((option, idx) => {
           let btnClass = "";
           let badgeClass = "";
-          
+
           if (isAnswered) {
             if (idx === currentQuestion.correctAnswer) {
               btnClass = "border-green bg-tint-green text-green shadow-sm";
@@ -274,12 +274,12 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
               key={idx}
               onClick={() => handleSelect(idx)}
               disabled={isAnswered}
-              className={`group w-full text-left h-16 px-6 rounded-2xl border-2 transition-all duration-200 flex items-center gap-4 relative overflow-hidden ${btnClass}`}
+              className={`group w-full text-left h-12 md:h-16 px-4 md:px-6 rounded-xl md:rounded-2xl border-2 transition-all duration-200 flex items-center gap-3 md:gap-4 relative overflow-hidden ${btnClass}`}
             >
-              <div className={`w-10 h-10 rounded-xl flex-shrink-0 flex items-center justify-center font-black text-lg transition-all border-2 ${badgeClass}`}>
+              <div className={`w-8 h-8 md:w-10 md:h-10 rounded-lg md:rounded-xl flex-shrink-0 flex items-center justify-center font-black text-sm md:text-lg transition-all border-2 ${badgeClass}`}>
                 {String.fromCharCode(65 + idx)}
               </div>
-              <span className="text-lg font-bold">{option}</span>
+              <span className="text-sm md:text-lg font-bold">{option}</span>
             </button>
           );
         })}
@@ -288,7 +288,7 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
       {/* Immediate feedback section */}
       {isAnswered && (
         <div
-          className={`p-6 rounded-2xl border-2 mb-8 animate-in slide-in-from-bottom-4 duration-300 ${
+          className={`p-4 md:p-6 rounded-xl md:rounded-2xl border-2 mb-5 md:mb-8 animate-in slide-in-from-bottom-4 duration-300 ${
             selectedOption === currentQuestion.correctAnswer
               ? 'bg-tint-green border-green text-text-on-tint'
               : 'bg-tint-red border-red text-text-on-tint'
@@ -296,14 +296,14 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
           role="alert"
           aria-live="assertive"
         >
-          <h4 className="font-black text-lg mb-2 flex items-center gap-2">
+          <h4 className="font-black text-base md:text-lg mb-1.5 md:mb-2 flex items-center gap-2">
             {selectedOption === currentQuestion.correctAnswer ? 'Correct!' : 'Incorrect'}
           </h4>
-          <p className="text-sm font-bold opacity-80 mb-2 uppercase tracking-wide">
+          <p className="text-xs md:text-sm font-bold opacity-80 mb-1.5 md:mb-2 uppercase tracking-wide">
             Correct Answer: {String.fromCharCode(65 + currentQuestion.correctAnswer)}. {currentQuestion.options[currentQuestion.correctAnswer]}
           </p>
           {currentQuestion.explanation && (
-            <p className="text-sm font-medium leading-relaxed border-t border-current/10 pt-2 mt-2">
+            <p className="text-xs md:text-sm font-medium leading-relaxed border-t border-current/10 pt-2 mt-2">
               💡 {currentQuestion.explanation}
             </p>
           )}
@@ -312,19 +312,19 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
       </div>
       </div>
 
-      <div className="flex justify-between items-center pt-8 border-t-2 border-quiz-divider mt-auto">
+      <div className="flex justify-between items-center pt-5 md:pt-8 border-t-2 border-quiz-divider mt-auto">
         <button
           onClick={() => setShowQuitConfirm(true)}
-          className="text-text-muted font-black hover:text-red transition-colors uppercase tracking-[0.2em] text-[9px]"
+          className="text-text-muted font-black hover:text-red transition-colors uppercase tracking-[0.2em] text-[8px] md:text-[9px]"
         >
           Quit Quiz
         </button>
-        
+
         {!isAnswered ? (
           <button
             disabled={selectedOption === null}
             onClick={handleCheck}
-            className={`px-10 h-14 rounded-2xl font-black transition-all ${
+            className={`px-6 md:px-10 h-11 md:h-14 rounded-xl md:rounded-2xl text-sm md:text-base font-black transition-all ${
               selectedOption !== null
                 ? 'btn-3d btn-blue'
                 : 'bg-gray-path cursor-not-allowed text-text-muted border-b-4 border-gray-path-dark'
@@ -335,7 +335,7 @@ export function QuizView({ questions, category, onComplete, onCancel, hideSummar
         ) : (
           <button
             onClick={handleNext}
-            className="px-10 h-14 rounded-2xl font-black transition-all btn-3d btn-green"
+            className="px-6 md:px-10 h-11 md:h-14 rounded-xl md:rounded-2xl text-sm md:text-base font-black transition-all btn-3d btn-green"
           >
             {currentIndex === questions.length - 1 ? 'Finish Quiz' : 'Continue'}
           </button>

@@ -34,6 +34,9 @@
   --purple: #9F7AEA;
   --purple-shadow: #805AD5;
 
+  --pink: #ED64A6;
+  --pink-shadow: #D53F8C;
+
   --gray-bg: #E0E5EC;
   --gray-path: #CBD5E0;
   --gray-path-dark: #A0AEC0;
@@ -79,25 +82,27 @@
   --bg-main: #2D3748;
   --bg-card: #2D3748;
   --bg-hover: #232B38;
-  
+
   --text-main: #E2E8F0;
   --text-muted: #A0AEC0;
-  
+
   /* Neumorphic Shadows (Dark Mode) */
   --shadow-light: rgba(74, 85, 104, 0.4);
   --shadow-dark: rgba(26, 32, 44, 0.8);
   --shadow-inset-light: inset 4px 4px 8px rgba(26, 32, 44, 0.8), inset -4px -4px 8px rgba(74, 85, 104, 0.4);
   --shadow-outset: 6px 6px 12px var(--shadow-dark), -6px -6px 12px var(--shadow-light);
   --shadow-outset-hover: 8px 8px 16px var(--shadow-dark), -8px -8px 16px var(--shadow-light);
-  
+
   --gray-bg: #2D3748;
   --gray-path: #1A202C;
   --gray-path-dark: #121720;
-  
+
   --border-main: transparent;
   --card-input-bg: #2D3748;
   --card-input-border: transparent;
   --quiz-divider: #1A202C;
+  --pink: #ED64A6;
+  --pink-shadow: #D53F8C;
 
   --tint-blue: #2D3748;
   --tint-green: #2D3748;
@@ -423,6 +428,8 @@ body {
   --color-blue-light: var(--blue-light);
   --color-purple: var(--purple);
   --color-purple-shadow: var(--purple-shadow);
+  --color-pink: var(--pink);
+  --color-pink-shadow: var(--pink-shadow);
   --color-red: var(--red);
   --color-red-shadow: var(--red-shadow);
   --color-gold: var(--gold);
@@ -567,6 +574,337 @@ body {
   0% { opacity: 1; transform: translateY(-10px) rotate(0deg); }
   100% { opacity: 0; transform: translateY(220px) rotate(360deg); }
 }
+
+/* --- GAME-SPECIFIC ANIMATIONS --- */
+
+/* Match pop: bounce when cards match */
+@keyframes matchPop {
+  0% { transform: scale(1); }
+  40% { transform: scale(1.15); }
+  70% { transform: scale(0.95); }
+  100% { transform: scale(1); }
+}
+.animate-match-pop { animation: matchPop 0.4s ease-out; }
+
+/* Score float: "+10" rises and fades */
+@keyframes scoreFloat {
+  0% { opacity: 1; transform: translateY(0) scale(1); }
+  100% { opacity: 0; transform: translateY(-40px) scale(1.2); }
+}
+.animate-score-float { animation: scoreFloat 1s ease-out forwards; }
+
+/* Shake: wrong answer feedback */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-8px); }
+  40% { transform: translateX(8px); }
+  60% { transform: translateX(-6px); }
+  80% { transform: translateX(6px); }
+}
+.animate-shake { animation: shake 0.4s ease-out; }
+
+/* Timer urgent: rapid pulse when time is low */
+@keyframes timerUrgent {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.7; transform: scale(1.05); }
+}
+.animate-timer-urgent { animation: timerUrgent 0.6s ease-in-out infinite; }
+
+/* Card shine: shimmer sweep across matched cards */
+@keyframes cardShine {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+.animate-card-shine {
+  background: linear-gradient(90deg, transparent 30%, rgba(255,255,255,0.4) 50%, transparent 70%);
+  background-size: 200% 100%;
+  animation: cardShine 1.5s ease-out;
+}
+
+/* Streak fire pulse */
+@keyframes firePulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+}
+.animate-fire-pulse { animation: firePulse 0.8s ease-in-out infinite; }
+
+/* Screen flash: brief green/red overlay on correct/wrong */
+@keyframes screenFlash {
+  0% { opacity: 0.25; }
+  100% { opacity: 0; }
+}
+.animate-flash-green {
+  animation: screenFlash 0.3s ease-out forwards;
+  background: var(--green);
+}
+.animate-flash-red {
+  animation: screenFlash 0.3s ease-out forwards;
+  background: var(--red);
+}
+
+/* Combo glow: pulsing border glow for high combos */
+@keyframes comboGlow {
+  0%, 100% { box-shadow: 0 0 8px rgba(237, 137, 54, 0.3); }
+  50% { box-shadow: 0 0 20px rgba(237, 137, 54, 0.6); }
+}
+.animate-combo-glow { animation: comboGlow 0.8s ease-in-out infinite; }
+
+/* Word pop: for correct word in typing games */
+@keyframes wordPop {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(0.95); opacity: 0.8; }
+}
+.animate-word-pop { animation: wordPop 0.3s ease-out; }
+
+/* Bounce in: for new elements appearing */
+@keyframes bounceIn {
+  0% { transform: scale(0.3); opacity: 0; }
+  50% { transform: scale(1.05); }
+  70% { transform: scale(0.9); }
+  100% { transform: scale(1); opacity: 1; }
+}
+.animate-bounce-in { animation: bounceIn 0.5s ease-out; }
+
+/* Pulse ring: expanding ring effect for achievements */
+@keyframes pulseRing {
+  0% { transform: scale(0.8); opacity: 1; }
+  100% { transform: scale(2); opacity: 0; }
+}
+.animate-pulse-ring {
+  animation: pulseRing 0.6s ease-out;
+  border: 3px solid var(--gold);
+  border-radius: 9999px;
+}
+
+/* --- RPG VFX --- */
+@keyframes cameraShake {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  10% { transform: translate(-5px, -5px) rotate(-1deg); }
+  20% { transform: translate(5px, 5px) rotate(1deg); }
+  30% { transform: translate(-5px, 5px) rotate(0deg); }
+  40% { transform: translate(5px, -5px) rotate(1deg); }
+  50% { transform: translate(-5px, -5px) rotate(-1deg); }
+  60% { transform: translate(5px, 5px) rotate(0deg); }
+  70% { transform: translate(-5px, 5px) rotate(1deg); }
+  80% { transform: translate(5px, -5px) rotate(-1deg); }
+  90% { transform: translate(-5px, -5px) rotate(0deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+.animate-camera-shake { animation: cameraShake 0.4s cubic-bezier(.36,.07,.19,.97) both; }
+
+@keyframes enemyKnockback {
+  0% { transform: translateX(0) scale(1); filter: brightness(1); }
+  15% { transform: translateX(20px) scale(0.95); filter: brightness(2) drop-shadow(0 0 10px white); }
+  50% { transform: translateX(20px) scale(0.95); filter: brightness(1.5); }
+  100% { transform: translateX(0) scale(1); filter: brightness(1); }
+}
+.animate-enemy-knockback { animation: enemyKnockback 0.4s ease-out forwards; }
+
+@keyframes enemyLunge {
+  0% { transform: translateX(0) scale(1); }
+  40% { transform: translateX(-30px) scale(1.1); }
+  50% { transform: translateX(-35px) scale(1.1); }
+  100% { transform: translateX(0) scale(1); }
+}
+.animate-enemy-lunge { animation: enemyLunge 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; }
+
+@keyframes playerCast {
+  0% { transform: translateX(0) scale(1) rotate(0); }
+  20% { transform: translateX(-5px) scale(0.95) rotate(-5deg); }
+  40% { transform: translateX(15px) scale(1.1) rotate(15deg); }
+  100% { transform: translateX(0) scale(1) rotate(0); }
+}
+.animate-player-cast { animation: playerCast 0.4s ease-out forwards; }
+
+.vignette-damage {
+  animation: vignetteFlash 0.4s ease-out forwards;
+}
+@keyframes vignetteFlash {
+  0% { box-shadow: inset 0 0 100px rgba(229, 62, 62, 0.9); background-color: rgba(229, 62, 62, 0.1); }
+  100% { box-shadow: inset 0 0 0 rgba(229, 62, 62, 0); background-color: transparent; }
+}
+
+@keyframes particleBurst {
+  0% { transform: translate(0, 0) scale(1); opacity: 1; }
+  100% { transform: translate(var(--tx), var(--ty)) scale(0); opacity: 0; }
+}
+.animate-particle { 
+  animation: particleBurst 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards; 
+  position: absolute; 
+  border-radius: 50%; 
+  pointer-events: none; 
+}
+
+/* --- ENEMY ALIVE ANIMATIONS --- */
+@keyframes enemyIdle {
+  0%, 100% { transform: scale(1) translateY(0); }
+  50% { transform: scale(1.06) translateY(-3px); }
+}
+.animate-enemy-idle { animation: enemyIdle 2s ease-in-out infinite; }
+
+/* Rage bar fire effect */
+@keyframes rageFull {
+  0%, 100% { box-shadow: 0 0 8px rgba(245, 101, 101, 0.4); }
+  50% { box-shadow: 0 0 16px rgba(245, 101, 101, 0.8), 0 0 30px rgba(237, 137, 54, 0.4); }
+}
+.animate-rage-full { animation: rageFull 0.6s ease-in-out infinite; }
+
+/* Level up flash */
+@keyframes levelUpFlash {
+  0% { opacity: 0; transform: scale(0.5); }
+  30% { opacity: 1; transform: scale(1.2); }
+  60% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(1.5); }
+}
+.animate-level-up {
+  animation: levelUpFlash 1.2s ease-out forwards;
+  position: absolute;
+  inset: -20px;
+  border-radius: 50%;
+  border: 3px solid var(--gold);
+  background: radial-gradient(circle, rgba(237, 137, 54, 0.2) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: 15;
+}
+
+/* Enemy poison DOT */
+@keyframes poisonPulse {
+  0%, 100% { filter: hue-rotate(0deg) brightness(1); }
+  50% { filter: hue-rotate(80deg) brightness(0.8); }
+}
+.animate-poison { animation: poisonPulse 1s ease-in-out infinite; }
+
+/* Enemy stun stars */
+@keyframes stunStars {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.animate-stun-stars { animation: stunStars 1.5s linear infinite; }
+
+@keyframes bossAura {
+  0%, 100% { box-shadow: 0 0 20px rgba(237, 137, 54, 0.2), 0 0 40px rgba(237, 137, 54, 0.1); }
+  50% { box-shadow: 0 0 35px rgba(237, 137, 54, 0.4), 0 0 60px rgba(237, 137, 54, 0.2); }
+}
+.animate-boss-aura { animation: bossAura 1.5s ease-in-out infinite; }
+
+@keyframes projectileFly {
+  0% { transform: translate(0, 0) scale(1); opacity: 1; }
+  80% { opacity: 1; }
+  100% { transform: translate(var(--fly-x), var(--fly-y)) scale(0.5); opacity: 0; }
+}
+.animate-projectile {
+  animation: projectileFly 0.4s ease-in forwards;
+  position: absolute;
+  pointer-events: none;
+  z-index: 20;
+  font-size: 1.5rem;
+}
+
+/* --- SKILL SYSTEM ANIMATIONS --- */
+@keyframes skillReady {
+  0%, 100% { box-shadow: 0 0 8px var(--skill-color, var(--blue)); transform: scale(1); }
+  50% { box-shadow: 0 0 20px var(--skill-color, var(--blue)), 0 0 40px var(--skill-color, var(--blue)); transform: scale(1.05); }
+}
+.animate-skill-ready { animation: skillReady 1s ease-in-out infinite; }
+
+@keyframes freezeShield {
+  0% { transform: scale(0); opacity: 0; }
+  50% { transform: scale(1.2); opacity: 0.8; }
+  100% { transform: scale(1); opacity: 0.5; }
+}
+.animate-freeze-shield {
+  animation: freezeShield 0.5s ease-out forwards;
+  position: absolute;
+  inset: -8px;
+  border: 3px solid #63B3ED;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(99, 179, 237, 0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+@keyframes thunderStrike {
+  0% { opacity: 0; transform: translateY(-100%) scaleX(0.5); }
+  20% { opacity: 1; transform: translateY(0) scaleX(1); }
+  40% { opacity: 1; }
+  100% { opacity: 0; transform: scaleX(0.2); }
+}
+.animate-thunder {
+  animation: thunderStrike 0.6s ease-out forwards;
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  margin-left: -3px;
+  background: linear-gradient(180deg, #FBBF24, #F59E0B, #FDE047);
+  filter: blur(2px);
+  box-shadow: 0 0 20px #FBBF24, 0 0 60px #F59E0B;
+  pointer-events: none;
+  z-index: 25;
+}
+
+@keyframes doubleDmgGlow {
+  0%, 100% { filter: brightness(1) drop-shadow(0 0 0 transparent); }
+  50% { filter: brightness(1.3) drop-shadow(0 0 12px var(--red)); }
+}
+.animate-double-dmg { animation: doubleDmgGlow 0.6s ease-in-out infinite; }
+
+/* --- ESCAPE ROOM THEMES --- */
+.room-theme-default { background-color: var(--bg-card); }
+
+.room-theme-library {
+  background: linear-gradient(135deg, var(--bg-card) 0%, rgba(159, 122, 234, 0.05) 100%);
+  border-color: rgba(159, 122, 234, 0.3) !important;
+}
+
+.room-theme-cave {
+  background: linear-gradient(180deg, var(--bg-card) 0%, rgba(26, 32, 44, 0.3) 100%);
+  border-color: rgba(237, 137, 54, 0.3) !important;
+}
+.room-theme-cave .puzzle-text { 
+  text-shadow: 0 0 10px rgba(237, 137, 54, 0.4); 
+}
+
+.room-theme-clock {
+  background: linear-gradient(135deg, var(--bg-card) 0%, rgba(245, 101, 101, 0.05) 100%);
+  border-color: rgba(245, 101, 101, 0.3) !important;
+}
+
+.room-theme-final {
+  background: linear-gradient(135deg, var(--bg-card) 0%, rgba(245, 101, 101, 0.08) 100%);
+  border-color: rgba(245, 101, 101, 0.5) !important;
+  box-shadow: inset 0 0 30px rgba(245, 101, 101, 0.05);
+}
+
+/* Lock Progress Animation */
+@keyframes lockSegmentLight {
+  0% { opacity: 0.3; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.2); }
+  100% { opacity: 1; transform: scale(1); }
+}
+.animate-lock-segment { animation: lockSegmentLight 0.5s ease-out forwards; }
+
+@keyframes doorOpen {
+  0% { transform: perspective(600px) rotateY(0deg); opacity: 1; }
+  100% { transform: perspective(600px) rotateY(-90deg); opacity: 0; }
+}
+.animate-door-open { animation: doorOpen 0.8s ease-in-out forwards; }
+
+/* Correct answer reveal */
+@keyframes correctReveal {
+  0% { background-color: transparent; }
+  30% { background-color: rgba(72, 187, 120, 0.15); }
+  100% { background-color: rgba(72, 187, 120, 0.08); }
+}
+.animate-correct-reveal { animation: correctReveal 0.5s ease-out forwards; }
+
+/* Story text typewriter feel */
+@keyframes storyFadeIn {
+  0% { opacity: 0; transform: translateY(8px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.animate-story-line { animation: storyFadeIn 0.6s ease-out forwards; }
 
 /* Respect users who prefer less motion */
 @media (prefers-reduced-motion: reduce) {

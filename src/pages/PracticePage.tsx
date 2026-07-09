@@ -17,81 +17,81 @@ export function PracticePage() {
   return (
     <AnimatedPage>
       <div className="w-full view-enter">
-      <div className="mb-10 text-center">
-        <h2 className="text-3xl font-black text-gradient uppercase tracking-tight mb-3">Practice Arena</h2>
-        <p className="text-sm font-bold text-text-muted">Hone your skills in specific areas</p>
+      <div className="mb-6 md:mb-10 text-center">
+        <h2 className="text-xl md:text-3xl font-black text-gradient uppercase tracking-tight mb-2 md:mb-3">Practice Arena</h2>
+        <p className="text-xs md:text-sm font-bold text-text-muted">Hone your skills in specific areas</p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <button onClick={() => startDrill('vocab-quiz')} className="lingo-card group hover:-translate-y-1 transition-all text-left flex items-start gap-4 p-6">
-          <div className="w-12 h-12 rounded-xl bg-tint-blue text-blue flex items-center justify-center group-hover:scale-110 transition-transform">
-            <BookOpen size={24} />
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4">
+        <button onClick={() => startDrill('vocab-quiz')} className="lingo-card group hover:-translate-y-1 transition-all text-left flex items-start gap-3 md:gap-4 p-4 md:p-6">
+          <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-tint-blue text-blue flex items-center justify-center group-hover:scale-110 transition-transform shrink-0">
+            <BookOpen size={20} className="md:w-6 md:h-6" />
           </div>
           <div>
-            <h3 className="font-black text-text-main mb-1">Vocabulary Quiz</h3>
-            <p className="text-xs font-bold text-text-muted">Test your memory of saved words</p>
+            <h3 className="font-black text-sm md:text-base text-text-main mb-0.5 md:mb-1">Vocabulary Quiz</h3>
+            <p className="text-[10px] md:text-xs font-bold text-text-muted">Test your memory of saved words</p>
           </div>
         </button>
 
-        <button onClick={() => startDrill('grammar')} className="lingo-card group hover:-translate-y-1 transition-all text-left flex items-start gap-4 p-6">
-          <div className="w-12 h-12 rounded-xl bg-tint-purple text-purple flex items-center justify-center group-hover:scale-110 transition-transform">
-            <Type size={24} />
+        <button onClick={() => startDrill('grammar')} className="lingo-card group hover:-translate-y-1 transition-all text-left flex items-start gap-3 md:gap-4 p-4 md:p-6">
+          <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-tint-purple text-purple flex items-center justify-center group-hover:scale-110 transition-transform shrink-0">
+            <Type size={20} className="md:w-6 md:h-6" />
           </div>
           <div>
-            <h3 className="font-black text-text-main mb-1">Grammar Quiz</h3>
-            <p className="text-xs font-bold text-text-muted">Practice sentence structures</p>
+            <h3 className="font-black text-sm md:text-base text-text-main mb-0.5 md:mb-1">Grammar Quiz</h3>
+            <p className="text-[10px] md:text-xs font-bold text-text-muted">Practice sentence structures</p>
           </div>
         </button>
 
-        <button onClick={() => startDrill('quiz')} className="lingo-card group hover:-translate-y-1 transition-all text-left flex items-start gap-4 p-6">
-          <div className="w-12 h-12 rounded-xl bg-tint-gold text-gold flex items-center justify-center group-hover:scale-110 transition-transform">
-            <Edit3 size={24} />
+        <button onClick={() => startDrill('quiz')} className="lingo-card group hover:-translate-y-1 transition-all text-left flex items-start gap-3 md:gap-4 p-4 md:p-6">
+          <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-tint-gold text-gold flex items-center justify-center group-hover:scale-110 transition-transform shrink-0">
+            <Edit3 size={20} className="md:w-6 md:h-6" />
           </div>
           <div>
-            <h3 className="font-black text-text-main mb-1">{trackCategory(activeTrack).toUpperCase()} Quiz</h3>
-            <p className="text-xs font-bold text-text-muted">Format-specific questions</p>
+            <h3 className="font-black text-sm md:text-base text-text-main mb-0.5 md:mb-1">{trackCategory(activeTrack).toUpperCase()} Quiz</h3>
+            <p className="text-[10px] md:text-xs font-bold text-text-muted">Format-specific questions</p>
           </div>
         </button>
 
-        <button onClick={() => startDrill('listening')} className="lingo-card group hover:-translate-y-1 transition-all text-left flex items-start gap-4 p-6">
-          <div className="w-12 h-12 rounded-xl bg-tint-green text-green flex items-center justify-center group-hover:scale-110 transition-transform">
-            <Headset size={24} />
+        <button onClick={() => startDrill('listening')} className="lingo-card group hover:-translate-y-1 transition-all text-left flex items-start gap-3 md:gap-4 p-4 md:p-6">
+          <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-tint-green text-green flex items-center justify-center group-hover:scale-110 transition-transform shrink-0">
+            <Headset size={20} className="md:w-6 md:h-6" />
           </div>
           <div>
-            <h3 className="font-black text-text-main mb-1">Listening</h3>
-            <p className="text-xs font-bold text-text-muted">Train your ears</p>
+            <h3 className="font-black text-sm md:text-base text-text-main mb-0.5 md:mb-1">Listening</h3>
+            <p className="text-[10px] md:text-xs font-bold text-text-muted">Train your ears</p>
           </div>
         </button>
 
-        <button onClick={() => startDrill('speaking')} className="lingo-card group hover:-translate-y-1 transition-all text-left flex items-start gap-4 p-6">
-          <div className="w-12 h-12 rounded-xl bg-tint-red text-red flex items-center justify-center group-hover:scale-110 transition-transform">
-            <Mic size={24} />
+        <button onClick={() => startDrill('speaking')} className="lingo-card group hover:-translate-y-1 transition-all text-left flex items-start gap-3 md:gap-4 p-4 md:p-6">
+          <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-tint-red text-red flex items-center justify-center group-hover:scale-110 transition-transform shrink-0">
+            <Mic size={20} className="md:w-6 md:h-6" />
           </div>
           <div>
-            <h3 className="font-black text-text-main mb-1">Speaking</h3>
-            <p className="text-xs font-bold text-text-muted">Practice pronunciation</p>
+            <h3 className="font-black text-sm md:text-base text-text-main mb-0.5 md:mb-1">Speaking</h3>
+            <p className="text-[10px] md:text-xs font-bold text-text-muted">Practice pronunciation</p>
           </div>
         </button>
 
-        <button onClick={() => startDrill('dictation')} className="lingo-card group hover:-translate-y-1 transition-all text-left flex items-start gap-4 p-6">
-          <div className="w-12 h-12 rounded-xl bg-gray-path text-text-main flex items-center justify-center group-hover:scale-110 transition-transform">
-            <Edit3 size={24} />
+        <button onClick={() => startDrill('dictation')} className="lingo-card group hover:-translate-y-1 transition-all text-left flex items-start gap-3 md:gap-4 p-4 md:p-6">
+          <div className="w-10 h-10 md:w-12 md:h-12 rounded-xl bg-gray-path text-text-main flex items-center justify-center group-hover:scale-110 transition-transform shrink-0">
+            <Edit3 size={20} className="md:w-6 md:h-6" />
           </div>
           <div>
-            <h3 className="font-black text-text-main mb-1">Dictation</h3>
-            <p className="text-xs font-bold text-text-muted">Listen and write</p>
+            <h3 className="font-black text-sm md:text-base text-text-main mb-0.5 md:mb-1">Dictation</h3>
+            <p className="text-[10px] md:text-xs font-bold text-text-muted">Listen and write</p>
           </div>
         </button>
       </div>
 
-      <div className="mt-8 flex flex-col gap-4">
-        <h3 className="font-bold text-text-main text-lg">TOEIC 2024 PDF Exams (Study4 Style)</h3>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
+      <div className="mt-6 md:mt-8 flex flex-col gap-3 md:gap-4">
+        <h3 className="font-bold text-text-main text-base md:text-lg">TOEIC 2024 PDF Exams (Study4 Style)</h3>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 md:gap-3">
           {Array.from({ length: 10 }).map((_, i) => (
             <button
               key={i}
               onClick={() => navigate(`/pdf-exam/toeic-2024-pdf-${i + 1}`)}
-              className="btn-3d bg-blue-600 border-blue-700 text-white h-12 rounded-xl font-bold text-sm hover:bg-blue-500 transition-colors flex items-center justify-center"
+              className="btn-3d bg-blue-600 border-blue-700 text-white h-10 md:h-12 rounded-xl font-bold text-xs md:text-sm hover:bg-blue-500 transition-colors flex items-center justify-center"
             >
               Test {i + 1}
             </button>
@@ -100,7 +100,7 @@ export function PracticePage() {
 
         <button
           onClick={handleCreateExam}
-          className="w-full btn-3d bg-gray-bg border-gray-path-dark text-text-main h-16 rounded-2xl font-black text-sm tracking-wide uppercase hover:bg-gray-path transition-colors flex items-center justify-center gap-3"
+          className="w-full btn-3d bg-gray-bg border-gray-path-dark text-text-main h-12 md:h-16 rounded-xl md:rounded-2xl font-black text-xs md:text-sm tracking-wide uppercase hover:bg-gray-path transition-colors flex items-center justify-center gap-2 md:gap-3"
         >
           <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />

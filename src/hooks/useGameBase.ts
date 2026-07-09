@@ -14,15 +14,15 @@ interface UseGameBaseOptions {
 }
 
 interface UseGameBaseReturn {
-  gameState: 'loading' | 'playing' | 'paused' | 'gameover' | 'won_round';
-  setGameState: React.Dispatch<React.SetStateAction<'loading' | 'playing' | 'paused' | 'gameover' | 'won_round'>>;
+  gameState: 'loading' | 'playing' | 'paused' | 'gameover' | 'won_round' | 'level_complete';
+  setGameState: React.Dispatch<React.SetStateAction<'loading' | 'playing' | 'paused' | 'gameover' | 'won_round' | 'level_complete'>>;
   loadCards: (filter?: (card: Flashcard) => boolean) => Promise<Flashcard[]>;
   loadQuestions: () => Promise<Question[]>;
   finishGame: (score: number) => void;
 }
 
 export function useGameBase({ gameId, difficulty, onComplete }: UseGameBaseOptions): UseGameBaseReturn {
-  const [gameState, setGameState] = useState<'loading' | 'playing' | 'paused' | 'gameover' | 'won_round'>('loading');
+  const [gameState, setGameState] = useState<'loading' | 'playing' | 'paused' | 'gameover' | 'won_round' | 'level_complete'>('loading');
 
   const activeTrack = useUserStore(s => s.activeTrack);
   const addExp = useUserStore(s => s.addExp);

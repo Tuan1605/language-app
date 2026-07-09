@@ -78,18 +78,18 @@ export function MainLayout() {
         
         {/* Top Header Bar */}
         {!(location.pathname === '/session' || location.pathname === '/real-exam') && (
-          <header className="w-full h-16 border-b-2 border-gray-path flex items-center justify-between px-6 sticky top-0 bg-[var(--bg-main)] shadow-[var(--shadow-outset)] z-40">
-            <div className="flex items-center gap-6">
-               <button onClick={() => startTransition(() => setActiveTrack('english'))} className={`font-black text-sm flex items-center gap-2 transition-all ${activeTrack === 'english' ? 'text-blue border-b-4 border-blue pb-1' : 'text-text-muted hover:text-gray-path-dark'}`}>
+          <header className="w-full h-14 md:h-16 border-b-2 border-gray-path flex items-center justify-between px-3 md:px-6 sticky top-0 bg-[var(--bg-main)] shadow-[var(--shadow-outset)] z-40">
+            <div className="flex items-center gap-3 md:gap-6">
+               <button onClick={() => startTransition(() => setActiveTrack('english'))} className={`font-black text-xs md:text-sm flex items-center gap-1.5 md:gap-2 transition-all ${activeTrack === 'english' ? 'text-blue border-b-4 border-blue pb-1' : 'text-text-muted hover:text-gray-path-dark'}`}>
                  🇺🇸 EN
                </button>
-               <button onClick={() => startTransition(() => setActiveTrack('japanese'))} className={`font-black text-sm flex items-center gap-2 transition-all ${activeTrack === 'japanese' ? 'text-blue border-b-4 border-blue pb-1' : 'text-text-muted hover:text-gray-path-dark'}`}>
+               <button onClick={() => startTransition(() => setActiveTrack('japanese'))} className={`font-black text-xs md:text-sm flex items-center gap-1.5 md:gap-2 transition-all ${activeTrack === 'japanese' ? 'text-blue border-b-4 border-blue pb-1' : 'text-text-muted hover:text-gray-path-dark'}`}>
                  🇯🇵 JP
                </button>
             </div>
-            
-            <div className="flex items-center gap-6">
-               <div className="flex items-center gap-4 font-black">
+
+            <div className="flex items-center gap-2 md:gap-6">
+               <div className="flex items-center gap-2 md:gap-4 font-black">
 
                {/* Backup Buttons */}
                <button
@@ -121,21 +121,21 @@ export function MainLayout() {
                />
 
                <button onClick={toggleTheme} className="text-xl active:scale-95 transition-transform hover:text-blue">
-                 {theme === 'light' ? <Moon className="w-5 h-5" /> : <Sun className="w-5 h-5" />}
+                 {theme === 'light' ? <Moon className="w-4 h-4 md:w-5 md:h-5" /> : <Sun className="w-4 h-4 md:w-5 md:h-5" />}
                </button>
                 <button
                  onClick={() => setShowSettings(true)}
                  className="text-xs text-text-muted hover:text-purple transition-colors active:scale-95"
                  title="AI Settings"
                >
-                 <Settings className="w-5 h-5" />
+                 <Settings className="w-4 h-4 md:w-5 md:h-5" />
                </button>
             </div>
             </div>
           </header>
         )}
 
-        <div className={`w-full flex flex-col items-center p-6 md:p-10 pb-28 lg:pb-40 ${location.pathname === '/review' ? 'max-w-[800px] lg:max-w-[960px]' : 'max-w-[600px] lg:max-w-[720px]'}`}>
+        <div className={`w-full flex flex-col items-center p-4 md:p-6 lg:p-10 pb-20 md:pb-28 lg:pb-40 ${location.pathname === '/review' ? 'max-w-[800px] lg:max-w-[960px]' : 'max-w-[600px] lg:max-w-[720px]'}`}>
           <Outlet />
         </div>
       </main>

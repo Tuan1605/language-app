@@ -4,7 +4,15 @@ import { db } from '../../data/db';
 import type { Flashcard } from '../../types';
 import { useUserStore } from '../../stores/useUserStore';
 import toast from 'react-hot-toast';
-import { Trophy, ArrowRight, Shuffle } from 'lucide-react';
+import { Shuffle, ArrowRight, RotateCcw, Lightbulb } from 'lucide-react';
+import { playTap, playCorrect, playWrong, playCombo } from '../../utils/sound';
+import { GameShell } from './GameShell';
+import { GameHUD } from './GameHUD';
+import { GameOverScreen } from './GameOverScreen';
+import { GameLoading } from './GameLoading';
+import { LevelCompleteScreen } from './LevelCompleteScreen';
+
+const WORDS_PER_LEVEL = 8;
 
 interface ScrambledLetter {
   id: number;
@@ -15,12 +23,15 @@ interface ScrambledLetter {
 
 export function WordScramble({ onComplete, difficulty = 'medium' }: { onComplete: () => void; difficulty?: 'easy' | 'medium' | 'hard' }) {
   const [deck, setDeck] = useState<Flashcard[]>([]);
+  const [currentLevel, setCurrentLevel] = useState(1);
+  const [levelCards, setLevelCards] = useState<Flashcard[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [letters, setLetters] = useState<ScrambledLetter[]>([]);
   const [selectedLetters, setSelectedLetters] = useState<ScrambledLetter[]>([]);
   const [score, setScore] = useState(0);
   const [streak, setStreak] = useState(0);
-  const [gameState, setGameState] = useState<'loading' | 'playing' | 'gameover' | 'won_round'>('loading');
+  const [levelCorrect, setLevelCorrect] = useState(0);
+  const [gameState, setGameState] = useState<'loading' | 'playing' | 'gameover' | 'won_round' | 'level_complete'>('loading');
 
   const activeTrack = useUserStore(s => s.activeTrack);
   const addExp = useUserStore(s => s.addExp);
@@ -29,43 +40,37 @@ export function WordScramble({ onComplete, difficulty = 'medium' }: { onComplete
 
   const MIN_WORD_LEN = { easy: 3, medium: 4, hard: 5 };
   const EXP_BY_DIFFICULTY = { easy: 8, medium: 10, hard: 15 };
+  const totalLevels = Math.ceil(deck.length / WORDS_PER_LEVEL);
 
-  useEffect(() => {
-    loadGame();
-  }, [activeTrack]);
+  useEffect(() => { loadGame(); }, [activeTrack]);
 
   const loadGame = async () => {
     try {
       const allCards = await db.cards.where('language').equals(activeTrack).toArray();
       const validCards = allCards.filter(c => /^[a-zA-Z]+$/.test(c.word) && c.word.length >= MIN_WORD_LEN[difficulty]);
-
-      if (validCards.length < 5) {
-        toast.error('Not enough valid flashcards to play.');
-        onComplete();
-        return;
-      }
-
+      if (validCards.length < 5) { toast.error('Not enough valid flashcards.'); onComplete(); return; }
       const shuffled = validCards.sort(() => 0.5 - Math.random());
       setDeck(shuffled);
-      setCurrentIndex(0);
+      setCurrentLevel(1);
       setScore(0);
-      setStreak(0);
-      startRound(shuffled[0]);
-    } catch (e) {
-      console.error(e);
-      toast.error('Failed to load game');
-    }
+      startLevel(shuffled, 1);
+    } catch (e) { console.error(e); toast.error('Failed to load game'); }
+  };
+
+  const startLevel = (all: Flashcard[], level: number) => {
+    const start = (level - 1) * WORDS_PER_LEVEL;
+    const slice = all.slice(start, start + WORDS_PER_LEVEL);
+    setLevelCards(slice);
+    setCurrentIndex(0);
+    setStreak(0);
+    setLevelCorrect(0);
+    startRound(slice[0]);
   };
 
   const scrambleWord = (word: string): ScrambledLetter[] => {
     const chars = word.toLowerCase().split('');
     const scrambled = [...chars].sort(() => 0.5 - Math.random());
-    return scrambled.map((char, id) => ({
-      id,
-      char,
-      isSelected: false,
-      selectedOrder: -1
-    }));
+    return scrambled.map((char, id) => ({ id, char, isSelected: false, selectedOrder: -1 }));
   };
 
   const startRound = (card: Flashcard) => {
@@ -75,15 +80,14 @@ export function WordScramble({ onComplete, difficulty = 'medium' }: { onComplete
   };
 
   const handleLetterClick = (letter: ScrambledLetter) => {
-    if (gameState !== 'playing' || letter.isSelected) return;
-
+    if (gameState !== 'playing' || letter.isSelected || !deck[currentIndex]) return;
+    playTap();
     const updatedLetters = letters.map(l =>
       l.id === letter.id ? { ...l, isSelected: true, selectedOrder: selectedLetters.length } : l
     );
     setLetters(updatedLetters);
     setSelectedLetters(prev => [...prev, letter]);
 
-    // Check if word is complete
     if (selectedLetters.length + 1 === deck[currentIndex].word.length) {
       const newSelected = [...selectedLetters, letter];
       const guessedWord = newSelected.map(l => l.char).join('');
@@ -92,28 +96,36 @@ export function WordScramble({ onComplete, difficulty = 'medium' }: { onComplete
   };
 
   const checkAnswer = (guessed: string) => {
+    if (!deck[currentIndex]) return;
     const correct = deck[currentIndex].word.toLowerCase();
     if (guessed === correct) {
+      playCorrect();
+      const newStreak = streak + 1;
+      if (newStreak >= 3) playCombo(newStreak);
       const base = EXP_BY_DIFFICULTY[difficulty];
       const streakBonus = streak >= 3 ? 5 : streak >= 2 ? 3 : 0;
       setScore(s => s + base + streakBonus);
-      setStreak(s => s + 1);
+      setStreak(newStreak);
+      setLevelCorrect(c => c + 1);
       setGameState('won_round');
     } else {
+      playWrong();
       setStreak(0);
-      toast.error(`Correct answer: ${correct}`);
+      toast.error(`Correct: ${correct}`);
       setTimeout(() => {
-        if (currentIndex + 1 < deck.length) {
+        if (currentIndex + 1 < levelCards.length) {
           setCurrentIndex(i => i + 1);
-          startRound(deck[currentIndex + 1]);
+          startRound(levelCards[currentIndex + 1]);
         } else {
-          handleGameOver(score);
+          if (currentLevel < totalLevels) setGameState('level_complete');
+          else handleGameOver(score);
         }
       }, 1500);
     }
   };
 
   const handleShuffle = () => {
+    if (!deck[currentIndex]) return;
     setLetters(() => scrambleWord(deck[currentIndex].word));
     setSelectedLetters([]);
   };
@@ -124,95 +136,70 @@ export function WordScramble({ onComplete, difficulty = 'medium' }: { onComplete
   };
 
   const handleHint = () => {
+    if (!deck[currentIndex]) return;
     const currentWord = deck[currentIndex].word.toLowerCase();
     const firstUnselected = currentWord.split('').find((char, i) =>
       !selectedLetters[i] || selectedLetters[i].char !== char
     );
-
-    if (firstUnselected) {
-      toast(`Hint: starts with "${currentWord[0].toUpperCase()}"`, { icon: '💡' });
-    }
+    if (firstUnselected) toast(`Hint: starts with "${currentWord[0].toUpperCase()}"`, { icon: '💡' });
   };
 
   const nextRound = () => {
-    if (currentIndex + 1 < deck.length) {
+    if (currentIndex + 1 < levelCards.length) {
       setCurrentIndex(i => i + 1);
-      startRound(deck[currentIndex + 1]);
+      startRound(levelCards[currentIndex + 1]);
     } else {
-      handleGameOver();
+      if (currentLevel < totalLevels) setGameState('level_complete');
+      else handleGameOver();
     }
   };
+
+  const nextLevel = () => { const next = currentLevel + 1; setCurrentLevel(next); startLevel(deck, next); setGameState('playing'); };
 
   const handleGameOver = (finalScore?: number) => {
     const s = finalScore ?? score;
     setGameState('gameover');
-    if (s > 0) {
-      addExp(s);
-      setGameHighScore('scramble', difficulty, s);
-      toast.success(`Game Over! Earned ${s} EXP`);
-    }
+    if (s > 0) { addExp(s); setGameHighScore('scramble', difficulty, s); }
   };
 
-  if (gameState === 'loading') {
-    return <div className="flex-1 flex items-center justify-center font-bold text-text-muted animate-pulse">Loading...</div>;
-  }
+  if (gameState === 'loading') return <GameLoading text="Loading words..." />;
 
   if (gameState === 'gameover') {
     return (
-      <div className="flex-1 flex flex-col items-center justify-center">
-        <div className="w-24 h-24 bg-gold/10 rounded-full flex items-center justify-center mb-6">
-          <Trophy className="w-12 h-12 text-gold" />
-        </div>
-        <h2 className="text-3xl font-black text-text-main mb-2">Excellent!</h2>
-        <p className="text-xl font-bold text-text-muted mb-2">Score: {score}</p>
-        {gameHighScores.scramble[difficulty] > 0 && (
-          <p className="text-sm font-bold text-gold mb-8">Best: {gameHighScores.scramble[difficulty]}</p>
-        )}
-        <div className="flex gap-4">
-          <button onClick={loadGame} className="px-6 py-3 bg-blue text-white rounded-xl font-black text-sm uppercase hover:bg-blue-dark active:scale-95 transition-all shadow-sm">
-            Play Again
-          </button>
-          <button onClick={onComplete} className="px-6 py-3 bg-gray-bg text-text-main border-2 border-gray-path rounded-xl font-black text-sm uppercase hover:bg-gray-path active:scale-95 transition-all">
-            Menu
-          </button>
-        </div>
-      </div>
+      <GameShell title="Word Scramble" icon={<Shuffle className="w-5 h-5" />} onBack={onComplete} difficulty={difficulty}>
+        <GameOverScreen score={score} expEarned={score} highScore={gameHighScores.scramble[difficulty]} isWin={score > 0} onRestart={loadGame} onMenu={onComplete} />
+      </GameShell>
     );
   }
 
-  const currentCard = deck[currentIndex];
+  if (gameState === 'level_complete') {
+    return (
+      <GameShell title="Word Scramble" icon={<Shuffle className="w-5 h-5" />} onBack={onComplete} difficulty={difficulty}>
+        <LevelCompleteScreen currentLevel={currentLevel} totalLevels={totalLevels} correct={levelCorrect} total={levelCards.length} score={score} onNextLevel={nextLevel} />
+      </GameShell>
+    );
+  }
+
+  const currentCard = levelCards[currentIndex];
 
   return (
-    <div className="flex-1 flex flex-col items-center w-full h-full p-4 md:p-6">
-      {/* HUD */}
-      <div className="w-full flex justify-between items-center mb-8">
-        <div className="flex items-center gap-3">
-          <div className="px-4 py-2 bg-blue/10 text-blue font-black rounded-xl text-lg">
-            Score: {score}
-          </div>
-          {streak >= 2 && (
-            <motion.div
-              initial={{ scale: 0 }}
-              animate={{ scale: 1 }}
-              className="px-3 py-1.5 bg-gold/20 text-gold font-black rounded-full text-sm"
-            >
-              🔥 x{streak}
-            </motion.div>
-          )}
-        </div>
-        <div className="text-sm font-bold text-text-muted">
-          {currentIndex + 1} / {deck.length}
-        </div>
-      </div>
+    <GameShell title="Word Scramble" icon={<Shuffle className="w-5 h-5" />} onBack={onComplete} difficulty={difficulty}>
+      <GameHUD
+        score={score}
+        combo={streak >= 2 ? streak : undefined}
+        highScore={gameHighScores.scramble[difficulty]}
+        progress={(currentIndex + 1) / levelCards.length}
+        progressLabel={`Màn ${currentLevel} - ${currentIndex + 1}/${levelCards.length}`}
+      />
 
       {/* Definition */}
       <motion.div
         key={currentIndex}
         initial={{ y: -20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        className="w-full max-w-lg mb-10"
+        className="w-full max-w-lg mx-auto mb-8"
       >
-        <div className="bg-gray-bg rounded-2xl p-6 border-2 border-gray-path text-center">
+        <div className="bg-gradient-to-br from-gray-bg to-bg-hover rounded-2xl p-6 border-2 border-gray-path text-center">
           <p className="text-xs font-bold text-text-muted uppercase tracking-wider mb-2">Definition</p>
           <p className="text-xl md:text-2xl font-bold text-text-main leading-relaxed">
             {currentCard?.definition}
@@ -221,40 +208,39 @@ export function WordScramble({ onComplete, difficulty = 'medium' }: { onComplete
       </motion.div>
 
       {/* Selected Letters (Answer Area) */}
-      <div className="flex justify-center gap-2 mb-8 min-h-[60px]">
+      <div className="flex justify-center gap-1.5 md:gap-2 mb-4 md:mb-6 min-h-[50px] md:min-h-[60px]">
         <AnimatePresence>
           {selectedLetters.map((letter) => (
             <motion.div
               key={`selected-${letter.id}`}
               initial={{ scale: 0, y: 20 }}
               animate={{ scale: 1, y: 0 }}
-              className="w-12 h-14 flex items-center justify-center bg-blue text-white rounded-xl font-black text-2xl shadow-sm"
+              className="w-10 h-12 md:w-12 md:h-14 flex items-center justify-center bg-blue/80 text-white rounded-lg md:rounded-xl font-black text-xl md:text-2xl"
             >
               {letter.char}
             </motion.div>
           ))}
         </AnimatePresence>
-        {/* Placeholder slots */}
         {[...Array(Math.max(0, deck[currentIndex]?.word.length - selectedLetters.length))].map((_, i) => (
-          <div key={`empty-${i}`} className="w-12 h-14 flex items-center justify-center border-2 border-dashed border-gray-path rounded-xl text-text-muted">
+          <div key={`empty-${i}`} className="w-10 h-12 md:w-12 md:h-14 flex items-center justify-center border-2 border-dashed border-gray-path/60 rounded-lg md:rounded-xl text-text-muted font-bold">
             ?
           </div>
         ))}
       </div>
 
       {/* Scrambled Letters */}
-      <div className="flex flex-wrap justify-center gap-3 mb-6">
+      <div className="flex flex-wrap justify-center gap-1.5 md:gap-2.5 mb-4 md:mb-6">
         {letters.map((letter) => (
           <motion.button
             key={letter.id}
-            whileHover={!letter.isSelected ? { scale: 1.1, y: -4 } : {}}
+            whileHover={!letter.isSelected ? { scale: 1.08, y: -4 } : {}}
             whileTap={!letter.isSelected ? { scale: 0.95 } : {}}
             onClick={() => handleLetterClick(letter)}
             disabled={letter.isSelected}
-            className={`w-12 h-14 flex items-center justify-center rounded-xl font-black text-xl transition-all ${
+            className={`w-10 h-12 md:w-12 md:h-14 flex items-center justify-center rounded-lg md:rounded-xl font-black text-lg md:text-xl transition-all ${
               letter.isSelected
-                ? 'bg-gray-path text-gray-path-dark opacity-40 cursor-not-allowed'
-                : 'bg-white border-2 border-blue text-text-main hover:bg-blue/10 cursor-pointer shadow-[0_4px_0_var(--color-blue)] active:translate-y-1 active:shadow-none'
+                ? 'bg-bg-hover text-text-muted opacity-30 cursor-not-allowed border-2 border-transparent'
+                : 'bg-bg-card border-2 border-blue/50 text-text-main hover:bg-blue/5 cursor-pointer active:translate-y-[3px] active:shadow-none'
             }`}
           >
             {letter.char}
@@ -263,24 +249,17 @@ export function WordScramble({ onComplete, difficulty = 'medium' }: { onComplete
       </div>
 
       {/* Action Buttons */}
-      <div className="flex gap-3 mt-auto">
-        <button
-          onClick={handleClear}
-          className="px-4 py-2.5 bg-gray-bg text-text-muted rounded-xl font-bold text-sm hover:bg-gray-path transition-colors"
-        >
+      <div className="flex gap-1.5 md:gap-2 justify-center mt-auto">
+        <button onClick={handleClear} className="btn-duo px-3 py-2 md:px-4 md:py-2.5 text-[10px] md:text-xs">
+          <RotateCcw className="w-3 h-3 md:w-3.5 md:h-3.5 inline mr-1" />
           Clear
         </button>
-        <button
-          onClick={handleShuffle}
-          className="px-4 py-2.5 bg-gray-bg text-text-muted rounded-xl font-bold text-sm hover:bg-gray-path transition-colors"
-        >
-          <Shuffle className="w-4 h-4 inline mr-1" />
+        <button onClick={handleShuffle} className="btn-duo px-3 py-2 md:px-4 md:py-2.5 text-[10px] md:text-xs">
+          <Shuffle className="w-3 h-3 md:w-3.5 md:h-3.5 inline mr-1" />
           Shuffle
         </button>
-        <button
-          onClick={handleHint}
-          className="px-4 py-2.5 bg-gold/10 text-gold rounded-xl font-bold text-sm hover:bg-gold/20 transition-colors"
-        >
+        <button onClick={handleHint} className="btn-duo btn-gold px-3 py-2 md:px-4 md:py-2.5 text-[10px] md:text-xs">
+          <Lightbulb className="w-3 h-3 md:w-3.5 md:h-3.5 inline mr-1" />
           Hint
         </button>
       </div>
@@ -291,11 +270,11 @@ export function WordScramble({ onComplete, difficulty = 'medium' }: { onComplete
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           onClick={nextRound}
-          className="mt-4 px-8 py-4 bg-green text-white rounded-2xl font-black text-lg shadow-[0_4px_0_var(--color-green-dark)] active:translate-y-1 active:shadow-none transition-all"
+          className="btn-duo btn-green px-6 py-3 md:px-8 md:py-4 text-base md:text-lg mt-3 md:mt-4 mx-auto"
         >
-          Next Word <ArrowRight className="w-5 h-5 inline ml-2" />
+          Next Word <ArrowRight className="w-4 h-4 md:w-5 md:h-5 inline ml-2" />
         </motion.button>
       )}
-    </div>
+    </GameShell>
   );
 }
